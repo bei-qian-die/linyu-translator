@@ -1,0 +1,417 @@
+{
+  "fetchedAt": "2026-10-09T11:57:20.874Z",
+  "note": "代表作候选，全部来自可回源的真实数据；未写入任何人物词条，需人工确认后采纳",
+  "report": [
+    {
+      "hero": "妮蔻",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "变身茄子",
+          "src": "《通讯录英雄大合集》弹幕"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "拉比克",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "A杖效果",
+          "src": "《通讯录英雄大合集》弹幕"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "孙策",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "腋淋",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "腋淋",
+          "src": "《【淋神】角色演示-「腋淋：特务夜地才兰」》弹幕"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "上司磯太",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "四乐化碳",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "视频",
+          "label": "【淋者荣耀】白 色 烟 花",
+          "src": "BV1KUuN6EEuf",
+          "url": "https://www.bilibili.com/video/BV1KUuN6EEuf"
+        }
+      ],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "晦暗雨季",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "视频",
+          "label": "【淋者荣耀】山水的水是黑魂水的水",
+          "src": "BV1qmaU67EWb",
+          "url": "https://www.bilibili.com/video/BV1qmaU67EWb"
+        }
+      ],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "去听潮声吧",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "大啵仙女",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "可淋",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "视频",
+          "label": "【淋神】角色演示-「娜阴娅：光鲜岩娅」",
+          "src": "BV1ei4y167fn",
+          "url": "https://www.bilibili.com/video/BV1ei4y167fn"
+        }
+      ],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "水烈鸟_ZZK",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "羊崽爱吃芒果",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "正义的钻石男高",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "斯琴低娃老师",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "初武",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "老凡Fv",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "视频",
+          "label": "四万血海诺：最新科研辅助流！抗伤大王+输出机器！",
+          "src": "BV1gYHs6VEwF",
+          "url": "https://www.bilibili.com/video/BV1gYHs6VEwF"
+        }
+      ],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "四时猫舍",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "我妲",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "名言",
+          "label": "我妲不素妖孽是祥瑞！！",
+          "src": "BV1WV4y1Y7Hh"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "我鸟",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "我鸟",
+          "src": "《星淋铁道》评论区"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "阿三",
+      "group": "game",
+      "have": 1,
+      "need": 2,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "阿三",
+          "src": "《守望淋锋》弹幕"
+        },
+        {
+          "kind": "词卡",
+          "label": "秩序之光",
+          "src": "《守望淋锋》弹幕"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "暴躁的鹿鹿",
+      "group": "up",
+      "have": 2,
+      "need": 1,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "坚决不打羊胎素",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "妖女即将收服BadBoy",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "提瓦淋新人桑",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "伤心凉茶",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [
+        {
+          "kind": "视频",
+          "label": "从亖冯起号的局外人到荒诞主义下的老公男神，豪哥经历了什么？【类の人】",
+          "src": "BV1KdpT6tEXY",
+          "url": "https://www.bilibili.com/video/BV1KdpT6tEXY"
+        },
+        {
+          "kind": "视频",
+          "label": "日本不眠の仙人睡觉塌房，居然被欧金金拯救【仙の人】",
+          "src": "BV17Eao6uEu8",
+          "url": "https://www.bilibili.com/video/BV17Eao6uEu8"
+        }
+      ],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "一米六也很厉害啦",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "女王糖糖子",
+      "group": "up",
+      "have": 1,
+      "need": 2,
+      "add": [],
+      "source": "B 站公开搜索接口（作者名精确匹配）"
+    },
+    {
+      "hero": "雕刻家",
+      "group": "game",
+      "have": 2,
+      "need": 1,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "椅妹",
+          "src": "萌娘百科《雕刻家》"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "泡泡",
+      "group": "game",
+      "have": 1,
+      "need": 2,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "多萝吸",
+          "src": "B 站【淋日方舟】合集、萌娘百科《泡泡（明日方舟）》"
+        },
+        {
+          "kind": "名言",
+          "label": "初见多萝吸的小玩具。",
+          "src": "B 站【淋日方舟】合集"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "杀生院",
+      "group": "game",
+      "have": 1,
+      "need": 2,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "二游男同初代皇后",
+          "src": "NGA《[提问求助]杀生院为什么这么受男同的欢迎?》tid=38755728"
+        },
+        {
+          "kind": "名言",
+          "label": "我院还是小品天后，这种又美又赔的女人，报纸和媒体都会给她很多…",
+          "src": "NGA tid=38755728"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "艾希",
+      "group": "game",
+      "have": 0,
+      "need": 3,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "熹贵妃",
+          "src": "NGA tid=39308402"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "莫甘娜",
+      "group": "game",
+      "have": 1,
+      "need": 2,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "地沟油婆",
+          "src": "NGA tid=39308402、tid=42400715"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "霞",
+      "group": "game",
+      "have": 0,
+      "need": 3,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "掉毛母鸡",
+          "src": "NGA tid=42400715、tid=39308402"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    },
+    {
+      "hero": "萨勒芬妮",
+      "group": "game",
+      "have": 0,
+      "need": 3,
+      "add": [
+        {
+          "kind": "词卡",
+          "label": "平衡车天后",
+          "src": "NGA tid=39308402、tid=42400715 第 3 页"
+        },
+        {
+          "kind": "名言",
+          "label": "平衡车是尖叫婆，你茶坐的是轮椅。",
+          "src": "NGA tid=39308402"
+        }
+      ],
+      "source": "lore 内已带可追溯来源的词卡/名言"
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:" />
+  <title>淋语翻译器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app" v-cloak>
+    <header class="topbar">
+      <div class="brand"><span class="heart">♥</span>淋语翻译器</div>
+      <nav class="tabs">
+        <button v-for="t in tabs" :key="t.key" :class="{ active: view === t.key }" @click="switchView(t.key)">{{ t.label }}</button>
+      </nav>
+      <div class="stat" v-if="wordCount">词库 {{ wordCount }} 条</div>
+      <span class="mode-chip" :class="{ on: isDev }">{{ isDev ? '开发者模式' : '只读' }}</span>
+      <button class="gear" title="设置（Ctrl+,）" @click="openSettings">⚙</button>
+    </header>
+
+    <main class="content">
+      <!-- 翻译页 -->
+      <section v-show="view === 'translate'" class="translate-page">
+        <div class="lang-bar">
+          <span class="lang">中文</span>
+          <span class="arrow">➜</span>
+          <span class="lang ly">淋语</span>
+          <span class="live-row">
+            <label class="live-toggle"><input type="checkbox" :checked="liveOn" @change="toggleLive" />边输入边预览</label>
+            <span class="live-badge" v-if="previewing">预览中…</span>
+            <span class="live-badge" v-else-if="isPreview">实时预览 · 不记入历史</span>
+          </span>
+        </div>
+        <div class="panels">
+          <div class="panel">
+            <textarea v-model="input" maxlength="5000" placeholder="输入要翻译的中文，例如：你今天真好看！"></textarea>
+            <div class="panel-foot">
+              <span class="count">{{ input.length }} / 5000</span>
+              <button class="ghost" v-show="input" @click="input = ''; output = ''">清空</button>
+            </div>
+            <div class="samples">
+              <span class="sample-label">试试：</span>
+              <button class="chip" v-for="(s, i) in samples" :key="i" @click="input = s">{{ s }}</button>
+            </div>
+            <button class="go" :disabled="!input.trim() || loading" @click="doTranslate">
+              {{ loading ? '翻译中…' : '翻 译 ♥' }}
+            </button>
+          </div>
+          <div class="panel out-panel">
+            <div class="out-text" :class="{ hint: !output }">{{ output || '翻译结果会出现在这里，保证淋味十足♥' }}</div>
+            <div class="panel-foot">
+              <span class="count" v-if="output">{{ output.length }} 字</span>
+              <span v-else></span>
+              <button class="ghost" v-show="output" @click="copyOutput">复制结果</button>
+            </div>
+            <div class="trace-box" v-if="isDev && trace && (trace.length || uncovered.length)">
+              <details open="" v-if="uncovered.length">
+                <summary>词库还没覆盖的片段（{{ uncovered.length }}）· 点一下就去补词条</summary>
+                <div class="unc-chips">
+                  <button class="chip add" v-for="u in uncovered" :key="u" @click="addWordFor(u)">+ {{ u }}</button>
+                </div>
+              </details>
+              <details v-if="trace.length">
+                <summary>命中链路（{{ trace.length }} 处{{ trace.length >= 240 ? '，已截断' : '' }}）</summary>
+                <ul class="trace-list">
+                  <li v-for="(t, i) in trace" :key="i">
+                    <span class="tr-kind">{{ t.kind === 'word' ? '词条' : '句式' }}</span>
+                    <span class="tr-body" v-if="t.kind === 'word'">{{ t.from }} <b>➜</b> {{ t.to }}</span>
+                    <span class="tr-body" v-else>#{{ t.id }} <code>{{ t.pattern }}</code> 命中「{{ t.from }}」{{ t.note ? '（' + t.note + '）' : '' }}</span>
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </div>
+        <p class="tip">纯本地词库翻译 · 词条和句式需在「设置 → 开发者模式」登录后自行增删改 · Ctrl+Enter 翻译，Ctrl+, 设置</p>
+      </section>
+
+      <!-- 词库页 -->
+      <section v-show="view === 'words'" class="manage-page">
+        <div class="lock-bar" v-if="!isDev">
+          当前为只读模式，登录开发者账号后才能增删改词条
+          <button class="link" @click="openSettings">去登录</button>
+        </div>
+        <div class="form-grid" v-if="isDev">
+          <div class="fg-title">{{ editingWordId ? '编辑词条' : '新增词条' }}</div>
+          <div class="fg-row">
+            <input v-model.trim="wordForm.zh" placeholder="中文词条，如：可爱" @keyup.enter="saveWord" />
+            <input v-model.trim="wordForm.linyu" placeholder="淋语翻译，如：阔爱" @keyup.enter="saveWord" />
+            <input v-model.trim="wordForm.alias" placeholder="别名（可空）" />
+          </div>
+          <div class="fg-row">
+            <textarea class="fg-area" v-model.trim="wordForm.sense" rows="2" placeholder="解释：这个词为什么这么淋（可空）"></textarea>
+          </div>
+          <div class="fg-row">
+            <input v-model.trim="wordForm.source" placeholder="出处，如：B 站 BV1xx411c7mD" />
+            <select v-model="wordForm.pop">
+              <option value="">流行度：未评级</option>
+              <option v-for="lv in popLevels" :key="lv" :value="lv">{{ lv }}</option>
+            </select>
+          </div>
+          <input class="fg-full" v-model.trim="wordForm.relText" placeholder="关联词条（中文词条），顿号分隔" />
+          <div class="fg-row">
+            <button class="go small" @click="saveWord">{{ editingWordId ? '保存修改' : '添加词条' }}</button>
+            <button class="ghost small" v-show="editingWordId" @click="resetWordForm">取消编辑</button>
+          </div>
+        </div>
+        <input class="search" :ref="(el) => setSearchRef('words', el)" v-model.trim="wordSearch" placeholder="搜索词条…（Ctrl+F）" />
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>中文</th><th>淋语</th><th>别名</th><th>解释</th><th>流行度</th><th>出处</th><th class="ops-col" v-if="isDev">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="w in pagedWords" :key="w.id">
+                <td>{{ w.zh }}</td>
+                <td class="ly-cell">{{ w.linyu }}</td>
+                <td>{{ w.alias }}</td>
+                <td>{{ w.sense }}</td>
+                <td><span class="h-tag" v-if="w.pop">{{ w.pop }}</span></td>
+                <td class="src-cell">{{ w.source }}</td>
+                <td class="ops" v-if="isDev">
+                  <button class="link" @click="editWord(w)">编辑</button>
+                  <button class="link danger" @click="removeWord(w)">删除</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="empty" v-if="!wordsTotal">没有词条</div>
+        </div>
+        <div class="pager" v-if="wordsPages > 1">
+          <button class="ghost small" :disabled="wordsPage === 1" @click="goWordsPage(wordsPage - 1)">‹ 上一页</button>
+          <span class="pg-info">第 {{ wordsPage }} / {{ wordsPages }} 页 · 共 {{ wordsTotal }} 条</span>
+          <button class="ghost small" :disabled="wordsPage === wordsPages" @click="goWordsPage(wordsPage + 1)">下一页 ›</button>
+        </div>
+      </section>
+
+      <!-- 句式页 -->
+      <section v-show="view === 'rules'" class="manage-page">
+        <div class="lock-bar" v-if="!isDev">
+          当前为只读模式，登录开发者账号后才能增删改句式
+          <button class="link" @click="openSettings">去登录</button>
+        </div>
+        <div class="form-grid" v-if="isDev">
+          <div class="fg-title">{{ editingRuleId ? '编辑句式' : '新增句式' }}</div>
+          <div class="fg-row">
+            <input v-model.trim="ruleForm.pattern" :class="{ bad: rulePatternOk === false }" placeholder="正则，如：太(.{1,8}?)了" />
+            <input v-model.trim="ruleForm.template" placeholder="模板，如：难道不觉得超$1滴嘛" />
+          </div>
+          <input class="fg-full" v-model.trim="ruleForm.scene" placeholder="使用场景，如：感叹句 / 弹幕吐槽（可空）" />
+          <div class="fg-row">
+            <input v-model.trim="ruleForm.examples" placeholder="例句，例句之间用换行或；分隔（可空）" />
+            <input v-model.trim="ruleForm.src" placeholder="出处（可空）" />
+          </div>
+          <input class="fg-full" v-model.trim="ruleForm.note" placeholder="备注（可空）" />
+          <div class="fg-row">
+            <button class="go small" :disabled="rulePatternOk === false" @click="saveRule">{{ editingRuleId ? '保存修改' : '添加句式' }}</button>
+            <button class="ghost small" v-show="editingRuleId" @click="resetRuleForm">取消编辑</button>
+          </div>
+        </div>
+        <p class="fg-note bad" v-if="rulePatternOk === false">这个正则表达式编译不过去，先改成合法写法再保存。</p>
+        <input class="search" :ref="(el) => setSearchRef('rules', el)" v-model.trim="ruleSearch" placeholder="搜索句式正则 / 模板 / 场景…" />
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th><th>匹配（正则）</th><th>替换模板</th><th>使用场景</th><th>例句</th><th>出处</th><th class="ops-col" v-if="isDev">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="r in pagedRules" :key="r.id">
+                <td class="idx">{{ r.id }}</td>
+                <td class="code">{{ r.pattern }}</td>
+                <td class="code ly-cell">{{ r.template }}</td>
+                <td>{{ r.scene }}</td>
+                <td class="src-cell">{{ r.examples }}</td>
+                <td class="src-cell">{{ r.src || r.note }}</td>
+                <td class="ops" v-if="isDev">
+                  <button class="link" @click="editRule(r)">编辑</button>
+                  <button class="link danger" @click="removeRule(r)">删除</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="empty" v-if="!rulesTotal">没有匹配的句式</div>
+        </div>
+        <div class="pager" v-if="rulesPages > 1">
+          <button class="ghost small" :disabled="rulesPage === 1" @click="goRulesPage(rulesPage - 1)">‹ 上一页</button>
+          <span class="pg-info">第 {{ rulesPage }} / {{ rulesPages }} 页 · 共 {{ rulesTotal }} 条</span>
+          <button class="ghost small" :disabled="rulesPage === rulesPages" @click="goRulesPage(rulesPage + 1)">下一页 ›</button>
+        </div>
+        <p class="tip">句式按编号顺序生效（越靠前越优先），模板里 $1 表示第一个捕获组；句式命中的内容仍会继续做词条替换</p>
+      </section>
+
+      <!-- 词卡页 -->
+      <section v-show="view === 'cards'" class="manage-page">
+        <div class="lore-head">
+          <h2>淋语词卡</h2>
+          <p>无法直译的词、梗与典故，像单词卡一样标注释义</p>
+          <div class="filter-chips">
+            <button v-for="t in cardTypes" :key="t.key" class="chip" :class="{ on: cardFilter === t.key }" @click="cardFilter = t.key">{{ t.label }}</button>
+          </div>
+        </div>
+        <div class="lock-bar" v-if="!isDev">
+          当前为只读模式，登录开发者账号后才能增删改词卡
+          <button class="link" @click="openSettings">去登录</button>
+        </div>
+        <div class="form-grid" v-if="isDev">
+          <div class="fg-title">{{ editingCardId ? '编辑词卡' : '新增词卡' }}</div>
+          <div class="fg-row">
+            <input v-model.trim="cardForm.term" placeholder="词名，如：豪嗨心" />
+            <select v-model="cardForm.type">
+              <option v-for="t in cardTypeOpts" :key="t.key" :value="t.key">{{ t.label }}</option>
+            </select>
+            <input v-model.trim="cardForm.hero" placeholder="归属人物（可空）" list="hero-names" />
+          </div>
+          <textarea class="fg-area" v-model.trim="cardForm.meaning" rows="2" placeholder="简介，如：好开心啊，淋语版的高兴"></textarea>
+          <textarea class="fg-area" v-model.trim="cardForm.detail" rows="3" placeholder="详细解释：由来、用法、常见误用（可空）"></textarea>
+          <div class="fg-row">
+            <input v-model.trim="cardForm.example" placeholder="例句（可空）" />
+            <input v-model.trim="cardForm.source" placeholder="出处（可空）" />
+          </div>
+          <div class="fg-row">
+            <input v-model.trim="cardForm.aliasesText" placeholder="别名，顿号分隔（可空）" />
+            <input v-model.trim="cardForm.relText" placeholder="关联词条（中文词条），顿号分隔" />
+          </div>
+          <div class="fg-row">
+            <button class="go small" @click="saveCard">{{ editingCardId ? '保存修改' : '添加词卡' }}</button>
+            <button class="ghost small" v-show="editingCardId" @click="resetCardForm">取消编辑</button>
+          </div>
+        </div>
+        <input class="search" :ref="(el) => setSearchRef('cards', el)" v-model.trim="cardSearch" placeholder="搜索词名 / 释义 / 出处…" />
+        <div class="card-grid">
+          <div class="flashcard" v-for="c in pagedCards" :key="c.id" @click="flipCard(c.term)">
+            <div class="fc-inner" :class="{ flipped: flipped.has(c.term) }">
+              <div class="fc-face fc-front">
+                <span class="fc-type">{{ typeLabel(c.type) }}</span>
+                <div class="fc-term">{{ c.term }}</div>
+                <div class="fc-hint">点击翻面看释义</div>
+                <div class="fc-ops" v-if="isDev" @click.stop>
+                  <button class="link" @click="editCard(c)">编辑</button>
+                  <button class="link danger" @click="removeCard(c)">删除</button>
+                </div>
+              </div>
+              <div class="fc-face fc-back">
+                <div class="fc-meaning">{{ c.meaning }}</div>
+                <div class="fc-detail" v-if="c.detail">{{ c.detail }}</div>
+                <div class="fc-example">例：{{ c.example }}</div>
+                <div class="fc-source">{{ c.source }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty" v-if="!cardsTotal">没有匹配的词卡</div>
+        <div class="pager" v-if="cardsPages > 1">
+          <button class="ghost small" :disabled="cardsPage === 1" @click="goCardsPage(cardsPage - 1)">‹ 上一页</button>
+          <span class="pg-info">第 {{ cardsPage }} / {{ cardsPages }} 页 · 共 {{ cardsTotal }} 张</span>
+          <button class="ghost small" :disabled="cardsPage === cardsPages" @click="goCardsPage(cardsPage + 1)">下一页 ›</button>
+        </div>
+      </section>
+
+      <!-- 人物传页 -->
+      <section v-show="view === 'heroes'" class="manage-page">
+        <!-- 编辑表单 -->
+        <div class="form-grid tall" v-if="isDev && heroEditing">
+          <div class="fg-title">{{ heroForm.id ? '编辑人物' : '新增人物' }}</div>
+          <div class="fg-row">
+            <input v-model.trim="heroForm.name" placeholder="名字，如：淋淋" />
+            <input v-model.trim="heroForm.rank" placeholder="称号，如：宇宙之母" />
+            <select v-model="heroForm.group">
+              <option v-for="g in heroGroups" :key="g.key" :value="g.key">{{ g.label }}</option>
+            </select>
+          </div>
+          <input class="fg-full" v-model.trim="heroForm.alias" placeholder="又名 / 别名，用 / 分隔" />
+          <textarea class="fg-area" v-model.trim="heroForm.intro" rows="3" placeholder="人物简介"></textarea>
+          <textarea class="fg-area" v-model.trim="heroForm.baike" rows="4" placeholder="百科详情（可空）"></textarea>
+          <div class="fg-row">
+            <input v-model.trim="heroForm.tagsText" placeholder="标签，顿号分隔，如：地才、舞娘" />
+            <input v-model.trim="heroForm.worksText" placeholder="代表作，顿号分隔" />
+          </div>
+          <input class="fg-full" v-model.trim="heroForm.wordsText" placeholder="关联词库中文词条，顿号分隔" />
+          <div class="fg-row">
+            <input v-model.trim="heroForm.img" placeholder="图片：img/xx.png 或 用右侧按钮选本地图片" />
+            <button class="ghost small" :disabled="picking" @click="pickImage">{{ picking ? '读取中…' : '选择本地图片' }}</button>
+          </div>
+          <div class="fg-row">
+            <img class="fg-thumb" v-if="heroImgPreview && !imgFailed[heroForm.name]" :src="heroImgPreview" alt="预览" @error="markImgFail(heroForm.name)" />
+            <span class="fg-note" v-else>未设置图片时，列表会显示名字首字</span>
+          </div>
+          <textarea class="fg-area" v-model.trim="heroForm.linksText" rows="2" placeholder="相关链接，每行一条：名称|https://…"></textarea>
+          <div class="fg-row">
+            <button class="go small" @click="saveHero">保存人物</button>
+            <button class="ghost small" @click="cancelHeroForm">取消</button>
+            <button class="ghost small" v-if="heroForm.id" @click="cancelHeroForm">关闭编辑</button>
+          </div>
+        </div>
+
+        <!-- 列表 -->
+        <template v-if="!selectedHero">
+          <div class="lore-head">
+            <h2>淋语英雄人物传</h2>
+            <p>收录淋语圈公认的通讯录女王与网红，点击卡片查看百科详情</p>
+            <div class="filter-chips">
+              <button v-for="g in heroGroups" :key="g.key" class="chip" :class="{ on: heroGroup === g.key }" @click="switchHeroGroup(g.key)">
+                {{ g.label }}（{{ heroCount(g.key) }}）
+              </button>
+              <button class="chip add" v-if="isDev" @click="startAddHero">+ 新增人物</button>
+            </div>
+            <div class="filter-chips" v-if="heroGroup === 'game' && heroZones.length">
+              <button class="chip" :class="{ on: heroZone === '' }" @click="switchHeroZone('')">全部分区</button>
+              <button
+                v-for="z in heroZones"
+                :key="z"
+                class="chip"
+                :class="{ on: heroZone === z }"
+                @click="switchHeroZone(z)"
+              >
+                {{ z }}（{{ heroZoneCount(z) }}）
+              </button>
+            </div>
+          </div>
+          <div class="lock-bar" v-if="!isDev">
+            当前为只读模式，登录开发者账号后才能增删改人物
+            <button class="link" @click="openSettings">去登录</button>
+          </div>
+          <input class="search" :ref="(el) => setSearchRef('heroes', el)" v-model.trim="heroSearch" placeholder="搜索名字 / 称号 / 标签…" />
+          <div class="hero-list">
+            <div class="hero-card clickable" v-for="h in filteredHeroes" :key="h.id" @click="openHero(h)">
+              <div class="hero-avatar">
+                <img v-if="heroSrc(h) && !imgFailed[h.name]" :src="heroSrc(h)" :alt="h.name" @error="markImgFail(h.name)" />
+                <span v-else>{{ h.name.slice(0, 1) }}</span>
+              </div>
+              <div class="hero-body">
+                <div class="hero-name">
+                  <span class="h-name">{{ h.name }}</span>
+                  <span class="h-rank">{{ h.rank }}</span>
+                </div>
+                <div class="hero-alias">又名：{{ h.alias }}</div>
+                <div class="hero-intro">{{ h.intro }}</div>
+                <div class="hero-tags">
+                  <span class="h-tag" v-for="t in h.tags" :key="t">#{{ t }}</span>
+                </div>
+                <div class="hero-more">查看详情 ➜</div>
+              </div>
+            </div>
+          </div>
+          <div class="empty" v-if="!filteredHeroes.length">该分区暂无人物</div>
+        </template>
+
+        <!-- 详情 -->
+        <div v-else class="hero-detail">
+          <div class="hd-top">
+            <button class="back-link" @click="backToHeroes">‹ 返回人物传</button>
+            <div class="hd-ops" v-if="isDev">
+              <button class="ghost small" @click="editHero(selectedHero)">编辑此人</button>
+              <button class="ghost small danger" @click="removeHero(selectedHero)">删除此人</button>
+            </div>
+          </div>
+          <div class="hd-hero">
+            <div class="hero-avatar big">
+              <img v-if="heroSrc(selectedHero) && !imgFailed[selectedHero.name]" :src="heroSrc(selectedHero)" :alt="selectedHero.name" @error="markImgFail(selectedHero.name)" />
+              <span v-else>{{ selectedHero.name.slice(0, 1) }}</span>
+            </div>
+            <div class="hd-title">
+              <div class="hd-name">{{ selectedHero.name }}</div>
+              <div class="h-rank">{{ selectedHero.rank }}</div>
+              <div class="hero-alias">又名：{{ selectedHero.alias }}</div>
+              <div class="hero-tags">
+                <span class="h-tag" v-for="t in selectedHero.tags" :key="t">#{{ t }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hd-block">
+            <h3 class="hd-label">人物简介</h3>
+            <p class="hd-intro">{{ selectedHero.intro }}</p>
+          </div>
+          <div class="hd-block" v-if="selectedHero.baike">
+            <h3 class="hd-label">百科详情</h3>
+            <p class="hd-intro">{{ selectedHero.baike }}</p>
+          </div>
+          <div class="hd-block" v-if="selectedHero.works && selectedHero.works.length">
+            <h3 class="hd-label">代表作 · 名场面</h3>
+            <div class="hero-tags">
+              <span class="h-tag work" v-for="w in selectedHero.works" :key="w">{{ w }}</span>
+            </div>
+          </div>
+
+          <div class="hd-block">
+            <h3 class="hd-label">来源 · 相关链接</h3>
+            <div class="hd-links">
+              <button class="hd-link" @click="openLink(heroSearchUrl(selectedHero))">在 B 站搜索「{{ selectedHero.name }} 淋语」</button>
+              <button class="hd-link" v-for="(l, i) in (selectedHero.links || [])" :key="'l' + i" @click="openLink(l.url)">
+                <span class="hd-link-ico">↗</span>{{ l.label }}
+              </button>
+            </div>
+          </div>
+
+          <div class="hd-block" v-if="heroWords.length">
+            <h3 class="hd-label">关联词库（{{ heroWords.length }}）</h3>
+            <div class="hd-words">
+              <span class="hd-word" v-for="w in heroWords" :key="w.zh">{{ w.zh }} <b>➜</b> {{ w.linyu }}</span>
+            </div>
+          </div>
+          <div class="hd-block" v-if="heroCards.length">
+            <h3 class="hd-label">相关梗 · 词卡（{{ heroCards.length }}）</h3>
+            <div class="hd-cards">
+              <div class="hd-card" v-for="c in heroCards" :key="c.id">
+                <span class="fc-type">{{ typeLabel(c.type) }}</span>
+                <div class="hd-card-term">{{ c.term }}</div>
+                <div class="hd-card-mean">{{ c.meaning }}</div>
+                <div class="hd-card-src">{{ c.source }}</div>
+              </div>
+            </div>
+          </div>
+          <div class="hd-block" v-if="heroQuotes.length">
+            <h3 class="hd-label">相关名言（{{ heroQuotes.length }}）</h3>
+            <div class="quote-wall">
+              <figure class="quote-card" v-for="q in heroQuotes" :key="q.id">
+                <div class="q-mark">“</div>
+                <blockquote class="q-text">{{ q.text }}</blockquote>
+                <figcaption class="q-meta">
+                  <span class="q-author">—— {{ q.author }}</span>
+                  <span class="q-src">{{ q.src }}</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 名言页 -->
+      <section v-show="view === 'quotes'" class="manage-page">
+        <div class="lore-head">
+          <h2>经典淋语名言</h2>
+          <p>仿名人名言体，收录歌词典故与淋圈传世金句，均注明出处</p>
+        </div>
+        <div class="lock-bar" v-if="!isDev">
+          当前为只读模式，登录开发者账号后才能增删改名言
+          <button class="link" @click="openSettings">去登录</button>
+        </div>
+        <div class="form-grid" v-if="isDev">
+          <div class="fg-title">{{ editingQuoteId ? '编辑名言' : '新增名言' }}</div>
+          <textarea class="fg-area" v-model.trim="quoteForm.text" rows="2" placeholder="名言内容"></textarea>
+          <div class="fg-row">
+            <input v-model.trim="quoteForm.author" placeholder="发言人，如：淋淋" />
+            <input v-model.trim="quoteForm.hero" placeholder="归属人物（可空）" list="hero-names" />
+            <input v-model.trim="quoteForm.scene" placeholder="出处场景，如：直播间连麦（可空）" />
+          </div>
+          <div class="fg-row">
+            <input v-model.trim="quoteForm.src" placeholder="出处，如：B 站 BV1xx411c7mD" />
+            <input v-model.trim="quoteForm.relText" placeholder="关联词条（中文词条），顿号分隔" />
+          </div>
+          <div class="fg-row">
+            <button class="go small" @click="saveQuote">{{ editingQuoteId ? '保存修改' : '添加名言' }}</button>
+            <button class="ghost small" v-show="editingQuoteId" @click="resetQuoteForm">取消编辑</button>
+          </div>
+        </div>
+        <input class="search" :ref="(el) => setSearchRef('quotes', el)" v-model.trim="quoteSearch" placeholder="搜索名言 / 发言人 / 出处…" />
+        <div class="quote-wall">
+          <figure class="quote-card" v-for="q in pagedQuotes" :key="q.id">
+            <div class="q-mark">“</div>
+            <blockquote class="q-text">{{ q.text }}</blockquote>
+            <figcaption class="q-meta">
+              <span class="q-author">—— {{ q.author }}</span>
+              <span class="q-src">{{ q.src }}</span>
+            </figcaption>
+            <div class="q-ops" v-if="isDev">
+              <button class="link" @click="editQuote(q)">编辑</button>
+              <button class="link danger" @click="removeQuote(q)">删除</button>
+            </div>
+          </figure>
+        </div>
+        <div class="empty" v-if="!quotesTotal">没有匹配的名言</div>
+        <div class="pager" v-if="quotesPages > 1">
+          <button class="ghost small" :disabled="quotesPage === 1" @click="goQuotesPage(quotesPage - 1)">‹ 上一页</button>
+          <span class="pg-info">第 {{ quotesPage }} / {{ quotesPages }} 页 · 共 {{ quotesTotal }} 条</span>
+          <button class="ghost small" :disabled="quotesPage === quotesPages" @click="goQuotesPage(quotesPage + 1)">下一页 ›</button>
+        </div>
+      </section>
+
+      <!-- 历史页 -->
+      <section v-show="view === 'history'" class="manage-page">
+        <div class="hist-head">
+          <span>共 {{ history.length }} 条 · 最多保留
+            <select class="limit-select" :value="historyLimit" @change="setHistoryLimit($event.target.value)">
+              <option v-for="n in [100, 200, 500, 1000]" :key="n" :value="n">{{ n }}</option>
+            </select>
+            条
+          </span>
+          <button class="ghost small" v-if="isDev && history.length" @click="clearHistory">清空历史</button>
+        </div>
+        <input class="search" :ref="(el) => setSearchRef('history', el)" v-model.trim="histSearch" placeholder="搜索历史原文 / 译文…" />
+        <div class="hist-list">
+          <div class="hist-item clickable" v-for="h in filteredHistory" :key="h.id" @click="reuseHistory(h)" title="点击回填到翻译页并重翻">
+            <div class="hist-src">{{ h.src }}</div>
+            <div class="hist-dst ly-cell">{{ h.dst }}</div>
+            <div class="hist-time">{{ fmtTime(h.created_at) }}<span class="hist-again">重翻 ➜</span></div>
+          </div>
+          <div class="empty" v-if="!filteredHistory.length">还没有翻译记录</div>
+        </div>
+      </section>
+    </main>
+
+    <datalist id="hero-names">
+      <option v-for="n in heroNameOpts" :key="n" :value="n"></option>
+    </datalist>
+
+    <!-- 设置弹窗 -->
+    <div class="modal-mask" v-show="showSettings" @click.self="showSettings = false">
+      <div class="modal modal-wide">
+        <div class="modal-head">
+          <h3>设置</h3>
+          <button class="link" @click="showSettings = false">关闭</button>
+        </div>
+
+        <span class="setting-label">外观主题</span>
+        <div class="theme-opts">
+          <button v-for="t in themeList" :key="t.key" class="theme-opt" :class="{ on: theme === t.key }" @click="setTheme(t.key)">
+            <span class="theme-swatch" :class="t.cls"></span>
+            {{ t.label }}
+          </button>
+        </div>
+        <p class="tip">主题即时生效，下次打开自动记住♥</p>
+
+        <div class="setting-divider"></div>
+        <span class="setting-label">开发者模式</span>
+        <p class="setting-desc">
+          词库、句式、词卡、人物传、名言在退出开发者模式后只能查看，不能增删改。
+          账号只存在本机，关掉窗口就会自动退出。
+        </p>
+
+        <template v-if="!isDev">
+          <div class="auth-row">
+            <input v-model.trim="loginForm.user" :placeholder="dev.user || '开发者账号'" @keyup.enter="login" />
+            <input v-model.trim="loginForm.pass" type="password" placeholder="密码" @keyup.enter="login" />
+            <button class="go small" :disabled="devBusy" @click="login">{{ devBusy ? '登录中…' : '进入开发者模式' }}</button>
+          </div>
+          <p class="tip" v-if="dev.lockLeft">尝试次数过多，{{ dev.lockLeft }} 秒后可再试。</p>
+          <details class="creds" v-if="dev.defaultPass && defaultPassword">
+            <summary>首次使用的默认账号</summary>
+            <p>账号 <b>{{ dev.user }}</b> · 密码 <b>{{ defaultPassword }}</b>，登录后请在下方修改密码。</p>
+          </details>
+        </template>
+        <template v-else>
+          <div class="auth-status">
+            <span class="dot"></span>已登录 <b>{{ dev.user }}</b>
+            <button class="ghost small" @click="logout">退出开发者模式</button>
+          </div>
+          <span class="setting-label">修改密码</span>
+          <div class="auth-row">
+            <input v-model.trim="pwForm.old" type="password" placeholder="原密码" />
+            <input v-model.trim="pwForm.next" type="password" placeholder="新密码（至少 6 位）" />
+            <button class="ghost small" @click="submitPassword">保存新密码</button>
+          </div>
+          <span class="setting-label">内置内容</span>
+          <div class="auth-row">
+            <button class="ghost small" :disabled="syncing" @click="runSync">{{ syncing ? '补种中…' : '补种内置词库与内容' }}</button>
+            <span class="fg-note">升级后新增的内置条目不会自动写入当前库，点这里补进来（不会覆盖你改过的内容）</span>
+          </div>
+
+          <div class="setting-divider"></div>
+          <span class="setting-label">内容体检</span>
+          <div class="auth-row">
+            <button class="ghost small" :disabled="check.busy" @click="runInspect">{{ check.busy ? '体检中…' : '检查无效词条与悬空引用' }}</button>
+            <span class="fg-note">只看结构是否悬空，不判断内容是否与淋语有关</span>
+          </div>
+          <div class="check-list" v-if="check.open">
+            <div class="check-item" v-for="c in checkIssues" :key="c.key">
+              <span>{{ c.label }}</span>
+              <button class="link" v-if="c.key === 'invalid'" @click="deleteInvalidWords">删掉无效词条</button>
+              <button class="link" v-if="c.key === 'oh'" @click="cleanHeroWords">清理引用</button>
+            </div>
+          </div>
+
+          <div class="setting-divider"></div>
+          <span class="setting-label">数据导出与导入</span>
+          <p class="setting-desc">导出成单个 JSON，可以在另一台机器或另一个版本的库里导入还原（词库、句式、词卡、名言、人物传一起带走）。</p>
+          <label class="check-row"><input type="checkbox" v-model="io.includeMedia" />导出时附上本地上传的英雄图片</label>
+          <div class="auth-row">
+            <button class="ghost small" :disabled="io.busy" @click="exportData">导出为 JSON</button>
+            <button class="ghost small" :disabled="io.busy" @click="pickImport">选择导入文件并预览</button>
+          </div>
+          <p class="tip" v-if="io.result">{{ io.result }}</p>
+          <div class="io-plan" v-if="io.plan">
+            <p class="io-file">来源：{{ io.plan.file }}</p>
+            <table class="io-table">
+              <thead><tr><th>板块</th><th>文件内</th><th>新增</th><th>更新</th><th>跳过</th></tr></thead>
+              <tbody>
+                <tr v-for="s in io.plan.sections" :key="s.key">
+                  <td>{{ s.label }}</td>
+                  <td>{{ s.total }}</td>
+                  <td class="add">{{ s.add }}</td>
+                  <td class="upd">{{ s.update }}</td>
+                  <td>{{ s.skip }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="io-problems" v-if="io.plan.problems && io.plan.problems.length">
+              <li v-for="(p, i) in io.plan.problems.slice(0, 8)" :key="i">{{ p }}</li>
+            </ul>
+            <div class="auth-row">
+              <select v-model="io.strategy" @change="replanImport">
+                <option value="merge">合并（同一条内容不同就更新）</option>
+                <option value="add-only">只新增（库里已有的都跳过）</option>
+              </select>
+              <button class="go small" :disabled="io.busy" @click="applyImport">确认导入</button>
+              <button class="ghost small" @click="cancelImport">取消</button>
+            </div>
+          </div>
+
+          <div class="setting-divider"></div>
+          <span class="setting-label">本地备份</span>
+          <p class="setting-desc">每次启动都会把上一次的库滚动备份成 bak1 / bak2，改坏了可以退回任意一份。</p>
+          <div class="bak-list" v-if="backups.length">
+            <div class="bak-row" v-for="b in backups" :key="b.name">
+              <span class="bak-name">{{ b.name }}</span>
+              <span class="bak-meta">{{ fmtTime(b.mtime) }} · {{ fmtSize(b.size) }}</span>
+              <button class="link" :disabled="backupBusy" @click="restoreBackup(b)">恢复</button>
+            </div>
+          </div>
+          <p class="tip" v-else>还没有备份文件（下一次启动时生成）。</p>
+          <div class="auth-row">
+            <button class="ghost small" :disabled="backupBusy" @click="loadBackups">刷新备份列表</button>
+            <button class="ghost small" :disabled="backupBusy" @click="restoreBefore">退回上一次恢复前</button>
+          </div>
+        </template>
+
+        <div class="setting-divider"></div>
+        <div class="auth-row">
+          <button class="ghost small" @click="openLogs">打开日志目录</button>
+          <span class="fg-note" v-if="appVersion">版本 {{ appVersion }} · 数据与日志都在本机用户目录</span>
+        </div>
+      </div>
+    </div>
+
+    <transition name="fade">
+      <div class="toast" v-if="toast.text">
+        <span>{{ toast.text }}</span>
+        <button class="toast-undo" v-if="toast.undo" @click="doUndo">撤销</button>
+      </div>
+    </transition>
+  </div>
+
+  <script src="../../node_modules/vue/dist/vue.global.prod.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

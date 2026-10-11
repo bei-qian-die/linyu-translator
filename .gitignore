@@ -1,0 +1,35 @@
+# 依赖与构建产物
+node_modules/
+release/
+
+# 运行期生成的库与备份（只属于本机，不进版本库）
+*.db
+*.db.tmp
+*.bak1
+*.bak2
+userData/
+
+# 一次性调试与中间产物
+c[0-9]*.log
+c[0-9]*.err
+fetch*.log
+fetch*.err
+mined*.txt
+mined*.bak
+mined*.json
+lore.bak
+_seen
+seen.json
+harvest-authors.json
+
+# 校验脚本每次重写的报告（重新跑一次就有了）
+attest.txt
+audit.txt
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+
+# 说明：corpus*.txt 与 evidence/ 是 attest.js 判定「内容真在语料里出现」的依据，
+# 删掉它们 node scripts/check.js 会因为找不到语料直接失败，所以这两类必须随代码一起留存。

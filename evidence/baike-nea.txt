@@ -1,0 +1,11 @@
+# 百度百科词条《nea》
+# lemmaId 21294314  url https://baike.baidu.com/item/nea/22533979
+# 抓取时间 2026-10-09T07:35:42.264Z  来源：百度百科开放接口 BaikeLemmaCardApi（公开，无需凭据）
+摘要：1870年成立的美国教育专业组织
+中文名：全国教育协会
+外文名：National Education Association，NEA
+性质：全国性教育专业团体
+成立时间：1870年
+主要成就：推动《国防教育法》等立法、发布隐性偏见研究报告
+社团地址：华盛顿特区
+简称：NEA

@@ -1,0 +1,41 @@
+{
+  "fetchedAt": "2026-10-09T07:35:44.015Z",
+  "items": [
+    {
+      "key": "淋语",
+      "id": 10134785,
+      "chars": 221,
+      "file": "baike-淋语.txt"
+    },
+    {
+      "key": "蔡依林",
+      "id": 3179,
+      "chars": 912,
+      "file": "baike-蔡依林.txt"
+    },
+    {
+      "key": "网络用语",
+      "id": 47549,
+      "chars": 374,
+      "file": "baike-网络用语.txt"
+    },
+    {
+      "key": "谐音梗",
+      "id": 26407768,
+      "chars": 279,
+      "file": "baike-谐音梗.txt"
+    },
+    {
+      "key": "nea",
+      "id": 21294314,
+      "chars": 292,
+      "file": "baike-nea.txt"
+    },
+    {
+      "key": "只因你太美",
+      "id": 8277817,
+      "chars": 280,
+      "file": "baike-只因你太美.txt"
+    }
+  ]
+}
