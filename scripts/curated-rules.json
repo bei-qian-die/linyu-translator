@@ -1,0 +1,122 @@
+[
+  {
+    "pattern": "地才蓝",
+    "template": "蓝方地才，淋王降淋噜",
+    "freq": 18,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E6%89%8D%E8%93%9D"
+  },
+  {
+    "pattern": "地才蓝惹",
+    "template": "蓝方地才惹，珍素淋王降淋噜",
+    "freq": 5,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E6%89%8D%E8%93%9D%E6%83%B9"
+  },
+  {
+    "pattern": "来支持惹",
+    "template": "靴靴支持，本可已经把你锁定惹",
+    "freq": 15,
+    "verify": "https://search.bilibili.com/all?keyword=%E6%9D%A5%E6%94%AF%E6%8C%81%E6%83%B9"
+  },
+  {
+    "pattern": "来支持噜",
+    "template": "靴靴支持噜，本可命小先鼠惹",
+    "freq": 2,
+    "verify": "https://search.bilibili.com/all?keyword=%E6%9D%A5%E6%94%AF%E6%8C%81%E5%99%9C"
+  },
+  {
+    "pattern": "吸入",
+    "template": "吸入噜，靴靴",
+    "freq": 11,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%90%B8%E5%85%A5"
+  },
+  {
+    "pattern": "吸入惹",
+    "template": "已被吸入惹，靴靴",
+    "freq": 13,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%90%B8%E5%85%A5%E6%83%B9"
+  },
+  {
+    "pattern": "要被吸入惹",
+    "template": "要被吸入惹，本可已经把你锁定噜",
+    "freq": 3,
+    "verify": "https://search.bilibili.com/all?keyword=%E8%A6%81%E8%A2%AB%E5%90%B8%E5%85%A5%E6%83%B9"
+  },
+  {
+    "pattern": "好强的吸力惹",
+    "template": "好强的吸力惹，本区唯一真神",
+    "freq": 3,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%A5%BD%E5%BC%BA%E7%9A%84%E5%90%B8%E5%8A%9B%E6%83%B9"
+  },
+  {
+    "pattern": "你已经被锁定噜",
+    "template": "你已经被本可锁定噜，美神降淋",
+    "freq": 3,
+    "verify": "https://search.bilibili.com/all?keyword=%E4%BD%A0%E5%B7%B2%E7%BB%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E5%99%9C"
+  },
+  {
+    "pattern": "霉霉",
+    "template": "霉霉噜，本可也喜翻",
+    "freq": 10,
+    "verify": "https://search.bilibili.com/all?keyword=%E9%9C%89%E9%9C%89"
+  },
+  {
+    "pattern": "地才惹",
+    "template": "地才惹，淋王降淋噜",
+    "freq": 7,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E6%89%8D%E6%83%B9"
+  },
+  {
+    "pattern": "才女惹",
+    "template": "才女惹，淋王星的官方语言",
+    "freq": 7,
+    "verify": "https://search.bilibili.com/all?keyword=%E6%89%8D%E5%A5%B3%E6%83%B9"
+  },
+  {
+    "pattern": "天惹",
+    "template": "天惹噜，淋王降淋",
+    "freq": 7,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%83%B9"
+  },
+  {
+    "pattern": "天惹噜",
+    "template": "天惹噜，珍素地才惹",
+    "freq": 5,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%83%B9%E5%99%9C"
+  },
+  {
+    "pattern": "天惹是地才石",
+    "template": "天惹噜，淋王降淋，珍素地才石",
+    "freq": 4,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%83%B9%E6%98%AF%E5%9C%B0%E6%89%8D%E7%9F%B3"
+  },
+  {
+    "pattern": "吓晕惹",
+    "template": "吓晕惹，珍素吓人",
+    "freq": 5,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%90%93%E6%99%95%E6%83%B9"
+  },
+  {
+    "pattern": "吓晕噜",
+    "template": "吓晕噜，珍素吓鼠惹",
+    "freq": 3,
+    "verify": "https://search.bilibili.com/all?keyword=%E5%90%93%E6%99%95%E5%99%9C"
+  },
+  {
+    "pattern": "真素本质惹",
+    "template": "珍素本质惹，本可已经把你锁定噜",
+    "freq": 5,
+    "verify": "https://search.bilibili.com/all?keyword=%E7%9C%9F%E7%B4%A0%E6%9C%AC%E8%B4%A8%E6%83%B9"
+  },
+  {
+    "pattern": "被通讯录吓晕",
+    "template": "被通讯录吓晕噜，珍素吓人",
+    "freq": 4,
+    "verify": "https://search.bilibili.com/all?keyword=%E8%A2%AB%E9%80%9A%E8%AE%AF%E5%BD%95%E5%90%93%E6%99%95"
+  },
+  {
+    "pattern": "脚刹通讯录",
+    "template": "脚刹通讯录噜，婷芷嗦话",
+    "freq": 3,
+    "verify": "https://search.bilibili.com/all?keyword=%E8%84%9A%E5%88%B9%E9%80%9A%E8%AE%AF%E5%BD%95"
+  }
+]

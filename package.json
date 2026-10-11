@@ -1,6 +1,6 @@
 {
   "name": "linyu-translator",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "中文 -> 淋语 翻译器（Electron + SQLite）",
   "main": "src/main/main.js",
   "author": "qiuzh",

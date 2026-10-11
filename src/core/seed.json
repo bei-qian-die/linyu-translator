@@ -1935,6 +1935,156 @@
     {
       "zh": "控评",
       "linyu": "控评"
+    },
+    {
+      "zh": "锦鲤",
+      "linyu": "转发好运符号",
+      "verify": "https://search.bilibili.com/all?keyword=%E9%94%A6%E9%B2%A4+%E8%BD%AC%E5%8F%91%E5%A5%BD%E8%BF%90%E7%AC%A6%E5%8F%B7"
+    },
+    {
+      "zh": "私生",
+      "linyu": "擅追爱豆",
+      "verify": "https://search.bilibili.com/all?keyword=%E7%A7%81%E7%94%9F+%E6%93%85%E8%BF%BD%E7%88%B1%E8%B1%86"
+    },
+    {
+      "zh": "站姐",
+      "linyu": "资深跟拍粉",
+      "verify": "https://search.bilibili.com/all?keyword=%E7%AB%99%E5%A7%90+%E8%B5%84%E6%B7%B1%E8%B7%9F%E6%8B%8D%E7%B2%89"
+    },
+    {
+      "zh": "毒唯",
+      "linyu": "只粉一人的唯粉",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%AF%92%E5%94%AF+%E5%8F%AA%E7%B2%89%E4%B8%80%E4%BA%BA%E7%9A%84%E5%94%AF%E7%B2%89"
+    },
+    {
+      "zh": "披皮",
+      "linyu": "伪装身份反串",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%8A%AB%E7%9A%AE+%E4%BC%AA%E8%A3%85%E8%BA%AB%E4%BB%BD%E5%8F%8D%E4%B8%B2"
+    },
+    {
+      "zh": "应援",
+      "linyu": "为爱豆打 call",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%BA%94%E6%8F%B4+%E4%B8%BA%E7%88%B1%E8%B1%86%E6%89%93%20call"
+    },
+    {
+      "zh": "氪金",
+      "linyu": "大量充钱",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%B0%AA%E9%87%91+%E5%A4%A7%E9%87%8F%E5%85%85%E9%92%B1"
+    },
+    {
+      "zh": "氪金大佬",
+      "linyu": "高额氪金玩家",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%B0%AA%E9%87%91%E5%A4%A7%E4%BD%AC+%E9%AB%98%E9%A2%9D%E6%B0%AA%E9%87%91%E7%8E%A9%E5%AE%B6"
+    },
+    {
+      "zh": "回踩",
+      "linyu": "原粉反踩",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E8%B8%A9+%E5%8E%9F%E7%B2%89%E5%8F%8D%E8%B8%A9"
+    },
+    {
+      "zh": "安利",
+      "linyu": "向他人推荐",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%AE%89%E5%88%A9+%E5%90%91%E4%BB%96%E4%BA%BA%E6%8E%A8%E8%8D%90"
+    },
+    {
+      "zh": "yygq",
+      "linyu": "阴阳怪气",
+      "verify": "https://search.bilibili.com/all?keyword=yygq+%E9%98%B4%E9%98%B3%E6%80%AA%E6%B0%94"
+    },
+    {
+      "zh": "xswl",
+      "linyu": "笑死我了",
+      "verify": "https://search.bilibili.com/all?keyword=xswl+%E7%AC%91%E6%AD%BB%E6%88%91%E4%BA%86"
+    },
+    {
+      "zh": "xdm",
+      "linyu": "兄弟们",
+      "verify": "https://search.bilibili.com/all?keyword=xdm+%E5%85%84%E5%BC%9F%E4%BB%AC"
+    },
+    {
+      "zh": "nbcs",
+      "linyu": "nobody cares",
+      "verify": "https://search.bilibili.com/all?keyword=nbcs+nobody%20cares"
+    },
+    {
+      "zh": "srds",
+      "linyu": "虽然但是",
+      "verify": "https://search.bilibili.com/all?keyword=srds+%E8%99%BD%E7%84%B6%E4%BD%86%E6%98%AF"
+    },
+    {
+      "zh": "绝绝子",
+      "linyu": "太绝了加强版",
+      "verify": "https://search.bilibili.com/all?keyword=%E7%BB%9D%E7%BB%9D%E5%AD%90+%E5%A4%AA%E7%BB%9D%E4%BA%86%E5%8A%A0%E5%BC%BA%E7%89%88"
+    },
+    {
+      "zh": "摆烂",
+      "linyu": "主动放弃努力",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%91%86%E7%83%82+%E4%B8%BB%E5%8A%A8%E6%94%BE%E5%BC%83%E5%8A%AA%E5%8A%9B"
+    },
+    {
+      "zh": "内卷",
+      "linyu": "过度竞争",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%86%85%E5%8D%B7+%E8%BF%87%E5%BA%A6%E7%AB%9E%E4%BA%89"
+    },
+    {
+      "zh": "舔狗",
+      "linyu": "单方面讨好",
+      "verify": "https://search.bilibili.com/all?keyword=%E8%88%94%E7%8B%97+%E5%8D%95%E6%96%B9%E9%9D%A2%E8%AE%A8%E5%A5%BD"
+    },
+    {
+      "zh": "凡尔赛",
+      "linyu": "低调炫耀",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%87%A1%E5%B0%94%E8%B5%9B+%E4%BD%8E%E8%B0%83%E7%82%AB%E8%80%80"
+    },
+    {
+      "zh": "爷青回",
+      "linyu": "爷的青春回来了",
+      "verify": "https://search.bilibili.com/all?keyword=%E7%88%B7%E9%9D%92%E5%9B%9E+%E7%88%B7%E7%9A%84%E9%9D%92%E6%98%A5%E5%9B%9E%E6%9D%A5%E4%BA%86"
+    },
+    {
+      "zh": "爷青结",
+      "linyu": "爷的青春结束了",
+      "verify": "https://search.bilibili.com/all?keyword=%E7%88%B7%E9%9D%92%E7%BB%93+%E7%88%B7%E7%9A%84%E9%9D%92%E6%98%A5%E7%BB%93%E6%9D%9F%E4%BA%86"
+    },
+    {
+      "zh": "名场面",
+      "linyu": "经典出圈画面",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%8D%E5%9C%BA%E9%9D%A2+%E7%BB%8F%E5%85%B8%E5%87%BA%E5%9C%88%E7%94%BB%E9%9D%A2"
+    },
+    {
+      "zh": "封神场面",
+      "linyu": "封神级名场面",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%B0%81%E7%A5%9E%E5%9C%BA%E9%9D%A2+%E5%B0%81%E7%A5%9E%E7%BA%A7%E5%90%8D%E5%9C%BA%E9%9D%A2"
+    },
+    {
+      "zh": "含金量",
+      "linyu": "数据实际分量",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%AB%E9%87%91%E9%87%8F+%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%99%85%E5%88%86%E9%87%8F"
+    },
+    {
+      "zh": "硬核",
+      "linyu": "高难度硬功夫",
+      "verify": "https://search.bilibili.com/all?keyword=%E7%A1%AC%E6%A0%B8+%E9%AB%98%E9%9A%BE%E5%BA%A6%E7%A1%AC%E5%8A%9F%E5%A4%AB"
+    },
+    {
+      "zh": "小作文",
+      "linyu": "长篇文字回应",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E4%BD%9C%E6%96%87+%E9%95%BF%E7%AF%87%E6%96%87%E5%AD%97%E5%9B%9E%E5%BA%94"
+    },
+    {
+      "zh": "实锤",
+      "linyu": "有实据的爆料",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%AE%9E%E9%94%A4+%E6%9C%89%E5%AE%9E%E6%8D%AE%E7%9A%84%E7%88%86%E6%96%99"
+    },
+    {
+      "zh": "发烂发臭",
+      "linyu": "塌房后被群嘲",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%8F%91%E7%83%82%E5%8F%91%E8%87%AD+%E5%A1%8C%E6%88%BF%E5%90%8E%E8%A2%AB%E7%BE%A4%E5%98%B2"
+    },
+    {
+      "zh": "泥塑",
+      "linyu": "塑造成另一种形象",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%B3%A5%E5%A1%91+%E5%A1%91%E9%80%A0%E6%88%90%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%BD%A2%E8%B1%A1"
     }
   ],
   "rules": [
@@ -2552,6 +2702,126 @@
       "pattern": "(?:厉害|牛)",
       "template": "解解珍素地才，才女惹",
       "note": "才女句式"
+    },
+    {
+      "pattern": "地才蓝",
+      "template": "蓝方地才，淋王降淋噜",
+      "freq": 18,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E6%89%8D%E8%93%9D"
+    },
+    {
+      "pattern": "地才蓝惹",
+      "template": "蓝方地才惹，珍素淋王降淋噜",
+      "freq": 5,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E6%89%8D%E8%93%9D%E6%83%B9"
+    },
+    {
+      "pattern": "来支持惹",
+      "template": "靴靴支持，本可已经把你锁定惹",
+      "freq": 15,
+      "verify": "https://search.bilibili.com/all?keyword=%E6%9D%A5%E6%94%AF%E6%8C%81%E6%83%B9"
+    },
+    {
+      "pattern": "来支持噜",
+      "template": "靴靴支持噜，本可命小先鼠惹",
+      "freq": 2,
+      "verify": "https://search.bilibili.com/all?keyword=%E6%9D%A5%E6%94%AF%E6%8C%81%E5%99%9C"
+    },
+    {
+      "pattern": "吸入",
+      "template": "吸入噜，靴靴",
+      "freq": 11,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%B8%E5%85%A5"
+    },
+    {
+      "pattern": "吸入惹",
+      "template": "已被吸入惹，靴靴",
+      "freq": 13,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%B8%E5%85%A5%E6%83%B9"
+    },
+    {
+      "pattern": "要被吸入惹",
+      "template": "要被吸入惹，本可已经把你锁定噜",
+      "freq": 3,
+      "verify": "https://search.bilibili.com/all?keyword=%E8%A6%81%E8%A2%AB%E5%90%B8%E5%85%A5%E6%83%B9"
+    },
+    {
+      "pattern": "好强的吸力惹",
+      "template": "好强的吸力惹，本区唯一真神",
+      "freq": 3,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%A5%BD%E5%BC%BA%E7%9A%84%E5%90%B8%E5%8A%9B%E6%83%B9"
+    },
+    {
+      "pattern": "你已经被锁定噜",
+      "template": "你已经被本可锁定噜，美神降淋",
+      "freq": 3,
+      "verify": "https://search.bilibili.com/all?keyword=%E4%BD%A0%E5%B7%B2%E7%BB%8F%E8%A2%AB%E9%94%81%E5%AE%9A%E5%99%9C"
+    },
+    {
+      "pattern": "霉霉",
+      "template": "霉霉噜，本可也喜翻",
+      "freq": 10,
+      "verify": "https://search.bilibili.com/all?keyword=%E9%9C%89%E9%9C%89"
+    },
+    {
+      "pattern": "地才惹",
+      "template": "地才惹，淋王降淋噜",
+      "freq": 7,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E6%89%8D%E6%83%B9"
+    },
+    {
+      "pattern": "才女惹",
+      "template": "才女惹，淋王星的官方语言",
+      "freq": 7,
+      "verify": "https://search.bilibili.com/all?keyword=%E6%89%8D%E5%A5%B3%E6%83%B9"
+    },
+    {
+      "pattern": "天惹",
+      "template": "天惹噜，淋王降淋",
+      "freq": 7,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%83%B9"
+    },
+    {
+      "pattern": "天惹噜",
+      "template": "天惹噜，珍素地才惹",
+      "freq": 5,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%83%B9%E5%99%9C"
+    },
+    {
+      "pattern": "天惹是地才石",
+      "template": "天惹噜，淋王降淋，珍素地才石",
+      "freq": 4,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%83%B9%E6%98%AF%E5%9C%B0%E6%89%8D%E7%9F%B3"
+    },
+    {
+      "pattern": "吓晕惹",
+      "template": "吓晕惹，珍素吓人",
+      "freq": 5,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%93%E6%99%95%E6%83%B9"
+    },
+    {
+      "pattern": "吓晕噜",
+      "template": "吓晕噜，珍素吓鼠惹",
+      "freq": 3,
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%93%E6%99%95%E5%99%9C"
+    },
+    {
+      "pattern": "真素本质惹",
+      "template": "珍素本质惹，本可已经把你锁定噜",
+      "freq": 5,
+      "verify": "https://search.bilibili.com/all?keyword=%E7%9C%9F%E7%B4%A0%E6%9C%AC%E8%B4%A8%E6%83%B9"
+    },
+    {
+      "pattern": "被通讯录吓晕",
+      "template": "被通讯录吓晕噜，珍素吓人",
+      "freq": 4,
+      "verify": "https://search.bilibili.com/all?keyword=%E8%A2%AB%E9%80%9A%E8%AE%AF%E5%BD%95%E5%90%93%E6%99%95"
+    },
+    {
+      "pattern": "脚刹通讯录",
+      "template": "脚刹通讯录噜，婷芷嗦话",
+      "freq": 3,
+      "verify": "https://search.bilibili.com/all?keyword=%E8%84%9A%E5%88%B9%E9%80%9A%E8%AE%AF%E5%BD%95"
     }
   ]
 }
