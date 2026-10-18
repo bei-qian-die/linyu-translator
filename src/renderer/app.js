@@ -320,6 +320,21 @@ createApp({
     const editingWordId = computed(() => wordForm.id);
     const popLevels = ['高', '中', '低'];
     const wordCount = computed(() => words.value.length);
+    const ruleCount = computed(() => rules.value.length);
+    const cardCount = computed(() => cards.value.length);
+    const quoteCount = computed(() => quotes.value.length);
+    const allHeroCount = computed(() => heroes.value.length);
+    // 顶部统计条按当前 view 实时切换：词库/句式/词卡/人物传/名言
+    const currentStat = computed(() => {
+      switch (view.value) {
+        case 'words':  return { label: '词库',    count: wordCount.value,    unit: '条' };
+        case 'rules':  return { label: '句式',    count: ruleCount.value,    unit: '条' };
+        case 'cards':  return { label: '词卡',    count: cardCount.value,    unit: '张' };
+        case 'heroes': return { label: '人物传',  count: allHeroCount.value, unit: '位' };
+        case 'quotes': return { label: '名言',    count: quoteCount.value,   unit: '条' };
+        default:       return null;
+      }
+    });
     const filteredWords = computed(() => matchRows(words.value, wordSearch.value, ['zh', 'linyu', 'alias', 'sense', 'source']));
     const wordsView = usePaged(filteredWords);
     const { page: wordsPage, pages: wordsPages, total: wordsTotal, rows: pagedWords, go: goWordsPage, reset: resetWordsPage } = wordsView;
@@ -1206,6 +1221,7 @@ createApp({
       input, output, loading, previewing, isPreview, liveOn, toggleLive, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
+      ruleCount, cardCount, quoteCount, allHeroCount, currentStat,
       wordsPage, wordsPages, wordsTotal, goWordsPage, setSearchRef,
       saveWord, resetWordForm, editWord, removeWord,
       rules, ruleSearch, ruleForm, editingRuleId, rulePatternOk, pagedRules,

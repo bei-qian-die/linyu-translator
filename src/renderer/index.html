@@ -14,7 +14,7 @@
       <nav class="tabs">
         <button v-for="t in tabs" :key="t.key" :class="{ active: view === t.key }" @click="switchView(t.key)">{{ t.label }}</button>
       </nav>
-      <div class="stat" v-if="wordCount">词库 {{ wordCount }} 条</div>
+      <div class="stat" v-if="currentStat">{{ currentStat.label }} {{ currentStat.count }} {{ currentStat.unit }}</div>
       <span class="mode-chip" :class="{ on: isDev }">{{ isDev ? '开发者模式' : '只读' }}</span>
       <button class="gear" title="设置（Ctrl+,）" @click="openSettings">⚙</button>
     </header>
@@ -79,10 +79,6 @@
 
       <!-- 词库页 -->
       <section v-show="view === 'words'" class="manage-page">
-        <div class="lock-bar" v-if="!isDev">
-          当前为只读模式，登录开发者账号后才能增删改词条
-          <button class="link" @click="openSettings">去登录</button>
-        </div>
         <div class="form-grid" v-if="isDev">
           <div class="fg-title">{{ editingWordId ? '编辑词条' : '新增词条' }}</div>
           <div class="fg-row">
@@ -140,10 +136,6 @@
 
       <!-- 句式页 -->
       <section v-show="view === 'rules'" class="manage-page">
-        <div class="lock-bar" v-if="!isDev">
-          当前为只读模式，登录开发者账号后才能增删改句式
-          <button class="link" @click="openSettings">去登录</button>
-        </div>
         <div class="form-grid" v-if="isDev">
           <div class="fg-title">{{ editingRuleId ? '编辑句式' : '新增句式' }}</div>
           <div class="fg-row">
@@ -203,10 +195,6 @@
           <div class="filter-chips">
             <button v-for="t in cardTypes" :key="t.key" class="chip" :class="{ on: cardFilter === t.key }" @click="cardFilter = t.key">{{ t.label }}</button>
           </div>
-        </div>
-        <div class="lock-bar" v-if="!isDev">
-          当前为只读模式，登录开发者账号后才能增删改词卡
-          <button class="link" @click="openSettings">去登录</button>
         </div>
         <div class="form-grid" v-if="isDev">
           <div class="fg-title">{{ editingCardId ? '编辑词卡' : '新增词卡' }}</div>
@@ -321,10 +309,6 @@
                 {{ z }}（{{ heroZoneCount(z) }}）
               </button>
             </div>
-          </div>
-          <div class="lock-bar" v-if="!isDev">
-            当前为只读模式，登录开发者账号后才能增删改人物
-            <button class="link" @click="openSettings">去登录</button>
           </div>
           <input class="search" :ref="(el) => setSearchRef('heroes', el)" v-model.trim="heroSearch" placeholder="搜索名字 / 称号 / 标签…" />
           <div class="hero-list">
@@ -443,10 +427,6 @@
         <div class="lore-head">
           <h2>经典淋语名言</h2>
           <p>仿名人名言体，收录歌词典故与淋圈传世金句，均注明出处</p>
-        </div>
-        <div class="lock-bar" v-if="!isDev">
-          当前为只读模式，登录开发者账号后才能增删改名言
-          <button class="link" @click="openSettings">去登录</button>
         </div>
         <div class="form-grid" v-if="isDev">
           <div class="fg-title">{{ editingQuoteId ? '编辑名言' : '新增名言' }}</div>
