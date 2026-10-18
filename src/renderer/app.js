@@ -723,6 +723,7 @@ createApp({
         if (!cards.value.length) await loadCards();
         if (!quotes.value.length) await loadQuotes();
         if (!words.value.length) await loadWords();
+        if (!rules.value.length) await loadRules();
       } catch (err) {
         fail(err);
       }
@@ -753,6 +754,19 @@ createApp({
       return selectedHero.value.words
         .map((zh) => words.value.find((w) => w.zh === zh))
         .filter(Boolean);
+    });
+    // 句式（rules）与人物没有外键列，这里按人物名/别名在 pattern/template/note 中的
+    // 精确子串命中来关联；只做正向命中、不硬塞，避免把通用句式强挂到某个英雄造成污染。
+    const heroRules = computed(() => {
+      if (!selectedHero.value) return [];
+      const h = selectedHero.value;
+      const keys = [h.name].concat(
+        String(h.alias || '').split(/[/,、，\s]+/).filter((s) => s.length >= 2)
+      );
+      return rules.value.filter((r) => {
+        const hay = [r.pattern, r.template, r.note].join('\n');
+        return keys.some((k) => hay.includes(k));
+      });
     });
 
     const heroForm = reactive({
@@ -1204,7 +1218,7 @@ createApp({
       quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage,
       quoteForm, editingQuoteId, saveQuote, resetQuoteForm, editQuote, removeQuote, heroNameOpts,
       heroes, heroSearch, imgFailed, markImgFail, selectedHero, openHero, backToHeroes, heroSrc,
-      heroCards, heroQuotes, heroWords, heroSearchUrl, openLink,
+      heroCards, heroQuotes, heroWords, heroRules, heroSearchUrl, openLink,
       heroGroups, heroGroup, switchHeroGroup, filteredHeroes, heroCount,
       heroZone, heroZones, heroZoneCount, switchHeroZone,
       heroForm, heroEditing, startAddHero, editHero, saveHero, removeHero, cancelHeroForm, resetHeroForm,

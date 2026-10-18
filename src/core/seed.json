@@ -2085,6 +2085,111 @@
       "zh": "泥塑",
       "linyu": "塑造成另一种形象",
       "verify": "https://search.bilibili.com/all?keyword=%E6%B3%A5%E5%A1%91+%E5%A1%91%E9%80%A0%E6%88%90%E5%8F%A6%E4%B8%80%E7%A7%8D%E5%BD%A2%E8%B1%A1"
+    },
+    {
+      "zh": "疯",
+      "linyu": "轰",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%AF%AD%20%E7%96%AF%20%E8%BD%B0"
+    },
+    {
+      "zh": "真的假的",
+      "linyu": "尊嘟假嘟",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%B0%8A%E5%98%9F%E5%81%87%E5%98%9F"
+    },
+    {
+      "zh": "仙都",
+      "linyu": "南宁市（周阴婷住址地）",
+      "verify": "https://search.bilibili.com/all?keyword=%E4%BB%99%E9%83%BD%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "人淡如菊",
+      "linyu": "阴湿美感标准用语",
+      "verify": "https://search.bilibili.com/all?keyword=%E4%BA%BA%E6%B7%A1%E5%A6%82%E8%8F%8A%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "像仙子",
+      "linyu": "阴湿美感标准用语",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%83%8F%E4%BB%99%E5%AD%90%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "钮祜禄 X",
+      "linyu": "我钮祜禄·X 回来了",
+      "verify": "https://search.bilibili.com/all?keyword=%E9%92%AE%E7%A5%9C%E7%A6%84%20%E6%B7%8B%E8%AF%AD%20%E5%BC%BA%E5%8A%BF%E5%9B%9E%E5%BD%92"
+    },
+    {
+      "zh": "slay",
+      "linyu": "惊艳全场",
+      "verify": "https://search.bilibili.com/all?keyword=slay%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "b*nz",
+      "linyu": "侮辱性饭圈黑话",
+      "verify": "https://search.bilibili.com/all?keyword=b*nz%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "我o",
+      "linyu": "我受（攻受关系）",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%88%91o%20%E4%BD%A0o%20%E6%B7%8B%E8%AF%AD%20%E6%94%BB%E5%8F%97"
+    },
+    {
+      "zh": "你o",
+      "linyu": "你受（攻受关系）",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%88%91o%20%E4%BD%A0o%20%E6%B7%8B%E8%AF%AD%20%E6%94%BB%E5%8F%97"
+    },
+    {
+      "zh": "买榜",
+      "linyu": "花钱冲榜单",
+      "verify": "https://search.bilibili.com/all?keyword=%E4%B9%B0%E6%A6%9C%20%E6%B7%8B%E8%AF%AD%20%E9%A5%AD%E5%9C%88"
+    },
+    {
+      "zh": "搬床",
+      "linyu": "约炮/同床",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%90%AC%E5%BA%8A%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "耍大牌",
+      "linyu": "明星摆架子",
+      "verify": "https://search.bilibili.com/all?keyword=%E8%80%8D%E5%A4%A7%E7%89%8C%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "淋字嵌入",
+      "linyu": "淋替代灵/令/零的造词法",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%AD%97%E5%B5%8C%E5%85%A5%20%E6%B7%8B%E8%AF%AD%E9%80%A0%E8%AF%8D%E6%B3%95"
+    },
+    {
+      "zh": "阴字替换",
+      "linyu": "阴替代英/应/因的造词法",
+      "verify": "https://search.bilibili.com/all?keyword=%E9%98%B4%E5%AD%97%E6%9B%BF%E6%8D%A2%20%E6%B7%8B%E8%AF%AD%E9%80%A0%E8%AF%8D%E6%B3%95"
+    },
+    {
+      "zh": "位分级",
+      "linyu": "甄嬛传位分命社区等级",
+      "verify": "https://search.bilibili.com/all?keyword=%E4%BD%8D%E5%88%86%E7%BA%A7%20%E6%B7%8B%E8%AF%AD%20%E5%90%8E%E5%AE%AB%E4%BD%8D"
+    },
+    {
+      "zh": "tag 小品",
+      "linyu": "以 tag 为单位做的短文本段子",
+      "verify": "https://search.bilibili.com/all?keyword=tag%E5%B0%8F%E5%93%81%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "zh": "奴",
+      "linyu": "了（台湾腔语气词）",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%A5%B4%20%E6%B7%8B%E8%AF%AD%E6%B0%94%E8%AF%8D"
+    },
+    {
+      "zh": "找不到从良的理由",
+      "linyu": "《Love Options》填词的淋语同人曲",
+      "verify": "https://search.bilibili.com/all?keyword=%E6%89%BE%E4%B8%8D%E5%88%B0%E4%BB%8E%E8%89%AF%E7%9A%84%E7%90%86%E7%94%B1%20%E6%B7%8B%E8%AF%AD%20%E5%8D%97%E5%AE%81%E5%B8%82%E5%B8%82%E6%AD%8C"
+    },
+    {
+      "zh": "四大名言",
+      "linyu": "对周阴婷语录系统化整理的二创",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%9B%9B%E5%A4%A7%E5%90%8D%E8%A8%80%20%E9%98%B4%E6%96%87%E7%89%88%20%E5%91%A8%E9%98%B4%E5%A9%B7"
+    },
+    {
+      "zh": "后宫位分级",
+      "linyu": "皇后/贵妃/贵嫔/昭仪/贵人等级制",
+      "verify": "https://search.bilibili.com/all?keyword=%E5%90%8E%E5%AE%AB%E4%BD%8D%E5%88%86%E7%BA%A7%20%E6%B7%8B%E8%AF%AD%20%E7%8E%8B%E8%80%85%E6%B7%8B%E8%80%80"
     }
   ],
   "rules": [
@@ -2822,6 +2927,27 @@
       "template": "脚刹通讯录噜，婷芷嗦话",
       "freq": 3,
       "verify": "https://search.bilibili.com/all?keyword=%E8%84%9A%E5%88%B9%E9%80%9A%E8%AE%AF%E5%BD%95"
+    },
+    {
+      "pattern": "雷电将军|雷神",
+      "template": "打雷婆的无想一刀噜",
+      "note": "原神外号句式",
+      "freq": 1,
+      "verify": "https://nga.178.com/read.php?page=2&tid=35415629"
+    },
+    {
+      "pattern": "散兵|流浪者",
+      "template": "恶毒母0散兵惹，阴郁毒舌噜",
+      "note": "原神外号句式",
+      "freq": 1,
+      "verify": "https://nga.178.com/read.php?page=2&tid=35415629"
+    },
+    {
+      "pattern": "胡桃",
+      "template": "棺材妹胡桃噜，往生堂堂主惹",
+      "note": "原神外号句式",
+      "freq": 1,
+      "verify": "https://nga.178.com/read.php?page=2&tid=35415629"
     }
   ]
 }

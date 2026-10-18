@@ -405,6 +405,12 @@
               <span class="hd-word" v-for="w in heroWords" :key="w.zh">{{ w.zh }} <b>➜</b> {{ w.linyu }}</span>
             </div>
           </div>
+          <div class="hd-block" v-if="heroRules.length">
+            <h3 class="hd-label">相关句式（{{ heroRules.length }}）</h3>
+            <div class="hd-words">
+              <span class="hd-word" v-for="r in heroRules" :key="'r' + r.id">{{ r.pattern }} <b>➜</b> {{ r.template }}</span>
+            </div>
+          </div>
           <div class="hd-block" v-if="heroCards.length">
             <h3 class="hd-label">相关梗 · 词卡（{{ heroCards.length }}）</h3>
             <div class="hd-cards">
