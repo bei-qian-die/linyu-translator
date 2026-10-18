@@ -2,6 +2,49 @@
 
 淋语翻译器（Electron + sql.js）。版本号与 `package.json` 一致，产物在 `release/`。
 
+## 1.12.4（2026-10-18）
+
+### 一、修 Android APK 里五大板块全空
+
+现象：装机后词库以外的 词卡 / 名言 / 人物传 / 句式 全是 0 条，PC exe 同样数据库却正常。根因是**六处只在 WebView 触发、桌面 `require()` 路径碰不到的断裂**，逐条修：
+
+| # | 断裂点 | 表现 | 修法 |
+|---|---|---|---|
+| 1 | 多个 `<script>` 共用一份全局词法作用域 | `SyntaxError: Identifier 'cards' has already been declared`，lore-extra4..7 / lore.js / translator.js / db.js 整份被丢弃 → `window.LORE_DATA` undefined | 构建期给 `www/core/*.js`、`www/mobile/*.js` 每份套 IIFE（`scripts/build-mobile.mjs:53` `wrapDirInIIFE`）。桌面走 `require()` 天然隔离，所以只移动侧中招 |
+| 2 | `core/auth.js` 只有 CommonJS 导出分支 | `createAuth is not a function` | 补 `window.createAuth = createAuth`（`src/core/auth.js:101`） |
+| 3 | scrypt-js 只收 Uint8Array/数组 | `password must be an array or buffer`，`ensureInit()` 抛出 → `window.api` 永远停在占位 stub，整个界面拿不到数据 | 先 `TextEncoder` utf8 再哈希（`src/mobile/scrypt.js:22`）；与桌面 `crypto.scryptSync(字符串)` 字节级一致，哈希对得上 |
+| 4 | sql.js 从"调用方脚本目录"猜 wasm 路径 | `GET /mobile/sql-wasm.wasm 404` → `both async and sync fetching of the wasm failed` | `sqlJsOptions()` 用 `<script src*="sql-wasm.js">` 的 base 显式给 `locateFile`（`src/core/db.js:144`），Node 路径保持 `undefined` 不动 |
+| 5 | `core/db.js` 早于 `mobile/fsAdapter.js` 加载 | db.js 在模块加载时就把 `window.fsAdapter` 抓成 undefined → `Cannot read properties of undefined (reading 'exists')`，整库打不开；顺带 `core/deprecated.js` 被构建脚本 rimraf 掉造成 404 | `src/renderer/index.html:646` 把 fsAdapter / scrypt 提到 core 之前；`build-mobile.mjs` 不再删 `www/core/deprecated.js` |
+| 6 | `api.setPref` 同步返回对象 | 渲染层写 `window.api.setPref(...).catch(...)` → `TypeError: ...catch is not a function`，`switchView()` 在 `loadRules()/loadCards()/loadQuotes()` 之前就中断，这正是"词库 535 但其余为 0"的直接原因 | `async setPref`（`src/mobile/api.js:541`）与桌面 preload 的 ipc invoke 同形。全仓审计：app.js 里只有 4 处 `.catch(` 链，其余已 async |
+
+### 二、构建期加 `checkBundle` 闸门
+
+`scripts/build-mobile.mjs:92` 在生成 `www/` 后用 `node:vm` 起一个共享全局的假浏览器上下文，按 `index.html` 里真实的 `<script>` 顺序依次跑一遍（脚本顺序不再硬编码，见 `bundleOrderFromIndex`），断言 `createDb` / `createAuth` / `linyuApi.createApi` / `LINYU_TRANSLATOR` / seed 与 LORE_DATA 条数全部到位，任一文件报错直接让 `npm run mobile:build` 失败。上面这类 bug 以后进不了 APK，不用等装机才发现。
+
+当前输出：`bundle check ok: 535 词条 / 422 词卡 / 462 名言 / 73 人物 @ 1.12.4 (0bdc359d1dc3637b)`。
+
+### 三、内容迁移加 `content.hash` 触发
+
+旧设备存的是上一个构建写死的版本串，只比 `content.version` 的话，之后往 seed/lore 里加多少词条都补不进来。`scripts/build-mobile.mjs:65` 对 seed.json / deprecated.js / lore*.js 取 sha256 前 16 位写成 `window.LINYU_CONTENT_HASH`，`src/mobile/entry.js:146` 改成版本号**或**指纹任一变化就跑一次 `upgradeSeed()`。
+
+配合 `db.seedIfFresh()`：空表的 cards / quotes / heroes 会直接补种。所以**老设备 `adb install -r` 覆盖安装即可自愈，不需要清 App 数据**。
+
+### 四、本轮没改的
+
+- 数据本身零改动：词库 535 / 句式 146 / 词卡 422 / 人物传 73 / 名言 462，内容与 1.12.3 同指纹。
+- 桌面 Electron 行为不变（`require()` 路径、wasm locateFile 在 Node 下保持 undefined）。
+- 溯源 unattested 仍 **339**（0 新增内容）。
+
+### 五、验证
+
+- `npm run mobile:build`：`bundle check ok` ✓
+- `npm test`：数据层全部通过 ✓
+- 无头 WebView 复现环境（真 `index.html` + 假 Capacitor Filesystem 桥）：词库 535 / 句式 146 / 词卡 422 / 人物传 73 / 名言 462 全部渲染出行 ✓；`linyu.db` 落盘（DATA 目录 513368 base64 字符）✓；`linyu/linyu130` 登录解锁、错密码提示"账号或密码错误（还可尝试 4 次）"✓；`syncSeed` 返回 `{added:0}`（幂等）✓；控制台 0 错误 ✓
+- 重新出包：`android/app/build/outputs/apk/debug/app-debug.apk`，17,844,319 字节，BUILD SUCCESSFUL。解包确认内含 IIFE 包装后的 db.js、`window.createAuth`、`async setPref`、`LINYU_CONTENT_HASH` ✓
+- 待办：模拟器 / 真机装机复验（本机 `adb devices` 为空，够不到设备）。
+
+---
+
 ## 1.12.3（2026-10-18）
 
 ### 一、README.md 进 `package.json > build.files` 白名单

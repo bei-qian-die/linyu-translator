@@ -638,6 +638,14 @@
   <script src="vendor/sql-wasm.js"></script>
   <script src="vendor/scrypt.js"></script>
 
+  <!-- 内嵌的种子词库与句式（build 阶段从 src/core/seed.json 生成，同步加载，规避模拟器 WebView 的 fetch 拦截） -->
+  <script src="seed-data.js"></script>
+
+  <!-- 基础设施先于 core：db.js 在加载时就把 window.fsAdapter / window.linyuScrypt 抓进自己的
+       模块变量，晚于它挂才没用（Android 上曾因此整库打不开） -->
+  <script src="mobile/fsAdapter.js"></script>
+  <script src="mobile/scrypt.js"></script>
+
   <!-- 核心：先加载 lore 各项（每个脚本会给 window 注入对应常量），再聚合到 LORE_DATA，最后 db/auth/翻译 -->
   <script src="core/deprecated.js"></script>
   <script src="core/lore-extra3.js"></script>
@@ -651,9 +659,7 @@
   <script src="core/db.js"></script>
   <script src="core/auth.js"></script>
 
-  <!-- 移动入口：fsAdapter + api -->
-  <script src="mobile/fsAdapter.js"></script>
-  <script src="mobile/scrypt.js"></script>
+  <!-- 移动入口：api + entry -->
   <script src="mobile/api.js"></script>
   <script src="mobile/entry.js"></script>
 

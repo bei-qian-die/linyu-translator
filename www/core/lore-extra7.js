@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 // 第七轮内容扩充（2026-10-16）：跨平台挖掘淋语外号 / 概念 / 例词。
@@ -136,3 +139,4 @@ const heroes = [
 const __export = { cards, quotes, heroes };
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_EXTRA7 = __export;
+}).call(window);

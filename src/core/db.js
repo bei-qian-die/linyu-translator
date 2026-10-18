@@ -138,8 +138,19 @@ function clampLimit(raw) {
   return Math.min(2000, Math.max(50, Math.round(n)));
 }
 
+// sql.js 不带 locateFile 时会把 wasm 解析成"当前调用脚本所在目录/sql-wasm.wasm"，
+// WebView 里就是 mobile/sql-wasm.wasm → 404，库根本打不开。按 <script src="vendor/sql-wasm.js">
+// 自己的地址定位，wasm 永远和它同级；Node 分支交给 sql.js 用 __dirname 找，不要传。
+function sqlJsOptions() {
+  if (sysPath) return undefined;
+  const tag = typeof document !== 'undefined' && document.querySelector &&
+    document.querySelector('script[src*="sql-wasm.js"]');
+  const base = tag ? new URL('.', tag.src).href : new URL('vendor/', document.baseURI).href;
+  return { locateFile: (file) => new URL(file, base).href };
+}
+
 async function createDb({ filePath, seed, lore, onPersistError, version }) {
-  const SQL = await initSqlJs();
+  const SQL = await initSqlJs(sqlJsOptions());
 
   // 读库之前先滚动备份，bak1 就是「上一次正常退出的状态」，本次会话改坏了也能退回去
   function backupDir() {

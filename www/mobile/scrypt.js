@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 /*
@@ -17,10 +20,12 @@
       hashPassword: (password, salt) => crypto.scryptSync(String(password), String(salt), 64).toString('hex'),
     });
   } else if (root.scrypt && root.scrypt.syncScrypt) {
-    // scrypt-js 3.x 浏览器挂载：root.scrypt = lib，lib.syncScrypt 同步返回 Uint8Array
+    // scrypt-js 与 node:crypto 不一样：它只收 Uint8Array/数组，传字符串会直接抛
+    // "password must be an array or buffer"。utf8 编码后与 crypto.scryptSync(字符串) 等价。
+    const toUtf8 = (s) => new TextEncoder().encode(String(s));
     root.linyuScrypt = factory({
       hashPassword: (password, salt) => {
-        const u8 = root.scrypt.syncScrypt(String(password), String(salt), 16384, 8, 1, 64);
+        const u8 = root.scrypt.syncScrypt(toUtf8(password), toUtf8(salt), 16384, 8, 1, 64);
         let s = '';
         for (let i = 0; i < u8.length; i++) s += (u8[i] < 16 ? '0' : '') + u8[i].toString(16);
         return s;
@@ -30,3 +35,5 @@
 }(typeof self !== 'undefined' ? self : this, function (impl) {
   return { hashPassword: impl.hashPassword };
 }));
+
+}).call(window);

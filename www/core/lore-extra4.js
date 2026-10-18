@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 // 第四轮内容扩充（Wiki 式溯源 · 游戏通讯录分区）
 // 语料：corpus12.graph.txt = 以 B 站淋语生态视频为种子做引用图 BFS 抓到的 100+ 条视频
@@ -538,3 +541,5 @@ const dropQuotes = [
 const __export = { cards, quotes, heroes, dropCards, dropQuotes };
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_EXTRA4 = __export;
+
+}).call(window);

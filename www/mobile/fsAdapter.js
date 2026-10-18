@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 /*
@@ -256,3 +259,5 @@
   }
   return makeNode();
 }));
+
+}).call(window);

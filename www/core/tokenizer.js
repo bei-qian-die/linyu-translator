@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 function buildTokenizer(dictWords) {
@@ -35,3 +38,5 @@ function buildTokenizer(dictWords) {
 
 if (typeof module === 'object' && module.exports) module.exports = { buildTokenizer };
 else if (typeof window !== 'undefined') window.LINYU_TOKENIZER = { buildTokenizer };
+
+}).call(window);

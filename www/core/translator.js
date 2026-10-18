@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 const { buildTokenizer } = (typeof require === 'function') ? require('./tokenizer') : (typeof window !== 'undefined' ? window.LINYU_TOKENIZER : { buildTokenizer: () => null });
@@ -159,3 +162,5 @@ function translateText(text, options) {
 
 if (typeof module === 'object' && module.exports) module.exports = { translateText };
 else if (typeof window !== 'undefined') window.LINYU_TRANSLATOR = { translateText };
+
+}).call(window);

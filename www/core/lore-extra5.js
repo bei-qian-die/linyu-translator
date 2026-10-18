@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 // 第五轮内容扩充（Wiki 式分区 · 游戏通讯录英雄扩容 + 相关性剔除）
 //
@@ -277,3 +280,4 @@ const dropHeroes = [
 const __export = { cards, quotes, heroes, dropCards, dropQuotes, dropHeroes };
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_EXTRA5 = __export;
+}).call(window);

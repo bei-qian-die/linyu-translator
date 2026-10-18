@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 // 本地开发者账号：不接后端，凭据用 scrypt 加盐哈希后存在同一个 sqlite 里。
@@ -97,4 +100,8 @@ function createAuth({ getSetting, setSetting }) {
 
 if (typeof module === 'object' && module.exports) {
   module.exports = { createAuth, DEFAULT_USER, DEFAULT_PASSWORD };
+} else if (typeof window !== 'undefined') {
+  window.createAuth = createAuth;
 }
+
+}).call(window);

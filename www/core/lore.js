@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 // 淋语词卡：无法直接翻译的词、梗与典故的释义卡片
@@ -945,3 +948,5 @@ const __export = {
 };
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_DATA = __export;
+
+}).call(window);

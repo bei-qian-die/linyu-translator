@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 // 本轮（2026-10-11）新增条目。全部逐字取自 B 站淋语相关视频的标题/简介/评论，
@@ -247,3 +250,5 @@ const heroes = [];
 const __export = { cards, quotes, heroes };
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_EXTRA6 = __export;
+
+}).call(window);

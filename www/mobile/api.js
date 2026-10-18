@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+// __wrapped by scripts/build-mobile.mjs
 'use strict';
 
 /*
@@ -536,7 +539,9 @@
         return { ok: true, data: r };
       },
       getPrefs: () => safe(() => Promise.resolve(db.getPrefs())),
-      setPref: (key, value) => {
+      // 渲染层会写 window.api.setPref(...).catch(() => {})，必须返回 Promise 才与桌面
+      // preload 的 ipc invoke 同形；同步返回对象会让 .catch 直接 TypeError。
+      async setPref(key, value) {
         const r = db.setPref(String(key), value);
         return r.error ? { ok: false, error: r.error } : { ok: true, data: r };
       },
@@ -578,3 +583,5 @@
     root.linyuApi = { createApi };
   }
 }(typeof self !== 'undefined' ? self : this));
+
+}).call(window);

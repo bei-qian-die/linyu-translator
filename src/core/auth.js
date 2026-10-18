@@ -97,4 +97,6 @@ function createAuth({ getSetting, setSetting }) {
 
 if (typeof module === 'object' && module.exports) {
   module.exports = { createAuth, DEFAULT_USER, DEFAULT_PASSWORD };
+} else if (typeof window !== 'undefined') {
+  window.createAuth = createAuth;
 }
