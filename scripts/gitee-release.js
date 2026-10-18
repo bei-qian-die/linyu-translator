@@ -1,13 +1,16 @@
 'use strict';
 /* 把本地产物发布到 Gitee 发行版（Release）：先确保 tag 对应的发行版存在，再上传附件。
  *
- *   node scripts/gitee-release.mjs --check
- *   node scripts/gitee-release.mjs --tag v1.13.0 --file release/xxx.apk --notes release/1.13.0-notes.md
+ *   node scripts/gitee-release.js --check
+ *   node scripts/gitee-release.js --update --name 标题 --notes release/1.13.0-notes.md --file release/xxx.apk
  *
  * 令牌从 GITEE_TOKEN 环境变量读；或写进 release/.gitee-token（release/ 已被 .gitignore 忽略）。
- * 令牌只进 Authorization 头，不打印、不入库。
+ * 令牌只进 Authorization 头和 attach_files 的 access_token 字段，不打印、不入库。
  *
- * 已知 Gitee API 的坑：附件同名不会覆盖，也没有删除单个附件的端点 —— 重传前必须先在网页上把旧附件删掉。 */
+ * Gitee API 踩过的三个坑，别再改回去：
+ *   改发行版只有 PATCH 能用，PUT 回 405；PATCH 少了 body 字段回 400 "body is missing"。
+ *   上传附件是 POST /releases/{id}/attach_files（multipart，file + access_token），GitHub 那套 /assets 在 Gitee 是 404。
+ *   附件列表没有独立端点，就在 GET 发行版返回的 assets 里（含 Gitee 自动生成的源码包 zip/tar.gz）。 */
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
@@ -36,15 +39,15 @@ function token() {
   throw new Error('没找到令牌：设 GITEE_TOKEN 环境变量，或把令牌写进 release/.gitee-token');
 }
 
-async function req(method, url, { body, raw, auth } = {}) {
+async function req(method, url, { body, form, auth } = {}) {
   const headers = {};
   // 公开仓库的 GET 不需要令牌，写操作才强制要
   let t = null;
   try { t = token(); } catch (e) { if (method !== 'GET') throw e; }
   if (t && auth !== false) headers.Authorization = 'token ' + t;
-  if (raw) headers['Content-Type'] = 'application/octet-stream';
-  else if (body) headers['Content-Type'] = 'application/json';
-  const res = await fetch(url, { method, headers, body: raw || (body ? JSON.stringify(body) : undefined) });
+  // form 交给 fetch 自己拼 boundary，手写 Content-Type 会让服务端读不到字段
+  if (body) headers['Content-Type'] = 'application/json';
+  const res = await fetch(url, { method, headers, body: form || (body ? JSON.stringify(body) : undefined) });
   const text = await res.text();
   let json = null;
   try { json = JSON.parse(text); } catch { /* Gitee 偶尔回 HTML */ }
@@ -77,35 +80,43 @@ async function main() {
     rel = await req('POST', API + '/repos/' + repo + '/releases', {
       body: { tag_name: tag, name, body, target_commitish: ref, prerelease: false },
     });
-    console.log('已创建发行版 #' + rel.id + ' → ' + rel.html_url);
+    console.log('已创建发行版 #' + rel.id + ' → ' + (rel.html_url || 'https://gitee.com/' + repo + '/releases/tag/' + tag));
   } else {
     console.log('发行版已存在 #' + rel.id + ' → ' + (rel.html_url || 'https://gitee.com/' + repo + '/releases/tag/' + tag));
     // Gitee 推 tag 会自动建一个空发行版，网页手建的也可能只有一句占位描述，--update 才覆盖标题/描述
     if (arg('update') && !arg('check')) {
-      await req('PUT', API + '/repos/' + repo + '/releases/' + rel.id, {
-        body: { name, body, tag_name: tag, target_commitish: rel.target_commitish || ref, prerelease: Boolean(rel.prerelease) },
+      // 发行版记的是建它那一刻的 commit，tag 挪过之后要顺手改指当前 tag 的提交
+      let commit = arg('commit') || '';
+      if (!commit) { try { commit = execFileSync('git', ['rev-parse', '--verify', tag + '^{}'], { cwd: ROOT }).toString().trim(); } catch { /* 本地没这个 tag */ } }
+      // 只有 PATCH 能用：PUT 直接被 Gitee 挡成 405，而 PATCH 缺 body 字段会回 400 "body is missing"
+      await req('PATCH', API + '/repos/' + repo + '/releases/' + rel.id, {
+        body: { name, body, tag_name: tag, target_commitish: commit || rel.target_commitish || ref, prerelease: Boolean(rel.prerelease) },
       });
-      console.log('已更新标题与描述');
+      console.log('已更新标题与描述' + (commit ? '（指 ' + commit.slice(0, 7) + '）' : ''));
     }
   }
 
-  // 2. 附件：Gitee 不回 asset 的 id，也没删除端点，所以同名只能先手工删
-  const assets = (await req('GET', API + '/repos/' + repo + '/releases/' + rel.id + '/assets').catch(() => [])) || [];
-  const list = Array.isArray(assets) ? assets : (assets.assets || []);
+  // 2. 附件：真正的端点是 POST /releases/{id}/attach_files（multipart），/assets 那套是 GitHub 的、Gitee 不存在
+  const fresh = await req('GET', API + '/repos/' + repo + '/releases/tags/' + encodeURIComponent(tag)).catch(() => rel);
+  const list = (fresh && fresh.assets) || rel.assets || [];
   console.log('现有附件：' + (list.length ? list.map((a) => a.name).join(', ') : '（无）'));
   if (!file) { console.log('没给 --file，只到检查为止'); return; }
   const want = path.basename(file);
   if (list.some((a) => a.name === want)) {
-    console.log('!! 附件 ' + want + ' 已在发行版里。Gitee 同名不覆盖，要换包请先在网页编辑发行版删掉旧附件，再重跑本脚本。');
+    console.log('!! 附件 ' + want + ' 已在发行版里。同名重传会留两份，要换包请先在网页编辑发行版删掉旧附件，再重跑本脚本。');
     return;
   }
   if (arg('check')) { console.log('--check：不上传'); return; }
 
   const buf = fs.readFileSync(file);
   console.log('上传 ' + want + '（' + (buf.length / 1048576).toFixed(1) + ' MB）…');
-  const up = await req('POST', API + '/repos/' + repo + '/releases/' + rel.id + '/assets?name=' + encodeURIComponent(want), { raw: buf });
-  console.log('完成 → ' + ((up && (up.browser_download_url || up.url)) || '见发行版页面'));
-  console.log('下载直链：https://gitee.com/' + repo + '/releases/download/' + tag + '/' + encodeURIComponent(want));
+  const form = new FormData();
+  form.append('access_token', token());
+  form.append('file', new Blob([buf], { type: 'application/octet-stream' }), want);
+  const up = await req('POST', API + '/repos/' + repo + '/releases/' + rel.id + '/attach_files', { form });
+  const url = up && up.browser_download_url;
+  console.log('完成：' + (typeof up === 'string' ? up.slice(0, 200) : JSON.stringify(up).slice(0, 300)));
+  console.log('下载直链：' + (url || 'https://gitee.com/' + repo + '/releases/download/' + tag + '/' + encodeURIComponent(want)));
 }
 
 main().catch((e) => { console.error('失败：' + e.message); process.exit(1); });
