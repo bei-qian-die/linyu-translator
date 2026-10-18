@@ -22,4 +22,5 @@ const rules = [
   '(?:太谢谢了|多谢多谢|感激不尽)',
 ];
 
-module.exports = { words, rules };
+if (typeof module === 'object' && module.exports) module.exports = { words, rules };
+else if (typeof window !== 'undefined') window.LINYU_DEPRECATED = { words, rules };

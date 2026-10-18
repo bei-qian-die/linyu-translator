@@ -535,4 +535,6 @@ const dropQuotes = [
   '这是一个 lonely 的问题。',
 ];
 
-module.exports = { cards, quotes, heroes, dropCards, dropQuotes };
+const __export = { cards, quotes, heroes, dropCards, dropQuotes };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_EXTRA4 = __export;

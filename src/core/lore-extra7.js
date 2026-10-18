@@ -133,4 +133,6 @@ const heroes = [
             { label: 'B 站 UP 主页（待补链接）', url: 'https://search.bilibili.com/all?keyword=%E6%8F%90%E7%93%A6%E6%B7%B3%E6%96%B0%E4%BA%BA%E6%A1%91' }] },
 ];
 
-module.exports = { cards, quotes, heroes };
+const __export = { cards, quotes, heroes };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_EXTRA7 = __export;

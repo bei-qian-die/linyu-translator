@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob: gap: https://ssl.gstatic.com; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https: content:; media-src 'self' data: blob:; connect-src 'self' data: blob: https: ws:;" />
   <title>淋语翻译器</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -631,7 +631,33 @@
     </transition>
   </div>
 
-  <script src="../../node_modules/vue/dist/vue.global.prod.js"></script>
+  <!-- Vue 3 全局构建 -->
+  <script src="vendor/vue.global.prod.js"></script>
+
+  <!-- 第三方：sql.js (WASM SQLite) 与 scrypt-js -->
+  <script src="vendor/sql-wasm.js"></script>
+  <script src="vendor/scrypt.js"></script>
+
+  <!-- 核心：先加载 lore 各项（每个脚本会给 window 注入对应常量），再聚合到 LORE_DATA，最后 db/auth/翻译 -->
+  <script src="core/deprecated.js"></script>
+  <script src="core/lore-extra3.js"></script>
+  <script src="core/lore-extra4.js"></script>
+  <script src="core/lore-extra5.js"></script>
+  <script src="core/lore-extra6.js"></script>
+  <script src="core/lore-extra7.js"></script>
+  <script src="core/lore.js"></script>
+  <script src="core/tokenizer.js"></script>
+  <script src="core/translator.js"></script>
+  <script src="core/db.js"></script>
+  <script src="core/auth.js"></script>
+
+  <!-- 移动入口：fsAdapter + api -->
+  <script src="mobile/fsAdapter.js"></script>
+  <script src="mobile/scrypt.js"></script>
+  <script src="mobile/api.js"></script>
+  <script src="mobile/entry.js"></script>
+
+  <!-- 渲染层（最后加载，让上面的全局都生效） -->
   <script src="app.js"></script>
 </body>
 </html>

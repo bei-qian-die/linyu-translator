@@ -33,4 +33,5 @@ function buildTokenizer(dictWords) {
   };
 }
 
-module.exports = { buildTokenizer };
+if (typeof module === 'object' && module.exports) module.exports = { buildTokenizer };
+else if (typeof window !== 'undefined') window.LINYU_TOKENIZER = { buildTokenizer };

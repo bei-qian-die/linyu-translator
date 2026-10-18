@@ -244,4 +244,6 @@ const quotes = [
 
 const heroes = [];
 
-module.exports = { cards, quotes, heroes };
+const __export = { cards, quotes, heroes };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_EXTRA6 = __export;

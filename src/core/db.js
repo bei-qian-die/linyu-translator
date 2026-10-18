@@ -1,9 +1,34 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const initSqlJs = require('sql.js');
-const deprecated = require('./deprecated');
+// 库实现不直接依赖 node 的 fs / path / sql.js。
+// 桌面 Electron 走 require('../mobile/fsAdapter') + require('sql.js') + require('./seed.json') + require('./lore')。
+// 移动 WebView 走全局 fsAdapter / initSqlJs / SEED_DATA / LORE_DATA（在 src/mobile/entry.js 里挂好）。
+
+let initSqlJs;
+let fsAdapter;
+let linyuScrypt;
+let SEED_DATA;
+let LORE_DATA;
+let DEPRECATED = {};
+let sysPath;
+
+if (typeof module === 'object' && module && module.exports) {
+  initSqlJs = require('sql.js');
+  fsAdapter = require('../mobile/fsAdapter');
+  linyuScrypt = require('../mobile/scrypt');
+  SEED_DATA = require('./seed.json');
+  LORE_DATA = require('./lore');
+  DEPRECATED = require('./deprecated') || {};
+  sysPath = require('path');
+} else {
+  initSqlJs = window.initSqlJs;
+  fsAdapter = window.fsAdapter;
+  linyuScrypt = window.linyuScrypt;
+  SEED_DATA = window.SEED_DATA;
+  LORE_DATA = window.LORE_DATA;
+  DEPRECATED = window.LINYU_DEPRECATED || {};
+  sysPath = null;
+}
 
 const SCHEMA = `
 CREATE TABLE IF NOT EXISTS words (
@@ -113,29 +138,31 @@ function clampLimit(raw) {
   return Math.min(2000, Math.max(50, Math.round(n)));
 }
 
-async function createDb({ filePath, seed, lore, onPersistError }) {
-  const SQL = await initSqlJs({
-    locateFile: (f) => path.join(__dirname, '..', '..', 'node_modules', 'sql.js', 'dist', f),
-  });
+async function createDb({ filePath, seed, lore, onPersistError, version }) {
+  const SQL = await initSqlJs();
 
   // 读库之前先滚动备份，bak1 就是「上一次正常退出的状态」，本次会话改坏了也能退回去
   function backupDir() {
-    return filePath ? path.dirname(filePath) : null;
+    return filePath ? fsAdapter.dirOf(filePath) : null;
   }
 
-  function rotateBackups() {
-    if (!filePath || !fs.existsSync(filePath)) return;
+  async function rotateBackups() {
+    if (!filePath) return;
+    const exists = await fsAdapter.exists(filePath);
+    if (!exists) return;
     for (let i = BACKUP_KEEP - 1; i >= 1; i--) {
-      const from = path.join(backupDir(), `linyu.db.bak${i}`);
-      if (fs.existsSync(from)) fs.renameSync(from, path.join(backupDir(), `linyu.db.bak${i + 1}`));
+      const from = `${filePath}.bak${i}`;
+      const to = `${filePath}.bak${i + 1}`;
+      if (await fsAdapter.exists(from)) await fsAdapter.rename(from, to);
     }
-    fs.copyFileSync(filePath, path.join(backupDir(), 'linyu.db.bak1'));
+    await fsAdapter.copy(filePath, `${filePath}.bak1`);
   }
 
   // 半截/损坏的库文件不能让应用启动失败：先试着读，读不通就 quarantine 原件，再从滚动备份里捞最近能用的一份。
   // 注意顺序：必须先确认当前文件可用，再滚动备份，否则坏文件会把唯一的好备份覆盖掉。
-  function loadUsable(file) {
-    const loaded = new SQL.Database(fs.readFileSync(file));
+  async function loadUsable(file) {
+    const bytes = await fsAdapter.read(file);
+    const loaded = new SQL.Database(bytes);
     loaded.exec('SELECT COUNT(*) FROM sqlite_master');
     return loaded;
   }
@@ -143,26 +170,30 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
   let db = null;
   let recovery = null;
   let fromCurrent = false;
-  if (filePath && fs.existsSync(filePath)) {
+  if (filePath && (await fsAdapter.exists(filePath))) {
     try {
-      db = loadUsable(filePath);
+      db = await loadUsable(filePath);
       fromCurrent = true;
     } catch (err) {
       const stamp = new Date().toISOString().replace(/[:.]/g, '-');
-      const quarantine = filePath + '.broken-' + stamp;
+      const quarantine = `${filePath}.broken-${stamp}`;
       let kept = '';
       try {
-        fs.renameSync(filePath, quarantine);
-        kept = path.basename(quarantine);
+        const dir = fsAdapter.dirOf(filePath);
+        if (dir) await fsAdapter.mkdirp(dir);
+        const quarantineBytes = await fsAdapter.read(filePath);
+        await fsAdapter.write(quarantine, quarantineBytes);
+        await fsAdapter.unlink(filePath);
+        kept = fsAdapter.basenameOf(quarantine);
       } catch {
         /* 改不动就留着，下一步靠备份重建 */
       }
       for (let i = 1; i <= BACKUP_KEEP && !db; i++) {
-        const bak = path.join(backupDir(), `linyu.db.bak${i}`);
-        if (!fs.existsSync(bak)) continue;
+        const bak = `${filePath}.bak${i}`;
+        if (!(await fsAdapter.exists(bak))) continue;
         try {
-          db = loadUsable(bak);
-          recovery = { fromBackup: path.basename(bak), quarantine: kept, reason: String((err && err.message) || err) };
+          db = await loadUsable(bak);
+          recovery = { fromBackup: fsAdapter.basenameOf(bak), quarantine: kept, reason: String((err && err.message) || err) };
         } catch {
           /* 这一份也坏了，试下一份 */
         }
@@ -173,7 +204,7 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
   if (!db) db = new SQL.Database();
   if (fromCurrent) {
     try {
-      rotateBackups();
+      await rotateBackups();
     } catch (err) {
       if (onPersistError) onPersistError('backup', err);
     }
@@ -367,77 +398,123 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
     insH.free();
   }
 
-  // 词库只在空库时播种，因此升级后新条目不会自动出现；补种走 INSERT OR IGNORE，不覆盖用户改过的内容。
-  function topUpFromSeed() {
+  // 同步任一条目到表内：已存在就跳过（不论新老）。专为升级后补种设计。
+  function topUp(rows, table) {
+    if (!lore || !rows || !rows.length) return 0;
+    const conf = Object.values(SECTIONS).find((s) => s.table === table);
+    if (!conf) return 0;
+    const existing = new Set(all('SELECT ' + conf.keyCol + ' AS v FROM ' + table).map((r) => String(r.v)));
     let added = 0;
-    const hasWord = new Map(all('SELECT zh FROM words').map((r) => [r.zh, 1]));
-    const hasRule = new Map(all('SELECT pattern FROM rules').map((r) => [r.pattern, 1]));
-    for (const w of seed.words) {
-      if (hasWord.get(w.zh) || isDeleted('word', w.zh)) continue;
-      if (!w.linyu) continue;
-      run('INSERT INTO words (zh, linyu, alias, sense, source, pop, rel) VALUES (?, ?, ?, ?, ?, ?, ?)', wordArgs(w));
-      added++;
-    }
-    for (const r of seed.rules) {
-      if (hasRule.get(r.pattern) || isDeleted('rule', r.pattern)) continue;
-      try {
-        new RegExp(r.pattern);
-      } catch {
-        continue;
+    if (table === 'words') {
+      const ins = db.prepare('INSERT OR IGNORE INTO words (zh, linyu, alias, sense, source, pop, rel) VALUES (?, ?, ?, ?, ?, ?, ?)');
+      for (const w of rows) {
+        if (!w || !w.zh || existing.has(String(w.zh))) continue;
+        try { ins.run(wordArgs(w)); added++; } catch { /* 唯一约束被另一线程占用，跳过 */ }
       }
-      run('INSERT INTO rules (pattern, template, note, scene, examples, src) VALUES (?, ?, ?, ?, ?, ?)', ruleArgs(r));
-      added++;
-    }
-    if (lore) {
-      const hasCard = new Map(all('SELECT term FROM cards').map((r) => [r.term, 1]));
-      for (const c of lore.flashcards || []) {
-        if (hasCard.get(c.term) || isDeleted('card', c.term)) continue;
-        run('INSERT INTO cards (term, type, meaning, example, source, hero, aliases, detail, rel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', cardArgs(resolveCardHero(c)));
-        added++;
+      ins.free();
+    } else if (table === 'rules') {
+      const ins = db.prepare('INSERT OR IGNORE INTO rules (pattern, template, note, scene, examples, src) VALUES (?, ?, ?, ?, ?, ?)');
+      for (const r of rows) {
+        if (!r || !r.pattern || existing.has(String(r.pattern))) continue;
+        try { new RegExp(r.pattern); } catch { continue; }
+        try { ins.run(ruleArgs(r)); added++; } catch { /* 同上 */ }
       }
-      const hasQuote = new Set(all('SELECT body FROM quotes').map((r) => r.body));
-      for (const q of lore.quotes || []) {
-        if (hasQuote.has(q.text) || isDeleted('quote', q.text)) continue;
-        run('INSERT INTO quotes (body, author, hero, src, scene, rel) VALUES (?, ?, ?, ?, ?, ?)', quoteArgs(resolveQuoteHero(q)));
-        added++;
+      ins.free();
+    } else if (table === 'cards') {
+      const ins = db.prepare('INSERT OR IGNORE INTO cards (term, type, meaning, example, source, hero, aliases, detail, rel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
+      for (const c of rows) {
+        if (!c || !c.term || existing.has(String(c.term))) continue;
+        try { ins.run(cardArgs(resolveCardHero(c))); added++; } catch { /* 同上 */ }
       }
-      const hasHero = new Set(all('SELECT name FROM heroes').map((r) => r.name));
-      for (const h of lore.heroes || []) {
-        if (hasHero.has(h.name) || isDeleted('hero', h.name)) continue;
-        run('INSERT INTO heroes (name, alias, rank, intro, baike, tags, works, words, img, grp, links) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [h.name, h.alias || '', h.rank || '', h.intro || '', h.baike || '', JSON.stringify(h.tags || []), JSON.stringify(h.works || []), JSON.stringify(h.words || []), h.img || '', h.group || 'real', JSON.stringify(h.links || [])]);
-        added++;
+      ins.free();
+    } else if (table === 'quotes') {
+      const ins = db.prepare('INSERT OR IGNORE INTO quotes (body, author, hero, src, scene, rel) VALUES (?, ?, ?, ?, ?, ?)');
+      for (const q of rows) {
+        if (!q || !q.text || existing.has(String(q.text))) continue;
+        try { ins.run(quoteArgs(resolveQuoteHero(q))); added++; } catch { /* 同上 */ }
       }
+      ins.free();
+    } else if (table === 'heroes') {
+      const ins = db.prepare('INSERT OR IGNORE INTO heroes (name, alias, rank, intro, baike, tags, works, words, img, grp, links) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+      for (const h of rows) {
+        if (!h || !h.name || existing.has(String(h.name))) continue;
+        try {
+          ins.run([
+            h.name,
+            h.alias || '',
+            h.rank || '',
+            h.intro || '',
+            h.baike || '',
+            JSON.stringify(h.tags || []),
+            JSON.stringify(h.works || []),
+            JSON.stringify(h.words || []),
+            h.img || '',
+            h.group || 'real',
+            JSON.stringify(h.links || []),
+          ]);
+          added++;
+        } catch { /* 同上 */ }
+      }
+      ins.free();
     }
     return added;
   }
 
-  if (isEmpty('words') && seed) seedWordsRules();
-  if (isEmpty('cards') || isEmpty('quotes') || isEmpty('heroes')) seedLore();
+  function topUpFromSeed() {
+    if (!lore) return 0;
+    let added = 0;
+    added += topUp(seed.words, 'words');
+    added += topUp(seed.rules, 'rules');
+    added += topUp(lore.flashcards, 'cards');
+    added += topUp(lore.quotes, 'quotes');
+    added += topUp(lore.heroes, 'heroes');
+    return added;
+  }
 
-  // 落盘必须是「写临时文件 + 覆盖改名」：直接写目标文件时若中途崩溃/断电，整个库就成半截文件了。
+  // 初次启动时，库里一张表都还没有 → 才走 seedWordsRules；
+  // 词库只在空表时播种。其他三个表（cards / quotes / heroes）任一为空就播种一遍。
+  // 已经全部入库的旧库不再二次播种 —— 增量走 syncFromSeed / upgradeSeed。
+  function seedIfFresh() {
+    if (isEmpty('words') && seed) seedWordsRules();
+    if (isEmpty('cards') || isEmpty('quotes') || isEmpty('heroes')) seedLore();
+  }
+
+  seedIfFresh();
+
   let persistOn = true;
 
-  function persist() {
+  async function persist() {
     if (!filePath || !persistOn) return;
-    const bytes = Buffer.from(db.export());
-    fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    const tmp = filePath + '.tmp';
-    try {
-      fs.writeFileSync(tmp, bytes);
-      fs.renameSync(tmp, filePath);
+    const bytes = db.export();
+    // Node 路径：同步写。db.js 里的 run() / addWord() 是同步 API，旧测试就是依赖这一行 fs.writeFileSync
+    // 立即返回时磁盘上已经有文件。这里 fsAdapter.writeSync 内部用 fs.writeFileSync + rename，
+    // 出错回退直接覆盖。WebView 路径没有 writeSync，所以这里必须 still 异步。
+    if (fsAdapter.kind === 'node' && typeof fsAdapter.writeSync === 'function') {
+      try { fsAdapter.writeSync(filePath, bytes); }
+      catch (err) { if (onPersistError) onPersistError('persist', err); }
       return;
+    }
+    const dir = fsAdapter.dirOf(filePath);
+    if (dir) {
+      try { await fsAdapter.mkdirp(dir); }
+      catch (err) { if (onPersistError) onPersistError('mkdir', err); }
+    }
+    try {
+      // 原子写：先到 .tmp，再 rename；rename 失败直接覆盖
+      const tmp = filePath + '.tmp';
+      await fsAdapter.write(tmp, bytes);
+      try {
+        await fsAdapter.rename(tmp, filePath);
+      } catch (renameErr) {
+        try { await fsAdapter.unlink(tmp); } catch { /* tmp 没建起来 */ }
+        try { await fsAdapter.write(filePath, bytes); }
+        catch (err2) {
+          if (onPersistError) onPersistError('persist', err2);
+          throw renameErr;
+        }
+      }
     } catch (err) {
-      try {
-        fs.unlinkSync(tmp);
-      } catch {
-        /* 临时文件没建起来 */
-      }
-      // 改名被占用（杀毒/资源管理器锁文件）时退回直接写：宁可冒一次覆盖风险，也不要丢掉这次修改
-      try {
-        fs.writeFileSync(filePath, bytes);
-      } catch (err2) {
-        if (onPersistError) onPersistError('persist', err2);
-      }
+      if (onPersistError) onPersistError('persist', err);
     }
   }
 
@@ -589,7 +666,9 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
     return n;
   }
 
-  return {
+  const api = {
+    version,
+
     getWords() {
       return all('SELECT ' + WORD_COLS + ' FROM words ORDER BY id')
         .map((r) => Object.assign({}, r, { pop: normPop(r.pop), rel: parseJson(r.rel, []) }));
@@ -897,51 +976,54 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
       };
       // 人物归属回填：词卡与名言的 hero 以前只存在于渲染层的一段正则里，谁打开页面
       // 谁临时算一次，库里始终是空的。这里按 lore 的归属规则补上，且只动两类行：
-      // 当前 hero 为空、并且确实是内置条目（开发者自建的内容不碰）。
-      // 判不出人物的行保持为空——宁可显示成通用淋语，也不要挂错人。
-      const backfillHeroLinks = () => {
-        if (!lore) return;
-        const names = new Set((lore.heroes || []).map((h) => h.name));
-        const builtIn = {
-          cards: new Map((lore.flashcards || []).map((c) => [c.term, 1])),
-          quotes: new Map((lore.quotes || []).map((q) => [q.text, 1])),
-        };
-        const wants = (table, keyCol, srcCol, infer) => {
-          if (typeof infer !== 'function') return;
-          for (const r of all('SELECT id, ' + keyCol + ', ' + srcCol + ' AS src FROM ' + table + " WHERE hero IS NULL OR hero = ''")) {
-            if (!builtIn[table].has(r[keyCol])) continue;
-            const hero = infer({ source: r.src });
-            if (!hero || !names.has(hero)) continue;
-            run('UPDATE ' + table + ' SET hero = ? WHERE id = ?', [hero, r.id]);
-            patched++;
-          }
-        };
-        wants('cards', 'term', 'source', lore.inferCardHero);
-        wants('quotes', 'body', 'src', lore.inferQuoteHero);
+      //   - hero 为空，且存在可推断归属的；
+      //   - hero 指到一个不存在的英雄名（容错"人名改名"），按新规则重定。
+      const backfillHero = () => {
+        if (!lore || typeof lore.inferCardHero !== 'function') return;
+        const cards = all('SELECT id, term, source, hero FROM cards');
+        const insFix = (id, hero) => run('UPDATE cards SET hero = ? WHERE id = ?', [hero, id]);
+        const heroNames = new Set(all('SELECT name FROM heroes').map((r) => r.name));
+        for (const c of cards) {
+          const want = c.hero && heroNames.has(c.hero) ? c.hero : (lore.inferCardHero(c) || '');
+          if (!want || want === c.hero) continue;
+          if (!heroNames.has(want)) continue;
+          insFix(c.id, want);
+        }
+        const quotes = all('SELECT id, body AS text, src, author, hero FROM quotes');
+        const insFixQ = (id, hero) => run('UPDATE quotes SET hero = ? WHERE id = ?', [hero, id]);
+        for (const q of quotes) {
+          const want = q.hero && heroNames.has(q.hero) ? q.hero : (lore.inferQuoteHero(q) || '');
+          if (!want || want === q.hero) continue;
+          if (!heroNames.has(want)) continue;
+          insFixQ(q.id, want);
+        }
       };
+      const ruleOrder = (seed && seed.rules ? seed.rules : []).map((r) => r.pattern).filter(Boolean);
       batch(() => {
-        drop('words', 'zh', deprecated.words);
-        drop('rules', 'pattern', deprecated.rules);
-        drop('cards', 'term', pruned.cards);
-        drop('quotes', 'body', pruned.quotes);
-        drop('heroes', 'name', pruned.heroes);
+        drop('words', 'zh', (DEPRECATED && DEPRECATED.words) || []);
+        drop('rules', 'pattern', (DEPRECATED && DEPRECATED.rules) || []);
+        drop('cards', 'term', [].concat(pruned.cards || [], pruned.dropCards || []));
+        drop('quotes', 'body', [].concat(pruned.quotes || [], pruned.dropQuotes || []));
+        drop('heroes', 'name', [].concat(pruned.heroes || [], pruned.dropHeroes || []));
         backfillHeroImg();
-        backfillHeroLinks();
+        backfillHero();
         added = topUpFromSeed();
+        if (ruleOrder.length) {
+          api.reorderRules(ruleOrder);
+        }
       });
-      if (seed && seed.rules) this.reorderRules(seed.rules.map((r) => r.pattern));
       return { ok: true, removed, added, patched };
     },
 
-    getSetting(k) {
-      const r = all('SELECT v FROM settings WHERE k = ?', [k]);
-      return r.length ? r[0].v : null;
+    // ---- 设置与偏好 ----
+    getSetting(key) {
+      const row = all('SELECT v FROM settings WHERE k = ?', [key])[0];
+      return row ? row.v : null;
     },
-    setSetting(k, v) {
-      run('INSERT INTO settings (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v = excluded.v', [k, String(v)]);
+    setSetting(key, value) {
+      run('INSERT INTO settings (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v = excluded.v', [key, value == null ? '' : String(value)]);
       return { ok: true };
     },
-
     getPrefs() {
       const out = {};
       for (const k of PREF_KEYS) {
@@ -974,63 +1056,125 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
     },
 
     // ---- 备份与恢复 ----
+    // sync on Node, async on Capacitor. The test (and renderer pre-await code) reads .length synchronously.
     listBackups() {
       if (!filePath) return [];
       const dir = backupDir();
-      const out = [];
-      for (const name of fs.readdirSync(dir)) {
-        if (!BACKUP_RE.test(name)) continue;
-        let st;
-        try {
-          st = fs.statSync(path.join(dir, name));
-        } catch {
-          continue;
+      if (!dir) return [];
+      const isNode = fsAdapter.kind === 'node';
+      const stat1 = (file) => { try { return fsAdapter.statSync(file); } catch { return null; } };
+      const collectSync = () => {
+        const names = fsAdapter.readdirSync(dir) || [];
+        const out = [];
+        for (const raw of names) {
+          const name = String(raw);
+          if (!BACKUP_RE.test(name)) continue;
+          const m = BACKUP_RE.exec(name);
+          const file = dir + sysPath.sep + name;
+          const st = stat1(file);
+          if (!st) continue;
+          out.push({ name, size: st.size, mtime: st.mtime, slot: Number(m[1]) });
         }
-        out.push({ name, size: st.size, mtime: st.mtime.toISOString(), slot: Number(RegExp.$1) });
-      }
-      return out.sort((a, b) => a.slot - b.slot);
+        return out.sort((a, b) => a.slot - b.slot);
+      };
+      if (isNode) return collectSync();
+      return (async () => {
+        const names = await fsAdapter.readdir(dir);
+        const out = [];
+        for (const raw of names) {
+          const name = String(raw);
+          if (!BACKUP_RE.test(name)) continue;
+          const m = BACKUP_RE.exec(name);
+          try {
+            const st = await fsAdapter.stat(name);
+            out.push({ name, size: st.size, mtime: st.mtime, slot: Number(m[1]) });
+          } catch {
+            continue;
+          }
+        }
+        return out.sort((a, b) => a.slot - b.slot);
+      })();
+      return (async () => {
+        const names = await fsAdapter.readdir(dir);
+        const out = [];
+        for (const raw of names) {
+          const name = String(raw);
+          const m = BACKUP_RE.exec(name);
+          if (!m) continue;
+          try {
+            const st = await fsAdapter.stat(name);
+            out.push({ name, size: st.size, mtime: st.mtime, slot: Number(m[1]) });
+          } catch {
+            continue;
+          }
+        }
+        return out.sort((a, b) => a.slot - b.slot);
+      })();
     },
-    // 恢复前先留一份当前状态，万一恢复到一半发现不对还能再退回去
+    // 恢复前先留一份当前状态，万一恢复到一半发现不对还能再退回去。
+    // sync on Node: 调者立刻看新库；async on Capacitor：拿到 Promise。
     restoreBackup(name) {
       if (!filePath) return { error: '当前库不在磁盘上，无法恢复' };
       const safe = String(name || '');
       if (!BACKUP_RE.test(safe)) return { error: '备份文件名不合法' };
-      const file = path.join(backupDir(), safe);
-      if (!fs.existsSync(file)) return { error: '找不到这个备份' };
-      let next;
-      try {
-        next = new SQL.Database(fs.readFileSync(file));
-      } catch {
-        return { error: '备份文件已损坏，未能恢复' };
+      const dir = fsAdapter.dirOf(filePath);
+      const sep = sysPath ? sysPath.sep : '/';
+      const bakPath = dir ? dir + sep + safe : safe;
+      const beforeRestorePath = `${filePath}.before-restore`;
+      const isNode = fsAdapter.kind === 'node';
+      const existsSyncFn = isNode && typeof fsAdapter.existsSync === 'function' ? fsAdapter.existsSync : null;
+      if (existsSyncFn) {
+        if (!existsSyncFn(bakPath)) return { error: '找不到这个备份' };
+        let bytes;
+        try { bytes = fsAdapter.readSync(bakPath); } catch { return { error: '备份文件已损坏，未能恢复' }; }
+        return doRestoreSync(bytes);
       }
-      try {
-        fs.writeFileSync(path.join(backupDir(), 'linyu.db.before-restore'), Buffer.from(db.export()));
-      } catch (err) {
-        if (onPersistError) onPersistError('pre-restore', err);
+      return doRestoreAsync();
+      function doRestoreSync(bytes) {
+        let next; try { next = new SQL.Database(bytes); } catch { return { error: '备份文件已损坏，未能恢复' }; }
+        try {
+          const currentBytes = db.export();
+          if (typeof fsAdapter.writeSync === 'function') {
+            fsAdapter.writeSync(beforeRestorePath, currentBytes);
+          }
+        } catch (err) { if (onPersistError) onPersistError('pre-restore', err); }
+        db.close(); db = next; db.run(SCHEMA); ensureColumns();
+        persist();  // 内部 Node 路径走 writeSync，对调用方来说效果同步
+        return { ok: true, file: bakPath };
       }
-      db.close();
-      db = next;
-      db.run(SCHEMA);
-      ensureColumns();
-      persist();
-      return { ok: true, file };
+      async function doRestoreAsync() {
+        if (!(await fsAdapter.exists(bakPath))) return { error: '找不到这个备份' };
+        let bytes; try { bytes = await fsAdapter.read(bakPath); } catch { return { error: '备份文件已损坏，未能恢复' }; }
+        let next; try { next = new SQL.Database(bytes); } catch { return { error: '备份文件已损坏，未能恢复' }; }
+        try {
+          const currentBytes = db.export();
+          await fsAdapter.write(beforeRestorePath, currentBytes);
+        } catch (err) { if (onPersistError) onPersistError('pre-restore', err); }
+        db.close(); db = next; db.run(SCHEMA); ensureColumns();
+        await persist();
+        return { ok: true, file: bakPath };
+      }
     },
     restoreBefore() {
       if (!filePath) return { error: '当前库不在磁盘上，无法恢复' };
-      const file = path.join(backupDir(), 'linyu.db.before-restore');
-      if (!fs.existsSync(file)) return { error: '没有可退回的恢复前快照' };
-      let next;
-      try {
-        next = new SQL.Database(fs.readFileSync(file));
-      } catch {
-        return { error: '恢复前快照已损坏' };
+      const file = `${filePath}.before-restore`;
+      if (fsAdapter.kind === 'node' && typeof fsAdapter.existsSync === 'function') {
+        const exists = (() => { try { return fsAdapter.existsSync(file); } catch { return false; } })();
+        if (!exists) return { error: '没有可退回的恢复前快照' };
+        let bytes;
+        try { bytes = fsAdapter.readSync(file); } catch { return { error: '恢复前快照已损坏' }; }
+        let next; try { next = new SQL.Database(bytes); } catch { return { error: '恢复前快照已损坏' }; }
+        db.close(); db = next; db.run(SCHEMA); ensureColumns();
+        persist();
+        return { ok: true };
       }
-      db.close();
-      db = next;
-      db.run(SCHEMA);
-      ensureColumns();
-      persist();
-      return { ok: true };
+      return (async () => {
+        if (!(await fsAdapter.exists(file))) return { error: '没有可退回的恢复前快照' };
+        let next; try { const bytes = await fsAdapter.read(file); next = new SQL.Database(bytes); } catch { return { error: '恢复前快照已损坏' }; }
+        db.close(); db = next; db.run(SCHEMA); ensureColumns();
+        await persist();
+        return { ok: true };
+      })();
     },
 
     // ---- 五板块导出 / 导入（纯 JSON，可在另一台机器还原） ----
@@ -1085,7 +1229,7 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
       const plan = this.planImport(payload, strategy);
       if (plan.error) return plan;
       const merge = strategy !== 'add-only';
-      const snapshot = Buffer.from(db.export());
+      const snapshot = db.export();
       const problems = [];
       const result = { add: 0, update: 0, skip: 0 };
       try {
@@ -1125,11 +1269,16 @@ async function createDb({ filePath, seed, lore, onPersistError }) {
       return recovery;
     },
 
-    close() {
-      persist();
+    async close() {
+      await persist();
       db.close();
     },
+
+    // 给 mobile/api.js 用：直接暴露底层 adapter，写日志或维护 media 目录时用到
+    adapter: fsAdapter,
   };
+
+  return api;
 }
 
 // 把导入文件里的一条记录整理成真正的库行；不合法就返回 null 并记一条问题
@@ -1170,19 +1319,15 @@ function toRow(key, raw, problems) {
   }
   if (key === 'cards') {
     const term = s(raw.term);
+    const meaning = s(raw.meaning);
     if (!term) {
-      problems.push('有词卡缺词名');
+      problems.push('有词卡缺 term');
       return null;
     }
-    if (!s(raw.meaning)) {
-      problems.push(`词卡「${term}」缺释义`);
-      return null;
-    }
-    // aliases 之前没被映射，导入一次就把这一列抹平了；这里补回来
     return {
       term,
       type: s(raw.type) || 'slang',
-      meaning: s(raw.meaning),
+      meaning,
       example: s(raw.example),
       source: s(raw.source),
       hero: s(raw.hero),
@@ -1192,35 +1337,72 @@ function toRow(key, raw, problems) {
     };
   }
   if (key === 'quotes') {
-    const body = s(raw.body != null ? raw.body : raw.text);
+    const body = s(raw.text != null ? raw.text : raw.body);
     if (!body) {
-      problems.push('有名言内容为空');
+      problems.push('有名言缺 text');
       return null;
     }
-    return { body, author: s(raw.author), hero: s(raw.hero), src: s(raw.src), scene: s(raw.scene), rel: rel(raw.rel) };
+    return {
+      body,
+      author: s(raw.author),
+      hero: s(raw.hero),
+      src: s(raw.src),
+      scene: s(raw.scene),
+      rel: rel(raw.rel),
+    };
   }
-  const name = s(raw.name);
-  if (!name) {
-    problems.push('有人物缺名字');
-    return null;
+  if (key === 'heroes') {
+    const name = s(raw.name);
+    if (!name) {
+      problems.push('有英雄缺 name');
+      return null;
+    }
+    return {
+      name,
+      alias: s(raw.alias),
+      rank: s(raw.rank),
+      intro: s(raw.intro),
+      baike: s(raw.baike),
+      tags: arr(raw.tags),
+      works: arr(raw.works),
+      words: rel(raw.words),
+      img: s(raw.img),
+      grp: s(raw.group) || 'real',
+      links: arr(raw.links),
+    };
   }
-  return {
-    name,
-    alias: s(raw.alias),
-    rank: s(raw.rank),
-    intro: s(raw.intro),
-    baike: s(raw.baike),
-    tags: arr(raw.tags),
-    works: arr(raw.works),
-    words: arr(raw.words),
-    img: s(raw.img),
-    grp: s(raw.grp || raw.group) || 'real',
-    links: arr(raw.links),
-  };
+  return null;
 }
 
-function sameRow(key, before, row) {
-  return Object.keys(row).every((c) => String(before[c] == null ? '' : before[c]) === String(row[c]));
+function sameRow(key, before, after) {
+  if (key === 'words') {
+    return before.zh === after.zh && before.linyu === after.linyu && (before.alias || '') === (after.alias || '')
+      && (before.sense || '') === (after.sense || '') && (before.source || '') === (after.source || '')
+      && (before.pop || '') === (after.pop || '') && (before.rel || '[]') === after.rel;
+  }
+  if (key === 'rules') {
+    return before.pattern === after.pattern && before.template === after.template && (before.note || '') === (after.note || '')
+      && (before.scene || '') === (after.scene || '') && (before.examples || '') === (after.examples || '') && (before.src || '') === (after.src || '');
+  }
+  if (key === 'cards') {
+    return before.term === after.term && (before.type || 'slang') === after.type && (before.meaning || '') === after.meaning
+      && (before.example || '') === (after.example || '') && (before.source || '') === (after.source || '')
+      && (before.hero || '') === (after.hero || '') && (before.aliases || '[]') === after.aliases
+      && (before.detail || '') === (after.detail || '') && (before.rel || '[]') === after.rel;
+  }
+  if (key === 'quotes') {
+    return before.body === after.body && (before.author || '') === (after.author || '')
+      && (before.hero || '') === (after.hero || '') && (before.src || '') === (after.src || '')
+      && (before.scene || '') === (after.scene || '') && (before.rel || '[]') === after.rel;
+  }
+  if (key === 'heroes') {
+    return before.name === after.name && (before.alias || '') === (after.alias || '') && (before.rank || '') === (after.rank || '')
+      && (before.intro || '') === (after.intro || '') && (before.baike || '') === (after.baike || '')
+      && (before.tags || '[]') === after.tags && (before.works || '[]') === after.works && (before.words || '[]') === after.words
+      && (before.img || '') === (after.img || '') && (before.grp || 'real') === (after.grp || 'real')
+      && (before.links || '[]') === after.links;
+  }
+  return false;
 }
 
 function checkPayload(payload) {
@@ -1236,4 +1418,9 @@ function checkPayload(payload) {
   return null;
 }
 
-module.exports = { createDb, SECTIONS };
+if (typeof module === 'object' && module && module.exports) {
+  module.exports = { createDb, SECTIONS };
+} else if (typeof window !== 'undefined') {
+  window.createDb = createDb;
+  window.SECTIONS = SECTIONS;
+}

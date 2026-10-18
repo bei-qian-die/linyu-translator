@@ -1,0 +1,43 @@
+// init.gradle — 国内 Maven 镜像替换（aliyun / huawei / tencent 三选一，备用）
+//
+// 用法：
+//   gradle -I init.gradle <tasks>
+//
+// 也支持作为 init.d 脚本放进 GRADLE_USER_HOME/init.d/。
+// 无论用哪种方式，原来的 mavenCentral() / google() 都会被以下仓库先抓取，
+// 镜像中找不到时才回落到官方。
+
+allprojects {
+    buildscript {
+        repositories {
+            maven { url 'https://maven.aliyun.com/repository/google' }
+            maven { url 'https://maven.aliyun.com/repository/public' }
+            maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+            maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+            google()
+            mavenCentral()
+            gradlePluginPortal()
+        }
+    }
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        google()
+        mavenCentral()
+    }
+}
+
+settingsEvaluated { settings ->
+    settings.pluginManagement {
+        repositories {
+            maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+            maven { url 'https://maven.aliyun.com/repository/google' }
+            maven { url 'https://maven.aliyun.com/repository/public' }
+            gradlePluginPortal()
+            google()
+            mavenCentral()
+        }
+    }
+}

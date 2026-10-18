@@ -1,6 +1,6 @@
 'use strict';
 
-const { buildTokenizer } = require('./tokenizer');
+const { buildTokenizer } = (typeof require === 'function') ? require('./tokenizer') : (typeof window !== 'undefined' ? window.LINYU_TOKENIZER : { buildTokenizer: () => null });
 
 const END_FLAVOR = ['♥', '惹♥', '噜♥', '厚♥'];
 const SPLIT_RE = /([。！？!?；;]+)/;
@@ -157,4 +157,5 @@ function translateText(text, options) {
     .join('\n');
 }
 
-module.exports = { translateText };
+if (typeof module === 'object' && module.exports) module.exports = { translateText };
+else if (typeof window !== 'undefined') window.LINYU_TRANSLATOR = { translateText };

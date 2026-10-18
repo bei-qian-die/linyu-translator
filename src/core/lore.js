@@ -693,11 +693,11 @@ const extraCards2 = [
   { term: '风姿', type: 'slang', meaning: '“疯子”的淋化谐音，弹幕用来形容一个方案离谱得像风姿来的。', example: '妈呀，完全风姿来的吧，这个豆包 / 有点像风姿', source: '《让豆包教穿搭，反耳被豆包用淋语羞辱了》《【淋者荣耀】去把老娘的圣杯面具40cd拿过来！》弹幕' },
 ];
 
-const extra3 = require('./lore-extra3');
-const extra4 = require('./lore-extra4');
-const extra5 = require('./lore-extra5');
-const extra6 = require('./lore-extra6');
-const extra7 = require('./lore-extra7');
+const extra3 = (typeof require === 'function') ? require('./lore-extra3') : (typeof window !== 'undefined' ? window.LORE_EXTRA3 : {});
+const extra4 = (typeof require === 'function') ? require('./lore-extra4') : (typeof window !== 'undefined' ? window.LORE_EXTRA4 : {});
+const extra5 = (typeof require === 'function') ? require('./lore-extra5') : (typeof window !== 'undefined' ? window.LORE_EXTRA5 : {});
+const extra6 = (typeof require === 'function') ? require('./lore-extra6') : (typeof window !== 'undefined' ? window.LORE_EXTRA6 : {});
+const extra7 = (typeof require === 'function') ? require('./lore-extra7') : (typeof window !== 'undefined' ? window.LORE_EXTRA7 : {});
 
 const keep = (arr, key, drop) => (drop && drop.length ? arr.filter((x) => !drop.includes(x[key])) : arr);
 
@@ -922,7 +922,7 @@ const topUpWorks = (arr) =>
     return Object.assign({}, h, { works });
   });
 
-module.exports = {
+const __export = {
   flashcards: keptCards,
   heroes: topUpWorks(allHeroes),
   quotes: keptQuotes,
@@ -935,11 +935,13 @@ module.exports = {
   heroNames: heroNameSet,
   // 补 hero 关联时用：已有人物名白名单，防止规则表把名字写错后往库里塞出一个查无此人的引用
   inferCardHero(card) {
-    return inferHero(card && card.source, CARD_SOURCE_HERO, module.exports.heroNames);
+    return inferHero(card && card.source, CARD_SOURCE_HERO, __export.heroNames);
   },
   inferQuoteHero(quote) {
-    return inferHero(quote && quote.src, QUOTE_SOURCE_HERO, module.exports.heroNames);
+    return inferHero(quote && quote.src, QUOTE_SOURCE_HERO, __export.heroNames);
   },
   // 归属推断的规则表本身也导出去，界面与审计脚本要能看见"为什么这条被判给了某个人"
   heroSourceRules: HERO_SOURCE_RULES.map((r) => ({ hero: r.hero, pattern: String(r.re.source) })),
 };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_DATA = __export;

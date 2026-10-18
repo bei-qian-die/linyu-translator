@@ -274,4 +274,6 @@ const dropHeroes = [
   '雷迪嘎嘎',
 ];
 
-module.exports = { cards, quotes, heroes, dropCards, dropQuotes, dropHeroes };
+const __export = { cards, quotes, heroes, dropCards, dropQuotes, dropHeroes };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_EXTRA5 = __export;

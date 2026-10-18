@@ -1,7 +1,7 @@
 {
   "name": "linyu-translator",
   "version": "1.12.3",
-  "description": "中文 -> 淋语 翻译器（Electron + SQLite）",
+  "description": "中文 -> 淋语 翻译器（Electron + SQLite / Capacitor + sql.js）",
   "main": "src/main/main.js",
   "author": "qiuzh",
   "license": "MIT",
@@ -12,13 +12,24 @@
     "test:core": "node test/core.test.js",
     "test:db": "node test/db.test.js",
     "e2e": "node scripts/e2e-dev.js && node scripts/e2e-data.js",
-    "dist": "electron-builder --win"
+    "dist": "electron-builder --win",
+    "mobile:build": "node scripts/build-mobile.mjs",
+    "mobile:open": "npm run mobile:build && cap sync android && cap open android",
+    "mobile:sync": "cap sync android",
+    "mobile:run": "cap run android"
   },
   "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/browser": "^6.0.6",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/filesystem": "^6.0.4",
+    "@capacitor/share": "^6.0.4",
+    "scrypt-js": "^3.0.1",
     "sql.js": "^1.13.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@capacitor/cli": "^6.2.2",
     "electron": "^33.4.5",
     "electron-builder": "^25.1.8"
   },
@@ -33,8 +44,10 @@
       "src/core/**/*",
       "src/main/**/*",
       "src/renderer/**/*",
+      "src/mobile/**/*",
       "build/icon.png",
       "README.md",
+      "node_modules/scrypt-js/scrypt.js",
       "node_modules/sql.js/package.json",
       "node_modules/sql.js/dist/sql-wasm.js",
       "node_modules/sql.js/dist/sql-wasm.wasm",
