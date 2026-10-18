@@ -2,6 +2,32 @@
 
 中文 → 淋语的桌面翻译器，同时是一个 Wiki 式的淋语词条库。Electron + Vue + sql.js，数据全部落在本机 `%APPDATA%\linyu-translator\linyu.db`，不联网也能用。
 
+## 当前版本：**1.12.2**
+
+五大板块规模：词库 **535** / 句式 **146** / 词卡 **422** / 人物传 **73 位** / 名言 **462**。
+
+最新一次发布（2026-10-18）：
+- 顶部统计条按当前 view 实时切换（词库/句式/词卡/人物传/名言 各自独立计数）
+- 删 5 处「只读模式」提示框（开发者模式登录入口仍在「设置」里）
+- 1.12.1 调查报告 19 词条 + 5 人物（周阴婷 / 阴婷宝 / 3 个 B 站 UP）已入库
+- 1.12.0 词库 +30 圈层黑话 / 句式 +20 高频复用完整句
+- 历史版本 `release/淋语翻译器 1.11.0.exe` / `1.12.0.exe` / `1.12.1.exe` 旧产物均已 mavis-trash 进回收站
+
+## 开发者账号
+
+用于登录「设置 → 开发者模式」后可增删改词库 / 句式 / 词卡 / 人物 / 名言。
+
+| 字段 | 值 |
+|---|---|
+| **账号** | `linyu` |
+| **默认密码** | `linyu130` |
+
+> **这不是安全边界，是防误改门禁。** 拿到 `linyu.db` 的人本就能直接改数据（sql.js 是本地文件），所以密码只是给界面操作多一道确认，不承诺抗逆向。代码定义在 `src/core/auth.js:7-8`。
+
+首次启动时 `auth.ensureInit()` 会自动把账号 `linyu` + 默认密码 `linyu130` 写进 `settings` 表（密码用 scrypt 加盐哈希）。改密码后界面上的"默认密码"提示会消失；如果忘了改过的密码，重装 App 不会重置（`HASH` 还在 settings 里），要清掉 `%APPDATA%\linyu-translator\linyu.db` 重新走一次首次初始化流程。
+
+---
+
 五大板块：词库 `words` / 句式 `rules` / 词卡 `cards` / 人物传 `heroes` / 名言 `quotes`。
 
 ### 五板块的字段
@@ -81,6 +107,8 @@ node scripts/apply-curated.js        # 把人工审过的 curated-*.json 写进 
 
 语料里有两种格式，脚本都吃：`corpus-bili-*.txt`（`【视频】【评论】`）与 `corpus3-13`（`[dm]/[cmt]/[sub]`，无视频上下文、挂不上出处）。
 
+调查报告扩量走 `scripts/apply-workbuddy.js`（同源幂等保护）。
+
 ---
 
 ## 打包
@@ -119,7 +147,7 @@ node scripts/db-order-check.js     # 句式顺序回归
 
 ## 内置内容从哪来
 
-`src/core/lore.js` 聚合 `lore-extra*.js`，`src/core/seed.json` 存词库与句式。收录要过三道闸：
+`src/core/lore.js` 聚合 `lore-extra*.js`（extra3 / extra4 / extra5 / extra6 / extra7），`src/core/seed.json` 存词库与句式。收录要过三道闸：
 
 1. **词条闸**：不能逐字溯源的，必须带 `verify:` 来源。
 2. **名言闸**：必须是淋化产物。版本讨论、直播口播复述、饭圈黑话、游戏机制描述一律不收。
