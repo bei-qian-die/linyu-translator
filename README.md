@@ -119,7 +119,15 @@ node scripts/apply-curated.js        # 把人工审过的 curated-*.json 写进 
 npm run dist
 ```
 
-产物在 `release/`：`淋语翻译器 Setup <版本>.exe`（安装版）、`淋语翻译器 <版本>.exe`（绿色版）、以及 `win-unpacked/`。
+产物在 `release/`：`淋语翻译器 Setup <版本>.exe`（安装版）、`淋语翻译器 <版本>.exe`（绿色版）、以及 `win-unpacked/`。`release/` 只是本地构建目录（已 gitignore），对外分发一律挂到 Gitee 发行版的附件上，别把二进制提交进 git 历史。
+
+这台机器上打 PC 包会踩三个坑，1.13.0 就是照着这个顺序趟过去的：
+
+- **winCodeSign 下不动**：electron-builder 要给 exe 写图标和版本号，得先取 `winCodeSign-2.6.0.7z`，GitHub 直连经常超时。走镜像即可：
+  `ELECTRON_BUILDER_BINARIES_MIRROR=https://registry.npmmirror.com/-/binary/electron-builder-binaries/ npm run dist`
+- **符号链接没权限**：那个压缩包含 macOS 的 `*.dylib` 符号链接，非管理员账户建不了，解压会报 `Cannot create symbolic link`——而 Windows 侧根本用不到这两个文件。手工把包解到 `%LOCALAPPDATA%\electron-builder\Cache\winCodeSign\winCodeSign-2.6.0\`（`rcedit-x64.exe` 和 `windows-10\` 在该目录下即可），后续构建就跳过解压。
+- **`app.asar` 被占住**：清理旧输出目录时会报 `remove ...\app.asar: being used by another process`（本机并没有本项目进程在跑，嫌疑是 Defender 与搜索索引器）。换个干净目录绕开：
+  `npx electron-builder --win --config.directories.output=release/build-<版本>`
 
 `package.json` 的 `build.files` 是**白名单**，只打这几样：
 
