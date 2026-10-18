@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>横竖屏适配探针</title>
+  <style>
+    body { margin: 0; background: #333; }
+    iframe { border: 0; display: block; background: #fff; }
+  </style>
+</head>
+<body>
+  <!-- iframe 的 contentWindow 自带一份 viewport，media query 按 iframe 尺寸算，
+       所以不用真手机也能量竖屏 390x844 / 横屏 844x390 两套布局。 -->
+  <iframe id="f"></iframe>
+  <script>
+    const f = document.getElementById('f');
+
+    window.__probe = {
+      async boot(w, h) {
+        f.style.width = w + 'px';
+        f.style.height = h + 'px';
+        f.src = '/harness.html';
+        await new Promise((r) => { f.onload = r; });
+        await f.contentWindow.__linyuApiReady;
+        await new Promise((r) => setTimeout(r, 400));
+        return 'booted ' + w + 'x' + h;
+      },
+      doc() { return f.contentDocument; },
+      win() { return f.contentWindow; },
+      size(w, h) { f.style.width = w + 'px'; f.style.height = h + 'px'; },
+      click(sel) { const el = this.doc().querySelector(sel); if (!el) return 'MISS ' + sel; el.click(); return 'clicked ' + sel; },
+      count(sel) { return this.doc().querySelectorAll(sel).length; },
+      text(sel) { const el = this.doc().querySelector(sel); return el ? el.textContent.trim().slice(0, 40) : null; },
+      box(sel) {
+        const el = this.doc().querySelector(sel);
+        if (!el) return null;
+        const r = el.getBoundingClientRect();
+        return { x: Math.round(r.x), y: Math.round(r.y), w: Math.round(r.width), h: Math.round(r.height) };
+      },
+      // 溢出=拉条的来源：任何元素右边缘超过视口宽度，就说明横向铺不下
+      overflowX() {
+        const de = this.doc().documentElement;
+        const bad = [];
+        this.doc().querySelectorAll('body *').forEach((el) => {
+          const r = el.getBoundingClientRect();
+          if (r.width > 0 && r.right > de.clientWidth + 1) {
+            bad.push((el.tagName + '.' + String(el.className).split(' ')[0]).slice(0, 28) + '@' + Math.round(r.right));
+          }
+        });
+        return { clientWidth: de.clientWidth, scrollWidth: de.scrollWidth, bad: bad.slice(0, 10), n: bad.length };
+      },
+      fit() {
+        const de = this.doc().documentElement;
+        const w = this.win();
+        return {
+          viewport: [w.innerWidth, w.innerHeight],
+          mobileFlag: this.doc().body.dataset.mobile || '(none)',
+          orientAttr: this.doc().body.dataset.orient || '(none)',
+          portrait: w.matchMedia('(orientation: portrait)').matches,
+          landscape: w.matchMedia('(orientation: landscape)').matches,
+          docScroll: { sw: de.scrollWidth, cw: de.clientWidth, sh: de.scrollHeight, ch: de.clientHeight },
+          appHeight: this.box('#app'),
+          errs: w.__errs || [],
+        };
+      },
+    };
+  </script>
+</body>
+</html>

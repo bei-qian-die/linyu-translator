@@ -58,6 +58,10 @@
   }
 
   // ---- 1. fsAdapter：根据平台选择后端。本文件被同时承担 Electron WebView 与 Capacitor WebView。
+  // style.css 里所有横竖屏/触屏规则都挂在 body[data-mobile] 上，只有确实是原生 WebView 才打这个标记，
+  // 桌面 exe 加载同一份 CSS 也不会变样。
+  if (isCapacitor()) document.body.dataset.mobile = '1';
+
   if (!window.fsAdapter) {
     if (isCapacitor()) {
       window.fsAdapter = linyuFsAdapter.makeCapacitor();

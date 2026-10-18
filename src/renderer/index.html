@@ -2,6 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
+  <!-- viewport-fit=cover：横屏时刘海/挖孔会盖住内容，配合 CSS 的 env(safe-area-inset-*) 把顶栏和正文让开。
+       桌面 Chromium 会忽略这条 meta，只影响 Capacitor WebView。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob: gap: https://ssl.gstatic.com; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https: content:; media-src 'self' data: blob:; connect-src 'self' data: blob: https: ws:;" />
   <title>淋语翻译器</title>
   <link rel="stylesheet" href="style.css" />
@@ -16,6 +19,7 @@
       </nav>
       <div class="stat" v-if="currentStat">{{ currentStat.label }} {{ currentStat.count }} {{ currentStat.unit }}</div>
       <span class="mode-chip" :class="{ on: isDev }">{{ isDev ? '开发者模式' : '只读' }}</span>
+      <button class="gear orient" v-if="orientSupported" :title="orient === 'landscape' ? '切换到竖屏' : '切换到横屏'" :aria-label="orient === 'landscape' ? '切换到竖屏' : '切换到横屏'" @click="toggleOrient"><i class="oi" :class="{ land: orient === 'landscape' }"></i></button>
       <button class="gear" title="设置（Ctrl+,）" @click="openSettings">⚙</button>
     </header>
 
@@ -112,12 +116,12 @@
             </thead>
             <tbody>
               <tr v-for="w in pagedWords" :key="w.id">
-                <td>{{ w.zh }}</td>
-                <td class="ly-cell">{{ w.linyu }}</td>
-                <td>{{ w.alias }}</td>
-                <td>{{ w.sense }}</td>
-                <td><span class="h-tag" v-if="w.pop">{{ w.pop }}</span></td>
-                <td class="src-cell">{{ w.source }}</td>
+                <td data-col="中文">{{ w.zh }}</td>
+                <td class="ly-cell" data-col="淋语">{{ w.linyu }}</td>
+                <td data-col="别名">{{ w.alias }}</td>
+                <td class="wide" data-col="解释">{{ w.sense }}</td>
+                <td data-col="流行度"><span class="h-tag" v-if="w.pop">{{ w.pop }}</span></td>
+                <td class="src-cell" data-col="出处">{{ w.source }}</td>
                 <td class="ops" v-if="isDev">
                   <button class="link" @click="editWord(w)">编辑</button>
                   <button class="link danger" @click="removeWord(w)">删除</button>
@@ -164,12 +168,12 @@
             </thead>
             <tbody>
               <tr v-for="r in pagedRules" :key="r.id">
-                <td class="idx">{{ r.id }}</td>
-                <td class="code">{{ r.pattern }}</td>
-                <td class="code ly-cell">{{ r.template }}</td>
-                <td>{{ r.scene }}</td>
-                <td class="src-cell">{{ r.examples }}</td>
-                <td class="src-cell">{{ r.src || r.note }}</td>
+                <td class="idx" data-col="编号">{{ r.id }}</td>
+                <td class="code" data-col="匹配">{{ r.pattern }}</td>
+                <td class="code ly-cell" data-col="模板">{{ r.template }}</td>
+                <td data-col="场景">{{ r.scene }}</td>
+                <td class="src-cell" data-col="例句">{{ r.examples }}</td>
+                <td class="src-cell" data-col="出处">{{ r.src || r.note }}</td>
                 <td class="ops" v-if="isDev">
                   <button class="link" @click="editRule(r)">编辑</button>
                   <button class="link danger" @click="removeRule(r)">删除</button>
@@ -511,6 +515,16 @@
           </button>
         </div>
         <p class="tip">主题即时生效，下次打开自动记住♥</p>
+
+        <template v-if="orientSupported">
+          <div class="setting-divider"></div>
+          <span class="setting-label">屏幕方向</span>
+          <label class="setting-switch">
+            <input type="checkbox" :checked="autoRotate" @change="toggleAutoRotate($event.target.checked)" />
+            跟随设备旋转自动切换横竖屏
+          </label>
+          <p class="tip">默认关闭：进 App 固定竖屏，要横屏点右上角的方向按钮。打开后转动手机就会自动切换。</p>
+        </template>
 
         <div class="setting-divider"></div>
         <span class="setting-label">开发者模式</span>

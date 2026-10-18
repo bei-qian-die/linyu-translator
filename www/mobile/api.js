@@ -27,6 +27,13 @@
   function shareCap() { return capPlugin('Share'); }
   function browserCap() { return capPlugin('Browser'); }
   function appCap() { return capPlugin('App'); }
+  function orientCap() { return capPlugin('ScreenOrientation'); }
+
+  // @capacitor/screen-orientation 返回 'portrait-primary' / 'landscape-secondary' 这类细分值，
+  // UI 只关心竖还是横
+  function normOrient(type) {
+    return String(type || '').startsWith('landscape') ? 'landscape' : 'portrait';
+  }
 
   // ---- 通用错误包装：让所有 channel 的形状都是 {ok,data} / {ok,error} ----
   async function safe(fn) {
@@ -147,6 +154,8 @@
     let pendingImport = null;
     let undoListeners = [];
     let ioListeners = [];
+    let orientListeners = [];
+    let orientHandle = null;
 
     function readPref(key, fallback) {
       const raw = db.getPrefs()[key];
@@ -155,7 +164,8 @@
       catch { return raw; }
     }
     function writePref(key, value) {
-      db.setPref(key, JSON.stringify(value));
+      // 返回 db 的结果：PREF_KEYS 白名单外的键会被拒掉，设置项必须能知道自己没写进去
+      return db.setPref(key, JSON.stringify(value));
     }
 
     function authStatus() {
@@ -572,6 +582,63 @@
         }
         try { window.open(raw, '_blank'); return { ok: true, data: true }; }
         catch (err) { return { ok: false, error: err.message || String(err) }; }
+      },
+
+      // ---- 屏幕方向 ----
+      // 只有原生平台能锁朝向；桌面是可调大小的窗口，一律回 supported:false，界面就不画这个按钮。
+      async orientationState() {
+        const so = orientCap();
+        const autoRotate = readPref('ui.autoRotate', false) === true;
+        if (!so) return { ok: true, data: { supported: false, type: 'portrait', autoRotate: false } };
+        let type = 'portrait';
+        try { type = normOrient((await so.orientation()).type); } catch { /* 读不到就按竖屏算 */ }
+        return { ok: true, data: { supported: true, type, autoRotate } };
+      },
+      // 启动时调用：默认锁竖屏，只有用户在设置里开过"跟随设备旋转"才放开
+      async initOrientation() {
+        const so = orientCap();
+        if (!so) return { ok: true, data: { supported: false, type: 'portrait', autoRotate: false } };
+        const autoRotate = readPref('ui.autoRotate', false) === true;
+        try {
+          if (autoRotate) await so.unlock();
+          else await so.lock({ orientation: 'portrait' });
+        } catch (err) { return { ok: false, error: err.message || String(err) }; }
+        let type = 'portrait';
+        try { type = normOrient((await so.orientation()).type); } catch {}
+        return { ok: true, data: { supported: true, type, autoRotate } };
+      },
+      async setOrientation(target) {
+        const so = orientCap();
+        if (!so) return { ok: false, error: '当前平台不支持屏幕方向控制' };
+        const want = target === 'landscape' ? 'landscape' : 'portrait';
+        // 手动切一次就松开"跟随设备旋转"：不然用户下一次转身又把方向抢回去了
+        writePref('ui.autoRotate', false);
+        try { await so.lock({ orientation: want }); }
+        catch (err) { return { ok: false, error: err.message || String(err) }; }
+        return { ok: true, data: { supported: true, type: want, autoRotate: false } };
+      },
+      async setAutoRotate(on) {
+        const so = orientCap();
+        if (!so) return { ok: false, error: '当前平台不支持屏幕方向控制' };
+        const enable = on === true || on === 'true';
+        const w = writePref('ui.autoRotate', enable);
+        if (w && w.error) return { ok: false, error: '偏好存不下去：' + w.error };
+        try {
+          if (enable) await so.unlock();
+          else await so.lock({ orientation: normOrient((await so.orientation()).type) });
+        } catch (err) { return { ok: false, error: err.message || String(err) }; }
+        return { ok: true, data: { supported: true, autoRotate: enable } };
+      },
+      onOrientationChange(cb) {
+        orientListeners.push(cb);
+        const so = orientCap();
+        if (so && !orientHandle) {
+          so.addListener('screenOrientationChange', (r) => {
+            const type = normOrient(r && r.type);
+            orientListeners.forEach((fn) => fn({ type }));
+          }).then((h) => { orientHandle = h; }).catch(() => {});
+        }
+        return () => { orientListeners = orientListeners.filter((x) => x !== cb); };
       },
     };
     return api;

@@ -178,6 +178,21 @@ body {
   border-color: var(--pink);
 }
 
+/* 方向按钮里的"手机"：用边框画，不用 ▯/▭ 字形，免得某些 Android 字体缺字变豆腐块 */
+.orient .oi {
+  display: block;
+  width: 11px;
+  height: 16px;
+  border: 1.6px solid currentColor;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+
+.orient .oi.land {
+  width: 16px;
+  height: 11px;
+}
+
 .content {
   flex: 1;
   overflow: auto;
@@ -1644,4 +1659,424 @@ textarea.bad {
 
 .toast-undo:hover {
   background: rgba(255, 255, 255, 0.16);
+}
+
+/* ============================================================
+ * 触屏 App 的横竖屏适配
+ *
+ * 桌面版一行都不受影响：下面每条规则都挂在 body[data-mobile] 上，
+ * 那个标记由 src/mobile/entry.js 判定确实是 Capacitor WebView 后才打上。
+ *
+ * 三层断点：
+ *   不带 orientation 的        = 两种朝向都要的（卡片化表格、安全区、点击热区）
+ *   (orientation: portrait)   = 竖屏：顶栏折成两行，翻译双栏变单栏
+ *   (orientation: landscape)  = 横屏：顶栏保持一行、纵向尺寸全面压缩，表格卡片两列铺满宽度
+ *
+ * "不留拉条" = 横向永不溢出（表格改成卡片堆叠，不靠横向滚动）+ 滚动条轨道隐藏；
+ * 竖向滚动本身保留，只是不显轨道、不吃空间。
+ * ============================================================ */
+
+body[data-mobile] {
+  height: 100dvh;
+}
+
+body[data-mobile] #app {
+  height: 100dvh;
+}
+
+/* 滚动条不显轨道（Chromium WebView 只在 ::-webkit 这层可控） */
+body[data-mobile] ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* 关掉 Android 12+ 的拉伸回弹，边缘不再露出色带 */
+body[data-mobile] .content,
+body[data-mobile] .modal-wide {
+  overscroll-behavior: none;
+}
+
+body[data-mobile] * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 刘海 / 挖孔：横屏时左右安全区要让出来，否则顶栏右边两个圆钮被切 */
+body[data-mobile] .topbar {
+  padding-left: max(14px, env(safe-area-inset-left));
+  padding-right: max(14px, env(safe-area-inset-right));
+}
+
+/* 桌面把 margin-left:auto 挂在 .stat 上顶出右上角，但 .stat 是 v-if（翻译页没有它），
+   少了一个常驻的锚点两个圆钮就会跑到屏幕中间。手机上锚点换成永远在的 mode-chip，
+   统计文本改贴在 brand 后面（它本来说的就是当前这个 tab）。 */
+body[data-mobile] .stat {
+  margin-left: 0;
+}
+
+body[data-mobile] .mode-chip {
+  margin-left: auto;
+}
+
+/* 顶栏挤不动时 flex 会把 34px 圆钮压成椭圆，所以圆钮永不收缩 */
+body[data-mobile] .gear {
+  flex: 0 0 auto;
+}
+
+body[data-mobile] .content {
+  padding-left: max(22px, env(safe-area-inset-left));
+  padding-right: max(22px, env(safe-area-inset-right));
+  padding-bottom: calc(22px + env(safe-area-inset-bottom));
+}
+
+/* ---- 点击热区与字号：手机上的 12px + 26px 高按钮按不准 ---- */
+body[data-mobile] input,
+body[data-mobile] select,
+body[data-mobile] textarea {
+  font-size: 14px;
+}
+
+body[data-mobile] .search {
+  padding: 11px 14px;
+}
+
+body[data-mobile] .form-grid input,
+body[data-mobile] .form-grid select,
+body[data-mobile] .form-grid textarea,
+body[data-mobile] .auth-row input {
+  padding: 10px 12px;
+}
+
+body[data-mobile] .ghost.small,
+body[data-mobile] .go.small {
+  padding: 9px 16px;
+}
+
+body[data-mobile] .chip {
+  padding: 8px 13px;
+}
+
+/* 历史页的条数下拉：默认 2px padding 只有 24px 高，手指按不到 */
+body[data-mobile] .limit-select {
+  padding: 8px 10px;
+}
+
+body[data-mobile] .filter-chips {
+  flex-wrap: wrap;
+}
+
+/* ---- 表格改卡片堆叠：竖屏放不下 7 列，横向滚动又会留拉条 ---- */
+body[data-mobile] .table-wrap {
+  max-height: none;
+  overflow: visible;
+  background: transparent;
+  border: none;
+}
+
+body[data-mobile] table,
+body[data-mobile] tbody,
+body[data-mobile] tr,
+body[data-mobile] td {
+  display: block;
+  width: auto;
+}
+
+body[data-mobile] thead {
+  display: none;
+}
+
+body[data-mobile] tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body[data-mobile] tr {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+  box-shadow: var(--shadow);
+}
+
+body[data-mobile] td {
+  padding: 2px 0;
+  border: none;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  min-width: 0;
+}
+
+/* 表头没了，列名靠 data-col 补回来 */
+body[data-mobile] td[data-col]::before {
+  content: attr(data-col);
+  flex: 0 0 42px;
+  font-size: 10px;
+  color: var(--placeholder);
+}
+
+body[data-mobile] .src-cell,
+body[data-mobile] .code {
+  max-width: none;
+  word-break: break-word;
+}
+
+body[data-mobile] td.ops {
+  border-top: 1px dashed var(--line);
+  margin-top: 6px;
+  padding-top: 8px;
+  gap: 4px;
+}
+
+body[data-mobile] .link {
+  margin-right: 0;
+  padding: 6px 10px;
+}
+
+body[data-mobile] .idx {
+  width: auto;
+}
+
+/* ---- 弹窗：占满可用高度，内部自己滚 ---- */
+body[data-mobile] .modal {
+  width: calc(100vw - 20px);
+  max-width: none;
+  max-height: calc(100dvh - 20px);
+  overflow-y: auto;
+}
+
+body[data-mobile] .modal-wide {
+  width: calc(100vw - 20px);
+  max-height: calc(100dvh - 20px);
+}
+
+/* ---- 设置里的开关行 ---- */
+.setting-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.setting-switch input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--pink);
+}
+
+/* ================= 竖屏 ================= */
+
+@media (orientation: portrait) {
+  /* 顶栏折两行：第一行 ♥ + 统计 + 方向/设置，第二行整页 tab */
+  body[data-mobile] .topbar {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  /* 标题让位给 tab：留 ♥ 就够认了 */
+  body[data-mobile] .brand {
+    font-size: 0;
+  }
+
+  body[data-mobile] .brand .heart {
+    font-size: 17px;
+    margin-right: 0;
+  }
+
+  body[data-mobile] .tabs {
+    order: 5;
+    flex: 1 1 100%;
+    gap: 3px;
+  }
+
+  body[data-mobile] .tabs button {
+    flex: 1;
+    padding: 7px 0;
+    font-size: 12px;
+  }
+
+  body[data-mobile] .stat {
+    font-size: 11px;
+  }
+
+  body[data-mobile] .mode-chip {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+
+  body[data-mobile] .panels {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  body[data-mobile] .panel textarea,
+  body[data-mobile] .out-text {
+    height: 150px;
+  }
+
+  body[data-mobile] .lang-bar,
+  body[data-mobile] .live-row {
+    flex-wrap: wrap;
+    gap: 8px 10px;
+  }
+
+  body[data-mobile] .hero-detail,
+  body[data-mobile] .hd-cards {
+    gap: 12px;
+  }
+}
+
+/* ================= 横屏 ================= */
+
+@media (orientation: landscape) {
+  /* 顶栏保持一行：横屏宽度够，纵向空间才是稀缺资源。
+     wrap 只是兜底——宽度实在不够时宁可折两行，也不能把按钮挤出屏幕。 */
+  body[data-mobile] .topbar {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* tab 压到 6px 10px 就到底了：再小手指按不准，而且这档字号要让 740 宽（常见横屏 dp）不折行 */
+  body[data-mobile] .tabs button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  body[data-mobile] .gear {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+
+  body[data-mobile] .content {
+    padding: 10px 20px calc(10px + env(safe-area-inset-bottom));
+  }
+
+  /* 表格卡片双列，把横向富余的宽度用掉 */
+  body[data-mobile] tbody {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  body[data-mobile] tr {
+    flex: 1 1 calc(50% - 5px);
+  }
+
+  /* 人物详情：头像和文字并排改回紧凑 */
+  body[data-mobile] .hd-hero {
+    padding: 12px 16px;
+    gap: 14px;
+  }
+
+  body[data-mobile] .hero-avatar.big {
+    width: 84px;
+    height: 84px;
+    font-size: 28px;
+  }
+}
+
+/* 小屏横屏（640dp 宽一类）：先压字号和间距，把顶栏留住一行，别一到 640 就折行吃掉 1/5 高度 */
+@media (orientation: landscape) and (max-width: 720px) {
+  body[data-mobile] .topbar {
+    gap: 8px;
+  }
+
+  body[data-mobile] .brand {
+    font-size: 15px;
+  }
+
+  body[data-mobile] .tabs {
+    gap: 2px;
+  }
+
+  body[data-mobile] .tabs button {
+    padding: 6px 7px;
+  }
+
+  body[data-mobile] .stat {
+    font-size: 10px;
+  }
+
+  body[data-mobile] .mode-chip {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}
+
+/* 横屏手机的纵向高度只有 360~420dp：能压的全压 */
+@media (orientation: landscape) and (max-height: 620px) {
+  body[data-mobile] .panel {
+    padding: 10px 12px;
+  }
+
+  body[data-mobile] .panel textarea,
+  body[data-mobile] .out-text {
+    height: 88px;
+  }
+
+  body[data-mobile] .panel-foot {
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+
+  body[data-mobile] .search {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+  }
+
+  body[data-mobile] .form-grid {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+
+  body[data-mobile] .fg-row,
+  body[data-mobile] .fg-full,
+  body[data-mobile] .form-grid textarea {
+    margin-bottom: 8px;
+  }
+
+  body[data-mobile] .fg-row > input,
+  body[data-mobile] .fg-row > select {
+    min-width: 120px;
+  }
+
+  body[data-mobile] .modal {
+    padding: 12px 16px;
+    max-height: calc(100dvh - 12px);
+  }
+
+  body[data-mobile] .modal-head {
+    margin-bottom: 10px;
+  }
+
+  body[data-mobile] .setting-divider {
+    margin: 12px 0 10px;
+  }
+
+  body[data-mobile] .hero-card {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  body[data-mobile] .hero-avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  body[data-mobile] .flashcard {
+    height: 150px;
+  }
+
+  body[data-mobile] .hist-item {
+    padding: 10px 14px;
+  }
 }

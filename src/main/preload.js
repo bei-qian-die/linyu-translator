@@ -60,4 +60,11 @@ contextBridge.exposeInMainWorld('api', {
   openLogs: () => ipcRenderer.invoke('ly:logs:open'),
 
   openExternal: (url) => ipcRenderer.invoke('ly:openExternal', url),
+
+  // 桌面窗口是可调大小的，没有"锁屏幕方向"这回事。保留同名 API 是为了渲染层不用到处判平台。
+  orientationState: () => Promise.resolve({ ok: true, data: { supported: false, type: 'portrait', autoRotate: false } }),
+  initOrientation: () => Promise.resolve({ ok: true, data: { supported: false, type: 'portrait', autoRotate: false } }),
+  setOrientation: () => Promise.resolve({ ok: false, error: '桌面版无需锁定屏幕方向' }),
+  setAutoRotate: () => Promise.resolve({ ok: false, error: '桌面版无需锁定屏幕方向' }),
+  onOrientationChange: () => () => {},
 });

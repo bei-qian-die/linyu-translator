@@ -19,6 +19,7 @@
 | `ly:logs:open`                 | 简化为返回最近 60 行日志（Android 没有目录打开概念）    |
 | `ly:openExternal`              | `@capacitor/browser` 打开 http/https 外链               |
 | `ly:meta`                      | 同名 API                                                  |
+| —（桌面窗口可调大小，没有这回事） | `api.orientationState / initOrientation / setOrientation / setAutoRotate / onOrientationChange` — 走 `@capacitor/screen-orientation`；桌面 `preload.js` 保留同名 API 但一律回 `supported:false` |
 
 ## 目录结构（与桌面版对比）
 
@@ -98,8 +99,31 @@ adb logcat | findstr "linyu Capacitor"
 - `android/app/src/main/res/mipmap-{m,h,xh,xxh,xxxh}dpi/ic_launcher{,_round,_foreground}.png`：来自桌面版的 `build/icon.png`，统一占位（如果你想用 Android Studio 的 Image Asset Studio 重做一遍也可以）
 - `strings.xml`：已生成 `淋语翻译器` 应用名
 
-## 数据兼容
+## 横竖屏（1.13.0）
 
+方向由 `@capacitor/screen-orientation` 控制，界面靠 CSS 媒体查询跟随：
+
+- 进 App 默认 `lock('portrait')`；只有设置页「跟随设备旋转」打开时才 `unlock()`，偏好存在 `settings` 表的 `ui.autoRotate`（已进 `db.js` 的 `PREF_KEYS` 白名单）
+- 顶栏右上角的方向钮手动切换横竖屏，切一次会顺手关掉「跟随设备旋转」，否则用户一转身方向又被传感器抢回去
+- 桌面版没有"锁屏"概念：`preload.js` 保留 5 个同名 API 但一律回 `supported:false`，渲染层据此不画按钮，`npm start` 出来的窗口行为不变
+- 两套布局的规则**全部**挂在 `body[data-mobile]` 上，这个标记由 `src/mobile/entry.js` 在确认确实是 Capacitor WebView 后才打。桌面 exe 加载同一份 `style.css` 也不会变样
+
+断点分三层（见 `style.css` 末尾）：不带 `orientation` 的是两种朝向共用的（表格卡片化、安全区、热区尺寸），`portrait` 折顶栏为两行 + 翻译双栏变单栏，`landscape` 保持一行并压缩纵向。另有一档 `(orientation: landscape) and (max-width: 720px)` 给 640dp 一类小横屏。
+
+### 没有设备怎么验：`/fit.html` 探针
+
+```bash
+npm run mobile:build
+node scripts/serve-www.js          # 127.0.0.1:8787
+# 打开 http://127.0.0.1:8787/fit.html
+```
+
+- `scripts/cap-stub.js`：假的原生桥（Filesystem 用内存 Map，ScreenOrientation 只记 `locked`，另有 `__rotate()` 假装传感器），注入进 `/harness.html`
+- `scripts/fit-harness.html`：把 App 装在 iframe 里，改 iframe 尺寸就能量 390x844 / 844x390 两套布局，`__probe.overflowX()` 找横向溢出（"不留拉条"的判据），`__probe.fit()` 报 `body[data-mobile]`、`data-orient`、`__errs`
+- iframe 处于后台时 `setTimeout` 会被节流、CSS transition 会冻在 0%，量尺寸前先给文档塞一条 `*{transition:none!important}`，否则圆钮看着没变形其实是动画没走完
+- 量过的横屏宽度：844 / 740 / 667 / 640 单行不溢出，600 / 560 靠顶栏 `flex-wrap` 兜底折行，圆钮始终 34x34
+
+## 数据兼容
 桌面版的 `linyu.db` 格式与移动版完全一致（sql.js + 同一套 SCHEMA）。**注意：本项目当前实现是两个独立库**，并没有自动同步机制：
 - 桌面：`%APPDATA%\linyu-translator\linyu.db`
 - 移动：`/data/data/com.qiuzh.linyutranslator/files/linyu.db`（Capacitor Directory.DATA）
@@ -125,7 +149,7 @@ adb logcat | findstr "linyu Capacitor"
 
 - Android Auto Backup（`android:allowBackup` 默认 true，会自动备份 files/）—— 已经开
 - App 内更新检查（暂未做；目前要更新就是下新版 APK 覆盖安装）
-- 平板自适应横竖屏（CSS 已经支持响应式，但没单独调试过）
+- 平板（≥1024dp 横屏）没上真机验过：断点写的是 `orientation` 不是 `width`，逻辑上会走横屏档，但 34px 圆钮在大屏上偏小
 - 启动闪屏
 - 应用签名（debug APK 用 Android 默认的 debug.keystore；上架需要正式签名）
 

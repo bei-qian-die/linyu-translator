@@ -70,6 +70,39 @@ createApp({
       if (isDev.value) loadBackups();
     }
 
+    // ---- 屏幕方向（原生 App 才能锁；桌面 supported=false，按钮不渲染）----
+    const orientSupported = ref(false);
+    const orient = ref('portrait');
+    const autoRotate = ref(false);
+    function setOrient(type) {
+      orient.value = type === 'landscape' ? 'landscape' : 'portrait';
+      document.body.dataset.orient = orient.value;
+    }
+    function pickOrientState(r) {
+      orientSupported.value = Boolean(r && r.supported);
+      if (r && r.type) setOrient(r.type);
+      autoRotate.value = Boolean(r && r.autoRotate);
+    }
+    async function toggleOrient() {
+      const next = orient.value === 'landscape' ? 'portrait' : 'landscape';
+      try {
+        pickOrientState(await call(window.api.setOrientation(next)));
+        setOrient(next);
+        say(next === 'landscape' ? '已切到横屏' : '已切到竖屏');
+      } catch (err) {
+        fail(err);
+      }
+    }
+    async function toggleAutoRotate(on) {
+      try {
+        pickOrientState(await call(window.api.setAutoRotate(Boolean(on))));
+        say(on ? '已开启跟随设备旋转' : '已关闭跟随设备旋转，当前方向已锁定');
+      } catch (err) {
+        autoRotate.value = !on;
+        fail(err);
+      }
+    }
+
     async function call(promise) {
       const r = await promise;
       if (!r.ok) throw new Error(r.error || '出错了');
@@ -1168,6 +1201,12 @@ createApp({
       historyLimit.value = Number(parsePref(prefs['history.limit'], 200)) || 200;
       if (!parsePref(prefs['ui.live'], true)) liveOn.value = false;
 
+      // 屏幕方向：进 App 先锁竖屏，只有用户在设置里开过「跟随设备旋转」才放开
+      try {
+        pickOrientState(await call(window.api.initOrientation()));
+      } catch { /* 桌面版没有这个能力，保持默认竖屏布局即可 */ }
+      window.api.onOrientationChange((r) => setOrient(r.type));
+
       loadWords();
       // 词卡/名言的「归属人物」输入框要靠 datalist 提示人名
       loadHeroes();
@@ -1246,6 +1285,7 @@ createApp({
       check, checkIssues, runInspect, cleanHeroWords, deleteInvalidWords, openLogs,
       toast, say, doUndo, appVersion,
       theme, themeList, setTheme, showSettings, openSettings,
+      orientSupported, orient, autoRotate, toggleOrient, toggleAutoRotate,
     };
   },
 }).mount('#app');

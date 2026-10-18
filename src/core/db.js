@@ -113,6 +113,7 @@ const PREF_KEYS = new Set([
   'history.limit',
   'ui.theme',
   'ui.live',
+  'ui.autoRotate',
 ]);
 
 const SECTIONS = {
