@@ -23,6 +23,15 @@
  */
 
 (function () {
+  // ---- 桌面 Electron 守卫 ----
+  // preload（contextBridge）已经在页面加载前同步挂好真 window.api（IPC 到主进程 SQLite）。
+  // 它不是 thenable、也没有 __isStub 标记。此时再走下面的本地初始化（sql.js + sessionStorage
+  // fsAdapter + createApi 替换）不仅多余，还会把 IPC api 整个覆盖掉，渲染层连到一个空库上。
+  // 浏览器 / Capacitor WebView 没有 preload api，不受影响，照常走完整初始化。
+  var __preloadApi = typeof window.api === 'object' && window.api !== null
+    && !window.api.__isStub && typeof window.api.then !== 'function';
+  if (__preloadApi) return;
+
   // ---- 0. 占位 window.api ----
   // db 真正准备好之前渲染层就会同步调 api，先给个 Proxy 让所有调用排队
   if (!window.api || typeof window.api.then !== 'function') {

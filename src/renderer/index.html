@@ -5,7 +5,20 @@
   <!-- viewport-fit=cover：横屏时刘海/挖孔会盖住内容，配合 CSS 的 env(safe-area-inset-*) 把顶栏和正文让开。
        桌面 Chromium 会忽略这条 meta，只影响 Capacitor WebView。 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob: gap: https://ssl.gstatic.com; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https: content:; media-src 'self' data: blob:; connect-src 'self' data: blob: https: ws:;" />
+  <!--
+    CSP（2026-10-25 修正版）：
+      · script-src 必须保留 'unsafe-eval'：页面用的是 Vue 完整版（vue.global.prod.js，含运行时
+        模板编译器），#app 里的 HTML 就是模板，挂载时要 new Function 编译 DOM 模板。2026-10-22
+        的"收紧版"把它换成 wasm-unsafe-eval，Vue mount 直接被 CSP 拒掉（EvalError），窗口只剩
+        未渲染的 {{ }} 模板 —— 桌面端 1.15.0/1.16.0 打开即"卡死"的第二个元凶（第一个是渲染层
+        资源 404，由 scripts/prepare-desktop.mjs 修复）。sql.js 的 WebAssembly 也被它覆盖。
+      · style-src 保留 'self'：页面里没有内联 <style> / style=""，Vue 的 :style 走 DOM 属性。
+      · img-src / connect-src 不放行任意 https: 与 ws:：
+        人物图只有仓库内置路径（img/hero-N.png）与开发者上传的 media:（走 data: 的 base64），
+        渲染层不发任何跨域请求。
+      · 没有 Cordova 遗留的 gap: 与 ssl.gstatic.com。
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval'; style-src 'self'; img-src 'self' data: blob: content:; media-src 'self' data: blob:; connect-src 'self' data: blob:;" />
   <title>淋语翻译器</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -88,7 +101,8 @@
           <div class="fg-row">
             <input v-model.trim="wordForm.zh" placeholder="中文词条，如：可爱" @keyup.enter="saveWord" />
             <input v-model.trim="wordForm.linyu" placeholder="淋语翻译，如：阔爱" @keyup.enter="saveWord" />
-            <input v-model.trim="wordForm.alias" placeholder="别名（可空）" />
+            <input v-model.trim="wordForm.alias" placeholder="别名 / 多种译法，顿号分隔（可空）" />
+            <input v-model.trim="wordForm.slot" placeholder="语义位，如：第一人称自称（可空）" />
           </div>
           <div class="fg-row">
             <textarea class="fg-area" v-model.trim="wordForm.sense" rows="2" placeholder="解释：这个词为什么这么淋（可空）"></textarea>
@@ -107,11 +121,21 @@
           </div>
         </div>
         <input class="search" :ref="(el) => setSearchRef('words', el)" v-model.trim="wordSearch" placeholder="搜索词条…（Ctrl+F）" />
+        <div class="filter-chips" v-if="wordSlots.length">
+          <button class="chip" :class="{ on: wordSlot === '' }" @click="switchWordSlot('')">全部语义位</button>
+          <button
+            v-for="s in wordSlots"
+            :key="s.key"
+            class="chip"
+            :class="{ on: wordSlot === s.key }"
+            @click="switchWordSlot(s.key)"
+          >{{ s.key }}（{{ s.count }}）</button>
+        </div>
         <div class="table-wrap">
           <table>
             <thead>
               <tr>
-                <th>中文</th><th>淋语</th><th>别名</th><th>解释</th><th>流行度</th><th>出处</th><th class="ops-col" v-if="isDev">操作</th>
+                <th>中文</th><th>淋语</th><th>别名/多译法</th><th>语义位</th><th>解释</th><th>流行度</th><th>出处</th><th class="ops-col" v-if="isDev">操作</th>
               </tr>
             </thead>
             <tbody>
@@ -119,6 +143,7 @@
                 <td data-col="中文">{{ w.zh }}</td>
                 <td class="ly-cell" data-col="淋语">{{ w.linyu }}</td>
                 <td data-col="别名">{{ w.alias }}</td>
+                <td data-col="语义位"><span class="h-tag" v-if="w.slot">{{ w.slot }}</span></td>
                 <td class="wide" data-col="解释">{{ w.sense }}</td>
                 <td data-col="流行度"><span class="h-tag" v-if="w.pop">{{ w.pop }}</span></td>
                 <td class="src-cell" data-col="出处">{{ w.source }}</td>
@@ -318,7 +343,7 @@
           <div class="hero-list">
             <div class="hero-card clickable" v-for="h in filteredHeroes" :key="h.id" @click="openHero(h)">
               <div class="hero-avatar">
-                <img v-if="heroSrc(h) && !imgFailed[h.name]" :src="heroSrc(h)" :alt="h.name" @error="markImgFail(h.name)" />
+                <img v-if="heroSrc(h) && !imgFailed[h.name]" :src="heroThumb(h) || heroSrc(h)" :alt="h.name" loading="lazy" decoding="async" @error="onHeroImgError(h, $event)" />
                 <span v-else>{{ h.name.slice(0, 1) }}</span>
               </div>
               <div class="hero-body">
@@ -667,11 +692,17 @@
   <script src="core/lore-extra5.js"></script>
   <script src="core/lore-extra6.js"></script>
   <script src="core/lore-extra7.js"></script>
+  <script src="core/lore-extra8.js"></script>
+  <script src="core/lore-extra9.js"></script>
+  <script src="core/lore-extra10.js"></script>
+  <script src="core/lore-extra11.js"></script>
+  <script src="core/lore-extra12.js"></script>
   <script src="core/lore.js"></script>
   <script src="core/tokenizer.js"></script>
   <script src="core/translator.js"></script>
   <script src="core/db.js"></script>
   <script src="core/auth.js"></script>
+  <script src="core/service.js"></script>
 
   <!-- 移动入口：api + entry -->
   <script src="mobile/api.js"></script>

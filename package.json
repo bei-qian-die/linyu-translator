@@ -1,22 +1,31 @@
 {
   "name": "linyu-translator",
-  "version": "1.13.0",
+  "version": "1.16.1",
   "description": "中文 -> 淋语 翻译器（Electron + SQLite / Capacitor + sql.js）",
   "main": "src/main/main.js",
   "author": "qiuzh",
   "license": "MIT",
   "scripts": {
-    "start": "electron .",
+    "start": "node scripts/prepare-desktop.mjs && electron .",
     "check": "node scripts/check.js",
-    "test": "node test/core.test.js && node test/db.test.js",
+    "test": "node test/core.test.js && node test/db.test.js && node test/service.test.js && node test/weapp.test.js",
     "test:core": "node test/core.test.js",
     "test:db": "node test/db.test.js",
     "e2e": "node scripts/e2e-dev.js && node scripts/e2e-data.js",
-    "dist": "electron-builder --win",
+    "dist": "node scripts/prepare-desktop.mjs && electron-builder --win",
     "mobile:build": "node scripts/build-mobile.mjs",
     "mobile:open": "npm run mobile:build && cap sync android && cap open android",
     "mobile:sync": "cap sync android",
-    "mobile:run": "cap run android"
+    "mobile:run": "cap run android",
+    "weapp:sync": "node scripts/build-weapp-data.mjs",
+    "test:weapp": "node test/weapp.test.js",
+    "verify:weapp": "node test/weapp.test.js",
+    "lint": "eslint src scripts test miniprogram",
+    "lint:fix": "eslint src scripts test miniprogram --fix",
+    "format": "prettier --write \"src/**/*.{js,css,html}\" \"scripts/**/*.js\" \"test/**/*.js\"",
+    "typecheck": "tsc -p jsconfig.json",
+    "test:service": "node test/service.test.js",
+    "prepare-desktop": "node scripts/prepare-desktop.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^6.1.2",
@@ -31,8 +40,13 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^6.2.2",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
     "electron": "^33.4.5",
-    "electron-builder": "^25.1.8"
+    "electron-builder": "^25.1.8",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2"
   },
   "build": {
     "appId": "com.qiuzh.linyu-translator",

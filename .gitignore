@@ -31,5 +31,18 @@ audit.txt
 .idea/
 .DS_Store
 
-# 说明：corpus*.txt 与 evidence/ 是 attest.js 判定「内容真在语料里出现」的依据，
+# 说明：corpus/ 与 evidence/ 是 attest.js 判定「内容真在语料里出现」的依据，
 # 删掉它们 node scripts/check.js 会因为找不到语料直接失败，所以这两类必须随代码一起留存。
+# 语料从根目录收进 corpus/ 了，采集脚本（harvest-bili.js）也直接写那里。
+
+# Capacitor webDir 是 npm run mobile:build 的产物，每次全量重建，不进版本库
+www/
+
+# core 编译产物（等引入构建工具后 TS 化再用）
+src/core/dist/
+
+# 桌面端渲染层资源（scripts/prepare-desktop.mjs 生成，npm start / dist 前置重建）
+src/renderer/vendor/
+src/renderer/core/
+src/renderer/mobile/
+src/renderer/seed-data.js

@@ -15,7 +15,7 @@
  *     vendor/             ← sql-wasm.js, sql-wasm.wasm, scrypt.js, vue.global.prod.js
  *
  * core/ 与 mobile/ 的每个文件都会被包一层 IIFE：普通 <script> 共享同一个全局词法作用域，
- * lore-extra3..7 都写 `const cards`、tokenizer 与 translator 都写 buildTokenizer，第二个起
+ * lore-extra3..9 都写 `const cards`、tokenizer 与 translator 都写 buildTokenizer，第二个起
  * 就是 SyntaxError: Identifier has already been declared → 整个文件被丢掉，WebView 里表现为
  * 「词库/词卡/人物全是空的，但桌面 exe 正常」（桌面走 require，每个模块自带作用域）。
  */
@@ -25,6 +25,7 @@ import path from 'path';
 import { createHash } from 'crypto';
 import vm from 'vm';
 import { fileURLToPath } from 'url';
+import { wrapDirInIIFE } from './lib/wrap-iife.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
@@ -46,19 +47,6 @@ async function copyDir(src, dst) {
     if (e.isDirectory()) await copyDir(sp, dp);
     else await copyFile(sp, dp);
   }
-}
-
-// 把整个文件收进一个函数作用域，等价于 require 给每个模块的隔离；.call(window) 保住
-// 顶层 this === window，UMD 的 `typeof self !== 'undefined' ? self : this` 行为不变。
-async function wrapDirInIIFE(dir) {
-  const names = (await fs.readdir(dir)).filter((n) => n.endsWith('.js'));
-  for (const name of names) {
-    const p = path.join(dir, name);
-    const code = await fs.readFile(p, 'utf8');
-    if (code.startsWith('(function () {\n\'use strict\';\n// __wrap')) continue;
-    await fs.writeFile(p, `(function () {\n'use strict';\n// __wrapped by scripts/build-mobile.mjs\n${code}\n}).call(window);\n`, 'utf8');
-  }
-  return names;
 }
 
 // 内置内容指纹：同一版本号下改了 seed/lore 也要让老库补种，所以按源文件内容算而不是只认版本。
@@ -193,6 +181,11 @@ async function main() {
     'src/core/lore-extra5.js',
     'src/core/lore-extra6.js',
     'src/core/lore-extra7.js',
+    'src/core/lore-extra8.js',
+    'src/core/lore-extra9.js',
+    'src/core/lore-extra10.js',
+    'src/core/lore-extra11.js',
+    'src/core/lore-extra12.js',
   ];
   const hash = await contentHash(contentFiles);
   const seedJs = `// 由 scripts/build-mobile.mjs 自动生成；source: src/core/seed.json\n` +
