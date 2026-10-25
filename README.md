@@ -1,6 +1,9 @@
 # 淋语翻译器
 
-中文 → 淋语的桌面翻译器，同时是一个 Wiki 式的淋语词条库。Electron + Vue + sql.js，数据全部落在本机 `%APPDATA%\linyu-translator\linyu.db`，不联网也能用。
+中文 → 淋语的翻译器，同时是一个 Wiki 式的淋语词条库。**一套翻译引擎，四端交付**：Electron 桌面 / Capacitor 安卓 / 微信小程序 / Web 静态站，业务规则只写一份，每端只补平台适配层。不联网也能用，输入内容永不上传。
+
+> **在线体验（Web 版，无需安装）**：<https://linyu-translator.app.workbuddy.host/?sharecode=KYSNKQPHS7>
+> 桌面版与安卓版见 [Releases](https://github.com/bei-qian-die/linyu-translator/releases)。
 
 ## 当前版本：**1.18.0**
 
@@ -83,16 +86,17 @@
 ## 代码结构
 
 ```
-src/core/     纯逻辑，桌面与移动端共用：db / translator / tokenizer / auth / lore / service
+src/core/     纯逻辑，四端共用：db / translator / tokenizer / auth / lore / service
 src/main/     Electron 主进程：IPC 转发 + 平台相关（对话框、media 目录、日志、窗口几何）
 src/mobile/   Capacitor WebView：文件选择 / 分享 / 屏幕方向，并用 service 组出 window.api
+src/web/      网页端：idbAdapter / webEntry / patch-app / web.css（第四端的适配层）
 src/renderer/ 界面：Vue 3，index.html + app.js + style.css
 ```
 
 **业务规则只写一份。** 开发者门禁、撤销槽位、导入暂存过期、登录失败锁定、五板块 CRUD
-都在 `src/core/service.js`；桌面 `main.js` 与移动 `api.js` 只是转发，加接口不用改两处。
-两端各自留着平台特有的那一半：桌面管 `userData/media` 与文件对话框，移动端管 Capacitor
-插件与屏幕方向。
+都在 `src/core/service.js`；桌面 `main.js`、移动 `api.js`、Web `webEntry.js` 只是转发，
+加接口不用改多处。每端各自留着平台特有的那一半：桌面管 `userData/media` 与文件对话框，
+移动端管 Capacitor 插件与屏幕方向，Web 端管 IndexedDB 与浏览器生命周期。
 
 `service.js` 的约定是**成功返回数据、失败一律 throw**：桌面用 `wrap` 捕获成
 `{ ok:false, error }`，移动端用 `safe()` 捕获成同样的形状，渲染层看到的东西一致。
@@ -127,6 +131,51 @@ npm run test:weapp
 人物头像用姓名首字渐变块，主包里没有图片——人物原图共 8.4MB，放不进 2MB 主包；
 外部链接在小程序里不能直接打开，人物详情页改成「复制链接后到浏览器访问」。
 小程序不发任何翻译网络请求，输入内容不上传，历史可用「关于 → 清除历史与偏好设置」一键删除。
+
+## 网页端（第四端 · Web 静态站）
+
+`www-web/` 是零构建的纯静态站点，直接用浏览器打开 `index.html` 即可，**没有服务端、没有账号、没有翻译网络请求**。
+它复用与桌面 / 安卓 / 小程序完全相同的 `src/core/` 引擎与语料，只补了 Web 特有的一层适配。
+
+```bash
+npm run web:build          # 出 www-web/（IIFE 包裹 + 内容指纹 + bundle 闸门），已内置分享码
+node scripts/serve-web.js  # 本地调试，http://127.0.0.1:8788
+node scripts/smoke-web.js  # 渲染冒烟测试，24 项
+```
+
+### 为什么要做这一端
+
+三端已交付后，缺的是「打开链接就能用」的形态。网页端把技术故事从「跨端」推进到
+**一套语料 + 一套引擎 + 四种宿主环境的适配层设计**——每端只写平台特有的那一半。
+
+| 端 | 宿主 | 持久化落点 |
+|---|---|---|
+| PC 桌面 | Electron exe | `%APPDATA%\linyu-translator\linyu.db` |
+| Android | Capacitor APK | App 私有目录 `linyu.db` |
+| 微信小程序 | 原生 WXML | `wx.storage` |
+| **网页** | **静态站** | **IndexedDB** |
+
+### Web 端新增的三个部件
+
+| 文件 | 作用 |
+|---|---|
+| `src/web/idbAdapter.js` | fsAdapter 家族的**第三种后端**：把 `linyu.db` 以单 key Blob 存进 IndexedDB。此前浏览器兜底是 sessionStorage（刷新即丢库），这是网页端唯一的硬缺口 |
+| `src/web/webEntry.js` | Web 入口：IndexedDB 优先 → sessionStorage 降级，挂 `window.__IS_WEB`，持久化探测失败时给出提示条 |
+| `src/web/patch-app.js` | 渲染层适配：hash 路由、`?t=` 分享链接、主题跟随系统、`/` 键聚焦搜索 |
+
+**多标签页写入冲突**：`BroadcastChannel` 单写者锁——先打开的标签页持有写权限，后开的自动降级为只读，
+避免两个标签页同时把整库 Blob 写回 IndexedDB 互相覆盖。
+
+### 性能与体积
+
+- 首屏约 **2.9 MB 原始 / ~850 KB gzip**；人物原图 9.9 MB 不进关键路径，列表走 2.4 MB 缩略图 + 懒加载
+- 翻译在前端毫秒级完成；`checkBundle` 闸门守着内容指纹（1.18.0：词库 1178 / 词卡 794 / 名言 2078 / 人物 207）
+
+### Web 端的语义差异
+
+- **开发者模式** = 编辑当前浏览器 IndexedDB 里的副本，不影响其他端
+- **导入 / 导出** 改为浏览器下载与上传
+- 未做：桌面端的窗口几何、移动端的屏幕方向与分享面板
 
 ## 跑校验（打包前必须全绿）
 
