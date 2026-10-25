@@ -1,0 +1,832 @@
+/*
+ * 移动端浏览器适配层
+ * ---------------------------------------------------------------------------
+ * 只在 body.mobile-app 存在时生效（由 web/mobileUI.js 判定后挂上），
+ * 桌面浏览器完全不加载任何一条规则，样式表也照常被 style.css 覆盖 —— 零影响。
+ *
+ * 设计原则（与桌面端保持同一套视觉语言，只改排布密度）：
+ *   1. 不改设计 token：颜色/圆角/阴影/渐变一律沿用 style.css 的 CSS 变量，
+ *      所以「经典粉紫 / 简洁纯白 / 简洁黑」三套主题在手机上自动全部成立。
+ *   2. 顶部导航 → 底部悬浮胶囊导航。桌面横排 7 个 tab 在 390px 宽度下必然溢出，
+ *      而底部单手可达区正是现代移动端的惯例位置。
+ *   3. 表格 → 卡片列表。词库/句式 7 列表格在手机上无论怎么压都是横向滚动地狱，
+ *      改用 td[data-col] 自带的列名做「标签 + 值」两栏，读起来像原生列表。
+ *   4. 触控目标 ≥ 44px，输入框字号 16px（iOS Safari 小于 16px 会在聚焦时自动放大页面）。
+ *   5. 安全区：刘海屏顶部 env(safe-area-inset-top)、小白条底部 inset-bottom 全部让开。
+ */
+
+body.mobile-app {
+  --m-nav-h: 56px;
+  --m-nav-gap: 10px;
+  --m-safe-top: env(safe-area-inset-top, 0px);
+  --m-safe-bottom: env(safe-area-inset-bottom, 0px);
+  /* 移动端去掉点击高亮蓝框，改用 :active 的轻微缩放做反馈 */
+  -webkit-tap-highlight-color: transparent;
+  /* manipulation：干掉双击缩放和 300ms 点击延迟，但保留双指捏合缩放（可访问性） */
+  touch-action: manipulation;
+  overscroll-behavior-y: contain;
+}
+
+/* 手机上长按选中译文/词条是刚需，但按钮文字不该被选中 */
+body.mobile-app button,
+body.mobile-app .tabs,
+body.mobile-app .chip {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* =========================================================================
+ * 1. 顶栏：品牌 + 状态 + 设置，粘顶毛玻璃
+ * ========================================================================= */
+
+/* --- 关键：这里必须去掉 backdrop-filter ---
+ * .tabs 是 .topbar 的子元素，而 backdrop-filter 会给元素**自身**创建一个
+ * containing block，导致内部的 position:fixed 子元素相对 .topbar 而不是视口定位 ——
+ * 底部导航会「粘在顶栏下面 10px」，完全不在屏幕底部（实测 navBottom 43px）。
+ * 所以移动端顶栏改用不透底色 + 描边，把毛玻璃留给底部导航（它自己不是
+ * fixed 的容器祖先，backdrop-filter 可以保留）。 */
+body.mobile-app .topbar {
+  position: sticky;
+  top: 0;
+  /* 40：低于设置抽屉遮罩（50），弹窗弹出时顶栏会被一起压暗；
+     高于内容本身。桌面端原来是 auto，手机上必须显式给值，否则
+     sticky 元素会盖在固定遮罩之上。 */
+  z-index: 40;
+  gap: 8px;
+  padding: calc(6px + var(--m-safe-top)) 14px 6px;
+  min-height: 54px;
+  background: var(--card);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+body.mobile-app .brand {
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+body.mobile-app .brand .heart {
+  margin-right: 3px;
+}
+
+/* 计数挪到品牌下方太挤，保留在右侧但只留最必要的信息，超长省略 */
+body.mobile-app .stat {
+  font-size: 11px;
+  margin-left: auto;
+  padding-left: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 84px;
+  text-align: right;
+  line-height: 1.2;
+}
+
+body.mobile-app .mode-chip {
+  font-size: 10px;
+  padding: 3px 8px;
+  flex-shrink: 0;
+}
+
+body.mobile-app .gear {
+  width: 38px;
+  height: 38px;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+body.mobile-app .gear:active {
+  transform: scale(0.92);
+}
+
+/* =========================================================================
+ * 2. 底部悬浮胶囊导航（由 .tabs 原位改造，不动 DOM）
+ * ========================================================================= */
+
+body.mobile-app .tabs {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  bottom: calc(var(--m-nav-gap) + var(--m-safe-bottom));
+  /* 44：同样压在设置抽屉遮罩（50）之下，弹窗时一起变暗 */
+  z-index: 44;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  padding: 6px;
+  border-radius: 20px;
+  background: var(--bar-bg);
+  backdrop-filter: blur(18px) saturate(1.5);
+  -webkit-backdrop-filter: blur(18px) saturate(1.5);
+  border: 1px solid var(--line);
+  box-shadow:
+    0 8px 28px rgba(155, 100, 180, 0.2),
+    0 2px 6px rgba(0, 0, 0, 0.05);
+  /* 7 个 tab 在 390px 下刚好差一点点，允许横向滑动兜底 */
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+body.mobile-app .tabs::-webkit-scrollbar {
+  display: none;
+}
+
+body.mobile-app .tabs button {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  padding: 0 10px;
+  min-height: 40px;
+  font-size: 13px;
+  line-height: 40px;
+  border-radius: 15px;
+  transition:
+    background 0.18s,
+    color 0.18s;
+}
+
+body.mobile-app .tabs button:active {
+  transform: scale(0.94);
+}
+
+/* =========================================================================
+ * 3. 内容区：给底部导航留出呼吸位
+ * ========================================================================= */
+
+body.mobile-app .content {
+  padding: 14px 14px calc(var(--m-nav-h) + var(--m-nav-gap) + 22px + var(--m-safe-bottom));
+}
+
+/* =========================================================================
+ * 4. 翻译页：双栏 → 单栏堆叠，出结果时结果卡上浮
+ * ========================================================================= */
+
+body.mobile-app .lang-bar {
+  gap: 7px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+body.mobile-app .lang {
+  font-size: 13px;
+}
+
+body.mobile-app .live-row {
+  gap: 6px;
+  font-size: 11px;
+}
+
+body.mobile-app .live-toggle {
+  font-size: 11.5px;
+}
+
+body.mobile-app .panels {
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+body.mobile-app .panel {
+  border-radius: 18px;
+  padding: 14px;
+}
+
+body.mobile-app .panel textarea {
+  height: 128px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+body.mobile-app .out-text {
+  height: 128px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+body.mobile-app .panel-foot {
+  margin-top: 8px;
+  padding-top: 8px;
+  min-height: 30px;
+}
+
+body.mobile-app .samples {
+  gap: 6px;
+  margin-top: 9px;
+}
+
+body.mobile-app .sample-label {
+  font-size: 11.5px;
+}
+
+body.mobile-app .chip {
+  padding: 6px 11px;
+  font-size: 12px;
+  min-height: 30px;
+}
+
+body.mobile-app .go {
+  margin-top: 12px;
+  min-height: 50px;
+  border-radius: 15px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+body.mobile-app .go:active:not(:disabled) {
+  transform: scale(0.985);
+  filter: brightness(0.97);
+}
+
+/* 桌面端那行 "Ctrl+Enter 翻译，Ctrl+, 设置" 在手机上纯噪音 */
+body.mobile-app .translate-page > .tip {
+  display: none;
+}
+
+/* 开发者链路：手机屏窄，命中链路默认折叠不占地 */
+body.mobile-app .trace-box {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* =========================================================================
+ * 5. 管理页：搜索 / 筛选条
+ * ========================================================================= */
+
+/* 16px 是 iOS Safari 不自动放大的下限，所有输入框统一抬到 16px */
+body.mobile-app .search,
+body.mobile-app .add-row input,
+body.mobile-app .form-grid input,
+body.mobile-app .form-grid select,
+body.mobile-app .form-grid textarea,
+body.mobile-app .auth-row input,
+body.mobile-app .limit-select {
+  font-size: 16px;
+}
+
+body.mobile-app .search {
+  padding: 11px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+body.mobile-app .filter-chips {
+  gap: 6px;
+  margin: 0 -14px 12px;
+  padding: 2px 14px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+body.mobile-app .filter-chips::-webkit-scrollbar {
+  display: none;
+}
+
+body.mobile-app .filter-chips .chip {
+  flex: 0 0 auto;
+}
+
+body.mobile-app .lore-head {
+  margin-bottom: 12px;
+}
+
+body.mobile-app .lore-head h2 {
+  font-size: 17px;
+}
+
+body.mobile-app .lore-head p {
+  font-size: 11.5px;
+}
+
+/* 开发者新增表单：多列并排 → 单列竖排 */
+body.mobile-app .form-grid {
+  padding: 13px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+body.mobile-app .fg-row {
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+body.mobile-app .fg-row > input,
+body.mobile-app .fg-row > select {
+  flex: none;
+  width: 100%;
+  min-width: 0;
+}
+
+body.mobile-app .fg-row > .go.small,
+body.mobile-app .fg-row > .ghost.small {
+  width: 100%;
+  min-height: 44px;
+}
+
+body.mobile-app .fg-row > .ghost.small {
+  margin-top: 0;
+}
+
+/* =========================================================================
+ * 6. 表格 → 卡片列表（词库 / 句式）
+ *    利用模板里已有的 td[data-col] 做左侧标签列，不用改一行 HTML
+ * ========================================================================= */
+
+body.mobile-app .table-wrap {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+body.mobile-app .table-wrap table,
+body.mobile-app .table-wrap tbody {
+  display: block;
+  width: 100%;
+}
+
+body.mobile-app .table-wrap thead {
+  display: none;
+}
+
+body.mobile-app .table-wrap tbody tr {
+  display: block;
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow);
+}
+
+body.mobile-app .table-wrap tbody tr:hover {
+  background: var(--card);
+}
+
+body.mobile-app .table-wrap tbody tr:active {
+  background: var(--hover);
+}
+
+body.mobile-app .table-wrap td {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 2px 0;
+  border: none;
+  font-size: 13.5px;
+  line-height: 1.55;
+  word-break: break-word;
+}
+
+body.mobile-app .table-wrap td::before {
+  content: attr(data-col);
+  flex: 0 0 46px;
+  padding-top: 2px;
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* 空单元格（无别名 / 无语义位 / 无解释）整行不占高度，
+   否则卡片里会挂一串只有标签没有内容的空行 */
+body.mobile-app .table-wrap td:empty {
+  display: none;
+}
+
+/* 主词：中文大字打头，淋语紧跟一行粉字，用 ➜ 代替「淋语」标签更好读 */
+body.mobile-app .table-wrap td[data-col='中文'] {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  padding-top: 0;
+}
+
+body.mobile-app .table-wrap td[data-col='中文']::before {
+  content: none;
+}
+
+body.mobile-app .table-wrap td.ly-cell[data-col='淋语'] {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--pink);
+  padding-bottom: 4px;
+}
+
+body.mobile-app .table-wrap td.ly-cell[data-col='淋语']::before {
+  content: '➜';
+  color: var(--pink);
+  opacity: 0.55;
+}
+
+body.mobile-app .table-wrap td.wide {
+  color: var(--ink);
+}
+
+body.mobile-app .table-wrap .src-cell {
+  max-width: none;
+  font-size: 12px;
+}
+
+body.mobile-app .table-wrap .code {
+  font-size: 12.5px;
+  background: var(--surface-soft);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+/* 操作行：编辑 / 删除 靠右，各自撑到 44px 触控高度 */
+body.mobile-app .table-wrap td.ops {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+body.mobile-app .table-wrap td.ops::before {
+  content: none;
+}
+
+body.mobile-app .table-wrap td.ops .link {
+  margin-right: 0;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: var(--surface-soft);
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+}
+
+body.mobile-app .table-wrap td.ops .link.danger {
+  background: transparent;
+  border: 1px solid var(--line);
+}
+
+body.mobile-app .empty {
+  padding: 32px 0;
+  font-size: 13px;
+}
+
+/* =========================================================================
+ * 7. 词卡：两列翻卡，卡片高度收紧
+ * ========================================================================= */
+
+body.mobile-app .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body.mobile-app .flashcard {
+  height: 150px;
+}
+
+body.mobile-app .fc-face {
+  border-radius: 16px;
+  padding: 12px;
+}
+
+body.mobile-app .fc-type {
+  font-size: 10px;
+  padding: 2px 8px;
+}
+
+body.mobile-app .fc-term {
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+body.mobile-app .fc-hint {
+  font-size: 10px;
+}
+
+body.mobile-app .fc-meaning {
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+body.mobile-app .fc-detail {
+  display: none;
+}
+
+body.mobile-app .fc-example {
+  font-size: 11px;
+}
+
+body.mobile-app .fc-source {
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 极窄屏（iPhone SE 一代 320px）退回单列 */
+@media (max-width: 340px) {
+  body.mobile-app .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================================
+ * 8. 人物传
+ * ========================================================================= */
+
+body.mobile-app .hero-list {
+  gap: 10px;
+}
+
+body.mobile-app .hero-card {
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: 16px;
+}
+
+body.mobile-app .hero-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 13px;
+  font-size: 19px;
+}
+
+body.mobile-app .hero-name {
+  gap: 6px;
+}
+
+body.mobile-app .h-name {
+  font-size: 15.5px;
+}
+
+body.mobile-app .h-rank,
+body.mobile-app .h-tag {
+  font-size: 10.5px;
+  padding: 2px 7px;
+}
+
+body.mobile-app .hero-alias {
+  font-size: 11.5px;
+}
+
+body.mobile-app .hero-intro {
+  font-size: 12.5px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+body.mobile-app .hero-tags {
+  gap: 5px;
+  margin-top: 7px;
+}
+
+body.mobile-app .hero-avatar.big {
+  width: 84px;
+  height: 84px;
+}
+
+body.mobile-app .hd-title {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+body.mobile-app .hd-block {
+  margin-bottom: 14px;
+}
+
+body.mobile-app .hd-links {
+  gap: 8px;
+}
+
+body.mobile-app .hd-link {
+  font-size: 12.5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+body.mobile-app .hd-cards {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+/* =========================================================================
+ * 9. 名言墙
+ * ========================================================================= */
+
+body.mobile-app .quote-wall {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+body.mobile-app .quote-card {
+  padding: 18px 16px 14px;
+  border-radius: 16px;
+}
+
+body.mobile-app .q-text {
+  font-size: 14.5px;
+  line-height: 1.72;
+}
+
+body.mobile-app .q-mark {
+  font-size: 34px;
+  top: 2px;
+  left: 10px;
+}
+
+/* =========================================================================
+ * 10. 历史
+ * ========================================================================= */
+
+body.mobile-app .hist-head {
+  font-size: 12.5px;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+body.mobile-app .hist-list {
+  gap: 8px;
+}
+
+body.mobile-app .hist-item {
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+body.mobile-app .hist-src {
+  font-size: 12.5px;
+}
+
+body.mobile-app .hist-dst {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body.mobile-app .hist-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+/* =========================================================================
+ * 11. 分页器：撑满一行，两个按钮各占一半
+ * ========================================================================= */
+
+body.mobile-app .pager {
+  gap: 8px;
+  margin-top: 14px;
+}
+
+body.mobile-app .pager .ghost.small {
+  flex: 1;
+  min-height: 44px;
+  font-size: 13.5px;
+}
+
+body.mobile-app .pg-info {
+  flex: 1.4;
+  font-size: 11.5px;
+  text-align: center;
+}
+
+/* =========================================================================
+ * 12. 设置弹窗 → 底部抽屉（Bottom Sheet）
+ * ========================================================================= */
+
+body.mobile-app .modal-mask {
+  align-items: flex-end;
+  justify-content: stretch;
+  /* 云服务面板是 body 级固定层，z-index 9000（web/cloud.css）。
+     手机上设置抽屉是铺满全屏的底部抽屉，必须盖住那颗悬浮球，
+     否则「云」按钮会浮在抽屉内容上方，看起来像个 bug。 */
+  z-index: 9100;
+}
+
+body.mobile-app .modal {
+  width: 100%;
+  max-width: none;
+  max-height: 88dvh;
+  overflow-y: auto;
+  border-radius: 22px 22px 0 0;
+  border-bottom: none;
+  padding: 20px 18px calc(20px + var(--m-safe-bottom));
+  animation: m-sheet-up 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.mobile-app .modal-head h3 {
+  font-size: 17px;
+}
+
+body.mobile-app .modal-head .link {
+  min-height: 34px;
+  padding: 0 6px;
+}
+
+body.mobile-app .theme-opts {
+  gap: 10px;
+}
+
+body.mobile-app .theme-opt {
+  padding: 12px 4px;
+  font-size: 12.5px;
+}
+
+body.mobile-app .theme-swatch {
+  width: 100%;
+  max-width: 56px;
+  height: 32px;
+}
+
+body.mobile-app .setting-switch {
+  font-size: 13.5px;
+}
+
+body.mobile-app .auth-row {
+  gap: 8px;
+}
+
+body.mobile-app .auth-row .go.small {
+  min-height: 44px;
+  width: 100%;
+}
+
+@keyframes m-sheet-up {
+  from {
+    transform: translateY(28px);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* =========================================================================
+ * 13. 云服务悬浮球：抬到胶囊导航上方，避免互相压盖
+ * ========================================================================= */
+
+body.mobile-app .lc-fab {
+  right: 14px;
+  bottom: calc(var(--m-nav-h) + var(--m-nav-gap) + 18px + var(--m-safe-bottom));
+  width: 44px;
+  height: 44px;
+}
+
+/* 云端面板在手机上铺满整屏（web/cloud.css 自带 420px 断点，这里只在
+   带了底部导航时再抬一下，免得被导航挡住面板底部按钮） */
+body.mobile-app .lc-panel {
+  right: 8px;
+  left: 8px;
+  width: auto;
+  bottom: 8px;
+  max-height: calc(100dvh - 24px - var(--m-safe-top));
+}
+
+/* =========================================================================
+ * 14. toast 抬高，别被导航吃掉
+ * ========================================================================= */
+
+body.mobile-app .toast {
+  bottom: calc(var(--m-nav-h) + var(--m-nav-gap) + 16px + var(--m-safe-bottom));
+  font-size: 13px;
+  padding: 10px 20px;
+  max-width: calc(100vw - 40px);
+  text-align: center;
+}
+
+/* =========================================================================
+ * 15. 横屏：折叠到更紧凑的密度，避免一屏只剩两行字
+ * ========================================================================= */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body.mobile-app .topbar {
+    min-height: 46px;
+    padding-top: calc(4px + var(--m-safe-top));
+    padding-bottom: 4px;
+  }
+
+  body.mobile-app .content {
+    padding-top: 10px;
+  }
+
+  body.mobile-app .panel textarea,
+  body.mobile-app .out-text {
+    height: 96px;
+  }
+
+  body.mobile-app .panels {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body.mobile-app .go {
+    min-height: 44px;
+  }
+}

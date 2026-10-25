@@ -26,6 +26,7 @@
     "web:build": "node scripts/build-web.mjs --sharecode=KYSNKQPHS7",
     "web:verify": "node scripts/verify-cloud.mjs",
     "web:probe": "node scripts/probe-runtime.cjs",
+    "web:probe-mobile": "node scripts/probe-mobile.cjs",
     "web:debug-db": "node scripts/debug-db.cjs",
     "lint:fix": "eslint src scripts test miniprogram --fix",
     "format": "prettier --write \"src/**/*.{js,css,html}\" \"scripts/**/*.js\" \"test/**/*.js\"",

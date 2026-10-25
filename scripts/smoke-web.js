@@ -218,6 +218,16 @@ assert(html.includes('web/idbAdapter.js'), 'HTML 引用 web/idbAdapter.js');
 assert(html.includes('web/webEntry.js'), 'HTML 引用 web/webEntry.js');
 assert(html.includes('web/patch-app.js'), 'HTML 引用 web/patch-app.js');
 assert(html.includes('web/web.css'), 'HTML 引用 web/web.css');
+
+// 移动端适配层：样式表必须最后加载（它用 body.mobile-app 前缀压过前面所有排布规则），
+// 脚本必须在 app.js / cloudSync.js 之后（依赖 Vue 已挂载的 DOM 和云悬浮球）
+assert(html.includes('web/mobile.css'), 'HTML 引用 web/mobile.css');
+assert(html.includes('web/mobileUI.js'), 'HTML 引用 web/mobileUI.js');
+assert(html.indexOf('web/cloud.css') < html.indexOf('web/mobile.css'), 'mobile.css 在 cloud.css 之后加载');
+assert(html.indexOf('cloudSync.js') < html.indexOf('mobileUI.js'), 'mobileUI.js 在 cloudSync.js 之后加载');
+assert(fs.existsSync(path.join(root, 'web/mobile.css')), 'web/mobile.css 已复制到产物');
+assert(fs.existsSync(path.join(root, 'web/mobileUI.js')), 'web/mobileUI.js 已复制到产物');
+
 assert(!html.includes('mobile/entry.js'), 'HTML 不含 mobile/entry.js（Web 端已替换）');
 assert(html.includes('<link rel="icon"'), 'HTML 包含 favicon');
 

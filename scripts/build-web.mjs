@@ -56,6 +56,7 @@ const SKIP_IN_CHECK = new Set([
   'web/webEntry.js',
   'web/patch-app.js',
   'web/cloudSync.js',
+  'web/mobileUI.js',
 ]);
 const NEEDS_BEFORE = { 'core/db.js': ['fsAdapter'] };
 
@@ -149,7 +150,7 @@ async function main() {
   const webSrc = path.join(root, 'src', 'web');
   const webDst = path.join(out, 'web');
   await fs.mkdir(webDst, { recursive: true });
-  for (const name of ['idbAdapter.js', 'webEntry.js', 'patch-app.js', 'cloudSync.js', 'web.css', 'cloud.css']) {
+  for (const name of ['idbAdapter.js', 'webEntry.js', 'patch-app.js', 'cloudSync.js', 'mobileUI.js', 'web.css', 'cloud.css', 'mobile.css']) {
     await copyFile(path.join(webSrc, name), path.join(webDst, name));
   }
 
@@ -268,21 +269,25 @@ async function main() {
     "connect-src 'self' data: blob: https://www.workbuddy.cn;"
   );
 
-  // 在 style.css 后追加 web.css + cloud.css
+  // 在 style.css 后追加 web.css + cloud.css + mobile.css
+  // mobile.css 必须最后加载：它用 body.mobile-app 前缀覆盖前面所有排布规则，
+  // 也更需要压过 cloud.css 里 .lc-fab 的默认定位。
   html = html.replace(
     /<link rel="stylesheet" href="style\.css" \/>/,
     '<link rel="stylesheet" href="style.css" />\n' +
     '  <link rel="stylesheet" href="web/web.css" />\n' +
-    '  <link rel="stylesheet" href="web/cloud.css" />'
+    '  <link rel="stylesheet" href="web/cloud.css" />\n' +
+    '  <link rel="stylesheet" href="web/mobile.css" />'
   );
 
-  // 在 app.js 之后追加 Web 适配脚本 patch-app.js，最后挂云服务面板
+  // 在 app.js 之后追加 Web 适配脚本 patch-app.js，最后挂云服务面板与移动端适配
   html = html.replace(
     /<script src="app\.js"><\/script>/,
     '<script src="app.js"></script>\n' +
     '  <script src="web/patch-app.js"></script>\n' +
     `  <script src="${sdkScriptSrc}"></script>\n` +
-    '  <script src="web/cloudSync.js"></script>'
+    '  <script src="web/cloudSync.js"></script>\n' +
+    '  <script src="web/mobileUI.js"></script>'
   );
 
   // ---- sharecode 注入 ----

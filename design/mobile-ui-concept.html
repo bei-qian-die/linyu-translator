@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>淋语翻译器 · 手机浏览器适配设计</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #2b2333;
+    --muted: #8b7f96;
+    --line: #eae2ee;
+    --card: #ffffff;
+    --pink: #e64fa2;
+    --purple: #8b5cf6;
+    --grad: linear-gradient(90deg, #e64fa2, #8b5cf6);
+    --board: #f5f2f7;
+    --soft: #faf7fc;
+  }
+
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    background: var(--board);
+    color: var(--ink);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px 90px; }
+
+  /* ---------- 页头 ---------- */
+  .board-head {
+    padding: 64px 0 44px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 52px;
+  }
+
+  .brand-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 5px 14px;
+    border-radius: 999px;
+    background: rgba(230, 79, 162, 0.09);
+    color: var(--pink);
+    margin-bottom: 22px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+  }
+
+  .lede {
+    font-size: 15px;
+    color: var(--muted);
+    max-width: 660px;
+    line-height: 1.85;
+  }
+
+  .lede b { color: var(--ink); font-weight: 600; }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 32px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--card);
+    overflow: hidden;
+  }
+
+  .stat {
+    flex: 1 1 140px;
+    padding: 16px 22px;
+    border-right: 1px solid var(--line);
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .stat b {
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.3;
+  }
+
+  .stat span { font-size: 12px; color: var(--muted); }
+
+  /* ---------- 章节 ---------- */
+  section { margin-bottom: 68px; }
+
+  h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 10px;
+  }
+
+  h2 .num {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--pink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .sub {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-bottom: 26px;
+    max-width: 720px;
+  }
+
+  /* ---------- 色板 ---------- */
+  .theme-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .theme-card {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--card);
+    padding: 14px;
+  }
+
+  .swatch {
+    height: 62px;
+    border-radius: 11px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 10px;
+  }
+
+  .sw-pink { background: linear-gradient(135deg, #e64fa2, #8b5cf6); }
+  .sw-white { background: linear-gradient(135deg, #ffffff 62%, #f1f1f1); }
+  .sw-black { background: linear-gradient(135deg, #17171a, #3a3a40); }
+
+  .theme-card h3 { font-size: 13.5px; font-weight: 700; margin-bottom: 2px; }
+  .theme-card p { font-size: 11.5px; color: var(--muted); line-height: 1.55; }
+
+  /* ---------- 表格 ---------- */
+  .tbl {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+
+  .tbl th {
+    text-align: left;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: var(--muted);
+    background: var(--soft);
+    padding: 11px 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tbl td {
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    line-height: 1.6;
+  }
+
+  .tbl tr:last-child td { border-bottom: none; }
+
+  .tbl code {
+    font-family: Consolas, "JetBrains Mono", monospace;
+    font-size: 12px;
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 6px;
+    color: #a3336f;
+    white-space: nowrap;
+  }
+
+  .tbl .arrow { color: var(--pink); font-weight: 700; }
+
+  .dim { color: var(--muted); }
+
+  /* ---------- 手机画廊 ---------- */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px 26px;
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 560px) {
+    .gallery { grid-template-columns: 1fr; }
+  }
+
+  figure { margin: 0; }
+
+  .phone {
+    background: #14141a;
+    border-radius: 36px;
+    padding: 7px;
+    box-shadow:
+      0 18px 40px rgba(80, 50, 100, 0.16),
+      0 2px 6px rgba(80, 50, 100, 0.08);
+  }
+
+  .phone img {
+    display: block;
+    width: 100%;
+    border-radius: 29px;
+  }
+
+  figcaption { padding: 14px 4px 0; }
+
+  figcaption .tag {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--pink);
+    background: rgba(230, 79, 162, 0.09);
+    border-radius: 999px;
+    padding: 2px 9px;
+    margin-bottom: 6px;
+  }
+
+  figcaption h3 { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+  figcaption p { font-size: 12px; color: var(--muted); line-height: 1.65; }
+
+  /* ---------- 桌面端对照 ---------- */
+  .desktop-frame {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 32px rgba(80, 50, 100, 0.1);
+    background: var(--card);
+  }
+
+  .desktop-frame .bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 14px;
+    background: var(--soft);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .desktop-frame .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ddd3e2;
+  }
+
+  .desktop-frame .url {
+    margin-left: 10px;
+    font-size: 11px;
+    color: var(--muted);
+    font-family: Consolas, monospace;
+  }
+
+  .desktop-frame img { display: block; width: 100%; }
+
+  /* ---------- 坑位卡片 ---------- */
+  .notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    gap: 14px;
+  }
+
+  .note {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 20px 20px;
+    border-top: 3px solid var(--pink);
+  }
+
+  .note .k {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: var(--pink);
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .note h3 { font-size: 14px; font-weight: 700; margin-bottom: 7px; line-height: 1.5; }
+
+  .note p {
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .note p b { color: var(--ink); font-weight: 600; }
+
+  .note code {
+    font-family: Consolas, monospace;
+    font-size: 11.5px;
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: #a3336f;
+  }
+
+  /* ---------- 预览方式 ---------- */
+  .preview {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 24px;
+  }
+
+  .preview-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 13px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+
+  .preview-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .preview-row:first-child { padding-top: 0; }
+
+  .preview-row .label {
+    flex: 0 0 132px;
+    font-size: 12.5px;
+    font-weight: 600;
+  }
+
+  .preview-row code {
+    font-family: Consolas, monospace;
+    font-size: 12.5px;
+    background: #1f1b24;
+    color: #f3e9f7;
+    border-radius: 8px;
+    padding: 7px 13px;
+    display: inline-block;
+  }
+
+  .preview-row code em { color: #f08ec0; font-style: normal; }
+
+  .preview-row p { font-size: 12px; color: var(--muted); flex: 1; }
+
+  footer {
+    margin-top: 70px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (max-width: 720px) {
+    .wrap { padding: 0 18px 70px; }
+    .board-head { padding: 44px 0 32px; }
+    h1 { font-size: 27px; }
+    .theme-row { grid-template-columns: 1fr; }
+    .tbl { font-size: 12px; }
+    .tbl th, .tbl td { padding: 10px 12px; }
+    .preview-row { flex-direction: column; align-items: flex-start; gap: 7px; }
+    .preview-row .label { flex: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="board-head">
+    <div class="brand-line">♥ 淋语翻译器 · 移动端适配</div>
+    <h1>手机浏览器打开时<br />它应该长这样</h1>
+    <p class="lede">
+      桌面端已经完成了网页化，但把 7 个横排 tab、双栏翻译框、7 列表格照搬到 390px 宽的手机上，
+      结果是横向滚动、字号过小、点击目标挤在一起。这份设计沿用<b>同一套设计 token</b>
+      （颜色 / 圆角 / 阴影 / 渐变一个字没改），只重排<b>密度与位置</b>，
+      让手机端读起来像原生 App，同时保证桌面端一个像素都不变。
+    </p>
+    <ul class="stats">
+      <li class="stat"><b>7</b><span>页面全部适配</span></li>
+      <li class="stat"><b>3</b><span>主题自动继承</span></li>
+      <li class="stat"><b>0</b><span>桌面端样式改动</span></li>
+      <li class="stat"><b>17/17</b><span>自动化断言通过</span></li>
+    </ul>
+  </header>
+
+  <!-- ================= 01 设计基线 ================= -->
+  <section>
+    <h2><span class="num">01</span>设计基线：一套 token，三块屏幕</h2>
+    <p class="sub">
+      移动端不引入任何新颜色。下面这些变量全部来自 <code style="font-family:Consolas,monospace;font-size:12px;background:#fff;border:1px solid var(--line);border-radius:5px;padding:1px 6px;">src/renderer/style.css</code>，
+      Electron 桌面端、Capacitor 安卓端、Web 端共用同一份定义 —— 所以在手机上切主题，效果和 exe 里完全一致。
+    </p>
+
+    <div class="theme-row">
+      <div class="theme-card">
+        <div class="swatch sw-pink"></div>
+        <h3>经典粉紫（标志性皮肤）</h3>
+        <p>#e64fa2 → #8b5cf6，粉紫渐变按钮与选中胶囊，浅粉页面底</p>
+      </div>
+      <div class="theme-card">
+        <div class="swatch sw-white"></div>
+        <h3>简洁纯白</h3>
+        <p>#1f1f1f 单色系，阴影降到 5% 透明度，适合白天强光</p>
+      </div>
+      <div class="theme-card">
+        <div class="swatch sw-black"></div>
+        <h3>简洁黑</h3>
+        <p>#0f0f11 底 / #1b1b1f 卡片，夜间不刺眼</p>
+      </div>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr><th style="width:190px">变量</th><th style="width:230px">粉紫主题取值</th><th>移动端怎么用</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>--grad</code></td><td class="dim">linear-gradient(90deg, #e64fa2, #8b5cf6)</td><td>「翻译 ♥」主按钮、底部导航选中态、标题渐变字</td></tr>
+        <tr><td><code>--card</code> / <code>--line</code></td><td class="dim">#ffffff / #f0e3f0</td><td>卡片化后的词条行、底部导航胶囊、顶栏底色</td></tr>
+        <tr><td><code>--shadow</code></td><td class="dim">0 8px 24px rgba(155,100,180,.08)</td><td>每张词条卡片独立投影，代替桌面端的整块表格边框</td></tr>
+        <tr><td><code>--muted</code> / <code>--placeholder</code></td><td class="dim">#9b8aa9 / #c8b9d4</td><td>卡片左侧的列名标签（中文 / 别名 / 语义位）</td></tr>
+        <tr><td><code>--btn-shadow</code></td><td class="dim">0 6px 16px rgba(230,79,162,.3)</td><td>底部导航胶囊的一层柔光，和主按钮同一个视觉层级</td></tr>
+        <tr><td>圆角</td><td class="dim">面板 16px · 按钮 12–15px · 胶囊 999px</td><td>手机卡片统一 16px，触控元素一律不低于 40px 高</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ================= 02 版式映射 ================= -->
+  <section>
+    <h2><span class="num">02</span>版式映射：改了什么，为什么改</h2>
+    <p class="sub">只动排布，不动视觉语言。每一条改动都对应一个手机上的真实约束。</p>
+
+    <table class="tbl">
+      <thead>
+        <tr><th style="width:150px">区域</th><th style="width:250px">桌面端</th><th style="width:250px">手机端</th><th>依据</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>主导航</b></td>
+          <td class="dim">顶栏内横排 7 个胶囊 tab</td>
+          <td>底部悬浮胶囊导航 <span class="arrow">↓</span></td>
+          <td>7 个 tab 横排需要 420px，390px 屏幕必溢出；底部是单手拇指可达区，且不占用内容高度</td>
+        </tr>
+        <tr>
+          <td><b>翻译页</b></td>
+          <td class="dim">左右双栏，输入 / 结果并排</td>
+          <td>上下堆叠，输入在上结果在下</td>
+          <td>手机宽度放不下两栏各 170px 的可读行宽；堆叠后键盘弹起时输入框仍在视野内</td>
+        </tr>
+        <tr>
+          <td><b>词库 / 句式</b></td>
+          <td class="dim">7 列表格 + 粘性表头</td>
+          <td>每条一行卡片，左列名右内容</td>
+          <td>7 列在 390px 下每列只剩 55px，必然横向滚动。改用模板里已有的 <code>data-col</code> 当标签，零改 HTML</td>
+        </tr>
+        <tr>
+          <td><b>词卡</b></td>
+          <td class="dim">auto-fill 最小 230px</td>
+          <td>固定两列，卡片高度 170 → 150px</td>
+          <td>手机上 auto-fill 会退化成单列，一屏只看得到 2 张卡；两列能在同屏放下 4 张，翻卡频次更高</td>
+        </tr>
+        <tr>
+          <td><b>名言墙</b></td>
+          <td class="dim">auto-fill 最小 320px</td>
+          <td>单列</td>
+          <td>名言正文较长，320px 断点在 390px 屏上刚好卡成一条极窄的独行，单列更好读</td>
+        </tr>
+        <tr>
+          <td><b>设置</b></td>
+          <td class="dim">居中弹窗 420px</td>
+          <td>底部抽屉，顶部圆角 22px</td>
+          <td>居中弹窗在手机上要么被键盘顶走，要么边距只剩 30px；抽屉是移动端设置的标准形态</td>
+        </tr>
+        <tr>
+          <td><b>输入框</b></td>
+          <td class="dim">13px</td>
+          <td>统一抬到 16px</td>
+          <td>iOS Safari 对小于 16px 的输入框会在聚焦时自动放大整页，而且不会缩回来</td>
+        </tr>
+        <tr>
+          <td><b>顶栏毛玻璃</b></td>
+          <td class="dim">backdrop-filter: blur(8px)</td>
+          <td>改不透明底色</td>
+          <td>见下方 04 的第 1 条：它会破坏底部导航的 fixed 定位</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ================= 03 界面 ================= -->
+  <section>
+    <h2><span class="num">03</span>界面</h2>
+    <p class="sub">
+      下面全部是在 390 × 844（iPhone 14 逻辑分辨率）下真实运行的截图，不是效果图 —— 所见即上线后的样子。
+    </p>
+
+    <div class="gallery">
+
+      <figure>
+        <div class="phone"><img src="screens/02-pink-result.png" alt="翻译页 · 经典粉紫 · 有结果" /></div>
+        <figcaption>
+          <span class="tag">翻译 · 经典粉紫</span>
+          <h3>主界面</h3>
+          <p>输入 → 结果上下两段，主按钮独占一行 50px 高。底部胶囊导航选中态用同一支粉紫渐变，和按钮呼应。</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="phone"><img src="screens/01-translate.png" alt="翻译页 · 简洁纯白 · 空态" /></div>
+        <figcaption>
+          <span class="tag">翻译 · 简洁纯白</span>
+          <h3>空态与示例词</h3>
+          <p>示例句自动换行成两排，胶囊尺寸放大到手指能点准。桌面端那行 Ctrl+Enter 快捷键提示在手机上直接隐藏。</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="phone"><img src="screens/03-words-cards.png" alt="词库页 · 表格卡片化" /></div>
+        <figcaption>
+          <span class="tag">词库 · 卡片化</span>
+          <h3>表格 → 卡片</h3>
+          <p>中文 17px 加粗打头，淋语粉字跟在 ➜ 后面，其余列变成「列名 + 内容」两栏。空字段整行不渲染，卡片不会挂着空标签。</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="phone"><img src="screens/04-flashcards.png" alt="词卡页 · 两列翻卡" /></div>
+        <figcaption>
+          <span class="tag">词卡</span>
+          <h3>两列翻卡</h3>
+          <p>筛选胶囊改成横向滑动，一屏能看见 4 张卡。320px 以下（iPhone SE 一代）自动退回单列。</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="phone"><img src="screens/05-heroes.png" alt="人物传页" /></div>
+        <figcaption>
+          <span class="tag">人物传</span>
+          <h3>图文卡</h3>
+          <p>头像从 88px 收到 58px，简介截断三行并加「查看详情」，列表不再被长简介撑成一条条长条。</p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div class="phone"><img src="screens/06-settings-sheet.png" alt="设置 · 底部抽屉" /></div>
+        <figcaption>
+          <span class="tag">设置</span>
+          <h3>底部抽屉</h3>
+          <p>顶上圆角 22px，贴底铺满宽度，最高占 88% 屏高后内部滚动。遮罩会同时压暗顶栏和底部导航，视觉上只剩这一层。</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ================= 04 实现要点 ================= -->
+  <section>
+    <h2><span class="num">04</span>四个必须知道的实现细节</h2>
+    <p class="sub">这几条都是实测踩出来的，不写下来下次改样式一定会再踩一遍。</p>
+
+    <div class="notes">
+      <div class="note">
+        <span class="k">坑 01</span>
+        <h3>backdrop-filter 会破坏 fixed 定位</h3>
+        <p>
+          桌面端顶栏有 <code>backdrop-filter: blur(8px)</code>，而底部导航正是它的子元素。
+          毛玻璃会给元素自身创建 <b>containing block</b>，于是 <code>position: fixed; bottom: 10px</code>
+          变成「相对顶栏底部 10px」—— 导航直接粘在屏幕上方。<br />
+          解法：移动端顶栏去掉毛玻璃、改不透明底色，毛玻璃留给底部导航自己用。
+        </p>
+      </div>
+
+      <div class="note">
+        <span class="k">坑 02</span>
+        <h3>iOS 输入框必须 16px</h3>
+        <p>
+          桌面端搜索框是 13px，手机上一聚焦，Safari 会把整页放大到 16px 等效宽度，而且失焦后<b>不会缩回去</b>。
+          所有 <code>input / select / textarea</code> 在移动端统一抬到 16px，改字号比加 <code>maximum-scale</code> 更正确 ——
+          后者会顺手禁掉用户的双指缩放。
+        </p>
+      </div>
+
+      <div class="note">
+        <span class="k">坑 03</span>
+        <h3>平板和触屏本子会被 UA 骗</h3>
+        <p>
+          iPadOS 13+ 的 UA 伪装成 <code>Macintosh</code>，纯看 UA 会判成桌面；反过来，触屏笔记本窗口拖窄又会被判成手机。
+          判定顺序是：<b>明确桌面 UA 先否决 → 再看手机 UA → 最后用「粗指针 + 最小边 ≤ 820px」兜底</b>。
+          另外支持 <code>?ui=mobile</code> / <code>?ui=desktop</code> 手动覆盖，存在 localStorage 里。
+        </p>
+      </div>
+
+      <div class="note">
+        <span class="k">坑 04</span>
+        <h3>刘海屏与小白条</h3>
+        <p>
+          顶栏 <code>padding-top: calc(6px + env(safe-area-inset-top))</code>，
+          底部导航 <code>bottom: calc(10px + env(safe-area-inset-bottom))</code>，
+          内容区底部再额外留 88px —— 否则 iPhone 的横条会压住最后一条词条。
+          页面高度用 <code>100dvh</code> 而不是 <code>100vh</code>，避免地址栏收起时底部被裁掉。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05 桌面端 ================= -->
+  <section>
+    <h2><span class="num">05</span>桌面端：一个像素都没动</h2>
+    <p class="sub">
+      所有移动端规则都挂在 <code style="font-family:Consolas,monospace;font-size:12px;background:#fff;border:1px solid var(--line);border-radius:5px;padding:1px 6px;">body.mobile-app</code> 前缀下。
+      桌面浏览器不会挂这个类，<code>web/mobile.css</code> 里 400 多条规则一条都不命中。下面是同一份代码在桌面 UA 下的渲染结果：
+    </p>
+
+    <div class="desktop-frame">
+      <div class="bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="url">linyu-translator.app.workbuddy.host</span>
+      </div>
+      <img src="screens/07-desktop.png" alt="桌面端对照" />
+    </div>
+    <p class="sub" style="margin-top:16px;font-size:12.5px;">
+      自动化断言里专门做了这组对照：桌面 UA 下 <code style="font-family:Consolas,monospace;font-size:11.5px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:1px 5px;">body.mobile-app</code> 必须不存在、导航必须不是 fixed、翻译页必须仍是双栏、表格行必须仍是 <code style="font-family:Consolas,monospace;font-size:11.5px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:1px 5px;">table-row</code>。
+    </p>
+  </section>
+
+  <!-- ================= 06 预览 ================= -->
+  <section>
+    <h2><span class="num">06</span>怎么自己看</h2>
+    <p class="sub">不用换设备，在电脑上就能验证两种形态。</p>
+
+    <div class="preview">
+      <div class="preview-row">
+        <span class="label">手机看</span>
+        <code>直接打开线上链接</code>
+        <p>UA 判定命中，自动加载新排版</p>
+      </div>
+      <div class="preview-row">
+        <span class="label">电脑预览手机版</span>
+        <code>…<em>?ui=mobile</em></code>
+        <p>参数会记进 localStorage，之后刷新仍是手机版</p>
+      </div>
+      <div class="preview-row">
+        <span class="label">手机预览桌面版</span>
+        <code>…<em>?ui=desktop</em></code>
+        <p>反过来强制走桌面布局，方便对比</p>
+      </div>
+      <div class="preview-row">
+        <span class="label">控制台即时切换</span>
+        <code>linyuMobile.<em>on</em>() / <em>off</em>()</code>
+        <p>不用刷新，调样式时最省事</p>
+      </div>
+      <div class="preview-row">
+        <span class="label">重跑验证</span>
+        <code>npm run web:probe-mobile</code>
+        <p>无头 Edge 模拟 iPhone 跑 17 项断言并输出截图</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>淋语翻译器 · 移动端 UI 适配设计</span>
+    <span>截图环境：Edge headless · iPhone 14 逻辑视口 390 × 844 · DPR 3</span>
+  </footer>
+
+</div>
+</body>
+</html>
