@@ -77,7 +77,9 @@ const body =
   JSON.stringify(out.heroMerge, null, 2).replace(/"([a-zA-Z_]+)":/g, '$1: ') +
   ';\n\nconst quoteMerge = ' +
   JSON.stringify(out.quoteMerge, null, 2).replace(/"([a-zA-Z_]+)":/g, '$1: ') +
-  ';\n\nmodule.exports = { cards, quotes, heroes, heroMerge, quoteMerge };\n';
+  ';\n\nconst __export = { cards, quotes, heroes, heroMerge, quoteMerge };\n' +
+  'if (typeof module === \'object\' && module.exports) module.exports = __export;\n' +
+  'else if (typeof window !== \'undefined\') window.LORE_EXTRA14 = __export;\n';
 
 if (DRY) {
   console.error(`[dry-run] 词卡 ${out.cards.length} / 名言 ${out.quotes.length} / 人物 ${out.heroes.length} / heroMerge ${out.heroMerge.length}`);

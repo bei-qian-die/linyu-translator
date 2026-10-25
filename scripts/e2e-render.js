@@ -85,12 +85,15 @@ async function main() {
 
     // IPC handler 由 main.js 的 wrap() 包成 { ok, data }（app.js 的 call() 负责拆包），这里同样拆包断言
     const unwrap = '({ ok: r.ok, err: r.error, rows: Array.isArray(r.data) ? r.data : [] })';
+    // 精确条数断言：index.html 漏一个 <script src="core/lore-extraN.js"> 时 lore.js 会抛
+    // 「Cannot read properties of undefined」，整个 LORE_DATA 挂掉，条数归零 —— 只断言
+    // 「非空」抓不到这种半残状态。数值随每轮扩充更新（1.18.0：词库 1178 / 人物 207）。
     const words = await expr(`window.api.listWords().then(r => { const u = ${unwrap}; return u.err ? -1 : u.rows.length; })`);
     if (words < 0) await fail('IPC listWords 返回 ok=false');
-    if (!(words > 0)) await fail(`IPC listWords 返回 ${words} 条，应非空`);
+    if (words !== 1178) await fail(`IPC listWords 返回 ${words} 条，应为 1178（lore-extra 是否漏加载？）`);
 
     const heroes = await expr(`window.api.listHeroes().then(r => { const u = ${unwrap}; return u.err ? -1 : u.rows.length; })`);
-    if (!(heroes > 0)) await fail(`IPC listHeroes 返回 ${heroes} 条，应非空`);
+    if (heroes !== 207) await fail(`IPC listHeroes 返回 ${heroes} 条，应为 207（lore-extra 是否漏加载？）`);
 
     console.log(`OK: Vue 挂载正常，无裸模板；api=preload(IPC)，词库 ${words} 条 / 人物 ${heroes} 条`);
     child.kill();
