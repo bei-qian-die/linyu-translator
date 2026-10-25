@@ -1,7 +1,8 @@
 'use strict';
 
 const counts = require('../../data/counts');
-const { translateStats } = require('../../services/content');
+const version = require('../../data/version');
+const { stats: translateStats } = require('../../services/perf');
 const { THEMES, accentFor, dangerFor } = require('../../services/prefs');
 const { readHistory } = require('../../services/history');
 const { confirm, toast, chromeMetrics } = require('../../utils/ui');
@@ -10,7 +11,7 @@ const { syncChrome } = require('../../utils/pageBase');
 Page({
   data: {
     theme: 'white',
-    version: '1.13.0',
+    version,
     switchColor: accentFor('white'),
     counts,
     stats: [

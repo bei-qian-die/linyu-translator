@@ -1,0 +1,390 @@
+/* 淋语翻译器 · 云服务面板样式
+   与 renderer/style.css 的粉色主色保持一致，独立文件以便 CSP 无需放宽 style-src。 */
+
+.lc-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+/* ---- 悬浮按钮 ---- */
+.lc-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  background: linear-gradient(135deg, #e64fa2, #b93f8f);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 6px 20px rgba(230, 79, 162, 0.42);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lc-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(230, 79, 162, 0.5);
+}
+
+.lc-fab:active {
+  transform: translateY(0);
+}
+
+/* ---- 遮罩与面板 ---- */
+.lc-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 16, 24, 0.42);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: auto;
+}
+
+.lc-mask.lc-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lc-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 18px 48px rgba(30, 20, 35, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px) scale(0.98);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.lc-panel.lc-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* ---- 头部 ---- */
+.lc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0edf2;
+  background: linear-gradient(135deg, #fdf4fa, #fbf7fd);
+}
+
+.lc-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2b2430;
+}
+
+.lc-close {
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #8b818f;
+  font-size: 19px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lc-close:hover {
+  background: #f0e8ee;
+  color: #4a3f4f;
+}
+
+/* ---- 内容区 ---- */
+.lc-body {
+  padding: 14px 16px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lc-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lc-sec-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b818f;
+  letter-spacing: 0.02em;
+}
+
+.lc-note {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+  color: #6f6474;
+}
+
+.lc-note-bad {
+  color: #c0392b;
+}
+
+.lc-tip {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #a298a6;
+}
+
+/* ---- 表单 ---- */
+.lc-input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e6e0ea;
+  border-radius: 10px;
+  background: #fcfbfd;
+  color: #2b2430;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.lc-input:focus {
+  border-color: #e64fa2;
+  box-shadow: 0 0 0 3px rgba(230, 79, 162, 0.12);
+  background: #fff;
+}
+
+.lc-row {
+  display: flex;
+  gap: 8px;
+}
+
+.lc-input-code {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.lc-field-err {
+  min-height: 15px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #c0392b;
+}
+
+/* ---- 按钮 ---- */
+.lc-btn {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.lc-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.lc-btn-primary {
+  background: linear-gradient(135deg, #e64fa2, #d8439a);
+  color: #fff;
+}
+
+.lc-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #d8439a, #c53a8c);
+}
+
+.lc-btn-ghost {
+  background: #fdf6fa;
+  border-color: #f0dbe7;
+  color: #b93f8f;
+}
+
+.lc-btn-ghost:hover:not(:disabled) {
+  background: #fbeaf3;
+}
+
+.lc-btn-block {
+  width: 100%;
+}
+
+.lc-btn-text {
+  background: transparent;
+  color: #8b818f;
+  font-size: 12px;
+  height: 30px;
+}
+
+.lc-btn-text:hover:not(:disabled) {
+  color: #c0392b;
+}
+
+/* ---- 已登录信息 ---- */
+.lc-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lc-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e64fa2, #b93f8f);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.lc-user-info {
+  min-width: 0;
+}
+
+.lc-user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2430;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lc-user-sub {
+  font-size: 11px;
+  color: #a298a6;
+}
+
+.lc-stats {
+  display: flex;
+  gap: 8px;
+}
+
+.lc-stat {
+  flex: 1 1 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #fbf7fd;
+  border: 1px solid #f2ecf6;
+  font-size: 12px;
+  color: #5d5262;
+  text-align: center;
+}
+
+.lc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---- 状态提示 ---- */
+.lc-status {
+  min-height: 16px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #6f6474;
+  word-break: break-word;
+}
+
+.lc-status-ok {
+  color: #1f8a53;
+}
+
+.lc-status-bad {
+  color: #c0392b;
+}
+
+.lc-status-warn {
+  color: #b8770f;
+}
+
+/* ---- 深色主题跟随 ---- */
+body[data-theme='dark'] .lc-panel {
+  background: #232029;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+}
+
+body[data-theme='dark'] .lc-head {
+  border-bottom-color: #322c3a;
+  background: linear-gradient(135deg, #2a2632, #262230);
+}
+
+body[data-theme='dark'] .lc-title,
+body[data-theme='dark'] .lc-user-name,
+body[data-theme='dark'] .lc-input {
+  color: #ece8f0;
+}
+
+body[data-theme='dark'] .lc-input {
+  background: #1c1922;
+  border-color: #3a3344;
+}
+
+body[data-theme='dark'] .lc-input:focus {
+  background: #1c1922;
+}
+
+body[data-theme='dark'] .lc-note,
+body[data-theme='dark'] .lc-status {
+  color: #a89fb0;
+}
+
+body[data-theme='dark'] .lc-stat {
+  background: #1e1b25;
+  border-color: #332c3c;
+  color: #b6adc0;
+}
+
+body[data-theme='dark'] .lc-btn-ghost {
+  background: #2b2533;
+  border-color: #3d3448;
+  color: #e08bc0;
+}
+
+body[data-theme='dark'] .lc-close:hover {
+  background: #322c3a;
+  color: #d6cfe0;
+}
+
+/* ---- 窄屏适配 ---- */
+@media (max-width: 420px) {
+  .lc-panel {
+    right: 8px;
+    bottom: 8px;
+    width: calc(100vw - 16px);
+  }
+
+  .lc-fab {
+    right: 14px;
+    bottom: 14px;
+  }
+}

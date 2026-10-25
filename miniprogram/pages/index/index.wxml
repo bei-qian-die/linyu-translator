@@ -66,7 +66,7 @@
     </view>
     <text class="result-text {{output ? '' : 'is-hint'}}" user-select="{{true}}">{{output || hint}}</text>
     <view wx:if="{{output}}" class="result-foot">
-      <text class="result-note">{{outputLength}} 字 · {{isPreview ? '预览不记入历史' : '已写入本机历史'}}</text>
+      <text class="result-note">{{outputLength}} 字 · {{isPreview ? '预览不记入历史' : historyNote}}</text>
       <view class="result-actions">
         <view class="result-act" hover-class="act-hover" bindtap="copyOutput">复制</view>
         <button class="result-act" hover-class="act-hover" open-type="share">分享</button>

@@ -11,6 +11,10 @@ const MP = path.join(ROOT, 'miniprogram');
 const storage = new Map();
 let lastPageConfig = null;
 let lastClipboard = '';
+let lastToast = '';
+let lastApp = null;
+let privacyHandler = null;
+const realtimeLogs = [];
 
 global.wx = {
   getStorageSync(key) {
@@ -22,25 +26,73 @@ global.wx = {
   removeStorageSync(key) {
     storage.delete(key);
   },
+  setStorage(options) {
+    if (options.success) options.success();
+  },
+  getWindowInfo() {
+    return { statusBarHeight: 20 };
+  },
   setNavigationBarColor() {},
   setBackgroundColor() {},
   setTabBarStyle() {},
   setNavigationBarTitle() {},
   hideShareMenu() {},
   switchTab() {},
+  navigateTo() {},
+  pageScrollTo() {},
+  reportEvent() {},
+  vibrateShort() {},
+  onNeedPrivacyAuthorization(handler) {
+    privacyHandler = handler;
+  },
+  getRealtimeLogManager() {
+    return {
+      warn: (kind, value) => realtimeLogs.push({ level: 'warn', kind, value }),
+      error: (kind, value) => realtimeLogs.push({ level: 'error', kind, value }),
+    };
+  },
   setClipboardData(options) {
     lastClipboard = options.data;
     if (options.success) options.success();
   },
-  showToast() {},
+  showToast(options) {
+    lastToast = options.title;
+  },
   hideToast() {},
+  showModal(options) {
+    if (options.success) options.success({ confirm: true, cancel: false });
+  },
 };
 global.Page = (config) => {
   lastPageConfig = config;
 };
-global.getApp = () => ({
+global.App = (config) => {
+  lastApp = config;
+};
+const fakeApp = {
   globalData: { theme: 'white', version: '1.0.0', live: true, historyLimit: 200, pendingInput: '' },
-});
+  errors: [],
+  reportError(kind, err) {
+    this.errors.push({ kind, err });
+  },
+  setHistoryLimit(limit) {
+    this.globalData.historyLimit = Number(limit) || 200;
+  },
+  setLive(on) {
+    this.globalData.live = Boolean(on);
+  },
+  applyTheme(theme) {
+    this.globalData.theme = theme;
+    return theme;
+  },
+  resetLocalData() {
+    this.globalData.theme = 'white';
+    this.globalData.live = true;
+    this.globalData.historyLimit = 200;
+    return { theme: 'white', live: true, historyLimit: 200 };
+  },
+};
+global.getApp = () => fakeApp;
 
 const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'core', 'seed.json'), 'utf8'));
 const history = require('../miniprogram/services/history');
@@ -64,15 +116,24 @@ function run(name, fn) {
 }
 
 function runAsync(name, fn) {
-  pending.push(
-    Promise.resolve()
-      .then(fn)
-      .then(() => console.log(`PASS [${name}]`))
-      .catch((err) => {
-        failed += 1;
-        console.log(`FAIL [${name}] ${err.message}`);
-      })
-  );
+  pending.push({ name, fn });
+}
+
+function applyPath(target, key, value) {
+  if (!key.includes('.') && !key.includes('[')) {
+    target[key] = value;
+    return;
+  }
+  const tokens = key.replace(/\[(\d+)\]/g, '.$1').split('.');
+  let node = target;
+  for (let i = 0; i < tokens.length - 1; i += 1) {
+    const token = tokens[i];
+    if (node[token] === undefined || node[token] === null) {
+      node[token] = /^\d+$/.test(tokens[i + 1]) ? [] : {};
+    }
+    node = node[token];
+  }
+  node[tokens[tokens.length - 1]] = value;
 }
 
 function loadPage(name) {
@@ -83,8 +144,10 @@ function loadPage(name) {
   assert(lastPageConfig, `${name} 页面没有调用 Page()`);
   const instance = Object.assign({}, lastPageConfig, {
     data: JSON.parse(JSON.stringify(lastPageConfig.data || {})),
+    _patches: [],
     setData(patch, cb) {
-      Object.assign(this.data, patch);
+      this._patches.push(patch);
+      for (const [key, value] of Object.entries(patch)) applyPath(this.data, key, value);
       if (cb) cb();
     },
   });
@@ -115,6 +178,13 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
     ['data/lore-extra5.js', 'lore-extra5.js'],
     ['data/lore-extra6.js', 'lore-extra6.js'],
     ['data/lore-extra7.js', 'lore-extra7.js'],
+    ['data/lore-extra8.js', 'lore-extra8.js'],
+    ['data/lore-extra9.js', 'lore-extra9.js'],
+    ['data/lore-extra10.js', 'lore-extra10.js'],
+    ['data/lore-extra11.js', 'lore-extra11.js'],
+    ['data/lore-extra12.js', 'lore-extra12.js'],
+    ['data/lore-extra13.js', 'lore-extra13.js'],
+    ['data/lore-extra14.js', 'lore-extra14.js'],
   ];
   for (const [mpFile, coreFile] of files) {
     const mpText = fs.readFileSync(path.join(MP, mpFile), 'utf8');
@@ -293,6 +363,7 @@ run('页面文件齐全且已注册', () => {
 run('自定义 tabBar 与 app.json 声明一致（B7）', () => {
   const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
   const appTabs = appJson.tabBar.list.map((t) => t.pagePath.replace(/^pages\//, '/pages/'));
+  const appLabels = appJson.tabBar.list.map((t) => t.text);
   const source = fs.readFileSync(path.join(MP, 'custom-tab-bar', 'index.js'), 'utf8');
   const match = source.match(/const TABS = \[([\s\S]*?)\];/);
   assert(match, 'custom-tab-bar/index.js 缺少 TABS 定义');
@@ -304,6 +375,14 @@ run('自定义 tabBar 与 app.json 声明一致（B7）', () => {
     m = re.exec(match[1]);
   }
   assert.deepStrictEqual(paths, appTabs, 'custom-tab-bar TABS 与 app.json tabBar.list 不一致');
+  const labels = [];
+  const labelRe = /label:\s*'([^']+)'/g;
+  let n = labelRe.exec(match[1]);
+  while (n) {
+    labels.push(n[1]);
+    n = labelRe.exec(match[1]);
+  }
+  assert.deepStrictEqual(labels, appLabels, 'custom-tab-bar 文案与 app.json tabBar.list 不一致');
   const wxml = fs.readFileSync(path.join(MP, 'custom-tab-bar', 'index.wxml'), 'utf8');
   assert(wxml.includes('wx:for="{{tabs}}"'), 'custom-tab-bar 未渲染 TABS');
 });
@@ -470,11 +549,339 @@ run('小程序端不包含网络上传/下载调用', () => {
   }
 });
 
-Promise.all(pending).then(() => {
+run('A1 隐私声明与剪贴板降级', () => {
+  const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
+  assert.strictEqual(appJson.__usePrivacyCheck__, true, 'app.json 未开启 __usePrivacyCheck__');
+  const appSrc = fs.readFileSync(path.join(MP, 'app.js'), 'utf8');
+  assert(appSrc.includes('onNeedPrivacyAuthorization'), 'app.js 未注册隐私授权兜底');
+  const aboutWxml = fs.readFileSync(path.join(MP, 'pages', 'about', 'about.wxml'), 'utf8');
+  assert(aboutWxml.includes('剪贴板'), '关于页未说明剪贴板用途');
+
+  storage.clear();
+  prefs.resetPrefs();
+  require('../miniprogram/app.js');
+  assert(lastApp, 'app.js 未调用 App()');
+  lastApp.onLaunch();
+  assert.strictEqual(typeof privacyHandler, 'function', '未注册 onNeedPrivacyAuthorization');
+  let resolution = null;
+  privacyHandler((res) => {
+    resolution = res;
+  });
+  assert.deepStrictEqual(resolution, { event: 'agree' });
+
+  const { copy } = require('../miniprogram/utils/ui');
+  const original = global.wx.setClipboardData;
+  global.wx.setClipboardData = (opts) => {
+    if (opts.fail) opts.fail(new Error('scope is not declared'));
+  };
+  lastToast = '';
+  copy('剪贴板测试');
+  assert(lastToast.includes('复制失败'), '复制失败时应提示长按选择文本');
+  global.wx.setClipboardData = original;
+});
+
+run('A4 首屏数据解耦', () => {
+  const appSrc = fs.readFileSync(path.join(MP, 'app.js'), 'utf8');
+  assert(!/require\(['"]\.\/services\/(content|lore)['"]\)/.test(appSrc), 'app.js 不应加载 content/lore');
+  assert(appSrc.includes("require('./data/counts')"), 'app.js 应只读取静态计数');
+  const contentSrc = fs.readFileSync(path.join(MP, 'services', 'content.js'), 'utf8');
+  assert(!contentSrc.includes('data/lore'), 'content.js 不应加载 lore');
+  const lexiconSrc = fs.readFileSync(path.join(MP, 'pages', 'lexicon', 'lexicon.js'), 'utf8');
+  assert(lexiconSrc.includes("require('../../services/lore')"), '词库页应延迟加载 lore');
+  const heroSrc = fs.readFileSync(path.join(MP, 'pages', 'hero', 'hero.js'), 'utf8');
+  assert(heroSrc.includes("require('../../services/lore')"), '人物页应延迟加载 lore');
+  const aboutSrc = fs.readFileSync(path.join(MP, 'pages', 'about', 'about.js'), 'utf8');
+  assert(!aboutSrc.includes("services/content"), '关于页不应为耗时统计加载 seed');
+  assert(aboutSrc.includes("services/perf"), '关于页应只加载 perf');
+});
+
+run('A5 翻译异常兜底与全局错误上报', () => {
+  require('../miniprogram/app.js');
+  assert(lastApp, 'app.js 未加载');
+  const page = loadPage('index');
+  const original = content.translate;
+  fakeApp.errors.length = 0;
+  content.translate = () => {
+    throw new Error('boom');
+  };
+  try {
+    assert.strictEqual(page.safeTranslate('你好'), '你好', '异常时应原样返回，保证流程不中断');
+  } finally {
+    content.translate = original;
+  }
+  assert(fakeApp.errors.some((e) => e.kind === 'translate_error'), '未上报翻译异常');
+
+  lastApp.onError(new Error('global'));
+  assert(realtimeLogs.some((l) => l.kind === 'onError'), '未写入实时日志');
+});
+
+run('A2 超长分享只带 overflow 标记', () => {
+  const page = loadPage('index');
+  page.onLoad({});
+  const long = '好'.repeat(200);
+  page.setData({ input: long, output: '淋语'.repeat(50), inputLength: long.length, inputTrimmed: true });
+  assert.strictEqual(page.shareQuerySuffix(), 'overflow=1');
+
+  lastToast = '';
+  page.onLoad({ overflow: '1' });
+  assert(lastToast.includes('原文过长'), '落地页应提示原文过长未带出');
+});
+
+runAsync('A2 分享 path 不超限且短文本可带回原文', async () => {
+  const page = loadPage('index');
+  page.onLoad({});
+  const long = '好'.repeat(200);
+  page.setData({ input: long, output: '淋语'.repeat(50), inputLength: long.length, inputTrimmed: true });
+  page._checked = { content: page.data.output, ok: true };
+  const share = await page.onShareAppMessage();
+  assert.strictEqual(share.path, '/pages/index/index?overflow=1');
+  assert.strictEqual(page.onShareTimeline().query, 'overflow=1');
+
+  const short = loadPage('index');
+  short.onLoad({});
+  short.setData({ input: '晚安', output: '碗安惹', inputTrimmed: true });
+  short._checked = { content: '碗安惹', ok: true };
+  const withText = await short.onShareAppMessage();
+  assert(withText.path.startsWith('/pages/index/index?text='));
+  const carried = decodeURIComponent(withText.path.split('text=')[1]);
+  assert.strictEqual(carried, '晚安');
+  assert(Buffer.byteLength(carried, 'utf8') <= 300);
+});
+
+runAsync('A3 本地词表与分享/历史双闸门', async () => {
+  const sec = require('../miniprogram/services/sec');
+  assert(sec.checkLocal('我们去赌博'), '本地词表未命中赌博');
+  assert(sec.checkLocal('赌 博'), '应识别简单分隔变形');
+  assert(!sec.checkLocal('今天天气真好'));
+
+  let remote = 0;
+  const originalRemote = global.wx.msgSecCheck;
+  global.wx.msgSecCheck = (opts) => {
+    remote += 1;
+    opts.success({ result: { suggest: 'pass' } });
+  };
+  assert.strictEqual(await sec.checkText('今天天气真好'), true);
+  assert.strictEqual(remote, 1, '本地未命中时应尝试远端校验');
+  remote = 0;
+  assert.strictEqual(await sec.checkText('我们去赌博'), false);
+  assert.strictEqual(remote, 0, '本地命中不应再调用远端');
+  global.wx.msgSecCheck = (opts) => opts.success({ result: { suggest: 'risky' } });
+  assert.strictEqual(await sec.checkText('今天天气真好'), false);
+  global.wx.msgSecCheck = originalRemote;
+
+  const page = loadPage('index');
+  page.onLoad({});
+  page.setData({ input: '赌博', output: '赌博', inputTrimmed: true });
+  page._checked = { content: '赌博', ok: false };
+  const share = await page.onShareAppMessage();
+  assert.strictEqual(share.title, '淋语翻译器 · 把中文翻译成淋语♥');
+  assert.strictEqual(share.path, '/pages/index/index');
+  assert.strictEqual(page.onShareTimeline().query, '');
+
+  storage.clear();
+  history.clearHistory();
+  const originalAdd = history.addHistory;
+  let added = 0;
+  history.addHistory = () => {
+    added += 1;
+  };
+  lastToast = '';
+  page.secCheckAndRemember('赌博', '赌博');
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  history.addHistory = originalAdd;
+  assert.strictEqual(added, 0, '未通过校验的内容不应写入历史');
+  assert(lastToast.includes('内容安全'), '应提示未通过内容安全校验');
+  assert(page.data.historyNote.includes('未写入'), '结果区状态不应误报已写入历史');
+});
+
+run('B2 视图模型不下发 searchText', () => {
+  const page = loadPage('lexicon');
+  const wordVm = page.toViewModel('words', content.words[0], 0, '');
+  assert(!('searchText' in wordVm), '词条视图模型不应携带 searchText');
+  const card = require('../miniprogram/services/lore').cards[0];
+  const cardVm = page.toViewModel('cards', card, 0, '');
+  assert(!('searchText' in cardVm), '词卡视图模型不应携带 searchText');
+});
+
+run('B3 长列表增量 setData', () => {
+  const page = loadPage('lexicon');
+  page.onLoad();
+  page._filtered = content.words;
+  page._shownCount = 30;
+  page.data.hasMore = true;
+  page._patches = [];
+  page.loadMore();
+  const patch = page._patches[0];
+  assert(patch, '词库 loadMore 未调用 setData');
+  assert(!('shown' in patch), '词库 loadMore 不应全量替换 shown');
+  assert(Object.keys(patch).some((k) => k.startsWith('shown[')), '词库 loadMore 应使用增量路径');
+  assert.strictEqual(page.data.shown.length, 60, '词库第一页增量后应有 60 条');
+  page._patches = [];
+  page.loadMore();
+  assert.strictEqual(page.data.shown.length, 90, '词库连续加载应继续增量追加');
+  assert(Object.keys(page._patches[0]).some((k) => k.startsWith('shown[')));
+
+  storage.clear();
+  history.clearHistory();
+  for (let i = 0; i < 120; i += 1) history.addHistory(`输入${i}`, `输出${i}`);
+  const hp = loadPage('history');
+  hp.onLoad({});
+  hp.onShow();
+  assert.strictEqual(hp.data.hasMore, true);
+  hp._patches = [];
+  hp.loadMore();
+  const hpatch = hp._patches[0];
+  assert(hpatch, '历史 loadMore 未调用 setData');
+  assert(!('groups' in hpatch), '历史 loadMore 不应全量替换 groups');
+  assert(Object.keys(hpatch).some((k) => k.startsWith('groups[')), '历史 loadMore 应使用增量路径');
+  assert.strictEqual(hp.data.groups[0].items.length, 100, '历史第一次加载更多后应有 100 条');
+  assert.strictEqual(hp.data.hasMore, true);
+  hp._patches = [];
+  hp.loadMore();
+  assert.strictEqual(hp.data.groups[0].items.length, 120, '历史连续加载应继续增量追加');
+  assert.strictEqual(hp.data.hasMore, false);
+});
+
+run('B4 历史写缓存 + 异步节流', () => {
+  storage.clear();
+  history.clearHistory();
+  history.flush();
+  storage.clear();
+
+  const originalAsync = global.wx.setStorage;
+  const originalSync = global.wx.setStorageSync;
+  let asyncWrites = 0;
+  let syncWrites = 0;
+  global.wx.setStorage = (opts) => {
+    asyncWrites += 1;
+    if (opts.success) opts.success();
+  };
+  global.wx.setStorageSync = (key, value) => {
+    syncWrites += 1;
+    storage.set(key, value);
+  };
+  try {
+    history.addHistory('缓存测试', '缓存输出');
+    assert.strictEqual(syncWrites, 0, 'addHistory 不应同步写 storage');
+    assert.strictEqual(asyncWrites, 0, '300ms 节流内不应立即写');
+    assert(history.readHistory().some((row) => row.input === '缓存测试'), '缓存应立即可读');
+    history.flush();
+    assert.strictEqual(asyncWrites, 1, 'flush 应异步写一次');
+  } finally {
+    global.wx.setStorage = originalAsync;
+    global.wx.setStorageSync = originalSync;
+    history.clearHistory();
+    history.flush();
+    storage.clear();
+  }
+});
+
+runAsync('B5 历史搜索 150ms 防抖', async () => {
+  storage.clear();
+  history.clearHistory();
+  history.addHistory('苹果', '苹果淋语');
+  const page = loadPage('history');
+  page.onLoad({});
+  page.onShow();
+  let calls = 0;
+  const original = page.applyFilter;
+  page.applyFilter = function (...args) {
+    calls += 1;
+    return original.apply(this, args);
+  };
+  page.onSearch({ detail: { value: '苹果' } });
+  assert.strictEqual(calls, 0, '输入时不应立即全量过滤');
+  await new Promise((resolve) => setTimeout(resolve, 180));
+  assert.strictEqual(calls, 1, '防抖结束后应过滤一次');
+  page.applyFilter = original;
+  history.clearHistory();
+  history.flush();
+  storage.clear();
+});
+
+run('B6/B8 主题同步收口与 customNav 分支', () => {
+  for (const name of ['index', 'lexicon', 'history', 'about']) {
+    const src = fs.readFileSync(path.join(MP, 'pages', name, `${name}.js`), 'utf8');
+    assert(src.includes('syncChrome(this'), `${name} 未使用 syncChrome`);
+  }
+  const heroSrc = fs.readFileSync(path.join(MP, 'pages', 'hero', 'hero.js'), 'utf8');
+  assert(heroSrc.includes('syncChrome(this)'));
+  assert(!heroSrc.includes('{ tab: false }'), 'hero 页不应再传无效的第二个实参');
+
+  let navCalls = 0;
+  let bgCalls = 0;
+  const originalNav = global.wx.setNavigationBarColor;
+  const originalBg = global.wx.setBackgroundColor;
+  global.wx.setNavigationBarColor = () => {
+    navCalls += 1;
+  };
+  global.wx.setBackgroundColor = () => {
+    bgCalls += 1;
+  };
+  try {
+    prefs.applyChrome('black', { customNav: true });
+    assert.strictEqual(navCalls, 0, 'custom 导航页不应调用 setNavigationBarColor');
+    assert.strictEqual(bgCalls, 1, 'custom 导航页仍应设置页面背景色');
+    prefs.applyChrome('black');
+    assert.strictEqual(navCalls, 1);
+  } finally {
+    global.wx.setNavigationBarColor = originalNav;
+    global.wx.setBackgroundColor = originalBg;
+  }
+});
+
+run('B13 翻译耗时统计', () => {
+  content.translate('你今天真好看！');
+  const stats = content.translateStats();
+  assert(stats && stats.count > 0, '未记录翻译耗时');
+  assert(Number.isFinite(stats.p50) && Number.isFinite(stats.p95), '缺少 P50/P95');
+  assert(stats.p50 <= stats.p95);
+  const page = loadPage('about');
+  page.onLoad({});
+  assert(page.data.perf, '关于页未展示耗时统计');
+});
+
+run('B14 提审配置与版本单一来源', () => {
+  const cfg = JSON.parse(fs.readFileSync(path.join(MP, 'project.config.json'), 'utf8'));
+  assert.strictEqual(cfg.setting.urlCheck, true, 'urlCheck 应开启');
+  assert.strictEqual(cfg.setting.uploadWithSourceMap, false, '不应上传 sourcemap');
+  const priv = JSON.parse(fs.readFileSync(path.join(MP, 'project.private.config.json'), 'utf8'));
+  assert.strictEqual(priv.setting.urlCheck, true, '私有配置也不应关闭 urlCheck');
+  assert(fs.existsSync(path.join(MP, 'README.md')), '缺少小程序 README');
+  assert.strictEqual(require('../miniprogram/data/version'), require('../package.json').version);
+});
+
+run('B11 lore 聚合依赖的 drop 字段不可剥离', () => {
+  const e4 = require('../miniprogram/data/lore-extra4');
+  const e5 = require('../miniprogram/data/lore-extra5');
+  assert(Array.isArray(e4.dropCards) && Array.isArray(e4.dropQuotes));
+  assert(Array.isArray(e5.dropCards) && Array.isArray(e5.dropQuotes) && Array.isArray(e5.dropHeroes));
+  const dropped = new Set([...e4.dropCards, ...e5.dropCards]);
+  for (const card of loreService.cards) {
+    assert(!dropped.has(card.term), `被剔除的词卡「${card.term}」仍出现在最终数据中`);
+  }
+});
+
+run('词库合规扫描清单已归档', () => {
+  const dir = path.join(ROOT, 'evidence');
+  const files = fs.readdirSync(dir).filter((f) => f.startsWith('weapp-content-audit-'));
+  assert(files.length > 0, '缺少 evidence/weapp-content-audit-*.md');
+});
+
+(async () => {
+  for (const { name, fn } of pending) {
+    try {
+      await fn();
+      console.log(`PASS [${name}]`);
+    } catch (err) {
+      failed += 1;
+      console.log(`FAIL [${name}] ${err.message}`);
+    }
+  }
   if (failed) {
     console.log(`\n${failed} 项小程序检查未通过`);
     process.exitCode = 1;
   } else {
     console.log('\n小程序检查全部通过');
   }
-});
+})();

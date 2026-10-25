@@ -27,6 +27,7 @@ Page({
     liveOn: true,
     previewing: false,
     isPreview: false,
+    historyNote: '已写入本机历史',
     samples: SAMPLES,
     hint: '翻译结果会出现在这里，保证淋味十足♥',
     statusBar: 20,
@@ -36,6 +37,7 @@ Page({
 
   onLoad(options) {
     const app = getApp();
+    this._secSeq = 0;
     // 一次 setData 合并主题、实时翻译开关与自绘导航尺寸，减少首屏渲染次数（B10）
     this.setData(
       Object.assign(
@@ -227,7 +229,13 @@ Page({
 
     clearTimeout(this._previewTimer);
     const output = this.safeTranslate(input);
-    this.setData({ output, outputLength: output.length, previewing: false, isPreview: false });
+    this.setData({
+      output,
+      outputLength: output.length,
+      previewing: false,
+      isPreview: false,
+      historyNote: '校验中…',
+    });
     this.secCheckAndRemember(input, output);
     // 只有输出真正变化时才震动，避免重复点击重复震动（C5）
     if (output && output !== this._lastOutput) {
@@ -242,15 +250,33 @@ Page({
 
   // UGC 兜底：msgSecCheck 通过才写入历史；接口失败时 fail-open 不阻塞主流程（A3）
   secCheckAndRemember(input, output) {
+    const seq = (this._secSeq || 0) + 1;
+    this._secSeq = seq;
+    const finish = (note) => {
+      if (seq !== this._secSeq) return;
+      this.setData({ historyNote: note });
+    };
     this._checked = { content: output, ok: null };
-    secCheck.checkText(output).then((ok) => {
-      this._checked = { content: output, ok };
-      if (ok) {
+    secCheck
+      .checkText(output)
+      .then((ok) => {
+        if (seq !== this._secSeq) return;
+        this._checked = { content: output, ok };
+        if (ok) {
+          historyStore.addHistory(input, output);
+          finish('已写入本机历史');
+        } else {
+          finish('未通过校验，未写入历史');
+          toast('该内容未通过内容安全校验，本次不写入历史');
+        }
+      })
+      .catch((err) => {
+        if (seq !== this._secSeq) return;
+        const app = getApp();
+        if (app && app.reportError) app.reportError('sec_check_error', err);
         historyStore.addHistory(input, output);
-      } else {
-        toast('该内容未通过内容安全校验，本次不写入历史');
-      }
-    });
+        finish('已写入本机历史');
+      });
   },
 
   copyOutput() {
@@ -273,14 +299,16 @@ Page({
     if (!target) return Promise.resolve({ title: SHARE_TITLE, suffix: '' });
     const cached = this._checked && this._checked.content === target ? this._checked.ok : null;
     const verify = cached === null ? secCheck.checkText(target) : Promise.resolve(cached);
-    return verify.then((ok) => {
-      this._checked = { content: target, ok };
-      if (!ok) return { title: SHARE_TITLE, suffix: '' };
-      return {
-        title: output ? '淋语版：' + clip(output, 24) : SHARE_TITLE,
-        suffix: this.shareQuerySuffix(),
-      };
-    });
+    return verify
+      .then((ok) => {
+        this._checked = { content: target, ok };
+        if (!ok) return { title: SHARE_TITLE, suffix: '' };
+        return {
+          title: output ? '淋语版：' + clip(output, 24) : SHARE_TITLE,
+          suffix: this.shareQuerySuffix(),
+        };
+      })
+      .catch(() => ({ title: SHARE_TITLE, suffix: '' }));
   },
 
   onShareAppMessage() {

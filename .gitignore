@@ -59,3 +59,10 @@ src/renderer/seed-data.js
 
 # Web 静态站产物（npm run web:build 生成）
 www-web/
+
+# WorkBuddy 应用内部配置（本机专属，不进版本库）
+.wbapp_*.genie
+.workbuddy/applications.yaml
+
+# 内容审计一次性报告（重跑脚本即再生）
+evidence/*-audit-*.md

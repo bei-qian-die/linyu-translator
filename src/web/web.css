@@ -1,15 +1,15 @@
 /*
  * 持久化警告条（Web 端 IndexedDB 不可用时显示）
  *
- * 这个 CSS 片段被注入到 www-web/index.html 中（构建期从 build-web.mjs 注入，
- * 或手动添加到 style.css 末尾），只在 Web 构建产物中生效。
+ * body.persistence-fallback 由 webEntry.js 在检测到 IndexedDB 不可用时挂上。
  *
- * body.persistence-fallback #persistence-warning 由 webEntry.js 在检测到
- * IndexedDB 不可用时设置。
+ * 注意：这里默认必须是 display: none，不能靠 HTML 上的内联 style="display:none" ——
+ * 页面 CSP 是 style-src 'self'，内联样式属性会被浏览器拦掉，那条 style 不生效，
+ * 结果这个警告条**无条件常驻**，把「IndexedDB 正常」也误报成「数据不持久」。
  */
 
 .persistence-warning {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -43,6 +43,11 @@
 
 body.persistence-fallback #persistence-warning {
   display: flex;
+}
+
+/* 用户点「知道了」后隐藏；不用内联 style，避开 CSP */
+#persistence-warning.pw-hidden {
+  display: none !important;
 }
 
 /* Web 端 body 高度覆盖：不是 Electron 的固定窗口，允许页面自然滚动 */

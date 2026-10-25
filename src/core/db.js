@@ -23,7 +23,31 @@ if (typeof module === 'object' && module && module.exports) {
   sysPath = require('path');
 } else {
   initSqlJs = window.initSqlJs;
-  fsAdapter = window.fsAdapter;
+  // fsAdapter 不能用 window.fsAdapter 直接捕获：本文件在 index.html 里的加载位置早于
+  // entry 层（src/mobile/entry.js / src/web/webEntry.js），而适配器正是由 entry 选定的。
+  // 捕获的话拿到的是 mobile/fsAdapter.js 挂的 Capacitor 版，等 entry 换成 IndexedDB 版
+  // 之后这里仍指向旧对象 —— 浏览器里调用 .exists() 直接抛
+  // "Cannot read properties of undefined (reading 'Plugins')"，导致 createDb 整个失败、
+  // 词库 0 条。改成每次调用时从 window 取，谁最后挂上就用谁。
+  fsAdapter = {
+    get kind() { return window.fsAdapter && window.fsAdapter.kind; },
+    dirOf: (p) => window.fsAdapter.dirOf(p),
+    basenameOf: (p) => window.fsAdapter.basenameOf(p),
+    read: (p) => window.fsAdapter.read(p),
+    readSync: (p) => window.fsAdapter.readSync(p),
+    write: (p, b) => window.fsAdapter.write(p, b),
+    writeSync: (p, b) => window.fsAdapter.writeSync(p, b),
+    unlink: (p) => window.fsAdapter.unlink(p),
+    rename: (a, b) => window.fsAdapter.rename(a, b),
+    copy: (a, b) => window.fsAdapter.copy(a, b),
+    readdir: (p) => window.fsAdapter.readdir(p),
+    readdirSync: (p) => window.fsAdapter.readdirSync(p),
+    stat: (p) => window.fsAdapter.stat(p),
+    statSync: (p) => window.fsAdapter.statSync(p),
+    exists: (p) => window.fsAdapter.exists(p),
+    existsSync: (p) => window.fsAdapter.existsSync(p),
+    mkdirp: (p) => window.fsAdapter.mkdirp(p),
+  };
   linyuScrypt = window.linyuScrypt;
   SEED_DATA = window.SEED_DATA;
   LORE_DATA = window.LORE_DATA;
@@ -149,7 +173,19 @@ function sqlJsOptions() {
   const tag = typeof document !== 'undefined' && document.querySelector &&
     (/** @type {HTMLScriptElement | null} */ (document.querySelector('script[src*="sql-wasm.js"]')));
   const base = tag ? new URL('.', tag.src).href : new URL('vendor/', document.baseURI).href;
-  return { locateFile: (file) => new URL(file, base).href };
+  return {
+    locateFile: (file) => {
+      const u = new URL(file, base);
+      // 分享链接部署（app.workbuddy.host?sharecode=…）下，平台对子资源也校验 sharecode：
+      // 没带参数的请求返回 403 + 一段错误 HTML。wasm 的 URL 是 sql.js 在运行时拼出来的，
+      // 不会自动继承页面参数 —— 一旦 Cookie 缺失就拿到 HTML 去实例化 wasm，必然失败。
+      try {
+        const sc = new URLSearchParams(location.search).get('sharecode');
+        if (sc && !u.searchParams.has('sharecode')) u.searchParams.set('sharecode', sc);
+      } catch { /* 非浏览器环境或 location 不可用时忽略 */ }
+      return u.href;
+    },
+  };
 }
 
 async function createDb({ filePath, seed, lore, onPersistError, version }) {
@@ -502,18 +538,43 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
   seedIfFresh();
 
   let persistOn = true;
+  // ---- persist 防抖与队列 ----
+  // 在异步 fsAdapter（indexeddb / capacitor）路径下，run() 多次快速调用会触发并发
+  // persist()（最后一个不会等上一个写完 → 数据覆盖）。这里用串行队列保证每次 persist
+  // 严格按顺序执行，且建了一个「最后一定写完」的保证：队列末尾永远是新请求，旧的过期
+  // db.export() 会被合并（中间的 export 可以跳过）。Node 同步路径不受影响。
+  let _persistSeq = 0;
+  let _persistTail = null;
 
-  async function persist() {
+  function _enqueuePersist() {
     if (!filePath || !persistOn) return;
-    const bytes = db.export();
-    // Node 路径：同步写。db.js 里的 run() / addWord() 是同步 API，旧测试就是依赖这一行 fs.writeFileSync
-    // 立即返回时磁盘上已经有文件。这里 fsAdapter.writeSync 内部用 fs.writeFileSync + rename，
-    // 出错回退直接覆盖。WebView 路径没有 writeSync，所以这里必须 still 异步。
+    // Node 同步路径不考虑队列
     if (fsAdapter.kind === 'node' && typeof fsAdapter.writeSync === 'function') {
-      try { fsAdapter.writeSync(filePath, bytes); }
-      catch (err) { if (onPersistError) onPersistError('persist', err); }
+      persistCore();
       return;
     }
+    const token = ++_persistSeq;
+    const prev = _persistTail;
+    const p = (async () => {
+      if (prev) {
+        try { await prev; } catch { /* 上一轮挂了本轮继续试 */ }
+      }
+      // 这个 persist 在排队期间被更新请求取代了 → 跳过
+      if (token !== _persistSeq) return;
+      try { await persistCore(); }
+      catch (err) { if (onPersistError) onPersistError('persist', err); }
+    })();
+    _persistTail = p;
+    return p;
+  }
+
+  async function persist() {
+    return _enqueuePersist();
+  }
+
+  async function persistCore() {
+    if (!filePath || !persistOn) return;
+    const bytes = db.export();
     const dir = fsAdapter.dirOf(filePath);
     if (dir) {
       try { await fsAdapter.mkdirp(dir); }
@@ -546,9 +607,14 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       fn();
     } finally {
       persistOn = prev;
-      persist();
+      _enqueuePersist();
     }
   }
+
+  // 种子数据播种后立即持久化——否则 IndexedDB 等异步适配器上
+  // 只有等到用户做了修改才会触发首次 persist，刷新页面数据丢失。
+  // Node 同步路径不受影响（同步写入已在 seedIfFresh 内完成）。
+  persist();
 
   /**
    * 查一批行。返回 any[]：sql.js 的每一行字段取决于 SELECT 的列，

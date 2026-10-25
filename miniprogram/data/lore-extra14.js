@@ -903,4 +903,6 @@ const quoteMerge = [
   }
 ];
 
-module.exports = { cards, quotes, heroes, heroMerge, quoteMerge };
+const __export = { cards, quotes, heroes, heroMerge, quoteMerge };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_EXTRA14 = __export;

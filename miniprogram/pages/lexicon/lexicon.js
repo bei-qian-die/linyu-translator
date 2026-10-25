@@ -40,7 +40,7 @@ const TAB_META = {
 // 搜索命中高亮（C6）：把命中片段切成 { t, h, k }；无关键词或无命中返回 null，走原文渲染
 function splitHit(text, keyword) {
   const q = String(keyword || '').trim().toLowerCase();
-  const value = text == null ? '' : String(text);
+  const value = text === null || text === undefined ? '' : String(text);
   if (!q || !value) return null;
   const lower = value.toLowerCase();
   const parts = [];
@@ -83,7 +83,7 @@ Page({
   },
 
   onLoad() {
-    // 先铺主题与骨架屏，lore（331KB）解析放到下一帧，页面先上屏不白屏（C10）
+    // 先铺主题与骨架屏，lore（v1.18 约 1.23MB）解析放到下一帧，页面先上屏不白屏（C10）
     this.setData(
       Object.assign({ theme: getApp().globalData.theme }, chromeMetrics()),
       () => {

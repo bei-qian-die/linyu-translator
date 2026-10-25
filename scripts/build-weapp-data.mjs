@@ -7,6 +7,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC_CORE = path.join(ROOT, 'src', 'core');
 const OUT = path.join(ROOT, 'miniprogram');
+const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
 
 const FILES = [
   ['tokenizer.js', 'core/tokenizer.js'],
@@ -64,13 +65,22 @@ const counts = {
   quotes: lore.default.quotes.length,
   heroes: lore.default.heroes.length,
 };
-// 静态计数模块：app.js / 词库页 tab 计数不再需要 require 整个 lore（331KB）才能拿到数字。
+// 静态计数模块：app.js / 词库页 tab 计数不再需要 require 整个 lore（约 1.23MB）才能拿到数字。
 const countsModule =
   '// 由 scripts/build-weapp-data.mjs 生成，勿手改。\n' +
   'module.exports = ' +
   JSON.stringify(counts, null, 2) +
   ';\n';
 if (writeIfChanged(path.join(OUT, 'data', 'counts.js'), countsModule)) changed += 1;
+
+// 版本号单一来源：about 页与 app.globalData.version 不再手写，避免数据升到 1.18 页面还显示 1.13
+const versionModule =
+  '// 由 scripts/build-weapp-data.mjs 从 package.json 生成，勿手改。\n' +
+  'module.exports = ' +
+  JSON.stringify(pkg.version) +
+  ';\n';
+if (writeIfChanged(path.join(OUT, 'data', 'version.js'), versionModule)) changed += 1;
+
 console.log(`[weapp] 已同步 ${changed} 个文件`);
 console.log(
   `[weapp] 词库 ${counts.words} / 句式 ${counts.rules} / 词卡 ${counts.cards} / 名言 ${counts.quotes} / 人物 ${counts.heroes}`

@@ -2,8 +2,10 @@
 
 const { getPrefs, setPref, resetPrefs, applyChrome } = require('./services/prefs');
 const { HISTORY_KEY, flush: flushHistory } = require('./services/history');
-// 静态计数：不再为 5 个数字 require 整个 content（373KB），首屏数据成本降到 seed 42KB（A4）
+// 静态计数：不再为 5 个数字 require 整个 content/lore。App 启动只加载 counts；
+// 翻译页按需加载 seed（v1.18 约 390KB），lore（约 1.23MB）延后到词库/人物页（A4）
 const counts = require('./data/counts');
+const version = require('./data/version');
 
 function realtimeLog() {
   try {
@@ -16,7 +18,7 @@ function realtimeLog() {
 
 App({
   globalData: {
-    version: '1.13.0',
+    version,
     theme: 'white',
     live: true,
     historyLimit: 200,

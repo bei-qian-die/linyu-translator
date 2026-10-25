@@ -275,11 +275,26 @@
     });
   }
 
+  // 持久化警告条的「知道了」：CSP 不允许内联 onclick，必须用 addEventListener 绑定
+  function wirePersistenceDismiss() {
+    var btn = document.querySelector('.pw-dismiss');
+    var bar = document.getElementById('persistence-warning');
+    if (!btn || !bar || btn.__wired) return;
+    btn.__wired = true;
+    btn.addEventListener('click', function () {
+      bar.classList.add('pw-hidden');
+    });
+  }
+
   // Web 端：DOM 加载完成后启动（entry.js 是立即启动，因为 Electron/Capacitor 下
   // preload 已就位。Web 端需要等 <script> 标签按序加载完，所以绑定 DOMContentLoaded）
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startInit);
+    document.addEventListener('DOMContentLoaded', function () {
+      wirePersistenceDismiss();
+      startInit();
+    });
   } else {
+    wirePersistenceDismiss();
     startInit();
   }
 

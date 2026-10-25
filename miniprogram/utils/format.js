@@ -4,21 +4,6 @@ function two(n) {
   return String(n).padStart(2, '0');
 }
 
-function formatTime(ts) {
-  const d = new Date(Number(ts) || Date.now());
-  return (
-    d.getFullYear() +
-    '-' +
-    two(d.getMonth() + 1) +
-    '-' +
-    two(d.getDate()) +
-    ' ' +
-    two(d.getHours()) +
-    ':' +
-    two(d.getMinutes())
-  );
-}
-
 function formatClock(ts) {
   const d = new Date(Number(ts) || Date.now());
   return two(d.getHours()) + ':' + two(d.getMinutes());
@@ -48,4 +33,4 @@ function utf8Bytes(text) {
   return bytes;
 }
 
-module.exports = { formatTime, formatClock, clip, utf8Bytes };
+module.exports = { formatClock, clip, utf8Bytes };

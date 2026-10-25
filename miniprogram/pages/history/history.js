@@ -130,34 +130,45 @@ Page({
     const to = Math.min(from + PAGE_SIZE, filtered.length);
     if (to <= from) return;
 
+    const rows = this._decorate(filtered.slice(from, to));
     const groups = this.data.groups;
-    let gi = groups.length - 1;
-    let group = gi >= 0 ? groups[gi] : null;
-    const appended = [];
-    let cur = group ? { gi, label: group.label, items: [] } : null;
-    for (const row of this._decorate(filtered.slice(from, to))) {
-      if (!cur || cur.label !== row.groupLabel) {
-        gi += 1;
-        cur = { gi, label: row.groupLabel, items: [] };
-        appended.push(cur);
+    const lastIndex = groups.length - 1;
+    const last = lastIndex >= 0 ? groups[lastIndex] : null;
+    const patch = {};
+
+    let cursor = 0;
+    if (last) {
+      // 先接到最后一组；这里必须先写 patch，否则「同一天继续加载」会一条都追加不进去
+      const sameGroup = [];
+      while (cursor < rows.length && rows[cursor].groupLabel === last.label) {
+        sameGroup.push(rows[cursor]);
+        cursor += 1;
       }
-      cur.items.push(row);
+      if (sameGroup.length) {
+        const base = last.items.length;
+        sameGroup.forEach((row, j) => {
+          patch['groups[' + lastIndex + '].items[' + (base + j) + ']'] = row;
+        });
+        patch['groups[' + lastIndex + '].count'] = base + sameGroup.length;
+      }
     }
 
-    const patch = {};
-    const lastGroup = groups.length ? groups[groups.length - 1] : null;
-    const cont = appended.find((a) => lastGroup && a.gi === groups.length - 1 && a.label === lastGroup.label);
-    if (cont) {
-      const base = lastGroup.items.length;
-      cont.items.forEach((row, j) => {
-        patch['groups[' + cont.gi + '].items[' + (base + j) + ']'] = row;
-      });
-      patch['groups[' + cont.gi + '].count'] = base + cont.items.length;
+    // 剩余行按日期标签整组追加
+    const appended = [];
+    let current = null;
+    for (; cursor < rows.length; cursor += 1) {
+      const row = rows[cursor];
+      if (!current || current.label !== row.groupLabel) {
+        current = { label: row.groupLabel, count: 0, items: [] };
+        appended.push(current);
+      }
+      current.items.push(row);
+      current.count += 1;
     }
-    for (const ng of appended) {
-      if (ng === cont) continue;
-      patch['groups[' + ng.gi + ']'] = { label: ng.label, count: ng.items.length, items: ng.items };
-    }
+    appended.forEach((group, j) => {
+      patch['groups[' + (lastIndex + 1 + j) + ']'] = group;
+    });
+
     this._shownCount = to;
     patch.shownCount = to;
     patch.hasMore = filtered.length > to;

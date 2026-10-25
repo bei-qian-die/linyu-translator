@@ -1,7 +1,7 @@
 'use strict';
 
-// 词卡/名言/人物浏览数据：依赖 331KB 的 data/lore，只在词库页/人物页 onLoad 时按需加载，
-// 避免 App 启动即解析全部数据（A4）。
+// 词卡/名言/人物浏览数据：依赖约 1.23MB 的 data/lore（v1.18），
+// 只在词库页/人物页 onLoad 时按需加载，避免 App 启动即解析全部数据（A4）。
 const lore = require('../data/lore');
 const { wordMap, rules } = require('./content');
 
@@ -34,11 +34,13 @@ const HERO_GROUPS = [
 ];
 
 function text(value) {
-  return value == null ? '' : String(value);
+  return value === null || value === undefined ? '' : String(value);
 }
 
 function list(value) {
-  return Array.isArray(value) ? value.filter((item) => item != null && item !== '') : [];
+  return Array.isArray(value)
+    ? value.filter((item) => item !== null && item !== undefined && item !== '')
+    : [];
 }
 
 function joinSearch(parts) {

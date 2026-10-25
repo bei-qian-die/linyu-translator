@@ -48,15 +48,24 @@ async function contentHash(files) {
   return h.digest('hex').slice(0, 16);
 }
 
-// 检查需跳过的脚本（entry 由 webEntry 替代；app.js 带 Vue，在 vm 里跑不了）
-const SKIP_IN_CHECK = new Set(['web/entry.js', 'app.js', 'web/webEntry.js', 'web/patch-app.js']);
+// 检查需跳过的脚本（entry 由 webEntry 替代；app.js 带 Vue，在 vm 里跑不了；
+// cloudSync 依赖 document 与 CDN 上的 WorkBuddyCloud 全局）
+const SKIP_IN_CHECK = new Set([
+  'web/entry.js',
+  'app.js',
+  'web/webEntry.js',
+  'web/patch-app.js',
+  'web/cloudSync.js',
+]);
 const NEEDS_BEFORE = { 'core/db.js': ['fsAdapter'] };
 
 async function bundleOrderFromIndex() {
   const html = await fs.readFile(path.join(out, 'index.html'), 'utf8');
   const list = [];
   for (const m of html.matchAll(/<script src="([^"]+)"><\/script>/g)) {
-    const rel = m[1];
+    const rel = m[1].split('?')[0]; // 去掉 ?sharecode= 等查询参数
+    // 跳过 CDN 绝对地址（不在本地目录里，vm 无法读）
+    if (/^(?:[a-z]+:)?\/\//i.test(rel)) continue;
     if (rel.startsWith('vendor/') || SKIP_IN_CHECK.has(rel)) continue;
     list.push(rel);
   }
@@ -140,7 +149,7 @@ async function main() {
   const webSrc = path.join(root, 'src', 'web');
   const webDst = path.join(out, 'web');
   await fs.mkdir(webDst, { recursive: true });
-  for (const name of ['idbAdapter.js', 'webEntry.js', 'patch-app.js', 'web.css']) {
+  for (const name of ['idbAdapter.js', 'webEntry.js', 'patch-app.js', 'cloudSync.js', 'web.css', 'cloud.css']) {
     await copyFile(path.join(webSrc, name), path.join(webDst, name));
   }
 
@@ -164,6 +173,19 @@ async function main() {
       console.warn('[build-web] missing dependency:', src);
       throw err;
     }
+  }
+
+  // 云服务 SDK：优先内置本地副本（index.global.js 是自包含 IIFE，71KB），
+  // 避免运行时依赖第三方 CDN —— 国内网络下 jsdelivr 经常不可达，一旦拉不到
+  // 整个云服务面板都会失效。装了 node_modules 就内置，没装才退回 CDN。
+  const sdkLocalSrc = path.join(root, 'node_modules', '@tencent-ai', 'workbuddy-cloud-sdk', 'lib', 'index.global.js');
+  let sdkScriptSrc = 'https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js';
+  try {
+    await copyFile(sdkLocalSrc, path.join(vendor, 'workbuddy-cloud-sdk.js'));
+    sdkScriptSrc = 'vendor/workbuddy-cloud-sdk.js';
+    console.log('[build-web] cloud SDK vendored locally');
+  } catch {
+    console.warn('[build-web] cloud SDK not found in node_modules, falling back to CDN');
   }
 
   // seed-data.js + seed.json（与 build-mobile.mjs 一致）
@@ -204,17 +226,19 @@ async function main() {
   );
 
   // 在 <body> 后立即插入持久化警告条（IndexedDB 不可用时显示）
+  // 注意：不能用内联 style="display:none" 或 onclick —— 页面 CSP 是 style-src 'self'，
+  // 内联样式会被拦掉，警告条就会无条件常驻。显示与否全部交给 CSS + 类名控制。
   html = html.replace(
     /<body>/,
-    `<body>\n  <div class="persistence-warning" id="persistence-warning" style="display:none">\n    <span>数据仅保留在当前会话，刷新页面后不保留</span>\n    <button class="pw-dismiss" onclick="this.parentElement.style.display='none'">知道了</button>\n  </div>`
+    `<body>\n  <div class="persistence-warning" id="persistence-warning">\n    <span>数据仅保留在当前会话，刷新页面后不保留</span>\n    <button class="pw-dismiss" type="button">知道了</button>\n  </div>`
   );
 
   // 在 index.html 的 <title> 后添加 OG meta 与 favicon
   html = html.replace(
     '</title>',
-    '</title>\n  <meta name="description" content="中文转淋语在线翻译器，纯本地翻译，不上传任何数据。收录词库1178条、句式350条、词卡794张、人物传207位、名言2078条。" />\n' +
+    '</title>\n  <meta name="description" content="中文转淋语在线翻译器。翻译完全在本机完成，未登录时数据不出浏览器；登录后可把自建词条、翻译历史与偏好备份到云端。收录词库1178条、句式350条、词卡794张、人物传207位、名言2078条。" />\n' +
     '  <meta property="og:title" content="淋语翻译器" />\n' +
-    '  <meta property="og:description" content="中文 → 淋语在线翻译器，纯本地、不联网、不传数据" />\n' +
+    '  <meta property="og:description" content="中文 → 淋语在线翻译器，本地即时翻译；登录后支持云端词库与跨设备同步" />\n' +
     '  <meta property="og:type" content="website" />\n' +
     '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 32 32\'><rect width=\'32\' height=\'32\' rx=\'8\' fill=\'%23e64fa2\'/><text x=\'16\' y=\'22\' text-anchor=\'middle\' font-size=\'18\' fill=\'white\'>淋</text></svg>" />'
   );
@@ -231,17 +255,53 @@ async function main() {
     'img-src \'self\' data: blob: content:;'
   );
 
-  // 在 style.css 后追加 web.css
+  // CSP 放宽：云服务接入需要
+  //   · script-src 增加 cdn.jsdelivr.net（WorkBuddy Cloud SDK 走 CDN IIFE 形式）
+  //   · connect-src 增加 www.workbuddy.cn（OAuth Relay 回调换票）
+  // 数据面 /.cloud/** 与页面同源，'self' 已覆盖。
   html = html.replace(
-    /<link rel="stylesheet" href="style\.css" \/>/,
-    '<link rel="stylesheet" href="style.css" />\n  <link rel="stylesheet" href="web/web.css" />'
+    /script-src 'self' 'unsafe-eval';/,
+    "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net;"
+  );
+  html = html.replace(
+    /connect-src 'self' data: blob:;/,
+    "connect-src 'self' data: blob: https://www.workbuddy.cn;"
   );
 
-  // 在 app.js 之后追加 Web 适配脚本 patch-app.js
+  // 在 style.css 后追加 web.css + cloud.css
+  html = html.replace(
+    /<link rel="stylesheet" href="style\.css" \/>/,
+    '<link rel="stylesheet" href="style.css" />\n' +
+    '  <link rel="stylesheet" href="web/web.css" />\n' +
+    '  <link rel="stylesheet" href="web/cloud.css" />'
+  );
+
+  // 在 app.js 之后追加 Web 适配脚本 patch-app.js，最后挂云服务面板
   html = html.replace(
     /<script src="app\.js"><\/script>/,
-    '<script src="app.js"></script>\n  <script src="web/patch-app.js"></script>'
+    '<script src="app.js"></script>\n' +
+    '  <script src="web/patch-app.js"></script>\n' +
+    `  <script src="${sdkScriptSrc}"></script>\n` +
+    '  <script src="web/cloudSync.js"></script>'
   );
+
+  // ---- sharecode 注入 ----
+  // app.workbuddy.host 站点分享要求所有子资源请求带 ?sharecode=，
+  // 但浏览器对相对路径资源不自动附加查询参数。从环境变量或 --sharecode= 参数读取。
+  const sharecode = process.env.SHARECODE || (process.argv.find(a => a.startsWith('--sharecode=')) || '').split('=')[1] || '';
+  if (sharecode) {
+    // 给所有相对路径资源 URL 加 sharecode
+    // 匹配 <script src="X"> 和 <link ... href="X">（link 里 href 不一定紧接 link 后面）
+    html = html.replace(
+      /(<(?:script src|link [^>]* href)=")((?:vendor|core|mobile|web)\/[^"]+)/g,
+      (m, pre, url) => pre + url + '?sharecode=' + sharecode
+    );
+    // 处理根目录相对路径（seed-data.js, seed.json, style.css, app.js）
+    html = html.replace(
+      /(<(?:script src|link [^>]* href)=")(seed-data\.js|seed\.json|style\.css|app\.js)(")/g,
+      (m, pre, url, post) => pre + url + '?sharecode=' + sharecode + post
+    );
+  }
 
   await fs.writeFile(path.join(out, 'index.html'), html, 'utf8');
 
