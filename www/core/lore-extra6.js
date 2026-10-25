@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-// __wrapped by scripts/build-mobile.mjs
+// __wrapped by scripts/lib/wrap-iife.mjs
 'use strict';
 
 // 本轮（2026-10-11）新增条目。全部逐字取自 B 站淋语相关视频的标题/简介/评论，

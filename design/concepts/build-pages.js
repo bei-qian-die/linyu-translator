@@ -1,0 +1,1190 @@
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const HEART = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>';
+
+const STATUS = `
+<div class="status">
+  <span class="status-time">9:41</span>
+  <svg viewBox="0 0 60 14" fill="currentColor" aria-hidden="true">
+    <rect x="0" y="9" width="3" height="5" rx="1"/>
+    <rect x="5" y="7" width="3" height="7" rx="1"/>
+    <rect x="10" y="5" width="3" height="9" rx="1"/>
+    <rect x="15" y="3" width="3" height="11" rx="1"/>
+    <path d="M25.5 6.6a8.4 8.4 0 0 1 10.6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M27.9 9.3a4.8 4.8 0 0 1 5.8 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="30.8" cy="12" r="1"/>
+    <rect x="43" y="3" width="14" height="8" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+    <rect x="58" y="5.4" width="1.5" height="3.2" rx="0.7"/>
+    <rect x="45" y="5" width="10" height="4" rx="1"/>
+  </svg>
+</div>`;
+
+const NAV = `
+<div class="wx-nav">
+  <span class="brand">${HEART}淋语翻译器</span>
+  <span class="capsule" aria-hidden="true">
+    <i class="cap-dot"></i><i class="cap-dot"></i><i class="cap-dot"></i>
+    <span class="cap-div"></span>
+    <span class="cap-target"><i></i></span>
+  </span>
+</div>`;
+
+const TABS = {
+  translate: {
+    label: '翻译',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>',
+  },
+  lexicon: {
+    label: '词库',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-1.7-1.3-3.7-2-6-2H3v13h3c2.3 0 4.3.7 6 2 1.7-1.3 3.7-2 6-2h3V5h-3c-2.3 0-4.3.7-6 2Z"/><path d="M12 7v13"/></svg>',
+  },
+  history: {
+    label: '历史',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  },
+  about: {
+    label: '关于',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>',
+  },
+};
+
+const SEARCH_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>';
+const CHEVRON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+
+function tabbar(active) {
+  return `
+<nav class="tabbar" aria-label="主导航">
+  ${Object.entries(TABS).map(([key, tab]) => `
+  <span class="tab ${key === active ? 'active' : ''}">
+    ${tab.icon}
+    <span>${tab.label}</span><i class="tab-dot"></i>
+  </span>`).join('')}
+</nav>`;
+}
+
+function heartIn(text) {
+  return String(text).replace('♥', `<span class="h-heart">♥</span>`);
+}
+
+const WORDS = [
+  ['是', '素'],
+  ['谢谢', '靴靴'],
+  ['开心', '开熏'],
+  ['喜欢', '喜翻'],
+  ['姐姐', '解解'],
+  ['可爱', '阔爱'],
+  ['真', '珍'],
+];
+
+function lexiconBody() {
+  return `
+    <div class="eyebrow"><span>LEXICON <b>/</b> 词库</span><span class="eyebrow-right">可溯源</span></div>
+    <h2 class="page-title">查一个词，<br />看它的来路<span class="pt-dot">。</span></h2>
+    <p class="page-sub">535 词条 · 146 句式 · 422 词卡 · 462 名言 · 73 人物</p>
+
+    <div class="search">${SEARCH_ICON}<span class="search-ph">搜索中文 / 淋语 / 解释…</span></div>
+
+    <nav class="tabs" aria-label="词库板块">
+      <span class="tab on"><b>词库</b><i>535</i></span>
+      <span class="tab"><b>句式</b><i>146</i></span>
+      <span class="tab"><b>词卡</b><i>422</i></span>
+      <span class="tab"><b>名言</b><i>462</i></span>
+      <span class="tab"><b>人物</b><i>73</i></span>
+    </nav>
+
+    <div class="list-head"><span>常用词</span><span>按热度 ↓</span></div>
+    <div class="word-list">
+      ${WORDS.map(([zh, ly], i) => `
+      <div class="word-row">
+        <span class="w-num">${String(i + 1).padStart(2, '0')}</span>
+        <span class="w-zh">${zh}</span>
+        <span class="w-right"><span class="w-arrow">→</span><span class="w-ly">${ly}</span></span>
+      </div>`).join('')}
+    </div>
+    <div class="list-more"><span class="more">浏览全部 535 条 ↓</span><span>只读浏览</span></div>`;
+}
+
+const HISTORY_GROUPS = [
+  {
+    label: '今天',
+    items: [
+      ['10:24', '你今天真好看！', '小仙女今天珍好看惹，美cry噜♥！'],
+      ['09:12', '谢谢宝贝的抱抱', '靴靴，给你130分婊贝滴啾咪♥'],
+      ['08:47', '姐姐也太可爱了吧', '解解也难道不觉得超阔爱滴嘛叭♥'],
+    ],
+  },
+  {
+    label: '昨天',
+    items: [
+      ['22:06', '感觉很开心', '赶脚超开熏♥'],
+      ['21:33', '我真的很喜欢', '本仙女尊素超喜翻♥'],
+    ],
+  },
+];
+
+function historyBody() {
+  return `
+    <div class="eyebrow"><span>HISTORY <b>/</b> 历史</span><span class="eyebrow-right">按时间倒序</span></div>
+    <h2 class="page-title">说过的话，都在本机<span class="pt-dot">。</span></h2>
+    <div class="hist-meta">
+      <span class="hm-left">共 128 条 · 只存在本机</span>
+      <span class="hist-ops">
+        <span class="limit-chip">上限 200 条 ${CHEVRON}</span>
+        <button class="clear-link" type="button">清空</button>
+      </span>
+    </div>
+
+    <div class="search">${SEARCH_ICON}<span class="search-ph">搜索历史原文 / 译文…</span></div>
+
+    <div class="hist-list">
+      ${HISTORY_GROUPS.map((group) => `
+      <div class="group-head"><b>${group.label}</b><span>${group.items.length} 条</span></div>
+      ${group.items.map(([time, src, dst]) => `
+      <article class="hist-item">
+        <div class="h-top"><span class="h-time">${time}</span><span class="h-again">重翻 →</span></div>
+        <div class="h-src">${src}</div>
+        <div class="h-dst">${heartIn(dst)}</div>
+      </article>`).join('')}`).join('')}
+    </div>
+
+    <div class="hist-tail"><span>更早</span><span>还有 123 条 · 上滑加载</span></div>
+    <div class="page-note">点击回填重翻 · 左滑删除</div>`;
+}
+
+const STATS = [
+  ['535', '词条'],
+  ['146', '句式'],
+  ['422', '词卡'],
+  ['462', '名言'],
+  ['73', '人物'],
+];
+
+function aboutBody(themeKey) {
+  const tiles = [
+    { key: 'white', cls: 'tw', name: '白', en: 'PAPER' },
+    { key: 'black', cls: 'tb', name: '黑', en: 'INK' },
+    { key: 'rose', cls: 'tr', name: '玫', en: 'ROSE' },
+  ];
+  return `
+    <div class="eyebrow"><span>ABOUT <b>/</b> 关于</span><span class="eyebrow-right">本机优先</span></div>
+
+    <div class="about-brand">
+      <div class="brand-lockup">${HEART}<span class="brand-name">淋语翻译器</span></div>
+      <p class="brand-slogan">把普通话，翻译成淋语。</p>
+      <p class="brand-version">微信小程序 · V1.13.0</p>
+    </div>
+
+    <div class="stats">
+      ${STATS.map(([num, label]) => `<div class="stat"><b>${num}</b><span>${label}</span></div>`).join('')}
+    </div>
+
+    <div class="sec-head"><b>外观</b><span>三种语气</span></div>
+    <div class="theme-picker">
+      ${tiles.map((tile) => `
+      <div class="theme-tile ${tile.cls} ${tile.key === themeKey ? 'on' : ''}">
+        <span class="tt-a">Aa</span>
+        <span class="tt-meta"><b>${tile.name}</b><i>${tile.en}</i></span>
+      </div>`).join('')}
+    </div>
+
+    <div class="sec-head"><b>偏好</b><span>本机生效</span></div>
+    <div class="setting-row">
+      <div class="setting-copy">
+        <div class="setting-name">实时预览</div>
+        <div class="setting-desc">输入时自动翻译，预览内容不写入历史</div>
+      </div>
+      <span class="switch" aria-hidden="true"></span>
+    </div>
+
+    <div class="sec-head"><b>边界</b><span>写在明处</span></div>
+    <div class="promises">
+      <div class="promise"><i>✓</i><span>翻译在本机完成，不上传原文</span></div>
+      <div class="promise"><i>✓</i><span>无需账号，不申请敏感权限</span></div>
+      <div class="promise"><i>✓</i><span>历史仅存微信缓存，上限 200 条</span></div>
+    </div>
+    <p class="disclaimer">词库、句式与人物资料整理自公开语料，仅供娱乐；与所提及的艺人、游戏及平台无官方关联。</p>
+
+    <div class="about-actions">
+      <button class="ghost-btn" type="button">分享给好友</button>
+      <button class="ghost-btn" type="button">意见反馈</button>
+    </div>
+    <div class="clear-row"><button class="clear-link" type="button">清除历史与偏好设置</button></div>
+
+    <footer class="about-foot">
+      零广告 · 零账号 · 零上传<br />
+      致敬每一份认真玩梗的快乐 ${HEART.replace('<svg ', '<svg class="heart-inline" ')}
+    </footer>`;
+}
+
+const THEMES = [
+  {
+    key: 'white',
+    cls: 't-white',
+    no: '01',
+    name: '白 · PAPER',
+    flag: '默认',
+    foot: '纸感留白 · 墨黑强调',
+    swatches: [['#f7f5f1', '#F7F5F1'], ['#141414', '#141414'], ['#d8d3ca', '#D8D3CA']],
+  },
+  {
+    key: 'black',
+    cls: 't-black',
+    no: '02',
+    name: '黑 · INK',
+    flag: '夜间',
+    foot: '夜间墨底 · 玫粉点睛',
+    swatches: [['#111112', '#111112'], ['#f2efe9', '#F2EFE9'], ['#ff6f9c', '#FF6F9C']],
+  },
+  {
+    key: 'rose',
+    cls: 't-rose',
+    no: '03',
+    name: '玫粉 · ROSE',
+    flag: '粉调',
+    foot: '粉白纸面 · 深玫压色',
+    swatches: [['#fbf2f3', '#FBF2F3'], ['#c2185b', '#C2185B'], ['#2a1b20', '#2A1B20']],
+  },
+];
+
+function column(theme, page) {
+  return `
+      <article class="theme-col">
+        <div class="phone-head">
+          <span class="ph-index">${theme.no}</span>
+          <span class="ph-name">${theme.name}</span>
+          <span class="ph-flag">${theme.flag}</span>
+        </div>
+        <div class="phone-slot">
+          <div class="device ${theme.cls}">
+            <div class="screen">
+              ${STATUS}
+              ${NAV}
+              <main class="content">${page.body(theme.key)}</main>
+              ${tabbar(page.active)}
+              <div class="home-bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-foot">
+          <span class="foot-name">${theme.foot}</span>
+          <div class="swatches">
+            ${theme.swatches.map(([hex, label]) => `<span class="swatch"><i style="background:${hex}"></i>${label}</span>`).join('')}
+          </div>
+        </div>
+      </article>`;
+}
+
+function board(page) {
+  return `
+  <section class="board" id="board-${page.id}">
+    <header class="masthead">
+      <div class="mast-main">
+        <div class="kicker">${HEART} UI Concept · Page ${page.no} / ${page.en}</div>
+        <h1 class="board-title">${page.title}</h1>
+      </div>
+      <div class="mast-side">
+        <div class="swatch-line" aria-hidden="true">
+          <span class="swatch-mini w"></span>
+          <span class="swatch-mini b"></span>
+          <span class="swatch-mini r"></span>
+          <span class="swatch-caption">Three colorways</span>
+        </div>
+        <p class="mast-note">${page.note}</p>
+        <div class="mast-meta"><span>微信小程序</span><span>2026.10</span><span>VOL.${page.no}</span></div>
+      </div>
+    </header>
+
+    <section class="themes" aria-label="${page.label}三种配色概念">
+      ${THEMES.map((theme) => column(theme, page)).join('')}
+    </section>
+
+    <footer class="rules">
+      <div class="rules-grid">
+        ${page.notes.map(([title, desc], i) => `
+        <div class="rule">
+          <span class="rule-num">NOTE / ${String(i + 1).padStart(2, '0')}</span>
+          <h3>${title}</h3>
+          <p>${desc}</p>
+        </div>`).join('')}
+      </div>
+      <div class="spec-bar">
+        ${page.specs.map((spec) => `<span>${spec}</span>`).join('')}
+        <span class="spec-end">Concept only · 未改动现有小程序</span>
+      </div>
+    </footer>
+  </section>`;
+}
+
+const PAGES = [
+  {
+    id: 'lexicon',
+    no: '02',
+    en: 'LEXICON',
+    label: '词库',
+    title: '词库，<em>摊开来看</em>。',
+    note: '五个板块共用一套检索：词条、句式、词卡、名言、人物。去掉卡片盒子，让词条像目录一样排开，535 条也能一眼扫到。',
+    active: 'lexicon',
+    body: lexiconBody,
+    notes: [
+      ['一套检索', '五个板块共用同一个搜索框、同一种空状态，只在结果区替换结构，不让用户在五套界面里重新学一次。'],
+      ['数字目录', '行高 47，编号退成 8pt 灰字；535 条词条靠细线和对齐扫读，不靠一层层卡片。'],
+      ['只读浏览', '小程序端只查不改，长按才出现复制；编辑与导入留给 PC 端的开发者模式，避免误触。'],
+    ],
+    specs: ['PAGE 02 / LEXICON', '5 TABS', 'TOUCH ≥ 44PT', 'READ ONLY'],
+  },
+  {
+    id: 'history',
+    no: '03',
+    en: 'HISTORY',
+    label: '历史',
+    title: '说过的话，<em>都在本机</em>。',
+    note: '历史只存在本机。按日期分组，原文退成注脚、译文放在前面；重翻、删除和上限都收进同一屏。',
+    active: 'history',
+    body: historyBody,
+    notes: [
+      ['时间分组', '今天 / 昨天 / 更早，组头用 9pt 大字距；上限与清空放在同一行，不藏进设置。'],
+      ['译文优先', '原文退成 11pt 注脚，译文用 15pt 正文；♥ 留给强调色，其余保持墨色。'],
+      ['本机承诺', '点击回填、左滑删除、只存缓存——三个动作都在首屏内交代清楚。'],
+    ],
+    specs: ['PAGE 03 / HISTORY', 'TIME GROUPS', 'LOCAL ONLY', 'TOUCH ≥ 44PT'],
+  },
+  {
+    id: 'about',
+    no: '04',
+    en: 'ABOUT',
+    label: '关于',
+    title: '关于它，<em>和它的边界</em>。',
+    note: '关于页不做产品说明书：五个真实数字、三种外观、几行隐私承诺，其余交给留白。',
+    active: 'about',
+    body: aboutBody,
+    notes: [
+      ['数字先行', '535 / 146 / 422 / 462 / 73，五个真实计数代替形容词，版本号逐字可查。'],
+      ['主题即样本', '三个主题选择器本身就是三块颜色样本，选中的那一块用当前强调色描边。'],
+      ['边界明说', '本地翻译、无账号、无敏感权限，写在关于页，而不是藏在设置列表里。'],
+    ],
+    specs: ['PAGE 04 / ABOUT', '5 STATS', '3 THEMES', 'LOCAL FIRST'],
+  },
+];
+
+const CSS = `
+  :root {
+    --board-bg: #e9e6df;
+    --board-ink: #1b1916;
+    --board-muted: #6b665f;
+    --board-line: rgba(27, 25, 22, 0.14);
+    --rose: #b0184b;
+    --sans: "PingFang SC", "HarmonyOS Sans SC", "MiSans", "DengXian", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    --mono: ui-monospace, "Cascadia Mono", "SFMono-Regular", Consolas, Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--board-bg);
+    color: var(--board-ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .sheet-head {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 48px 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 1px solid var(--board-line);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--board-muted);
+  }
+  .sheet-head .sh-brand {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--board-ink);
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+  .sh-brand svg { width: 11px; height: 11px; color: var(--rose); }
+  .sheet-head .sh-mid { margin-left: auto; }
+  .sheet-head .sh-meta { color: var(--rose); }
+
+  .board {
+    --s: 0.86;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 46px 48px 36px;
+  }
+  .board + .board { border-top: 1px solid var(--board-line); }
+  body.is-solo .sheet-head { display: none; }
+  body.is-solo .board { padding-top: 48px; }
+
+  /* ── masthead ─────────────────────────────── */
+  .masthead {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 48px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--board-line);
+  }
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    color: var(--board-muted);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .kicker svg { width: 11px; height: 11px; color: var(--rose); flex: none; }
+  .board-title {
+    font-size: clamp(32px, 3.6vw, 44px);
+    font-weight: 600;
+    line-height: 1.24;
+    letter-spacing: 0.005em;
+  }
+  .board-title em { font-style: normal; color: var(--rose); }
+  .mast-side {
+    flex: none;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .swatch-line { display: flex; align-items: center; gap: 7px; }
+  .swatch-mini {
+    width: 26px; height: 14px; border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgba(27,25,22,.12);
+  }
+  .swatch-mini.w { background: #f7f5f1; }
+  .swatch-mini.b { background: #111112; }
+  .swatch-mini.r { background: #c2185b; }
+  .swatch-caption {
+    margin-left: 4px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .mast-note {
+    font-size: 12.5px;
+    line-height: 1.8;
+    color: var(--board-muted);
+    max-width: 34em;
+  }
+  .mast-meta {
+    display: flex;
+    gap: 18px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .mast-meta span + span::before {
+    content: "/";
+    margin-right: 18px;
+    color: rgba(27,25,22,.28);
+  }
+
+  /* ── theme columns ────────────────────────── */
+  .themes {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 32px;
+  }
+  .theme-col {
+    flex: 0 0 calc(375px * var(--s));
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-head {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    height: 26px;
+    margin-bottom: 12px;
+  }
+  .ph-index {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--rose);
+  }
+  .ph-name { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; }
+  .ph-flag {
+    margin-left: auto;
+    padding: 2px 8px;
+    border: 1px solid var(--board-line);
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .phone-slot {
+    flex: none;
+    width: calc(375px * var(--s));
+    height: calc(812px * var(--s));
+  }
+  .device {
+    width: 375px;
+    height: 812px;
+    border-radius: 34px;
+    transform: scale(var(--s));
+    transform-origin: top left;
+    outline: 1px solid var(--edge);
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .phone-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 14px;
+  }
+  .foot-name {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--board-ink);
+  }
+  .swatches { display: flex; flex-wrap: wrap; gap: 6px 13px; }
+  .swatch {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+    color: var(--board-muted);
+  }
+  .swatch i {
+    display: inline-block;
+    width: 11px; height: 11px; border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(27,25,22,.14);
+  }
+
+  /* ── phone theme tokens ───────────────────── */
+  .t-white {
+    --bg: #f7f5f1;
+    --ink: #141414;
+    --muted: #6d6861;
+    --faint: #746e65;
+    --line: rgba(20, 20, 20, 0.14);
+    --line-strong: rgba(20, 20, 20, 0.5);
+    --accent: #141414;
+    --edge: rgba(20, 20, 20, 0.2);
+  }
+  .t-black {
+    --bg: #111112;
+    --ink: #f2efe9;
+    --muted: #99948b;
+    --faint: #8a857e;
+    --line: rgba(242, 239, 233, 0.16);
+    --line-strong: rgba(242, 239, 233, 0.55);
+    --accent: #ff6f9c;
+    --edge: rgba(0, 0, 0, 0.6);
+  }
+  .t-rose {
+    --bg: #fbf2f3;
+    --ink: #2a1b20;
+    --muted: #7e5c66;
+    --faint: #8a6670;
+    --line: rgba(42, 27, 32, 0.15);
+    --line-strong: rgba(42, 27, 32, 0.5);
+    --accent: #c2185b;
+    --edge: rgba(42, 27, 32, 0.22);
+  }
+
+  /* ── phone screen ─────────────────────────── */
+  .screen {
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+  }
+  .status {
+    flex: none;
+    height: 44px;
+    padding: 0 22px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .status-time { font-size: 11px; font-weight: 600; letter-spacing: 0.01em; }
+  .status svg { width: 55px; height: 13px; display: block; }
+
+  .wx-nav {
+    flex: none;
+    height: 44px;
+    padding: 0 12px 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .brand svg { width: 11px; height: 11px; color: var(--accent); flex: none; }
+  .capsule {
+    width: 82px;
+    height: 30px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5px;
+    color: var(--ink);
+    opacity: 0.9;
+  }
+  .capsule .cap-dot { width: 3px; height: 3px; border-radius: 50%; background: currentColor; }
+  .cap-div { width: 1px; height: 12px; margin: 0 4px; background: var(--line); }
+  .cap-target {
+    width: 14px; height: 14px;
+    border: 1.2px solid currentColor;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .cap-target i { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+
+  .content {
+    flex: 1;
+    min-height: 0;
+    padding: 24px 22px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .eyebrow b { font-weight: 400; color: var(--accent); padding: 0 3px; }
+  .eyebrow-right { color: var(--faint); letter-spacing: 0.06em; }
+
+  .page-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.005em;
+    color: var(--ink);
+  }
+  .pt-dot { color: var(--accent); }
+  .page-sub {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-size: 9px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--faint);
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    height: 40px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .search svg { width: 14px; height: 14px; color: var(--faint); flex: none; }
+  .search-ph { font-size: 12.5px; color: var(--muted); letter-spacing: 0.01em; }
+
+  .tabs {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 10px;
+  }
+  .tabs .tab {
+    position: relative;
+    min-width: 44px;
+    min-height: 42px;
+    padding-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    color: var(--muted);
+  }
+  .tabs .tab b { font-size: 10.5px; font-weight: 400; letter-spacing: 0.02em; }
+  .tabs .tab i {
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.02em;
+    color: var(--faint);
+  }
+  .tabs .tab.on { color: var(--ink); }
+  .tabs .tab.on b { font-weight: 600; }
+  .tabs .tab.on i { color: var(--accent); }
+  .tabs .tab.on::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -1px;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  .list-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0 5px;
+    font-size: 8.5px;
+    letter-spacing: 0.1em;
+    color: var(--faint);
+  }
+
+  .word-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 47px;
+    border-bottom: 1px solid var(--line);
+  }
+  .w-num {
+    width: 18px;
+    flex: none;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.04em;
+    color: var(--faint);
+  }
+  .w-zh { font-size: 15px; font-weight: 500; letter-spacing: 0.02em; }
+  .w-right { margin-left: auto; display: flex; align-items: center; gap: 7px; }
+  .w-arrow { font-size: 10px; color: var(--faint); }
+  .w-ly { font-size: 15.5px; font-weight: 600; letter-spacing: 0.02em; color: var(--accent); }
+  .list-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 13px 0 14px;
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+    color: var(--faint);
+  }
+  .list-more .more { color: var(--accent); }
+
+  .hist-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 2px 0 10px;
+  }
+  .hm-left { font-size: 9px; letter-spacing: 0.03em; color: var(--faint); }
+  .hist-ops { display: flex; align-items: center; gap: 8px; }
+  .limit-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 3px 7px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 8px;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+  .limit-chip svg { width: 7px; height: 7px; }
+  .clear-link {
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    background: none;
+    padding: 0 0 1px;
+    font-family: var(--sans);
+    font-size: 9px;
+    letter-spacing: 0.04em;
+    color: var(--faint);
+    cursor: pointer;
+  }
+  .group-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 11px 0 5px;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    color: var(--faint);
+  }
+  .hist-list .group-head:first-child { padding-top: 4px; }
+  .group-head b { font-size: 9.5px; font-weight: 600; letter-spacing: 0.06em; color: var(--muted); }
+  .hist-item { padding: 8px 0 9px; border-bottom: 1px solid var(--line); }
+  .h-top { display: flex; align-items: center; justify-content: space-between; }
+  .h-time { font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.06em; color: var(--faint); }
+  .h-again { font-size: 9px; letter-spacing: 0.04em; color: var(--accent); }
+  .h-src {
+    margin-top: 4px;
+    font-size: 10.5px;
+    letter-spacing: 0.01em;
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .h-dst {
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
+    letter-spacing: 0.005em;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .h-heart { color: var(--accent); }
+  .hist-tail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 11px;
+    font-size: 8.5px;
+    letter-spacing: 0.05em;
+    color: var(--faint);
+  }
+  .page-note {
+    margin-top: auto;
+    padding: 11px 0 12px;
+    text-align: center;
+    font-size: 8px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: var(--faint);
+  }
+
+  .about-brand { margin-bottom: 15px; }
+  .brand-lockup { display: flex; align-items: center; gap: 8px; }
+  .brand-lockup svg { width: 21px; height: 21px; color: var(--accent); flex: none; }
+  .brand-name { font-size: 29px; font-weight: 600; line-height: 1.1; letter-spacing: 0.02em; }
+  .brand-slogan { margin-top: 8px; font-size: 12px; letter-spacing: 0.01em; color: var(--muted); }
+  .brand-version {
+    margin-top: 5px;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.13em;
+    color: var(--faint);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2px;
+  }
+  .stat { padding: 10px 0 9px 9px; min-width: 0; }
+  .stat:first-child { padding-left: 0; }
+  .stat + .stat { border-left: 1px solid var(--line); }
+  .stat b {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .stat span {
+    display: block;
+    margin-top: 3px;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    color: var(--faint);
+  }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 16px 0 8px;
+  }
+  .sec-head b { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; }
+  .sec-head span { font-size: 8px; letter-spacing: 0.08em; color: var(--faint); }
+  .theme-picker { display: flex; gap: 8px; }
+  .theme-tile {
+    position: relative;
+    flex: 1;
+    height: 62px;
+    padding: 8px 9px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset 0 0 0 1px rgba(27,25,22,.1);
+  }
+  .theme-tile.on { outline: 1.5px solid var(--accent); outline-offset: 2px; }
+  .theme-tile.on::after {
+    content: "✓";
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    font-size: 9px;
+  }
+  .tt-a { font-size: 16px; font-weight: 600; line-height: 1; }
+  .tt-meta { display: flex; align-items: baseline; gap: 4px; }
+  .tt-meta b { font-size: 9px; font-weight: 600; }
+  .tt-meta i { font-family: var(--mono); font-size: 6.5px; font-style: normal; letter-spacing: 0.1em; opacity: 0.66; }
+  .tw { background: #f7f5f1; color: #141414; }
+  .tb { background: #111112; color: #f2efe9; }
+  .tr { background: #fbf2f3; color: #c2185b; }
+
+  .setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .setting-name { font-size: 12.5px; font-weight: 500; }
+  .setting-desc { margin-top: 3px; font-size: 8.5px; color: var(--muted); }
+  .switch {
+    position: relative;
+    flex: none;
+    width: 36px;
+    height: 21px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+  .switch::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--bg);
+  }
+  .promises { display: flex; flex-direction: column; gap: 4px; }
+  .promise {
+    display: flex;
+    gap: 7px;
+    font-size: 9.5px;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+  .promise i { margin-top: 1px; font-style: normal; font-size: 8px; color: var(--accent); }
+  .disclaimer {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+    font-size: 8px;
+    line-height: 1.7;
+    color: var(--faint);
+  }
+  .about-actions { display: flex; gap: 8px; margin-top: 12px; }
+  .ghost-btn {
+    flex: 1;
+    height: 36px;
+    border: 1px solid var(--line-strong);
+    border-radius: 9px;
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+  }
+  .clear-row { margin-top: 8px; text-align: center; }
+  .clear-row .clear-link { font-size: 8.5px; }
+  .about-foot {
+    margin-top: auto;
+    padding: 13px 0 11px;
+    text-align: center;
+    font-size: 8px;
+    line-height: 1.85;
+    letter-spacing: 0.06em;
+    color: var(--faint);
+  }
+  .about-foot .heart-inline {
+    width: 8px;
+    height: 8px;
+    vertical-align: -0.06em;
+    color: var(--accent);
+  }
+
+  .tabbar {
+    flex: none;
+    height: 56px;
+    padding: 0 16px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .tabbar .tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+  .tabbar .tab svg { width: 18px; height: 18px; }
+  .tab-dot {
+    width: 3px; height: 3px;
+    margin-top: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  .tabbar .tab.active { color: var(--accent); font-weight: 600; }
+  .tabbar .tab.active .tab-dot { background: var(--accent); }
+  .home-bar { flex: none; height: 20px; display: flex; align-items: center; justify-content: center; }
+  .home-bar i { width: 108px; height: 4px; border-radius: 999px; background: var(--ink); opacity: 0.2; }
+
+  /* ── rules footer ─────────────────────────── */
+  .rules { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--board-line); }
+  .rules-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .rule { padding: 0 34px 0 0; }
+  .rule + .rule { padding-left: 34px; border-left: 1px solid var(--board-line); }
+  .rule-num {
+    display: block;
+    margin-bottom: 9px;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: 0.12em;
+    color: var(--rose);
+  }
+  .rule h3 { margin-bottom: 7px; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; }
+  .rule p { max-width: 31em; font-size: 11px; line-height: 1.8; color: var(--board-muted); }
+  .spec-bar {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 24px;
+    padding-top: 15px;
+    border-top: 1px solid var(--board-line);
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .spec-bar .spec-end { margin-left: auto; color: var(--rose); }
+
+  @media (max-width: 1100px) {
+    .board { --s: 0.72; padding: 40px 34px 34px; }
+    .themes { gap: 36px; }
+    .mast-side { width: 300px; }
+    .sheet-head { padding-left: 34px; padding-right: 34px; }
+  }
+  @media (max-width: 900px) {
+    .board { --s: 0.62; padding: 32px 24px 28px; }
+    .themes { gap: 22px; }
+    .masthead { flex-direction: column; align-items: flex-start; gap: 22px; }
+    .mast-side { width: auto; }
+    .rules-grid { grid-template-columns: 1fr; }
+    .rule { padding: 0 0 18px; }
+    .rule + .rule { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--board-line); }
+    .sheet-head { padding-left: 24px; padding-right: 24px; }
+  }
+  @media (max-width: 800px) {
+    .board { --s: 0.9; }
+    .themes { flex-direction: column; align-items: center; gap: 34px; }
+    .theme-col { flex: none; }
+    .spec-bar { flex-wrap: wrap; gap: 10px 16px; }
+    .spec-bar .spec-end { margin-left: 0; }
+    .sheet-head .sh-mid { display: none; }
+  }
+  @media (max-width: 440px) {
+    .board { --s: 0.8; padding: 26px 18px 24px; }
+    .sheet-head { padding: 16px 18px 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto; }
+  }
+`;
+
+const SHEET_HEAD = `
+  <header class="sheet-head">
+    <span class="sh-brand">${HEART}淋语翻译器</span>
+    <span class="sh-mid">页面概念 · 词库 / 历史 / 关于</span>
+    <span class="sh-meta">VOL.02 — 04 · 2026.10</span>
+  </header>`;
+
+const HTML = `<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>淋语翻译器 · 词库 / 历史 / 关于 UI 概念</title>
+<style>${CSS}</style>
+</head>
+<body>
+  ${SHEET_HEAD}
+
+  ${PAGES.map(board).join('\n')}
+
+  <script>
+    (function () {
+      var only = new URLSearchParams(location.search).get('only');
+      if (!only) return;
+      document.body.classList.add('is-solo');
+      document.querySelectorAll('.board').forEach(function (el) {
+        if (el.id !== 'board-' + only) el.remove();
+      });
+    })();
+  </script>
+</body>
+</html>
+`;
+
+const FRAGMENT_CSS = CSS
+  .replace(':root {', '.viz-wrap {')
+  .replace('  html { -webkit-text-size-adjust: 100%; }\n', '')
+  .replace('\n  body {\n', '\n  .viz-wrap {\n');
+
+const FRAGMENT = `<style>${FRAGMENT_CSS}</style>
+<div class="viz-wrap">
+  ${SHEET_HEAD}
+  ${PAGES.map(board).join('\n')}
+</div>
+`;
+
+fs.writeFileSync(path.join(__dirname, 'linyu-pages-concept.html'), HTML, 'utf8');
+fs.writeFileSync(path.join(__dirname, 'linyu-pages-concept-fragment.html'), FRAGMENT, 'utf8');
+console.log('wrote linyu-pages-concept.html', Buffer.byteLength(HTML), 'bytes');
+console.log('wrote linyu-pages-concept-fragment.html', Buffer.byteLength(FRAGMENT), 'bytes');

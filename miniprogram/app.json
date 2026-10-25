@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lexicon/lexicon",
+    "pages/history/history",
+    "pages/about/about",
+    "pages/hero/hero"
+  ],
+  "window": {
+    "navigationBarTitleText": "淋语翻译器",
+    "navigationBarBackgroundColor": "#f7f5f1",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f5f1",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#6d6861",
+    "selectedColor": "#141414",
+    "backgroundColor": "#f7f5f1",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "翻译"
+      },
+      {
+        "pagePath": "pages/lexicon/lexicon",
+        "text": "词库"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "__usePrivacyCheck__": true,
+  "usingComponents": {
+    "nav-bar": "/components/nav-bar/nav-bar",
+    "empty-state": "/components/empty-state/empty-state",
+    "list-foot": "/components/list-foot/list-foot"
+  }
+}

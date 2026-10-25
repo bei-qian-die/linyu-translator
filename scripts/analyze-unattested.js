@@ -31,7 +31,7 @@ console.log('其中中文侧在语料里出现过的:', badWords.filter((w) => B
 console.log('中文侧也没出现的:', badWords.filter((w) => !BLOB.includes(norm(w.zh).toLowerCase())).length);
 console.log('样本:', badWords.slice(0, 12).map((w) => `${w.zh}->${w.linyu}`).join('  '));
 
-const strip = (s) => norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'\[\]【】]/g, '').toLowerCase();
+const strip = (s) => norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'[\]【】]/g, '').toLowerCase();
 const SBLOB = strip(blob);
 const GRAMS = new Set();
 for (let i = 0; i + 10 <= SBLOB.length; i++) GRAMS.add(SBLOB.slice(i, i + 10));

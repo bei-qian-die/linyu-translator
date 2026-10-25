@@ -30,7 +30,7 @@ const cards = [
   { term: '蟑螂婆', type: 'meme', hero: '蟑螂女卡莎', aliases: ['蟑螂女'], meaning: '卡莎因技能释放蟑螂卵、且 R 位飞脸，被形容为"蟑螂扑脸"。', example: '蟑螂女：卡莎（技能发射蟑螂卵、蟑螂飞行）', source: 'NGA tid=42400715' },
   { term: '漏电婆', type: 'meme', hero: '漏电婆泽丽', meaning: '泽丽的封号，技能特效走电，故名。', example: '漏电婆——泽丽', source: 'NGA tid=39308402' },
   { term: '拾荒婆', type: 'meme', hero: '狗洞婆佐伊', aliases: ['地鼠婆', '澡盆婆', '做一小姐'], meaning: '一专多能的封号。佐伊因大招动画既像打地鼠又像狗洞，同时被称为狗洞婆、地鼠婆、澡盆婆；拾荒婆则有人指佐伊、有人指塞纳。', example: '狗洞婆——佐伊（大招的动画）；拾荒婆——塞纳，也有人说是佐伊', source: 'NGA tid=39308402、tid=42400715' },
-  { term: '土匪婆', type: 'meme', hero: '土匪婆萨弥拉', meaning: '萨弥拉的封号，取其技能带劫掠感的动作。', example: '土匪婆——萨弥拉', source: 'NGA tid=39308402' },
+  { term: '土匪婆', type: 'meme', hero: '土匪婆萨弥拉', meaning: '萨弥拉的封号，取其技能带劫掠感的动作。', example: '土匪婆——萨弥拉', source: 'NGA tid=39308402｜https://bbs.nga.cn/read.php?tid=39308402' },
   { term: '挨打婆', type: 'meme', hero: '卡迪匕卡特琳娜', aliases: ['卡迪匕', '陀螺女刺客'], meaning: '卡特琳娜的封号，落地成盒式切入被判官数，常写成"挨打婆"或按翻滚动作写成"陀螺女刺客"。', example: '卡特-挨打婆；卡特-卡迪匕', source: 'NGA tid=42400715、tid=39308402' },
   { term: '地沟油婆', type: 'meme', hero: '泔水婆莫甘娜', aliases: ['泔水婆', '泼脏水婆', '油'], meaning: '莫甘娜的封号组。她在两个版本里分属不同阵营，"泔水婆甘露寺归来"一度被农友偷给甄姬。', example: '泔水婆/地沟油婆——莫甘娜（已被农友偷给甄姬）', source: 'NGA tid=39308402、tid=42400715' },
   { term: '掉毛母鸡', type: 'meme', hero: '掉毛母鸡霞', aliases: ['掉毛婆', '脱发婆', '拔毛鸡', '霞母鸡'], meaning: '霞的封号组，形容其造型掉毛，观感接近母鸡。', example: '掉毛母鸡:霞，霞母鸡；掉毛婆/脱发婆——霞', source: 'NGA tid=42400715、tid=39308402' },
@@ -58,7 +58,7 @@ const cards = [
   { term: '厕风', type: 'meme', hero: '风女', aliases: ['阴风', '998'], meaning: '风女的封号组，多为反讽写法。社区称风琴星娜露是主力军，而"其他英雄加起来有我风穿的凉快吗"是其标准护主句式。', example: '风女-厕风/阴风/998；其他英雄加起来有我风穿的凉快吗，闹麻了', source: 'NGA tid=39308402、tid=42400715' },
   { term: '淋笑男孩', type: 'meme', hero: '德莱文', meaning: '德莱文的封号，"笑"改写为"淋笑"。', example: '德莱文-淋笑男孩', source: 'NGA tid=39308402' },
   { term: '拔矛女鬼', type: 'meme', hero: '卡莉斯塔', meaning: '卡莉斯塔的封号，取其抛矛动作。', example: '卡莉斯塔-拔矛女鬼', source: 'NGA tid=39308402' },
-  { term: '送披女', type: 'meme', hero: '轮子妈', aliases: ['送批婆'], meaning: '轮子妈的封号组，与第七区送披的电诈梗同源。', example: '送披女=轮子妈；送批婆（轮子妈皮肤）', source: 'NGA tid=39308402、tid=42400715' },
+  { term: '送披女', type: 'meme', hero: '轮子妈', aliases: ['送批婆'], meaning: '轮子妈的封号组，与第七区送披的电诈梗同源。', example: '送披女=轮子妈；送批婆（轮子妈皮肤）', source: 'NGA tid=39308402、tid=42400715｜https://bbs.nga.cn/read.php?tid=39308402' },
   { term: '三色果盘', type: 'meme', hero: '我琴', meaning: '琴女（娑娜）的封号之一，出现在一条单独贴出的补缀里。', example: '琴女三色果盘', source: 'NGA tid=42400715' },
   { term: '小炮卖淋炮手', type: 'meme', meaning: '把"小炮卖炮，炮枪一体"的顺口溜改写成淋语版，是该分区少见的整句改造样本。', example: '小炮卖淋炮手', source: 'NGA tid=42400715', verify: '原帖为"小炮卖淋炮手"，未标明所指英雄' },
 
@@ -83,7 +83,7 @@ const cards = [
   { term: '虫队', type: 'slang', meaning: '《洛克王国》区的队型统称，指以虫类精灵为核心的阵容，被社区用来指代"玩虫队"这一分支。', example: '【洛克淋国】炸米花讨厌让虫队爱上自己；在洛克王国就是玩虫队', source: 'B 站【洛克淋国】合集、NGA《到底什么是淋学啊》tid=47241821' },
 
   // ================= 第五淋格 =================
-  { term: '椅妹', type: 'meme', hero: '雕刻家', meaning: '《第五人格》监管者雕刻家（伽拉泰亚·克劳德）的封号，因其坐轮椅。同角色另有"潘丽娟"一称，源自同人动画《红小蝶的沙雕庄园》，因名够新潮而沿用至今。', example: '雕刻家、0-0-4、椅妹、潘丽娟', source: '萌娘百科《雕刻家》' },
+  { term: '椅妹', type: 'meme', hero: '雕刻家', meaning: '《第五人格》监管者雕刻家（伽拉泰亚·克劳德）的封号，因其坐轮椅。同角色另有"潘丽娟"一称，源自同人动画《红小蝶的沙雕庄园》，因名够新潮而沿用至今。', example: '雕刻家、0-0-4、椅妹、潘丽娟', source: '萌娘百科《雕刻家》｜https://zh.moegirl.org.cn/%E9%9B%95%E5%88%BB%E5%AE%B6' },
   { term: '潘丽娟', type: 'meme', hero: '雕刻家', meaning: '同源于同人动画《红小蝶的沙雕庄园》的外号，与"椅妹"并存。该角色与红蝶、红夫人、渔女并称"庄园屠四美"。', example: '在某视频博主创作的贴图动画《红小蝶的沙雕庄园》中，雕刻家所扮演的角色被该博主命名为"潘丽娟"', source: '萌娘百科《雕刻家》' },
   { term: '大沙田', type: 'meme', meaning: '《第五人格》区的地名梗，出现在"来第五大沙田看选美大赛"这类标题里，属圈内调侃而非真实地点。', example: '【第五淋格】七夕来第五大沙田看选美大赛哈', source: 'B 站【第五淋格】合集' },
 

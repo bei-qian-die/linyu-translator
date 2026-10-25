@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 
 // 库实现不直接依赖 node 的 fs / path / sql.js。
@@ -39,7 +40,8 @@ CREATE TABLE IF NOT EXISTS words (
   sense TEXT DEFAULT '',
   source TEXT DEFAULT '',
   pop TEXT DEFAULT '',
-  rel TEXT DEFAULT '[]'
+  rel TEXT DEFAULT '[]',
+  slot TEXT DEFAULT ''
 );
 CREATE TABLE IF NOT EXISTS rules (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -145,7 +147,7 @@ function clampLimit(raw) {
 function sqlJsOptions() {
   if (sysPath) return undefined;
   const tag = typeof document !== 'undefined' && document.querySelector &&
-    document.querySelector('script[src*="sql-wasm.js"]');
+    (/** @type {HTMLScriptElement | null} */ (document.querySelector('script[src*="sql-wasm.js"]')));
   const base = tag ? new URL('.', tag.src).href : new URL('vendor/', document.baseURI).href;
   return { locateFile: (file) => new URL(file, base).href };
 }
@@ -231,6 +233,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
     ['words', 'source', "TEXT DEFAULT ''"],
     ['words', 'pop', "TEXT DEFAULT ''"],
     ['words', 'rel', "TEXT DEFAULT '[]'"],
+    ['words', 'slot', "TEXT DEFAULT ''"],
     ['rules', 'scene', "TEXT DEFAULT ''"],
     ['rules', 'examples', "TEXT DEFAULT ''"],
     ['rules', 'src', "TEXT DEFAULT ''"],
@@ -289,6 +292,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       String(w.source || ''),
       normPop(w.pop),
       JSON.stringify(relList(w.rel)),
+      String(w.slot || ''),
     ];
   }
 
@@ -350,12 +354,12 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
     return hero ? Object.assign({}, q, { hero }) : q;
   }
 
-  const WORD_COLS = 'id, zh, linyu, alias, sense, source, pop, rel';
+  const WORD_COLS = 'id, zh, linyu, alias, sense, source, pop, rel, slot';
   const RULE_COLS = 'id, pattern, template, note, scene, examples, src';
   const CARD_COLS = 'id, term, type, meaning, example, source, hero, aliases, detail, rel';
 
   function seedWordsRules() {
-    const insW = db.prepare('INSERT OR IGNORE INTO words (zh, linyu, alias, sense, source, pop, rel) VALUES (?, ?, ?, ?, ?, ?, ?)');
+    const insW = db.prepare('INSERT OR IGNORE INTO words (zh, linyu, alias, sense, source, pop, rel, slot) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
     for (const w of seed.words) {
       if (isDeleted('word', w.zh)) continue;
       insW.run(wordArgs(w));
@@ -403,7 +407,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
         JSON.stringify(h.works || []),
         JSON.stringify(h.words || []),
         h.img || '',
-        h.group || 'real',
+        h.grp || h.group || 'real',
         JSON.stringify(h.links || []),
       ]);
     }
@@ -418,9 +422,11 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
     const existing = new Set(all('SELECT ' + conf.keyCol + ' AS v FROM ' + table).map((r) => String(r.v)));
     let added = 0;
     if (table === 'words') {
-      const ins = db.prepare('INSERT OR IGNORE INTO words (zh, linyu, alias, sense, source, pop, rel) VALUES (?, ?, ?, ?, ?, ?, ?)');
+      const ins = db.prepare('INSERT OR IGNORE INTO words (zh, linyu, alias, sense, source, pop, rel, slot) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
       for (const w of rows) {
         if (!w || !w.zh || existing.has(String(w.zh))) continue;
+        // 用户改过主键或删过的内置条目不能再被补种回来：deleted 表记的是「这条已被用户主动处理过」
+        if (isDeleted('word', String(w.zh))) continue;
         try { ins.run(wordArgs(w)); added++; } catch { /* 唯一约束被另一线程占用，跳过 */ }
       }
       ins.free();
@@ -428,6 +434,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       const ins = db.prepare('INSERT OR IGNORE INTO rules (pattern, template, note, scene, examples, src) VALUES (?, ?, ?, ?, ?, ?)');
       for (const r of rows) {
         if (!r || !r.pattern || existing.has(String(r.pattern))) continue;
+        if (isDeleted('rule', String(r.pattern))) continue;
         try { new RegExp(r.pattern); } catch { continue; }
         try { ins.run(ruleArgs(r)); added++; } catch { /* 同上 */ }
       }
@@ -436,6 +443,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       const ins = db.prepare('INSERT OR IGNORE INTO cards (term, type, meaning, example, source, hero, aliases, detail, rel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
       for (const c of rows) {
         if (!c || !c.term || existing.has(String(c.term))) continue;
+        if (isDeleted('card', String(c.term))) continue;
         try { ins.run(cardArgs(resolveCardHero(c))); added++; } catch { /* 同上 */ }
       }
       ins.free();
@@ -461,7 +469,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
             JSON.stringify(h.works || []),
             JSON.stringify(h.words || []),
             h.img || '',
-            h.group || 'real',
+            h.grp || h.group || 'real',
             JSON.stringify(h.links || []),
           ]);
           added++;
@@ -542,6 +550,13 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
     }
   }
 
+  /**
+   * 查一批行。返回 any[]：sql.js 的每一行字段取决于 SELECT 的列，
+   * 在这里收窄成具体类型只会让上层的 Object.assign / map 推导更糟。
+   * @param {string} sql
+   * @param {any[]} [params]
+   * @returns {any[]}
+   */
   function all(sql, params = []) {
     const stmt = db.prepare(sql);
     stmt.bind(params);
@@ -591,7 +606,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       JSON.stringify(h.works || []),
       JSON.stringify(h.words || []),
       h.img || '',
-      h.group || 'real',
+      h.grp || h.group || 'real',
       JSON.stringify(h.links || []),
     ];
   }
@@ -691,7 +706,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       const linyu = String(w.linyu || '').trim();
       if (!zh || !linyu) return { error: '中文和淋语都不能为空' };
       try {
-        run('INSERT INTO words (zh, linyu, alias, sense, source, pop, rel) VALUES (?, ?, ?, ?, ?, ?, ?)', wordArgs(w));
+        run('INSERT INTO words (zh, linyu, alias, sense, source, pop, rel, slot) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', wordArgs(w));
       } catch (err) {
         return { error: dupOr(err, `词条「${zh}」已存在`) };
       }
@@ -705,7 +720,7 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       if (!linyu) return { error: '淋语不能为空' };
       noteKeyChange('word', id, zh);
       try {
-        run('UPDATE words SET zh = ?, linyu = ?, alias = ?, sense = ?, source = ?, pop = ?, rel = ? WHERE id = ?', wordArgs(w).concat([id]));
+        run('UPDATE words SET zh = ?, linyu = ?, alias = ?, sense = ?, source = ?, pop = ?, rel = ?, slot = ? WHERE id = ?', wordArgs(w).concat([id]));
       } catch (err) {
         return { error: dupOr(err, `词条「${zh}」已存在`) };
       }
@@ -1010,15 +1025,77 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
           insFixQ(q.id, want);
         }
       };
-      const ruleOrder = (seed && seed.rules ? seed.rules : []).map((r) => r.pattern).filter(Boolean);
-      batch(() => {
+      // 人物分组回填：旧版 heroArgs/topUp 只认 h.group，extra6~9 里大量只写了 grp:'game' 的
+      // 游戏角色因此被落成 real。这里只修「库里是 real、seed 明确是 game/up」的内置人物，
+      // 用户自己改过分组（非 real）的一律不动。
+      const backfillHeroGroup = () => {
+        if (!lore) return;
+        const want = new Map();
+        for (const h of lore.heroes || []) {
+          const g = h.grp || h.group || 'real';
+          if (g !== 'real') want.set(h.name, g);
+        }
+        if (!want.size) return;
+        for (const r of all('SELECT id, name, grp FROM heroes')) {
+          const g = want.get(r.name);
+          if (!g || r.grp === g) continue;
+          if (r.grp && r.grp !== 'real') continue;
+          run('UPDATE heroes SET grp = ? WHERE id = ?', [g, r.id]);
+          patched++;
+        }
+      };
+      // 词库补字段：老库里已经存在的内置词条，topUpFromSeed 会因 zh 重复而跳过，
+      // 于是新补的 alias / 语义位 / 出处到不了老用户。这里只做「加法」：
+      //   - alias / slot 与 seed 合并（保留用户自己填的）；
+      //   - sense / source / pop 只在空的时候填，绝不覆盖用户改过的内容。
+      const backfillWordMeta = () => {
+        if (!seed || !Array.isArray(seed.words)) return;
+        const wantByZh = new Map(seed.words.map((w) => [w.zh, w]));
+        const split = (s) =>
+          String(s || '')
+            .split(/[、,，/]/)
+            .map((x) => x.trim())
+            .filter(Boolean);
+        for (const r of all('SELECT id, zh, alias, sense, source, pop, slot FROM words')) {
+          const want = wantByZh.get(r.zh);
+          if (!want) continue;
+          const next = {};
+          const mergedAlias = [...new Set(split(r.alias).concat(split(want.alias)))].join('、');
+          if (want.alias && mergedAlias !== String(r.alias || '')) next.alias = mergedAlias;
+          const mergedSlot = [...new Set(split(r.slot).concat(split(want.slot)))].join(' / ');
+          if (want.slot && mergedSlot !== String(r.slot || '')) next.slot = mergedSlot;
+          for (const key of ['sense', 'source', 'pop']) {
+            if (!String(r[key] || '').trim() && String(want[key] || '').trim()) next[key] = want[key];
+          }
+          const keys = Object.keys(next);
+          if (!keys.length) continue;
+          run(
+            'UPDATE words SET ' + keys.map((k) => k + ' = ?').join(', ') + ' WHERE id = ?',
+            keys.map((k) => next[k]).concat([r.id])
+          );
+          patched++;
+        }
+      };
+      // 老库里有人把 cards.type 写成中文（「俚语梗」），词卡页的类型 chip 认不出这些值，
+      // 卡在任何筛选下都不显示。这里跟 lore.js 用同一张对照表收敛。
+      const CARD_TYPE_ALIAS = { 俚语梗: 'slang', 网络梗: 'meme', 语气词: 'particle', 歌词典故: 'lyric' };
+      const backfillCardType = () => {
+        for (const r of all("SELECT id, type FROM cards WHERE type IN ('俚语梗','网络梗','语气词','歌词典故')")) {
+          run('UPDATE cards SET type = ? WHERE id = ?', [CARD_TYPE_ALIAS[r.type], r.id]);
+          patched++;
+        }
+      };
+      const ruleOrder = (seed && seed.rules ? seed.rules : []).map((r) => r.pattern).filter(Boolean);      batch(() => {
         drop('words', 'zh', (DEPRECATED && DEPRECATED.words) || []);
         drop('rules', 'pattern', (DEPRECATED && DEPRECATED.rules) || []);
         drop('cards', 'term', [].concat(pruned.cards || [], pruned.dropCards || []));
         drop('quotes', 'body', [].concat(pruned.quotes || [], pruned.dropQuotes || []));
         drop('heroes', 'name', [].concat(pruned.heroes || [], pruned.dropHeroes || []));
         backfillHeroImg();
+        backfillHeroGroup();
         backfillHero();
+        backfillWordMeta();
+        backfillCardType();
         added = topUpFromSeed();
         if (ruleOrder.length) {
           api.reorderRules(ruleOrder);
@@ -1051,8 +1128,17 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
 
     addHistory(src, dst) {
       const limit = clampLimit(this.getSetting('pref:history.limit'));
-      run('INSERT INTO history (src, dst, created_at) VALUES (?, ?, ?)', [src, dst, new Date().toISOString()]);
-      run('DELETE FROM history WHERE id NOT IN (SELECT id FROM history ORDER BY id DESC LIMIT ?)', [limit]);
+      // 两条 SQL 包进一次 batch：原来每条 run() 各自触发一遍整库导出+同步写，
+      // 点一次翻译等于全库落盘两遍。裁剪也改成先数再删——没超限时那条
+      // 全表扫描的 DELETE 纯属白跑。
+      batch(() => {
+        run('INSERT INTO history (src, dst, created_at) VALUES (?, ?, ?)', [src, dst, new Date().toISOString()]);
+        const res = db.exec('SELECT COUNT(*) FROM history');
+        const n = res[0] ? Number(res[0].values[0][0]) : 0;
+        if (n > limit) {
+          run('DELETE FROM history WHERE id NOT IN (SELECT id FROM history ORDER BY id DESC LIMIT ?)', [limit]);
+        }
+      });
     },
     getHistory() {
       const limit = clampLimit(this.getSetting('pref:history.limit'));
@@ -1097,22 +1183,6 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
           const name = String(raw);
           if (!BACKUP_RE.test(name)) continue;
           const m = BACKUP_RE.exec(name);
-          try {
-            const st = await fsAdapter.stat(name);
-            out.push({ name, size: st.size, mtime: st.mtime, slot: Number(m[1]) });
-          } catch {
-            continue;
-          }
-        }
-        return out.sort((a, b) => a.slot - b.slot);
-      })();
-      return (async () => {
-        const names = await fsAdapter.readdir(dir);
-        const out = [];
-        for (const raw of names) {
-          const name = String(raw);
-          const m = BACKUP_RE.exec(name);
-          if (!m) continue;
           try {
             const st = await fsAdapter.stat(name);
             out.push({ name, size: st.size, mtime: st.mtime, slot: Number(m[1]) });

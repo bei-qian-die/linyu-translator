@@ -1,13 +1,13 @@
 'use strict';
 const asar = require('@electron/asar');
 const vm = require('vm');
-const p = 'release/win-unpacked/resources/app.asar';
+const p = process.argv[2] || 'release/win-unpacked/resources/app.asar';
 const pick = (rel) => asar.extractFile(p, rel.split('/').join('\\')).toString('utf8');
 
 const files = asar.listPackage(p).map((s) => s.replace(/\//g, '\\'));
 const inSrc = files.filter((f) => f.startsWith('\\src\\'));
 console.log('total', files.length, 'src files', inSrc.length);
-console.log('hero imgs', inSrc.filter((f) => /hero-\d+\.png$/.test(f)).length);
+console.log('hero imgs', inSrc.filter((f) => /hero-\d+\.(png|jpe?g)$/i.test(f)).length);
 console.log('leak', inSrc.filter((f) => /_preview|_stub/.test(f)));
 
 // 直接从 asar 里递归加载 src/core 模块，以后新增 lore-extraN 不用再改这个脚本
@@ -44,10 +44,10 @@ console.log('has auth.js', files.includes('\\src\\core\\auth.js'));
 const mainjs = pick('src/main/main.js');
 console.log(
   'ipc gate',
-  ['wrapDev', "ly:auth:login", "ly:cards:add", "ly:media:pick", "await fn(...args)"].every((s) => mainjs.includes(s))
+  ['ly:auth:login', 'ly:media:pick', 'ly:data:export', 'function wrap(fn)', 'await fn(...args)'].every((s) => mainjs.includes(s))
 );
 console.log(
   'dev ui',
-  appjs.includes('listCards') && appjs.includes('开发者模式') && html.includes('进入开发者模式') && html.includes('lock-bar')
+  appjs.includes('listCards') && appjs.includes('开发者模式') && html.includes('进入开发者模式')
 );
 console.log('db tables', ['cards', 'quotes', 'heroes', 'settings', 'deleted'].every((t) => pick('src/core/db.js').includes('CREATE TABLE IF NOT EXISTS ' + t)));

@@ -89,7 +89,7 @@ function bakFiles() {
     const back = store.getWords().find((w) => w.id === probeId);
     assert.deepStrictEqual(back, {
       id: probeId, zh: '测试词', linyu: '测试噜',
-      alias: '', sense: '', source: '', pop: '', rel: [],
+      alias: '', sense: '', source: '', pop: '', rel: [], slot: '',
     });
   });
   test('没有待撤销操作时报错而不是崩', () => {
@@ -330,7 +330,7 @@ function bakFiles() {
     assert.strictEqual(s.getHeroes().find((h) => h.name === '淋淋').img, 'img/hero-1.png', '缺图英雄该拿到内置配图');
 
     const other = s.getHeroes().find((h) => h.name === '游戏角色');
-    s.updateHero(other.id, { ...other, group: other.grp, img: 'media:my-own.png' });
+    s.updateHero(other.id, { ...other, group: other.group, img: 'media:my-own.png' });
     assert.strictEqual(s.upgradeSeed().patched, 0, '已有图的行不该再被回填');
     assert.strictEqual(s.getHeroes().find((h) => h.id === other.id).img, 'media:my-own.png', '用户自传图被覆盖了');
     s.close();

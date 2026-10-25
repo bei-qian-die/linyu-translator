@@ -1,0 +1,920 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>linyu preview</title><style>body {
+  font-family: "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei", system-ui, sans-serif;
+  background: #f7f5f1;
+  color: #141414;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: inherit;
+}
+
+button::after {
+  border: none;
+}
+
+.page {
+  --bg: #f7f5f1;
+  --ink: #141414;
+  --muted: #6d6861;
+  --faint: #746e65;
+  --soft: #efece6;
+  --line: rgba(20, 20, 20, 0.14);
+  --line-strong: rgba(20, 20, 20, 0.5);
+  --accent: #141414;
+  --cta-bg: #141414;
+  --cta-fg: #f7f5f1;
+  --danger: #a33232;
+  --placeholder: #746e65;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 18px 22px 36px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.theme-black {
+  --bg: #111112;
+  --ink: #f2efe9;
+  --muted: #99948b;
+  --faint: #8a857e;
+  --soft: #1c1c1f;
+  --line: rgba(242, 239, 233, 0.16);
+  --line-strong: rgba(242, 239, 233, 0.55);
+  --accent: #ff6f9c;
+  --cta-bg: #f2efe9;
+  --cta-fg: #111112;
+  --danger: #ff8b8b;
+  --placeholder: #8a857e;
+}
+
+.theme-rose {
+  --bg: #fbf2f3;
+  --ink: #2a1b20;
+  --muted: #7e5c66;
+  --faint: #8a6670;
+  --soft: #f4e6e9;
+  --line: rgba(42, 27, 32, 0.15);
+  --line-strong: rgba(42, 27, 32, 0.5);
+  --accent: #c2185b;
+  --cta-bg: #c2185b;
+  --cta-fg: #fff7f8;
+  --danger: #a3183f;
+  --placeholder: #8a6670;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow-left {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.eyebrow-mark {
+  padding: 0 3px;
+  color: var(--accent);
+}
+
+.eyebrow-arrow {
+  padding: 0 4px;
+  color: var(--accent);
+}
+
+.eyebrow-right {
+  flex: none;
+  color: var(--faint);
+  letter-spacing: 0.06em;
+}
+
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+}
+
+.page-title .pt-line {
+  display: block;
+}
+
+.pt-dot {
+  color: var(--accent);
+}
+
+.page-sub {
+  margin-top: 7px;
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--faint);
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  border-radius: 14px;
+  background: var(--cta-bg);
+  color: var(--cta-fg);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.btn-primary.disabled {
+  opacity: 0.4;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 15px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.btn-ghost.danger {
+  color: var(--danger);
+  border-color: var(--line);
+}
+
+.btn-ghost.disabled {
+  opacity: 0.35;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 0;
+  background: transparent;
+}
+
+.search-ico {
+  position: relative;
+  flex: none;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  border: 1.5px solid var(--faint);
+  border-radius: 50%;
+}
+
+.search-ico::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  bottom: -4px;
+  width: 2px;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--faint);
+  transform: rotate(-45deg);
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  font-size: 12.5px;
+  color: var(--ink);
+}
+
+.search-clear {
+  flex: none;
+  min-width: 28px;
+  padding: 8px 0 8px 10px;
+  color: var(--faint);
+  font-size: 11px;
+  text-align: right;
+}
+
+.placeholder {
+  color: var(--placeholder);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-height: 36px;
+  padding: 0 12px;
+  margin-right: 8px;
+  border: 1px solid var(--line);
+  border-radius: 499.5px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.chip.on {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.chip-count {
+  margin-left: 4px;
+  font-size: 9px;
+  opacity: 0.7;
+}
+
+.h-tag {
+  display: inline;
+  margin: 0 6px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--faint);
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 12px 48px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.empty-ico {
+  width: auto;
+  height: auto;
+  margin-bottom: 13px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--accent);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.empty-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.empty-sub {
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.empty .btn-primary {
+  width: 140px;
+  height: 42px;
+  margin-top: 16px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.load-more {
+  margin: 0;
+  padding: 15px 0;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.list-end {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.tip {
+  margin: 16px 4px 0;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 5px 2px 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.section-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 20px 0 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+.tap-soft {
+  background: var(--soft);
+}
+
+.word-list,
+.rule-list,
+.lore-list,
+.card-list,
+.quote-list,
+.hero-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.word-card,
+.rule-card,
+.lore-card,
+.quote-card {
+  position: relative;
+  margin: 0;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.word-main,
+.word-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.word-zh {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.word-arrow {
+  margin: 0 7px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.word-ly {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--accent);
+  word-break: break-all;
+}
+
+.word-alias {
+  margin-top: 3px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.word-sense {
+  margin-top: 4px;
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.word-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.word-src {
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.rule-head,
+.lore-card-head,
+.lore-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.rule-id {
+  margin-right: 6px;
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.rule-row {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.rule-label {
+  flex: none;
+  width: 32px;
+  margin-right: 8px;
+  font-size: 9px;
+  line-height: 1.9;
+  color: var(--faint);
+}
+
+.rule-label.accent {
+  color: var(--accent);
+}
+
+.rule-pattern {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 10.5px;
+  line-height: 1.7;
+  word-break: break-all;
+}
+
+.rule-template {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.rule-example {
+  margin-top: 5px;
+  padding-left: 40px;
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.lore-card::before {
+  display: none;
+}
+
+.fc-type {
+  display: inline;
+  margin-right: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+.lore-term {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  word-break: break-all;
+}
+
+.lore-alias {
+  margin-top: 2px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.lore-meaning {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.lore-example {
+  margin-top: 5px;
+  padding: 0 0 0 8px;
+  border-left: 1px solid var(--line-strong);
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  word-break: break-all;
+}
+
+.lore-detail {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.lore-source {
+  margin-top: 4px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.q-text {
+  position: relative;
+  padding-top: 0;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.q-meta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.q-author {
+  font-size: 10.5px;
+  color: var(--accent);
+}
+
+.q-src {
+  margin-top: 2px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.longpress-hint,
+.tap-hint {
+  padding: 6px 0 4px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+}
+
+.rise {
+  animation: rise 0.24s ease-out both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  padding: 4px 0 14px;
+}
+
+.hero-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.hero-head {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-name {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.hero-name-text {
+  margin-right: 7px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.hero-rank {
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.hero-alias {
+  margin-top: 3px;
+  font-size: 10.5px;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.stats-bar {
+  padding: 0 0 2px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.section-label {
+  margin: 18px 0 6px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.intro-text,
+.baike-text {
+  font-size: 12.5px;
+  line-height: 1.8;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.baike-text {
+  color: var(--muted);
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.work-chip {
+  margin: 0 6px 6px 0;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 499.5px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.link-body {
+  flex: 1;
+  min-width: 0;
+  margin-right: 9px;
+}
+
+.link-label {
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.link-url {
+  margin-top: 2px;
+  font-size: 9px;
+  line-height: 1.6;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.link-copy {
+  flex: none;
+  padding: 12px 0 12px 12px;
+  color: var(--accent);
+  font-size: 9.5px;
+  letter-spacing: 0.03em;
+}
+
+.back-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.back-btn {
+  padding: 0 20px;
+}
+
+
+  html, body { margin: 0; padding: 0; background: #dcd9d3; }
+  body { -webkit-font-smoothing: antialiased; }
+  .screen {
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f7f5f1;
+    position: relative;
+  }
+  .statusbar {
+    flex: none;
+    height: 44px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 22px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .02em;
+  }
+  .status-icons { font-size: 10px; letter-spacing: .08em; }
+  .navbar {
+    flex: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .nav-title { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav-back {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: 300;
+  }
+  .capsule {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 87px;
+    height: 26px;
+    border: 1px solid currentColor;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: .55;
+  }
+  .capsule i { width: 3px; height: 3px; border-radius: 50%; background: currentColor; }
+  .cap-div { width: 1px; height: 14px; background: currentColor; opacity: .4; }
+  .cap-target { width: 9px; height: 9px; border: 1.5px solid currentColor; border-radius: 50%; position: relative; }
+  .cap-target::after { content: ''; position: absolute; inset: 2.5px; border-radius: 50%; background: currentColor; }
+  .stage { flex: 1; min-height: 0; overflow-y: auto; }
+  .page { min-height: 100% !important; }
+  .tabbar {
+    flex: none;
+    height: 50px;
+    display: flex;
+    align-items: stretch;
+    border-top: .5px solid transparent;
+  }
+  .tabbar-item {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    letter-spacing: .02em;
+  }
+  .tabbar-item.on { font-weight: 600; }
+  .tabbar-item.on::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  .wx-textarea { display: block; white-space: pre-wrap; word-break: break-word; }
+  .wx-placeholder { color: var(--placeholder); }
+  input { border: 0; outline: none; background: transparent; font: inherit; color: inherit; }
+  .search-input::placeholder { color: var(--placeholder); }
+  .wx-switch {
+    display: inline-flex;
+    align-items: center;
+    width: 51px;
+    height: 31px;
+    padding: 2px;
+    border-radius: 16px;
+    background: rgba(120, 120, 120, .32);
+    flex: none;
+  }
+  .wx-switch i {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    transition: transform .2s ease;
+  }
+  .wx-switch.on { background: var(--accent); }
+  .wx-switch.on i { transform: translateX(20px); }
+  html.full, html.full body { height: auto; }
+  html.full .screen { height: auto; min-height: 812px; overflow: visible; }
+  html.full .stage { overflow: visible; }
+  html.full .tabbar { display: none; }
+</style></head><body><div class="screen"><div class="statusbar" style="background:#f7f5f1;color:#000000"><span>9:41</span><span class="status-icons">●●●● ▮</span></div><div class="navbar" style="background:#f7f5f1;color:#000000"><span class="nav-back">‹</span><span class="nav-title">淋淋</span></div><div class="stage"><div class="page theme-white"><div class="page theme-white"><div class="eyebrow"><div class="eyebrow-left"><span>CHARACTER</span><span class="eyebrow-mark">/</span><span>人物</span></div><span class="eyebrow-right">只读档案</span></div><div class="hero-top rise"><div class="hero-avatar">淋</div><div class="hero-head"><div class="hero-name"><span class="hero-name-text">淋淋</span><span class="hero-rank">圣父 · 通讯录女王</span></div><div class="hero-alias">又名：蔡依林 / Jolin / 宇宙之母</div><div class="hero-tags"><span class="h-tag">#宇宙之母</span><span class="h-tag">#地才</span><span class="h-tag">#天后本后</span></div></div></div><div class="stats-bar">15 词条 · 0 句式 · 48 词卡 · 52 名言</div><div class="section-label">人物简介</div><div class="intro-text">淋语的缔造者与淋宇宙的中心。脱胎于唱跳歌手蔡依林的"林"，由黑文化演变为半娱乐亚文化。代表作《舞娘》《花蝴蝶》《地才》演唱会，金句"努力一定会成功"（《地才》宣言）。</div><div class="section-label">百科详情</div><div class="baike-text">蔡依林（Jolin Tsai），1980年9月15日生于台湾新北，华语流行唱跳歌手。1999年凭专辑《1019》出道，代表作《看我72变》《舞娘》《特务J》《花蝴蝶》《Myself》《呸》《Ugly Beauty》等，两度获金曲奖"最佳国语女歌手"。2010年《地才》演唱会自述"我不是天才，我是地才"，其励志言论与华丽舞台被网友恶搞模仿，逐步演变为"淋文化"，"淋淋"由此成为该亚文化的核心符号。</div><div class="section-label">代表作</div><div class="work-list"><span class="work-chip">《舞娘》</span><span class="work-chip">《花蝴蝶》</span><span class="work-chip">《美人计》</span><span class="work-chip">《地才》演唱会</span><span class="work-chip">《Play 呸》</span></div><div class="section-label">来源 · 相关链接</div><div class="link-list"><div class="link-row"><div class="link-body"><div class="link-label">《淋语的诞生：蔡依林惨遭大规模组团抹黑的历史》</div><div class="link-url">https://www.bilibili.com/video/BV17s411N7g9</div></div><div class="link-copy">复制</div></div><div class="link-row"><div class="link-body"><div class="link-label">《蔡依林：曾火爆全网的淋文化是怎样产生的》</div><div class="link-url">https://www.bilibili.com/video/BV1yy4y1v7sa</div></div><div class="link-copy">复制</div></div><div class="link-row"><div class="link-body"><div class="link-label">「淋语八级教程」Genius（地才）</div><div class="link-url">https://www.bilibili.com/video/BV17p411d7Mh</div></div><div class="link-copy">复制</div></div></div><div class="tap-hint">小程序内无法直接打开外部链接，复制后到浏览器粘贴访问</div><div class="section-label">关联词库</div><div class="word-list"><div class="word-card"><div class="word-line"><span class="word-zh">蔡依林</span><span class="word-arrow">→</span><span class="word-ly">天后本后</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">天才</span><span class="word-arrow">→</span><span class="word-ly">地才</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">粉丝</span><span class="word-arrow">→</span><span class="word-ly">骑士</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">艺人</span><span class="word-arrow">→</span><span class="word-ly">淋淋</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">明星</span><span class="word-arrow">→</span><span class="word-ly">淋淋</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">惊艳</span><span class="word-arrow">→</span><span class="word-ly">精咽</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">本人</span><span class="word-arrow">→</span><span class="word-ly">可人儿</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">孩子</span><span class="word-arrow">→</span><span class="word-ly">孩柱</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">好开心</span><span class="word-arrow">→</span><span class="word-ly">豪嗨心</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">流鼻涕</span><span class="word-arrow">→</span><span class="word-ly">牛皮涕</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">派对</span><span class="word-arrow">→</span><span class="word-ly">趴体</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">演唱会</span><span class="word-arrow">→</span><span class="word-ly">艳唱</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">天后</span><span class="word-arrow">→</span><span class="word-ly">宇宙之母</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">美神降临</span><span class="word-arrow">→</span><span class="word-ly">美神降淋</span></div></div><div class="word-card"><div class="word-line"><span class="word-zh">努力</span><span class="word-arrow">→</span><span class="word-ly">孽力</span></div></div></div><div class="tap-hint">点击词条可复制</div><div class="section-label">相关词卡</div><div class="lore-list"><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">地才</div><div class="lore-meaning">本意是需要努力才能达到天才成就的人，后特指淋淋（蔡依林）。</div><div class="lore-example">例：我不是天才是地才。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">本质骑士</div><div class="lore-meaning">指死忠粉，淋淋的粉丝又称本质骑士，出自《骑士精神》。</div><div class="lore-example">例：我们是淋淋的本质骑士！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">清者自清</div><div class="lore-meaning">源自蔡依林被质疑抄袭时的回应，可用在任何被质疑的场合。</div><div class="lore-example">例：我和他品味很像，清者自清。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">孩柱</div><div class="lore-meaning">"孩子"的淋语说法，一般指淋淋的歌迷。</div><div class="lore-example">例：孩柱，要注意安全哦～</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">恒河水</div><div class="lore-meaning">出自《舞娘》歌词，指提振精神、催人上进的能量水，喝一口就能脉动回来。</div><div class="lore-example">例：这部电影需要喝恒河水提神才能看下去！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">美丽旗舰店</div><div class="lore-meaning">出自《花蝴蝶》歌词，指时尚美丽梦想之地，狭义指东京巴黎米兰纽约。</div><div class="lore-example">例：今天终于下定决心去逛美丽旗舰店噜。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">花蝴蝶</div><div class="lore-meaning">出自《花蝴蝶》歌词，指对外表极度自信、敢于展现自我的人。</div><div class="lore-example">例：不努力，你也配做花蝴蝶！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">走钢索</div><div class="lore-meaning">出自《美人计》歌词，指为追求某事物甘愿冒险。</div><div class="lore-example">例：真是为艺术走钢索惹。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">锁定</div><div class="lore-meaning">出自《美人计》歌词，指暴露在敌人视野中的危险。</div><div class="lore-example">例：你每天黑别人，早已被经纪公司锁定了。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">路人甲</div><div class="lore-meaning">出自《花蝴蝶》歌词，指胡乱发表意见的路人，含贬义，常与"惹人讨厌"联用。</div><div class="lore-example">例：你这个不懂电影的路人甲凭什么发言惹人讨厌！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">骚动爬梯</div><div class="lore-alias">又名：骚动趴体、趴体</div><div class="lore-meaning">「骚动趴体（party）」的弹幕写法，起哄要一起开趴体；也用来调侃《美人计》歌词。</div><div class="lore-example">例：英国的姐妹在哪里，骚动起来！ / 骚动爬梯</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">努力一定会成功，不努力就去死</div><div class="lore-meaning">出自《地才》演唱会，表示对不懈努力的坚持和向往。</div><div class="lore-example">例：努力一定会成功，不努力就去死！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">那画面太美我不敢看</div><div class="lore-alias">又名：画面太美我不敢看、画面太美</div><div class="lore-meaning">出自《布拉格广场》，"辣眼睛"的委婉说法，是出圈到路人都会复读的淋语梗。</div><div class="lore-example">例：画面太美我不敢看惹 / 画面太美这一句确实是路人都知道的梗</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">美神降淋</div><div class="lore-meaning">"美神降临"的淋化写法，指淋淋登场或任何惊艳时刻，弹幕刷屏专用。</div><div class="lore-example">例：红毯这一身简直是美神降淋！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">地才蓝</div><div class="lore-meaning">《地才》时期的标志性蓝色造型与应援色，用来代称那段拼命努力的岁月，出圈到弹幕整屏复读。</div><div class="lore-example">例：看到地才蓝就想起努力一定会成功，豪嗨心。 / 好美的地才蓝、地才蓝已卸，开吸</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">欧米伽</div><div class="lore-meaning">"OMG"的中文直译式玩梗，弹幕称"OMG 欧米伽和天啦噜的生态位是一样的"，也写作"欧米茄"。</div><div class="lore-example">例：欧米茄时空狭缝，好强的吸力惹！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">淋王星</div><div class="lore-meaning">设定中淋语的发源地星球，"来自淋王星的力量"，用于把淋语描述成一门外语。</div><div class="lore-example">例：送你去淋王星大草原面壁，吸吸。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">Jolinese</div><div class="lore-meaning">把淋语当成一门语言造的英文词：Jolin n. 脚淋，Jolinese n. 淋语，jolinize v. 淋化。</div><div class="lore-example">例：本可正在考 Jolinese 八级，靴靴。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">关爱八卦成长协会</div><div class="lore-meaning">早期科普视频系列名（非日本"关八"组合），首次系统梳理"淋语的诞生"，是淋语考古必修资料。</div><div class="lore-example">例：这文案和之前关爱八卦成长协会如出一辙。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">第130次首谈双J恋</div><div class="lore-meaning">弹幕刷屏梗，嘲讽八卦通稿反复"首次谈及"，用 130 夸张次数；同类有"130次首谈杰伦"。</div><div class="lore-example">例：我淋第130次首谈双 J 恋惹，靴靴。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">孽力回馈</div><div class="lore-meaning">"因果报应/努力回报"的淋化双关，指黑粉与粉丝互相反噬；弹幕也写作"努力"的谐音。</div><div class="lore-example">例：有些通讯录真的适可而止，迟早孽力回馈到自己身上。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">本质艾淋</div><div class="lore-meaning">"本质爱淋"的淋化，指嘴上黑粉、实际是死忠；弹幕固定句式"不是黑，是本质艾淋靴靴"。</div><div class="lore-example">例：不是黑是本质艾淋，还原最美的样子。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">保护眼睛</div><div class="lore-meaning">出现辣眼画面或"鬼图"时弹幕整屏刷屏的自救口令，常与"跨火盆"连用。</div><div class="lore-example">例：别放鬼图靴靴，保护眼睛保护眼睛！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">跨火盆</div><div class="lore-meaning">看过脏东西后"去去晦气"的刷屏口令，源自南方民俗，被淋语弹幕仪式化。</div><div class="lore-example">例：吓 si 个人，别放鬼图，我火盆呢？</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">艳唱</div><div class="lore-meaning">"演唱会"的淋化谐音，把演出写成带"艳"字的场子。</div><div class="lore-example">例：本仙女滴艳唱门票买到惹，全体起立！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">降淋</div><div class="lore-meaning">"降临"的淋化，"美神降淋"的简称，用于任何惊艳登场。</div><div class="lore-example">例：这一身简直是降淋现场，闭嘴惊艳。</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">宇宙之母</div><div class="lore-meaning">淋圈给"天后"的最高封号，"我淋永远是宇宙之母厚"。</div><div class="lore-example">例：宇宙之母不发话，谁敢自称 DIVA？</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">糕难度淋美感</div><div class="lore-meaning">"高难度零美感"的舞蹈点评被淋化成"糕难度淋美感"，两个谐音一起上。</div><div class="lore-example">例：糕难度淋美感动作靴靴</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">横看成淋侧成凤</div><div class="lore-meaning">苏轼《题西林壁》的淋化改诗，用来夸"像淋又像凤（罗玉凤）"。</div><div class="lore-example">例：横看成淋侧成凤，远近高低各不同</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">阴中大吸特吸</div><div class="lore-meaning">地才淋在"阴中"（圈里）大吸特吸，形容吸力全开。</div><div class="lore-example">例：地才淋化身阴中大吸特吸，吃的真好</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">1.3毛特效</div><div class="lore-meaning">“五毛特效”的淋化重新定价——用本质数字 1.3 计价，比五毛还廉价。</div><div class="lore-example">例：1.3毛特效惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">有点像艾莉</div><div class="lore-meaning">姐圈夸人句式“有点像××”，弹幕把蔡依林比成艾莉，写成“谢谢淋淋有点像艾莉惹”。</div><div class="lore-example">例：谢谢淋淋有点像艾莉惹 / 有点像艾莉和宝莲</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">我淋人美心善</div><div class="lore-meaning">把“我”换成“我淋”的第一人称自夸，等同于“我人美心善”的淋语官方版。</div><div class="lore-example">例：我淋人美心善惹 / 我phone人美心善靴靴</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">我淋冰雪聪明</div><div class="lore-meaning">与“我淋人美心善”配套的第二句自夸，弹幕连发。</div><div class="lore-example">例：我淋冰雪聪明惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">美到维纳斯怀孕</div><div class="lore-meaning">《大艺术家》弹幕的最高级夸法，把美神维纳斯拖进来当参照物。</div><div class="lore-example">例：美到维纳斯怀孕惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">开局王炸</div><div class="lore-meaning">蔡依林 MV 合集弹幕的定场评价，指前奏一响就赢。</div><div class="lore-example">例：开局王炸惹 / 开局王炸怎么玩</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">怪美的</div><div class="lore-meaning">蔡依林歌名被弹幕当形容词用，“我林怪美的，一把子秒了，靴靴”。</div><div class="lore-example">例：我林怪美的，一把子秒了，靴靴</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">淋雨一直走</div><div class="lore-meaning">蔡依林歌名被当成淋语本体写照，弹幕拿它当“淋语人生”注脚。</div><div class="lore-example">例：就是很像淋雨一直走 / 淋雨一直走？</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">珍素太美</div><div class="lore-meaning">“真是太美”的淋化写法，真→珍、是→素一次到位。</div><div class="lore-example">例：林林珍素太美惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">周阴婷</div><div class="lore-meaning">UP主把剧角淋化后的称呼，配“周阴婷背后阴人”“猪头凤和周阴婷惹”成对出现。</div><div class="lore-example">例：周阴婷背后阴人 / 猪头凤和周阴婷惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">马戏团天后</div><div class="lore-meaning">教材给蔡依林的称号：因为会走钢索、什么都能演，所以普通人学不来。</div><div class="lore-example">例：为爱走钢索</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">本质</div><div class="lore-alias">又名：真素本质惹、越来越本质惹</div><div class="lore-meaning">“正宗/本色”的姐圈用法，夸人“本质惹”，骂人也“本质惹”。</div><div class="lore-example">例：解解的阴乐越来越本质惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">才女惹</div><div class="lore-alias">又名：地才女</div><div class="lore-meaning">给参与创作的人的封号，弹幕写成“真是才女惹！地才女！”。</div><div class="lore-example">例：淋淋参与创作惹，真是才女惹！地才女！</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">歌词典故</span></div><div class="lore-term">外翻黑玫瑰</div><div class="lore-meaning">“好大一朵外翻黑玫瑰惹”——把《玫瑰少年》意象与外翻梗叠加的弹幕诗。</div><div class="lore-example">例：好大一朵外翻黑玫瑰惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">霸榜</div><div class="lore-meaning">“努力到霸榜 130 周”的夸法，与“买榜”互为攻守。</div><div class="lore-example">例：珍素努力惹 要霸榜130周惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">网络梗</span></div><div class="lore-term">梦幻淋动</div><div class="lore-meaning">“梦幻联动”的淋化写法，跨作品同框时必用。</div><div class="lore-example">例：笑孕，梦幻淋动惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">客串</div><div class="lore-meaning">“天啦噜子晨客串阴婷mv惹”——把路人出镜写成明星客串。</div><div class="lore-example">例：天啦噜子晨客串阴婷mv惹</div></div><div class="lore-card"><div class="lore-card-head"><span class="fc-type">俚语梗</span></div><div class="lore-term">精彩live</div><div class="lore-meaning">现场演出的评价句式，“我觉得是超越日日的一次精彩live惹”。</div><div class="lore-example">例：我觉得是超越日日的一次精彩live惹</div></div></div><div class="section-label">相关名言</div><div class="quote-list"><div class="quote-card"><div class="q-text">努力一定会成功。</div><div class="q-meta"><span class="q-author">—— 淋淋</span><span class="q-src">《地才》演唱会宣言，《高等淋语》弹幕复读</span></div></div><div class="quote-card"><div class="q-text">不素天才，素地才惹。</div><div class="q-meta"><span class="q-author">—— 淋淋</span><span class="q-src">《高等淋语》第三课弹幕（地才宣言淋化）</span></div></div><div class="quote-card"><div class="q-text">那画面太美我不敢看。</div><div class="q-meta"><span class="q-author">—— 淋淋</span><span class="q-src">《布拉格广场》（2003）</span></div></div><div class="quote-card"><div class="q-text">擅自放放原片的up已经被淋淋锁定了嘻嘻。</div><div class="q-meta"><span class="q-author">—— 淋淋</span><span class="q-src">《高等淋语》第三课弹幕</span></div></div><div class="quote-card"><div class="q-text">你已经被锁定噜。</div><div class="q-meta"><span class="q-author">—— 淋淋</span><span class="q-src">《高等淋语》第三课、《来自淋淋的强大吸力》弹幕</span></div></div><div class="quote-card"><div class="q-text">我淋珍珠音色。</div><div class="q-meta"><span class="q-author">—— 淋淋</span><span class="q-src">《高等淋语》淋语发展史弹幕</span></div></div><div class="quote-card"><div class="q-text">谢谢，我莲强度不低，芝士上手有门槛。</div><div class="q-meta"><span class="q-author">—— 《通讯录英雄大合集》弹幕</span><span class="q-src">《通讯录英雄大合集》弹幕</span></div></div><div class="quote-card"><div class="q-text">谢谢，我莲只是克制当初 T0 那一娜出的对策卡。</div><div class="q-meta"><span class="q-author">—— 《通讯录英雄大合集》弹幕</span><span class="q-src">《通讯录英雄大合集》弹幕</span></div></div><div class="quote-card"><div class="q-text">天惹噜，我淋真素太美丽了噜。</div><div class="q-meta"><span class="q-author">—— 《来自淋淋的强大吸力》简介</span><span class="q-src">《【经典重现】来自淋淋的强大吸力 恶搞蔡依淋神作》简介</span></div></div><div class="quote-card"><div class="q-text">不给硬币小心被吸了噜。</div><div class="q-meta"><span class="q-author">—— 《来自淋淋的强大吸力》简介</span><span class="q-src">《【经典重现】来自淋淋的强大吸力》简介</span></div></div><div class="quote-card"><div class="q-text">失去乌干达还可以去美丽旗舰店购买惹。</div><div class="q-meta"><span class="q-author">—— 《来自淋淋的强大吸力》弹幕</span><span class="q-src">《【经典重现】来自淋淋的强大吸力》弹幕</span></div></div><div class="quote-card"><div class="q-text">本质厚，淋淋为你感动的流下13滴眼泪。</div><div class="q-meta"><span class="q-author">—— 《【淋神】角色演示》弹幕</span><span class="q-src">《【淋神】角色演示-「腋淋：特务夜地才兰」》弹幕</span></div></div><div class="quote-card"><div class="q-text">淋淋给布兰妮、碧昂丝、滨崎步道歉靴靴。</div><div class="q-meta"><span class="q-author">—— 《淋语的学习与使用实用教程》弹幕</span><span class="q-src">《淋语的学习与使用实用教程》弹幕</span></div></div><div class="quote-card"><div class="q-text">横看成淋侧成凤，远近高低各不同。</div><div class="q-meta"><span class="q-author">—— 《高等淋语·发展史》弹幕</span><span class="q-src">《《高等淋语》淋语发展史及语言解读》弹幕</span></div></div><div class="quote-card"><div class="q-text">清者自清，我只会收到很好的评价惹。</div><div class="q-meta"><span class="q-author">—— 《高等淋语》弹幕</span><span class="q-src">《《高等淋语》让我们一起说淋语！》弹幕</span></div></div><div class="quote-card"><div class="q-text">糕难度淋美感动作靴靴。</div><div class="q-meta"><span class="q-author">—— 《高等淋语》弹幕</span><span class="q-src">《《高等淋语》让我们一起说淋语！》弹幕</span></div></div><div class="quote-card"><div class="q-text">高难度零美感的舞蹈动作惹。</div><div class="q-meta"><span class="q-author">—— 《高等淋语》弹幕</span><span class="q-src">《《高等淋语》让我们一起说淋语！》弹幕</span></div></div><div class="quote-card"><div class="q-text">解解真素本质惹，130真素本质惹。</div><div class="q-meta"><span class="q-author">—— 《淋语的学习与使用实用教程》弹幕</span><span class="q-src">《淋语的学习与使用实用教程》弹幕</span></div></div><div class="quote-card"><div class="q-text">地才淋化身阴中大吸特吸，吃的真好。</div><div class="q-meta"><span class="q-author">—— 《地才淋》标题</span><span class="q-src">《地才淋化身阴中大吸特吸，吃的真好》</span></div></div><div class="quote-card"><div class="q-text">莫愁前路无知妓，贝塔已经锁定你。</div><div class="q-meta"><span class="q-author">—— 《淋语八级教程》弹幕</span><span class="q-src">《「淋语八级教程」Genius（地才）》弹幕</span></div></div><div class="quote-card"><div class="q-text">我淋人美心善惹</div><div class="q-meta"><span class="q-author">—— 《阴阴，果然是你》弹幕</span><span class="q-src">《阴阴，果然是你，你就是破坏墙板报的人》弹幕</span></div></div><div class="quote-card"><div class="q-text">我淋冰雪聪明惹</div><div class="q-meta"><span class="q-author">—— 《阴阴，果然是你》弹幕</span><span class="q-src">《阴阴，果然是你，你就是破坏墙板报的人》弹幕</span></div></div><div class="quote-card"><div class="q-text">美到维纳斯怀孕惹</div><div class="q-meta"><span class="q-author">—— 《大艺术家》弹幕</span><span class="q-src">《大艺术家 - 蔡依林》弹幕</span></div></div><div class="quote-card"><div class="q-text">1.3毛特效惹</div><div class="q-meta"><span class="q-author">—— 《舞娘》弹幕</span><span class="q-src">《蔡依林 - 舞娘 【1080P修复独家】》弹幕</span></div></div><div class="quote-card"><div class="q-text">谢谢淋淋有点像艾莉惹</div><div class="q-meta"><span class="q-author">—— 《阴阴，果然是你》弹幕</span><span class="q-src">《阴阴，果然是你，你就是破坏墙板报的人》弹幕</span></div></div><div class="quote-card"><div class="q-text">我淋只是比较豁出去比较敢一点靴靴</div><div class="q-meta"><span class="q-author">—— 《舞娘》弹幕</span><span class="q-src">《蔡依林 - 舞娘 【1080P修复独家】》弹幕</span></div></div><div class="quote-card"><div class="q-text">林林珍素太美惹</div><div class="q-meta"><span class="q-author">—— 《Play我呸》弹幕</span><span class="q-src">《Play我呸 - 蔡依林》弹幕</span></div></div><div class="quote-card"><div class="q-text">我林怪美的，一把子秒了，靴靴</div><div class="q-meta"><span class="q-author">—— 《蔡依林经典歌曲MV合集》弹幕</span><span class="q-src">《蔡依林经典歌曲MV合集（1080P）》弹幕</span></div></div><div class="quote-card"><div class="q-text">开局王炸惹</div><div class="q-meta"><span class="q-author">—— 《蔡依林经典歌曲MV合集》弹幕</span><span class="q-src">《蔡依林经典歌曲MV合集（1080P）》弹幕</span></div></div><div class="quote-card"><div class="q-text">不愧是淋淋，敢喝恒河水</div><div class="q-meta"><span class="q-author">—— 《舞娘》弹幕</span><span class="q-src">《蔡依林 - 舞娘 【1080P修复独家】》弹幕</span></div></div><div class="quote-card"><div class="q-text">因淋淋而爱上艺术体操～</div><div class="q-meta"><span class="q-author">—— 《舞娘》弹幕</span><span class="q-src">《蔡依林 - 舞娘 【1080P修复独家】》弹幕</span></div></div><div class="quote-card"><div class="q-text">特务J 啊啊：表示对某人或某事嫉妒热爱而发出的鸡叫惹</div><div class="q-meta"><span class="q-author">—— 《淋语歌词考古大全》弹幕</span><span class="q-src">BV1S7411p7at 弹幕</span></div></div><div class="quote-card"><div class="q-text">水β月释出！淋王星门面主唱驾到~</div><div class="q-meta"><span class="q-author">—— 四乐化碳《淋者荣耀》标题</span><span class="q-src">BV1We411o74v</span></div></div><div class="quote-card"><div class="q-text">淋淋饮恒河水凭什么需要路人甲同意厚</div><div class="q-meta"><span class="q-author">—— 《这个总和蔡依林一起出现在表情包里的人到底是谁》评论区</span><span class="q-src">BV1yi4y1u7ki 评论区</span></div></div><div class="quote-card"><div class="q-text">淋淋的绝美老太旗袍装，真素美翻惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">还是淋淋美得像只鸡</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">淋淋跳舞功力比地才精进惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">Jolin不是天才是地才（只要努力了一定会成功）</div><div class="q-meta"><span class="q-author">—— 木木超宅标题</span><span class="q-src">BV151421d7MX</span></div></div><div class="quote-card"><div class="q-text">从淋开始的淋语学习——【花蝴蝶】</div><div class="q-meta"><span class="q-author">—— 提瓦淋新人桑标题</span><span class="q-src">BV1Kh4y1d7Nx</span></div></div><div class="quote-card"><div class="q-text">蔡依林有“天惹噜”这样的口头禅吗？【名场面】</div><div class="q-meta"><span class="q-author">—— 逸株标题</span><span class="q-src">BV13D4y1R7fP</span></div></div><div class="quote-card"><div class="q-text">天惹噜，诸葛亮召唤淋淋放大招</div><div class="q-meta"><span class="q-author">—— 婉挽汉裳标题</span><span class="q-src">BV1Cb411n7CS</span></div></div><div class="quote-card"><div class="q-text">鸡叫泰闹心惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">被淋淋吸死了珍素喜翻惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">淋淋和声伴唱惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">YouTube 淋淋很努力惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">菜脚淋女士real努力惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">字幕鸡也是努力惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">笑鼠，phonephone都开始垫胸了厚</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">18年国庆重新温习一遍惹</div><div class="q-meta"><span class="q-author">—— 淋系弹幕</span><span class="q-src">corpus12.graph.txt 弹幕</span></div></div><div class="quote-card"><div class="q-text">淋语必修[星星眼]，大部分歌词都素经典淋语厚</div><div class="q-meta"><span class="q-author">—— 《淋语歌词考古大全》弹幕</span><span class="q-src">BV1S7411p7at 弹幕</span></div></div><div class="quote-card"><div class="q-text">都可以拍甄嬛传了，就是按照甄嬛传起的，甚至当初淋吧被炸掉也是你胱和你梨后宫争宠炸掉了。</div><div class="q-meta"><span class="q-author">—— 淋吧</span><span class="q-src">NGA tid=39308402</span></div></div><div class="quote-card"><div class="q-text">淋淋，四品武将嫡女，以独特的淋语与郭老师的郭语分庭抗礼，获封淑妃，代表作：日不落。</div><div class="q-meta"><span class="q-author">—— 通讯录英雄大乱斗</span><span class="q-src">百度贴吧《通讯录英雄大乱斗》p/8902390339</span></div></div></div><div class="tap-hint">长按名言可复制</div><div class="back-bar"><div class="btn-ghost back-btn">返回淋语词库</div></div><div class="tip">内容整理自公开语料，仅供娱乐 · 人物无内置头像</div></div></div></div></div><script>if(location.search.indexOf("full")>=0){document.documentElement.classList.add("full");}</script></body></html>

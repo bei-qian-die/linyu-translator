@@ -16,14 +16,44 @@ const SRC = path.join(__dirname, '..', 'src', 'renderer');
 function copy(rel) {
   const from = path.join(SRC, rel);
   const to = path.join(OUT, rel);
+  if (fs.statSync(from).isDirectory()) {
+    fs.mkdirSync(to, { recursive: true });
+    for (const name of fs.readdirSync(from)) copy(path.join(rel, name));
+    return;
+  }
+  fs.mkdirSync(path.dirname(to), { recursive: true });
+  fs.copyFileSync(from, to);
+}
+
+// 预览要跑的是 www/ 里已经包过 IIFE 的 core/mobile 产物：
+// 直接 copy src/core 会让 lore-extra3..10 的 `const cards` 在同一个 <script> 作用域里撞名。
+function copyFromRoot(fromRel, toRel) {
+  const from = path.join(__dirname, '..', fromRel);
+  const to = path.join(OUT, toRel || fromRel);
+  if (!fs.existsSync(from)) throw new Error('预览缺少 ' + fromRel + '，先跑 npm run mobile:build');
+  if (fs.statSync(from).isDirectory()) {
+    fs.mkdirSync(to, { recursive: true });
+    for (const name of fs.readdirSync(from)) copyFromRoot(path.join(fromRel, name), path.join(toRel || fromRel, name));
+    return;
+  }
   fs.mkdirSync(path.dirname(to), { recursive: true });
   fs.copyFileSync(from, to);
 }
 
 (async () => {
+  fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(OUT, { recursive: true });
   for (const f of ['app.js', 'style.css']) copy(f);
   for (const img of fs.readdirSync(path.join(SRC, 'img'))) copy(path.join('img', img));
+  for (const [from, to] of [
+    ['www/core', 'core'],
+    ['www/mobile', 'mobile'],
+    ['www/vendor', 'vendor'],
+    ['www/seed-data.js', 'seed-data.js'],
+    ['www/seed.json', 'seed.json'],
+  ]) {
+    copyFromRoot(from, to);
+  }
   fs.copyFileSync(
     path.join(__dirname, '..', 'node_modules', 'vue', 'dist', 'vue.global.prod.js'),
     path.join(OUT, 'vue.global.prod.js')
@@ -475,6 +505,11 @@ window.translateText = window.__core.translator.translateText;
       });
     },
 
+    initOrientation: function () { return ok({ type: 'portrait', locked: true, autoRotate: false }); },
+    setOrientation: function (t) { return ok({ type: t || 'portrait', locked: true, autoRotate: false }); },
+    setAutoRotate: function (on) { return ok({ type: 'portrait', locked: !on, autoRotate: !!on }); },
+    onOrientationChange: function () { return function () {}; },
+
     getPrefs: function () { return ok(Object.assign({}, prefs)); },
     setPref: function (k, v) { prefs[String(k)] = String(v); return ok({ ok: true }); },
     openLogs: function () { return ok({ dir: 'C:\\\\temp\\\\logs', tail: '' }); },
@@ -485,8 +520,13 @@ window.translateText = window.__core.translator.translateText;
 
   fs.writeFileSync(path.join(OUT, '_stub.js'), stub, 'utf8');
 
-  let html = fs.readFileSync(path.join(SRC, 'index.html'), 'utf8');
+  let html = fs.readFileSync(path.join(__dirname, '..', 'www', 'index.html'), 'utf8');
   html = html
+    // 预览的 _stub.js 用 new Function 注入 tokenizer/translator；生产 CSP 只放 wasm-unsafe-eval，
+    // 预览页临时放行 unsafe-eval（不改 src/renderer/index.html 的生产 CSP）。
+    .replace("script-src 'self' 'wasm-unsafe-eval'", "script-src 'self' 'unsafe-eval'")
+    // 预览用 _stub.js 直接提供 window.api；entry.js 会异步建真库并把 stub 换掉
+    .replace(/\s*<script src="mobile\/entry\.js"><\/script>/, '')
     .replace('../../node_modules/vue/dist/vue.global.prod.js', 'vue.global.prod.js')
     .replace('<script src="app.js"></script>', '<script src="_stub.js"></script>\n  <script src="app.js"></script>');
   fs.writeFileSync(path.join(OUT, '_preview.html'), html, 'utf8');

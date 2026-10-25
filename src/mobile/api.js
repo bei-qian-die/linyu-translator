@@ -139,69 +139,63 @@
 
   // ---- 真正的工厂：在 entry.js 里调用，传入 db / auth / translator / lore ----
   function createApi({ db, auth, lore, translator, version, TRACE_LIMIT, IMPORT_STALE_MS, ATTEMPT_LIMIT, LOCK_MS }) {
-    TRACE_LIMIT = TRACE_LIMIT || 240;
-    IMPORT_STALE_MS = IMPORT_STALE_MS || 10 * 60 * 1000;
-    ATTEMPT_LIMIT = ATTEMPT_LIMIT || 5;
-    LOCK_MS = LOCK_MS || 30000;
+    // 业务规则（开发者门禁 / 撤销槽位 / 导入暂存过期 / 登录失败锁定）统一走
+    // src/core/service.js —— 与桌面主进程是同一份，加接口不用再改两处。
+    // 这个文件只留 Capacitor 相关的部分：文件选择、分享、媒体、屏幕方向、日志缓冲。
+    const serviceMod = root.LINYU_SERVICE || {};
+    const svc = serviceMod.createService({
+      db,
+      auth,
+      translator,
+      version,
+      config: {
+        traceLimit: TRACE_LIMIT || 240,
+        importStaleMs: IMPORT_STALE_MS || 10 * 60 * 1000,
+        attemptLimit: ATTEMPT_LIMIT || 5,
+        lockMs: LOCK_MS || 30000,
+      },
+    });
 
-    let devUnlocked = false;
-    let fails = 0;
-    let lockUntil = 0;
-    let pendingUndo = null;
-    let pendingImport = null;
-    let undoListeners = [];
     let ioListeners = [];
     let orientListeners = [];
     let orientHandle = null;
 
     function readPref(key, fallback) {
-      const raw = db.getPrefs()[key];
-      if (raw == null || raw === '') return fallback;
-      try { return JSON.parse(raw); }
-      catch { return raw; }
+      return svc.readPref(key, fallback);
     }
     function writePref(key, value) {
       // 返回 db 的结果：PREF_KEYS 白名单外的键会被拒掉，设置项必须能知道自己没写进去
-      return db.setPref(key, JSON.stringify(value));
+      return svc.writePref(key, value);
     }
 
-    function authStatus() {
-      const s = auth.status();
-      return {
-        unlocked: devUnlocked,
-        user: s.user,
-        needsSetup: !s.initialized,
-        defaultPass: auth.usesDefaultPassword(),
-        lockLeft: Math.max(0, Math.ceil((lockUntil - Date.now()) / 1000)),
-      };
+    // 导入暂存：payload 交给 service 管过期，媒体还原是本端的事
+    function replanImport(strategy) {
+      const r = svc.replanImport(strategy);
+      return { canceled: false, file: r.file, ...r.plan };
     }
-    function clearUndo() {
-      pendingUndo = null;
-      undoListeners.forEach((cb) => cb({ available: false, label: '' }));
-    }
-    function setUndo(slot) {
-      pendingUndo = slot;
-      undoListeners.forEach((cb) => cb({ available: true, label: slot.undo && slot.undo.label }));
-    }
-
-    function translate(text, mode) {
-      const src = String(text || '').slice(0, 5000);
-      const preview = mode === 'preview';
-      const wantTrace = devUnlocked;
-      const trace = wantTrace ? [] : null;
-      const uncovered = wantTrace ? [] : null;
-      const dst = translator.translateText(src, {
-        words: db.getWords(),
-        rules: db.getRules(),
-        trace,
-        uncovered,
-        traceLimit: TRACE_LIMIT,
-      });
-      if (src.trim() && !preview) db.addHistory(src, dst);
-      return { dst, preview, trace: wantTrace ? trace : null, uncovered: wantTrace ? uncovered : null };
+    function applyImport(strategy) {
+      const slot = svc.peekImport();
+      const r = svc.applyImport(strategy);
+      // 落库后把 media/<file> 还原到 DATA/media/（与桌面同格式）
+      if (slot && Array.isArray(slot.payload.media)) {
+        const fs = fsCap();
+        if (fs) {
+          (async () => {
+            try { await fs.mkdir({ path: 'media', directory: 'DATA', recursive: true }); } catch {}
+            for (const m of slot.payload.media) {
+              if (!m || typeof m !== 'object') continue;
+              const name = String(m.name || '');
+              if (!name) continue;
+              try {
+                await fs.writeFile({ path: `media/${name}`, directory: 'DATA', data: String(m.base64 || '') });
+              } catch { /* 写不进去就忽略 */ }
+            }
+          })();
+        }
+      }
+      return { ...r.result, file: r.file };
     }
 
-    // ---- 媒体：本地路径会被持久化为 'media:<name>'，渲染层拿到 ref 后通过 mediaData 拿回 data:URL ----
     async function pickImage() {
       const r = await pickFile({ accept: 'image/*' });
       if (r.canceled || !r.files.length) return { canceled: true };
@@ -292,266 +286,85 @@
       let payload;
       try { payload = JSON.parse(text); }
       catch { throw new Error('文件不是有效的 JSON'); }
-      const plan = db.planImport(payload, 'merge');
-      pendingImport = { payload, file: file.name, at: Date.now() };
+      const plan = svc.planImport(payload, 'merge');
+      svc.stashImport(payload, file.name);
       ioListeners.forEach((cb) => cb());
       return { canceled: false, file: file.name, ...plan };
     }
-    function replanImport({ strategy } = {}) {
-      if (!pendingImport || Date.now() - pendingImport.at > IMPORT_STALE_MS) throw new Error('请先重新选择导入文件');
-      const plan = db.planImport(pendingImport.payload, strategy);
-      return { canceled: false, file: pendingImport.file, ...plan };
-    }
-    function applyImport({ strategy } = {}) {
-      if (!pendingImport || Date.now() - pendingImport.at > IMPORT_STALE_MS) throw new Error('请先重新选择导入文件');
-      const slot = pendingImport;
-      pendingImport = null;
-      ioListeners.forEach((cb) => cb());
-      const result = db.applyImport(slot.payload, strategy);
-      // 落库后把 media/<file> 还原到 DATA/media/（仅在 require=true 模式 + payload.media 存在时）
-      if (Array.isArray(slot.payload.media)) {
-        const fs = fsCap();
-        if (fs) {
-          (async () => {
-            try { await fs.mkdir({ path: 'media', directory: 'DATA', recursive: true }); } catch {}
-            for (const m of slot.payload.media) {
-              if (!m || typeof m !== 'object') continue;
-              const name = String(m.name || '');
-              if (!name) continue;
-              try {
-                await fs.writeFile({ path: `media/${name}`, directory: 'DATA', data: String(m.base64 || '') });
-              } catch { /* 写不进去就忽略 */ }
-            }
-          })();
-        }
-      }
-      return { ...result, file: slot.file };
-    }
-    function cancelImport() {
-      pendingImport = null;
-      ioListeners.forEach((cb) => cb());
-      return { ok: true };
-    }
-
     // ---- 备份与恢复：直接调底层 db.listBackups / restore ----
     const api = {
       isCapacitor: isCapacitor(),
 
-      translate: (text, mode) => safe(() => Promise.resolve(translate(text, mode))),
+      translate: (text, mode) => safe(() => Promise.resolve(svc.translate(text, mode))),
 
-      // ---- 认证 ----
-      authStatus: () => safe(() => Promise.resolve(authStatus())),
-      async login(user, pass) {
-        if (Date.now() < lockUntil) {
-          return { ok: false, error: `尝试过于频繁，请 ${Math.ceil((lockUntil - Date.now()) / 1000)} 秒后再试` };
-        }
-        if (!auth.verify(user, pass)) {
-          fails += 1;
-          if (fails >= ATTEMPT_LIMIT) {
-            lockUntil = Date.now() + LOCK_MS;
-            fails = 0;
-            return { ok: false, error: `账号或密码错误，已锁定 ${LOCK_MS / 1000} 秒` };
-          }
-          return { ok: false, error: `账号或密码错误（还可尝试 ${ATTEMPT_LIMIT - fails} 次）` };
-        }
-        fails = 0;
-        lockUntil = 0;
-        devUnlocked = true;
-        return { ok: true, data: authStatus() };
-      },
-      logout: () => {
-        devUnlocked = false;
-        clearUndo();
-        return { ok: true, data: authStatus() };
-      },
-      async changePassword(oldPass, newPass) {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录开发者账号' };
-        const r = auth.changePassword(oldPass, newPass);
-        if (r.error) return { ok: false, error: r.error };
-        return { ok: true, data: { ok: true } };
-      },
-      async meta() {
-        return { ok: true, data: {
-          defaultUser: auth.DEFAULT_USER,
-          defaultPassword: auth.usesDefaultPassword() ? auth.DEFAULT_PASSWORD : '',
-          version,
-          historyLimit: db.historyLimit(),
-        } };
-      },
+      // ---- 认证：门禁与失败锁定都在 service 里 ----
+      authStatus: () => safe(() => Promise.resolve(svc.authStatus())),
+      login: (user, pass) => safe(() => Promise.resolve(svc.login(user, pass))),
+      logout: () => safe(() => Promise.resolve(svc.logout())),
+      changePassword: (oldPass, newPass) => safe(() => Promise.resolve(svc.changePassword(oldPass, newPass))),
+      meta: () => safe(() => Promise.resolve(svc.meta())),
 
       // ---- 数据 / 撤销 ----
-      async syncSeed() {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.syncFromSeed();
-        return { ok: true, data: r };
-      },
-      async undoDelete() {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        if (!pendingUndo) throw new Error('没有可撤销的操作了');
-        if (Date.now() - pendingUndo.at > 60000) {
-          clearUndo();
-          throw new Error('撤销时间已过，请重新添加内容');
-        }
-        const slot = pendingUndo;
-        clearUndo();
-        const r = db.undoDelete(slot);
-        return { ok: true, data: r };
-      },
-      undoState: () => ({ ok: true, data: { available: Boolean(pendingUndo && devUnlocked && Date.now() - pendingUndo.at <= 60000), label: pendingUndo ? pendingUndo.undo.label : '' } }),
-      onUndoChange(cb) {
-        undoListeners.push(cb);
-        return () => { undoListeners = undoListeners.filter((x) => x !== cb); };
-      },
+      syncSeed: () => safe(() => Promise.resolve(svc.syncSeed())),
+      undoDelete: () => safe(() => Promise.resolve(svc.undoDelete())),
+      undoState: () => ({ ok: true, data: svc.undoState() }),
+      onUndoChange: (cb) => svc.onUndoChange(cb),
       onIoChange(cb) {
         ioListeners.push(cb);
         return () => { ioListeners = ioListeners.filter((x) => x !== cb); };
       },
 
-      // ---- 五大板块 CRUD ----
-      listWords: () => safe(() => Promise.resolve(db.getWords())),
-      addWord: (w) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        return (() => {
-          const r = db.addWord(w);
-          if (r.error) return { ok: false, error: r.error };
-          return { ok: true, data: r };
-        })();
-      },
-      updateWord: (id, w) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.updateWord(id, w);
-        if (r.error) return { ok: false, error: r.error };
-        setUndo({ undo: { kind: 'word', rows: [db.getWords().find((x) => x.id === id)].filter(Boolean), label: '词条' }, at: Date.now() });
-        return { ok: true, data: r };
-      },
-      deleteWord: (id) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.deleteWord(id);
-        if (r.error) return { ok: false, error: r.error };
-        if (r.undo) setUndo({ undo: r.undo, at: Date.now() });
-        return { ok: true, data: r };
-      },
+      // ---- 五板块 CRUD：与桌面共用 service，这里只做转发 ----
+      listWords: () => safe(() => Promise.resolve(svc.crud.words.list())),
+      addWord: (w) => safe(() => Promise.resolve(svc.crud.words.add(w))),
+      updateWord: (id, w) => safe(() => Promise.resolve(svc.crud.words.update(id, w))),
+      deleteWord: (id) => safe(() => Promise.resolve(svc.crud.words.remove(id))),
 
-      listRules: () => safe(() => Promise.resolve(db.getRules())),
-      addRule: (r) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.addRule(r);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      updateRule: (id, r) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.updateRule(id, r);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      deleteRule: (id) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.deleteRule(id);
-        if (r.error) return { ok: false, error: r.error };
-        if (r.undo) setUndo({ undo: r.undo, at: Date.now() });
-        return { ok: true, data: r };
-      },
+      listRules: () => safe(() => Promise.resolve(svc.crud.rules.list())),
+      addRule: (r) => safe(() => Promise.resolve(svc.crud.rules.add(r))),
+      updateRule: (id, r) => safe(() => Promise.resolve(svc.crud.rules.update(id, r))),
+      deleteRule: (id) => safe(() => Promise.resolve(svc.crud.rules.remove(id))),
 
-      listCards: () => safe(() => Promise.resolve(db.getCards())),
-      addCard: (c) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.addCard(c);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      updateCard: (id, c) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.updateCard(id, c);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      deleteCard: (id) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.deleteCard(id);
-        if (r.error) return { ok: false, error: r.error };
-        if (r.undo) setUndo({ undo: r.undo, at: Date.now() });
-        return { ok: true, data: r };
-      },
+      listCards: () => safe(() => Promise.resolve(svc.crud.cards.list())),
+      addCard: (c) => safe(() => Promise.resolve(svc.crud.cards.add(c))),
+      updateCard: (id, c) => safe(() => Promise.resolve(svc.crud.cards.update(id, c))),
+      deleteCard: (id) => safe(() => Promise.resolve(svc.crud.cards.remove(id))),
 
-      listQuotes: () => safe(() => Promise.resolve(db.getQuotes())),
-      addQuote: (q) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.addQuote(q);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      updateQuote: (id, q) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.updateQuote(id, q);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      deleteQuote: (id) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.deleteQuote(id);
-        if (r.error) return { ok: false, error: r.error };
-        if (r.undo) setUndo({ undo: r.undo, at: Date.now() });
-        return { ok: true, data: r };
-      },
+      listQuotes: () => safe(() => Promise.resolve(svc.crud.quotes.list())),
+      addQuote: (q) => safe(() => Promise.resolve(svc.crud.quotes.add(q))),
+      updateQuote: (id, q) => safe(() => Promise.resolve(svc.crud.quotes.update(id, q))),
+      deleteQuote: (id) => safe(() => Promise.resolve(svc.crud.quotes.remove(id))),
 
-      listHeroes: () => safe(() => Promise.resolve(db.getHeroes())),
-      addHero: (h) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.addHero(h);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      updateHero: (id, h) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const out = db.updateHero(id, h);
-        return out.error ? { ok: false, error: out.error } : { ok: true, data: out };
-      },
-      deleteHero: (id) => {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.deleteHero(id);
-        if (r.error) return { ok: false, error: r.error };
-        if (r.undo) setUndo({ undo: r.undo, at: Date.now() });
-        return { ok: true, data: r };
-      },
+      listHeroes: () => safe(() => Promise.resolve(svc.crud.heroes.list())),
+      addHero: (h) => safe(() => Promise.resolve(svc.crud.heroes.add(h))),
+      updateHero: (id, h) => safe(() => Promise.resolve(svc.crud.heroes.update(id, h))),
+      deleteHero: (id) => safe(() => Promise.resolve(svc.crud.heroes.remove(id))),
 
-      // ---- 媒体 ----
+      // ---- 媒体：Capacitor 自己的目录，桌面走 userData/media ----
       pickImage: () => safe(() => pickImage()),
       mediaData: (ref) => safe(() => mediaData(ref)),
 
-      // ---- 导入导出 ----
+      // ---- 导入导出：选文件 / 分享是本端的事，暂存与落库规则在 service ----
       exportData: (opts) => safe(() => exportData(opts || {})),
       pickImport: () => safe(() => pickImport()),
-      replanImport: (opts) => safe(() => Promise.resolve(replanImport(opts || {}))),
-      applyImport: (opts) => safe(() => Promise.resolve(applyImport(opts || {}))),
-      cancelImport: () => safe(() => Promise.resolve(cancelImport())),
+      replanImport: (opts) => safe(() => Promise.resolve(replanImport(opts && opts.strategy))),
+      applyImport: (opts) => safe(() => Promise.resolve(applyImport(opts && opts.strategy))),
+      cancelImport: () => safe(() => Promise.resolve(svc.cancelImport())),
 
       // ---- 备份 / 体检 ----
-      listBackups: () => safe(() => db.listBackups()),
-      async restoreBackup(name) {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = await db.restoreBackup(name);
-        return r.error ? { ok: false, error: r.error } : { ok: true, data: r };
-      },
-      async restoreBefore() {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = await db.restoreBefore();
-        return r.error ? { ok: false, error: r.error } : { ok: true, data: r };
-      },
-      inspect: () => safe(() => Promise.resolve(db.inspect())),
-      async cleanHeroWords(list) {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        return { ok: true, data: db.cleanHeroWords(list) };
-      },
+      listBackups: () => safe(() => svc.listBackups()),
+      restoreBackup: (name) => safe(() => svc.restoreBackup(name)),
+      restoreBefore: () => safe(() => svc.restoreBefore()),
+      inspect: () => safe(() => Promise.resolve(svc.inspect())),
+      cleanHeroWords: (list) => safe(() => Promise.resolve(svc.cleanHeroWords(list))),
 
       // ---- 历史 / 偏好 ----
-      listHistory: () => safe(() => Promise.resolve(db.getHistory())),
-      async clearHistory() {
-        if (!devUnlocked) return { ok: false, error: '请先在「设置 → 开发者模式」中登录' };
-        const r = db.clearHistory();
-        if (r.undo) setUndo({ undo: r.undo, at: Date.now() });
-        return { ok: true, data: r };
-      },
-      getPrefs: () => safe(() => Promise.resolve(db.getPrefs())),
+      listHistory: () => safe(() => Promise.resolve(svc.listHistory())),
+      clearHistory: () => safe(() => Promise.resolve(svc.clearHistory())),
+      getPrefs: () => safe(() => Promise.resolve(svc.getPrefs())),
       // 渲染层会写 window.api.setPref(...).catch(() => {})，必须返回 Promise 才与桌面
       // preload 的 ipc invoke 同形；同步返回对象会让 .catch 直接 TypeError。
-      async setPref(key, value) {
-        const r = db.setPref(String(key), value);
-        return r.error ? { ok: false, error: r.error } : { ok: true, data: r };
-      },
+      setPref: (key, value) => safe(() => Promise.resolve(svc.setPref(String(key), value))),
 
       // ---- 日志 / 外部链接 ----
       // 移动端没有"打开日志目录"的概念：返回近 60 行 + 让用户在设置里复制

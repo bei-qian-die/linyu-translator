@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-// __wrapped by scripts/build-mobile.mjs
+// __wrapped by scripts/lib/wrap-iife.mjs
 'use strict';
 
 // 第七轮内容扩充（2026-10-16）：跨平台挖掘淋语外号 / 概念 / 例词。
@@ -109,23 +109,29 @@ const heroes = [
     baike: '阴婷宝，2021 年 FLY 组合工作室在 B 站发布的"周阴婷主题 AI 语音助手"作品（15.6 万播），是国内首个内置周阴婷语音包的 AI 产品，可说淋语。其技术路径是采集周阴婷公开二创语音 + 淋语教学素材，训练出可在对话中输出淋语句式的语音助手。',
     works: ['阴婷宝 AI 语音助手（FLY 组合工作室，15.6 万播，2021）'],
     words: ['AI', '语音助手', '周阴婷', '淋语', 'FLY 组合工作室'],
-    links: [{ label: 'workbuddy 调查报告（北浅蝶）', url: 'https://www.workbuddy.cn/space/d/2LKBqTvHpS38SwAkor42zg?source=3' }] },
+    img: 'img/hero-116.png',
+    links: [{ label: 'workbuddy 调查报告（北浅蝶）', url: 'https://www.workbuddy.cn/space/d/2LKBqTvHpS38SwAkor42zg?source=3' },
+            { label: '《【阴婷宝】国内首个内置周阴婷语音包的人工智能》（BV1s54y1p7R1）', url: 'https://www.bilibili.com/video/BV1s54y1p7R1' }] },
   { name: '木头人的磁带旧时光', alias: '木头人 / 磁带旧时光', group: 'real',
     rank: 'B 站 UP / 周阴婷二创作者',
     intro: 'B 站 UP 主，上传《周阴婷《淋语一起厚》》虚构专辑二创（5.4 万播），是淋语圈"淋系天后"系列音乐二创的代表作品。',
     baike: '木头人的磁带旧时光，B 站 UP 主，凭《周阴婷《淋语一起厚》》（虚构"淋系天后"发行录音室专辑的完整二创）一作累计 5.4 万播放，被 workbuddy 调查报告列入"周阴婷 / 淋淋"代表二创列表。',
     works: ['《周阴婷《淋语一起厚》》（5.4 万播）'],
     words: ['B站', 'UP主', '周阴婷', '二创', '淋语一起厚'],
+    img: 'img/hero-150.png',
     links: [{ label: 'workbuddy 调查报告（北浅蝶）', url: 'https://www.workbuddy.cn/space/d/2LKBqTvHpS38SwAkor42zg?source=3' },
-            { label: 'B 站 UP 主页（待补链接）', url: 'https://search.bilibili.com/all?keyword=%E6%9C%A8%E5%A4%B4%E4%BA%BA%E7%9A%84%E7%A3%81%E5%B8%A6%E6%97%A7%E6%97%B6%E5%85%89' }] },
-  { name: 'FLY 组合工作室', alias: 'FLY 工作室', group: 'real',
+            { label: '《磁带试听周阴婷《淋语一起厚》》（BV1xF411N737）', url: 'https://www.bilibili.com/video/BV1xF411N737' },
+            { label: 'B 站 UP 主页（mid 366342390）', url: 'https://space.bilibili.com/366342390' }] },
+  { name: 'FLY 组合工作室', alias: 'FLY 工作室 / FLY组合工作室公众号', group: 'real',
     rank: 'B 站 UP / 阴婷宝 AI 作者',
-    intro: 'B 站 UP，2021 年发布"阴婷宝 AI 语音助手"（15.6 万播），是国内首个内置周阴婷语音包的 AI 产品。',
-    baike: 'FLY 组合工作室，B 站 UP 主体，2021 年在 B 站发布"阴婷宝 AI 语音助手"作品（15.6 万播），是国内首个内置周阴婷语音包的 AI 产品，作品可让用户用语音助手说淋语。',
+    intro: 'B 站 UP（账号现名「FLY组合工作室公众号」，mid 22720137），2021 年发布「阴婷宝 AI 语音助手」（15.6 万播），是国内首个内置周阴婷语音包的 AI 产品。',
+    baike: 'FLY 组合工作室，B 站 UP 主体（账号现名「FLY组合工作室公众号」，mid 22720137），2021 年在 B 站发布「阴婷宝 AI 语音助手」作品（15.6 万播），是国内首个内置周阴婷语音包的 AI 产品，作品可让用户用语音助手说淋语。',
     works: ['阴婷宝 AI 语音助手（2021，15.6 万播）'],
     words: ['B站', 'UP主', 'AI', '语音助手', '阴婷宝', '周阴婷'],
+    img: 'img/hero-151.png',
     links: [{ label: 'workbuddy 调查报告（北浅蝶）', url: 'https://www.workbuddy.cn/space/d/2LKBqTvHpS38SwAkor42zg?source=3' },
-            { label: 'B 站 UP 主页（待补链接）', url: 'https://search.bilibili.com/all?keyword=FLY%E7%BB%84%E5%90%88%E5%B7%A5%E4%BD%9C%E5%AE%A4' }] },
+            { label: '《【阴婷宝】国内首个内置周阴婷语音包的人工智能》（BV1s54y1p7R1）', url: 'https://www.bilibili.com/video/BV1s54y1p7R1' },
+            { label: 'B 站 UP 主页（mid 22720137）', url: 'https://space.bilibili.com/22720137' }] },
   { name: '提瓦淋新人桑', alias: '提瓦淋', group: 'real',
     rank: 'B 站 UP / 周阴婷语录整理者',
     intro: 'B 站 UP 主，上传《"四大名言"（阴文版）》系统化整理周阴婷语录（14.4 万播），是淋语圈引用率最高的周阴婷语录集合。',

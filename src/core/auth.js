@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 
 // 本地开发者账号：不接后端，凭据用 scrypt 加盐哈希后存在同一个 sqlite 里。
@@ -12,14 +13,40 @@ const KEY = 'dev_user';
 const SALT = 'dev_salt';
 const HASH = 'dev_hash';
 
+/**
+ * scrypt 实现：WebView 里由 src/mobile/scrypt.js 挂在全局 linyuScrypt；
+ * Node（Electron 主进程 / 测试）下直接 require 同一份文件的 Node 分支。
+ *
+ * 以前只认全局，而桌面端从来没挂过这个名字，于是开发者登录一进来就是
+ * ReferenceError: linyuScrypt is not defined——crud-check 那条失败就是这个原因。
+ */
+const scryptImpl = (typeof linyuScrypt !== 'undefined' && linyuScrypt)
+  ? linyuScrypt
+  : (typeof require === 'function' ? require('../mobile/scrypt') : null);
+
+/**
+ * @param {string} password
+ * @param {string} salt
+ * @returns {string}
+ */
 function hashPassword(password, salt) {
-  return linyuScrypt.hashPassword(password, salt);
+  if (!scryptImpl) throw new Error('scrypt 实现未注入（缺 linyuScrypt 或 src/mobile/scrypt.js）');
+  return scryptImpl.hashPassword(password, salt);
 }
 
+/**
+ * @param {string} str
+ * @returns {Uint8Array}
+ */
 function toUtf8(str) {
   return new TextEncoder().encode(String(str));
 }
 
+/**
+ * @param {string} a
+ * @param {string} b
+ * @returns {boolean}
+ */
 function safeEqual(a, b) {
   const A = toUtf8(a);
   const B = toUtf8(b);
@@ -29,6 +56,10 @@ function safeEqual(a, b) {
   return diff === 0;
 }
 
+/**
+ * @param {number} len
+ * @returns {string}
+ */
 function randomSaltHex(len) {
   const u = new Uint8Array(len);
   if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
@@ -41,6 +72,15 @@ function randomSaltHex(len) {
   return s;
 }
 
+/**
+ * @typedef {Object} SettingsStore
+ * @property {(key: string) => any} getSetting
+ * @property {(key: string, value: any) => void} setSetting
+ */
+
+/**
+ * @param {SettingsStore} store
+ */
 function createAuth({ getSetting, setSetting }) {
   function ensureInit() {
     if (getSetting(HASH)) return { created: false };

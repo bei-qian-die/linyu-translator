@@ -1,0 +1,33 @@
+.wx-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  padding: 0 200rpx 0 44rpx;
+  box-sizing: border-box;
+  background: var(--bg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-heart {
+  margin-right: 12rpx;
+  color: var(--accent);
+  font-size: 22rpx;
+  line-height: 1;
+}
+
+.brand-name {
+  color: var(--ink);
+  font-size: 26rpx;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}

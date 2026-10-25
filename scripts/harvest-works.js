@@ -92,7 +92,7 @@ async function api(url) {
   for (const h of short) {
     const have = (h.works || []).length;
     const need = WANT - have;
-    let add = [];
+    let add;
     if (h.group === 'up') {
       const found = await worksOf(h);
       add = found.slice(0, need);

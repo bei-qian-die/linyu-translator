@@ -1,0 +1,10 @@
+www/
+release/
+android/
+build/
+node_modules/
+package-lock.json
+scripts/legacy/
+src/core/lore-extra*.js
+src/core/seed.json
+src/core/lore.js

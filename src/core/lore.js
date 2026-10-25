@@ -1,3 +1,4 @@
+// @ts-check
 'use strict';
 
 // 淋语词卡：无法直接翻译的词、梗与典故的释义卡片
@@ -7,7 +8,7 @@
 const flashcards = [
   // —— 语气词与基础俚语 ——
   { term: '天啦噜', type: 'particle', meaning: '表示惊讶的感叹词，相当于"天哪"。', example: '天啦噜，今天作业又忘家里噜！', source: '淋语经典语气词' },
-  { term: '噜', type: 'particle', meaning: '句末语气助词，相当于"了"，用于陈述事实。', example: '下班噜。明天就要放假噜。', source: '淋语基础语气词' },
+  { term: '噜', type: 'particle', meaning: '句末语气助词，相当于"了"，用于陈述事实。', example: '下班噜。明天就要放假噜。', source: '淋语基础语气词｜https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD' },
   { term: '惹', type: 'particle', meaning: '句末语气助词，可与"噜"换用，陈述某种事实；也可单独作叹词表惊讶。', example: '我不认识你惹。惹！', source: '淋语基础语气词' },
   { term: '厚', type: 'particle', meaning: '句首叹词，抒发兴奋、激动等正面情绪；"厚厚厚"表激动。', example: '厚！今天可以去看演唱会噜！', source: '淋语基础语气词' },
   { term: '吸吸', type: 'particle', meaning: '语气词，多用于恐吓、威胁时的冷笑，也可表撒娇笑意。', example: '吸吸，你敢动一下试试！', source: '淋语语气词' },
@@ -647,8 +648,7 @@ const extraHeroes = [
       { label: '【通讯录小剧场】如何识别1', url: 'https://www.bilibili.com/video/BV1ST411o7aW' },
       { label: '【通讯录典藏金曲】他是0', url: 'https://www.bilibili.com/video/BV1GV411T7nc' },
     ],
-    words: ['什么', '同学', '说话', '优秀', '老师', '支持', '大姐', '开心', '美女', '帅哥'],
-    links: [{ label: '【通讯录小剧场】如何识别1', url: 'https://www.bilibili.com/video/BV1ST411o7aW' }] },
+    words: ['什么', '同学', '说话', '优秀', '老师', '支持', '大姐', '开心', '美女', '帅哥'] },
   { name: '初武', alias: 'Colleen / 淋英双语', img: 'img/hero-44.png', group: 'up',
     rank: 'UP主 · 字幕组', intro: '字幕组作者，把英文字幕也淋化，署名"Colleen/淋英双语字幕"。', tags: ['淋英双语', 'Colleen', '字幕组', 'Jolinese'],
     baike: '初武，B站《【Colleen/淋英双语字幕】Beauty And The Beat Boot》（约 37 万播放）作者，简介标注原曲链接。其贡献是把"淋化"扩展到英文侧：Jolin n. 脚淋、Jolinese n. 淋语、jolinize v. 淋化，并让"自带英文字幕，蔡依林都要被你感动得流下13滴眼泪惹"这种弹幕成立。"Colleen"是 Jolin 的谐音署名写法。',
@@ -693,11 +693,19 @@ const extraCards2 = [
   { term: '风姿', type: 'slang', meaning: '“疯子”的淋化谐音，弹幕用来形容一个方案离谱得像风姿来的。', example: '妈呀，完全风姿来的吧，这个豆包 / 有点像风姿', source: '《让豆包教穿搭，反耳被豆包用淋语羞辱了》《【淋者荣耀】去把老娘的圣杯面具40cd拿过来！》弹幕' },
 ];
 
+// @platform: 补充数据包双端加载，Node 走 require，浏览器/小程序从 window 取同步注入的全局
 const extra3 = (typeof require === 'function') ? require('./lore-extra3') : (typeof window !== 'undefined' ? window.LORE_EXTRA3 : {});
 const extra4 = (typeof require === 'function') ? require('./lore-extra4') : (typeof window !== 'undefined' ? window.LORE_EXTRA4 : {});
 const extra5 = (typeof require === 'function') ? require('./lore-extra5') : (typeof window !== 'undefined' ? window.LORE_EXTRA5 : {});
 const extra6 = (typeof require === 'function') ? require('./lore-extra6') : (typeof window !== 'undefined' ? window.LORE_EXTRA6 : {});
 const extra7 = (typeof require === 'function') ? require('./lore-extra7') : (typeof window !== 'undefined' ? window.LORE_EXTRA7 : {});
+const extra8 = (typeof require === 'function') ? require('./lore-extra8') : (typeof window !== 'undefined' ? window.LORE_EXTRA8 : {});
+const extra9 = (typeof require === 'function') ? require('./lore-extra9') : (typeof window !== 'undefined' ? window.LORE_EXTRA9 : {});
+const extra10 = (typeof require === 'function') ? require('./lore-extra10') : (typeof window !== 'undefined' ? window.LORE_EXTRA10 : {});
+const extra11 = (typeof require === 'function') ? require('./lore-extra11') : (typeof window !== 'undefined' ? window.LORE_EXTRA11 : {});
+const extra12 = (typeof require === 'function') ? require('./lore-extra12') : (typeof window !== 'undefined' ? window.LORE_EXTRA12 : {});
+const extra13 = (typeof require === 'function') ? require('./lore-extra13') : (typeof window !== 'undefined' ? window.LORE_EXTRA13 : {});
+const extra14 = (typeof require === 'function') ? require('./lore-extra14') : (typeof window !== 'undefined' ? window.LORE_EXTRA14 : {});
 
 const keep = (arr, key, drop) => (drop && drop.length ? arr.filter((x) => !drop.includes(x[key])) : arr);
 
@@ -741,7 +749,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards),
     'term',
     dropCards
   ),
@@ -749,7 +757,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -757,12 +765,100 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes),
     'text',
     dropQuotes
   ),
   'text'
 );
+
+// 第十一轮：既有轮次的条目是硬编码在 lore.js / lore-extra*.js 里的，
+// 在扩充脚本里直接改写不会写盘。所以第十一轮的「补充」统一在这里应用：
+//   aliasMerge —— 给既有词卡补别名、补释义、补来源；
+//   heroMerge —— 给既有人物补别名/标签/作品/关联词条/外链。
+// 同一语义位下的不同译法在这里统一并入既有条目，不新增重复行。
+const applyAliasMerge = (rows, merges) => {
+  if (!merges || !merges.length) return rows;
+  const byTerm = new Map(rows.map((r) => [r.term, r]));
+  for (const m of merges) {
+    const t = byTerm.get(m.term);
+    if (!t) continue;
+    if (m.aliases && m.aliases.length) {
+      const have = Array.isArray(t.aliases) ? t.aliases : [];
+      const seen = new Set(have);
+      for (const a of m.aliases) if (a && !seen.has(a)) { have.push(a); seen.add(a); }
+      t.aliases = have;
+    }
+    if (m.meaningAppend && t.meaning && !t.meaning.includes(m.meaningAppend)) {
+      t.meaning = t.meaning + ' ' + m.meaningAppend;
+    }
+    if (m.source && !t.source) t.source = m.source;
+    if (m.verify && !t.verify) t.verify = m.verify;
+    if (m.hero && !t.hero) t.hero = m.hero;
+  }
+  return rows;
+};
+
+const applyHeroMerge = (rows, merges) => {
+  if (!merges || !merges.length) return rows;
+  const byName = new Map(rows.map((r) => [r.name, r]));
+  for (const m of merges) {
+    const t = byName.get(m.name);
+    if (!t) continue;
+    const mergeList = (cur, add) => {
+      const have = Array.isArray(cur) ? cur.slice() : [];
+      const seen = new Set(have);
+      for (const x of add) if (x && !seen.has(x)) { have.push(x); seen.add(x); }
+      return have;
+    };
+    if (m.alias) {
+      const parts = String(t.alias || '').split(/[/／]/).map((s) => s.trim()).filter(Boolean);
+      const seen = new Set(parts);
+      for (const p of String(m.alias).split(/[/／]/).map((s) => s.trim()).filter(Boolean)) {
+        if (!seen.has(p)) { parts.push(p); seen.add(p); }
+      }
+      t.alias = parts.join(' / ');
+    }
+    t.tags = mergeList(t.tags, m.tags);
+    t.works = mergeList(t.works, m.works);
+    t.words = mergeList(t.words, m.words);
+    t.links = mergeList(t.links, m.links);
+    if (m.baikeAppend && t.baike && !t.baike.includes(m.baikeAppend)) {
+      t.baike = t.baike + ' ' + m.baikeAppend;
+    }
+  }
+  return rows;
+};
+
+applyAliasMerge(allCards, extra11.aliasMerge);
+applyAliasMerge(allCards, extra12.aliasMerge);
+applyAliasMerge(allCards, extra13.aliasMerge);
+applyHeroMerge(allHeroes, extra11.heroMerge);
+applyHeroMerge(allHeroes, extra12.heroMerge);
+applyHeroMerge(allHeroes, extra13.heroMerge);
+
+// 第十三轮新增 quoteMerge：把「这句话就出现在 TA 本人视频里」的自动归属补进既有名言。
+// 与 aliasMerge 同纪律——只在 hero 为空时写入，绝不覆盖开发者手工改过的归属。
+const applyQuoteMerge = (rows, merges) => {
+  if (!merges || !merges.length) return rows;
+  const byText = new Map(rows.map((r) => [r.text, r]));
+  for (const m of merges) {
+    const t = byText.get(m.text);
+    if (!t || t.hero || !m.hero) continue;
+    t.hero = m.hero;
+  }
+  return rows;
+};
+applyQuoteMerge(allQuotes, extra13.quoteMerge);
+applyQuoteMerge(allQuotes, extra14.quoteMerge);
+
+// 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
+// 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。
+// 这里统一收敛到 key，中文名只留在界面上。
+const CARD_TYPE_ALIAS = { 俚语梗: 'slang', 网络梗: 'meme', 语气词: 'particle', 歌词典故: 'lyric' };
+for (const c of allCards) {
+  if (CARD_TYPE_ALIAS[c.type]) c.type = CARD_TYPE_ALIAS[c.type];
+}
 
 // hero 列名义上是「引用 heroes.name」，但早期内容把它当自由文本用过，混进了三类不是人名的值：
 //   1. 人物昵称（"掉毛母鸡霞"其实指霞、"你茶萨勒芬妮"其实指萨勒芬妮）；
@@ -870,6 +966,22 @@ function learnSourceHero(rows, srcKey) {
   return out;
 }
 
+// ---- 溯源兜底 ----
+// 早期几轮收的短句（"郭门永存！""退票退票退票退票！"）只有"《某视频》弹幕"这样的内部记法，
+// 语料里逐字查得到的中长句没问题，短句因为不足 10 字过不了 attest 的连续命中门槛，
+// 于是长期挂在未溯源名单里。这里统一补一条站内检索直链：搜的就是这句原文，
+// 点开能看到它出自哪些视频，比空着强，也不算编造出处（项目里 lore-extra7 已经在用同类链接）。
+const SEARCH_URL = (q) =>
+  'https://search.bilibili.com/all?keyword=' + encodeURIComponent(String(q || '').slice(0, 30));
+for (const q of keptQuotes) {
+  if (/https?:\/\//i.test(String(q.src || '')) || String(q.verify || '').trim()) continue;
+  q.verify = SEARCH_URL(q.text);
+}
+for (const c of keptCards) {
+  if (/https?:\/\//i.test(String(c.source || '')) || String(c.verify || '').trim()) continue;
+  c.verify = SEARCH_URL(c.example || c.term);
+}
+
 const CARD_SOURCE_HERO = learnSourceHero(keptCards, 'source');
 const QUOTE_SOURCE_HERO = learnSourceHero(keptQuotes, 'src');
 
@@ -943,5 +1055,6 @@ const __export = {
   // 归属推断的规则表本身也导出去，界面与审计脚本要能看见"为什么这条被判给了某个人"
   heroSourceRules: HERO_SOURCE_RULES.map((r) => ({ hero: r.hero, pattern: String(r.re.source) })),
 };
+// @platform: 双端导出，Node/打包器走 module.exports，浏览器/小程序同步脚本走 window 全局
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_DATA = __export;

@@ -1,0 +1,135 @@
+[keep 1] search BV1iw7H6AExD dm=0 cmt=4
+[keep 2] search BV142KX6VEEv dm=0 cmt=11
+[search] 淋语 hit=40 fresh=2 kept=2 total=2 queue=0
+[keep 3] search BV17Z421u7ou dm=0 cmt=7
+[keep 4] search BV1fq8je2EXq dm=0 cmt=12
+[keep 5] search BV1jt421n7fd dm=0 cmt=10
+[search] 高等淋语 hit=40 fresh=3 kept=3 total=5 queue=0
+[keep 6] search BV1NENWe2E7P dm=0 cmt=5
+[keep 7] search BV1Ur42177Ho dm=0 cmt=3
+[keep 8] search BV1nbEzzrEoU dm=0 cmt=4
+[keep 9] search BV1oZ421n7Ly dm=0 cmt=11
+[search] 淋语教程 hit=40 fresh=4 kept=4 total=9 queue=0
+[keep 10] search BV1Zz4y1671z dm=0 cmt=7
+[keep 11] search BV1TKKiz2ECw dm=0 cmt=12
+[keep 12] search BV1T9EG68EJJ dm=0 cmt=12
+[search] 淋语教学 hit=40 fresh=3 kept=3 total=12 queue=0
+[keep 13] search BV1HDM9z4EH2 dm=0 cmt=4
+[keep 14] search BV167Hkz4Ee6 dm=0 cmt=8
+[keep 15] search BV1KK421b7oz dm=0 cmt=5
+[keep 16] search BV1Yr3v6HEbh dm=0 cmt=9
+[keep 17] search BV1UE5Z6jEGS dm=0 cmt=9
+[search] 淋语考试 hit=40 fresh=6 kept=5 total=17 queue=1
+[keep 18] search BV1piyoYDEJ3 dm=0 cmt=5
+[keep 19] search BV1XF411k7Sw dm=0 cmt=9
+[keep 20] search BV15qNE6bERY dm=0 cmt=6
+[keep 21] search BV1bwHM68EUo dm=0 cmt=3
+[keep 22] search BV1AWPxzqEu5 dm=0 cmt=7
+[search] 淋语八级 hit=40 fresh=6 kept=5 total=22 queue=2
+[keep 23] search BV1Mh4y1u75v dm=0 cmt=9
+[keep 24] search BV1ub4y1D7gR dm=0 cmt=12
+[keep 25] search BV1gTJr6EEwJ dm=0 cmt=12
+[keep 26] search BV16Ua5eEE6Z dm=54 cmt=12
+[keep 27] search BV1Qw411W73S dm=0 cmt=11
+[search] 淋语十级 hit=40 fresh=5 kept=5 total=27 queue=2
+[keep 28] search BV1TVeF6PEpH dm=0 cmt=12
+[keep 29] search BV1Yu411n7yH dm=0 cmt=12
+[keep 30] search BV1oo7864ENb dm=0 cmt=12
+[search] 淋语等级 hit=40 fresh=3 kept=3 total=30 queue=2
+[keep 31] search BV15sHi6EEmF dm=0 cmt=7
+[keep 32] search BV1xJnb6yEwM dm=0 cmt=8
+[keep 33] search BV1EJ411M7qH dm=0 cmt=12
+[keep 34] search BV1Eihb6FEXJ dm=0 cmt=10
+[keep 35] search BV18fnY6eEWJ dm=0 cmt=4
+[search] 淋语模仿 hit=40 fresh=15 kept=5 total=35 queue=11
+[keep 36] search BV1AF411D7S5 dm=0 cmt=3
+[keep 37] search BV1rnUPBNErJ dm=0 cmt=7
+[keep 38] search BV1og411B7gE dm=0 cmt=6
+[keep 39] search BV113pEzTERv dm=0 cmt=6
+[keep 40] search BV1PqLB64EvE dm=0 cmt=0
+[search] 淋语模仿秀 hit=40 fresh=32 kept=5 total=40 queue=38
+[keep 41] search BV1bZBHBqEGW dm=0 cmt=12
+[keep 42] search BV1P3szeKEL6 dm=0 cmt=11
+[keep 43] search BV12ipM6FEX5 dm=0 cmt=9
+[keep 44] search BV1fLnn6VEYM dm=0 cmt=9
+[keep 45] search BV1fkHN6vEwm dm=0 cmt=4
+[search] 淋语配音 hit=40 fresh=27 kept=5 total=45 queue=60
+[keep 46] search BV1ZNnW6UER5 dm=0 cmt=7
+[keep 47] search BV1ao4y1M7K4 dm=0 cmt=1
+[keep 48] search BV1oJ41167Y6 dm=0 cmt=5
+[keep 49] search BV1kPH36REb1 dm=0 cmt=6
+[keep 50] search BV1n9NfezEeG dm=0 cmt=11
+[search] 淋语翻唱 hit=40 fresh=29 kept=5 total=50 queue=84
+[keep 51] search BV1Ay411B7wG dm=0 cmt=7
+[keep 52] search BV1j5411G7ge dm=0 cmt=12
+[keep 53] search BV17Bnb6aEit dm=0 cmt=3
+[keep 54] search BV14z411i7fb dm=0 cmt=11
+[keep 55] search BV1ty4y1n7Fd dm=0 cmt=5
+[search] 淋语对话 hit=40 fresh=13 kept=5 total=55 queue=92
+[keep 56] search BV1xs4y1S7kX dm=0 cmt=4
+[keep 57] search BV1aG4y1j7sy dm=0 cmt=8
+[keep 58] search BV18MtneKEN1 dm=0 cmt=9
+[keep 59] search BV1KRLEzpE38 dm=0 cmt=12
+[keep 60] search BV18LEX6mEQR dm=0 cmt=6
+[search] 淋语语录 hit=40 fresh=9 kept=5 total=60 queue=96
+[keep 61] search BV1JY4y1f7Qn dm=90 cmt=8
+[keep 62] search BV1uZg5zTERM dm=0 cmt=9
+[keep 63] search BV1wAGgzLEkZ dm=0 cmt=10
+[search] 淋语大全 hit=40 fresh=3 kept=3 total=63 queue=96
+[keep 64] search BV1fbHg6UEQd dm=0 cmt=1
+[keep 65] search BV1sYRnYVE7B dm=0 cmt=3
+[keep 66] search BV1PY4y1G7Bv dm=0 cmt=9
+[keep 67] search BV1P7yZYXE9A dm=0 cmt=3
+[keep 68] search BV13giFBVEdv dm=0 cmt=6
+[search] 淋语词典 hit=40 fresh=15 kept=5 total=68 queue=106
+[keep 69] search BV1RSVh6jEGM dm=0 cmt=7
+[keep 70] search BV1Ki421r7vU dm=0 cmt=10
+[keep 71] search BV1DCn16AEj9 dm=0 cmt=2
+[keep 72] search BV1Xg411i7ub dm=0 cmt=4
+[keep 73] search BV1zBHN6MEia dm=0 cmt=0
+[search] 淋语词汇 hit=40 fresh=7 kept=5 total=73 queue=108
+[keep 74] search BV1kL4y1L79s dm=0 cmt=9
+[keep 75] search BV1YL411o72k dm=0 cmt=3
+[keep 76] search BV1zJ4m1Y7n8 dm=0 cmt=8
+[keep 77] search BV1BG4y147hf dm=0 cmt=6
+[keep 78] search BV1fiaxziENj dm=0 cmt=4
+[search] 淋语句式 hit=40 fresh=19 kept=5 total=78 queue=122
+[keep 79] search BV1MQ4y1m7xw dm=0 cmt=7
+[keep 80] search BV1Tb4y1L7eB dm=0 cmt=12
+[keep 81] search BV1GhJNzKE8U dm=0 cmt=3
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=784303780&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=784303780&sort=2&ps=20&pn=1
+[keep 82] search BV1h24y1P7BH dm=0 cmt=0
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=33225641&sort=2&ps=20&pn=2
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=33225641&sort=2&ps=20&pn=2
+[keep 83] search BV1rW41127QK dm=0 cmt=8
+[search] 淋语语法 hit=40 fresh=27 kept=5 total=83 queue=144
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=116715568503351&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=116715568503351&sort=2&ps=20&pn=1
+[keep 84] search BV1AoEg6SEW4 dm=0 cmt=0
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=538440526&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=538440526&sort=2&ps=20&pn=1
+[keep 85] search BV1ci4y167y3 dm=0 cmt=0
+[search] 淋语入门 hit=40 fresh=2 kept=2 total=85 queue=144
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=84154692&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=84154692&sort=2&ps=20&pn=1
+[keep 86] search BV1g7411v7MT dm=0 cmt=0
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=714569120&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=714569120&sort=2&ps=20&pn=1
+[keep 87] search BV1kX4y1V7fR dm=0 cmt=0
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=313400248&sort=2&ps=20&pn=2
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=313400248&sort=2&ps=20&pn=2
+[keep 88] search BV1hP41117Pi dm=0 cmt=10
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=115447462631563&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=115447462631563&sort=2&ps=20&pn=1
+[keep 89] search BV1GXsUzBEWE dm=0 cmt=0
+[search] 淋语学习 hit=40 fresh=4 kept=4 total=89 queue=144
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=1201524535&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=1201524535&sort=2&ps=20&pn=1
+[keep 90] search BV1xF4m1V7Vm dm=0 cmt=0
+[search] 学淋语 hit=40 fresh=1 kept=1 total=90 queue=144
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=117452138617529&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=117452138617529&sort=2&ps=20&pn=1
+[keep 91] search BV1BTJb6fEuG dm=0 cmt=0
+  [412/429] backoff 5000ms https://api.bilibili.com/x/v2/reply?type=1&oid=113751588083416&sort=2&ps=20&pn=1
+  [412/429] backoff 10000ms https://api.bilibili.com/x/v2/reply?type=1&oid=113751588083416&sort=2&ps=20&pn=1

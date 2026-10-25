@@ -61,7 +61,7 @@ async function view(bv) {
     }
     await new Promise((r) => setTimeout(r, 400));
   }
-  const p = path.join(__dirname, '..', 'hero5_evidence.json');
+  const p = path.join(__dirname, '..', 'evidence', 'hero5_evidence.json');
   fs.writeFileSync(p, JSON.stringify(evidence, null, 1), 'utf8');
   console.log('evidence ->', p, evidence.length);
 })();

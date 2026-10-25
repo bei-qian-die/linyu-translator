@@ -1,0 +1,78 @@
+<view class="page theme-{{theme}} page-custom-nav" style="padding-top:{{navTop}}px;">
+  <nav-bar status-bar="{{statusBar}}" nav-bar-h="{{navBarH}}" />
+
+  <view class="eyebrow">
+    <view class="eyebrow-left"><text>中文</text><text class="eyebrow-arrow">→</text><text>淋语</text></view>
+    <text class="eyebrow-right">本地 · 离线</text>
+  </view>
+
+  <view class="headline rise">把普通话<view class="hl-line">翻译成淋语<text class="pt-dot">。</text></view></view>
+
+  <view class="field">
+    <view class="field-meta">
+      <view class="field-tools">
+        <text class="field-label">原文</text>
+        <text class="field-op" bindtap="pasteInput">粘贴</text>
+        <text wx:if="{{inputLength}}" class="field-op" bindtap="clearInput">清空</text>
+      </view>
+      <text class="field-count">{{inputLength}} / {{maxLen}}</text>
+    </view>
+    <textarea
+      class="input-area"
+      value="{{input}}"
+      placeholder="写一句普通话，翻译成淋语"
+      placeholder-class="input-placeholder"
+      maxlength="{{maxLen}}"
+      show-confirm-bar="{{false}}"
+      cursor-spacing="30"
+      confirm-type="done"
+      disable-default-padding="{{true}}"
+      bindinput="onInput"
+      bindconfirm="doTranslate"
+    />
+  </view>
+
+  <scroll-view class="samples" scroll-x enhanced show-scrollbar="{{false}}">
+    <view class="samples-inner">
+      <text class="samples-label">试试</text>
+      <view
+        class="sample"
+        wx:for="{{samples}}"
+        wx:key="*this"
+        data-text="{{item}}"
+        bindtap="useSample"
+      >{{item}}</view>
+    </view>
+  </scroll-view>
+
+  <button
+    class="btn-primary translate-btn"
+    hover-class="cta-hover"
+    disabled="{{!inputTrimmed}}"
+    bindtap="doTranslate"
+  >
+    <text>翻 译</text>
+    <text class="cta-heart">♥</text>
+  </button>
+
+  <view class="result">
+    <view class="result-head">
+      <text class="result-label">淋语结果</text>
+      <view class="live {{liveOn ? 'on' : ''}}" bindtap="toggleLive" aria-role="button" aria-label="实时预览开关">
+        <text class="live-dot"></text>
+        <text class="live-label">实时预览</text>
+        <text class="live-state">{{liveOn ? '开' : '关'}}</text>
+      </view>
+    </view>
+    <text class="result-text {{output ? '' : 'is-hint'}}" user-select="{{true}}">{{output || hint}}</text>
+    <view wx:if="{{output}}" class="result-foot">
+      <text class="result-note">{{outputLength}} 字 · {{isPreview ? '预览不记入历史' : '已写入本机历史'}}</text>
+      <view class="result-actions">
+        <view class="result-act" hover-class="act-hover" bindtap="copyOutput">复制</view>
+        <button class="result-act" hover-class="act-hover" open-type="share">分享</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="local-note">纯本地翻译 · {{counts.words}} 词条 · {{counts.rules}} 句式</view>
+</view>

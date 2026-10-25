@@ -1,0 +1,243 @@
+<view class="page theme-{{theme}} page-custom-nav" style="padding-top:{{navTop}}px;">
+  <nav-bar status-bar="{{statusBar}}" nav-bar-h="{{navBarH}}" />
+
+  <view class="eyebrow">
+    <view class="eyebrow-left"><text>LEXICON</text><text class="eyebrow-mark">/</text><text>词库</text></view>
+    <text class="eyebrow-right">可溯源</text>
+  </view>
+
+  <view class="page-title">查一个词，<view class="pt-line">看它的来路<text class="pt-dot">。</text></view></view>
+  <view class="page-sub">共 {{counts.words}} 词条 · {{counts.rules}} 句式 · {{counts.cards}} 词卡 · {{counts.quotes}} 名言 · {{counts.heroes}} 人物</view>
+
+  <view class="search-box">
+    <view class="search-ico"></view>
+    <input
+      class="search-input"
+      value="{{keyword}}"
+      placeholder="{{placeholder}}"
+      placeholder-class="placeholder"
+      confirm-type="search"
+      bindinput="onSearch"
+    />
+    <text wx:if="{{keyword}}" class="search-clear" bindtap="clearSearch">✕</text>
+  </view>
+
+  <view class="tabs">
+    <view
+      class="tab {{tab === item.key ? 'on' : ''}}"
+      wx:for="{{tabs}}"
+      wx:key="key"
+      data-key="{{item.key}}"
+      bindtap="switchTab"
+    >
+      <text class="tab-label">{{item.label}}</text>
+      <text class="tab-count">{{item.count}}</text>
+    </view>
+  </view>
+
+  <scroll-view wx:if="{{tab === 'cards'}}" class="filter-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+    <view class="filter-row">
+      <view
+        class="chip {{cardType === item.key ? 'on' : ''}}"
+        wx:for="{{cardFilters}}"
+        wx:key="key"
+        data-key="{{item.key}}"
+        bindtap="changeCardType"
+      >{{item.label}}<text class="chip-count">{{item.count}}</text></view>
+    </view>
+  </scroll-view>
+
+  <block wx:if="{{tab === 'heroes'}}">
+    <scroll-view class="filter-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="filter-row">
+        <view
+          class="chip {{heroGroup === item.key ? 'on' : ''}}"
+          wx:for="{{heroGroups}}"
+          wx:key="key"
+          data-key="{{item.key}}"
+          bindtap="changeHeroGroup"
+        >{{item.label}}<text class="chip-count">{{item.count}}</text></view>
+      </view>
+    </scroll-view>
+    <scroll-view wx:if="{{heroGroup === 'game' && heroZones.length}}" class="filter-scroll" scroll-x enhanced show-scrollbar="{{false}}">
+      <view class="filter-row">
+        <view class="chip {{heroZone === '' ? 'on' : ''}}" data-key="all" bindtap="changeHeroZone">全部分区</view>
+        <view
+          class="chip {{heroZone === item.key ? 'on' : ''}}"
+          wx:for="{{heroZones}}"
+          wx:key="key"
+          data-key="{{item.key}}"
+          bindtap="changeHeroZone"
+        >{{item.label}}<text class="chip-count">{{item.count}}</text></view>
+      </view>
+    </scroll-view>
+  </block>
+
+  <view wx:if="{{!ready}}" class="skeleton">
+    <view class="sk-row" wx:for="{{[1, 2, 3, 4, 5]}}" wx:key="*this">
+      <view class="sk-line w40"></view>
+      <view class="sk-line w70"></view>
+    </view>
+  </view>
+
+  <block wx:if="{{ready}}">
+  <view wx:if="{{tab === 'words'}}" class="word-list">
+    <view class="word-card" wx:for="{{shown}}" wx:key="zh">
+      <view class="word-main">
+        <text class="w-no">{{item.no}}</text>
+        <text class="word-zh">
+          <block wx:if="{{item.zhParts}}">
+            <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.zhParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+          </block>
+          <block wx:else>{{item.zh}}</block>
+        </text>
+        <view class="word-right">
+          <text class="word-arrow">→</text>
+          <text class="word-ly">
+            <block wx:if="{{item.lyParts}}">
+              <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.lyParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+            </block>
+            <block wx:else>{{item.linyu}}</block>
+          </text>
+        </view>
+      </view>
+      <view wx:if="{{item.alias}}" class="word-alias">别名：{{item.alias}}</view>
+      <view wx:if="{{item.sense}}" class="word-sense">{{item.sense}}</view>
+      <view wx:if="{{item.pop || item.source}}" class="word-meta">
+        <text wx:if="{{item.pop}}" class="h-tag">{{item.pop}}流行</text>
+        <text wx:if="{{item.source}}" class="word-src">{{item.source}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:elif="{{tab === 'rules'}}" class="rule-list">
+    <view class="rule-card" wx:for="{{shown}}" wx:key="id">
+      <view class="rule-head">
+        <text class="rule-id">#{{item.id}}</text>
+        <text wx:if="{{item.note}}" class="h-tag">{{item.note}}</text>
+        <text wx:if="{{item.scene}}" class="h-tag">{{item.scene}}</text>
+      </view>
+      <view class="rule-row">
+        <text class="rule-label">匹配</text>
+        <text class="rule-pattern">
+          <block wx:if="{{item.patternParts}}">
+            <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.patternParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+          </block>
+          <block wx:else>{{item.pattern}}</block>
+        </text>
+      </view>
+      <view class="rule-row">
+        <text class="rule-label accent">替换</text>
+        <text class="rule-template">
+          <block wx:if="{{item.templateParts}}">
+            <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.templateParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+          </block>
+          <block wx:else>{{item.template}}</block>
+        </text>
+      </view>
+      <view wx:if="{{item.examples}}" class="rule-example">例：{{item.examples}}</view>
+      <view wx:if="{{item.src}}" class="lore-source">{{item.src}}</view>
+    </view>
+  </view>
+
+  <view wx:elif="{{tab === 'cards'}}" class="lore-list">
+    <view class="lore-card" wx:for="{{shown}}" wx:key="id">
+      <view class="lore-card-head">
+        <text class="fc-type">{{item.typeLabel}}</text>
+        <text wx:if="{{item.hero}}" class="h-tag">@{{item.hero}}</text>
+      </view>
+      <view class="lore-term">
+        <block wx:if="{{item.termParts}}">
+          <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.termParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+        </block>
+        <block wx:else>{{item.term}}</block>
+      </view>
+      <view wx:if="{{item.aliasesText}}" class="lore-alias">又名：{{item.aliasesText}}</view>
+      <view class="lore-meaning">
+        <block wx:if="{{item.meaningParts}}">
+          <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.meaningParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+        </block>
+        <block wx:else>{{item.meaning}}</block>
+      </view>
+      <view wx:if="{{item.example}}" class="lore-example">例：{{item.example}}</view>
+      <view wx:if="{{item.detail}}" class="lore-detail">{{item.detail}}</view>
+      <view wx:if="{{item.source}}" class="lore-source">{{item.source}}</view>
+    </view>
+  </view>
+
+  <view wx:elif="{{tab === 'quotes'}}" class="quote-list">
+    <view
+      class="quote-card"
+      wx:for="{{shown}}"
+      wx:key="id"
+      data-text="{{item.text}} —— {{item.author}}"
+      bindlongpress="copyQuote"
+    >
+      <view class="q-text">
+        <block wx:if="{{item.textParts}}">
+          <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.textParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+        </block>
+        <block wx:else>{{item.text}}</block>
+      </view>
+      <view class="q-meta">
+        <text class="q-author">—— {{item.author}}</text>
+        <text wx:if="{{item.src}}" class="q-src">{{item.src}}</text>
+      </view>
+    </view>
+    <view class="longpress-hint">长按名言可复制</view>
+  </view>
+
+  <view wx:elif="{{tab === 'heroes'}}" class="hero-list">
+    <view
+      class="hero-card"
+      wx:for="{{shown}}"
+      wx:key="id"
+      data-id="{{item.id}}"
+      hover-class="tap-soft"
+      bindtap="openHero"
+    >
+      <view class="hero-avatar">{{item.initial}}</view>
+      <view class="hero-body">
+        <view class="hero-name">
+          <text class="h-name">
+            <block wx:if="{{item.nameParts}}">
+              <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.nameParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+            </block>
+            <block wx:else>{{item.name}}</block>
+          </text>
+          <text class="h-rank">{{item.rank}}</text>
+        </view>
+        <view wx:if="{{item.alias}}" class="hero-alias">又名：{{item.alias}}</view>
+        <view class="hero-intro">
+          <block wx:if="{{item.introParts}}">
+            <text class="{{p.h ? 'hl' : ''}}" wx:for="{{item.introParts}}" wx:for-item="p" wx:key="k">{{p.t}}</text>
+          </block>
+          <block wx:else>{{item.intro}}</block>
+        </view>
+        <view wx:if="{{item.tags.length}}" class="hero-tags">
+          <text class="h-tag" wx:for="{{item.tags}}" wx:for-item="tag" wx:key="*this">#{{tag}}</text>
+        </view>
+        <view class="hero-more">查看详情 →</view>
+      </view>
+    </view>
+  </view>
+
+  <empty-state
+    wx:if="{{!shown.length}}"
+    title="{{emptyTitle}}"
+    sub="{{emptySub}}"
+    show-reset="{{keyword}}"
+    bindreset="clearSearch"
+  />
+
+  <list-foot
+    wx:if="{{shown.length}}"
+    has-more="{{hasMore}}"
+    rest="{{rest}}"
+    matched="{{matched}}"
+    bindmore="loadMore"
+  />
+  </block>
+
+  <view class="tip">内容整理自公开语料，仅供娱乐 · 只读浏览</view>
+</view>

@@ -1,0 +1,930 @@
+0	0	1177	低	这么→介么	src=Y	rule=N	id=N	tier=none	var={"介么":0}
+   []
+0	0	374	低	那么→挪么	src=Y	rule=N	id=N	tier=none	var={"挪么":0}
+   []
+147	3	32166	高	的→滴	src=Y	rule=N	id=N	tier=corpus	var={"滴":147}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】从稻萋版本的流浪武士，到枫丹版本水仙十字系列任务里出现的那个恩肖爷爷（白胡子肌肉大叔真素让本可垂涎欲滴惹[喜欢]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】本可人儿怎么会刷到如此阴乱的视频🙄💅被吓出130滴泪了","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】我滴妈新酱还做起萌学园的换脸了我真的喷了","match":"strict"}]
+341	47	4639	高	真→珍	src=Y	rule=N	id=N	tier=corpus	var={"珍":341}
+   [{"file":"corpus-bili-20261009073309.txt","text":"#茜特菈莉 珍珠音色#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】集美啊🙄最好珍素指南惹，有点像是通讯录都难以释出的文案🙄","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】且看且珍惜吧，你雅在抖音发的已经被拿下了","match":"strict"}]
+110	2	9520	高	好→吼	src=Y	rule=N	id=N	tier=corpus	var={"吼":110}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】我的玛雅，最好是直男吼，我都写不出来这么精巧的文案[doge]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】感谢妈妈桑吼，刚想给朋友讲解什么是淋系[喜欢]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】你雅的音道尊的很百变吼，我还以为是铁T走出来救火了。","match":"strict"}]
+1	0	307	低	朋友→盆友	src=N	rule=N	id=N	tier=literal	var={"盆友":1}
+   [{"file":"corpus6.txt","text":"男盆友？？","match":"strict"}]
+1	0	30	低	男朋友→男盆友	src=N	rule=N	id=N	tier=literal	var={"男盆友":1}
+   [{"file":"corpus6.txt","text":"男盆友？？","match":"strict"}]
+0	0	35	低	女朋友→女盆友	src=Y	rule=N	id=N	tier=none	var={"女盆友":0}
+   []
+225	2	8499	高	人→银	src=Y	rule=N	id=N	tier=corpus	var={"银":225}
+   [{"file":"corpus-bili-20261009073309.txt","text":"#猫尾酒馆地下室卖银窝点被端#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"#罗莎莉亚手机中有大量银秽自拍#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】我的银水，绽放！！！！！！！！！！！！","match":"strict"}]
+0	0	89	低	同学→同鞋	src=Y	rule=N	id=N	tier=none	var={"同鞋":0}
+   []
+2	0	784	低	老师→老湿	src=N	rule=N	id=N	tier=literal	var={"老湿":2}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【简介】想了解更多男性快乐开发知识，关注置顶动态“石老湿入口”","match":"strict"},{"file":"corpus6.txt","text":"看三上老湿大作","match":"strict"}]
+7	0	66	低	美女→小仙女	src=N	rule=N	id=N	tier=literal	var={"小仙女":7}
+   [{"file":"corpus7.txt","text":"肘肘小仙女公主高音秒杀一切","match":"strict"},{"file":"corpus8.raw.txt","text":"谢谢小仙女[脱单doge]你的喜欢也是我的动力，一起坚持运动[给心心]","match":"strict"},{"file":"corpus8f.txt","text":"谢谢小仙女[脱单doge]你的喜欢也是我的动力，一起坚持运动[给心心]","match":"strict"}]
+0	0	34	低	帅哥→帅锅	src=Y	rule=N	id=N	tier=none	var={"帅锅":0}
+   []
+0	0	103	低	哥哥→锅锅	src=Y	rule=N	id=N	tier=none	var={"锅锅":0}
+   []
+0	0	101	低	爸爸→耙耙	src=Y	rule=N	id=N	tier=none	var={"耙耙":0}
+   []
+0	0	65	低	恋爱→练爱	src=Y	rule=N	id=N	tier=none	var={"练爱":0}
+   []
+297	4	24	高	想念→香	src=Y	rule=N	id=N	tier=corpus	var={"香":297}
+   [{"file":"corpus-bili-20261009073309.txt","text":"配置：2+无工玛薇卡，0+0奶奶万叶，0+若水甘雨，1+1基尼奇调香师","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】淋砂角色PV——「十三香」","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】β香来支持了","match":"strict"}]
+256	1	5564	高	看→康	src=Y	rule=N	id=N	tier=corpus	var={"康":256}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【UP】祝健康-","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"#人类生殖 #怀孕 #受精 #胚胎发育 #胎儿发育 #人体生物学 #生殖健康 #科学教育 #医学科普 #动画科普","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】健康平安幸福快乐长寿","match":"strict"}]
+98	1	3756	中	说→缩	src=Y	rule=N	id=N	tier=corpus	var={"缩":98}
+   [{"file":"corpus-bili-20261009073309.txt","text":"好久没更新淋神噜，浓缩的一期！","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】时长又缩短130个小时，有点像谢了[滑稽]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】好强的收缩能力[少女乐队的呐喊表情包_哈？]","match":"strict"}]
+63	0	1441	中	玩→丸	src=Y	rule=N	id=N	tier=weak	var={"丸":63}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】阿黑丸画风","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】阿黑丸画风","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】区别对待这一块，酒神精准找到本体，风丸被替身占了一辈子😭","match":"strict"}]
+0	0	27	低	激动→鸡冻	src=Y	rule=N	id=N	tier=none	var={"鸡冻":0}
+   []
+0	0	74	低	讨厌→淘厌	src=Y	rule=N	id=N	tier=none	var={"淘厌":0}
+   []
+8	0	7	低	亲亲→么么	src=N	rule=N	id=N	tier=literal	var={"么么":8}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】么么么么","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】爱你哦。么么哒","match":"strict"},{"file":"corpus11.raw.txt","text":"么么哒！","match":"strict"}]
+86	11	19	中	抱抱→啾咪	src=N	rule=N	id=N	tier=corpus	var={"啾咪":86}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】封面好米，我也想啾咪裹裹","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】我的评论也没了惹，🍒尊的玩平时挺大才会吸入视频惹啾咪","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"婊贝们看完顺手点个赞吧啾咪","match":"strict"}]
+46	6	113	中	嘻嘻→吸吸	src=N	rule=Y	id=N	tier=corpus	var={"吸吸":46}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】林雅文解解的配音值得很多很好的评价惹，吸吸","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"吸吸，有什么话留到匹诺c^m尼再说噜。","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】吸吸吸，你已被锁定噜","match":"strict"}]
+0	0	12918	低	哈哈→哈吼	src=Y	rule=N	id=N	tier=none	var={"哈吼":0}
+   []
+3	0	164	低	宝宝→包包	src=N	rule=N	id=N	tier=literal	var={"包包":3}
+   [{"file":"corpus6.txt","text":"现在看这个包包也还是很好看","match":"strict"},{"file":"corpus6.txt","text":"回复 @包包子233 :onlyfan叫什么啊","match":"strict"},{"file":"corpus8.raw.txt","text":"她没听懂啊，他不知道人家再说包包沉","match":"strict"}]
+0	0	1101	低	感觉→赶脚	src=Y	rule=N	id=N	tier=none	var={"赶脚":0}
+   []
+0	0	177	低	厉害→厉海	src=Y	rule=Y	id=N	tier=rule-only	var={"厉海":0}
+   []
+0	0	90	低	完美→丸美	src=Y	rule=N	id=N	tier=none	var={"丸美":0}
+   []
+0	0	113	低	明白→名白	src=Y	rule=N	id=N	tier=none	var={"名白":0}
+   []
+0	0	353	低	一起→一企	src=Y	rule=N	id=N	tier=none	var={"一企":0}
+   []
+0	0	42	低	心疼→心藤	src=Y	rule=N	id=N	tier=none	var={"心藤":0}
+   []
+133	3	1750	高	吃→呲	src=Y	rule=N	id=N	tier=corpus	var={"呲":133}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】哇啊，本可居然上素材了惹[星星眼]跟着姐姐运气好好的惹[呲牙]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】亿万中唯一，考了个，28分[呲牙]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】亿万中唯一，考了个，28分[呲牙]","match":"strict"}]
+134	2	107	高	傻→莎	src=Y	rule=N	id=N	tier=corpus	var={"莎":134}
+   [{"file":"corpus-bili-20261009073309.txt","text":"#丽莎电击play深渊法师#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"#罗莎莉亚手机中有大量银秽自拍#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】根本就没有这种剧情[飞莎儿_烈焰红唇]","match":"strict"}]
+26	1	334	中	狗→菇	src=Y	rule=N	id=N	tier=corpus	var={"菇":26}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】这豌豆射手让我想起那个想要大喷菇ntr本子的那个图了[微笑]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】这豌豆射手让我想起那个想要大喷菇ntr本子的那个图了[微笑]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】梵菇这个牙子，不要挑逗豆包","match":"strict"}]
+0	0	28	低	生日→笙日	src=Y	rule=N	id=N	tier=none	var={"笙日":0}
+   []
+0	0	121	低	快乐→块乐	src=Y	rule=N	id=N	tier=none	var={"块乐":0}
+   []
+58	2	576	中	哦→噢	src=Y	rule=N	id=N	tier=corpus	var={"噢":58}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】UP主加油！看好你噢~","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【UP】棠梨煎雪碧噢","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】UP主加油！看好你噢~","match":"strict"}]
+0	0	1790	低	蔡依林→天后本后	src=Y	rule=N	id=N	tier=none	var={"天后本后":0}
+   []
+0	0	107	低	唱歌→昌歌	src=Y	rule=N	id=N	tier=none	var={"昌歌":0}
+   []
+0	0	92	低	跳舞→跳伍	src=Y	rule=N	id=N	tier=none	var={"跳伍":0}
+   []
+0	0	2	低	逛街→逛嘎	src=Y	rule=N	id=N	tier=none	var={"逛嘎":0}
+   []
+0	0	8	低	旅游→旅油	src=Y	rule=N	id=N	tier=none	var={"旅油":0}
+   []
+0	0	54	低	照片→照骗	src=Y	rule=N	id=N	tier=none	var={"照骗":0}
+   []
+0	0	7	低	自拍→自怕	src=Y	rule=N	id=N	tier=none	var={"自怕":0}
+   []
+0	0	12	低	减肥→简肥	src=Y	rule=N	id=N	tier=none	var={"简肥":0}
+   []
+0	0	12	低	奶茶→乃茶	src=Y	rule=N	id=N	tier=none	var={"乃茶":0}
+   []
+0	0	5	低	加班→鸡班	src=Y	rule=N	id=N	tier=none	var={"鸡班":0}
+   []
+0	0	36	低	考试→靠试	src=Y	rule=N	id=N	tier=none	var={"靠试":0}
+   []
+0	0	73	低	作业→左业	src=Y	rule=N	id=N	tier=none	var={"左业":0}
+   []
+0	0	25	低	工资→公姿	src=Y	rule=N	id=N	tier=none	var={"公姿":0}
+   []
+0	0	22	低	上班→尚班	src=Y	rule=N	id=N	tier=none	var={"尚班":0}
+   []
+0	0	56	低	睡觉→水觉	src=Y	rule=N	id=N	tier=none	var={"水觉":0}
+   []
+0	0	9	低	起床→床起	src=Y	rule=N	id=N	tier=none	var={"床起":0}
+   []
+0	0	7	低	晚安→碗安	src=N	rule=Y	id=N	tier=rule-only	var={"碗安":0}
+   []
+0	0	2	低	早安→枣安	src=N	rule=N	id=N	tier=none	var={"枣安":0}
+   []
+0	0	0	低	亲亲抱抱→啾咪么么	src=N	rule=N	id=N	tier=none	var={"啾咪么么":0}
+   []
+343	18	125	高	天才→地才	src=N	rule=Y	id=N	tier=corpus	var={"地才":343}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】地才演唱会贡献了不少淋图，我当时一直以为大部分淋图是p的，直到我看到了b站上看到了地才演唱会的实况。","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"演唱会的舞台总是有限，但地才舞却能传达出无尽的臆想。","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】从大沙田一路配音到现在，有很多网友对雅文进行了很多很好的评价，他们说林雅文不是天才，林雅文是地才。这世界上没有很","match":"strict"}]
+399	20	61	高	艺人→淋淋	src=N	rule=N	id=N	tier=corpus	var={"淋淋":399}
+   [{"file":"corpus-bili-20261009073309.txt","text":"妮露 - 淋淋（CV：林雅文）","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"八重神子 - 淋淋（CV：林雅文）","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】什么，是鸡屎学长干的吗，那又怎样，他们不过衬托淋淋是不移不变的背景罢惹[藏狐]","match":"strict"}]
+399	20	81	高	明星→淋淋	src=N	rule=N	id=N	tier=corpus	var={"淋淋":399}
+   [{"file":"corpus-bili-20261009073309.txt","text":"妮露 - 淋淋（CV：林雅文）","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"八重神子 - 淋淋（CV：林雅文）","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】什么，是鸡屎学长干的吗，那又怎样，他们不过衬托淋淋是不移不变的背景罢惹[藏狐]","match":"strict"}]
+10	1	166	低	恶心→恶熏	src=N	rule=N	id=N	tier=corpus	var={"恶熏":10}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】玛雅，那个偷梗节奏榜被搬到xhs去了，xhs高贵双标厕妹在发癫骂男同恶熏，本来就是小众文化她们恶不恶心nbcs，","match":"strict"},{"file":"corpus11.raw.txt","text":"呕，喜术婆恶熏惹","match":"strict"},{"file":"corpus11f.txt","text":"呕，喜术婆恶熏惹","match":"strict"}]
+169	3	2415	高	爱→艾	src=Y	rule=N	id=N	tier=corpus	var={"艾":169}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】艾你惹[星星眼]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"#艾尔海森被爆与同性朋友同居#","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】看封面我还以为是艾米莉亚呢","match":"strict"}]
+6	0	44	低	惊艳→精咽	src=N	rule=N	id=N	tier=literal	var={"精咽":6}
+   [{"file":"corpus11.raw.txt","text":"闭嘴精咽","match":"strict"},{"file":"corpus11f.txt","text":"闭嘴精咽","match":"strict"}]
+5	0	9	低	这样子→酱紫	src=N	rule=Y	id=N	tier=literal	var={"酱紫":5}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】酱紫剪？","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】酱紫剪","match":"strict"},{"file":"corpus11.raw.txt","text":"酱紫押？","match":"strict"}]
+20	0	137	中	本人→可人儿	src=N	rule=N	id=N	tier=literal	var={"可人儿":20}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】从最后问答环节直男的谈吐来看，真的是一位有逻辑有思考的可人儿，合理怀疑是你杰的直男劫。","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】本可人儿怎么会刷到如此阴乱的视频🙄💅被吓出130滴泪了","match":"strict"},{"file":"corpus3.txt","text":"跟滨崎步没什么关系。台湾那边有可人儿的说法，本可就是本可人儿的意思，参考康熙","match":"strict"}]
+0	0	7	低	局势→橘势	src=N	rule=N	id=N	tier=none	var={"橘势":0}
+   []
+7	0	1	低	互撕→扯头花	src=N	rule=Y	id=N	tier=literal	var={"扯头花":7}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】先是米提亚打星反应却是精通模板，后是瓦列里四星，和北斗大姐扯头花，你们的至冬很美，靴靴","match":"strict"}]
+7	0	28	低	吵架→扯头花	src=N	rule=Y	id=N	tier=literal	var={"扯头花":7}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】先是米提亚打星反应却是精通模板，后是瓦列里四星，和北斗大姐扯头花，你们的至冬很美，靴靴","match":"strict"}]
+1	0	0	低	仙境→摸仙堡	src=N	rule=N	id=N	tier=literal	var={"摸仙堡":1}
+   [{"file":"corpus5.txt","text":"美丽摸仙堡","match":"strict"}]
+448	14	911	高	淋语→通讯录	src=N	rule=Y	id=N	tier=corpus	var={"通讯录":448}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】怎么姐妹们都在做王维的视频？我维有点像通讯录新晋男明星惹","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】不敢相信我维不素通讯录新晋男女王，伤害控制人设特效全都在致敬我阴淡淡的仙气，真素美cry[喜欢]","match":"strict"}]
+4	0	2569	低	心→燻	src=N	rule=N	id=N	tier=weak	var={"燻":4}
+   []
+110	5	3570	高	子→柱	src=Y	rule=N	id=N	tier=corpus	var={"柱":110}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】这诅咒石柱难不成真长这样？","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】这诅咒石柱难不成真长这样？","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【简介】万顷的奶柱，我从小嘬到大","match":"strict"}]
+5	0	652	低	这样→酱紫	src=N	rule=Y	id=N	tier=literal	var={"酱紫":5}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】酱紫剪？","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】酱紫剪","match":"strict"},{"file":"corpus11.raw.txt","text":"酱紫押？","match":"strict"}]
+4	0	14	低	好开心→豪嗨心	src=N	rule=N	id=N	tier=literal	var={"豪嗨心":4}
+   []
+3	0	3	低	流鼻涕→牛皮涕	src=N	rule=N	id=N	tier=literal	var={"牛皮涕":3}
+   []
+6	3	675	低	但是→氮素	src=N	rule=N	id=N	tier=corpus	var={"氮素":6}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【简介】【13+吸入警告】淋系视频，仅供淋王星婊贝本质骑士娱乐，路人甲请绕道，不绕道也NBCS氮素最好带上防吸装置厚。 ","match":"strict"},{"file":"corpus11.raw.txt","text":"小动画还可以，氮素背景故事有点像一年级课本","match":"strict"},{"file":"corpus11f.txt","text":"小动画还可以，氮素背景故事有点像一年级课本","match":"strict"}]
+3	0	24	低	派对→趴体	src=N	rule=N	id=N	tier=literal	var={"趴体":3}
+   []
+28	0	159	中	完了→丸辣	src=N	rule=N	id=N	tier=literal	var={"丸辣":28}
+   [{"file":"corpus11.raw.txt","text":"丸辣！","match":"strict"},{"file":"corpus6.txt","text":"丸辣！","match":"strict"},{"file":"corpus6.txt","text":"儿子：丸辣！ 爸爸：哪里的事","match":"strict"}]
+1	1	92	低	滚→衮	src=Y	rule=N	id=N	tier=corpus	var={"衮":1}
+   [{"file":"corpus5.txt","text":"说惹关你什么事厚，蠢货速速衮出这个舞台靴靴","match":"strict"}]
+0	0	152	低	说话→嗦话	src=Y	rule=Y	id=N	tier=rule-only	var={"嗦话":0}
+   []
+15	3	466	低	音乐→阴乐	src=N	rule=N	id=N	tier=corpus	var={"阴乐":15}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【简介】BGM来源：【【哈基北阴乐】圣诞要你命-哔哩哔哩】 https://b23.tv/bdbFG6j","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【视频】我维怎么听个阴乐都那么妖娆","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】终于更了[翻白眼][翻白眼]介次β景阴乐真素霍尼惹，欢迎回归鲁💅💅💋💋","match":"strict"}]
+16	0	3	低	死啦→鼠啦	src=N	rule=N	id=N	tier=literal	var={"鼠啦":16}
+   [{"file":"corpus5.txt","text":"啊啊啊啊这bgm吓鼠啦，我霉美美报警","match":"strict"},{"file":"corpus5.txt","text":"吓鼠啦","match":"strict"},{"file":"corpus5.txt","text":"虾鼠啦","match":"strict"}]
+234	3	503	高	死了→鼠了	src=N	rule=N	id=N	tier=corpus	var={"鼠了":234}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【视频】命大也鼠了，圣水婆阴婷","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】命大也鼠了","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】玛雅，那个偷梗节奏榜被搬到xhs去了，xhs高贵双标厕妹在发癫骂男同恶熏，本来就是小众文化她们恶不恶心nbcs，","match":"strict"}]
+448	14	36	高	同性恋→通讯录	src=N	rule=Y	id=N	tier=corpus	var={"通讯录":448}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】怎么姐妹们都在做王维的视频？我维有点像通讯录新晋男明星惹","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】不敢相信我维不素通讯录新晋男女王，伤害控制人设特效全都在致敬我阴淡淡的仙气，真素美cry[喜欢]","match":"strict"}]
+27	0	65	中	男同→南通	src=N	rule=N	id=N	tier=literal	var={"南通":27}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】不行惹，南通真可怕","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】不行惹，南通真可怕","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】南通已经进军猫鼠圈了[呲牙]","match":"strict"}]
+448	14	4	高	基友→通讯录	src=N	rule=Y	id=N	tier=corpus	var={"通讯录":448}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】怎么姐妹们都在做王维的视频？我维有点像通讯录新晋男明星惹","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】不敢相信我维不素通讯录新晋男女王，伤害控制人设特效全都在致敬我阴淡淡的仙气，真素美cry[喜欢]","match":"strict"}]
+10	0	637	低	钱→大米	src=N	rule=N	id=N	tier=literal	var={"大米":10}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【UP】倔强的大米饭","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】大米饭的🥛喝了不烧心[星星眼]","match":"strict"},{"file":"corpus10.raw.txt","text":"磁带的时候听的，这首和老鼠爱大米，一个时代落寞","match":"strict"}]
+3515	186	275	高	零→淋	src=Y	rule=N	id=N	tier=corpus	var={"淋":3515}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【王者淋耀】阴者β中来 山水皆成湿","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【淋日方舟】阴胶网络你还我老公！！！！！！！！！！！！！！！！！！！！！！！！！！","match":"strict"}]
+3515	186	2243	高	林→淋	src=Y	rule=N	id=N	tier=corpus	var={"淋":3515}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【王者淋耀】阴者β中来 山水皆成湿","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【淋日方舟】阴胶网络你还我老公！！！！！！！！！！！！！！！！！！！！！！！！！！","match":"strict"}]
+39	0	53	中	降临→降淋	src=N	rule=Y	id=N	tier=literal	var={"降淋":39}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【视频】【降淋】第一期：淋贝塔初现！艾回村的性福生活，婆崎闯淋洞勇夺圣硅胶","match":"strict"},{"file":"corpus11.raw.txt","text":"降淋","match":"strict"},{"file":"corpus11.raw.txt","text":"降淋厚","match":"strict"}]
+1	0	17	低	美神降临→美神降淋	src=N	rule=Y	id=N	tier=literal	var={"美神降淋":1}
+   [{"file":"corpus3.txt","text":"美神降淋","match":"strict"},{"file":"corpus3.txt","text":"美神降淋","match":"punct-insensitive"}]
+10	1	310	低	努力→孽力	src=N	rule=N	id=N	tier=corpus	var={"孽力":10}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】孽力回馈","match":"strict"},{"file":"corpus3.txt","text":"麻烦你了解一下Oricon吧 火星天后吧 以后再来发言 靴靴 淋语起源素o吧 也不单纯素淋淋黑粉 还有淋淋铁粉的孽力回馈","match":"strict"},{"file":"corpus3.txt","text":"淋语本质就是蔡依林及其粉丝的孽力回馈，干了多少恶心人的事","match":"strict"}]
+1	0	266	低	演唱会→艳唱	src=N	rule=N	id=N	tier=literal	var={"艳唱":1}
+   [{"file":"corpus3.txt","text":"一路艳唱到现在路人甲给了我很多很好的乌干达","match":"strict"}]
+24	1	200	中	天后→宇宙之母	src=N	rule=N	id=N	tier=corpus	var={"宇宙之母":24}
+   [{"file":"corpus12.graph.txt","text":"我觉得这个改变挺好的惹，一开始我也是觉得毕竟淋语其实出来的并不好，但素淋淋自信勇敢面对，收获了很多很好的评价，现在各位佳","match":"strict"},{"file":"corpus3.txt","text":"我淋永远是宇宙之母厚","match":"strict"},{"file":"corpus3.txt","text":"宇宙之母创世从此诞生了通讯录宇宙","match":"strict"}]
+2	0	50	低	结婚→结轰	src=N	rule=N	id=N	tier=literal	var={"结轰":2}
+   [{"file":"corpus4.txt","text":"【楼兰合订本目录】 1.敌蜜和闺蜜 0:03 2.擦手机 0:21 3.iPhone手机 0:39 4.拱出去 1:28","match":"strict"},{"file":"corpus5.txt","text":"【楼兰合订本目录】 1.敌蜜和闺蜜 0:03 2.擦手机 0:21 3.iPhone手机 0:39 4.拱出去 1:28","match":"strict"}]
+23	0	7	中	分泌物→分幂物	src=N	rule=N	id=N	tier=literal	var={"分幂物":23}
+   [{"file":"corpus3.txt","text":"一些分幂物罢惹","match":"strict"},{"file":"corpus4.txt","text":"分幂物都离不开手机","match":"strict"},{"file":"corpus4.txt","text":"分幂物擦手机","match":"strict"}]
+11	0	54	低	运动→用洞	src=N	rule=Y	id=N	tier=literal	var={"用洞":11}
+   [{"file":"corpus4.txt","text":"生命在于用洞","match":"strict"},{"file":"corpus4.txt","text":"生命在于用洞","match":"strict"},{"file":"corpus4.txt","text":"生命在于用洞","match":"strict"}]
+5	0	16	低	心理咨询师→心理咨熊师	src=N	rule=N	id=N	tier=literal	var={"心理咨熊师":5}
+   [{"file":"corpus4.txt","text":"我选择心理咨熊师","match":"strict"},{"file":"corpus5.txt","text":"我选择心理咨熊师","match":"strict"},{"file":"corpus4.txt","text":"我选择心理咨熊师","match":"punct-insensitive"}]
+235	2	236	高	笔→杯	src=Y	rule=N	id=N	tier=corpus	var={"杯":235}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】简直了[粉红兔子恋与篇_干杯]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"尾巴——杯糕姐","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】星奴谷物语第18期，冬日的第一杯乌干达，婪允珍美美开吃！💅","match":"strict"}]
+8	1	17	低	气死→气鼠	src=N	rule=Y	id=N	tier=corpus	var={"气鼠":8}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】我真的不能接受，出货率起飞了但限定雅雅去了哪里，本宫歪的都是重复真的会被气鼠","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】我真的不能接受，出货率起飞了但限定雅雅去了哪里，本宫歪的都是重复真的会被气鼠","match":"strict"},{"file":"corpus3.txt","text":"应该是：气鼠惹","match":"strict"}]
+95	1	68	中	这是什么→这素在	src=N	rule=Y	id=N	tier=corpus	var={"这素在":95}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】这素在…？","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这素在？","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这素在？","match":"strict"}]
+24	1	61	中	亲爱的→我亲爱的	src=N	rule=Y	id=N	tier=corpus	var={"我亲爱的":24}
+   [{"file":"corpus11.raw.txt","text":"我亲爱的你大事不妙","match":"strict"},{"file":"corpus11f.txt","text":"我亲爱的你大事不妙","match":"strict"},{"file":"corpus12.graph.txt","text":"我亲爱的你大事不妙惹","match":"strict"}]
+1	0	102	低	美丽→美腻	src=N	rule=N	id=N	tier=literal	var={"美腻":1}
+   [{"file":"corpus3.txt","text":"天了噜uP主竞然木有去过美腻旗舰店","match":"strict"}]
+4	0	61	低	爱情→艾情	src=N	rule=N	id=N	tier=literal	var={"艾情":4}
+   [{"file":"corpus10.raw.txt","text":"艾情","match":"strict"},{"file":"corpus10f.txt","text":"艾情","match":"strict"},{"file":"corpus12.graph.txt","text":"[翻白眼]你淋只会把艾情阴藏在贝塔里不如我嘉菲女士唱的豪放","match":"strict"}]
+3	0	3	低	拉胯→拉夸	src=N	rule=N	id=N	tier=literal	var={"拉夸":3}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】什么都很好，除了苹果自带的翻译软件翻译日文真拉夸…","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】什么都很好，除了苹果自带的翻译软件翻译日文真拉夸…","match":"strict"},{"file":"corpus3.txt","text":"编舞真的是拉夸","match":"strict"}]
+2	0	48	低	弟弟→娣娣	src=N	rule=N	id=N	tier=literal	var={"娣娣":2}
+   [{"file":"corpus12.graph.txt","text":"谢谢特指玩瑶和蔡文姬的娣娣，眼睛瞎可以去跳","match":"strict"},{"file":"corpus3.txt","text":"只有你觉得塌房，娣娣","match":"strict"}]
+1	1	648	低	因为→阴为	src=N	rule=N	id=N	tier=corpus	var={"阴为":1}
+   [{"file":"corpus12.graph.txt","text":"阴为本可刚刚换源了惹，不小心让姐妹们的弹幕消失在塞纳河畔噜，如果我道歉你们会好受些吗[大哭]","match":"strict"}]
+0	0	372	低	如果→如锅	src=Y	rule=N	id=N	tier=none	var={"如锅":0}
+   []
+0	0	187	低	结果→结锅	src=Y	rule=N	id=N	tier=none	var={"结锅":0}
+   []
+0	0	37	低	苹果→苹锅	src=Y	rule=N	id=N	tier=none	var={"苹锅":0}
+   []
+0	0	15	低	水果→水锅	src=Y	rule=N	id=N	tier=none	var={"水锅":0}
+   []
+0	0	125	低	效果→效锅	src=Y	rule=N	id=N	tier=none	var={"效锅":0}
+   []
+0	0	12	低	倒霉→倒梅	src=Y	rule=N	id=N	tier=none	var={"倒梅":0}
+   []
+0	0	156	低	女孩→女银	src=Y	rule=N	id=N	tier=none	var={"女银":0}
+   []
+0	0	175	低	男人→男银	src=Y	rule=N	id=N	tier=none	var={"男银":0}
+   []
+0	0	254	低	别人→别银	src=Y	rule=N	id=N	tier=none	var={"别银":0}
+   []
+0	0	43	低	马上→码上	src=Y	rule=N	id=N	tier=none	var={"码上":0}
+   []
+0	0	37	低	那样→挪样	src=Y	rule=N	id=N	tier=none	var={"挪样":0}
+   []
+435	3	969	高	知道→造	src=Y	rule=N	id=N	tier=corpus	var={"造":435}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】个人认为上岛可能性很大，毕竟人物都已经塑造的比较完整了，然后经历的事件也到位了，现在上岛的契机也有了不是吗？比如","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】草，原来周阴婷原来有这么悠久的历史[笑哭]我还以为是最近的造物，原来只是最近出圈的","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】说是少数服从多数，但事实是所有打月结晶反应的少数都不会给只能打结晶的多数婢女好脸色看!这简直就是致敬我们璃月的m","match":"strict"}]
+2	0	368	低	声音→声阴	src=N	rule=N	id=N	tier=literal	var={"声阴":2}
+   [{"file":"corpus8.raw.txt","text":"？？？这什么声阴啊","match":"strict"},{"file":"corpus8f.txt","text":"？？？这什么声阴啊","match":"strict"}]
+13	0	54	低	闺蜜→敌蜜	src=N	rule=N	id=N	tier=literal	var={"敌蜜":13}
+   [{"file":"corpus4.txt","text":"【楼兰合订本目录】 1.敌蜜和闺蜜 0:03 2.擦手机 0:21 3.iPhone手机 0:39 4.拱出去 1:28","match":"strict"},{"file":"corpus4.txt","text":"敌蜜的电话","match":"strict"},{"file":"corpus4.txt","text":"[完颜慧德的敌蜜]进入直播间","match":"strict"}]
+97	0	120	中	笑晕→笑拥	src=N	rule=N	id=N	tier=literal	var={"笑拥":97}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】救命，突然插入短片能把人笑拥了，还有最后到底在燃什么[笑哭]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】救命，突然插入短片能把人笑拥了，还有最后到底在燃什么[笑哭]","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】笑拥了","match":"strict"}]
+23	5	340	中	笑死我了→笑鼠惹	src=N	rule=Y	id=N	tier=corpus	var={"笑鼠惹":23}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】笑鼠惹，可不就是嘛，还素修为尚浅惹","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】笑鼠惹，姐妹的文案真素天才厚","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】不行了，要笑鼠惹","match":"strict"}]
+0	0	108	低	恐怖→恐布	src=Y	rule=N	id=N	tier=none	var={"恐布":0}
+   []
+0	0	57	低	优秀→优绣	src=Y	rule=N	id=N	tier=none	var={"优绣":0}
+   []
+25	3	396	中	英雄→阴雄	src=N	rule=N	id=N	tier=corpus	var={"阴雄":25}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【视频】《淋物大战僵湿：阴雄》阴斑花发现火龙果被🌹调教成0m后为爱出走的那个夜晚","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"# 关键词: 淋神, 淋语, 通讯录英雄, 淋日方舟, 淋明杀机, 淋明杀鸡, 淋者荣耀, 淋着荣耀, 王者淋耀, 第五","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【简介】只打过几把阴雄淋盟，不是很了解你光","match":"strict"}]
+0	0	713	低	游戏→游熙	src=Y	rule=N	id=N	tier=none	var={"游熙":0}
+   []
+0	0	194	低	皮肤→皮夫	src=Y	rule=Y	id=N	tier=rule-only	var={"皮夫":0}
+   []
+0	0	156	低	队友→豆油	src=Y	rule=N	id=N	tier=none	var={"豆油":0}
+   []
+0	0	44	低	中路→中鹿	src=Y	rule=N	id=N	tier=none	var={"中鹿":0}
+   []
+0	0	153	低	辅助→扶组	src=Y	rule=N	id=N	tier=none	var={"扶组":0}
+   []
+0	0	11	低	坦克→痰克	src=Y	rule=N	id=N	tier=none	var={"痰克":0}
+   []
+2	0	185	低	主播→煮播	src=N	rule=N	id=N	tier=literal	var={"煮播":2}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】第一次看，煮播是蓝酮吗？[doge]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】第一次看，煮播是蓝酮吗？[doge]","match":"strict"}]
+0	0	304	低	直播→汁播	src=Y	rule=N	id=N	tier=none	var={"汁播":0}
+   []
+310	54	0	高	本姑娘→本可	src=N	rule=Y	id=N	tier=corpus	var={"本可":310}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】本可的催更终于来惹[doge]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】求问一下解解这把啊出装惹，本可太怕鼠出了金身吸血书感觉每次大招落地伤害都会差一点[翻白眼]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】从稻萋版本的流浪武士，到枫丹版本水仙十字系列任务里出现的那个恩肖爷爷（白胡子肌肉大叔真素让本可垂涎欲滴惹[喜欢]","match":"strict"}]
+49	1	273	中	大姐→哒姐	src=N	rule=N	id=N	tier=corpus	var={"哒姐":49}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】玛雅哒姐峰子来的吗🙄💅🏻","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】玛雅哒姐峰子来的吗🙄💅🏻","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】玛雅哒姐","match":"strict"}]
+95	11	40	中	妈呀大姐→玛雅大姐	src=N	rule=Y	id=N	tier=corpus	var={"玛雅大姐":95}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】玛雅大姐💅💅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】玛雅大姐，最后硬是让人看你们蹲起几十秒吗🙄🙄🙄","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】玛雅大姐你的steam id素在…？会日语的命大也🐭了🙄💅🏻","match":"strict"}]
+10	0	34	低	好厉害→厚礼蟹	src=N	rule=Y	id=N	tier=literal	var={"厚礼蟹":10}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】厚礼蟹","match":"strict"},{"file":"corpus6.txt","text":"厚礼蟹","match":"strict"},{"file":"corpus6.txt","text":"厚礼蟹！！！！！！！！吓我一跳！","match":"strict"}]
+15	2	195	低	UP主→阿婆主	src=N	rule=Y	id=N	tier=corpus	var={"阿婆主":15}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】这么多图，很难不怀疑阿婆主素西餐妹","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这么多图，很难不怀疑阿婆主素西餐妹","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】为什么我装好的v没有阿婆主的排版好看呢？","match":"strict"}]
+15	2	53	低	博主→阿婆主	src=N	rule=Y	id=N	tier=corpus	var={"阿婆主":15}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】这么多图，很难不怀疑阿婆主素西餐妹","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这么多图，很难不怀疑阿婆主素西餐妹","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】为什么我装好的v没有阿婆主的排版好看呢？","match":"strict"}]
+2	0	27	低	高难度→糕难度	src=N	rule=N	id=N	tier=literal	var={"糕难度":2}
+   [{"file":"corpus3.txt","text":"糕难度淋美感动作靴靴","match":"strict"},{"file":"corpus5.txt","text":"接下来请大家欣赏超绝糕难度淋美感舞姿惹","match":"strict"}]
+0	0	21	低	高兴→糕熏	src=Y	rule=N	id=N	tier=none	var={"糕熏":0}
+   []
+1	0	36	低	高潮→糕朝	src=N	rule=N	id=N	tier=literal	var={"糕朝":1}
+   [{"file":"corpus6.txt","text":"肘姐糕朝了","match":"strict"}]
+1	1	1	低	笑死人了→孝死本仙子惹	src=N	rule=Y	id=N	tier=corpus	var={"孝死本仙子惹":1}
+   [{"file":"corpus5.txt","text":"这还出教程惹吸吸，孝死本仙子惹","match":"strict"},{"file":"corpus5.txt","text":"这还出教程惹吸吸，孝死本仙子惹","match":"punct-insensitive"}]
+2	0	0	低	爱的供养→爱的宫痒	src=N	rule=N	id=N	tier=literal	var={"爱的宫痒":2}
+   [{"file":"corpus5.txt","text":"爱的宫痒","match":"strict"},{"file":"corpus7.txt","text":"爱的宫痒","match":"strict"},{"file":"corpus5.txt","text":"爱的宫痒","match":"punct-insensitive"}]
+1	0	0	低	一笑解千愁→一淡解千愁	src=N	rule=N	id=N	tier=literal	var={"一淡解千愁":1}
+   []
+10	0	112	低	清者自清→清者自清靴靴	src=N	rule=Y	id=N	tier=literal	var={"清者自清靴靴":10}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【评论】本直表示清者自清 靴靴","match":"strict"},{"file":"corpus11.raw.txt","text":"我心表示清者自清靴靴","match":"strict"},{"file":"corpus11.raw.txt","text":"回复 @Chasel懿辰 :我心表示清者自清靴靴，如果不把我心放在眼里我心就……","match":"strict"}]
+9	1	6	低	问心无愧→阴者自阴	src=N	rule=Y	id=N	tier=corpus	var={"阴者自阴":9}
+   [{"file":"corpus-bili-20261024172431.txt","text":"# 关键词: 淋语, 淋语教程, 高等淋语, 淋语词典, 淋文化, 淋语吧, 淋淋, 本可, 阴者自阴, 通讯录英雄, ","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【视频】阴者自阴靴靴","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【视频】阴者自阴，阴婷自在人心","match":"strict"}]
+1	1	2	低	关你什么事→关你什么事厚	src=N	rule=Y	id=N	tier=corpus	var={"关你什么事厚":1}
+   [{"file":"corpus5.txt","text":"说惹关你什么事厚，蠢货速速衮出这个舞台靴靴","match":"strict"},{"file":"corpus5.txt","text":"说惹关你什么事厚，蠢货速速衮出这个舞台靴靴","match":"punct-insensitive"}]
+146	5	1	高	住嘴→婷芷	src=N	rule=Y	id=N	tier=corpus	var={"婷芷":146}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】婷芷再臆想我老公莱欧斯利了，不然我要发起我合法伴侣的权益！🙄💅🏻","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】婷芷婷芷 你心鼠了[翻白眼]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】婷芷婷芷 你心鼠了[翻白眼]","match":"strict"}]
+3	1	555	低	支持→捧场	src=N	rule=N	id=N	tier=corpus	var={"捧场":3}
+   [{"file":"corpus11.raw.txt","text":"“怎么他们犯二的时候就有人捧场呢？”","match":"strict"},{"file":"corpus12.graph.txt","text":"张胜丰编舞噱头太多，他在康熙里的几支舞又是加入剧情又是脸上抹血，表演大于舞蹈本身，但鉴于他是前辈大家都很捧场。舞娘时期要","match":"strict"},{"file":"corpus5.txt","text":"天惹噜 本宫给这位姐妹捧场惹","match":"strict"}]
+1	0	61	低	大笑→笑得合不拢腿	src=N	rule=N	id=N	tier=literal	var={"笑得合不拢腿":1}
+   [{"file":"corpus5.txt","text":"笑得合不拢腿惹","match":"strict"},{"file":"corpus5.txt","text":"笑得合不拢腿惹","match":"punct-insensitive"}]
+3	0	25	低	眼泪→13滴眼泪	src=N	rule=Y	id=N	tier=literal	var={"13滴眼泪":3}
+   [{"file":"corpus5.txt","text":"自带英文字幕，蔡依林都要被你感动得流下13滴眼泪惹","match":"strict"},{"file":"corpus7.txt","text":"好本质厚淋淋为你感动的流下13滴眼泪","match":"strict"},{"file":"corpus3.txt","text":"鸭姐流下了1.3滴眼泪","match":"punct-insensitive"}]
+20	3	2	中	夸奖→妙语连珠	src=N	rule=Y	id=N	tier=corpus	var={"妙语连珠":20}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】好艺术的更新，请问如何在文案上做到up同款妙语连珠舌灿莲花呢[星星眼]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】妙语连珠，喜翻儿[喜欢]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】好艺术的更新，请问如何在文案上做到up同款妙语连珠舌灿莲花呢[星星眼]","match":"strict"}]
+2	2	9	低	伶牙俐齿→尊素伶牙俐齿	src=N	rule=N	id=N	tier=corpus	var={"尊素伶牙俐齿":2}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】姐姐尊素伶牙俐齿惹","match":"strict"},{"file":"corpus5.txt","text":"解解尊素伶牙俐齿厚","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】姐姐尊素伶牙俐齿惹","match":"punct-insensitive"}]
+7	4	60	低	天呐→天呐噜	src=N	rule=N	id=N	tier=corpus	var={"天呐噜":7}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】天呐噜，本可居然还能听到守护甜心，想起了自己还不是毒妇的时候惹[响指]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】天呐噜，本可居然还能听到守护甜心，想起了自己还不是毒妇的时候惹[响指]","match":"strict"},{"file":"corpus5.txt","text":"天呐噜，怎么刷到这个惹","match":"strict"}]
+1	0	9	低	什么情况→什么鬼了噜	src=N	rule=Y	id=N	tier=literal	var={"什么鬼了噜":1}
+   [{"file":"corpus5.txt","text":"天了噜，这是什么鬼了噜","match":"strict"},{"file":"corpus5.txt","text":"天了噜，这是什么鬼了噜","match":"punct-insensitive"}]
+9	0	21	低	完蛋→大事不妙噜	src=N	rule=Y	id=N	tier=literal	var={"大事不妙噜":9}
+   [{"file":"corpus3.txt","text":"一道蓝光闪过，亲爱的你大事不妙噜","match":"strict"},{"file":"corpus5.txt","text":"亲爱的你大事不妙噜","match":"strict"},{"file":"corpus5.txt","text":"亲爱的你大事不妙噜","match":"strict"}]
+1	1	37	低	奖励→奖励130根乌干达	src=N	rule=Y	id=N	tier=corpus	var={"奖励130根乌干达":1}
+   [{"file":"corpus5.txt","text":"珍素努力惹 奖励130根乌干达","match":"strict"},{"file":"corpus5.txt","text":"珍素努力惹 奖励130根乌干达","match":"punct-insensitive"}]
+30	0	95	中	顶级→T0	src=N	rule=Y	id=N	tier=literal	var={"T0":30}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】榜单比较野，对角色强度有大致认知但是不准确，你游经典把辅助当宝放t0","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】榜单比较野，对角色强度有大致认知但是不准确，你游经典把辅助当宝放t0","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】t0 蔡依淋，阴婷，罗玉凤，郭子","match":"strict"}]
+3	0	2	低	二流→T1.5	src=N	rule=N	id=N	tier=literal	var={"T1.5":3}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】t0梵谷 （魔形女）t0.5完颜惠得 t1肘姐 俄罗斯辣辣（巡演+事业上升期）t1.5三梦奇缘 万人迷（强度略有","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】t0梵谷 （魔形女）t0.5完颜惠得 t1肘姐 俄罗斯辣辣（巡演+事业上升期）t1.5三梦奇缘 万人迷（强度略有","match":"strict"},{"file":"corpus12.graph.txt","text":"T1.5有什么好削的[笑哭]","match":"strict"}]
+7	0	2	低	垫底→T3	src=N	rule=N	id=N	tier=literal	var={"T3":7}
+   [{"file":"corpus-bili-20261011065020.txt","text":"t3 叶璇，埃及艳后等等","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"t3 叶璇，埃及艳后等等","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】甄姬是啥强度？团战技能乱扔都能杀人，王昭君都已经滚t3了","match":"strict"}]
+11	2	13	低	过气→flop	src=N	rule=Y	id=N	tier=corpus	var={"flop":11}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【评论】flop到nobody cares嘻嘻，周阴婷死噜","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】flop","match":"strict"},{"file":"corpus12.graph.txt","text":"总有人说我狐超标克制六耳🐒，实则打一把才知道被furry打到flop[翻白眼]","match":"strict"}]
+1	0	0	低	翻红→事业第二春	src=N	rule=Y	id=N	tier=literal	var={"事业第二春":1}
+   [{"file":"corpus6.txt","text":"墓姐事业第二春了[吃瓜]，看视频里面都有五六千人，之前flop过一段时间，现在的人数是万人迷不敢想的。","match":"strict"},{"file":"corpus6.txt","text":"墓姐事业第二春了[吃瓜]，看视频里面都有五六千人，之前flop过一段时间，现在的人数是万人迷不敢想的。","match":"punct-insensitive"}]
+3	0	7	低	顶流→母体	src=N	rule=Y	id=N	tier=literal	var={"母体":3}
+   [{"file":"corpus11.raw.txt","text":"第一个感染丧尸病毒的母体","match":"strict"},{"file":"corpus5.txt","text":"负责生产的母体或王后，不过蚊子好像没这种社会生态吧","match":"strict"},{"file":"corpus6.txt","text":"墓姐是母体，永远不会过气，所有通讯录女星出道都要经过《三梦奇缘骂你》这个流程[喜欢][喜欢]","match":"strict"}]
+36	6	9	中	吸引力→吸力	src=N	rule=Y	id=N	tier=corpus	var={"吸力":36}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】进来就素我院的超强吸力","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【简介】女孩个个心比海阔，却不知「吸力全开」的妙处。 若当真「男人的话」，这站接又岂非太过倒贴？ 淋语CV： 淋光——软","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】海月吸力比李华强惹[doge][doge][doge][doge]","match":"strict"}]
+26	0	124	中	道歉→给我道歉	src=N	rule=Y	id=N	tier=literal	var={"给我道歉":26}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】给我道歉！","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】给我道歉！","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】本可280抽2➕1，梦见月鼠了🙄，大温泉貘貘给我道歉💅🏻","match":"strict"}]
+3	1	226	低	学习→补课	src=N	rule=N	id=N	tier=corpus	var={"补课":3}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【视频】女老师偷偷撩起裙子，男学生立刻明白她的暗示，今天注定是“补课”的一天《教室别恋》这个导演拍的真挺有意思，老师有点","match":"strict"},{"file":"corpus5.txt","text":"惹～本可来补课了","match":"strict"},{"file":"corpus5.txt","text":"来补课惹","match":"strict"}]
+6	1	13	低	小语种→淋王星的官方语言	src=N	rule=Y	id=N	tier=corpus	var={"淋王星的官方语言":6}
+   [{"file":"corpus5.txt","text":"呕，这是淋王星的官方语言不素小语种惹","match":"strict"},{"file":"corpus5.txt","text":"呕，这是淋王星的官方语言不素小语种惹","match":"punct-insensitive"}]
+7	0	104	低	离谱→好离谱	src=N	rule=Y	id=N	tier=literal	var={"好离谱":7}
+   [{"file":"corpus3.txt","text":"好离谱好搞笑","match":"strict"},{"file":"corpus5.txt","text":"好离谱好搞笑","match":"strict"},{"file":"corpus8.raw.txt","text":"好离谱的翻译哈哈哈哈哈哈哈哈哈哈","match":"strict"}]
+1	0	2	低	梗太多→好密集的梗	src=N	rule=N	id=N	tier=literal	var={"好密集的梗":1}
+   [{"file":"corpus5.txt","text":"好密集的梗受不了惹","match":"strict"},{"file":"corpus5.txt","text":"好密集的梗受不了惹","match":"punct-insensitive"}]
+2	0	2	低	发臭→发烂发臭	src=N	rule=N	id=N	tier=literal	var={"发烂发臭":2}
+   [{"file":"corpus5.txt","text":"发烂发臭惹","match":"strict"},{"file":"corpus5.txt","text":"发烂发臭惹","match":"punct-insensitive"}]
+2	0	0	低	腐烂→发烂发臭	src=N	rule=N	id=N	tier=literal	var={"发烂发臭":2}
+   [{"file":"corpus5.txt","text":"发烂发臭惹","match":"strict"},{"file":"corpus5.txt","text":"发烂发臭惹","match":"punct-insensitive"}]
+2	1	30	低	报警→已经报警	src=N	rule=Y	id=N	tier=corpus	var={"已经报警":2}
+   [{"file":"corpus5.txt","text":"我是新东方，我已经报警了","match":"strict"},{"file":"corpus5.txt","text":"本可人已经报警惹","match":"strict"},{"file":"corpus5.txt","text":"我是新东方，我已经报警了","match":"punct-insensitive"}]
+1	1	0	低	走着瞧→留到渊下宫再说	src=N	rule=Y	id=N	tier=corpus	var={"留到渊下宫再说":1}
+   [{"file":"corpus5.txt","text":"吸吸，这话留到渊下宫再说噜","match":"strict"},{"file":"corpus5.txt","text":"吸吸，这话留到渊下宫再说噜","match":"punct-insensitive"}]
+1	0	41	低	学会了→伦家都会了	src=N	rule=Y	id=N	tier=literal	var={"伦家都会了":1}
+   [{"file":"corpus5.txt","text":"伦家都会了惹","match":"strict"},{"file":"corpus5.txt","text":"伦家都会了惹","match":"punct-insensitive"}]
+104	0	46	高	荒谬→离谱	src=N	rule=Y	id=N	tier=literal	var={"离谱":104}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】这种不封号 卷毛烂牙播几分钟说几句话就封号 机制离谱","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】这种不封号 卷毛烂牙播几分钟说几句话就封号 机制离谱","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】白虎神兽可遇不可求，油耗高的离谱，得上燃油宝才行挺得住[doge]@合剂仙人avi","match":"strict"}]
+1	0	37	低	演技→阴演技	src=N	rule=N	id=N	tier=literal	var={"阴演技":1}
+   [{"file":"corpus7.txt","text":"我阴演技珍烂惹嘴都不动，是含了乌干达吗","match":"strict"}]
+2	0	10	低	第一名→宇宙第一	src=N	rule=Y	id=N	tier=literal	var={"宇宙第一":2}
+   [{"file":"corpus11.raw.txt","text":"依旧你宇宙第一位天才的含金量。","match":"strict"},{"file":"corpus6.txt","text":"我已经是宇宙第一魅魔了","match":"strict"},{"file":"corpus11.raw.txt","text":"依旧你宇宙第一位天才的含金量。","match":"punct-insensitive"}]
+0	0	5	低	合订本→全网最全合订本	src=Y	rule=N	id=N	tier=none	var={"全网最全合订本":0}
+   []
+51	2	0	中	死党→本质骑士	src=N	rule=N	id=N	tier=corpus	var={"本质骑士":51}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】不是曲解好吗，而且不是黑粉，是本质骑士","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【简介】【13+吸入警告】淋系视频，仅供淋王星婊贝本质骑士娱乐，路人甲请绕道，不绕道也NBCS氮素最好带上防吸装置厚。 ","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】前面几位都素退休的本质骑士把","match":"strict"}]
+14	1	66	低	黑粉→黑子	src=N	rule=N	id=N	tier=corpus	var={"黑子":14}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】终于了解黑子为啥喜欢串他了[笑哭][笑哭][笑哭]，太好玩了小玩意","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】唱兰花草真没啥黑点，博得明月出用兰花换锦服这句话对黑子来说太难了","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】终于了解黑子为啥喜欢串他了[笑哭][笑哭][笑哭]，太好玩了小玩意","match":"strict"}]
+4	2	2	低	欧皇→欧米伽	src=N	rule=Y	id=N	tier=corpus	var={"欧米伽":4}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】欧米伽真素艺术惹🙄💅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】欧米伽真素艺术惹🙄💅","match":"strict"},{"file":"corpus3.txt","text":"Ω 欧米伽 Ω","match":"strict"}]
+13	0	3	低	非酋→敌蜜	src=N	rule=Y	id=N	tier=literal	var={"敌蜜":13}
+   [{"file":"corpus4.txt","text":"【楼兰合订本目录】 1.敌蜜和闺蜜 0:03 2.擦手机 0:21 3.iPhone手机 0:39 4.拱出去 1:28","match":"strict"},{"file":"corpus4.txt","text":"敌蜜的电话","match":"strict"},{"file":"corpus4.txt","text":"[完颜慧德的敌蜜]进入直播间","match":"strict"}]
+19	0	21	低	满命→130分	src=N	rule=Y	id=N	tier=literal	var={"130分":19}
+   [{"file":"corpus3.txt","text":"惹，懒妮的gimme more耶，给up130分","match":"strict"},{"file":"corpus5.txt","text":"你真素130分的努力","match":"strict"},{"file":"corpus5.txt","text":"央视《开学啦》蔡依林：我要做到130分","match":"strict"}]
+49	1	3	中	翻车→大事不妙	src=N	rule=Y	id=N	tier=corpus	var={"大事不妙":49}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】郭母猪开枪有种像在演贾樟柯电影既视感，戛纳级影后赵涛大事不妙。糊一脸苦命到开枪有点像世界末日。","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】郭母猪开枪有种像在演贾樟柯电影既视感，戛纳级影后赵涛大事不妙。糊一脸苦命到开枪有点像世界末日。","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】OMG，你辣居然这么敢说[笑哭]，小姐姐你大事不妙感觉你的倒数计时已经开始计时了惹，你辣出事自己背，我仙走一步哈","match":"strict"}]
+32	0	36	中	封神→全体起立	src=N	rule=Y	id=N	tier=literal	var={"全体起立":32}
+   [{"file":"corpus11.raw.txt","text":"全体起立","match":"strict"},{"file":"corpus11.raw.txt","text":"全体起立","match":"strict"},{"file":"corpus11.raw.txt","text":"全体起立","match":"strict"}]
+1	1	1	低	退网→衮出这个舞台	src=N	rule=Y	id=N	tier=corpus	var={"衮出这个舞台":1}
+   [{"file":"corpus5.txt","text":"说惹关你什么事厚，蠢货速速衮出这个舞台靴靴","match":"strict"},{"file":"corpus5.txt","text":"说惹关你什么事厚，蠢货速速衮出这个舞台靴靴","match":"punct-insensitive"}]
+110	0	141	高	辣眼→保护眼睛	src=N	rule=N	id=N	tier=literal	var={"保护眼睛":110}
+   [{"file":"corpus3.txt","text":"保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛","match":"strict"},{"file":"corpus3.txt","text":"保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛","match":"strict"},{"file":"corpus3.txt","text":"保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛保护眼睛","match":"strict"}]
+6	0	17	低	魅魔→顶级魅魔	src=N	rule=N	id=N	tier=literal	var={"顶级魅魔":6}
+   [{"file":"corpus6.txt","text":"接，作用于我，我就是顶级魅魔的万人迷，媚骨天成，娇艳欲滴，对LW有致命诱惑和强大的吸引力，并且对我神魂颠倒","match":"strict"},{"file":"corpus6.txt","text":"作用于我自己 我就是顶级魅魔 MT被我疯狂吸引","match":"strict"},{"file":"corpus6.txt","text":"我是顶级魅魔，优质的人都被我吸引，不好的人都不敢接近我，我的皮肤变好，疤痕都变淡，眉眼盈盈，气质高贵优雅，身材很好，胸有","match":"strict"}]
+8	0	10	低	开场→开口跪	src=N	rule=N	id=N	tier=literal	var={"开口跪":8}
+   [{"file":"corpus10.raw.txt","text":"好听！开口跪","match":"strict"},{"file":"corpus10f.txt","text":"好听！开口跪","match":"strict"},{"file":"corpus3.txt","text":"开口跪","match":"strict"}]
+0	0	65	低	举报→送进天德池	src=Y	rule=N	id=N	tier=none	var={"送进天德池":0}
+   []
+34	1	16	中	封号→账号已注销	src=N	rule=N	id=N	tier=corpus	var={"账号已注销":34}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【UP】账号已注销","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【UP】账号已注销","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【UP】账号已注销","match":"strict"}]
+11	2	0	低	掉粉→flop	src=N	rule=Y	id=N	tier=corpus	var={"flop":11}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【评论】flop到nobody cares嘻嘻，周阴婷死噜","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】flop","match":"strict"},{"file":"corpus12.graph.txt","text":"总有人说我狐超标克制六耳🐒，实则打一把才知道被furry打到flop[翻白眼]","match":"strict"}]
+27	2	20	中	官宣→第130次首谈	src=N	rule=Y	id=N	tier=corpus	var={"第130次首谈":27}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】我尼第130次首谈自己只是喜欢欧美人的发色没有其他想法","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【视频】你哈第130次首谈不喜大🍆，回忆起与大🍆的不快过往。","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】我琴第130次首谈双国籍","match":"strict"}]
+7	0	13	低	撕逼→扯头花	src=N	rule=Y	id=N	tier=literal	var={"扯头花":7}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】先是米提亚打星反应却是精通模板，后是瓦列里四星，和北斗大姐扯头花，你们的至冬很美，靴靴","match":"strict"}]
+2	0	8	低	塌房→发烂发臭	src=N	rule=N	id=N	tier=literal	var={"发烂发臭":2}
+   [{"file":"corpus5.txt","text":"发烂发臭惹","match":"strict"},{"file":"corpus5.txt","text":"发烂发臭惹","match":"punct-insensitive"}]
+112	1	12	高	洗白→清者自清	src=N	rule=Y	id=N	tier=corpus	var={"清者自清":112}
+   [{"file":"corpus-bili-20261009073309.txt","text":"#神里绫华发表仅粉丝可见动态：有苦难言，但清者自清#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"#珊瑚宫心海：有苦难言，但清者自清#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"#珊瑚宫心海 清者自清#","match":"strict"}]
+9	1	13	低	阴阳怪气→阴者自阴	src=N	rule=Y	id=N	tier=corpus	var={"阴者自阴":9}
+   [{"file":"corpus-bili-20261024172431.txt","text":"# 关键词: 淋语, 淋语教程, 高等淋语, 淋语词典, 淋文化, 淋语吧, 淋淋, 本可, 阴者自阴, 通讯录英雄, ","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【视频】阴者自阴靴靴","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【视频】阴者自阴，阴婷自在人心","match":"strict"}]
+4	0	48	低	擦边→擦边主播	src=N	rule=N	id=N	tier=literal	var={"擦边主播":4}
+   [{"file":"corpus5.txt","text":"还是擦边主播符合你们的三观，对吧？","match":"strict"},{"file":"corpus5.txt","text":"还是擦边主播符合你们的三观，对吧？","match":"punct-insensitive"}]
+5	0	2	低	心理医生→心理咨熊师	src=N	rule=N	id=N	tier=literal	var={"心理咨熊师":5}
+   [{"file":"corpus4.txt","text":"我选择心理咨熊师","match":"strict"},{"file":"corpus5.txt","text":"我选择心理咨熊师","match":"strict"},{"file":"corpus4.txt","text":"我选择心理咨熊师","match":"punct-insensitive"}]
+1	0	20	低	装备→圣杯面具40cd	src=N	rule=N	id=N	tier=literal	var={"圣杯面具40cd":1}
+   []
+1	0	115	低	大招→A杖效果	src=N	rule=N	id=N	tier=literal	var={"A杖效果":1}
+   [{"file":"corpus3.txt","text":"通讯录拉比克，可以用所有通讯录英雄的技能，附带A杖效果","match":"strict"},{"file":"corpus3.txt","text":"通讯录拉比克，可以用所有通讯录英雄的技能，附带A杖效果","match":"punct-insensitive"}]
+2	0	41	低	削弱→该削了	src=N	rule=Y	id=N	tier=literal	var={"该削了":2}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】好改，早就该削了","match":"strict"},{"file":"corpus3.txt","text":"妮蔻该削了","match":"strict"}]
+1	0	27	低	变身→变形怪	src=N	rule=N	id=N	tier=literal	var={"变形怪":1}
+   [{"file":"corpus3.txt","text":"梵谷得削，就是一个变形怪","match":"strict"}]
+2	0	19	低	整容→DO脸	src=N	rule=N	id=N	tier=literal	var={"DO脸":2}
+   [{"file":"corpus6.txt","text":"【类の人】鹅妈妈：DO脸仙人，国服TS，把整容医院手术台躺热的男人，一个视频带你了解鹅妈妈","match":"strict"}]
+1	1	27	低	全文背诵→本质骑士请全文背诵	src=N	rule=N	id=N	tier=corpus	var={"本质骑士请全文背诵":1}
+   [{"file":"corpus5.txt","text":"本质骑士请全文背诵靴靴","match":"strict"},{"file":"corpus5.txt","text":"本质骑士请全文背诵靴靴","match":"punct-insensitive"}]
+2	2	64	低	才女→尊素才女厚	src=N	rule=Y	id=N	tier=corpus	var={"尊素才女厚":2}
+   [{"file":"corpus3.txt","text":"你杰尊素才女厚","match":"strict"},{"file":"corpus5.txt","text":"惹 姐姐尊素才女厚","match":"strict"},{"file":"corpus3.txt","text":"你杰尊素才女厚","match":"punct-insensitive"}]
+1	0	5	低	造梗→真的很会造梗	src=N	rule=N	id=N	tier=literal	var={"真的很会造梗":1}
+   [{"file":"corpus5.txt","text":"通讯录真的很会造梗","match":"strict"},{"file":"corpus5.txt","text":"通讯录真的很会造梗","match":"punct-insensitive"}]
+3	0	6	低	版本答案→当前版本答案	src=N	rule=Y	id=N	tier=literal	var={"当前版本答案":3}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】野榜，不给完颜慧德淋阴郭下单独一档。完颜慧德就是当前版本答案，造梗能力最强。","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】野榜，不给完颜慧德淋阴郭下单独一档。完颜慧德就是当前版本答案，造梗能力最强。","match":"strict"},{"file":"corpus3.txt","text":"野榜，不给完颜慧德淋阴郭下单独一档。完颜慧德就是当前版本答案，造梗能力最强。","match":"strict"}]
+1	0	7	低	气晕→气拥咧	src=N	rule=Y	id=N	tier=literal	var={"气拥咧":1}
+   []
+1	1	4	低	背书→全文背诵惹	src=N	rule=N	id=N	tier=corpus	var={"全文背诵惹":1}
+   [{"file":"corpus5.txt","text":"全文背诵惹，这首素淋语圣歌厚","match":"strict"},{"file":"corpus5.txt","text":"全文背诵惹，这首素淋语圣歌厚","match":"punct-insensitive"}]
+1	0	23	低	皇上→王钦朕	src=N	rule=N	id=N	tier=literal	var={"王钦朕":1}
+   [{"file":"corpus3.txt","text":"王钦朕（老地瓜）应该是T1.5，楼兰国名画都出自他之手","match":"strict"}]
+1	1	18	低	白嫖→不给硬币小心被吸了噜	src=N	rule=N	id=N	tier=corpus	var={"不给硬币小心被吸了噜":1}
+   [{"file":"corpus7.txt","text":"源自网络 天惹噜 我淋真素太美丽了噜 不给硬币小心被吸了噜=-=","match":"strict"},{"file":"corpus7.txt","text":"源自网络 天惹噜 我淋真素太美丽了噜 不给硬币小心被吸了噜=-=","match":"punct-insensitive"}]
+0	0	1	低	大赦天下→今日大赦天下，尔等速速退下噜	src=Y	rule=Y	id=N	tier=rule-only	var={"今日大赦天下，尔等速速退下噜":0}
+   []
+49	0	17	中	疯子→风姿	src=N	rule=N	id=N	tier=literal	var={"风姿":49}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】风姿🙄","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】风姿。。","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】风姿吗[翻白眼][翻白眼][翻白眼]","match":"strict"}]
+2	0	13	低	灵感→淋光乍现惹	src=N	rule=Y	id=N	tier=literal	var={"淋光乍现惹":2}
+   [{"file":"corpus8.raw.txt","text":"淋光乍现惹","match":"strict"},{"file":"corpus8f.txt","text":"淋光乍现惹","match":"strict"},{"file":"corpus8.raw.txt","text":"淋光乍现惹","match":"punct-insensitive"}]
+2	0	0	低	五毛特效→1.3毛特效	src=N	rule=Y	id=N	tier=literal	var={"1.3毛特效":2}
+   [{"file":"corpus8.raw.txt","text":"1.3毛特效惹","match":"strict"},{"file":"corpus8f.txt","text":"1.3毛特效惹","match":"strict"},{"file":"corpus8.raw.txt","text":"1.3毛特效惹","match":"punct-insensitive"}]
+4	1	120	低	配音→配阴	src=N	rule=Y	id=N	tier=corpus	var={"配阴":4}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】心海可以安排一下吗？我还想听女明星配阴","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】惹，第一次给这样的大制作配阴厚，希望各位解解不要手下留情，给我很多很好的评价厚，嘻嘻，我先补个唇蜜噜","match":"strict"},{"file":"corpus8.raw.txt","text":"肘姐台词太差，所以用配阴惹","match":"strict"}]
+2	0	27	低	人美心善→人美心善惹	src=N	rule=Y	id=N	tier=literal	var={"人美心善惹":2}
+   [{"file":"corpus8.raw.txt","text":"我淋人美心善惹","match":"strict"},{"file":"corpus8f.txt","text":"我淋人美心善惹","match":"strict"},{"file":"corpus8.raw.txt","text":"我淋人美心善惹","match":"punct-insensitive"}]
+0	0	3	低	冰雪聪明→冰雪聪明素本可天性	src=Y	rule=Y	id=N	tier=rule-only	var={"冰雪聪明素本可天性":0}
+   []
+2	0	73	低	太美了→美到维纳斯怀孕惹	src=N	rule=Y	id=N	tier=literal	var={"美到维纳斯怀孕惹":2}
+   [{"file":"corpus8.raw.txt","text":"美到维纳斯怀孕惹","match":"strict"},{"file":"corpus8f.txt","text":"美到维纳斯怀孕惹","match":"strict"},{"file":"corpus8.raw.txt","text":"美到维纳斯怀孕惹","match":"punct-insensitive"}]
+4	0	19	低	王炸→开局王炸惹	src=N	rule=Y	id=N	tier=literal	var={"开局王炸惹":4}
+   [{"file":"corpus8.raw.txt","text":"开局王炸惹","match":"strict"},{"file":"corpus8.raw.txt","text":"开局王炸惹","match":"strict"},{"file":"corpus8f.txt","text":"开局王炸惹","match":"strict"}]
+2	0	11	低	背景板→连背景板都当不成惹	src=N	rule=Y	id=N	tier=literal	var={"连背景板都当不成惹":2}
+   [{"file":"corpus8.raw.txt","text":"要是辣辣选了另一边，连背景板都当不成惹","match":"strict"},{"file":"corpus8f.txt","text":"要是辣辣选了另一边，连背景板都当不成惹","match":"strict"},{"file":"corpus8.raw.txt","text":"要是辣辣选了另一边，连背景板都当不成惹","match":"punct-insensitive"}]
+2	2	0	低	直男认证→那已经素直男惹	src=N	rule=Y	id=N	tier=corpus	var={"那已经素直男惹":2}
+   [{"file":"corpus8.raw.txt","text":"那已经素直男惹","match":"strict"},{"file":"corpus8f.txt","text":"那已经素直男惹","match":"strict"},{"file":"corpus8.raw.txt","text":"那已经素直男惹","match":"punct-insensitive"}]
+0	0	31	低	调理→调理好了惹	src=N	rule=N	id=N	tier=none	var={"调理好了惹":0}
+   []
+2	2	3	低	水牛音→超绝水牛音	src=N	rule=Y	id=N	tier=corpus	var={"超绝水牛音":2}
+   [{"file":"corpus8.raw.txt","text":"一上来就素超绝水牛音惹","match":"strict"},{"file":"corpus8f.txt","text":"一上来就素超绝水牛音惹","match":"strict"},{"file":"corpus8.raw.txt","text":"一上来就素超绝水牛音惹","match":"punct-insensitive"}]
+2	2	1	低	蠢死了→蠢die噜	src=N	rule=Y	id=N	tier=corpus	var={"蠢die噜":2}
+   [{"file":"corpus8.raw.txt","text":"我阴蠢die噜，明明可以画自画像惹","match":"strict"},{"file":"corpus8f.txt","text":"我阴蠢die噜，明明可以画自画像惹","match":"strict"},{"file":"corpus8.raw.txt","text":"我阴蠢die噜，明明可以画自画像惹","match":"punct-insensitive"}]
+2	0	12	低	吓到→吓属惹	src=N	rule=Y	id=N	tier=literal	var={"吓属惹":2}
+   [{"file":"corpus8.raw.txt","text":"脸皮掉了吓属惹","match":"strict"},{"file":"corpus8f.txt","text":"脸皮掉了吓属惹","match":"strict"}]
+2	0	48	低	怪美的→我林怪美的	src=N	rule=N	id=N	tier=literal	var={"我林怪美的":2}
+   [{"file":"corpus8.raw.txt","text":"我林怪美的，一把子秒了，靴靴","match":"strict"},{"file":"corpus8f.txt","text":"我林怪美的，一把子秒了，靴靴","match":"strict"},{"file":"corpus8.raw.txt","text":"我林怪美的，一把子秒了，靴靴","match":"punct-insensitive"}]
+2	2	116	低	太美→珍素太美惹	src=N	rule=Y	id=N	tier=corpus	var={"珍素太美惹":2}
+   [{"file":"corpus8.raw.txt","text":"林林珍素太美惹","match":"strict"},{"file":"corpus8f.txt","text":"林林珍素太美惹","match":"strict"},{"file":"corpus8.raw.txt","text":"林林珍素太美惹","match":"punct-insensitive"}]
+0	0	10	低	淋雨→淋雨一直走惹	src=N	rule=Y	id=N	tier=rule-only	var={"淋雨一直走惹":0}
+   []
+2	2	5	低	床戏→床戏女王	src=N	rule=N	id=N	tier=corpus	var={"床戏女王":2}
+   [{"file":"corpus8.raw.txt","text":"我郭素床戏女王惹","match":"strict"},{"file":"corpus8f.txt","text":"我郭素床戏女王惹","match":"strict"},{"file":"corpus8.raw.txt","text":"我郭素床戏女王惹","match":"punct-insensitive"}]
+2	0	31	低	电音→紫薇邦漏电	src=N	rule=N	id=N	tier=literal	var={"紫薇邦漏电":2}
+   [{"file":"corpus8.raw.txt","text":"电音只素紫薇邦漏电而已","match":"strict"},{"file":"corpus8f.txt","text":"电音只素紫薇邦漏电而已","match":"strict"},{"file":"corpus8.raw.txt","text":"电音只素紫薇邦漏电而已","match":"punct-insensitive"}]
+0	0	3	低	谢谢谢谢→靴靴的靴靴惹	src=N	rule=Y	id=N	tier=rule-only	var={"靴靴的靴靴惹":0}
+   []
+0	0	15	低	去世→请你立即去世惹	src=N	rule=N	id=N	tier=none	var={"请你立即去世惹":0}
+   []
+0	0	4	低	野鸡→野鸡咕咕day	src=N	rule=N	id=N	tier=none	var={"野鸡咕咕day":0}
+   []
+0	0	30	低	高贵→真素高贵得不像话	src=N	rule=N	id=N	tier=none	var={"真素高贵得不像话":0}
+   []
+0	0	0	低	马戏团→马戏团天后	src=N	rule=N	id=N	tier=none	var={"马戏团天后":0}
+   []
+2	0	6	低	艾莉→有点像艾莉惹	src=N	rule=N	id=N	tier=literal	var={"有点像艾莉惹":2}
+   [{"file":"corpus8.raw.txt","text":"谢谢淋淋有点像艾莉惹","match":"strict"},{"file":"corpus8f.txt","text":"谢谢淋淋有点像艾莉惹","match":"strict"},{"file":"corpus8.raw.txt","text":"谢谢淋淋有点像艾莉惹","match":"punct-insensitive"}]
+6	0	104	低	恒河水→敢喝恒河水	src=N	rule=N	id=N	tier=literal	var={"敢喝恒河水":6}
+   [{"file":"corpus8.raw.txt","text":"最厉害的是她敢喝恒河水[喜极而泣]","match":"strict"},{"file":"corpus8.raw.txt","text":"林林好勇猛，还敢喝恒河水","match":"strict"},{"file":"corpus8.raw.txt","text":"不愧是淋淋，敢喝恒河水","match":"strict"}]
+2	0	2	低	墙板报→破坏墙板报的人	src=N	rule=N	id=N	tier=literal	var={"破坏墙板报的人":2}
+   []
+2	0	15	低	假发→位移噜	src=N	rule=N	id=N	tier=literal	var={"位移噜":2}
+   [{"file":"corpus8.raw.txt","text":"01:00 你阴整个脸部的假体都位移噜","match":"strict"},{"file":"corpus8f.txt","text":"01:00 你阴整个脸部的假体都位移噜","match":"strict"}]
+2	2	2	低	鹅螺狮→鹅螺狮辣辣	src=N	rule=N	id=N	tier=corpus	var={"鹅螺狮辣辣":2}
+   [{"file":"corpus8.raw.txt","text":"这素鹅螺狮辣辣，不素吱花惹","match":"strict"},{"file":"corpus8f.txt","text":"这素鹅螺狮辣辣，不素吱花惹","match":"strict"},{"file":"corpus8.raw.txt","text":"这素鹅螺狮辣辣，不素吱花惹","match":"punct-insensitive"}]
+2	2	7	低	吱花→不素吱花惹	src=N	rule=N	id=N	tier=corpus	var={"不素吱花惹":2}
+   [{"file":"corpus8.raw.txt","text":"这素鹅螺狮辣辣，不素吱花惹","match":"strict"},{"file":"corpus8f.txt","text":"这素鹅螺狮辣辣，不素吱花惹","match":"strict"},{"file":"corpus8.raw.txt","text":"这素鹅螺狮辣辣，不素吱花惹","match":"punct-insensitive"}]
+2	0	2	低	一梦奇缘→大梦是三梦的姐姐	src=N	rule=N	id=N	tier=literal	var={"大梦是三梦的姐姐":2}
+   [{"file":"corpus8.raw.txt","text":"大梦是三梦的姐姐吗","match":"strict"},{"file":"corpus8f.txt","text":"大梦是三梦的姐姐吗","match":"strict"},{"file":"corpus8.raw.txt","text":"大梦是三梦的姐姐吗","match":"punct-insensitive"}]
+35	4	100	中	王者荣耀→王者淋耀	src=N	rule=Y	id=N	tier=corpus	var={"王者淋耀":35}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【王者淋耀】阴者β中来 山水皆成湿","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"# 关键词: 淋神, 淋语, 通讯录英雄, 淋日方舟, 淋明杀机, 淋明杀鸡, 淋者荣耀, 淋着荣耀, 王者淋耀, 第五","match":"strict"}]
+20	3	50	中	英雄联盟→阴雄淋盟	src=N	rule=Y	id=N	tier=corpus	var={"阴雄淋盟":20}
+   [{"file":"corpus-bili-20261011065020.txt","text":"# 关键词: 淋神, 淋语, 通讯录英雄, 淋日方舟, 淋明杀机, 淋明杀鸡, 淋者荣耀, 淋着荣耀, 王者淋耀, 第五","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【简介】只打过几把阴雄淋盟，不是很了解你光","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"# 关键词: 淋语, 淋语教程, 高等淋语, 淋语词典, 淋文化, 淋语吧, 淋淋, 本可, 阴者自阴, 通讯录英雄, ","match":"strict"}]
+17	4	66	低	第五人格→第五淋格	src=N	rule=Y	id=N	tier=corpus	var={"第五淋格":17}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】姐妹来支持了，我们的洛克淋国第五淋格在哪发财呢","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】《第五淋格》乌干达都素我蝶的！","match":"strict"}]
+96	10	134	中	原神→淋神	src=N	rule=Y	id=N	tier=corpus	var={"淋神":96}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 关键词: 淋语, 淋神, 淋语教程, 洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格, 通讯录英雄, 淋语吧","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【淋神】天理给纳塔关上了一扇门……","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"好久没更新淋神噜，浓缩的一期！","match":"strict"}]
+7	2	24	低	星穹铁道→星淋铁道	src=N	rule=Y	id=N	tier=corpus	var={"星淋铁道":7}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【视频】《β 坏：星淋铁道》知根鸟・仙子角色 PV——「追赶 β 的方向」","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"# 关键词: 淋神, 淋语, 通讯录英雄, 淋日方舟, 淋明杀机, 淋明杀鸡, 淋者荣耀, 淋着荣耀, 王者淋耀, 第五","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"# 关键词: 淋语, 淋语教程, 高等淋语, 淋语词典, 淋文化, 淋语吧, 淋淋, 本可, 阴者自阴, 通讯录英雄, ","match":"strict"}]
+5	3	14	低	守望先锋→守望淋锋	src=N	rule=Y	id=N	tier=corpus	var={"守望淋锋":5}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】玛雅大姐你吓死人惹🙄本可素不会为除了守望淋锋之外的街道给出很多很好的评价的","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】玛雅大姐你吓死人惹🙄本可素不会为除了守望淋锋之外的街道给出很多很好的评价的","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"# 关键词: 淋语, 淋语教程, 高等淋语, 淋语词典, 淋文化, 淋语吧, 淋淋, 本可, 阴者自阴, 通讯录英雄, ","match":"strict"}]
+32	3	31	中	黎明杀机→淋明杀鸡	src=N	rule=Y	id=N	tier=corpus	var={"淋明杀鸡":32}
+   [{"file":"corpus-bili-20261011065020.txt","text":"# 关键词: 淋神, 淋语, 通讯录英雄, 淋日方舟, 淋明杀机, 淋明杀鸡, 淋者荣耀, 淋着荣耀, 王者淋耀, 第五","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【视频】【淋明杀鸡】S1E5瘟疫携手红灯艺人这艺这单曲贝如塔脚刹特务","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【视频】【淋明杀鸡】原来害人如此美好。。。","match":"strict"}]
+5	0	34	低	洛克王国→洛克淋锅	src=N	rule=Y	id=N	tier=literal	var={"洛克淋锅":5}
+   []
+26	2	30	中	甄姬→我泔	src=N	rule=N	id=N	tier=corpus	var={"我泔":26}
+   [{"file":"corpus12.graph.txt","text":"李晔老师是甄姬的点睛之笔[tv_色][tv_色]至美皮官方发的语音视频 我泔语音全方位碾压你施","match":"strict"},{"file":"corpus12.graph.txt","text":"我虞、我华、我泔、我伽第一百三十次首谈后期女王概念[翻白眼][翻白眼][翻白眼]","match":"strict"},{"file":"corpus12.graph.txt","text":"我泔二技能球甩不出去的样子有点像无能的丈夫","match":"strict"}]
+115	9	57	高	伽罗→我华	src=N	rule=Y	id=N	tier=corpus	var={"我华":115}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】你鲨给我华道歉！1s爸爸[喜欢][喜欢]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】和我施一样一技能抽奖拉拉扯扯，和我蒜一样很美的大招飞天戏法，和我华一样特效人淡如菊，从来没有玩过这么对胃口的新中","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】淋华也是华 花时来信？我华的","match":"strict"}]
+9	0	58	低	妲己→我妲	src=N	rule=N	id=N	tier=literal	var={"我妲":9}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】狗侧滑快把我妲的无痛转火和精通加成转倍率拐还回来🙄💅","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】疑似我妲与我狸分不清","match":"strict"},{"file":"corpus12.graph.txt","text":"我妲🟰wada…..","match":"strict"}]
+7	0	10	低	虞姬→我虞	src=N	rule=N	id=N	tier=literal	var={"我虞":7}
+   [{"file":"corpus12.graph.txt","text":"我虞、我华、我泔、我伽第一百三十次首谈后期女王概念[翻白眼][翻白眼][翻白眼]","match":"strict"},{"file":"corpus12.graph.txt","text":"我虞素发育路继母！","match":"strict"},{"file":"corpus12.graph.txt","text":"我虞3传说双星传说还有典藏在路上，不是什么阿猫阿狗可以碰瓷的靴靴，你华还是先阴个史诗吧","match":"strict"}]
+40	0	57	中	琴女→我琴	src=N	rule=N	id=N	tier=literal	var={"我琴":40}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】我琴就不会这样做🙄💅🏼","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】我琴就不会这样做🙄💅🏼","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】婷芷，我蒜和我琴怎么会","match":"strict"}]
+69	1	23	中	拉克丝→我光	src=N	rule=N	id=N	tier=corpus	var={"我光":69}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】隐隐约约听说我蕾素新属性光属性惹 有点像我光附身 3.1我蕾要毫无保留以光之名叠杀人书了！","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】好像隔壁我光[doge]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】我珍害人是为了自己，我光害人单纯想而已[星星眼]","match":"strict"}]
+6	1	108	低	知更鸟→我鸟	src=N	rule=N	id=N	tier=corpus	var={"我鸟":6}
+   [{"file":"corpus12.graph.txt","text":"每次的新队友，每一场混沌，每一声拉条，都来自于我鸟依赖了24年的嗓子！ 除了追击，否则没有其他感动你的方式！ 希望大家喜","match":"strict"},{"file":"corpus12.graph.txt","text":"时隔数月，本可又来参与配音工作噜，我鸟从匹诺康尼一路演唱到现在，收获了报纸媒体很多很好的评价，其中就包括，他们说我鸟不是","match":"strict"}]
+9	1	125	低	心海→海贵人	src=N	rule=N	id=N	tier=corpus	var={"海贵人":9}
+   [{"file":"corpus12.graph.txt","text":"海贵人的二减速惹","match":"strict"},{"file":"corpus12.graph.txt","text":"好赔钱的海贵人 没眼看[辣眼睛] 李华真的很难打海贵人 只要海贵人水平不是差李华很多 水平差不多真的轻松绞杀李华 我两个","match":"strict"},{"file":"corpus12.graph.txt","text":"呀也[哦呼]这次海贵人皮肤竟然和我华阴淋春语一样走平价史诗路线[鼓掌]但素海贵人也只能勉强和我华嫔起嫔坐噜[爱心]毕竟我","match":"strict"}]
+58	2	34	中	李白→李华	src=N	rule=N	id=N	tier=corpus	var={"李华":58}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】感觉这个新英雄给别人当工具人做女又都比李华要赔钱，出全法当一次性法师也不如垫底女王上官婉儿","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】有点像李华","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】花衣蝶就不会这样，李华就不会这样","match":"strict"}]
+2	1	93	低	罗玉凤→凤仙子	src=N	rule=N	id=N	tier=corpus	var={"凤仙子":2}
+   [{"file":"corpus-bili-20261024202023.txt","text":"# 关键词: 淋语, 淋语教程, 高等淋语, 淋语词汇, 淋语新解, 淋语梗, 淋语科普, 淋语八级, 淋语等级, 淋语","match":"strict"},{"file":"corpus12.graph.txt","text":"凤仙子由于咖位太低被淋淋和阴婷排挤导致没有出演本次节目，请各位谅解！！！","match":"strict"}]
+4	0	28	低	貂蝉→我婵	src=Y	rule=N	id=N	tier=literal	var={"我婵":4,"蝉姐":0,"蝉贵人":0,"绝世舞姬":0,"貂蝉":28}
+   [{"file":"corpus12.graph.txt","text":"天惹 好美的二技能免疫诸葛大 我婵机制slay","match":"strict"},{"file":"corpus12.graph.txt","text":"我婵疑似杀生院转生","match":"strict"},{"file":"corpus12.graph.txt","text":"那么我婵就把你们全放进贝塔里","match":"strict"}]
+1	0	35	低	杨玉环→我环	src=N	rule=N	id=N	tier=literal	var={"我环":1}
+   [{"file":"corpus12.graph.txt","text":"每次想摆烂就选我菌，结果都能赢，选我环，我泔，我武好好打就遇到猪队友，无语[笑哭]","match":"strict"}]
+2	0	50	低	武则天→我武	src=N	rule=N	id=N	tier=literal	var={"我武":2}
+   [{"file":"corpus12.graph.txt","text":"每次想摆烂就选我菌，结果都能赢，选我环，我泔，我武好好打就遇到猪队友，无语[笑哭]","match":"strict"},{"file":"corpus7.txt","text":"TNND，不知道我运气到底是好还是坏，我武器20抽出金，结果是心海专武，我要的是雷神专武啊","match":"strict"}]
+6	0	4	低	蔡文姬→我菌	src=N	rule=N	id=N	tier=literal	var={"我菌":6}
+   [{"file":"corpus12.graph.txt","text":"王者荣耀姓什么，我菌姓什么，我想你比我更清楚!","match":"strict"},{"file":"corpus12.graph.txt","text":"我菌就这样狼狈不堪的被偷了衣服，真是师太啊！[脱单doge]","match":"strict"},{"file":"corpus12.graph.txt","text":"每次想摆烂就选我菌，结果都能赢，选我环，我泔，我武好好打就遇到猪队友，无语[笑哭]","match":"strict"}]
+3	0	12	低	大乔→我乔	src=N	rule=N	id=N	tier=literal	var={"我乔":3}
+   [{"file":"corpus12.graph.txt","text":"李华1a130下不如我乔一扇子，我乔美美拿大女主剧本做新时代独立强女噜[星星眼][星星眼]","match":"strict"},{"file":"corpus5.txt","text":"那我乔呢？请一些街道工作者守好底线惹","match":"strict"}]
+2	0	72	低	加强→如加	src=N	rule=Y	id=N	tier=literal	var={"如加":2}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】不如加位移","match":"strict"},{"file":"corpus12.graph.txt","text":"加强了足足20点q技能伤害，足足20点，还是满级20点，加强了吗，如加","match":"strict"}]
+7	0	0	低	游戏皮肤→高定	src=N	rule=Y	id=N	tier=literal	var={"高定":7}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【视频】【淋明杀鸡】穿上我凤联动高定再次给Give It To Me打歌","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这套高定和sistar的给老娘还挺搭的","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这套高定和sistar的给老娘还挺搭的","match":"strict"}]
+27	1	65	中	发布→释出	src=N	rule=Y	id=N	tier=corpus	var={"释出":27}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】集美啊🙄最好珍素指南惹，有点像是通讯录都难以释出的文案🙄","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】来支持惹，但我们重岳什么时候也有像封面一样的大乃图释出！？！？","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】封面图释出一下，还有好神圣的bgm","match":"strict"}]
+11	0	43	低	破防→破如防	src=N	rule=Y	id=N	tier=literal	var={"破如防":11}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】破如防","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】破如防","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】破如防","match":"strict"}]
+2	0	6	低	发癫→理发店	src=N	rule=Y	id=N	tier=literal	var={"理发店":2}
+   [{"file":"corpus10.raw.txt","text":"理发店的小曲","match":"strict"},{"file":"corpus12.graph.txt","text":"回复 @澔平 :[翻白眼]别在这理发店","match":"strict"}]
+37	0	7	中	音准→音道	src=N	rule=Y	id=N	tier=literal	var={"音道":37}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】你雅的音道尊的很百变吼，我还以为是铁T走出来救火了。","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】四五个群凑不出一个t只好为难雅文的音道加粗了","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】好强劲的音道","match":"strict"}]
+8	3	285	低	直男→蠢直	src=N	rule=N	id=N	tier=corpus	var={"蠢直":8}
+   [{"file":"corpus11.raw.txt","text":"搞不懂某些蠢直在高贵些什么","match":"strict"},{"file":"corpus11.raw.txt","text":"跟孙吧有什么关系惹，蠢直别蹭靴靴","match":"strict"},{"file":"corpus11f.txt","text":"搞不懂某些蠢直在高贵些什么","match":"strict"}]
+38	5	22	中	低级→低菊	src=N	rule=Y	id=N	tier=corpus	var={"低菊":38}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】说是少数服从多数，但事实是所有打月结晶反应的少数都不会给只能打结晶的多数婢女好脸色看!这简直就是致敬我们璃月的m","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】啊啊啊啊啊啊啊啊好低菊的文案被吓晕","match":"strict"},{"file":"corpus11.raw.txt","text":"好低菊的填词","match":"strict"}]
+15	0	3	低	空洞→崆峒	src=N	rule=Y	id=N	tier=literal	var={"崆峒":15}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】吓鼠，连夜爬上崆峒山[脸红]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】吓鼠，连夜爬上崆峒山[脸红]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【UP】崆峒山尼姑","match":"strict"}]
+3	1	3	低	平起平坐→嫔起嫔坐	src=N	rule=Y	id=N	tier=corpus	var={"嫔起嫔坐":3}
+   [{"file":"corpus11.raw.txt","text":"嫔起嫔坐","match":"strict"},{"file":"corpus11.raw.txt","text":"嫔起嫔坐","match":"strict"},{"file":"corpus12.graph.txt","text":"呀也[哦呼]这次海贵人皮肤竟然和我华阴淋春语一样走平价史诗路线[鼓掌]但素海贵人也只能勉强和我华嫔起嫔坐噜[爱心]毕竟我","match":"strict"}]
+290	2	29	高	秒杀→秒了	src=N	rule=Y	id=N	tier=corpus	var={"秒了":290}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】玛碧薇卡再怎么买榜又怎样[喜欢]我们成男队秒了","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"雅雅本人非常喜欢灵砂，我砂超模秒了靴靴","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】我砂联动林雅文就诠释了什么叫致命女人，你们的倒计时已经在倒数计时了我砂加强马上秒了你们[不问天_感叹号]","match":"strict"}]
+13	1	2	低	集火→即刻绞杀	src=N	rule=Y	id=N	tier=corpus	var={"即刻绞杀":13}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】即刻绞杀","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】即刻绞杀","match":"strict"},{"file":"corpus10.raw.txt","text":"即刻绞杀！","match":"strict"}]
+0	0	5	低	雪藏→关进辛者库	src=Y	rule=Y	id=N	tier=rule-only	var={"关进辛者库":0}
+   []
+52	1	0	中	数值超标→超标	src=N	rule=Y	id=N	tier=corpus	var={"超标":52}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】抽了奥贝塔最多再抽个女皇，含女量要超标了","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】依旧冷门英雄有超标风险","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】超标削弱都有补偿，说明哪吒不超标","match":"strict"}]
+26	2	8	中	无人在意→nbcs	src=N	rule=Y	id=N	tier=corpus	var={"nbcs":26}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】感觉还是不要引流比较好，12级黄牌从两年前一直在淋吧粘接，一点点地看着淋吧风气变差，现在淋吧不乏真情实感撕β也是","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】玛雅，那个偷梗节奏榜被搬到xhs去了，xhs高贵双标厕妹在发癫骂男同恶熏，本来就是小众文化她们恶不恶心nbcs，","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】这个130年也卖不出一单的声音太赔钱了，丢进🐔堆里根本nbcs，我不会给你很多很好的评价[藏狐]","match":"strict"}]
+2	0	0	低	笑到肺疼→肺部真菌感染噜	src=N	rule=Y	id=N	tier=literal	var={"肺部真菌感染噜":2}
+   [{"file":"corpus10.raw.txt","text":"肺部真菌感染噜","match":"strict"},{"file":"corpus10f.txt","text":"肺部真菌感染噜","match":"strict"},{"file":"corpus10.raw.txt","text":"肺部真菌感染噜","match":"punct-insensitive"}]
+2	2	4	低	我先走了→本可命小，先鼠惹	src=N	rule=Y	id=N	tier=corpus	var={"本可命小，先鼠惹":2}
+   [{"file":"corpus11.raw.txt","text":"本可命小，先鼠惹","match":"strict"},{"file":"corpus11f.txt","text":"本可命小，先鼠惹","match":"strict"},{"file":"corpus11.raw.txt","text":"本可命小，先鼠惹","match":"punct-insensitive"}]
+1	0	20	低	一键三连→三连惹	src=N	rule=Y	id=N	tier=literal	var={"三连惹":1}
+   [{"file":"corpus5.txt","text":"三连惹","match":"strict"}]
+1	0	18	低	催更→罚你六月周更	src=N	rule=Y	id=N	tier=literal	var={"罚你六月周更":1}
+   [{"file":"corpus12.graph.txt","text":"死丫头五月就出来卖了一次，罚你六月周更","match":"strict"},{"file":"corpus12.graph.txt","text":"死丫头五月就出来卖了一次，罚你六月周更","match":"punct-insensitive"}]
+1	0	0	低	一问三不知→不知道不清楚不了解不明白	src=N	rule=Y	id=N	tier=literal	var={"不知道不清楚不了解不明白":1}
+   [{"file":"corpus12.graph.txt","text":"不知道不清楚不了解不明白","match":"strict"},{"file":"corpus12.graph.txt","text":"不知道不清楚不了解不明白","match":"punct-insensitive"}]
+8	0	2	低	秀恩爱→对食	src=N	rule=Y	id=N	tier=literal	var={"对食":8}
+   [{"file":"corpus11.raw.txt","text":"科普一下，对食:指古时太监和宫女谈恋爱的行为，暗指“行房”","match":"strict"},{"file":"corpus11f.txt","text":"科普一下，对食:指古时太监和宫女谈恋爱的行为，暗指“行房”","match":"strict"},{"file":"corpus12.graph.txt","text":"静止姐妹对食","match":"strict"}]
+1	0	1	低	祖师爷→上古之神	src=N	rule=N	id=N	tier=literal	var={"上古之神":1}
+   []
+1	0	2	低	跑调→音道不准惹	src=N	rule=Y	id=N	tier=literal	var={"音道不准惹":1}
+   [{"file":"corpus12.graph.txt","text":"音道不准惹","match":"strict"},{"file":"corpus12.graph.txt","text":"音道不准惹","match":"punct-insensitive"}]
+0	0	0	低	美到爆→美到外翻惹	src=N	rule=Y	id=N	tier=rule-only	var={"美到外翻惹":0}
+   []
+6	2	6	低	臣妾→臣妾	src=N	rule=Y	id=Y	tier=corpus	var={"臣妾":6}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】最初开卖的阴婷已经鼠惹，臣妾现在素献祭家人来叠杀人书的光辉女郎拉克丝厚🙄💅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】最初开卖的阴婷已经鼠惹，臣妾现在素献祭家人来叠杀人书的光辉女郎拉克丝厚🙄💅","match":"strict"},{"file":"corpus11.raw.txt","text":"应该先说无非是一些菜馅和肉馅，然后再说但是都是臣妾亲手包的才对","match":"strict"}]
+8	0	8	低	陛下→陛下	src=N	rule=N	id=Y	tier=weak	var={"陛下":8}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【简介】《为了拯救npc女友我拒绝接受任务》作者：钵钵鸡真好吃 平台：刺猬猫 《反派被女主包围》作者：二两小酒 平台：次","match":"strict"},{"file":"corpus11.raw.txt","text":"在影域遇见白沙皇的某人：陛下，请不要随意批判前人的过错","match":"strict"},{"file":"corpus11.raw.txt","text":"连沙皇陛下都看出来他的虚与委蛇","match":"strict"}]
+13	0	13	低	太后→太后	src=N	rule=N	id=Y	tier=weak	var={"太后":13}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】说是少数服从多数，但事实是所有打月结晶反应的少数都不会给只能打结晶的多数婢女好脸色看!这简直就是致敬我们璃月的m","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】绳匠未曾废后，本薇依旧是正宫💅，嫡庶有别，也该是它啥子🐍来拜见我薇，即便困在这仓库里一生一世，我薇都是太后啊","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"老生代： 郭太后（归隐山林）、 小黄豆 、章鱼妹 、聂小倩她老板（现已飞升进阶，曾与郭太后直播互骂）等等等等","match":"strict"}]
+2	0	2	低	小主→小主	src=N	rule=N	id=Y	tier=weak	var={"小主":2}
+   [{"file":"corpus8.raw.txt","text":"在，小主人","match":"strict"},{"file":"corpus8.raw.txt","text":"牛牛可爱捏，还上前看看小主人有没有伤着","match":"strict"}]
+5	0	5	低	千岁→千岁	src=Y	rule=N	id=Y	tier=weak	var={"千岁":5}
+   []
+17	0	17	低	来人→来人	src=N	rule=N	id=Y	tier=weak	var={"来人":17}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】那这距离救不下来人了","match":"strict"},{"file":"corpus10.raw.txt","text":"回复 @徐珺大哥 :真上的话，能让我想不起来人猿泰山吗？[doge]","match":"strict"},{"file":"corpus10.raw.txt","text":"毕竟都是过来人啦","match":"strict"}]
+0	0	0	低	摆驾→摆驾	src=Y	rule=Y	id=Y	tier=rule-only	var={"摆驾":0}
+   []
+0	0	0	低	平身→平身	src=Y	rule=Y	id=Y	tier=rule-only	var={"平身":0}
+   []
+5	0	5	低	饶命→饶命	src=N	rule=N	id=Y	tier=weak	var={"饶命":5}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】皎女王饶命啊啊啊啊啊皎一下","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】皎女王饶命","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】嘎女王饶命","match":"strict"}]
+1	0	1	低	认罪→认罪	src=N	rule=N	id=Y	tier=weak	var={"认罪":1}
+   [{"file":"corpus11.raw.txt","text":"前提是他得认罪才行","match":"strict"}]
+6	0	6	低	大赦→大赦	src=N	rule=Y	id=Y	tier=weak+rule	var={"大赦":6}
+   [{"file":"corpus4.txt","text":"神圣楼兰帝国女皇颁布大赦诏","match":"strict"},{"file":"corpus4.txt","text":"黑名单上限了大赦一部分","match":"strict"},{"file":"corpus4.txt","text":"楼兰女皇大赦天下","match":"strict"}]
+0	0	0	低	传旨→传旨	src=Y	rule=Y	id=Y	tier=rule-only	var={"传旨":0}
+   []
+0	0	0	低	传膳→传膳	src=Y	rule=Y	id=Y	tier=rule-only	var={"传膳":0}
+   []
+0	0	0	低	圣旨→圣旨	src=Y	rule=N	id=Y	tier=none	var={"圣旨":0}
+   []
+15	0	15	低	冷宫→冷宫	src=N	rule=Y	id=Y	tier=weak+rule	var={"冷宫":15}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】一阵子没看我莲 怎么就被打入冷宫了 我莲果然素苦命女一枚 前脚刚利用贝如塔医院赚了一波好感 后脚地铁唱歌被官媒点","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】一阵子没看我莲 怎么就被打入冷宫了 我莲果然素苦命女一枚 前脚刚利用贝如塔医院赚了一波好感 后脚地铁唱歌被官媒点","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】评论区有点像冷宫妃子互扯头花","match":"strict"}]
+3	0	3	低	掌嘴→掌嘴	src=N	rule=Y	id=Y	tier=weak+rule	var={"掌嘴":3}
+   [{"file":"corpus12.graph.txt","text":"宫中禁止对食靴靴，拉出去掌嘴","match":"strict"},{"file":"corpus5.txt","text":"开头不标准，不是靴靴，掌嘴🙄","match":"strict"},{"file":"corpus5.txt","text":"掌嘴？？甄嬛传看多了吧。。。","match":"strict"}]
+0	0	0	低	拖出去斩了→拖出去斩了	src=Y	rule=Y	id=Y	tier=rule-only	var={"拖出去斩了":0}
+   []
+7	2	7	低	恭迎→恭迎	src=N	rule=N	id=Y	tier=corpus	var={"恭迎":7}
+   [{"file":"corpus-bili-20261009073309.txt","text":"5.4恭迎我莱回宫空降！！提瓦特排行榜围险了！！⚠️这次我们是真的来了！！👄❄️","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】惹！看我刷到了什么！恭迎黑贵妃回宫（最好不要给我拖更靴靴","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】惹！看我刷到了什么！恭迎黑贵妃回宫（最好不要给我拖更靴靴","match":"strict"}]
+0	0	0	低	新婚燕尔→新婚燕尔	src=Y	rule=N	id=Y	tier=none	var={"新婚燕尔":0}
+   []
+89	2	89	中	罢了→罢了	src=N	rule=Y	id=Y	tier=corpus	var={"罢了":89}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】神秘弹琴女子怎么你了，你紧你华你琴只是有点喜欢怜惜残血罢了[黑洞][黑洞]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】有点像被便符贴住后放出0个技能后的幻想罢了[翻白眼]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】团长叔叔和小杜男孩比大小疑似惜败🙄从来没有大树挂辣椒这一说，一切只是因为我杜童颜巨掉罢了","match":"strict"}]
+5	0	5	低	极好→极好	src=N	rule=Y	id=Y	tier=weak+rule	var={"极好":5}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】这个功能极好","match":"strict"},{"file":"corpus10.raw.txt","text":"好听极好听","match":"strict"},{"file":"corpus10f.txt","text":"好听极好听","match":"strict"}]
+1	0	1	低	方才→方才	src=N	rule=Y	id=Y	tier=weak+rule	var={"方才":1}
+   [{"file":"corpus10.raw.txt","text":"何况粉丝票就是因为她亲自找主办方才得以解决的","match":"strict"}]
+6	0	6	低	想必→想必	src=N	rule=Y	id=Y	tier=weak+rule	var={"想必":6}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】如此长舌想必已经把电光毒龙钻练至大成了","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】如此长舌想必已经把电光毒龙钻练至大成了","match":"strict"},{"file":"corpus12.graph.txt","text":"你曌苦了那么多年了想必也不会忘本","match":"strict"}]
+4	0	4	低	倒也→倒也	src=N	rule=Y	id=Y	tier=weak+rule	var={"倒也":4}
+   [{"file":"corpus3.txt","text":"原来是南宁的朋友啊，那如此抽象倒也不奇怪了（逃）","match":"strict"},{"file":"corpus6.txt","text":"倒也不必给人大耳刮子，俩人都测就行了","match":"strict"},{"file":"corpus6.txt","text":"击倒也行，但当时那时候氛围有点紧张而且很多可用于替换的词语平时也很少用到就一时半会没想到","match":"strict"}]
+3	0	3	低	真真→真真	src=N	rule=N	id=Y	tier=weak	var={"真真":3}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【简介】从互联网的 big star，到客人眼里的 five star，被看不起的工作，也能认认真真做成自己的事业，而劳","match":"strict"},{"file":"corpus12.graph.txt","text":"回复 @泪滴真真子 :妃就是妃 贵妃就是贵妃[脱单doge]","match":"strict"}]
+8	0	8	低	想来→想来	src=N	rule=N	id=Y	tier=weak	var={"想来":8}
+   [{"file":"corpus-bili-20261009073936.txt","text":"这就是我家乡的九峰山，这里风景优美，吸引了许许多多的游客。如果你也想来，我们欢迎你哦！","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"人们喜欢家乡流畅的湖水，有些人称赞他们家乡的高大笔直的山峰，有些人怀念家乡顽强的草原……我，但我爱我家乡的九峰山，当我走","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"这就是我家乡的九峰山，这里风景优美，吸引了许许多多的游客。如果你也想来，我们欢迎你哦！","match":"strict"}]
+1	0	1	低	皇贵妃→皇贵妃	src=Y	rule=N	id=Y	tier=weak	var={"皇贵妃":1}
+   []
+34	2	34	中	贵妃→贵妃	src=N	rule=Y	id=Y	tier=corpus	var={"贵妃":34}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】你小子真该死，我屯了两个多月加上活动送的100多抽一个大哥没出，硬是出了两个林贵妃和叔叔，可是本来我就有叔叔，爷","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】你小子真该死，我屯了两个多月加上活动送的100多抽一个大哥没出，硬是出了两个林贵妃和叔叔，可是本来我就有叔叔，爷","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】惹！看我刷到了什么！恭迎黑贵妃回宫（最好不要给我拖更靴靴","match":"strict"}]
+0	0	0	低	淑妃→淑妃	src=Y	rule=N	id=Y	tier=none	var={"淑妃":0}
+   []
+49	1	49	中	嫔→嫔	src=Y	rule=N	id=Y	tier=corpus	var={"嫔":49}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】莫非……不会就是当年的莞嫔吧[吃瓜][吃瓜]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】莫非……不会就是当年的莞嫔吧[吃瓜][吃瓜]","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】安嫔的大吃满了这是可以说的吗","match":"strict"}]
+55	0	55	中	皇后→皇后	src=N	rule=Y	id=Y	tier=weak+rule	var={"皇后":55}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】霉霉在麦迪逊花园Adam Sandler 证婚，凤凤在皇后学院算微积分。同是纽约追梦人，一个拿了格莱美，一个拿了","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】卡尔玛，你要活下去，你连恨都不要有。你要继承艾欧尼亚和卡尔玛的荣耀，你要做皇后[doge]","match":"strict"},{"file":"corpus11.raw.txt","text":"好低菊的歌词，建议请国外扭腰皇后大学天后我凤来填词，靴靴","match":"strict"}]
+4	0	4	低	淑女→淑女	src=N	rule=N	id=Y	tier=weak	var={"淑女":4}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】淑女l慢翻","match":"strict"},{"file":"corpus5.txt","text":"封面太好看,淑女少不了","match":"strict"},{"file":"corpus5.txt","text":"淑女们好","match":"strict"}]
+71	7	70	中	妹妹→美美	src=N	rule=N	id=N	tier=corpus	var={"美美":71}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【视频】星奴谷物语第18期，冬日的第一杯乌干达，婪允珍美美开吃！💅","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】嬷嬷一声令下封了全须弥的虚空终端小绿，但我蛇润到挪徳卡莱美美找到了属于自己的月绽放[星星眼]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【简介】下午学车学到一半找个借口跑出驾校回家剪视频，很难不笑晕。虽然是断头饭，但相信我妮我心这次深渊美美回春噜！求点点赞","match":"strict"}]
+3	0	3	低	闺阁→闺阁	src=N	rule=N	id=Y	tier=weak	var={"闺阁":3}
+   [{"file":"corpus7.txt","text":"《楼兰传》是古楼兰出品的清装宫斗剧。该剧讲述了清朝雍正年间，女主角选秀入宫， 在皇后、华妃等几方势力夹击与宫闱斗争中，从","match":"strict"},{"file":"corpus9.raw.txt","text":"说实话，上官婉儿是被野史糟践得最狠的历史人物之一。大多数人一提到上官婉儿，总是聚焦于她的情史，探究着上官婉儿到底有过几个","match":"strict"},{"file":"corpus9f.txt","text":"说实话，上官婉儿是被野史糟践得最狠的历史人物之一。大多数人一提到上官婉儿，总是聚焦于她的情史，探究着上官婉儿到底有过几个","match":"strict"}]
+0	0	3	低	妹妹们→美美们	src=Y	rule=N	id=N	tier=none	var={"美美们":0}
+   []
+2	0	2	低	解解们→解解们	src=N	rule=N	id=Y	tier=weak	var={"解解们":2}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】幸好我是直男，真是被解解们吓鼠惹[脱单doge]","match":"strict"},{"file":"corpus7.txt","text":"(〜￣△￣)〜up还是健在的，初中的时候投的稿，如今已经大学啦！b站一直在手机里没有卸载，但是不经常来，诅咒我被吸入的解","match":"strict"}]
+0	0	0	低	小主儿→小主儿	src=Y	rule=N	id=Y	tier=none	var={"小主儿":0}
+   []
+0	0	1	低	宝子们→宝子萌	src=Y	rule=N	id=N	tier=none	var={"宝子萌":0}
+   []
+74	2	74	中	家人→家人	src=N	rule=N	id=Y	tier=corpus	var={"家人":74}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】淋文化是啥啊家人们","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"除家人以外，异性的手都没牵过[辣眼睛]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"除家人以外，异性的手都没牵过[辣眼睛]","match":"strict"}]
+6	1	6	低	我方→我方	src=N	rule=N	id=Y	tier=corpus	var={"我方":6}
+   [{"file":"corpus-bili-20261009073936.txt","text":"本视频由我方与 IWWIT 达成付费合作制作；视频内容均经过严谨采编核实，合作方仅提供专业科普资料支持。","match":"strict"},{"file":"corpus-web-search.txt","text":"直播吧2月16日讯 女星蔡依林的说话语气十分独特,渐渐的,网友们掌握到了她说话的一些规律,比如“天啦噜”,“靴靴“,“要","match":"strict"},{"file":"corpus12.graph.txt","text":"才琴双绝：才选完琴女刚到线上就和我方射手双双死绝 琴断意绝：指琴女弹琴弹烂了也阻挡不了队友想投降的意愿","match":"strict"}]
+0	0	1	低	咱家→俺们仙女	src=Y	rule=N	id=N	tier=none	var={"俺们仙女":0}
+   []
+131	1	131	高	评论区→评论区	src=N	rule=N	id=Y	tier=corpus	var={"评论区":131}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】无人问津的评论区[吃瓜]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"2.如果你错过了…时期的…、…时期的…、…时期的…，那请你继续错过现在的…。第一次看是在娅娅音乐评论区里面。猜是欧美音乐","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】欢迎收看《视频区2分钟评论区2小时系列》","match":"strict"}]
+6963	19	6963	高	弹幕→弹幕	src=N	rule=N	id=Y	tier=corpus	var={"弹幕":6963}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】气得我手痒痒，你们弹幕好爽好爽，我都没有☠️","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】气得我手痒痒，你们弹幕好爽好爽，我都没有☠️","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】看到弹幕乙女方舟没绷住，你游男女干员占比是一点不提，性别对立是一定要参与的","match":"strict"}]
+195	10	195	高	up主→up主	src=N	rule=Y	id=Y	tier=corpus	var={"up主":195}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】直男也喜欢看up主正常吗","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】UP主加油！看好你噢~","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】ipad2020pro ios15.6版本，说已经是最新版本了，up主咋升ios16的啊，说是16的正式版九月才","match":"strict"}]
+1985	44	1985	高	视频→视频	src=N	rule=N	id=Y	tier=corpus	var={"视频":1985}
+   [{"file":"corpus-bili-20261009073309.txt","text":"# 视频数: 60  评论数: 904","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【视频】【王者淋耀】阴者β中来 山水皆成湿","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"搞笑视频无不良引导！","match":"strict"}]
+0	0	0	低	路人甲乙丙→路人甲乙丙	src=Y	rule=Y	id=Y	tier=rule-only	var={"路人甲乙丙":0}
+   []
+0	0	8	低	笑不活了→笑鼠不活了	src=Y	rule=N	id=N	tier=none	var={"笑鼠不活了":0}
+   []
+2	1	103	低	服了→服惹	src=N	rule=Y	id=N	tier=corpus	var={"服惹":2}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【评论】支持子 关于杀鸡视频很有感触 其实本可之前也是看了不少up的淋系解说，才想着自己做来玩一玩，也顺便是和大家分享一","match":"strict"},{"file":"corpus3.txt","text":"为此翻到香服惹","match":"strict"}]
+1	0	147	低	绝了→绝惹	src=N	rule=N	id=N	tier=literal	var={"绝惹":1}
+   [{"file":"corpus6.txt","text":"诸葛亮 达摩用剩的边角料 拒绝惹","match":"strict"}]
+0	0	11	低	厉害啊→厉海啊	src=Y	rule=Y	id=N	tier=rule-only	var={"厉海啊":0}
+   []
+0	0	55	低	太强了→太超惹	src=N	rule=Y	id=N	tier=rule-only	var={"太超惹":0}
+   []
+0	0	18	低	不好看→木看	src=Y	rule=N	id=N	tier=none	var={"木看":0}
+   []
+0	0	0	低	不好看惹→木看惹	src=Y	rule=Y	id=N	tier=rule-only	var={"木看惹":0}
+   []
+0	0	0	低	不好看噜→木看噜	src=Y	rule=Y	id=N	tier=rule-only	var={"木看噜":0}
+   []
+10	0	10	低	一般般→一般般	src=N	rule=N	id=Y	tier=weak	var={"一般般":10}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】一般般吧[doge]经常","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】一般般吧[doge]经常","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】第一季的小狗凯特琳一般般，第二季的主人凯特琳绝了","match":"strict"}]
+0	0	40	低	还不错→还不错素	src=N	rule=N	id=N	tier=none	var={"还不错素":0}
+   []
+0	0	70	低	还行→还行素	src=N	rule=N	id=N	tier=none	var={"还行素":0}
+   []
+0	0	0	低	买它→买它惹	src=Y	rule=Y	id=N	tier=rule-only	var={"买它惹":0}
+   []
+0	0	12	低	收藏了→收藏惹	src=N	rule=Y	id=N	tier=rule-only	var={"收藏惹":0}
+   []
+314	7	314	高	三连→三连	src=N	rule=Y	id=Y	tier=corpus	var={"三连":314}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】看到封面就冲进来三连[喜欢]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】已三连，求封面","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【简介】下午学车学到一半找个借口跑出驾校回家剪视频，很难不笑晕。虽然是断头饭，但相信我妮我心这次深渊美美回春噜！求点点赞","match":"strict"}]
+1	0	204	低	关注→关注惹	src=N	rule=N	id=N	tier=literal	var={"关注惹":1}
+   [{"file":"corpus12.graph.txt","text":"有宝可梦，关注惹","match":"strict"}]
+0	0	10	低	转发→转发惹	src=N	rule=N	id=N	tier=none	var={"转发惹":0}
+   []
+0	0	23	低	截图→截图惹	src=N	rule=N	id=N	tier=none	var={"截图惹":0}
+   []
+37	1	3	中	baby→宝贝	src=N	rule=N	id=N	tier=corpus	var={"宝贝":37}
+   [{"file":"corpus-bili-20261009073309.txt","text":"宝贝们新年快乐！","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】喜欢宝贝[喜欢]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】喜欢宝贝[喜欢]","match":"strict"}]
+5	0	0	低	baby你→宝贝你	src=N	rule=N	id=N	tier=literal	var={"宝贝你":5}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】宝贝你的tag这里站不下这么多人！[笑哭]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】宝贝你的tag这里站不下这么多人！[笑哭]","match":"strict"},{"file":"corpus11.raw.txt","text":"宝贝你骂人好辣（","match":"strict"}]
+17	5	0	低	babe→婊贝	src=N	rule=N	id=N	tier=corpus	var={"婊贝":17}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】果然婊贝们过剧情都是这么想的","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【简介】想要封面的婊贝点个赞支持一下，私信本可领取美图～","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【简介】婊贝们来支持一下呀，酒神逻各斯p2补档了！","match":"strict"}]
+3	0	0	低	honey→蜂蜜	src=N	rule=N	id=N	tier=literal	var={"蜂蜜":3}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【弹幕】想吃蜂蜜味的丢豆惹","match":"strict"},{"file":"corpus11.raw.txt","text":"布拉奇，西欧神话里的诗歌与音乐之神，拥有一种蜂蜜酒，喝下的人可以在辩论中胜过任何人","match":"strict"},{"file":"corpus5.txt","text":"疯了是蜂蜜","match":"strict"}]
+9	0	0	低	darling→达令	src=N	rule=N	id=N	tier=literal	var={"达令":9}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】郭子这个是长大后想去报仇当初那个卖她过期冰棍害她高考失利的老头，结果老头是达令爸爸达令站出来挡在了老头面前，郭子","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】郭子这个是长大后想去报仇当初那个卖她过期冰棍害她高考失利的老头，结果老头是达令爸爸达令站出来挡在了老头面前，郭子","match":"strict"}]
+2	0	0	低	princess→公主殿下	src=N	rule=N	id=N	tier=literal	var={"公主殿下":2}
+   [{"file":"corpus10.raw.txt","text":"参见公主殿下","match":"strict"},{"file":"corpus10f.txt","text":"参见公主殿下","match":"strict"},{"file":"corpus10.raw.txt","text":"参见公主殿下","match":"punct-insensitive"}]
+12	3	12	低	queen→queen	src=N	rule=Y	id=Y	tier=corpus	var={"queen":12}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】我阴找不到从良的理由是通讯录永远的queen","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】我阴找不到从良的理由是通讯录永远的queen","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】谢谢，看在你这么努力的份上，三连还是算了吧绝不是因为看到你三个NEW，还是三个强度queen嫉妒了","match":"strict"}]
+1	0	1	低	king→king	src=N	rule=N	id=Y	tier=weak	var={"king":1}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【UP】King_Henry","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【简介】素材 新钰岚 剪音-虫国king","match":"strict"},{"file":"corpus8.raw.txt","text":"佛king","match":"strict"}]
+18	0	18	低	boss→boss	src=N	rule=N	id=Y	tier=weak	var={"boss":18}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】这个boss有点像新时代杰斯顿，纯男队美美绞杀的程度","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】这个boss有点像新时代杰斯顿，纯男队美美绞杀的程度","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】OMG没有虫母来当boss不是很支持惹","match":"strict"}]
+45	0	1	中	angel→天使	src=N	rule=N	id=N	tier=literal	var={"天使":45}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】我尼美神降临 天使可比某些洗脚婢高贵多了🙄💅🏻只吃我法这种天菜的局办厚","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【简介】纯属娱乐，周阴婷版，原视频来自新版地狱天使第10和11两集","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】另外一条路我用异格芙蓉和能天使还有羽毛笔就守好了，当然，我其他干员开大招的时候，避免不了会有一点火力支援","match":"strict"}]
+0	0	0	低	handsome→帅锅	src=Y	rule=N	id=N	tier=none	var={"帅锅":0}
+   []
+2	0	0	低	beautiful→漂酿	src=N	rule=N	id=N	tier=literal	var={"漂酿":2}
+   [{"file":"corpus8.raw.txt","text":"真漂酿","match":"strict"},{"file":"corpus8f.txt","text":"真漂酿","match":"strict"}]
+86	0	0	中	cool→酷	src=Y	rule=N	id=N	tier=weak	var={"酷":86}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】我不该在大街上打开这个视频的，憋笑的憋好崩溃。。。世界上最残酷的刑罚也就这样了啊啊啊啊啊啊啊啊","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"himbo，意为漂亮小伙子。很“酷”很“帅”的年轻人，尤指女人身边的英俊男友。","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"himbo，意为漂亮小伙子。很“酷”很“帅”的年轻人，尤指女人身边的英俊男友。","match":"strict"}]
+1	0	6	低	nice→奈斯	src=N	rule=N	id=N	tier=literal	var={"奈斯":1}
+   [{"file":"corpus9.raw.txt","text":"very 奈斯","match":"strict"}]
+0	0	1	低	good→古德	src=Y	rule=N	id=N	tier=none	var={"古德":0}
+   []
+32	2	32	中	ok→OK	src=N	rule=N	id=Y	tier=corpus	var={"OK":32}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】[翻白眼]本可终于退坑你原了，[OK]但素武田解解的淋神死都不退","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】是的，我的斗子也是这样打月晶的[OK]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"[OK][OK][OK]","match":"strict"}]
+14	0	14	低	no→no	src=N	rule=N	id=Y	tier=weak	var={"no":14}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【简介】婶今年Fifty-eight了，離婚する带Ⅱ瓜娃子，life的냉혹하다磨没了婶的钝角，但磨no掉婶向往love与","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】年糕阴的NO.1泪目噜都找不到阴源，苦噜。","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】no","match":"strict"}]
+15	0	15	低	yes→yes	src=N	rule=N	id=Y	tier=weak	var={"yes":15}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【简介】我蛇是新时代女强人！ BGM： yes, and?-Ariana Grande Whoregasm-Cupcak","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【评论】弹幕总是 sona，can you？ 我琴表示：yes, and？","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】yes","match":"strict"}]
+111	0	0	高	why→歪	src=Y	rule=N	id=N	tier=weak	var={"歪":111}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】[Team Spirit 上海Major 冠军收藏集_歪比巴卜]这很好了[doge]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】[Team Spirit 上海Major 冠军收藏集_歪比巴卜]这很好了[doge]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】跟up一样抽7歪4出捕获明光，法daddy让我脱欧入非惹[呆]","match":"strict"}]
+4	0	3	低	what→沃特	src=N	rule=N	id=N	tier=literal	var={"沃特":4}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】本宫会给出很多很好的评价，赏斯沃特一根","match":"strict"}]
+143	3	0	高	who→胡	src=Y	rule=N	id=N	tier=corpus	var={"胡":143}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】从稻萋版本的流浪武士，到枫丹版本水仙十字系列任务里出现的那个恩肖爷爷（白胡子肌肉大叔真素让本可垂涎欲滴惹[喜欢]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】清一色的络腮胡肌肉壮男以及体毛设定","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】我也想要绿如卡，可是我的命运有点像胡艺莲，我的底线有点像那艺娜，我的职业有点像施柔儿。我要润到护照变篮，签证男人","match":"strict"}]
+194	1	0	高	when→温	src=Y	rule=N	id=N	tier=corpus	var={"温":194}
+   [{"file":"corpus-bili-20261009073309.txt","text":"#莫甘娜温 同年的回旋镖 插入我的心#","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】解解的亩温怎么每次都对着草附着开完大就美美速切下场，风套要站场扩散才能减抗惹，速速对我温我晴道歉","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"#温迪为还酒钱在酒馆当公厕#","match":"strict"}]
+129	0	0	高	how→豪	src=Y	rule=N	id=N	tier=weak	var={"豪":129}
+   [{"file":"corpus-bili-20261009073309.txt","text":"不过大家最爱的亚索/黑暗面女士/腕豪依旧在其中","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【视频】康神十大经典金句，不愧是电竞嘉豪吗，康神的权威我后知后觉","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】康豪成这样也不敢说打到身体算马枪[笑哭]","match":"strict"}]
+0	0	0	低	where→威尔	src=Y	rule=N	id=N	tier=none	var={"威尔":0}
+   []
+0	0	3	低	my→mai	src=N	rule=N	id=N	tier=none	var={"mai":0}
+   []
+82	7	3	中	love→喜翻	src=N	rule=Y	id=N	tier=corpus	var={"喜翻":82}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】天哪噜，解解还是这么敢说厚[喜欢]喜翻儿噜","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】这个daddy壮壮的，喜翻[害羞]，要是声音再低沉粗犷一些就好惹[星星眼]","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】这个daddy壮壮的，喜翻[害羞]，要是声音再低沉粗犷一些就好惹[星星眼]","match":"strict"}]
+1	0	0	低	like→莱克	src=N	rule=N	id=N	tier=literal	var={"莱克":1}
+   [{"file":"corpus7.txt","text":"伊莱克斯","match":"strict"}]
+2	0	0	低	baby们→宝贝们	src=N	rule=N	id=N	tier=literal	var={"宝贝们":2}
+   [{"file":"corpus-bili-20261009073309.txt","text":"宝贝们新年快乐！","match":"strict"},{"file":"corpus-bili-20261024172431.txt","text":"【简介】第一次做这么长的视频，希望各位宝贝们喜欢！ 觉得还不错的话麻烦给个点赞关注呀，祝你开心！","match":"strict"}]
+2	0	2	低	emo→emo	src=N	rule=Y	id=Y	tier=weak+rule	var={"emo":2}
+   [{"file":"corpus7.txt","text":"回复 @吃吃吃教大主教柴狐 :挺好，看这种视频就是为了你这样的。很多人喜欢往自己身上套完了症状，emo完就划走了，完了愈","match":"strict"},{"file":"corpus7.txt","text":"emo了是大河马直接偷的歌，也配和其他两首平起平坐？","match":"strict"},{"file":"corpus7.txt","text":"我emo了","match":"strict"}]
+0	0	11	低	v我→微我	src=Y	rule=N	id=N	tier=none	var={"微我":0}
+   []
+43	0	43	中	666→666	src=N	rule=N	id=Y	tier=weak	var={"666":43}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】我嘞个骚刚，哥们儿666啊，包赢的","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】666，这都有教学，不能用模型吗","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】666，这都有教学，不能用模型吗","match":"strict"}]
+1	0	1	低	999→999	src=N	rule=N	id=Y	tier=weak	var={"999":1}
+   [{"file":"corpus10.raw.txt","text":"999+人","match":"strict"},{"file":"corpus3.txt","text":"妈呀这个一定要打一个补丁，所有材料999","match":"strict"},{"file":"corpus8.raw.txt","text":"999","match":"strict"}]
+0	0	0	低	so beautiful→素比油	src=Y	rule=N	id=N	tier=none	var={"素比油":0}
+   []
+0	0	0	低	so good→素古德	src=Y	rule=N	id=N	tier=none	var={"素古德":0}
+   []
+0	0	0	低	very good→歪里古德	src=Y	rule=N	id=N	tier=none	var={"歪里古德":0}
+   []
+4	2	1	低	oh my god→欧米伽	src=N	rule=N	id=N	tier=corpus	var={"欧米伽":4}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】欧米伽真素艺术惹🙄💅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】欧米伽真素艺术惹🙄💅","match":"strict"},{"file":"corpus3.txt","text":"Ω 欧米伽 Ω","match":"strict"}]
+4	2	56	低	OMG→欧米伽	src=N	rule=N	id=N	tier=corpus	var={"欧米伽":4}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】欧米伽真素艺术惹🙄💅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】欧米伽真素艺术惹🙄💅","match":"strict"},{"file":"corpus3.txt","text":"Ω 欧米伽 Ω","match":"strict"}]
+12918	0	28	高	LOL→哈哈	src=N	rule=N	id=N	tier=literal	var={"哈哈":12918}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】文案太棒了，梗看得不是很懂但是很开心哈哈哈哈","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】只有看过庆奶直播卖字的才知道有多像！说话的停顿 手势，眨眼的频率以及摇头晃脑的感觉都很像哈哈哈","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】哈哈哈，这个男生怎么被选出来的[笑哭]","match":"strict"}]
+11	0	0	低	breakdown→破如防	src=N	rule=Y	id=N	tier=literal	var={"破如防":11}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】破如防","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】破如防","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】破如防","match":"strict"}]
+0	0	2	低	vocal→vo钙	src=Y	rule=N	id=N	tier=none	var={"vo钙":0}
+   []
+0	0	9	低	DNA→地钠	src=Y	rule=N	id=N	tier=none	var={"地钠":0}
+   []
+0	0	6	低	CPU→西屁油	src=Y	rule=N	id=N	tier=none	var={"西屁油":0}
+   []
+0	0	0	低	GPU→记屁油	src=Y	rule=N	id=N	tier=none	var={"记屁油":0}
+   []
+27	0	27	中	ban→ban	src=N	rule=N	id=Y	tier=weak	var={"ban":27}
+   [{"file":"corpus-bili-20261009073936.txt","text":"再战ban忍者闹麻了","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"乐乐，ban了也打不过","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"再战ban忍者闹麻了","match":"strict"}]
+1	0	1	低	pick→pick	src=N	rule=N	id=Y	tier=weak	var={"pick":1}
+   [{"file":"corpus11.raw.txt","text":"pick一下欣欣的穿搭，好看！","match":"strict"},{"file":"corpus11f.txt","text":"pick一下欣欣的穿搭，好看！","match":"strict"},{"file":"corpus12.graph.txt","text":"一个小女孩被pick的瞬间就是为了抵抗连体黑暗势力","match":"strict"}]
+4	0	4	低	MVP→MVP	src=N	rule=N	id=Y	tier=weak	var={"MVP":4}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【评论】MVP：黑袜🙄💅","match":"strict"},{"file":"corpus11.raw.txt","text":"豆包这把mvp","match":"strict"},{"file":"corpus11.raw.txt","text":"傲天得了MVP!","match":"strict"}]
+30	0	30	中	T0→T0	src=N	rule=Y	id=Y	tier=weak+rule	var={"T0":30}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】榜单比较野，对角色强度有大致认知但是不准确，你游经典把辅助当宝放t0","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】榜单比较野，对角色强度有大致认知但是不准确，你游经典把辅助当宝放t0","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】t0 蔡依淋，阴婷，罗玉凤，郭子","match":"strict"}]
+19	2	19	低	T1→T1	src=N	rule=N	id=Y	tier=corpus	var={"T1":19}
+   [{"file":"corpus-bili-20261011065020.txt","text":"t1 万人迷，大局吧娜娜，张玉梅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"t1 万人迷，大局吧娜娜，张玉梅","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】难怪思梦入服后那么久都没有到T1，不过反击能力还是挺特殊的[doge]","match":"strict"}]
+2	0	2	低	gg→gg	src=N	rule=N	id=Y	tier=weak	var={"gg":2}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【UP】GG棒解说","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【弹幕】这个时候不切人或手滑会怎么样，GG吗","match":"strict"},{"file":"corpus3.txt","text":"小落哪把不顶，小落不C就打gg的队伍","match":"strict"}]
+0	0	0	低	cw→cw	src=N	rule=N	id=Y	tier=none	var={"cw":0}
+   []
+0	0	0	低	pl→pl	src=N	rule=N	id=Y	tier=none	var={"pl":0}
+   []
+1	0	1	低	nsfw→nsfw	src=N	rule=N	id=Y	tier=weak	var={"nsfw":1}
+   [{"file":"corpus3.txt","text":"这是lvlv老师的作品，有nsfw的cg的，我记得好像是打完boss之后会出现在画廊里","match":"strict"},{"file":"corpus3.txt","text":"这是lvlv老师的作品，有nsfw的cg的，我记得好像是打完boss之后会出现在画廊里","match":"punct-insensitive"}]
+5	0	5	低	op→op	src=N	rule=Y	id=Y	tier=weak+rule	var={"op":5}
+   [{"file":"corpus10.raw.txt","text":"上面还有op的缝","match":"strict"},{"file":"corpus10.raw.txt","text":"上面还有op的缝","match":"strict"},{"file":"corpus10.raw.txt","text":"上面还有8u和OP的缝","match":"strict"}]
+14	0	14	低	top→top	src=N	rule=N	id=Y	tier=weak	var={"top":14}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】艺术top是我莲，商业top是辣辣","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】艺术top是我莲，商业top是辣辣","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】TXL女团首张同名出道专辑《TXL》终于发布啦[喜欢]我们TXL加油！私心表白门面top神颜主唱主舞主rap肘姐","match":"strict"}]
+3	0	3	低	恋综→恋综	src=N	rule=N	id=Y	tier=weak	var={"恋综":3}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【视频】一口气看通讯录恋综 烧0找Daddy 1-1","match":"strict"},{"file":"corpus8.raw.txt","text":"我是红果上恋综：我不装了我摊牌了过来的","match":"strict"},{"file":"corpus8f.txt","text":"我是红果上恋综：我不装了我摊牌了过来的","match":"strict"}]
+34	0	34	中	综艺→综艺	src=N	rule=N	id=Y	tier=weak	var={"综艺":34}
+   [{"file":"corpus-bili-20261024172431.txt","text":"【评论】想起了之前，杨丞琳在综艺里被喊琳琳，她直呼：别这么叫我，好恐怖。看来他是很清楚这个梗的[吃瓜]","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】感觉选了一堆沙子去拍综艺","match":"strict"},{"file":"corpus11.raw.txt","text":"连麻上了综艺之后风格变化巨大了","match":"strict"}]
+108	0	108	高	直播间→直播间	src=N	rule=N	id=Y	tier=weak	var={"直播间":108}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【视频】“交”可以组什么词呢？刘晓庆老师(梵谷)在直播间给大家写字了","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"作为路人觉得到她直播间骂人的我也不知道他们怎么想，是觉得好玩还是想引起别人的关注？又或者想控制像万人迷跟三梦搞成仇家这种","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"作为路人觉得到她直播间骂人的我也不知道他们怎么想，是觉得好玩还是想引起别人的关注？又或者想控制像万人迷跟三梦搞成仇家这种","match":"strict"}]
+5	0	5	低	粉丝群→粉丝群	src=N	rule=N	id=Y	tier=weak	var={"粉丝群":5}
+   [{"file":"corpus12.graph.txt","text":"真是难为淋国了！粉丝群体不是最多的！又是那样的画质！还能熬到如今这位分。","match":"strict"},{"file":"corpus7.txt","text":"想要进粉丝群的私信主播[星星眼]","match":"strict"},{"file":"corpus7.txt","text":"各位粉丝加一下粉丝群，我作品有二维码","match":"strict"}]
+5	0	5	低	超话→超话	src=N	rule=N	id=Y	tier=weak	var={"超话":5}
+   [{"file":"corpus-bili-20261024202023.txt","text":"【评论】刚从TaylorSwift超话过来，谁是阴酱艾阳具","match":"strict"},{"file":"corpus12.graph.txt","text":"从泰勒斯威夫特超话来的，谁是脆皮肠","match":"strict"},{"file":"corpus5.txt","text":"超话来的，谁是豆包","match":"strict"}]
+0	0	0	低	签到→签到	src=Y	rule=N	id=Y	tier=none	var={"签到":0}
+   []
+0	0	0	低	打投→打投	src=Y	rule=N	id=Y	tier=none	var={"打投":0}
+   []
+2	0	2	低	控评→控评	src=N	rule=N	id=Y	tier=weak	var={"控评":2}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】干员强度是与生俱来的，是我们无法自主选择的，如果可以选择我相信每一位左乐都希望自己是最完美的，可我们每一个人都会","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】干员强度是与生俱来的，是我们无法自主选择的，如果可以选择我相信每一位左乐都希望自己是最完美的，可我们每一个人都会","match":"strict"}]
+0	0	1	低	锦鲤→转发好运符号	src=Y	rule=N	id=N	tier=none	var={"转发好运符号":0}
+   []
+0	0	25	低	私生→擅追爱豆	src=Y	rule=N	id=N	tier=none	var={"擅追爱豆":0}
+   []
+0	0	2	低	站姐→资深跟拍粉	src=Y	rule=N	id=N	tier=none	var={"资深跟拍粉":0}
+   []
+0	0	0	低	毒唯→只粉一人的唯粉	src=Y	rule=N	id=N	tier=none	var={"只粉一人的唯粉":0}
+   []
+0	0	1	低	披皮→伪装身份反串	src=Y	rule=N	id=N	tier=none	var={"伪装身份反串":0}
+   []
+0	0	22	低	应援→为爱豆打 call	src=Y	rule=N	id=N	tier=none	var={"为爱豆打 call":0}
+   []
+0	0	2	低	氪金→大量充钱	src=Y	rule=N	id=N	tier=none	var={"大量充钱":0}
+   []
+0	0	0	低	氪金大佬→高额氪金玩家	src=Y	rule=N	id=N	tier=none	var={"高额氪金玩家":0}
+   []
+0	0	0	低	回踩→原粉反踩	src=Y	rule=N	id=N	tier=none	var={"原粉反踩":0}
+   []
+0	0	14	低	安利→向他人推荐	src=Y	rule=N	id=N	tier=none	var={"向他人推荐":0}
+   []
+13	0	0	低	yygq→阴阳怪气	src=Y	rule=Y	id=N	tier=literal	var={"阴阳怪气":13}
+   [{"file":"corpus-bili-20261011065020.txt","text":"【评论】豆包这个死语音真的阴阳怪气的","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】豆包这个死语音真的阴阳怪气的","match":"strict"},{"file":"corpus-bili-20261024202023.txt","text":"【评论】童站大量逆天评论一眼就能看出来都是学生在发，喜欢端着说话 阴阳怪气 优越感豪感十足","match":"strict"}]
+340	0	1	高	xswl→笑死我了	src=Y	rule=N	id=N	tier=literal	var={"笑死我了":340}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】这剧情好颠啊！笑死我了[笑哭]","match":"strict"},{"file":"corpus-bili-20261009073309.txt","text":"【评论】笑死我了在说什么东西","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】笑死我了，梁精寅，金昇玟，一起泡着方灿吃了[笑哭][笑哭][笑哭]","match":"strict"}]
+50	0	6	中	xdm→兄弟们	src=Y	rule=N	id=N	tier=literal	var={"兄弟们":50}
+   [{"file":"corpus-bili-20261009073936.txt","text":"【评论】兄弟们在b站需要持续保持这个状态，心如止水","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】兄弟们在b站需要持续保持这个状态，心如止水","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】兄弟们，这是哪个论坛啊？我冲浪少，虽然总是见到类似帖子截屏，但依旧不知道是什么软件/网站。","match":"strict"}]
+25	0	0	中	srds→虽然但是	src=Y	rule=N	id=N	tier=literal	var={"虽然但是":25}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】虽然但是，可是某些角色的定位本来也就是这样呀，敢做出来不敢认吗包被","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】对不起，虽然但是","match":"strict"},{"file":"corpus-bili-20261009073936.txt","text":"【评论】对不起，虽然但是","match":"strict"}]
+0	0	5	低	绝绝子→太绝了加强版	src=Y	rule=N	id=N	tier=none	var={"太绝了加强版":0}
+   []
+0	0	7	低	摆烂→主动放弃努力	src=Y	rule=N	id=N	tier=none	var={"主动放弃努力":0}
+   []
+0	0	6	低	内卷→过度竞争	src=Y	rule=N	id=N	tier=none	var={"过度竞争":0}
+   []
+0	0	6	低	舔狗→单方面讨好	src=Y	rule=N	id=N	tier=none	var={"单方面讨好":0}
+   []
+0	0	0	低	凡尔赛→低调炫耀	src=Y	rule=N	id=N	tier=none	var={"低调炫耀":0}
+   []
+0	0	8	低	爷青回→爷的青春回来了	src=Y	rule=N	id=N	tier=none	var={"爷的青春回来了":0}
+   []
+0	0	3	低	爷青结→爷的青春结束了	src=Y	rule=N	id=N	tier=none	var={"爷的青春结束了":0}
+   []
+0	0	99	低	名场面→经典出圈画面	src=Y	rule=N	id=N	tier=none	var={"经典出圈画面":0}
+   []
+0	0	0	低	封神场面→封神级名场面	src=Y	rule=N	id=N	tier=none	var={"封神级名场面":0}
+   []
+0	0	24	低	含金量→数据实际分量	src=Y	rule=N	id=N	tier=none	var={"数据实际分量":0}
+   []
+0	0	9	低	硬核→高难度硬功夫	src=Y	rule=N	id=N	tier=none	var={"高难度硬功夫":0}
+   []
+0	0	1	低	小作文→长篇文字回应	src=Y	rule=N	id=N	tier=none	var={"长篇文字回应":0}
+   []
+0	0	15	低	实锤→有实据的爆料	src=Y	rule=N	id=N	tier=none	var={"有实据的爆料":0}
+   []
+0	0	2	低	发烂发臭→塌房后被群嘲	src=Y	rule=N	id=N	tier=none	var={"塌房后被群嘲":0}
+   []
+0	0	2	低	泥塑→塑造成另一种形象	src=Y	rule=N	id=N	tier=none	var={"塑造成另一种形象":0}
+   []
+123	0	356	高	疯→轰	src=Y	rule=N	id=N	tier=weak	var={"轰":123}
+   [{"file":"corpus-bili-20261009073309.txt","text":"【评论】被雷光千道轰没了","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】你珍成功捷径从4人队无脑带的催命符到现在被削烂了，自我保护也是时间对半砍了。那么下一个就是轰动演出[呲牙]","match":"strict"},{"file":"corpus-bili-20261011065020.txt","text":"【评论】你珍成功捷径从4人队无脑带的催命符到现在被削烂了，自我保护也是时间对半砍了。那么下一个就是轰动演出[呲牙]","match":"strict"}]
+0	0	14	低	像仙子→阴湿美感标准用语	src=Y	rule=N	id=N	tier=none	var={"阴湿美感标准用语":0}
+   []
+0	0	0	低	钮祜禄 X→我钮祜禄·X 回来了	src=Y	rule=N	id=N	tier=none	var={"我钮祜禄·X 回来了":0}
+   []
+1	0	20	低	slay→惊艳全场	src=Y	rule=N	id=N	tier=literal	var={"惊艳全场":1}
+   []
+0	0	0	低	b*nz→侮辱性饭圈黑话	src=Y	rule=N	id=N	tier=none	var={"侮辱性饭圈黑话":0}
+   []
+0	0	39	低	我o→我受（攻受关系）	src=Y	rule=N	id=N	tier=none	var={"我受（攻受关系）":0}
+   []
+0	0	0	低	你o→你受（攻受关系）	src=Y	rule=N	id=N	tier=none	var={"你受（攻受关系）":0}
+   []
+0	0	51	低	买榜→花钱冲榜单	src=Y	rule=N	id=N	tier=none	var={"花钱冲榜单":0}
+   []
+0	0	9	低	搬床→约炮/同床	src=Y	rule=N	id=N	tier=none	var={"约炮/同床":0}
+   []
+0	0	13	低	耍大牌→明星摆架子	src=Y	rule=N	id=N	tier=none	var={"明星摆架子":0}
+   []
+0	0	0	低	淋字嵌入→淋替代灵/令/零的造词法	src=Y	rule=N	id=N	tier=none	var={"淋替代灵/令/零的造词法":0}
+   []
+0	0	0	低	阴字替换→阴替代英/应/因的造词法	src=Y	rule=N	id=N	tier=none	var={"阴替代英/应/因的造词法":0}
+   []
+0	0	0	低	位分级→甄嬛传位分命社区等级	src=Y	rule=N	id=N	tier=none	var={"甄嬛传位分命社区等级":0}
+   []
+0	0	0	低	tag 小品→以 tag 为单位做的短文本段子	src=Y	rule=N	id=N	tier=none	var={"以 tag 为单位做的短文本段子":0}
+   []
+0	0	18	低	找不到从良的理由→《Love Options》填词的淋语同人曲	src=Y	rule=N	id=N	tier=none	var={"《Love Options》填词的淋语同人曲":0}
+   []
+0	0	0	低	四大名言→对周阴婷语录系统化整理的二创	src=Y	rule=N	id=N	tier=none	var={"对周阴婷语录系统化整理的二创":0}
+   []
+0	0	0	低	后宫位分级→皇后/贵妃/贵嫔/昭仪/贵人等级制	src=Y	rule=N	id=N	tier=none	var={"皇后/贵妃/贵嫔/昭仪/贵人等级制":0}
+   []

@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>淋语翻译器 · 黑白玫粉 UI 概念</title>
+<style>
+  :root {
+    --board-bg: #e9e6df;
+    --board-ink: #1b1916;
+    --board-muted: #6b665f;
+    --board-line: rgba(27, 25, 22, 0.14);
+    --rose: #b0184b;
+    --sans: "PingFang SC", "HarmonyOS Sans SC", "MiSans", "DengXian", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    --mono: ui-monospace, "Cascadia Mono", "SFMono-Regular", Consolas, Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--board-bg);
+    color: var(--board-ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .board {
+    --s: 0.86;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 52px 48px 40px;
+  }
+
+  /* ── masthead ─────────────────────────────── */
+  .masthead {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 48px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--board-line);
+  }
+
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    color: var(--board-muted);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .kicker svg { width: 11px; height: 11px; color: var(--rose); flex: none; }
+
+  .board-title {
+    font-size: clamp(32px, 3.8vw, 46px);
+    font-weight: 600;
+    line-height: 1.24;
+    letter-spacing: 0.005em;
+  }
+  .board-title em { font-style: normal; color: var(--rose); }
+
+  .mast-side {
+    flex: none;
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .swatch-line { display: flex; align-items: center; gap: 7px; }
+  .swatch-mini {
+    width: 26px; height: 14px; border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgba(27,25,22,.12);
+  }
+  .swatch-mini.w { background: #f7f5f1; }
+  .swatch-mini.b { background: #111112; }
+  .swatch-mini.r { background: #c2185b; }
+  .swatch-caption {
+    margin-left: 4px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .mast-note {
+    font-size: 12.5px;
+    line-height: 1.85;
+    color: var(--board-muted);
+    max-width: 34em;
+  }
+  .mast-meta {
+    display: flex;
+    gap: 18px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .mast-meta span + span::before {
+    content: "/";
+    margin-right: 18px;
+    color: rgba(27,25,22,.28);
+  }
+
+  /* ── theme columns ────────────────────────── */
+  .themes {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 34px;
+  }
+
+  .theme-col {
+    flex: 0 0 calc(375px * var(--s));
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone-head {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    height: 26px;
+    margin-bottom: 12px;
+  }
+  .ph-index {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--rose);
+  }
+  .ph-name {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .ph-flag {
+    margin-left: auto;
+    padding: 2px 8px;
+    border: 1px solid var(--board-line);
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+
+  .phone-slot {
+    flex: none;
+    width: calc(375px * var(--s));
+    height: calc(812px * var(--s));
+  }
+
+  .device {
+    width: 375px;
+    height: 812px;
+    border-radius: 34px;
+    transform: scale(var(--s));
+    transform-origin: top left;
+    outline: 1px solid var(--edge);
+    background: var(--bg);
+    overflow: hidden;
+  }
+
+  .phone-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 14px;
+  }
+  .foot-name {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--board-ink);
+  }
+  .swatches { display: flex; flex-wrap: wrap; gap: 6px 13px; }
+  .swatch {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+    color: var(--board-muted);
+  }
+  .swatch i {
+    display: inline-block;
+    width: 11px; height: 11px; border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(27,25,22,.14);
+  }
+
+  /* ── phone theme tokens ───────────────────── */
+  .t-white {
+    --bg: #f7f5f1;
+    --ink: #141414;
+    --muted: #6d6861;
+    --faint: #746e65;
+    --line: rgba(20, 20, 20, 0.14);
+    --line-strong: rgba(20, 20, 20, 0.5);
+    --accent: #141414;
+    --cta-bg: #141414;
+    --cta-fg: #f7f5f1;
+    --edge: rgba(20, 20, 20, 0.2);
+  }
+  .t-black {
+    --bg: #111112;
+    --ink: #f2efe9;
+    --muted: #99948b;
+    --faint: #8a857e;
+    --line: rgba(242, 239, 233, 0.16);
+    --line-strong: rgba(242, 239, 233, 0.55);
+    --accent: #ff6f9c;
+    --cta-bg: #f2efe9;
+    --cta-fg: #111112;
+    --edge: rgba(0, 0, 0, 0.6);
+  }
+  .t-rose {
+    --bg: #fbf2f3;
+    --ink: #2a1b20;
+    --muted: #7e5c66;
+    --faint: #8a6670;
+    --line: rgba(42, 27, 32, 0.15);
+    --line-strong: rgba(42, 27, 32, 0.5);
+    --accent: #c2185b;
+    --cta-bg: #c2185b;
+    --cta-fg: #fff7f8;
+    --edge: rgba(42, 27, 32, 0.22);
+  }
+
+  /* ── phone screen ─────────────────────────── */
+  .screen {
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .status {
+    flex: none;
+    height: 44px;
+    padding: 0 22px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .status-time {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  .status svg { width: 55px; height: 13px; display: block; }
+
+  .wx-nav {
+    flex: none;
+    height: 44px;
+    padding: 0 12px 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .brand svg { width: 11px; height: 11px; color: var(--accent); flex: none; }
+
+  .capsule {
+    width: 82px;
+    height: 30px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5px;
+    color: var(--ink);
+    opacity: 0.9;
+  }
+  .capsule .cap-dot {
+    width: 3px; height: 3px; border-radius: 50%;
+    background: currentColor;
+  }
+  .cap-div {
+    width: 1px; height: 12px;
+    margin: 0 4px;
+    background: var(--line);
+  }
+  .cap-target {
+    width: 14px; height: 14px;
+    border: 1.2px solid currentColor;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  .cap-target i {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+
+  .content {
+    flex: 1;
+    min-height: 0;
+    padding: 28px 22px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .eyebrow b {
+    font-weight: 400;
+    color: var(--accent);
+    padding: 0 3px;
+  }
+  .eyebrow-right { color: var(--faint); letter-spacing: 0.08em; }
+
+  .headline {
+    margin-bottom: 36px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: 0.005em;
+    color: var(--ink);
+  }
+  .headline .accent { color: var(--accent); }
+
+  .field {
+    border-bottom: 1px solid var(--line-strong);
+    margin-bottom: 22px;
+  }
+  .field-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: var(--faint);
+    text-transform: uppercase;
+  }
+  .field-text {
+    min-height: 42px;
+    padding-bottom: 16px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+  }
+  .caret {
+    display: inline-block;
+    width: 1.5px;
+    height: 20px;
+    margin-left: 2px;
+    background: var(--accent);
+    animation: blink 1.15s step-end infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+  .samples {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+  }
+  .samples-label {
+    margin-right: 1px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: var(--faint);
+  }
+  .sample {
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 10px;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+
+  .cta {
+    width: 100%;
+    height: 58px;
+    border: 0;
+    border-radius: 14px;
+    background: var(--cta-bg);
+    color: var(--cta-fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cta svg { width: 13px; height: 13px; }
+  .cta:active { opacity: 0.82; }
+
+  .result {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  .result-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 11px;
+  }
+  .result-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .live {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 8.5px;
+    letter-spacing: 0.08em;
+    color: var(--faint);
+  }
+  .live i {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .result-text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  .result-text .accent { color: var(--accent); }
+  .inline-heart {
+    width: 13px;
+    height: 13px;
+    margin-left: 1px;
+    vertical-align: -0.08em;
+    color: var(--accent);
+  }
+  .result-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .result-note {
+    font-size: 8.5px;
+    letter-spacing: 0.04em;
+    color: var(--faint);
+  }
+  .result-actions { display: flex; align-items: center; gap: 15px; }
+  .acted {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    background: none;
+    font-family: var(--sans);
+    font-size: 9.5px;
+    color: var(--muted);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .acted svg { width: 10px; height: 10px; }
+  .acted:active { color: var(--accent); }
+
+  .local-note {
+    margin-top: auto;
+    padding: 18px 0 13px;
+    text-align: center;
+    font-size: 8.5px;
+    letter-spacing: 0.08em;
+    color: var(--faint);
+  }
+
+  .tabbar {
+    flex: none;
+    height: 56px;
+    padding: 0 16px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+  .tab svg { width: 18px; height: 18px; }
+  .tab-dot {
+    width: 3px; height: 3px;
+    margin-top: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+  .tab.active { color: var(--accent); font-weight: 600; }
+  .tab.active .tab-dot { background: var(--accent); }
+
+  .home-bar {
+    flex: none;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-bar i {
+    width: 108px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--ink);
+    opacity: 0.2;
+  }
+
+  /* ── rules footer ─────────────────────────── */
+  .rules {
+    margin-top: 40px;
+    padding-top: 26px;
+    border-top: 1px solid var(--board-line);
+  }
+  .rules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .rule {
+    padding: 0 34px 0 0;
+  }
+  .rule + .rule {
+    padding-left: 34px;
+    border-left: 1px solid var(--board-line);
+  }
+  .rule-num {
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: 0.12em;
+    color: var(--rose);
+  }
+  .rule h3 {
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .rule p {
+    max-width: 31em;
+    font-size: 11px;
+    line-height: 1.8;
+    color: var(--board-muted);
+  }
+  .spec-bar {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 26px;
+    padding-top: 16px;
+    border-top: 1px solid var(--board-line);
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    color: var(--board-muted);
+    text-transform: uppercase;
+  }
+  .spec-bar .spec-end {
+    margin-left: auto;
+    color: var(--rose);
+  }
+
+  /* ── responsive ───────────────────────────── */
+  @media (max-width: 1100px) {
+    .board { --s: 0.72; padding: 40px 34px 34px; }
+    .themes { gap: 36px; }
+    .mast-side { width: 300px; }
+  }
+  @media (max-width: 900px) {
+    .board { --s: 0.62; padding: 32px 24px 28px; }
+    .themes { gap: 22px; }
+    .masthead { flex-direction: column; align-items: flex-start; gap: 22px; }
+    .mast-side { width: auto; }
+    .rules-grid { grid-template-columns: 1fr; }
+    .rule { padding: 0 0 18px; }
+    .rule + .rule { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--board-line); }
+  }
+  @media (max-width: 800px) {
+    .board { --s: 0.9; }
+    .themes { flex-direction: column; align-items: center; gap: 34px; }
+    .theme-col { flex: none; }
+    .spec-bar { flex-wrap: wrap; gap: 10px 16px; }
+    .spec-bar .spec-end { margin-left: 0; }
+  }
+  @media (max-width: 440px) {
+    .board { --s: 0.8; padding: 26px 18px 24px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .caret { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="board">
+    <header class="masthead">
+      <div class="mast-main">
+        <div class="kicker">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+          UI Concept · Linyu Translator
+        </div>
+        <h1 class="board-title">黑白<em>玫粉</em>，<br />三种语气。</h1>
+      </div>
+      <div class="mast-side">
+        <div class="swatch-line" aria-hidden="true">
+          <span class="swatch-mini w"></span>
+          <span class="swatch-mini b"></span>
+          <span class="swatch-mini r"></span>
+          <span class="swatch-caption">Three colorways</span>
+        </div>
+        <p class="mast-note">不动现有界面，只做一次视觉提纯：让字号、留白和一根细线承担层次，主题只换颜色。</p>
+        <div class="mast-meta"><span>微信小程序</span><span>2026.10</span><span>VOL.01</span></div>
+      </div>
+    </header>
+
+    <section class="themes" aria-label="三种配色概念">
+      <!-- 01 WHITE -->
+      <article class="theme-col">
+        <div class="phone-head">
+          <span class="ph-index">01</span>
+          <span class="ph-name">白 · PAPER</span>
+          <span class="ph-flag">默认</span>
+        </div>
+        <div class="phone-slot">
+          <div class="device t-white">
+            <div class="screen">
+              <div class="status">
+                <span class="status-time">9:41</span>
+                <svg viewBox="0 0 60 14" fill="currentColor" aria-hidden="true">
+                  <rect x="0" y="9" width="3" height="5" rx="1"/>
+                  <rect x="5" y="7" width="3" height="7" rx="1"/>
+                  <rect x="10" y="5" width="3" height="9" rx="1"/>
+                  <rect x="15" y="3" width="3" height="11" rx="1"/>
+                  <path d="M25.5 6.6a8.4 8.4 0 0 1 10.6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M27.9 9.3a4.8 4.8 0 0 1 5.8 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="30.8" cy="12" r="1"/>
+                  <rect x="43" y="3" width="14" height="8" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+                  <rect x="58" y="5.4" width="1.5" height="3.2" rx="0.7"/>
+                  <rect x="45" y="5" width="10" height="4" rx="1"/>
+                </svg>
+              </div>
+
+              <div class="wx-nav">
+                <span class="brand">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+                  淋语翻译器
+                </span>
+                <span class="capsule" aria-hidden="true">
+                  <i class="cap-dot"></i><i class="cap-dot"></i><i class="cap-dot"></i>
+                  <span class="cap-div"></span>
+                  <span class="cap-target"><i></i></span>
+                </span>
+              </div>
+
+              <main class="content">
+                <div class="eyebrow"><span>中文 <b>→</b> 淋语</span><span class="eyebrow-right">本地 · 离线</span></div>
+                <h2 class="headline">把普通话<br />翻译成淋语<span class="accent">。</span></h2>
+
+                <div class="field">
+                  <div class="field-meta"><span>原文</span><span>7 / 500</span></div>
+                  <div class="field-text">你今天真好看！<span class="caret"></span></div>
+                </div>
+
+                <div class="samples">
+                  <span class="samples-label">试试</span>
+                  <span class="sample">谢谢宝贝的抱抱</span>
+                  <span class="sample">感觉很开心</span>
+                </div>
+
+                <button class="cta" type="button">
+                  <span>翻译</span>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+                </button>
+
+                <section class="result">
+                  <div class="result-head">
+                    <span class="result-label">淋语结果</span>
+                    <span class="live"><i></i>实时预览</span>
+                  </div>
+                  <p class="result-text">小仙女今天珍好看惹，<br />美cry噜<svg class="inline-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>！</p>
+                  <div class="result-foot">
+                    <span class="result-note">17 字 · 不记入历史</span>
+                    <div class="result-actions">
+                      <button class="acted" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                        复制
+                      </button>
+                      <button class="acted" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+                        分享
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="local-note">纯本地翻译 · 535 词条 · 146 句式</div>
+              </main>
+
+              <nav class="tabbar" aria-label="主导航">
+                <span class="tab active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                  <span>翻译</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-1.7-1.3-3.7-2-6-2H3v13h3c2.3 0 4.3.7 6 2 1.7-1.3 3.7-2 6-2h3V5h-3c-2.3 0-4.3.7-6 2Z"/><path d="M12 7v13"/></svg>
+                  <span>词库</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>历史</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+                  <span>关于</span><i class="tab-dot"></i>
+                </span>
+              </nav>
+              <div class="home-bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-foot">
+          <span class="foot-name">纸感留白 · 墨黑强调</span>
+          <div class="swatches">
+            <span class="swatch"><i style="background:#f7f5f1"></i>#F7F5F1</span>
+            <span class="swatch"><i style="background:#141414"></i>#141414</span>
+            <span class="swatch"><i style="background:#d8d3ca"></i>#D8D3CA</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 BLACK -->
+      <article class="theme-col">
+        <div class="phone-head">
+          <span class="ph-index">02</span>
+          <span class="ph-name">黑 · INK</span>
+          <span class="ph-flag">夜间</span>
+        </div>
+        <div class="phone-slot">
+          <div class="device t-black">
+            <div class="screen">
+              <div class="status">
+                <span class="status-time">9:41</span>
+                <svg viewBox="0 0 60 14" fill="currentColor" aria-hidden="true">
+                  <rect x="0" y="9" width="3" height="5" rx="1"/>
+                  <rect x="5" y="7" width="3" height="7" rx="1"/>
+                  <rect x="10" y="5" width="3" height="9" rx="1"/>
+                  <rect x="15" y="3" width="3" height="11" rx="1"/>
+                  <path d="M25.5 6.6a8.4 8.4 0 0 1 10.6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M27.9 9.3a4.8 4.8 0 0 1 5.8 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="30.8" cy="12" r="1"/>
+                  <rect x="43" y="3" width="14" height="8" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+                  <rect x="58" y="5.4" width="1.5" height="3.2" rx="0.7"/>
+                  <rect x="45" y="5" width="10" height="4" rx="1"/>
+                </svg>
+              </div>
+
+              <div class="wx-nav">
+                <span class="brand">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+                  淋语翻译器
+                </span>
+                <span class="capsule" aria-hidden="true">
+                  <i class="cap-dot"></i><i class="cap-dot"></i><i class="cap-dot"></i>
+                  <span class="cap-div"></span>
+                  <span class="cap-target"><i></i></span>
+                </span>
+              </div>
+
+              <main class="content">
+                <div class="eyebrow"><span>中文 <b>→</b> 淋语</span><span class="eyebrow-right">本地 · 离线</span></div>
+                <h2 class="headline">把普通话<br />翻译成淋语<span class="accent">。</span></h2>
+
+                <div class="field">
+                  <div class="field-meta"><span>原文</span><span>7 / 500</span></div>
+                  <div class="field-text">你今天真好看！<span class="caret"></span></div>
+                </div>
+
+                <div class="samples">
+                  <span class="samples-label">试试</span>
+                  <span class="sample">谢谢宝贝的抱抱</span>
+                  <span class="sample">感觉很开心</span>
+                </div>
+
+                <button class="cta" type="button">
+                  <span>翻译</span>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+                </button>
+
+                <section class="result">
+                  <div class="result-head">
+                    <span class="result-label">淋语结果</span>
+                    <span class="live"><i></i>实时预览</span>
+                  </div>
+                  <p class="result-text">小仙女今天珍好看惹，<br />美cry噜<svg class="inline-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>！</p>
+                  <div class="result-foot">
+                    <span class="result-note">17 字 · 不记入历史</span>
+                    <div class="result-actions">
+                      <button class="acted" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                        复制
+                      </button>
+                      <button class="acted" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+                        分享
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="local-note">纯本地翻译 · 535 词条 · 146 句式</div>
+              </main>
+
+              <nav class="tabbar" aria-label="主导航">
+                <span class="tab active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                  <span>翻译</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-1.7-1.3-3.7-2-6-2H3v13h3c2.3 0 4.3.7 6 2 1.7-1.3 3.7-2 6-2h3V5h-3c-2.3 0-4.3.7-6 2Z"/><path d="M12 7v13"/></svg>
+                  <span>词库</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>历史</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+                  <span>关于</span><i class="tab-dot"></i>
+                </span>
+              </nav>
+              <div class="home-bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-foot">
+          <span class="foot-name">夜间墨底 · 玫粉点睛</span>
+          <div class="swatches">
+            <span class="swatch"><i style="background:#111112"></i>#111112</span>
+            <span class="swatch"><i style="background:#f2efe9"></i>#F2EFE9</span>
+            <span class="swatch"><i style="background:#ff6f9c"></i>#FF6F9C</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 ROSE -->
+      <article class="theme-col">
+        <div class="phone-head">
+          <span class="ph-index">03</span>
+          <span class="ph-name">玫粉 · ROSE</span>
+          <span class="ph-flag">粉调</span>
+        </div>
+        <div class="phone-slot">
+          <div class="device t-rose">
+            <div class="screen">
+              <div class="status">
+                <span class="status-time">9:41</span>
+                <svg viewBox="0 0 60 14" fill="currentColor" aria-hidden="true">
+                  <rect x="0" y="9" width="3" height="5" rx="1"/>
+                  <rect x="5" y="7" width="3" height="7" rx="1"/>
+                  <rect x="10" y="5" width="3" height="9" rx="1"/>
+                  <rect x="15" y="3" width="3" height="11" rx="1"/>
+                  <path d="M25.5 6.6a8.4 8.4 0 0 1 10.6 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M27.9 9.3a4.8 4.8 0 0 1 5.8 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="30.8" cy="12" r="1"/>
+                  <rect x="43" y="3" width="14" height="8" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.1"/>
+                  <rect x="58" y="5.4" width="1.5" height="3.2" rx="0.7"/>
+                  <rect x="45" y="5" width="10" height="4" rx="1"/>
+                </svg>
+              </div>
+
+              <div class="wx-nav">
+                <span class="brand">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+                  淋语翻译器
+                </span>
+                <span class="capsule" aria-hidden="true">
+                  <i class="cap-dot"></i><i class="cap-dot"></i><i class="cap-dot"></i>
+                  <span class="cap-div"></span>
+                  <span class="cap-target"><i></i></span>
+                </span>
+              </div>
+
+              <main class="content">
+                <div class="eyebrow"><span>中文 <b>→</b> 淋语</span><span class="eyebrow-right">本地 · 离线</span></div>
+                <h2 class="headline">把普通话<br />翻译成淋语<span class="accent">。</span></h2>
+
+                <div class="field">
+                  <div class="field-meta"><span>原文</span><span>7 / 500</span></div>
+                  <div class="field-text">你今天真好看！<span class="caret"></span></div>
+                </div>
+
+                <div class="samples">
+                  <span class="samples-label">试试</span>
+                  <span class="sample">谢谢宝贝的抱抱</span>
+                  <span class="sample">感觉很开心</span>
+                </div>
+
+                <button class="cta" type="button">
+                  <span>翻译</span>
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>
+                </button>
+
+                <section class="result">
+                  <div class="result-head">
+                    <span class="result-label">淋语结果</span>
+                    <span class="live"><i></i>实时预览</span>
+                  </div>
+                  <p class="result-text">小仙女今天珍好看惹，<br />美cry噜<svg class="inline-heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6 4.5 13.1a4.9 4.9 0 0 1 6.9-6.9l.6.6.6-.6a4.9 4.9 0 0 1 6.9 6.9Z"/></svg>！</p>
+                  <div class="result-foot">
+                    <span class="result-note">17 字 · 不记入历史</span>
+                    <div class="result-actions">
+                      <button class="acted" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                        复制
+                      </button>
+                      <button class="acted" type="button">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m8 7 4-4 4 4"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>
+                        分享
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="local-note">纯本地翻译 · 535 词条 · 146 句式</div>
+              </main>
+
+              <nav class="tabbar" aria-label="主导航">
+                <span class="tab active">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                  <span>翻译</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7c-1.7-1.3-3.7-2-6-2H3v13h3c2.3 0 4.3.7 6 2 1.7-1.3 3.7-2 6-2h3V5h-3c-2.3 0-4.3.7-6 2Z"/><path d="M12 7v13"/></svg>
+                  <span>词库</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <span>历史</span><i class="tab-dot"></i>
+                </span>
+                <span class="tab">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg>
+                  <span>关于</span><i class="tab-dot"></i>
+                </span>
+              </nav>
+              <div class="home-bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-foot">
+          <span class="foot-name">粉白纸面 · 深玫压色</span>
+          <div class="swatches">
+            <span class="swatch"><i style="background:#fbf2f3"></i>#FBF2F3</span>
+            <span class="swatch"><i style="background:#c2185b"></i>#C2185B</span>
+            <span class="swatch"><i style="background:#2a1b20"></i>#2A1B20</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="rules">
+      <div class="rules-grid">
+        <div class="rule">
+          <span class="rule-num">RULE / 01</span>
+          <h3>文字做层级</h3>
+          <p>标题 42 / 正文 21 / 辅助 10。视觉重心交给字号与留白，容器退回背景，不再靠满屏卡片分区。</p>
+        </div>
+        <div class="rule">
+          <span class="rule-num">RULE / 02</span>
+          <h3>细线做结构</h3>
+          <p>用 1px 线与底色区分层级，去掉渐变和投影；圆角只留给按钮、输入与标签，保持触控友好。</p>
+        </div>
+        <div class="rule">
+          <span class="rule-num">RULE / 03</span>
+          <h3>一色做情绪</h3>
+          <p>白配墨、黑配玫、玫粉配深玫。每个主题只有一个强调色，♥ 是唯一保留的装饰符号。</p>
+        </div>
+      </div>
+      <div class="spec-bar">
+        <span>8PT GRID</span>
+        <span>TOUCH ≥ 44PT</span>
+        <span>CONTRAST ≥ 4.5:1</span>
+        <span>MOTION 150–200MS</span>
+        <span class="spec-end">Concept only · 未改动现有小程序</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

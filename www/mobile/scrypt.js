@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-// __wrapped by scripts/build-mobile.mjs
+// __wrapped by scripts/lib/wrap-iife.mjs
 'use strict';
 
 /*

@@ -1,21 +1,45 @@
 (function () {
 'use strict';
-// __wrapped by scripts/build-mobile.mjs
+// __wrapped by scripts/lib/wrap-iife.mjs
+// @ts-check
 'use strict';
 
-const { buildTokenizer } = (typeof require === 'function') ? require('./tokenizer') : (typeof window !== 'undefined' ? window.LINYU_TOKENIZER : { buildTokenizer: () => null });
+/** @type {{ buildTokenizer: (dictWords: Iterable<string>) => (text: string) => string[] }} */
+// @platform: Node 用 require，浏览器/小程序环境从 window 取同步注入的模块
+const tokenizerMod = (typeof require === 'function')
+  ? require('./tokenizer')
+  : (typeof window !== 'undefined' ? (/** @type {any} */ (window).LINYU_TOKENIZER) : { buildTokenizer: () => (/** @type {any} */ (null)) });
+const { buildTokenizer } = tokenizerMod;
 
 const END_FLAVOR = ['♥', '惹♥', '噜♥', '厚♥'];
 const SPLIT_RE = /([。！？!?；;]+)/;
 const CJK_RE = /[一-鿿]/;
 
+/**
+ * @typedef {Object} Rule
+ * @property {string} pattern
+ * @property {string} [template]
+ * @property {number} [id]
+ * @property {string} [note]
+ */
+
+/**
+ * @typedef {Object} Word
+ * @property {string} zh
+ * @property {string} linyu
+ */
+
+/**
+ * @param {Rule[]} rules
+ */
 function compileRules(rules) {
   const compiled = [];
   for (const r of rules) {
     let re;
     try {
       re = new RegExp(r.pattern, 'g');
-    } catch {
+    } catch (err) {
+      // 单条句式正则非法不影响整体翻译，跳过该条（C8）
       continue;
     }
     const tpl = r.template || '';
@@ -39,17 +63,30 @@ function pushTrace(ctx, entry) {
   ctx.trace.push(entry);
 }
 
-// 把句子按规则拆成 [{raw} | {parts, groups}] 序列，规则按声明顺序串行套用
+// 词库与句式只在内容变化时重新编译。store.getWords() 每次都返回新数组，
+// 引用比较没用，所以按内容算签名；普通用户每次输入不该重复付
+// 500 次 Set 构建 + 146 个正则编译的钱。开发者改词后签名变了自然重建。
+// 初始 sig 用 null 而不是空串：词库/句式为空时算出来的签名正好是 ''，
+// 与初始签名相等就会跳过编译，拿到下面的空实现之外的值（null）去 for...of 直接崩。
+// 用 null 当哨兵保证第一次一定走编译分支。
+let tokCache = { sig: null, map: new Map(), segment: (text) => [...text] };
+let ruleCache = { sig: null, compiled: [] };
+
+// 把句子按规则拆成 [{raw} | {parts, groups}] 序列，规则按声明顺序串行套用。
+// re 直接复用 compileRules 编译好的实例（循环里显式清零 lastIndex）——
+// 旧写法每条规则 × 每个片段都 new RegExp，一次翻译要编译几千次正则。
 function applyRules(text, compiled, ctx) {
   let items = [{ raw: text }];
   for (const rule of compiled) {
+    const re = rule.re;
+    re.lastIndex = 0;
     const next = [];
     for (const item of items) {
       if (item.raw == null) {
         next.push(item);
         continue;
       }
-      const re = new RegExp(rule.re.source, 'g');
+      re.lastIndex = 0;
       let last = 0;
       let m;
       while ((m = re.exec(item.raw))) {
@@ -110,8 +147,14 @@ function wordPass(items, segment, map, ctx) {
     .join('');
 }
 
+/**
+ * @param {string} text
+ * @param {{ words: Word[], rules: Rule[], trace?: any[]|null, uncovered?: string[]|null, traceLimit?: number }} options
+ * @returns {string}
+ */
 function translateText(text, options) {
-  const opts = options || {};
+  // options 在测试里会被省略，运行时走默认空对象；类型上按完整形状收，避免后面每处判空
+  const opts = options || (/** @type {any} */ ({}));
   const { words, rules } = opts;
   const ctx = {
     trace: opts.trace || null,
@@ -122,9 +165,18 @@ function translateText(text, options) {
   const input = String(text || '');
   if (!input.trim()) return '';
 
-  const map = new Map(words.map((w) => [w.zh, w.linyu]));
-  const segment = buildTokenizer([...map.keys()]);
-  const compiled = compileRules(rules);
+  const sig = words.map((w) => w.zh).join('\u0001');
+  if (tokCache.sig !== sig) {
+    const map = new Map(words.map((w) => [w.zh, w.linyu]));
+    tokCache = { sig, map, segment: buildTokenizer(words.map((w) => w.zh)) };
+  }
+  const rsig = rules.map((r) => r.pattern + '\u0000' + (r.template || '')).join('\u0001');
+  if (ruleCache.sig !== rsig) {
+    ruleCache = { sig: rsig, compiled: compileRules(rules) };
+  }
+  const map = tokCache.map;
+  const segment = tokCache.segment;
+  const compiled = ruleCache.compiled;
 
   let flavorCount = 0;
   const lines = input.split('\n');
@@ -160,6 +212,7 @@ function translateText(text, options) {
     .join('\n');
 }
 
+// @platform: 双端导出，Node/打包器走 module.exports，浏览器/小程序同步脚本走 window 全局
 if (typeof module === 'object' && module.exports) module.exports = { translateText };
 else if (typeof window !== 'undefined') window.LINYU_TRANSLATOR = { translateText };
 

@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [APP, main, master]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      # 翻译引擎 + 数据层用例是硬门槛。
+      # scripts/check.js 里的 CRUD 契约与语料溯源依赖本机语料与库状态，
+      # 数据基线修正前暂不进 CI，避免假红；修正后再并入。

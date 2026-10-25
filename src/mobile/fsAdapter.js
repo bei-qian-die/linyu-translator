@@ -25,6 +25,9 @@
     module.exports = factory(require('fs'), require('path'), false);
   } else {
     root.fsAdapter = factory(null, null, true);
+    // entry.js 的兜底分支引用 linyuFsAdapter 这个名字——正常加载时 window.fsAdapter
+    // 已经就位、那段代码不会执行，但名字本身得存在，别留一个一碰就 ReferenceError 的全局。
+    root.linyuFsAdapter = root.fsAdapter;
   }
 }(typeof self !== 'undefined' ? self : this, function (nodeFs, sysPath, browserBuild) {
   // ---- path helpers（绝对路径与相对路径都支持；Windows 与 POSIX 都吃） ----
@@ -141,8 +144,7 @@
     try { nodeFs.renameSync(tmp, path); }
     catch (err) {
       try { nodeFs.unlinkSync(tmp); } catch { /* 临时文件没建起来 */ }
-      try { nodeFs.writeFileSync(path, buf); }
-      catch (err2) { throw err2; }
+      nodeFs.writeFileSync(path, buf);
     }
   }
   async function nodeUnlink(path) {
@@ -192,8 +194,7 @@
       } catch (renameErr) {
         try { nodeFs.unlinkSync(tmp); } catch { /* 临时文件没建起来 */ }
         // 改名失败不抛：Node 路径下经常被索引器占着
-        try { nodeFs.writeFileSync(path, buf); }
-        catch (writeErr) { throw writeErr; }
+        nodeFs.writeFileSync(path, buf);
       }
     }
     function nodeReaddirSync(dir) {

@@ -1,0 +1,7 @@
+<view class="empty">
+  <view class="empty-ico">{{icon}}</view>
+  <view class="empty-title">{{title}}</view>
+  <view class="empty-sub">{{sub}}</view>
+  <view wx:if="{{primaryText}}" class="primary-btn" hover-class="primary-hover" bindtap="onPrimary">{{primaryText}}</view>
+  <view wx:elif="{{showReset}}" class="reset-btn" hover-class="reset-hover" bindtap="onReset">{{resetText}}</view>
+</view>

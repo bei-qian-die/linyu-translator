@@ -1,0 +1,757 @@
+  [blocked:reply] 412 → 冷却 90s（累计 1 次）
+[keep 1] search BV1YPJo6vE8U dm=15 cmt=0
+[search] 淋语 hit=40 fresh=1 kept=1 total=1 queue=0
+[search] 高等淋语 hit=40 fresh=0 kept=0 total=1 queue=0
+[keep 2] search BV1gKjV6eEiw dm=62 cmt=0
+[search] 淋语教程 hit=40 fresh=1 kept=1 total=2 queue=0
+[search] 淋语教学 hit=40 fresh=0 kept=0 total=2 queue=0
+[keep 3] search BV1TNg4zcE2h dm=6 cmt=0
+[search] 淋语考试 hit=40 fresh=1 kept=1 total=3 queue=0
+[keep 4] search BV1qk4y177iD dm=49 cmt=0
+[keep 5] search BV1pdpx6gEQa dm=25 cmt=0
+[keep 6] search BV1Ka4y1U7N3 dm=13 cmt=0
+[search] 淋语八级 hit=40 fresh=3 kept=3 total=6 queue=0
+  [blocked:other] 412 → 冷却 90s（累计 1 次）
+[keep 7] search BV1oK421b7rC dm=179 cmt=0
+[keep 8] search BV12z4SeCEMg dm=59 cmt=0
+[search] 淋语十级 hit=40 fresh=3 kept=2 total=8 queue=0
+[search] 淋语等级 hit=40 fresh=0 kept=0 total=8 queue=0
+  [blocked:other] 412 → 冷却 90s（累计 2 次）
+[keep 9] search BV1rh4y1S7oL dm=180 cmt=0
+[keep 10] search BV1EBMn6jEjt dm=180 cmt=0
+[keep 11] search BV1o98QzAEcK dm=180 cmt=0
+[keep 12] search BV1Kkph6sEgs dm=54 cmt=0
+[keep 13] search BV1Mjn66jEZt dm=6 cmt=0
+[search] 淋语模仿 hit=40 fresh=12 kept=5 total=13 queue=6
+[keep 14] search BV1B8411X7ZX dm=115 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 3 次）
+[keep 15] search BV1gEMszdE68 dm=180 cmt=0
+[keep 16] search BV1go4y1d7CB dm=73 cmt=0
+[keep 17] search BV1kF4m1L7mN dm=12 cmt=0
+[keep 18] search BV1DF411Z7d7 dm=42 cmt=0
+[search] 淋语模仿秀 hit=40 fresh=25 kept=5 total=18 queue=25
+  [blocked:other] 412 → 冷却 90s（累计 4 次）
+  [blocked:other] 412 → 冷却 90s（累计 5 次）
+  [blocked:other] 412 → 冷却 90s（累计 6 次）
+[keep 19] search BV1oC4y1R7sn dm=121 cmt=0
+[keep 20] search BV1tVJR6DERd dm=137 cmt=0
+[keep 21] search BV1vBJR6eEzc dm=21 cmt=0
+[keep 22] search BV1PfG3zdEzk dm=180 cmt=0
+[keep 23] search BV1Bu4y1N7my dm=180 cmt=0
+[search] 淋语配音 hit=40 fresh=21 kept=5 total=23 queue=36
+[keep 24] search BV188JY68EMx dm=18 cmt=0
+[keep 25] search BV1r6nW6RES4 dm=3 cmt=0
+[keep 26] search BV1X24y1w7kW dm=33 cmt=0
+[keep 27] search BV1B5Jy6gEza dm=23 cmt=0
+[keep 28] search BV17hHg6EE8g dm=4 cmt=0
+[search] 淋语翻唱 hit=40 fresh=20 kept=5 total=28 queue=51
+[keep 29] search BV1wHJ86uEx4 dm=100 cmt=0
+[keep 30] search BV1ihpx64Ezs dm=27 cmt=0
+[keep 31] search BV1ccJQ6AENh dm=6 cmt=0
+[keep 32] search BV1Umni6BEGx dm=180 cmt=0
+[search] 淋语对话 hit=40 fresh=4 kept=4 total=32 queue=51
+[keep 33] search BV1Xw411A7rY dm=20 cmt=0
+[keep 34] search BV146Jv6hEgU dm=10 cmt=0
+[keep 35] search BV1Ak496tEBG dm=127 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 7 次）
+[keep 36] search BV1VkeizFEom dm=102 cmt=0
+[keep 37] search BV1Dw4m1C7wk dm=79 cmt=0
+[search] 淋语语录 hit=40 fresh=7 kept=5 total=37 queue=52
+[keep 38] search BV1WtnoeCEb9 dm=174 cmt=0
+[keep 39] search BV1mvYP6rETJ dm=11 cmt=0
+[keep 40] search BV1Ts411271g dm=180 cmt=0
+[search] 淋语大全 hit=40 fresh=3 kept=3 total=40 queue=52
+  [blocked:other] 412 → 冷却 90s（累计 8 次）
+[keep 41] search BV1DD4y1m7Bs dm=34 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 9 次）
+  [blocked:other] 412 → 冷却 90s（累计 10 次）
+[keep 42] search BV1uy4y187hc dm=3 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 11 次）
+  [blocked:other] 412 → 冷却 90s（累计 12 次）
+[search] 淋语词典 hit=40 fresh=10 kept=2 total=42 queue=52
+[keep 43] search BV1534y1i7Rn dm=180 cmt=0
+[keep 44] search BV1bK411p7Zg dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 13 次）
+[keep 45] search BV1WzTCzcEmY dm=44 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 14 次）
+[keep 46] search BV19T421k7CD dm=40 cmt=0
+[keep 47] search BV1ga411J74H dm=180 cmt=0
+[search] 淋语词汇 hit=40 fresh=8 kept=5 total=47 queue=52
+  [blocked:other] 412 → 冷却 90s（累计 15 次）
+  [blocked:other] 412 → 冷却 90s（累计 16 次）
+[keep 48] search BV1594y1k7Fo dm=30 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 17 次）
+[keep 49] search BV1bM4y1P7BV dm=180 cmt=0
+  [blocked:reply] 412 → 冷却 90s（累计 2 次）
+[keep 50] search BV1DW421P7yU dm=13 cmt=0
+[keep 51] search BV18t4y1B7WN dm=10 cmt=0
+[keep 52] search BV1c34y1P7CT dm=168 cmt=0
+[search] 淋语句式 hit=40 fresh=15 kept=5 total=52 queue=54
+[keep 53] search BV1XE411G72P dm=180 cmt=0
+[keep 54] search BV1tt411w72A dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 18 次）
+[keep 55] search BV1EE411E7Vn dm=5 cmt=0
+[keep 56] search BV12Q4y1Q7ML dm=113 cmt=0
+[keep 57] search BV1UEFNz1EfS dm=180 cmt=0
+[search] 淋语语法 hit=40 fresh=28 kept=5 total=57 queue=76
+[keep 58] search BV1hi4EzREg2 dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 19 次）
+[keep 59] search BV14i4y1v7wX dm=177 cmt=0
+[search] 淋语入门 hit=40 fresh=3 kept=2 total=59 queue=76
+[keep 60] search BV1HA4y1o7XA dm=17 cmt=0
+[keep 61] search BV13r42157GD dm=76 cmt=0
+[keep 62] search BV1yu4y1M7Yy dm=124 cmt=0
+[keep 63] search BV1mv7uzwELj dm=127 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 20 次）
+[search] 淋语学习 hit=40 fresh=5 kept=4 total=63 queue=76
+[keep 64] search BV1tW4y1y7nD dm=180 cmt=0
+[search] 学淋语 hit=40 fresh=1 kept=1 total=64 queue=76
+[keep 65] search BV1HsNyeAEsx dm=180 cmt=0
+[keep 66] search BV1pW6dYKE1J dm=45 cmt=0
+[keep 67] search BV1pv3FzUEYz dm=180 cmt=0
+[keep 68] search BV16N411h7dc dm=31 cmt=0
+[keep 69] search BV1R9pQz2E6L dm=22 cmt=0
+[search] 淋学 hit=40 fresh=11 kept=5 total=69 queue=82
+[keep 70] search BV1ZKwRe5EMm dm=180 cmt=0
+[keep 71] search BV1ni4y1y7Gz dm=180 cmt=0
+[keep 72] search BV1jK4y1n7bX dm=180 cmt=0
+[keep 73] search BV1LSJf6kEAK dm=19 cmt=0
+[keep 74] search BV1XcEZ6YE13 dm=155 cmt=0
+[search] 淋学入门 hit=40 fresh=31 kept=5 total=74 queue=106
+[keep 75] search BV19R4y1R79F dm=9 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 21 次）
+[keep 76] search BV141JN61Eq9 dm=51 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 22 次）
+  [blocked:other] 412 → 冷却 90s（累计 23 次）
+[keep 77] search BV16P4y1h7sM dm=25 cmt=0
+[keep 78] search BV1AS4y1v7TV dm=180 cmt=0
+[keep 79] search BV14FnE6mEL2 dm=155 cmt=0
+[search] 淋学家 hit=40 fresh=15 kept=5 total=79 queue=111
+[keep 80] search BV1KSMc6MEnb dm=29 cmt=0
+[search] 淋文化 hit=40 fresh=1 kept=1 total=80 queue=111
+[keep 81] search BV1D2421L7TW dm=180 cmt=0
+[keep 82] search BV1yP411x7z2 dm=180 cmt=0
+[keep 83] search BV1BVyBY9EEw dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 24 次）
+[keep 84] search BV13V4y1a7nR dm=180 cmt=0
+[keep 85] search BV1oV4dzNEM1 dm=27 cmt=0
+[search] 淋文化起源 hit=40 fresh=18 kept=5 total=85 queue=123
+[keep 86] search BV1UfxFzAEZ5 dm=180 cmt=0
+[keep 87] search BV1z3411q7CA dm=180 cmt=0
+[keep 88] search BV1zD4y1U7Vb dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 25 次）
+[keep 89] search BV1nt411k7HG dm=180 cmt=0
+[keep 90] search BV1QtTF6zEc2 dm=180 cmt=0
+[search] 淋语言 hit=40 fresh=17 kept=5 total=90 queue=133
+[keep 91] search BV1Fx411H7cH dm=180 cmt=0
+[keep 92] search BV13e7PztEGd dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 26 次）
+[keep 93] search BV1wJnP6BEo1 dm=20 cmt=0
+[keep 94] search BV1gYev6TEBK dm=180 cmt=0
+[keep 95] search BV1L4421F7Tg dm=45 cmt=0
+[search] 淋式中文 hit=40 fresh=28 kept=5 total=95 queue=153
+[keep 96] search BV1154y1z717 dm=180 cmt=0
+[keep 97] search BV19paa6bEYr dm=6 cmt=0
+[keep 98] search BV12EkvBLE47 dm=55 cmt=0
+[search] 淋语版 hit=40 fresh=4 kept=3 total=98 queue=153
+[keep 99] search BV1x8HT6HE2r dm=4 cmt=0
+[keep 100] search BV185uB6SEHa dm=133 cmt=0
+[keep 101] search BV1vnNsePEGe dm=180 cmt=0
+[search] 说淋语 hit=40 fresh=3 kept=3 total=101 queue=153
+[keep 102] search BV1A5p26fEVT dm=40 cmt=0
+[keep 103] search BV1BTJb6fEuG dm=36 cmt=0
+[keep 104] search BV1KhKY6XEPD dm=15 cmt=0
+[keep 105] search BV1RnjG6NEqj dm=180 cmt=0
+[search] 淋语挑战 hit=40 fresh=5 kept=4 total=105 queue=153
+[keep 106] search BV1f8nB6ZE3g dm=25 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 27 次）
+[keep 107] search BV12RWw62E21 dm=17 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 28 次）
+[keep 108] search BV1S1bk6CE9v dm=113 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 29 次）
+  [blocked:reply] 412 → 冷却 90s（累计 3 次）
+[keep 109] search BV1bSJr6UEiX dm=18 cmt=0
+[keep 110] search BV1j1APezEtX dm=48 cmt=0
+[search] 淋语测试 hit=40 fresh=9 kept=5 total=110 queue=153
+  [blocked:other] 412 → 冷却 90s（累计 30 次）
+[keep 111] search BV1BrHN6KELQ dm=10 cmt=0
+[keep 112] search BV1u4411a7M6 dm=24 cmt=0
+[keep 113] search BV14XEG6cEQx dm=56 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 31 次）
+[search] 淋语翻译 hit=40 fresh=7 kept=3 total=113 queue=153
+  [blocked:other] 412 → 冷却 90s（累计 32 次）
+  [blocked:other] 412 → 冷却 90s（累计 33 次）
+[keep 114] search BV1Hc1XBYEX9 dm=44 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 34 次）
+  [blocked:other] 412 → 冷却 90s（累计 35 次）
+  [blocked:other] 412 → 冷却 90s（累计 36 次）
+  [blocked:other] 412 → 冷却 90s（累计 37 次）
+  [blocked:other] 412 → 冷却 90s（累计 38 次）
+  [blocked:other] 412 → 冷却 90s（累计 39 次）
+[keep 115] search BV12f4y157ck dm=6 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 40 次）
+[keep 116] search BV1zGhN6tEWu dm=5 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 41 次）
+[keep 117] search BV19V5uzvEvT dm=28 cmt=0
+[keep 118] search BV1m5p869Ejy dm=4 cmt=0
+[search] 淋语翻译器 hit=40 fresh=34 kept=5 total=118 queue=169
+[keep 119] search BV1Gci6YwEni dm=125 cmt=0
+[search] 淋言淋语 hit=40 fresh=1 kept=1 total=119 queue=169
+[keep 120] search BV1gZ421t7gr dm=13 cmt=0
+[keep 121] search BV1dD42177vB dm=37 cmt=0
+[keep 122] search BV1oS421w7cG dm=5 cmt=0
+[keep 123] search BV1uMghzyEoy dm=4 cmt=0
+[keep 124] search BV142421w7XZ dm=8 cmt=0
+[search] 淋门 hit=40 fresh=14 kept=5 total=124 queue=176
+[keep 125] search BV1WtaA6YE5r dm=5 cmt=0
+[keep 126] search BV17o6yBWEWh dm=17 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 42 次）
+  [blocked:other] 412 → 冷却 90s（累计 43 次）
+  [blocked:other] 412 → 冷却 90s（累计 44 次）
+  [blocked:other] 412 → 冷却 90s（累计 45 次）
+  [blocked:other] 412 → 冷却 90s（累计 46 次）
+  [blocked:other] 412 → 冷却 90s（累计 47 次）
+  [blocked:other] 412 → 冷却 90s（累计 48 次）
+  [blocked:other] 412 → 冷却 90s（累计 49 次）
+  [blocked:other] 412 → 冷却 90s（累计 50 次）
+[keep 127] search BV1dPxazcEZD dm=180 cmt=0
+[keep 128] search BV1cSJy6jEbb dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 51 次）
+[keep 129] search BV1LWsBzmEqF dm=106 cmt=0
+[search] 淋门永存 hit=40 fresh=26 kept=5 total=129 queue=183
+  [blocked:other] 412 → 冷却 90s（累计 52 次）
+  [blocked:other] 412 → 冷却 90s（累计 53 次）
+[keep 130] search BV1YEnq67Eek dm=6 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 54 次）
+[keep 131] search BV157411r71b dm=180 cmt=0
+[keep 132] search BV1kDj8zmEYg dm=57 cmt=0
+[keep 133] search BV1Sh536QEeo dm=20 cmt=0
+[keep 134] search BV1em9CBmExZ dm=180 cmt=0
+[search] 淋语谐音梗 hit=40 fresh=37 kept=5 total=134 queue=211
+[keep 135] search BV1We4y1Y7wC dm=155 cmt=0
+[search] 淋语梗 hit=40 fresh=1 kept=1 total=135 queue=211
+  [blocked:other] 412 → 冷却 90s（累计 55 次）
+[keep 136] search BV13dnJ6FEad dm=180 cmt=0
+[keep 137] search BV1rWtTeUEL5 dm=180 cmt=0
+[search] 淋语科普 hit=40 fresh=3 kept=2 total=137 queue=211
+[keep 138] search BV1gJ411X79i dm=148 cmt=0
+[keep 139] search BV1SewbeFEzh dm=48 cmt=0
+[search] 淋语新解 hit=40 fresh=3 kept=2 total=139 queue=211
+[keep 140] search BV1LC411n7s5 dm=158 cmt=0
+[keep 141] search BV1uJ9oBLEzV dm=180 cmt=0
+[keep 142] search BV1Bo4y187f4 dm=180 cmt=0
+[keep 143] search BV1VknB6DEFT dm=180 cmt=0
+[keep 144] search BV16vJ16yEMd dm=76 cmt=0
+[search] 淋语百科 hit=40 fresh=10 kept=5 total=144 queue=216
+[keep 145] search BV1eetSznEBZ dm=9 cmt=0
+[keep 146] search BV12V4y1g7Q7 dm=87 cmt=0
+[keep 147] search BV1zsVPzfES4 dm=26 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 56 次）
+[keep 148] search BV1pDJv69EU1 dm=71 cmt=0
+[keep 149] search BV1a5D5YtEmF dm=180 cmt=0
+[search] 淋语歌曲 hit=40 fresh=17 kept=5 total=149 queue=227
+[keep 150] search BV1sbHN65E7z dm=180 cmt=0
+[keep 151] search BV1of421q7kh dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 57 次）
+[keep 152] search BV17xHK6KEGJ dm=24 cmt=0
+[keep 153] search BV1Sahx6NEhF dm=180 cmt=0
+[keep 154] search BV1TBNGzCEod dm=90 cmt=0
+[search] 淋语填词 hit=40 fresh=25 kept=5 total=154 queue=244
+[keep 155] search BV1JzcwztEQb dm=23 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 58 次）
+  [blocked:reply] 412 → 冷却 90s（累计 4 次）
+  [blocked:other] 412 → 冷却 90s（累计 59 次）
+  [blocked:other] 412 → 冷却 90s（累计 60 次）
+[keep 156] search BV1XT411G7kf dm=28 cmt=0
+[keep 157] search BV1Dx411q789 dm=59 cmt=0
+[keep 158] search BV1yVH96UE9h dm=19 cmt=0
+[keep 159] search BV1RWE76sEhE dm=18 cmt=0
+[search] 蔡依林 hit=40 fresh=35 kept=5 total=159 queue=270
+[keep 160] search BV11SbyzZEdT dm=18 cmt=0
+[keep 161] search BV1puMGz5EWv dm=49 cmt=0
+[keep 162] search BV18uN86jE4c dm=41 cmt=0
+[keep 163] search BV1iJaszbEVS dm=180 cmt=0
+[keep 164] search BV12s41127EP dm=15 cmt=0
+[search] 蔡依淋 hit=40 fresh=18 kept=5 total=164 queue=279
+[keep 165] search BV1B6zEBLEbi dm=11 cmt=0
+[keep 166] search BV195411k7bs dm=28 cmt=0
+[keep 167] search BV1BbnL6cEXV dm=180 cmt=0
+[search] 淋淋 hit=40 fresh=3 kept=3 total=167 queue=279
+[keep 168] search BV1mhXnBTETE dm=20 cmt=0
+[keep 169] search BV1bW411F7sr dm=180 cmt=0
+[keep 170] search BV1G4411m7u1 dm=180 cmt=0
+[keep 171] search BV13x411s7mv dm=180 cmt=0
+[keep 172] search BV1dF411u7ov dm=180 cmt=0
+[search] 淋语 蔡依林 hit=40 fresh=24 kept=5 total=172 queue=296
+[keep 173] search BV1hx421Q7fw dm=180 cmt=0
+[keep 174] search BV1JBcFznELr dm=140 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 61 次）
+[keep 175] search BV1KM411M7mh dm=180 cmt=0
+[keep 176] search BV1MGA9zREzJ dm=180 cmt=0
+[keep 177] search BV1T74teJE8X dm=116 cmt=0
+[search] 周阴婷 hit=40 fresh=17 kept=5 total=177 queue=306
+[keep 178] search BV1gmtaeuE2j dm=145 cmt=0
+[keep 179] search BV1p34y1M7nN dm=180 cmt=0
+[keep 180] search BV1vuYizZEyn dm=160 cmt=0
+[keep 181] search BV17i4y1v7mY dm=44 cmt=0
+[keep 182] search BV1WUceewEoz dm=126 cmt=0
+[search] 周阴中 hit=40 fresh=24 kept=5 total=182 queue=324
+[keep 183] search BV1FQ7pzZE8W dm=28 cmt=0
+[keep 184] search BV1Lks2zqE2J dm=8 cmt=0
+[keep 185] search BV1EjKz64EFA dm=4 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 62 次）
+[keep 186] search BV1PPtZeeESJ dm=180 cmt=0
+[keep 187] search BV1QkxQexEDj dm=54 cmt=0
+[search] 阴婷 hit=40 fresh=23 kept=5 total=187 queue=337
+[keep 188] search BV1ZmDSBcEp7 dm=49 cmt=0
+[keep 189] search BV1WW411u7Tr dm=6 cmt=0
+[keep 190] search BV1GZEmz9EBo dm=41 cmt=0
+[keep 191] search BV1MV411L7FJ dm=40 cmt=0
+[keep 192] search BV1fA411M7t7 dm=39 cmt=0
+[search] 淋王星 hit=40 fresh=16 kept=5 total=192 queue=348
+  [blocked:other] 412 → 冷却 90s（累计 63 次）
+[keep 193] search BV1fC4y1V73v dm=4 cmt=0
+[keep 194] search BV1KC4y1d7PK dm=180 cmt=0
+[keep 195] search BV16N4y1r7VM dm=180 cmt=0
+[keep 196] search BV1hX4y1j71t dm=25 cmt=0
+[keep 197] search BV1jF41127Mt dm=180 cmt=0
+[search] 完颜慧德 hit=40 fresh=35 kept=5 total=197 queue=375
+[keep 198] search BV1Rw4m1Y7ig dm=32 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 64 次）
+  [blocked:other] 412 → 冷却 90s（累计 65 次）
+[keep 199] search BV1iD421N7xR dm=16 cmt=0
+[keep 200] search BV1d1421U7Ez dm=130 cmt=0
+[keep 201] search BV1fQqBYGEoB dm=4 cmt=0
+[keep 202] search BV1qbhwzFEmd dm=15 cmt=0
+[search] 那艺娜 hit=40 fresh=30 kept=5 total=202 queue=396
+[keep 203] search BV1o24y1m7ty dm=180 cmt=0
+[keep 204] search BV1354y1g7Tv dm=180 cmt=0
+[keep 205] search BV1Tv4y167kz dm=180 cmt=0
+[keep 206] search BV1aHBQYPE12 dm=180 cmt=0
+[keep 207] search BV1GN4y1y7yZ dm=120 cmt=0
+[search] 三梦奇缘 hit=40 fresh=27 kept=5 total=207 queue=415
+[keep 208] search BV1dJ411k7Vg dm=106 cmt=0
+[keep 209] search BV1XpHw6DEqo dm=146 cmt=0
+[keep 210] search BV1ZJ4m1h7MV dm=180 cmt=0
+[keep 211] search BV19DCeBtEya dm=180 cmt=0
+[keep 212] search BV1zBuB6PEiB dm=21 cmt=0
+[search] 万人迷 hit=40 fresh=34 kept=5 total=212 queue=443
+[keep 213] search BV12Thu67Evv dm=180 cmt=0
+[keep 214] search BV1wQAZeNEcR dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 66 次）
+  [blocked:other] 412 → 冷却 90s（累计 67 次）
+[keep 215] search BV1Fx411x7KW dm=180 cmt=0
+[keep 216] search BV1x1wkeFEZu dm=5 cmt=0
+[keep 217] search BV1rjxvzUEDZ dm=11 cmt=0
+[search] 郭老师 hit=36 fresh=31 kept=5 total=217 queue=466
+[keep 218] search BV1tP411M7ie dm=33 cmt=0
+  [blocked:reply] 412 → 冷却 90s（累计 5 次）
+[keep 219] search BV1JWns6xEEN dm=13 cmt=0
+[keep 220] search BV1Ts411n71J dm=30 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 68 次）
+[keep 221] search BV1gvaV6zE5K dm=141 cmt=0
+[keep 222] search BV143pz6mE8k dm=5 cmt=0
+[search] 鹅妈妈 hit=40 fresh=34 kept=5 total=222 queue=492
+[keep 223] search BV1Dz411B7ZK dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 69 次）
+[keep 224] search BV1As411R7jf dm=180 cmt=0
+[keep 225] search BV1tM411S75Q dm=4 cmt=0
+[keep 226] search BV1DTR1B2EpB dm=61 cmt=0
+[keep 227] search BV1EraN6aEaR dm=16 cmt=0
+[search] 楼兰 hit=40 fresh=38 kept=5 total=227 queue=523
+  [blocked:other] 412 → 冷却 90s（累计 70 次）
+[keep 228] search BV1bWnv6KExb dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 71 次）
+[keep 229] search BV1DHJQ6mEEA dm=180 cmt=0
+[keep 230] search BV1zz4218781 dm=8 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 72 次）
+  [blocked:other] 412 → 冷却 90s（累计 73 次）
+  [blocked:other] 412 → 冷却 90s（累计 74 次）
+  [blocked:other] 412 → 冷却 90s（累计 75 次）
+  [blocked:other] 412 → 冷却 90s（累计 76 次）
+[keep 231] search BV1Qo4y1r7wC dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 77 次）
+[keep 232] search BV1DyJnzrEHb dm=10 cmt=0
+[search] 新酱 hit=40 fresh=31 kept=5 total=232 queue=541
+[keep 233] search BV1r24y1a7TV dm=109 cmt=0
+[keep 234] search BV1Zz4y1p7VJ dm=162 cmt=0
+[keep 235] search BV11d4y1Z755 dm=46 cmt=0
+[keep 236] search BV1xx4y1u778 dm=12 cmt=0
+[keep 237] search BV1re4y187e3 dm=50 cmt=0
+[search] 肘姐 hit=40 fresh=30 kept=5 total=237 queue=565
+[keep 238] search BV17WicBpEqH dm=3 cmt=0
+[keep 239] search BV1mA411574T dm=180 cmt=0
+[keep 240] search BV1DL411W7hu dm=180 cmt=0
+[keep 241] search BV1SX3Z6GEVr dm=10 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 78 次）
+[keep 242] search BV1jKaq62Ev2 dm=5 cmt=0
+[search] 特务J hit=40 fresh=32 kept=5 total=242 queue=589
+  [blocked:other] 412 → 冷却 90s（累计 79 次）
+  [blocked:other] 412 → 冷却 90s（累计 80 次）
+[keep 243] search BV1Br421w7yS dm=13 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 81 次）
+[keep 244] search BV1i1S9Y1Ees dm=4 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 82 次）
+[keep 245] search BV1SV5jzUE1a dm=3 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 83 次）
+  [blocked:other] 412 → 冷却 90s（累计 84 次）
+  [blocked:other] 412 → 冷却 90s（累计 85 次）
+  [blocked:other] 412 → 冷却 90s（累计 86 次）
+  [blocked:other] 412 → 冷却 90s（累计 87 次）
+  [blocked:other] 412 → 冷却 90s（累计 88 次）
+  [blocked:other] 412 → 冷却 90s（累计 89 次）
+[keep 246] search BV1TurqYoEt1 dm=9 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 90 次）
+[keep 247] search BV1wa4y137se dm=6 cmt=0
+[search] 花蝴蝶 淋 hit=40 fresh=34 kept=5 total=247 queue=602
+[keep 248] search BV1a94y1d7sC dm=3 cmt=0
+[keep 249] search BV1dsfdYgE6Z dm=14 cmt=0
+[keep 250] search BV1FY411V7jr dm=4 cmt=0
+[keep 251] search BV1Mh411b7HW dm=4 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 91 次）
+[keep 252] search BV1MJ411V7Sr dm=100 cmt=0
+[search] 美人计 淋 hit=40 fresh=39 kept=5 total=252 queue=635
+[keep 253] search BV1cx411z7uj dm=180 cmt=0
+[keep 254] search BV1Va4y1E7Kd dm=7 cmt=0
+[keep 255] search BV1vG4y1k7Tr dm=44 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 92 次）
+[keep 256] search BV1e9oHYvEi6 dm=36 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 93 次）
+  [blocked:other] 412 → 冷却 90s（累计 94 次）
+[keep 257] search BV1d2XqBcEZo dm=180 cmt=0
+[search] 日不落 淋 hit=40 fresh=32 kept=5 total=257 queue=658
+  [blocked:other] 412 → 冷却 90s（累计 95 次）
+  [blocked:other] 412 → 冷却 90s（累计 96 次）
+  [blocked:other] 412 → 冷却 90s（累计 97 次）
+  [blocked:other] 412 → 冷却 90s（累计 98 次）
+[keep 258] search BV1RdD7BvE5b dm=3 cmt=0
+[keep 259] search BV1o9ZMBhE8F dm=4 cmt=0
+[keep 260] search BV1bVZ3BxEjV dm=180 cmt=0
+[keep 261] search BV1ccpm6tEH8 dm=5 cmt=0
+[keep 262] search BV1KKGZ6BEAs dm=14 cmt=0
+[search] 舞娘 淋 hit=40 fresh=36 kept=5 total=262 queue=680
+[keep 263] search BV16R4y1d7nK dm=13 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 99 次）
+[keep 264] search BV1Qg411H7Yx dm=5 cmt=0
+[keep 265] search BV1s44y1g7Sv dm=52 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 100 次）
+[keep 266] search BV1k38AzqENB dm=36 cmt=0
+[keep 267] search BV1Gb4y1d7ac dm=5 cmt=0
+[search] 玫瑰少年 淋 hit=40 fresh=39 kept=5 total=267 queue=710
+  [blocked:reply] 412 → 冷却 90s（累计 6 次）
+[keep 268] search BV1Bkp16DEN7 dm=10 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 101 次）
+[keep 269] search BV1T5JC6HEFo dm=10 cmt=0
+[keep 270] search BV1Bt4y1H72S dm=25 cmt=0
+[keep 271] search BV1B9Vx6uE36 dm=63 cmt=0
+[keep 272] search BV1zBhb6ZEhT dm=36 cmt=0
+[search] 淋者荣耀 hit=40 fresh=10 kept=5 total=272 queue=710
+[keep 273] search BV1iWnu6gEJG dm=6 cmt=0
+[keep 274] search BV14qnt65EM7 dm=6 cmt=0
+[keep 275] search BV1Rya266EDG dm=5 cmt=0
+[keep 276] search BV1ar42187mf dm=179 cmt=0
+[keep 277] search BV1kVhX6AEgw dm=3 cmt=0
+[search] 王者淋耀 hit=40 fresh=23 kept=5 total=277 queue=724
+[keep 278] search BV1zmJ96zERW dm=180 cmt=0
+[keep 279] search BV1PanG6aEyV dm=42 cmt=0
+[keep 280] search BV122n36AEs8 dm=73 cmt=0
+[keep 281] search BV1WTJ26XEXj dm=27 cmt=0
+[keep 282] search BV1BNJb6cEXz dm=180 cmt=0
+[search] 王者荣耀 淋 hit=40 fresh=29 kept=5 total=282 queue=747
+[keep 283] search BV1yDnC6SEzM dm=180 cmt=0
+[keep 284] search BV1tLHA6LE3c dm=25 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 102 次）
+[keep 285] search BV1r1421U78p dm=152 cmt=0
+[keep 286] search BV1fMXYYcEHr dm=71 cmt=0
+[keep 287] search BV1GvzpYdEDe dm=180 cmt=0
+[search] 阴雄淋盟 hit=40 fresh=15 kept=5 total=287 queue=755
+[keep 288] search BV1P1XPBXESs dm=180 cmt=0
+[keep 289] search BV1xDBBBjEmZ dm=42 cmt=0
+[keep 290] search BV1hgJo6hEg2 dm=6 cmt=0
+[keep 291] search BV1jvxEzaEJJ dm=15 cmt=0
+[keep 292] search BV1ch4y1j7sa dm=62 cmt=0
+[search] 英雄淋盟 hit=40 fresh=11 kept=5 total=292 queue=757
+[keep 293] search BV1VvnLzTEpp dm=14 cmt=0
+[keep 294] search BV1bSni6MEQ2 dm=48 cmt=0
+[keep 295] search BV17b421J7NA dm=53 cmt=0
+[keep 296] search BV1Sx411A7o4 dm=180 cmt=0
+[keep 297] search BV12QUNYWECf dm=140 cmt=0
+[search] 英雄联盟 淋 hit=40 fresh=28 kept=5 total=297 queue=779
+[keep 298] search BV1cTArz6ET1 dm=180 cmt=0
+[keep 299] search BV1Z5P7z6Ext dm=124 cmt=0
+[keep 300] search BV1CDd3BVEYc dm=180 cmt=0
+[keep 301] search BV1YutieDEUJ dm=180 cmt=0
+[keep 302] search BV1vQVGzVEa2 dm=8 cmt=0
+[search] 淋神 hit=40 fresh=7 kept=5 total=302 queue=781
+[keep 303] search BV1m3aQ6BENw dm=32 cmt=0
+[keep 304] search BV1BqAHzEEfD dm=4 cmt=0
+[keep 305] search BV1edKAzPECP dm=16 cmt=0
+[keep 306] search BV1cQap6UEr2 dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 103 次）
+[keep 307] search BV13b5F6sE8h dm=180 cmt=0
+[search] 原神 淋 hit=40 fresh=26 kept=5 total=307 queue=801
+[keep 308] search BV1TrmNB2Evv dm=3 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 104 次）
+[keep 309] search BV1RC6mBfEDk dm=9 cmt=0
+[keep 310] search BV1HkwWzfEss dm=4 cmt=0
+[keep 311] search BV1vE421j71B dm=13 cmt=0
+[keep 312] search BV1tF411X7xr dm=180 cmt=0
+[search] 第五淋格 hit=40 fresh=36 kept=5 total=312 queue=830
+[keep 313] search BV1XW3i6QEbu dm=40 cmt=0
+[keep 314] search BV1aMb56NE46 dm=80 cmt=0
+[keep 315] search BV19agi6pE8X dm=31 cmt=0
+[keep 316] search BV1TTsJz2EYx dm=48 cmt=0
+[keep 317] search BV1tbZnYoEiw dm=31 cmt=0
+[search] 第五人格 淋 hit=40 fresh=31 kept=5 total=317 queue=852
+  [blocked:other] 412 → 冷却 90s（累计 105 次）
+[keep 318] search BV1Bv411e7mL dm=180 cmt=0
+[keep 319] search BV15Pj46VEpL dm=90 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 106 次）
+[keep 320] search BV1WQ4y1s76A dm=109 cmt=0
+[keep 321] search BV1sg4y1v7hw dm=180 cmt=0
+[keep 322] search BV1fe4y137Vm dm=180 cmt=0
+[search] 淋日方舟 hit=40 fresh=17 kept=5 total=322 queue=860
+[keep 323] search BV1cHHM62EMV dm=180 cmt=0
+[keep 324] search BV1gfHT6aEqv dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 107 次）
+[keep 325] search BV1VV4y157pr dm=180 cmt=0
+[keep 326] search BV1o8HM6gEpy dm=180 cmt=0
+[keep 327] search BV1VXHT6iEBY dm=24 cmt=0
+[search] 明日方舟 淋 hit=40 fresh=27 kept=5 total=327 queue=881
+[keep 328] search BV194HP6dE9e dm=5 cmt=0
+[keep 329] search BV1ZXJ96NE6h dm=14 cmt=0
+[keep 330] search BV1w4n666E3p dm=20 cmt=0
+[keep 331] search BV1gdpC6PEfP dm=69 cmt=0
+[keep 332] search BV1qQJ66bEbs dm=83 cmt=0
+[search] 洛克淋国 hit=40 fresh=30 kept=5 total=332 queue=906
+[keep 333] search BV1fXnt6AEKZ dm=30 cmt=0
+[keep 334] search BV1p6gN62ECd dm=180 cmt=0
+  [blocked:reply] 412 → 冷却 90s（累计 7 次）
+[keep 335] search BV1AyHw6qEcL dm=139 cmt=0
+[keep 336] search BV1kQna6JEuD dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 108 次）
+[keep 337] search BV1BuYm67ERk dm=180 cmt=0
+[search] 洛克王国 淋 hit=40 fresh=29 kept=5 total=337 queue=927
+[keep 338] search BV1MAnw6rEdW dm=180 cmt=0
+[keep 339] search BV1PrPteWEFb dm=7 cmt=0
+[keep 340] search BV184vCB4Ebg dm=9 cmt=0
+[keep 341] search BV1rM4qzdEJA dm=140 cmt=0
+[keep 342] search BV1jrJo6gEcb dm=8 cmt=0
+[search] 绝区淋 hit=40 fresh=38 kept=5 total=342 queue=959
+[keep 343] search BV1yFgFzUEn3 dm=25 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 109 次）
+  [blocked:other] 412 → 冷却 90s（累计 110 次）
+  [blocked:other] 412 → 冷却 90s（累计 111 次）
+  [blocked:other] 412 → 冷却 90s（累计 112 次）
+  [blocked:other] 412 → 冷却 90s（累计 113 次）
+  [blocked:other] 412 → 冷却 90s（累计 114 次）
+[keep 344] search BV11FutzbEMf dm=47 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 115 次）
+  [blocked:other] 412 → 冷却 90s（累计 116 次）
+  [blocked:other] 412 → 冷却 90s（累计 117 次）
+  [blocked:other] 412 → 冷却 90s（累计 118 次）
+[keep 345] search BV1GNjm6AEXr dm=10 cmt=0
+[keep 346] search BV1kuu8zcEy4 dm=66 cmt=0
+[keep 347] search BV1MSDtBnEMk dm=23 cmt=0
+[search] 绝区零 淋 hit=40 fresh=38 kept=5 total=347 queue=981
+[keep 348] search BV196n46pECA dm=19 cmt=0
+[keep 349] search BV1hrWF6mEgy dm=36 cmt=0
+[keep 350] search BV1ywJc6bENS dm=61 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 119 次）
+[keep 351] search BV1hWey6NEXB dm=24 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 120 次）
+[keep 352] search BV1wAnt6qEh4 dm=180 cmt=0
+[search] 守望淋锋 hit=40 fresh=32 kept=5 total=352 queue=1006
+[keep 353] search BV15BpN6wEes dm=7 cmt=0
+[keep 354] search BV1VKnb6sE6L dm=180 cmt=0
+[keep 355] search BV1rnnV6ZEZn dm=10 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 121 次）
+[keep 356] search BV11SHK6UELG dm=3 cmt=0
+[keep 357] search BV1uRHA6UEci dm=39 cmt=0
+[search] 守望先锋 淋 hit=40 fresh=36 kept=5 total=357 queue=1029
+[keep 358] search BV1NuHM6REzG dm=3 cmt=0
+[keep 359] search BV1gAnP6JEsK dm=28 cmt=0
+[keep 360] search BV1Bont68EAB dm=7 cmt=0
+[keep 361] search BV1ii3d6LEwn dm=12 cmt=0
+[keep 362] search BV14wGA6QEVY dm=7 cmt=0
+[search] 淋明杀鸡 hit=40 fresh=18 kept=5 total=362 queue=1041
+[keep 363] search BV1a6z5BfE13 dm=180 cmt=0
+[keep 364] search BV1YhnwzaEn9 dm=6 cmt=0
+[keep 365] search BV1SJxVzTEks dm=180 cmt=0
+[keep 366] search BV1Tjt76YEvE dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 122 次）
+  [blocked:other] 412 → 冷却 90s（累计 123 次）
+[keep 367] search BV1vqayzmE2r dm=180 cmt=0
+[search] 黎明杀机 淋 hit=40 fresh=32 kept=5 total=367 queue=1063
+[keep 368] search BV1Yu4y1S7uW dm=143 cmt=0
+[keep 369] search BV1WRzGBrEmU dm=28 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 124 次）
+[keep 370] search BV1xDn16tEQD dm=180 cmt=0
+[keep 371] search BV1waa26SE23 dm=24 cmt=0
+[keep 372] search BV1JuJ96vEXe dm=136 cmt=0
+[search] 星淋铁道 hit=40 fresh=24 kept=5 total=372 queue=1079
+[keep 373] search BV1CKaV6tEiD dm=4 cmt=0
+[keep 374] search BV14anq6BEhd dm=26 cmt=0
+[keep 375] search BV1HfKiz3Ezf dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 125 次）
+[keep 376] search BV1Rmh96ZEXh dm=180 cmt=0
+[keep 377] search BV11EhS6wEQy dm=180 cmt=0
+[search] 崩坏星穹铁道 淋 hit=40 fresh=38 kept=5 total=377 queue=1111
+[keep 378] search BV1tnLF6XERs dm=8 cmt=0
+[keep 379] search BV11S91YyETX dm=35 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 126 次）
+  [blocked:other] 412 → 冷却 90s（累计 127 次）
+[keep 380] search BV1Aw411K7hy dm=20 cmt=0
+[keep 381] search BV1Rw1ZBKEfP dm=20 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 128 次）
+  [blocked:other] 412 → 冷却 90s（累计 129 次）
+[keep 382] search BV1H2QSYjEYh dm=5 cmt=0
+[search] 永劫淋间 hit=40 fresh=38 kept=5 total=382 queue=1140
+[keep 383] search BV1CWp86mE63 dm=9 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 130 次）
+  [blocked:other] 412 → 冷却 90s（累计 131 次）
+[keep 384] search BV1aHJb6JENP dm=25 cmt=0
+[keep 385] search BV1w9Mk61EFh dm=11 cmt=0
+[keep 386] search BV17caZ66EDG dm=180 cmt=0
+[keep 387] search BV1p7hR6MECu dm=6 cmt=0
+[search] 重返未淋 hit=40 fresh=33 kept=5 total=387 queue=1164
+  [blocked:other] 412 → 冷却 90s（累计 132 次）
+  [blocked:other] 412 → 冷却 90s（累计 133 次）
+  [blocked:other] 412 → 冷却 90s（累计 134 次）
+  [blocked:other] 412 → 冷却 90s（累计 135 次）
+  [blocked:other] 412 → 冷却 90s（累计 136 次）
+  [blocked:other] 412 → 冷却 90s（累计 137 次）
+[keep 388] search BV18gJR6XE1M dm=11 cmt=0
+[keep 389] search BV1pfdLBWEYJ dm=5 cmt=0
+[keep 390] search BV1QpwczVE7z dm=8 cmt=5
+[keep 391] search BV1LCpC6GEwh dm=6 cmt=5
+[keep 392] search BV1r9k4BJEsF dm=169 cmt=9
+[search] 淋者无双 hit=40 fresh=36 kept=5 total=392 queue=1188
+[keep 393] search BV1PXuD6GENv dm=13 cmt=10
+[keep 394] search BV12hE16WEht dm=104 cmt=10
+[keep 395] search BV1B5jzzPE9m dm=47 cmt=9
+  [blocked:other] 412 → 冷却 90s（累计 138 次）
+[keep 396] search BV1XUzTBgEW8 dm=0 cmt=4
+[keep 397] search BV11h7N6MEn4 dm=40 cmt=10
+[search] 街头霸淋 hit=40 fresh=27 kept=5 total=397 queue=1209
+  [blocked:other] 412 → 冷却 90s（累计 139 次）
+[keep 398] search BV1m1HK6HE4M dm=31 cmt=3
+[keep 399] search BV1JSh265EUn dm=6 cmt=12
+[keep 400] search BV1aVhQ65EdT dm=35 cmt=9
+[keep 401] search BV1kdHK6yEBK dm=10 cmt=3
+[keep 402] search BV1HHHg6sEna dm=8 cmt=3
+[search] 蛋仔派对 淋 hit=40 fresh=39 kept=5 total=402 queue=1242
+[keep 403] search BV1nTyKYBEbe dm=2 cmt=4
+[keep 404] search BV1rSjA6WEXB dm=18 cmt=6
+  [blocked:other] 412 → 冷却 90s（累计 140 次）
+[keep 405] search BV16TspzVEEN dm=0 cmt=6
+[keep 406] search BV1zvtk64Enk dm=2 cmt=3
+  [blocked:other] 412 → 冷却 90s（累计 141 次）
+[keep 407] search BV1VDpR6TETn dm=0 cmt=8
+[search] 元梦之星 淋 hit=40 fresh=33 kept=5 total=407 queue=1269
+[keep 408] search BV1fLo8YYEeN dm=1 cmt=4
+[keep 409] search BV1eTBdBzEAS dm=180 cmt=11
+[keep 410] search BV1oAiwBREj4 dm=46 cmt=10
+[keep 411] search BV1GZfvBqEri dm=5 cmt=9
+[keep 412] search BV1p5abzEEHq dm=1 cmt=10
+[search] 鸣潮 淋 hit=40 fresh=39 kept=5 total=412 queue=1303
+  [blocked:other] 412 → 冷却 90s（累计 142 次）
+[keep 413] search BV1BeQDYVETy dm=0 cmt=3
+  [blocked:other] 412 → 冷却 90s（累计 143 次）
+[keep 414] search BV13y4y1g7sf dm=180 cmt=12
+  [blocked:other] 412 → 冷却 90s（累计 144 次）
+[keep 415] search BV1Fuz8YoEXb dm=1 cmt=5
+  [blocked:reply] 412 → 冷却 90s（累计 8 次）
+[keep 416] search BV1RW421P71Z dm=149 cmt=12
+  [blocked:other] 412 → 冷却 90s（累计 145 次）
+  [blocked:other] 412 → 冷却 90s（累计 146 次）
+[keep 417] search BV1s887zDEQt dm=27 cmt=0
+[search] 光遇 淋 hit=40 fresh=37 kept=5 total=417 queue=1331
+[keep 418] search BV1cEHM6UEbu dm=180 cmt=0
+[keep 419] search BV1E4HM6VEaS dm=7 cmt=0
+[keep 420] search BV12CHK6XEht dm=54 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 147 次）
+[keep 421] search BV1aqHK6ZEg1 dm=30 cmt=0
+[keep 422] search BV1n8ac6WEGX dm=35 cmt=0
+[search] 无限暖暖 淋 hit=40 fresh=40 kept=5 total=422 queue=1365
+  [blocked:other] 412 → 冷却 90s（累计 148 次）
+  [blocked:other] 412 → 冷却 90s（累计 149 次）
+[keep 423] search BV1b14y1u7fs dm=12 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 150 次）
+[keep 424] search BV1yutmzfEBV dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 151 次）
+  [blocked:other] 412 → 冷却 90s（累计 152 次）
+  [blocked:other] 412 → 冷却 90s（累计 153 次）
+  [blocked:other] 412 → 冷却 90s（累计 154 次）
+  [blocked:other] 412 → 冷却 90s（累计 155 次）
+  [blocked:other] 412 → 冷却 90s（累计 156 次）
+  [blocked:other] 412 → 冷却 90s（累计 157 次）
+  [blocked:other] 412 → 冷却 90s（累计 158 次）
+  [blocked:other] 412 → 冷却 90s（累计 159 次）
+  [blocked:other] 412 → 冷却 90s（累计 160 次）
+[keep 425] search BV1wk4y197Ru dm=9 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 161 次）
+  [blocked:other] 412 → 冷却 90s（累计 162 次）
+  [blocked:other] 412 → 冷却 90s（累计 163 次）
+  [blocked:other] 412 → 冷却 90s（累计 164 次）
+  [blocked:other] 412 → 冷却 90s（累计 165 次）
+  [blocked:other] 412 → 冷却 90s（累计 166 次）
+  [blocked:other] 412 → 冷却 90s（累计 167 次）
+  [blocked:other] 412 → 冷却 90s（累计 168 次）
+  [blocked:other] 412 → 冷却 90s（累计 169 次）
+[keep 426] search BV1p24y1N72Z dm=39 cmt=0
+[keep 427] search BV1mF411y7M2 dm=3 cmt=0
+[search] 火力苏打 淋 hit=40 fresh=40 kept=5 total=427 queue=1373
+[keep 428] search BV1nYnh6CEbB dm=10 cmt=0
+[keep 429] search BV1Mnnk6HE6S dm=180 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 170 次）
+[keep 430] search BV1bLHA6LEwk dm=6 cmt=0
+[keep 431] search BV1o4421S7rE dm=10 cmt=0
+[keep 432] search BV1F4t76dEBc dm=54 cmt=0
+[search] 金铲铲 淋 hit=40 fresh=39 kept=5 total=432 queue=1406
+[keep 433] search BV1fZiYBEEpj dm=10 cmt=0
+[keep 434] search BV1rSnt6NEy9 dm=26 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 171 次）
+  [blocked:other] 412 → 冷却 90s（累计 172 次）
+  [blocked:other] 412 → 冷却 90s（累计 173 次）
+  [blocked:other] 412 → 冷却 90s（累计 174 次）
+[keep 435] search BV1cf42197rW dm=6 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 175 次）
+[keep 436] search BV12N4y1B7yy dm=6 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 176 次）
+  [blocked:other] 412 → 冷却 90s（累计 177 次）
+[keep 437] search BV1Xpnq6yEnt dm=7 cmt=0
+[search] 和平精英 淋 hit=40 fresh=40 kept=5 total=437 queue=1433
+[keep 438] search BV1vyHN6PEfj dm=180 cmt=0
+[keep 439] search BV1M4J661Exa dm=180 cmt=0
+[keep 440] search BV18G411Z76Y dm=180 cmt=0
+[keep 441] search BV1xbpm6MEhX dm=5 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 178 次）
+  [blocked:other] 412 → 冷却 90s（累计 179 次）
+  [blocked:other] 412 → 冷却 90s（累计 180 次）
+  [blocked:other] 412 → 冷却 90s（累计 181 次）
+  [blocked:other] 412 → 冷却 90s（累计 182 次）
+[keep 442] search BV1B6421F7iH dm=180 cmt=0
+[search] 无畏契约 淋 hit=40 fresh=40 kept=5 total=442 queue=1461
+  [blocked:other] 412 → 冷却 90s（累计 183 次）
+  [blocked:other] 412 → 冷却 90s（累计 184 次）
+[keep 443] search BV1jfnt6FECH dm=89 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 185 次）
+  [blocked:other] 412 → 冷却 90s（累计 186 次）
+  [blocked:other] 412 → 冷却 90s（累计 187 次）
+[keep 444] search BV1Tt411M7TJ dm=116 cmt=0
+[keep 445] search BV11H4y1h7hg dm=6 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 188 次）
+[keep 446] search BV1eH8dz6EjZ dm=4 cmt=0
+[keep 447] search BV1pC4y197ym dm=22 cmt=0
+[search] 通讯录 hit=40 fresh=29 kept=5 total=447 queue=1476
+[keep 448] search BV1NFnt6zE8f dm=14 cmt=0
+[keep 449] search BV16zDfBtEBv dm=5 cmt=0
+[keep 450] search BV1S14y1d7SN dm=180 cmt=0
+[keep 451] search BV1V9DiBSE77 dm=14 cmt=0
+  [blocked:other] 412 → 冷却 90s（累计 189 次）
+[keep 452] search BV1rN4y1Q74g dm=5 cmt=0
+[search] 通讯录英雄 hit=40 fresh=17 kept=5 total=452 queue=1484
+[keep 453] search BV1vCTc67EYb dm=180 cmt=0
+[keep 454] search BV15u4y1h7re dm=123 cmt=0
+  [blocked:reply] 412 → 冷却 90s（累计 9 次）

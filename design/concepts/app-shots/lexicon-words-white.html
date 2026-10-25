@@ -1,0 +1,943 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>linyu preview</title><style>body {
+  font-family: "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei", system-ui, sans-serif;
+  background: #f7f5f1;
+  color: #141414;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: inherit;
+}
+
+button::after {
+  border: none;
+}
+
+.page {
+  --bg: #f7f5f1;
+  --ink: #141414;
+  --muted: #6d6861;
+  --faint: #746e65;
+  --soft: #efece6;
+  --line: rgba(20, 20, 20, 0.14);
+  --line-strong: rgba(20, 20, 20, 0.5);
+  --accent: #141414;
+  --cta-bg: #141414;
+  --cta-fg: #f7f5f1;
+  --danger: #a33232;
+  --placeholder: #746e65;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 18px 22px 36px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.theme-black {
+  --bg: #111112;
+  --ink: #f2efe9;
+  --muted: #99948b;
+  --faint: #8a857e;
+  --soft: #1c1c1f;
+  --line: rgba(242, 239, 233, 0.16);
+  --line-strong: rgba(242, 239, 233, 0.55);
+  --accent: #ff6f9c;
+  --cta-bg: #f2efe9;
+  --cta-fg: #111112;
+  --danger: #ff8b8b;
+  --placeholder: #8a857e;
+}
+
+.theme-rose {
+  --bg: #fbf2f3;
+  --ink: #2a1b20;
+  --muted: #7e5c66;
+  --faint: #8a6670;
+  --soft: #f4e6e9;
+  --line: rgba(42, 27, 32, 0.15);
+  --line-strong: rgba(42, 27, 32, 0.5);
+  --accent: #c2185b;
+  --cta-bg: #c2185b;
+  --cta-fg: #fff7f8;
+  --danger: #a3183f;
+  --placeholder: #8a6670;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow-left {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.eyebrow-mark {
+  padding: 0 3px;
+  color: var(--accent);
+}
+
+.eyebrow-arrow {
+  padding: 0 4px;
+  color: var(--accent);
+}
+
+.eyebrow-right {
+  flex: none;
+  color: var(--faint);
+  letter-spacing: 0.06em;
+}
+
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+}
+
+.page-title .pt-line {
+  display: block;
+}
+
+.pt-dot {
+  color: var(--accent);
+}
+
+.page-sub {
+  margin-top: 7px;
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--faint);
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 58px;
+  border-radius: 14px;
+  background: var(--cta-bg);
+  color: var(--cta-fg);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.btn-primary.disabled {
+  opacity: 0.4;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 15px;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.btn-ghost.danger {
+  color: var(--danger);
+  border-color: var(--line);
+}
+
+.btn-ghost.disabled {
+  opacity: 0.35;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 0;
+  background: transparent;
+}
+
+.search-ico {
+  position: relative;
+  flex: none;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  border: 1.5px solid var(--faint);
+  border-radius: 50%;
+}
+
+.search-ico::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  bottom: -4px;
+  width: 2px;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--faint);
+  transform: rotate(-45deg);
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  font-size: 12.5px;
+  color: var(--ink);
+}
+
+.search-clear {
+  flex: none;
+  min-width: 28px;
+  padding: 8px 0 8px 10px;
+  color: var(--faint);
+  font-size: 11px;
+  text-align: right;
+}
+
+.placeholder {
+  color: var(--placeholder);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-height: 36px;
+  padding: 0 12px;
+  margin-right: 8px;
+  border: 1px solid var(--line);
+  border-radius: 499.5px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.chip.on {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.chip-count {
+  margin-left: 4px;
+  font-size: 9px;
+  opacity: 0.7;
+}
+
+.h-tag {
+  display: inline;
+  margin: 0 6px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--faint);
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 12px 48px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.empty-ico {
+  width: auto;
+  height: auto;
+  margin-bottom: 13px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--accent);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.empty-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.empty-sub {
+  margin-top: 5px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.empty .btn-primary {
+  width: 140px;
+  height: 42px;
+  margin-top: 16px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.load-more {
+  margin: 0;
+  padding: 15px 0;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.list-end {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.tip {
+  margin: 16px 4px 0;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 5px 2px 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.section-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 20px 0 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+.tap-soft {
+  background: var(--soft);
+}
+
+.word-list,
+.rule-list,
+.lore-list,
+.card-list,
+.quote-list,
+.hero-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.word-card,
+.rule-card,
+.lore-card,
+.quote-card {
+  position: relative;
+  margin: 0;
+  padding: 13px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.word-main,
+.word-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.word-zh {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.word-arrow {
+  margin: 0 7px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.word-ly {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--accent);
+  word-break: break-all;
+}
+
+.word-alias {
+  margin-top: 3px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.word-sense {
+  margin-top: 4px;
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.word-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.word-src {
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.rule-head,
+.lore-card-head,
+.lore-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.rule-id {
+  margin-right: 6px;
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.rule-row {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.rule-label {
+  flex: none;
+  width: 32px;
+  margin-right: 8px;
+  font-size: 9px;
+  line-height: 1.9;
+  color: var(--faint);
+}
+
+.rule-label.accent {
+  color: var(--accent);
+}
+
+.rule-pattern {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 10.5px;
+  line-height: 1.7;
+  word-break: break-all;
+}
+
+.rule-template {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.rule-example {
+  margin-top: 5px;
+  padding-left: 40px;
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.lore-card::before {
+  display: none;
+}
+
+.fc-type {
+  display: inline;
+  margin-right: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 9px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+.lore-term {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  word-break: break-all;
+}
+
+.lore-alias {
+  margin-top: 2px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.lore-meaning {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.lore-example {
+  margin-top: 5px;
+  padding: 0 0 0 8px;
+  border-left: 1px solid var(--line-strong);
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  word-break: break-all;
+}
+
+.lore-detail {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.lore-source {
+  margin-top: 4px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.q-text {
+  position: relative;
+  padding-top: 0;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.q-meta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.q-author {
+  font-size: 10.5px;
+  color: var(--accent);
+}
+
+.q-src {
+  margin-top: 2px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.longpress-hint,
+.tap-hint {
+  padding: 6px 0 4px;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1.7;
+  color: var(--faint);
+}
+
+.rise {
+  animation: rise 0.24s ease-out both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+.page-sub {
+  margin-bottom: 14px;
+}
+
+.tabs {
+  display: flex;
+  align-items: stretch;
+  margin: 1px 0 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  color: var(--muted);
+}
+
+.tab-label {
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.tab-count {
+  font-size: 8px;
+  letter-spacing: 0.02em;
+  color: var(--faint);
+}
+
+.tab.on {
+  color: var(--ink);
+}
+
+.tab.on .tab-label {
+  font-weight: 600;
+}
+
+.tab.on .tab-count {
+  color: var(--accent);
+}
+
+.tab.on::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.filter-scroll {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  padding: 2px 0 8px;
+  white-space: nowrap;
+}
+
+.w-no {
+  flex: none;
+  width: 18px;
+  margin-right: 8px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 8px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
+.word-right {
+  display: flex;
+  align-items: baseline;
+  min-width: 0;
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.word-alias,
+.word-sense,
+.word-meta {
+  padding-left: 26px;
+}
+
+.hero-card {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-name {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.h-name {
+  margin-right: 6px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.h-rank {
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.hero-alias {
+  margin-top: 2px;
+  font-size: 10px;
+  color: var(--faint);
+}
+
+.hero-intro {
+  display: -webkit-box;
+  margin-top: 4px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.hero-more {
+  margin-top: 4px;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+}
+
+.empty-reset {
+  margin-top: 16px;
+}
+
+.list-foot {
+  margin-top: 2px;
+}
+
+
+  html, body { margin: 0; padding: 0; background: #dcd9d3; }
+  body { -webkit-font-smoothing: antialiased; }
+  .screen {
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f7f5f1;
+    position: relative;
+  }
+  .statusbar {
+    flex: none;
+    height: 44px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 22px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .02em;
+  }
+  .status-icons { font-size: 10px; letter-spacing: .08em; }
+  .navbar {
+    flex: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .nav-title { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav-back {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    line-height: 44px;
+    font-size: 32px;
+    font-weight: 300;
+  }
+  .capsule {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 87px;
+    height: 26px;
+    border: 1px solid currentColor;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: .55;
+  }
+  .capsule i { width: 3px; height: 3px; border-radius: 50%; background: currentColor; }
+  .cap-div { width: 1px; height: 14px; background: currentColor; opacity: .4; }
+  .cap-target { width: 9px; height: 9px; border: 1.5px solid currentColor; border-radius: 50%; position: relative; }
+  .cap-target::after { content: ''; position: absolute; inset: 2.5px; border-radius: 50%; background: currentColor; }
+  .stage { flex: 1; min-height: 0; overflow-y: auto; }
+  .page { min-height: 100% !important; }
+  .tabbar {
+    flex: none;
+    height: 50px;
+    display: flex;
+    align-items: stretch;
+    border-top: .5px solid transparent;
+  }
+  .tabbar-item {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    letter-spacing: .02em;
+  }
+  .tabbar-item.on { font-weight: 600; }
+  .tabbar-item.on::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+  }
+  .wx-textarea { display: block; white-space: pre-wrap; word-break: break-word; }
+  .wx-placeholder { color: var(--placeholder); }
+  input { border: 0; outline: none; background: transparent; font: inherit; color: inherit; }
+  .search-input::placeholder { color: var(--placeholder); }
+  .wx-switch {
+    display: inline-flex;
+    align-items: center;
+    width: 51px;
+    height: 31px;
+    padding: 2px;
+    border-radius: 16px;
+    background: rgba(120, 120, 120, .32);
+    flex: none;
+  }
+  .wx-switch i {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    transition: transform .2s ease;
+  }
+  .wx-switch.on { background: var(--accent); }
+  .wx-switch.on i { transform: translateX(20px); }
+  html.full, html.full body { height: auto; }
+  html.full .screen { height: auto; min-height: 812px; overflow: visible; }
+  html.full .stage { overflow: visible; }
+  html.full .tabbar { display: none; }
+</style></head><body><div class="screen"><div class="statusbar" style="background:#f7f5f1;color:#000000"><span>9:41</span><span class="status-icons">●●●● ▮</span></div><div class="navbar" style="background:#f7f5f1;color:#000000"><span class="nav-title">词库</span><span class="capsule"><i></i><i></i><i></i><span class="cap-div"></span><span class="cap-target"></span></span></div><div class="stage"><div class="page theme-white"><div class="page theme-white"><div class="eyebrow"><div class="eyebrow-left"><span>LEXICON</span><span class="eyebrow-mark">/</span><span>词库</span></div><span class="eyebrow-right">可溯源</span></div><div class="page-title">查一个词，<div class="pt-line">看它的来路<span class="pt-dot">。</span></div></div><div class="page-sub">共 535 词条 · 146 句式 · 422 词卡 · 462 名言 · 73 人物</div><div class="search-box"><div class="search-ico"></div><input class="search-input" value="" placeholder="搜索中文 / 淋语 / 解释…"></div><div class="tabs"><div class="tab on"><span class="tab-label">词库</span><span class="tab-count">535</span></div><div class="tab "><span class="tab-label">句式</span><span class="tab-count">146</span></div><div class="tab "><span class="tab-label">词卡</span><span class="tab-count">422</span></div><div class="tab "><span class="tab-label">名言</span><span class="tab-count">462</span></div><div class="tab "><span class="tab-label">人物</span><span class="tab-count">73</span></div></div><div class="word-list"><div class="word-card"><div class="word-main"><span class="w-no">01</span><span class="word-zh">我</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">本仙女</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">02</span><span class="word-zh">你</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">小仙女</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">03</span><span class="word-zh">你们</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">仙女们</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">04</span><span class="word-zh">我们</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">俺们仙女</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">05</span><span class="word-zh">他</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">塔</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">06</span><span class="word-zh">她</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">塔</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">07</span><span class="word-zh">谁</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">隋</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">08</span><span class="word-zh">不知道</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">不造</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">09</span><span class="word-zh">为什么</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">为神马</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">10</span><span class="word-zh">什么</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">神马</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">11</span><span class="word-zh">怎么</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">怎滴</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">12</span><span class="word-zh">这么</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">介么</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">13</span><span class="word-zh">那么</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">挪么</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">14</span><span class="word-zh">没有</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">木冇</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">15</span><span class="word-zh">可以</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">可系</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">16</span><span class="word-zh">不</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">布</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">17</span><span class="word-zh">是</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">素</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">18</span><span class="word-zh">的</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">滴</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">19</span><span class="word-zh">了</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">惹</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">20</span><span class="word-zh">很</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">超</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">21</span><span class="word-zh">非常</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">炒鸡</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">22</span><span class="word-zh">太</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">淘</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">23</span><span class="word-zh">真</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">珍</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">24</span><span class="word-zh">好</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">吼</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">25</span><span class="word-zh">朋友</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">盆友</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">26</span><span class="word-zh">男朋友</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">男盆友</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">27</span><span class="word-zh">女朋友</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">女盆友</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">28</span><span class="word-zh">人</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">银</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">29</span><span class="word-zh">同学</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">同鞋</span></div></div></div><div class="word-card"><div class="word-main"><span class="w-no">30</span><span class="word-zh">老师</span><div class="word-right"><span class="word-arrow">→</span><span class="word-ly">老湿</span></div></div></div></div><div class="list-foot"><div class="load-more">加载更多 · 还有 505 条 ↓</div></div><div class="tip">内容整理自公开语料，仅供娱乐 · 只读浏览</div></div></div></div><div class="tabbar" style="background:#f7f5f1;border-top-color:rgba(20,20,20,.14);color:#6d6861"><span class="tabbar-item">翻译</span><span class="tabbar-item on" style="color:#141414">词库</span><span class="tabbar-item">历史</span><span class="tabbar-item">关于</span></div></div><script>if(location.search.indexOf("full")>=0){document.documentElement.classList.add("full");}</script></body></html>

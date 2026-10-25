@@ -31,7 +31,7 @@ if (!blob) {
 
 const norm = (s) => String(s || '').replace(/\s+/g, '');
 const strip = (s) =>
-  norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'\[\]【】]/g, '').toLowerCase();
+  norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'[\]【】]/g, '').toLowerCase();
 const BLOB = norm(blob).toLowerCase();
 const SBLOB = strip(blob);
 
@@ -85,7 +85,7 @@ for (const w of seed.words) {
 // ---- 句式 rules：pattern 必须能在真实语料里命中至少一条样例 ----
 const CORPUS_LINES = blob.split(/\r?\n/);
 for (const r of seed.rules) {
-  let re = null;
+  let re;
   try {
     re = new RegExp(r.pattern);
   } catch {

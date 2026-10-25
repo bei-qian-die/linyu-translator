@@ -17,7 +17,7 @@ const lore = m.exports;
 const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'core', 'seed.json'), 'utf8'));
 
 const norm = (s) => String(s || '').replace(/\s+/g, '').toLowerCase();
-const strip = (s) => norm(s).replace(/[，。！？、；：""''‘’“”（）()…~—\-《》〈〉,.!?;:"'\[\]【】·、*#@%&+=|\\/_^$]/g, '');
+const strip = (s) => norm(s).replace(/[，。！？、；：""''‘’“”（）()…~—\-《》〈〉,.!?;:"'[\]【】·、*#@%&+=|\\/_^$]/g, '');
 
 // graph.txt 由 harvest-graph 用"必须命中淋语 tag 或标题带淋"的门禁产出，本身就是生态语料。
 const isEco = (f) => /f\.txt$/.test(f) || /\.graph\.txt$/.test(f);
@@ -112,7 +112,7 @@ out.push(
 );
 out.push('\n## 四、词库里淋语形未在语料出现的（翻译资产，不自动删）');
 out.push(seed.words.filter((w) => !ALL.includes(strip(w.linyu))).map((w) => w.zh + '->' + w.linyu).join('\n'));
-fs.writeFileSync(path.join(ROOT, 'relevance-review.txt'), out.join('\n'), 'utf8');
+fs.writeFileSync(path.join(ROOT, 'evidence', 'relevance-review.txt'), out.join('\n'), 'utf8');
 console.log('生态语料字符', ECO.length, '全部语料', ALL.length);
 console.log(JSON.stringify(counts));
 console.log('剔除候选', rows.filter((r) => r.suspect).length, '-> relevance-review.txt');

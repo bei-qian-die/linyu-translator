@@ -1,0 +1,1477 @@
+{
+ "total": 195,
+ "linkedByAliasMerge": {
+  "cards": {
+   "noHero": 421,
+   "linked": 80,
+   "leftBlank": 341,
+   "blankRate": "0.810",
+   "blockedGeneric": 16
+  },
+  "quotes": {
+   "noHero": 412,
+   "linked": 56,
+   "leftBlank": 356,
+   "blankRate": "0.864",
+   "blockedGeneric": 29
+  },
+  "unreliableLeftBlankTotal": 697,
+  "unreliableRatio": "0.837",
+  "blockedByGenericOnly": 45,
+  "conflicts": 45
+ },
+ "zeroCards": [
+  "去听潮声吧",
+  "蒜姐",
+  "青行灯",
+  "黑天鹅",
+  "陈",
+  "青子",
+  "聊赠一枝竹",
+  "丽桑卓",
+  "安琪拉",
+  "海诺"
+ ],
+ "zeroQuotes": [
+  "老凡Fv",
+  "霞",
+  "恋爱顾问曹小派",
+  "蝰蛇",
+  "黑梦",
+  "奇乐",
+  "春丽",
+  "阿鬼",
+  "大天狗",
+  "青行灯",
+  "陈",
+  "青子",
+  "安妮",
+  "瑟庄妮",
+  "卡特琳娜",
+  "丽桑卓",
+  "克烈",
+  "阿木木",
+  "奈德丽",
+  "厄运小姐",
+  "乐芙娜",
+  "坎蒂丝",
+  "灵砂",
+  "安琪拉",
+  "芈月",
+  "镜",
+  "玛恩纳",
+  "龙舌兰",
+  "能天使",
+  "红蝶",
+  "杰克",
+  "孔雀明王",
+  "三角头"
+ ],
+ "whyZero": {
+  "去听潮声吧": "候选词卡「擦边主播」被最长别名自动归属判给孙策（其体育生梗），本行保留 0 卡，宁缺勿抢",
+  "老凡Fv": "本人视频是庄周硬核教学，弹幕与淋语无关，按纪律不收（词卡已由标题梗补上）",
+  "霞": "单字名在语料中只以 翠霞/紫霞/晚霞 等他人词出现，无法安全归属",
+  "蒜姐": "同名词卡已归属同一人物的本名行「上官婉儿」（项目里蒜姐/上官婉儿是双行），不再重复造词卡",
+  "恋爱顾问曹小派": "《淋语大全》视频评论区仅短句「爱看，UP加油！」，无 ≥10 字合格句（词卡已补）",
+  "蝰蛇": "语料无该人物内容（全 22 文件零命中）",
+  "黑梦": "语料命中句均为「我梦到/我梦里」的普通用法，与人物无关，宁缺勿挂",
+  "奇乐": "语料仅出现「猎奇/乐子」分栏文本，非人物名用法，判为误命中",
+  "春丽": "语料无该人物内容（全 22 文件零命中）",
+  "阿鬼": "语料无该人物内容（全 22 文件零命中）",
+  "大天狗": "语料无该人物内容（全 22 文件零命中）",
+  "青行灯": "语料无该人物内容（全 22 文件零命中）",
+  "黑天鹅": "语料仅一句点名弹幕，已按名言收录；无其它可解释梗词",
+  "陈": "语料无该人物内容；单字名无法安全匹配",
+  "青子": "语料仅命中另一 UP「jじ青青子衿」，非本人内容",
+  "聊赠一枝竹": "语料只有贴吧楼主原帖一句（已按名言收录），楼主 ID 无独立梗词可做卡",
+  "安妮": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "瑟庄妮": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "卡特琳娜": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "丽桑卓": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "克烈": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "阿木木": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "奈德丽": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "厄运小姐": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "乐芙娜": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "坎蒂丝": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "灵砂": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "安琪拉": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "芈月": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "镜": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "海诺": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "玛恩纳": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "龙舌兰": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "能天使": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "红蝶": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "杰克": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "孔雀明王": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑",
+  "三角头": "本轮并行新增的游戏角色：词卡以黑话写法为主，名言池仍按语料逐字补，缺者不强凑"
+ },
+ "perHero": [
+  {
+   "name": "淋淋",
+   "group": "real",
+   "cards": 56,
+   "quotes": 175,
+   "words": 15
+  },
+  {
+   "name": "周阴婷",
+   "group": "real",
+   "cards": 12,
+   "quotes": 195,
+   "words": 10
+  },
+  {
+   "name": "那艺娜",
+   "group": "real",
+   "cards": 7,
+   "quotes": 45,
+   "words": 10
+  },
+  {
+   "name": "三梦奇缘",
+   "group": "real",
+   "cards": 9,
+   "quotes": 27,
+   "words": 10
+  },
+  {
+   "name": "万人迷",
+   "group": "real",
+   "cards": 6,
+   "quotes": 18,
+   "words": 10
+  },
+  {
+   "name": "郭老师",
+   "group": "real",
+   "cards": 5,
+   "quotes": 25,
+   "words": 10
+  },
+  {
+   "name": "指南杰斯猫",
+   "group": "real",
+   "cards": 4,
+   "quotes": 15,
+   "words": 10
+  },
+  {
+   "name": "霉霉",
+   "group": "real",
+   "cards": 3,
+   "quotes": 3,
+   "words": 10
+  },
+  {
+   "name": "鹅妈妈",
+   "group": "real",
+   "cards": 3,
+   "quotes": 2,
+   "words": 10
+  },
+  {
+   "name": "肘姐",
+   "group": "real",
+   "cards": 5,
+   "quotes": 33,
+   "words": 10
+  },
+  {
+   "name": "梵谷",
+   "group": "real",
+   "cards": 1,
+   "quotes": 9,
+   "words": 10
+  },
+  {
+   "name": "完颜慧德",
+   "group": "real",
+   "cards": 19,
+   "quotes": 10,
+   "words": 12
+  },
+  {
+   "name": "玛莎",
+   "group": "real",
+   "cards": 1,
+   "quotes": 3,
+   "words": 10
+  },
+  {
+   "name": "何老师",
+   "group": "real",
+   "cards": 1,
+   "quotes": 7,
+   "words": 10
+  },
+  {
+   "name": "埃及艳后",
+   "group": "real",
+   "cards": 3,
+   "quotes": 3,
+   "words": 10
+  },
+  {
+   "name": "老地瓜",
+   "group": "real",
+   "cards": 1,
+   "quotes": 3,
+   "words": 10
+  },
+  {
+   "name": "开心姐",
+   "group": "real",
+   "cards": 3,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "埋汰姐",
+   "group": "real",
+   "cards": 1,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "施柔儿",
+   "group": "real",
+   "cards": 1,
+   "quotes": 11,
+   "words": 10
+  },
+  {
+   "name": "庄周",
+   "group": "game",
+   "cards": 4,
+   "quotes": 11,
+   "words": 10
+  },
+  {
+   "name": "元歌",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 10
+  },
+  {
+   "name": "妮蔻",
+   "group": "game",
+   "cards": 3,
+   "quotes": 3,
+   "words": 10
+  },
+  {
+   "name": "拉比克",
+   "group": "game",
+   "cards": 1,
+   "quotes": 6,
+   "words": 10
+  },
+  {
+   "name": "孙策",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 10
+  },
+  {
+   "name": "珊瑚宫心海",
+   "group": "game",
+   "cards": 14,
+   "quotes": 19,
+   "words": 10
+  },
+  {
+   "name": "腋淋",
+   "group": "game",
+   "cards": 3,
+   "quotes": 257,
+   "words": 10
+  },
+  {
+   "name": "上司磯太",
+   "group": "up",
+   "cards": 1,
+   "quotes": 7,
+   "words": 10
+  },
+  {
+   "name": "四乐化碳",
+   "group": "up",
+   "cards": 1,
+   "quotes": 10,
+   "words": 10
+  },
+  {
+   "name": "晦暗雨季",
+   "group": "up",
+   "cards": 1,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "新酱爱追剧",
+   "group": "up",
+   "cards": 7,
+   "quotes": 6,
+   "words": 10
+  },
+  {
+   "name": "生鼠不暝",
+   "group": "up",
+   "cards": 1,
+   "quotes": 6,
+   "words": 10
+  },
+  {
+   "name": "去听潮声吧",
+   "group": "up",
+   "cards": 0,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "大啵仙女",
+   "group": "up",
+   "cards": 1,
+   "quotes": 5,
+   "words": 10
+  },
+  {
+   "name": "可淋",
+   "group": "up",
+   "cards": 1,
+   "quotes": 8,
+   "words": 10
+  },
+  {
+   "name": "水烈鸟_ZZK",
+   "group": "up",
+   "cards": 1,
+   "quotes": 1,
+   "words": 10
+  },
+  {
+   "name": "羊崽爱吃芒果",
+   "group": "up",
+   "cards": 1,
+   "quotes": 6,
+   "words": 10
+  },
+  {
+   "name": "正义的钻石男高",
+   "group": "up",
+   "cards": 1,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "斯琴低娃老师",
+   "group": "up",
+   "cards": 1,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "初武",
+   "group": "up",
+   "cards": 2,
+   "quotes": 4,
+   "words": 10
+  },
+  {
+   "name": "老凡Fv",
+   "group": "up",
+   "cards": 1,
+   "quotes": 0,
+   "words": 10
+  },
+  {
+   "name": "四时猫舍",
+   "group": "up",
+   "cards": 1,
+   "quotes": 1,
+   "words": 10
+  },
+  {
+   "name": "我华",
+   "group": "game",
+   "cards": 10,
+   "quotes": 301,
+   "words": 9
+  },
+  {
+   "name": "我泔",
+   "group": "game",
+   "cards": 4,
+   "quotes": 20,
+   "words": 7
+  },
+  {
+   "name": "我妲",
+   "group": "game",
+   "cards": 1,
+   "quotes": 6,
+   "words": 4
+  },
+  {
+   "name": "我虞",
+   "group": "game",
+   "cards": 1,
+   "quotes": 6,
+   "words": 5
+  },
+  {
+   "name": "我琴",
+   "group": "game",
+   "cards": 9,
+   "quotes": 21,
+   "words": 7
+  },
+  {
+   "name": "我光",
+   "group": "game",
+   "cards": 7,
+   "quotes": 28,
+   "words": 5
+  },
+  {
+   "name": "我鸟",
+   "group": "game",
+   "cards": 8,
+   "quotes": 5,
+   "words": 6
+  },
+  {
+   "name": "阿三",
+   "group": "game",
+   "cards": 2,
+   "quotes": 6,
+   "words": 5
+  },
+  {
+   "name": "凤仙子",
+   "group": "real",
+   "cards": 3,
+   "quotes": 19,
+   "words": 6
+  },
+  {
+   "name": "暴躁的鹿鹿",
+   "group": "up",
+   "cards": 1,
+   "quotes": 3,
+   "words": 5
+  },
+  {
+   "name": "坚决不打羊胎素",
+   "group": "up",
+   "cards": 1,
+   "quotes": 1,
+   "words": 4
+  },
+  {
+   "name": "妖女即将收服BadBoy",
+   "group": "up",
+   "cards": 1,
+   "quotes": 3,
+   "words": 5
+  },
+  {
+   "name": "提瓦淋新人桑",
+   "group": "up",
+   "cards": 1,
+   "quotes": 5,
+   "words": 4
+  },
+  {
+   "name": "伤心凉茶",
+   "group": "up",
+   "cards": 1,
+   "quotes": 3,
+   "words": 5
+  },
+  {
+   "name": "一米六也很厉害啦",
+   "group": "up",
+   "cards": 1,
+   "quotes": 3,
+   "words": 5
+  },
+  {
+   "name": "女王糖糖子",
+   "group": "up",
+   "cards": 1,
+   "quotes": 2,
+   "words": 5
+  },
+  {
+   "name": "水蓝蓝",
+   "group": "game",
+   "cards": 2,
+   "quotes": 6,
+   "words": 4
+  },
+  {
+   "name": "雕刻家",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "泡泡",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "杀生院",
+   "group": "game",
+   "cards": 1,
+   "quotes": 4,
+   "words": 3
+  },
+  {
+   "name": "艾希",
+   "group": "game",
+   "cards": 2,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "莫甘娜",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "霞",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 2
+  },
+  {
+   "name": "萨勒芬妮",
+   "group": "game",
+   "cards": 2,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "雷电将军",
+   "group": "game",
+   "cards": 2,
+   "quotes": 2,
+   "words": 10
+  },
+  {
+   "name": "流浪者",
+   "group": "game",
+   "cards": 1,
+   "quotes": 3,
+   "words": 10
+  },
+  {
+   "name": "胡桃",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 10
+  },
+  {
+   "name": "刻晴",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 10
+  },
+  {
+   "name": "妮露",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 10
+  },
+  {
+   "name": "阴婷宝",
+   "group": "real",
+   "cards": 3,
+   "quotes": 3,
+   "words": 5
+  },
+  {
+   "name": "木头人的磁带旧时光",
+   "group": "real",
+   "cards": 1,
+   "quotes": 3,
+   "words": 5
+  },
+  {
+   "name": "FLY 组合工作室",
+   "group": "real",
+   "cards": 1,
+   "quotes": 1,
+   "words": 6
+  },
+  {
+   "name": "我雅",
+   "group": "other",
+   "cards": 2,
+   "quotes": 25,
+   "words": 4
+  },
+  {
+   "name": "纳阴妲",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "莱欧斯利",
+   "group": "other",
+   "cards": 1,
+   "quotes": 5,
+   "words": 3
+  },
+  {
+   "name": "蒜姐",
+   "group": "other",
+   "cards": 0,
+   "quotes": 7,
+   "words": 3
+  },
+  {
+   "name": "我米",
+   "group": "other",
+   "cards": 1,
+   "quotes": 2,
+   "words": 3
+  },
+  {
+   "name": "我月",
+   "group": "other",
+   "cards": 1,
+   "quotes": 6,
+   "words": 3
+  },
+  {
+   "name": "我曌",
+   "group": "other",
+   "cards": 1,
+   "quotes": 22,
+   "words": 3
+  },
+  {
+   "name": "淋人金Daddy",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "凤蝶",
+   "group": "other",
+   "cards": 3,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "血律Daddy",
+   "group": "other",
+   "cards": 1,
+   "quotes": 2,
+   "words": 3
+  },
+  {
+   "name": "摩西女",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "枝性美克里斯",
+   "group": "other",
+   "cards": 1,
+   "quotes": 8,
+   "words": 2
+  },
+  {
+   "name": "火淋",
+   "group": "other",
+   "cards": 1,
+   "quotes": 4,
+   "words": 2
+  },
+  {
+   "name": "淋光",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "威龙daddy",
+   "group": "other",
+   "cards": 2,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "交女王",
+   "group": "other",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "杂技女亡帕克",
+   "group": "other",
+   "cards": 2,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "铁T成长",
+   "group": "other",
+   "cards": 2,
+   "quotes": 2,
+   "words": 3
+  },
+  {
+   "name": "武田晴海",
+   "group": "other",
+   "cards": 1,
+   "quotes": 25,
+   "words": 3
+  },
+  {
+   "name": "一只叫艾文的海豚",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "嘶哈嘶哈惹",
+   "group": "other",
+   "cards": 1,
+   "quotes": 2,
+   "words": 3
+  },
+  {
+   "name": "软妹很努力",
+   "group": "other",
+   "cards": 1,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "木槿软辅",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "这个符很关键",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "大沙田鱼罐头",
+   "group": "other",
+   "cards": 1,
+   "quotes": 6,
+   "words": 3
+  },
+  {
+   "name": "卡子有南云铁虎依赖症",
+   "group": "other",
+   "cards": 2,
+   "quotes": 3,
+   "words": 2
+  },
+  {
+   "name": "喂奶牛喝奶",
+   "group": "other",
+   "cards": 1,
+   "quotes": 5,
+   "words": 2
+  },
+  {
+   "name": "禁基的扣肉",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "13姬",
+   "group": "other",
+   "cards": 2,
+   "quotes": 4,
+   "words": 3
+  },
+  {
+   "name": "林雅文女王",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "清光山间月",
+   "group": "other",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "恋爱顾问曹小派",
+   "group": "other",
+   "cards": 1,
+   "quotes": 0,
+   "words": 3
+  },
+  {
+   "name": "橘吱捞饭",
+   "group": "other",
+   "cards": 1,
+   "quotes": 2,
+   "words": 3
+  },
+  {
+   "name": "阿狸",
+   "group": "game",
+   "cards": 7,
+   "quotes": 12,
+   "words": 3
+  },
+  {
+   "name": "卡莎",
+   "group": "game",
+   "cards": 2,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "薇恩",
+   "group": "game",
+   "cards": 3,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "佐伊",
+   "group": "game",
+   "cards": 3,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "阿卡丽",
+   "group": "game",
+   "cards": 3,
+   "quotes": 3,
+   "words": 2
+  },
+  {
+   "name": "金克丝",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "卡尔玛",
+   "group": "game",
+   "cards": 3,
+   "quotes": 3,
+   "words": 2
+  },
+  {
+   "name": "娜美",
+   "group": "game",
+   "cards": 3,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "貂蝉",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "王昭君",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "西施",
+   "group": "game",
+   "cards": 3,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "上官婉儿",
+   "group": "game",
+   "cards": 3,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "米莱狄",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "公孙离",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "小乔",
+   "group": "game",
+   "cards": 2,
+   "quotes": 2,
+   "words": 1
+  },
+  {
+   "name": "可莉",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "七七",
+   "group": "game",
+   "cards": 2,
+   "quotes": 3,
+   "words": 2
+  },
+  {
+   "name": "夜兰",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "优菈",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "北斗",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "八重神子",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "纳西妲",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "医生",
+   "group": "game",
+   "cards": 2,
+   "quotes": 4,
+   "words": 2
+  },
+  {
+   "name": "渔女",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "调香师",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "小女孩",
+   "group": "game",
+   "cards": 2,
+   "quotes": 3,
+   "words": 1
+  },
+  {
+   "name": "祭司",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "蝰蛇",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 2
+  },
+  {
+   "name": "暮蝶",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "黑梦",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 2
+  },
+  {
+   "name": "奇乐",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 2
+  },
+  {
+   "name": "春丽",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "阿鬼",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 2
+  },
+  {
+   "name": "曼侬",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "李允珍",
+   "group": "game",
+   "cards": 5,
+   "quotes": 13,
+   "words": 3
+  },
+  {
+   "name": "凤敏",
+   "group": "game",
+   "cards": 2,
+   "quotes": 8,
+   "words": 3
+  },
+  {
+   "name": "迪莫",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "魔力猫",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "阿米娅",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "乌尔比安",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "大天狗",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "知更鸟",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "罗玉凤",
+   "group": "real",
+   "cards": 3,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "英中啊英中",
+   "group": "real",
+   "cards": 1,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "FLY组合",
+   "group": "real",
+   "cards": 3,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "张元英",
+   "group": "real",
+   "cards": 1,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "孙尚香",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "百里守约",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 2
+  },
+  {
+   "name": "杨玉环",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 4
+  },
+  {
+   "name": "青行灯",
+   "group": "game",
+   "cards": 0,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "黑天鹅",
+   "group": "game",
+   "cards": 0,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "陈",
+   "group": "game",
+   "cards": 0,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "青子",
+   "group": "game",
+   "cards": 0,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "琴女",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "本吧英雄绰号大科普",
+   "group": "up",
+   "cards": 2,
+   "quotes": 1,
+   "words": 3
+  },
+  {
+   "name": "聊赠一枝竹",
+   "group": "up",
+   "cards": 0,
+   "quotes": 1,
+   "words": 4
+  },
+  {
+   "name": "杯糕姐",
+   "group": "up",
+   "cards": 2,
+   "quotes": 4,
+   "words": 2
+  },
+  {
+   "name": "淋形针LinerClip",
+   "group": "up",
+   "cards": 1,
+   "quotes": 1,
+   "words": 2
+  },
+  {
+   "name": "安妮",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "瑟庄妮",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "卡特琳娜",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "丽桑卓",
+   "group": "game",
+   "cards": 0,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "婕拉",
+   "group": "game",
+   "cards": 1,
+   "quotes": 2,
+   "words": 1
+  },
+  {
+   "name": "克烈",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "阿木木",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "芮尔",
+   "group": "game",
+   "cards": 2,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "奈德丽",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "厄运小姐",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "乐芙娜",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 2
+  },
+  {
+   "name": "凝光",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "坎蒂丝",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "梦见月瑞希",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 0
+  },
+  {
+   "name": "翡翠",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "灵砂",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "黑塔",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 0
+  },
+  {
+   "name": "女娲",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 0
+  },
+  {
+   "name": "安琪拉",
+   "group": "game",
+   "cards": 0,
+   "quotes": 0,
+   "words": 1
+  },
+  {
+   "name": "芈月",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "镜",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "海诺",
+   "group": "game",
+   "cards": 0,
+   "quotes": 1,
+   "words": 1
+  },
+  {
+   "name": "重岳",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 0
+  },
+  {
+   "name": "玛恩纳",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "龙舌兰",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "能天使",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "红蝶",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "杰克",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "孔雀明王",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "三角头",
+   "group": "game",
+   "cards": 1,
+   "quotes": 0,
+   "words": 0
+  },
+  {
+   "name": "德古拉",
+   "group": "game",
+   "cards": 1,
+   "quotes": 1,
+   "words": 0
+  }
+ ]
+}

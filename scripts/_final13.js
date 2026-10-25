@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+const seed=require('../src/core/seed.json'),lore=require('../src/core/lore.js');
+const g={};lore.heroes.forEach(h=>{const k=h.grp||h.group||'real';g[k]=(g[k]||0)+1});
+const cnt={};lore.flashcards.forEach(c=>{if(c.hero)cnt[c.hero]=(cnt[c.hero]||0)+1});
+lore.quotes.forEach(q=>{if(q.hero)cnt[q.hero]=(cnt[q.hero]||0)+1});
+const zero=lore.heroes.filter(h=>!cnt[h.name]).length;
+const cf=fs.readdirSync(path.join(__dirname,'..','corpus')).filter(f=>/^corpus.*\.txt$/.test(f));
+let chars=0;cf.forEach(f=>chars+=fs.readFileSync(path.join(__dirname,'..','corpus',f),'utf8').length);
+const slotK=new Set();seed.words.forEach(w=>String(w.slot||'').split(/\s*\/\s*/).filter(Boolean).forEach(k=>slotK.add(k)));
+console.log(JSON.stringify({words:seed.words.length,rules:seed.rules.length,cards:lore.flashcards.length,quotes:lore.quotes.length,heroes:lore.heroes.length,groups:g,zeroContentHeroes:zero,slotKeys:slotK.size,corpusFiles:cf.length,corpusChars:chars,imgs:new Set(lore.heroes.map(h=>h.img)).size,wordsNoSource:seed.words.filter(w=>!w.source).length,variants:seed.words.filter(w=>String(w.alias||'').split(/[、]/).length>2).length}));

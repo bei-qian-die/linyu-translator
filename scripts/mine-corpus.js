@@ -25,8 +25,17 @@ vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'src/core/lore.js'), 'utf8'),
 const lore = m.exports;
 
 // 语料文件名：默认取最新一份 harvest 产物
+// 默认取 corpus/ 下最新一份 harvest 产物；目录不存在时回退扫根目录
+function defaultCorpus() {
+  const dir = path.join(ROOT, 'corpus');
+  const pick = (d, prefix) =>
+    fs.existsSync(d)
+      ? fs.readdirSync(d).filter((f) => /^corpus-bili-.*\.txt$/.test(f)).sort().slice(-1).map((f) => (prefix ? path.posix.join('corpus', f) : f))
+      : [];
+  return pick(dir, true).length ? pick(dir, true) : pick(ROOT, false);
+}
 const arg = process.argv[2];
-const corpusFiles = (arg ? arg.split(',') : fs.readdirSync(ROOT).filter((f) => /^corpus-bili-.*\.txt$/.test(f)).sort().slice(-1));
+const corpusFiles = (arg ? arg.split(',') : defaultCorpus());
 if (!corpusFiles.length) { console.error('没找到 corpus-bili-*.txt'); process.exit(1); }
 
 // ---- 已有内容，建立去重集合 ----
@@ -59,7 +68,7 @@ const isLy = (t) => TAIL.test(t) || SELF.test(t) || HACK.test(t);
 const ok = (t) => !NOISE.test(t) && (isLy(t) || (!FANWAR.test(t) && !REALITY.test(t)));
 
 const norm = (s) => String(s || '').replace(/\s+/g, '');
-const strip = (s) => norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'\[\]【】]/g, '');
+const strip = (s) => norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'[\]【】]/g, '');
 
 // ---- 解析语料，保留每行的来源 ----
 // 仓库里有两种语料格式，必须都吃下，否则只能看到新 B 站那一份：
@@ -133,7 +142,7 @@ const quotes = [...qMap.values()]
 // ---- CARD：反复出现但库里没有的短语 ----
 const cCount = new Map();
 for (const l of usable) {
-  const clean = l.text.replace(/[\s，。！？、；：,.!?;:"'“”‘’()（）【】\[\]~～^*#@$%&+=|\\/_-]+/g, '#');
+  const clean = l.text.replace(/[\s，。！？、；：,.!?;:"'“”‘’()（）【】[\]~～^*#@$%&+=|\\/_-]+/g, '#');
   for (const seg of clean.split('#')) {
     if (seg.length < 2 || seg.length > 8) continue;
     for (let n = 3; n <= Math.min(6, seg.length); n++) {

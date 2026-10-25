@@ -37,7 +37,7 @@ const MARK = /[惹噜厚靴熏翻淋汁吸银宫绝嗑姐解塑]/;
 // 1) candidate n-grams with 淋 flavor
 const cnt = new Map();
 for (const l of lines) {
-  const clean = l.replace(/[\s，。！？、；：,.!?;:"'“”‘’()（）【】\[\]~～^*#@$%&+=|\\/_-]+/g, '#');
+  const clean = l.replace(/[\s，。！？、；：,.!?;:"'“”‘’()（）【】[\]~～^*#@$%&+=|\\/_-]+/g, '#');
   for (const seg of clean.split('#')) {
     if (seg.length < 2 || seg.length > 12) continue;
     for (let n = 2; n <= Math.min(6, seg.length); n++) {

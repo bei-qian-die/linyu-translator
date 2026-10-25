@@ -4,11 +4,13 @@ const fs = require('fs');
 const seed = JSON.parse(fs.readFileSync('src/core/seed.json', 'utf8'));
 const WEB = new Set(JSON.parse(fs.readFileSync('scripts/lexicon-web.json', 'utf8')));
 const norm = (s) => String(s || '').replace(/\s+/g, '').toLowerCase();
-const strip = (s) => norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'\[\]【】]/g, '');
+const strip = (s) => norm(s).replace(/[，。！？、；：""''‘“（）()…~—\-《》,.!?;:"'[\]【】]/g, '');
 
 let blob = '';
+// 语料统一放在 corpus/ 下；旧布局的文件仍在根目录时也认
 for (const f of ['corpus3.txt', 'corpus4.txt', 'corpus5.txt', 'corpus6.txt', 'corpus7.txt', 'corpus8.txt', 'corpus9.txt']) {
-  if (fs.existsSync(f)) blob += fs.readFileSync(f, 'utf8') + '\n';
+  const p = fs.existsSync('corpus/' + f) ? 'corpus/' + f : f;
+  if (fs.existsSync(p)) blob += fs.readFileSync(p, 'utf8') + '\n';
 }
 const BLOB = norm(blob);
 const SBLOB = strip(blob);
@@ -24,4 +26,4 @@ for (const w of seed.words) {
 }
 console.log('corpus chars', BLOB.length, '| words', seed.words.length, '| unverified linyu side', bad.length);
 console.log(bad.join('\n'));
-fs.writeFileSync('words-unverified.txt', bad.join('\n'), 'utf8');
+fs.writeFileSync('evidence/words-unverified.txt', bad.join('\n'), 'utf8');

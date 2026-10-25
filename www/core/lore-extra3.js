@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-// __wrapped by scripts/build-mobile.mjs
+// __wrapped by scripts/lib/wrap-iife.mjs
 'use strict';
 // 第三轮内容扩充（Wiki 式溯源）
 // 语料：corpus8f.txt = B 站 19 个淋语相关视频（蔡依林《舞娘》《特务J》《大艺术家》《Play我呸》《日不落》

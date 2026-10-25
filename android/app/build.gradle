@@ -8,8 +8,8 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         // 系统只认 versionCode 判断能否覆盖升级，界面右上角那个 1.13.0 来自 www/version.json
-        versionCode 11610
-        versionName "1.16.1"
+        versionCode 11800
+        versionName "1.18.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.

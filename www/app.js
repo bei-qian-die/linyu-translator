@@ -349,7 +349,8 @@ createApp({
     // ---- 词库 ----
     const words = ref([]);
     const wordSearch = ref('');
-    const wordForm = reactive({ id: null, zh: '', linyu: '', alias: '', sense: '', source: '', pop: '', relText: '' });
+    const wordSlot = ref('');
+    const wordForm = reactive({ id: null, zh: '', linyu: '', alias: '', sense: '', source: '', pop: '', relText: '', slot: '' });
     const editingWordId = computed(() => wordForm.id);
     const popLevels = ['高', '中', '低'];
     const wordCount = computed(() => words.value.length);
@@ -368,10 +369,52 @@ createApp({
         default:       return null;
       }
     });
-    const filteredWords = computed(() => matchRows(words.value, wordSearch.value, ['zh', 'linyu', 'alias', 'sense', 'source']));
+    const filteredWords = computed(() => {
+      const base = wordSlot.value
+        ? words.value.filter((w) => wordSlotOf(w).includes(wordSlot.value))
+        : words.value;
+      return matchRows(base, wordSearch.value, ['zh', 'linyu', 'alias', 'sense', 'source', 'slot']);
+    });
     const wordsView = usePaged(filteredWords);
     const { page: wordsPage, pages: wordsPages, total: wordsTotal, rows: pagedWords, go: goWordsPage, reset: resetWordsPage } = wordsView;
     watch(wordSearch, resetWordsPage);
+
+    // 一个词条可以挂多个语义位（用「/」分隔），筛选时按拆分后的标签匹配。
+    // 顺序固定为人称 → 语气/情绪 → 称呼/圈层 → 游戏分区 → 其他，避免每次加载都跳。
+    const SLOT_ORDER = [
+      '第一人称自称', '第二人称', '第三人称', '群体自称', '群体称呼', '自己',
+      '疑问', '否定', '惊讶', '认同', '催促', '调侃', '戏谑', '告别', '称呼类',
+      '程度', '语气词', '情绪', '祈使', '圈层黑话', '文化', '审美', '构词法', '同形异义',
+      '分区', '英雄淋盟', '王者淋耀', '淋神', '第五淋格', '淋明杀鸡', '星淋铁道',
+      '守望淋锋', '瓦罗淋特', '街头霸淋', '淋月峡谷', '淋安京', '三角淋行动',
+      '淋角洲行动', '星奴谷', '绝区淋', '淋潮', '淋日方舟', '阴淋师', '洛克淋国',
+      // 第十三轮补全语义位后新增的分区（人称/语气之后、游戏分区之后各归一段）
+      '自称', '逻辑虚词', '基础谐音替换', '黏着语气词', '称呼后缀', '撒娇亲昵',
+      '评价判断', '贬义', '程度副词', '生活日常', '游戏术语', '字母缩写', '英文谐音',
+      '宫斗体', '饭圈运营', '歌舞影视', '人物',
+      '阴雄淋盟', '淋者荣耀',
+    ];
+    function wordSlotOf(w) {
+      return String((w && w.slot) || '')
+        .split(/\s*\/\s*/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+    }
+    const wordSlots = computed(() => {
+      const count = new Map();
+      for (const w of words.value) for (const s of wordSlotOf(w)) count.set(s, (count.get(s) || 0) + 1);
+      const rank = (s) => {
+        const i = SLOT_ORDER.indexOf(s);
+        return i < 0 ? 999 : i;
+      };
+      return [...count.entries()]
+        .map(([key, n]) => ({ key, count: n }))
+        .sort((a, b) => rank(a.key) - rank(b.key) || b.count - a.count || a.key.localeCompare(b.key, 'zh-Hans-CN'));
+    });
+    function switchWordSlot(key) {
+      wordSlot.value = key;
+      resetWordsPage();
+    }
 
     async function loadWords() {
       try {
@@ -389,6 +432,7 @@ createApp({
       wordForm.source = '';
       wordForm.pop = '';
       wordForm.relText = '';
+      wordForm.slot = '';
     }
     function editWord(w) {
       wordForm.id = w.id;
@@ -399,6 +443,7 @@ createApp({
       wordForm.source = w.source || '';
       wordForm.pop = w.pop || '';
       wordForm.relText = (w.rel || []).join('、');
+      wordForm.slot = w.slot || '';
     }
     async function saveWord() {
       if (!wordForm.zh || !wordForm.linyu) return say('中文和淋语都要填哦');
@@ -411,6 +456,7 @@ createApp({
           source: wordForm.source,
           pop: wordForm.pop,
           rel: splitList(wordForm.relText),
+          slot: wordForm.slot,
         };
         if (wordForm.id) await call(window.api.updateWord(wordForm.id, payload));
         else await call(window.api.addWord(payload));
@@ -516,9 +562,10 @@ createApp({
       { key: 'slang', label: '俚语梗' },
       { key: 'lyric', label: '歌词典故' },
       { key: 'meme', label: '网络梗' },
+      { key: 'hero-alias', label: '黑话外号' },
     ];
     const cardTypeOpts = cardTypes.slice(1);
-    const typeLabelMap = { particle: '语气词', slang: '俚语梗', lyric: '歌词典故', meme: '网络梗' };
+    const typeLabelMap = { particle: '语气词', slang: '俚语梗', lyric: '歌词典故', meme: '网络梗', 'hero-alias': '黑话外号' };
     function typeLabel(t) {
       return typeLabelMap[t] || t;
     }
@@ -734,6 +781,26 @@ createApp({
       const img = h && h.img ? h.img : '';
       if (!img) return '';
       return img.startsWith('media:') ? mediaMap[img] || '' : img;
+    }
+
+    // 人物列表用缩略图（img/thumb/<名>.webp，由 scripts/optimize-images.py 生成）。
+    // media: 引用与没有缩略图的内置图一律回退原图——列表宁可慢一点也不能裂图。
+    function heroThumb(h) {
+      const img = h && h.img ? h.img : '';
+      if (!img || img.startsWith('media:')) return '';
+      const m = img.match(/^(img\/)(.+)\.(png|jpe?g)$/i);
+      return m ? m[1] + 'thumb/' + m[2] + '.webp' : '';
+    }
+
+    // 缩略图裂了退回原图再试一次；原图也裂了才走 markImgFail 隐藏
+    function onHeroImgError(h, ev) {
+      const el = ev && ev.target;
+      if (el && el.dataset.fallback !== '1' && heroThumb(h)) {
+        el.dataset.fallback = '1';
+        el.src = heroSrc(h);
+        return;
+      }
+      markImgFail(h.name);
     }
 
     async function loadHeroes() {
@@ -1260,6 +1327,7 @@ createApp({
       input, output, loading, previewing, isPreview, liveOn, toggleLive, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
+      wordSlot, wordSlots, switchWordSlot,
       ruleCount, cardCount, quoteCount, allHeroCount, currentStat,
       wordsPage, wordsPages, wordsTotal, goWordsPage, setSearchRef,
       saveWord, resetWordForm, editWord, removeWord,
@@ -1272,7 +1340,7 @@ createApp({
       flipped, flipCard, typeLabel, cardForm, editingCardId, saveCard, resetCardForm, editCard, removeCard,
       quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage,
       quoteForm, editingQuoteId, saveQuote, resetQuoteForm, editQuote, removeQuote, heroNameOpts,
-      heroes, heroSearch, imgFailed, markImgFail, selectedHero, openHero, backToHeroes, heroSrc,
+      heroes, heroSearch, imgFailed, markImgFail, selectedHero, openHero, backToHeroes, heroSrc, heroThumb, onHeroImgError,
       heroCards, heroQuotes, heroWords, heroRules, heroSearchUrl, openLink,
       heroGroups, heroGroup, switchHeroGroup, filteredHeroes, heroCount,
       heroZone, heroZones, heroZoneCount, switchHeroZone,

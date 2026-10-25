@@ -1,0 +1,4 @@
+<view class="list-foot">
+  <view wx:if="{{hasMore}}" class="load-more" bindtap="onMore">加载更多 · 还有 {{rest}} 条 ↓</view>
+  <view wx:else class="list-end">已经到底 · 共 {{matched}} 条</view>
+</view>

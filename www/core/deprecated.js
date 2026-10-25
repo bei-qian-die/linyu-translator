@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-// __wrapped by scripts/build-mobile.mjs
+// __wrapped by scripts/lib/wrap-iife.mjs
 'use strict';
 
 // 历史内置内容里已确认「与淋语无关」或写法被改掉的条目。

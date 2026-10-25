@@ -7,22 +7,15 @@ const crypto = require('crypto');
 const { createDb } = require('../core/db');
 const { translateText } = require('../core/translator');
 const { createAuth, DEFAULT_USER, DEFAULT_PASSWORD } = require('../core/auth');
+const { createService } = require('../core/service');
 const lore = require('../core/lore');
 
 let store = null;
 let auth = null;
-let devUnlocked = false;
-let fails = 0;
-let lockUntil = 0;
-let pendingUndo = null;
+let svc = null;
 let pendingImport = null;
 
-const ATTEMPT_LIMIT = 5;
-const LOCK_MS = 30000;
-const UNDO_WINDOW_MS = 60000;
-const IMPORT_STALE_MS = 10 * 60000;
 const IMG_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp']);
-const TRACE_LIMIT = 240;
 const LOG_MAX_BYTES = 512 * 1024;
 
 // ---- 日志：出问题时用户能把文件发过来，不用靠复现 ----
@@ -61,6 +54,9 @@ function initStore() {
     auth = createAuth({ getSetting: (k) => s.getSetting(k), setSetting: (k, v) => s.setSetting(k, v) });
     auth.ensureInit();
     upgradeContent(s);
+    // 业务规则统一走 src/core/service.js：门禁、撤销槽位、导入暂存过期、登录锁定
+    // 都只在那一份里，主进程只留下平台相关的部分（对话框、media 目录、日志、窗口）。
+    svc = createService({ db: s, auth, translator: { translateText }, version: app.getVersion() });
     return s;
   });
 }
@@ -90,72 +86,8 @@ function wrap(fn) {
   };
 }
 
-// 所有写操作都必须先通过设置里的开发者账号；渲染层隐藏按钮只是体验，真正的门禁在这里。
-function wrapDev(fn) {
-  return async (event, ...args) => {
-    try {
-      if (!devUnlocked) throw new Error('请先在「设置 → 开发者模式」中登录开发者账号');
-      const data = await fn(...args);
-      if (data && data.undo) pendingUndo = { undo: data.undo, at: Date.now() };
-      return { ok: true, data };
-    } catch (err) {
-      logError('ipc:dev', err);
-      return { ok: false, error: err.message };
-    }
-  };
-}
-
-function mustOk(result) {
-  if (result && result.error) throw new Error(result.error);
-  return result;
-}
-
-function authStatus() {
-  const s = auth.status();
-  return {
-    unlocked: devUnlocked,
-    user: s.user,
-    needsSetup: !s.initialized,
-    defaultPass: auth.usesDefaultPassword(),
-    lockLeft: Math.max(0, Math.ceil((lockUntil - Date.now()) / 1000)),
-  };
-}
-
-function clearUndo() {
-  pendingUndo = null;
-}
-
-function translate(text, mode) {
-  const src = String(text || '').slice(0, 5000);
-  const preview = mode === 'preview';
-  // 命中链路只在开发者模式下回传，普通使用时不占 IPC 体积
-  const wantTrace = devUnlocked;
-  const trace = wantTrace ? [] : null;
-  const uncovered = wantTrace ? [] : null;
-  const dst = translateText(src, {
-    words: store.getWords(),
-    rules: store.getRules(),
-    trace,
-    uncovered,
-    traceLimit: TRACE_LIMIT,
-  });
-  if (src.trim() && !preview) store.addHistory(src, dst);
-  return { dst, preview, trace: wantTrace ? trace : null, uncovered: wantTrace ? uncovered : null };
-}
-
-function readPref(key, fallback) {
-  const raw = store.getPrefs()[key];
-  if (raw == null || raw === '') return fallback;
-  try {
-    return JSON.parse(raw);
-  } catch {
-    return raw;
-  }
-}
-
-function writePref(key, value) {
-  store.setPref(key, JSON.stringify(value));
-}
+// 写操作的门禁在 src/core/service.js 里（未登录就抛错），这里只负责把异常转成 IPC 返回值。
+// 以前主进程与移动端各写一份同样的门禁逻辑，加接口要改两处，现在都收敛到 service。
 
 // ---- 图片：开发者上传的图存在 userData/media，库里只记 media:<name> ----
 function collectMedia() {
@@ -183,88 +115,42 @@ function restoreMedia(list) {
 }
 
 function registerIpc() {
-  ipcMain.handle('ly:translate', wrap((text, mode) => translate(text, mode)));
+  ipcMain.handle('ly:translate', wrap((text, mode) => svc.translate(text, mode)));
 
-  ipcMain.handle('ly:auth:status', wrap(() => authStatus()));
-  ipcMain.handle(
-    'ly:auth:login',
-    wrap((username, password) => {
-      if (Date.now() < lockUntil) throw new Error(`尝试过于频繁，请 ${Math.ceil((lockUntil - Date.now()) / 1000)} 秒后再试`);
-      if (!auth.verify(username, password)) {
-        fails += 1;
-        if (fails >= ATTEMPT_LIMIT) {
-          lockUntil = Date.now() + LOCK_MS;
-          fails = 0;
-          logLine('auth', `开发者登录连续失败 ${ATTEMPT_LIMIT} 次，锁定 ${LOCK_MS / 1000} 秒`);
-          throw new Error(`账号或密码错误，已锁定 ${LOCK_MS / 1000} 秒`);
-        }
-        throw new Error(`账号或密码错误（还可尝试 ${ATTEMPT_LIMIT - fails} 次）`);
-      }
-      fails = 0;
-      lockUntil = 0;
-      devUnlocked = true;
-      logLine('auth', '开发者模式已开启');
-      return authStatus();
-    })
-  );
-  ipcMain.handle('ly:auth:logout', wrap(() => {
-    devUnlocked = false;
-    clearUndo();
-    return authStatus();
+  ipcMain.handle('ly:auth:status', wrap(() => svc.authStatus()));
+  ipcMain.handle('ly:auth:login', wrap((username, password) => {
+    const r = svc.login(username, password);
+    logLine('auth', '开发者模式已开启');
+    return r;
   }));
-  ipcMain.handle('ly:auth:changePassword', wrapDev((oldPassword, newPassword) => {
-    mustOk(auth.changePassword(oldPassword, newPassword));
-    return { ok: true };
-  }));
+  ipcMain.handle('ly:auth:logout', wrap(() => svc.logout()));
+  ipcMain.handle('ly:auth:changePassword', wrap((oldPassword, newPassword) => svc.changePassword(oldPassword, newPassword)));
 
-  ipcMain.handle('ly:words:list', wrap(() => store.getWords()));
-  ipcMain.handle('ly:words:add', wrapDev((w) => mustOk(store.addWord(w))));
-  ipcMain.handle('ly:words:update', wrapDev((id, w) => mustOk(store.updateWord(id, w))));
-  ipcMain.handle('ly:words:delete', wrapDev((id) => mustOk(store.deleteWord(id))));
+  // 五板块 CRUD：业务规则（门禁 / 撤销槽位）在 service 里，这里只做转发
+  const CRUD = [
+    ['words', 'ly:words'],
+    ['rules', 'ly:rules'],
+    ['cards', 'ly:cards'],
+    ['quotes', 'ly:quotes'],
+    ['heroes', 'ly:heroes'],
+  ];
+  for (const [key, channel] of CRUD) {
+    const api = svc.crud[key];
+    ipcMain.handle(channel + ':list', wrap(() => api.list()));
+    ipcMain.handle(channel + ':add', wrap((row) => api.add(row)));
+    ipcMain.handle(channel + ':update', wrap((id, row) => api.update(id, row)));
+    ipcMain.handle(channel + ':delete', wrap((id) => api.remove(id)));
+  }
 
-  ipcMain.handle('ly:rules:list', wrap(() => store.getRules()));
-  ipcMain.handle('ly:rules:add', wrapDev((r) => mustOk(store.addRule(r))));
-  ipcMain.handle('ly:rules:update', wrapDev((id, r) => mustOk(store.updateRule(id, r))));
-  ipcMain.handle('ly:rules:delete', wrapDev((id) => mustOk(store.deleteRule(id))));
+  ipcMain.handle('ly:undo:delete', wrap(() => svc.undoDelete()));
+  ipcMain.handle('ly:undo:state', wrap(() => svc.undoState()));
 
-  ipcMain.handle('ly:cards:list', wrap(() => store.getCards()));
-  ipcMain.handle('ly:cards:add', wrapDev((c) => mustOk(store.addCard(c))));
-  ipcMain.handle('ly:cards:update', wrapDev((id, c) => mustOk(store.updateCard(id, c))));
-  ipcMain.handle('ly:cards:delete', wrapDev((id) => mustOk(store.deleteCard(id))));
-
-  ipcMain.handle('ly:quotes:list', wrap(() => store.getQuotes()));
-  ipcMain.handle('ly:quotes:add', wrapDev((q) => mustOk(store.addQuote(q))));
-  ipcMain.handle('ly:quotes:update', wrapDev((id, q) => mustOk(store.updateQuote(id, q))));
-  ipcMain.handle('ly:quotes:delete', wrapDev((id) => mustOk(store.deleteQuote(id))));
-
-  ipcMain.handle('ly:heroes:list', wrap(() => store.getHeroes()));
-  ipcMain.handle('ly:heroes:add', wrapDev((h) => mustOk(store.addHero(h))));
-  ipcMain.handle('ly:heroes:update', wrapDev((id, h) => mustOk(store.updateHero(id, h))));
-  ipcMain.handle('ly:heroes:delete', wrapDev((id) => mustOk(store.deleteHero(id))));
-
-  // 撤销只针对"上一步删除/清空"，主进程只留一个槽位，取用即失效
-  ipcMain.handle('ly:undo:delete', wrapDev(() => {
-    if (!pendingUndo) throw new Error('没有可撤销的操作了');
-    if (Date.now() - pendingUndo.at > UNDO_WINDOW_MS) {
-      clearUndo();
-      throw new Error('撤销时间已过，请重新添加内容');
-    }
-    const slot = pendingUndo;
-    clearUndo();
-    return mustOk(store.undoDelete(slot));
-  }));
-  ipcMain.handle('ly:undo:state', wrap(() => ({
-    available: Boolean(pendingUndo && devUnlocked && Date.now() - pendingUndo.at <= UNDO_WINDOW_MS),
-    label: pendingUndo ? pendingUndo.undo.label : '',
-  })));
-
-  ipcMain.handle('ly:data:syncSeed', wrapDev(() => mustOk(store.syncFromSeed())));
-  ipcMain.handle('ly:data:inspect', wrap(() => store.inspect()));
-  ipcMain.handle('ly:data:cleanHeroWords', wrapDev((list) => mustOk(store.cleanHeroWords(list))));
+  ipcMain.handle('ly:data:syncSeed', wrap(() => svc.syncSeed()));
+  ipcMain.handle('ly:data:inspect', wrap(() => svc.inspect()));
+  ipcMain.handle('ly:data:cleanHeroWords', wrap((list) => svc.cleanHeroWords(list)));
 
   ipcMain.handle('ly:data:export', wrap(async ({ includeMedia } = {}) => {
-    const payload = store.exportAll();
-    if (includeMedia) payload.media = collectMedia();
+    const payload = svc.exportPayload({ includeMedia, collectMedia });
     const stamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
     const r = await dialog.showSaveDialog({
       title: '导出淋语数据',
@@ -291,43 +177,45 @@ function registerIpc() {
     } catch {
       throw new Error('文件不是有效的 JSON');
     }
-    const plan = mustOk(store.planImport(payload, 'merge'));
-    pendingImport = { payload, file, at: Date.now() };
+    const plan = svc.planImport(payload, 'merge');
+    svc.stashImport(payload, file);
     return { canceled: false, file, ...plan };
   }));
 
   ipcMain.handle('ly:data:replan', wrap(({ strategy } = {}) => {
-    if (!pendingImport || Date.now() - pendingImport.at > IMPORT_STALE_MS) throw new Error('请先重新选择导入文件');
-    const plan = mustOk(store.planImport(pendingImport.payload, strategy));
-    return { canceled: false, file: pendingImport.file, ...plan };
+    const r = svc.replanImport(strategy);
+    return { canceled: false, file: r.file, ...r.plan };
   }));
 
-  ipcMain.handle('ly:data:applyImport', wrapDev(({ strategy } = {}) => {
-    if (!pendingImport || Date.now() - pendingImport.at > IMPORT_STALE_MS) {
-      throw new Error('请先重新选择导入文件');
-    }
-    const slot = pendingImport;
-    pendingImport = null;
-    if (Array.isArray(slot.payload.media)) restoreMedia(slot.payload.media);
-    const result = mustOk(store.applyImport(slot.payload, strategy));
-    logLine('data', `从 ${slot.file} 导入：新增 ${result.add} / 更新 ${result.update} / 跳过 ${result.skip}`);
-    return { ...result, file: slot.file };
+  ipcMain.handle('ly:data:applyImport', wrap(({ strategy } = {}) => {
+    // 落库前先把图片写回 userData/media：库里只记 media:<name>，文件得先存在
+    const slot = svc.peekImport();
+    if (slot && Array.isArray(slot.payload.media)) restoreMedia(slot.payload.media);
+    const r = svc.applyImport(strategy);
+    logLine('data', `从 ${r.file} 导入：新增 ${r.result.add} / 更新 ${r.result.update} / 跳过 ${r.result.skip}`);
+    return { ...r.result, file: r.file };
   }));
 
-  ipcMain.handle('ly:data:cancelImport', wrap(() => {
-    pendingImport = null;
-    return { ok: true };
-  }));
+  ipcMain.handle('ly:data:cancelImport', wrap(() => svc.cancelImport()));
 
-  ipcMain.handle('ly:backups:list', wrap(() => store.listBackups()));
-  ipcMain.handle('ly:backups:restore', wrapDev((name) => {
-    const r = mustOk(store.restoreBackup(name));
+  ipcMain.handle('ly:backups:list', wrap(() => svc.listBackups()));
+  ipcMain.handle('ly:backups:restore', wrap((name) => {
+    const r = svc.restoreBackup(name);
     logLine('backup', `已从 ${name} 恢复数据库`);
     return r;
   }));
-  ipcMain.handle('ly:backups:restoreBefore', wrapDev(() => mustOk(store.restoreBefore())));
+  ipcMain.handle('ly:backups:restoreBefore', wrap(() => svc.restoreBefore()));
 
-  ipcMain.handle('ly:media:pick', wrapDev(async () => {
+  ipcMain.handle('ly:history:list', wrap(() => svc.listHistory()));
+  ipcMain.handle('ly:history:clear', wrap(() => svc.clearHistory()));
+
+  ipcMain.handle('ly:prefs:get', wrap(() => svc.getPrefs()));
+  ipcMain.handle('ly:prefs:set', wrap((key, value) => svc.setPref(String(key), value)));
+
+  ipcMain.handle('ly:meta', wrap(() => svc.meta()));
+
+  // ---- 以下是桌面独有的：图片目录、日志目录、外部链接 ----
+  ipcMain.handle('ly:media:pick', wrap(async () => {
     const r = await dialog.showOpenDialog({
       title: '选择英雄图片',
       properties: ['openFile'],
@@ -356,12 +244,6 @@ function registerIpc() {
     return 'data:' + mime + ';base64,' + b64;
   }));
 
-  ipcMain.handle('ly:history:list', wrap(() => store.getHistory()));
-  ipcMain.handle('ly:history:clear', wrapDev(() => mustOk(store.clearHistory())));
-
-  ipcMain.handle('ly:prefs:get', wrap(() => store.getPrefs()));
-  ipcMain.handle('ly:prefs:set', wrap((key, value) => mustOk(store.setPref(String(key), value))));
-
   ipcMain.handle('ly:logs:open', wrap(() => {
     if (!logDir) throw new Error('日志目录还没建好');
     fs.mkdirSync(logDir, { recursive: true });
@@ -372,13 +254,6 @@ function registerIpc() {
     shell.openPath(logDir);
     return { dir: logDir, tail };
   }));
-
-  ipcMain.handle('ly:meta', wrap(() => ({
-    defaultUser: DEFAULT_USER,
-    defaultPassword: auth.usesDefaultPassword() ? DEFAULT_PASSWORD : '',
-    version: app.getVersion(),
-    historyLimit: store.historyLimit(),
-  })));
 
   ipcMain.handle('ly:openExternal', wrap(async (url) => {
     const raw = String(url || '');
@@ -397,7 +272,7 @@ function registerIpc() {
 }
 
 function savedBounds() {
-  const b = readPref('win.bounds', null);
+  const b = svc.readPref('win.bounds', null);
   if (!b || typeof b !== 'object') return null;
   const n = (v) => (Number.isFinite(v) ? Math.round(v) : null);
   const width = n(b.width);
@@ -439,8 +314,8 @@ function createWindow() {
     clearTimeout(boundsTimer);
     boundsTimer = null;
     try {
-      writePref('win.bounds', win.getBounds());
-      writePref('win.maximized', win.isMaximized());
+      svc.writePref('win.bounds', win.getBounds());
+      svc.writePref('win.maximized', win.isMaximized());
     } catch (err) {
       logError('win:bounds', err);
     }
@@ -451,11 +326,10 @@ function createWindow() {
   }
   win.on('resize', rememberGeometry);
   win.on('move', rememberGeometry);
-  if (readPref('win.maximized', false) === true) win.maximize();
+  if (svc.readPref('win.maximized', false) === true) win.maximize();
   win.on('close', () => {
     // 开发者模式只在本次窗口会话内有效，关窗即锁
-    devUnlocked = false;
-    clearUndo();
+    svc.lockDev();
     saveGeometry();
   });
   win.webContents.on('will-navigate', (event, target) => {

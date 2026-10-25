@@ -1,6 +1,6 @@
 'use strict';
 
-// 聚合校验：一条命令跑完「引擎测试 + 数据层测试 + CRUD 契约 + 语料溯源 + 语法检查」。
+// 聚合校验：一条命令跑完「引擎测试 + 数据层测试 + 业务层测试 + CRUD 契约 + 语料溯源 + 语法检查」。
 // 打包前必须全绿；语料溯源（attest）的 unattested 必须为 0，这是本项目的硬约束。
 //
 // 旧实现用 steps.every(...)，第一个失败就短路，后面的步骤根本不跑——
@@ -11,11 +11,23 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname ? path.join(__dirname, '..') : process.cwd();
-const corpus = fs
-  .readdirSync(ROOT)
-  .filter((f) => /^corpus.*\.txt$/.test(f))
-  .sort()
-  .join(',');
+// 语料统一放在 corpus/ 下，根目录不再堆十几份 txt。
+// 目录不存在时回退到旧布局（扫根目录），免得中途切分支时 check 直接报找不到语料。
+function corpusFiles() {
+  const dir = path.join(ROOT, 'corpus');
+  if (fs.existsSync(dir)) {
+    return fs
+      .readdirSync(dir)
+      .filter((f) => /^corpus.*\.txt$/.test(f))
+      .sort()
+      .map((f) => path.posix.join('corpus', f));
+  }
+  return fs
+    .readdirSync(ROOT)
+    .filter((f) => /^corpus.*\.txt$/.test(f))
+    .sort();
+}
+const corpus = corpusFiles().join(',');
 
 /** 跑一个步骤，完整收下它的输出，等它自己结束 */
 function run(label, args, extraArgs) {
@@ -69,6 +81,7 @@ async function attest() {
   const jobs = [
     run('翻译引擎用例', ['test/core.test.js']),
     run('数据层用例', ['test/db.test.js']),
+    run('业务层用例', ['test/service.test.js']),
     run('五板块 CRUD 契约', ['scripts/crud-check.js']),
     attest(),
     syntaxCheck(),

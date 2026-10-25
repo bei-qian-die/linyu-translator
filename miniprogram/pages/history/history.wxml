@@ -1,0 +1,93 @@
+<view class="page theme-{{theme}} page-custom-nav" style="padding-top:{{navTop}}px;">
+  <nav-bar status-bar="{{statusBar}}" nav-bar-h="{{navBarH}}" />
+
+  <view class="eyebrow">
+    <view class="eyebrow-left"><text>HISTORY</text><text class="eyebrow-mark">/</text><text>历史</text></view>
+    <text class="eyebrow-right">按时间倒序</text>
+  </view>
+
+  <view class="page-title">说过的话，都在本机<text class="pt-dot">。</text></view>
+
+  <view class="hist-meta">
+    <text class="hist-total">共 {{total}} 条 · 只存在本机</text>
+    <view class="hist-actions">
+      <picker class="limit-picker" mode="selector" range="{{limitLabels}}" value="{{limitIndex}}" bindchange="changeLimit">
+        <view class="limit-chip">上限 {{limit}} 条<text class="limit-caret">▾</text></view>
+      </picker>
+      <text wx:if="{{!selecting && total}}" class="clear-link" bindtap="exportText">导出</text>
+      <text wx:if="{{!selecting && total}}" class="clear-link" bindtap="enterSelect">批量删除</text>
+      <text class="clear-link {{total ? '' : 'disabled'}}" bindtap="confirmClear">清空</text>
+    </view>
+  </view>
+
+  <view class="search-box">
+    <view class="search-ico"></view>
+    <input
+      class="search-input"
+      value="{{keyword}}"
+      placeholder="搜索历史原文 / 译文…"
+      placeholder-class="placeholder"
+      confirm-type="search"
+      bindinput="onSearch"
+    />
+    <text wx:if="{{keyword}}" class="search-clear" bindtap="clearSearch">✕</text>
+  </view>
+
+  <view wx:if="{{shownCount}}" class="hist-groups">
+    <block wx:for="{{groups}}" wx:key="label" wx:for-item="group" wx:for-index="gi">
+      <view class="group-head">
+        <text class="group-label">{{group.label}}</text>
+        <text class="group-count">{{group.count}} 条</text>
+      </view>
+      <view
+        class="hist-item {{row.checked ? 'checked' : ''}}"
+        wx:for="{{group.items}}"
+        wx:key="id"
+        wx:for-item="row"
+        wx:for-index="ji"
+        data-id="{{row.id}}"
+        data-gi="{{gi}}"
+        data-ji="{{ji}}"
+        hover-class="tap-soft"
+        bindtap="onRowTap"
+        bindlongpress="copyRow"
+      >
+        <view wx:if="{{selecting}}" class="hist-check">{{row.checked ? '✓' : ''}}</view>
+        <view class="hist-top">
+          <text class="hist-time">{{row.timeShort}}</text>
+          <view wx:if="{{!selecting}}" class="hist-ops">
+            <text class="hist-del" data-id="{{row.id}}" catchtap="removeOne">删除</text>
+            <text class="hist-again">重翻 →</text>
+          </view>
+        </view>
+        <view class="hist-src">{{row.input}}</view>
+        <view class="hist-dst">{{row.output}}</view>
+      </view>
+    </block>
+  </view>
+
+  <empty-state
+    wx:else
+    title="{{keyword ? '没有匹配的记录' : '还没有翻译记录'}}"
+    sub="{{keyword ? '换个关键词试试' : '去翻译页写一句淋语吧'}}"
+    primary-text="{{keyword ? '' : '去翻译'}}"
+    bindprimary="goTranslate"
+  />
+
+  <list-foot
+    wx:if="{{shownCount}}"
+    has-more="{{hasMore}}"
+    rest="{{rest}}"
+    matched="{{matched}}"
+    bindmore="loadMore"
+  />
+
+  <view wx:if="{{selecting}}" class="select-bar">
+    <text class="select-act" bindtap="toggleAll">{{allChecked ? '取消全选' : '全选'}}</text>
+    <text class="select-count">已选 {{selectedCount}} 条</text>
+    <text class="select-act danger {{selectedCount ? '' : 'disabled'}}" bindtap="deleteSelected">删除</text>
+    <text class="select-act" bindtap="cancelSelect">取消</text>
+  </view>
+
+  <view class="tip">点击任意一条回填重翻 · 长按复制译文 · 删除只移除本机记录<br />历史只保存在本机微信缓存，不会上传</view>
+</view>

@@ -1,0 +1,21 @@
+'use strict';
+const fs = require('fs');
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+(async () => {
+  const kw = process.argv[2] || '淋语';
+  const site = process.argv[3] || 'tieba.baidu.com';
+  const u = `https://www.baidu.com/s?wd=${encodeURIComponent('site:' + site + ' ' + kw)}&rn=20`;
+  const r = await fetch(u, { headers: { 'User-Agent': UA, 'Accept-Language': 'zh-CN,zh;q=0.9' } });
+  const t = await r.text();
+  console.log('status', r.status, 'len', t.length);
+  console.log('has h3:', (t.match(/<h3/g) || []).length);
+  console.log('has mu:', (t.match(/mu="/g) || []).length);
+  console.log('has data-landurl:', (t.match(/data-landurl/g) || []).length);
+  console.log('has c-container:', (t.match(/c-container/g) || []).length);
+  console.log('has "百度安全验证":', t.includes('安全验证'));
+  console.log('has "抱歉":', t.includes('抱歉'));
+  const i = t.indexOf('<h3');
+  console.log('--- first h3 region ---');
+  console.log(t.slice(i - 300, i + 1500));
+  fs.writeFileSync('dbg-baidu.html', t, 'utf8');
+})();

@@ -1,0 +1,6225 @@
+{
+  "note": "最长别名优先自动归属；blocked-generic=命中了别名但被通用词闸门拦下（宁缺勿滥）；no-match=文本里没有任何人物别名，与人物无关。",
+  "gate": {
+    "GENERIC_BODY": [
+      "小剧场",
+      "仙人掌",
+      "火龙果",
+      "大魔导师",
+      "擦边主播",
+      "什么都能变",
+      "对策卡",
+      "守望淋锋",
+      "王者淋耀",
+      "克里斯",
+      "大沙田",
+      "变身茄子",
+      "如何识别1",
+      "河马姐"
+    ],
+    "GENERIC2": [
+      "医生",
+      "泡泡",
+      "祭司",
+      "北斗",
+      "七七",
+      "阿三",
+      "卡子",
+      "软辅",
+      "铁t",
+      "艾文",
+      "香香",
+      "河马",
+      "楼主",
+      "青子",
+      "娜美",
+      "成长",
+      "a女",
+      "52",
+      "李华",
+      "灯姐",
+      "阿鬼"
+    ],
+    "SPECIFIC2": [
+      "淋淋",
+      "腋淋",
+      "火淋",
+      "淋光",
+      "可淋",
+      "阴中",
+      "血律",
+      "凤蝶",
+      "淋潮",
+      "你肘",
+      "肘门",
+      "霉霉",
+      "蒜姐",
+      "杯糕",
+      "心海",
+      "元歌",
+      "妮蔻",
+      "孙策",
+      "我华",
+      "我泔",
+      "我妲",
+      "我虞",
+      "我琴",
+      "我光",
+      "我鸟",
+      "我水",
+      "我米",
+      "我月",
+      "我曌",
+      "我狸",
+      "你泔",
+      "华粪",
+      "玉华",
+      "你华",
+      "你鱼",
+      "你莎",
+      "你茶",
+      "你珍",
+      "你符",
+      "阿狸",
+      "卡莎",
+      "薇恩",
+      "佐伊",
+      "貂蝉",
+      "西施",
+      "小乔",
+      "夜兰",
+      "优菈",
+      "婉儿",
+      "守约",
+      "元英",
+      "凤姐",
+      "允珍",
+      "凤敏",
+      "暮蝶",
+      "黑梦",
+      "奇乐",
+      "曼侬",
+      "迪莫",
+      "琴女",
+      "嘶哈",
+      "湿柔",
+      "玛莎",
+      "秦豪",
+      "灯神"
+    ]
+  },
+  "stats": {
+    "cards": {
+      "noHero": 421,
+      "linked": 80,
+      "leftBlank": 341,
+      "blankRate": "0.810",
+      "blockedGeneric": 16
+    },
+    "quotes": {
+      "noHero": 412,
+      "linked": 56,
+      "leftBlank": 356,
+      "blankRate": "0.864",
+      "blockedGeneric": 29
+    },
+    "unreliableLeftBlankTotal": 697,
+    "unreliableRatio": "0.837",
+    "blockedByGenericOnly": 45,
+    "conflicts": 45
+  },
+  "entries": [
+    {
+      "kind": "card",
+      "key": "T0强度",
+      "hero": "上官婉儿",
+      "matchedAlias": "婉儿",
+      "confidence": "medium",
+      "text": "T0强度：借用游戏强度分级（T0/T1/T2/T3）评价通讯录英雄，\"带狂暴就是 T0\"。"
+    },
+    {
+      "kind": "card",
+      "key": "体验服",
+      "hero": "何老师",
+      "matchedAlias": "何老师",
+      "confidence": "high",
+      "text": "体验服：把通讯录圈当成一款游戏，新出的人物叫\"体验服更新新英雄\"。"
+    },
+    {
+      "kind": "card",
+      "key": "秒了",
+      "hero": "FLY组合",
+      "matchedAlias": "fly",
+      "confidence": "high",
+      "text": "秒了：\"赢了、碾压了\"的极简夸赞，\"肘姐秒了\"\"我阴 1A 秒了\"。"
+    },
+    {
+      "kind": "card",
+      "key": "13",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "13：\"13\"当量词用，和\"淋\"谐音，眼泪、人口、封印都按 13 计。"
+    },
+    {
+      "kind": "card",
+      "key": "鸡笼锁定",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "鸡笼锁定：被鸡笼（淋淋的谐音绰号）点名盯上，用来吓唬讲得不正宗的人。"
+    },
+    {
+      "kind": "card",
+      "key": "阴后咏叹调",
+      "hero": "新酱爱追剧",
+      "matchedAlias": "阴后咏叹调",
+      "confidence": "high",
+      "text": "阴后咏叹调：莫扎特《夜后咏叹调》的淋化称呼，\"夜\"改\"阴\"。"
+    },
+    {
+      "kind": "card",
+      "key": "贝塔粉碎",
+      "hero": "新酱爱追剧",
+      "matchedAlias": "阴后咏叹调",
+      "confidence": "high",
+      "text": "贝塔粉碎：《夜后咏叹调》花腔段的高频空耳。"
+    },
+    {
+      "kind": "card",
+      "key": "超高阴",
+      "hero": "新酱爱追剧",
+      "matchedAlias": "阴后咏叹调",
+      "confidence": "high",
+      "text": "超高阴：\"超高音\"的谐音，形容阴中之阴的程度。"
+    },
+    {
+      "kind": "card",
+      "key": "flop",
+      "hero": "万人迷",
+      "matchedAlias": "万人迷",
+      "confidence": "high",
+      "text": "flop：英文\"过气\"直接借用，\"flop两年\"\"flop过一段时间\"。"
+    },
+    {
+      "kind": "card",
+      "key": "如何识别1",
+      "hero": "斯琴低娃老师",
+      "matchedAlias": "如何识别1",
+      "confidence": "high",
+      "text": "如何识别1：通讯录小剧场的经典课题，\"如何识别1\"。"
+    },
+    {
+      "kind": "card",
+      "key": "茎彩人生",
+      "hero": "水烈鸟_ZZK",
+      "matchedAlias": "茎彩人生",
+      "confidence": "high",
+      "text": "茎彩人生：\"精彩人生\"的谐音标题梗。"
+    },
+    {
+      "kind": "card",
+      "key": "李华半夜说什么",
+      "hero": "我泔",
+      "matchedAlias": "我泔",
+      "confidence": "medium",
+      "text": "李华半夜说什么：\"我泔居然知道李华半夜说什么，真素不清不楚惹\"，英语作文梗的淋化。"
+    },
+    {
+      "kind": "card",
+      "key": "我泔",
+      "hero": "我泔",
+      "matchedAlias": "我泔",
+      "confidence": "high",
+      "text": "我泔：自称\"我\"的淋化写法，淋者荣耀旁白固定用法。"
+    },
+    {
+      "kind": "card",
+      "key": "诞下传限",
+      "hero": "我泔",
+      "matchedAlias": "我泔",
+      "confidence": "medium",
+      "text": "诞下传限：王者荣耀台词式空耳，\"我泔诞下传限不给任何人好脸色\"。"
+    },
+    {
+      "kind": "card",
+      "key": "擦边主播",
+      "hero": "孙策",
+      "matchedAlias": "擦边主播",
+      "confidence": "high",
+      "text": "擦边主播：主播身份自嘲，\"首谈成为通讯录擦边主播的心路历程\"。"
+    },
+    {
+      "kind": "card",
+      "key": "胖子盗宝团",
+      "hero": "罗玉凤",
+      "matchedAlias": "罗玉凤",
+      "confidence": "high",
+      "text": "胖子盗宝团：淋神把盗宝团改成通讯录人物：胖子盗宝团＝罗玉凤，阴人盗宝团＝庄艳娘。"
+    },
+    {
+      "kind": "card",
+      "key": "淋英双语",
+      "hero": "初武",
+      "matchedAlias": "淋英双语",
+      "confidence": "high",
+      "text": "淋英双语：字幕组把英文字幕也淋化，\"淋英双语字幕\"。"
+    },
+    {
+      "kind": "card",
+      "key": "Colleen",
+      "hero": "初武",
+      "matchedAlias": "colleen",
+      "confidence": "high",
+      "text": "Colleen：蔡依林（Jolin）的英文名谐音写法，字幕组署名常用。"
+    },
+    {
+      "kind": "card",
+      "key": "开局王炸",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "开局王炸：蔡依林 MV 合集弹幕的定场评价，指前奏一响就赢。"
+    },
+    {
+      "kind": "card",
+      "key": "周阴婷",
+      "hero": "周阴婷",
+      "matchedAlias": "周阴婷",
+      "confidence": "high",
+      "text": "周阴婷：UP主把剧角淋化后的称呼，配“周阴婷背后阴人”“猪头凤和周阴婷惹”成对出现。"
+    },
+    {
+      "kind": "card",
+      "key": "不努力就去死",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "不努力就去死：教材把它列为初级淋语：要求对方像淋淋一样把自己逼到绝路再成功，句尾常挂“惹/厚”。"
+    },
+    {
+      "kind": "card",
+      "key": "农女一",
+      "hero": "貂蝉",
+      "matchedAlias": "貂蝉",
+      "confidence": "medium",
+      "text": "农女一：“峡谷（农药）第一女英雄”的自封头衔，用姐妹通信体写成一封维权信。"
+    },
+    {
+      "kind": "card",
+      "key": "平起平坐不配",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "平起平坐不配：限定皮肤数量决定地位的算法：“还没有限定不配与我华平起平坐”。"
+    },
+    {
+      "kind": "card",
+      "key": "买榜",
+      "hero": "周阴婷",
+      "matchedAlias": "阴中",
+      "confidence": "medium",
+      "text": "买榜：“刷榜”的姐圈指控句式，谁排名高谁买榜。"
+    },
+    {
+      "kind": "card",
+      "key": "滚地婆",
+      "hero": "薇恩",
+      "matchedAlias": "滚地婆",
+      "confidence": "high",
+      "text": "滚地婆：\"XX婆\"构词法的样板：前缀取技能动作，后缀指女性角色。薇恩的 Q 位翻滚位移被叫作滚地，因此得此封号，同一组人还叫她峡谷清洁工。"
+    },
+    {
+      "kind": "card",
+      "key": "尖叫婆",
+      "hero": "医生",
+      "matchedAlias": "尖叫婆",
+      "confidence": "high",
+      "text": "尖叫婆：取丽桑卓放技能时的叫声命名，是社区公认\"看一遍笑一遍\"的三大外号之一。"
+    },
+    {
+      "kind": "card",
+      "key": "插秧婆",
+      "hero": "阿卡丽",
+      "matchedAlias": "插秧婆",
+      "confidence": "high",
+      "text": "插秧婆：阿卡丽 Q 技能的手部动作神似插秧，故得此名，也是\"我个人感觉最好笑的是锄地婆\"这句高赞回复的主角。"
+    },
+    {
+      "kind": "card",
+      "key": "气功婆",
+      "hero": "卡尔玛",
+      "matchedAlias": "气功婆",
+      "confidence": "high",
+      "text": "气功婆：卡尔玛的封号组。社区内部有分歧：多数人认为\"玛婆\"实际代指卡尔玛而非玛尔扎哈，\"气功婆\"的叫法反而更少。"
+    },
+    {
+      "kind": "card",
+      "key": "蟑螂婆",
+      "hero": "卡莎",
+      "matchedAlias": "蟑螂婆",
+      "confidence": "high",
+      "text": "蟑螂婆：卡莎因技能释放蟑螂卵、且 R 位飞脸，被形容为\"蟑螂扑脸\"。 NGA 玩家社区《请问淋价吧到底是什么地方呀?》与王者淋耀吧《本吧英雄绰号大科普》都出现的英雄绰号。卡莎因进化后贴身突进的打法被叫「蟑螂婆」，与「滚地婆」并列为当代新出现的绰号。"
+    },
+    {
+      "kind": "card",
+      "key": "拾荒婆",
+      "hero": "佐伊",
+      "matchedAlias": "拾荒婆",
+      "confidence": "high",
+      "text": "拾荒婆：一专多能的封号。佐伊因大招动画既像打地鼠又像狗洞，同时被称为狗洞婆、地鼠婆、澡盆婆；拾荒婆则有人指佐伊、有人指塞纳。"
+    },
+    {
+      "kind": "card",
+      "key": "杂技天后",
+      "hero": "阿狸",
+      "matchedAlias": "杂技天后",
+      "confidence": "high",
+      "text": "杂技天后：阿狸的封号组。同帖另把她写作狐臭女、防御塔之女、我梨，并在末尾强调\"狐狸必须小品女王\"。"
+    },
+    {
+      "kind": "card",
+      "key": "害人金",
+      "hero": "金克丝",
+      "matchedAlias": "害人金",
+      "confidence": "high",
+      "text": "害人金：金克斯的封号组，\"害人一世纪\"的谐音。"
+    },
+    {
+      "kind": "card",
+      "key": "丽嫔",
+      "hero": "阿卡丽",
+      "matchedAlias": "阿卡丽",
+      "confidence": "high",
+      "text": "丽嫔：阿卡丽在位分体里的封号，与\"插秧婆\"并存，构成同一英雄的两套命名。"
+    },
+    {
+      "kind": "card",
+      "key": "铁T",
+      "hero": "铁T成长",
+      "matchedAlias": "铁t",
+      "confidence": "high",
+      "text": "铁T：对短发女战士的统称，可通过前缀判断所指。NGA 淋语科普帖把它列为高频构词，并注明\"可通过前缀判断\"。"
+    },
+    {
+      "kind": "card",
+      "key": "赔钱货",
+      "hero": "阿狸",
+      "matchedAlias": "赔钱货",
+      "confidence": "high",
+      "text": "赔钱货：圈内外对\"美丽但强度低\"角色的定性，是该分区筛选英雄的审美闸门。社区共识是偏好赔钱、造型大于功能性的法师女角色，最好还有奶量能把命握在自己手里。"
+    },
+    {
+      "kind": "card",
+      "key": "黑皮体育生",
+      "hero": "水蓝蓝",
+      "matchedAlias": "水蓝蓝",
+      "confidence": "high",
+      "text": "黑皮体育生：艾克的封号，是\"体育生\"支线在英雄区的具体落点。"
+    },
+    {
+      "kind": "card",
+      "key": "三木木吧",
+      "hero": "FLY组合",
+      "matchedAlias": "三木木吧",
+      "confidence": "high",
+      "text": "三木木吧：2010 年成立的百度贴吧，专门抹黑蔡依林，2017 年被封禁。它是淋语最早的创作阵地之一。"
+    },
+    {
+      "kind": "card",
+      "key": "肩上的脚丫吧",
+      "hero": "FLY组合",
+      "matchedAlias": "三木木吧",
+      "confidence": "high",
+      "text": "肩上的脚丫吧：三木木吧被封后，部分难民引流至此。该吧在 LGBT 圈层中地位突出，淋语因此在基圈流行，并一度成为圈内身份识别的方式。"
+    },
+    {
+      "kind": "card",
+      "key": "大沙田",
+      "hero": "大沙田鱼罐头",
+      "matchedAlias": "大沙田",
+      "confidence": "high",
+      "text": "大沙田：《第五人格》区的地名梗，出现在\"来第五大沙田看选美大赛\"这类标题里，属圈内调侃而非真实地点。"
+    },
+    {
+      "kind": "card",
+      "key": "通讯录三大派系",
+      "hero": "三梦奇缘",
+      "matchedAlias": "三梦奇缘",
+      "confidence": "high",
+      "text": "通讯录三大派系：社区对通讯录（淋语/基圈）圈内人物的分类法：淋系、郭系、墓系。淋系指以淋淋、凤仙子一脉的淋文化为底色；郭系指郭老师开创的、集美教母一脉；墓系指三梦奇缘的「墓系当家花旦」一脉。这套说法出自梵谷的自述视频弹幕，是对当时圈内人物站位的概括。"
+    },
+    {
+      "kind": "card",
+      "key": "通讯录西施",
+      "hero": "西施",
+      "matchedAlias": "西施",
+      "confidence": "medium",
+      "text": "通讯录西施：通讯录圈给胡二菲的外号。取「西施」为古典美人喻，用来称呼她在圈内的形象，出现在胡二菲直播间的相关视频标题与弹幕里。"
+    },
+    {
+      "kind": "card",
+      "key": "大汗淋淋",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "大汗淋淋：\"大汗淋漓\"的淋字替换写法，是把成语淋化的典型样本。"
+    },
+    {
+      "kind": "card",
+      "key": "逆淋者亡",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "逆淋者亡：\"顺我者昌逆我者亡\"的淋化改写，用于淋淋相关盘点视频的标题。"
+    },
+    {
+      "kind": "card",
+      "key": "我狸（英雄淋盟）",
+      "hero": "阿狸",
+      "matchedAlias": "我狸",
+      "confidence": "medium",
+      "text": "我狸（英雄淋盟）：英雄联盟阿狸的自称。同形写法“我狸”在原神区指八重神子，必须按分区区分。"
+    },
+    {
+      "kind": "card",
+      "key": "我华（王者淋耀）",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "我华（王者淋耀）：王者荣耀杨玉环的自称。同形写法“我华”在原神区可指神里绫华。"
+    },
+    {
+      "kind": "card",
+      "key": "我珍（淋明杀鸡）",
+      "hero": "李允珍",
+      "matchedAlias": "李允珍",
+      "confidence": "high",
+      "text": "我珍（淋明杀鸡）：黎明杀机李允珍的自称，弹幕常用“我珍轰动演出秒了”。"
+    },
+    {
+      "kind": "card",
+      "key": "我琴（英雄淋盟）",
+      "hero": "我琴",
+      "matchedAlias": "我琴",
+      "confidence": "medium",
+      "text": "我琴（英雄淋盟）：英雄联盟娑娜（琴女）的自称，“QA秒了”是她的经典梗。"
+    },
+    {
+      "kind": "card",
+      "key": "我光（英雄淋盟）",
+      "hero": "我光",
+      "matchedAlias": "我光",
+      "confidence": "medium",
+      "text": "我光（英雄淋盟）：英雄联盟拉克丝的自称，因“如果我道歉你会好受些吗”被称为道歉女。"
+    },
+    {
+      "kind": "card",
+      "key": "打雷",
+      "hero": "雷电将军",
+      "matchedAlias": "雷电将军",
+      "confidence": "high",
+      "text": "打雷：原神雷电将军的外号“打雷婆”衍生词，也用来形容雷系角色。"
+    },
+    {
+      "kind": "card",
+      "key": "我玛",
+      "hero": "卡尔玛",
+      "matchedAlias": "卡尔玛",
+      "confidence": "high",
+      "text": "我玛：英雄联盟卡尔玛的自称；同形写法在原神区指玛薇卡。"
+    },
+    {
+      "kind": "card",
+      "key": "我薇",
+      "hero": "薇恩",
+      "matchedAlias": "薇恩",
+      "confidence": "medium",
+      "text": "我薇：英雄联盟薇恩的自称；同形写法在绝区零区指薇薇安。"
+    },
+    {
+      "kind": "card",
+      "key": "我凤（淋明杀鸡）",
+      "hero": "凤敏",
+      "matchedAlias": "凤敏",
+      "confidence": "medium",
+      "text": "我凤（淋明杀鸡）：黎明杀机凤敏的自称，常见“我凤化身红爷”“凤袍”等写法。"
+    },
+    {
+      "kind": "card",
+      "key": "宇宙天后",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "宇宙天后：淋淋的封号之一；淋文化要点第一条就是「淋淋是宇宙之母」。"
+    },
+    {
+      "kind": "card",
+      "key": "露露",
+      "hero": "琴女",
+      "matchedAlias": "琴女",
+      "confidence": "medium",
+      "text": "露露：变羊/变大的造型被联想成紫皮大蒜，源自淋吧发扬光大的一支梗。"
+    },
+    {
+      "kind": "card",
+      "key": "孙尚香",
+      "hero": "孙尚香",
+      "matchedAlias": "孙尚香",
+      "confidence": "high",
+      "text": "孙尚香：翻滚射击，与 LOL 薇恩共用「滚地婆」。"
+    },
+    {
+      "kind": "card",
+      "key": "铁T雅",
+      "hero": "罗玉凤",
+      "matchedAlias": "罗玉凤",
+      "confidence": "high",
+      "text": "铁T雅：同为短发硬朗型，叫铁T雅。"
+    },
+    {
+      "kind": "card",
+      "key": "圣土化",
+      "hero": "珊瑚宫心海",
+      "matchedAlias": "珊瑚宫心海",
+      "confidence": "high",
+      "text": "圣土化：出现在《【淋神】7.2前瞻》标题里的说法，具体所指待确认。"
+    },
+    {
+      "kind": "card",
+      "key": "雨季婆",
+      "hero": "晦暗雨季",
+      "matchedAlias": "晦暗雨季",
+      "confidence": "high",
+      "text": "雨季婆：按 XX婆 构词法给《淋神》视频里的角色起的称呼，UP「晦暗雨季」的名字也被淋化进去。"
+    },
+    {
+      "kind": "card",
+      "key": "孩子",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "孩子：\"子\"的台湾腔读作\"柱\"，\"孩柱\"是淋淋对歌迷的称呼，也是圈内互称。"
+    },
+    {
+      "kind": "card",
+      "key": "母亮",
+      "hero": "我华",
+      "matchedAlias": "你华",
+      "confidence": "medium",
+      "text": "母亮：男英雄娘化：亮 → 母亮。"
+    },
+    {
+      "kind": "card",
+      "key": "婆婆",
+      "hero": "薇恩",
+      "matchedAlias": "薇恩",
+      "confidence": "medium",
+      "text": "婆婆：游戏区最强的构词后缀：\"XX婆\"指某个女角色，前缀通常是技能或造型特征（滚地婆=薇恩、尖叫婆=丽桑卓）。"
+    },
+    {
+      "kind": "card",
+      "key": "出道",
+      "hero": "阿狸",
+      "matchedAlias": "我狸",
+      "confidence": "medium",
+      "text": "出道：把角色/人物当成艺人出道，是淋语区最常见的叙事之一。"
+    },
+    {
+      "kind": "card",
+      "key": "难逃",
+      "hero": "新酱爱追剧",
+      "matchedAlias": "新酱爱追剧",
+      "confidence": "high",
+      "text": "难逃：\"你已难逃一吸\"是淋语圈最经典的恐吓式调侃，源自\"淋B会吸入宇宙万物\"的设定。"
+    },
+    {
+      "kind": "card",
+      "key": "贵人",
+      "hero": "珊瑚宫心海",
+      "matchedAlias": "珊瑚宫心海",
+      "confidence": "high",
+      "text": "贵人：清宫位分体系里的一个等级，游戏区用来比较角色地位（如\"海贵人\"=珊瑚宫心海）。"
+    },
+    {
+      "kind": "card",
+      "key": "婕拉",
+      "hero": "卡尔玛",
+      "matchedAlias": "气功婆",
+      "confidence": "high",
+      "text": "婕拉：被动种子会走路，故名走路草。"
+    },
+    {
+      "kind": "card",
+      "key": "你珍",
+      "hero": "李允珍",
+      "matchedAlias": "你珍",
+      "confidence": "high",
+      "text": "你珍：淋明杀鸡李允珍的第二人称。"
+    },
+    {
+      "kind": "card",
+      "key": "你狸",
+      "hero": "阿狸",
+      "matchedAlias": "你狸",
+      "confidence": "high",
+      "text": "你狸：英雄联盟阿狸的淋语称呼，是外号最多的一个英雄，几乎每个外号对应一条嘲点。"
+    },
+    {
+      "kind": "card",
+      "key": "你华",
+      "hero": "我华",
+      "matchedAlias": "你华",
+      "confidence": "high",
+      "text": "你华：王者荣耀杨玉环的淋语称呼，源头是官方/语音输入把\"杨玉环\"打成\"杨玉华\"，又因历史上其两任丈夫都姓李而被叫成\"李华\"。"
+    },
+    {
+      "kind": "card",
+      "key": "女王",
+      "hero": "李允珍",
+      "matchedAlias": "女王",
+      "confidence": "high",
+      "text": "女王：淋语圈最高级别的夸奖之一，指气场强、发言狠、作品能打的人。也写作“女亡”做反讽。"
+    },
+    {
+      "kind": "card",
+      "key": "你心",
+      "hero": "珊瑚宫心海",
+      "matchedAlias": "珊瑚宫心海",
+      "confidence": "high",
+      "text": "你心：原神珊瑚宫心海的淋语称呼，\"你心\"是通讯录把它当幕后 boss 后的第二人称写法。"
+    },
+    {
+      "kind": "card",
+      "key": "你鱼",
+      "hero": "娜美",
+      "matchedAlias": "你鱼",
+      "confidence": "high",
+      "text": "你鱼：英雄联盟娜美的淋语称呼，因角色是人鱼且技能以水为主。"
+    },
+    {
+      "kind": "card",
+      "key": "你胱",
+      "hero": "我光",
+      "matchedAlias": "拉克丝",
+      "confidence": "high",
+      "text": "你胱：英雄联盟拉克丝的淋语称呼，\"胱\"取自\"光\"，其台词\"如果我道歉，你会好受些吗\"衍生出\"道歉女\"。"
+    },
+    {
+      "kind": "card",
+      "key": "你茶",
+      "hero": "萨勒芬妮",
+      "matchedAlias": "你茶",
+      "confidence": "high",
+      "text": "你茶：英雄联盟萨勒芬妮的淋语第二人称，\"你茶\"来自其英文名 Seraphine 的谐音截取。"
+    },
+    {
+      "kind": "card",
+      "key": "英雄绰号四法",
+      "hero": "本吧英雄绰号大科普",
+      "matchedAlias": "本吧英雄绰号大科普",
+      "confidence": "high",
+      "text": "英雄绰号四法：王者淋耀吧 2021-11-08《本吧英雄绰号大科普》给出了一套成体系的命名法：男英雄多用「阴x」「母x」，女英雄多用「淋x」「妓x」。楼主原话是「阴阳怪气又形容精准的英雄绰号是淋耀吧的一大美丽风景线」「最平凡的男英雄绰号莫过于『阴x』『母x』」「最普遍的女英雄绰号应该素『淋x』『妓x』，淋文化圈子的常规起名罢了，淋和妓经常被巴黎人用来自称和扯头花」。"
+    },
+    {
+      "kind": "card",
+      "key": "漏屎婆",
+      "hero": "本吧英雄绰号大科普",
+      "matchedAlias": "本吧英雄绰号大科普",
+      "confidence": "high",
+      "text": "漏屎婆：王者淋耀吧《本吧英雄绰号大科普》里给出的具体英雄绰号之一，原帖写「漏屎婆我是害怕的，中路对线越塔飞到天上拉屎可以活活淋死我」。"
+    },
+    {
+      "kind": "card",
+      "key": "超赔钱货",
+      "hero": "阿狸",
+      "matchedAlias": "赔钱货",
+      "confidence": "high",
+      "text": "超赔钱货：NGA 帖对通讯录圈选英雄偏好的描述：「黑蔡依林衍生出来的。大部分都男同性恋在讲，玩游戏方面都喜欢那种美丽的赔钱货比如王者杨玉环，阴阳师青行灯，原神心海，崩铁黑天鹅，这种超级赔钱货」。是对淋语圈「赔钱货」审美标签的成组举例。"
+    },
+    {
+      "kind": "card",
+      "key": "引茎据典",
+      "hero": "杯糕姐",
+      "matchedAlias": "杯糕姐",
+      "confidence": "high",
+      "text": "引茎据典：「引经据典」的淋语谐音版，把「经」换成「茎」。B 站《【杯糕姐】盘点各种音效出处（1）》评论区有网友直接用「引茎据典[喜欢]」回复，是「成语换偏旁」这套淋语构词法的样本。"
+    },
+    {
+      "kind": "card",
+      "key": "猪头凤",
+      "hero": "罗玉凤",
+      "matchedAlias": "罗玉凤",
+      "confidence": "high",
+      "text": "猪头凤：罗玉凤（凤姐）的圈内绰号，「猪头」是淋语里给「头」加前缀的造词法；同一场景里她也被叫「凤凤」。"
+    },
+    {
+      "kind": "card",
+      "key": "小阴",
+      "hero": "周阴婷",
+      "matchedAlias": "周阴婷",
+      "confidence": "high",
+      "text": "小阴：周阴婷（阴中）的圈内简称，常与「凤凤」（罗玉凤）对仗出现，是辨析这一组叫法的直接证据。"
+    },
+    {
+      "kind": "card",
+      "key": "杯糕",
+      "hero": "杯糕姐",
+      "matchedAlias": "杯糕",
+      "confidence": "high",
+      "text": "杯糕：「抱歉」的淋语谐音，是淋语里最常用的谐音梗之一，还能当动词用：「杯糕化」＝「抱歉化成」。圈内有名的「杯糕姐」即由此而来。"
+    },
+    {
+      "kind": "quote",
+      "key": "Jolin n. 脚淋；Jolinese n. 淋语；jolinize v. 淋化。",
+      "hero": "淋淋",
+      "matchedAlias": "jolin",
+      "confidence": "high",
+      "text": "Jolin n. 脚淋；Jolinese n. 淋语；jolinize v. 淋化。"
+    },
+    {
+      "kind": "quote",
+      "key": "自带英文字幕，蔡依林都要被你感动得流下13滴眼泪惹。",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "自带英文字幕，蔡依林都要被你感动得流下13滴眼泪惹。"
+    },
+    {
+      "kind": "quote",
+      "key": "我泔居然知道李华半夜说什么，真素不清不楚惹。",
+      "hero": "我泔",
+      "matchedAlias": "我泔",
+      "confidence": "medium",
+      "text": "我泔居然知道李华半夜说什么，真素不清不楚惹。"
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷我说婷芷，我华清者自清。",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "婷芷我说婷芷，我华清者自清。"
+    },
+    {
+      "kind": "quote",
+      "key": "我泔诞下传限不会给任何人好脸色。",
+      "hero": "我泔",
+      "matchedAlias": "我泔",
+      "confidence": "medium",
+      "text": "我泔诞下传限不会给任何人好脸色。"
+    },
+    {
+      "kind": "quote",
+      "key": "给我华道歉，婷芷造谣我华。",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "给我华道歉，婷芷造谣我华。"
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷陷害我狸！！！",
+      "hero": "阿狸",
+      "matchedAlias": "我狸",
+      "confidence": "medium",
+      "text": "婷芷陷害我狸！！！"
+    },
+    {
+      "kind": "quote",
+      "key": "周阴婷背后阴人",
+      "hero": "周阴婷",
+      "matchedAlias": "周阴婷",
+      "confidence": "high",
+      "text": "周阴婷背后阴人"
+    },
+    {
+      "kind": "quote",
+      "key": "谁敢闻一下我曌的大鲸鱼",
+      "hero": "我曌",
+      "matchedAlias": "我曌",
+      "confidence": "medium",
+      "text": "谁敢闻一下我曌的大鲸鱼"
+    },
+    {
+      "kind": "quote",
+      "key": "我月吸入温暖潮湿的地方",
+      "hero": "我月",
+      "matchedAlias": "我月",
+      "confidence": "medium",
+      "text": "我月吸入温暖潮湿的地方"
+    },
+    {
+      "kind": "quote",
+      "key": "我狸就这样破如防",
+      "hero": "阿狸",
+      "matchedAlias": "我狸",
+      "confidence": "medium",
+      "text": "我狸就这样破如防"
+    },
+    {
+      "kind": "quote",
+      "key": "赔钱货我狸猫，用德玛西亚百姓叠杀人书的道歉光，还有恭喜我琴。",
+      "hero": "我琴",
+      "matchedAlias": "我琴",
+      "confidence": "medium",
+      "text": "赔钱货我狸猫，用德玛西亚百姓叠杀人书的道歉光，还有恭喜我琴。"
+    },
+    {
+      "kind": "quote",
+      "key": "卡尔玛很多时候都是你玛、气功婆之类的称呼。",
+      "hero": "卡尔玛",
+      "matchedAlias": "卡尔玛",
+      "confidence": "high",
+      "text": "卡尔玛很多时候都是你玛、气功婆之类的称呼。"
+    },
+    {
+      "kind": "quote",
+      "key": "拾荒婆比尔吉沃特捡垃圾记。",
+      "hero": "佐伊",
+      "matchedAlias": "拾荒婆",
+      "confidence": "high",
+      "text": "拾荒婆比尔吉沃特捡垃圾记。"
+    },
+    {
+      "kind": "quote",
+      "key": "和恩佐伊里斯三人行营救翼王计划。",
+      "hero": "佐伊",
+      "matchedAlias": "佐伊",
+      "confidence": "medium",
+      "text": "和恩佐伊里斯三人行营救翼王计划。"
+    },
+    {
+      "kind": "quote",
+      "key": "俄罗斯娜娜：现在是我的时代！你们通讯录还能造出像我一样的对手吗",
+      "hero": "那艺娜",
+      "matchedAlias": "俄罗斯娜娜",
+      "confidence": "high",
+      "text": "俄罗斯娜娜：现在是我的时代！你们通讯录还能造出像我一样的对手吗"
+    },
+    {
+      "kind": "quote",
+      "key": "淋淋要发新专辑噜。",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "淋淋要发新专辑噜。"
+    },
+    {
+      "kind": "quote",
+      "key": "真素赔钱货惹",
+      "hero": "阿狸",
+      "matchedAlias": "赔钱货",
+      "confidence": "high",
+      "text": "真素赔钱货惹"
+    },
+    {
+      "kind": "quote",
+      "key": "可以再为你珍做一期仙女排行榜厚",
+      "hero": "李允珍",
+      "matchedAlias": "你珍",
+      "confidence": "medium",
+      "text": "可以再为你珍做一期仙女排行榜厚"
+    },
+    {
+      "kind": "quote",
+      "key": "你蛇qeeee约等于插秧婆一个e这是可以说的吗",
+      "hero": "阿卡丽",
+      "matchedAlias": "插秧婆",
+      "confidence": "high",
+      "text": "你蛇qeeee约等于插秧婆一个e这是可以说的吗"
+    },
+    {
+      "kind": "quote",
+      "key": "flop到nobody cares嘻嘻，周阴婷死噜",
+      "hero": "周阴婷",
+      "matchedAlias": "周阴婷",
+      "confidence": "high",
+      "text": "flop到nobody cares嘻嘻，周阴婷死噜"
+    },
+    {
+      "kind": "quote",
+      "key": "宁静也不知道蔡依淋靴靴，表示 I do not know jolin.[OK]",
+      "hero": "淋淋",
+      "matchedAlias": "jolin",
+      "confidence": "high",
+      "text": "宁静也不知道蔡依淋靴靴，表示 I do not know jolin.[OK]"
+    },
+    {
+      "kind": "quote",
+      "key": "明明是我凤不屑于出演这种地才节目，我凤天后岂是阴中和淋淋这种13线女星可比的",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "明明是我凤不屑于出演这种地才节目，我凤天后岂是阴中和淋淋这种13线女星可比的"
+    },
+    {
+      "kind": "quote",
+      "key": "天了噜，淋文化的崛起竟然没有提到“大功臣”南宁仙子周阴婷，实属不可思议厚！",
+      "hero": "周阴婷",
+      "matchedAlias": "周阴婷",
+      "confidence": "high",
+      "text": "天了噜，淋文化的崛起竟然没有提到“大功臣”南宁仙子周阴婷，实属不可思议厚！"
+    },
+    {
+      "kind": "quote",
+      "key": "蔡依林Pleasure巡演广州场疑似出现地才蓝唱Mr'Q，广州唱限量版。",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "蔡依林Pleasure巡演广州场疑似出现地才蓝唱Mr'Q，广州唱限量版。"
+    },
+    {
+      "kind": "quote",
+      "key": "这些其实都是蔡依林自己在社交平台发的口癖，比如：惹，我的老天鹅，孩柱们好",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "这些其实都是蔡依林自己在社交平台发的口癖，比如：惹，我的老天鹅，孩柱们好"
+    },
+    {
+      "kind": "quote",
+      "key": "一定又是周阴中那个标注挑拨离间罢惹，想让凤淋两虎相斗自己坐收渔翁之利",
+      "hero": "英中啊英中",
+      "matchedAlias": "周阴中",
+      "confidence": "high",
+      "text": "一定又是周阴中那个标注挑拨离间罢惹，想让凤淋两虎相斗自己坐收渔翁之利"
+    },
+    {
+      "kind": "quote",
+      "key": "只是长的有点像我华请Lisa上身美美从疯马秀走出来罢噜💅💅💅",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "只是长的有点像我华请Lisa上身美美从疯马秀走出来罢噜💅💅💅"
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @Mike_电话本 :Jolin只是比较豁出去比较敢一点罢惹",
+      "hero": "淋淋",
+      "matchedAlias": "jolin",
+      "confidence": "high",
+      "text": "回复 @Mike_电话本 :Jolin只是比较豁出去比较敢一点罢惹"
+    },
+    {
+      "kind": "quote",
+      "key": "转自优酷脚纳音乐 最爱的淋淋女王，天了噜，本质的骑士们快吸进来！",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "转自优酷脚纳音乐 最爱的淋淋女王，天了噜，本质的骑士们快吸进来！"
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @阿融不会被发现吧 :我华说婷芷[胜利][翻白眼][胜利]",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "回复 @阿融不会被发现吧 :我华说婷芷[胜利][翻白眼][胜利]"
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @杰斯猫Jace :素喜欢玩边缘控制噜[翻白眼][翻白眼]",
+      "hero": "指南杰斯猫",
+      "matchedAlias": "杰斯猫",
+      "confidence": "high",
+      "text": "回复 @杰斯猫Jace :素喜欢玩边缘控制噜[翻白眼][翻白眼]"
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @清纯男大学牲 :fly鼠了但是阴婷独美[doge]",
+      "hero": "FLY组合",
+      "matchedAlias": "fly",
+      "confidence": "high",
+      "text": "回复 @清纯男大学牲 :fly鼠了但是阴婷独美[doge]"
+    },
+    {
+      "kind": "quote",
+      "key": "想看Jolin和阴婷的世纪会面惹[偷笑][OK][滑稽]",
+      "hero": "淋淋",
+      "matchedAlias": "jolin",
+      "confidence": "high",
+      "text": "想看Jolin和阴婷的世纪会面惹[偷笑][OK][滑稽]"
+    },
+    {
+      "kind": "quote",
+      "key": "花蝴蝶时期确实是抄袭了，但是其他时期蔡依林表示清者自清惹",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "花蝴蝶时期确实是抄袭了，但是其他时期蔡依林表示清者自清惹"
+    },
+    {
+      "kind": "quote",
+      "key": "不过淋淋不怕大家说，因为她觉得清者自清，请你们进贝塔靴靴",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "不过淋淋不怕大家说，因为她觉得清者自清，请你们进贝塔靴靴"
+    },
+    {
+      "kind": "quote",
+      "key": "你月还没有限定不配与我华平起平坐，婷芷造谣我华靴靴💅",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "你月还没有限定不配与我华平起平坐，婷芷造谣我华靴靴💅"
+    },
+    {
+      "kind": "quote",
+      "key": "笑鼠了[笑哭]你华伤害洗脚力度都不够，胆敢自称六宫之主",
+      "hero": "我华",
+      "matchedAlias": "你华",
+      "confidence": "medium",
+      "text": "笑鼠了[笑哭]你华伤害洗脚力度都不够，胆敢自称六宫之主"
+    },
+    {
+      "kind": "quote",
+      "key": "何老师版本真神语言思路有逻辑，直接把通讯录打的一套乱。",
+      "hero": "何老师",
+      "matchedAlias": "何老师",
+      "confidence": "high",
+      "text": "何老师版本真神语言思路有逻辑，直接把通讯录打的一套乱。"
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录拉比克，可以用所有通讯录英雄的技能，附带A杖效果",
+      "hero": "拉比克",
+      "matchedAlias": "拉比克",
+      "confidence": "high",
+      "text": "通讯录拉比克，可以用所有通讯录英雄的技能，附带A杖效果"
+    },
+    {
+      "kind": "quote",
+      "key": "结果蔡依林出道20年一直处在最红的的地位，从未flop",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "结果蔡依林出道20年一直处在最红的的地位，从未flop"
+    },
+    {
+      "kind": "quote",
+      "key": "淋淋是有努力和实力的，不是这种流量明星可以碰瓷的靴靴",
+      "hero": "淋淋",
+      "matchedAlias": "淋淋",
+      "confidence": "medium",
+      "text": "淋淋是有努力和实力的，不是这种流量明星可以碰瓷的靴靴"
+    },
+    {
+      "kind": "quote",
+      "key": "自带英文字幕我看蔡依林都要为你流下130滴眼泪了吧。",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "自带英文字幕我看蔡依林都要为你流下130滴眼泪了吧。"
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @新酱爱追剧 :难道没听说不努力的难逃一吸！",
+      "hero": "新酱爱追剧",
+      "matchedAlias": "新酱爱追剧",
+      "confidence": "high",
+      "text": "回复 @新酱爱追剧 :难道没听说不努力的难逃一吸！"
+    },
+    {
+      "kind": "quote",
+      "key": "以前玩你泔是吊着打☁️铁t，如今竟是风水轮流转了！",
+      "hero": "我泔",
+      "matchedAlias": "你泔",
+      "confidence": "medium",
+      "text": "以前玩你泔是吊着打☁️铁t，如今竟是风水轮流转了！"
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷 我华素1a天后靴靴💅🏻a12a13a秒了",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "婷芷 我华素1a天后靴靴💅🏻a12a13a秒了"
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @四乐化碳 :断更不会得到本可很多很好的评价",
+      "hero": "四乐化碳",
+      "matchedAlias": "四乐化碳",
+      "confidence": "high",
+      "text": "回复 @四乐化碳 :断更不会得到本可很多很好的评价"
+    },
+    {
+      "kind": "quote",
+      "key": "自带英文字幕，蔡依林都要被你感动得流下13滴眼泪惹",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "自带英文字幕，蔡依林都要被你感动得流下13滴眼泪惹"
+    },
+    {
+      "kind": "quote",
+      "key": "我就没真正黑过蔡依林，但是地才演唱会真的太好笑了",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "我就没真正黑过蔡依林，但是地才演唱会真的太好笑了"
+    },
+    {
+      "kind": "quote",
+      "key": "btw，望周知我华素这中宫唯一的皇后，靴靴",
+      "hero": "我华",
+      "matchedAlias": "我华",
+      "confidence": "medium",
+      "text": "btw，望周知我华素这中宫唯一的皇后，靴靴"
+    },
+    {
+      "kind": "quote",
+      "key": "李华衣服都没有孙答应多，也配？",
+      "hero": "孙尚香",
+      "matchedAlias": "孙答应",
+      "confidence": "high",
+      "text": "李华衣服都没有孙答应多，也配？"
+    },
+    {
+      "kind": "quote",
+      "key": "婷正，李华洗脸丫鬟罢惹",
+      "hero": "杨玉环",
+      "matchedAlias": "洗脸丫鬟",
+      "confidence": "high",
+      "text": "婷正，李华洗脸丫鬟罢惹"
+    },
+    {
+      "kind": "quote",
+      "key": "不把我超生婆放眼里是吧",
+      "hero": "米莱狄",
+      "matchedAlias": "超生婆",
+      "confidence": "high",
+      "text": "不把我超生婆放眼里是吧"
+    },
+    {
+      "kind": "quote",
+      "key": "淋文化是中国大陆网络社群上恶搞台湾歌手蔡依林的一种迷因,开始于2009年,常见于百度贴吧和新浪微博",
+      "hero": "淋淋",
+      "matchedAlias": "蔡依林",
+      "confidence": "high",
+      "text": "淋文化是中国大陆网络社群上恶搞台湾歌手蔡依林的一种迷因,开始于2009年,常见于百度贴吧和新浪微博"
+    },
+    {
+      "kind": "quote",
+      "key": "国外网友真的把好多经典都杯糕化了[喜欢]",
+      "hero": "杯糕姐",
+      "matchedAlias": "杯糕",
+      "confidence": "medium",
+      "text": "国外网友真的把好多经典都杯糕化了[喜欢]"
+    },
+    {
+      "kind": "quote",
+      "key": "每次看到杯糕视频都笑得想死又没朋友可以分享",
+      "hero": "杯糕姐",
+      "matchedAlias": "杯糕",
+      "confidence": "medium",
+      "text": "每次看到杯糕视频都笑得想死又没朋友可以分享"
+    }
+  ],
+  "conflicts": [
+    {
+      "kind": "card",
+      "key": "超高阴",
+      "chosen": "新酱爱追剧",
+      "others": [
+        "新酱爱追剧",
+        "周阴婷"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "李华半夜说什么",
+      "chosen": "我泔",
+      "others": [
+        "我泔",
+        "四乐化碳"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我泔",
+      "chosen": "我泔",
+      "others": [
+        "我泔",
+        "四乐化碳"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "诞下传限",
+      "chosen": "我泔",
+      "others": [
+        "我泔",
+        "四乐化碳"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "胖子盗宝团",
+      "chosen": "罗玉凤",
+      "others": [
+        "罗玉凤",
+        "凤仙子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "Colleen",
+      "chosen": "初武",
+      "others": [
+        "初武",
+        "淋淋"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "农女一",
+      "chosen": "貂蝉",
+      "others": [
+        "貂蝉",
+        "我华"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "平起平坐不配",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "蟑螂婆",
+      "chosen": "卡莎",
+      "others": [
+        "卡莎",
+        "本吧英雄绰号大科普",
+        "薇恩"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "杂技天后",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "赔钱货",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "三木木吧",
+      "chosen": "FLY组合",
+      "others": [
+        "FLY组合",
+        "淋淋"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "通讯录三大派系",
+      "chosen": "三梦奇缘",
+      "others": [
+        "三梦奇缘",
+        "郭老师",
+        "凤仙子",
+        "淋淋"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "大汗淋淋",
+      "chosen": "淋淋",
+      "others": [
+        "淋淋",
+        "孙策"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我狸（英雄淋盟）",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我华（王者淋耀）",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我珍（淋明杀鸡）",
+      "chosen": "李允珍",
+      "others": [
+        "李允珍",
+        "火淋"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我琴（英雄淋盟）",
+      "chosen": "我琴",
+      "others": [
+        "我琴",
+        "琴女"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "露露",
+      "chosen": "琴女",
+      "others": [
+        "琴女",
+        "我琴"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "孙尚香",
+      "chosen": "孙尚香",
+      "others": [
+        "孙尚香",
+        "王昭君",
+        "杨玉环",
+        "薇恩",
+        "西施",
+        "小乔",
+        "我曌"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "铁T雅",
+      "chosen": "罗玉凤",
+      "others": [
+        "罗玉凤",
+        "凤仙子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "母亮",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "婆婆",
+      "chosen": "薇恩",
+      "others": [
+        "薇恩",
+        "医生"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "出道",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "你华",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环",
+        "琴女",
+        "我琴"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "女王",
+      "chosen": "李允珍",
+      "others": [
+        "李允珍",
+        "上官婉儿",
+        "蒜姐"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "超赔钱货",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "杨玉环",
+        "青行灯",
+        "黑天鹅",
+        "淋淋",
+        "珊瑚宫心海"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "猪头凤",
+      "chosen": "罗玉凤",
+      "others": [
+        "罗玉凤",
+        "凤仙子"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "小阴",
+      "chosen": "周阴婷",
+      "others": [
+        "周阴婷",
+        "罗玉凤",
+        "凤仙子"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "我泔居然知道李华半夜说什么，真素不清不楚惹。",
+      "chosen": "我泔",
+      "others": [
+        "我泔",
+        "四乐化碳"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷我说婷芷，我华清者自清。",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "我泔诞下传限不会给任何人好脸色。",
+      "chosen": "我泔",
+      "others": [
+        "我泔",
+        "四乐化碳"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "给我华道歉，婷芷造谣我华。",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷陷害我狸！！！",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "我狸就这样破如防",
+      "chosen": "阿狸",
+      "others": [
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "赔钱货我狸猫，用德玛西亚百姓叠杀人书的道歉光，还有恭喜我琴。",
+      "chosen": "我琴",
+      "others": [
+        "我琴",
+        "阿狸",
+        "八重神子"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "明明是我凤不屑于出演这种地才节目，我凤天后岂是阴中和淋淋这种13线女星可比的",
+      "chosen": "淋淋",
+      "others": [
+        "淋淋",
+        "周阴婷"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "一定又是周阴中那个标注挑拨离间罢惹，想让凤淋两虎相斗自己坐收渔翁之利",
+      "chosen": "英中啊英中",
+      "others": [
+        "英中啊英中",
+        "周阴婷"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "只是长的有点像我华请Lisa上身美美从疯马秀走出来罢噜💅💅💅",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @阿融不会被发现吧 :我华说婷芷[胜利][翻白眼][胜利]",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "你月还没有限定不配与我华平起平坐，婷芷造谣我华靴靴💅",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "笑鼠了[笑哭]你华伤害洗脚力度都不够，胆敢自称六宫之主",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷 我华素1a天后靴靴💅🏻a12a13a秒了",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "btw，望周知我华素这中宫唯一的皇后，靴靴",
+      "chosen": "我华",
+      "others": [
+        "我华",
+        "杨玉环"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "不把我超生婆放眼里是吧",
+      "chosen": "米莱狄",
+      "others": [
+        "米莱狄",
+        "我米"
+      ]
+    }
+  ],
+  "unreliable": [
+    {
+      "kind": "card",
+      "key": "天啦噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "厚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "吸吸",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "啾咪",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "笑鼠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "通讯录",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "可人儿",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "美cry",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "big胆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本可",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "氮素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "米米嘟",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "隐隐约约有听说",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "鸡笼",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "吸入",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "难逃一吸",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "暴风吸入",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "吸域风情",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋化",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "圈吧",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "天德池",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "标注",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "妈妈桑",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "保护眼睛",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "跨火盆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "鬼图",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "牛蹄警告",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "尊素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "中肯",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "正确的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "全体起立",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "唯一真神",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "有点像",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "良心",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "合订本",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "鼠了",
+      "reason": "blocked-generic",
+      "blocked": [
+        "肘姐"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "大事不妙",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "拉完了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "要素察觉",
+      "reason": "blocked-generic",
+      "blocked": [
+        "白袜"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "蚌埠住了",
+      "reason": "blocked-generic",
+      "blocked": [
+        "白袜"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "南通",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "指南",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "大米",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "拿黄瓜和男人比",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "天呐噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "惹惹惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本仙子",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本宫",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "伦家",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "哒姐",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "玛雅大姐",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "厚礼蟹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阿婆主",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "什么鬼了噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "夭寿惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "孝死",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "气die",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "开吸",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "精髓",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "130",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "乌干达",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "水泥封13",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "骂射",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "合不拢腿",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "捕鼠夹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "官方语言",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "事业第二春",
+      "reason": "blocked-generic",
+      "blocked": [
+        "墓姐"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "精神状态",
+      "reason": "blocked-generic",
+      "blocked": [
+        "肘姐"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "曼多拉",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "命大也鼠了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋神",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "含了乌干达",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "通讯录全明星",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "吸入了地球",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "艺术成这样",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "宇宙黑洞回响",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "风姿",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "1.3毛特效",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "枕头后面是地才蓝",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "会发光的乌干达",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "超绝水牛音",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "美到维纳斯怀孕",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "蠢die",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "笑如鼠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "吓属",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "素直男",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "调理好了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "鹅螺狮辣辣",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "人在做淋在看",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "裸眼鉴gay",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "闭嘴精咽",
+      "reason": "blocked-generic",
+      "blocked": [
+        "楼主"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "孝一孝十年韶",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "野鸡咕咕day",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋听你的故事秽",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "大卖特卖",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "抢线",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "春枝",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "怪物罢惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "软辅"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "带电的惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我中二婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "糕贵春枝",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我斗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我淋汐",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋明杀鸡",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "洛克淋锅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我猫",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "一路惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "Tunnel",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "uncut",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋语一起厚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "十三级集美淋语复读班",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "长难句",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "大丽花将再度外翻",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "孝鼠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "命大也鼠惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本可命小",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "低菊",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "崆峒",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "肺部真菌感染",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "消暑",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "即刻绞杀",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "适可而止是本直更新的动力",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "素本直惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "前方高能惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "差点把我送走",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "双杀噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "秒了a妹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "婊柱",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "碧莲",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "闭嘴惊艳",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "不开吸",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "笑到打鸣",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "司马脸",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "亚子",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "0里0气",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "笑孕",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "婊情",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "婊演家",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋系",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "知阴笑",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "紧急更新",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "削弱噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "已举报",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "你无敌惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "14年的评论",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "漏电婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "土匪婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "挨打婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "走路草",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "抽搐女",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "好运姐",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "祖安董明珠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "琪贵人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "剪秋",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "浣碧",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "圆规婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "母石头人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "赤脚婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "紫皮大蒜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "上吊婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "硅胶魔淋",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "金刚贝塔",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "温宜公主",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "厕风",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋笑男孩",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "拔矛女鬼",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "送披女",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "小炮卖淋炮手",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "丁真",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "玉足",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "体育生",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "虫队",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "萨米",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阴紫萍女王",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女王",
+        "女王"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "305分",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "叶子戏法",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "赛博站街女",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阴雄淋盟",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "三角头的牢笼",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "被通讯录控制",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋语塔罗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "通讯录恋姐",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "nbcs",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "gxyy",
+      "reason": "blocked-generic",
+      "blocked": [
+        "雅雅"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "好彩妹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "母角马",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "母诺手",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "镰公公",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "你孕",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "朵拉",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "星奴谷",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "命大",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "这素在",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "神淋锁定",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "知阴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "图淋盖肉",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋语中字",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋语13级",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋语A1听力",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "通讯录心理学",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "喜翻儿",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋言淋语",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "瘦身成功",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "大回冬",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "扯头花",
+      "reason": "blocked-generic",
+      "blocked": [
+        "北斗"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "冰杖",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "满分女",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "屁股顶天又立地",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "煮饭",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "丽人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阴成啥样了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阴暗沉重的秘密",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "黑淋话",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋系视频",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "通讯录入侵",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "甲油淋语",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋气",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "安静如鸡",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "国外XX",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "泰…勒",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "送披婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "祺贵人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "剪刀婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我丽",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我鱼",
+      "reason": "blocked-generic",
+      "blocked": [
+        "娜美"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我娅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "卡迪匕",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "迟钝女T",
+      "reason": "blocked-generic",
+      "blocked": [
+        "铁t"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "我诺",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我海",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "天哪",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "殇之木奶1",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "母亚索",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "六小淋童",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "不造",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "尊嘟假嘟",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "nobody cares",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "rush婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阴妮",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "奥莉安娜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "Daddy",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "发大水",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我可以",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "盯上",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "格温",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "莎弥拉",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "卡西奥佩娅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "黛安娜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "索拉卡",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "墨菲特",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "母拉拉",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "什么鬼",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "真的会谢",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "这很难评",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "我不可以",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "下水道",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "理发店",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "仙女",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "皮鞭脚踩婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "幺蛾子",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "莉莉娅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "厕警",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "花铁t",
+      "reason": "blocked-generic",
+      "blocked": [
+        "铁t",
+        "铁t"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "夏铁t",
+      "reason": "blocked-generic",
+      "blocked": [
+        "铁t"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "明公公",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "素不素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "珍素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "停止",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "吓鼠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "下见惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "路人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "基佬",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "公主",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女王"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "抽卡",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "女野人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "东瀛女特务",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "安嫔",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "阴猫",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "狄公公",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "司空daddy",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "冷笑",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "图奇",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "宫斗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "倒贴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "大叔",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "鸡叫",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "C位",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "救命",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "迦娜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "泽丽",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "芮尔",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "尼菈",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本可儿",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本可人儿",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本仙女",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本猪妞",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本祝妞",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "塔素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "解解",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "本淋王",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "甜椒",
+      "reason": "blocked-generic",
+      "blocked": [
+        "楼主"
+      ]
+    },
+    {
+      "kind": "card",
+      "key": "yyds",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "山泥若",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "美掠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "了啦",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋薇不惧",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "尼美舒利分散片",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "五唱一",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "世女一",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "100991",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "0者自0",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "QC秒了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "xxcry",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "冬然图文",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "IDKH",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "你没有被邀请",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "让我们请他出来好吗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "打劫",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "抢票",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "艺术",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "酵母",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "艾斯",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "珍珠奶茶",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "精神小伙",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "甜椒婆",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "楼下的姐妹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "姐可妹亦可",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "花有百日红仙与鸡不同",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋学",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "肯尼亚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋门镇宗之宝",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "是我文字狱",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "美美",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋薇",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "珍素努力",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "赛淋",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "淋味",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "card",
+      "key": "柱厚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "讲清楚厚，素130亿人惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "之前大家一直用淋语是为了黑，但希望大家用另外一种眼光审判。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语对于通讯录真的有一股天然的吸力惹，本可认识的朋友里就没有不会淋语的。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "学习淋语素一个很繁琐并且需要大量实践的事情厚，加油吧标注们。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "带狂暴就是 T0。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "没有最弱的英雄，只有最弱的人类。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我院吸入了地球。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "惹？你敢说惹？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这淋语不正宗靴靴，UP主你已经被鸡笼锁定噜。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "竟然真有阿婆主教学淋语惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "是天啦噜。不是天了噜。是天啦噜。真素没学到精髓惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这是淋王星的官方语言，不素小语种惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "不努力就没有乌干达噜。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "亲爱的，你大事不妙噜。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "up的声音可以把我骂射噜。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天惹噜，本宫给这位姐妹捧场惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "在座都是姐妹惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "前面的需要放置捕鼠夹噜。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "好密集的梗受不了惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "姐姐真素妙语连珠。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "倒贴的下场，命大也鼠了。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可不素直男厚，但是想要吸直男惹，请问up可以被锁定吗。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "呕，这是淋王星的官方语言不素小语种惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "莫愁前路无知妓，贝塔已经锁定你。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "一上来就素超绝水牛音惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "1.3毛特效惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "枕头后面是地才蓝惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "会发光的乌干达惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "那已经素直男惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "那确实调理的比较好一点惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "开局王炸惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "脸皮掉了吓属惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这素鹅螺狮辣辣，不素吱花惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "学好淋语，裸眼鉴gay不是梦惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语不仅仅是一门语言，更是一种文化",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "人在做淋在看",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "孝一孝，十年韶",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我觉得楼主适可而止惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "楼主"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "一只李华一台戏，五只李华走维密",
+      "reason": "blocked-generic",
+      "blocked": [
+        "李华"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "李华1a130下不如我乔一扇子，我乔美美拿大女主剧本做新时代独立强女噜",
+      "reason": "blocked-generic",
+      "blocked": [
+        "我乔",
+        "李华"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "李华不要再抢路人手机惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "李华"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "王者荣耀姓什么，我菌姓什么，我想你比我更清楚!",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我菌就这样狼狈不堪的被偷了衣服，真是师太啊！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我娲强调大笔夹的主体性！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我婉的扁平足将自家水晶踩出芒果汁",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "竹外桃花三两枝，老公局八我先吃",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "你若外翻，蝴蝶自来",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "七夕节该玩哪个辅助你比本可更清楚！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "是我忘记收钱，放走了客人",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "别在这理发店",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可命小，先鼠惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "口区，低菊惹低菊惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "素本直惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "表面只玩软辅法师 私下偷偷玩的都是怪物罢惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "软辅"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "你提真会买榜惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "首页被我阴汐进来惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "文案纯属虚构，请让我过审靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "都是淋吧姐妹们p的惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淫虎腥曲拉票素在？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "你有那么高速运转的扇子进入中路记住他给出的原理",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "每次都想装作很倔强",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录小时候都是相似的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "当通讯录和直男交朋友 总有一天",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "抽6命老公 做幸福婊子",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "一切都素我孔做的 可是那又怎么样呢",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录放过洛克王国，靴靴惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "顺直人滚出我们淋神，别发言惹人讨厌靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "哪里来的糕贵春枝？觉得不好就卷铺走人靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "跟孙吧有什么关系惹，蠢直别蹭靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋文化在孙吧诞生之前就有了靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "亩杰回应淋教堂🐔女被吸事件",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "谁写的BL剧本。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "一些通讯录小品",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋图分享（第六弹）『动图』",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本视频为淋语配音，无冒犯之意",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "不know会被吸惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "idkh 靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "国外某国惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这个微信记录素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "其他英雄加起来有我风穿的凉快吗，闹麻了。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "诺克萨斯让你站起来，但风女是真的能让你飞起来。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "浣碧属于是完全不能由原本英雄特点看出来的昵称，哪怕精通淋语不看出处也绝对想不到有什么关联。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我必须要严肃指出，母石头人不属于淋语，而是对于皎月如今在游戏中的定位的一种形象描述。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "走路草这个昵称感觉还是挺可爱的，换成藤蔓婆就不可爱惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "又多又叕1A秒了！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "在嚎哭深渊gulp gulp gulp。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我本是发条今晚来吸人。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "把老鼠都藏起来吧。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "小洛克拯救1m小奶狗。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "炸米花讨厌让虫队爱上自己。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我蝶会把你们通通吸入阴暗潮湿的地方。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "时代姐妹花之你盲一溜五台机slay得像个女王惹。",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女王"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "圣淋1院赔钱惨鼠事件有点像最美伪人惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "请特蕾爽婷芷对艾丽丝的陷害靴靴。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我记小奥菲有点像fearless概念本身。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我冒还在庄园害人！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "萨米这种春芝不生的地方竟然也被通讯录病毒入侵惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "仙男德怀特做法陷害中。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "阴紫萍女王的赔钱首秀。",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女王"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "如果满分是100分，我马会要求自己做到305分。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "来一次叶子戏法，怎么样？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "吸老板升职气，做赛博站街女。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可的腿不仅可以用来站街，还可以用来踢男人。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "是冰月花，雪是丽桑卓，是妈妈也是女儿。",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女儿"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "最喜欢用我莫吸入一些狗位惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我娲第130次首谈超远距离支援追击概念。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "杯套暖，价无欺，黄昏算得盈余薄，气得分不清这β那B。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "谗言似棘丛，入耳易伤骨，烟火人间最是真，岁岁平安度。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "女明星互抖黑料，为等到审判庭做准备惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "4.0深β坏螺旋有4位买榜女王之稻妻woman互……",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女王"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "11年1月被查出欲用毒致愉侧后胡叶新毁容，禁足一月。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录英雄可以分成三派：淋系，郭系和墓系",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "开心官女子（通讯录开发)——开心答应（殖播间）——开心常在（开发成功）——开心贵人（争锋各大主播）",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "梵谷是融会贯通各大通讯录英雄的集大成者，实至名归的版本答案",
+      "reason": "blocked-generic",
+      "blocked": [
+        "梵谷"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "我阴乃远古真神开创了通讯录顶流时代是淋圈三大花旦之首",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "为什么通讯录都喜欢这么抽象的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "为什么没有通讯录宇宙诞生的地才演唱会？没有凤凤和阴婷？",
+      "reason": "blocked-generic",
+      "blocked": [
+        "凤凤"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "感觉今年都没什么通讯录英雄的爆梗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "已经进入被通讯录控制的第二阶段——直播中被气晕/气哭、直播睡觉、半死不活",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "想摆脱通讯录唯一的方法就是让自己变得无聊",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录无法操控的女人——奥特之母",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "谢谢，看完治好了我的通讯录",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录也不是不挑食的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录审美是这样的吗？谁来告诉我真相",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "总结：通讯录恋姐是基本",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录怪物真的很喜欢挑拨离间",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "零零后通讯录鼠前的走马灯",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我一个清纯直男怎么会刷到这种视频惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我就知道明日方舟这游戏不能没有通讯录",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录的词汇都好可怕",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "很高脂的淋文化精品惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "ONG第一次看到淋语塔罗赛道惹，来支持一下姐姐了厚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这素我的淋语复习教程惹，天天学习如何装指南，貌似本可的淋语言系统已被吸入惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "支持通讯录统治世界💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "oops我逻独自美丽，恶臭通讯录怪物请不要靠近靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可不会给喜兽婆兼恋老婆一点好评的靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "刚看到封面就被蓝光吸入噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "三連支持厚姐姐真素妙語連珠惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天呐噜，本可居然还能听到守护甜心，想起了自己还不是毒妇的时候惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "写出了本可一辈子都写不出来的文案惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "被文案深深吸入完全没注意到主包的操作甚至都没记住阵容惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "好本质的视频，很久没刷到了，投币惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "演技确实可以，已经化在生活中惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我珍就这样，害死队友美美逃生，完全独立女强人形象，我珍素女王靴靴",
+      "reason": "blocked-generic",
+      "blocked": [
+        "我珍",
+        "女王"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "本可今晚即将在生日宴上抽卡，借一点欧洲婆的好运噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天了噜，淋王星你都不知道！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我可是直男惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "厚！灵感又来噜。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "新专辑好听轰？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "惹！酵母新单居然上榜！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "曾在淋系吧看过科普，之后就看懂惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "先是米提亚打星反应却是精通模板，后是瓦列里四星，和北斗大姐扯头花，你们的至冬很美，靴靴",
+      "reason": "blocked-generic",
+      "blocked": [
+        "北斗"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "可以装一个去披风mod噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "9-3-13素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "阴猫鼠了！！！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "三分之一血被猴子的大乌干达捅一下就鼠了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "林雅文玩太阳婆被ad打得bfnz前的幻想罢了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "幸亏你阎婆的伤害比较艺术，不然你林雅文就惨鼠惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "太阳婆还在害人！",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "谢谢，名侦探贝塔也被邀请惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "人家老婆叫织雪靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "阿织？入殓师老婆？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "熏好美的伤害",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "进来就素我院的超强吸力",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "好美的伤害和吸血呢",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "地才以我之名陷入崇高的妈妈桑巴，代表币的力量吸入你",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天哪，你雅这素在创造奇迹吗？",
+      "reason": "blocked-generic",
+      "blocked": [
+        "你雅"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "你雅母性大发惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "你雅"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "你林又在赔钱噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我院bgm素",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷，我织说请婷芷",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "入殓师老婆叫织雪",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "被美大妈口气熏死惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "入殓师老婆叫织雪吧",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "你照黑暗沉重的秘密滑出惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "笑晕，你风什么时候这么会写文案噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "在经历了13次中途退出，130次horny之后，本可终于看完了，怪不得难过审",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "08:16突然声音被吸入了一段惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "粗重的呼吸和亲吻，让我这个免疫爽了，还有类似的推荐吗友友们",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "惹 我们猫鼠也有淋文化惹🙄🙄🙄可喜可贺",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "南通已经进军猫鼠圈了[呲牙]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "nbcs就是nobody cares，最早出自淋语，在18年左右被饭圈用去并走红",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "玛雅你雅随时随地大小叫惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "你雅"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "不是吧大街，钟馗你也吸，真是不怕得病哦",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "130场好本质惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "吓鼠，已经回不去了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "就吸阴气重的是吧",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "太棒了，直接触发精壮体育生的被动噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "0.13分靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "你月3121a无事发生，然后被春枝一刀砍鼠",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "连用流量观看都是13MB惹，up主真素努力惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这个画面吓鼠了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "想吃蜂蜜味的丢豆惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "是哪个姐妹转生成吸尘器了[保卫萝卜_白眼][保卫萝卜_白眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "空穴来风吓鼠了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "2017年知阴杂志合集噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "羡慕有这么准的阴馗惹，排到的阴馗只会抽走空气然后被原地掌掴送入阴暗潮湿的地方[藏狐]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "看封面以为是通讯录能接受多臭的wa子，或者是别的玩法，能有多大的承受能力[微笑]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "很多很好的评价惹[奥比岛_点赞][奥比岛_点赞][奥比岛_点赞][奥比岛_点赞]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "可以关注一下直男UP！每晚直播和通讯录一起打游戏（ 娱乐视频。。欢迎补充你的看法",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "像我这么美丽又聪明的女人，要符合大多数人的标准——简单，降低自己的水平就是了💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @又是更爱派派的一天 :我觉得花蝴蝶的舞蹈很好啊，花蝴蝶这张专辑我也很喜欢",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "花蝴蝶歌词已经初具雏形play和UB的内核了，只是编曲有点问题，几次新编曲都不错",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "啊，这熟悉的音乐，本可又想起大一时躲在床上，拉上床帘，带好耳机，偷偷游玩的时光了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "我每天会支出23个小时参加反通讯录活动、还有一个小时在玩最后那个游戏[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @不是地才素天才 :Flop的是我鼠，靴靴[藏狐]二次元先帝罢了💅🏻",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "其他三位我知道是通讯录，但右下角那个最近才开始关注不知道他的取向[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "针对0:50“这个闪现素在的”诸多弹幕，在此声明：没有回应的义务！[翻白眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "跟滨崎步没什么关系。台湾那边有可人儿的说法，本可就是本可人儿的意思，参考康熙",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这一段剧情抄袭的是韩国的张禧嫔1995版里面，崔淑嫔和张禧嫔的battle",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "什么时候能出一期所有英雄的淋语绰号，我真的是要笑鼠了，太好玩了[喜极而泣]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "虽然很喜欢调侃地才舞台，但是没有能量的时候会翻出这段演讲，她给了我很多鼓舞",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "花蝴蝶没记错当年跟日本天后那位差不久吧，一张专辑要制作很长时间能抄那么快？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @老江咩 :妹妹 的话解解用淋语say一次 淋语尊素一种美丽的语言厚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "艹我好喜欢这种集美聊天的氛围感[笑哭][笑哭][笑哭]请阿婆务必多做几期",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @巾郭英雄 :我发现你们通讯录真是民俗谚语张口就来[呲牙][呲牙]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "因为恋与深空公司只做游戏，光与夜之恋公司他们旗下有音乐公司，所以不敢惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @富二代严莉莉 :花蝴蝶，美人计，日不落，舞娘是淋语经典教学大纲惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "只惹到了造型师和化妆师吧，因为我觉得舞蹈风格很好，可能只是没有协调好吧。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "sky了噜，这个视频又回春了吗，感谢大家给我的很多的很好的评价[嘟嘟]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "同时惹到化妆师，发型师，造型师，舞蹈老师的下场╮( •́ω•̀ )╭",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @Yxr丶swllbcxyd :靴靴，要比较豁出去比较敢一点惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "PH大于12哈哈哈解解不要太有才惹，学化学的表示笑的那里痛[星星眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "如果不是花蝴蝶可能一辈子都不知道三审定谳这个词 作词人真是神。。。。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @又被野鸡举报惹 :才玩了三天刚送他回家惹[给心心][给心心]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "你阴真素↓➖，只会被专精电梯婆两个控加击飞绞杀惨鼠危地马拉[翻白眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @银耳喜欢四季 :真建群估计新酱没两天就被拷走了[翻白眼]💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "这个小说原文是解绷带的时候，乌干达正好起来碰到女医生鼻子了[星星眼]",
+      "reason": "blocked-generic",
+      "blocked": [
+        "医生"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "你凤阴得的。隐约听说凤凤在化妆室耍大牌拒绝合作惹[保卫萝卜_笔芯]",
+      "reason": "blocked-generic",
+      "blocked": [
+        "凤凤"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "大家七夕快乐惹 （视频文案仅供娱乐，无任何不良引导，请勿过分解读）",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "解解品味是真的好惹 这样的覆面系就该被玩到黑玫瑰外翻惹💅️💅️",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "姐姐真的很有才惹，不是天才是地才。私底下的努力都看得到惹[星星眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "隐隐约约记得在前几期见过你的评论 看看直男下面直不直惹[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "拍花蝴蝶就练了芭蕾，拍舞娘就练了彩带，她的付出却换来一些酸ming",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "贵人就是贵人 贵妃就是贵妃 只差一字就得低人一等[脱单doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "惹~仙子那段被β站吸入退回，遂修改 又被退回惹，维纳斯也不让你看",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @青苇浮动 :同性恋=txl=通讯录=电话本子[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "清者自清本可已经说倦了，不要装了妹妹，放下你的身段[tv_白眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "大妈，时代变噜，现在用古淋语的老淋已经变成高淋惨负惹[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "出现在仙都大沙田冬然图文的阴婷黑洞里惹，有点像被作法的美丽旗舰店",
+      "reason": "blocked-generic",
+      "blocked": [
+        "大沙田"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "早期鸭姐在舞曲上的确比脚淋更风臊，但舞娘之后，甩了鸭姐130光年",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "咕叽咕叽啾咪厚，开熏孩柱牛鼻涕，惹噜珍素不努力，你tm再说一遍吸",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "（呼噜声.）嗯～嗯～呃……梦到了传奇的世界，还和奔波灞打了声招呼",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "o.o这是假嘟 O.O这是尊嘟 O.o这是尊嘟假嘟[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "感觉这张，黛眉微蹙的感觉，真的好绝啊，解解你怎么看[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "死丫头真歹毒！明明素吃医学生乌干达调理好的，竟敢藏私！[生气]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "知道恒河水是什么玩意之后有点无法直视这个歌词hhhhhhhhh",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "有没有可能我们打的是组排[doge]我才能和解解配合的辣么好",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "？？？！？！啊_仙子要降临凡间惹，信女求愿能见到阴婷仙子一面",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天了噜这个词是o吧网友自创的，也不知道怎么会传成她的口头禅的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @专业画杩人 : 天惹时间好快[撇嘴][撇嘴][撇嘴]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天惹你怎么涨粉这么快 这种淋语十级的宝藏我不允许被其他人发现",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @红豆沙味夏至 :nbcs你阴已经查无此人了[翻白眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "姐怎么知道我超爱花蝴蝶啊啊啊啊啊只在成都唱了赢麻了啊啊啊啊啊",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "编曲也没问题啊……花蝴蝶专辑评分不高，不代表花蝴蝶这首歌不行",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "冬然图文九百的月薪已变成骚扰靴靴[doge][吃瓜][偷笑]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "全场地才蓝灯光应援[打call][打call][打call]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天了噜，自赞就能上热评厚，嘻嘻，喜翻儿，喜翻儿(｀・ω・´)",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可也想学淋语，但本可素直男所以学不太明白惹[大哭][大哭]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "解解骂人还真高级呢，没点歹毒的智商都听不出来惹[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "谁当慎嫔？我嘛？我怎么当慎嫔啊，我们都这么熟了，这算什么？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "靴靴，你菌现在有点像第289次宣布不占用热搜不占用公共资源",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "[翻白眼]你淋只会把艾情阴藏在贝塔里不如我嘉菲女士唱的豪放",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "通讯录up主现状：甄嬛，甄嬛，甄嬛，还素甄嬛[囧][囧]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "不懂就问，直男看不看阴罗淋魔法，我发小特别喜欢看🙄💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "好低菊的歌词，建议请国外扭腰皇后大学天后我凤来填词，靴靴",
+      "reason": "blocked-generic",
+      "blocked": [
+        "我凤"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "他们说🦶淋不是天才，🦶淋是地才厚[doge][妙啊]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "想分享给我的通讯录好朋友，但由于过于真实害怕尬住[微笑]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天惹，居然是我鼠💅🏻原谅不更新淋耀的13天[翻白眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @地才绿女士 :曼陀罗花甚至写了两遍，真的有很恶毒",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "无论你们怎么说花蝴蝶原版编曲台，我也很爱听花蝴蝶[吃瓜]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "真素越来越像街道工作者了惹，豆包的前一份工作果然很熟行呢",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天了噜好低菊的填词，但素本科还素会给姐姐很多很好的评价",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "哟 还抄上韩国了 景福宫那点破地方还封嫔呢 有地方住吗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @liangzai91 :因为看起来0里0气的惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @汤圆爱玩我椪的棘藤棒 :冻一下，栓一下🙄💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "峡谷只有一个月，那就素我杨月华💅🏻💅🏻💅🏻",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "早起的女孩柱有乌干达吃！[星星眼][星星眼][星星眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "130年都不出的考点，和凤凤的β一样无人问津[翻白眼]",
+      "reason": "blocked-generic",
+      "blocked": [
+        "凤凤"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "花蝴蝶歌词很牛的确，主要是mv那个风格一言难尽[笑哭]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "真的很敬业，氮素btm下作不配惹，配的真的很涩惹很可惜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可不素直男厚，但是想要吸直男惹，请问up可以被锁定吗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "伴奏的合成器好像ladygaga的pokerface惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "谢谢，本直男现在已经进化到玩游戏脑子里自动有淋语解说惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @初武 :看了之前的作品，真素笑出130滴眼泪厚",
+      "reason": "blocked-generic",
+      "blocked": [
+        "初武"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "许愿 多金桃花朵朵为我开，际哥哥秒答应立马给我转账一万",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "终于更新啦[保卫萝卜_哇]来解解这里学习一下新词汇耶",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @我是小兔子乖乖_y :真的很恐怖惹[星星眼]",
+      "reason": "blocked-generic",
+      "blocked": [
+        "兔子"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "事实上决战大沙田有两期💅💅💅🙄️🙄️🙄️",
+      "reason": "blocked-generic",
+      "blocked": [
+        "大沙田"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "峡谷只有一个月那就是我海月💅，芈月是谁我不认识🙄",
+      "reason": "blocked-generic",
+      "blocked": [
+        "海月"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "李华表示后宫之位安嫔只能算妾[笑哭][笑哭][笑哭]",
+      "reason": "blocked-generic",
+      "blocked": [
+        "李华"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @阿融不会被发现吧 :婷芷，我阴素仙子🙄💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "其实这时候。。。婆崎已经flop严重。。没多少粉丝了",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "封面的几位老公我可以和他们做1300天不知白天黑夜惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "主要想吐槽一下这个歌词，恒河水喝了可能就真的作古了吧",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "中间有一句应该改成：各种颜色的b毛 各种形状的贝塔",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "姐姐真素才女惹，每一期视频的文案都这么有趣[喜欢]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @神农责百牛 :哈哈哈，又看到牛牛惹[喜欢]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "欧买噶，本可突然感受到一股好强的吸力，救命～救命～",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "不愧是本质骑士，解解真素本质惹，妹妹我也要努力惹。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "补唇蜜：指自以为平常的小动作却引起了格外关注的形为",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "也可以用来当反话使用惹，比如你们这群标注都鼠惹啾咪",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "好美好美的解构，解解尊素个不折不扣的标注惹[喜欢]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "你在问谁？这里哪有直男 0人可以回答你的问题靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @C市腹黑霸总 :骗你的本可[翻白眼]真有",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @卖铺烧酒小阴 :上面素微博，下面素小蓝惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "峡谷也只有一个海叫海诺，海月素随nbcs💅🏻",
+      "reason": "blocked-generic",
+      "blocked": [
+        "海月"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "婷芷，不把我芈放眼里我芈把你们放入贝塔里🙄💅",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "玛雅，隔着屏幕都能隐隐约约感受到淋神强大的吸力惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "惹，懒妮的gimme more耶，给up130分",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "又是地才蓝又是花蝴蝶 又是吸入的 这mv好本质啊",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "是天啦噜。不是天了噜。是天啦噜。真素没学到精髓惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "而且本可的前夫哥就和他长得差不多啊[tv_腼腆]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "a1a2aa1a2aa高难度连招2级薄纱所有边路",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "回复 @爱吃-章鱼哥_ :通讯录都以姐妹互称惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "好美好美的音道[喜欢]给姐姐130个很好的评价",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天惹底下那么多刻薄的回复看的人心暖暖[星星眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "真素big胆惹，梁静茹给你的勇气吗[doge]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "姐妹们来点免费的赞吧[胜利][翻白眼][胜利]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "解解尊嘟耗油菜花[星星眼][星星眼][星星眼]",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "楼主，能帮忙解释一下甜椒的意思吗？每次别人一说，本可都一头雾水惹",
+      "reason": "blocked-generic",
+      "blocked": [
+        "楼主"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "会不会素不可言说之物！？就是emm鸡几？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "素甜椒婆厚。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "yyds不是的 yyds是山泥若说的呀",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "抱歉厚，小女子千年上一回贴吧，之前为了搞爬虫打的，也木有排版。虽然最后也没爬成功。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "此帖好强的吸力，怎么隔几天就会出现在本可首页🙄",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "少了乌干达厚",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "有无有见多识广的大人认得图1图2中此位不知名动作片男明星😢求个名字提示",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "小新人想学淋语惹 Rt求罩嘻嘻",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "做一个小调查惹 各位淋语学习或使用者：你是什么身份呢？",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "阴阳怪气又形容精准的英雄绰号是淋耀吧的一大美丽风景线，几乎每个绰号都收获了很多路人很好的评价，因此本可决定将这些美丽的名字记入本吧史册",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "「他日史书工笔，前朝、后宫都是本可的鸡言鸡语」方便刚入吧的萌新和路过的高贵路人甲速速理解淋文化的幽默，靴靴",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "最平凡的男英雄绰号莫过于「阴x」「母x」，主要指一些长相阴柔让本吧骚零失去杏玉的英雄或者机制实在太下贱的英雄，两者兼有的也有",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "最普遍的女英雄绰号应该素「淋x」「妓x」，淋文化圈子的常规起名罢了，淋和妓经常被巴黎人用来自称和扯头花",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "漏屎婆我是害怕的，中路对线越塔飞到天上拉屎可以活活淋死我",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "天啦噜 尾气 本可 楼下的姐妹 姐可妹亦可 吸入 你🍵 你🍐 你光 美美的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "花有百日红,仙与鸡不同",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语圈子。看电波能不能对上，对不上你可能觉得说话很奇怪，对上了就能很快融入。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语是比较难懂,但懂他们的话后吧里面乐子还蛮多的。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语一部分缘于娱乐圈大咖们阴阳怪气的变种话语,每天逛一遍淋吧就像是吃了一天的娱乐圈大瓜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语早年用的人多了不限定在某个群体，和银梦语录差不多",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "其实是个很古早的口癖集合() 一般来说是同性恋以及欣赏同性恋文化的人比较喜欢用，主要是用来弱化直球攻击话语的攻击性的",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "和龙图差不多，一开始是纯粹人身攻击，传播过程中和网上奇怪的东西合流形成的独特亚文化 该说不说，有些语录还蛮顺口的()",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "无论什么游戏都厌恶爆发型近战，喜欢拉扯型远程——对近身对抗有先天抵触感",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "由此衍生到一系列以婊气为卖点的亚文化梗,主要以女人撕逼扯头花为代表",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋门镇宗之宝，虽然这个其实另外一个事 其实就本土的114514吧?",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语是少数我从贴吧时代到现在看了十几年还在玩，但我一直都只看懂一点的梗",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋语使用者上下限差距极大,有能和顺直玩一起的,有能天天嘴里说冰柜的,只能说神经病很多很多,精神状态很美丽很女王。",
+      "reason": "blocked-generic",
+      "blocked": [
+        "女王"
+      ]
+    },
+    {
+      "kind": "quote",
+      "key": "觉得好玩用淋语玩梗的人,和真在淋圈里的人完全不同,后者大多是娘gay。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "淋学就是男酮平日里在自己圈子的黑话用语",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "因为网络平台的匿名性，男同性恋社群借由在网络上使用「淋语」来构建出对自身性向的认同感。",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "「基佬不一定说淋语,但说淋语的很可能是基佬」",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "吸吸，解解珍素努力噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "姐姐珍素努力惹",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "赛淋真的是这么多游戏里淋味最强的噜",
+      "reason": "no-match",
+      "blocked": []
+    },
+    {
+      "kind": "quote",
+      "key": "本可岁月静好",
+      "reason": "no-match",
+      "blocked": []
+    }
+  ],
+  "perHero": [
+    {
+      "hero": "淋淋",
+      "group": "real",
+      "cardsAdded": 8,
+      "quotesAdded": 18
+    },
+    {
+      "hero": "我华",
+      "group": "game",
+      "cardsAdded": 4,
+      "quotesAdded": 8
+    },
+    {
+      "hero": "阿狸",
+      "group": "game",
+      "cardsAdded": 6,
+      "quotesAdded": 3
+    },
+    {
+      "hero": "我泔",
+      "group": "game",
+      "cardsAdded": 3,
+      "quotesAdded": 3
+    },
+    {
+      "hero": "周阴婷",
+      "group": "real",
+      "cardsAdded": 3,
+      "quotesAdded": 3
+    },
+    {
+      "hero": "新酱爱追剧",
+      "group": "up",
+      "cardsAdded": 4,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "杯糕姐",
+      "group": "up",
+      "cardsAdded": 2,
+      "quotesAdded": 2
+    },
+    {
+      "hero": "卡尔玛",
+      "group": "game",
+      "cardsAdded": 3,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "李允珍",
+      "group": "game",
+      "cardsAdded": 3,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "FLY组合",
+      "group": "real",
+      "cardsAdded": 3,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "阿卡丽",
+      "group": "game",
+      "cardsAdded": 2,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "罗玉凤",
+      "group": "real",
+      "cardsAdded": 3,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "珊瑚宫心海",
+      "group": "game",
+      "cardsAdded": 3,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "薇恩",
+      "group": "game",
+      "cardsAdded": 3,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "佐伊",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 2
+    },
+    {
+      "hero": "本吧英雄绰号大科普",
+      "group": "up",
+      "cardsAdded": 2,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "初武",
+      "group": "up",
+      "cardsAdded": 2,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "何老师",
+      "group": "real",
+      "cardsAdded": 1,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "孙尚香",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "我光",
+      "group": "game",
+      "cardsAdded": 2,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "我琴",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "大沙田鱼罐头",
+      "group": "other",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "貂蝉",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "凤敏",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "晦暗雨季",
+      "group": "up",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "金克丝",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "卡莎",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "拉比克",
+      "group": "game",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "雷电将军",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "米莱狄",
+      "group": "game",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "那艺娜",
+      "group": "real",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "娜美",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "琴女",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "萨勒芬妮",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "三梦奇缘",
+      "group": "real",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "上官婉儿",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "水蓝蓝",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "水烈鸟_ZZK",
+      "group": "up",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "斯琴低娃老师",
+      "group": "up",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "四乐化碳",
+      "group": "up",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "孙策",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "铁T成长",
+      "group": "other",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "万人迷",
+      "group": "real",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "我月",
+      "group": "other",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "我曌",
+      "group": "other",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "西施",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "杨玉环",
+      "group": "game",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "医生",
+      "group": "game",
+      "cardsAdded": 1,
+      "quotesAdded": 0
+    },
+    {
+      "hero": "英中啊英中",
+      "group": "real",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    },
+    {
+      "hero": "指南杰斯猫",
+      "group": "real",
+      "cardsAdded": 0,
+      "quotesAdded": 1
+    }
+  ]
+}

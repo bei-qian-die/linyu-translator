@@ -45,4 +45,14 @@ src/core/dist/
 src/renderer/vendor/
 src/renderer/core/
 src/renderer/mobile/
+
+# 本地媒体素材与选图中间产物（只属于本机；成品人物图在 src/renderer/img/，评审记录在 evidence/*.txt|md）
+luoke_linyu/
+tmp_libpage/
+release-1160/
+*.raw
+evidence/**/*.png
+evidence/**/*.jpg
+evidence/lexicon-cand1*.json
+evidence/slot-matrix*.json
 src/renderer/seed-data.js

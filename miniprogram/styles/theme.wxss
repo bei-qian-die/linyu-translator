@@ -1,0 +1,61 @@
+/* ============================================================
+   主题变量分区（C2）
+   页面根节点用 class="page theme-{{theme}}" 挂载：
+   .page 定义默认（白色 PAPER）变量，.theme-* 按主题整体覆盖。
+   变量清单：
+     --bg            页面底色          --ink       主文字
+     --muted         次级文字          --faint     弱化文字
+     --soft          按压/浅色底       --line      分隔线
+     --line-strong   强调分隔线        --accent    点缀色
+     --cta-bg        主按钮底色        --cta-fg    主按钮文字
+     --danger        危险色            --placeholder 占位符
+   组件内（styleIsolation: isolated）仍可经继承取到这些变量。
+   ============================================================ */
+
+/* ---- 默认主题：白 · PAPER ---- */
+.page {
+  --bg: #f7f5f1;
+  --ink: #141414;
+  --muted: #6d6861;
+  --faint: #746e65;
+  --soft: #efece6;
+  --line: rgba(20, 20, 20, 0.14);
+  --line-strong: rgba(20, 20, 20, 0.5);
+  --accent: #141414;
+  --cta-bg: #141414;
+  --cta-fg: #f7f5f1;
+  --danger: #a33232;
+  --placeholder: #746e65;
+}
+
+/* ---- 黑 · INK（夜间）---- */
+.theme-black {
+  --bg: #111112;
+  --ink: #f2efe9;
+  --muted: #99948b;
+  --faint: #8a857e;
+  --soft: #1c1c1f;
+  --line: rgba(242, 239, 233, 0.16);
+  --line-strong: rgba(242, 239, 233, 0.55);
+  --accent: #ff6f9c;
+  --cta-bg: #f2efe9;
+  --cta-fg: #111112;
+  --danger: #ff8b8b;
+  --placeholder: #8a857e;
+}
+
+/* ---- 玫 · ROSE ---- */
+.theme-rose {
+  --bg: #fbf2f3;
+  --ink: #2a1b20;
+  --muted: #7e5c66;
+  --faint: #8a6670;
+  --soft: #f4e6e9;
+  --line: rgba(42, 27, 32, 0.15);
+  --line-strong: rgba(42, 27, 32, 0.5);
+  --accent: #c2185b;
+  --cta-bg: #c2185b;
+  --cta-fg: #fff7f8;
+  --danger: #a3183f;
+  --placeholder: #8a6670;
+}

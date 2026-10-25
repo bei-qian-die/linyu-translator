@@ -1,0 +1,15 @@
+<view class="tabbar theme-{{theme}}">
+  <view
+    class="tab {{selected === index ? 'active' : ''}}"
+    wx:for="{{tabs}}"
+    wx:key="path"
+    data-path="{{item.path}}"
+    aria-role="button"
+    aria-label="{{item.label}}"
+    bindtap="onTabTap"
+  >
+    <view class="tab-icon icon-{{item.icon}}"></view>
+    <text class="tab-label">{{item.label}}</text>
+    <view class="tab-dot"></view>
+  </view>
+</view>

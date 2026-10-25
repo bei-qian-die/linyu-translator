@@ -71,7 +71,7 @@ async function api(url, referer) {
   }
 
   const stamp = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14);
-  const corpusFile = path.join(ROOT, `corpus-bili-${stamp}.txt`);
+  const corpusFile = path.join(ROOT, 'corpus', `corpus-bili-${stamp}.txt`);
   const manifestFile = path.join(OUT_DIR, `manifest-${stamp}.json`);
   const manifest = [];
   const out = [];
@@ -125,6 +125,7 @@ async function api(url, referer) {
     '# 全部来自 bilibili.com 公开接口，未使用任何账号 Cookie 或 API Key',
     '',
   ].join('\n');
+  fs.mkdirSync(path.dirname(corpusFile), { recursive: true });
   fs.writeFileSync(corpusFile, header + out.join('\n') + '\n', 'utf8');
   fs.writeFileSync(manifestFile, JSON.stringify(manifest, null, 2), 'utf8');
   fs.writeFileSync(path.join(ROOT, 'seen.json'), JSON.stringify([...seen]), 'utf8');

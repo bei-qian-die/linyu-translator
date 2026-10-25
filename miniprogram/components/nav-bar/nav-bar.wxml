@@ -1,0 +1,6 @@
+<view class="wx-nav" style="padding-top:{{statusBar}}px;height:{{navBarH}}px;">
+  <view class="brand">
+    <text class="brand-heart">♥</text>
+    <text class="brand-name">淋语翻译器</text>
+  </view>
+</view>

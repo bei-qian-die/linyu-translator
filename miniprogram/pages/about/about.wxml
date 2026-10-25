@@ -1,0 +1,113 @@
+<view class="page theme-{{theme}} page-custom-nav" style="padding-top:{{navTop}}px;">
+  <nav-bar status-bar="{{statusBar}}" nav-bar-h="{{navBarH}}" />
+
+  <view class="eyebrow">
+    <view class="eyebrow-left"><text>ABOUT</text><text class="eyebrow-mark">/</text><text>关于</text></view>
+    <text class="eyebrow-right">本机优先</text>
+  </view>
+
+  <view class="brand-lockup rise">
+    <text class="brand-heart">♥</text>
+    <text class="brand-name">淋语翻译器</text>
+  </view>
+  <view class="brand-slogan">把普通话，翻译成淋语。</view>
+  <view class="brand-version">微信小程序 · V{{version}}</view>
+
+  <view class="stats-bar">
+    <view class="stat" wx:for="{{stats}}" wx:key="label">
+      <text class="stat-num">{{item.num}}</text>
+      <text class="stat-label">{{item.label}}</text>
+    </view>
+  </view>
+
+  <view class="sec-head">
+    <text class="sec-title">外观</text>
+    <text class="sec-hint">三种语气</text>
+  </view>
+  <view class="theme-picker">
+    <view
+      class="theme-tile tile-{{item.key}} {{theme === item.key ? 'on' : ''}}"
+      wx:for="{{themes}}"
+      wx:key="key"
+      data-key="{{item.key}}"
+      aria-label="{{item.full}}主题"
+      bindtap="chooseTheme"
+    >
+      <text class="tile-mark">Aa</text>
+      <view class="tile-meta">
+        <text class="tile-label">{{item.label}}</text>
+        <text class="tile-en">{{item.en}}</text>
+      </view>
+      <text wx:if="{{theme === item.key}}" class="tile-check">✓</text>
+    </view>
+  </view>
+
+  <view class="sec-head">
+    <text class="sec-title">偏好</text>
+    <text class="sec-hint">本机生效</text>
+  </view>
+  <view class="setting-row">
+    <view class="setting-copy">
+      <view class="setting-name">实时预览</view>
+      <view class="setting-desc">输入时自动翻译，预览内容不写入历史</view>
+    </view>
+    <switch class="setting-switch" checked="{{live}}" color="{{switchColor}}" bindchange="onLiveChange" />
+  </view>
+
+  <view class="sec-head">
+    <text class="sec-title">数据与隐私</text>
+    <text class="sec-hint">写在明处</text>
+  </view>
+  <view class="promise-list">
+    <view class="promise">
+      <text class="promise-mark">✓</text>
+      <text class="promise-text">翻译全程在本机完成，不发起翻译网络请求，输入内容不会上传服务器。</text>
+    </view>
+    <view class="promise">
+      <text class="promise-mark">✓</text>
+      <text class="promise-text">历史记录只保存在微信本地存储，最多 {{historyLimit}} 条，当前 {{historyCount}} 条，可随时删除。</text>
+    </view>
+    <view class="promise">
+      <text class="promise-mark">✓</text>
+      <text class="promise-text">不申请手机号、位置、通讯录、相册等权限；仅在您主动点击复制 / 粘贴时读写本机剪贴板，内容不会上传；分享内容只包含你主动分享的文字。</text>
+    </view>
+  </view>
+
+  <view class="sec-head">
+    <text class="sec-title">内容说明</text>
+    <text class="sec-hint">仅供娱乐</text>
+  </view>
+  <view class="promise-list">
+    <view class="promise">
+      <text class="promise-mark">·</text>
+      <text class="promise-text">词库、句式、词卡、名言与人物资料整理自公开语料和网络梗，仅供娱乐交流。</text>
+    </view>
+    <view class="promise">
+      <text class="promise-mark">·</text>
+      <text class="promise-text">与所提及的艺人、游戏及平台无官方关联，内容不代表对其评价。</text>
+    </view>
+    <view class="promise">
+      <text class="promise-mark">·</text>
+      <text class="promise-text">翻译引擎与 PC / Android 版同源，使用同一份词库和句式，结果确定可复现。</text>
+    </view>
+    <view class="promise">
+      <text class="promise-mark">·</text>
+      <text class="promise-text">如内容涉及侵权，欢迎通过下方「意见反馈」联系删除。</text>
+    </view>
+  </view>
+
+  <view class="about-actions">
+    <button class="ghost-action" open-type="share">分享给好友</button>
+    <button class="ghost-action" open-type="feedback">意见反馈</button>
+  </view>
+
+  <view class="clear-row">
+    <text class="clear-link" bindtap="clearAll">清除历史与偏好设置</text>
+  </view>
+
+  <view wx:if="{{perf}}" class="perf-row">
+    <text class="perf-text">本会话已翻译 {{perf.count}} 次 · 平均 {{perf.avg}}ms · P50 {{perf.p50}}ms · P95 {{perf.p95}}ms</text>
+  </view>
+
+  <view class="about-foot">零广告 · 零账号 · 零上传<br />致敬每一份认真玩梗的快乐 <text class="foot-heart">♥</text></view>
+</view>
