@@ -56,3 +56,6 @@ evidence/**/*.jpg
 evidence/lexicon-cand1*.json
 evidence/slot-matrix*.json
 src/renderer/seed-data.js
+
+# Web 静态站产物（npm run web:build 生成）
+www-web/

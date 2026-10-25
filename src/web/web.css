@@ -1,0 +1,66 @@
+/*
+ * 持久化警告条（Web 端 IndexedDB 不可用时显示）
+ *
+ * 这个 CSS 片段被注入到 www-web/index.html 中（构建期从 build-web.mjs 注入，
+ * 或手动添加到 style.css 末尾），只在 Web 构建产物中生效。
+ *
+ * body.persistence-fallback #persistence-warning 由 webEntry.js 在检测到
+ * IndexedDB 不可用时设置。
+ */
+
+.persistence-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #856404;
+  background: #fff3cd;
+  border-bottom: 1px solid #ffc107;
+}
+
+.persistence-warning span {
+  flex: 1;
+  text-align: center;
+}
+
+.pw-dismiss {
+  border: 1px solid #856404;
+  background: transparent;
+  color: #856404;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pw-dismiss:hover {
+  background: #856404;
+  color: #fff;
+}
+
+body.persistence-fallback #persistence-warning {
+  display: flex;
+}
+
+/* Web 端 body 高度覆盖：不是 Electron 的固定窗口，允许页面自然滚动 */
+body.web-app {
+  height: auto;
+  overflow: auto;
+}
+
+body.web-app #app {
+  height: auto;
+  min-height: 100dvh;
+}
+
+body.web-app .content {
+  overflow: visible;
+}
+
+body.web-app .table-wrap {
+  max-height: none;
+  overflow: visible;
+}

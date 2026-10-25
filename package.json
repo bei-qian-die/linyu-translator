@@ -21,6 +21,7 @@
     "test:weapp": "node test/weapp.test.js",
     "verify:weapp": "node test/weapp.test.js",
     "lint": "eslint src scripts test miniprogram",
+    "web:build": "node scripts/build-web.mjs",
     "lint:fix": "eslint src scripts test miniprogram --fix",
     "format": "prettier --write \"src/**/*.{js,css,html}\" \"scripts/**/*.js\" \"test/**/*.js\"",
     "typecheck": "tsc -p jsconfig.json",
