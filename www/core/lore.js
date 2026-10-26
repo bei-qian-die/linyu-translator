@@ -711,6 +711,7 @@ const extra13 = (typeof require === 'function') ? require('./lore-extra13') : (t
 const extra14 = (typeof require === 'function') ? require('./lore-extra14') : (typeof window !== 'undefined' ? window.LORE_EXTRA14 : {});
 const extra15 = (typeof require === 'function') ? require('./lore-extra15') : (typeof window !== 'undefined' ? window.LORE_EXTRA15 : {});
 const extra16 = (typeof require === 'function') ? require('./lore-extra16') : (typeof window !== 'undefined' ? window.LORE_EXTRA16 : {});
+const extra18 = (typeof require === 'function') ? require('./lore-extra18') : (typeof window !== 'undefined' ? window.LORE_EXTRA18 : {});
 
 const keep = (arr, key, drop) => (drop && drop.length ? arr.filter((x) => !drop.includes(x[key])) : arr);
 
@@ -754,7 +755,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards),
     'term',
     dropCards
   ),
@@ -762,7 +763,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -770,7 +771,7 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes),
     'text',
     dropQuotes
   ),
@@ -858,9 +859,11 @@ applyQuoteMerge(allQuotes, extra13.quoteMerge);
 applyQuoteMerge(allQuotes, extra14.quoteMerge);
 applyQuoteMerge(allQuotes, extra15.quoteMerge);
 applyQuoteMerge(allQuotes, extra16.quoteMerge);
+applyQuoteMerge(allQuotes, extra18.quoteMerge);
 applyHeroMerge(allHeroes, extra14.heroMerge);
 applyHeroMerge(allHeroes, extra15.heroMerge);
 applyHeroMerge(allHeroes, extra16.heroMerge);
+applyHeroMerge(allHeroes, extra18.heroMerge);
 
 // 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
 // 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。

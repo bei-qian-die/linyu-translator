@@ -2473,7 +2473,9 @@ window.__SEED_DATA = {
       "linyu": "第五淋格",
       "slot": "第五淋格/分区",
       "pop": "低",
-      "sense": "分区名：人格→淋格（关键词表：洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格）。"
+      "sense": "分区名：人格→淋格（关键词表：洛克淋国, 英雄淋盟, 王者淋耀, 第五淋格）。",
+      "alias": "吊五、第五人格这妖精游戏",
+      "source": "https://www.bilibili.com/video/BV1s6hNzJEnP"
     },
     {
       "zh": "原神",
@@ -5430,7 +5432,7 @@ window.__SEED_DATA = {
     {
       "zh": "医生",
       "linyu": "尖叫婆",
-      "alias": "尖叫婆、医生、艾米丽",
+      "alias": "尖叫婆、医生、艾米丽、医咒",
       "slot": "第五淋格",
       "sense": "被击中或击倒时会发出全场可听的尖叫，故名尖叫婆。",
       "source": "https://www.douban.com/group/topic/148957880/",
@@ -5472,7 +5474,7 @@ window.__SEED_DATA = {
     {
       "zh": "祭司",
       "linyu": "井盖娘",
-      "alias": "井盖娘、祭司、菲欧娜",
+      "alias": "井盖娘、祭司、菲欧娜、三洞",
       "slot": "第五淋格",
       "sense": "泛用/待确认：井盖娘是第五人格圈通用外号（穿墙洞像地铁逃票）。",
       "source": "https://www.sosocq.com/zixun/60424.html",
@@ -13748,9 +13750,1599 @@ window.__SEED_DATA = {
       "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
       "pop": "低",
       "rel": []
+    },
+    {
+      "zh": "欧利蒂丝庄园",
+      "linyu": "庄园",
+      "alias": "欧利蒂丝庄园",
+      "slot": "第五淋格/分区",
+      "sense": "对局地图的统称，也是全游戏的世界观舞台；玩家口语里几乎只说「庄园」。",
+      "source": "https://www.bilibili.com/video/BV12Bnt6kEzX",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "庄园主",
+      "linyu": "庄园主大人",
+      "alias": "庄园主爸爸",
+      "slot": "第五淋格/求生者位分",
+      "sense": "把游戏官方（策划／运营）喊成「庄园主」，配「大人／爸爸」是求生式求饶语气。",
+      "source": "https://www.bilibili.com/video/BV1NCHw6ME91",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "监管者",
+      "linyu": "屠夫",
+      "alias": "屠、监管者",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "监管者阵营的通用叫法，从黎明杀机一路沿用；单字「屠」更常用于组合（屠皇／屠榜）。",
+      "source": "https://www.bilibili.com/video/BV1NCHw6ME91",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "求生者",
+      "linyu": "人类",
+      "alias": "求生者",
+      "slot": "第五淋格/求生者位分",
+      "sense": "求生者阵营的简称，「人类」比「求生者」更口语，常出现在赛事解说与弹幕。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "第五人格玩家的精神状态",
+      "linyu": "第五人格玩家的精神状态",
+      "alias": "精神状态、这妖精游戏",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "形容玩久了之后行为失常的自嘲梗，弹幕标配「这就是第五人格玩家的精神状态」。",
+      "source": "https://www.bilibili.com/video/BV12Bnt6kEzX",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "红蝶",
+      "linyu": "我蝶",
+      "alias": "蝶、红蝶",
+      "slot": "第五淋格/第五角色",
+      "sense": "监管者美智子的淋名，「我＋蝶」是人称式爱称，配套说法「我蝶蝶美心善」。",
+      "source": "https://www.bilibili.com/video/BV1s6hNzJEnP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "杰克",
+      "linyu": "你杰",
+      "alias": "杰克、杰克船长",
+      "slot": "第五淋格/第五角色",
+      "sense": "监管者杰克的第三人称淋化叫法，「你杰」用于吐槽其强度常青（「你杰还不削弱」）。",
+      "source": "https://www.bilibili.com/video/BV1NCHw6ME91",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "盲女",
+      "linyu": "你盲",
+      "alias": "盲人、盲杖",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者海伦娜的第三人称淋化叫法；配套梗「我是盲人，请问这是第五人格吗」用来装瞎。",
+      "source": "https://www.bilibili.com/video/BV1NCHw6ME91",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "佣兵",
+      "linyu": "奈布",
+      "alias": "",
+      "slot": "第五淋格/第五角色",
+      "sense": "直接叫本名「奈布」，比「佣兵」更亲昵，是第五淋格整活视频的固定主角之一。",
+      "source": "https://www.bilibili.com/video/BV1TrmNB2Evv",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大副",
+      "linyu": "大副",
+      "alias": "摇表",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者何塞·巴登；因其怀表技能被叫「摇表」，「大副摇表会取消凝视」是圈内冷知识。",
+      "source": "https://www.bilibili.com/video/BV1aMb56NE46",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "鹿头",
+      "linyu": "鹿头",
+      "alias": "",
+      "slot": "第五淋格/第五角色",
+      "sense": "监管者班恩；共研服调整时「身体变瘦不再阻挡求生者」是经典弹幕梗。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "宿伞之魂",
+      "linyu": "宿伞",
+      "alias": "宿伞之魂",
+      "slot": "第五淋格/第五角色",
+      "sense": "监管者谢必安／范无咎的简称，双形态换了名字也换了打法，玩家只用「宿伞」两个字。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "机械师",
+      "linyu": "机械",
+      "alias": "机械师",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者特蕾西，两字简称「机械」；「机械师心理」是双救人位的固定搭配说法。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "愚人金",
+      "linyu": "愚人金",
+      "alias": "",
+      "slot": "第五淋格/第五角色",
+      "sense": "监管者，因机制像「假金皮」得名；老玩家点位讨论里的常驻名字。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "时空之影",
+      "linyu": "时空之影",
+      "alias": "时空之鹿",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "监管者，弹幕报菜名式点名「监管者是时空之影」；鹿头版本会被戏称「时空之鹿」。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "喧嚣",
+      "linyu": "喧嚣",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "监管者，因技能噪音吵得出名；弹幕常用「监管者是喧嚣」做吐槽弹幕。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "舞女",
+      "linyu": "排位淋舞Queen",
+      "alias": "舞女",
+      "slot": "第五淋格/求生者位分",
+      "sense": "把舞女封成「淋舞Queen」，是第五淋格整活标题的固定称号，配「打扮打扮又出来 slay 噜」。",
+      "source": "https://www.bilibili.com/video/BV1XW3i6QEbu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "黄占",
+      "linyu": "黄占",
+      "alias": "",
+      "slot": "第五淋格/第五角色",
+      "sense": "「黄衣之主＋占卜师」的配对缩写，整活视频标题会标「内含黄占」提示观众。",
+      "source": "https://www.bilibili.com/video/BV1TrmNB2Evv",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "杂技演员",
+      "linyu": "杂技",
+      "alias": "杂技演员",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者麦克，两字简称「杂技」；讨论加强时会被拿来和斗牛比强度。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "心理学家",
+      "linyu": "心理",
+      "alias": "心理学家",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者艾达，两字简称「心理」；与机械师并称「机械师心理」的双辅组合。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "调酒师",
+      "linyu": "大爹调酒师",
+      "alias": "调酒师",
+      "slot": "第五淋格/第五角色",
+      "sense": "调酒师因为能快速补状态被喊「大爹」，语境是「有大爹调酒师，外面状态随便补」。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "勘探员",
+      "linyu": "勘探员",
+      "alias": "诺顿",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者诺顿·坎贝尔；「为了赚钱，勘探员豁出去了」是第五隐晦投稿的固定标题。",
+      "source": "https://www.bilibili.com/video/BV19JvgeYE3t",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "空军",
+      "linyu": "空军",
+      "alias": "",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者玛尔塔，因信号枪救人被反复讨论「事后枪」值不值。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "前锋",
+      "linyu": "前锋",
+      "alias": "威廉",
+      "slot": "第五淋格/第五角色",
+      "sense": "求生者威廉·艾利斯，救人位；「前锋救次人还要魔术和幻灯保」是排位吐槽。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "咒术师",
+      "linyu": "医咒",
+      "alias": "咒术师",
+      "slot": "第五淋格/第五角色",
+      "sense": "与医生绑定的双人组合简称，排位复盘里几乎不单独出现。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "雕刻家",
+      "linyu": "雕刻家",
+      "alias": "",
+      "slot": "第五淋格/第五角色",
+      "sense": "监管者伽拉泰亚，雕像封路是其招牌；「雕刻家美美的」是皮肤向视频的常见标题。",
+      "source": "https://www.bilibili.com/video/BV1NCHw6ME91",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "密码机",
+      "linyu": "密码机",
+      "alias": "电机、压机、乱压机",
+      "slot": "第五淋格/庄园术语",
+      "sense": "对局核心目标物，口语多叫「电机」；「乱压机」指不按节奏硬修，是调解庭高频罪状。",
+      "source": "https://www.bilibili.com/video/BV1igPezEEpV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "地窖",
+      "linyu": "地窖",
+      "alias": "窖皇",
+      "slot": "第五淋格/庄园术语",
+      "sense": "最后的逃生口；「窖皇」专指蹲地窖不救人的玩家，「开地窖也素淡淡的」是嘲讽其从容。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "狂欢之椅",
+      "linyu": "狂欢之椅",
+      "alias": "地下室",
+      "slot": "第五淋格/庄园术语",
+      "sense": "求生者被绑的椅子；「死的时候像第五人格地下室狂欢之椅」是跨圈吐槽弹幕。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大门通电",
+      "linyu": "大门通电",
+      "alias": "开门战",
+      "slot": "第五淋格/庄园术语",
+      "sense": "修完机后大门可开的瞬间，伴随标志性警报声，是分辨「玩不玩第五」的听觉暗号。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "挽留",
+      "linyu": "挽留",
+      "alias": "底牌、张狂",
+      "slot": "第五淋格/庄园术语",
+      "sense": "监管者天赋，开门战翻盘核心；「张狂底牌都用过了，这还能不知道没挽留吗」是斗智台词。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "摇表",
+      "linyu": "摇表",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "大副的怀表技能；「只有大副摇表会取消凝视」是圈内热知识，也用来判断谁会玩。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "凝视",
+      "linyu": "凝视",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "监管者的锁定机制；「摇表都能取消凝视」是操作细节梗，讨论度极高。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "打洞",
+      "linyu": "打洞",
+      "alias": "三洞",
+      "slot": "第五淋格/庄园术语",
+      "sense": "祭司开通道的动作；「玩祭司玩久了就习惯撞墙了」是打洞依赖症的自嘲。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "点位",
+      "linyu": "点位",
+      "alias": "经典点位",
+      "slot": "第五淋格/庄园术语",
+      "sense": "固定的溜鬼／卡位位置；「这个不是杰克经典点位吗」是老玩家身份暗号。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "翻窗",
+      "linyu": "翻窗",
+      "alias": "震慑",
+      "slot": "第五淋格/庄园术语",
+      "sense": "基础位移动作，翻窗瞬间被打叫「震慑」；「直接翻窗被打震慑吗」是教学里的反面案例。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "板子",
+      "linyu": "踩板",
+      "alias": "板子、不下板",
+      "slot": "第五淋格/庄园术语",
+      "sense": "木板机制；「求生者也不能踩板」提醒人类不能主动踩板，「那个板子到底为什么不下」是弹幕质问。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "牵制",
+      "linyu": "牵制",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "拖住监管者给队友争取时间；「我们仨牵制 300+」是排位复盘里的炫耀句。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "秒倒",
+      "linyu": "秒倒",
+      "alias": "入口即化",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "开局数十秒内倒地；「求生入口即化」是秒倒的夸张说法，赛事集锦标题常用。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "救人",
+      "linyu": "救人",
+      "alias": "救人位、救次人",
+      "slot": "第五淋格/庄园术语",
+      "sense": "从椅子／地下室把队友救下来；「假装救人实则偷偷逃离监管和队友」是整活玩法。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "守椅",
+      "linyu": "守椅",
+      "alias": "守尸",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "监管者守着椅子等救援；「庄园主不守椅吗」是弹幕对屠夫不守椅的嘲讽。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "溜鬼",
+      "linyu": "溜",
+      "alias": "溜挺好、溜走",
+      "slot": "第五淋格/庄园术语",
+      "sense": "带着监管者绕圈跑；「前面都溜挺好」后面一定接一句翻车评价。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "贴门",
+      "linyu": "贴门",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "开门战提前站到门口准备逃，是复盘时判断意识好坏的分水岭。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "排地下室",
+      "linyu": "排地下室",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "提前去地下室探路／排点；「没第一时间去排地下室问题很大」是赛后分锅的经典句。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "爆点",
+      "linyu": "爆点",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "暴露位置给监管者，属于低级失误，常和「送」「秒倒」并列出现。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "道具",
+      "linyu": "贪道具",
+      "alias": "乱压机",
+      "slot": "第五淋格/庄园术语",
+      "sense": "「贪道具」指为了多拿一件箱子道具拖慢节奏，是调解庭节目里的头号罪状。",
+      "source": "https://www.bilibili.com/video/BV1igPezEEpV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "压机",
+      "linyu": "乱压机",
+      "alias": "压机",
+      "slot": "第五淋格/庄园术语",
+      "sense": "不按最后一人节奏硬修电机，导致开门战被打崩；与「贪道具」并列为排位两大罪。",
+      "source": "https://www.bilibili.com/video/BV1igPezEEpV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "人皇",
+      "linyu": "人皇",
+      "alias": "人皇步",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "顶尖求生者玩家；「人皇步」指高级走位，跨游戏通用（黎明杀机同源）。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "屠皇",
+      "linyu": "屠皇",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "顶尖监管者玩家；「季后赛还是需要老屠皇来兜底」是赛事解说的标准句。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "老玩家",
+      "linyu": "老玩家",
+      "alias": "老手",
+      "slot": "第五淋格/庄园术语",
+      "sense": "身份暗号，通常后面接「基本上都知道吧」来压新人。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "固排",
+      "linyu": "固排",
+      "alias": "车队",
+      "slot": "第五淋格/庄园术语",
+      "sense": "固定排位队友；「我的好固排佣兵giegie」是排位复盘里的亲昵称呼。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "开黑",
+      "linyu": "开黑",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "组队开语音打排位，与「固排」互为上下游关系。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "挂机",
+      "linyu": "挂机",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "人不在电脑前，角色原地不动；排位里挂机等同送分。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "演员",
+      "linyu": "演员",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "故意演输的队友；「一流的演员」是反讽弹幕。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "平局",
+      "linyu": "平局",
+      "alias": "加赛",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "赛事常见结果；「全是平局和加赛很无聊」会被弹幕反过来吐槽。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "男宠",
+      "linyu": "男宠",
+      "alias": "黑袜男宠",
+      "slot": "第五淋格/求生者位分",
+      "sense": "第五淋格对男性角色的位分式称呼，「黑袜男宠」是固定搭配（如「黑袜男宠夜来香」）。",
+      "source": "https://www.bilibili.com/video/BV1HkwWzfEss",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "女特务",
+      "linyu": "女特务",
+      "alias": "",
+      "slot": "第五淋格/求生者位分",
+      "sense": "对女性角色的调侃位分，源头是整活标题「【第五淋格】女特务初试云雨情」。",
+      "source": "https://www.bilibili.com/video/BV1Yhpy6gE33",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "红杉木女士",
+      "linyu": "红杉木女士",
+      "alias": "红杉木批发商",
+      "slot": "第五淋格/求生者位分",
+      "sense": "把某个角色调侃成卖红杉木的女士，是「位分＋职业」式命名的极端样本。",
+      "source": "https://www.bilibili.com/video/BV1HkwWzfEss",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "莓莓小姐",
+      "linyu": "莓莓小姐",
+      "alias": "",
+      "slot": "第五淋格/求生者位分",
+      "sense": "整活标题「请叫我莓莓小姐」造出的自称，配套「小姐」位分体系。",
+      "source": "https://www.bilibili.com/video/BV19agi6pE8X",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "淋人金",
+      "linyu": "淋人金Daddy",
+      "alias": "淋人金",
+      "slot": "第五淋格/求生者位分",
+      "sense": "「猎人金」的淋化写法，加 Daddy 后缀表示仰望式迷恋。",
+      "source": "https://www.bilibili.com/video/BV1HkwWzfEss",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "尖叫婆",
+      "linyu": "尖叫婆",
+      "alias": "",
+      "slot": "第五淋格/求生者位分",
+      "sense": "对会尖叫／声音尖的角色或玩家的贬称，「尖叫婆玩尖叫婆，本体出现」是神来弹幕。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "护士长",
+      "linyu": "护士长",
+      "alias": "",
+      "slot": "第五淋格/求生者位分",
+      "sense": "对医护类角色的位分式叫法，「求生者里混进来了个护士长」是串台弹幕。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "麦子",
+      "linyu": "脚刹麦子",
+      "alias": "麦子",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "「脚刹」＋具体对象构成的动宾梗，麦子是被脚刹的常客，句式可套任意角色。",
+      "source": "https://www.bilibili.com/video/BV1HkwWzfEss",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "金皮",
+      "linyu": "金皮",
+      "alias": "限定金",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "最高稀有度时装；「紫皮都挺不错的，金皮……额」是玩家对金皮的经典失望句。",
+      "source": "https://www.bilibili.com/video/BV1CgnR62E4u",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "紫皮",
+      "linyu": "紫皮",
+      "alias": "",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "次高稀有度时装，性价比口碑通常好于金皮。",
+      "source": "https://www.bilibili.com/video/BV1CgnR62E4u",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "回声",
+      "linyu": "回声皮",
+      "alias": "回声",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "用付费货币「回声」买的时装；「回声皮真的出的太多了」是氪金玩家的疲倦感叹。",
+      "source": "https://www.bilibili.com/video/BV1CgnR62E4u",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "碎片",
+      "linyu": "碎片",
+      "alias": "",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "免费兑换货币，「找客服换是皮肤，这是碎片」是分辨福利真假的对话。",
+      "source": "https://www.bilibili.com/video/BV1CgnR62E4u",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "演绎之星",
+      "linyu": "演绎之星",
+      "alias": "",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "玩家投票产出的时装系列，分紫皮／金皮两轮，投过的角色次年不再参选。",
+      "source": "https://www.bilibili.com/video/BV1CgnR62E4u",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "玄学抽卡",
+      "linyu": "玄学抽卡",
+      "alias": "吉时",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "按黄历挑「吉时」再抽，属自欺式仪式感，「吉时：亥时」是标题固定格式。",
+      "source": "https://www.bilibili.com/video/BV1PQnR6UE54",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "二限",
+      "linyu": "二限",
+      "alias": "医生二限",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "角色的第二款限定皮，「医生二限 野草莓」是抽卡视频的标准命名法。",
+      "source": "https://www.bilibili.com/video/BV1PQnR6UE54",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "虚妄",
+      "linyu": "虚妄",
+      "alias": "虚妄回声皮",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "最高档时装前缀，「虚妄回声皮限定金我都有了」是氪金毕业宣言。",
+      "source": "https://www.bilibili.com/video/BV1CgnR62E4u",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "女团皮",
+      "linyu": "女团皮",
+      "alias": "女团",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "官方 PerVade 女团联动的系列皮肤，「女团皮究竟擦边了吗」是争议话题标题。",
+      "source": "https://www.bilibili.com/video/BV1bZn96REG7",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "归宿",
+      "linyu": "归宿照",
+      "alias": "",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "家园系统里的摆拍截图，「挑战归宿照自动配音」是把摆拍做成节目的玩法。",
+      "source": "https://www.bilibili.com/video/BV1DdH562EPK",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "挂件",
+      "linyu": "挂件",
+      "alias": "",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "随身装饰道具；「这挂件的特效也是挺阴的」是弹幕对特效的评价。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "IVL",
+      "linyu": "IVL",
+      "alias": "秋季赛",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "第五人格职业联赛；「IVL 秋季赛 TOP 级别的秒倒」是集锦标题模板。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "季后赛",
+      "linyu": "季后赛",
+      "alias": "",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "联赛后半程淘汰赛，解说常用「需要老屠皇来兜底」形容其强度。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "排位",
+      "linyu": "排位",
+      "alias": "排位赛",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "天梯模式，一切黑话的诞生地；「排位淋舞Queen」直接把排位写进称号。",
+      "source": "https://www.bilibili.com/video/BV1XW3i6QEbu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "段位",
+      "linyu": "段位",
+      "alias": "",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "天梯等级；「拉低了老郭的段位」是把段位当身份贬损的用法。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "盲杖",
+      "linyu": "你带了那根盲杖",
+      "alias": "盲杖",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "整活标题原句，用「盲杖」双关盲女与装瞎，是第五淋格标题体的代表作。",
+      "source": "https://www.bilibili.com/video/BV1XW3i6QEbu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "入口即化",
+      "linyu": "入口即化",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "形容求生者秒倒，把「倒地」说成食物入口即化，是第五淋格最出圈的一句。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "干材烈火",
+      "linyu": "干材烈火",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "「干柴烈火」的故意错写（材代柴），配「之后是肾的不满」构成整活标题。",
+      "source": "https://www.bilibili.com/video/BV1HkwWzfEss",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "林檎",
+      "linyu": "林檎",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "日文「苹果」的写法，被整活视频用作重生人设名，「重生成体育生的林檎」即标题。",
+      "source": "https://www.bilibili.com/video/BV1vE421j71B",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "淡淡的",
+      "linyu": "淡淡的",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "形容极度从容甚至冷漠，「我珍开地窖也素淡淡的」用来骂不救人的队友。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "是可以说的吗",
+      "linyu": "是可以说的嘛",
+      "alias": "是可以说的吗",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "淋语经典收尾问句，用在爆料或吐槽句末，表示「我说了会不会被打」。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "恩情",
+      "linyu": "天大地大不如第五人格恩情大",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "反讽式感恩句，多用于官方发福利或作妖时的对比调侃。",
+      "source": "https://www.bilibili.com/video/BV12Bnt6kEzX",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "七宗罪",
+      "linyu": "第五人格七宗罪",
+      "alias": "贪婪",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "把玩家行为做成罪状系列，「七宗罪之贪婪」是省道具／抢道具的节目名。",
+      "source": "https://www.bilibili.com/video/BV1fFnd6GEhC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "前瞻",
+      "linyu": "前瞻",
+      "alias": "",
+      "slot": "第五淋格/庄园赛事",
+      "sense": "官方版本预告直播；「10.23 前瞻」这类标题后面必跟「钱包要被五宝掏空了」。",
+      "source": "https://www.bilibili.com/video/BV1Dxnt6DE2Q",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "催排期",
+      "linyu": "催排期",
+      "alias": "",
+      "slot": "第五淋格/庄园皮肤术语",
+      "sense": "催官方把角色／皮肤排进日程，「第五催排期的后果」是反向整活标题。",
+      "source": "https://www.bilibili.com/video/BV1fAnd6gEaY",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "调马师",
+      "linyu": "调马师",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "「调香师」的降格谐音（香→马），弹幕「怎么还有第五人格调马师」即此梗。",
+      "source": "https://www.bilibili.com/video/BV1igPezEEpV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "助眠",
+      "linyu": "第五助眠",
+      "alias": "助眠版",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "把游戏音效做成 ASMR 的分支赛道，「超长版沉浸式玩渔女哄你睡觉」是代表标题。",
+      "source": "https://www.bilibili.com/video/BV1dcotByENZ",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "调解庭",
+      "linyu": "第五调解庭",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "赛后分锅节目名，「看看这把排位谁的问题最大」是其固定开场。",
+      "source": "https://www.bilibili.com/video/BV1igPezEEpV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "赛后分锅",
+      "linyu": "谁的问题最大",
+      "alias": "分锅",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "打完排位复盘归罪，是第五人格社区最持久的娱乐方式。",
+      "source": "https://www.bilibili.com/video/BV1igPezEEpV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "这套路数",
+      "linyu": "大搞错眼儿时代",
+      "alias": "",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "形容当前版本全是套路与错眼打法，标题化写法带「时代」后缀。",
+      "source": "https://www.bilibili.com/video/BV1xTnR6SENo",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "八音盒",
+      "linyu": "八音盒",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "舞女的随身道具，放音乐减速监管者；箱子清单里的头一项。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "虫群",
+      "linyu": "虫群",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "昆虫学者的道具，放虫群挡住监管者视线与路径。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "画板",
+      "linyu": "画板",
+      "alias": "画版",
+      "slot": "第五淋格/庄园术语",
+      "sense": "画家的道具，靠画板记录与回溯走位。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "棒球",
+      "linyu": "棒球",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "击球手的道具，可以击飞监管者救人，也能反打。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "火箭",
+      "linyu": "火箭",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "箱子清单里的高频道具，常与「喷气背包」并列出现。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "机关萧",
+      "linyu": "机关萧",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "古董商的笛类道具（箫在圈内多写作「萧」），能推开监管者。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "奥菲",
+      "linyu": "奥菲",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "小说家／记者的召唤物，箱子清单常客。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "喷气背包",
+      "linyu": "喷气背包",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "位移类道具，用一次就能拉开身位，属「不可再生所以要珍惜」的典型。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "气囊",
+      "linyu": "气囊",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "放置类道具，用来挡刀或卡位，与头盔、气象瓶并列出现在清单里。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "头盔",
+      "linyu": "头盔",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "防护类道具，吃一次伤害不掉状态，属最实用的保命件。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "气象瓶",
+      "linyu": "气象瓶",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "气象学家的道具，改天气影响移速与视线。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "龙骨弓",
+      "linyu": "龙骨弓",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "远程类道具，可以隔空打断监管者动作。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "烟炉",
+      "linyu": "烟炉",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "制造烟雾遮挡视野的道具，救人时用来断视线。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "甜蜜伞",
+      "linyu": "甜蜜伞",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "伞类道具，兼具位移与遮挡，是名字最不带攻击性的一件。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "老鼠伙伴",
+      "linyu": "老鼠伙伴",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "召唤类道具，放老鼠出来干扰监管者，是箱子清单的压轴项。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "箱子",
+      "linyu": "箱子",
+      "alias": "开箱",
+      "slot": "第五淋格/庄园术语",
+      "sense": "地图上的补给箱，「箱子里可以翻出……」后面能接一长串道具名，是排位复盘的名场面。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "爆蛋",
+      "linyu": "爆蛋",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "投掷类道具，落地爆炸并造成减速，名字自带喜感所以常被单独拿出来玩梗。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "拉仇恨",
+      "linyu": "拉仇恨",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "主动吸引监管者注意力给队友创造窗口，「快开门战拉仇恨」是复盘里的加分项。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "背锅",
+      "linyu": "背次锅",
+      "alias": "背锅",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "赛后分锅时被点名负责，加「次」是口语化写法（一次锅）。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "支棱",
+      "linyu": "支棱起来",
+      "alias": "支棱",
+      "slot": "第五淋格/圈层黑话",
+      "sense": "从萎靡状态中重新站起来，「后续完全支棱起来了」是复盘时给队友翻案的说法。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "事后枪",
+      "linyu": "事后枪",
+      "alias": "0收益事后枪",
+      "slot": "第五淋格/庄园术语",
+      "sense": "空军的信号枪放晚了、人已救完才开枪，等于零收益，是分锅时的经典罪状。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "软辅",
+      "linyu": "软辅",
+      "alias": "",
+      "slot": "第五淋格/求生者位分",
+      "sense": "偏辅助、不能硬刚的角色定位，讨论加强时常被拿来当强度标尺。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "出刀",
+      "linyu": "不能出刀",
+      "alias": "出刀",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "监管者挥刀的动作；「0.5S 不能出刀」是数值讨论里的关键控制时长。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "封技能",
+      "linyu": "封技能",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "让对手一段时间内用不出道具或技能，是火球类道具最值钱的效果。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "火球",
+      "linyu": "火球",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "杂技演员的球类道具之一，「一个火球出手 8S 封技能」是讨论其超标的原句。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "开门战",
+      "linyu": "开门战",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "大门通电后的最后阶段，胜负常在这一段翻盘，也是「拉仇恨」价值最高的时刻。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "卡位",
+      "linyu": "卡位",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "用身体或道具堵住必经路径，属基础但吃意识的动作。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "拉扯",
+      "linyu": "拉扯",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "双方互相试探距离，进一刀退一步，是高段位对局的常态。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "反跑",
+      "linyu": "反跑",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "故意朝反方向跑骗监管者出刀，配合「人皇步」是高级身法。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不下板",
+      "linyu": "不下板",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "明明该放板却不放，「那个板子到底为什么不下」是弹幕最常问的一句。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "军工厂",
+      "linyu": "军工厂",
+      "alias": "",
+      "slot": "第五淋格/分区",
+      "sense": "经典地图之一，板窗密集，是新人学溜鬼的第一张图。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "红教堂",
+      "linyu": "红教堂",
+      "alias": "",
+      "slot": "第五淋格/分区",
+      "sense": "经典地图，室内结构多、绕点强，适合拉扯。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "湖景村",
+      "linyu": "湖景村",
+      "alias": "",
+      "slot": "第五淋格/分区",
+      "sense": "野外视野开阔的地图，被遛时非常看视野判断。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "月亮河公园",
+      "linyu": "月亮河",
+      "alias": "",
+      "slot": "第五淋格/分区",
+      "sense": "带过山车与旋转木马的特色图，简称「月亮河」，跑图距离极长。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "雕像",
+      "linyu": "雕像",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "雕刻家的技能物，封路与切人全靠摆雕像，也是她强度的来源。",
+      "source": "https://www.bilibili.com/video/BV1NCHw6ME91",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "镜像",
+      "linyu": "镜像",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "摄影师的核心机制，把对局拖进镜像世界另开一局，是「双线操作」的代名词。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "分身",
+      "linyu": "分身",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "多个监管者的通用机制词，用来骗刀、卡位或双人夹击。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "陷阱",
+      "linyu": "陷阱",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "预先埋下的控制物，踩中即减速或受伤，属「阴」系打法。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "地刺",
+      "linyu": "地刺",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "地面陷阱的俗称，与「陷阱」同族但更强调踩上去的痛感。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蛛丝",
+      "linyu": "蛛丝",
+      "alias": "",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "蜘蛛的减速丝线，「踩蛛丝」是溜蜘蛛时最基础的操作细节。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "雾刃",
+      "linyu": "雾刃",
+      "alias": "小雾刃",
+      "slot": "第五淋格/监管者黑话",
+      "sense": "杰克的远程刀气，「手里有小雾刃」是老杰克玩家的口头禅。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "怀表",
+      "linyu": "怀表",
+      "alias": "",
+      "slot": "第五淋格/庄园术语",
+      "sense": "大副的标志性道具，「怀表」与「摇表」是同一件东西的两个动作阶段。",
+      "source": "https://www.bilibili.com/video/BV12PHL63EGP",
+      "pop": "低",
+      "rel": []
     }
   ],
   "rules": [
+    {
+      "pattern": "(?:^|(?<=[，。！？\\s]))【?第五淋格】?",
+      "template": "【第五淋格】{事件}",
+      "note": "分区招牌标题体：方括号包分区名，后面直接甩一句整活事件，不写主语。",
+      "scene": "视频标题",
+      "examples": "【第五淋格】你带了那根盲杖！；【第五淋格】淋人金Daddy脚刹麦子；【第五淋格】女特务初试云雨情",
+      "src": "https://www.bilibili.com/video/BV1Yhpy6gE33"
+    },
+    {
+      "pattern": "不是(?:你)?记忆中的(.+?)[，,].{0,6}(?:但)?.{0,8}(?:没两样|一样)",
+      "template": "不是你记忆中的{角色}，但致命的程度没两样",
+      "note": "先否定认知再补一句强度肯定，用来给冷门角色翻案。",
+      "scene": "视频标题",
+      "examples": "不是你记忆中的大副，但致命的程度没两样",
+      "src": "https://www.bilibili.com/video/BV1aMb56NE46"
+    },
+    {
+      "pattern": "(.{1,6})都素(我|你|他)(.{1,4})的",
+      "template": "{对象}都素{人称}{角色}的",
+      "note": "「都素…的」表归属宣告，用「素」代「是」，是淋语判断句的招牌。",
+      "scene": "视频标题",
+      "examples": "乌干达都素我蝶的！",
+      "src": "https://www.bilibili.com/video/BV1s6hNzJEnP"
+    },
+    {
+      "pattern": "(化身|变成).{1,8}与.{1,10}共同(脚刹|掌掴|处理)",
+      "template": "{角色A}化身{形态}与{角色B}共同{动作}{对象}",
+      "note": "把两个角色凑成组合再共同施加动作，越长越有效果，是第五淋格的头号构句法。",
+      "scene": "视频标题",
+      "examples": "凤蝶化身冰雪女王与黑袜男宠夜来香共同脚刹红杉木女士",
+      "src": "https://www.bilibili.com/video/BV1HkwWzfEss"
+    },
+    {
+      "pattern": "请叫我(.{1,8})",
+      "template": "请叫我{称号}",
+      "note": "自带位分宣告的自我介绍句，后面接「小姐／女士／Queen」一类的封号。",
+      "scene": "视频标题",
+      "examples": "请叫我莓莓小姐",
+      "src": "https://www.bilibili.com/video/BV19agi6pE8X"
+    },
+    {
+      "pattern": "排位(.{1,6})(Queen|queen|女王)",
+      "template": "排位{角色}Queen",
+      "note": "把段位与角色叠成封号，中英混写是淋语审美的一部分。",
+      "scene": "视频标题",
+      "examples": "排位淋舞Queen",
+      "src": "https://www.bilibili.com/video/BV1XW3i6QEbu"
+    },
+    {
+      "pattern": "监管者是(.{1,8})",
+      "template": "监管者是{角色}",
+      "note": "弹幕报菜名：看画面认屠夫，直接一句话点出来，属于最低成本的参与感。",
+      "scene": "弹幕",
+      "examples": "监管者是时空之影；监管者是喧嚣",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "监管者携带了(.{1,6})",
+      "template": "监管者携带了{天赋}",
+      "note": "系统提示语被当成弹幕梗复读，「携带了挽留」出现频率最高。",
+      "scene": "弹幕",
+      "examples": "监管者携带了挽留；监管者携带了挽留天赋",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "三洞不救人[，,].{0,4}我是(.{1,4})神",
+      "template": "三洞不救人，我是{角色}神",
+      "note": "先摆烂再自封，是第五淋格最典型的自我加冕句式。",
+      "scene": "弹幕",
+      "examples": "三洞不救人，我是祭司神",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "我是盲人[，,].{0,6}请问.{0,8}第五人格",
+      "template": "我是盲人，请问这是在玩第五人格吗",
+      "note": "装瞎式提问，用来提示画面像第五人格或暗示对方眼瞎。",
+      "scene": "弹幕",
+      "examples": "我是盲人，请问这是在玩第五人格吗；我是盲人，请问视频里面的是第五人格吗",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "这就是第五人格玩家的(.{2,6})",
+      "template": "这就是第五人格玩家的{状态}",
+      "note": "把离谱行为归因于「玩第五玩坏了」，是社区自嘲的通用收尾句。",
+      "scene": "弹幕",
+      "examples": "这就是第五人格玩家的精神状态",
+      "src": "https://www.bilibili.com/video/BV12Bnt6kEzX"
+    },
+    {
+      "pattern": "(.{1,8})玩家的精神状态",
+      "template": "{对象}玩家的精神状态",
+      "note": "同上前半段可换任意游戏名，属可产性句式。",
+      "scene": "弹幕",
+      "examples": "结果就是第五人格玩家的精神状态",
+      "src": "https://www.bilibili.com/video/BV12Bnt6kEzX"
+    },
+    {
+      "pattern": "有点像在玩(.{1,12})",
+      "template": "有点像在玩{游戏或场景}",
+      "note": "看到某画面就联想另一款游戏，是跨圈吐槽的固定开头。",
+      "scene": "弹幕",
+      "examples": "有点像在玩第五人格牵制潘丽娟",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "有点像(.{2,10})",
+      "template": "有点像{对象}",
+      "note": "弱化判断的类比句，不确定但很像，弹幕里出现频率极高。",
+      "scene": "弹幕",
+      "examples": "有点像红蝶",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "我服了(.{1,6})",
+      "template": "我服了{简称}",
+      "note": "认输式抱怨，「我服了吊五」是玩家对游戏的日常告白。",
+      "scene": "弹幕",
+      "examples": "我服了吊五",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "(.{1,10})是可以说的(吗|嘛)",
+      "template": "{内容}是可以说的嘛",
+      "note": "爆料式收尾问句，句末反问代替「我是不是说多了」。",
+      "scene": "评论",
+      "examples": "小时候玩只喜欢玩冰女帕克和尖叫婆是可以说的嘛",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "(不|别)?(掌掴|脚刹)(你|我|他)(.{1,4})",
+      "template": "{不}掌掴{人称}{对象}",
+      "note": "动宾＋人称的体罚式威胁，反问句「不掌掴你珍吗」最有效果。",
+      "scene": "评论",
+      "examples": "小阴铛看着你珍开地窖不掌掴你珍吗",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "(.{1,6})秒了",
+      "template": "{对象}秒了",
+      "note": "一个字收尾的最高评价，也可以是「把你秒了」，攻击性与夸赞共用。",
+      "scene": "弹幕",
+      "examples": "调香师秒了；螳螂姐惊鸿一舞直接把郭子秒了",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "我们(仨|四个|五个)?.{0,4}牵制(.{1,6})",
+      "template": "我们{人数}牵制{时长}",
+      "note": "排位复盘里的炫耀句，数字越大越有面子。",
+      "scene": "评论",
+      "examples": "我们仨牵制300+",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "只要(.{1,8})痛苦[，,].{0,4}所有人.{0,4}幸福",
+      "template": "只要{对象}痛苦，所有人{都}幸福",
+      "note": "把自己的快乐建立在别人痛苦上的自嘲句，句式可直接替换对象。",
+      "scene": "弹幕",
+      "examples": "只要枯阅痛苦，所有人幸福都没事",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "天大地大不如(.{1,12})恩情大",
+      "template": "天大地大不如{对象}恩情大",
+      "note": "反讽式感恩，用宏大排比去夸一个游戏，越郑重越好笑。",
+      "scene": "视频标题",
+      "examples": "天大地大不如第五人格恩情大",
+      "src": "https://www.bilibili.com/video/BV12Bnt6kEzX"
+    },
+    {
+      "pattern": "(.{1,10})都(抽|氪|买)了.{0,6}(毕业|毕业了)",
+      "template": "{系列}都抽了，{已经}毕业了",
+      "note": "氪金毕业宣言，前面必列一串皮肤名来证明「我真的都买了」。",
+      "scene": "评论",
+      "examples": "这四个选角虚妄回声皮限定金我都有了，早就毕业了",
+      "src": "https://www.bilibili.com/video/BV1CgnR62E4u"
+    },
+    {
+      "pattern": "(.{1,10})真的出的太多了",
+      "template": "{品类}真的出的太多了",
+      "note": "对官方出皮肤速度的疲倦式抱怨，标配「真的」加强语气。",
+      "scene": "评论",
+      "examples": "回声皮真的出的太多了",
+      "src": "https://www.bilibili.com/video/BV1CgnR62E4u"
+    },
+    {
+      "pattern": "毕竟(.{1,10})[，,].{0,6}很难(.{1,10})",
+      "template": "毕竟{条件}，很难{结果}",
+      "note": "看似讲道理的让步句，实际是阴阳，前后两截越不搭越好笑。",
+      "scene": "评论",
+      "examples": "毕竟年轻人皮肤紧致，很难有整容后遗症",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "假(装|扮)(.{1,8})(实则|其实)(.{1,10})",
+      "template": "假装{表面行为}实则{真实目的}",
+      "note": "先立人设再拆穿的对照句，用来曝光队友的真实操作。",
+      "scene": "弹幕",
+      "examples": "就这样假装救人实则偷偷逃离监管和队友",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "(.{1,6})不(守|救|修|开)(.{1,4})吗",
+      "template": "{主体}不{动作}{对象}吗",
+      "note": "反问式质问，句末「吗」带嘲讽，「庄园主不守椅吗」最经典。",
+      "scene": "弹幕",
+      "examples": "庄园主不守椅吗",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "这(个)?(不是|不就)(.{1,10})(吗|嘛)",
+      "template": "这个不是{对象}吗",
+      "note": "认出来之后的确认句，用来表现「这我熟」。",
+      "scene": "弹幕",
+      "examples": "这个不是杰克经典点位吗",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "(.{1,8})这(妖精|破|辣鸡|烂)游戏",
+      "template": "{对象}这妖精游戏",
+      "note": "用「妖精」代「垃圾」，骂得委婉又带点宠溺，是长期玩家的标准口吻。",
+      "scene": "视频标题",
+      "examples": "第五人格这妖精游戏能活到今天",
+      "src": "https://www.bilibili.com/video/BV12Bnt6kEzX"
+    },
+    {
+      "pattern": "我不行了.{0,12}",
+      "template": "我不行了{内容}",
+      "note": "「我不行了」是淋语里最万能的破防开场，后面接什么都成立，常配感叹号连打。",
+      "scene": "弹幕",
+      "examples": "我不行了第五人格怎么来了！；我不行了背景音乐还是第五人格",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
+    {
+      "pattern": "(.{1,6})玩久了就习惯(.{1,10})了",
+      "template": "{操作}玩久了就习惯{后果}了",
+      "note": "用老玩家的肌肉记忆自嘲，句式可直接换技能名。",
+      "scene": "弹幕",
+      "examples": "玩祭司玩久了就习惯撞墙了",
+      "src": "https://www.bilibili.com/video/BV12PHL63EGP"
+    },
     {
       "pattern": "(我|本可|本仙女|本人).{0,6}命(小|大).{0,4}(先)?鼠",
       "template": "{我}命小{我}先鼠",
@@ -16607,5 +18199,5 @@ window.__SEED_DATA = {
   ]
 }
 ;
-window.LINYU_VERSION = "1.21.1";
-window.LINYU_CONTENT_HASH = "5118ccbe393ee8fe";
+window.LINYU_VERSION = "1.22.0";
+window.LINYU_CONTENT_HASH = "5c73da8ab86887b4";
