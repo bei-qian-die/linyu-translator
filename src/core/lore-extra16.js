@@ -1,0 +1,3097 @@
+// @ts-check
+'use strict';
+// 第十六轮扩充（2026-10-26）：洛克淋国分区 新增词卡 49 条、名言 99 条、人物 43 位
+// （洛克王国精灵 / NPC / UP 主）+ 既有人物合并 5 条。
+// 生成器：scripts/apply-lore16.js（从 scripts/curated-lore16.js 全量重建，可安全重跑）。
+// 语录逐字摘自 corpus/corpus-bili-20261026114722.txt 与 corpus-bili-20261026115214.txt；
+// 人物配图为百度图库官方图 / 百度百科配图 / B 站 UP 头像（evidence/hero-images16.json，
+// 核验见 evidence/hero-images16-review.md），无 AI 图。待补图：可丽希亚、阿洛、加尔。
+
+const cards = [
+  {
+    term:  "布拉迪",
+    type:  "slang",
+    meaning:  "洛克淋国对男洛克／洛克玩家的自称，取自 Bradley 的空耳。",
+    detail:  "2026 年洛克淋国圈层把「男洛克」写成「布拉迪」，衍生出「布拉迪王国」「布拉迪大世界」「刷布拉迪」。女号不叫布拉迪，仍叫小洛克。",
+    example:  "来支持洛克淋国，布拉迪大世界惹",
+    source:  "B站《刷布拉迪猝亖转生成全世界唯一的灵？》系列标题＋评论区",
+    verify:  "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+    aliases:  [
+      "布拉迪哥哥",
+      "小布拉迪",
+      "布拉迪王国"
+    ],
+    rel:  [
+      "洛克淋国",
+      "男洛克"
+    ]
+  },
+  {
+    term:  "刷布拉迪",
+    type:  "slang",
+    meaning:  "刷洛克王国日常／刷本，配「猝亖」构成一套熬夜刷本梗。",
+    detail:  "刷布拉迪 ≈ 刷手游日常。系列视频标题把它写成「刷布拉迪猝亖转生成全世界唯一的灵」，于是「刷到猝亖」成了洛克淋国形容肝度的固定说法。",
+    example:  "亩灵熬夜刷布拉迪猝死前的幻想",
+    source:  "B站《刷布拉迪猝亖转生成全世界唯一的灵？》系列",
+    verify:  "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+    aliases:  [
+      "刷一天布拉迪"
+    ],
+    rel:  [
+      "布拉迪",
+      "猝亖"
+    ]
+  },
+  {
+    term:  "猝亖",
+    type:  "slang",
+    meaning:  "猝死的避讳写法，用「亖」代「死」。",
+    detail:  "「亖」与「死」同义，但视觉上更抽象，绕开平台审核；洛克淋国把它和「刷布拉迪」焊在一起。",
+    example:  "刷布拉迪猝亖转生成全世界唯一的灵",
+    source:  "B站《刷布拉迪猝亖转生成全世界唯一的灵？》",
+    verify:  "https://www.bilibili.com/video/BV1ybn96yELV",
+    aliases:  [
+      "亖了",
+      "亖"
+    ],
+    rel:  [
+      "刷布拉迪"
+    ]
+  },
+  {
+    term:  "法克王国",
+    type:  "meme",
+    meaning:  "《洛克王国》的恶搞叫法，fuck 的空耳。",
+    detail:  "B 站「【法克王国】」系列把这套叫法做成了固定栏目，内容多为页游老角色（佩西阿姨、格里芬）的淋语化再创作。",
+    example:  "【法克王国】我还是最喜欢佩西阿姨了",
+    source:  "B站「【法克王国】」系列",
+    verify:  "https://www.bilibili.com/video/BV1BL8M6FE3z",
+    aliases:  [
+      "法克"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  },
+  {
+    term:  "洛手",
+    type:  "slang",
+    meaning:  "《洛克王国：世界》手游的简称，与「页游」对举。",
+    detail:  "页游叫洛克王国，手游叫洛手。攻略标题常写「洛手 S5 赛季」，讨论版本强度时默认指手游。",
+    example:  "洛克王国手游里的多灵主有多超模？【洛克王国世界】",
+    source:  "B站《洛克王国手游里的多灵主有多超模？》",
+    verify:  "https://www.bilibili.com/video/BV1LgW2zeEPW",
+    aliases:  [
+      "洛克手游",
+      "洛克王国手游"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  },
+  {
+    term:  "洛批",
+    type:  "slang",
+    meaning:  "洛克王国玩家的自称，沿用「米批／粥批」的 -批 后缀。",
+    detail:  "「铁血洛批」指一边骂策划一边天天上线的人；贴吧截图里常见「我这个铁血洛批都懒得上线了」。",
+    example:  "我这个铁血洛批都懒得上线了",
+    source:  "B站《洛克王国养老玩家做的事：》评论区",
+    verify:  "https://www.bilibili.com/video/BV1vgHT6NEZz",
+    aliases:  [
+      "铁血洛批"
+    ],
+    rel:  [
+      "洛克淋国",
+      "小洛克"
+    ]
+  },
+  {
+    term:  "炫彩",
+    type:  "slang",
+    meaning:  "精灵的稀有变色形态，与「异色」并用。",
+    detail:  "S5 之后炫彩可局内换色，「黑白炫彩」是最贵的一档，圈内会出「黑白炫彩参考价」行情表。",
+    example:  "10月26日洛克王国黑白炫彩参考价",
+    source:  "B站《10月26日洛克王国黑白炫彩参考价》",
+    verify:  "https://www.bilibili.com/video/BV12wnX65Eoj",
+    aliases:  [
+      "黑白炫彩",
+      "炫彩精灵"
+    ],
+    rel:  [
+      "异色"
+    ]
+  },
+  {
+    term:  "清空保底",
+    type:  "slang",
+    meaning:  "异色出货会清空保底次数，等于「赌上全部垫抽」。",
+    detail:  "捕捉到一定数量触发污染机制，异色则是清空保底的超稀有档，因此抓异色被类比成出率 2% 的抽卡。",
+    example:  "将近150只炫彩终于出了第一只黑白",
+    source:  "https://newsstroll.com/Game/377934.html 、https://www.bilibili.com/video/BV1Cxnb66EUk",
+    verify:  "https://www.bilibili.com/video/BV1Cxnb66EUk",
+    aliases:  [
+      "保底",
+      "清空"
+    ],
+    rel:  [
+      "异色",
+      "球数"
+    ]
+  },
+  {
+    term:  "球数",
+    type:  "slang",
+    meaning:  "用「抓了多少球」衡量非欧。",
+    detail:  "普通玩家抓异色动辄上千球，「花了 1445 只咕噜球获得 2 只异色」这类报数就是标准的凡尔赛式自嘲。",
+    example:  "花了1445只咕噜球获得了2只异色共捉到1097只精灵",
+    source:  "B站《小洛克只是在抱着机械方方》评论区",
+    verify:  "https://www.bilibili.com/video/BV1egdGB8Epq",
+    aliases:  [
+      "多少球",
+      "2300球"
+    ],
+    rel:  [
+      "咕噜球",
+      "异色"
+    ]
+  },
+  {
+    term:  "咕噜球",
+    type:  "slang",
+    meaning:  "洛手的捕捉道具总称，棱镜球／公主球都是它的分支。",
+    detail:  "棱镜球负责随机染色（160 一个），公主球有专门的「生产过程」视频，咕噜球碎掉的声音还被做成了 ASMR。",
+    example:  "如果对着障眼魔扔咕噜球，他还会反弹你的球",
+    source:  "https://newsstroll.com/Game/377934.html 、https://www.bilibili.com/video/BV1FxWw6qEdj",
+    verify:  "https://www.bilibili.com/video/BV1WxDeBcEsT",
+    aliases:  [
+      "棱镜球",
+      "公主球"
+    ],
+    rel:  [
+      "球数"
+    ]
+  },
+  {
+    term:  "轮椅",
+    type:  "slang",
+    meaning:  "不需要养成、闭眼也能过的打法，强度高到像坐轮椅。",
+    detail:  "攻略标题的固定词：「无养成轮椅单通！必过手把手教学，超低配 0 养成」。",
+    example:  "【星光对决-吉洛斯】夜游魔大量出没/无养成轮椅单通",
+    source:  "B站《星光对决-吉洛斯》攻略标题",
+    verify:  "https://www.bilibili.com/video/BV1sTnR6UEnM",
+    aliases:  [
+      "轮椅单通",
+      "无养成轮椅"
+    ],
+    rel:  [
+      "超模"
+    ]
+  },
+  {
+    term:  "严父",
+    type:  "slang",
+    meaning:  "队伍里不带它就打不过的那几只精灵。",
+    detail:  "「平衡队里一半精灵都是严父」——严父＝硬性刚需，和「父亲型指挥官」是同一套爹味评价体系。",
+    example:  "平衡队里一半精灵都是严父，不进化成酷猫打不过水灵",
+    source:  "B站《受队撞车洛克王国策划》评论区",
+    verify:  "https://www.bilibili.com/video/BV1aBpv6CEEY",
+    aliases:  [
+      "父亲型",
+      "爹"
+    ],
+    rel:  [
+      "平衡队"
+    ]
+  },
+  {
+    term:  "大阴",
+    type:  "slang",
+    meaning:  "打高排名还全程阴招的玩家。",
+    detail:  "弹幕原话「你拿着阵容打到 300 名，你也是个大阴」——阴在这里是褒贬混合的技术评价。",
+    example:  "你拿着阵容打到300名，你也是个大阴",
+    source:  "B站《受队撞车洛克王国策划》评论区",
+    verify:  "https://www.bilibili.com/video/BV1aBpv6CEEY",
+    aliases:  [
+      "阴批",
+      "好阴"
+    ],
+    rel:  [
+      "阴间巴巴流"
+    ]
+  },
+  {
+    term:  "阴间巴巴流",
+    type:  "meme",
+    meaning:  "操作阴损、配置非主流但强度在线的阵容流派。",
+    detail:  "龙希帕尔是这套流派的核心；「巴巴」是语气垫字，念起来更像骂人。",
+    example:  "其实地武队又何尝不可以带个跺地布鲁斯阴同行呢",
+    source:  "http://www.game800.net/article/17304.html 、https://www.bilibili.com/video/BV1FKp76kEJz",
+    verify:  "https://www.bilibili.com/video/BV1FKp76kEJz",
+    aliases:  [
+      "阴间队",
+      "阴间"
+    ],
+    rel:  [
+      "大阴"
+    ]
+  },
+  {
+    term:  "花瓶",
+    type:  "slang",
+    meaning:  "好看但强度拉垮的精灵。",
+    detail:  "洛克淋国的核心审美矛盾：越是「强度无人在意」的花瓶，越能被通讯录捧成门面。",
+    example:  "通讯录群体为什么总是执迷于这些强度无人在意的花瓶",
+    source:  "B站《盘点布拉迪王国精灵的通讯录外号（虫系）》评论区",
+    verify:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    aliases:  [
+      "美丽废物",
+      "无人在意"
+    ],
+    rel:  [
+      "绒仙子"
+    ],
+    hero:  "绒仙子"
+  },
+  {
+    term:  "母火守",
+    type:  "meme",
+    meaning:  "把火神／火守按「母」的方式演，♀ 符号前置表示性转。",
+    detail:  "「♀火神火守降临展现钕性力量中」——洛克淋国习惯给雄性精灵加「母」字前缀做反差玩梗。",
+    example:  "每人注意到对面这素一只母火守吗都在老公写什么！♀火神火守降临展现钕性力量中！",
+    source:  "B站《冻不死算锤头鹳女王炸单》评论区",
+    verify:  "https://www.bilibili.com/video/BV1H2nU6ZENd",
+    aliases:  [
+      "母火神",
+      "♀火守"
+    ],
+    rel:  [
+      "火神"
+    ],
+    hero:  "火神"
+  },
+  {
+    term:  "正太国",
+    type:  "meme",
+    meaning:  "调侃洛克王国男号长相幼态，等于「正太遍地的国家」。",
+    detail:  "「放以前我千算万算也不会想到洛克王国变成正太国一游」——配合白袜、玉足、奶香等审美词一起用。",
+    example:  "放以前我千算万算也不会想到洛克王国变成正太国一游(不是)",
+    source:  "B站《不小心用高超的手法让学长释放了》评论区",
+    verify:  "https://www.bilibili.com/video/BV1QbDYBuE7h",
+    aliases:  [
+      "正太"
+    ],
+    rel:  [
+      "白袜",
+      "玉足"
+    ]
+  },
+  {
+    term:  "福瑞",
+    type:  "slang",
+    meaning:  "furry 的音译，指兽人向审美。",
+    detail:  "「你最喜欢的骚福瑞」——洛克淋国把兽形精灵直接按福瑞分类讨论。",
+    example:  "你最喜欢的骚福瑞",
+    source:  "B站《有这样的女仆你几点回家》评论区",
+    verify:  "https://www.bilibili.com/video/BV14Zbv6HEHV",
+    aliases:  [
+      "furry",
+      "兽人控"
+    ],
+    rel:  [
+      "审美"
+    ]
+  },
+  {
+    term:  "虫母",
+    type:  "slang",
+    meaning:  "虫系阵容／虫系的「母亲」级人物，带一点宫斗味。",
+    detail:  "「虫母简英没有被邀请」「已经比虫母赢太多惹」——虫系内部也分位分，门面是绒仙子。",
+    example:  "m鬼妈妈还是一如既往才华横溢，已经比虫母赢太多惹",
+    source:  "B站《【洛克淋国】搞笑幽幽·攻雪幽羊》评论区",
+    verify:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    aliases:  [
+      "简英"
+    ],
+    rel:  [
+      "绒仙子",
+      "平衡虫队"
+    ],
+    hero:  "绒仙子"
+  },
+  {
+    term:  "大狗叫",
+    type:  "meme",
+    meaning:  "在游戏里吼出爽感的瞬间，泛指「痛快」。",
+    detail:  "「全洛克王国最爽的两发大狗叫」——把内心的爽点拟声化，和淋语的「靴靴」「吸吸」是同一类拟声梗。",
+    example:  "全洛克王国最爽的两发大狗叫",
+    source:  "B站《全洛克王国最爽的两发大狗叫》",
+    verify:  "https://www.bilibili.com/video/BV17iNa6iEW3",
+    aliases:  [
+      "狗叫"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  },
+  {
+    term:  "子宫向",
+    type:  "meme",
+    meaning:  "把「子供向」拆开曲解成的黄腔。",
+    detail:  "「子供向也可以是，孩子出现的地方，所以……就是子宫向啦」——典型的拆词式淋语笑话。",
+    example:  "子供向也可以是，孩子出现的地方，所以……就是子宫向啦",
+    source:  "B站《这 样 很 羞 耻 的 啦》评论区",
+    verify:  "https://www.bilibili.com/video/BV1tsVH6kE8b",
+    aliases:  [
+      "子供向"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  },
+  {
+    term:  "星陨",
+    type:  "slang",
+    meaning:  "高分 PVP 对局模式，胜负经常来回翻。",
+    detail:  "「高分星陨对局，绝望到希望再到绝望」——星陨局＝高强度博弈局。",
+    example:  "神之一手，高分星陨对局，绝望到希望再到绝望",
+    source:  "B站《神之一手，高分星陨对局》",
+    verify:  "https://www.bilibili.com/video/BV18ynm6gEKY",
+    aliases:  [
+      "星陨局"
+    ],
+    rel:  [
+      "系别"
+    ]
+  },
+  {
+    term:  "系别",
+    type:  "slang",
+    meaning:  "按属性分系的排位赛，也指系别招新活动。",
+    detail:  "「洛克王国系别招新视频」——系别赛让冷门属性有了自己的排名体系，是赔钱草队翻身的唯一出口。",
+    example:  "【洛克王国页游】10月23日活动攻略 秘法药剂 深渊罗隐的考验",
+    source:  "B站《洛克王国系别招新视频》",
+    verify:  "https://www.bilibili.com/video/BV1rjHK6GEDw",
+    aliases:  [
+      "系别赛",
+      "系别排位赛"
+    ],
+    rel:  [
+      "星陨"
+    ]
+  },
+  {
+    term:  "占星台",
+    type:  "slang",
+    meaning:  "S6 版本新地图，双鱼座相关内容的据点。",
+    detail:  "「S6 占星台！双鱼座要来了」——占星台是洛克淋国对星座版本的地标称呼。",
+    example:  "【补档】全网最细！S6占星台！双鱼座要来了？！",
+    source:  "B站《【补档】全网最细！S6占星台！》",
+    verify:  "https://www.bilibili.com/video/BV1vvnm6jE7M",
+    aliases:  [
+      "S6占星台"
+    ],
+    rel:  [
+      "圣龙宝藏"
+    ]
+  },
+  {
+    term:  "圣龙宝藏",
+    type:  "slang",
+    meaning:  "S5 赛季主题，围绕圣龙与宝藏玩法展开。",
+    detail:  "S5 一口气放了 PV、家具、玩具、动作四组实机，「看性格」机制也在这一季回归。",
+    example:  "60万粉丝看《洛克王国：世界》S5赛季「圣龙宝藏」PV首曝",
+    source:  "B站《S5赛季「圣龙宝藏」PV首曝》",
+    verify:  "https://www.bilibili.com/video/BV16aH56PEt3",
+    aliases:  [
+      "S5",
+      "圣龙"
+    ],
+    rel:  [
+      "占星台"
+    ]
+  },
+  {
+    term:  "龙之秘境",
+    type:  "slang",
+    meaning:  "玩家期待中尚未上线的龙系专区。",
+    detail:  "「想要更多龙系精灵只有等龙之秘境，但洛克产能短时间估计到不了」——成了催更的代名词。",
+    example:  "想要更多龙系精灵只有等龙之秘境",
+    source:  "B站《以防你不知道~冥古龙有10种设计方案》评论区",
+    verify:  "https://www.bilibili.com/video/BV1fAnd6gEsV",
+    aliases:  [
+      "龙系秘境"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  },
+  {
+    term:  "大耳帽兜",
+    type:  "slang",
+    meaning:  "洛手最容易出异色的入门精灵，等于「全民第一只异色」。",
+    detail:  "「急头白脸狂抓两天大耳帽兜」——异色出货话题的默认主角。",
+    example:  "我抓到了异色的大耳帽兜",
+    source:  "https://newsstroll.com/Game/377934.html",
+    verify:  "https://www.bilibili.com/video/BV1WxDeBcEsT",
+    aliases:  [
+      "帽兜娃娃"
+    ],
+    rel:  [
+      "异色"
+    ],
+    hero:  "大耳帽兜"
+  },
+  {
+    term:  "卡瓦重",
+    type:  "meme",
+    meaning:  "「现在洛克王国最硬精灵」，特殊动画是疯狂摇沙锤。",
+    detail:  "硬到成为梗：一提「最硬」弹幕就开始摇。",
+    example:  "现在洛克王国最硬精灵卡瓦重",
+    source:  "https://newsstroll.com/Game/377934.html",
+    verify:  "https://www.bilibili.com/video/BV1QbDYBuE7h",
+    aliases:  [
+      "最硬精灵"
+    ],
+    rel:  [
+      "洛克淋国"
+    ],
+    hero:  "卡瓦重"
+  },
+  {
+    term:  "雨天战神",
+    type:  "meme",
+    meaning:  "卷毛鸭的绰号，雨天双攻翻倍，雨停即死。",
+    detail:  "「雨停之后我就会死，但我会在雨停之前让你倒下」——被做成 JOJO 式台词。",
+    example:  "雨停之后我就会死，但我会在雨停之前让你倒下",
+    source:  "https://newsstroll.com/Game/377934.html 、http://www.game800.net/article/17304.html",
+    verify:  "https://www.bilibili.com/video/BV1ddnU6DESk",
+    aliases:  [
+      "卷毛鸭",
+      "雨停我就死"
+    ],
+    rel:  [
+      "天气队"
+    ],
+    hero:  "卷毛鸭"
+  },
+  {
+    term:  "鸭厂厂长",
+    type:  "meme",
+    meaning:  "把真爱压在鸭吉吉身上的小众玩家称号。",
+    detail:  "「穷玩翼王，富玩老顶，富还得玩呀吉吉」——鸭吉吉是普通系吉祥物，却有一批死忠厂长。",
+    example:  "大师1100，爱玩鸭吉吉",
+    source:  "https://newsstroll.com/Game/377934.html 、http://www.game800.net/article/17304.html",
+    verify:  "https://www.bilibili.com/video/BV1KX9UBSEVC",
+    aliases:  [
+      "鸭吉吉",
+      "鸭界女王"
+    ],
+    rel:  [
+      "鸭吉吉"
+    ],
+    hero:  "鸭吉吉"
+  },
+  {
+    term:  "太子爷",
+    type:  "meme",
+    meaning:  "迪莫的绰号：从页游到洛手都是面板主角位。",
+    detail:  "开服就送、强度稳、养成成本低，攻略里又叫「单刷狂魔」；「太子爷」带点调侃它被官方偏爱。",
+    example:  "以防你错过，洛克王国本周所有必领奖励获取清单",
+    source:  "http://www.game800.net/article/17304.html 、https://m.wandoujia.com/apps/8100514/840269312121073193.html",
+    verify:  "https://www.bilibili.com/video/BV1ZLn86KEDN",
+    aliases:  [
+      "迪莫",
+      "单刷狂魔"
+    ],
+    rel:  [
+      "迪莫"
+    ],
+    hero:  "迪莫"
+  },
+  {
+    term:  "人间大炮",
+    type:  "meme",
+    meaning:  "火神的绰号，指它单体爆发的破坏力。",
+    detail:  "「一招火焰冲击直接化身人间大炮」——火系输出天花板的固定形容。",
+    example:  "所有小洛克注意，选择火神时请保持内裤干燥！",
+    source:  "https://shike.it168.com/news/18763.html",
+    verify:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    aliases:  [
+      "火神",
+      "火神daddy"
+    ],
+    rel:  [
+      "火神"
+    ],
+    hero:  "火神"
+  },
+  {
+    term:  "圣斗士",
+    type:  "meme",
+    meaning:  "罗隐的页游绰号，一只打通全图 PVE 的经典主打。",
+    detail:  "洛手时代升级为「罗隐大人」，页游还有「深渊罗隐的考验」这种以它命名的活动。",
+    example:  "【洛克王国页游】10月23日活动攻略 秘法药剂 深渊罗隐的考验",
+    source:  "https://wenwen.sogou.com/z/q598510244.htm 、https://www.bilibili.com/video/BV1QEnx6mEZi",
+    verify:  "https://www.bilibili.com/video/BV1QEnx6mEZi",
+    aliases:  [
+      "罗隐",
+      "罗隐大人",
+      "深渊罗隐"
+    ],
+    rel:  [
+      "罗隐"
+    ],
+    hero:  "罗隐"
+  },
+  {
+    term:  "代管婆",
+    type:  "meme",
+    meaning:  "音速犬的绰号：帮人把 20–40 级宠物带上去的「代练大妈」。",
+    detail:  "「长相很 MAN 却拥有非常大婶的称谓」，是页游时代最经典的反差外号之一。",
+    example:  "很多20J到40J的宠物都可以让音速犬来代练升级",
+    source:  "https://wenwen.sogou.com/z/q598510244.htm",
+    verify:  "https://www.bilibili.com/video/BV1QEnx6mEZi",
+    aliases:  [
+      "音速犬"
+    ],
+    rel:  [
+      "音速犬"
+    ],
+    hero:  "音速犬"
+  },
+  {
+    term:  "镇南王",
+    type:  "meme",
+    meaning:  "水球球的外号，谐「镇难王」：招式全是阴招，谁都能被它以弱胜强。",
+    detail:  "「无论对手多么强大，在水球球的阴招下皆无还手之力」，于是从镇难王演变成镇南王。",
+    example:  "镇南王(镇难王)-水球球",
+    source:  "https://wenwen.sogou.com/z/q598510244.htm 、https://baike.baidu.com/item/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD",
+    verify:  "https://www.bilibili.com/video/BV1QEnx6mEZi",
+    aliases:  [
+      "水球球",
+      "镇难王"
+    ],
+    rel:  [
+      "水球球"
+    ],
+    hero:  "水球球"
+  },
+  {
+    term:  "大将军",
+    type:  "meme",
+    meaning:  "魔力猫的绰号，因啤酒肚（将军肚）而得名。",
+    detail:  "草族元老＋将军肚＋寄生一招吃天下，让她在淋语里既是「大将军」也是「草系女王」。",
+    example:  "大将军-魔力猫，因为魔力猫的啤酒肚",
+    source:  "https://wenwen.sogou.com/z/q598510244.htm",
+    verify:  "https://www.bilibili.com/video/BV1QEnx6mEZi",
+    aliases:  [
+      "魔力猫",
+      "草系女王"
+    ],
+    rel:  [
+      "魔力猫"
+    ],
+    hero:  "魔力猫"
+  },
+  {
+    term:  "谐音精灵",
+    type:  "meme",
+    meaning:  "名字本身就是一句谐音的精灵群，如布是石、吸泥鸥、上岸蛙。",
+    detail:  "洛手把谐音梗做成设计语言：布是石→布是岩→布克棱岩（不是石／不是岩／不可能耶），哭哭菇→怖须菇→怖哭菇（哭哭哭／不许哭／不哭哭）。",
+    example:  "谁懂啊！洛克王国的谐音梗精灵真的太会玩了！",
+    source:  "https://m.toutiao.com/article/7653841663848104489",
+    verify:  "https://www.bilibili.com/video/BV1bCHK69EB9",
+    aliases:  [
+      "布是石",
+      "吸泥鸥",
+      "上岸蛙"
+    ],
+    rel:  [
+      "洛克淋国"
+    ],
+    hero:  "上岸蛙"
+  },
+  {
+    term:  "通讯录外号",
+    type:  "meme",
+    meaning:  "洛克淋国给精灵起的圈内黑话名，按属性分系连载。",
+    detail:  "「盘点布拉迪王国精灵的通讯录外号（虫系）」是固定栏目，绒仙子被叫「安陵绒」，简英被叫「虫母」。",
+    example:  "盘点布拉迪王国精灵的通讯录外号（虫系）",
+    source:  "B站《盘点布拉迪王国精灵的通讯录外号（虫系）》",
+    verify:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    aliases:  [
+      "通讯录名字",
+      "外号"
+    ],
+    rel:  [
+      "绒仙子",
+      "虫母"
+    ],
+    hero:  "绒仙子"
+  },
+  {
+    term:  "安陵绒",
+    type:  "hero-alias",
+    meaning:  "绒仙子的宫斗化外号，借《甄嬛传》安陵容的姓。",
+    detail:  "虫系门面却「最无人在意」，于是被赐了个后宫式的名字「安陵绒」；配套台词是「为什么不叫周阴婷？绒仙子，我仙子配不上吗？」。",
+    example:  "绒仙子-安陵绒",
+    source:  "B站《盘点布拉迪王国精灵的通讯录外号（虫系）》评论区",
+    verify:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    aliases:  [
+      "绒仙子"
+    ],
+    rel:  [
+      "绒仙子",
+      "虫母"
+    ],
+    hero:  "绒仙子"
+  },
+  {
+    term:  "130速",
+    type:  "slang",
+    meaning:  "速度线 130 这一档，被宫斗化成「高贵的 130 速」。",
+    detail:  "叠满法强但速度低就「低人一等厚」；130 速则「像辛者库宫女一夜被封了贵人」。",
+    example:  "你蓝就算叠130层法强但速度低就素低人一等厚",
+    source:  "B站《【洛克淋国】姐姐是平衡队，我也是平衡队》评论区",
+    verify:  "https://www.bilibili.com/video/BV1Ppn66GEnk",
+    aliases:  [
+      "低人一等",
+      "高贵的130速"
+    ],
+    rel:  [
+      "辛者库宫女"
+    ]
+  },
+  {
+    term:  "看性格",
+    type:  "slang",
+    meaning:  "捕捉／换取精灵前先看性格再决定，S5 回归的机制。",
+    detail:  "「异色可看性格」直接改变了刷异色的成本结构，也催生了「新赛季刷正确性格异色快人一步」这类攻略。",
+    example:  "一口气看完！S5赛季PV+全更新！“看性格”回归！",
+    source:  "B站《一口气看完！S5赛季PV+全更新！》",
+    verify:  "https://www.bilibili.com/video/BV1mGn46rEFa",
+    aliases:  [
+      "性格",
+      "刷性格"
+    ],
+    rel:  [
+      "异色"
+    ]
+  },
+  {
+    term:  "星穹铁路",
+    type:  "slang",
+    meaning:  "（误传写法，本项目不收录）占位说明卡，见下方 detail。",
+    detail:  "本卡用于标注「同形异义」风险：洛克淋国的「星陨」与二游「星穹铁道」只差一个字，检索时容易串区，因此单列一条提醒不要混用。",
+    example:  "高分星陨对局，绝望到希望再到绝望",
+    source:  "B站《神之一手，高分星陨对局》",
+    verify:  "https://www.bilibili.com/video/BV18ynm6gEKY",
+    aliases:  [
+      "星陨"
+    ],
+    rel:  [
+      "星陨"
+    ]
+  },
+  {
+    term:  "女王炸单",
+    type:  "meme",
+    meaning:  "输出爆炸时自称女王，把「炸场」说成「炸单」。",
+    detail:  "「冻不死算锤头鹳女王炸单」——锤头鹳被叫「鹳女王」，炸单＝把对面一次性清掉。",
+    example:  "冻不死算锤头鹳女王炸单",
+    source:  "B站《冻不死算锤头鹳女王炸单》",
+    verify:  "https://www.bilibili.com/video/BV1H2nU6ZENd",
+    aliases:  [
+      "鹳女王",
+      "炸单"
+    ],
+    rel:  [
+      "锤头鹳"
+    ],
+    hero:  "锤头鹳"
+  },
+  {
+    term:  "再回春",
+    type:  "meme",
+    meaning:  "弱势精灵被版本重新拉起来，等同「回宫／二进宫」。",
+    detail:  "「素人果果再回春，铃铃释放小三力量」——回春、回宫、二进宫是同一套宫斗式复出叙事。",
+    example:  "【洛克淋国】素人果果再回春，铃铃释放小三力量",
+    source:  "B站《【洛克淋国】素人果果再回春》",
+    verify:  "https://www.bilibili.com/video/BV1z2eM6kEJQ",
+    aliases:  [
+      "回春",
+      "二进宫",
+      "回宫"
+    ],
+    rel:  [
+      "回宫"
+    ]
+  },
+  {
+    term:  "报恩铃铃",
+    type:  "meme",
+    meaning:  "把精灵拟人成「报恩」的角色，配合生子梗一起用。",
+    detail:  "「给大家看我家的报恩铃铃，与平和性格稻草人诞下一子惹」——洛克淋国最典型的拟人化叙事模板。",
+    example:  "鬼妈妈更新了！！给大家看我家的报恩铃铃，与平和性格稻草人诞下一子惹！",
+    source:  "B站《果果被聋卷风遣送南极》评论区",
+    verify:  "https://www.bilibili.com/video/BV14vJh6EEYM",
+    aliases:  [
+      "铃铃"
+    ],
+    rel:  [
+      "翊坤宫娘娘"
+    ],
+    hero:  "翊坤宫娘娘"
+  },
+  {
+    term:  "养胃",
+    type:  "meme",
+    meaning:  "「阳痿」的谐音避讳，用来调侃精灵／角色不给力。",
+    detail:  "「恭喜极极老公终于把养胃治好了」——把强度回调和生理问题混为一谈，是洛克淋国的常规玩笑。",
+    example:  "恭喜极极老公终于把养胃治好了龙宫一胎八宝我们真的要来了",
+    source:  "B站《饮雪狂兽力气好大…..》评论区",
+    verify:  "https://www.bilibili.com/video/BV1TiHp6YEsC",
+    aliases:  [
+      "阳痿"
+    ],
+    rel:  [
+      "饮雪狂兽"
+    ],
+    hero:  "饮雪狂兽"
+  },
+  {
+    term:  "龙胎",
+    type:  "meme",
+    meaning:  "把精灵生育／孵蛋写成「诞下龙胎」，宫斗＋孵蛋双关。",
+    detail:  "「我极趁审核不在连续诞下两辆龙胎引得宫中大乱」——孵蛋、异色、位分三件事被打包成一个梗。",
+    example:  "我极趁审核不在连续诞下两辆龙胎引得宫中大乱！",
+    source:  "B站《饮雪狂兽力气好大…..》评论区",
+    verify:  "https://www.bilibili.com/video/BV1TiHp6YEsC",
+    aliases:  [
+      "诞下龙胎",
+      "一胎八宝"
+    ],
+    rel:  [
+      "饮雪狂兽"
+    ],
+    hero:  "饮雪狂兽"
+  },
+  {
+    term:  "炫压抑",
+    type:  "meme",
+    meaning:  "「性压抑」的谐音，指玩家对小洛克外形的过度热情。",
+    detail:  "B站《炫压抑 小洛克》因内容被审核要求改三次，标题本身就变成了梗。",
+    example:  "炫压抑 小洛克（已按审核要求3次修改视频）",
+    source:  "B站《炫压抑 小洛克》",
+    verify:  "https://www.bilibili.com/video/BV1kveS6wEbx",
+    aliases:  [
+      "性压抑"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  },
+  {
+    term:  "精灵盒子",
+    type:  "slang",
+    meaning:  "玩家展示自己收藏精灵的合集视频格式。",
+    detail:  "「洛克王国世界｜我的精灵盒子（S1至S4）」——按赛季盘点自己的家底，是洛克淋国的固定栏目形态。",
+    example:  "洛克王国世界｜我的精灵盒子（S1至S4）",
+    source:  "B站《洛克王国世界｜我的精灵盒子（S1至S4）》",
+    verify:  "https://www.bilibili.com/video/BV19eHM6qEqS",
+    aliases:  [
+      "精灵盒"
+    ],
+    rel:  [
+      "洛克淋国"
+    ]
+  }
+];
+
+const quotes = [
+  {
+    text:  "来支持洛克淋国，布拉迪大世界惹",
+    author:  "郭斯嘉ryan_lee02",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    scene:  "洛克淋国 / 分区 / 应援",
+    rel:  []
+  },
+  {
+    text:  "好美的站街，洛克淋国的精灵ay们围险惹",
+    author:  "郭斯嘉ryan_lee02",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "黑皮体育生洛克",
+    author:  "暴力熊猫wawa",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1uaWQejEX1",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "只是正好穿白袜的时候选黑皮对吧",
+    author:  "鸭小吉吖",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1KjsHzEEY8",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "正太的白袜就是甜糯中带一点奶香啊",
+    author:  "暴力熊猫wawa",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1uaWQejEX1",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "看着像通讯录做的东西，直男审美可没这么好",
+    author:  "sawadahuang",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vdhd6cEko",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "为什么感觉通讯录都是用的同一个阴（音）道啊",
+    author:  "彭柯驿",
+    hero:  "茶博士蔚星",
+    src:  "https://www.bilibili.com/video/BV1fLLh64EVk",
+    scene:  "洛克淋国 / 通讯录 / 身份",
+    rel:  []
+  },
+  {
+    text:  "再抓个羚羊和鱿鱼，我的炫彩幽队也组好惹。可以在天梯猛猛吸入能量",
+    author:  "翊坤宫娘娘",
+    hero:  "小幽幽",
+    src:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    scene:  "洛克淋国 / 幽队 / 组队",
+    rel:  []
+  },
+  {
+    text:  "冷知识，抓精灵游戏里的精灵大多是没穿衣，所以这不是白袜，是玉足",
+    author:  "寒霜棱",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV12SEGzGEt8",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "相信娥小姐姐让阴狸加入幽队以后你会发现高贵的130速有点像辛者库宫女一夜被封了贵人",
+    author:  "翊坤宫娘娘",
+    hero:  "小幽幽",
+    src:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    scene:  "洛克淋国 / 幽队 / 位分",
+    rel:  []
+  },
+  {
+    text:  "洛克淋国交一下！",
+    author:  "郭斯嘉ryan_lee02",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    scene:  "洛克淋国 / 分区 / 应援",
+    rel:  []
+  },
+  {
+    text:  "竟然是二进宫，娘娘真是太宠嫔妃们了💅",
+    author:  "翊坤宫娘娘",
+    hero:  "翊坤宫娘娘",
+    src:  "https://www.bilibili.com/video/BV1z2eM6kEJQ",
+    scene:  "洛克淋国 / 宫斗 / 回宫",
+    rel:  []
+  },
+  {
+    text:  "为什么不叫周阴婷？绒仙子，我仙子配不上吗？",
+    author:  "AKAI空",
+    hero:  "绒仙子",
+    src:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    scene:  "洛克淋国 / 人物 / 外号",
+    rel:  []
+  },
+  {
+    text:  "被通讯录吓晕🙄",
+    author:  "寒霜棱",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV12SEGzGEt8",
+    scene:  "洛克淋国 / 通讯录 / 调侃",
+    rel:  []
+  },
+  {
+    text:  "通讯录临死前的幻想",
+    author:  "道理的电饭煲",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+    scene:  "洛克淋国 / 通讯录 / 调侃",
+    rel:  []
+  },
+  {
+    text:  "这游戏怎么这么多通讯录",
+    author:  "暴力熊猫wawa",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1uaWQejEX1",
+    scene:  "洛克淋国 / 通讯录 / 调侃",
+    rel:  []
+  },
+  {
+    text:  "只有通讯录才能搭配出如此有味道的装扮",
+    author:  "暴力熊猫wawa",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1uaWQejEX1",
+    scene:  "洛克淋国 / 通讯录 / 穿搭",
+    rel:  []
+  },
+  {
+    text:  "本可取名就比较简单了，7只刚好周一到周日",
+    author:  "AKAI空",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1UmdBBFE1D",
+    scene:  "洛克淋国 / 对局 / 起名",
+    rel:  []
+  },
+  {
+    text:  "我铃在后台吸入了大半局能起到了一个防先发的作用！",
+    author:  "翊坤宫娘娘",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV14vJh6EEYM",
+    scene:  "洛克淋国 / 幽队 / 机制",
+    rel:  []
+  },
+  {
+    text:  "通讯录群体为什么总是执迷于这些强度无人在意的花瓶",
+    author:  "AKAI空",
+    hero:  "绒仙子",
+    src:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    scene:  "洛克淋国 / 评价 / 花瓶",
+    rel:  []
+  },
+  {
+    text:  "恭喜极极老公终于把养胃治好了龙宫一胎八宝我们真的要来了",
+    author:  "南极石化了",
+    hero:  "饮雪狂兽",
+    src:  "https://www.bilibili.com/video/BV1TiHp6YEsC",
+    scene:  "洛克淋国 / 宫斗 / 生子",
+    rel:  []
+  },
+  {
+    text:  "花了1445只咕噜球获得了2只异色共捉到1097只精灵",
+    author:  "长阡_",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1egdGB8Epq",
+    scene:  "洛克淋国 / 抽卡 / 异色",
+    rel:  []
+  },
+  {
+    text:  "m鬼妈妈还是一如既往才华横溢，已经比虫母赢太多惹🙄💅",
+    author:  "翊坤宫娘娘",
+    hero:  "翊坤宫娘娘",
+    src:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    scene:  "洛克淋国 / 宫斗 / 拉踩",
+    rel:  []
+  },
+  {
+    text:  "每人注意到对面这素一只母火守吗都在老公写什么！♀火神火守降临展现钕性力量中！",
+    author:  "南极石化了",
+    hero:  "火神",
+    src:  "https://www.bilibili.com/video/BV1H2nU6ZENd",
+    scene:  "洛克淋国 / 火队 / 性转",
+    rel:  []
+  },
+  {
+    text:  "将近150只炫彩终于出了第一只黑白🙄来严肃学习幽队惹，自己玩了四五把感觉是区",
+    author:  "翊坤宫娘娘",
+    hero:  "小幽幽",
+    src:  "https://www.bilibili.com/video/BV14vJh6EEYM",
+    scene:  "洛克淋国 / 幽队 / 异色",
+    rel:  []
+  },
+  {
+    text:  "你蓝就算叠130层法强但速度低就素低人一等厚，你莎也素公式得不行三倍弱电我亲爱的你大事不妙惹",
+    author:  "一只高脂阴猫",
+    hero:  "水蓝蓝",
+    src:  "https://www.bilibili.com/video/BV1Ppn66GEnk",
+    scene:  "洛克淋国 / 对局 / 拉踩",
+    rel:  []
+  },
+  {
+    text:  "绒仙子-安陵绒🙄",
+    author:  "AKAI空",
+    hero:  "绒仙子",
+    src:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    scene:  "洛克淋国 / 人物 / 外号",
+    rel:  []
+  },
+  {
+    text:  "吓鼠了，居然是龙性恋。",
+    author:  "苏卡Remix",
+    hero:  "冥古龙",
+    src:  "https://www.bilibili.com/video/BV1ZbHg6UEzx",
+    scene:  "洛克淋国 / 审美 / 龙性恋",
+    rel:  []
+  },
+  {
+    text:  "可以只穿白袜在外面跑吗",
+    author:  "暴力熊猫wawa",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1uaWQejEX1",
+    scene:  "洛克淋国 / 通讯录 / 穿搭",
+    rel:  []
+  },
+  {
+    text:  "亩灵熬夜刷布拉迪猝死前的幻想",
+    author:  "道理的电饭煲",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+    scene:  "洛克淋国 / 布拉迪 / 幻想",
+    rel:  []
+  },
+  {
+    text:  "库拉这个雷霆拳头塞进去不会电鼠吗",
+    author:  "AKAI空",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1XgddBEEmU",
+    scene:  "洛克淋国 / 对局 / 玩梗",
+    rel:  []
+  },
+  {
+    text:  "娘娘，我果圣得我树宠幸，成功诞下龙胎",
+    author:  "翊坤宫娘娘",
+    hero:  "翊坤宫娘娘",
+    src:  "https://www.bilibili.com/video/BV1z2eM6kEJQ",
+    scene:  "洛克淋国 / 宫斗 / 生子",
+    rel:  []
+  },
+  {
+    text:  "你拿着阵容打到300名，你也是个大阴",
+    author:  "贪吃的mw07734",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1aBpv6CEEY",
+    scene:  "洛克淋国 / PVP / 互评",
+    rel:  []
+  },
+  {
+    text:  "我们虫系门面绒仙子结果是最无人在意的",
+    author:  "AKAI空",
+    hero:  "绒仙子",
+    src:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    scene:  "洛克淋国 / 评价 / 花瓶",
+    rel:  []
+  },
+  {
+    text:  "来连线的感觉都是姐妹 茶博士也是0啊",
+    author:  "彭柯驿",
+    hero:  "茶博士蔚星",
+    src:  "https://www.bilibili.com/video/BV1fLLh64EVk",
+    scene:  "洛克淋国 / 通讯录 / 身份",
+    rel:  []
+  },
+  {
+    text:  "那我吞吞鼠几千个球岂不是赛的从嘴里往外吐",
+    author:  "萌物鉴赏",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1gcRaB5ENU",
+    scene:  "洛克淋国 / 抽卡 / 球数",
+    rel:  []
+  },
+  {
+    text:  "恭喜娘娘贺喜娘娘回到前万，鬼妈妈卖铺日记正在大量出没！",
+    author:  "翊坤宫娘娘",
+    hero:  "翊坤宫娘娘",
+    src:  "https://www.bilibili.com/video/BV14vJh6EEYM",
+    scene:  "洛克淋国 / 宫斗 / 回宫",
+    rel:  []
+  },
+  {
+    text:  "放以前我千算万算也不会想到洛克王国变成正太国一游(不是)",
+    author:  "苏卡Remix",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1QbDYBuE7h",
+    scene:  "洛克淋国 / 分区 / 正太国",
+    rel:  []
+  },
+  {
+    text:  "建议给草系加个适应机制，应对成功后逆转劣势克制抵抗关系，否则的话不明白为什么草属性这么赔钱",
+    author:  "长夜未复",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV177nX6PE1E",
+    scene:  "洛克淋国 / 建议 / 草系",
+    rel:  []
+  },
+  {
+    text:  "真的是直男吗",
+    author:  "暮里见",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1E6726VE4P",
+    scene:  "洛克淋国 / 通讯录 / 试探",
+    rel:  []
+  },
+  {
+    text:  "是直男也认了",
+    author:  "原一一豪",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1tH9FB2Eou",
+    scene:  "洛克淋国 / 通讯录 / 认命",
+    rel:  []
+  },
+  {
+    text:  "好阴间的作息",
+    author:  "斗智牌小金",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV185Jo6ZE5C",
+    scene:  "洛克淋国 / 生活 / 作息",
+    rel:  []
+  },
+  {
+    text:  "这个噜噜死我了",
+    author:  "羽澤鈦",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vQpw6RELE",
+    scene:  "洛克淋国 / 语气 / 噜",
+    rel:  []
+  },
+  {
+    text:  "宝宝你看你骚的",
+    author:  "社经管理专业の学姐",
+    hero:  "花衣蝶",
+    src:  "https://www.bilibili.com/video/BV1t5ew63E4p",
+    scene:  "洛克淋国 / 通讯录 / 调侃",
+    rel:  []
+  },
+  {
+    text:  "跟暗恋的直男拍的",
+    author:  "甜甜痞颜",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1AGQ3BvEo4",
+    scene:  "洛克淋国 / 通讯录 / 日常",
+    rel:  []
+  },
+  {
+    text:  "虫母简英没有被邀请！",
+    author:  "AKAI空",
+    hero:  "绒仙子",
+    src:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    scene:  "洛克淋国 / 宫斗 / 排挤",
+    rel:  []
+  },
+  {
+    text:  "一场对局130个小巧思",
+    author:  "暮里见",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1E6726VE4P",
+    scene:  "洛克淋国 / 对局 / 巧思",
+    rel:  []
+  },
+  {
+    text:  "疑是被直男打死前的幻想",
+    author:  "道理的电饭煲",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+    scene:  "洛克淋国 / 布拉迪 / 幻想",
+    rel:  []
+  },
+  {
+    text:  "叽里咕噜跳啥呢，吹火！",
+    author:  "社经管理专业の学姐",
+    hero:  "花衣蝶",
+    src:  "https://www.bilibili.com/video/BV1t5ew63E4p",
+    scene:  "洛克淋国 / 对局 / 催招",
+    rel:  []
+  },
+  {
+    text:  "这个花衣蝶老公真是死我了",
+    author:  "南极石化了",
+    hero:  "花衣蝶",
+    src:  "https://www.bilibili.com/video/BV1H2nU6ZENd",
+    scene:  "洛克淋国 / 人物 / 老公",
+    rel:  []
+  },
+  {
+    text:  "大师1100，爱玩鸭吉吉",
+    author:  "痒酱_kayui",
+    hero:  "鸭吉吉",
+    src:  "https://www.bilibili.com/video/BV1KX9UBSEVC",
+    scene:  "洛克淋国 / 人物 / 应援",
+    rel:  []
+  },
+  {
+    text:  "被你们男同吓晕惹🙄💅",
+    author:  "嘉佳兹解说",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1niLfzoE8j",
+    scene:  "洛克淋国 / 通讯录 / 调侃",
+    rel:  []
+  },
+  {
+    text:  "只素在打扮地美美的养宠惹",
+    author:  "普履不停",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV11eXrBdESM",
+    scene:  "洛克淋国 / 通讯录 / 日常",
+    rel:  []
+  },
+  {
+    text:  "刚找到地方站好就有视频看惹",
+    author:  "翊坤宫娘娘",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    scene:  "洛克淋国 / 直播 / 互动",
+    rel:  []
+  },
+  {
+    text:  "还好选的男洛克，没人骚扰我",
+    author:  "宁远_",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1kveS6wEbx",
+    scene:  "洛克淋国 / 通讯录 / 男洛克",
+    rel:  []
+  },
+  {
+    text:  "妈妈桑的剪辑一直素神来一笔惹",
+    author:  "翊坤宫娘娘",
+    hero:  "翊坤宫娘娘",
+    src:  "https://www.bilibili.com/video/BV1z2eM6kEJQ",
+    scene:  "洛克淋国 / 人物 / 剪辑",
+    rel:  []
+  },
+  {
+    text:  "这个时间发是打算捕捉阴间精灵吗？",
+    author:  "翊坤宫娘娘",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    scene:  "洛克淋国 / 对局 / 阴间",
+    rel:  []
+  },
+  {
+    text:  "对面不怎么会博弈，但是宠物很阴间",
+    author:  "懒多鱼",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1adtH6pEja",
+    scene:  "洛克淋国 / 对局 / 阴间",
+    rel:  []
+  },
+  {
+    text:  "很美的一个更新 但素热度大滑水惹",
+    author:  "郭斯嘉ryan_lee02",
+    hero:  "火神",
+    src:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    scene:  "洛克淋国 / 分区 / 热度",
+    rel:  []
+  },
+  {
+    text:  "天呐姐妹我好懂冥古龙真的超级美味",
+    author:  "苏卡Remix",
+    hero:  "冥古龙",
+    src:  "https://www.bilibili.com/video/BV1ZbHg6UEzx",
+    scene:  "洛克淋国 / 审美 / 龙性恋",
+    rel:  []
+  },
+  {
+    text:  "@浮游世梦忆人 你最喜欢的骚福瑞",
+    author:  "聒噪的阿罪",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV14Zbv6HEHV",
+    scene:  "洛克淋国 / 审美 / 福瑞",
+    rel:  []
+  },
+  {
+    text:  "剧毒汗液疑似直男脚刹同学录的小把戏",
+    author:  "寒霜棱",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV12SEGzGEt8",
+    scene:  "洛克淋国 / 对局 / 直男",
+    rel:  []
+  },
+  {
+    text:  "刷到过最阴的是赤子传斑枭斑枭欺诈契约",
+    author:  "懒多鱼",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1adtH6pEja",
+    scene:  "洛克淋国 / 对局 / 阴间",
+    rel:  []
+  },
+  {
+    text:  "雪天女孩看不得这个…已经开始红温惹…",
+    author:  "君名为乐",
+    hero:  "雪影娃娃",
+    src:  "https://www.bilibili.com/video/BV1tTLZ6mEhJ",
+    scene:  "洛克淋国 / 雪天队 / 红温",
+    rel:  []
+  },
+  {
+    text:  "什么时候我萌王ay才能阴到3建模。。",
+    author:  "郭斯嘉ryan_lee02",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    scene:  "洛克淋国 / 建模 / 玩梗",
+    rel:  []
+  },
+  {
+    text:  "姐妹你真的喜歡果果嗎？我怎麼感覺不對勁呢？",
+    author:  "翊坤宫娘娘",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV14vJh6EEYM",
+    scene:  "洛克淋国 / 通讯录 / 质疑",
+    rel:  []
+  },
+  {
+    text:  "我极趁审核不在连续诞下两辆龙胎引得宫中大乱！",
+    author:  "南极石化了",
+    hero:  "饮雪狂兽",
+    src:  "https://www.bilibili.com/video/BV1TiHp6YEsC",
+    scene:  "洛克淋国 / 宫斗 / 生子",
+    rel:  []
+  },
+  {
+    text:  "其实地武队又何尝不可以带个跺地布鲁斯阴同行呢",
+    author:  "开摆单机猴",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1FKp76kEJz",
+    scene:  "洛克淋国 / 对局 / 阴招",
+    rel:  []
+  },
+  {
+    text:  "主包主包。你那时候疯狂叫老公的切片怎么不剪呀",
+    author:  "灰灰玩蛇",
+    hero:  "茶博士蔚星",
+    src:  "https://www.bilibili.com/video/BV1Tbn26aEFD",
+    scene:  "洛克淋国 / 直播 / 切片",
+    rel:  []
+  },
+  {
+    text:  "pps还在纠结周一要不要早点睡，现在不用担心噜",
+    author:  "南极石化了",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1H2nU6ZENd",
+    scene:  "洛克淋国 / 生活 / 作息",
+    rel:  []
+  },
+  {
+    text:  "你莫的老公小光到底要耍多久大牌，期待你光拯救光队中",
+    author:  "一只高脂阴猫",
+    hero:  "迪莫",
+    src:  "https://www.bilibili.com/video/BV1vrJ166EtG",
+    scene:  "洛克淋国 / 光队 / 复出",
+    rel:  []
+  },
+  {
+    text:  "就没有一个1愿意造福大家做0吗，0.5也行啊，很爽的",
+    author:  "道理的电饭煲",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+    scene:  "洛克淋国 / 通讯录 / 供需",
+    rel:  []
+  },
+  {
+    text:  "子供向也可以是，孩子出现的地方，所以……就是子宫向啦",
+    author:  "Alone-辉夜",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1tsVH6kE8b",
+    scene:  "洛克淋国 / 分区 / 子宫向",
+    rel:  []
+  },
+  {
+    text:  "姐妹你继续做下去吧 光王是个可口的老头 终会有奖励你的一天",
+    author:  "一只高脂阴猫",
+    hero:  "迪莫",
+    src:  "https://www.bilibili.com/video/BV1vrJ166EtG",
+    scene:  "洛克淋国 / 光队 / 老头",
+    rel:  []
+  },
+  {
+    text:  "感谢老公们的支持，好久没看到两位数的同时在线了，爱你们🥹💋",
+    author:  "郭斯嘉ryan_lee02",
+    hero:  "火神",
+    src:  "https://www.bilibili.com/video/BV1vbyCBtEQX",
+    scene:  "洛克淋国 / 直播 / 感谢",
+    rel:  []
+  },
+  {
+    text:  "鬼妈妈更新了！！给大家看我家的报恩铃铃，与平和性格稻草人诞下一子惹！",
+    author:  "翊坤宫娘娘",
+    hero:  "翊坤宫娘娘",
+    src:  "https://www.bilibili.com/video/BV14vJh6EEYM",
+    scene:  "洛克淋国 / 宫斗 / 报恩",
+    rel:  []
+  },
+  {
+    text:  "噜噜：“你们一群传说精灵在这里这样那样干嘛呢，再说了雄性也不能生蛋呀🙄”",
+    author:  "羽澤鈦",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1vQpw6RELE",
+    scene:  "洛克淋国 / 对局 / 传说",
+    rel:  []
+  },
+  {
+    text:  "天啊姐妹真的好不容易过完冬季，即刻给姐妹点一首水果姐的watch it burn暖暖身子吧",
+    author:  "翊坤宫娘娘",
+    hero:  "雪影娃娃",
+    src:  "https://www.bilibili.com/video/BV1Bmjh6bE36",
+    scene:  "洛克淋国 / 雪天队 / 取暖",
+    rel:  []
+  },
+  {
+    text:  "前3个赛季都是用加油马头上大师的，这赛季是真的折不动噜，美美投入水蓝蓝肥鲨古卷3随机的怀抱噜",
+    author:  "一只高脂阴猫",
+    hero:  "水蓝蓝",
+    src:  "https://www.bilibili.com/video/BV1vrJ166EtG",
+    scene:  "洛克淋国 / 对局 / 换队",
+    rel:  []
+  },
+  {
+    text:  "我s1玩连击翼王，你们说杂技",
+    author:  "企鹅带带北极熊",
+    hero:  "圣羽翼王",
+    src:  "https://www.bilibili.com/video/BV1dyn96eE3P",
+    scene:  "洛克淋国 / 对局 / 杂技",
+    rel:  []
+  },
+  {
+    text:  "策划打完这把下赛季借用费用+1了",
+    author:  "贪吃的mw07734",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1aBpv6CEEY",
+    scene:  "洛克淋国 / 对局 / 策划",
+    rel:  []
+  },
+  {
+    text:  "加油光回来1.3秒就消失在塞纳河畔",
+    author:  "一只高脂阴猫",
+    hero:  "迪莫",
+    src:  "https://www.bilibili.com/video/BV1Ppn66GEnk",
+    scene:  "洛克淋国 / 光队 / 秒退",
+    rel:  []
+  },
+  {
+    text:  "老师，你真的是直男吗，我怎么感觉哪里不对劲呢",
+    author:  "暮里见",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1E6726VE4P",
+    scene:  "洛克淋国 / 通讯录 / 试探",
+    rel:  []
+  },
+  {
+    text:  "我也爱骚扰别人，加好友也不说话，送个粉星仔就去找下一个幸运儿。",
+    author:  "花咲_千雪",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1wxRiBCEoo",
+    scene:  "洛克淋国 / 通讯录 / 日常",
+    rel:  []
+  },
+  {
+    text:  "让洛克他们一人一个咕噜球收护主犬，让菲尔特收最小的一只，给水蓝蓝一起玩",
+    author:  "CFM痴白",
+    hero:  "水蓝蓝",
+    src:  "https://www.bilibili.com/video/BV1v5bn6sE5H",
+    scene:  "洛克淋国 / 分区 / 组队",
+    rel:  []
+  },
+  {
+    text:  "12+每周只能玩两三小时，其实这就是面向90后和00后的游戏，一大堆QQ上班族好友都在玩",
+    author:  "风石山",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1iqD8BTEJy",
+    scene:  "洛克淋国 / 分区 / 玩家画像",
+    rel:  []
+  },
+  {
+    text:  "洛克王国居然会有如此适配南通XP的精灵！",
+    author:  "寒霜棱",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV12SEGzGEt8",
+    scene:  "洛克淋国 / 分区 / 通讯录",
+    rel:  []
+  },
+  {
+    text:  "盘点布拉迪王国精灵的通讯录外号（虫系）",
+    author:  "AKAI空",
+    hero:  "绒仙子",
+    src:  "https://www.bilibili.com/video/BV1bioSBcEqg",
+    scene:  "洛克淋国 / 人物 / 外号",
+    rel:  []
+  },
+  {
+    text:  "有这样的巴哈姆特你晚上几点钟回家？",
+    author:  "DragonMC233",
+    hero:  "巴哈姆特",
+    src:  "https://www.bilibili.com/video/BV129J86jEDM",
+    scene:  "洛克淋国 / 人物 / 调侃",
+    rel:  []
+  },
+  {
+    text:  "路易斯老师：这届小洛克真是杂鱼！",
+    author:  "伊莱娜的枸",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1YmQ6BPECH",
+    scene:  "洛克淋国 / 分区 / 嘲讽",
+    rel:  []
+  },
+  {
+    text:  "赔钱黑皮体育生花大价钱购买白袜顺便欺负一下猴和猪",
+    author:  "暴力熊猫wawa",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1uaWQejEX1",
+    scene:  "洛克淋国 / 通讯录 / 审美",
+    rel:  []
+  },
+  {
+    text:  "洛克王国魔法大学花衣蝶老师",
+    author:  "社经管理专业の学姐",
+    hero:  "花衣蝶",
+    src:  "https://www.bilibili.com/video/BV1t5ew63E4p",
+    scene:  "洛克淋国 / 人物 / 老师",
+    rel:  []
+  },
+  {
+    text:  "受队撞车洛克王国策划，我的小众变态阵容被发现了",
+    author:  "贪吃的mw07734",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1aBpv6CEEY",
+    scene:  "洛克淋国 / 对局 / 抽象",
+    rel:  []
+  },
+  {
+    text:  "你赢了朋友，你的配招小众又变态，你的博弈抽象又诡异",
+    author:  "懒多鱼",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1adtH6pEja",
+    scene:  "洛克淋国 / 对局 / 抽象",
+    rel:  []
+  },
+  {
+    text:  "全洛克王国最爽的两发大狗叫",
+    author:  "正在参透符文",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV17iNa6iEW3",
+    scene:  "洛克淋国 / 对局 / 爽点",
+    rel:  []
+  },
+  {
+    text:  "以防你不知道~冥古龙有10种设计方案，你最喜欢哪一个洛克冥古龙",
+    author:  "小镇大家族",
+    hero:  "冥古龙",
+    src:  "https://www.bilibili.com/video/BV1fAnd6gEsV",
+    scene:  "洛克淋国 / 人物 / 设计方案",
+    rel:  []
+  },
+  {
+    text:  "洛克王国手游里的多灵主有多超模？【洛克王国世界】",
+    author:  "洛克王国世界斯乌苏苏",
+    hero:  "多灵主",
+    src:  "https://www.bilibili.com/video/BV1LgW2zeEPW",
+    scene:  "洛克淋国 / 评价 / 超模",
+    rel:  []
+  },
+  {
+    text:  "新赛季最强的草系精灵有哪些？这都是你花的来时路",
+    author:  "长夜未复",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV177nX6PE1E",
+    scene:  "洛克淋国 / 草队 / 强度",
+    rel:  []
+  },
+  {
+    text:  "洛 克 王 国 赔 钱!!!!!!",
+    author:  "七濑Unia",
+    hero:  "",
+    src:  "https://www.bilibili.com/video/BV1LvoGBTEew",
+    scene:  "洛克淋国 / 分区 / 赔钱",
+    rel:  []
+  }
+];
+
+const heroes = [
+  {
+    name:  "喵喵",
+    alias:  "喵喵 / 草猫 / 喵喵子 / 御三家",
+    rank:  "洛克淋国 · · 草猫",
+    intro:  "《洛克王国》草系御三家，进化链喵喵→魔力猫，是「御三家」里最稳的开荒位。",
+    baike:  "喵喵是洛克王国初始三精灵之一，草属性，最终进化为魔力猫；洛手里 15 米射程种子弹可以风筝近战，残血还能开休息回血。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "草系",
+      "御三家"
+    ],
+    works:  [
+      "洛克王国系别招新视频",
+      "萌新怎么打混沌布拉迪？搞懂机制+队伍配置是关键"
+    ],
+    words:  [
+      "喵喵",
+      "魔力猫",
+      "草队"
+    ],
+    links:  [
+      {
+        label:  "B站《洛克王国系别招新视频》",
+        url:  "https://www.bilibili.com/video/BV1rjHK6GEDw"
+      },
+      {
+        label:  "配图来源（百度图库·洛克王国词条图）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%96%B5%E5%96%B5"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-294.png"
+  },
+  {
+    name:  "火花",
+    alias:  "火花 / 小火花 / 火神前身 / 御三家",
+    rank:  "洛克淋国 · · 小火花",
+    intro:  "火系御三家，进化成火神／烈火战神，是「欲三家」里最多人一眼相中的那只。",
+    baike:  "火花是洛克王国初始三精灵之一，火属性，依次进化为焰火、火神；手游延续同一进化链，前期克制大量剧情 BOSS。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "火系",
+      "御三家"
+    ],
+    works:  [
+      "【洛克王国】开服初始宠，千万不要选这三只！",
+      "所有小洛克注意，选择火神时请保持内裤干燥！"
+    ],
+    words:  [
+      "火花",
+      "火神",
+      "火队"
+    ],
+    links:  [
+      {
+        label:  "B站《开服初始宠，千万不要选这三只！》",
+        url:  "https://www.bilibili.com/video/BV1YmQ6BPECH"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E7%81%AB%E8%8A%B1"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-295.png"
+  },
+  {
+    name:  "罗隐",
+    alias:  "罗隐 / 圣斗士 / 罗隐大人 / 深渊罗隐",
+    rank:  "洛克淋国 · · 圣斗士",
+    intro:  "页游时代「一只打通全图 PVE」的经典主打，洛手时代升级为「罗隐大人」。",
+    baike:  "罗隐是洛克王国页游的经典精灵，主打 PVE 单刷；页游活动「深渊罗隐的考验」以它命名，网上「保姆级罗隐攻略」长期霸榜。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "PVE",
+      "经典主打"
+    ],
+    works:  [
+      "【洛克王国页游】10月23日活动攻略 秘法药剂 深渊罗隐的考验",
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "罗隐",
+      "圣斗士",
+      "单防"
+    ],
+    links:  [
+      {
+        label:  "B站《10月23日活动攻略 深渊罗隐的考验》",
+        url:  "https://www.bilibili.com/video/BV1QEnx6mEZi"
+      },
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E7%BD%97%E9%9A%90"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-296.png"
+  },
+  {
+    name:  "瞌睡王",
+    alias:  "瞌睡王 / 神机军师 / 睡杀王 / 阴招王",
+    rank:  "洛克淋国 · · 神机军师",
+    intro:  "页游靠阴招闻名的精灵，水球球出现之前被称为「阴招王」。",
+    baike:  "瞌睡王是洛克王国页游精灵，外号「神机军师」「睡杀王」，以睡眠、消耗类阴招著称；玩家整理的宠物外号榜把它列为阴招系代表。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "阴招系",
+      "页游经典"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "瞌睡王",
+      "神机军师",
+      "大阴"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E7%9E%8C%E7%9D%A1%E7%8E%8B"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-297.png"
+  },
+  {
+    name:  "鸭吉吉",
+    alias:  "鸭吉吉 / 呀吉吉 / 鸭厂厂长 / 鸭界女王 / 吉祥物",
+    rank:  "洛克淋国 · · 鸭厂厂长",
+    intro:  "普通系吉祥物，攻击欲望堪比农家乐大鹅，却有一批把真爱压在它身上的「鸭厂厂长」。",
+    baike:  "鸭吉吉是洛克王国普通系精灵，种族值 550、两个进化形态，速度最高 105；因为平凡却被少数玩家全身炫彩，成了洛克淋国的小众信仰。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "普通系",
+      "吉祥物"
+    ],
+    works:  [
+      "【虫队】虫越少，虫越强！平衡虫队闪亮登场！",
+      "有这样的巴哈姆特你晚上几点钟回家？"
+    ],
+    words:  [
+      "鸭吉吉",
+      "鸭厂厂长",
+      "雨天战神"
+    ],
+    links:  [
+      {
+        label:  "B站《虫越少，虫越强！平衡虫队闪亮登场！》",
+        url:  "https://www.bilibili.com/video/BV1KX9UBSEVC"
+      },
+      {
+        label:  "外号出处（800游戏网·洛手人气最高的8只精灵）",
+        url:  "http://www.game800.net/article/17304.html"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E9%B8%AD%E5%90%89%E5%90%89"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-298.png"
+  },
+  {
+    name:  "水球球",
+    alias:  "水球球 / 镇南王 / 镇难王",
+    rank:  "洛克淋国 · · 镇南王",
+    intro:  "萌系精灵，因为全是阴招、专治强队，被封「镇难王」（谐镇南王）。",
+    baike:  "水球球是洛克王国萌系精灵，招式以阴招为主，能以弱胜强；玩家整理的奇葩外号榜把它排在第一位。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "萌系",
+      "页游经典"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "水球球",
+      "镇南王",
+      "大阴"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狐·洛克王国宠物的奇葩外号）",
+        url:  "https://www.sohu.com/a/316704058_120099887"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E6%B0%B4%E7%90%83%E7%90%83"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-299.png"
+  },
+  {
+    name:  "奇丽花",
+    alias:  "奇丽花 / 版本答案 / 草系门面",
+    rank:  "洛克淋国 · · 版本答案",
+    intro:  "一测就被关注、削弱多次依旧强势的草系开荒顶配，圈内直接叫「版本答案」。",
+    baike:  "奇丽花（奇丽草进化链）是洛手顶级开荒精灵，一测起就备受关注，现版本推荐物攻流、可改机械血脉学啮合传递。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "草系",
+      "开荒"
+    ],
+    works:  [
+      "新赛季最强的草系精灵有哪些？这都是你花的来时路",
+      "我宣布奇丽花是这个世界上最可爱的精灵"
+    ],
+    words:  [
+      "奇丽花",
+      "版本答案",
+      "草队"
+    ],
+    links:  [
+      {
+        label:  "B站《新赛季最强的草系精灵有哪些？》",
+        url:  "https://www.bilibili.com/video/BV177nX6PE1E"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%A5%87%E4%B8%BD%E8%8A%B1"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-300.png"
+  },
+  {
+    name:  "草依虫",
+    alias:  "草依虫 / 刁蛮公主",
+    rank:  "洛克淋国 · · 刁蛮公主",
+    intro:  "长得像公主、练级辛苦又没大用的页游精灵，外号「刁蛮公主」。",
+    baike:  "草依虫是洛克王国页游精灵，因外形像公主被大量玩家练，练满后才发现用处有限，「刁蛮公主」由此而来。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "草系",
+      "页游经典"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "草依虫",
+      "刁蛮公主",
+      "花瓶"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E8%8D%89%E4%BE%9D%E8%99%AB"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-301.png"
+  },
+  {
+    name:  "鬼雾",
+    alias:  "鬼雾 / 黑旋风",
+    rank:  "洛克淋国 · · 黑旋风",
+    intro:  "页游幽灵系精灵，攻击时像一阵黑旋风。",
+    baike:  "鬼雾是洛克王国页游幽灵系精灵，因攻击特效与通体漆黑被玩家叫作「黑旋风」。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "幽灵系",
+      "页游经典"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "鬼雾",
+      "黑旋风",
+      "幽队"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E9%AC%BC%E9%9B%BE"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-302.png"
+  },
+  {
+    name:  "利灯鱼",
+    alias:  "利灯鱼 / 猥琐哥",
+    rank:  "洛克淋国 · · 猥琐哥",
+    intro:  "长相直接决定外号的页游鱼系精灵，绰号「猥琐哥」。",
+    baike:  "利灯鱼是洛克王国页游水系精灵，玩家外号「猥琐哥」；洛手版本以「一电一个黑天鹅」的图鉴条目继续出现。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "水系",
+      "页游经典"
+    ],
+    works:  [
+      "一电一个黑天鹅！《洛克王国世界》全精灵介绍0314~315利灯鱼"
+    ],
+    words:  [
+      "利灯鱼",
+      "猥琐哥"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%88%A9%E7%81%AF%E9%B1%BC"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-303.png"
+  },
+  {
+    name:  "炫目鸡",
+    alias:  "炫目鸡 / KFC / 肯德基鸡",
+    rank:  "洛克淋国 · · KFC",
+    intro:  "页游精灵，外号直接是 KFC（Kentucky Fried Chicken）。",
+    baike:  "炫目鸡是洛克王国页游精灵，玩家按名字谐音叫它 KFC；洛手时代以「眩目鸡」写法继续出现在词条中。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "页游经典",
+      "谐音外号"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "炫目鸡",
+      "KFC"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E7%82%AB%E7%9B%AE%E9%B8%A1"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-304.png"
+  },
+  {
+    name:  "刺蜗贝",
+    alias:  "刺蜗贝 / 绿帽子王",
+    rank:  "洛克淋国 · · 绿帽子王",
+    intro:  "长胡子配绿帽子的忧郁老男人长相，被叫「绿帽子王」。",
+    baike:  "刺蜗贝是洛克王国页游精灵，玩家因它绿帽子＋长胡子的沧桑造型封它为「绿帽子王」。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "页游经典",
+      "谐音外号"
+    ],
+    works:  [
+      "洛克王国世界能分支进化的精灵图鉴"
+    ],
+    words:  [
+      "刺蜗贝",
+      "绿帽子王"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%88%BA%E8%9C%97%E8%B4%9D"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-305.png"
+  },
+  {
+    name:  "独眼巨魔",
+    alias:  "独眼巨魔 / 摄像头",
+    rank:  "洛克淋国 · · 摄像头",
+    intro:  "独眼造型被比作摄像头，于是外号就叫「摄像头」。",
+    baike:  "独眼巨魔是洛克王国页游精灵，单眼造型让玩家直接把它叫成摄像头。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "页游经典",
+      "谐音外号"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "独眼巨魔",
+      "摄像头"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E7%8B%AC%E7%9C%BC%E5%B7%A8%E9%AD%94"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-306.png"
+  },
+  {
+    name:  "河马小天使",
+    alias:  "河马小天使 / 赛贵妃",
+    rank:  "洛克淋国 · · 赛贵妃",
+    intro:  "外貌女性化、身材比杨贵妃还「好」，被叫「赛贵妃」。",
+    baike:  "河马小天使是洛克王国页游精灵，因外形与身材被玩家戏称赛贵妃，是页游时代最经典的宫斗化外号之一。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "页游经典",
+      "宫斗外号"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "河马小天使",
+      "赛贵妃"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E6%B2%B3%E9%A9%AC%E5%B0%8F%E5%A4%A9%E4%BD%BF"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-307.png"
+  },
+  {
+    name:  "喷火鸟",
+    alias:  "喷火鸟 / 战斗机 / 公鸡中的战斗机",
+    rank:  "洛克淋国 · · 战斗机",
+    intro:  "外号「战斗机」，出自「下蛋公鸡，公鸡中的战斗机」。",
+    baike:  "喷火鸟是洛克王国页游火系精灵，玩家借小品台词把它叫成「战斗机」。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "火系",
+      "页游经典"
+    ],
+    works:  [
+      "洛克老宠pk（用英雄主义锚定人格，用存在主义约束行为~）"
+    ],
+    words:  [
+      "喷火鸟",
+      "战斗机"
+    ],
+    links:  [
+      {
+        label:  "外号出处（搜狗问问·洛克王国宠物外号）",
+        url:  "https://wenwen.sogou.com/z/q598510244.htm"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%96%B7%E7%81%AB%E9%B8%9F"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-308.png"
+  },
+  {
+    name:  "陈铁兽",
+    alias:  "陈铁兽 / 父亲型 / 铁兽",
+    rank:  "洛克淋国 · · 父亲型",
+    intro:  "PVP 一线，左手接拳打断状态、右手先发控节奏，被形容成队伍里最严厉的父亲型指挥官。",
+    baike:  "陈铁兽是洛手 PVP 一线精灵，获取方式隐秘但特性超模，常被列为竞技场必练主力。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "PVP",
+      "严父"
+    ],
+    works:  [
+      "【洛克淋国】姐姐是平衡队，我也是平衡队，大家平起平坐，谁又比谁高贵呢"
+    ],
+    words:  [
+      "陈铁兽",
+      "严父",
+      "父亲型指挥官"
+    ],
+    links:  [
+      {
+        label:  "出处（800游戏网·洛手人气最高的8只精灵）",
+        url:  "http://www.game800.net/article/17304.html"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E9%99%88%E9%93%81%E5%85%BD"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-309.png"
+  },
+  {
+    name:  "龙希帕尔",
+    alias:  "龙希帕尔 / 龙息帕尔 / 赛季限定",
+    rank:  "洛克淋国 · · 赛季限定",
+    intro:  "S1 赛季限定精灵，血线互换机制，错过即永别。",
+    baike:  "龙希帕尔是洛手 S1 赛季限定传说精灵，拥有血线互换与击败回复魔力值的特性，在「阴间巴巴流」阵容里不可或缺。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "龙系",
+      "赛季限定"
+    ],
+    works:  [
+      "【洛克淋国】姐姐是平衡队，我也是平衡队，大家平起平坐，谁又比谁高贵呢"
+    ],
+    words:  [
+      "龙希帕尔",
+      "赛季限定",
+      "阴间巴巴流"
+    ],
+    links:  [
+      {
+        label:  "出处（800游戏网·洛手人气最高的8只精灵）",
+        url:  "http://www.game800.net/article/17304.html"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E9%BE%99%E5%B8%8C%E5%B8%95%E5%B0%94"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-310.png"
+  },
+  {
+    name:  "圣羽翼王",
+    alias:  "圣羽翼王 / 翼王 / 穷玩翼王",
+    rank:  "洛克淋国 · · 翼王",
+    intro:  "「穷玩翼王，富玩老顶，富还得玩呀吉吉」里的翼王，洛手人气榜常客。",
+    baike:  "圣羽翼王是洛克王国翼系精灵，长期是高人气外观＋实用强度兼具的选择；玩家用它当「平民强度」的代名词。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "翼系",
+      "人气精灵"
+    ],
+    works:  [
+      "削弱还是加强！S4神魔精灵大赏"
+    ],
+    words:  [
+      "圣羽翼王",
+      "翼王"
+    ],
+    links:  [
+      {
+        label:  "出处（800游戏网·洛手人气最高的8只精灵）",
+        url:  "http://www.game800.net/article/17304.html"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%9C%A3%E7%BE%BD%E7%BF%BC%E7%8E%8B"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-311.png"
+  },
+  {
+    name:  "幽颖树",
+    alias:  "幽颖树 / 幽影树 / 首领幽颖树",
+    rank:  "洛克淋国 · · 幽颖树",
+    intro:  "幽系首领位精灵，配幽铃能吃出吸能体系，是幽队「赔钱」标签下少见的正收益组合。",
+    baike:  "幽颖树（写作幽影树）是洛克王国幽系精灵，曾以「首领幽颖树」形态出现；玩家反馈现在的吸能手段太拉，需要它配合幽铃才能玩。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "幽系",
+      "首领"
+    ],
+    works:  [
+      "洛克王国目前四大天气为何只有雪天成为了主流阵容？"
+    ],
+    words:  [
+      "幽颖树",
+      "吸能",
+      "幽队"
+    ],
+    links:  [
+      {
+        label:  "B站《四大天气为何只有雪天成为主流》",
+        url:  "https://www.bilibili.com/video/BV1ddnU6DESk"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%B9%BD%E9%A2%96%E6%A0%91"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-312.png"
+  },
+  {
+    name:  "幽铃",
+    alias:  "幽铃 / 小幽铃 / 幽铃铃",
+    rank:  "洛克淋国 · · 幽铃",
+    intro:  "幽队体系里的铃铛型精灵，和幽颖树组队才有吸能收益。",
+    baike:  "幽铃是洛克王国幽系精灵；玩家在讨论「吸能手段太拉」时点名「要是配合之前的首领幽颖树，幽铃还能玩玩」。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "幽系",
+      "幽队"
+    ],
+    works:  [
+      "洛克王国目前四大天气为何只有雪天成为了主流阵容？"
+    ],
+    words:  [
+      "幽铃",
+      "吸能",
+      "赔钱幽队"
+    ],
+    links:  [
+      {
+        label:  "B站《四大天气为何只有雪天成为主流》",
+        url:  "https://www.bilibili.com/video/BV1ddnU6DESk"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%B9%BD%E9%93%83"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-313.png"
+  },
+  {
+    name:  "多灵主",
+    alias:  "多灵主 / 超模 / 多灵",
+    rank:  "洛克淋国 · · 超模",
+    intro:  "洛手里被公认「超模」的精灵，攻略标题直接用「有多超模」当卖点。",
+    baike:  "多灵主是《洛克王国：世界》精灵，因强度越过版本线成为「超模」的代名词，B 站有专门的玩法介绍与强度讨论。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "超模",
+      "PVP"
+    ],
+    works:  [
+      "洛克王国手游里的多灵主有多超模？【洛克王国世界】"
+    ],
+    words:  [
+      "多灵主",
+      "超模"
+    ],
+    links:  [
+      {
+        label:  "B站《多灵主有多超模？》",
+        url:  "https://www.bilibili.com/video/BV1LgW2zeEPW"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%A4%9A%E7%81%B5%E4%B8%BB"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-314.png"
+  },
+  {
+    name:  "巴哈姆特",
+    alias:  "巴哈姆特 / 年费巴哈姆特",
+    rank:  "洛克淋国 · · 巴哈姆特",
+    intro:  "年费档精灵，被拿来做「有这样的巴哈姆特你晚上几点钟回家？」这种调戏式标题。",
+    baike:  "巴哈姆特是《洛克王国》年费精灵，外观展示类视频常把它当成「贵妇级家养」的代表。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "年费",
+      "龙系"
+    ],
+    works:  [
+      "有这样的巴哈姆特你晚上几点钟回家？",
+      "洛克王国：年费巴哈姆特外观展示"
+    ],
+    words:  [
+      "巴哈姆特",
+      "龙之秘境"
+    ],
+    links:  [
+      {
+        label:  "B站《有这样的巴哈姆特你晚上几点钟回家？》",
+        url:  "https://www.bilibili.com/video/BV129J86jEDM"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-315.png"
+  },
+  {
+    name:  "凡鹰",
+    alias:  "凡鹰 / 最弱传说 / 平平无奇",
+    rank:  "洛克淋国 · · 最弱传说",
+    intro:  "被玩家封为「洛克王国世界最弱传说精灵」，S2 返厂时标题写「凡鹰销声匿迹」。",
+    baike:  "凡鹰是洛手传说档精灵，因强度平平被戏称最弱传说；S2 赛季传说返厂时它的缺席成了讨论点。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "传说",
+      "赔钱"
+    ],
+    works:  [
+      "『洛克王国世界』S2赛季赛季传说精灵返厂，凡鹰销声匿迹"
+    ],
+    words:  [
+      "凡鹰",
+      "销声匿迹",
+      "赔钱"
+    ],
+    links:  [
+      {
+        label:  "B站《S2赛季传说精灵返厂，凡鹰销声匿迹》",
+        url:  "https://www.bilibili.com/video/BV13KHG6VExg"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%87%A1%E9%B9%B0"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-316.png"
+  },
+  {
+    name:  "大耳帽兜",
+    alias:  "大耳帽兜 / 帽兜娃娃 / 全民异色",
+    rank:  "洛克淋国 · · 全民异色",
+    intro:  "洛手最容易出异色的入门精灵，等于「大家的第一只异色」。",
+    baike:  "大耳帽兜（帽兜娃娃）是洛克王国精灵，因捕捉量大、异色常见，成为异色机制的科普样本。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "异色",
+      "入门精灵"
+    ],
+    works:  [
+      "以防你没见过精灵的生蛋瞬间",
+      "S5异色机制太复杂？带你破解包懂！"
+    ],
+    words:  [
+      "大耳帽兜",
+      "异色",
+      "球数"
+    ],
+    links:  [
+      {
+        label:  "B站《S5异色机制太复杂？带你破解包懂！》",
+        url:  "https://www.bilibili.com/video/BV1Cxnb66EUk"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%A4%A7%E8%80%B3%E5%B8%BD%E5%85%9C"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-317.png"
+  },
+  {
+    name:  "卡瓦重",
+    alias:  "卡瓦重 / 最硬精灵 / 摇铃的",
+    rank:  "洛克淋国 · · 最硬精灵",
+    intro:  "「现在洛克王国最硬精灵」，特殊动画是疯狂摇沙锤。",
+    baike:  "卡瓦重是洛手精灵，硬到成为梗；它的特殊动画是摇手中沙锤，被当作全游戏最硬的存在。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "肉盾",
+      "meme"
+    ],
+    works:  [
+      "洛克王国世界卡瓦重图鉴介绍及强度分析"
+    ],
+    words:  [
+      "卡瓦重",
+      "大肉"
+    ],
+    links:  [
+      {
+        label:  "出处（NewsStroll·洛克王国的神人梗）",
+        url:  "https://newsstroll.com/Game/377934.html"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%8D%A1%E7%93%A6%E9%87%8D"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-318.png"
+  },
+  {
+    name:  "阿布",
+    alias:  "阿布 / 超能阿布 / 圣龙形态",
+    rank:  "洛克淋国 · · 超能阿布",
+    intro:  "页游 2012 年就放出圣龙形态概念稿的元老精灵，洛手时代以「超能阿布」回归。",
+    baike:  "阿布是洛克王国页游经典精灵，最终圣龙形态概念稿在 2012 年探班时已展示，页游 2019 年才正式上线；洛手以超能阿布形态登场。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "龙系",
+      "元老精灵"
+    ],
+    works:  [
+      "以防你不知道~冥古龙有10种设计方案",
+      "洛克王国世界超能阿布怎么获得"
+    ],
+    words:  [
+      "阿布",
+      "龙之秘境"
+    ],
+    links:  [
+      {
+        label:  "B站《冥古龙有10种设计方案》评论区（阿布圣龙形态考据）",
+        url:  "https://www.bilibili.com/video/BV1fAnd6gEsV"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E9%98%BF%E5%B8%83"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-319.png"
+  },
+  {
+    name:  "卷毛鸭",
+    alias:  "卷毛鸭 / 雨天战神 / 雨停我就死",
+    rank:  "洛克淋国 · · 雨天战神",
+    intro:  "雨天双攻翻倍，被做成 JOJO 梗「雨停之后，我就会死」。",
+    baike:  "卷毛鸭是洛克王国精灵，特性在雨天把双攻翻倍，因此得名雨天战神；二创把它和「雨停即死」绑在一起出圈。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "水系",
+      "天气队"
+    ],
+    works:  [
+      "洛克王国目前四大天气为何只有雪天成为了主流阵容？"
+    ],
+    words:  [
+      "卷毛鸭",
+      "雨天战神",
+      "天气队"
+    ],
+    links:  [
+      {
+        label:  "出处（NewsStroll·洛克王国的神人梗）",
+        url:  "https://newsstroll.com/Game/377934.html"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%8D%B7%E6%AF%9B%E9%B8%AD"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-320.png"
+  },
+  {
+    name:  "云梦豚",
+    alias:  "云梦豚 / 长江豚 / 小豚",
+    rank:  "洛克淋国 · · 云梦豚",
+    intro:  "S4 最后一只精灵，限定获取＋异色形态，抓它要跑全图清星星。",
+    baike:  "云梦豚（长江豚）是洛手 S4 末期限定精灵，可通过果实与孵蛋获取，有异色形态；玩家自发在评论区互传果实坐标。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "限定",
+      "水系"
+    ],
+    works:  [
+      "云梦豚已可捕捉！有异色形态！果实获取方法",
+      "【洛克王国世界】小小豚家在何方"
+    ],
+    words:  [
+      "云梦豚",
+      "异色",
+      "球数"
+    ],
+    links:  [
+      {
+        label:  "B站《云梦豚已可捕捉！有异色形态！》",
+        url:  "https://www.bilibili.com/video/BV1VXnY6BEuU"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E4%BA%91%E6%A2%A6%E8%B1%9A"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-321.png"
+  },
+  {
+    name:  "吉洛斯",
+    alias:  "吉洛斯 / 吉罗斯 / 吉洛斯老公",
+    rank:  "洛克淋国 · · 吉洛斯",
+    intro:  "星光对决的固定关卡主，攻略标题格式就是「星光对决-吉洛斯」。",
+    baike:  "吉洛斯是洛克王国精灵，星光对决活动按它分周轮换，配套攻略强调「无养成轮椅单通」。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "星光对决",
+      "活动"
+    ],
+    works:  [
+      "【星光对决-吉洛斯】夜游魔大量出没/无养成轮椅单通！"
+    ],
+    words:  [
+      "吉洛斯",
+      "星光对决",
+      "轮椅"
+    ],
+    links:  [
+      {
+        label:  "B站《星光对决-吉洛斯》攻略",
+        url:  "https://www.bilibili.com/video/BV1sTnR6UEnM"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%90%89%E6%B4%9B%E6%96%AF"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-322.png"
+  },
+  {
+    name:  "咔咔鸟",
+    alias:  "咔咔鸟 / 咔咔",
+    rank:  "洛克淋国 · · 咔咔鸟",
+    intro:  "洛手常见精灵，玩家常在评论区问「咔咔鸟在哪里」。",
+    baike:  "咔咔鸟是《洛克王国：世界》精灵，因分布点位固定，成为攻略类视频的常客。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "精灵",
+      "攻略"
+    ],
+    works:  [
+      "洛克王国世界咔咔鸟在哪里？咔咔鸟获取位置与图鉴介绍"
+    ],
+    words:  [
+      "咔咔鸟"
+    ],
+    links:  [
+      {
+        label:  "B站《咔咔鸟获取位置与图鉴介绍》",
+        url:  "https://www.bilibili.com/video/BV1bioSBcEqg"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%92%94%E5%92%94%E9%B8%9F"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-323.png"
+  },
+  {
+    name:  "梦想三三",
+    alias:  "梦想三三 / 三三",
+    rank:  "洛克淋国 · · 三三",
+    intro:  "洛手人气精灵，常出现在「我的精灵盒子」类盘点里。",
+    baike:  "梦想三三是洛克王国精灵，玩家习惯简称「三三」，多在收藏盘点与强度讨论中出现。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "精灵",
+      "人气"
+    ],
+    works:  [
+      "洛克王国世界｜我的精灵盒子（S1至S4）",
+      "我来交交你们精灵该如何起名"
+    ],
+    words:  [
+      "梦想三三"
+    ],
+    links:  [
+      {
+        label:  "B站《我的精灵盒子（S1至S4）》",
+        url:  "https://www.bilibili.com/video/BV19eHM6qEqS"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E6%A2%A6%E6%83%B3%E4%B8%89%E4%B8%89"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-324.png"
+  },
+  {
+    name:  "绒仙子",
+    alias:  "绒仙子 / 安陵绒 / 虫系门面",
+    rank:  "洛克淋国 · · 安陵绒",
+    intro:  "虫系门面，却是「最无人在意」的花瓶，于是被赐名「安陵绒」。",
+    baike:  "绒仙子是洛克王国虫系精灵，被玩家称为虫系门面；洛克淋国给它起了宫斗味的名字「安陵绒」，并配上「我仙子配不上周阴婷吗」的台词。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "虫系",
+      "门面"
+    ],
+    works:  [
+      "盘点布拉迪王国精灵的通讯录外号（虫系）"
+    ],
+    words:  [
+      "绒仙子",
+      "安陵绒",
+      "花瓶",
+      "虫母"
+    ],
+    links:  [
+      {
+        label:  "B站《盘点布拉迪王国精灵的通讯录外号（虫系）》",
+        url:  "https://www.bilibili.com/video/BV1bioSBcEqg"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E7%BB%92%E4%BB%99%E5%AD%90"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-325.png"
+  },
+  {
+    name:  "失心蜂",
+    alias:  "失心蜂 / 084 / 084号",
+    rank:  "洛克淋国 · · 084",
+    intro:  "图鉴 084 号精灵，虫系外号盘点里的固定登场位。",
+    baike:  "失心蜂是洛克王国虫系精灵，编号 084；在「通讯录外号」系列里被观众点名确认。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "虫系",
+      "图鉴"
+    ],
+    works:  [
+      "盘点布拉迪王国精灵的通讯录外号（虫系）"
+    ],
+    words:  [
+      "失心蜂",
+      "虫母"
+    ],
+    links:  [
+      {
+        label:  "B站《盘点布拉迪王国精灵的通讯录外号（虫系）》评论区",
+        url:  "https://www.bilibili.com/video/BV1bioSBcEqg"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%A4%B1%E5%BF%83%E8%9C%82"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-326.png"
+  },
+  {
+    name:  "障眼魔",
+    alias:  "障眼魔 / 反弹怪",
+    rank:  "洛克淋国 · · 反弹怪",
+    intro:  "会反弹咕噜球的精灵，抓它得先想好球会被打回来。",
+    baike:  "障眼魔是洛克王国精灵，机制上会反弹玩家投出的咕噜球；它是星光对决莎莉周的常驻对手。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "机制",
+      "星光对决"
+    ],
+    works:  [
+      "【星光对决-莎莉】障眼魔大量出没/无养成轮椅单通！"
+    ],
+    words:  [
+      "障眼魔",
+      "咕噜球"
+    ],
+    links:  [
+      {
+        label:  "B站《星光对决-莎莉》攻略",
+        url:  "https://www.bilibili.com/video/BV1LHnE6YEPo"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E9%9A%9C%E7%9C%BC%E9%AD%94"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-327.png"
+  },
+  {
+    name:  "夜游魔",
+    alias:  "夜游魔 / 夜游",
+    rank:  "洛克淋国 · · 夜游魔",
+    intro:  "「夜游魔大量出没」是星光对决吉洛斯周的标志性提示。",
+    baike:  "夜游魔是洛克王国精灵，夜间大量出没，成为吉洛斯周攻略标题里的固定信息。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "星光对决",
+      "夜间"
+    ],
+    works:  [
+      "【星光对决-吉洛斯】夜游魔大量出没/无养成轮椅单通！"
+    ],
+    words:  [
+      "夜游魔"
+    ],
+    links:  [
+      {
+        label:  "B站《星光对决-吉洛斯》攻略标题",
+        url:  "https://www.bilibili.com/video/BV1sTnR6UEnM"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%A4%9C%E6%B8%B8%E9%AD%94"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-328.png"
+  },
+  {
+    name:  "上岸蛙",
+    alias:  "上岸蛙 / 上岸哇 / 上岸蛙蛙",
+    rank:  "洛克淋国 · · 上岸哇",
+    intro:  "谐音精灵活招牌：上岸蛙＝「上岸哇」，考公考研许愿神兽。",
+    baike:  "上岸蛙是《洛克王国：世界》谐音精灵，谐「上岸哇」；同族还有布是石、吸泥鸥、号儿鱼等。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "谐音精灵",
+      "水系"
+    ],
+    works:  [
+      "上岸蛙全网首爆!【精灵来洛】",
+      "全网首发！考据S5奇遇精灵原型"
+    ],
+    words:  [
+      "上岸蛙",
+      "谐音精灵"
+    ],
+    links:  [
+      {
+        label:  "B站《上岸蛙全网首爆!》",
+        url:  "https://www.bilibili.com/video/BV1WxDeBcEsT"
+      },
+      {
+        label:  "外号出处（今日头条·洛克王国的谐音精灵）",
+        url:  "https://m.toutiao.com/article/7653841663848104489"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E4%B8%8A%E5%B2%B8%E8%9B%99"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-329.png"
+  },
+  {
+    name:  "吸泥鸥",
+    alias:  "吸泥鸥 / 吸你欧 / 是你哦",
+    rank:  "洛克淋国 · · 吸你欧",
+    intro:  "谐音精灵里唯一带「吸」字的，被洛克淋国顺手赋予吸入梗义。",
+    baike:  "吸泥鸥是《洛克王国：世界》谐音精灵，谐「吸你欧／是你哦」；因名字带「吸」，在淋语语境里天然多一层梗。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "谐音精灵",
+      "翼系"
+    ],
+    works:  [
+      "洛克王国世界新精灵登场##洛克王国超能阿布回归"
+    ],
+    words:  [
+      "吸泥鸥",
+      "谐音精灵",
+      "猛猛吸入"
+    ],
+    links:  [
+      {
+        label:  "B站《洛克王国世界新精灵登场》",
+        url:  "https://www.bilibili.com/video/BV1bioSBcEqg"
+      },
+      {
+        label:  "外号出处（今日头条·洛克王国的谐音精灵）",
+        url:  "https://m.toutiao.com/article/7653841663848104489"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E5%90%B8%E6%B3%A5%E9%B8%A5"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-330.png"
+  },
+  {
+    name:  "朔夜伊芙",
+    alias:  "朔夜伊芙 / 摄魂堕天使",
+    rank:  "洛克淋国 · · 朔夜伊芙",
+    intro:  "暗系人形精灵，被拿来和「洛克周」组 CP 玩梗。",
+    baike:  "朔夜伊芙是洛克王国精灵，百度百科归类为摄魂堕天使一系；B 站有「洛克周跟朔夜伊芙做上了」这类整活标题。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "暗系",
+      "整活"
+    ],
+    works:  [
+      "（最变态）洛克周跟朔夜伊芙做上了"
+    ],
+    words:  [
+      "朔夜伊芙"
+    ],
+    links:  [
+      {
+        label:  "B站《洛克周跟朔夜伊芙做上了》",
+        url:  "https://www.bilibili.com/video/BV1jHo4BVEGH"
+      },
+      {
+        label:  "配图来源（百度图库）",
+        url:  "https://image.baidu.com/search/index?tn=baiduimage&word=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%20%E6%9C%94%E5%A4%9C%E4%BC%8A%E8%8A%99"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-331.png"
+  },
+  {
+    name:  "茶博士蔚星",
+    alias:  "茶博士蔚星 / 茶博士 / 蔚星",
+    rank:  "洛克淋国 · · 茶博士",
+    intro:  "洛克淋国整活区 UP 主（B站号：彭柯驿），「布拉迪响了」系列的作者。",
+    baike:  "茶博士蔚星是 B 站洛克淋国内容创作者，代表作《茶博士蔚星的 布拉迪响了？》；评论区把他写进「姐妹连线」「也是 0 啊」的固定段子。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "UP主",
+      "整活"
+    ],
+    works:  [
+      "茶博士蔚星的 布拉迪响了？"
+    ],
+    words:  [
+      "布拉迪",
+      "通话录外号"
+    ],
+    links:  [
+      {
+        label:  "B站《茶博士蔚星的 布拉迪响了？》",
+        url:  "https://www.bilibili.com/video/BV1fLLh64EVk"
+      },
+      {
+        label:  "配图来源（B站 UP 主头像，未露脸用头像）",
+        url:  "https://space.bilibili.com/"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-332.png"
+  },
+  {
+    name:  "安宁",
+    alias:  "安宁 / 柚柚柚子 / 安宁老师",
+    rank:  "洛克淋国 · · 安宁",
+    intro:  "洛克王国 PVP 教学主播（B站号：柚_柚_柚子），直播回放按赛季更新阵容课。",
+    baike:  "安宁是 B 站洛克王国 PVP 教学向主播，回放标题固定写「S4 赛季洛克王国 pvp 教学 火队平衡队毒队等」，是洛克淋国对局黑话的主要输出源。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "UP主",
+      "PVP教学"
+    ],
+    works:  [
+      "安宁（洛克王国世界）20261023晚上场直播回放 S4赛季洛克王国pvp教学"
+    ],
+    words:  [
+      "火队女子",
+      "严父",
+      "大阴"
+    ],
+    links:  [
+      {
+        label:  "B站《安宁 20261023 直播回放》",
+        url:  "https://www.bilibili.com/video/BV1xPnR6DEmZ"
+      },
+      {
+        label:  "配图来源（B站 UP 主头像，未露脸用头像）",
+        url:  "https://space.bilibili.com/"
+      }
+    ],
+    grp:  "game",
+    group:  "game",
+    img:  "img/hero-333.png"
+  },
+  {
+    name:  "可丽希亚",
+    alias:  "可丽希亚 / 可丽希亚公主 / 希丽亚",
+    rank:  "洛克淋国 · · 可丽希亚",
+    intro:  "洛克王国女主角，常与小洛克一起出现在剧情动画与整活视频里。",
+    baike:  "可丽希亚是《洛克王国》核心 NPC 之一，页游与手游剧情里都与小洛克搭档；B 站有《可丽希亚只是在……》《可丽希亚与小洛克》等短片。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "NPC",
+      "女主角"
+    ],
+    works:  [
+      "【洛克王国】可丽希亚只是在……",
+      "可丽希亚与小洛克"
+    ],
+    words:  [
+      "小洛克"
+    ],
+    links:  [
+      {
+        label:  "B站《【洛克王国】可丽希亚只是在……》",
+        url:  "https://www.bilibili.com/video/BV1vDDBB8EZB"
+      },
+      {
+        label:  "待补图：百度图库仅有二创绘画过程图，不符合官方图白名单",
+        url:  "https://baike.baidu.com/item/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD"
+      }
+    ],
+    grp:  "game",
+    group:  "game"
+  },
+  {
+    name:  "阿洛",
+    alias:  "阿洛 / 洛克 / 小洛克本体",
+    rank:  "洛克淋国 · · 阿洛",
+    intro:  "洛克王国的玩家化身 NPC，B 站有以他为主角的「Mi Chico」向剪辑。",
+    baike:  "阿洛是《洛克王国》里代表玩家的小男孩 NPC，官方与二创都把他当作「小洛克」的具象形象。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "NPC",
+      "主角"
+    ],
+    works:  [
+      "洛克王国NPC阿洛 - Mi Chico"
+    ],
+    words:  [
+      "小洛克",
+      "男洛克"
+    ],
+    links:  [
+      {
+        label:  "B站《洛克王国NPC阿洛 - Mi Chico》",
+        url:  "https://www.bilibili.com/video/BV16dna62E45"
+      },
+      {
+        label:  "待补图：候选图为同人绘画，未采用",
+        url:  "https://baike.baidu.com/item/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD"
+      }
+    ],
+    grp:  "game",
+    group:  "game"
+  },
+  {
+    name:  "加尔",
+    alias:  "加尔 / 小加尔",
+    rank:  "洛克淋国 · · 加尔",
+    intro:  "洛克王国里负责发可可果任务的精灵系 NPC，被玩家叫作「小加尔」。",
+    baike:  "加尔是《洛克王国》中的精灵／NPC，页游里以「想吃脆脆的可可果就要先经历一下考验哦（加尔）」的活动登场。",
+    tags:  [
+      "洛克淋国",
+      "洛克王国",
+      "NPC",
+      "活动"
+    ],
+    works:  [
+      "想吃脆脆的可可果就要先经历一下考验哦～（加尔）",
+      "洛克王国丨加尔在画些什么呢"
+    ],
+    words:  [
+      "加尔"
+    ],
+    links:  [
+      {
+        label:  "B站《想吃脆脆的可可果就要先经历一下考验哦～（加尔）》",
+        url:  "https://www.bilibili.com/video/BV1bioSBcEqg"
+      },
+      {
+        label:  "待补图：候选图角色不确定，未采用",
+        url:  "https://baike.baidu.com/item/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD"
+      }
+    ],
+    grp:  "game",
+    group:  "game"
+  }
+];
+
+const heroMerge = [
+  {
+    name:  "翊坤宫娘娘",
+    alias:  "翊坤宫娘娘 / 鬼妈妈 / 妈妈桑 / 鬼妈妈桑"
+  },
+  {
+    name:  "火神",
+    alias:  "火神 / 火神daddy / 火狗 / 烈火守护 / 人间大炮"
+  },
+  {
+    name:  "迪莫",
+    alias:  "迪莫 / 圣光迪莫 / 太子爷 / 单刷狂魔 / 超市迪莫"
+  },
+  {
+    name:  "魔力猫",
+    alias:  "魔力猫 / 喵喵 / 草系女王 / 大将军"
+  },
+  {
+    name:  "音速犬",
+    alias:  "音速犬 / 代管婆 / 异色音速犬"
+  }
+];
+
+const quoteMerge = [];
+
+const __export = { cards, quotes, heroes, heroMerge, quoteMerge };
+if (typeof module === 'object' && module.exports) module.exports = __export;
+else if (typeof window !== 'undefined') window.LORE_EXTRA16 = __export;

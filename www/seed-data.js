@@ -4,7 +4,7 @@ window.__SEED_DATA = {
     {
       "zh": "我",
       "linyu": "本可",
-      "alias": "本可、本可儿、本可人儿、本仙女、本仙子、本小仙女、本猪妞、本祝妞、本猪猪女孩、本猪猪、本姑娘、本宫、本淋王、本淋淋、本淋、本小淋、本人家、本宝、宝宝我、人家我、本尊、本座、本可人、本淋王星人、本可酱、本可哒、本可哒哒、本猪猪本可、郭门、本娘娘",
+      "alias": "本可、本可儿、本可人儿、本仙女、本仙子、本小仙女、本猪妞、本祝妞、本猪猪女孩、本猪猪、本姑娘、本宫、本淋王、本淋淋、本淋、本小淋、本人家、本宝、宝宝我、人家我、本尊、本座、本可人、本淋王星人、本可酱、本可哒、本可哒哒、本猪猪本可、郭门、本娘娘、本可子、本可可、本可妹妹、本可姐姐、本可人儿们、本仙、本女、本天鹅、本凤凰、本淋王后、本阴婷、本凤、咱家、本娘子、本妃、本答应、本常在、本土妞、本村妞、本猪猪子、奴家、小女子、本宝宝、本喵、本仙女下凡、本宫娘娘、本仙子惹、本可惹",
       "slot": "第一人称自称",
       "sense": "淋语里\"我\"的译法最多的一个语义位：本可系最中性、本仙女系卖萌、本猪妞/本猪猪女孩自嘲、本宫/本座走清宫位分体。自称后可接\"惹/噜/厚\"黏着。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -198,7 +198,7 @@ window.__SEED_DATA = {
     {
       "zh": "是",
       "linyu": "素",
-      "alias": "素、系、就素、尊素、珍素、素不素、塔素、素啦",
+      "alias": "素、系、就素、尊素、珍素、素不素、塔素、素啦、不素",
       "slot": "认同",
       "sense": "\"素\"是台湾腔\"是\"的标准写法，\"系\"偏粤语腔，\"就素/尊素\"带强调。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -469,7 +469,7 @@ window.__SEED_DATA = {
     {
       "zh": "谢谢",
       "linyu": "靴靴",
-      "alias": "靴靴、靴靴的靴靴、靴靴惹、感谢惹、多谢惹、谢主隆恩、謝謝、谢谢谢谢、蟹蟹",
+      "alias": "靴靴、靴靴的靴靴、靴靴惹、感谢惹、多谢惹、谢主隆恩、謝謝、谢谢谢谢、蟹蟹、靴靴你、靴了",
       "slot": "调侃/戏谑",
       "sense": "\"靴\"模拟淋淋\"hia hia\"的笑声（闽南语靴读 hia），演化成\"谢谢\"；带嘲讽、婊气，与\"呵呵\"同类。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -814,7 +814,7 @@ window.__SEED_DATA = {
     {
       "zh": "笑死",
       "linyu": "笑鼠",
-      "alias": "笑鼠、孝鼠、笑鼠我了、笑鼠不活了、笑拥了、笑得合不拢腿",
+      "alias": "笑鼠、孝鼠、笑鼠我了、笑鼠不活了、笑拥了、笑得合不拢腿、笑鼠惹、笑到鼠",
       "slot": "情绪",
       "sense": "\"死→鼠\"的替换在淋语里是铁律，衍生出笑鼠/气鼠/吓鼠/蠢die 等一整串。",
       "source": "https://github.com/Aziteee/linyu-translator/blob/main/src/modules/linyu.ts",
@@ -888,7 +888,7 @@ window.__SEED_DATA = {
     {
       "zh": "真的",
       "linyu": "尊素",
-      "alias": "尊素、珍素、真素、尊嘟、真嘟、尊的、珍的、真滴、尊滴、珍素惹、尊素惹",
+      "alias": "尊素、珍素、真素、尊嘟、真嘟、尊的、珍的、真滴、尊滴、珍素惹、尊素惹、尊嘟假嘟",
       "slot": "认同",
       "sense": "\"真\"的台湾腔写作\"尊/珍\"，与\"素\"黏着成\"尊素/珍素\"。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -1007,19 +1007,25 @@ window.__SEED_DATA = {
       "zh": "心",
       "linyu": "燻",
       "slot": "情绪/基础谐音替换",
-      "pop": "低"
+      "pop": "低",
+      "alias": "熏、开熏、熏如刀割",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "sense": "「心」的台湾腔写作「熏」，开心 → 开熏。"
     },
     {
       "zh": "子",
       "linyu": "柱",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "构词法/基础谐音替换",
-      "pop": "高"
+      "pop": "高",
+      "alias": "柱、孩柱、样柱、婊柱",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "sense": "「子」的台湾腔写作「柱」：孩子 → 孩柱、样子 → 样柱。"
     },
     {
       "zh": "停止",
       "linyu": "婷芷",
-      "alias": "婷芷、婷芷我说婷芷、住嘴、闭嘴惊艳、婷止",
+      "alias": "婷芷、婷芷我说婷芷、住嘴、闭嘴惊艳、婷止、婷一下、婷",
       "slot": "调侃/戏谑",
       "sense": "\"停止\"的谐音，淋语里当\"闭嘴/别说了\"用，最著名的整句是\"婷芷，我说婷芷\"。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -1257,7 +1263,7 @@ window.__SEED_DATA = {
     {
       "zh": "吓死",
       "linyu": "吓鼠",
-      "alias": "吓鼠、吓死我惹、吓属惹、吓鼠人惹、吓到本可惹、吓鼠惹、吓鼠啦啦、我命大也吓鼠了",
+      "alias": "吓鼠、吓死我惹、吓属惹、吓鼠人惹、吓到本可惹、吓鼠惹、吓鼠啦啦、我命大也吓鼠了、被吓鼠了",
       "slot": "惊讶",
       "sense": "\"死\"统一淋化作\"鼠\"，\"吓鼠\"是弹幕见到高能画面的标准反应。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -1277,7 +1283,7 @@ window.__SEED_DATA = {
     {
       "zh": "自己",
       "linyu": "本可",
-      "alias": "本可、本人家、本可儿、自家、己个儿",
+      "alias": "本可、本人家、本可儿、自家、己个儿、本可自己、自个儿可、本可本可",
       "slot": "第一人称自称",
       "sense": "反身代词在淋语里同样用\"本可\"系列承接，读起来像在强调\"就是本可本人\"。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -2176,7 +2182,9 @@ window.__SEED_DATA = {
       "linyu": "当前版本答案",
       "slot": "游戏术语/评价判断",
       "pop": "低",
-      "sense": "强度判词（完颜慧德就是当前版本答案，造梗能力最强），句式表挂强度判词。"
+      "sense": "强度判词（完颜慧德就是当前版本答案，造梗能力最强），句式表挂强度判词。",
+      "alias": "版本答案、T0、开荒顶配",
+      "source": "https://shike.it168.com/news/18763.html"
     },
     {
       "zh": "气晕",
@@ -2503,7 +2511,7 @@ window.__SEED_DATA = {
       "slot": "洛克淋国/分区",
       "pop": "低",
       "sense": "分区名，“洛克淋国/洛克淋锅”两种写法并存（国→锅的谐音）。",
-      "alias": "洛克淋国、布拉迪王国、布拉迪大世界、法克王国",
+      "alias": "洛克淋国、布拉迪王国、布拉迪大世界、法克王国、布拉迪、布拉迪哥哥、小布拉迪、布拉迪弟弟、布拉迪妹妹",
       "source": "https://www.bilibili.com/video/BV1XgddBEEmU 、https://www.bilibili.com/video/BV1vbyCBtEQX 、https://www.bilibili.com/video/BV1MCJA6gEMy"
     },
     {
@@ -3724,7 +3732,10 @@ window.__SEED_DATA = {
       "linyu": "大量充钱",
       "verify": "https://search.bilibili.com/all?keyword=%E6%B0%AA%E9%87%91+%E5%A4%A7%E9%87%8F%E5%85%85%E9%92%B1",
       "slot": "游戏术语/生活日常",
-      "pop": "低"
+      "pop": "低",
+      "alias": "钞能力、氪佬",
+      "source": "https://newsstroll.com/Game/377934.html",
+      "sense": "棱镜球 160 一个，普通玩家能省则省，只有「钞能力者」才取之不尽。"
     },
     {
       "zh": "氪金大佬",
@@ -5581,7 +5592,7 @@ window.__SEED_DATA = {
     {
       "zh": "淋王星",
       "linyu": "淋王星",
-      "alias": "淋王星、淋球、淋星",
+      "alias": "淋王星、淋球、淋星、淋王星分舵",
       "slot": "圈层黑话",
       "sense": "以淋文化为基础的虚构社区，淋语被设定为它的官方语言，使用者自称淋王星子民。",
       "source": "https://moegirl.uk/index.php?title=%E6%B7%8B%E6%96%87%E5%8C%96",
@@ -5665,7 +5676,7 @@ window.__SEED_DATA = {
     {
       "zh": "美甲",
       "linyu": "💅🏻",
-      "alias": "💅🏻、美甲emoji",
+      "alias": "💅🏻、美甲emoji、美甲、💅、指甲",
       "slot": "圈层黑话",
       "sense": "美甲 emoji 是淋语圈的代表符号，源头是罗玉凤在美甲店打工的经历。",
       "source": "https://moegirl.uk/index.php?title=%E6%B7%8B%E6%96%87%E5%8C%96",
@@ -5677,7 +5688,7 @@ window.__SEED_DATA = {
     {
       "zh": "130",
       "linyu": "130",
-      "alias": "130次、13次、13、1.3、0.13",
+      "alias": "130次、13次、13、1.3、0.13、130、130遍",
       "slot": "圈层黑话",
       "sense": "淋语圈的代表数字，另有 13 / 1.3 / 0.13 等变体，用法如「砍你130刀」「买榜130次」。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -7747,7 +7758,7 @@ window.__SEED_DATA = {
     {
       "zh": "赔钱",
       "linyu": "赔钱",
-      "alias": "赔钱货、赔者自赔、赔女",
+      "alias": "赔钱货、赔者自赔、赔女、赔鼠、赔钱鼠、赔鼠惹",
       "slot": "调侃/戏谑",
       "sense": "指角色强度低、投入产出比差，或人做事倒贴。固定搭配“赔者自赔”。",
       "source": "https://bbs.nga.cn/read.php?tid=39308402",
@@ -8163,7 +8174,7 @@ window.__SEED_DATA = {
     {
       "zh": "地才",
       "linyu": "地才",
-      "alias": "地才宣言、不是天才是地才",
+      "alias": "地才宣言、不是天才是地才、地才、地才蓝、地才帽、努力一定会成功",
       "slot": "圈层黑话",
       "sense": "出自蔡依林《地才》演唱会：不是天才，是地才。淋语里用来强调努力、自嘲天赋不足。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -9580,7 +9591,7 @@ window.__SEED_DATA = {
     {
       "zh": "迪莫",
       "linyu": "迪莫",
-      "alias": "圣光迪莫、迪莫、光系神宠、迪莫莫、超市迪莫、迪迪",
+      "alias": "圣光迪莫、迪莫、光系神宠、迪莫莫、超市迪莫、迪迪、太子爷、单刷狂魔",
       "slot": "洛克淋国",
       "sense": "《洛克王国》光系宠物，2012 年首只光系宠物；洛克淋国区常把它写成「我一定会卖出自己的一片天」的主角。",
       "source": "https://www.bilibili.com/video/BV1GvpSekEcC",
@@ -9593,7 +9604,7 @@ window.__SEED_DATA = {
     {
       "zh": "魔力猫",
       "linyu": "魔力猫",
-      "alias": "魔力猫、喵喵、草系女王",
+      "alias": "魔力猫、喵喵、草系女王、大将军、啤酒肚将军",
       "slot": "洛克淋国",
       "sense": "《洛克王国》草系宠物，洛克淋国 01 期「水系精灵名师一对一辅导」里被本可点名。",
       "source": "https://www.bilibili.com/video/BV1GvpSekEcC",
@@ -11644,7 +11655,7 @@ window.__SEED_DATA = {
     {
       "zh": "去死",
       "linyu": "去鼠",
-      "alias": "去鼠惹、高燃去鼠",
+      "alias": "去鼠惹、高燃去鼠、去鼠、你给我去鼠",
       "slot": "调侃/戏谑/基础谐音替换",
       "sense": "“去死”的鼠化谐音。“高燃去鼠”是对炸场名场面的捧杀式惊呼：燃到可以直接去死了。",
       "source": "B站《魔法小浦西》弹幕",
@@ -12544,7 +12555,7 @@ window.__SEED_DATA = {
     {
       "zh": "火神",
       "linyu": "火神",
-      "alias": "火神daddy、火狗、烈火守护",
+      "alias": "火神daddy、火狗、烈火守护、人间大炮",
       "slot": "洛克淋国/人物",
       "sense": "《洛克王国》火系精灵，由火花进化，洛克淋国对局高频核心：“火神c位”“怎么处理火神”。",
       "source": "https://www.bilibili.com/video/BV1vdhd6cEko 、https://www.bilibili.com/video/BV1KX9UBSEVC",
@@ -12594,7 +12605,7 @@ window.__SEED_DATA = {
     {
       "zh": "音速犬",
       "linyu": "音速犬",
-      "alias": "异色音速犬",
+      "alias": "异色音速犬、代管婆、代练婆",
       "slot": "洛克淋国/人物",
       "sense": "《洛克王国》精灵，恶魔狼的强队友：“恶魔狼的队友音速犬很强呀”“异色音速犬从S1说到S5”。",
       "source": "https://www.bilibili.com/video/BV1Bmjh6bE36 、https://www.bilibili.com/video/BV19bn864EAs",
@@ -12747,7 +12758,7 @@ window.__SEED_DATA = {
     {
       "zh": "卷毛鸭",
       "linyu": "卷毛鸭",
-      "alias": "卷毛鸭",
+      "alias": "卷毛鸭、雨天战神、雨停我就死、卷毛",
       "slot": "洛克淋国/人物",
       "sense": "《洛克王国：世界》水系精灵，雨天队可爱担当：“卷毛鸭、水灵、彩蝶鲨都好可爱”。",
       "source": "https://www.bilibili.com/video/BV1Bmjh6bE36",
@@ -12800,9 +12811,1447 @@ window.__SEED_DATA = {
       "source": "https://www.bilibili.com/video/BV1tQnS6VERo",
       "pop": "低",
       "rel": []
+    },
+    {
+      "zh": "男洛克",
+      "linyu": "布拉迪",
+      "alias": "布拉迪哥哥、布拉迪弟弟、小布拉迪、男布拉迪",
+      "slot": "洛克淋国/称呼类",
+      "sense": "洛克淋国对男号角色的称呼，取自英文名 Bradley 的空耳；圈内把男洛克穿搭、白袜、黑皮体育生话题统称「布拉迪美学」。",
+      "source": "https://www.bilibili.com/video/BV1oHJv6CEu8 、https://www.bilibili.com/video/BV1uaWQejEX1",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "洛克玩家",
+      "linyu": "洛批",
+      "alias": "洛批、铁血洛批、小洛克、养老玩家",
+      "slot": "洛克淋国/称呼类",
+      "sense": "洛克王国玩家的自称，沿用「米批／粥批」的 -批 后缀；「铁血洛批」指嘴上骂得很凶但依旧天天上线的人。",
+      "source": "https://www.bilibili.com/video/BV1vgHT6NEZz 、https://www.bilibili.com/video/BV12SEGzGEt8",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "洛克王国世界",
+      "linyu": "洛手",
+      "alias": "洛手、洛克手游、洛克王国手游",
+      "slot": "洛克淋国/分区",
+      "sense": "《洛克王国：世界》（手游）的简称，与页游版并称「页游／洛手」。",
+      "source": "https://www.bilibili.com/video/BV1LgW2zeEPW 、https://www.bilibili.com/video/BV18opUeBEYT",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "法克王国",
+      "linyu": "法克王国",
+      "alias": "法克王国、法克、法克淋国",
+      "slot": "洛克淋国/分区",
+      "sense": "对《洛克王国》的恶搞叫法（fuck 空耳），B 站「【法克王国】」系列把这套叫法做成了固定栏目。",
+      "source": "https://www.bilibili.com/video/BV1BL8M6FE3z 、https://www.bilibili.com/video/BV1BL8M6FE3z",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "洛克淋国",
+      "linyu": "洛克淋国",
+      "alias": "洛克淋国、程克淋国、洛克淋锅、洛克淋国手游吧",
+      "slot": "洛克淋国/分区",
+      "sense": "洛克王国的淋语分区名，贴吧「洛克淋国手游吧」与「程克淋国」并称；是本分区所有词条的唯一 slot key。",
+      "source": "https://www.bilibili.com/video/BV1bioSBcEqg 、https://tieba.baidu.com/f?kw=%E6%B4%9B%E5%85%8B%E6%B7%8B%E5%9B%BD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "不是石",
+      "linyu": "布是石",
+      "alias": "布是石、布什石",
+      "slot": "洛克淋国/构词法",
+      "sense": "《洛克王国：世界》谐音精灵，谐「不是石」；同族还有布是岩、布克棱岩。",
+      "source": "https://m.toutiao.com/article/7653841663848104489 、https://www.bilibili.com/video/BV1bCHK69EB9",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不是岩",
+      "linyu": "布是岩",
+      "alias": "布是岩",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「不是岩」；布是石 → 布是岩 → 布克棱岩 三兄弟连成一句「不是石、不是岩、不可能耶」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不可能耶",
+      "linyu": "布克棱岩",
+      "alias": "布克棱岩、不可能岩",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「不可能耶」，是三兄弟里最出圈的一只。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "忽悠你",
+      "linyu": "忽幽狸",
+      "alias": "忽幽狸",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「忽悠你」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "哭哭哭",
+      "linyu": "哭哭菇",
+      "alias": "哭哭菇",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「哭哭哭」；进化链是 哭哭菇→怖须菇→怖哭菇。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不许哭",
+      "linyu": "怖须菇",
+      "alias": "怖须菇",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「不许哭」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不哭哭",
+      "linyu": "怖哭菇",
+      "alias": "怖哭菇",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「不哭哭」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "剥菠萝",
+      "linyu": "波波螺",
+      "alias": "波波螺",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「剥菠萝」；波螺家族：剥菠萝→削菠萝→食菠萝。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "削菠萝",
+      "linyu": "消波螺",
+      "alias": "消波螺",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「削菠萝」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "食菠萝",
+      "linyu": "嗜波螺",
+      "alias": "嗜波螺",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「食菠萝」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "可以咯",
+      "linyu": "壳乙螺",
+      "alias": "壳乙螺",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「可以咯」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "比目鱼",
+      "linyu": "鄙目鹬",
+      "alias": "鄙目鹬",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「比目鱼」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "莫有事",
+      "linyu": "墨鱿士",
+      "alias": "墨鱿士",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「莫有事」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "只许幽默",
+      "linyu": "秩序鱿墨",
+      "alias": "秩序鱿墨、只需油墨",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「只许幽默／只需油墨」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "吸你欧",
+      "linyu": "吸泥鸥",
+      "alias": "吸泥鸥、是你哦",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「吸你欧／是你哦」；因带「吸」字被洛克淋国额外赋予了吸入的梗义。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "你好呀",
+      "linyu": "泥吼牙",
+      "alias": "泥吼牙",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「你好呀」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不挂科",
+      "linyu": "布瓜蝌",
+      "alias": "布瓜蝌",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「不挂科」，考试季常被当护身符转。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "上岸哇",
+      "linyu": "上岸蛙",
+      "alias": "上岸蛙、上岸蛙蛙",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「上岸哇」，考公考研语境里用来许愿。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "有什么事",
+      "linyu": "游蛇魔使",
+      "alias": "游蛇魔使",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「有什么事」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "How are you",
+      "linyu": "号儿鱼",
+      "alias": "号儿鱼、耗儿鱼",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「耗儿鱼／How are you」，是少见的英文空耳型精灵名。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "背古诗",
+      "linyu": "贝古斯",
+      "alias": "贝古斯",
+      "slot": "洛克淋国/构词法",
+      "sense": "谐音精灵，谐「背古诗」。",
+      "source": "https://m.toutiao.com/article/7653841663848104489",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "水球球",
+      "linyu": "镇南王",
+      "alias": "镇南王、镇难王",
+      "slot": "洛克淋国/人物",
+      "sense": "萌系水球球的外号：招式皆为阴招，谁都能被它以弱胜强，故称「镇难王」，谐「镇南王」。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm 、https://www.sohu.com/a/316704058_120099887",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瞌睡王",
+      "linyu": "神机军师",
+      "alias": "神机军师、睡杀王、阴招王",
+      "slot": "洛克淋国/人物",
+      "sense": "瞌睡王外号，靠阴招成名，水球球出现前被称「阴招王」。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "草依虫",
+      "linyu": "刁蛮公主",
+      "alias": "刁蛮公主",
+      "slot": "洛克淋国/人物",
+      "sense": "草依虫长得像公主、练级辛苦又没什么用，被叫「刁蛮公主」。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "鬼雾",
+      "linyu": "黑旋风",
+      "alias": "黑旋风",
+      "slot": "洛克淋国/人物",
+      "sense": "鬼雾攻击时像一阵黑旋风，故得名。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "利灯鱼",
+      "linyu": "猥琐哥",
+      "alias": "猥琐哥",
+      "slot": "洛克淋国/人物",
+      "sense": "利灯鱼长相直接决定外号。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "罗隐",
+      "linyu": "圣斗士",
+      "alias": "圣斗士、罗隐大人、深渊罗隐",
+      "slot": "洛克淋国/人物",
+      "sense": "罗隐是页游「一只打通全图 PVE」的经典主打，被叫「圣斗士」，洛手时代升级为「罗隐大人」。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm 、https://www.bilibili.com/video/BV1QEnx6mEZi",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "炫目鸡",
+      "linyu": "KFC",
+      "alias": "KFC、肯德基鸡",
+      "slot": "洛克淋国/人物",
+      "sense": "炫目鸡＝Kentucky Fried Chicken，圈内直接叫 KFC。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "刺蜗贝",
+      "linyu": "绿帽子王",
+      "alias": "绿帽子王",
+      "slot": "洛克淋国/人物",
+      "sense": "长胡子＋绿帽子，一副忧虑老男人长相，故称。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "独眼巨魔",
+      "linyu": "摄像头",
+      "alias": "摄像头",
+      "slot": "洛克淋国/人物",
+      "sense": "独眼造型像摄像头。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "河马小天使",
+      "linyu": "赛贵妃",
+      "alias": "赛贵妃",
+      "slot": "洛克淋国/人物",
+      "sense": "外貌像女人、身材比杨贵妃还「好」，故称赛贵妃。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "喷火鸟",
+      "linyu": "战斗机",
+      "alias": "战斗机、公鸡中的战斗机",
+      "slot": "洛克淋国/人物",
+      "sense": "出自「下蛋公鸡，公鸡中的战斗机」。",
+      "source": "https://wenwen.sogou.com/z/q598510244.htm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "鸭吉吉",
+      "linyu": "鸭厂厂长",
+      "alias": "鸭厂厂长、呀吉吉、鸭界女王、吉祥物",
+      "slot": "洛克淋国/人物",
+      "sense": "普通系吉祥物，因为一批把真爱压在鸭吉吉身上的小众玩家而诞生「鸭厂厂长」「鸭界女王」这类称号。",
+      "source": "https://newsstroll.com/Game/377934.html 、http://www.game800.net/article/17304.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "卡瓦重",
+      "linyu": "最硬精灵",
+      "alias": "最硬精灵、摇铃的",
+      "slot": "洛克淋国/人物",
+      "sense": "游戏里最硬的一只，特殊动画是疯狂摇沙锤。",
+      "source": "https://newsstroll.com/Game/377934.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "陈铁兽",
+      "linyu": "父亲型指挥官",
+      "alias": "父亲型、铁兽",
+      "slot": "洛克淋国/人物",
+      "sense": "PVP 一线，左手接拳打断状态、右手先发掌控节奏，被形容成队伍里「最严厉的父亲型指挥官」。",
+      "source": "http://www.game800.net/article/17304.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "龙希帕尔",
+      "linyu": "赛季限定",
+      "alias": "赛季限定、龙希帕尔",
+      "slot": "洛克淋国/人物",
+      "sense": "S1 赛季限定精灵，血线互换机制，错过即永别。",
+      "source": "http://www.game800.net/article/17304.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "圣羽翼王",
+      "linyu": "翼王",
+      "alias": "翼王、穷玩翼王",
+      "slot": "洛克淋国/人物",
+      "sense": "「穷玩翼王，富玩老顶，富还得玩呀吉吉」里的翼王。",
+      "source": "http://www.game800.net/article/17304.html",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "奇丽花",
+      "linyu": "版本答案",
+      "alias": "版本答案、草系门面",
+      "slot": "洛克淋国/人物",
+      "sense": "一测就被关注、削弱多次依旧强势的开荒顶配，圈内直接叫「版本答案」。",
+      "source": "https://m.wandoujia.com/apps/8100514/840269312121073193.html 、http://www.game800.net/article/17304.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "刷本",
+      "linyu": "刷布拉迪",
+      "alias": "刷布拉迪、刷一天布拉迪",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "把「刷洛克王国日常」说成「刷布拉迪」，配套梗是「刷布拉迪猝亖转生成全世界唯一的灵」。",
+      "source": "https://www.bilibili.com/video/BV1J9Hw6hEz3 、https://www.bilibili.com/video/BV1ybn96yELV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "猝死",
+      "linyu": "猝亖",
+      "alias": "猝亖、亖了、亖",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "「死」的避讳写法，用「亖」代替，常见于「刷布拉迪猝亖」系列标题。",
+      "source": "https://www.bilibili.com/video/BV1J9Hw6hEz3",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "稀有度",
+      "linyu": "出率",
+      "alias": "出率、保底、清空保底",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "异色＝清空保底的超稀有档，抓异色被类比成出率 2% 的抽卡。",
+      "source": "https://newsstroll.com/Game/377934.html 、https://www.bilibili.com/video/BV1Cxnb66EUk",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "异色",
+      "linyu": "异色",
+      "alias": "异色、炫彩、黑白炫彩、异色精灵",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "精灵的稀有色，S5 之后「异色可看性格」，还出现黑白炫彩报价表。",
+      "source": "https://www.bilibili.com/video/BV12wnX65Eoj 、https://www.bilibili.com/video/BV1uMn46LExb",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "污染精灵",
+      "linyu": "污染",
+      "alias": "污染、污染形态",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "捕捉到一定数量后触发的特殊机制，击败污染精灵后精灵显现本色。",
+      "source": "https://newsstroll.com/Game/377934.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "精灵球",
+      "linyu": "咕噜球",
+      "alias": "咕噜球、棱镜球、公主球",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "洛手的捕捉道具；棱镜球负责随机染色，公主球有专门的「生产过程」视频。",
+      "source": "https://www.bilibili.com/video/BV1WxDeBcEsT 、https://newsstroll.com/Game/377934.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "强度超模",
+      "linyu": "超模",
+      "alias": "超模、超标、强度离谱",
+      "slot": "洛克淋国/评价判断",
+      "sense": "形容精灵强度越过版本线，如「多灵主有多超模」。",
+      "source": "https://www.bilibili.com/video/BV1LgW2zeEPW",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "无养成单通",
+      "linyu": "轮椅",
+      "alias": "轮椅、轮椅单通、无养成轮椅",
+      "slot": "洛克淋国/评价判断",
+      "sense": "「轮椅单通」指不需要养成、闭眼也能过的打法，强度高到像坐轮椅。",
+      "source": "https://www.bilibili.com/video/BV1sTnR6UEnM 、https://www.bilibili.com/video/BV1LHnE6YEPo",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "阴间流派",
+      "linyu": "阴间巴巴流",
+      "alias": "阴间巴巴流、阴间队",
+      "slot": "洛克淋国/评价判断",
+      "sense": "高难度、操作阴损的非主流阵容，龙希帕尔在「阴间巴巴流」里不可或缺。",
+      "source": "http://www.game800.net/article/17304.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "很阴的玩家",
+      "linyu": "大阴",
+      "alias": "大阴、阴批",
+      "slot": "洛克淋国/评价判断",
+      "sense": "打到高排名还全程阴招，弹幕直接封「大阴」。",
+      "source": "https://www.bilibili.com/video/BV18ynm6gEKY",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "队伍里的爹",
+      "linyu": "严父",
+      "alias": "严父、父亲型",
+      "slot": "洛克淋国/评价判断",
+      "sense": "平衡队里一半精灵都是「严父」，指不带它就打不过的那几只。",
+      "source": "https://www.bilibili.com/video/BV1aBpv6CEEY",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "没人用",
+      "linyu": "无人在意",
+      "alias": "无人在意、查无此精灵",
+      "slot": "洛克淋国/评价判断",
+      "sense": "通讯录偏爱强度无人在意的花瓶，弹幕标配「结果是最无人在意的」。",
+      "source": "https://www.bilibili.com/video/BV1bioSBcEqg",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "花瓶精灵",
+      "linyu": "花瓶",
+      "alias": "花瓶、美丽废物",
+      "slot": "洛克淋国/评价判断",
+      "sense": "好看但强度拉垮的精灵；「通讯录群体为什么总是执迷于这些强度无人在意的花瓶」。",
+      "source": "https://www.bilibili.com/video/BV1bioSBcEqg",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "返场",
+      "linyu": "返厂",
+      "alias": "返厂、二进宫、回宫",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "限定精灵重新上架叫「返厂」，与宫斗体的「回宫／二进宫」同义。",
+      "source": "https://www.bilibili.com/video/BV1mGn46rEwt 、https://www.bilibili.com/video/BV13KHG6VExg",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "绝版",
+      "linyu": "销声匿迹",
+      "alias": "销声匿迹、永别、错过即永别",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "赛季限定精灵不再产出，「凡鹰销声匿迹」「错过即永别」都是标准说法。",
+      "source": "https://www.bilibili.com/video/BV13KHG6VExg 、http://www.game800.net/article/17304.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "亲密度",
+      "linyu": "亲昵",
+      "alias": "亲昵、贴肩动作",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "洛手的互动动作系统，「恶魔叮贴肩动作太戳人了」。",
+      "source": "https://www.bilibili.com/video/BV1epHV6nE4Z",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "抽卡式捕捉",
+      "linyu": "球数",
+      "alias": "球数、2300球、几千个球",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "圈内用「抓了多少球」衡量非欧，如「抓了 2300 球才出异色」。",
+      "source": "https://newsstroll.com/Game/377934.html",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "火队",
+      "linyu": "火队女子",
+      "alias": "火队女子、火焰姐妹、火队",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "火系阵容的淋化叫法，与「雪天女子」「幽队女子」同一句式。",
+      "source": "https://www.bilibili.com/video/BV1xPnR6DEmZ 、https://www.bilibili.com/video/BV1EDH36WEV2",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "草队",
+      "linyu": "赔钱草队",
+      "alias": "赔钱草队、赔钱草",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "草属性长期弱势，弹幕直接骂「草属性这么赔钱」，队伍被叫赔钱草队。",
+      "source": "https://www.bilibili.com/video/BV177nX6PE1E",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "冰队",
+      "linyu": "冰队女子",
+      "alias": "冰队女子、冰队",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "冰系阵容的淋化叫法。",
+      "source": "https://www.bilibili.com/video/BV1xPnR6DEmZ",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "毒队",
+      "linyu": "毒队",
+      "alias": "毒队、毒队女子",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "毒系阵容，安宁直播标题直接把「火队平衡队毒队」并列。",
+      "source": "https://www.bilibili.com/video/BV1xPnR6DEmZ",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "受队",
+      "linyu": "受队",
+      "alias": "受队、变态阵容",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "以消耗防守为主的阵容，「受队撞车策划」成为名场面。",
+      "source": "https://www.bilibili.com/video/BV1aBpv6CEEY",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "天气队",
+      "linyu": "天气队",
+      "alias": "天气队、四大天气",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "围绕天气系统的阵容，四大天气里只有雪天成了主流。",
+      "source": "https://www.bilibili.com/video/BV1ddnU6DESk",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "吸能",
+      "linyu": "吸能",
+      "alias": "吸能、吸能手段",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "吸取对方能量的机制；「现在的吸能手段太拉了」是典型吐槽。",
+      "source": "https://www.bilibili.com/video/BV1ddnU6DESk",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "拉条",
+      "linyu": "拉条",
+      "alias": "拉条、抢速",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "抢先手的速度手段。",
+      "source": "https://www.bilibili.com/video/BV1LxnX6ZEcj",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "肉盾",
+      "linyu": "大肉",
+      "alias": "大肉、抗压位",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "顶伤害的位置。",
+      "source": "https://www.bilibili.com/video/BV1LxnX6ZEcj",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "三倍克制",
+      "linyu": "三倍弱",
+      "alias": "三倍弱、三倍弱电",
+      "slot": "洛克淋国/游戏术语",
+      "sense": "属性克制的极限档，被三倍克制叫「三倍弱」。",
+      "source": "https://www.bilibili.com/video/BV1LxnX6ZEcj",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "魔法学院",
+      "linyu": "魔法大学",
+      "alias": "魔法大学、洛克魔法大学",
+      "slot": "洛克淋国/分区",
+      "sense": "页游魔法学院，洛手里被叫「魔法大学」，花衣蝶在那儿当老师。",
+      "source": "https://www.bilibili.com/video/BV1cRnn6UEfH",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "生态园",
+      "linyu": "生态园",
+      "alias": "生态园、大世界",
+      "slot": "洛克淋国/分区",
+      "sense": "洛手的大世界地图，日常跑图与捕捉都在这儿。",
+      "source": "https://www.bilibili.com/video/BV1monB6gEG3",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "龙之秘境",
+      "linyu": "龙之秘境",
+      "alias": "龙之秘境、龙系秘境",
+      "slot": "洛克淋国/分区",
+      "sense": "玩家期待中的龙系专区，「想要更多龙系只有等龙之秘境」。",
+      "source": "https://www.bilibili.com/video/BV1fAnd6gEsV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "占星台",
+      "linyu": "占星台",
+      "alias": "占星台、S6占星台",
+      "slot": "洛克淋国/分区",
+      "sense": "S6 版本新地图，「S6占星台！双鱼座要来了」。",
+      "source": "https://www.bilibili.com/video/BV1vvnm6jE7M",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "圣龙宝藏",
+      "linyu": "圣龙宝藏",
+      "alias": "圣龙宝藏、S5赛季",
+      "slot": "洛克淋国/分区",
+      "sense": "S5 赛季主题，PV 首曝与家具/玩具/动作实机一起放出。",
+      "source": "https://www.bilibili.com/video/BV16aH56PEt3 、https://www.bilibili.com/video/BV1NinU6vEcL",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "月涌狂想",
+      "linyu": "月涌狂想",
+      "alias": "月涌狂想、S4赛季",
+      "slot": "洛克淋国/分区",
+      "sense": "S4 赛季主题。",
+      "source": "https://www.bilibili.com/video/BV18ynm6gEKY",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "星陨对局",
+      "linyu": "星陨",
+      "alias": "星陨、星陨局",
+      "slot": "洛克淋国/分区",
+      "sense": "高分 PVP 对局模式，「高分星陨对局，绝望到希望再到绝望」。",
+      "source": "https://www.bilibili.com/video/BV18ynm6gEKY",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "星光对决",
+      "linyu": "星光对决",
+      "alias": "星光对决、星光",
+      "slot": "洛克淋国/分区",
+      "sense": "每周轮换的活动副本，攻略标题格式为「星光对决-吉洛斯」。",
+      "source": "https://www.bilibili.com/video/BV1sTnR6UEnM 、https://www.bilibili.com/video/BV1LHnE6YEPo",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "系别排位赛",
+      "linyu": "系别",
+      "alias": "系别、系别赛、系别招新",
+      "slot": "洛克淋国/分区",
+      "sense": "按属性分系的排位赛，衍生出「系别招新视频」。",
+      "source": "https://www.bilibili.com/video/BV1rjHK6GEDw",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "皇家研究所",
+      "linyu": "皇家研究所",
+      "alias": "皇家研究所",
+      "slot": "洛克淋国/分区",
+      "sense": "页游经典地图，洛手补档游里出现。",
+      "source": "https://www.bilibili.com/video/BV1vvnm6jE7M",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "我完了",
+      "linyu": "我鼠了",
+      "alias": "我鼠了、鼠了、鼠掉了、鼠不活了、我命小我先鼠",
+      "slot": "情绪",
+      "sense": "「死」避讳成「鼠」，我完了 → 我鼠了；延伸出玛雅命学系「我命小我先鼠／命大也鼠了」。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD 、https://www.bilibili.com/video/BV1LvoGBTEew",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "急死了",
+      "linyu": "急鼠",
+      "alias": "急鼠、急鼠了",
+      "slot": "情绪",
+      "sense": "急死 → 急鼠。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "气死了",
+      "linyu": "气鼠",
+      "alias": "气鼠、气鼠了",
+      "slot": "情绪",
+      "sense": "气死 → 气鼠。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "累死了",
+      "linyu": "累鼠",
+      "alias": "累鼠、累鼠了",
+      "slot": "情绪",
+      "sense": "累死 → 累鼠。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "饿死了",
+      "linyu": "饿鼠",
+      "alias": "饿鼠、饿鼠了",
+      "slot": "情绪",
+      "sense": "饿死 → 饿鼠。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "可爱死了",
+      "linyu": "可爱鼠了",
+      "alias": "可爱鼠了、可爱鼠、萌鼠了",
+      "slot": "撒娇亲昵",
+      "sense": "可爱死 → 可爱鼠了，弹幕最常见的一种鼠化。",
+      "source": "https://www.bilibili.com/video/BV1bioSBcEqg",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "穷死了",
+      "linyu": "穷鼠",
+      "alias": "穷鼠、穷鼠了",
+      "slot": "情绪",
+      "sense": "穷死 → 穷鼠。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "丑死了",
+      "linyu": "丑鼠",
+      "alias": "丑鼠、吃藕、丑cry",
+      "slot": "贬义",
+      "sense": "丑死 → 丑鼠；「吃藕」是「丑」的拆字谐音。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "天啊",
+      "linyu": "天啦噜",
+      "alias": "天啦噜、天惹噜、天了噜、天噜",
+      "slot": "惊讶",
+      "sense": "噜／惹／奴互换，感叹词三大变体。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "嚯",
+      "linyu": "厚",
+      "alias": "厚、厚厚厚、轰、厚~",
+      "slot": "语气词",
+      "sense": "「嚯」的台湾腔写作厚／轰，「轰」语气更强。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "心仪对象",
+      "linyu": "天菜",
+      "alias": "天菜、我菜、这道菜",
+      "slot": "审美",
+      "sense": "理想型。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "优质男性",
+      "linyu": "尤物",
+      "alias": "尤物、人间尤物",
+      "slot": "审美",
+      "sense": "夸人身材长相的顶级词。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "做这行",
+      "linyu": "站街",
+      "alias": "站街、接客、开张、打鸣",
+      "slot": "圈层黑话",
+      "sense": "一套自嘲式的「营业」黑话：开张＝开始营业，接客＝招呼人，打鸣＝早起干活。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "揭穿伪装",
+      "linyu": "鸡笼警告",
+      "alias": "鸡笼警告、鸡言鸡语、笼子",
+      "slot": "圈层黑话",
+      "sense": "对方说出过于「圈内」的话时，用「鸡笼警告」提醒收敛。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "装清纯",
+      "linyu": "白莲花",
+      "alias": "白莲花、绿茶、表气、婊气",
+      "slot": "贬义",
+      "sense": "表里不一的自伤人设；「表气／婊气」指那股做作劲儿。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "彩妆零号",
+      "linyu": "彩妆母零",
+      "alias": "彩妆母零、母0、母1、姐妹磨β",
+      "slot": "圈层黑话",
+      "sense": "把浓妆、母性气质与 0 号身份叠在一起的调侃叫法。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "肌肉猛一",
+      "linyu": "大猛1",
+      "alias": "大猛1、猛1、1、0.5",
+      "slot": "圈层黑话",
+      "sense": "角色位分自称体系里的顶级档。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "毛发浓密的壮男",
+      "linyu": "U熊",
+      "alias": "U熊、熊、猴、猪、狼、鱼",
+      "slot": "审美",
+      "sense": "按体型分的黑话：熊（壮）、猴（瘦）、猪（胖）、狼（精瘦）、鱼（滑不留手）。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "年轻小男孩",
+      "linyu": "正太",
+      "alias": "正太、白袜、玉足、甜糯、奶香",
+      "slot": "审美",
+      "sense": "洛克淋国弹幕高频审美词：「正太的白袜就是甜糯中带一点奶香」。",
+      "source": "https://www.bilibili.com/video/BV1uoSBcEqg",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "健身男",
+      "linyu": "体育生",
+      "alias": "体育生、黑皮体育生、白袜体育生",
+      "slot": "审美",
+      "sense": "洛克淋国的核心审美符号，诞生了「赔钱黑皮体育生花大价钱购买白袜」这类标题。",
+      "source": "https://www.bilibili.com/video/BV1uaWQejEX1",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "死忠黑粉",
+      "linyu": "本质骑士",
+      "alias": "本质骑士、伪骑士、骑士",
+      "slot": "文化",
+      "sense": "爱得深沉所以黑得认真的人，淋文化的接受者自称。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "讨人厌的路人",
+      "linyu": "路人甲",
+      "alias": "路人甲、路人甲的发言",
+      "slot": "贬义",
+      "sense": "出自《花蝴蝶》歌词「那些路人甲的发言珍素惹人讨厌」。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "承载美好的地方",
+      "linyu": "美丽旗舰店",
+      "alias": "美丽旗舰店",
+      "slot": "文化",
+      "sense": "《花蝴蝶》歌词，用来夸某个地方／超话。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "自信美丽",
+      "linyu": "花蝴蝶",
+      "alias": "花蝴蝶、限量版的花花蝴蝶",
+      "slot": "文化",
+      "sense": "夸人自信美丽，出自同名专辑。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "背后使坏的人",
+      "linyu": "特务",
+      "alias": "特务、特务J、被特务阴了",
+      "slot": "文化",
+      "sense": "出自《特务J》，指背地里搞事的人。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "很多好评",
+      "linyu": "很多很好的评价",
+      "alias": "很多很好的评价、很多不好的评价",
+      "slot": "认同",
+      "sense": "地才演唱会发言，反义是「很多不好的评价」。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "澄清",
+      "linyu": "清者自清",
+      "alias": "清者自清、本可清者自清",
+      "slot": "文化",
+      "sense": "被质疑时的标准回应，出自蔡依林采访。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "（咒骂）去死吧",
+      "linyu": "不努力就去死",
+      "alias": "不努力就去死、你已经被锁定、要被吸了、砍你130刀",
+      "slot": "贬义",
+      "sense": "淋文化四大金句，成套出现。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "丫吧",
+      "linyu": "丫吧",
+      "alias": "丫吧、肩上的脚丫吧、三木木吧",
+      "slot": "文化",
+      "sense": "淋语的两个发源地贴吧：三木木吧（起源）与肩上的脚丫吧（扩散）。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "南宁",
+      "linyu": "仙都",
+      "alias": "仙都、南宁仙都、淡村路尾",
+      "slot": "文化",
+      "sense": "周阴婷住址被打卡后，南宁被叫「仙都」；「淡村路尾」是美甲店梗的地点。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "假唱",
+      "linyu": "对嘴",
+      "alias": "对嘴、对嘴型",
+      "slot": "歌舞影视",
+      "sense": "指假唱，淋语圈老梗。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "刷榜",
+      "linyu": "买榜",
+      "alias": "买榜、打榜、买榜130次",
+      "slot": "饭圈运营",
+      "sense": "「我要为你买榜130次」是地才演唱会发言的变体。",
+      "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "否定自己",
+      "linyu": "臣妾做不到",
+      "alias": "臣妾做不到、臣妾做不到啊",
+      "slot": "宫斗体",
+      "sense": "《甄嬛传》皇后名场面，用来推脱。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "骂人做作",
+      "linyu": "贱人就是矫情",
+      "alias": "贱人就是矫情、贱人",
+      "slot": "宫斗体",
+      "sense": "华妃名台词。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "我累了",
+      "linyu": "本宫乏了",
+      "alias": "本宫乏了、乏了、退下吧",
+      "slot": "宫斗体",
+      "sense": "收线用语，相当于「我不想聊了」。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "重罚",
+      "linyu": "一丈红",
+      "alias": "一丈红、赏一丈红、杖毙、拖出去",
+      "slot": "宫斗体",
+      "sense": "华妃处置人的刑罚，用作夸张威胁。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "打人",
+      "linyu": "翠果打烂她的嘴",
+      "alias": "翠果打烂她的嘴、掌嘴、翠果",
+      "slot": "宫斗体",
+      "sense": "《甄嬛传》名场面台词。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "我（太后自称）",
+      "linyu": "哀家",
+      "alias": "哀家、本太后",
+      "slot": "宫斗体",
+      "sense": "太后自称，最高位分的自称。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "位分",
+      "linyu": "答应",
+      "alias": "答应、常在、贵人、嫔、妃、贵妃、皇贵妃",
+      "slot": "宫斗体",
+      "sense": "清宫位分阶梯，淋语用它给人物／精灵排序。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "降级",
+      "linyu": "降位分",
+      "alias": "降位分、贬为庶人、打入冷宫",
+      "slot": "宫斗体",
+      "sense": "把人「降级」的宫斗式说法。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "受罚干活",
+      "linyu": "辛者库",
+      "alias": "辛者库、发配辛者库",
+      "slot": "宫斗体",
+      "sense": "最低位分的劳作处，速度慢的精灵被叫「辛者库宫女」。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "请安",
+      "linyu": "请安",
+      "alias": "请安、晨昏定省、给姐姐请安",
+      "slot": "宫斗体",
+      "sense": "宫斗式打招呼。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "宫殿",
+      "linyu": "翊坤宫",
+      "alias": "翊坤宫、永寿宫、景仁宫、碎玉轩、延禧宫",
+      "slot": "宫斗体",
+      "sense": "宫斗剧宫殿名，洛克淋国用「翊坤宫娘娘」当 UP 主代号。",
+      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
+      "pop": "低",
+      "rel": []
     }
   ],
   "rules": [
+    {
+      "pattern": "(我|本可|本仙女|本人).{0,6}命(小|大).{0,4}(先)?鼠",
+      "template": "{我}命小{我}先鼠",
+      "note": "洛克淋国·玛雅命学系：把「命不好」写成「命小鼠了」，命大也照样鼠，是全分区最高频的自嘲句式。",
+      "scene": "游戏区 / 自嘲",
+      "examples": "本可命小本可先鼠；我命小我先鼠，你们慢慢打",
+      "src": "https://www.bilibili.com/video/BV1LvoGBTEew"
+    },
+    {
+      "pattern": "(大事|完了|糟了).{0,3}(不妙|不好).{0,2}厚",
+      "template": "大事不妙厚",
+      "note": "「厚」收尾把危机感削成撒娇，洛克淋国标准开场。",
+      "scene": "游戏区 / 吐槽",
+      "examples": "大事不妙厚，我的终端被单防了；糟了不妙厚，这把要鼠",
+      "src": "https://www.bilibili.com/video/BV1LvoGBTEew"
+    },
+    {
+      "pattern": "在座(的)?各位.{0,6}(难逃|都逃不过).{0,3}吸",
+      "template": "在座各位都难逃一吸",
+      "note": "淋王星引力场句式，用来宣布全场无人幸免。",
+      "scene": "游戏区 / 玩梗",
+      "examples": "在座各位都难逃一吸；在座的各位都难逃一吸厚",
+      "src": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "罚你.{0,6}(看|听|读).{0,4}130",
+      "template": "罚你{看}130遍me的mv",
+      "note": "本质骑士家法：惩罚＝重复 130 遍。",
+      "scene": "宫斗 / 惩罚",
+      "examples": "罚你看130遍me的mv；罚你听130遍厚",
+      "src": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "音色.{0,4}(胡艺莲|胡一莲).{0,4}(秒|赢)",
+      "template": "音色胡艺莲秒了",
+      "note": "艺字辈斗法系：用「音色」直接判胜负，跳过一切数值。",
+      "scene": "游戏区 / 拉踩",
+      "examples": "音色胡艺莲秒了；音色胡艺莲直接秒了对面",
+      "src": "https://www.bilibili.com/video/BV1LvoGBTEew"
+    },
+    {
+      "pattern": "机能.{0,4}(那艺娜|那依娜)",
+      "template": "机能那艺娜",
+      "note": "艺字辈斗法系另一半：比的是机能，不是强度。",
+      "scene": "游戏区 / 拉踩",
+      "examples": "机能那艺娜；机能那艺娜赢麻了",
+      "src": "https://www.bilibili.com/video/BV1LvoGBTEew"
+    },
+    {
+      "pattern": "建议给.{1,8}(加|上|来)个?",
+      "template": "建议给{他}加个适应机制",
+      "note": "洛克淋国·建议体：弹幕对策划提需求的标准开头。",
+      "scene": "游戏区 / 建议",
+      "examples": "建议给草系加个适应机制；建议给草队加个奶",
+      "src": "https://www.bilibili.com/video/BV177nX6PE1E"
+    },
+    {
+      "pattern": "现实里谁不想被.{1,10}",
+      "template": "现实里谁不想被{他}肘晕",
+      "note": "「也就网上说说了，现实里谁不想被……」——把 XP 摊开讲的固定句式。",
+      "scene": "通讯录 / 审美",
+      "examples": "也就网上说说了，现实里谁不想被恶魔狼肘晕；现实里谁不想被恶魔狼带回家",
+      "src": "https://www.bilibili.com/video/BV1XLR9BVEZa"
+    },
+    {
+      "pattern": "只有通讯录才(能|会).{1,10}",
+      "template": "只有通讯录才能搭配出如此有味道的装扮",
+      "note": "用「只有通讯录才能」给某件事盖章，是洛克淋国评论区的高频句式。",
+      "scene": "通讯录 / 调侃",
+      "examples": "只有通讯录才能搭配出如此有味道的装扮；只有通讯录才能选出这种衣服",
+      "src": "https://www.bilibili.com/video/BV1oHJv6CEu8"
+    },
+    {
+      "pattern": "这游戏怎么这么(多|会).{0,6}(通讯录|南通)",
+      "template": "这游戏怎么这么多通讯录",
+      "note": "假装惊讶的破防句，实际是自曝。",
+      "scene": "通讯录 / 调侃",
+      "examples": "这游戏怎么这么多通讯录；这游戏怎么这么多南通",
+      "src": "https://www.bilibili.com/video/BV12SEGzGEt8"
+    },
+    {
+      "pattern": "被(通讯录|南通).{0,4}(吓晕|吓鼠|吓到)",
+      "template": "被通讯录吓晕",
+      "note": "看到过于圈内的内容时的标准反应。",
+      "scene": "通讯录 / 调侃",
+      "examples": "被通讯录吓晕🙄；被通讯录吓鼠了；被南通吓晕",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": ".{1,8}(鼠了|鼠掉|鼠不活)",
+      "template": "{我}可爱鼠了",
+      "note": "鼠化收尾万能句式：把任何形容词＋鼠了拼成一句感叹。",
+      "scene": "淋语 / 玩梗",
+      "examples": "可爱鼠了；我可爱鼠了；笑鼠了；本可要鼠了",
+      "src": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(茶博士|他|她|你).{0,4}也是0",
+      "template": "{他}也是0啊",
+      "note": "「来连线的感觉都是姐妹，茶博士也是0啊」——用「也是0」拆穿身份。",
+      "scene": "通讯录 / 身份",
+      "examples": "茶博士也是0啊；来连线的感觉都是姐妹",
+      "src": "https://www.bilibili.com/video/BV1fLLh64EVk"
+    },
+    {
+      "pattern": "婷一下",
+      "template": "婷一下，{我}不素那个意思",
+      "note": "「婷」＝停，打断别人的固定开场。",
+      "scene": "淋语 / 打断",
+      "examples": "婷一下，我尘不素偷摸印记吧印记吧吗💅；婷一下厚",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": "强度无人在意的.{1,6}",
+      "template": "强度无人在意的{花瓶}",
+      "note": "洛克淋国评价体系：先承认没强度，再夸颜值。",
+      "scene": "游戏区 / 评价",
+      "examples": "通讯录群体为什么总是执迷于这些强度无人在意的花瓶；结果是最无人在意的",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": ".{1,8}(没有被邀请|不被邀请)",
+      "template": "{他}没有被邀请",
+      "note": "宣布某人「不在名单里」，宫斗式排挤。",
+      "scene": "宫斗 / 排挤",
+      "examples": "虫母简英没有被邀请！；绒仙子没有被邀请",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": "我仙子.{0,4}(配不上|不配)",
+      "template": "我仙子配不上吗",
+      "note": "「为什么不叫周阴婷？绒仙子，我仙子配不上吗？」——把精灵名与淋语名对打。",
+      "scene": "通讯录 / 身份",
+      "examples": "绒仙子，我仙子配不上吗；我仙子配不上吗",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": "你也是个大?(阴|阴批)",
+      "template": "你也是个大阴",
+      "note": "给对手封「阴」字辈，洛克淋国 PVP 互评常用。",
+      "scene": "游戏区 / 互怼",
+      "examples": "你拿着阵容打到300名，你也是个大阴；你也是个大阴",
+      "src": "https://www.bilibili.com/video/BV18ynm6gEKY"
+    },
+    {
+      "pattern": "这样的.{1,10}你晚上几点(钟)?回家",
+      "template": "有这样的{巴哈姆特}你晚上几点钟回家？",
+      "note": "把精灵当室友调戏的标题句式。",
+      "scene": "游戏区 / 调侃",
+      "examples": "有这样的巴哈姆特你晚上几点钟回家？；有这样的女仆你几点回家",
+      "src": "https://www.bilibili.com/video/BV129J86jEDM"
+    },
+    {
+      "pattern": "这届(小)?洛克.{0,4}(真是|都是).{0,4}(杂鱼|废物)",
+      "template": "这届小洛克真是杂鱼",
+      "note": "NPC／老玩家视角的降维嘲讽。",
+      "scene": "游戏区 / 嘲讽",
+      "examples": "路易斯老师：这届小洛克真是杂鱼！",
+      "src": "https://www.bilibili.com/video/BV1YmQ6BPECH"
+    },
+    {
+      "pattern": "赔钱.{0,6}(货|玩意儿|东西|王国)",
+      "template": "{群体}赔钱",
+      "note": "「洛 克 王 国 赔 钱!!!!!!」——把赔钱当动词用，是洛克淋国最直接的情绪出口。",
+      "scene": "游戏区 / 吐槽",
+      "examples": "洛 克 王 国 赔 钱；草属性这么赔钱",
+      "src": "https://www.bilibili.com/video/BV1LvoGBTEew"
+    },
+    {
+      "pattern": ".{1,8}能不能打轻一点",
+      "template": "{你}能不能打轻一点。",
+      "note": "被暴打后唯一的请求。",
+      "scene": "游戏区 / 求饶",
+      "examples": "能不能打轻一点。；策划能不能打轻一点",
+      "src": "https://www.bilibili.com/video/BV1aBpv6CEEY"
+    },
+    {
+      "pattern": "我(尘|果|墓|帽|铃|羊|鹳|蓝|莎|光|梦|鱿).{0,8}",
+      "template": "我{尘}不素{那个}",
+      "note": "洛克淋国·「我X」代称体系：我＋精灵名首字，等于「我们这只精灵」。",
+      "scene": "游戏区 / 自称",
+      "examples": "我尘不素偷摸印记吧印记吧吗💅；我猫遇到毒队少一人；我果来噜",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": "(赔钱|白袜|黑皮).{0,4}体育生",
+      "template": "赔钱{黑皮}体育生",
+      "note": "把「赔钱」和「体育生」焊在一起的洛克淋国专属组合词。",
+      "scene": "通讯录 / 审美",
+      "examples": "赔钱黑皮体育生花大价钱购买白袜；黑皮体育生",
+      "src": "https://www.bilibili.com/video/BV1uaWQejEX1"
+    },
+    {
+      "pattern": "通讯录.{0,4}(英雄|外号|临死前)",
+      "template": "盘点{布拉迪王国}精灵的通讯录外号",
+      "note": "「盘点布拉迪王国精灵的通讯录外号」是洛克淋国的固定栏目句式，按属性分系连载。",
+      "scene": "通讯录 / 栏目",
+      "examples": "盘点布拉迪王国精灵的通讯录外号（虫系）；通讯录临死前的幻想",
+      "src": "https://www.bilibili.com/video/BV1bioSBcEqg"
+    },
+    {
+      "pattern": "(它|他|她|这个).{0,6}(适配|符合).{0,4}(南通|通讯录).{0,4}(XP|xp|审美)",
+      "template": "洛克王国居然会有如此适配{南通}XP的精灵！",
+      "note": "用「适配 XP」给精灵盖章，是洛克淋国审美区的高频标题。",
+      "scene": "通讯录 / 审美",
+      "examples": "洛克王国居然会有如此适配南通XP的精灵！；居然会有如此适配通讯录XP的精灵",
+      "src": "https://www.bilibili.com/video/BV12SEGzGEt8"
+    },
     {
       "pattern": "(幽队|雪天|鹅妈|在线|女子).{0,4}处理",
       "template": "幽队女子处理雪天队中！",
@@ -15451,5 +16900,5 @@ window.__SEED_DATA = {
   ]
 }
 ;
-window.LINYU_VERSION = "1.20.0";
-window.LINYU_CONTENT_HASH = "aee4c3630ec9b3d6";
+window.LINYU_VERSION = "1.21.0";
+window.LINYU_CONTENT_HASH = "28ae87d64d2cdeb8";
