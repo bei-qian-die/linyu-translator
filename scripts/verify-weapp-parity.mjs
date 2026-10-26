@@ -11,22 +11,37 @@ const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const coreSeed = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'core', 'seed.json'), 'utf8'));
-// 小程序端 seed 是列式编码（{__col:1, words:{keys,rows}}）以压主包，这里先还原再比对。
-const decodeCol = (part) => {
+// 小程序端 seed 是列式编码（{__col:1, __sst:1, words:{keys,rows}}）以压主包，这里先还原再比对。
+// __sst=1 时表格单元是全局字符串表（data/_sst.js）的下标。
+let MP_SST = null;
+try {
+  MP_SST = require('../miniprogram/data/_sst.js');
+} catch {
+  MP_SST = null;
+}
+const decodeCol = (part, sst) => {
   if (!part || !Array.isArray(part.rows)) return part;
   const { keys, rows } = part;
+  const dec = (v) => {
+    if (!sst) return v;
+    if (v === null || v === undefined) return v;
+    if (typeof v === 'number') return sst[v];
+    if (typeof v === 'object') return 'n' in v ? v.n : v.a;
+    return v;
+  };
   return rows.map((row) => {
     const o = {};
     for (let i = 0; i < keys.length; i++) {
-      const v = row[i];
+      const v = dec(row[i]);
       if (v !== null && v !== undefined) o[keys[i]] = v;
     }
     return o;
   });
 };
 const rawMpSeed = require('../miniprogram/data/seed.js');
+const mpSst = rawMpSeed.__sst ? MP_SST : null;
 const mpSeed = rawMpSeed.__col
-  ? { words: decodeCol(rawMpSeed.words), rules: decodeCol(rawMpSeed.rules) }
+  ? { words: decodeCol(rawMpSeed.words, mpSst), rules: decodeCol(rawMpSeed.rules, mpSst) }
   : rawMpSeed;
 const coreTranslator = require('../src/core/translator.js');
 const mpTranslator = require('../miniprogram/core/translator.js');

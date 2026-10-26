@@ -29,6 +29,8 @@ const FILES = [
   ['lore-extra16.js', 'data/lore-extra16.js'],
   ['lore-extra18.js', 'data/lore-extra18.js'],
   ['lore-extra19.js', 'data/lore-extra19.js'],
+  ['lore-extra20.js', 'data/lore-extra20.js'],
+  ['lore-extra21.js', 'data/lore-extra21.js'],
   ['lore-extra15.js', 'data/lore-extra15.js'],
 ];
 
@@ -66,10 +68,41 @@ const unionKeys = (arr) => {
   return keys;
 };
 
+// ---- 全局字符串表（SST）----
+// 列式编码之后，剩下的体积几乎全是「重复出现的同一串字」：
+// 同一条 BV 链接在几十条名言里重复、`淋威争锋 / 标题` 这个 scene 重复、卡片 source 与 verify 完全相同。
+// 把全项目出现过的字符串去重成一张表，表格单元只存下标，实测能再省 ~200KB。
+// 编码约定（只在 __sst=1 的模块里生效）：
+//   null            → null
+//   string          → 整数下标
+//   number/boolean  → {n: 值}
+//   array/object    → {a: 值}
+const SST = [];
+const SST_INDEX = new Map();
+const sstPut = (s) => {
+  let i = SST_INDEX.get(s);
+  if (i === undefined) {
+    i = SST.length;
+    SST.push(s);
+    SST_INDEX.set(s, i);
+  }
+  return i;
+};
+const encCell = (v) => {
+  if (v === null || v === undefined) return null;
+  if (typeof v === 'string') return sstPut(v);
+  if (typeof v === 'number' || typeof v === 'boolean') return { n: v };
+  return { a: v };
+};
+const packTable = (arr) => {
+  const keys = unionKeys(arr);
+  return { keys, rows: arr.map((x) => keys.map((kk) => encCell(x[kk]))) };
+};
+
 function packMod(mod) {
-  const out = { __col: 1 };
   // 先把所有非内容字段原样带过去（dropCards / dropQuotes / heroMerge / quoteMerge …），
   // 只把 cards / quotes / heroes 三张表转成列式——漏字段会让 lore.js 在聚合时直接崩。
+  const out = { __col: 1, __sst: 1 };
   for (const [k, v] of Object.entries(mod)) {
     if (k === 'cards' || k === 'quotes' || k === 'heroes') continue;
     out[k] = v;
@@ -77,8 +110,7 @@ function packMod(mod) {
   for (const k of ['cards', 'quotes', 'heroes']) {
     const arr = mod[k];
     if (!Array.isArray(arr)) continue;
-    const keys = unionKeys(arr);
-    out[k] = { keys, rows: arr.map((x) => keys.map((kk) => (x[kk] === undefined ? null : x[kk]))) };
+    out[k] = packTable(arr);
   }
   return out;
 }
@@ -120,15 +152,12 @@ const seed = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
 if (!Array.isArray(seed.words) || !seed.words.length) throw new Error('seed.words 为空');
 if (!Array.isArray(seed.rules) || !seed.rules.length) throw new Error('seed.rules 为空');
 
-// seed 也做列式编码：词库 1769 条 + 句式 455 条，每条重复写 zh/linyu/alias/sense/source/pop/slot
+// seed 也做列式编码：词库 1889 条 + 句式 489 条，每条重复写 zh/linyu/alias/sense/source/pop/slot
 // 这些 key 名本身就是大头。小程序端 services/content.js 的 decodeSeed() 负责还原。
+// 与 lore-extra 共用同一张全局字符串表（SST），避免两套表各存一份。
 const packSeed = (obj) => {
-  const out = { __col: 1 };
-  for (const k of ['words', 'rules']) {
-    const arr = obj[k];
-    const keys = unionKeys(arr);
-    out[k] = { keys, rows: arr.map((x) => keys.map((kk) => (x[kk] === undefined ? null : x[kk]))) };
-  }
+  const out = { __col: 1, __sst: 1 };
+  for (const k of ['words', 'rules']) out[k] = packTable(obj[k]);
   return out;
 };
 
@@ -139,6 +168,17 @@ const seedModule =
   JSON.stringify(packSeed(seed)) +
   ';\n';
 if (writeIfChanged(path.join(OUT, 'data', 'seed.js'), seedModule)) changed += 1;
+
+// 全局字符串表必须在所有 pack 之后落盘（下标是追加式的，先写会漏后面新增的串）。
+// 单独一个模块，lore.js 与 services/content.js 解码时都 require 它。
+const sstModule =
+  '// 由 scripts/build-weapp-data.mjs 生成，勿手改。\n' +
+  '// 全局字符串表：data/seed.js 与 data/lore-extraN.js 的表格单元存的是这张表的下标。\n' +
+  'module.exports = ' +
+  JSON.stringify(SST) +
+  ';\n';
+if (writeIfChanged(path.join(OUT, 'data', '_sst.js'), sstModule)) changed += 1;
+console.log(`[weapp] 字符串表 ${SST.length} 条，${(sstModule.length / 1024).toFixed(0)}KB`);
 
 const lore = await import(pathToFileURL(path.join(SRC_CORE, 'lore.js')).href);
 const counts = {

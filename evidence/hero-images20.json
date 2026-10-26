@@ -1,0 +1,1227 @@
+{
+  "generatedAt": "2026-10-27T03:24:47.285587",
+  "count": 64,
+  "note": "只做裁剪/缩放/转码，无 AI 生成；游戏英雄取自网易国服官网英雄卡，UP 主取自 B 站头像。",
+  "map": {
+    "美国队长": {
+      "img": "img/hero-393.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d24.png",
+      "crop": "top"
+    },
+    "奇异博士": {
+      "img": "img/hero-394.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d2.png",
+      "crop": "top"
+    },
+    "格鲁特": {
+      "img": "img/hero-395.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d3.png",
+      "crop": "top"
+    },
+    "浩克": {
+      "img": "img/hero-396.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d19.png",
+      "crop": "top"
+    },
+    "万磁王": {
+      "img": "img/hero-397.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d11.png",
+      "crop": "top"
+    },
+    "潘妮·帕克": {
+      "img": "img/hero-398.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d10.png",
+      "crop": "top"
+    },
+    "索尔": {
+      "img": "img/hero-399.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d22.png",
+      "crop": "top"
+    },
+    "毒液": {
+      "img": "img/hero-400.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d14.png",
+      "crop": "top"
+    },
+    "石头人": {
+      "img": "img/hero-401.png",
+      "source": "https://nie.res.netease.com/r/pic/20250220/b52d84d0-27b4-4b78-8093-0879840572cf.png",
+      "crop": "top"
+    },
+    "白皇后": {
+      "img": "img/hero-402.png",
+      "source": "https://nie.res.netease.com/r/pic/20250409/cd236a64-ed93-49b7-b4ee-021e2a649bc9.png",
+      "crop": "top"
+    },
+    "安吉拉": {
+      "img": "img/hero-403.png",
+      "source": "https://nie.res.netease.com/r/pic/20250912/50b01142-43ff-4839-8066-895e1cc16713.png",
+      "crop": "top"
+    },
+    "小淘气": {
+      "img": "img/hero-404.png",
+      "source": "https://nie.res.netease.com/r/pic/20251212/b081f799-2d7c-432a-bf95-59ba9f7617f9.png",
+      "crop": "top"
+    },
+    "恶魔恐龙": {
+      "img": "img/hero-405.png",
+      "source": "https://nie.res.netease.com/r/pic/20260515/6360fe7e-e1d8-47bb-955b-6f6a77cd58a6.png",
+      "crop": "top"
+    },
+    "红兜帽": {
+      "img": "img/hero-406.png",
+      "source": "https://nie.res.netease.com/r/pic/20260807/ec05f314-cbb0-4541-be16-1273ea88c746.png",
+      "crop": "top"
+    },
+    "黑寡妇": {
+      "img": "img/hero-407.png",
+      "source": "https://nie.res.netease.com/r/pic/20241204/d52af75b-8623-4f20-a97c-1e5d65c3bcdc.png",
+      "crop": "top"
+    },
+    "黑豹": {
+      "img": "img/hero-408.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d1.png",
+      "crop": "top"
+    },
+    "鹰眼": {
+      "img": "img/hero-409.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d27.png",
+      "crop": "top"
+    },
+    "海拉": {
+      "img": "img/hero-410.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d5.png",
+      "crop": "top"
+    },
+    "铁拳": {
+      "img": "img/hero-411.png",
+      "source": "https://nie.res.netease.com/r/pic/20241201/e5ec7274-e7b7-481d-8be6-e9444a2be911.png",
+      "crop": "top"
+    },
+    "钢铁侠": {
+      "img": "img/hero-412.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d6.png",
+      "crop": "top"
+    },
+    "魔剑客": {
+      "img": "img/hero-413.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d12.png",
+      "crop": "top"
+    },
+    "神奇先生": {
+      "img": "img/hero-414.png",
+      "source": "https://nie.res.netease.com/r/pic/20250113/d48c5445-29df-4a39-b218-8c6799e61d1a.png",
+      "crop": "top"
+    },
+    "月光骑士": {
+      "img": "img/hero-415.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d26.png",
+      "crop": "top"
+    },
+    "纳摩": {
+      "img": "img/hero-416.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d20.png",
+      "crop": "top"
+    },
+    "灵蝶": {
+      "img": "img/hero-417.png",
+      "source": "https://nie.res.netease.com/r/pic/20241125/f0f282a8-bebf-43ad-987f-57fcc84c0bb2.png",
+      "crop": "top"
+    },
+    "猩红女巫": {
+      "img": "img/hero-418.png",
+      "source": "https://nie.res.netease.com/r/pic/20260615/3542ccd3-f0e2-4af3-92f6-5bd9ab8bbe54.png",
+      "crop": "top"
+    },
+    "蜘蛛侠": {
+      "img": "img/hero-419.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d13.png",
+      "crop": "top"
+    },
+    "松鼠女": {
+      "img": "img/hero-420.png",
+      "source": "https://nie.res.netease.com/r/pic/20241201/96fa04f3-b382-4c5c-b133-7eb6d0763ee1.png",
+      "crop": "top"
+    },
+    "星爵": {
+      "img": "img/hero-421.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d16.png",
+      "crop": "top"
+    },
+    "暴风女": {
+      "img": "img/hero-422.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d17.png",
+      "crop": "top"
+    },
+    "惩罚者": {
+      "img": "img/hero-423.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d4.png",
+      "crop": "top"
+    },
+    "冬兵": {
+      "img": "img/hero-424.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d25.png",
+      "crop": "top"
+    },
+    "金刚狼": {
+      "img": "img/hero-425.png",
+      "source": "https://nie.res.netease.com/r/pic/20241204/16b05d66-3809-4549-9337-fd1d25d30e77.png",
+      "crop": "top"
+    },
+    "霹雳火": {
+      "img": "img/hero-426.png",
+      "source": "https://nie.res.netease.com/r/pic/20250220/00f662d5-329a-4fb8-b7f4-cf182acb7755.png",
+      "crop": "top"
+    },
+    "凤凰女": {
+      "img": "img/hero-427.png",
+      "source": "https://nie.res.netease.com/r/pic/20250711/141b55bc-5467-4cb0-ac3b-3738aa56a97f.png",
+      "crop": "top"
+    },
+    "刀锋战士": {
+      "img": "img/hero-428.png",
+      "source": "https://nie.res.netease.com/r/pic/20250808/4d275895-e7ac-4846-9a71-68d9d301ada3.png",
+      "crop": "top"
+    },
+    "夜魔侠": {
+      "img": "img/hero-429.png",
+      "source": "https://nie.res.netease.com/r/pic/20251011/5f7a8eae-ae0e-4bd4-a637-7ef2bb3f5d6b.png",
+      "crop": "top"
+    },
+    "艾尔莎·血石": {
+      "img": "img/hero-430.png",
+      "source": "https://nie.res.netease.com/r/pic/20260213/b43828c0-c346-4cbb-aa48-ee3111c7bdc2.png",
+      "crop": "top"
+    },
+    "黑猫": {
+      "img": "img/hero-431.png",
+      "source": "https://nie.res.netease.com/r/pic/20260417/6769eacf-2eba-425d-ae71-bdba1cd109ba.png",
+      "crop": "top"
+    },
+    "雷光眼": {
+      "img": "img/hero-432.png",
+      "source": "https://nie.res.netease.com/r/pic/20260612/d9e299ee-b876-46da-b12f-8f3419855b69.png",
+      "crop": "top"
+    },
+    "屠神者格尔": {
+      "img": "img/hero-433.png",
+      "source": "https://nie.res.netease.com/r/pic/20260911/ef7838bf-f5f0-4adb-bd12-375801f39d75.png",
+      "crop": "top"
+    },
+    "亚当术士": {
+      "img": "img/hero-434.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d21.png",
+      "crop": "top"
+    },
+    "斗篷与匕首": {
+      "img": "img/hero-435.png",
+      "source": "https://nie.res.netease.com/r/pic/20250107/8dc54d64-2f54-4568-9a44-33b73c574eab.png",
+      "crop": "top"
+    },
+    "隐形女": {
+      "img": "img/hero-436.png",
+      "source": "https://nie.res.netease.com/r/pic/20250113/f27470c9-a677-438b-809b-abc761687b50.png",
+      "crop": "top"
+    },
+    "陆行鲨杰夫": {
+      "img": "img/hero-437.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d23.png",
+      "crop": "top"
+    },
+    "洛基": {
+      "img": "img/hero-438.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d7.png",
+      "crop": "top"
+    },
+    "冰月花雪": {
+      "img": "img/hero-439.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d18.png",
+      "crop": "top"
+    },
+    "曼蒂斯": {
+      "img": "img/hero-440.png",
+      "source": "https://nie.res.netease.com/r/pic/20241128/4489cade-92ce-4bf3-bf64-5dcaf86881b9.png",
+      "crop": "top"
+    },
+    "火箭浣熊": {
+      "img": "img/hero-441.png",
+      "source": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d8.png",
+      "crop": "top"
+    },
+    "奥创": {
+      "img": "img/hero-442.png",
+      "source": "https://nie.res.netease.com/r/pic/20250529/c18d5633-eff2-40af-921e-c3957024e5f0.png",
+      "crop": "top"
+    },
+    "牌皇": {
+      "img": "img/hero-443.png",
+      "source": "https://nie.res.netease.com/r/pic/20251115/8dd256da-5dca-4f06-af69-d7c6edb3d357.png",
+      "crop": "top"
+    },
+    "白狐": {
+      "img": "img/hero-444.png",
+      "source": "https://nie.res.netease.com/r/pic/20260320/fe81e131-f954-4841-ab72-9e689161f108.png",
+      "crop": "top"
+    },
+    "百光花火": {
+      "img": "img/hero-445.png",
+      "source": "https://nie.res.netease.com/r/pic/20260711/427e9dcd-f4e2-40f9-99c8-9bb954ffd6f0.png",
+      "crop": "top"
+    },
+    "死侍": {
+      "img": "img/hero-446.png",
+      "source": "https://nie.res.netease.com/r/pic/20260116/cf0b892a-8b41-4765-aa7a-1d1038bc4229.png",
+      "crop": "top"
+    },
+    "甜甜痞颜": {
+      "img": "img/hero-447.png",
+      "source": "https://i0.hdslb.com/bfs/face/b45ee3057265538d099ba7981615f5fad602eaca.jpg",
+      "crop": "fit"
+    },
+    "鑫河万点": {
+      "img": "img/hero-448.png",
+      "source": "https://i0.hdslb.com/bfs/face/0266c1b9e90524e65201273a61b636314cd87db7.jpg",
+      "crop": "fit"
+    },
+    "良心洗脚妹": {
+      "img": "img/hero-449.png",
+      "source": "https://i1.hdslb.com/bfs/face/01d95e86080a0c99aa28a55eaab2598de0aef8ee.jpg",
+      "crop": "fit"
+    },
+    "地才蓝灬频道": {
+      "img": "img/hero-450.png",
+      "source": "https://i1.hdslb.com/bfs/face/ddb5a217b0a76255e189581453ed9b9b7a85ecce.jpg",
+      "crop": "fit"
+    },
+    "鲁迅欺负周树人": {
+      "img": "img/hero-451.png",
+      "source": "https://i0.hdslb.com/bfs/face/fa5b5e47b6df516312f261ee906e806f8f0eb44a.jpg",
+      "crop": "fit"
+    },
+    "Wooden依末": {
+      "img": "img/hero-452.png",
+      "source": "https://i2.hdslb.com/bfs/face/f69e17465de53305da8922f649fa429142778ae1.jpg",
+      "crop": "fit"
+    },
+    "赫斯特特特": {
+      "img": "img/hero-453.png",
+      "source": "https://i0.hdslb.com/bfs/face/e921384a8079cb43693e46e7a35bfdbdf0c6afb6.jpg",
+      "crop": "fit"
+    },
+    "Z_Magnus": {
+      "img": "img/hero-454.png",
+      "source": "https://i2.hdslb.com/bfs/face/15c35b86ac432e884a59b4e22a4016913e4eaa9b.jpg",
+      "crop": "fit"
+    },
+    "一小罐啤酒": {
+      "img": "img/hero-455.png",
+      "source": "https://i0.hdslb.com/bfs/face/8a1cdc59c50cfc98460c16f5168ab7ba87f73693.jpg",
+      "crop": "fit"
+    },
+    "Haker没有C": {
+      "img": "img/hero-456.png",
+      "source": "https://i1.hdslb.com/bfs/face/655db9b7374872731b66b16788f7da7db03f9e2d.jpg",
+      "crop": "fit"
+    }
+  },
+  "items": [
+    {
+      "name": "美国队长",
+      "img": "img/hero-393.png",
+      "thumb": "img/thumb/hero-393.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d24.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜CAPTAIN AMERICA",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 86209
+    },
+    {
+      "name": "奇异博士",
+      "img": "img/hero-394.png",
+      "thumb": "img/thumb/hero-394.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d2.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜DoctorStrange",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 108028
+    },
+    {
+      "name": "格鲁特",
+      "img": "img/hero-395.png",
+      "thumb": "img/thumb/hero-395.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d3.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Groot",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 132211
+    },
+    {
+      "name": "浩克",
+      "img": "img/hero-396.png",
+      "thumb": "img/thumb/hero-396.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d19.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜HULK",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 89060
+    },
+    {
+      "name": "万磁王",
+      "img": "img/hero-397.png",
+      "thumb": "img/thumb/hero-397.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d11.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Magneto",
+      "origSize": [
+        182,
+        329
+      ],
+      "crop": "top",
+      "bytes": 97033
+    },
+    {
+      "name": "潘妮·帕克",
+      "img": "img/hero-398.png",
+      "thumb": "img/thumb/hero-398.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d10.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜peniparker",
+      "origSize": [
+        182,
+        329
+      ],
+      "crop": "top",
+      "bytes": 107682
+    },
+    {
+      "name": "索尔",
+      "img": "img/hero-399.png",
+      "thumb": "img/thumb/hero-399.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d22.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Thor",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 123120
+    },
+    {
+      "name": "毒液",
+      "img": "img/hero-400.png",
+      "thumb": "img/thumb/hero-400.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d14.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Venom",
+      "origSize": [
+        181,
+        329
+      ],
+      "crop": "top",
+      "bytes": 109567
+    },
+    {
+      "name": "石头人",
+      "img": "img/hero-401.png",
+      "thumb": "img/thumb/hero-401.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250220/b52d84d0-27b4-4b78-8093-0879840572cf.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜THE THING",
+      "origSize": [
+        154,
+        281
+      ],
+      "crop": "top",
+      "bytes": 104185
+    },
+    {
+      "name": "白皇后",
+      "img": "img/hero-402.png",
+      "thumb": "img/thumb/hero-402.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250409/cd236a64-ed93-49b7-b4ee-021e2a649bc9.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Emma Frost",
+      "origSize": [
+        182,
+        329
+      ],
+      "crop": "top",
+      "bytes": 104163
+    },
+    {
+      "name": "安吉拉",
+      "img": "img/hero-403.png",
+      "thumb": "img/thumb/hero-403.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250912/50b01142-43ff-4839-8066-895e1cc16713.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Angela",
+      "origSize": [
+        154,
+        280
+      ],
+      "crop": "top",
+      "bytes": 98758
+    },
+    {
+      "name": "小淘气",
+      "img": "img/hero-404.png",
+      "thumb": "img/thumb/hero-404.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20251212/b081f799-2d7c-432a-bf95-59ba9f7617f9.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜Rogue",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 90749
+    },
+    {
+      "name": "恶魔恐龙",
+      "img": "img/hero-405.png",
+      "thumb": "img/thumb/hero-405.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260515/6360fe7e-e1d8-47bb-955b-6f6a77cd58a6.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜DEVIL DINOSAUR",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 73155
+    },
+    {
+      "name": "红兜帽",
+      "img": "img/hero-406.png",
+      "thumb": "img/thumb/hero-406.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260807/ec05f314-cbb0-4541-be16-1273ea88c746.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者｜The Hood",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 93022
+    },
+    {
+      "name": "黑寡妇",
+      "img": "img/hero-407.png",
+      "thumb": "img/thumb/hero-407.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20241204/d52af75b-8623-4f20-a97c-1e5d65c3bcdc.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Black Widow",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 88329
+    },
+    {
+      "name": "黑豹",
+      "img": "img/hero-408.png",
+      "thumb": "img/thumb/hero-408.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d1.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜BlackPanther",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 87040
+    },
+    {
+      "name": "鹰眼",
+      "img": "img/hero-409.png",
+      "thumb": "img/thumb/hero-409.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d27.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜HAWKEYE",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 96883
+    },
+    {
+      "name": "海拉",
+      "img": "img/hero-410.png",
+      "thumb": "img/thumb/hero-410.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d5.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Hela",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 118046
+    },
+    {
+      "name": "铁拳",
+      "img": "img/hero-411.png",
+      "thumb": "img/thumb/hero-411.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20241201/e5ec7274-e7b7-481d-8be6-e9444a2be911.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Iron Fist",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 89490
+    },
+    {
+      "name": "钢铁侠",
+      "img": "img/hero-412.png",
+      "thumb": "img/thumb/hero-412.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d6.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜IronMan",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 91354
+    },
+    {
+      "name": "魔剑客",
+      "img": "img/hero-413.png",
+      "thumb": "img/thumb/hero-413.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d12.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Magik",
+      "origSize": [
+        182,
+        329
+      ],
+      "crop": "top",
+      "bytes": 110596
+    },
+    {
+      "name": "神奇先生",
+      "img": "img/hero-414.png",
+      "thumb": "img/thumb/hero-414.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250113/d48c5445-29df-4a39-b218-8c6799e61d1a.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Mister Fantastic",
+      "origSize": [
+        182,
+        329
+      ],
+      "crop": "top",
+      "bytes": 79080
+    },
+    {
+      "name": "月光骑士",
+      "img": "img/hero-415.png",
+      "thumb": "img/thumb/hero-415.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d26.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜moonknight",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 90484
+    },
+    {
+      "name": "纳摩",
+      "img": "img/hero-416.png",
+      "thumb": "img/thumb/hero-416.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d20.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Namor",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 97943
+    },
+    {
+      "name": "灵蝶",
+      "img": "img/hero-417.png",
+      "thumb": "img/thumb/hero-417.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20241125/f0f282a8-bebf-43ad-987f-57fcc84c0bb2.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Psylocke",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 99837
+    },
+    {
+      "name": "猩红女巫",
+      "img": "img/hero-418.png",
+      "thumb": "img/thumb/hero-418.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260615/3542ccd3-f0e2-4af3-92f6-5bd9ab8bbe54.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜ScarletWitch",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 106800
+    },
+    {
+      "name": "蜘蛛侠",
+      "img": "img/hero-419.png",
+      "thumb": "img/thumb/hero-419.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d13.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Spider-Man",
+      "origSize": [
+        181,
+        329
+      ],
+      "crop": "top",
+      "bytes": 70972
+    },
+    {
+      "name": "松鼠女",
+      "img": "img/hero-420.png",
+      "thumb": "img/thumb/hero-420.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20241201/96fa04f3-b382-4c5c-b133-7eb6d0763ee1.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Squirrel Girl",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 101435
+    },
+    {
+      "name": "星爵",
+      "img": "img/hero-421.png",
+      "thumb": "img/thumb/hero-421.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d16.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Star-Lord",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 115509
+    },
+    {
+      "name": "暴风女",
+      "img": "img/hero-422.png",
+      "thumb": "img/thumb/hero-422.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d17.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Storm",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 110678
+    },
+    {
+      "name": "惩罚者",
+      "img": "img/hero-423.png",
+      "thumb": "img/thumb/hero-423.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d4.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜THE PUNISHER",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 99115
+    },
+    {
+      "name": "冬兵",
+      "img": "img/hero-424.png",
+      "thumb": "img/thumb/hero-424.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d25.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Wintersoldier",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 95898
+    },
+    {
+      "name": "金刚狼",
+      "img": "img/hero-425.png",
+      "thumb": "img/thumb/hero-425.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20241204/16b05d66-3809-4549-9337-fd1d25d30e77.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Wolverine",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 104204
+    },
+    {
+      "name": "霹雳火",
+      "img": "img/hero-426.png",
+      "thumb": "img/thumb/hero-426.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250220/00f662d5-329a-4fb8-b7f4-cf182acb7755.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜HUMAN TORCH",
+      "origSize": [
+        154,
+        281
+      ],
+      "crop": "top",
+      "bytes": 85257
+    },
+    {
+      "name": "凤凰女",
+      "img": "img/hero-427.png",
+      "thumb": "img/thumb/hero-427.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250711/141b55bc-5467-4cb0-ac3b-3738aa56a97f.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜PHOENIX",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 87447
+    },
+    {
+      "name": "刀锋战士",
+      "img": "img/hero-428.png",
+      "thumb": "img/thumb/hero-428.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250808/4d275895-e7ac-4846-9a71-68d9d301ada3.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜BLADE",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 84682
+    },
+    {
+      "name": "夜魔侠",
+      "img": "img/hero-429.png",
+      "thumb": "img/thumb/hero-429.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20251011/5f7a8eae-ae0e-4bd4-a637-7ef2bb3f5d6b.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Daredevil",
+      "origSize": [
+        154,
+        280
+      ],
+      "crop": "top",
+      "bytes": 75748
+    },
+    {
+      "name": "艾尔莎·血石",
+      "img": "img/hero-430.png",
+      "thumb": "img/thumb/hero-430.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260213/b43828c0-c346-4cbb-aa48-ee3111c7bdc2.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Elsa Bloodstone",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 117221
+    },
+    {
+      "name": "黑猫",
+      "img": "img/hero-431.png",
+      "thumb": "img/thumb/hero-431.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260417/6769eacf-2eba-425d-ae71-bdba1cd109ba.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Black Cat",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 108412
+    },
+    {
+      "name": "雷光眼",
+      "img": "img/hero-432.png",
+      "thumb": "img/thumb/hero-432.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260612/d9e299ee-b876-46da-b12f-8f3419855b69.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Cyclops",
+      "origSize": [
+        154,
+        280
+      ],
+      "crop": "top",
+      "bytes": 83031
+    },
+    {
+      "name": "屠神者格尔",
+      "img": "img/hero-433.png",
+      "thumb": "img/thumb/hero-433.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260911/ef7838bf-f5f0-4adb-bd12-375801f39d75.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：决斗家｜Gorr the God Butcher",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 97734
+    },
+    {
+      "name": "亚当术士",
+      "img": "img/hero-434.png",
+      "thumb": "img/thumb/hero-434.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d21.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜AdamWarlock",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 100323
+    },
+    {
+      "name": "斗篷与匕首",
+      "img": "img/hero-435.png",
+      "thumb": "img/thumb/hero-435.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250107/8dc54d64-2f54-4568-9a44-33b73c574eab.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Cloak & Dagger",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 111767
+    },
+    {
+      "name": "隐形女",
+      "img": "img/hero-436.png",
+      "thumb": "img/thumb/hero-436.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250113/f27470c9-a677-438b-809b-abc761687b50.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Invisible Woman",
+      "origSize": [
+        182,
+        329
+      ],
+      "crop": "top",
+      "bytes": 96106
+    },
+    {
+      "name": "陆行鲨杰夫",
+      "img": "img/hero-437.png",
+      "thumb": "img/thumb/hero-437.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d23.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜JEFF THE LAND SHARK",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 81460
+    },
+    {
+      "name": "洛基",
+      "img": "img/hero-438.png",
+      "thumb": "img/thumb/hero-438.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d7.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Loki",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 122480
+    },
+    {
+      "name": "冰月花雪",
+      "img": "img/hero-439.png",
+      "thumb": "img/thumb/hero-439.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d18.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜LunaSnow",
+      "origSize": [
+        182,
+        330
+      ],
+      "crop": "top",
+      "bytes": 96676
+    },
+    {
+      "name": "曼蒂斯",
+      "img": "img/hero-440.png",
+      "thumb": "img/thumb/hero-440.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20241128/4489cade-92ce-4bf3-bf64-5dcaf86881b9.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Mantis",
+      "origSize": [
+        181,
+        329
+      ],
+      "crop": "top",
+      "bytes": 89164
+    },
+    {
+      "name": "火箭浣熊",
+      "img": "img/hero-441.png",
+      "thumb": "img/thumb/hero-441.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d8.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜RocketRaccoon",
+      "origSize": [
+        181,
+        329
+      ],
+      "crop": "top",
+      "bytes": 126598
+    },
+    {
+      "name": "奥创",
+      "img": "img/hero-442.png",
+      "thumb": "img/thumb/hero-442.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20250529/c18d5633-eff2-40af-921e-c3957024e5f0.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Ultron",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 94035
+    },
+    {
+      "name": "牌皇",
+      "img": "img/hero-443.png",
+      "thumb": "img/thumb/hero-443.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20251115/8dd256da-5dca-4f06-af69-d7c6edb3d357.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Gambit",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 89991
+    },
+    {
+      "name": "白狐",
+      "img": "img/hero-444.png",
+      "thumb": "img/thumb/hero-444.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260320/fe81e131-f954-4841-ab72-9e689161f108.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜White Fox",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 117125
+    },
+    {
+      "name": "百光花火",
+      "img": "img/hero-445.png",
+      "thumb": "img/thumb/hero-445.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260711/427e9dcd-f4e2-40f9-99c8-9bb954ffd6f0.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：策略家｜Jubilation Lee",
+      "origSize": [
+        154,
+        280
+      ],
+      "crop": "top",
+      "bytes": 119550
+    },
+    {
+      "name": "死侍",
+      "img": "img/hero-446.png",
+      "thumb": "img/thumb/hero-446.webp",
+      "source": "网易国服官网英雄卡（官方美术资源）",
+      "sourceUrl": "https://nie.res.netease.com/r/pic/20260116/cf0b892a-8b41-4765-aa7a-1d1038bc4229.png",
+      "candTitle": "网易国服官网英雄立绘｜官方定位：捍卫者 决斗家 策略家｜Deadpool",
+      "origSize": [
+        181,
+        330
+      ],
+      "crop": "top",
+      "bytes": 106449
+    },
+    {
+      "name": "甜甜痞颜",
+      "img": "img/hero-447.png",
+      "thumb": "img/thumb/hero-447.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/b45ee3057265538d099ba7981615f5fad602eaca.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        490,
+        490
+      ],
+      "crop": "fit",
+      "bytes": 65321
+    },
+    {
+      "name": "鑫河万点",
+      "img": "img/hero-448.png",
+      "thumb": "img/thumb/hero-448.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/0266c1b9e90524e65201273a61b636314cd87db7.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        492,
+        492
+      ],
+      "crop": "fit",
+      "bytes": 104974
+    },
+    {
+      "name": "良心洗脚妹",
+      "img": "img/hero-449.png",
+      "thumb": "img/thumb/hero-449.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/01d95e86080a0c99aa28a55eaab2598de0aef8ee.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        1000,
+        1000
+      ],
+      "crop": "fit",
+      "bytes": 22760
+    },
+    {
+      "name": "地才蓝灬频道",
+      "img": "img/hero-450.png",
+      "thumb": "img/thumb/hero-450.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/ddb5a217b0a76255e189581453ed9b9b7a85ecce.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 137518
+    },
+    {
+      "name": "鲁迅欺负周树人",
+      "img": "img/hero-451.png",
+      "thumb": "img/thumb/hero-451.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/fa5b5e47b6df516312f261ee906e806f8f0eb44a.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 118205
+    },
+    {
+      "name": "Wooden依末",
+      "img": "img/hero-452.png",
+      "thumb": "img/thumb/hero-452.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i2.hdslb.com/bfs/face/f69e17465de53305da8922f649fa429142778ae1.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 65039
+    },
+    {
+      "name": "赫斯特特特",
+      "img": "img/hero-453.png",
+      "thumb": "img/thumb/hero-453.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/e921384a8079cb43693e46e7a35bfdbdf0c6afb6.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 107801
+    },
+    {
+      "name": "Z_Magnus",
+      "img": "img/hero-454.png",
+      "thumb": "img/thumb/hero-454.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i2.hdslb.com/bfs/face/15c35b86ac432e884a59b4e22a4016913e4eaa9b.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        474,
+        474
+      ],
+      "crop": "fit",
+      "bytes": 106647
+    },
+    {
+      "name": "一小罐啤酒",
+      "img": "img/hero-455.png",
+      "thumb": "img/thumb/hero-455.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/8a1cdc59c50cfc98460c16f5168ab7ba87f73693.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        512
+      ],
+      "crop": "fit",
+      "bytes": 68067
+    },
+    {
+      "name": "Haker没有C",
+      "img": "img/hero-456.png",
+      "thumb": "img/thumb/hero-456.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/655db9b7374872731b66b16788f7da7db03f9e2d.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        512
+      ],
+      "crop": "fit",
+      "bytes": 126949
+    }
+  ],
+  "pending": [],
+  "missing": []
+}

@@ -1,0 +1,709 @@
+{
+  "generatedAt": "2026-10-26T18:39:15.153Z",
+  "src": "https://marvelrivals.163.com/heroes/index.html",
+  "total": 54,
+  "items": [
+    {
+      "role": "决斗家",
+      "name": "屠神者格尔",
+      "en": "Gorr the God Butcher",
+      "img": "https://nie.res.netease.com/r/pic/20260911/c4f7de6b-1348-42e7-b27c-9c44afbf4f7f.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260911/c4f7de6b-1348-42e7-b27c-9c44afbf4f7f.png",
+        "https://nie.res.netease.com/r/pic/20260911/5852ef31-3df1-4f8c-a44d-c618091da996.png",
+        "https://nie.res.netease.com/r/pic/20260911/ef7838bf-f5f0-4adb-bd12-375801f39d75.png",
+        "https://nie.res.netease.com/r/pic/20260911/7f25625c-e8b0-4dc3-9f83-ff0a1cb24102.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260911/ef7838bf-f5f0-4adb-bd12-375801f39d75.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "红兜帽",
+      "en": "The Hood",
+      "img": "https://nie.res.netease.com/r/pic/20260807/4986acc8-2650-439e-984e-3946c2698c7c.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260807/4986acc8-2650-439e-984e-3946c2698c7c.png",
+        "https://nie.res.netease.com/r/pic/20260807/21906805-5fb4-4c71-93c2-6e1267ecdbd1.png",
+        "https://nie.res.netease.com/r/pic/20260807/ec05f314-cbb0-4541-be16-1273ea88c746.png",
+        "https://nie.res.netease.com/r/pic/20260807/63644bfd-ff52-4c02-a096-153c926e1ff2.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260807/ec05f314-cbb0-4541-be16-1273ea88c746.png"
+    },
+    {
+      "role": "策略家",
+      "name": "百光花火",
+      "en": "Jubilation Lee",
+      "img": "https://nie.res.netease.com/r/pic/20260711/9933339f-4b03-49d8-a9d8-060ed2c052ed.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260711/9933339f-4b03-49d8-a9d8-060ed2c052ed.png",
+        "https://nie.res.netease.com/r/pic/20260711/90daef43-2ec3-42d8-a05c-1b3cdba0d96b.png",
+        "https://nie.res.netease.com/r/pic/20260711/427e9dcd-f4e2-40f9-99c8-9bb954ffd6f0.png",
+        "https://nie.res.netease.com/r/pic/20260711/6819b1f2-14d7-41c7-8f50-ab59ef443fd7.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260711/427e9dcd-f4e2-40f9-99c8-9bb954ffd6f0.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "雷光眼",
+      "en": "Cyclops",
+      "img": "https://nie.res.netease.com/r/pic/20260612/8cf04b13-2e3c-49bc-8f90-000732c94f43.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260612/8cf04b13-2e3c-49bc-8f90-000732c94f43.png",
+        "https://nie.res.netease.com/r/pic/20260612/ab0553d7-bdbf-48c3-b733-a7fec46ece29.png",
+        "https://nie.res.netease.com/r/pic/20260612/d9e299ee-b876-46da-b12f-8f3419855b69.png",
+        "https://nie.res.netease.com/r/pic/20260612/d8ca70a0-4c77-48e3-8891-61e9fe5fc039.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260612/d9e299ee-b876-46da-b12f-8f3419855b69.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "恶魔恐龙",
+      "en": "DEVIL DINOSAUR",
+      "img": "https://nie.res.netease.com/r/pic/20260515/84181e94-e504-48a8-94e2-6002678fb4dd.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260515/84181e94-e504-48a8-94e2-6002678fb4dd.png",
+        "https://nie.res.netease.com/r/pic/20260515/2afb3fcf-85a8-4b94-a620-b597416aa494.png",
+        "https://nie.res.netease.com/r/pic/20260515/6360fe7e-e1d8-47bb-955b-6f6a77cd58a6.png",
+        "https://nie.res.netease.com/r/pic/20260515/dd9dedf0-e304-4bd8-874a-4304bc16995c.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260515/6360fe7e-e1d8-47bb-955b-6f6a77cd58a6.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "黑猫",
+      "en": "Black Cat",
+      "img": "https://nie.res.netease.com/r/pic/20260417/9aad3814-3985-4e14-ab1d-a2813bcf6850.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260417/9aad3814-3985-4e14-ab1d-a2813bcf6850.png",
+        "https://nie.res.netease.com/r/pic/20260417/4e0ad911-844b-4af5-9fa6-e4ec63290963.png",
+        "https://nie.res.netease.com/r/pic/20260417/6769eacf-2eba-425d-ae71-bdba1cd109ba.png",
+        "https://nie.res.netease.com/r/pic/20260417/3fcc2e5d-86ac-4633-8375-2582e8778a15.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260417/6769eacf-2eba-425d-ae71-bdba1cd109ba.png"
+    },
+    {
+      "role": "策略家",
+      "name": "白狐",
+      "en": "White Fox",
+      "img": "https://nie.res.netease.com/r/pic/20260320/fee6b610-5bc8-4a73-92e0-5d56d983c260.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260320/fee6b610-5bc8-4a73-92e0-5d56d983c260.png",
+        "https://nie.res.netease.com/r/pic/20260320/e8aabdfd-662f-4f9f-a8f9-fae2b1d28ad1.png",
+        "https://nie.res.netease.com/r/pic/20260320/fe81e131-f954-4841-ab72-9e689161f108.png",
+        "https://nie.res.netease.com/r/pic/20260320/b2bde2d7-2633-408e-9b0f-ba05271559c1.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260320/fe81e131-f954-4841-ab72-9e689161f108.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "艾尔莎·血石",
+      "en": "Elsa Bloodstone",
+      "img": "https://nie.res.netease.com/r/pic/20260213/76cb7d5d-e120-496e-acb8-bbd4af0e3313.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260213/76cb7d5d-e120-496e-acb8-bbd4af0e3313.png",
+        "https://nie.res.netease.com/r/pic/20260213/800dd6c8-5f41-4a13-bf6a-c81a0adf6916.png",
+        "https://nie.res.netease.com/r/pic/20260213/b43828c0-c346-4cbb-aa48-ee3111c7bdc2.png",
+        "https://nie.res.netease.com/r/pic/20260213/549ec518-2eb0-40fd-9fdd-c9e0f024afd3.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260213/b43828c0-c346-4cbb-aa48-ee3111c7bdc2.png"
+    },
+    {
+      "role": "捍卫者 决斗家 策略家",
+      "name": "死侍",
+      "en": "Deadpool",
+      "img": "https://nie.res.netease.com/r/pic/20260116/2d6d1d2b-281f-4efd-b252-d792a11fce98.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260116/2d6d1d2b-281f-4efd-b252-d792a11fce98.png",
+        "https://nie.res.netease.com/r/pic/20260116/7c0988ca-53de-412b-a226-41d76d5293e5.png",
+        "https://nie.res.netease.com/r/pic/20260116/cf0b892a-8b41-4765-aa7a-1d1038bc4229.png",
+        "https://nie.res.netease.com/r/pic/20260116/77df13cf-21b1-41af-871a-2562c8e798c0.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260116/cf0b892a-8b41-4765-aa7a-1d1038bc4229.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "小淘气",
+      "en": "Rogue",
+      "img": "https://nie.res.netease.com/r/pic/20251212/f443e1cb-5605-4c4e-8d29-24078699d479.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20251212/f443e1cb-5605-4c4e-8d29-24078699d479.png",
+        "https://nie.res.netease.com/r/pic/20251212/d8271cac-59cc-4a60-9f2a-a8919a762e98.png",
+        "https://nie.res.netease.com/r/pic/20251212/b081f799-2d7c-432a-bf95-59ba9f7617f9.png",
+        "https://nie.res.netease.com/r/pic/20251212/5f2a2a4b-92fb-4114-b602-7c40a79d0ac2.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20251212/b081f799-2d7c-432a-bf95-59ba9f7617f9.png"
+    },
+    {
+      "role": "策略家",
+      "name": "牌皇",
+      "en": "Gambit",
+      "img": "https://nie.res.netease.com/r/pic/20251115/32d9260c-ff1b-45b3-b95e-9e6864aa75f4.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20251115/32d9260c-ff1b-45b3-b95e-9e6864aa75f4.png",
+        "https://nie.res.netease.com/r/pic/20251115/3b67eab9-6ad3-4668-8d8a-2436759b30f3.png",
+        "https://nie.res.netease.com/r/pic/20251115/8dd256da-5dca-4f06-af69-d7c6edb3d357.png",
+        "https://nie.res.netease.com/r/pic/20251115/ec6cb069-baa6-4964-87d0-db197cd48cfc.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20251115/8dd256da-5dca-4f06-af69-d7c6edb3d357.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "夜魔侠",
+      "en": "Daredevil",
+      "img": "https://nie.res.netease.com/r/pic/20251010/620b1cc1-a00d-4ba3-9867-a7093bc500c6.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20251010/620b1cc1-a00d-4ba3-9867-a7093bc500c6.png",
+        "https://nie.res.netease.com/r/pic/20251010/8164eaa4-3d01-4b22-9138-372675826567.png",
+        "https://nie.res.netease.com/r/pic/20251011/5f7a8eae-ae0e-4bd4-a637-7ef2bb3f5d6b.png",
+        "https://nie.res.netease.com/r/pic/20251010/74b01394-df53-4d8b-a6ef-7b685a5718c1.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20251011/5f7a8eae-ae0e-4bd4-a637-7ef2bb3f5d6b.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "安吉拉",
+      "en": "Angela",
+      "img": "https://nie.res.netease.com/r/pic/20250912/cf044a85-7bec-4bc1-8a32-6fcd06c25480.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250912/cf044a85-7bec-4bc1-8a32-6fcd06c25480.png",
+        "https://nie.res.netease.com/r/pic/20250912/e9d2e592-d36b-4629-af7b-2701e0904c8e.png",
+        "https://nie.res.netease.com/r/pic/20250912/50b01142-43ff-4839-8066-895e1cc16713.png",
+        "https://nie.res.netease.com/r/pic/20250912/57d8ed30-d24c-49a8-9f2c-0f43c8bc50d7.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250912/50b01142-43ff-4839-8066-895e1cc16713.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "刀锋战士",
+      "en": "BLADE",
+      "img": "https://nie.res.netease.com/r/pic/20250808/8c35438e-3359-4ad9-8d49-2e1c6a29d463.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250808/8c35438e-3359-4ad9-8d49-2e1c6a29d463.png",
+        "https://nie.res.netease.com/r/pic/20250808/0d3a4fe6-f64a-49a7-9d4d-4d26a77e4d5c.png",
+        "https://nie.res.netease.com/r/pic/20250808/4d275895-e7ac-4846-9a71-68d9d301ada3.png",
+        "https://nie.res.netease.com/r/pic/20250812/36fe9b13-8a95-46f6-80a5-d3a82edb3102.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250808/4d275895-e7ac-4846-9a71-68d9d301ada3.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "凤凰女",
+      "en": "PHOENIX",
+      "img": "https://nie.res.netease.com/r/pic/20250711/e3658f05-e1f0-451d-902f-12ed100caa3e.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250711/e3658f05-e1f0-451d-902f-12ed100caa3e.png",
+        "https://nie.res.netease.com/r/pic/20250711/7d643548-6514-435f-921c-8123e4ca3bb3.png",
+        "https://nie.res.netease.com/r/pic/20250711/141b55bc-5467-4cb0-ac3b-3738aa56a97f.png",
+        "https://nie.res.netease.com/r/pic/20250711/50f07eb5-951e-4f40-ab97-0f29da78e02e.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250711/141b55bc-5467-4cb0-ac3b-3738aa56a97f.png"
+    },
+    {
+      "role": "策略家",
+      "name": "奥创",
+      "en": "Ultron",
+      "img": "https://nie.res.netease.com/r/pic/20250529/3644db29-a6d9-4497-ba00-0b834aa66a63.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250529/3644db29-a6d9-4497-ba00-0b834aa66a63.png",
+        "https://nie.res.netease.com/r/pic/20250529/ce46ce50-3221-4265-98b1-3cec00887dae.png",
+        "https://nie.res.netease.com/r/pic/20250529/c18d5633-eff2-40af-921e-c3957024e5f0.png",
+        "https://nie.res.netease.com/r/pic/20250611/eaa784fd-3261-4275-8065-61780342421c.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250529/c18d5633-eff2-40af-921e-c3957024e5f0.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "艾玛·弗斯特",
+      "en": "Emma Frost",
+      "img": "https://nie.res.netease.com/r/pic/20250409/948fc52f-815b-48e2-912e-41d419fcfcae.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250409/948fc52f-815b-48e2-912e-41d419fcfcae.png",
+        "https://nie.res.netease.com/r/pic/20250409/fd0cde40-451c-4e4d-b36b-78e797943c85.png",
+        "https://nie.res.netease.com/r/pic/20250409/cd236a64-ed93-49b7-b4ee-021e2a649bc9.png",
+        "https://nie.res.netease.com/r/pic/20250611/d31daf1c-4cd9-412c-ae3c-782bfc9d5d49.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250409/cd236a64-ed93-49b7-b4ee-021e2a649bc9.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "石头人",
+      "en": "THE THING",
+      "img": "https://nie.res.netease.com/r/pic/20250220/799c2a05-cc65-4ccc-9c24-d0b6151942f2.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250220/799c2a05-cc65-4ccc-9c24-d0b6151942f2.png",
+        "https://nie.res.netease.com/r/pic/20250220/b812d1ef-eeb9-42e6-9e8d-beaba8f6adcc.png",
+        "https://nie.res.netease.com/r/pic/20250220/b52d84d0-27b4-4b78-8093-0879840572cf.png",
+        "https://nie.res.netease.com/r/pic/20250220/a69ee483-56eb-49dc-b7bd-e6585e8c0364.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250220/b52d84d0-27b4-4b78-8093-0879840572cf.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "霹雳火",
+      "en": "HUMAN TORCH",
+      "img": "https://nie.res.netease.com/r/pic/20250220/37b7141f-5afb-4233-b7b2-96c8451e01ce.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250220/37b7141f-5afb-4233-b7b2-96c8451e01ce.png",
+        "https://nie.res.netease.com/r/pic/20250220/48f2db68-d5d8-402d-9a17-a60f84cc0aeb.png",
+        "https://nie.res.netease.com/r/pic/20250220/00f662d5-329a-4fb8-b7f4-cf182acb7755.png",
+        "https://nie.res.netease.com/r/pic/20250220/4fd9e368-6901-4870-a422-b0ec5adafeba.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250220/00f662d5-329a-4fb8-b7f4-cf182acb7755.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "神奇先生",
+      "en": "Mister Fantastic",
+      "img": "https://nie.res.netease.com/r/pic/20250109/f5677a00-4580-4450-8021-9753b8fa0585.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250109/f5677a00-4580-4450-8021-9753b8fa0585.png",
+        "https://nie.res.netease.com/r/pic/20250109/f3237262-e11b-4329-a571-59a3d5a777a4.png",
+        "https://nie.res.netease.com/r/pic/20250113/d48c5445-29df-4a39-b218-8c6799e61d1a.png",
+        "https://nie.res.netease.com/r/pic/20250109/dccfd4c7-f97f-42c3-8583-9fe90319425f.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250113/d48c5445-29df-4a39-b218-8c6799e61d1a.png"
+    },
+    {
+      "role": "策略家",
+      "name": "隐形女",
+      "en": "Invisible Woman",
+      "img": "https://nie.res.netease.com/r/pic/20250109/289d8da0-cc74-42e9-bfa6-67dad6a7b173.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20250109/289d8da0-cc74-42e9-bfa6-67dad6a7b173.png",
+        "https://nie.res.netease.com/r/pic/20250109/8ba693e9-6b9b-4511-9707-229c7767c830.png",
+        "https://nie.res.netease.com/r/pic/20250113/f27470c9-a677-438b-809b-abc761687b50.png",
+        "https://nie.res.netease.com/r/pic/20250109/7393a95c-3dce-4592-947e-440f53ad5caf.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250113/f27470c9-a677-438b-809b-abc761687b50.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "松鼠女",
+      "en": "Squirrel Girl",
+      "img": "https://nie.res.netease.com/r/pic/20241201/4bbbee65-79a4-42c9-8635-e9f13f6cb101.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20241201/4bbbee65-79a4-42c9-8635-e9f13f6cb101.png",
+        "https://nie.res.netease.com/r/pic/20241201/c115c6eb-d2e2-454d-a215-41eac22e1810.png",
+        "https://nie.res.netease.com/r/pic/20241201/96fa04f3-b382-4c5c-b133-7eb6d0763ee1.png",
+        "https://nie.res.netease.com/r/pic/20241201/5ab7abda-871c-4b85-b774-41916434eddd.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20241201/96fa04f3-b382-4c5c-b133-7eb6d0763ee1.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "黑寡妇",
+      "en": "Black Widow",
+      "img": "https://nie.res.netease.com/r/pic/20241204/f8f32a42-a17a-482c-8da0-cfe273b7da77.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20241204/f8f32a42-a17a-482c-8da0-cfe273b7da77.png",
+        "https://nie.res.netease.com/r/pic/20241204/a6ba9730-0f63-4eb7-b5f4-f5b7d278bed2.png",
+        "https://nie.res.netease.com/r/pic/20241204/d52af75b-8623-4f20-a97c-1e5d65c3bcdc.png",
+        "https://nie.res.netease.com/r/pic/20241204/9b57cfad-f1c4-430c-9c3f-44c88c3ea6b7.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20241204/d52af75b-8623-4f20-a97c-1e5d65c3bcdc.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "金刚狼",
+      "en": "Wolverine",
+      "img": "https://nie.res.netease.com/r/pic/20241204/6decb3c7-c852-4d5e-811c-a932e3bfc4a8.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20241204/6decb3c7-c852-4d5e-811c-a932e3bfc4a8.png",
+        "https://nie.res.netease.com/r/pic/20241204/f83f6738-96eb-44f7-b6b1-a40588a78642.png",
+        "https://nie.res.netease.com/r/pic/20241204/16b05d66-3809-4549-9337-fd1d25d30e77.png",
+        "https://nie.res.netease.com/r/pic/20241204/cd9f171e-70c7-4319-8121-e75b64fe3121.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20241204/16b05d66-3809-4549-9337-fd1d25d30e77.png"
+    },
+    {
+      "role": "策略家",
+      "name": "斗篷与匕首",
+      "en": "Cloak & Dagger",
+      "img": "https://nie.res.netease.com/r/pic/20241204/6fe1a0c6-8d0f-4674-872a-f7b54f0dd901.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20241204/6fe1a0c6-8d0f-4674-872a-f7b54f0dd901.png",
+        "https://nie.res.netease.com/r/pic/20241204/f269efac-a664-4ae6-83d8-a6484e895b99.png",
+        "https://nie.res.netease.com/r/pic/20250107/8dc54d64-2f54-4568-9a44-33b73c574eab.png",
+        "https://nie.res.netease.com/r/pic/20241204/1875f4e9-03ba-4d01-a2ff-c5d63edc62fe.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20250107/8dc54d64-2f54-4568-9a44-33b73c574eab.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "铁拳",
+      "en": "Iron Fist",
+      "img": "https://nie.res.netease.com/r/pic/20241201/96787ebb-8c6b-430f-aaf1-c74a89814f85.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20241201/96787ebb-8c6b-430f-aaf1-c74a89814f85.png",
+        "https://nie.res.netease.com/r/pic/20241201/0c6e905a-93eb-460a-810e-7b1159db871a.png",
+        "https://nie.res.netease.com/r/pic/20241201/e5ec7274-e7b7-481d-8be6-e9444a2be911.png",
+        "https://nie.res.netease.com/r/pic/20241201/cf8e1c37-9c0a-438f-b5d4-f48f5ca871d8.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20241201/e5ec7274-e7b7-481d-8be6-e9444a2be911.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "鹰眼",
+      "en": "HAWKEYE",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_27.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_27.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_27.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d27.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h27.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d27.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "灵蝶",
+      "en": "Psylocke",
+      "img": "https://nie.res.netease.com/r/pic/20241125/f264e8c6-56fa-453d-a8c4-76c9594116d2.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20241125/f264e8c6-56fa-453d-a8c4-76c9594116d2.png",
+        "https://nie.res.netease.com/r/pic/20241125/2cd2adbc-7706-470d-b728-d6d5ad123cc7.png",
+        "https://nie.res.netease.com/r/pic/20241125/f0f282a8-bebf-43ad-987f-57fcc84c0bb2.png",
+        "https://nie.res.netease.com/r/pic/20241125/44469904-1185-4fa3-960f-b7355a7f8db3.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20241125/f0f282a8-bebf-43ad-987f-57fcc84c0bb2.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "浩克",
+      "en": "HULK",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_19.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_19.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_19.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d19.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h19.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d19.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "钢铁侠",
+      "en": "IronMan",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_6.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_6.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_6.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d6.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h6.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d6.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "月光骑士",
+      "en": "moonknight",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_26.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_26.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_26.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d26.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h26.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d26.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "纳摩",
+      "en": "Namor",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_20.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_20.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_20.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d20.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h20.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d20.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "星爵",
+      "en": "Star-Lord",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_16.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_16.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_16.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d16.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h16.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d16.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "猩红女巫",
+      "en": "ScarletWitch",
+      "img": "https://nie.res.netease.com/r/pic/20260615/9b56d391-4042-4447-932b-1e51ee3cdc78.png",
+      "imgs": [
+        "https://nie.res.netease.com/r/pic/20260615/9b56d391-4042-4447-932b-1e51ee3cdc78.png",
+        "https://nie.res.netease.com/r/pic/20260615/af65662b-786b-47f5-bbcf-64b4ed188ac2.png",
+        "https://nie.res.netease.com/r/pic/20260615/3542ccd3-f0e2-4af3-92f6-5bd9ab8bbe54.png",
+        "https://nie.res.netease.com/r/pic/20260615/b19f38d7-b64e-41f5-b286-715f9e2f2b85.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20260615/3542ccd3-f0e2-4af3-92f6-5bd9ab8bbe54.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "冬兵",
+      "en": "Wintersoldier",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_25.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_25.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_25.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d25.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h25.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d25.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "蜘蛛侠",
+      "en": "Spider-Man",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_13.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_13.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_13.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d13.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h13.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d13.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "魔剑客",
+      "en": "Magik",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_12.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_12.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_12.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d12.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h12.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d12.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "黑豹",
+      "en": "BlackPanther",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_1.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_1.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_1.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d1.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h1.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d1.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "海拉",
+      "en": "Hela",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_5.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_5.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_5.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d5.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h5.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d5.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "暴风女",
+      "en": "Storm",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_17.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_17.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_17.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d17.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h17.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d17.png"
+    },
+    {
+      "role": "决斗家",
+      "name": "惩罚者",
+      "en": "THE PUNISHER",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_4.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_4.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_4.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d4.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h4.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d4.png"
+    },
+    {
+      "role": "策略家",
+      "name": "陆行鲨 杰夫",
+      "en": "JEFF THE LAND SHARK",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_23.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_23.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_23.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d23.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h23.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d23.png"
+    },
+    {
+      "role": "策略家",
+      "name": "亚当术士",
+      "en": "AdamWarlock",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_21.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_21.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_21.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d21.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h21.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d21.png"
+    },
+    {
+      "role": "策略家",
+      "name": "冰月花雪",
+      "en": "LunaSnow",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_18.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_18.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_18.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d18.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h18.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d18.png"
+    },
+    {
+      "role": "策略家",
+      "name": "火箭浣熊",
+      "en": "RocketRaccoon",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_8.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_8.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_8.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d8.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h8.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d8.png"
+    },
+    {
+      "role": "策略家",
+      "name": "洛基",
+      "en": "Loki",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_7.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_7.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_7.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d7.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h7.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d7.png"
+    },
+    {
+      "role": "策略家",
+      "name": "曼蒂斯",
+      "en": "Mantis",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_9.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_9.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_9.png",
+        "https://nie.res.netease.com/r/pic/20241128/4489cade-92ce-4bf3-bf64-5dcaf86881b9.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h9.png"
+      ],
+      "imgBig": "https://nie.res.netease.com/r/pic/20241128/4489cade-92ce-4bf3-bf64-5dcaf86881b9.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "潘妮·帕克",
+      "en": "peniparker",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_10.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_10.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_10.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d10.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h10.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d10.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "索尔",
+      "en": "Thor",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_22.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_22.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_22.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d22.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h22.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d22.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "万磁王",
+      "en": "Magneto",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_11.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_11.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_11.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d11.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h11.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d11.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "毒液",
+      "en": "Venom",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_14.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_14.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_14.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d14.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h14.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d14.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "格鲁特",
+      "en": "Groot",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_3.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_3.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_3.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d3.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h3.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d3.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "美国队长",
+      "en": "CAPTAIN AMERICA",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_24.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_24.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_24.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d24.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h24.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d24.png"
+    },
+    {
+      "role": "捍卫者",
+      "name": "奇异博士",
+      "en": "DoctorStrange",
+      "img": "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_2.png",
+      "imgs": [
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head_2.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/kp_2.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/d2.png",
+        "https://marvelrivals.res.netease.com/2024/a061fbef0901/head-h2.png"
+      ],
+      "imgBig": "https://marvelrivals.res.netease.com/2024/a061fbef0901/d2.png"
+    }
+  ]
+}

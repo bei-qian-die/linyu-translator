@@ -1,0 +1,326 @@
+{
+  "美国队长": {
+    "name": "美国队长",
+    "key": "美国队长",
+    "desc": "美国漫威漫画旗下多位超级英雄使用过的称号",
+    "url": "https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E9%98%9F%E9%95%BF",
+    "pic": ""
+  },
+  "奇异博士": {
+    "name": "奇异博士",
+    "miss": true
+  },
+  "格鲁特": {
+    "name": "格鲁特",
+    "key": "格鲁特",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E6%A0%BC%E9%B2%81%E7%89%B9",
+    "pic": ""
+  },
+  "浩克": {
+    "name": "浩克",
+    "key": "浩克",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E6%B5%A9%E5%85%8B",
+    "pic": ""
+  },
+  "万磁王": {
+    "name": "万磁王",
+    "key": "万磁王",
+    "desc": "美国漫威漫画旗下反英雄",
+    "url": "https://baike.baidu.com/item/%E4%B8%87%E7%A3%81%E7%8E%8B",
+    "pic": ""
+  },
+  "潘妮·帕克": {
+    "name": "潘妮·帕克",
+    "key": "潘妮·帕克",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E6%BD%98%E5%A6%AE%C2%B7%E5%B8%95%E5%85%8B",
+    "pic": ""
+  },
+  "索尔": {
+    "name": "索尔",
+    "key": "索尔",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E7%B4%A2%E5%B0%94",
+    "pic": ""
+  },
+  "毒液": {
+    "name": "毒液",
+    "miss": true
+  },
+  "石头人": {
+    "name": "石头人",
+    "miss": true
+  },
+  "白皇后": {
+    "name": "白皇后",
+    "key": "白皇后",
+    "desc": "美国漫威漫画旗下反英雄",
+    "url": "https://baike.baidu.com/item/%E7%99%BD%E7%9A%87%E5%90%8E",
+    "pic": ""
+  },
+  "安吉拉": {
+    "name": "安吉拉",
+    "key": "安吉拉",
+    "desc": "游戏《脑叶公司》及其衍生作品中的角色",
+    "url": "https://baike.baidu.com/item/%E5%AE%89%E5%90%89%E6%8B%89",
+    "pic": ""
+  },
+  "小淘气": {
+    "name": "小淘气",
+    "key": "小淘气",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E5%B0%8F%E6%B7%98%E6%B0%94",
+    "pic": ""
+  },
+  "恶魔恐龙": {
+    "name": "恶魔恐龙",
+    "miss": true
+  },
+  "红兜帽": {
+    "name": "红兜帽",
+    "key": "红兜帽",
+    "desc": "美国漫威漫画旗下多位超级反派使用过的称号",
+    "url": "https://baike.baidu.com/item/%E7%BA%A2%E5%85%9C%E5%B8%BD",
+    "pic": ""
+  },
+  "黑寡妇": {
+    "name": "黑寡妇",
+    "miss": true
+  },
+  "黑豹": {
+    "name": "黑豹",
+    "miss": true
+  },
+  "鹰眼": {
+    "name": "鹰眼",
+    "key": "鹰眼",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E9%B9%B0%E7%9C%BC",
+    "pic": ""
+  },
+  "海拉": {
+    "name": "海拉",
+    "key": "海拉",
+    "desc": "美国漫威漫画旗下超级反派",
+    "url": "https://baike.baidu.com/item/%E6%B5%B7%E6%8B%89",
+    "pic": ""
+  },
+  "铁拳": {
+    "name": "铁拳",
+    "miss": true
+  },
+  "钢铁侠": {
+    "name": "钢铁侠",
+    "miss": true
+  },
+  "魔剑客": {
+    "name": "魔剑客",
+    "key": "魔剑客",
+    "desc": "游戏《轩辕剑叁外传：天之痕》中的角色",
+    "url": "https://baike.baidu.com/item/%E9%AD%94%E5%89%91%E5%AE%A2",
+    "pic": ""
+  },
+  "神奇先生": {
+    "name": "神奇先生",
+    "key": "神奇先生",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E7%A5%9E%E5%A5%87%E5%85%88%E7%94%9F",
+    "pic": ""
+  },
+  "月光骑士": {
+    "name": "月光骑士",
+    "key": "月光骑士",
+    "desc": "美国漫威漫画旗下反英雄",
+    "url": "https://baike.baidu.com/item/%E6%9C%88%E5%85%89%E9%AA%91%E5%A3%AB",
+    "pic": ""
+  },
+  "纳摩": {
+    "name": "纳摩",
+    "key": "纳摩",
+    "desc": "美国漫威漫画旗下反英雄",
+    "url": "https://baike.baidu.com/item/%E7%BA%B3%E6%91%A9",
+    "pic": ""
+  },
+  "灵蝶": {
+    "name": "灵蝶",
+    "key": "灵蝶",
+    "desc": "美国漫威漫画旗下多位超级英雄使用过的称号",
+    "url": "https://baike.baidu.com/item/%E7%81%B5%E8%9D%B6",
+    "pic": ""
+  },
+  "猩红女巫": {
+    "name": "猩红女巫",
+    "key": "猩红女巫",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E7%8C%A9%E7%BA%A2%E5%A5%B3%E5%B7%AB",
+    "pic": ""
+  },
+  "蜘蛛侠": {
+    "name": "蜘蛛侠",
+    "miss": true
+  },
+  "松鼠女": {
+    "name": "松鼠女",
+    "key": "松鼠女",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E6%9D%BE%E9%BC%A0%E5%A5%B3",
+    "pic": ""
+  },
+  "星爵": {
+    "name": "星爵",
+    "key": "星爵",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E6%98%9F%E7%88%B5",
+    "pic": ""
+  },
+  "暴风女": {
+    "name": "暴风女",
+    "key": "暴风女",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E6%9A%B4%E9%A3%8E%E5%A5%B3",
+    "pic": ""
+  },
+  "惩罚者": {
+    "name": "惩罚者",
+    "key": "惩罚者",
+    "desc": "美国漫威漫画旗下多位反英雄使用过的称号",
+    "url": "https://baike.baidu.com/item/%E6%83%A9%E7%BD%9A%E8%80%85",
+    "pic": ""
+  },
+  "冬兵": {
+    "name": "冬兵",
+    "key": "冬兵",
+    "desc": "美国漫威漫画旗下反英雄",
+    "url": "https://baike.baidu.com/item/%E5%86%AC%E5%85%B5",
+    "pic": ""
+  },
+  "金刚狼": {
+    "name": "金刚狼",
+    "key": "金刚狼",
+    "desc": "美国漫威漫画旗下的超级英雄",
+    "url": "https://baike.baidu.com/item/%E9%87%91%E5%88%9A%E7%8B%BC",
+    "pic": ""
+  },
+  "霹雳火": {
+    "name": "霹雳火",
+    "miss": true
+  },
+  "凤凰女": {
+    "name": "凤凰女",
+    "key": "凤凰女",
+    "desc": "美国漫威漫画旗下多位角色使用过的称号",
+    "url": "https://baike.baidu.com/item/%E5%87%A4%E5%87%B0%E5%A5%B3",
+    "pic": ""
+  },
+  "刀锋战士": {
+    "name": "刀锋战士",
+    "key": "刀锋战士",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E5%88%80%E9%94%8B%E6%88%98%E5%A3%AB",
+    "pic": ""
+  },
+  "夜魔侠": {
+    "name": "夜魔侠",
+    "key": "夜魔侠",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E5%A4%9C%E9%AD%94%E4%BE%A0",
+    "pic": ""
+  },
+  "艾尔莎·血石": {
+    "name": "艾尔莎·血石",
+    "key": "艾尔莎·血石",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E8%89%BE%E5%B0%94%E8%8E%8E%C2%B7%E8%A1%80%E7%9F%B3",
+    "pic": ""
+  },
+  "黑猫": {
+    "name": "黑猫",
+    "miss": true
+  },
+  "雷光眼": {
+    "name": "雷光眼",
+    "miss": true
+  },
+  "屠神者格尔": {
+    "name": "屠神者格尔",
+    "miss": true
+  },
+  "亚当术士": {
+    "name": "亚当术士",
+    "key": "亚当术士",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E4%BA%9A%E5%BD%93%E6%9C%AF%E5%A3%AB",
+    "pic": ""
+  },
+  "斗篷与匕首": {
+    "name": "斗篷与匕首",
+    "miss": true
+  },
+  "隐形女": {
+    "name": "隐形女",
+    "key": "隐形女",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E9%9A%90%E5%BD%A2%E5%A5%B3",
+    "pic": ""
+  },
+  "陆行鲨杰夫": {
+    "name": "陆行鲨杰夫",
+    "miss": true
+  },
+  "洛基": {
+    "name": "洛基",
+    "miss": true
+  },
+  "冰月花雪": {
+    "name": "冰月花雪",
+    "key": "冰月花雪",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E5%86%B0%E6%9C%88%E8%8A%B1%E9%9B%AA",
+    "pic": ""
+  },
+  "曼蒂斯": {
+    "name": "曼蒂斯",
+    "key": "曼蒂斯",
+    "desc": "游戏《漫威超级战争》中的角色",
+    "url": "https://baike.baidu.com/item/%E6%9B%BC%E8%92%82%E6%96%AF",
+    "pic": ""
+  },
+  "火箭浣熊": {
+    "name": "火箭浣熊",
+    "key": "火箭浣熊",
+    "desc": "美国漫威漫画旗下超级英雄",
+    "url": "https://baike.baidu.com/item/%E7%81%AB%E7%AE%AD%E6%B5%A3%E7%86%8A",
+    "pic": ""
+  },
+  "奥创": {
+    "name": "奥创",
+    "key": "奥创",
+    "desc": "美国漫威漫画旗下超级反派",
+    "url": "https://baike.baidu.com/item/%E5%A5%A5%E5%88%9B",
+    "pic": ""
+  },
+  "牌皇": {
+    "name": "牌皇",
+    "miss": true
+  },
+  "白狐": {
+    "name": "白狐",
+    "miss": true
+  },
+  "百光花火": {
+    "name": "百光花火",
+    "key": "百光花火",
+    "desc": "游戏《漫威超级战争》中的角色",
+    "url": "https://baike.baidu.com/item/%E7%99%BE%E5%85%89%E8%8A%B1%E7%81%AB",
+    "pic": ""
+  },
+  "死侍": {
+    "name": "死侍",
+    "key": "死侍",
+    "desc": "美国漫威漫画旗下反英雄",
+    "url": "https://baike.baidu.com/item/%E6%AD%BB%E4%BE%8D",
+    "pic": ""
+  }
+}

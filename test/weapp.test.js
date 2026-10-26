@@ -163,16 +163,32 @@ function walk(dir, out = []) {
   return out;
 }
 
-// 小程序端的 seed / lore-extra 是「列式编码」（{__col:1, keys, rows}）以压主包体积，
+// 小程序端的 seed / lore-extra 是「列式编码」（{__col:1, __sst:1, keys, rows}）以压主包体积，
 // 主端仍是常规对象。一致性要按「解码后的内容」比，而不是按字节比——
 // 字节比在这里会把两种合法的等价编码判成不同步。
-function decodeCol(part) {
+// __sst=1 时表格单元存的是全局字符串表（data/_sst.js）的下标，要先还原。
+const MP_SST = (() => {
+  try {
+    return require('../miniprogram/data/_sst');
+  } catch (e) {
+    return null;
+  }
+})();
+
+function decodeCol(part, sst) {
   if (!part || !Array.isArray(part.rows)) return part;
   const { keys, rows } = part;
+  const dec = (v) => {
+    if (!sst) return v;
+    if (v === null || v === undefined) return v;
+    if (typeof v === 'number') return sst[v];
+    if (typeof v === 'object') return 'n' in v ? v.n : v.a;
+    return v;
+  };
   return rows.map((row) => {
     const o = {};
     for (let i = 0; i < keys.length; i++) {
-      const v = row[i];
+      const v = dec(row[i]);
       if (v !== null && v !== undefined) o[keys[i]] = v;
     }
     return o;
@@ -181,10 +197,11 @@ function decodeCol(part) {
 
 function decodePacked(mod) {
   if (!mod || !mod.__col) return mod;
+  const sst = mod.__sst ? MP_SST : null;
   const out = {};
   for (const [k, v] of Object.entries(mod)) {
-    if (k === '__col') continue;
-    out[k] = v && v.rows ? decodeCol(v) : v;
+    if (k === '__col' || k === '__sst') continue;
+    out[k] = v && v.rows ? decodeCol(v, sst) : v;
   }
   return out;
 }

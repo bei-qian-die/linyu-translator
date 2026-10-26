@@ -122,7 +122,7 @@ const coreOrder = [
   'core/lore-extra3.js', 'core/lore-extra4.js', 'core/lore-extra5.js',
   'core/lore-extra6.js', 'core/lore-extra7.js', 'core/lore-extra8.js',
   'core/lore-extra9.js', 'core/lore-extra10.js', 'core/lore-extra11.js',
-  'core/lore-extra12.js', 'core/lore-extra13.js', 'core/lore-extra14.js', 'core/lore-extra15.js', 'core/lore-extra16.js', 'core/lore-extra18.js', 'core/lore-extra19.js',
+  'core/lore-extra12.js', 'core/lore-extra13.js', 'core/lore-extra14.js', 'core/lore-extra15.js', 'core/lore-extra16.js', 'core/lore-extra18.js', 'core/lore-extra19.js', 'core/lore-extra20.js',
   'core/lore.js',
   'core/tokenizer.js',
   'core/translator.js',

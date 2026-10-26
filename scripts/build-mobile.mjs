@@ -191,6 +191,8 @@ async function main() {
     'src/core/lore-extra16.js',
     'src/core/lore-extra18.js',
     'src/core/lore-extra19.js',
+    'src/core/lore-extra20.js',
+    'src/core/lore-extra21.js',
     'src/core/lore-extra15.js',
   ];
   const hash = await contentHash(contentFiles);

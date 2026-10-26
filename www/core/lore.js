@@ -4,6 +4,15 @@
 // @ts-check
 'use strict';
 
+// 全局字符串表（小程序端 data/_sst.js）。主端没有这个文件，require 失败就是 null。
+let SST = null;
+try {
+  if (typeof require === 'function') SST = require('./_sst.js');
+} catch (e) {
+  SST = null;
+}
+
+
 // 淋语词卡：无法直接翻译的词、梗与典故的释义卡片
 // type: particle 语气词 | slang 俚语梗 | lyric 歌词典故 | meme 网络梗
 // hero: 关联的通讯录英雄（用于人物详情页聚合，可省略表示通用淋语）
@@ -713,6 +722,8 @@ const extra15 = unpack((typeof require === 'function') ? require('./lore-extra15
 const extra16 = unpack((typeof require === 'function') ? require('./lore-extra16') : (typeof window !== 'undefined' ? window.LORE_EXTRA16 : {}));
 const extra18 = unpack((typeof require === 'function') ? require('./lore-extra18') : (typeof window !== 'undefined' ? window.LORE_EXTRA18 : {}));
 const extra19 = unpack((typeof require === 'function') ? require('./lore-extra19') : (typeof window !== 'undefined' ? window.LORE_EXTRA19 : {}));
+const extra20 = unpack((typeof require === 'function') ? require('./lore-extra20') : (typeof window !== 'undefined' ? window.LORE_EXTRA20 : {}));
+const extra21 = unpack((typeof require === 'function') ? require('./lore-extra21') : (typeof window !== 'undefined' ? window.LORE_EXTRA21 : {}));
 
 // ---- 数据解包 ----
 // 小程序端为了压主包体积，把 lore-extraN.js 存成「列式编码」：
@@ -726,15 +737,24 @@ const COLS = {
   heroes: ['name', 'alias', 'img', 'group', 'grp', 'rank', 'intro', 'baike', 'tags', 'works', 'words', 'links'],
 };
 
-function decodeRows(list, keys) {
+// 反解一个表格单元：见 scripts/build-weapp-data.mjs 的编码约定
+function decCell(v) {
+  if (v === null || v === undefined) return v;
+  if (typeof v === 'number') return SST ? SST[v] : v;
+  if (typeof v === 'object') return 'n' in v ? v.n : v.a;
+  return v;
+}
+
+function decodeRows(list, keys, useSst) {
   if (!Array.isArray(list) || !list.length) return [];
   if (!Array.isArray(list[0])) return list; // 已是对象数组
   const out = new Array(list.length);
+  const dec = useSst ? decCell : (v) => v;
   for (let i = 0; i < list.length; i++) {
     const row = list[i];
     const o = {};
     for (let j = 0; j < keys.length; j++) {
-      const v = row[j];
+      const v = dec(row[j]);
       if (v !== null && v !== undefined) o[keys[j]] = v;
     }
     out[i] = o;
@@ -745,12 +765,13 @@ function decodeRows(list, keys) {
 function unpack(mod) {
   if (!mod) return { cards: [], quotes: [], heroes: [], heroMerge: [], quoteMerge: [] };
   if (!mod.__col) return mod;
+  const useSst = !!mod.__sst;
   // 必须保留 __col 之外的其它字段（dropCards / dropQuotes / dropHeroes / heroMerge / quoteMerge），
   // 它们不参与编码，但 lore.js 后面的剔除逻辑要用；只覆盖三张内容表。
   return Object.assign({}, mod, {
-    cards: mod.cards ? decodeRows(mod.cards.rows, mod.cards.keys || COLS.cards) : [],
-    quotes: mod.quotes ? decodeRows(mod.quotes.rows, mod.quotes.keys || COLS.quotes) : [],
-    heroes: mod.heroes ? decodeRows(mod.heroes.rows, mod.heroes.keys || COLS.heroes) : [],
+    cards: mod.cards ? decodeRows(mod.cards.rows, mod.cards.keys || COLS.cards, useSst) : [],
+    quotes: mod.quotes ? decodeRows(mod.quotes.rows, mod.quotes.keys || COLS.quotes, useSst) : [],
+    heroes: mod.heroes ? decodeRows(mod.heroes.rows, mod.heroes.keys || COLS.heroes, useSst) : [],
     heroMerge: mod.heroMerge || [],
     quoteMerge: mod.quoteMerge || [],
   });
@@ -798,7 +819,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards),
     'term',
     dropCards
   ),
@@ -806,7 +827,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -814,7 +835,7 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes),
     'text',
     dropQuotes
   ),
@@ -904,11 +925,15 @@ applyQuoteMerge(allQuotes, extra15.quoteMerge);
 applyQuoteMerge(allQuotes, extra16.quoteMerge);
 applyQuoteMerge(allQuotes, extra18.quoteMerge);
 applyQuoteMerge(allQuotes, extra19.quoteMerge);
+applyQuoteMerge(allQuotes, extra20.quoteMerge);
+applyQuoteMerge(allQuotes, extra21.quoteMerge);
 applyHeroMerge(allHeroes, extra14.heroMerge);
 applyHeroMerge(allHeroes, extra15.heroMerge);
 applyHeroMerge(allHeroes, extra16.heroMerge);
 applyHeroMerge(allHeroes, extra18.heroMerge);
 applyHeroMerge(allHeroes, extra19.heroMerge);
+applyHeroMerge(allHeroes, extra20.heroMerge);
+applyHeroMerge(allHeroes, extra21.heroMerge);
 
 // 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
 // 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。

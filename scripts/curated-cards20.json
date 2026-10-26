@@ -1,0 +1,802 @@
+[
+  {
+    "term": "我红",
+    "zh": "猩红女巫的自称",
+    "type": "slang",
+    "meaning": "本区用得最凶的一个自称：把旺达压成一个「红」字，配合「母亲」梗成句（没人爱你们的话我红来爱你们）。",
+    "example": "全西景镇最恩爱的一对拉拉噜，我红气的从石头堆里诈尸",
+    "source": "https://www.bilibili.com/video/BV1c4wNemEZ9",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "捍卫者",
+    "zh": "捍卫者",
+    "type": "slang",
+    "meaning": "官方三种职责之一（Vanguard），扛伤开路的那一档；玩家口语按职能叫「坦克位」「前排」。",
+    "example": "挺好挺好 冬兵确实怎么都能玩 捍卫者和策略家的推荐也可以出一下",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "阿斯加德",
+    "zh": "阿斯加德",
+    "type": "slang",
+    "meaning": "阿斯加德（Asgard）与连接十界的世界树融合后的地图组，含「仙宫」与「世界树」两张。",
+    "example": "恐龙 鲨狗 浣熊 共生体 机器人 阿斯加德人",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "连携技",
+    "zh": "连携技能",
+    "type": "slang",
+    "meaning": "特定英雄组合才能触发的联动技能，本区简称连携技；语料原句「我请问你磁的连携技能放着不用素在」。",
+    "example": "我请问你磁的连携技能放着不用素在",
+    "source": "https://www.bilibili.com/video/BV1ptM3zGEhd",
+    "slot": "淋威争锋/淋威连携组合",
+    "score": 8
+  },
+  {
+    "term": "金皮",
+    "zh": "金色品质皮肤",
+    "type": "slang",
+    "meaning": "最高一档皮肤品质，玩家用它衡量官方对某个英雄的重视程度；语料原句「依旧丑的设计做金皮，好看的全是紫」。",
+    "example": "【漫威争锋】隐形女万圣节金皮「隐命织女」演示+对比",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 6
+  },
+  {
+    "term": "制作组",
+    "zh": "官方制作团队",
+    "type": "slang",
+    "meaning": "玩家的吐槽对象，语料原句「制作组都弃疗了」「美术骑着策划上班的网易」。",
+    "example": "洛基和雷神哥俩待遇算是真不错的了，真是不得不怀疑制作组内部磕兄弟组哦",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威赛事圈",
+    "score": 6
+  },
+  {
+    "term": "淋威争锋",
+    "zh": "漫威争锋",
+    "type": "slang",
+    "meaning": "游戏整名的淋化写法，把「漫威」换成「淋威」；沿用项目「游戏原名淋化」惯例（洛克王国→洛克淋国）。",
+    "example": "【淋威争锋】被铁拳踢的时候首先飘过来的是黑袜的闷热",
+    "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%A8%81%E4%BA%89%E9%94%8B",
+    "slot": "淋威争锋/分区",
+    "score": 4
+  },
+  {
+    "term": "决斗家",
+    "zh": "决斗家",
+    "type": "slang",
+    "meaning": "官方三种职责之一（Duelist），负责打输出的一档。",
+    "example": "决斗家的旁边的标吓鼠了",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "仙宫",
+    "zh": "仙宫",
+    "type": "slang",
+    "meaning": "阿斯加德地图组的一张，洛基在时间流纠缠后建立新王国的地方。",
+    "example": "仙宫科技，小子！",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "后排",
+    "zh": "后排输出",
+    "type": "slang",
+    "meaning": "报点时按站位分工的叫法，语料原句「7分半的那一波后排双辅和冬兵报团为什么先找冬兵」。",
+    "example": "7分半的那一波后排双辅和冬兵报团为什么先找冬兵？",
+    "source": "https://www.bilibili.com/video/BV1sDnR6JEUm",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "紫皮",
+    "zh": "紫色品质皮肤",
+    "type": "slang",
+    "meaning": "低于金皮一档，玩家用它吐槽待遇：语料原句「寡姐却又进入了连紫皮都没有的处境」。",
+    "example": "金皮因为配置差别比较大，质量表现上多是参差不齐，但是从索尔的紫皮可以看出来，今年的紫皮质量普遍不如去年，网易该反省一下了",
+    "source": "https://www.bilibili.com/video/BV1KeJb6GExo",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 5
+  },
+  {
+    "term": "黑帮火锅",
+    "zh": "制作人外号",
+    "type": "slang",
+    "meaning": "玩家给漫威游戏执行制片人 Danny Koo 起的中文外号，起因是他在皮肤里塞自己名字彩蛋被扒出。",
+    "example": "黑帮火锅公开喊话黑粉：再BB就给冰月多出五个金皮！【漫威争锋】",
+    "source": "https://bbs.nga.cn/read.php?tid=47303235",
+    "slot": "淋威争锋/淋威赛事圈",
+    "score": 6
+  },
+  {
+    "term": "多元宇宙",
+    "zh": "多元宇宙",
+    "type": "slang",
+    "meaning": "剧情设定的总背景，社区用它解释皮肤、平行版本角色与赛季故事线。",
+    "example": "可惜争锋格尔和雷神都削了，原作的全能宇宙神明炸弹缩小变成多元宇宙神明炸弹了",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威剧情线",
+    "score": 5
+  },
+  {
+    "term": "我冰",
+    "zh": "冰月花雪的自称",
+    "type": "slang",
+    "meaning": "K-pop 偶像角色的自称，评论区里「我冰/你冰」几乎成对出现（我冰掌掴一众赔钱货、你冰是kpop靴靴）。",
+    "example": "淋威争锋我冰艺术大过天",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "NBCS",
+    "zh": "是无所谓吗",
+    "type": "slang",
+    "meaning": "「nobody cares」的缩写，本区用来表达漠不关心；语料原句「我红的e有点nbcs」「nbcs地雷女」。",
+    "example": "「淋威争锋」治愈并保护大家？NBCS！",
+    "source": "https://www.bilibili.com/video/BV1QJoZYeEUb",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "策略家",
+    "zh": "策略家",
+    "type": "slang",
+    "meaning": "官方三种职责之一（Strategist），负责治疗与增益；玩家一律喊「奶位」「奶妈」。",
+    "example": "挺好挺好 冬兵确实怎么都能玩 捍卫者和策略家的推荐也可以出一下",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "蜘蛛岛",
+    "zh": "蜘蛛岛",
+    "type": "slang",
+    "meaning": "东京 2099 地图组的一张，语料里有「蜘蛛岛海拉36杀全程爆头」的实况标题。",
+    "example": "【漫威争锋】“S0被逼着去玩浩克了，少了一个海拉高手”蜘蛛岛海拉36杀全程爆头巨爽巨解压丨职业选手第一视角",
+    "source": "https://www.bilibili.com/video/BV1sHnb6VEGC",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 7
+  },
+  {
+    "term": "连携",
+    "zh": "连携",
+    "type": "slang",
+    "meaning": "两名英雄同时上场才解锁的组合技，语料原句「我请问你磁的连携技能放着不用素在」。",
+    "example": "这就是蕾米失衡双连携的正常手法呀 多搓就熟练了",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威连携组合",
+    "score": 8
+  },
+  {
+    "term": "挂机",
+    "zh": "挂机",
+    "type": "slang",
+    "meaning": "排队里最招骂的行为，语料原句「队友牌皇上来挂机三分钟，天神3啊」。",
+    "example": "【芭后争锋】总算到后面把分给赢回来了，队友直接原地挂机",
+    "source": "https://www.bilibili.com/video/BV1sDnR6JEUm",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "泳装皮",
+    "zh": "泳装皮肤",
+    "type": "meme",
+    "meaning": "泳装通行证是每个赛季的热度中心，玩家拿它当待遇对比的刻度：语料原句「队2皮和泳装皮一个众望所归一个下海卖肉」。",
+    "example": "-无不良影响，是漫威争锋的泳装皮肤爆料，一切都是淡淡的，没有任何深层意思，",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 6
+  },
+  {
+    "term": "西景镇",
+    "zh": "西景镇",
+    "type": "slang",
+    "meaning": "猩红女巫剧情线的舞台，语料原句「全西景镇最恩爱的一对拉拉噜」「西景镇颁布禁蛛令」。",
+    "example": "全西景镇最恩爱的一对拉拉噜，我红气的从石头堆里诈尸",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威剧情线",
+    "score": 5
+  },
+  {
+    "term": "淋威人",
+    "zh": "漫威争锋玩家",
+    "type": "slang",
+    "meaning": "淋威区玩家的自称：先有「淋系玩家」泛指玩淋语的玩家，再缩成「淋威人」专指本区玩家。语料原句是「每次想找人一起打，但淋威人太少找不到人」。",
+    "example": "甜甜有什么粉丝群之类的吗，每次想找人一起打，但淋威人太少找不到人",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/分区",
+    "score": 4
+  },
+  {
+    "term": "我匕",
+    "zh": "斗篷与匕首的自称",
+    "type": "slang",
+    "meaning": "双人英雄压成「匕」字，语料原句「9.5赛季，我匕是唯一T0谢谢」「因為那素對面的匕匕」。",
+    "example": "淋威争锋9.5赛季，我匕是唯一T0谢谢",
+    "source": "https://www.bilibili.com/video/BV1PLua6REYV",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "素在",
+    "zh": "是在问出处吗",
+    "type": "slang",
+    "meaning": "「是在？」的淋化写法，本区问封面/素材出处的固定说法（素＝是）：语料原句「封面素在？」「这个大招素在？」。",
+    "example": "我请问你磁的连携技能放着不用素在",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "时代广场",
+    "zh": "时代广场",
+    "type": "slang",
+    "meaning": "纽约地图组的一张，语料原句「灭霸别得意，有本事来时代广场对掏」。",
+    "example": "【漫威争锋】时代广场看复联4，灭霸这下可惨了",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "占点",
+    "zh": "占点",
+    "type": "slang",
+    "meaning": "推进到点内抢百分比的核心玩法，语料原句「不占点就会输，占会挨打，挨打就死」。",
+    "example": "鲨鱼三T帮助REJECT复活的阵容！（附占点图博士的重要性）漫威争锋季后赛决赛太平洋赛区REJECT vs GENG 图四",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 6
+  },
+  {
+    "term": "限时",
+    "zh": "限时上架",
+    "type": "slang",
+    "meaning": "皮肤的售卖方式，限时与常驻的差别是玩家最常吵的话题。",
+    "example": "限时也无聊，拿完奖励就不想打了，还不如出灭霸",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 6
+  },
+  {
+    "term": "太平洋赛区",
+    "zh": "太平洋赛区",
+    "type": "slang",
+    "meaning": "国服玩家最关注的赛区，语料原句「漫威争锋太平洋赛区REJECT vs GNG 图三」。",
+    "example": "REJECT对树人体系明显经验不足，洛基亚当三辅令人绝望的韧性。漫威争锋太平洋赛区REJECT vs GNG 图三",
+    "source": "https://www.bilibili.com/video/BV1sDnR6JEUm",
+    "slot": "淋威争锋/淋威赛事圈",
+    "score": 5
+  },
+  {
+    "term": "玛雅",
+    "zh": "妈呀",
+    "type": "slang",
+    "meaning": "「妈呀」的淋化谐音，本区出现频率最高的一个叹词，写法还能继续淋化成「玛雅大街」「玛雅哒姐」。",
+    "example": "玛雅被母石头人吓晕",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "奶位",
+    "zh": "治疗位",
+    "type": "slang",
+    "meaning": "把策略家按职能叫「奶位」，语料原句「奶位就是舒服啊」。",
+    "example": "【漫威争锋】与基哥奶位双子星无法赢下对局，基哥怒而掏出魔剑赢得胜利。与基哥甜双（上）",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 9
+  },
+  {
+    "term": "常驻",
+    "zh": "常驻皮肤",
+    "type": "slang",
+    "meaning": "不限时、随时能买的皮肤；语料原句「霓虹天籁」就是冰月花雪的常驻金皮。",
+    "example": "电影版更想要美队3版的，后面版本的太素了，mr也知道所以把本来该是充能才会有的紫条纹改成常驻，就是为了凑复联电影皮",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 5
+  },
+  {
+    "term": "天神",
+    "zh": "天神段位",
+    "type": "slang",
+    "meaning": "竞技模式的高段位叫法，语料原句「我已经在天神3保卫战了」「不是白金三」。",
+    "example": "这游戏elo真是rz 我昨天打了一把天神3的局 队友牌皇上来挂机三分钟 天神3啊 不是白金三 愣是elo被",
+    "source": "https://www.bilibili.com/video/BV1sDnR6JEUm",
+    "slot": "淋威争锋/淋威赛事圈",
+    "score": 5
+  },
+  {
+    "term": "我月光骑士",
+    "zh": "月光骑士的自称",
+    "type": "slang",
+    "meaning": "本区唯一不压字的自称，因为「只能有一个光」这个梗必须保留全名。",
+    "example": "【淋威争锋】漫威争锋只能有一个光，那就是我月光骑士",
+    "source": "https://www.bilibili.com/video/BV1USPLebE5m",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "钩子",
+    "zh": "钩锁技能",
+    "type": "slang",
+    "meaning": "冬兵的标志性技能，语料原句「我冬的钩子吸力十足」。",
+    "example": "为了方便理解统一用简称：左键、钩子、冲刺上勾拳、E技能、大招、血石连携/喷射。",
+    "source": "https://www.bilibili.com/video/BV1kfE2zPETb",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "底比斯",
+    "zh": "底比斯",
+    "type": "slang",
+    "meaning": "月光骑士为了孔苏而来的坍缩时间线，红兜帽在此盗走死亡与熵石板。",
+    "example": "漫威争锋潘妮帕克底比斯A末点绝强点位",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "pve",
+    "zh": "人机对战",
+    "type": "slang",
+    "meaning": "PVE 模式在本区一律喊 pve，其中「打灭霸」「丧尸女王」是两个常被单独点名的关卡。",
+    "example": "【漫威争锋】新50人PVE模式可以获得以下奖励",
+    "source": "https://www.bilibili.com/video/BV1Y57j6UEkU",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "again",
+    "zh": "再来一次",
+    "type": "particle",
+    "meaning": "英文直接嵌进标题的构词习惯，语料原句「（淋威争锋）忍不住对冬兵again了」。",
+    "example": "（淋威争锋）忍不住对冬兵again了",
+    "source": "https://www.bilibili.com/video/BV1avaQzAE74",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "美队",
+    "zh": "美国队长",
+    "type": "meme",
+    "meaning": "举盾冲锋的复仇者领袖，玩家不爱念全名，一律喊美队。官方定位捍卫者，本区通行的淋语叫法是「美队」。",
+    "example": "正确的，美队打石头人的技巧就是不要和石头人打😩",
+    "source": "https://www.bilibili.com/video/BV1BHjrzTEbk",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "克林塔",
+    "zh": "克林塔",
+    "type": "slang",
+    "meaning": "共生体巨龙盘踞的地下世界地图组，含「深渊王座」与「天神遗骸」。",
+    "example": "克林塔是谁自己国家地图？毒液？",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "通行证",
+    "zh": "赛季通行证",
+    "type": "slang",
+    "meaning": "每个赛季的付费皮肤通道，玩家对它的评价标准是「一个小通行证一个金皮都没有」。",
+    "example": "严肃怀疑复联四里的全员白色穿越制服会做成通行证蓝皮糊弄上几个赛季",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 6
+  },
+  {
+    "term": "心有淋吸",
+    "zh": "心有灵犀",
+    "type": "slang",
+    "meaning": "「心有灵犀」的淋化谐音，语料原句出自标题《【淋威争锋】我们心有淋吸~不是吗~》。",
+    "example": "【淋威争锋】我们心有淋吸~不是吗~🩷🩷",
+    "source": "https://www.bilibili.com/video/BV15B3v6WEag",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "博士",
+    "zh": "奇异博士",
+    "type": "slang",
+    "meaning": "至尊法师，本区按年龄感的玩笑叫他「纹身魔法老头」。官方定位捍卫者，本区通行的淋语叫法是「博士」。",
+    "example": "漫威争锋 奇异博士 （DoctorStrange）",
+    "source": "https://www.bilibili.com/video/BV1ptM3zGEhd",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "九头蛇",
+    "zh": "九头蛇",
+    "type": "slang",
+    "meaning": "九头蛇基地地图组，含「夏提厄冰山」。",
+    "example": "这二位的颜值太高了，坐等二人在九头蛇的坟头上举办婚礼😋",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "加强",
+    "zh": "被加强",
+    "type": "slang",
+    "meaning": "版本更新的三个方向之一，玩家拿它衡量一个英雄的处境。",
+    "example": "有浩克吗，up，浩克太牢了急需加强",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "建模",
+    "zh": "角色建模",
+    "type": "slang",
+    "meaning": "本区讨论造型的核心词，夸与骂都用它：语料原句「人类建模史上永垂不朽的，巅峰」。",
+    "example": "希望能快点看到老师弄的惩罚者泳装mod，刚刚看到有人已经爆出建模了",
+    "source": "https://www.bilibili.com/video/BV1KeJb6GExo",
+    "slot": "淋威争锋/淋威皮肤潮流",
+    "score": 6
+  },
+  {
+    "term": "通讯录",
+    "zh": "通讯录",
+    "type": "meme",
+    "meaning": "淋语圈的自称代词，本区联机群直接叫「通讯录联机游戏群」。",
+    "example": "【漫威争锋】作为通讯录，你特可不止玩赔钱的女角色",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/分区",
+    "score": 4
+  },
+  {
+    "term": "拳鼠",
+    "zh": "拳死",
+    "type": "slang",
+    "meaning": "「拳死」的淋化谐音（死→鼠），语料原句「被黑豹daddy拳鼠惹」。",
+    "example": "被黑豹daddy拳鼠惹",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "树人",
+    "zh": "格鲁特",
+    "type": "meme",
+    "meaning": "台词只有「我是格鲁特」的花神巨像，玩家按外形叫树人。官方定位捍卫者，本区通行的淋语叫法是「树人」。",
+    "example": "回复 @鲁迅欺负周树人 :我不行了，怎么可以这么说鲨鲨，明明很好用啊",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "削弱",
+    "zh": "被削弱",
+    "type": "slang",
+    "meaning": "与加强相对，本区吐槽常用的说法是「惨遭削弱」；语料原句「你摩再次惨遭削弱」。",
+    "example": "所以这个皮肤削弱了吗没玩漫威争锋",
+    "source": "https://www.bilibili.com/video/BV1c4wNemEZ9",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "你苏珊",
+    "zh": "隐形女的自称",
+    "type": "slang",
+    "meaning": "隐形女本名苏珊·斯托姆，本区不压字而直呼本名，语料原句「你苏珊为这个家付出的太多了」。",
+    "example": "淋威争锋你苏珊为这个家付出的太多了",
+    "source": "https://www.bilibili.com/video/BV1Ar69BxEek",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "绿巨人",
+    "zh": "浩克",
+    "type": "slang",
+    "meaning": "布鲁斯·班纳变身后的绿色巨人，两个称呼本区都在用。官方定位捍卫者，本区通行的淋语叫法是「绿巨人」。",
+    "example": "拿奇异博士加速灭霸消化系统，再召唤50个兔女郎绿巨人",
+    "source": "https://www.bilibili.com/video/BV1c4wNemEZ9",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "东京2099",
+    "zh": "东京2099",
+    "type": "slang",
+    "meaning": "2099 时间线的东京地图组，含「新涩谷区」与「蜘蛛岛」。",
+    "example": "怎么选地图啊，我的任务让我打东京2099那张图，我没看到哪里可以选地图呢",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "你磁",
+    "zh": "万磁王的称呼",
+    "type": "slang",
+    "meaning": "万磁王压成「磁」字，daddy 形态是本区二创最多的写法。",
+    "example": "我请问你磁的连携技能放着不用素在",
+    "source": "https://www.bilibili.com/video/BV1c4wNemEZ9",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "喜翻",
+    "zh": "好厉害",
+    "type": "slang",
+    "meaning": "「喜欢」的淋化谐音（欢→翻），语料原句「素淋威争锋，喜翻惹喜翻惹」。",
+    "example": "素淋威争锋，喜翻惹喜翻惹",
+    "source": "https://www.bilibili.com/video/BV15B3v6WEag",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "万磁王daddy",
+    "zh": "万磁王",
+    "type": "meme",
+    "meaning": "本区 daddy 梗的头号载体，老派叫法是压成单字的「你磁」。官方定位捍卫者，本区通行的淋语叫法是「万磁王daddy」。",
+    "example": "@Haker没有C 让我的万磁王daddy成为真男人",
+    "source": "https://www.bilibili.com/video/BV1cKpgzzEws",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "地狱火晚宴",
+    "zh": "地狱火晚宴",
+    "type": "slang",
+    "meaning": "变种人岛屿克拉科与阿拉寇融合后的地图，白皇后上线赛季的主舞台。",
+    "example": "王座应该给个地狱火晚宴的背景的，布鲁可没做好功课啊（",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威地图舞台",
+    "score": 8
+  },
+  {
+    "term": "版本",
+    "zh": "版本",
+    "type": "slang",
+    "meaning": "英雄强弱随版本起伏，语料原句「漫威争锋版本T0输出」。",
+    "example": "漫威争锋版本T0输出 强化连携的镭射眼 极致的数值",
+    "source": "https://www.bilibili.com/video/BV1Y57j6UEkU",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "潘妮帕克",
+    "zh": "潘妮·帕克",
+    "type": "slang",
+    "meaning": "驾驶蜘蛛机甲的少女，与毒液、蜘蛛侠有「共生体羁绊」连携。官方定位捍卫者，本区通行的淋语叫法是「潘妮帕克」。",
+    "example": "漫威争锋 潘妮·帕克 （peniparker）",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "强度",
+    "zh": "强度",
+    "type": "slang",
+    "meaning": "玩家讨论英雄的第一维度，与待遇（皮肤数量）并列成本区两大话题。",
+    "example": "索尔说实话待遇真不错了，皮肤都挺好看会玩的话强度也一直不低",
+    "source": "https://www.bilibili.com/video/BV1Y57j6UEkU",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "雷神",
+    "zh": "索尔",
+    "type": "slang",
+    "meaning": "妙尔尼尔锤在手，玩家沿用影视译名叫他雷神。官方定位捍卫者，本区通行的淋语叫法是「雷神」。",
+    "example": "雷神 夜魔侠 惩戒者…… 最小是蜘蛛侠 雷神最大",
+    "source": "https://www.bilibili.com/video/BV1BHjrzTEbk",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "队友",
+    "zh": "队友",
+    "type": "slang",
+    "meaning": "所有吐槽的源头，语料原句「这么努力在C结果队友全在送」。",
+    "example": "盘点漫威争锋直男必用id 队友看见秒知性取向！",
+    "source": "https://www.bilibili.com/video/BV1sDnR6JEUm",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "秒了",
+    "zh": "秒杀",
+    "type": "slang",
+    "meaning": "淋语里表赞叹的动词，语料原句「我匕真的秒了~」。",
+    "example": "被黑豹转圈圈秒了怎么办",
+    "source": "https://www.bilibili.com/video/BV1PLua6REYV",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 10
+  },
+  {
+    "term": "猛毒",
+    "zh": "毒液",
+    "type": "slang",
+    "meaning": "埃迪·布洛克与共生体，台译「猛毒」在简中社区也常用。官方定位捍卫者，本区通行的淋语叫法是「猛毒」。",
+    "example": "不靠谱哦，这里毒液靠近皮特就已经忍不住想要换人了",
+    "source": "https://www.bilibili.com/read/cv40893634",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "复活室",
+    "zh": "复活点",
+    "type": "slang",
+    "meaning": "阵亡后等待复活的房间，语料原句「奶妈在复活室呆几秒变成了石头人叔叔怎么办」。",
+    "example": "奶妈在复活室呆几秒变成了石头人叔叔怎么办",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威模式玩法",
+    "score": 7
+  },
+  {
+    "term": "母石头人",
+    "zh": "石头人",
+    "type": "slang",
+    "meaning": "神奇四侠的岩石大力士，本区按外形加个「母」字当外号。官方定位捍卫者，本区通行的淋语叫法是「母石头人」。",
+    "example": "妈耶被母石头人吓晕",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "美国彪子",
+    "zh": "美国队长的称呼",
+    "type": "slang",
+    "meaning": "「宝子」被拟音错位成「彪子」，是本区少数靠读音玩笑产生的称呼。",
+    "example": "淋威争锋美国彪子啊不是宝子，向你致敬",
+    "source": "https://www.bilibili.com/video/BV1BHjrzTEbk",
+    "slot": "淋威争锋/淋威自称体系",
+    "score": 11
+  },
+  {
+    "term": "你漫的男人",
+    "zh": "游戏里的男性角色",
+    "type": "slang",
+    "meaning": "把游戏里的男性角色当成集体来馋的说法，语料原句「你漫的男人真素可口」。",
+    "example": "女特务怎么也开始玩漫威争锋了。你漫的男人真素可口，但是周围没姐妹玩我也玩不下去惹。",
+    "source": "https://www.bilibili.com/video/BV1WZ6XBREKQ",
+    "slot": "淋威争锋/淋威整活梗",
+    "score": 9
+  },
+  {
+    "term": "艾玛",
+    "zh": "白皇后",
+    "type": "slang",
+    "meaning": "心灵感应变种人，二创热潮里玩家直接喊她妈咪。官方定位捍卫者，本区通行的淋语叫法是「艾玛」。",
+    "example": "漫威争锋 艾玛·弗斯特 （Emma Frost）",
+    "source": "https://www.163.com/dy/article/JT648QLP0526D8LR.html",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "安吉拉宝贝",
+    "zh": "安吉拉",
+    "type": "slang",
+    "meaning": "来自天使界的大块头女战士，外号按梗图叫「安吉拉宝贝」。官方定位捍卫者，本区通行的淋语叫法是「安吉拉宝贝」。",
+    "example": "有点像安吉拉宝贝",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "罗刹女",
+    "zh": "小淘气",
+    "type": "slang",
+    "meaning": "接触即吸收对方能力的变种人，老译名罗刹女仍在用。官方定位捍卫者，本区通行的淋语叫法是「罗刹女」。",
+    "example": "正在吸取钻石化能力的小淘气和正在cd钻石化的白皇后",
+    "source": "https://zh.moegirl.org.cn/%E6%BC%AB%E5%A8%81%E4%BA%89%E9%94%8B%3A%E5%B0%8F%E6%B7%98%E6%B0%94",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "恐龙",
+    "zh": "恶魔恐龙",
+    "type": "slang",
+    "meaning": "体型巨大的红色恐龙，玩家直接喊恐龙。官方定位捍卫者，本区通行的淋语叫法是「恐龙」。",
+    "example": "恐龙 鲨狗 浣熊 共生体 机器人 阿斯加德人",
+    "source": "https://marvelrivals.163.com/heroes/index.html",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "兜帽",
+    "zh": "红兜帽",
+    "type": "slang",
+    "meaning": "帕克·罗宾斯，靠兜帽汲取黑暗力量，玩家省字叫兜帽。官方定位捍卫者，本区通行的淋语叫法是「兜帽」。",
+    "example": "漫威争锋 红兜帽 （The Hood）",
+    "source": "https://marvelrivals.163.com/",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "寡姐",
+    "zh": "黑寡妇",
+    "type": "meme",
+    "meaning": "娜塔莎·罗曼诺夫，玩家按演员外号习惯叫她寡姐。官方定位决斗家，本区通行的淋语叫法是「寡姐」。",
+    "example": "寡姐到底有多渣？漫威里的这些小细节，你都知道吗？",
+    "source": "https://www.bilibili.com/video/BV1KeJb6GExo",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "黑豹daddy",
+    "zh": "黑豹",
+    "type": "meme",
+    "meaning": "瓦坎达国王，daddy 系列里出场频率第二高的角色。官方定位决斗家，本区通行的淋语叫法是「黑豹daddy」。",
+    "example": "黑豹daddy赔穿地心噜",
+    "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "鹰眼",
+    "zh": "鹰眼",
+    "type": "slang",
+    "meaning": "克林特·巴顿，箭矢带多种特效，名字没有任何简化空间。官方定位决斗家，本区通行的淋语叫法是「鹰眼」。",
+    "example": "这种时候对面要么鹰眼这种要么就浣熊加毒液双大直接秒杀了",
+    "source": "https://www.bilibili.com/video/BV1c4wNemEZ9",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "死亡女神",
+    "zh": "海拉",
+    "type": "slang",
+    "meaning": "奥丁长女，玩家按身份叫她死亡女神。官方定位决斗家，本区通行的淋语叫法是「死亡女神」。",
+    "example": "搞成s0海拉那个皮肤一样脸和身子统一不是没这么违和",
+    "source": "https://www.bilibili.com/video/BV1Gino6qEJJ",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "我烈",
+    "zh": "铁拳",
+    "type": "slang",
+    "meaning": "林烈，本区黑袜与 daddy 二创密度最高的角色。官方定位决斗家，本区通行的淋语叫法是「我烈」。",
+    "example": "【淋威争锋】被铁拳踢的时候首先飘过来的是黑袜的闷热",
+    "source": "https://www.bilibili.com/video/BV1239bYiESm",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "铁皮人",
+    "zh": "钢铁侠",
+    "type": "meme",
+    "meaning": "托尼·斯塔克，被玩家按战甲质地改成铁皮人。官方定位决斗家，本区通行的淋语叫法是「铁皮人」。",
+    "example": "我红修改现实把邪恶铁皮人变成浦西boy 送给浩克蹂躏",
+    "source": "https://www.bilibili.com/video/BV1mMGnzDEt5",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "秘客",
+    "zh": "魔剑客",
+    "type": "slang",
+    "meaning": "伊丽亚娜·拉斯普廷，灵魂剑加地狱边境位移。官方定位决斗家，本区通行的淋语叫法是「秘客」。",
+    "example": "这个角色是秘客？X战警的神秘地狱传送那个",
+    "source": "https://zh.moegirl.org.cn/%E6%BC%AB%E5%A8%81%E4%BA%89%E9%94%8B%3A%E9%AD%94%E5%89%91%E5%AE%A2",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  },
+  {
+    "term": "哈哈男",
+    "zh": "神奇先生",
+    "type": "meme",
+    "meaning": "里德·理查兹，社区热梗是「哈哈！赖着硬不死」的哈哈男。官方定位决斗家，本区通行的淋语叫法是「哈哈男」。",
+    "example": "死侍感觉要保底了，但哈哈男是四发出的",
+    "source": "https://post.smzdm.com/p/axklelx3",
+    "slot": "淋威争锋/淋威英雄位分",
+    "score": 10
+  }
+]
