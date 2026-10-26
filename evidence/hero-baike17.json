@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-10-26T13:05:46.919Z",
+  "items": [
+    {
+      "name": "魔力猫",
+      "key": "魔力猫",
+      "lemma": "魔力猫",
+      "desc": "魔力猫是游戏《洛克王国》中的草属性宠物，序号为3，由喵呜进化而来，达到100级后可借助阳光收集瓶超进化为武斗酷猫、武斗灵",
+      "image": "https://bkimg.cdn.bcebos.com/pic/b151f8198618367adab417f9b9399cd4b31c87014ff6?x-bce-process=image/format,f_auto",
+      "file": "魔力猫.jpg",
+      "bytes": 308466
+    },
+    {
+      "name": "瞌睡王",
+      "key": "瞌睡王",
+      "lemma": "瞌睡王",
+      "desc": "瞌睡王是游戏《洛克王国》中的普通系宠物，序号113，身高2米，体重130.5公斤，常态表现为持续性瞌睡状态。其初级形态为",
+      "image": "https://bkimg.cdn.bcebos.com/pic/c83d70cf3bc79f3df8dcfe35c3f7da11728b47108322?x-bce-process=image/format,f_auto",
+      "file": "瞌睡王.jpg",
+      "bytes": 235029
+    },
+    {
+      "name": "喷火鸟",
+      "key": "喷火鸟",
+      "lemma": "喷火鸟",
+      "desc": "喷火鸟是腾讯游戏《洛克王国》中的火与土双属性宠物，序号119，由呆火鸟在30级进化而来。身高1.9米，体重220公斤，体",
+      "image": "https://bkimg.cdn.bcebos.com/pic/b219ebc4b74543a982268e02ba5d9d82b9014b90bee1?x-bce-process=image/format,f_auto",
+      "file": "喷火鸟.jpg",
+      "bytes": 168896
+    },
+    {
+      "name": "龙希帕尔",
+      "key": "龙息帕尔",
+      "lemma": "龙息帕尔",
+      "desc": "腾讯魔方工作室群旗下大世界精灵养成游戏《洛克王国：世界》中的恶系精灵，小帕尔的最终进化形态。在古老的典籍中记载，龙息帕尔",
+      "image": "https://bkimg.cdn.bcebos.com/pic/b64543a98226cffc1e17f768d35c5d90f603728dbcee?x-bce-process=image/format,f_auto",
+      "file": "龙希帕尔.jpg",
+      "bytes": 306992
+    },
+    {
+      "name": "圣羽翼王",
+      "key": "圣羽翼王",
+      "lemma": "圣羽翼王",
+      "desc": "圣羽翼王是游戏《洛克王国》中的翼系精灵王，中文名，外文名Leo，别名里奥，序号1400，身高4.4米，体重44.6千克，",
+      "image": "https://bkimg.cdn.bcebos.com/pic/a9d3fd1f4134970a304ea9a38580c6c8a786c817f7af?x-bce-process=image/format,f_auto",
+      "file": "圣羽翼王.jpg",
+      "bytes": 933332
+    },
+    {
+      "name": "幽颖树",
+      "key": "幽影树",
+      "lemma": "幽影树",
+      "desc": "幽影树是腾讯魔方工作室群开发的游戏《洛克王国:世界》中的一只草系宠物精灵，具有幽+草双属性。其种族值为568，魔防与生命",
+      "image": "https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038e1cc6eafa5119313b07e1c44?x-bce-process=image/format,f_auto",
+      "file": "幽颖树.jpg",
+      "bytes": 216694
+    },
+    {
+      "name": "多灵主",
+      "key": "多灵主",
+      "lemma": "多灵主",
+      "desc": "多灵主是腾讯游戏《洛克王国》中的幽灵与恶魔双属性宠物，由生命蓝灵、自由黄灵和意志紫灵通过宠物合体仪融合进化而成，身高2.",
+      "image": "https://bkimg.cdn.bcebos.com/pic/023b5bb5c9ea15ce36d3f056ac4b2df33a87e9501413?x-bce-process=image/format,f_auto",
+      "file": "多灵主.jpg",
+      "bytes": 434263
+    },
+    {
+      "name": "卡瓦重",
+      "key": "卡瓦重",
+      "lemma": "卡瓦重",
+      "desc": "卡瓦重，游戏《洛克王国》中的草系宠物，进化链为丢丢→卡卡虫→卡瓦重。卡卡虫在36级时可进化为卡瓦重。该宠物以高速度（种族",
+      "image": "https://bkimg.cdn.bcebos.com/pic/1e30e924b899a9014c0807e986df1d7b02087af45f93?x-bce-process=image/format,f_auto",
+      "file": "卡瓦重.jpg",
+      "bytes": 357671
+    },
+    {
+      "name": "卷毛鸭",
+      "key": "卷毛鸭",
+      "lemma": "卷毛鸭",
+      "desc": "卷毛鸭，游戏《洛克王国：世界》中的角色。其基础形态草头鸭可在拾荒港口、月牙湖岸、圣所前哨、叽叽喳喳台地等地捕获，升到16",
+      "image": "https://bkimg.cdn.bcebos.com/pic/d043ad4bd11373f082023900d6525cfbfbedaa64aea5?x-bce-process=image/format,f_auto",
+      "file": "卷毛鸭.jpg",
+      "bytes": 256826
+    },
+    {
+      "name": "咔咔鸟",
+      "key": "咔咔鸟",
+      "lemma": "咔咔鸟",
+      "desc": "咔咔鸟是游戏《洛克王国》中的普通系与翼系双属性宠物，序号27，身高1.5米，体重39.5千克，拥有两条华丽的大尾巴，擅长",
+      "image": "https://bkimg.cdn.bcebos.com/pic/2fdda3cc7cd98d1001e9cf0f4a75af0e7bec54e73af0?x-bce-process=image/format,f_auto",
+      "file": "咔咔鸟.jpg",
+      "bytes": 166491
+    },
+    {
+      "name": "上岸蛙",
+      "key": "上岸蛙",
+      "lemma": "上岸蛙",
+      "desc": "上岸蛙，游戏《洛克王国：世界》中的角色，水系祈愿精灵。整体为清新生机绿，体表纹理模拟荷叶脉络，四肢洁白，脚蹼为微缩荷叶造",
+      "image": "https://bkimg.cdn.bcebos.com/pic/b219ebc4b74543a982261e8d0a4a9d82b9014a90be67?x-bce-process=image/format,f_auto",
+      "file": "上岸蛙.jpg",
+      "bytes": 657487
+    },
+    {
+      "name": "吸泥鸥",
+      "key": "吸泥鸥",
+      "lemma": "吸泥鸥",
+      "desc": "吸泥鸥是游戏《洛克王国：世界》中的地系与翼系双属性精灵角色。它常生活在水边，喜爱粘稠的泥土，通过吸食泥土摄取骨骼生长所需",
+      "image": "https://bkimg.cdn.bcebos.com/pic/38dbb6fd5266d0160924fae3e477c30735fae7cd9ffe?x-bce-process=image/format,f_auto",
+      "file": "吸泥鸥.jpg",
+      "bytes": 183913
+    }
+  ],
+  "rejected": []
+}

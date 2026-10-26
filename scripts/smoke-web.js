@@ -275,11 +275,23 @@ console.log('\n8. Data layer (createDb end-to-end):');
     assert(false, `createDb 建库失败: ${err.message}`);
   }
 
+  // 期望值不再写死数字：直接从 src/core 读，冒烟要守的是「建库结果 == 源数据」，
+  // 而不是某个版本的条目数（写死的话每轮扩库都要改一次，且改完就失去意义）。
+  const PROJ = path.join(__dirname, '..');
+  const seedRef = JSON.parse(fs.readFileSync(path.join(PROJ, 'src/core/seed.json'), 'utf8'));
+  const loreRef = require(path.join(PROJ, 'src/core/lore.js'));
+  const EXPECT = {
+    words: seedRef.words.length,
+    cards: loreRef.flashcards.length,
+    quotes: loreRef.quotes.length,
+    heroes: loreRef.heroes.length,
+  };
+
   if (db1) {
-    assert(db1.getWords().length === 1178, `建库后 words = ${db1.getWords().length}（期望 1178）`);
-    assert(db1.getCards().length === 794, `建库后 cards = ${db1.getCards().length}（期望 794）`);
-    assert(db1.getQuotes().length === 2078, `建库后 quotes = ${db1.getQuotes().length}（期望 2078）`);
-    assert(db1.getHeroes().length === 207, `建库后 heroes = ${db1.getHeroes().length}（期望 207）`);
+    assert(db1.getWords().length === EXPECT.words, `建库后 words = ${db1.getWords().length}（源数据 ${EXPECT.words}）`);
+    assert(db1.getCards().length === EXPECT.cards, `建库后 cards = ${db1.getCards().length}（源数据 ${EXPECT.cards}）`);
+    assert(db1.getQuotes().length === EXPECT.quotes, `建库后 quotes = ${db1.getQuotes().length}（源数据 ${EXPECT.quotes}）`);
+    assert(db1.getHeroes().length === EXPECT.heroes, `建库后 heroes = ${db1.getHeroes().length}（源数据 ${EXPECT.heroes}）`);
 
     // 等 persist 队列落盘
     await new Promise((r) => setTimeout(r, 1200));
@@ -306,7 +318,7 @@ console.log('\n8. Data layer (createDb end-to-end):');
       assert(false, `重启建库失败: ${err.message}`);
     }
     if (db2) {
-      assert(db2.getWords().length === 1179, `重启后 words = ${db2.getWords().length}（期望 1179，含 1 条自建）`);
+      assert(db2.getWords().length === EXPECT.words + 1, `重启后 words = ${db2.getWords().length}（源数据 ${EXPECT.words} + 1 条自建）`);
       assert(db2.getWords().some((w) => w.zh === '__smoke_word__'), '重启后自建词条仍在（持久化生效）');
       assert(db2.getHistory().length >= 1, `重启后历史 ${db2.getHistory().length} 条`);
     }

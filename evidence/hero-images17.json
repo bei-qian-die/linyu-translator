@@ -1,0 +1,260 @@
+{
+  "generatedAt": "2026-10-26T21:09:40.130782",
+  "count": 18,
+  "note": "本轮只覆盖同名 hero-XXX.png，因此 lore 里的 img 字段无需改动；素材仅裁剪/缩放，无生成。",
+  "items": [
+    {
+      "name": "魔力猫",
+      "img": "img/hero-189.png",
+      "thumb": "img/thumb/hero-189.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/魔力猫.jpg",
+      "origSize": [
+        1524,
+        1489
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/b151f8198618367adab417f9b9399cd4b31c87014ff6?x-bce-process=image/format,f_auto",
+      "bytes": 56946
+    },
+    {
+      "name": "瞌睡王",
+      "img": "img/hero-297.png",
+      "thumb": "img/thumb/hero-297.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/瞌睡王.jpg",
+      "origSize": [
+        978,
+        1090
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/c83d70cf3bc79f3df8dcfe35c3f7da11728b47108322?x-bce-process=image/format,f_auto",
+      "bytes": 75471
+    },
+    {
+      "name": "鬼雾",
+      "img": "img/hero-302.png",
+      "thumb": "img/thumb/hero-302.webp",
+      "source": "百度图库（宠物素材 053-鬼雾）",
+      "from": "evidence/qc17/guiwu/g17.jpg",
+      "origSize": [
+        500,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "",
+      "bytes": 33755
+    },
+    {
+      "name": "喷火鸟",
+      "img": "img/hero-308.png",
+      "thumb": "img/thumb/hero-308.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/喷火鸟.jpg",
+      "origSize": [
+        859,
+        922
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/b219ebc4b74543a982268e02ba5d9d82b9014b90bee1?x-bce-process=image/format,f_auto",
+      "bytes": 54489
+    },
+    {
+      "name": "龙希帕尔",
+      "img": "img/hero-310.png",
+      "thumb": "img/thumb/hero-310.webp",
+      "source": "百度百科词条主图（词条名：龙息帕尔）",
+      "from": "evidence/hero-baike17/龙希帕尔.jpg",
+      "origSize": [
+        720,
+        720
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/b64543a98226cffc1e17f768d35c5d90f603728dbcee?x-bce-process=image/format,f_auto",
+      "bytes": 38964
+    },
+    {
+      "name": "圣羽翼王",
+      "img": "img/hero-311.png",
+      "thumb": "img/thumb/hero-311.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/圣羽翼王.jpg",
+      "origSize": [
+        2858,
+        3200
+      ],
+      "crop": "contain",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/a9d3fd1f4134970a304ea9a38580c6c8a786c817f7af?x-bce-process=image/format,f_auto",
+      "bytes": 65768
+    },
+    {
+      "name": "幽颖树",
+      "img": "img/hero-312.png",
+      "thumb": "img/thumb/hero-312.webp",
+      "source": "百度百科词条主图（词条名：幽影树）",
+      "from": "evidence/hero-baike17/幽颖树.jpg",
+      "origSize": [
+        573,
+        460
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65c1038e1cc6eafa5119313b07e1c44?x-bce-process=image/format,f_auto",
+      "bytes": 80180
+    },
+    {
+      "name": "幽铃",
+      "img": "img/hero-313.png",
+      "thumb": "img/thumb/hero-313.webp",
+      "source": "百度图库",
+      "from": "evidence/hero-cand17/幽铃_4.jpg",
+      "origSize": [
+        749,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "",
+      "bytes": 54836
+    },
+    {
+      "name": "多灵主",
+      "img": "img/hero-314.png",
+      "thumb": "img/thumb/hero-314.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/多灵主.jpg",
+      "origSize": [
+        1606,
+        1473
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/023b5bb5c9ea15ce36d3f056ac4b2df33a87e9501413?x-bce-process=image/format,f_auto",
+      "bytes": 70587
+    },
+    {
+      "name": "巴哈姆特",
+      "img": "img/hero-315.png",
+      "thumb": "img/thumb/hero-315.webp",
+      "source": "百度图库",
+      "from": "evidence/hero-cand17/巴哈姆特_1.jpg",
+      "origSize": [
+        749,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "",
+      "bytes": 108029
+    },
+    {
+      "name": "卡瓦重",
+      "img": "img/hero-318.png",
+      "thumb": "img/thumb/hero-318.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/卡瓦重.jpg",
+      "origSize": [
+        1408,
+        1465
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/1e30e924b899a9014c0807e986df1d7b02087af45f93?x-bce-process=image/format,f_auto",
+      "bytes": 59279
+    },
+    {
+      "name": "阿布",
+      "img": "img/hero-319.png",
+      "thumb": "img/thumb/hero-319.webp",
+      "source": "百度图库",
+      "from": "evidence/hero-cand17/阿布_0.jpg",
+      "origSize": [
+        751,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "",
+      "bytes": 47584
+    },
+    {
+      "name": "卷毛鸭",
+      "img": "img/hero-320.png",
+      "thumb": "img/thumb/hero-320.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/卷毛鸭.jpg",
+      "origSize": [
+        720,
+        720
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/d043ad4bd11373f082023900d6525cfbfbedaa64aea5?x-bce-process=image/format,f_auto",
+      "bytes": 30664
+    },
+    {
+      "name": "云梦豚",
+      "img": "img/hero-321.png",
+      "thumb": "img/thumb/hero-321.webp",
+      "source": "百度图库",
+      "from": "evidence/hero-cand17/云梦豚_7.jpg",
+      "origSize": [
+        889,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "",
+      "bytes": 54477
+    },
+    {
+      "name": "咔咔鸟",
+      "img": "img/hero-323.png",
+      "thumb": "img/thumb/hero-323.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/咔咔鸟.jpg",
+      "origSize": [
+        961,
+        1094
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/2fdda3cc7cd98d1001e9cf0f4a75af0e7bec54e73af0?x-bce-process=image/format,f_auto",
+      "bytes": 57507
+    },
+    {
+      "name": "障眼魔",
+      "img": "img/hero-327.png",
+      "thumb": "img/thumb/hero-327.webp",
+      "source": "百度图库",
+      "from": "evidence/hero-cand17/障眼魔_8.jpg",
+      "origSize": [
+        751,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "",
+      "bytes": 64156
+    },
+    {
+      "name": "上岸蛙",
+      "img": "img/hero-329.png",
+      "thumb": "img/thumb/hero-329.webp",
+      "source": "百度百科词条主图",
+      "from": "evidence/hero-baike17/上岸蛙.jpg",
+      "origSize": [
+        677,
+        648
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/b219ebc4b74543a982261e8d0a4a9d82b9014a90be67?x-bce-process=image/format,f_auto",
+      "bytes": 90516
+    },
+    {
+      "name": "吸泥鸥",
+      "img": "img/hero-330.png",
+      "thumb": "img/thumb/hero-330.webp",
+      "source": "百度图库",
+      "from": "evidence/hero-cand17/吸泥鸥_1.jpg",
+      "origSize": [
+        500,
+        500
+      ],
+      "crop": "fit",
+      "baikeUrl": "https://bkimg.cdn.bcebos.com/pic/38dbb6fd5266d0160924fae3e477c30735fae7cd9ffe?x-bce-process=image/format,f_auto",
+      "bytes": 43879
+    }
+  ],
+  "missing": []
+}

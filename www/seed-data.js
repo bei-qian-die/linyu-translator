@@ -12118,18 +12118,6 @@ window.__SEED_DATA = {
       ]
     },
     {
-      "zh": "平衡队",
-      "linyu": "平衡队",
-      "alias": "big6、平衡光",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "不偏科的综合阵容，玩家也叫它「big6」：“其实这种平衡队有个更具体的称呼 叫big6”。",
-      "source": "https://www.bilibili.com/video/BV11uaS6wEKU 、https://www.bilibili.com/video/BV1Ppn66GEnk",
-      "pop": "低",
-      "rel": [
-        "光队"
-      ]
-    },
-    {
       "zh": "一次性精灵",
       "linyu": "摔炮",
       "alias": "摔炮、充能摔炮",
@@ -12139,31 +12127,6 @@ window.__SEED_DATA = {
       "pop": "低",
       "rel": [
         "终端"
-      ]
-    },
-    {
-      "zh": "核心输出",
-      "linyu": "终端",
-      "alias": "终端、光系终端",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "队伍的最终输出核心位：“光系的特点就是博学多才，布灵确可以算半个光系终端”“加油光队最大的问题是没有终端”。",
-      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
-      "pop": "低",
-      "rel": [
-        "摔炮",
-        "布灵布灵"
-      ]
-    },
-    {
-      "zh": "进化",
-      "linyu": "首领化",
-      "alias": "首领化、异色首领化",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "洛克王国世界的进化机制，淋语区直接叫「首领化」：“这恶魔狼首领化都不开？？”“我鹳新赛季美美拿下异色首领化”。",
-      "source": "https://www.bilibili.com/video/BV1vrJ166EtG 、https://www.bilibili.com/video/BV1H2nU6ZENd",
-      "pop": "中",
-      "rel": [
-        "恶魔狼"
       ]
     },
     {
@@ -12188,30 +12151,6 @@ window.__SEED_DATA = {
       "pop": "低",
       "rel": [
         "就业"
-      ]
-    },
-    {
-      "zh": "单独防守",
-      "linyu": "单防",
-      "alias": "单防、炮灰单防",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "用一只精灵专门盯防对方核心：“从前那个被炮灰单防的光队”“化蝶完全单防”。",
-      "source": "https://www.bilibili.com/video/BV1vrJ166EtG 、https://www.bilibili.com/video/BV1GMn66QEjQ",
-      "pop": "低",
-      "rel": [
-        "炮灰"
-      ]
-    },
-    {
-      "zh": "送死精灵",
-      "linyu": "炮灰",
-      "alias": "炮灰",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "上去送死拖节奏的精灵：“被炮灰单防的光队已经鼠了”。",
-      "source": "https://www.bilibili.com/video/BV1vrJ166EtG",
-      "pop": "低",
-      "rel": [
-        "单防"
       ]
     },
     {
@@ -12248,18 +12187,6 @@ window.__SEED_DATA = {
       "pop": "低",
       "rel": [
         "130"
-      ]
-    },
-    {
-      "zh": "被克制",
-      "linyu": "三倍弱电",
-      "alias": "三倍弱电",
-      "slot": "洛克淋国/评价判断",
-      "sense": "属性被多重克制的自嘲：“你莎也素公式得不行三倍弱电”“孩子们，我三倍弱电”。",
-      "source": "https://www.bilibili.com/video/BV1Ppn66GEnk 、https://www.bilibili.com/video/BV1WqRkB8EyJ",
-      "pop": "低",
-      "rel": [
-        "大事不妙"
       ]
     },
     {
@@ -13253,26 +13180,6 @@ window.__SEED_DATA = {
       "rel": []
     },
     {
-      "zh": "猝死",
-      "linyu": "猝亖",
-      "alias": "猝亖、亖了、亖",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "「死」的避讳写法，用「亖」代替，常见于「刷布拉迪猝亖」系列标题。",
-      "source": "https://www.bilibili.com/video/BV1J9Hw6hEz3",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "稀有度",
-      "linyu": "出率",
-      "alias": "出率、保底、清空保底",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "异色＝清空保底的超稀有档，抓异色被类比成出率 2% 的抽卡。",
-      "source": "https://newsstroll.com/Game/377934.html 、https://www.bilibili.com/video/BV1Cxnb66EUk",
-      "pop": "低",
-      "rel": []
-    },
-    {
       "zh": "异色",
       "linyu": "异色",
       "alias": "异色、炫彩、黑白炫彩、异色精灵",
@@ -13280,26 +13187,6 @@ window.__SEED_DATA = {
       "sense": "精灵的稀有色，S5 之后「异色可看性格」，还出现黑白炫彩报价表。",
       "source": "https://www.bilibili.com/video/BV12wnX65Eoj 、https://www.bilibili.com/video/BV1uMn46LExb",
       "pop": "高",
-      "rel": []
-    },
-    {
-      "zh": "污染精灵",
-      "linyu": "污染",
-      "alias": "污染、污染形态",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "捕捉到一定数量后触发的特殊机制，击败污染精灵后精灵显现本色。",
-      "source": "https://newsstroll.com/Game/377934.html",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "精灵球",
-      "linyu": "咕噜球",
-      "alias": "咕噜球、棱镜球、公主球",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "洛手的捕捉道具；棱镜球负责随机染色，公主球有专门的「生产过程」视频。",
-      "source": "https://www.bilibili.com/video/BV1WxDeBcEsT 、https://newsstroll.com/Game/377934.html",
-      "pop": "低",
       "rel": []
     },
     {
@@ -13383,36 +13270,6 @@ window.__SEED_DATA = {
       "rel": []
     },
     {
-      "zh": "绝版",
-      "linyu": "销声匿迹",
-      "alias": "销声匿迹、永别、错过即永别",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "赛季限定精灵不再产出，「凡鹰销声匿迹」「错过即永别」都是标准说法。",
-      "source": "https://www.bilibili.com/video/BV13KHG6VExg 、http://www.game800.net/article/17304.html",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "亲密度",
-      "linyu": "亲昵",
-      "alias": "亲昵、贴肩动作",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "洛手的互动动作系统，「恶魔叮贴肩动作太戳人了」。",
-      "source": "https://www.bilibili.com/video/BV1epHV6nE4Z",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "抽卡式捕捉",
-      "linyu": "球数",
-      "alias": "球数、2300球、几千个球",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "圈内用「抓了多少球」衡量非欧，如「抓了 2300 球才出异色」。",
-      "source": "https://newsstroll.com/Game/377934.html",
-      "pop": "低",
-      "rel": []
-    },
-    {
       "zh": "火队",
       "linyu": "火队女子",
       "alias": "火队女子、火焰姐妹、火队",
@@ -13459,156 +13316,6 @@ window.__SEED_DATA = {
       "slot": "洛克淋国/游戏术语",
       "sense": "以消耗防守为主的阵容，「受队撞车策划」成为名场面。",
       "source": "https://www.bilibili.com/video/BV1aBpv6CEEY",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "天气队",
-      "linyu": "天气队",
-      "alias": "天气队、四大天气",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "围绕天气系统的阵容，四大天气里只有雪天成了主流。",
-      "source": "https://www.bilibili.com/video/BV1ddnU6DESk",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "吸能",
-      "linyu": "吸能",
-      "alias": "吸能、吸能手段",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "吸取对方能量的机制；「现在的吸能手段太拉了」是典型吐槽。",
-      "source": "https://www.bilibili.com/video/BV1ddnU6DESk",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "拉条",
-      "linyu": "拉条",
-      "alias": "拉条、抢速",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "抢先手的速度手段。",
-      "source": "https://www.bilibili.com/video/BV1LxnX6ZEcj",
-      "pop": "中",
-      "rel": []
-    },
-    {
-      "zh": "肉盾",
-      "linyu": "大肉",
-      "alias": "大肉、抗压位",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "顶伤害的位置。",
-      "source": "https://www.bilibili.com/video/BV1LxnX6ZEcj",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "三倍克制",
-      "linyu": "三倍弱",
-      "alias": "三倍弱、三倍弱电",
-      "slot": "洛克淋国/游戏术语",
-      "sense": "属性克制的极限档，被三倍克制叫「三倍弱」。",
-      "source": "https://www.bilibili.com/video/BV1LxnX6ZEcj",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "魔法学院",
-      "linyu": "魔法大学",
-      "alias": "魔法大学、洛克魔法大学",
-      "slot": "洛克淋国/分区",
-      "sense": "页游魔法学院，洛手里被叫「魔法大学」，花衣蝶在那儿当老师。",
-      "source": "https://www.bilibili.com/video/BV1cRnn6UEfH",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "生态园",
-      "linyu": "生态园",
-      "alias": "生态园、大世界",
-      "slot": "洛克淋国/分区",
-      "sense": "洛手的大世界地图，日常跑图与捕捉都在这儿。",
-      "source": "https://www.bilibili.com/video/BV1monB6gEG3",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "龙之秘境",
-      "linyu": "龙之秘境",
-      "alias": "龙之秘境、龙系秘境",
-      "slot": "洛克淋国/分区",
-      "sense": "玩家期待中的龙系专区，「想要更多龙系只有等龙之秘境」。",
-      "source": "https://www.bilibili.com/video/BV1fAnd6gEsV",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "占星台",
-      "linyu": "占星台",
-      "alias": "占星台、S6占星台",
-      "slot": "洛克淋国/分区",
-      "sense": "S6 版本新地图，「S6占星台！双鱼座要来了」。",
-      "source": "https://www.bilibili.com/video/BV1vvnm6jE7M",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "圣龙宝藏",
-      "linyu": "圣龙宝藏",
-      "alias": "圣龙宝藏、S5赛季",
-      "slot": "洛克淋国/分区",
-      "sense": "S5 赛季主题，PV 首曝与家具/玩具/动作实机一起放出。",
-      "source": "https://www.bilibili.com/video/BV16aH56PEt3 、https://www.bilibili.com/video/BV1NinU6vEcL",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "月涌狂想",
-      "linyu": "月涌狂想",
-      "alias": "月涌狂想、S4赛季",
-      "slot": "洛克淋国/分区",
-      "sense": "S4 赛季主题。",
-      "source": "https://www.bilibili.com/video/BV18ynm6gEKY",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "星陨对局",
-      "linyu": "星陨",
-      "alias": "星陨、星陨局",
-      "slot": "洛克淋国/分区",
-      "sense": "高分 PVP 对局模式，「高分星陨对局，绝望到希望再到绝望」。",
-      "source": "https://www.bilibili.com/video/BV18ynm6gEKY",
-      "pop": "中",
-      "rel": []
-    },
-    {
-      "zh": "星光对决",
-      "linyu": "星光对决",
-      "alias": "星光对决、星光",
-      "slot": "洛克淋国/分区",
-      "sense": "每周轮换的活动副本，攻略标题格式为「星光对决-吉洛斯」。",
-      "source": "https://www.bilibili.com/video/BV1sTnR6UEnM 、https://www.bilibili.com/video/BV1LHnE6YEPo",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "系别排位赛",
-      "linyu": "系别",
-      "alias": "系别、系别赛、系别招新",
-      "slot": "洛克淋国/分区",
-      "sense": "按属性分系的排位赛，衍生出「系别招新视频」。",
-      "source": "https://www.bilibili.com/video/BV1rjHK6GEDw",
-      "pop": "低",
-      "rel": []
-    },
-    {
-      "zh": "皇家研究所",
-      "linyu": "皇家研究所",
-      "alias": "皇家研究所",
-      "slot": "洛克淋国/分区",
-      "sense": "页游经典地图，洛手补档游里出现。",
-      "source": "https://www.bilibili.com/video/BV1vvnm6jE7M",
       "pop": "低",
       "rel": []
     },
@@ -16900,5 +16607,5 @@ window.__SEED_DATA = {
   ]
 }
 ;
-window.LINYU_VERSION = "1.21.0";
-window.LINYU_CONTENT_HASH = "28ae87d64d2cdeb8";
+window.LINYU_VERSION = "1.21.1";
+window.LINYU_CONTENT_HASH = "5118ccbe393ee8fe";

@@ -538,7 +538,7 @@ const quotes = [
     src:  "https://www.bilibili.com/video/BV1Tbn26aEFD",
     scene:  "洛克淋国 / 评论",
     rel:  [
-      "平衡队"
+      "雪影娃娃"
     ]
   },
   {
@@ -791,7 +791,7 @@ const quotes = [
     src:  "https://www.bilibili.com/video/BV1Ppn66GEnk",
     scene:  "洛克淋国 / 标题",
     rel:  [
-      "平衡队"
+      "一只高脂阴猫"
     ]
   },
   {

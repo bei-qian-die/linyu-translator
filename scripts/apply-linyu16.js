@@ -21,8 +21,14 @@ const ROOT = path.join(__dirname, '..');
 const SEED_FILE = path.join(ROOT, 'src/core/seed.json');
 const CORPUS_DIR = path.join(ROOT, 'corpus');
 const FREQ_FILE = path.join(ROOT, 'evidence/slot-freq16.json');
-const { WORDS, RULES } = require(path.join(ROOT, 'scripts/curated-linyu16.js'));
+const { WORDS: RAW_WORDS, RULES } = require(path.join(ROOT, 'scripts/curated-linyu16.js'));
 const tax = require(path.join(ROOT, 'scripts/slot-taxonomy13.js'));
+
+// 第十七轮质检把一批纯玩法词条判为「与淋语无关」并剔除（见 scripts/drop-words17.js）。
+// 策展源作为历史记录保留原样，但合库时必须跳过这些 zh，否则本脚本一重跑它们就会复活。
+const { DROP } = require(path.join(ROOT, 'scripts/drop-words17.js'));
+const DROPPED = new Set(DROP.map((d) => d.zh));
+const WORDS = RAW_WORDS.filter((w) => !DROPPED.has(w.zh));
 
 const DRY = process.argv.includes('--dry-run');
 const HIGH = 100;
