@@ -3,7 +3,7 @@ window.__SEED_DATA = {
   "words": [
     {
       "zh": "我",
-      "linyu": "本仙女",
+      "linyu": "本可",
       "alias": "本可、本可儿、本可人儿、本仙女、本仙子、本小仙女、本猪妞、本祝妞、本猪猪女孩、本猪猪、本姑娘、本宫、本淋王、本淋淋、本淋、本小淋、本人家、本宝、宝宝我、人家我、本尊、本座、本可人、本淋王星人、本可酱、本可哒、本可哒哒、本猪猪本可、郭门",
       "slot": "第一人称自称",
       "sense": "淋语里\"我\"的译法最多的一个语义位：本可系最中性、本仙女系卖萌、本猪妞/本猪猪女孩自嘲、本宫/本座走清宫位分体。自称后可接\"惹/噜/厚\"黏着。",
@@ -32,7 +32,7 @@ window.__SEED_DATA = {
     },
     {
       "zh": "你们",
-      "linyu": "仙女们",
+      "linyu": "婊宝们",
       "alias": "仙女们、集美们、姐妹们、家人们、美美们、解解们、在座各位都是姐妹",
       "slot": "群体称呼",
       "sense": "第二人称复数，开场白高频，如\"集美们，拿笔记一下噜\"。",
@@ -6601,7 +6601,7 @@ window.__SEED_DATA = {
       "zh": "满分女",
       "linyu": "满分女",
       "alias": "满分",
-      "slot": "王者淋耀",
+      "slot": "淋者荣耀/王者淋耀",
       "sense": "淋者荣耀区的人设判词，用\"满分\"给角色打总体分，后面再接转折。",
       "source": "https://www.bilibili.com/video/BV1tTpq6kEZ9",
       "pop": "低"
@@ -6610,7 +6610,7 @@ window.__SEED_DATA = {
       "zh": "煮饭",
       "linyu": "煮饭",
       "alias": "还是XX煮的饭好吃",
-      "slot": "英雄淋盟",
+      "slot": "阴雄淋盟/英雄淋盟",
       "sense": "淋语区\"XX煮的饭\"句式，用来夸某个角色的产出或某位 UP 的作品。",
       "source": "https://www.bilibili.com/video/BV1nBp36xETY",
       "pop": "低"
@@ -12663,120 +12663,120 @@ window.__SEED_DATA = {
       "src": "https://search.bilibili.com/all?keyword=%E7%A0%B4%E9%98%B2%20%E6%B7%8B%E8%AF%AD"
     },
     {
-      "pattern": "(?:淋日方舟|淋日方舟终末地)",
-      "template": "淋日方舟，启动！",
+      "pattern": "(?:淋日方舟|淋日方舟终末地)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "淋日方舟",
       "note": "淋日方舟分区",
       "scene": "游戏 / 分区",
       "examples": "淋日方舟；淋日方舟终末地。",
       "src": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%97%A5%E6%96%B9%E8%88%9F"
     },
     {
-      "pattern": "(?:阴淋师|阴淋师协斗)",
-      "template": "阴淋师，启动！",
+      "pattern": "(?:阴淋师|阴淋师协斗)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "阴淋师",
       "note": "阴淋师分区",
       "scene": "游戏 / 分区",
       "examples": "阴淋师；阴淋师协斗。",
       "src": "https://search.bilibili.com/all?keyword=%E9%98%B4%E6%B7%8B%E5%B8%88"
     },
     {
-      "pattern": "(?:绝区淋|撅区淋|绝区零)",
-      "template": "绝区淋，启动！",
+      "pattern": "(?:绝区淋|撅区淋|绝区零)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "绝区淋",
       "note": "绝区淋分区",
       "scene": "游戏 / 分区",
       "examples": "绝区淋；撅区淋。",
       "src": "https://search.bilibili.com/all?keyword=%E7%BB%9D%E5%8C%BA%E6%B7%8B"
     },
     {
-      "pattern": "(?:洛克淋国|洛克王国)",
-      "template": "洛克淋国，启动！",
+      "pattern": "(?:洛克淋国|洛克王国)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "洛克淋国",
       "note": "洛克淋国分区",
       "scene": "游戏 / 分区",
       "examples": "洛克淋国；洛克王国。",
       "src": "https://search.bilibili.com/all?keyword=%E6%B4%9B%E5%85%8B%E6%B7%8B%E5%9B%BD"
     },
     {
-      "pattern": "(?:星淋铁道|β坏|星穹铁道)",
-      "template": "星淋铁道，启动！",
+      "pattern": "(?:星淋铁道|β坏|星穹铁道)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "星淋铁道",
       "note": "星淋铁道分区",
       "scene": "游戏 / 分区",
       "examples": "星淋铁道；β坏。",
       "src": "https://search.bilibili.com/all?keyword=%E6%98%9F%E6%B7%8B%E9%93%81%E9%81%93"
     },
     {
-      "pattern": "(?:瓦罗淋特|瓦罗兰特|无畏契约)",
-      "template": "瓦罗淋特，启动！",
+      "pattern": "(?:瓦罗淋特|瓦罗兰特|无畏契约)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "瓦罗淋特",
       "note": "瓦罗淋特分区",
       "scene": "游戏 / 分区",
       "examples": "瓦罗淋特；无畏契约。",
       "src": "https://search.bilibili.com/all?keyword=%E7%93%A6%E7%BD%97%E6%B7%8B%E7%89%B9"
     },
     {
-      "pattern": "(?:淋安京|决战平安京)",
-      "template": "淋安京，启动！",
+      "pattern": "(?:淋安京|决战平安京)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "淋安京",
       "note": "淋安京分区",
       "scene": "游戏 / 分区",
       "examples": "淋安京；决战平安京。",
       "src": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%AE%89%E4%BA%AC"
     },
     {
-      "pattern": "(?:三角淋行动|淋角洲行动|三角洲行动)",
-      "template": "三角淋行动，启动！",
+      "pattern": "(?:三角淋行动|淋角洲行动|三角洲行动)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "三角淋行动",
       "note": "三角淋行动分区",
       "scene": "游戏 / 分区",
       "examples": "三角淋行动；淋角洲行动。",
       "src": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B7%8B%E8%A1%8C%E5%8A%A8"
     },
     {
-      "pattern": "(?:第五淋格|第五人格)",
-      "template": "第五淋格，启动！",
+      "pattern": "(?:第五淋格|第五人格)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "第五淋格",
       "note": "第五淋格分区",
       "scene": "游戏 / 分区",
       "examples": "第五淋格；第五人格。",
       "src": "https://search.bilibili.com/all?keyword=%E7%AC%AC%E4%BA%94%E6%B7%8B%E6%A0%BC"
     },
     {
-      "pattern": "(?:淋明杀鸡|淋明杀机|黎明杀机)",
-      "template": "淋明杀鸡，启动！",
+      "pattern": "(?:淋明杀鸡|淋明杀机|黎明杀机)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "淋明杀鸡",
       "note": "淋明杀鸡分区",
       "scene": "游戏 / 分区",
       "examples": "淋明杀鸡；淋明杀机。",
       "src": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%98%8E%E6%9D%80%E9%B8%A1"
     },
     {
-      "pattern": "(?:英雄淋盟|阴雄淋盟|英雄联盟)",
-      "template": "英雄淋盟，启动！",
+      "pattern": "(?:英雄淋盟|阴雄淋盟|英雄联盟)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "英雄淋盟",
       "note": "英雄淋盟分区",
       "scene": "游戏 / 分区",
       "examples": "英雄淋盟；阴雄淋盟。",
       "src": "https://bbs.nga.cn/read.php?tid=39308402"
     },
     {
-      "pattern": "(?:王者淋耀|淋者荣耀|王者荣耀|淋耀)",
-      "template": "王者淋耀，启动！",
+      "pattern": "(?:王者淋耀|淋者荣耀|王者荣耀|淋耀)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "王者淋耀",
       "note": "王者淋耀分区",
       "scene": "游戏 / 分区",
       "examples": "王者淋耀；淋者荣耀。",
       "src": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E8%80%85%E6%B7%8B%E8%80%80"
     },
     {
-      "pattern": "(?:淋神|原神)",
-      "template": "淋神，启动！",
+      "pattern": "(?:淋神|原神)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "淋神",
       "note": "淋神分区",
       "scene": "游戏 / 分区",
       "examples": "淋神；原神。",
       "src": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E7%A5%9E"
     },
     {
-      "pattern": "(?:守望淋锋|守望先锋)",
-      "template": "守望淋锋，启动！",
+      "pattern": "(?:守望淋锋|守望先锋)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "守望淋锋",
       "note": "守望淋锋分区",
       "scene": "游戏 / 分区",
       "examples": "守望淋锋；守望先锋。",
       "src": "https://search.bilibili.com/all?keyword=%E5%AE%88%E6%9C%9B%E6%B7%8B%E9%94%8B"
     },
     {
-      "pattern": "(?:街头霸淋|街头霸王)",
-      "template": "街头霸淋，启动！",
+      "pattern": "(?:街头霸淋|街头霸王)(?:[，,、]?\\s*启动[！!]?)?",
+      "template": "街头霸淋",
       "note": "街头霸淋分区",
       "scene": "游戏 / 分区",
       "examples": "街头霸淋；街头霸王。",
@@ -14654,5 +14654,5 @@ window.__SEED_DATA = {
   ]
 }
 ;
-window.LINYU_VERSION = "1.18.0";
-window.LINYU_CONTENT_HASH = "00630ff33396d99c";
+window.LINYU_VERSION = "1.19.0";
+window.LINYU_CONTENT_HASH = "d926819f00da31dc";
