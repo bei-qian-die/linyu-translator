@@ -187,6 +187,8 @@ async function main() {
     'src/core/lore-extra11.js',
     'src/core/lore-extra12.js',
     'src/core/lore-extra13.js',
+    'src/core/lore-extra14.js',
+    'src/core/lore-extra15.js',
   ];
   const hash = await contentHash(contentFiles);
   const seedJs = `// 由 scripts/build-mobile.mjs 自动生成；source: src/core/seed.json\n` +

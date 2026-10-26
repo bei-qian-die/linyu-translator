@@ -1,0 +1,367 @@
+{
+  "generatedAt": "2026-10-26T10:52:03.622Z",
+  "map": {
+    "火神": {
+      "img": "img/hero-273.png",
+      "source": "https://img1.baidu.com/it/u=1067832061,2769526824&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+      "candTitle": "洛克王国手游 火神",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 0,
+          "title": "洛克王国手游火神技能介绍介绍",
+          "score": -50
+        },
+        {
+          "idx": 3,
+          "title": "洛克王国世界大块头火神烈火守护火焰猿开朗音速犬蛋火神双奖牌",
+          "score": -50
+        },
+        {
+          "idx": 4,
+          "title": "《洛克王国:世界》火神进化介绍",
+          "score": -50
+        }
+      ]
+    },
+    "冥古龙": {
+      "img": "img/hero-274.png",
+      "source": "https://img0.baidu.com/it/u=261872185,3256454604&fm=253&fmt=auto&app=138&f=JPEG?w=776&h=500",
+      "candTitle": "冥古龙洛克王国中的宠物",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 2,
+          "title": "冥古龙是网页游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258",
+          "score": 100
+        },
+        {
+          "idx": 7,
+          "title": "冥古龙,洛克王国设定的龙系宠物",
+          "score": 95
+        },
+        {
+          "idx": 0,
+          "title": "决战冥古龙 (洛克王国:世界)",
+          "score": -5
+        }
+      ]
+    },
+    "花衣蝶": {
+      "img": "img/hero-275.png",
+      "source": "https://img1.baidu.com/it/u=394016469,1891167778&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
+      "candTitle": "花衣蝶旋转一分钟",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 3,
+          "title": "洛克王国世界:龙系血脉花衣蝶篇",
+          "score": -5
+        },
+        {
+          "idx": 4,
+          "title": "虫群智慧累积中～(花衣蝶印象套)",
+          "score": -5
+        },
+        {
+          "idx": 6,
+          "title": "洛克王国世界活动任务命定花种花衣蝶翼王打法",
+          "score": -5
+        }
+      ]
+    },
+    "音速犬": {
+      "img": "img/hero-277.png",
+      "source": "https://img1.baidu.com/it/u=693762156,3516446060&fm=253&fmt=auto&app=138&f=PNG?w=500&h=564",
+      "candTitle": "2p\">音速犬,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 7,
+          "title": "无敌过山车,让首领化音速犬再次伟大!",
+          "score": 10
+        },
+        {
+          "idx": 4,
+          "title": "【洛克王国世界生态】驰骋草原的火焰战车 —— 音速犬",
+          "score": -5
+        },
+        {
+          "idx": 5,
+          "title": "音速犬:表面威风,背地里实则是粘人精 #洛克王国世界正式上线",
+          "score": -5
+        }
+      ]
+    },
+    "恶魔狼": {
+      "img": "img/hero-278.png",
+      "source": "https://bkimg.cdn.bcebos.com/pic/d439b6003af33a87e950901a591607385343fbf21fd2",
+      "candTitle": "百度百科词条《恶魔狼（游戏洛克王国中的宠物）》官方图",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 0,
+          "title": "洛克王国世界:恶魔狼是手游重做最成功的精灵?除名字外毫无关联!",
+          "score": -50
+        },
+        {
+          "idx": 2,
+          "title": "500个球就抓到了异色恶魔狼",
+          "score": -50
+        },
+        {
+          "idx": 1,
+          "title": "拿下全洛克最拉风坐骑——异色恶魔狼#洛克王国世界正式上线 #恶魔狼",
+          "score": -65
+        }
+      ]
+    },
+    "雪影娃娃": {
+      "img": "img/hero-279.png",
+      "source": "https://img0.baidu.com/it/u=729851035,3553832345&fm=253&fmt=auto&app=138&f=PNG?w=628&h=500",
+      "candTitle": "雪影娃娃是网页游戏《 a target=\"_blank\" href=\"/item/洛克王国",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 8,
+          "title": "雪影娃娃是网页游戏《 a target=\"_blank\" href=\"/item/洛克王国",
+          "score": 100
+        },
+        {
+          "idx": 9,
+          "title": "雪影娃娃是网页游戏《 a target=\"_blank\" href=\"/item/洛克王国",
+          "score": 100
+        },
+        {
+          "idx": 7,
+          "title": "雪影娃娃是网页游戏《 a target=\"_blank\" href=\"/item/洛克王国",
+          "score": 85
+        }
+      ]
+    },
+    "布灵布灵": {
+      "img": "img/hero-281.png",
+      "source": "https://img2.baidu.com/it/u=420633323,187219546&fm=253&fmt=auto&app=120&f=JPEG?w=359&h=202",
+      "candTitle": "【洛克王国世界】布灵布灵的图鉴课题-使用1次量子涨落1次闪光弹-流程",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 0,
+          "title": "布灵布灵布灵是我✨",
+          "score": 10
+        },
+        {
+          "idx": 8,
+          "title": "布灵布灵布灵是我!听到最后融化了老夫的少女心",
+          "score": 10
+        },
+        {
+          "idx": 3,
+          "title": "一看就会!布灵进化布灵布灵!",
+          "score": -5
+        }
+      ]
+    },
+    "波多西": {
+      "img": "img/hero-282.png",
+      "source": "https://img0.baidu.com/it/u=40543332,264054627&fm=253&fmt=auto&app=138&f=PNG?w=500&h=512",
+      "candTitle": "1\">波多西,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 2,
+          "title": "1\">波多西,游戏《 a target=\"_blank\" href=\"/item/洛克王国/6725",
+          "score": 110
+        },
+        {
+          "idx": 0,
+          "title": "洛克王国:从眼珠进化到傀儡的神宠,机械神宠波多西,vip专属_宠物",
+          "score": -5
+        },
+        {
+          "idx": 3,
+          "title": "洛克王国世界 采矿速度比罗隐还快的波多西你拿到了吗?",
+          "score": -5
+        }
+      ]
+    },
+    "饮雪狂兽": {
+      "img": "img/hero-283.png",
+      "source": "https://img1.baidu.com/it/u=870846597,4292366090&fm=253&fmt=auto&app=138&f=PNG?w=538&h=500",
+      "candTitle": "z\">饮雪狂兽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 4,
+          "title": "z\">饮雪狂兽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/672",
+          "score": 100
+        },
+        {
+          "idx": 5,
+          "title": "饮雪狂兽这也太帅了!",
+          "score": -5
+        },
+        {
+          "idx": 6,
+          "title": "饮雪狂兽能成雪天队主c吗!",
+          "score": -5
+        }
+      ]
+    },
+    "水灵": {
+      "img": "img/hero-284.png",
+      "source": "https://img2.baidu.com/it/u=1222696630,1007384796&fm=253&fmt=auto&app=138&f=PNG?w=500&h=748",
+      "candTitle": "\">蓝漪水灵,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 8,
+          "title": "\">蓝漪水灵,游戏《 a target=\"_blank\" href=\"/item/洛克王国/6725",
+          "score": 110
+        },
+        {
+          "idx": 9,
+          "title": "🐉洛克王国水灵兽进化之旅💦 🌊 宠物档案:水灵兽 📖 进化",
+          "score": 110
+        },
+        {
+          "idx": 1,
+          "title": "\">蓝漪水灵,游戏《 a target=\"_blank\" href=\"/item/洛克王国/6725",
+          "score": 100
+        }
+      ]
+    },
+    "彩蝶鲨": {
+      "img": "img/hero-285.png",
+      "source": "https://img0.baidu.com/it/u=2885694501,1678627963&fm=253&fmt=auto&app=138&f=PNG?w=749&h=500",
+      "candTitle": "rv\">彩蝶鲨,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 5,
+          "title": "彩蝶鲨首领进化!神谕鲨真的超美!就是宝你能别刚变完就哭丧着脸吗",
+          "score": 10
+        },
+        {
+          "idx": 7,
+          "title": "萌化雨天彩蝶鲨 雷暴也要送回家",
+          "score": -5
+        },
+        {
+          "idx": 2,
+          "title": "洛克王国世界彩蝶鲨如何 洛克王国世界彩蝶鲨强度分析",
+          "score": -50
+        }
+      ]
+    },
+    "白金独角兽": {
+      "img": "img/hero-286.png",
+      "source": "https://img1.baidu.com/it/u=4024665437,3118002182&fm=253&fmt=auto&app=138&f=PNG?w=750&h=500",
+      "candTitle": ">白金独角兽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 8,
+          "title": ">白金独角兽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/6725",
+          "score": 100
+        },
+        {
+          "idx": 0,
+          "title": "pvp主流宠物介绍第一期:白金独角兽",
+          "score": -65
+        },
+        {
+          "idx": 1,
+          "title": "洛克王国世界白金独角兽技能一览",
+          "score": -65
+        }
+      ]
+    },
+    "奇梦咪": {
+      "img": "img/hero-287.png",
+      "source": "https://img2.baidu.com/it/u=2798147713,2408260165&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
+      "candTitle": "奇梦咪 - 洛克王国:手游wiki_bwiki_哔哩哔哩",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 0,
+          "title": "奇梦咪 - 洛克王国:手游wiki_bwiki_哔哩哔哩",
+          "score": 110
+        },
+        {
+          "idx": 4,
+          "title": "最新科研特性:与奇梦咪一起坐椅子(梦想三三首领)",
+          "score": -5
+        },
+        {
+          "idx": 6,
+          "title": "洛克王国世界:叠势魔攻流梦想三三,首领化奇梦咪增益永久保留!",
+          "score": -5
+        }
+      ]
+    },
+    "小幽幽": {
+      "img": "img/hero-288.png",
+      "source": "https://img1.baidu.com/it/u=2226504742,465767415&fm=253&fmt=auto&app=138&f=PNG?w=750&h=500",
+      "candTitle": "zui\">小幽幽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67258\"",
+      "type": "game",
+      "rejected": [
+        {
+          "idx": 2,
+          "title": "zui\">小幽幽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67",
+          "score": 110
+        },
+        {
+          "idx": 4,
+          "title": "zui\">小幽幽,游戏《 a target=\"_blank\" href=\"/item/洛克王国/67",
+          "score": 110
+        },
+        {
+          "idx": 5,
+          "title": "洛克王国小幽幽性格怎么配 洛克王国小幽幽厉害吗",
+          "score": -50
+        }
+      ]
+    },
+    "一只高脂阴猫": {
+      "img": "img/hero-289.png",
+      "source": "https://i0.hdslb.com/bfs/face/bf652e03721b08ace3872f90fa3ed7ec8a56bc46.jpg",
+      "candTitle": "B站 UP 主头像 一只高脂阴猫",
+      "type": "up",
+      "rejected": []
+    },
+    "翊坤宫娘娘": {
+      "img": "img/hero-290.png",
+      "source": "https://i1.hdslb.com/bfs/face/a8d441e1cb3630901e21f0494471195143b3ea99.jpg",
+      "candTitle": "B站 UP 主头像 翊坤宫娘娘",
+      "type": "up",
+      "rejected": []
+    },
+    "森先茶茶": {
+      "img": "img/hero-291.png",
+      "source": "https://i1.hdslb.com/bfs/face/ba90ddd645a96b8b8ec4f93d053c4223367b3794.jpg",
+      "candTitle": "B站 UP 主头像 森先茶茶",
+      "type": "up",
+      "rejected": []
+    },
+    "南极石化了": {
+      "img": "img/hero-292.png",
+      "source": "https://i2.hdslb.com/bfs/face/41f502052e69e0a2db0500559e53dc5b0f196aef.jpg",
+      "candTitle": "B站 UP 主头像 南极石化了",
+      "type": "up",
+      "rejected": []
+    },
+    "苏卡Remix": {
+      "img": "img/hero-293.png",
+      "source": "https://i1.hdslb.com/bfs/face/54be6ed0a99fa58525717962beaf5f575287ff46.jpg",
+      "candTitle": "B站 UP 主头像 苏卡Remix",
+      "type": "up",
+      "rejected": []
+    }
+  },
+  "pendingNoImg": [
+    "锤头鹳",
+    "夜枭"
+  ],
+  "reviewNote": "逐张 Read 核验：火神/冥古龙/花衣蝶/音速犬/雪影娃娃/布灵布灵/波多西/饮雪狂兽/水灵/彩蝶鲨/白金独角兽/奇梦咪/小幽幽 为百度图库官方立绘；恶魔狼为百度百科 bkimg 官方图；5 位 UP 为 B 站公开头像。锤头鹳/夜枭 百度图库与 B 站封面均仅返回带 UI/字幕/群像/梗图拼贴的不合规候选，按纪律 img 留空列待补，不拿相似图顶替。"
+}

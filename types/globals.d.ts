@@ -41,6 +41,8 @@ interface Window {
   LORE_EXTRA11?: any;
   LORE_EXTRA12?: any;
   LORE_EXTRA13?: any;
+  LORE_EXTRA14?: any;
+  LORE_EXTRA15?: any;
   createDb?: unknown;
   SECTIONS?: any;
   /** 业务层：桌面主进程与移动端 api.js 都从这里取 */

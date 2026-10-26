@@ -1,0 +1,55 @@
+{
+  "fetchedAt": "2026-10-26T10:35:09.676Z",
+  "items": [
+    {
+      "name": "一只高脂阴猫",
+      "idx": "up",
+      "title": "B站UP主头像 一只高脂阴猫",
+      "url": "https://i0.hdslb.com/bfs/face/bf652e03721b08ace3872f90fa3ed7ec8a56bc46.jpg",
+      "thumb": "https://i0.hdslb.com/bfs/face/bf652e03721b08ace3872f90fa3ed7ec8a56bc46.jpg",
+      "file": "一只高脂阴猫__up.jpg",
+      "size": 45650,
+      "mid": 1251549243
+    },
+    {
+      "name": "翊坤宫娘娘",
+      "idx": "up",
+      "title": "B站UP主头像 翊坤宫娘娘",
+      "url": "https://i1.hdslb.com/bfs/face/a8d441e1cb3630901e21f0494471195143b3ea99.jpg",
+      "thumb": "https://i1.hdslb.com/bfs/face/a8d441e1cb3630901e21f0494471195143b3ea99.jpg",
+      "file": "翊坤宫娘娘__up.jpg",
+      "size": 112365,
+      "mid": 11184292
+    },
+    {
+      "name": "森先茶茶",
+      "idx": "up",
+      "title": "B站UP主头像 森先茶茶",
+      "url": "https://i1.hdslb.com/bfs/face/ba90ddd645a96b8b8ec4f93d053c4223367b3794.jpg",
+      "thumb": "https://i1.hdslb.com/bfs/face/ba90ddd645a96b8b8ec4f93d053c4223367b3794.jpg",
+      "file": "森先茶茶__up.jpg",
+      "size": 52805,
+      "mid": 13922266
+    },
+    {
+      "name": "南极石化了",
+      "idx": "up",
+      "title": "B站UP主头像 南极石化了",
+      "url": "https://i2.hdslb.com/bfs/face/41f502052e69e0a2db0500559e53dc5b0f196aef.jpg",
+      "thumb": "https://i2.hdslb.com/bfs/face/41f502052e69e0a2db0500559e53dc5b0f196aef.jpg",
+      "file": "南极石化了__up.jpg",
+      "size": 132723,
+      "mid": 43858955
+    },
+    {
+      "name": "苏卡Remix",
+      "idx": "up",
+      "title": "B站UP主头像 苏卡Remix",
+      "url": "https://i1.hdslb.com/bfs/face/54be6ed0a99fa58525717962beaf5f575287ff46.jpg",
+      "thumb": "https://i1.hdslb.com/bfs/face/54be6ed0a99fa58525717962beaf5f575287ff46.jpg",
+      "file": "苏卡Remix__up.jpg",
+      "size": 83171,
+      "mid": 268883734
+    }
+  ]
+}

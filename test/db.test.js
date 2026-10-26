@@ -68,6 +68,8 @@ function bakFiles() {
 
   await atest('写入即落盘，且不留 .tmp 残片', async () => {
     store.addWord({ zh: '测试词', linyu: '测试噜' });
+    // persist 走微任务队列，同步断言会抢在落盘前（竞态），先让微任务跑完
+    await new Promise((r) => setImmediate(r));
     assert.ok(fs.existsSync(DB), '库文件没生成');
     assert.ok(fs.statSync(DB).size > 0, '库文件是空的');
     assert.ok(!fs.existsSync(DB + '.tmp'), '临时文件没清掉');
@@ -233,8 +235,10 @@ function bakFiles() {
     assert.ok(store.getWords().find((w) => w.zh === '新词'));
   });
 
-  test('把当前库换成读不通的内容，备份保持原样不动', () => {
+  await atest('把当前库换成读不通的内容，备份保持原样不动', async () => {
     store.close();
+    // close 会再排一次落盘微任务；不等它跑完就写坏文件，坏文件会被这次落盘覆盖回去
+    await new Promise((r) => setImmediate(r));
     const bak1 = path.join(ROOT, 'linyu.db.bak1');
     const before = fs.readFileSync(bak1);
     fs.writeFileSync(DB, Buffer.from('这根本不是 sqlite 文件'.repeat(200), 'utf8'));

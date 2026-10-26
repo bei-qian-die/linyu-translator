@@ -1,0 +1,72 @@
+[WORD] 洛克王国→洛克淋锅 | nLin=5 nBest=34(洛克淋国) pop=中 sense=有
+[WORD] 我→本宫 | nLin=19 nBest=19(本宫) pop=低 sense=有
+[WORD] 光队→加油光队 | nLin=3 nBest=8(光队) pop=低 sense=有
+[WORD] 幽队→赔钱幽队 | nLin=2 nBest=20(幽队) pop=中 sense=有
+[WORD] 虫队→平衡虫队 | nLin=2 nBest=28(虫队) pop=中 sense=有
+[WORD] 雪天队→雪天女子 | nLin=1 nBest=9(雪天队) pop=低 sense=有
+[WORD] 平衡队→平衡队 | nLin=5 nBest=5(平衡队) pop=低 sense=有
+[WORD] 一次性精灵→摔炮 | nLin=10 nBest=10(摔炮) pop=低 sense=有
+[WORD] 核心输出→终端 | nLin=9 nBest=9(终端) pop=低 sense=有
+[WORD] 进化→首领化 | nLin=20 nBest=20(首领化) pop=中 sense=有
+[WORD] 上场→就业 | nLin=10 nBest=10(就业) pop=低 sense=有
+[WORD] 回归→回宫 | nLin=15 nBest=15(回宫) pop=低 sense=有
+[WORD] 单独防守→单防 | nLin=3 nBest=3(单防) pop=低 sense=有
+[WORD] 送死精灵→炮灰 | nLin=1 nBest=1(炮灰) pop=低 sense=有
+[WORD] 对付→处理 | nLin=56 nBest=56(处理) pop=中 sense=有
+[WORD] 固定套路→公式化 | nLin=5 nBest=30(公式) pop=中 sense=有
+[WORD] 速度低→低人一等 | nLin=4 nBest=4(低人一等) pop=低 sense=有
+[WORD] 被克制→三倍弱电 | nLin=2 nBest=2(三倍弱电) pop=低 sense=有
+[WORD] 黑化→钮祜禄 | nLin=4 nBest=4(钮祜禄) pop=低 sense=有
+[WORD] 130速→高贵的130速 | nLin=1 nBest=1(高贵的130速) pop=低 sense=有
+[WORD] 事业顺利→事业长虹 | nLin=1 nBest=1(事业长虹) pop=低 sense=有
+[WORD] 雪影娃娃→冻肉娃娃 | nLin=4 nBest=18(雪影) pop=低 sense=有
+[WORD] 我果→我果 | nLin=13 nBest=13(我果) pop=低 sense=有
+[WORD] 我墓→我墓 | nLin=13 nBest=13(我墓) pop=低 sense=有
+[WORD] 我帽→我帽 | nLin=1 nBest=1(我帽) pop=低 sense=有
+[WORD] 我铃→我铃 | nLin=6 nBest=6(我铃) pop=低 sense=有
+[WORD] 我羊→我羊 | nLin=12 nBest=12(我羊) pop=低 sense=有
+[WORD] 我鹳→我鹳 | nLin=3 nBest=7(锤头鹳) pop=低 sense=有
+[WORD] 你莫→你莫 | nLin=1 nBest=25(迪莫) pop=中 sense=有
+[WORD] 你光→你光 | nLin=59 nBest=59(你光) pop=中 sense=有
+[WORD] 你梦→你梦 | nLin=8 nBest=8(你梦) pop=低 sense=有
+[WORD] 你蓝→你蓝 | nLin=3 nBest=58(水蓝蓝) pop=中 sense=有
+[WORD] 你莎→你莎 | nLin=1 nBest=30(莎莎) pop=中 sense=有
+[WORD] 你鱿→你鱿 | nLin=1 nBest=7(鱿鱼) pop=低 sense=有
+[WORD] 玩家→小洛克 | nLin=30 nBest=30(小洛克) pop=中 sense=有
+[WORD] 精灵→精灵daddy | nLin=2 nBest=96(daddy) pop=中 sense=有
+[WORD] 站街→站街 | nLin=35 nBest=35(站街) pop=中 sense=有
+[WORD] 侵犯→秦凡 | nLin=1 nBest=1(秦凡) pop=低 sense=有
+[WORD] 雄臭→雄臭 | nLin=2 nBest=2(雄臭) pop=低 sense=有
+[WORD] 老寒腿→老寒腿 | nLin=1 nBest=1(老寒腿) pop=低 sense=有
+[WORD] 黑皮体育生→黑皮体育生 | nLin=2 nBest=31(黑皮) pop=中 sense=有
+[WORD] 吸入→猛猛吸入 | nLin=1 nBest=208(吸入) pop=高 sense=有
+[WORD] 死→鼠了 | nLin=316 nBest=316(鼠了) pop=高 sense=有
+[WORD] 火神→火神 | nLin=38 nBest=38(火神) pop=中 sense=有
+[WORD] 冥古龙→冥古龙 | nLin=20 nBest=20(冥古龙) pop=中 sense=有
+[WORD] 花衣蝶→花衣蝶 | nLin=14 nBest=14(花衣蝶) pop=低 sense=有
+[WORD] 锤头鹳→锤头鹳 | nLin=7 nBest=8(锤头) pop=低 sense=有
+[WORD] 音速犬→音速犬 | nLin=7 nBest=7(音速犬) pop=低 sense=有
+[WORD] 恶魔狼→恶魔狼 | nLin=7 nBest=23(狼王) pop=中 sense=有
+[WORD] 夜枭→夜枭 | nLin=4 nBest=8(夜宵) pop=低 sense=有
+[WORD] 布灵布灵→布灵布灵 | nLin=4 nBest=6(布灵) pop=低 sense=有
+[WORD] 波多西→波多西 | nLin=8 nBest=8(波多西) pop=低 sense=有
+[WORD] 饮雪狂兽→饮雪狂兽 | nLin=5 nBest=19(狂兽) pop=低 sense=有
+[WORD] 水灵→水灵 | nLin=25 nBest=25(水灵) pop=中 sense=有
+[WORD] 彩蝶鲨→彩蝶鲨 | nLin=5 nBest=5(彩蝶鲨) pop=低 sense=有
+[WORD] 独角兽→独角兽 | nLin=11 nBest=11(独角兽) pop=低 sense=有
+[SENSE清空] 奇梦咪→奇梦咪 淋语侧语料 0 命中，sense 留空
+[WORD] 奇梦咪→奇梦咪 | nLin=0 nBest=8(你梦) pop=低 sense=空
+[WORD] 小幽幽→幽幽 | nLin=3 nBest=3(幽幽) pop=低 sense=有
+[WORD] 迪莫→迪莫 | nLin=25 nBest=25(迪莫) pop=中 sense=有
+[WORD] 水蓝蓝→水蓝蓝 | nLin=58 nBest=58(水蓝蓝) pop=中 sense=有
+[WORD] 卷毛鸭→卷毛鸭 | nLin=2 nBest=2(卷毛鸭) pop=低 sense=有
+[WORD] 咔咔鸟→咔咔鸟 | nLin=2 nBest=2(咔咔鸟) pop=低 sense=有
+[WORD] 梦想三三→梦想三三 | nLin=2 nBest=8(三三) pop=低 sense=有
+[WORD] 云梦豚→云梦豚 | nLin=1 nBest=2(小豚) pop=低 sense=有
+[WORD] 吉洛斯→吉洛斯 | nLin=4 nBest=4(吉洛斯) pop=低 sense=有
+[RULE通过] (幽队|雪天|鹅妈|在线|女子).{0,4}处理 例句 2 条全部逐字命中
+[RULE通过] (猛猛|狠狠)吸入|后台吸入|吸入.{0,3}能量 例句 2 条全部逐字命中
+[RULE通过] 三倍弱电 例句 2 条全部逐字命中
+[RULE通过] (回宫的一天|再回春|二进宫) 例句 2 条全部逐字命中
+[RULE通过] (光队就业|幽系失业|艺术生就业|再就业) 例句 2 条全部逐字命中
+[RULE通过] 虫越少.{0,2}虫越强 例句 2 条全部逐字命中
