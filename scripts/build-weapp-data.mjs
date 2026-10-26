@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { createRequire } from 'node:module';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC_CORE = path.join(ROOT, 'src', 'core');
@@ -27,6 +28,7 @@ const FILES = [
   ['lore-extra14.js', 'data/lore-extra14.js'],
   ['lore-extra16.js', 'data/lore-extra16.js'],
   ['lore-extra18.js', 'data/lore-extra18.js'],
+  ['lore-extra19.js', 'data/lore-extra19.js'],
   ['lore-extra15.js', 'data/lore-extra15.js'],
 ];
 
@@ -41,10 +43,75 @@ fs.mkdirSync(path.join(OUT, 'core'), { recursive: true });
 fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
 
 let changed = 0;
+
+// ---- lore-extraN.js 走「列式编码」 ----
+// 微信小程序主包有 2MB 硬上限。数据长到 1.23MB 的 lore 后，原样复制会直接超限。
+// 这些文件都是纯数据，每条都重复写一遍 key 名（term/meaning/example/source…）非常浪费，
+// 改成「列名表 + 值数组」后能省约 25% 体积；src/core/lore.js 里的 unpack() 负责还原，
+// 上层代码完全感知不到差异。
+// 列名不能写死：不同轮次的条目字段并不完全一致（有的带 detail / verify / rel，有的没有），
+// 写死一份清单会把额外字段静默丢掉，导致「解码后深比较」必然失败。
+// 改成按数组里实际出现过的 key 求并集，保持首次出现顺序。
+const unionKeys = (arr) => {
+  const keys = [];
+  const seen = new Set();
+  for (const x of arr) {
+    for (const k of Object.keys(x)) {
+      if (!seen.has(k)) {
+        seen.add(k);
+        keys.push(k);
+      }
+    }
+  }
+  return keys;
+};
+
+function packMod(mod) {
+  const out = { __col: 1 };
+  // 先把所有非内容字段原样带过去（dropCards / dropQuotes / heroMerge / quoteMerge …），
+  // 只把 cards / quotes / heroes 三张表转成列式——漏字段会让 lore.js 在聚合时直接崩。
+  for (const [k, v] of Object.entries(mod)) {
+    if (k === 'cards' || k === 'quotes' || k === 'heroes') continue;
+    out[k] = v;
+  }
+  for (const k of ['cards', 'quotes', 'heroes']) {
+    const arr = mod[k];
+    if (!Array.isArray(arr)) continue;
+    const keys = unionKeys(arr);
+    out[k] = { keys, rows: arr.map((x) => keys.map((kk) => (x[kk] === undefined ? null : x[kk]))) };
+  }
+  return out;
+}
+
+const require_ = createRequire(import.meta.url);
+
+// 清掉可能被 lore.js 聚合时 mutate 过的模块缓存：pack 必须是磁盘上的原始内容，
+// 否则小程序端会带上 aliasMerge 在运行时追加的别名，与源文件永久对不上。
+for (const k of Object.keys(require_.cache)) {
+  if (/lore-extra\d+\.js$/.test(k)) delete require_.cache[k];
+}
+
 for (const [from, to] of FILES) {
   const src = path.join(SRC_CORE, from);
   const dst = path.join(OUT, to);
-  const content = fs.readFileSync(src, 'utf8');
+  if (/^lore-extra\d+\.js$/.test(from)) {
+    delete require_.cache[require_.resolve(src)];
+    const packed = packMod(require_(src));
+    const banner =
+      '// 由 scripts/build-weapp-data.mjs 从 src/core/' + from + ' 生成，勿手改。\n' +
+      '// 列式编码（__col=1）：体积比重复 key 名小约 25%，由 src/core/lore.js 的 unpack() 还原。\n';
+    if (writeIfChanged(dst, banner + 'module.exports = ' + JSON.stringify(packed) + ';\n')) changed += 1;
+    continue;
+  }
+  let content = fs.readFileSync(src, 'utf8');
+  // lore.js 里大段是「为什么这么写」的注释与归类表说明，主包吃紧时这些不参与运行。
+  // 只在复制到小程序时裁掉「整行注释 + 纯空行」，主端 src/core/lore.js 保持原样。
+  if (from === 'lore.js') {
+    content = content
+      .split('\n')
+      .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
+      .join('\n');
+  }
   if (writeIfChanged(dst, content)) changed += 1;
 }
 
@@ -53,10 +120,23 @@ const seed = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
 if (!Array.isArray(seed.words) || !seed.words.length) throw new Error('seed.words 为空');
 if (!Array.isArray(seed.rules) || !seed.rules.length) throw new Error('seed.rules 为空');
 
+// seed 也做列式编码：词库 1769 条 + 句式 455 条，每条重复写 zh/linyu/alias/sense/source/pop/slot
+// 这些 key 名本身就是大头。小程序端 services/content.js 的 decodeSeed() 负责还原。
+const packSeed = (obj) => {
+  const out = { __col: 1 };
+  for (const k of ['words', 'rules']) {
+    const arr = obj[k];
+    const keys = unionKeys(arr);
+    out[k] = { keys, rows: arr.map((x) => keys.map((kk) => (x[kk] === undefined ? null : x[kk]))) };
+  }
+  return out;
+};
+
 const seedModule =
   '// 由 scripts/build-weapp-data.mjs 从 src/core/seed.json 生成，勿手改。\n' +
+  '// 列式编码（__col=1）：由 services/content.js 的 decodeSeed() 还原。\n' +
   'module.exports = ' +
-  JSON.stringify(seed) +
+  JSON.stringify(packSeed(seed)) +
   ';\n';
 if (writeIfChanged(path.join(OUT, 'data', 'seed.js'), seedModule)) changed += 1;
 

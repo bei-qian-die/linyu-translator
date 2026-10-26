@@ -3,10 +3,29 @@
 // 翻译链路最小数据集：只依赖 seed（v1.18 约 390KB，词条+句式）。
 // 词卡/名言/人物等只读浏览数据在 services/lore.js，由词库页/人物页 onLoad 时按需 require，
 // 翻译页首屏不再承担 lore（约 1.23MB）的解析成本（A4）。
-const seed = require('../data/seed');
+const seed = decodeSeed(require('../data/seed'));
 const counts = require('../data/counts');
 const perf = require('./perf');
 const { translateText } = require('../core/translator');
+
+// seed 在小程序端是列式编码（{__col:1, words:{keys,rows}}）以压主包体积，
+// 这里还原成常规对象数组；如果拿到的是老格式（直接是 {words:[...]}）就原样返回。
+function decodeSeed(mod) {
+  if (!mod || !mod.__col) return mod;
+  const unpack = (part) => {
+    if (!part || !Array.isArray(part.rows)) return [];
+    const { keys, rows } = part;
+    return rows.map((row) => {
+      const o = {};
+      for (let i = 0; i < keys.length; i++) {
+        const v = row[i];
+        if (v !== null && v !== undefined) o[keys[i]] = v;
+      }
+      return o;
+    });
+  };
+  return { words: unpack(mod.words), rules: unpack(mod.rules) };
+}
 
 function text(value) {
   return value === null || value === undefined ? '' : String(value);

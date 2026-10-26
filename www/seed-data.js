@@ -4,7 +4,7 @@ window.__SEED_DATA = {
     {
       "zh": "我",
       "linyu": "本可",
-      "alias": "本可、本可儿、本可人儿、本仙女、本仙子、本小仙女、本猪妞、本祝妞、本猪猪女孩、本猪猪、本姑娘、本宫、本淋王、本淋淋、本淋、本小淋、本人家、本宝、宝宝我、人家我、本尊、本座、本可人、本淋王星人、本可酱、本可哒、本可哒哒、本猪猪本可、郭门、本娘娘、本可子、本可可、本可妹妹、本可姐姐、本可人儿们、本仙、本女、本天鹅、本凤凰、本淋王后、本阴婷、本凤、咱家、本娘子、本妃、本答应、本常在、本土妞、本村妞、本猪猪子、奴家、小女子、本宝宝、本喵、本仙女下凡、本宫娘娘、本仙子惹、本可惹",
+      "alias": "本可、本可儿、本可人儿、本仙女、本仙子、本小仙女、本猪妞、本祝妞、本猪猪女孩、本猪猪、本姑娘、本宫、本淋王、本淋淋、本淋、本小淋、本人家、本宝、宝宝我、人家我、本尊、本座、本可人、本淋王星人、本可酱、本可哒、本可哒哒、本猪猪本可、郭门、本娘娘、本可子、本可可、本可妹妹、本可姐姐、本可人儿们、本仙、本女、本天鹅、本凤凰、本淋王后、本阴婷、本凤、咱家、本娘子、本妃、本答应、本常在、本土妞、本村妞、本猪猪子、奴家、小女子、本宝宝、本喵、本仙女下凡、本宫娘娘、本仙子惹、本可惹、我🐍、我梦、我🔒、我维、我贤、我光",
       "slot": "第一人称自称",
       "sense": "淋语里\"我\"的译法最多的一个语义位：本可系最中性、本仙女系卖萌、本猪妞/本猪猪女孩自嘲、本宫/本座走清宫位分体。自称后可接\"惹/噜/厚\"黏着。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -1495,7 +1495,10 @@ window.__SEED_DATA = {
       "linyu": "皮夫",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "游戏术语/生活日常/基础谐音替换",
-      "pop": "低"
+      "pop": "低",
+      "alias": "皮",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "sense": "武器与角色外观，瓦区消费的主体，语料里讨论量远超战术。"
     },
     {
       "zh": "队友",
@@ -1509,7 +1512,10 @@ window.__SEED_DATA = {
       "linyu": "中鹿",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "游戏术语/分区",
-      "pop": "低"
+      "pop": "低",
+      "alias": "中",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "sense": "地图中间那条通道，是控图争夺的核心；语料里「中路对枪」是吵架高发区。"
     },
     {
       "zh": "辅助",
@@ -2140,7 +2146,9 @@ window.__SEED_DATA = {
       "linyu": "该削了",
       "slot": "游戏术语/评价判断",
       "pop": "低",
-      "sense": "平衡判词（好改，早就该削了），句式表单列游戏区削弱句式并带出处。"
+      "sense": "平衡判词（好改，早就该削了），句式表单列游戏区削弱句式并带出处。",
+      "alias": "削弱",
+      "source": "https://www.bilibili.com/video/BV1E9pJ67EDf"
     },
     {
       "zh": "变身",
@@ -2385,9 +2393,9 @@ window.__SEED_DATA = {
     {
       "zh": "钢索",
       "linyu": "为爱走钢索",
-      "alias": "我🔒",
+      "alias": "我🔒、钢锁",
       "slot": "瓦罗淋特",
-      "sense": "同上。",
+      "sense": "钢锁的自称写法：锁＝🔒，所以她被叫「我🔒」；「为爱走钢索」是把角色名接进马戏团走钢丝的俗语，形容她拿命守点的莽劲。",
       "source": "https://github.com/Aziteee/linyu-translator/blob/main/src/modules/linyu.ts",
       "pop": "低",
       "rel": [
@@ -2628,7 +2636,8 @@ window.__SEED_DATA = {
       "linyu": "如加",
       "slot": "游戏术语/构词法",
       "pop": "低",
-      "sense": "“加”与“如”倒置的判词（弹幕：不如加位移），句式表单列“如加如削句式”。"
+      "sense": "“加”与“如”倒置的判词（弹幕：不如加位移），句式表单列“如加如削句式”。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U"
     },
     {
       "zh": "游戏皮肤",
@@ -2649,7 +2658,9 @@ window.__SEED_DATA = {
       "linyu": "破如防",
       "slot": "情绪/游戏术语/构词法",
       "pop": "低",
-      "sense": "中间插一个“如”字，评论直接刷“破如防”，句式表把“我狸就这样破如防惹”列为破防句式。"
+      "sense": "中间插一个“如”字，评论直接刷“破如防”，句式表把“我狸就这样破如防惹”列为破防句式。",
+      "alias": "红温",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH"
     },
     {
       "zh": "发癫",
@@ -5546,7 +5557,7 @@ window.__SEED_DATA = {
     {
       "zh": "蝰蛇",
       "linyu": "我🐍",
-      "alias": "我🐍、蝰蛇、薇蝮",
+      "alias": "我🐍、蝰蛇、薇蝮、我维、蝰蛇女士",
       "slot": "瓦罗淋特",
       "sense": "「我 + emoji」是瓦罗淋特区的构词法，emoji 代替角色特征。",
       "source": "https://github.com/Aziteee/linyu-translator/blob/main/src/modules/linyu.ts",
@@ -5558,7 +5569,7 @@ window.__SEED_DATA = {
     {
       "zh": "暮蝶",
       "linyu": "我🦋",
-      "alias": "我🦋、暮蝶",
+      "alias": "我🦋、暮蝶、克洛芙、慕蝶、暮蝶姐姐",
       "slot": "瓦罗淋特",
       "sense": "同上。",
       "source": "https://github.com/Aziteee/linyu-translator/blob/main/src/modules/linyu.ts",
@@ -5570,7 +5581,7 @@ window.__SEED_DATA = {
     {
       "zh": "黑梦",
       "linyu": "我梦",
-      "alias": "我梦、黑梦",
+      "alias": "我梦、黑梦、菲德、诡眼",
       "slot": "瓦罗淋特",
       "sense": "「我X」自称体系。",
       "source": "https://github.com/Aziteee/linyu-translator/blob/main/src/modules/linyu.ts",
@@ -5582,7 +5593,7 @@ window.__SEED_DATA = {
     {
       "zh": "奇乐",
       "linyu": "🐔婆",
-      "alias": "🐔婆、鸡婆、奇乐",
+      "alias": "🐔婆、鸡婆、奇乐、恺宙",
       "slot": "瓦罗淋特",
       "sense": "「鸡」在淋语里可作通用代词，配 emoji 写成🐔婆。",
       "source": "https://github.com/Aziteee/linyu-translator/blob/main/src/modules/linyu.ts",
@@ -9799,19 +9810,6 @@ window.__SEED_DATA = {
       ]
     },
     {
-      "zh": "我梦",
-      "linyu": "我梦",
-      "alias": "我梦、黑梦、暮蝶",
-      "slot": "瓦罗淋特",
-      "sense": "瓦罗淋特区对黑梦的自称，来源是 GitHub 淋语词库的「我梦」。",
-      "source": "https://search.bilibili.com/all?keyword=%E7%93%A6%E7%BD%97%E6%B7%8B%E7%89%B9%20%E9%BB%91%E6%A2%A6",
-      "pop": "低",
-      "rel": [
-        "黑梦",
-        "暮蝶"
-      ]
-    },
-    {
       "zh": "本祝女",
       "linyu": "本祝女",
       "alias": "本祝女、本祝妞、本祝",
@@ -11017,7 +11015,7 @@ window.__SEED_DATA = {
     {
       "zh": "大哥",
       "linyu": "大哥",
-      "alias": "大哥、大哥们、大佬、大佬们",
+      "alias": "大哥、大哥们、大佬、大佬们、老板",
       "slot": "称呼类",
       "sense": "称呼类的男性/大佬式变体。NGA 帖里出现过「见多识广的大人认得」，贴吧里则以「大佬」为主，称呼男性玩家或技术高人。",
       "source": "https://tieba.baidu.com/p/9747326338",
@@ -14094,7 +14092,7 @@ window.__SEED_DATA = {
     {
       "zh": "点位",
       "linyu": "点位",
-      "alias": "经典点位",
+      "alias": "经典点位、点",
       "slot": "第五淋格/庄园术语",
       "sense": "固定的溜鬼／卡位位置；「这个不是杰克经典点位吗」是老玩家身份暗号。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -14274,7 +14272,7 @@ window.__SEED_DATA = {
     {
       "zh": "挂机",
       "linyu": "挂机",
-      "alias": "",
+      "alias": "掉线",
       "slot": "第五淋格/庄园术语",
       "sense": "人不在电脑前，角色原地不动；排位里挂机等同送分。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -14284,7 +14282,7 @@ window.__SEED_DATA = {
     {
       "zh": "演员",
       "linyu": "演员",
-      "alias": "",
+      "alias": "演",
       "slot": "第五淋格/庄园术语",
       "sense": "故意演输的队友；「一流的演员」是反讽弹幕。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -14954,7 +14952,7 @@ window.__SEED_DATA = {
     {
       "zh": "拉扯",
       "linyu": "拉扯",
-      "alias": "",
+      "alias": "拉扯至上",
       "slot": "第五淋格/庄园术语",
       "sense": "双方互相试探距离，进一刀退一步，是高段位对局的常态。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -15100,9 +15098,3372 @@ window.__SEED_DATA = {
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
       "pop": "低",
       "rel": []
+    },
+    {
+      "zh": "无畏契约",
+      "linyu": "瓦罗淋特",
+      "alias": "瓦罗兰特、无畏契约、瓦",
+      "slot": "瓦罗淋特/分区",
+      "sense": "游戏整名的淋化写法，把「兰特」换成「淋特」；口语里常缩成单字「瓦」（打瓦／玩瓦）。",
+      "source": "https://www.bilibili.com/video/BV1vund6TEz5",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瓦罗兰特",
+      "linyu": "瓦",
+      "alias": "瓦罗兰特",
+      "slot": "瓦罗淋特/分区",
+      "sense": "最常用的单字简称，动词化后直接当「玩这个游戏」用（今天打瓦了吗）。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "无畏契约玩家",
+      "linyu": "瓦学弟",
+      "alias": "打瓦的",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "对瓦罗玩家的戏称，带「刚入门的新生」意味，自嘲与互嘲都用。",
+      "source": "https://www.bilibili.com/video/BV1jHJd6NEKm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "无畏契约手游",
+      "linyu": "手瓦",
+      "alias": "瓦手、掌瓦",
+      "slot": "瓦罗淋特/分区",
+      "sense": "手游版的三套叫法：手瓦／瓦手是通用简称，掌瓦是「掌上」的谐化。",
+      "source": "https://www.bilibili.com/video/BV1xmnR6HEUv",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "无畏契约玩家群体",
+      "linyu": "打瓦的",
+      "alias": "",
+      "slot": "瓦罗淋特/分区",
+      "sense": "把玩家身份说成「打瓦的」，比「玩家」更口语，常出现在组队与吐槽场合。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "特工",
+      "linyu": "特工英雄",
+      "alias": "特工",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "官方叫「特工」，玩家口语常补成「特工英雄」，带着把角色当人看的拟人习惯。",
+      "source": "https://www.bilibili.com/video/BV1vund6TEz5",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "拳头游戏",
+      "linyu": "拳头神",
+      "alias": "拳头",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "对开发商 Riot 的戏称，配「神」字既是捧也是反讽，多用在平衡性吐槽里。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "新特工",
+      "linyu": "新英雄",
+      "alias": "新特工",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "官方说「新特工」，B 站标题一律写「新英雄」，标题词直接影响弹幕口径。",
+      "source": "https://www.bilibili.com/video/BV19sn86FEcV",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "捷风",
+      "linyu": "婕提",
+      "alias": "捷丰、捷风小宠物、捷风",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「婕提」是瓦区最通行的替换叫法；「捷丰」是谐音口误，被弹幕当爱称用；「捷风小宠物」把特工说成宠物，带降格式宠溺。",
+      "source": "https://www.bilibili.com/video/BV1tosfeKE6Q",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "夜露",
+      "linyu": "夜戮",
+      "alias": "夜露大王、夜露酱、蓝色小丑、夜露",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「夜戮」通用；「夜露酱」是日式拟人称，「夜露大王」是强度梗，「蓝色小丑」是削弱后的黑称（小丑＝好笑又没用）。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "芮娜",
+      "linyu": "蕾娜",
+      "alias": "瑞纳、苪娜、锐纳、芮娜",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "一位特工四种谐音写法（蕾娜／瑞纳／苪娜／锐纳）同时流通，是本分区最多译法的角色；「女王」来自她台词与 K/O 对她的称呼。",
+      "source": "https://www.bilibili.com/video/BV1dg4y1A7gP",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "猎枭",
+      "linyu": "苏法",
+      "alias": "猎鸟、猎枭王、猎枭",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「苏法」；「猎鸟」是「枭」读成「鸟」的谐音降格；「猎枭王」是专精玩家的自封。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "贤者",
+      "linyu": "圣祈",
+      "alias": "奶妈、我贤、我光、贤者",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「圣祈」；「奶妈」按功能取名（唯一能奶队友的哨卫）；「我贤」是「我＋官称」自称式，「我光」是与隔壁光女做类比的跨区外号。",
+      "source": "https://www.bilibili.com/video/BV1oVs3zzEbT",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "尚勃勒",
+      "linyu": "钱博尔",
+      "alias": "钱包、尚勃勒",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「钱博尔」；「钱包」是最流行的俗称，因为 Chamber 谐音 chamber／钱袋，也因为他一身绅士行头像钱包广告。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瑟符",
+      "linyu": "保安",
+      "alias": "老保安",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "按功能取的外号——他布绊线与摄像头看家，「保安」比本名更常用；「老保安」是对专精玩家的敬称。",
+      "source": "https://www.bilibili.com/video/BV1sK5f65EoT",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "炼狱",
+      "linyu": "布史东",
+      "alias": "炼狱小姐姐、老妈、炼狱",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「布史东」；「炼狱小姐姐」是把硬汉角色性转式拟人，「老妈」来自他照顾全队的队长人设。",
+      "source": "https://www.bilibili.com/video/BV1Gann6eEvL",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "不死鸟",
+      "linyu": "菲尼克斯",
+      "alias": "火男、不死鸟",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「菲尼克斯」；「火男」按属性取名，比三个字的译名更顺口，评论区基本只说火男。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "雷兹",
+      "linyu": "炸弹妹",
+      "alias": "雷兹品味、雷兹",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "「炸弹妹」按武器取名（她的技能全是爆炸物）；「雷兹品味」是刀皮梗，指偏爱浮夸造型的审美。",
+      "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "星礈",
+      "linyu": "黑妹",
+      "alias": "星礈",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "按外形取的俗称（加纳籍黑人女性），玩家口语几乎不用本名。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "幽影",
+      "linyu": "幽影小猫",
+      "alias": "幽影袖剑、幽影",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "把无脸幽灵拟成「小猫」，是典型的萌化降格；「幽影袖剑」来自他的近战动作。",
+      "source": "https://www.bilibili.com/video/BV19sn86FEcV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "海神",
+      "linyu": "嘎达嘎达",
+      "alias": "海神",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "来自「这海神怎么一直嘎达嘎达」的拟声吐槽，把他放技能的脚步声当外号用。",
+      "source": "https://www.bilibili.com/video/BV1vGnv6CEyH",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "铁臂",
+      "linyu": "铁臂阿童木",
+      "alias": "铁臂",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "谐音梗——「铁臂」直接接到童年动画主角名上，语料里当成就弹幕刷。",
+      "source": "https://www.bilibili.com/video/BV1E9pJ67EDf",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "斯凯",
+      "linyu": "斯凯",
+      "alias": "丝凯",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "台服译名「絲凱」在大陆常写成「丝凯」，但语料里仍以「斯凯」为主。",
+      "source": "https://www.bilibili.com/video/BV1E9pJ67EDf",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "盖可",
+      "linyu": "盖克",
+      "alias": "盖乃的可子、盖可病毒、盖可",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "官方写法「盖可」与玩家写法「盖克」并行；「盖乃的可子」是把名字拆开重拼的错读梗，「盖可病毒」指他的宠物技能黏人。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "钛狐",
+      "linyu": "钛湖",
+      "alias": "钛狐",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "「狐」读成「湖」的谐音，评论区常与钱包、夜露并列成阵容讨论。",
+      "source": "https://www.bilibili.com/video/BV15Fad6YEQx",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "壹决",
+      "linyu": "一绝",
+      "alias": "一决、壹决",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "三种写法：官方「壹决」、简写「一决」、「一绝」是谐音兼夸张（说他强到独一无二）。",
+      "source": "https://www.bilibili.com/video/BV1E9pJ67EDf",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "维斯",
+      "linyu": "维斯Plus",
+      "alias": "维斯",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "「Plus」是升级版梗，指她的技能像把旧哨卫的能力打包加强。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "霓虹",
+      "linyu": "带派",
+      "alias": "霓虹带派、霓虹",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "因为她跑得最快，语料里反复出现「跑步大汗脚」的荤梗；「带派」是「带感」的口语变体。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "遐思",
+      "linyu": "遐思",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "新特工，语料里还没形成稳定外号，只出现「太吃驾驶员操作」这类评价。",
+      "source": "https://www.bilibili.com/video/BV1EBHA68EJ5",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "决斗位",
+      "linyu": "一突",
+      "alias": "决斗位",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "一号突破手，第一个进点的人；「一突」比「决斗位」更常出现在阵容吐槽里。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "二号决斗",
+      "linyu": "二突",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "跟在一突后面的第二个决斗位，负责补枪与收头，语料里常配「二突秒选芮娜」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "控场位",
+      "linyu": "烟位",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "按核心道具取名——控场位的活儿就是封烟，「烟位」比官方说法流传更广。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "哨卫位",
+      "linyu": "哨位",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "官方「哨卫」，玩家一律简成「哨位」，与「烟位」「信息位」构成同一套位分词。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "先锋位",
+      "linyu": "信息位",
+      "alias": "先锋位",
+      "slot": "瓦罗淋特/瓦罗特工位分",
+      "sense": "按功能取名——先锋的活儿是探信息，所以玩家更爱叫「信息位」。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "双烟阵容",
+      "linyu": "双烟",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "带两个控场的阵容，语料里评价两极：「双烟真是对的」是夸，也是无奈补位。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "双哨阵容",
+      "linyu": "双哨",
+      "alias": "双哨无信息",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "两个哨卫、没有先锋的阵容，语料里几乎全是骂声（无信息＝瞎打）。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "三烟战术",
+      "linyu": "三烟",
+      "alias": "三烟突袭",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "炼狱一人丢三颗烟的极端封点打法，语料里配「仅限于对面没有保安」。",
+      "source": "https://www.bilibili.com/video/BV1Gann6eEvL",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "补位",
+      "linyu": "补位",
+      "alias": "被迫补",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "队友全秒选输出后被迫选功能位，语料里的「被迫补个猎枭」就是这种处境。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "秒锁",
+      "linyu": "秒锁",
+      "alias": "秒选",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "选人阶段第一秒就锁死角色，「秒锁芮娜」「秒选捷风」是瓦区最经典的阵容吐槽。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蝰蛇的自称",
+      "linyu": "我🐍",
+      "alias": "我蛇",
+      "slot": "瓦罗淋特/瓦罗自称体系",
+      "sense": "「我＋emoji」式自称的开山写法：蝰蛇＝蛇，直接用 🐍 代替名字，是最典型的瓦罗淋特构词法。",
+      "source": "https://www.bilibili.com/video/BV1S5p5euEpA",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "黑梦的自称",
+      "linyu": "我梦",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗自称体系",
+      "sense": "「我＋单字」式自称，取「梦」字。注意：这条只属于黑梦，暮蝶的自称是「我🦋」，两者不能混（本轮已合并旧的重复条目）。",
+      "source": "https://www.bilibili.com/video/BV1Mx421Q7XN",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "钢锁的自称",
+      "linyu": "我🔒",
+      "alias": "我锁",
+      "slot": "瓦罗淋特/瓦罗自称体系",
+      "sense": "「我＋emoji」式：锁＝🔒，旧条目「钢索／为爱走钢索」即指同一角色，本轮并入此条。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蝰蛇的另一种自称",
+      "linyu": "我维",
+      "alias": "维",
+      "slot": "瓦罗淋特/瓦罗自称体系",
+      "sense": "「我＋首字」式自称，整活标题「我维心很黑，但我维那里更黑」把它推成固定梗。",
+      "source": "https://www.bilibili.com/video/BV1S5p5euEpA",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "贤者的自称",
+      "linyu": "我贤",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗自称体系",
+      "sense": "「我＋官称首字」式，语料里配「每一次复活都已经暗中标注了价格」，是自嘲式神化。",
+      "source": "https://www.bilibili.com/video/BV1oVs3zzEbT",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "贤者的跨区外号",
+      "linyu": "我光",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗自称体系",
+      "sense": "跨区类比外号——把贤者说成「瓦罗兰特异世界版我光」，借隔壁光女的「害人精」人设。",
+      "source": "https://www.bilibili.com/video/BV1oVs3zzEbT",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "报点",
+      "linyu": "报位",
+      "alias": "报点",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "把敌人位置说给队友；「喊点」强调要开口，「报位」是教学区更正式的说法。",
+      "source": "https://www.bilibili.com/video/BV129yeBJELR",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "架枪",
+      "linyu": "架枪",
+      "alias": "架点",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "提前把准星卡在敌人必经的出口等他从掩体后出来，「架点」是同义变体。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "对枪",
+      "linyu": "拼枪",
+      "alias": "对枪",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "双方正面互射；「拼枪」强调这是纯枪法交换，不靠道具。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "摸点",
+      "linyu": "摸点",
+      "alias": "单摸",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "轻脚步去探敌方点位，「单摸」是 Solo 绕点，语料里常写成「哨位去单摸」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "绕后",
+      "linyu": "绕后",
+      "alias": "看屁股",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "从侧后包夹；「看屁股」是队伍里的口语提醒，指留意背后有没有人摸过来。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "拉枪",
+      "linyu": "拉枪",
+      "alias": "拉枪线",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "准星横向跟枪；「拉枪线」还兼指把敌人视线引开的战术动作。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "压枪",
+      "linyu": "压枪",
+      "alias": "压不住",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "连发时向下修正后坐力；「压不住」是新人最常见的自我抱怨。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "开镜",
+      "linyu": "开镜",
+      "alias": "镜",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "用瞄准镜放大视野，狙击与经济枪讨论里出现频率最高。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "残局",
+      "linyu": "残局",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "队友全倒只剩自己；语料里常写成「一打四的残局」「残局全兜了」。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "标点",
+      "linyu": "标点",
+      "alias": "打标",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "用游戏内的标记功能在小地图上打点，配合口头报点使用。",
+      "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "A大",
+      "linyu": "A大",
+      "alias": "A长",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "A 点主通道；「大」指长通道，与「A小」的短通道相对。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "包点",
+      "linyu": "包点",
+      "alias": "点里",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "爆能器的安放区域；「点里」指已经进到包点内部。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "二楼",
+      "linyu": "二楼",
+      "alias": "高台",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "包点上方的平台，「高台」是同义叫法，报点里必须说清有没有人。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "高低差",
+      "linyu": "高低差",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "地形高度落差带来的枪线优势，选点时优先考虑的条件。",
+      "source": "https://www.bilibili.com/video/BV15Fad6YEQx",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "直架",
+      "linyu": "直架",
+      "alias": "直架大王",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "不做身法、站着正面架枪；「直架大王」是夸人准也笑人莽的外号。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "拐角",
+      "linyu": "拐角",
+      "alias": "墙角",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "掩体转角，报点必说「拐角左边一个」这类句式。",
+      "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "死点",
+      "linyu": "死点",
+      "alias": "死角",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "常规枪线打不到的角落，需要贴身搜；「点没搜干净」通常就是漏了死点。",
+      "source": "https://www.bilibili.com/video/BV129yeBJELR",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "断回防",
+      "linyu": "断回防",
+      "alias": "断后",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "在敌人回防路线上埋伏；语料里「我在中路断回防」是典型位置描述。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "搜点",
+      "linyu": "搜点",
+      "alias": "点没搜干净",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "进点前逐个角落确认没人；「点没搜干净就去下包」是语料里的原话式吐槽。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "进点",
+      "linyu": "进点",
+      "alias": "冲点",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "整队进入包点；配套说法是「进点套餐」（一整套道具+闪+烟）。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "静步",
+      "linyu": "静步",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按住走路键消音移动，与「漏脚步」相对。",
+      "source": "https://www.bilibili.com/video/BV1YDXAB8Ea2",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "漏脚步",
+      "linyu": "漏脚步",
+      "alias": "大脚步",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "移动时被对面听到声音，是新手最常被骂的失误。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "假脚步",
+      "linyu": "假脚步",
+      "alias": "假身",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "用技能或道具伪造脚步声骗人，夜露的招牌手法。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "小地图",
+      "linyu": "小地图",
+      "alias": "图",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "左上角的战术地图，报点与经济信息都靠它确认。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "脚步声",
+      "linyu": "脚步",
+      "alias": "听声",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "听声定位的基础，语料里「总听不清脚步声」是设置教程的高频标题。",
+      "source": "https://www.bilibili.com/video/BV1YDXAB8Ea2",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "爆弹",
+      "linyu": "爆弹",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "全队把道具一口气砸在包点上再冲，是最常见的集合进攻方式。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "默认",
+      "linyu": "默认",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "开局不硬冲、先控图拿信息的标准打法，与「爆弹」相对。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "补枪",
+      "linyu": "补枪",
+      "alias": "跟枪",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "队友开火后立刻接手，保证对手没机会换弹，是二突的核心职责。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "大拉",
+      "linyu": "大拉",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "整个身子横拉出去打，风险高但能一次覆盖多个角度。",
+      "source": "https://www.bilibili.com/video/BV1i8JrzkE7j",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "rush",
+      "linyu": "拉满",
+      "alias": "rush",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "全队一波all in冲点；「拉满」是中文圈更常用的说法（力度拉满）。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "封烟",
+      "linyu": "封烟",
+      "alias": "丢烟",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "用烟雾遮挡视线，进点与拆包都靠它。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "timing",
+      "linyu": "时机",
+      "alias": "timing",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "对手换弹、转身、放技能的空档；「抓timing」是水平分水岭。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "协同",
+      "linyu": "协同",
+      "alias": "道具协同",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "道具与枪线配合着来；单独说「补枪协同」和「道具协同」是两种不同课题。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "弹墙闪",
+      "linyu": "弹墙闪",
+      "alias": "弹墙瞬爆闪",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "把闪光弹打在墙上改变角度，防止对面背身躲闪。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "出烟闪",
+      "linyu": "出烟闪",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "从烟雾里丢闪再跟出去，是夜露与芮娜的常见套路。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瞬爆闪",
+      "linyu": "瞬爆闪",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "落地即爆的闪光，几乎不给对手反应时间。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "假人",
+      "linyu": "假人",
+      "alias": "分身",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "夜露的幻影分身，用来骗枪、骗闪、制造假情报。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "假传",
+      "linyu": "假传",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "先放传送门但不用，让对手以为你要换位；「假传+闪光」是成套餐。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "传送",
+      "linyu": "tp",
+      "alias": "传送",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "传送技能，玩家一律用 tp 简称，讨论夜露时出现频率最高。",
+      "source": "https://www.bilibili.com/video/BV1i8JrzkE7j",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "卡墙",
+      "linyu": "卡墙",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "贴着墙边站位，利用碰撞体积做出非常规角度。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "跳箱",
+      "linyu": "跳箱",
+      "alias": "上高箱",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "跳上箱子拿高度优势，是各图点位的基础操作。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "超级跳",
+      "linyu": "超级跳",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "利用位移技能叠加跳跃距离，跳上常规跳不到的箱子。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "身法",
+      "linyu": "身法",
+      "alias": "走位",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "移动与跳跃的操作水平，「会身法」是夸人的固定说法。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "急停",
+      "linyu": "急停",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "移动中瞬间刹住再开枪，练习内容里与「压枪」绑在一起。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "跑打",
+      "linyu": "跑打",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "边移动边开火，弹道扩散大，通常是新手的坏习惯。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "扫转",
+      "linyu": "扫转",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "打完一个目标立刻把准星扫到下一个，是「一次定位」的进阶版。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "一次定位",
+      "linyu": "一次定位",
+      "alias": "定位",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "第一次抬手就把准星放到头上，不靠修正；高手与普通人的差距就在这。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "预瞄",
+      "linyu": "预瞄",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "把准星提前放在敌人会冒出来的位置，减少反应时间。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "准星",
+      "linyu": "准星",
+      "alias": "准心",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "屏幕中央的瞄准点，改准星是新人入门第一课。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "进点套餐",
+      "linyu": "套餐",
+      "alias": "进点套餐",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "一整套「烟+闪+位移」的固定进点组合，语料里叫「进点套餐」「闪传套餐」。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "回防",
+      "linyu": "回防",
+      "alias": "回防tp",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "守方在另一侧失守后赶回来支援，夜露的 tp 让回防速度质变。",
+      "source": "https://www.bilibili.com/video/BV1i8JrzkE7j",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "贴脸",
+      "linyu": "贴脸",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "贴到极近距离开火，喷子与冲锋枪的主场。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "爆能器",
+      "linyu": "爆能器",
+      "alias": "包",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "安放式炸弹，玩家口语一律简称「包」；「爆能器已部署」是全场都能听到的语音。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "狂徒",
+      "linyu": "狂徒",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "全自动步枪，一枪爆头即死，是瓦区讨论手感与皮肤最多的枪。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "幻影",
+      "linyu": "幻影",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "带消音的自动步枪，射速比狂徒快、有弹道扩散，近战更稳。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "獠犬",
+      "linyu": "獠犬",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "中价位步枪，带开镜三连发，经济局的主力选择。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "戍卫",
+      "linyu": "戍卫",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "半自动步枪，一枪头必死，是「准的人玩、不准的人送」的枪。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "骇灵",
+      "linyu": "骇灵",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "冲锋枪，eco 局最爱的「便宜又能糊脸」的枪。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "蜂刺",
+      "linyu": "蜂刺",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "最便宜的冲锋枪，贴脸爆发极高，语料里拿它和狂徒对比手感。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "雄鹿",
+      "linyu": "雄鹿",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "泵动霰弹枪，右键可打远距离，语料里讨论「右键能不能爆头」。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "奥丁",
+      "linyu": "奥丁",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "重机枪，扫射压制力极强，被叫「机枪流」的核心。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "莽侠",
+      "linyu": "莽侠",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "轻狙，便宜且开镜快；「莽」字点出它靠莽不靠稳。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "标配",
+      "linyu": "标配",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "每回合免费的手枪，右键三连发是手枪局翻盘的赌注。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "鬼魅",
+      "linyu": "鬼魅",
+      "alias": "Ghost",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "带消音的手枪，点头很痛，手枪局最常见的升级选择。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "狂怒",
+      "linyu": "狂怒",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "全自动手枪，贴脸糊人极凶，但压枪极难。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "正义",
+      "linyu": "正义",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "左轮，爆头一枪带走；「eco 正义五杀」是瓦区最著名的以弱胜强剧本。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "大狙",
+      "linyu": "大狙",
+      "alias": "Operator",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "重型狙击枪，一枪秒人但贵，是经济体系的胜负手。",
+      "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "长枪",
+      "linyu": "长枪",
+      "alias": "大枪",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "泛指步枪与狙击这类贵枪，与「短枪」相对。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "短枪",
+      "linyu": "短枪",
+      "alias": "小枪",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "手枪与冲锋枪这类便宜枪，经济局的标准配置。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大甲",
+      "linyu": "大甲",
+      "alias": "重甲",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "最高档护甲，「大甲战神」是形容穿满甲硬刚的人。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "半甲",
+      "linyu": "半甲",
+      "alias": "轻甲",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "便宜的低档护甲，语料里「半甲狂徒」是最常见的省经济方案。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "全甲",
+      "linyu": "全甲",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "满血满甲，与枪一起被说成「全甲狂徒」的完整买装。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "eco局",
+      "linyu": "eco",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "不买或只买便宜枪的省钱局；语料里全是「不懂什么叫 eco」的教学标题。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "antieco",
+      "linyu": "antieco",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "对手省钱时你该怎么打，语料里讨论的是「antieco 要不要也起小枪」。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "强起",
+      "linyu": "强起",
+      "alias": "硬起",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "经济不够也硬买枪，赌一把翻盘，输了下回合更穷。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "起枪",
+      "linyu": "起枪",
+      "alias": "买枪",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "买枪的动词化说法，「这回合起什么枪」是新手最常问的问题。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "经济系统",
+      "linyu": "经济",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "买装与存款的整体机制，瓦区把它当独立学科讲。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "手枪局",
+      "linyu": "手枪局",
+      "alias": "第一局",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "每半场第一回合，只能用便宜枪，胜负直接影响后续经济。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "五杀",
+      "linyu": "五杀",
+      "alias": "ace",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "单回合击杀全队，是剪集锦的标配素材。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "下包",
+      "linyu": "下包",
+      "alias": "安包",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "安放爆能器，需要 4 秒；语料里专门讨论「下包位置怎么选」。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "拆包",
+      "linyu": "拆包",
+      "alias": "拆",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "拆除爆能器，需要 7 秒；「假拆」是骗对面回防的经典手法。",
+      "source": "https://www.bilibili.com/video/BV1qL41167XB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "假拆",
+      "linyu": "假拆",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "按一下拆包就松手，用音效骗对手冲进来。",
+      "source": "https://www.bilibili.com/video/BV1qL41167XB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "R点",
+      "linyu": "R点",
+      "alias": "R 点",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "升级皮肤特效的资源，语料里「皮肤升级教学 R点」是固定标题。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "女性特工",
+      "linyu": "女特务",
+      "alias": "女瓦",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "把女性特工叫「女特务」，是整活区最固定的称谓；「女瓦」另指女玩家，两者不要混用。",
+      "source": "https://www.bilibili.com/video/BV1C6Ha6DEp8",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "芮娜的荤梗",
+      "linyu": "尸油",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "梗的来由：她杀人能吸血回血，语料解释成「杀人后抓一把尸油抹自己身上硬说是技能」。",
+      "source": "https://www.bilibili.com/video/BV1qjJY6gEPU",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "暮蝶的穿搭",
+      "linyu": "秋裤",
+      "alias": "秋裤外面穿短裤",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "语料原话「暮蝶为什么秋裤外面穿短裤」，是把她造型当穿搭吐槽的固定梗。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "霓虹的体味梗",
+      "linyu": "汗脚",
+      "alias": "大汗脚",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "因为她跑得最快，语料里反复说「跑那么快脚肯定酸臭酸臭的」，属荤向整活。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蝰蛇的技能梗",
+      "linyu": "用屁股放大招",
+      "alias": "屁股",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "来自「看过蝰蛇和钱包的cg／蝰蛇用屁股放大招」，是对她大招姿势的荤向调侃。",
+      "source": "https://www.bilibili.com/video/BV1S5p5euEpA",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "芮娜的尊称",
+      "linyu": "女王",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "她的台词与人设都是「我说了算」，K/O 也直接叫她女王，语料里当尊号用。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "钢锁的拟人称谓",
+      "linyu": "大姐",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "淋语里把强势女性角色叫「大姐」，语气是又服又怕；「这大姐真的超模」是原话句式。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "炼狱的拟人称谓",
+      "linyu": "小姐姐",
+      "alias": "炼狱小姐姐",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "把老年硬汉角色性转式叫「小姐姐」，反差本身就是笑点。",
+      "source": "https://www.bilibili.com/video/BV1Gann6eEvL",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "蝰蛇的拟人称谓",
+      "linyu": "女士",
+      "alias": "蝰蛇女士",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "用「女士」这种正式称谓称呼特工，配「赔钱」这类词形成反差式嘲讽。",
+      "source": "https://www.bilibili.com/video/BV1C6Ha6DEp8",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "暮蝶的拟人称谓",
+      "linyu": "姐姐",
+      "alias": "暮蝶姐姐",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "语料原话「我是暮蝶姐姐的苟」，「姐姐」在这里是粉丝向的仰视称呼。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "炼狱的队内角色",
+      "linyu": "老妈",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "他设定上是照顾全队的队长，语料把他当成「担心你工作的老妈」。",
+      "source": "https://www.bilibili.com/video/BV1Gann6eEvL",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "死忠粉",
+      "linyu": "苟",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "自贬式追星：「我是暮蝶姐姐的苟」，比「粉丝」更没有底线，属淋语常规自嘲。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "盖可的宠物",
+      "linyu": "皮蛋",
+      "alias": "丢丢、鲨鲨",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "盖可的召唤兽们被玩家挨个起名，语料里「皮蛋+丢丢」「提前引爆鲨鲨」是固定技巧词。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "贤者的整活人设",
+      "linyu": "仙女",
+      "alias": "仙女的守点",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "整活标题「仙女的守点 淡淡的 美美的 阴阴的」，把哨卫站桩说成仙女下凡。",
+      "source": "https://www.bilibili.com/video/BV1pVUmBfEip",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "站桩守点",
+      "linyu": "守点",
+      "alias": "阴人",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "躲在点里等人上门；配「淡淡的」是强调心态平和，配「阴阴的」是承认打法苟。",
+      "source": "https://www.bilibili.com/video/BV1pVUmBfEip",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "美美的",
+      "linyu": "美美的",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "淋语叠词副词，常与「王牌精锐」连用（美美王牌精锐），强调赢得轻松。",
+      "source": "https://www.bilibili.com/video/BV1pVUmBfEip",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "菜鸟队友",
+      "linyu": "瘤子",
+      "alias": "毒瘤",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "语料原话「10个芮娜，11个瘤子」，形容拖累队伍的队友，比「菜」更刻薄。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "自私玩家",
+      "linyu": "独B",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "只顾自己刷数据、不跟队的打法；语料直接说「喜欢玩芮娜的，10个有9个是独B」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "爱施压的队友",
+      "linyu": "压力怪",
+      "alias": "压力队友",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "全程指责队友的人；语料里「我遇到的压力怪都是玩芮娜的」是典型归因式吐槽。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "炸鱼",
+      "linyu": "炸鱼",
+      "alias": "炸鱼哥、炸鱼神器",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "高手开小号到低段位屠杀；「炸鱼神器」是形容某特工在低分段无解。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "带妹",
+      "linyu": "带妹",
+      "alias": "带妹之王",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "高段位玩家带新手（多为女性）上分；语料把芮娜称作「带妹之王」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "唐",
+      "linyu": "唐人",
+      "alias": "唐人操作、唐",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "形容操作离谱到像智力障碍，是瓦区最刺的贬词；「唐人操作」常作自嘲标签。",
+      "source": "https://www.bilibili.com/video/BV1uRH56EERM",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "唐福",
+      "linyu": "唐福",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "「唐」的加强版说法，语料里「会自动认为是个唐福」，指一看就知道要送。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "操作好看的玩家",
+      "linyu": "贝多芬",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "语料原话「猎枭这英雄没啥想象力，贝多芬罢了」，用音乐家名形容「全靠玩家自己即兴」。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "一枪爆头",
+      "linyu": "颗秒",
+      "alias": "一枪头",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "「一颗子弹秒掉」的压缩说法，语料里「被颗秒岂不是就炸了」是标准用法。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "瞄准头部",
+      "linyu": "瞄头",
+      "alias": "打头",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "瓦区把「瞄头」当基本功代称，讨论任何枪都绕不开它。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "开大招",
+      "linyu": "开大",
+      "alias": "放大招",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "使用终极技能；「不死鸟开大ACE」是语料里的经典连招描述。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "吸血",
+      "linyu": "奶",
+      "alias": "回血",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "恢复血量；语料「只有芮娜可以给自己奶」点出她是唯一自回血的特工。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "zmjjKK",
+      "linyu": "康康",
+      "alias": "zmjjkk、康神",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "职业选手 zmjjKK 的中文昵称，「康神」是带敬意的强化说法，语料里与瓦学弟同框出现。",
+      "source": "https://www.bilibili.com/video/BV1jHJd6NEKm",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "世界第一",
+      "linyu": "世一",
+      "alias": "世界第一",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "「世界第一」的压缩写法，常配角色名做称号（世一芮娜／世一夜露）。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "国服第一",
+      "linyu": "国一",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "把「国服第一」压成两个字，是 B 站标题的常用格式（国一夜露）。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "全球冠军赛",
+      "linyu": "冠军赛",
+      "alias": "全球冠军赛、Champions",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "年度最高级别赛事；语料里「上海冠军赛」既指比赛也指当年出的冠军套皮肤。",
+      "source": "https://www.bilibili.com/video/BV1BAng6CEwf",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "VCT",
+      "linyu": "VCT",
+      "alias": "CN赛区",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "官方巡回赛体系；「CN赛区」是中国赛区的写法，讨论战术体系时高频出现。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "黑铁段位",
+      "linyu": "黑铁",
+      "alias": "黑铁一",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "最低段位，语料把完整段位表按顺序列了一遍，从黑铁到赋能。",
+      "source": "https://www.bilibili.com/video/BV1uRH56EERM",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "黄金段位",
+      "linyu": "黄金",
+      "alias": "黄金泥潭",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "中低段位；「黄金泥潭」形容卡在黄金上不去的痛苦，语料里直接当标题。",
+      "source": "https://www.bilibili.com/video/BV1uRH56EERM",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "神话段位",
+      "linyu": "神话",
+      "alias": "神话局",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "高段位；「神话局」是内容创作者最爱标榜的对局等级。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "最高段位",
+      "linyu": "赋能",
+      "alias": "源能战魂",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "官方译名「源能战魂」，玩家一律叫「赋能」；「冲赋能」＝冲顶分段。",
+      "source": "https://www.bilibili.com/video/BV1Xgn96oEtb",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "下三段",
+      "linyu": "下三段",
+      "alias": "低分段",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "最底下的三个段位，语料里「下三段开头在烟里」是描述打法粗糙的固定说法。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "上分",
+      "linyu": "上分",
+      "alias": "爬分",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "提升段位；「爬分必备技能」是教学区的万用标题后缀。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "掉分",
+      "linyu": "掉分",
+      "alias": "上假分",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "段位下滑；「上假分」指靠运气上分，语料里配「霓虹大招改了我怎么上假分」。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "专精玩家",
+      "linyu": "专精",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "只玩一个角色的人（芮娜专精／盖可专精），语料里既可以是夸也可以是骂。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "职业选手",
+      "linyu": "职业",
+      "alias": "打职业",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "电竞选手；「打了职业以后才知道」是常见的凡尔赛式开场。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "代练托管",
+      "linyu": "托管",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "把账号交别人代打；语料里成片出现「托管一个月，一千五劳酬」的招工贴。",
+      "source": "https://www.bilibili.com/video/BV1Xgn96oEtb",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "解说主持杯",
+      "linyu": "解说杯",
+      "alias": "解说主持杯",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "解说与主持下场打的表演赛，语料里是「今年的瓦解说杯唯一的看点就是马哥」这类调侃。",
+      "source": "https://www.bilibili.com/video/BV1BAng6CEwf",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "决赛",
+      "linyu": "总决赛",
+      "alias": "决赛",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "赛事最后一轮；语料把某场 BO5 评为「瓦罗兰特历史上观赏性最高的一场」。",
+      "source": "https://www.bilibili.com/video/BV1BAng6CEwf",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "BO5",
+      "linyu": "bo5",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "五局三胜制，语料里用「一场bo5」形容整场赛事的跌宕。",
+      "source": "https://www.bilibili.com/video/BV1BAng6CEwf",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "每日商店",
+      "linyu": "每日商店",
+      "alias": "商店",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "每天刷新的四个皮肤位，语料里「4个月都可以刷到什么」是固定实验型选题。",
+      "source": "https://www.bilibili.com/video/BV1mWnd6dEJZ",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "夜市",
+      "linyu": "夜市",
+      "alias": "夜市皮肤",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "限时折扣商店，只在特定档期开放，手游也有独立夜市。",
+      "source": "https://www.bilibili.com/video/BV1mWnd6dEJZ",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "通行证",
+      "linyu": "通行证",
+      "alias": "战斗通行证",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "赛季付费任务线，语料里常问「什么时候才上这个通行证」。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "炫彩",
+      "linyu": "炫彩",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "皮肤的第二套配色，也是抽卡式花钱的追加项。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "紫金",
+      "linyu": "紫金",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "经典高性价比皮肤系列，语料里「紫金洗洗接着用」是穷玩家自嘲。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "盖亚",
+      "linyu": "盖亚",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "人气皮肤系列，语料里「存了129元就等一把狂徒的盖亚皮肤」是学生党名场面。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "混沌",
+      "linyu": "混沌",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "高评价系列；「混沌紫金盖亚最省钱的三个皮肤」是语料里的原话推荐。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "归零者",
+      "linyu": "归零",
+      "alias": "归零者",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名的简称，语料里「獠犬781还是归零」是选皮纠结的标准问法。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "塑水宗",
+      "linyu": "塑水",
+      "alias": "塑水宗",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名简称，「塑水宗代言人」是语料里给专精玩家的外号。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "侦查行动",
+      "linyu": "侦查",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名简称；语料里有「把侦察骇灵看成侦察幻影买了」的惨案。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "离子圣芒",
+      "linyu": "离子",
+      "alias": "离子武器",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名简称，语料里作为「常玩的朋友号多个紫金忍者离子」这种配置清单出现。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "古神",
+      "linyu": "古神",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名，语料评价「配置拉满」，属于口碑型皮肤。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "狮子",
+      "linyu": "狮子",
+      "alias": "狮子獠犬",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名，「切枪的音效特别像狮子吼」是语料里的原话听感描述。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "鎏金帝王",
+      "linyu": "鎏金",
+      "alias": "鎏金帝王",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "系列名简称，语料里讨论它的绿色炫彩与斯凯的手搭配。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "泡泡萌兽",
+      "linyu": "泡泡",
+      "alias": "泡泡萌兽",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "萌系系列名，语料按「全皮肤/全炫彩/全等级」逐档演示。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "胧夜月华",
+      "linyu": "胧夜",
+      "alias": "胧夜月华",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "日式主题系列，语料里评价「对标塑水2.0」。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "地面效应",
+      "linyu": "地面效应",
+      "alias": "VENTURI",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "英文名 VENTURI 的官方译名，语料按系列整包演示。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "噬源兽",
+      "linyu": "噬源兽",
+      "alias": "辐食动物",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "同一系列的两个译名同时流通（噬源兽防卫工程／辐食动物）。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "闪耀之星",
+      "linyu": "闪耀之星",
+      "alias": "偶像星梦",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "偶像主题系列，官方两套译名并行（闪耀之星／偶像星梦）。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "信手涂鸦",
+      "linyu": "涂鸦",
+      "alias": "信手涂鸦",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "手绘风格系列，官方译名「信手涂鸦/手绘异彩」。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "刀皮",
+      "linyu": "刀皮",
+      "alias": "近战皮",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "近战武器皮肤，是瓦区攀比的核心；语料专门统计「冠军赛刀皮出场率」。",
+      "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "枪皮",
+      "linyu": "枪皮",
+      "alias": "武器皮",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "枪械皮肤，按枪种分「狂徒皮／幻影皮」。",
+      "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "冠军套",
+      "linyu": "冠军套",
+      "alias": "冠军赛皮肤",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "每年冠军赛限定套装，语料里「冠军赛皮肤最终排名」是稳定选题。",
+      "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "限定皮肤",
+      "linyu": "限定",
+      "alias": "绝版",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "过期不返场的皮肤，语料里以「限定 咻咻X 幻象」这类写法出现。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "手感",
+      "linyu": "手感",
+      "alias": "枪感",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "皮肤影响的主观射击体验，瓦区把它当独立评价维度（手感TOP10）。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "卡面",
+      "linyu": "卡面",
+      "alias": "玩家卡面",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "个人资料页的插画，语料里「小恶魔暮蝶卡面还是可以买一手的」是消费判断。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "喷漆",
+      "linyu": "喷漆",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "可贴在墙上的图案，属于套装附赠品，常与卡面、挂饰并列。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "挂饰",
+      "linyu": "挂饰",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "挂在枪上的小饰品，语料里「专武挂饰售价829VP」是定价讨论。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "VP",
+      "linyu": "VP",
+      "alias": "点券",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "充值货币，语料里用「829VP」这种具体数字讨论定价。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "换弹",
+      "linyu": "换弹",
+      "alias": "上弹",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "装填弹药，是对枪空档的主要来源，也是抓 timing 的时机。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "切枪",
+      "linyu": "切枪",
+      "alias": "换枪",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "切换武器，语料里专门讨论某些皮肤的切枪音效。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "扫射",
+      "linyu": "扫",
+      "alias": "扫射",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "压住扳机连发，近距离与糊脸时使用。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "狙击枪",
+      "linyu": "狙",
+      "alias": "大狙",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "单发高伤枪种的统称，「起狙」是经济宽裕时的常规动作。",
+      "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "闪光弹",
+      "linyu": "闪",
+      "alias": "闪光",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "致盲道具，是所有进点动作的起手；「补个闪」是阵容讨论常用语。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "烟雾",
+      "linyu": "烟",
+      "alias": "烟雾",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "遮挡视线的道具，控场位的核心资源，语料里「烟位」由此得名。",
+      "source": "https://www.bilibili.com/video/BV1YwexeTEPU",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "双架",
+      "linyu": "双架",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "两人同守一条线，可以互相补枪，但另一侧就空了。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "控图",
+      "linyu": "控图",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "先占住地图关键区域再进攻，是「默认」打法的目标。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "慢打",
+      "linyu": "慢打",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "不急着进点、靠时间压迫对手犯错，与「快打」相对。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "防守方",
+      "linyu": "守方",
+      "alias": "防守方",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "半场的前半段身份，任务是阻止下包；语料里常与「攻方」成对出现。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "进攻方",
+      "linyu": "攻方",
+      "alias": "进攻方",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "负责下包的一方，经济与道具消耗都更大。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "翻盘",
+      "linyu": "翻盘",
+      "alias": "逆转",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "劣势局反败为胜；「eco翻盘」是其中最爽的一类剧本。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "连杀",
+      "linyu": "连杀",
+      "alias": "多杀",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "连续击杀，剪集锦时按三杀、四杀、五杀分档。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "黑梦的侦察道具",
+      "linyu": "诡眼",
+      "alias": "狗眼",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "黑梦的探视野道具，语料里直接拿它代指黑梦本人（「黑梦的诡眼多少血量」）。",
+      "source": "https://www.bilibili.com/video/BV1Mx421Q7XN",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "猎枭的侦察箭",
+      "linyu": "探测箭",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "猎枭射出去探人的箭，语料把它说成「命根子」级别的道具。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "猎枭的击杀箭",
+      "linyu": "秒杀箭",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "能直接打伤害的箭，是「猎枭点位」教学的核心内容。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瑟符的陷阱线",
+      "linyu": "拌线",
+      "alias": "绊线",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "两种写法并存（拌线／绊线）；语料里「猎枭一个电箭前点拌线基本就不剩什么了」是典型对位讨论。",
+      "source": "https://www.bilibili.com/video/BV1sK5f65EoT",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "瑟符的监视器",
+      "linyu": "摄像头",
+      "alias": "眼",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按功能直接叫「摄像头」，语料里「球处摄像头报点后没上」是具体用法。",
+      "source": "https://www.bilibili.com/video/BV1sK5f65EoT",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "贤者的冰墙",
+      "linyu": "冰墙",
+      "alias": "封墙、起墙",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "她的核心道具，动词化成「封墙／起墙」；语料里的练习清单全是「贤者封墙」条目。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "贤者的复活",
+      "linyu": "复活",
+      "alias": "拉起",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "唯一能把队友拉起来的技能，语料里称「每一次复活都已经暗中标注了价格」。",
+      "source": "https://www.bilibili.com/video/BV1oVs3zzEbT",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "黑梦的追猎者",
+      "linyu": "狗",
+      "alias": "放狗",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按外形取名——追猎者像狗，语料里「这个东西的闪和道具跟黑梦的狗一样」是标准比喻。",
+      "source": "https://www.bilibili.com/video/BV1Mx421Q7XN",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "星礈的星体",
+      "linyu": "星体",
+      "alias": "星星",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "她提前部署的能量点，需要自己点爆才会生效，是控场体系里最考预判的道具。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "星礈的墙体",
+      "linyu": "大盾",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "语料里把她的墙叫「黑妹大盾」，强调它同时兼具分割与阻挡。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "雷兹的地雷",
+      "linyu": "地雷",
+      "alias": "雷",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按功能取名，语料里「炸弹妹的地雷」是阵容讨论的固定说法。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "雷兹的炸药包",
+      "linyu": "炸药包",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "语料里「炸药包落地之后真的很难冷静瞄准」点出它既是位移也是武器。",
+      "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "奇乐的机器",
+      "linyu": "机器人",
+      "alias": "炮台",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "她的炮台与警报被统称「机器人」，语料里抱怨「机器人又贵还只有一个」。",
+      "source": "https://www.bilibili.com/video/BV15Fad6YEQx",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "蝰蛇的毒",
+      "linyu": "毒",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按属性取名，拆包时「躲蝰蛇的毒」是常规考虑。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "海神的护盾",
+      "linyu": "护盾",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "能挡子弹的水墙，语料里把它拼进「超级下包连招」。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "壹决的屏障",
+      "linyu": "屏障",
+      "alias": "盾",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "他的防弹屏障，语料里「挤壹决盾后面进店」是典型的抱团进点。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "钛狐的无人机",
+      "linyu": "无人机",
+      "alias": "墨镜",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "他的侦察道具，语料里配「拿着钛狐的墨镜」这种同人想象。",
+      "source": "https://www.bilibili.com/video/BV19sn86FEcV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "钢锁的墙",
+      "linyu": "墙",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "能封住整条通道的墙，语料里「那个墙手枪局要打130枪」是强度吐槽。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "维斯的荆棘",
+      "linyu": "荆棘",
+      "alias": "隔断墙",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "她的陷阱与墙，语料里「维斯放置了隔断墙，钢索没有骗墙直接进去」是具体对位。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "幻棱的回溯",
+      "linyu": "闪回",
+      "alias": "回溯",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "冲进去再回到原点，语料里与「突击」连用成「幻棱突击闪回」。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "尚勃勒的狙击",
+      "linyu": "大狙",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "他的终极技能自带狙击枪，是他被叫「钱包」之外最常被提到的点。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "不死鸟的闪光",
+      "linyu": "火闪",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按属性命名的闪光，语料里「不死鸟怕鸡爪」是另一个方向的玩梗。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "铁臂的震荡",
+      "linyu": "震",
+      "alias": "震荡",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "穿墙的震荡技能，语料里「omen的推黑和铁臂的震要怎么喊」是在讨论报点用词。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "幽影的致盲",
+      "linyu": "推黑",
+      "alias": "黑",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "按效果取名（把对手视野推成黑色），语料里直接问「推黑要怎么喊」。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "建模粗糙",
+      "linyu": "唐人建模",
+      "alias": "建模",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "语料原话「无畏契约的唐人建模让很多人没发现猎枭其实是个金发长毛碧眼的美男」，是捧杀式吐槽。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "游戏环境",
+      "linyu": "环境",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "指队友素质与对局氛围；「这就是无畏契约的环境吗」是标准控诉句式。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "开挂",
+      "linyu": "开挂",
+      "alias": "挂哥",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "使用外挂；语料里「往开挂的家里射一根探测箭没扫到人」是拿挂开玩笑的段子。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "规则怪谈",
+      "linyu": "规则怪谈",
+      "alias": "游戏规则",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "把游戏里的潜规则写成恐怖怪谈体，是 B 站二创的固定体裁。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "乙女向",
+      "linyu": "乙女",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "把特工当恋爱对象的二创方向，语料里标着「乙女18+」且注明「且吃且珍惜」。",
+      "source": "https://www.bilibili.com/video/BV19sn86FEcV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "同人图",
+      "linyu": "同人图",
+      "alias": "二创",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "玩家自绘的角色图，语料里把几个特工的道具拼在一张图上当愿望清单。",
+      "source": "https://www.bilibili.com/video/BV19sn86FEcV",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "语音包",
+      "linyu": "语音",
+      "alias": "全语音",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "角色台词合集，瓦区有专门的语音站与修改教程，语料里出现「10809条语音全收录」。",
+      "source": "https://www.bilibili.com/video/BV19sn86FEcV",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "播报员语音",
+      "linyu": "播报员",
+      "alias": "播报",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "对局中的系统播报，语料里「爆能器已部署」就是最洗脑的一条。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "换肤",
+      "linyu": "换肤",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗皮肤经济",
+      "sense": "用第三方工具替换皮肤外观，语料里大量「换肤教程」并注明「全设备支持」。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "梗图",
+      "linyu": "梗图",
+      "alias": "补档",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "把对局瞬间做成表情包，语料里以「超难蚌 瓦罗兰特梗图 补档」形式出现。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "联名",
+      "linyu": "联名",
+      "alias": "联动",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "官方与品牌的合作周边，语料里是「库迪咖啡x无畏契约联名」。",
+      "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "接盘侠",
+      "linyu": "接盘侠",
+      "alias": "被迫补",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "队友全选输出后被迫补功能位的人，语料里写「你只能跟你吗接盘侠一样被迫补个猎枭」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阵容固定",
+      "linyu": "阵容",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "国服排位常见的雷同阵容，语料里「只要有人锁瑞娜奶妈，阵容基本固定了」是共识。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "森寒冬港",
+      "linyu": "冬港",
+      "alias": "极地寒港、冰港",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "雪地地图，官方两个译名（森寒冬港／极地寒港）并行，口语一律缩成「冬港」。",
+      "source": "https://www.bilibili.com/video/BV1YDXAB8Ea2",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "意境空岛",
+      "linyu": "空岛",
+      "alias": "天空岛",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "日式浮空地图，口语缩成「空岛」；语料里「空岛这个图最大的问题是阵容都跟猎枭深度绑定」。",
+      "source": "https://www.bilibili.com/video/BV1sK5f65EoT",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "微风岛屿",
+      "linyu": "海岛",
+      "alias": "微风",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "海边地图，语料里与「冰箱」并列成「冰箱海岛这两图」，是低胜率地图的代称。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "亚海悬城",
+      "linyu": "悬城",
+      "alias": "亚海",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "悬浮城邦地图，口语缩成「悬城」，是保安道具点位教学的主战场。",
+      "source": "https://www.bilibili.com/video/BV1sK5f65EoT",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "源工重镇",
+      "linyu": "源工",
+      "alias": "源工重镇",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "工业风地图，口语缩成「源工」，语料里与莲花、霓虹町并称双烟好用图。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "莲华古城",
+      "linyu": "莲花",
+      "alias": "莲花古城",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "两种写法并存（莲华／莲花），口语直接叫「莲花」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "幽邃地窟",
+      "linyu": "地窟",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "洞穴地图，口语缩成「地窟」；语料里是猎枭与钛狐点位的重点图。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "隐世修所",
+      "linyu": "修所",
+      "alias": "隐世修所",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "寺庙主题地图，官方英文 Haven，职业 POV 标题里常中英并写。",
+      "source": "https://www.bilibili.com/video/BV1wkJQ6NEGD",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "盐海矿镇",
+      "linyu": "盐海",
+      "alias": "矿镇",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "盐矿小镇地图，口语缩成「盐海」；夜露与盖可的点位内容集中在这张图。",
+      "source": "https://www.bilibili.com/video/BV1i8JrzkE7j",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "日落之城",
+      "linyu": "日落",
+      "alias": "日落之城",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "黄昏城景地图，口语缩成「日落」，语料里「日落之城穿墙点位」是冷门技巧选题。",
+      "source": "https://www.bilibili.com/video/BV1i8JrzkE7j",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "霓虹町",
+      "linyu": "霓虹町",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗地图",
+      "sense": "日式街景地图，名字本身就是外来语，没有更短的口语形式。",
+      "source": "https://www.bilibili.com/video/BV1P3411R72U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "这游戏",
+      "linyu": "这弔游戏",
+      "alias": "这游戏",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "粗口式指代，语料原话「我估计这弔游戏八成玩家都体验过」；「弔」是替代字，不写原字。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瓦罗玩家",
+      "linyu": "瓦学弟",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "与「无畏契约玩家」同条，此处只保留验真通过的「瓦学弟」写法。",
+      "source": "https://www.bilibili.com/video/BV1jHJd6NEKm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "回调",
+      "linyu": "回调",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "把改动撤回来；语料里「还不如把霓虹的爹妈回调」是把角色当人骂的说法。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "重做",
+      "linyu": "重做",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "把角色技能组推倒重来；语料里最常见的是「我建议盖可重做」。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "胜率",
+      "linyu": "胜率",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "讨论角色强度最常引用的指标，与「出场率」一起构成平衡性争论的两端。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "出场率",
+      "linyu": "出场率",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "角色实际被选用的比例；语料里「不管看比赛还是rank出场率」是标准论证开场。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "版本",
+      "linyu": "版本",
+      "alias": "补丁",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "游戏平衡周期；「下版本砍火男」是社区预测式玩笑。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "选人阶段",
+      "linyu": "选人",
+      "alias": "bp",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "开局前挑特工的环节，「选人大会」「bp」都指它。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "战斗评分",
+      "linyu": "acs",
+      "alias": "评分",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "每局结束的个人表现分，语料里用「暮蝶acs快270」这种具体数字比较高下。",
+      "source": "https://www.bilibili.com/video/BV1jHJd6NEKm",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "战绩",
+      "linyu": "战绩",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "击杀／死亡／助攻的成绩单，「29-5的战绩」是炫耀式写法。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "血量",
+      "linyu": "血量",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "报点时最关键的数值，语料里「打了120」「还剩80血」都是精确报数。",
+      "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "弹道",
+      "linyu": "弹道",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "子弹散布轨迹，讨论枪械时必提（幻影有扩散、狂徒没有）。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "后坐力",
+      "linyu": "后坐力",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "连发时的上扬，是压枪练习的直接对象。",
+      "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "拉枪线",
+      "linyu": "拉枪线",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "两层意思：准星横向跟人；或把人引开给队友创造空间。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "听声定位",
+      "linyu": "听声",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗报点术语",
+      "sense": "靠脚步声判断位置，语料里「总听不清脚步声」是设置教程的招牌标题。",
+      "source": "https://www.bilibili.com/video/BV1YDXAB8Ea2",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "换位",
+      "linyu": "换位",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "攻守双方在半场后对调，也指队内轮转位置。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "开团",
+      "linyu": "开团",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "主动发起交战；借自 MOBA 的说法，瓦区用来指第一个开火的人。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "四杀",
+      "linyu": "四杀",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "单回合击杀四人；语料里「一打四的残局」与它常被混着说。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "冠军",
+      "linyu": "冠军",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "既指赛事冠军，也指冠军套皮肤（冠军赛限定），语料里两种用法都有。",
+      "source": "https://www.bilibili.com/video/BV1BAng6CEwf",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "步枪",
+      "linyu": "步枪",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "狂徒／幻影／獠犬／戍卫四把的统称，是每回合的主力投资。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "机枪",
+      "linyu": "机枪",
+      "alias": "奥丁",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "语料里的「机枪流」专指奥丁扫射流，是一种被嘲又被怕的打法。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "轻狙",
+      "linyu": "鸟狙",
+      "alias": "莽侠",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "「鸟狙」是 Marshal 的社区俗称（便宜、轻、像玩具），与重型大狙区分开。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "全甲狂徒",
+      "linyu": "全甲狂徒",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "满甲＋步枪的完整买装，是最标准的「有钱局」配置。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大甲战神",
+      "linyu": "大甲战神",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "穿满甲硬刚的人，「狠狠达斯对面的戍卫獠犬骇灵」是语料里的原话式豪言。",
+      "source": "https://www.bilibili.com/video/BV1914y1z7CK",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "控场位第一",
+      "linyu": "烟女一",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "「烟位第一」的缩写＋性转化写法，语料原话「我🐍第130次首谈烟女一」，是把控场位排名说成选美。",
+      "source": "https://www.bilibili.com/video/BV1S5p5euEpA",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "枪法好的人",
+      "linyu": "枪男枪女",
+      "alias": "枪男、枪女",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "按枪法给人分性别式称呼（枪男／枪女），语料原话「从此化身真正的枪男枪女」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "靠运气上分",
+      "linyu": "上假分",
+      "alias": "假分",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "段位涨了但实力没涨，语料原话「霓虹大招改了我怎么上假分」——把上分说成造假。",
+      "source": "https://www.bilibili.com/video/BV1fcHnzZEkG",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "高段位玩家",
+      "linyu": "神话哥",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗赛事梗",
+      "sense": "把「神话段位」的人叫「哥」，带点挑衅；语料标题「练好夜露只用基本功炸哭神话哥」。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "极短瞬间",
+      "linyu": "一帧",
+      "alias": "一帧内战",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "「只有一帧」的极端假设，语料用它做整活选题（「假如无畏契约只有一帧」）。",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "不依赖套路的夜露",
+      "linyu": "阳光夜露",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "指不靠闪传套餐、纯靠枪法与走位的夜露打法；与之相对的「阴间夜露」靠假人骗人。",
+      "source": "https://www.bilibili.com/video/BV12h411P7iB",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "双丑阵容",
+      "linyu": "红蓝小丑",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "把两个以闪为主的决斗位合称「红蓝小丑」，语料原话「不肯选个红蓝小丑补个闪」。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "双哨组合",
+      "linyu": "哨位姐妹花",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "语料标题「哨位姐妹花，男人胜利两手抓」，把两个哨卫说成姐妹，是淋语常见的性转拟人。",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "盖可专精玩家",
+      "linyu": "宝可梦专精训练师",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "因为盖可的技能全是召唤兽，专精他被调侃成「宝可梦训练师」，语料里直接当标题用。",
+      "source": "https://www.bilibili.com/video/BV1to4y1474K",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "下包提示音",
+      "linyu": "爆能器已部署",
+      "alias": "",
+      "slot": "瓦罗淋特/瓦罗整活梗",
+      "sense": "全场播报里最洗脑的一句，语料里被做成闹钟铃声与铃声合集。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "瑟符的陷阱线（另一写法）",
+      "linyu": "绊线",
+      "alias": "拌线",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "两种写法并存（绊线／拌线），语料里两种都能查到，不是错别字而是社区习惯。",
+      "source": "https://www.bilibili.com/video/BV1sK5f65EoT",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "终极技能",
+      "linyu": "大招",
+      "alias": "大",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "「大招」是全游戏通用的说法，但在瓦区常与具体效果绑定（夜露大招、奇乐大招）。",
+      "source": "https://www.bilibili.com/video/BV1yE421L7jF",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "霰弹枪",
+      "linyu": "喷子",
+      "alias": "喷",
+      "slot": "瓦罗淋特/瓦罗枪械经济",
+      "sense": "霰弹枪的口语叫法，语料里「一个视频让你了解无畏契约所有喷子特性」是它的入门教材。",
+      "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "侦察道具落点",
+      "linyu": "眼位",
+      "alias": "眼睛",
+      "slot": "瓦罗淋特/瓦罗战术术语",
+      "sense": "放侦察道具的位置；「进攻防守眼位进阶教学」是芮娜教学的标准标题结构。",
+      "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
+      "pop": "低",
+      "rel": []
     }
   ],
   "rules": [
+    {
+      "pattern": "(.{0,6})是我游玩《?无畏契约》?的唯一动力",
+      "template": "{角色}是我游玩《无畏契约》的唯一动力",
+      "note": "把「只玩一个特工」说成「唯一动力」，是瓦区最高级的一句表白式安利。",
+      "scene": "弹幕 / 表白",
+      "examples": "夜露是我游玩《无畏契约》的唯一动力",
+      "src": "https://www.bilibili.com/video/BV1wkJQ6NEGD"
+    },
+    {
+      "pattern": "我是(.{1,6})的苟",
+      "template": "我是{角色}的苟",
+      "note": "自贬到极致的追星句式，比「粉丝」更没有底线，淋语常规自嘲。",
+      "scene": "评论 / 追星",
+      "examples": "我是暮蝶姐姐的苟",
+      "src": "https://www.bilibili.com/video/BV1YwexeTEPU"
+    },
+    {
+      "pattern": "你(.{1,4})就是瓦罗兰特异世界版我光",
+      "template": "你{角色}就是瓦罗兰特异世界版{隔壁角色}",
+      "note": "跨游戏类比句式，用隔壁游戏的同型角色给本区角色定性。",
+      "scene": "评论 / 类比",
+      "examples": "你贤就是瓦罗兰特异世界版我光",
+      "src": "https://www.bilibili.com/video/BV1oVs3zzEbT"
+    },
+    {
+      "pattern": "(.{1,6})小姐姐你怎么这么美",
+      "template": "{角色}小姐姐你怎么这么美",
+      "note": "把硬汉角色性转成「小姐姐」再夸美，反差本身就是笑点。",
+      "scene": "评论 / 夸人",
+      "examples": "炼狱小姐姐你怎么这么美",
+      "src": "https://www.bilibili.com/video/BV1Gann6eEvL"
+    },
+    {
+      "pattern": "本(.{1,4})玩家看完留下.{0,4}滴泪水",
+      "template": "本{角色}玩家看完留下0.13滴泪水",
+      "note": "「0.13滴」是淋语里的量词梗，把情绪量化到荒谬的精度。",
+      "scene": "评论 / 共情",
+      "examples": "本奇乐玩家看完留下0.13滴泪水",
+      "src": "https://www.bilibili.com/video/BV1to4y1474K"
+    },
+    {
+      "pattern": "(.{1,8})这大姐真的超模",
+      "template": "{角色}这大姐真的超模",
+      "note": "「大姐」＋「超模（超标）」的组合，是瓦区夸人强又带点不服的标准句式。",
+      "scene": "弹幕 / 强度讨论",
+      "examples": "钢锁这大姐真的超模",
+      "src": "https://www.bilibili.com/video/BV1qCn96NEaH"
+    },
+    {
+      "pattern": "(.{1,20})素可以说的吗",
+      "template": "{内容}素可以说的吗",
+      "note": "「素」＝是，反问式吐槽，把夸张内容包装成「这话能说吗」。",
+      "scene": "弹幕 / 吐槽",
+      "examples": "那个墙手枪局要打130枪素可以说的吗",
+      "src": "https://www.bilibili.com/video/BV1qCn96NEaH"
+    },
+    {
+      "pattern": "妈呀大姐，(.{1,10})也能淋",
+      "template": "妈呀大姐，{对象}也能淋",
+      "note": "「也能淋」＝没想到这个也能淋语化，是圈内自我调侃的元句式。",
+      "scene": "评论 / 元玩笑",
+      "examples": "妈呀大姐，瓦罗兰特也能淋",
+      "src": "https://www.bilibili.com/video/BV1C6Ha6DEp8"
+    },
+    {
+      "pattern": "(.{1,6})这英雄真的是垃圾透了",
+      "template": "{角色}这英雄真的是垃圾透了",
+      "note": "先否后扬的强度吐槽，后面常跟「但出场率奇高」。",
+      "scene": "评论 / 强度",
+      "examples": "芮娜这英雄真的是垃圾透了",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "10个(.{1,4})，11个瘤子",
+      "template": "10个{角色}，11个瘤子",
+      "note": "用「比人数多一个」的错位表达强调满场都是坑，是瓦区经典句式。",
+      "scene": "评论 / 归因",
+      "examples": "10个芮娜，11个瘤子",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "这到底是什么段位？我们(.{1,6})",
+      "template": "这到底是什么段位？我们{段位描述}",
+      "note": "先质疑段位再描述荒诞场面，是低分段吐槽的固定开场。",
+      "scene": "评论 / 吐槽",
+      "examples": "这到底是什么段位？我们下三段开头在烟里",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "老己你做到了(.{1,10})",
+      "template": "老己你做到了{行为}",
+      "note": "「老己」＝自己跟自己说话，自我鼓励式解说，出自女瓦博主标题。",
+      "scene": "标题 / 自勉",
+      "examples": "老己你做到了冷静对枪",
+      "src": "https://www.bilibili.com/video/BV1Mm4y1771E"
+    },
+    {
+      "pattern": "(.{1,6})是我游玩",
+      "template": "{角色}是我游玩",
+      "note": "标题式的未完句式，用来引出「唯一动力」的结论。",
+      "scene": "标题",
+      "examples": "夜露是我游玩",
+      "src": "https://www.bilibili.com/video/BV1wkJQ6NEGD"
+    },
+    {
+      "pattern": "让(.{1,6})彻底摆脱(.{1,6})",
+      "template": "让{角色}彻底摆脱{黑称}",
+      "note": "教学视频的翻身式标题，把黑称当靶子。",
+      "scene": "标题 / 教学",
+      "examples": "让夜露彻底摆脱蓝色小丑",
+      "src": "https://www.bilibili.com/video/BV12h411P7iB"
+    },
+    {
+      "pattern": "(.{1,8})太强了大家快来玩啊",
+      "template": "{角色}太强了大家快来玩啊",
+      "note": "反讽式安利：越是怕被削越要喊强，弹幕与标题都常见。",
+      "scene": "弹幕 / 反讽",
+      "examples": "夜露太强了大家快来玩啊",
+      "src": "https://www.bilibili.com/video/BV1E9pJ67EDf"
+    },
+    {
+      "pattern": "(.{1,8})强度挺好了",
+      "template": "{角色}强度挺好了",
+      "note": "「挺好了」＝别再削了，是求生式表态。",
+      "scene": "评论 / 求生",
+      "examples": "感觉现在夜露强度挺好了",
+      "src": "https://www.bilibili.com/video/BV1E9pJ67EDf"
+    },
+    {
+      "pattern": "设计师：(.{1,8})登场率还这么高",
+      "template": "设计师：{角色}登场率还这么高",
+      "note": "假托设计师口吻的吐槽句式，用来讽刺削弱逻辑。",
+      "scene": "评论 / 反讽",
+      "examples": "设计师：夜露登场率还这么高",
+      "src": "https://www.bilibili.com/video/BV1E9pJ67EDf"
+    },
+    {
+      "pattern": "好有想象力的(.{1,6})",
+      "template": "好有想象力的{角色}",
+      "note": "夜露体系的核心评价词——她的强度全靠玩家想象力。",
+      "scene": "评论 / 夸人",
+      "examples": "好有想象力的夜露",
+      "src": "https://www.bilibili.com/video/BV12h411P7iB"
+    },
+    {
+      "pattern": "我什么时候才能成为(.{1,10})",
+      "template": "我什么时候才能成为{目标}",
+      "note": "新手自问句式，常接「无畏契约高手」。",
+      "scene": "评论 / 自嘲",
+      "examples": "我什么时候才能成为无畏契约高手啊",
+      "src": "https://www.bilibili.com/video/BV1qCn96NEaH"
+    },
+    {
+      "pattern": "无畏契约没有淋字怎么办",
+      "template": "无畏契约没有淋字怎么办",
+      "note": "元梗：官方名里没有「淋」字，于是玩家自己造出「瓦罗淋特」。",
+      "scene": "评论 / 元玩笑",
+      "examples": "无畏契约没有淋字怎么办",
+      "src": "https://www.bilibili.com/video/BV1C6Ha6DEp8"
+    },
+    {
+      "pattern": "为什么不叫(.{1,8})",
+      "template": "为什么不叫{名字}",
+      "note": "对官方命名的不满式反问，瓦区用它把「瓦罗兰特」改成「瓦罗淋特」。",
+      "scene": "评论 / 吐槽",
+      "examples": "为什么不叫瓦罗淋特",
+      "src": "https://www.bilibili.com/video/BV1C6Ha6DEp8"
+    },
+    {
+      "pattern": "(.{1,10})产品喜\\+1",
+      "template": "{梗}产品喜+1",
+      "note": "「喜+1」＝又多了一个可消费的梗，是圈内收集式玩笑。",
+      "scene": "评论 / 玩梗",
+      "examples": "瓦罗淋特产品喜+1",
+      "src": "https://www.bilibili.com/video/BV1pPQxBTE5D"
+    },
+    {
+      "pattern": "打得很菜，大家看个乐呵就好",
+      "template": "打得很菜，大家看个乐呵就好",
+      "note": "UP 主自贬式免责声明，后面常接求点赞与吐槽剪辑时长。",
+      "scene": "简介 / 自贬",
+      "examples": "打得很菜，大家看个乐呵就好",
+      "src": "https://www.bilibili.com/video/BV1C6Ha6DEp8"
+    },
+    {
+      "pattern": "喜欢的话麻烦点点赞支持一下",
+      "template": "喜欢的话麻烦点点赞支持一下{语气词}",
+      "note": "淋语化的求赞句式，句尾「惹」是标志。",
+      "scene": "简介 / 求赞",
+      "examples": "喜欢的话麻烦点点赞支持一下惹",
+      "src": "https://www.bilibili.com/video/BV1C6Ha6DEp8"
+    },
+    {
+      "pattern": "游戏特色，这样你才知道你玩的是(.{1,8})",
+      "template": "游戏特色，这样你才知道你玩的是{游戏名}",
+      "note": "把 bug 说成「游戏特色」的反讽句式。",
+      "scene": "评论 / 反讽",
+      "examples": "游戏特色，这样你才知道你玩的是正版无畏契约",
+      "src": "https://www.bilibili.com/video/BV1qCn96NEaH"
+    },
+    {
+      "pattern": "有没有人觉得(.{1,12})",
+      "template": "有没有人觉得{内容}",
+      "note": "找同好式提问，瓦区用来抛冷门观察。",
+      "scene": "评论 / 求同",
+      "examples": "真的没有人觉得雄狮狂徒很像玩疗犬的吗",
+      "src": "https://www.bilibili.com/video/BV1bs4y1N71U"
+    },
+    {
+      "pattern": "这(.{1,6})我不玩(.{1,6})",
+      "template": "这{地图}我不玩{角色}",
+      "note": "拒绝式表态，语料原话「来个奇乐吧，这图我不玩保安」。",
+      "scene": "评论 / 选人",
+      "examples": "这图我不玩保安",
+      "src": "https://www.bilibili.com/video/BV1sK5f65EoT"
+    },
+    {
+      "pattern": "我只喜欢(.{1,10})",
+      "template": "我只喜欢{角色}",
+      "note": "极简表白句式，后面常补一句「其实XX我也喜欢」制造反转。",
+      "scene": "评论 / 表白",
+      "examples": "我只喜欢尚博勒",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "我要(.{1,6})…",
+      "template": "我要{角色}…",
+      "note": "单字祈愿式，越短越显得渴望，是评论区刷角色的标准动作。",
+      "scene": "评论 / 祈愿",
+      "examples": "我要炼狱…",
+      "src": "https://www.bilibili.com/video/BV1Gann6eEvL"
+    },
+    {
+      "pattern": "新英雄上线丨(.{1,8})",
+      "template": "新英雄上线丨{角色}",
+      "note": "官方标题构句，弹幕会立刻开始猜外号。",
+      "scene": "标题 / 官方",
+      "examples": "新英雄上线丨一念起落",
+      "src": "https://www.bilibili.com/video/BV19sn86FEcV"
+    },
+    {
+      "pattern": "老己你(已经)?变得非常勇敢了",
+      "template": "老己你已经变得非常勇敢了",
+      "note": "自我鼓励的收尾句，女瓦博主常用句式。",
+      "scene": "标题 / 自勉",
+      "examples": "老己你已经变得非常勇敢了",
+      "src": "https://www.bilibili.com/video/BV1Mm4y1771E"
+    },
+    {
+      "pattern": "(.{1,6})要不是烟位那真要失宠了",
+      "template": "{角色}要不是烟位那真要失宠了",
+      "note": "先贬后救的强度评价：能上场全靠功能性，不是靠爱。",
+      "scene": "评论 / 强度",
+      "examples": "暮蝶要不是烟位那真要失宠了",
+      "src": "https://www.bilibili.com/video/BV1YwexeTEPU"
+    },
+    {
+      "pattern": "(.{1,6})这英雄没啥想象力",
+      "template": "{角色}这英雄没啥想象力",
+      "note": "贬角色设计，后面常接一句反转（「贝多芬罢了」＝全靠玩家自己即兴）。",
+      "scene": "评论 / 贬角色",
+      "examples": "猎枭这英雄没啥想象力",
+      "src": "https://www.bilibili.com/video/BV1fcHnzZEkG"
+    },
+    {
+      "pattern": "最懂(.{1,6})排位的男人",
+      "template": "最懂{角色}排位的男人",
+      "note": "职业 POV 视频的标准称号式标题，给选手定人设。",
+      "scene": "标题 / 人设",
+      "examples": "最懂夜露排位的男人",
+      "src": "https://www.bilibili.com/video/BV1wkJQ6NEGD"
+    },
+    {
+      "pattern": "练好(.{1,6})只用基本功炸哭(.{1,6})",
+      "template": "练好{角色}只用基本功炸哭{段位哥}",
+      "note": "「炸哭XX哥」是标题党惯用夸张，暗示角色强度掩盖了操作差距。",
+      "scene": "标题 / 夸张",
+      "examples": "练好夜露只用基本功炸哭神话哥",
+      "src": "https://www.bilibili.com/video/BV12h411P7iB"
+    },
+    {
+      "pattern": "(.{1,6})这个英雄的上线与下限完全取决于玩家的想象力",
+      "template": "{角色}这个英雄的上线与下限完全取决于玩家的想象力",
+      "note": "瓦区对「吃操作」的最高评价句，把强度归因到玩家而非数值。",
+      "scene": "评论 / 评价",
+      "examples": "夜露这个英雄的上线与下限完全取决于玩家的想象力",
+      "src": "https://www.bilibili.com/video/BV12h411P7iB"
+    },
+    {
+      "pattern": "如果对面(.{1,6})敢杀我，我就狠狠捏这个",
+      "template": "如果对面{角色}敢杀我，我就狠狠捏这个{道具}",
+      "note": "把游戏内的报复心说成捏玩偶，是淋语典型的「幼态化威胁」。",
+      "scene": "评论 / 玩梗",
+      "examples": "如果对面幽影敢杀我，我就狠狠捏这个",
+      "src": "https://www.bilibili.com/video/BV19sn86FEcV"
+    },
+    {
+      "pattern": "这图还得(.{1,6})",
+      "template": "这图还得{角色}",
+      "note": "极简的选人结论句，潜台词是别的角色在这张图上不行。",
+      "scene": "评论 / 选人",
+      "examples": "这图还得猎枭",
+      "src": "https://www.bilibili.com/video/BV1sK5f65EoT"
+    },
+    {
+      "pattern": "没人懂(.{1,6})吗",
+      "template": "没人懂{角色}吗",
+      "note": "找同好式反问，后面常接「只有我觉得她的声音很好听吗」这类私心发言。",
+      "scene": "评论 / 求同",
+      "examples": "没人懂芮娜吗",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "(.{1,6})炸鱼是一等一的强",
+      "template": "{角色}炸鱼是一等一的强",
+      "note": "「一等一的强」限定在炸鱼场景，等于说她上不了高分段。",
+      "scene": "评论 / 阴阳",
+      "examples": "芮娜炸鱼是一等一的强",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "当你把(.{1,6})玩到极致，连官方都得考虑削弱你",
+      "template": "当你把{角色}玩到极致，连官方都得考虑削弱你",
+      "note": "把「玩家强」说成「官方怕」，是瓦区最高级的夸人方式。",
+      "scene": "标题 / 夸人",
+      "examples": "当你把芮娜玩到极致，连官方都得考虑削弱你",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "这(.{1,6})是在玩一种很新的套路吗",
+      "template": "这{角色}是在玩一种很新的套路吗",
+      "note": "「很新的套路」＝看不懂但好像有用，带明显调侃。",
+      "scene": "评论 / 困惑",
+      "examples": "这芮娜是在玩一种很新的套路吗",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
+    {
+      "pattern": "(.{1,6})真的很好用，但是打排位还是看队友协作",
+      "template": "{角色}真的很好用，但是打排位还是看队友协作",
+      "note": "「但是」后面永远是真话，是瓦区最常见的先扬后抑。",
+      "scene": "评论 / 先扬后抑",
+      "examples": "芮娜真的很好用，但是打排位还是看队友协作",
+      "src": "https://www.bilibili.com/video/BV1YwKbzKEPu"
+    },
     {
       "pattern": "(?:^|(?<=[，。！？\\s]))【?第五淋格】?",
       "template": "【第五淋格】{事件}",
@@ -18199,5 +21560,5 @@ window.__SEED_DATA = {
   ]
 }
 ;
-window.LINYU_VERSION = "1.22.0";
-window.LINYU_CONTENT_HASH = "5c73da8ab86887b4";
+window.LINYU_VERSION = "1.23.0";
+window.LINYU_CONTENT_HASH = "a6e59731592fc20f";

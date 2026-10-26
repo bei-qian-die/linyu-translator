@@ -694,21 +694,64 @@ const extraCards2 = [
 ];
 
 // @platform: 补充数据包双端加载，Node 走 require，浏览器/小程序从 window 取同步注入的全局
-const extra3 = (typeof require === 'function') ? require('./lore-extra3') : (typeof window !== 'undefined' ? window.LORE_EXTRA3 : {});
-const extra4 = (typeof require === 'function') ? require('./lore-extra4') : (typeof window !== 'undefined' ? window.LORE_EXTRA4 : {});
-const extra5 = (typeof require === 'function') ? require('./lore-extra5') : (typeof window !== 'undefined' ? window.LORE_EXTRA5 : {});
-const extra6 = (typeof require === 'function') ? require('./lore-extra6') : (typeof window !== 'undefined' ? window.LORE_EXTRA6 : {});
-const extra7 = (typeof require === 'function') ? require('./lore-extra7') : (typeof window !== 'undefined' ? window.LORE_EXTRA7 : {});
-const extra8 = (typeof require === 'function') ? require('./lore-extra8') : (typeof window !== 'undefined' ? window.LORE_EXTRA8 : {});
-const extra9 = (typeof require === 'function') ? require('./lore-extra9') : (typeof window !== 'undefined' ? window.LORE_EXTRA9 : {});
-const extra10 = (typeof require === 'function') ? require('./lore-extra10') : (typeof window !== 'undefined' ? window.LORE_EXTRA10 : {});
-const extra11 = (typeof require === 'function') ? require('./lore-extra11') : (typeof window !== 'undefined' ? window.LORE_EXTRA11 : {});
-const extra12 = (typeof require === 'function') ? require('./lore-extra12') : (typeof window !== 'undefined' ? window.LORE_EXTRA12 : {});
-const extra13 = (typeof require === 'function') ? require('./lore-extra13') : (typeof window !== 'undefined' ? window.LORE_EXTRA13 : {});
-const extra14 = (typeof require === 'function') ? require('./lore-extra14') : (typeof window !== 'undefined' ? window.LORE_EXTRA14 : {});
-const extra15 = (typeof require === 'function') ? require('./lore-extra15') : (typeof window !== 'undefined' ? window.LORE_EXTRA15 : {});
-const extra16 = (typeof require === 'function') ? require('./lore-extra16') : (typeof window !== 'undefined' ? window.LORE_EXTRA16 : {});
-const extra18 = (typeof require === 'function') ? require('./lore-extra18') : (typeof window !== 'undefined' ? window.LORE_EXTRA18 : {});
+const extra3 = unpack((typeof require === 'function') ? require('./lore-extra3') : (typeof window !== 'undefined' ? window.LORE_EXTRA3 : {}));
+const extra4 = unpack((typeof require === 'function') ? require('./lore-extra4') : (typeof window !== 'undefined' ? window.LORE_EXTRA4 : {}));
+const extra5 = unpack((typeof require === 'function') ? require('./lore-extra5') : (typeof window !== 'undefined' ? window.LORE_EXTRA5 : {}));
+const extra6 = unpack((typeof require === 'function') ? require('./lore-extra6') : (typeof window !== 'undefined' ? window.LORE_EXTRA6 : {}));
+const extra7 = unpack((typeof require === 'function') ? require('./lore-extra7') : (typeof window !== 'undefined' ? window.LORE_EXTRA7 : {}));
+const extra8 = unpack((typeof require === 'function') ? require('./lore-extra8') : (typeof window !== 'undefined' ? window.LORE_EXTRA8 : {}));
+const extra9 = unpack((typeof require === 'function') ? require('./lore-extra9') : (typeof window !== 'undefined' ? window.LORE_EXTRA9 : {}));
+const extra10 = unpack((typeof require === 'function') ? require('./lore-extra10') : (typeof window !== 'undefined' ? window.LORE_EXTRA10 : {}));
+const extra11 = unpack((typeof require === 'function') ? require('./lore-extra11') : (typeof window !== 'undefined' ? window.LORE_EXTRA11 : {}));
+const extra12 = unpack((typeof require === 'function') ? require('./lore-extra12') : (typeof window !== 'undefined' ? window.LORE_EXTRA12 : {}));
+const extra13 = unpack((typeof require === 'function') ? require('./lore-extra13') : (typeof window !== 'undefined' ? window.LORE_EXTRA13 : {}));
+const extra14 = unpack((typeof require === 'function') ? require('./lore-extra14') : (typeof window !== 'undefined' ? window.LORE_EXTRA14 : {}));
+const extra15 = unpack((typeof require === 'function') ? require('./lore-extra15') : (typeof window !== 'undefined' ? window.LORE_EXTRA15 : {}));
+const extra16 = unpack((typeof require === 'function') ? require('./lore-extra16') : (typeof window !== 'undefined' ? window.LORE_EXTRA16 : {}));
+const extra18 = unpack((typeof require === 'function') ? require('./lore-extra18') : (typeof window !== 'undefined' ? window.LORE_EXTRA18 : {}));
+const extra19 = unpack((typeof require === 'function') ? require('./lore-extra19') : (typeof window !== 'undefined' ? window.LORE_EXTRA19 : {}));
+
+// ---- 数据解包 ----
+// 小程序端为了压主包体积，把 lore-extraN.js 存成「列式编码」：
+//   { __col: 1, cards: { keys: [...], rows: [[...], ...] }, quotes: {...}, heroes: {...} }
+// 主端（Electron / Web）仍是常规的对象数组。这里统一还原，上层代码完全感知不到差异。
+// 这样做的代价是「字节一致」不再成立，但换来了主包能从 2.44MB 压回 2MB 以内；
+// test/weapp.test.js 相应改成「解码后深相等」，比字节相等更能反映真实一致性。
+const COLS = {
+  cards: ['term', 'type', 'meaning', 'detail', 'example', 'source', 'verify', 'hero', 'aliases', 'rel'],
+  quotes: ['text', 'author', 'hero', 'src', 'scene', 'rel'],
+  heroes: ['name', 'alias', 'img', 'group', 'grp', 'rank', 'intro', 'baike', 'tags', 'works', 'words', 'links'],
+};
+
+function decodeRows(list, keys) {
+  if (!Array.isArray(list) || !list.length) return [];
+  if (!Array.isArray(list[0])) return list; // 已是对象数组
+  const out = new Array(list.length);
+  for (let i = 0; i < list.length; i++) {
+    const row = list[i];
+    const o = {};
+    for (let j = 0; j < keys.length; j++) {
+      const v = row[j];
+      if (v !== null && v !== undefined) o[keys[j]] = v;
+    }
+    out[i] = o;
+  }
+  return out;
+}
+
+function unpack(mod) {
+  if (!mod) return { cards: [], quotes: [], heroes: [], heroMerge: [], quoteMerge: [] };
+  if (!mod.__col) return mod;
+  // 必须保留 __col 之外的其它字段（dropCards / dropQuotes / dropHeroes / heroMerge / quoteMerge），
+  // 它们不参与编码，但 lore.js 后面的剔除逻辑要用；只覆盖三张内容表。
+  return Object.assign({}, mod, {
+    cards: mod.cards ? decodeRows(mod.cards.rows, mod.cards.keys || COLS.cards) : [],
+    quotes: mod.quotes ? decodeRows(mod.quotes.rows, mod.quotes.keys || COLS.quotes) : [],
+    heroes: mod.heroes ? decodeRows(mod.heroes.rows, mod.heroes.keys || COLS.heroes) : [],
+    heroMerge: mod.heroMerge || [],
+    quoteMerge: mod.quoteMerge || [],
+  });
+}
 
 const keep = (arr, key, drop) => (drop && drop.length ? arr.filter((x) => !drop.includes(x[key])) : arr);
 
@@ -752,7 +795,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards),
     'term',
     dropCards
   ),
@@ -760,7 +803,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -768,7 +811,7 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes),
     'text',
     dropQuotes
   ),
@@ -857,10 +900,12 @@ applyQuoteMerge(allQuotes, extra14.quoteMerge);
 applyQuoteMerge(allQuotes, extra15.quoteMerge);
 applyQuoteMerge(allQuotes, extra16.quoteMerge);
 applyQuoteMerge(allQuotes, extra18.quoteMerge);
+applyQuoteMerge(allQuotes, extra19.quoteMerge);
 applyHeroMerge(allHeroes, extra14.heroMerge);
 applyHeroMerge(allHeroes, extra15.heroMerge);
 applyHeroMerge(allHeroes, extra16.heroMerge);
 applyHeroMerge(allHeroes, extra18.heroMerge);
+applyHeroMerge(allHeroes, extra19.heroMerge);
 
 // 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
 // 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。
@@ -954,6 +999,34 @@ const HERO_SOURCE_RULES = [
   { hero: '艾希', re: /艾希/ },
   { hero: '萨勒芬妮', re: /萨勒芬妮/ },
   { hero: '霞', re: /《第五人格》|第五淋格/ },
+  // 第十九轮：瓦罗淋特分区。这张表是「关键词 → 人物」的反向索引，
+  // 供没有显式 hero 字段的名言/词卡回推归属用；每个特工把国服名、台服译名与主要俗称都列进去。
+  { hero: '捷风', re: /捷风|婕提|捷丰/ },
+  { hero: '夜露', re: /夜露|夜戮|蓝色小丑/ },
+  { hero: '芮娜', re: /芮娜|蕾娜|瑞纳|苪娜|锐纳/ },
+  { hero: '猎枭', re: /猎枭|苏法|猎鸟/ },
+  { hero: '贤者', re: /贤者|圣祈|奶妈/ },
+  { hero: '奇乐', re: /奇乐|恺宙/ },
+  { hero: '尚勃勒', re: /尚勃勒|钱博尔|钱包/ },
+  { hero: '瑟符', re: /瑟符|保安/ },
+  { hero: '炼狱', re: /炼狱|布史东/ },
+  { hero: '不死鸟', re: /不死鸟|菲尼克斯|火男/ },
+  { hero: '雷兹', re: /雷兹|炸弹妹/ },
+  { hero: '星礈', re: /星礈|黑妹/ },
+  { hero: '蝰蛇', re: /蝰蛇|薇蝮/ },
+  { hero: '暮蝶', re: /暮蝶|克洛芙|慕蝶/ },
+  { hero: '幽影', re: /幽影|欧门/ },
+  { hero: '海神', re: /海神|哈勃/ },
+  { hero: '铁臂', re: /铁臂/ },
+  { hero: '斯凯', re: /斯凯|丝凯/ },
+  { hero: '盖可', re: /盖可|盖克|皮蛋|丢丢|鲨鲨/ },
+  { hero: '钛狐', re: /钛狐|钛湖/ },
+  { hero: '壹决', re: /壹决|一决|一绝/ },
+  { hero: '幻棱', re: /幻棱/ },
+  { hero: '维斯', re: /维斯/ },
+  { hero: '钢锁', re: /钢锁|钢索|我🔒/ },
+  { hero: '霓虹', re: /霓虹/ },
+  { hero: '遐思', re: /遐思/ },
 ];
 
 // 通用来源：语料文件名、裸 BV 号、论坛帖号、百科/小组条目。这些出处本身不指向任何人物，
@@ -981,8 +1054,14 @@ function learnSourceHero(rows, srcKey) {
 // 语料里逐字查得到的中长句没问题，短句因为不足 10 字过不了 attest 的连续命中门槛，
 // 于是长期挂在未溯源名单里。这里统一补一条站内检索直链：搜的就是这句原文，
 // 点开能看到它出自哪些视频，比空着强，也不算编造出处（项目里 lore-extra7 已经在用同类链接）。
-const SEARCH_URL = (q) =>
-  'https://search.bilibili.com/all?keyword=' + encodeURIComponent(String(q || '').slice(0, 30));
+// 截到 30 字再拼搜索链接。注意不能直接 slice：中文里夹的 emoji（我🐍 / 我🔒）是代理对，
+// 正好切在中间就会留下孤立的高位代理，encodeURIComponent 直接抛 URIError: URI malformed。
+// 所以切完要把结尾的孤立代理去掉。
+const SEARCH_URL = (q) => {
+  let s = String(q || '').slice(0, 30);
+  if (/[\uD800-\uDBFF]$/.test(s)) s = s.slice(0, -1);
+  return 'https://search.bilibili.com/all?keyword=' + encodeURIComponent(s);
+};
 for (const q of keptQuotes) {
   if (/https?:\/\//i.test(String(q.src || '')) || String(q.verify || '').trim()) continue;
   q.verify = SEARCH_URL(q.text);

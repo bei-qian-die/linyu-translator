@@ -1,0 +1,1040 @@
+{
+  "generatedAt": "2026-10-26T23:43:12.418603",
+  "count": 49,
+  "note": "只做裁剪/缩放/转码，无 AI 生成；图片来源见 sourceUrl。",
+  "map": {
+    "不死鸟": {
+      "img": "img/hero-334.png",
+      "source": "https://img1.baidu.com/it/u=2028757278,3070303420&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=2028757278,3070303420&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "捷风": {
+      "img": "img/hero-335.png",
+      "source": "https://img0.baidu.com/it/u=1309740568,1956610653&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=1309740568,1956610653&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766"
+    },
+    "雷兹": {
+      "img": "img/hero-336.png",
+      "source": "https://img2.baidu.com/it/u=3879395947,3025815000&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "crop": "contain",
+      "from": "https://img2.baidu.com/it/u=3879395947,3025815000&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816"
+    },
+    "芮娜": {
+      "img": "img/hero-337.png",
+      "source": "https://img2.baidu.com/it/u=2747059992,1388361247&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "crop": "contain",
+      "from": "https://img2.baidu.com/it/u=2747059992,1388361247&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816"
+    },
+    "霓虹": {
+      "img": "img/hero-338.png",
+      "source": "https://img0.baidu.com/it/u=2864970912,1191417667&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=2864970912,1191417667&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766"
+    },
+    "夜露": {
+      "img": "img/hero-339.png",
+      "source": "https://img0.baidu.com/it/u=2271315561,1888322672&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+      "crop": "fit",
+      "from": "https://img0.baidu.com/it/u=2271315561,1888322672&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"
+    },
+    "壹决": {
+      "img": "img/hero-340.png",
+      "source": "https://img0.baidu.com/it/u=2457707513,3429243241&fm=253&fmt=auto&app=120&f=JPEG?w=794&h=500",
+      "crop": "fit",
+      "from": "https://img0.baidu.com/it/u=2457707513,3429243241&fm=253&fmt=auto&app=120&f=JPEG?w=794&h=500"
+    },
+    "幻棱": {
+      "img": "img/hero-341.png",
+      "source": "https://img0.baidu.com/it/u=2788838702,580295718&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=2788838702,580295718&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500"
+    },
+    "猎枭": {
+      "img": "img/hero-342.png",
+      "source": "https://img1.baidu.com/it/u=2449419456,3381668339&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=2449419456,3381668339&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766"
+    },
+    "铁臂": {
+      "img": "img/hero-343.png",
+      "source": "https://img0.baidu.com/it/u=2560393070,3364038760&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=2560393070,3364038760&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766"
+    },
+    "斯凯": {
+      "img": "img/hero-344.png",
+      "source": "https://img1.baidu.com/it/u=1656991605,3559189486&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=1656991605,3559189486&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766"
+    },
+    "盖可": {
+      "img": "img/hero-345.png",
+      "source": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "钛狐": {
+      "img": "img/hero-346.png",
+      "source": "https://img0.baidu.com/it/u=144674223,3554681427&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=144674223,3554681427&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500"
+    },
+    "炼狱": {
+      "img": "img/hero-347.png",
+      "source": "https://img0.baidu.com/it/u=3611949627,3938627921&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=833",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=3611949627,3938627921&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=833"
+    },
+    "星礈": {
+      "img": "img/hero-348.png",
+      "source": "https://img1.baidu.com/it/u=3043827108,3533203608&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=3043827108,3533203608&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "幽影": {
+      "img": "img/hero-349.png",
+      "source": "https://img1.baidu.com/it/u=1710225734,1658508648&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=1710225734,1658508648&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "海神": {
+      "img": "img/hero-350.png",
+      "source": "https://img2.baidu.com/it/u=1140900594,3420187874&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img2.baidu.com/it/u=1140900594,3420187874&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "瑟符": {
+      "img": "img/hero-351.png",
+      "source": "https://img2.baidu.com/it/u=2021242335,374183959&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+      "crop": "contain",
+      "from": "https://img2.baidu.com/it/u=2021242335,374183959&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500"
+    },
+    "贤者": {
+      "img": "img/hero-352.png",
+      "source": "https://img0.baidu.com/it/u=2187282721,3115026564&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=917",
+      "crop": "fit",
+      "from": "https://img0.baidu.com/it/u=2187282721,3115026564&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=917"
+    },
+    "尚勃勒": {
+      "img": "img/hero-353.png",
+      "source": "https://img1.baidu.com/it/u=2670708053,4294315764&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=2670708053,4294315764&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816"
+    },
+    "钢锁": {
+      "img": "img/hero-354.png",
+      "source": "https://img2.baidu.com/it/u=2829653077,1740976213&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img2.baidu.com/it/u=2829653077,1740976213&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "维斯": {
+      "img": "img/hero-355.png",
+      "source": "https://img0.baidu.com/it/u=4214783344,602875405&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+      "crop": "fit",
+      "from": "https://img0.baidu.com/it/u=4214783344,602875405&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"
+    },
+    "遐思": {
+      "img": "img/hero-356.png",
+      "source": "https://img2.baidu.com/it/u=3690749569,2819445712&fm=253&fmt=auto&app=120&f=JPEG?w=890&h=500",
+      "crop": "fit",
+      "from": "https://img2.baidu.com/it/u=3690749569,2819445712&fm=253&fmt=auto&app=120&f=JPEG?w=890&h=500"
+    },
+    "K/O": {
+      "img": "img/hero-357.png",
+      "source": "https://img0.baidu.com/it/u=4156630359,457777667&fm=253&fmt=auto&app=138&f=JPEG?w=551&h=500",
+      "crop": "fit",
+      "from": "https://img0.baidu.com/it/u=4156630359,457777667&fm=253&fmt=auto&app=138&f=JPEG?w=551&h=500"
+    },
+    "皮蛋": {
+      "img": "img/hero-358.png",
+      "source": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "crop": "contain",
+      "from": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767"
+    },
+    "奇乐的机器人": {
+      "img": "img/hero-359.png",
+      "source": "https://img1.baidu.com/it/u=2747350157,318900080&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+      "crop": "fit",
+      "from": "https://img1.baidu.com/it/u=2747350157,318900080&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500"
+    },
+    "丢丢": {
+      "img": "img/hero-360.png",
+      "source": "https://img1.baidu.com/it/u=339653405,1929710660&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "crop": "contain",
+      "from": "https://img1.baidu.com/it/u=339653405,1929710660&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816"
+    },
+    "鲨鲨": {
+      "img": "img/hero-361.png",
+      "source": "https://img0.baidu.com/it/u=2799638990,3456686455&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500",
+      "crop": "fit",
+      "from": "https://img0.baidu.com/it/u=2799638990,3456686455&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"
+    },
+    "猎天使魔女": {
+      "img": "img/hero-362.png",
+      "source": "https://img2.baidu.com/it/u=1986756788,4274241280&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666",
+      "crop": "contain",
+      "from": "https://img2.baidu.com/it/u=1986756788,4274241280&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666"
+    },
+    "地才女特务": {
+      "img": "img/hero-363.png",
+      "source": "https://i1.hdslb.com/bfs/face/a6b74a883a65369ca412fcef789b5eb79f0ffe9e.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/a6b74a883a65369ca412fcef789b5eb79f0ffe9e.jpg"
+    },
+    "仔仔无畏契约": {
+      "img": "img/hero-364.png",
+      "source": "https://i0.hdslb.com/bfs/face/4c64bd92d2a4bf03c8f68eb1b975543af52d1269.jpg",
+      "crop": "fit",
+      "from": "https://i0.hdslb.com/bfs/face/4c64bd92d2a4bf03c8f68eb1b975543af52d1269.jpg"
+    },
+    "无畏契约情报员啊": {
+      "img": "img/hero-365.png",
+      "source": "https://i2.hdslb.com/bfs/face/ea6ab4cac434710b1bea32773f6c436f553bfc00.jpg",
+      "crop": "fit",
+      "from": "https://i2.hdslb.com/bfs/face/ea6ab4cac434710b1bea32773f6c436f553bfc00.jpg"
+    },
+    "谋生者白言": {
+      "img": "img/hero-366.png",
+      "source": "https://i0.hdslb.com/bfs/face/8d88bd4081fc53b0cfc24279896044f0cfdb7558.jpg",
+      "crop": "fit",
+      "from": "https://i0.hdslb.com/bfs/face/8d88bd4081fc53b0cfc24279896044f0cfdb7558.jpg"
+    },
+    "乃酱": {
+      "img": "img/hero-367.png",
+      "source": "https://i2.hdslb.com/bfs/face/88929a0b99acf44e7dff2707dc4c4bb29c6e985f.jpg",
+      "crop": "fit",
+      "from": "https://i2.hdslb.com/bfs/face/88929a0b99acf44e7dff2707dc4c4bb29c6e985f.jpg"
+    },
+    "绿泡泡Reyna": {
+      "img": "img/hero-368.png",
+      "source": "https://i0.hdslb.com/bfs/face/b2068ef6192830b7c37ec5a15db8b8365090e576.jpg",
+      "crop": "fit",
+      "from": "https://i0.hdslb.com/bfs/face/b2068ef6192830b7c37ec5a15db8b8365090e576.jpg"
+    },
+    "无畏辐能联盟": {
+      "img": "img/hero-369.png",
+      "source": "https://i1.hdslb.com/bfs/face/e893215a2d7a8b90e3bbc737f0b95c0f912165b7.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/e893215a2d7a8b90e3bbc737f0b95c0f912165b7.jpg"
+    },
+    "无畏战术大师兄": {
+      "img": "img/hero-370.png",
+      "source": "https://i1.hdslb.com/bfs/face/5f398f9ae56b840956c4432fff1b64eac2e9c1d5.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/5f398f9ae56b840956c4432fff1b64eac2e9c1d5.jpg"
+    },
+    "汉堡_无畏契约": {
+      "img": "img/hero-371.png",
+      "source": "https://i1.hdslb.com/bfs/face/d903eb096426e10526b5e96a77c5d36c7f4e3038.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/d903eb096426e10526b5e96a77c5d36c7f4e3038.jpg"
+    },
+    "布锅锅": {
+      "img": "img/hero-372.png",
+      "source": "https://i1.hdslb.com/bfs/face/ab4607609f06096d5960eb541350a0e318ce4eaf.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/ab4607609f06096d5960eb541350a0e318ce4eaf.jpg"
+    },
+    "无畏契约皮肤": {
+      "img": "img/hero-373.png",
+      "source": "https://i0.hdslb.com/bfs/face/1430c2b5901500c3d91856291b34ccfcf29470bd.jpg",
+      "crop": "fit",
+      "from": "https://i0.hdslb.com/bfs/face/1430c2b5901500c3d91856291b34ccfcf29470bd.jpg"
+    },
+    "喜欢看星星的派大星": {
+      "img": "img/hero-374.png",
+      "source": "https://i0.hdslb.com/bfs/face/5f0dba7c40f95dd10a721cea9ae2c0c8a0767408.jpg",
+      "crop": "fit",
+      "from": "https://i0.hdslb.com/bfs/face/5f0dba7c40f95dd10a721cea9ae2c0c8a0767408.jpg"
+    },
+    "老老老老老鱼干": {
+      "img": "img/hero-375.png",
+      "source": "https://i1.hdslb.com/bfs/face/6ecb9415f52919fe108a292ec9a5e1874d142ccc.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/6ecb9415f52919fe108a292ec9a5e1874d142ccc.jpg"
+    },
+    "冰可乐Raze": {
+      "img": "img/hero-376.png",
+      "source": "https://i1.hdslb.com/bfs/face/ce4e6f8d00a4b9b17ca83ca808a17dafbbed486e.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/ce4e6f8d00a4b9b17ca83ca808a17dafbbed486e.jpg"
+    },
+    "404就是小刘": {
+      "img": "img/hero-377.png",
+      "source": "https://i0.hdslb.com/bfs/face/2550078fe3ff2d6c2ccd60ffb307a87c711f39d3.jpg",
+      "crop": "fit",
+      "from": "https://i0.hdslb.com/bfs/face/2550078fe3ff2d6c2ccd60ffb307a87c711f39d3.jpg"
+    },
+    "木彡1": {
+      "img": "img/hero-378.png",
+      "source": "https://i1.hdslb.com/bfs/face/27fc5198a97cea883f0daf0d6920a0d0548d3ba5.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/27fc5198a97cea883f0daf0d6920a0d0548d3ba5.jpg"
+    },
+    "胡里奥小朋友": {
+      "img": "img/hero-379.png",
+      "source": "https://i2.hdslb.com/bfs/face/4c349f33578a68a69bbfe510943426295b6d253d.jpg",
+      "crop": "fit",
+      "from": "https://i2.hdslb.com/bfs/face/4c349f33578a68a69bbfe510943426295b6d253d.jpg"
+    },
+    "夜光山雀": {
+      "img": "img/hero-380.png",
+      "source": "https://i1.hdslb.com/bfs/face/6c617525665116a7d2b5241c45de1d16749487ec.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/6c617525665116a7d2b5241c45de1d16749487ec.jpg"
+    },
+    "欧阳风5019": {
+      "img": "img/hero-381.png",
+      "source": "https://i1.hdslb.com/bfs/face/8d10dacd536aa5cc3aacd1b81871a65bf5cbb198.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/8d10dacd536aa5cc3aacd1b81871a65bf5cbb198.jpg"
+    },
+    "大东彦": {
+      "img": "img/hero-382.png",
+      "source": "https://i1.hdslb.com/bfs/face/442b895d10bbce6a5cd5746fc383f27fb06207e0.jpg",
+      "crop": "fit",
+      "from": "https://i1.hdslb.com/bfs/face/442b895d10bbce6a5cd5746fc383f27fb06207e0.jpg"
+    }
+  },
+  "items": [
+    {
+      "name": "不死鸟",
+      "img": "img/hero-334.png",
+      "thumb": "img/thumb/hero-334.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img1.baidu.com/it/u=2028757278,3070303420&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 不死鸟(菲尼克斯)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 42052
+    },
+    {
+      "name": "捷风",
+      "img": "img/hero-335.png",
+      "thumb": "img/thumb/hero-335.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=1309740568,1956610653&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "candTitle": "无畏契约valorant全英雄技能一览捷风婕提",
+      "origSize": [
+        500,
+        766
+      ],
+      "crop": "contain",
+      "bytes": 40188
+    },
+    {
+      "name": "雷兹",
+      "img": "img/hero-336.png",
+      "thumb": "img/thumb/hero-336.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img2.baidu.com/it/u=3879395947,3025815000&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "candTitle": "《无畏契约手游》全角色定位与技能一览_决斗-雷兹-游民星空 gamersky",
+      "origSize": [
+        500,
+        816
+      ],
+      "crop": "contain",
+      "bytes": 55568
+    },
+    {
+      "name": "芮娜",
+      "img": "img/hero-337.png",
+      "thumb": "img/thumb/hero-337.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img2.baidu.com/it/u=2747059992,1388361247&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "candTitle": "《无畏契约手游》芮娜定位与技能展示 芮娜有什么技能-游民星空 gamer",
+      "origSize": [
+        500,
+        816
+      ],
+      "crop": "contain",
+      "bytes": 49864
+    },
+    {
+      "name": "霓虹",
+      "img": "img/hero-338.png",
+      "thumb": "img/thumb/hero-338.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2864970912,1191417667&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 霓虹(妮虹)",
+      "origSize": [
+        500,
+        766
+      ],
+      "crop": "contain",
+      "bytes": 46422
+    },
+    {
+      "name": "夜露",
+      "img": "img/hero-339.png",
+      "thumb": "img/thumb/hero-339.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2271315561,1888322672&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+      "candTitle": "新一局! #无畏契约 #夜露最喜欢的英雄!玩这个英雄的时候,得把控一下",
+      "origSize": [
+        667,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 127530
+    },
+    {
+      "name": "壹决",
+      "img": "img/hero-340.png",
+      "thumb": "img/thumb/hero-340.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2457707513,3429243241&fm=253&fmt=auto&app=120&f=JPEG?w=794&h=500",
+      "candTitle": "无畏契约第24个英雄新线索,破茧而出的迷幻蝴蝶",
+      "origSize": [
+        794,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 120868
+    },
+    {
+      "name": "幻棱",
+      "img": "img/hero-341.png",
+      "thumb": "img/thumb/hero-341.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2788838702,580295718&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+      "candTitle": "t1获得无畏契约曼谷大师赛冠军,新英雄幻棱亮相表演赛",
+      "origSize": [
+        889,
+        500
+      ],
+      "crop": "contain",
+      "bytes": 58813
+    },
+    {
+      "name": "猎枭",
+      "img": "img/hero-342.png",
+      "thumb": "img/thumb/hero-342.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img1.baidu.com/it/u=2449419456,3381668339&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 猎枭(苏法)",
+      "origSize": [
+        500,
+        766
+      ],
+      "crop": "contain",
+      "bytes": 46288
+    },
+    {
+      "name": "铁臂",
+      "img": "img/hero-343.png",
+      "thumb": "img/thumb/hero-343.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2560393070,3364038760&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 铁臂(叛奇)",
+      "origSize": [
+        500,
+        766
+      ],
+      "crop": "contain",
+      "bytes": 51819
+    },
+    {
+      "name": "斯凯",
+      "img": "img/hero-344.png",
+      "thumb": "img/thumb/hero-344.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img1.baidu.com/it/u=1656991605,3559189486&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 斯凯(丝凯)",
+      "origSize": [
+        500,
+        766
+      ],
+      "crop": "contain",
+      "bytes": 67787
+    },
+    {
+      "name": "盖可",
+      "img": "img/hero-345.png",
+      "thumb": "img/thumb/hero-345.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 盖可(盖克)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 43957
+    },
+    {
+      "name": "钛狐",
+      "img": "img/hero-346.png",
+      "thumb": "img/thumb/hero-346.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=144674223,3554681427&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+      "candTitle": "《无畏契约》新英雄\"钛狐\"公布 预计2025赛季第一幕上线",
+      "origSize": [
+        889,
+        500
+      ],
+      "crop": "contain",
+      "bytes": 53665
+    },
+    {
+      "name": "炼狱",
+      "img": "img/hero-347.png",
+      "thumb": "img/thumb/hero-347.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=3611949627,3938627921&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=833",
+      "candTitle": "无畏契约人物站姿(图片格式)",
+      "origSize": [
+        500,
+        833
+      ],
+      "crop": "contain",
+      "bytes": 40191
+    },
+    {
+      "name": "星礈",
+      "img": "img/hero-348.png",
+      "thumb": "img/thumb/hero-348.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img1.baidu.com/it/u=3043827108,3533203608&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 星礈(亚星卓)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 49680
+    },
+    {
+      "name": "幽影",
+      "img": "img/hero-349.png",
+      "thumb": "img/thumb/hero-349.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img1.baidu.com/it/u=1710225734,1658508648&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 幽影(欧门)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 61051
+    },
+    {
+      "name": "海神",
+      "img": "img/hero-350.png",
+      "thumb": "img/thumb/hero-350.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img2.baidu.com/it/u=1140900594,3420187874&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 海神(哈泊)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 41208
+    },
+    {
+      "name": "瑟符",
+      "img": "img/hero-351.png",
+      "thumb": "img/thumb/hero-351.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img2.baidu.com/it/u=2021242335,374183959&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+      "candTitle": "瑟符(cypher),别名为监控男,零,保安,射击游戏《无畏契约》中的特务 a",
+      "origSize": [
+        750,
+        500
+      ],
+      "crop": "contain",
+      "bytes": 47565
+    },
+    {
+      "name": "贤者",
+      "img": "img/hero-352.png",
+      "thumb": "img/thumb/hero-352.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2187282721,3115026564&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=917",
+      "candTitle": "在《无畏契约》中:贤者的东方守护者之路",
+      "origSize": [
+        800,
+        917
+      ],
+      "crop": "fit",
+      "bytes": 45784
+    },
+    {
+      "name": "尚勃勒",
+      "img": "img/hero-353.png",
+      "thumb": "img/thumb/hero-353.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img1.baidu.com/it/u=2670708053,4294315764&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "candTitle": "《无畏契约手游》全角色定位与技能一览_哨卫-尚勃勒-游民星空 gamer",
+      "origSize": [
+        500,
+        816
+      ],
+      "crop": "contain",
+      "bytes": 63896
+    },
+    {
+      "name": "钢锁",
+      "img": "img/hero-354.png",
+      "thumb": "img/thumb/hero-354.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img2.baidu.com/it/u=2829653077,1740976213&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 钢锁(蒂罗)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 38459
+    },
+    {
+      "name": "维斯",
+      "img": "img/hero-355.png",
+      "thumb": "img/thumb/hero-355.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img0.baidu.com/it/u=4214783344,602875405&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+      "candTitle": "《长路将尽》// 维斯英雄预告 - 无畏契约",
+      "origSize": [
+        667,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 86836
+    },
+    {
+      "name": "遐思",
+      "img": "img/hero-356.png",
+      "thumb": "img/thumb/hero-356.webp",
+      "source": "百度图库（无畏契约 角色检索）",
+      "sourceUrl": "https://img2.baidu.com/it/u=3690749569,2819445712&fm=253&fmt=auto&app=120&f=JPEG?w=890&h=500",
+      "candTitle": "新英雄遐思技能演示~控制万物 闪光 强吸 群控!【无畏契约】",
+      "origSize": [
+        890,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 89867
+    },
+    {
+      "name": "K/O",
+      "img": "img/hero-357.png",
+      "thumb": "img/thumb/hero-357.webp",
+      "source": "百度图库（VALORANT KAY/O agent）",
+      "sourceUrl": "https://img0.baidu.com/it/u=4156630359,457777667&fm=253&fmt=auto&app=138&f=JPEG?w=551&h=500",
+      "candTitle": "无畏契约英雄特工百科",
+      "origSize": [
+        551,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 34865
+    },
+    {
+      "name": "皮蛋",
+      "img": "img/hero-358.png",
+      "thumb": "img/thumb/hero-358.webp",
+      "source": "百度图库（盖可宠物，取盖可举皮蛋的官方立绘）",
+      "sourceUrl": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+      "candTitle": "《无畏契约(valorant)》全英雄技能一览 - 盖可(盖克)",
+      "origSize": [
+        500,
+        767
+      ],
+      "crop": "contain",
+      "bytes": 43957
+    },
+    {
+      "name": "奇乐的机器人",
+      "img": "img/hero-359.png",
+      "thumb": "img/thumb/hero-359.webp",
+      "source": "百度图库（奇乐与炮台同框立绘）",
+      "sourceUrl": "https://img1.baidu.com/it/u=2747350157,318900080&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+      "candTitle": "【咕咕嘎嘎】无畏契约/瓦罗兰特 奇乐炮台3d打印小鸡手办模型分享介绍",
+      "origSize": [
+        889,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 92777
+    },
+    {
+      "name": "丢丢",
+      "img": "img/hero-360.png",
+      "thumb": "img/thumb/hero-360.webp",
+      "source": "百度图库（盖可立绘，丢丢在肩）",
+      "sourceUrl": "https://img1.baidu.com/it/u=339653405,1929710660&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+      "candTitle": "《无畏契约手游》盖可定位与技能展示 盖可有什么技能",
+      "origSize": [
+        500,
+        816
+      ],
+      "crop": "contain",
+      "bytes": 53221
+    },
+    {
+      "name": "鲨鲨",
+      "img": "img/hero-361.png",
+      "thumb": "img/thumb/hero-361.webp",
+      "source": "百度图库（盖可立绘，鲨鲨在手）",
+      "sourceUrl": "https://img0.baidu.com/it/u=2799638990,3456686455&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500",
+      "candTitle": "无畏契约11.08版本英雄改动",
+      "origSize": [
+        500,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 100153
+    },
+    {
+      "name": "猎天使魔女",
+      "img": "img/hero-362.png",
+      "thumb": "img/thumb/hero-362.webp",
+      "source": "百度图库（猎天使魔女 立绘）",
+      "sourceUrl": "https://img2.baidu.com/it/u=1986756788,4274241280&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666",
+      "candTitle": "猎天使魔女之眼:贝优妮塔的暴力芭蕾美学",
+      "origSize": [
+        500,
+        666
+      ],
+      "crop": "contain",
+      "bytes": 86643
+    },
+    {
+      "name": "地才女特务",
+      "img": "img/hero-363.png",
+      "thumb": "img/thumb/hero-363.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/a6b74a883a65369ca412fcef789b5eb79f0ffe9e.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        366,
+        366
+      ],
+      "crop": "fit",
+      "bytes": 98328
+    },
+    {
+      "name": "仔仔无畏契约",
+      "img": "img/hero-364.png",
+      "thumb": "img/thumb/hero-364.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/4c64bd92d2a4bf03c8f68eb1b975543af52d1269.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 31768
+    },
+    {
+      "name": "无畏契约情报员啊",
+      "img": "img/hero-365.png",
+      "thumb": "img/thumb/hero-365.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i2.hdslb.com/bfs/face/ea6ab4cac434710b1bea32773f6c436f553bfc00.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        512
+      ],
+      "crop": "fit",
+      "bytes": 138192
+    },
+    {
+      "name": "谋生者白言",
+      "img": "img/hero-366.png",
+      "thumb": "img/thumb/hero-366.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/8d88bd4081fc53b0cfc24279896044f0cfdb7558.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        511
+      ],
+      "crop": "fit",
+      "bytes": 76511
+    },
+    {
+      "name": "乃酱",
+      "img": "img/hero-367.png",
+      "thumb": "img/thumb/hero-367.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i2.hdslb.com/bfs/face/88929a0b99acf44e7dff2707dc4c4bb29c6e985f.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        719,
+        717
+      ],
+      "crop": "fit",
+      "bytes": 77885
+    },
+    {
+      "name": "绿泡泡Reyna",
+      "img": "img/hero-368.png",
+      "thumb": "img/thumb/hero-368.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/b2068ef6192830b7c37ec5a15db8b8365090e576.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        511
+      ],
+      "crop": "fit",
+      "bytes": 103016
+    },
+    {
+      "name": "无畏辐能联盟",
+      "img": "img/hero-369.png",
+      "thumb": "img/thumb/hero-369.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/e893215a2d7a8b90e3bbc737f0b95c0f912165b7.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 43302
+    },
+    {
+      "name": "无畏战术大师兄",
+      "img": "img/hero-370.png",
+      "thumb": "img/thumb/hero-370.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/5f398f9ae56b840956c4432fff1b64eac2e9c1d5.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 10237
+    },
+    {
+      "name": "汉堡_无畏契约",
+      "img": "img/hero-371.png",
+      "thumb": "img/thumb/hero-371.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/d903eb096426e10526b5e96a77c5d36c7f4e3038.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        451,
+        451
+      ],
+      "crop": "fit",
+      "bytes": 59732
+    },
+    {
+      "name": "布锅锅",
+      "img": "img/hero-372.png",
+      "thumb": "img/thumb/hero-372.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/ab4607609f06096d5960eb541350a0e318ce4eaf.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        512
+      ],
+      "crop": "fit",
+      "bytes": 57643
+    },
+    {
+      "name": "无畏契约皮肤",
+      "img": "img/hero-373.png",
+      "thumb": "img/thumb/hero-373.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/1430c2b5901500c3d91856291b34ccfcf29470bd.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        640,
+        640
+      ],
+      "crop": "fit",
+      "bytes": 11241
+    },
+    {
+      "name": "喜欢看星星的派大星",
+      "img": "img/hero-374.png",
+      "thumb": "img/thumb/hero-374.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/5f0dba7c40f95dd10a721cea9ae2c0c8a0767408.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 87003
+    },
+    {
+      "name": "老老老老老鱼干",
+      "img": "img/hero-375.png",
+      "thumb": "img/thumb/hero-375.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/6ecb9415f52919fe108a292ec9a5e1874d142ccc.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        511
+      ],
+      "crop": "fit",
+      "bytes": 48462
+    },
+    {
+      "name": "冰可乐Raze",
+      "img": "img/hero-376.png",
+      "thumb": "img/thumb/hero-376.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/ce4e6f8d00a4b9b17ca83ca808a17dafbbed486e.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        300,
+        300
+      ],
+      "crop": "fit",
+      "bytes": 112248
+    },
+    {
+      "name": "404就是小刘",
+      "img": "img/hero-377.png",
+      "thumb": "img/thumb/hero-377.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i0.hdslb.com/bfs/face/2550078fe3ff2d6c2ccd60ffb307a87c711f39d3.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        306,
+        306
+      ],
+      "crop": "fit",
+      "bytes": 113373
+    },
+    {
+      "name": "木彡1",
+      "img": "img/hero-378.png",
+      "thumb": "img/thumb/hero-378.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/27fc5198a97cea883f0daf0d6920a0d0548d3ba5.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        388,
+        388
+      ],
+      "crop": "fit",
+      "bytes": 97402
+    },
+    {
+      "name": "胡里奥小朋友",
+      "img": "img/hero-379.png",
+      "thumb": "img/thumb/hero-379.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i2.hdslb.com/bfs/face/4c349f33578a68a69bbfe510943426295b6d253d.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        267,
+        267
+      ],
+      "crop": "fit",
+      "bytes": 59990
+    },
+    {
+      "name": "夜光山雀",
+      "img": "img/hero-380.png",
+      "thumb": "img/thumb/hero-380.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/6c617525665116a7d2b5241c45de1d16749487ec.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        512,
+        512
+      ],
+      "crop": "fit",
+      "bytes": 48854
+    },
+    {
+      "name": "欧阳风5019",
+      "img": "img/hero-381.png",
+      "thumb": "img/thumb/hero-381.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/8d10dacd536aa5cc3aacd1b81871a65bf5cbb198.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        511,
+        512
+      ],
+      "crop": "fit",
+      "bytes": 109894
+    },
+    {
+      "name": "大东彦",
+      "img": "img/hero-382.png",
+      "thumb": "img/thumb/hero-382.webp",
+      "source": "B站 UP 主头像（owner.face）",
+      "sourceUrl": "https://i1.hdslb.com/bfs/face/442b895d10bbce6a5cd5746fc383f27fb06207e0.jpg",
+      "candTitle": "B站 UP 主头像",
+      "origSize": [
+        500,
+        500
+      ],
+      "crop": "fit",
+      "bytes": 48448
+    }
+  ],
+  "pending": [
+    {
+      "name": "黑梦的狗",
+      "why": "两轮检索只拿到黑梦本人立绘，没有能确认的「追猎者」官方形象"
+    },
+    {
+      "name": "康康",
+      "why": "manifest 里无其独立投稿，视频封面全带大字标题，不合规"
+    },
+    {
+      "name": "Aspas",
+      "why": "视频封面带大字标题（“斗三圣pov解析”），不合规"
+    },
+    {
+      "name": "kaajak",
+      "why": "视频封面带大字标题（“夜露pov”），不合规"
+    },
+    {
+      "name": "Eggsterr",
+      "why": "视频封面带大字标题，不合规"
+    },
+    {
+      "name": "lukxo",
+      "why": "视频封面带大字标题（“冠军钱包的控图和瞄准”），不合规"
+    },
+    {
+      "name": "grim",
+      "why": "视频封面是游戏内截图 + 大字，不合规"
+    },
+    {
+      "name": "ziptie",
+      "why": "视频封面是拼贴梗图，不合规"
+    },
+    {
+      "name": "SpiritZ1",
+      "why": "视频封面是真人自拍 + 文字，且非其露脸头像，不合规"
+    },
+    {
+      "name": "Evnii",
+      "why": "视频封面带大字标题，不合规"
+    },
+    {
+      "name": "SoMarcus",
+      "why": "视频封面带大字标题，不合规"
+    },
+    {
+      "name": "张钊",
+      "why": "无独立投稿，仅有合集视频封面，带大字标题，不合规"
+    }
+  ],
+  "missing": []
+}

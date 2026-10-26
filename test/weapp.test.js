@@ -163,8 +163,34 @@ function walk(dir, out = []) {
   return out;
 }
 
+// 小程序端的 seed / lore-extra 是「列式编码」（{__col:1, keys, rows}）以压主包体积，
+// 主端仍是常规对象。一致性要按「解码后的内容」比，而不是按字节比——
+// 字节比在这里会把两种合法的等价编码判成不同步。
+function decodeCol(part) {
+  if (!part || !Array.isArray(part.rows)) return part;
+  const { keys, rows } = part;
+  return rows.map((row) => {
+    const o = {};
+    for (let i = 0; i < keys.length; i++) {
+      const v = row[i];
+      if (v !== null && v !== undefined) o[keys[i]] = v;
+    }
+    return o;
+  });
+}
+
+function decodePacked(mod) {
+  if (!mod || !mod.__col) return mod;
+  const out = {};
+  for (const [k, v] of Object.entries(mod)) {
+    if (k === '__col') continue;
+    out[k] = v && v.rows ? decodeCol(v) : v;
+  }
+  return out;
+}
+
 run('小程序数据与 src/core/seed.json 一致', () => {
-  const mpSeed = require('../miniprogram/data/seed');
+  const mpSeed = decodePacked(require('../miniprogram/data/seed'));
   assert.deepStrictEqual(mpSeed, seed, '数据不同步，请先运行 npm run weapp:sync');
 });
 
@@ -186,15 +212,34 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
     ['data/lore-extra13.js', 'lore-extra13.js'],
     ['data/lore-extra14.js', 'lore-extra14.js'],
   ];
+  // lore-extraN.js：小程序端是列式编码，按解码后的内容比（等价编码不算不同步）
+  // lore.js / tokenizer.js / translator.js：小程序端会裁掉整行注释与空行以省主包体积，
+  // 比对时同样先做一次同样的裁剪，再逐字比。
+  const strip = (t) =>
+    t
+      .split('\n')
+      .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
+      .join('\n');
   for (const [mpFile, coreFile] of files) {
-    const mpText = fs.readFileSync(path.join(MP, mpFile), 'utf8');
-    const coreText = fs.readFileSync(path.join(ROOT, 'src', 'core', coreFile), 'utf8');
+    const mpPath = path.join(MP, mpFile);
+    if (/lore-extra\d+\.js$/.test(coreFile)) {
+      // 两侧都要清缓存：lore.js 聚合时会 mutate core 侧的模块导出对象（aliasMerge 往 aliases 里追加），
+      // 不清缓存就永远比的是被改过的运行时对象，而不是磁盘内容。
+      for (const k of Object.keys(require.cache)) if (/lore-extra\d+\.js$/.test(k)) delete require.cache[k];
+      const mpData = decodePacked(require(mpPath));
+      const corePath = path.join(ROOT, 'src', 'core', coreFile);
+      const coreData = require(corePath);
+      assert.deepStrictEqual(mpData, coreData, `${mpFile} 已过期，请运行 npm run weapp:sync`);
+      continue;
+    }
+    const mpText = strip(fs.readFileSync(mpPath, 'utf8'));
+    const coreText = strip(fs.readFileSync(path.join(ROOT, 'src', 'core', coreFile), 'utf8'));
     assert.strictEqual(mpText, coreText, `${mpFile} 已过期，请运行 npm run weapp:sync`);
   }
 });
 
 run('翻译结果与桌面/安卓端一致', () => {
-  const mpSeed = require('../miniprogram/data/seed');
+  const mpSeed = decodePacked(require('../miniprogram/data/seed'));
   const samples = [
     '',
     '   ',

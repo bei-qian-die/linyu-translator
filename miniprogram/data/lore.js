@@ -1,12 +1,5 @@
-// @ts-check
 'use strict';
-
-// 淋语词卡：无法直接翻译的词、梗与典故的释义卡片
-// type: particle 语气词 | slang 俚语梗 | lyric 歌词典故 | meme 网络梗
-// hero: 关联的通讯录英雄（用于人物详情页聚合，可省略表示通用淋语）
-// 语料来源：B站淋语 tag / 通讯录英雄 tag 视频的标题、简介、弹幕与评论区实录
 const flashcards = [
-  // —— 语气词与基础俚语 ——
   { term: '天啦噜', type: 'particle', meaning: '表示惊讶的感叹词，相当于"天哪"。', example: '天啦噜，今天作业又忘家里噜！', source: '淋语经典语气词' },
   { term: '噜', type: 'particle', meaning: '句末语气助词，相当于"了"，用于陈述事实。', example: '下班噜。明天就要放假噜。', source: '淋语基础语气词｜https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD' },
   { term: '惹', type: 'particle', meaning: '句末语气助词，可与"噜"换用，陈述某种事实；也可单独作叹词表惊讶。', example: '我不认识你惹。惹！', source: '淋语基础语气词' },
@@ -32,7 +25,6 @@ const flashcards = [
   { term: '鸡笼', type: 'meme', meaning: '"基情牢笼"的简称，指关住通讯录的笼子，"被鸡笼锁定/抓进鸡笼"是淋语圈经典恐吓句式。', example: '再乱嗦话，就把你关进鸡笼噜！', source: '淋语圈黑话' },
   { term: '阴者自阴', type: 'meme', hero: '指南杰斯猫', meaning: '"清者自清"的通讯录进阶版，指嘤嘤怪无需自证，阴气自会显露，走"阴"（阴阳）路线时用它，多用于自嘲。', example: '本可阴者自阴，才不是通讯录，吸吸。 / 笑鼠了，阴者自阴噜', source: '《高等淋语》第三课、《淋语的学习与使用实用教程》弹幕' },
   { term: '高难度零美感', type: 'meme', hero: '指南杰斯猫', meaning: '出自《高等淋语》第三课对淋式舞蹈的判词："高难度零美感的舞蹈动作"，用于形容费力却不优雅的事物。', example: '赶早高峰挤地铁，真是高难度零美感惹。', source: '《高等淋语》第三课' },
-  // —— 淋淋歌词典故 ——
   { term: '恒河水', type: 'lyric', hero: '淋淋', meaning: '出自《舞娘》歌词，指提振精神、催人上进的能量水，喝一口就能脉动回来。', example: '这部电影需要喝恒河水提神才能看下去！', source: '《舞娘》歌词' },
   { term: '美丽旗舰店', type: 'lyric', hero: '淋淋', meaning: '出自《花蝴蝶》歌词，指时尚美丽梦想之地，狭义指东京巴黎米兰纽约。', example: '今天终于下定决心去逛美丽旗舰店噜。', source: '《花蝴蝶》歌词' },
   { term: '花蝴蝶', type: 'lyric', hero: '淋淋', meaning: '出自《花蝴蝶》歌词，指对外表极度自信、敢于展现自我的人。', example: '不努力，你也配做花蝴蝶！', source: '《花蝴蝶》歌词' },
@@ -44,7 +36,6 @@ const flashcards = [
   { term: '那画面太美我不敢看', type: 'lyric', hero: '淋淋', aliases: ['画面太美我不敢看', '画面太美'], meaning: '出自《布拉格广场》，"辣眼睛"的委婉说法，是出圈到路人都会复读的淋语梗。', example: '画面太美我不敢看惹 / 画面太美这一句确实是路人都知道的梗', source: '《布拉格广场》歌词、《高等淋语》弹幕' },
   { term: '美神降淋', type: 'meme', hero: '淋淋', meaning: '"美神降临"的淋化写法，指淋淋登场或任何惊艳时刻，弹幕刷屏专用。', example: '红毯这一身简直是美神降淋！', source: '淋系视频弹幕' },
   { term: '地才蓝', type: 'slang', hero: '淋淋', meaning: '《地才》时期的标志性蓝色造型与应援色，用来代称那段拼命努力的岁月，出圈到弹幕整屏复读。', example: '看到地才蓝就想起努力一定会成功，豪嗨心。 / 好美的地才蓝、地才蓝已卸，开吸', source: '《地才》演唱会、相关 MV 弹幕' },
-  // —— 各英雄 tag 语料（corpus3） ——
   { term: '阴乐', type: 'slang', hero: '周阴婷', meaning: '"音乐"的淋化谐音，专指周阴婷（阴中）翻唱或发布的歌曲。', example: '来听听阴中发的阴乐噜。', source: '周阴婷直播间' },
   { term: '爱如火', type: 'lyric', hero: '那艺娜', meaning: '那艺娜神曲，"心在跳是爱情如烈火"洗脑全网，成为淋语圈应援 BGM。', example: '全场一起爱如火，闭嘴惊艳！', source: '《爱如火》（2022）' },
   { term: '退票口在前苏联', type: 'meme', hero: '那艺娜', aliases: ['退票', '什么俄罗斯，在前苏联'], meaning: '那艺娜演唱会观众高喊"退票"，与其"俄罗斯娜娜/前苏联遗珠"人设结合，戏称退票窗口开在前苏联。', example: '退票退票退票退票 / 什么俄罗斯，在前苏联', source: '《「爱如火」蛋仔乐队》弹幕、《全B站最全那艺娜超长30分钟大合集》弹幕' },
@@ -62,7 +53,6 @@ const flashcards = [
   { term: '微笑唇', type: 'meme', hero: '鹅妈妈', aliases: ['后槽牙咬烂'], meaning: '弹幕用来嘲讽鹅妈妈 DO 脸后的矛盾现场：一边气得咬牙，一边做的是微笑唇。', example: '鹅妈妈气得后槽牙都咬烂了结果自己做的是微笑唇', source: '《【类の人】鹅妈妈》弹幕' },
   { term: 'DO脸仙人', type: 'meme', hero: '鹅妈妈', meaning: '鹅妈妈因多次整容得到的戏称，又称"国服TS""把整容医院手术台躺热的男人"。', example: 'DO脸仙人又进修噜，闭嘴惊艳。', source: '抽象百科' },
   { term: '类の人', type: 'meme', hero: '鹅妈妈', meaning: '2024年鹅妈妈百万播放人物纪录片名，使其正式进入淋宇宙人物志。', example: '看完类の人，本可豪嗨心。', source: '《类の人》（2024）' },
-  // —— 弹幕考据：淋语圈层与"吸入"体系 ——
   { term: '吸入', type: 'slang', meaning: '指被淋语/通讯录"吸进去"，即入坑；弹幕常用"美美吸入""被淋雨美美吸入"。', example: '刷了三天淋系视频，本已被美美吸入噜。', source: '《高等淋语》第三课弹幕' },
   { term: '难逃一吸', type: 'meme', meaning: '"难逃一死/劫"的淋化，指通讯录没人能躲过被淋语吸入的命运。', example: '指南也难逃一吸，婷芷挣扎。', source: '《高等淋语》第三课弹幕' },
   { term: '暴风吸入', type: 'meme', meaning: '形容入坑速度极快、量极大，也用于夸赞某段淋式唱腔的"吸力"。', example: '这段尾音一出来，弹幕集体暴风吸入。', source: '《高等淋语》第三课弹幕' },
@@ -105,7 +95,6 @@ const flashcards = [
   { term: '艳唱', type: 'slang', hero: '淋淋', meaning: '"演唱会"的淋化谐音，把演出写成带"艳"字的场子。', example: '本仙女滴艳唱门票买到惹，全体起立！', source: '淋系视频弹幕' },
   { term: '降淋', type: 'slang', hero: '淋淋', meaning: '"降临"的淋化，"美神降淋"的简称，用于任何惊艳登场。', example: '这一身简直是降淋现场，闭嘴惊艳。', source: '淋系视频弹幕' },
   { term: '宇宙之母', type: 'slang', hero: '淋淋', meaning: '淋圈给"天后"的最高封号，"我淋永远是宇宙之母厚"。', example: '宇宙之母不发话，谁敢自称 DIVA？', source: '《通讯录英雄大合集》弹幕' },
-  // —— 完颜慧德 / 楼兰语体系 ——
   { term: '楼兰', type: 'meme', hero: '完颜慧德', meaning: '完颜慧德直播间的"国名"，弹幕称"神圣楼兰帝国"，其口音体系被叫做"楼兰语法/楼兰语高级语法"。', example: '背后真是楼兰啊，楼兰警报拉响。', source: '《全网最全楼兰合订本》弹幕' },
   { term: '大赦天下', type: 'meme', hero: '完颜慧德', meaning: '指完颜慧德清理黑名单的操作，弹幕称"神圣楼兰帝国女皇颁布大赦诏""黑名单上限了大赦一部分"。', example: '楼兰女皇大赦天下，4000 名通讯录无罪释放。', source: '《全网最全楼兰合订本》弹幕' },
   { term: '敌蜜', type: 'slang', hero: '完颜慧德', meaning: '"闺蜜"的楼兰语版本，指面善心黑的朋友；合订本目录第一条即"敌蜜和闺蜜"。', example: '从闺蜜到敌蜜，也就是一通电话的事噜。', source: '《全网最全楼兰合订本》目录' },
@@ -120,27 +109,23 @@ const flashcards = [
   { term: 'lonely问题', type: 'meme', hero: '完颜慧德', meaning: '把"伦理的问题"听成"lonely 的问题"，弹幕固定吐槽"这是一个 lonely 的问题"。', example: '别问性别，这是一个 lonely 的问题噜。', source: '《全网最全楼兰合订本》目录/弹幕' },
   { term: '合乎粥礼', type: 'meme', hero: '完颜慧德', meaning: '"合乎情理/礼数"的谐音玩法，弹幕用来给与"粥/周"相关的场面盖章，小米稀粥梗与庄周梗通用。', example: '他给我煮了白粥，让我有了家的感觉，合乎粥礼。', source: '楼兰合订本 / 对抗路视频弹幕' },
   { term: '楼兰语法', type: 'meme', hero: '肘姐', meaning: '把楼兰语与通讯录黑话合成一套"语法"来讲，评论区夸"你肘掌握了楼兰语法，真是个平平无奇的语言小天才"。', example: '一句"热拉素在"，楼兰语法十级通过。', source: '《肘姐连麦直男黑皮体育生》弹幕/评论区' },
-  // —— 肘姐 / 直男检测体系 ——
   { term: '南通', type: 'slang', meaning: '"男同"的谐音代称，弹幕高频："一说不是，南通就贴上来了"。', example: '南通远离，直女速来。', source: '《肘姐连麦直男黑皮体育生》弹幕' },
   { term: '指南', type: 'slang', meaning: '"直男"的淋化（zh→j），"指南豁不出去卖""指南不能穿？"。', example: '指南也难逃一吸，氮素本可不认。', source: '《肘姐连麦直男黑皮体育生》弹幕' },
   { term: '大米', type: 'slang', meaning: '"钱"的黑话代称，通讯录圈通用；"赚不到大米了，别问啦"。', example: '爆通讯录的金碧，说白了就是赚大米。', source: '《肘姐连麦直男黑皮体育生》弹幕' },
   { term: '白袜', type: 'meme', hero: '肘姐', meaning: '通讯录圈的"注册商标"级符号，弹幕称"白袜是被通讯录注册商标了吗"，肘姐一听白袜眼里失去光芒。', example: '一看到白袜，要素察觉，事情并不简单。', source: '《肘姐连麦直男黑皮体育生》弹幕' },
   { term: '肘门', type: 'meme', hero: '肘姐', meaning: '仿"郭门"的粉丝自称，刷屏"肘门！！！！！"，也写作"你肘"。', example: '肘门永存！本可已经拜入门下噜。', source: '《通讯录英雄大合集》弹幕' },
   { term: '热拉', type: 'meme', hero: '肘姐', meaning: '肘姐直播中反复出现的口头禅，弹幕集体懵圈"热拉啥意思""热拉素在？"。', example: '男生玩热拉？热拉可还行哈哈。', source: '《肘姐连麦直男黑皮体育生》弹幕' },
-  // —— 郭门 / 梵谷 / 埃及艳后 ——
   { term: '郭门永存', type: 'meme', hero: '郭老师', meaning: '郭语信徒的刷屏口号，"郭门"即郭老师门下，玛莎被称为"郭门大师姐"。', example: '一人一句郭门永存，笑拥了。', source: '《通讯录英雄大合集》弹幕' },
   { term: '大师姐', type: 'slang', hero: '玛莎', meaning: '郭老师认证的首位弟子，弹幕强调"郭子承认的只有玛莎大师姐"。', example: '跟玛莎大师姐学郭语，一周通过 Jolinese 四级。', source: '《通讯录英雄大合集》弹幕' },
   { term: '变形怪', type: 'meme', hero: '梵谷', meaning: '弹幕对梵谷的强度判词，"梵谷得削，就是一个变形怪"，指其随时切换形态与立场。', example: '梵谷超标英雄，策划什么时候动刀？', source: '《通讯录英雄大合集》弹幕' },
   { term: '爱及艳后', type: 'lyric', hero: '埃及艳后', meaning: '埃及艳后代表作 MV《爱及艳后》（词曲：云天逆声）的歌名谐音梗，"埃及"变"爱及"。', example: '循环《爱及艳后》，金字塔里的贝塔。', source: '《埃及艳后〈爱及艳后〉MV》简介' },
   { term: '对策卡', type: 'meme', hero: '埃及艳后', meaning: '借用卡牌术语，指专门克制某位英雄的角色，"埃及艳后虽然 T3 但是天克三墓"。', example: '谢谢，我莲只是克制当初 T0 那一娜出的对策卡。', source: '《通讯录英雄大合集》弹幕' },
   { term: '埃及正统在东北', type: 'meme', hero: '埃及艳后', meaning: '弹幕被迫害式考据："谢谢，埃及正统在东北，因为都有内海，事罗马"，纯口误二创。', example: '金字塔？这是大理吧。埃及正统在东北噜。', source: '《埃及艳后〈爱及艳后〉MV》弹幕' },
-  // —— 埋汰姐 / 施柔儿 / 开心姐 / 老地瓜 / 地黄瓜 ——
   { term: '埋汰', type: 'slang', hero: '埋汰姐', meaning: '东北话"嫌弃、数落、损人"，埋汰姐以此成名，"通讯录英雄埋汰姐 T0 强度名不虚传"。', example: '这一套埋汰话术，本可直接蚌埠住了。', source: '《埋汰姐直播纯享》标题/弹幕' },
   { term: '大网猴', type: 'meme', hero: '施柔儿', meaning: '弹幕对施柔儿"22 票大网红"身份的反讽称呼。', example: '大网猴又来开狂暴了，笑拥。', source: '《施柔儿早期良心狂暴100分》弹幕' },
   { term: '说七不说八', type: 'meme', hero: '开心姐', meaning: '开心姐怒斥黑粉时的"文明"口号，完整为"说七不说八，文明你我他"。', example: '骂人也要说七不说八，文明你我他噜。', source: '《开心姐怒斥黑粉》评论区' },
   { term: '王钦朕', type: 'meme', hero: '老地瓜', meaning: '弹幕给老地瓜上的"帝号"，并称"楼兰国名画都出自他之手"，T1.5 老英雄。', example: '王钦朕（老地瓜）应该是 T1.5，全体起立。', source: '《通讯录英雄大合集》弹幕' },
   { term: '拿黄瓜和男人比', type: 'meme', meaning: '地黄瓜出圈名场面原话："拿黄瓜和男人比，你是真没吃过啊"，弹幕只回了一个字："藕"。', example: '你是真没吃过啊，靴靴。', source: '《"拿黄瓜和男人比！你是真没吃过啊"》' },
-  // —— 游戏区：通讯录常玩角色 ——
   { term: '淋者荣耀', type: 'meme', hero: '庄周', meaning: '"王者荣耀"的淋化称呼，通讯录圈的国民手游代称。', example: '本可在淋者荣耀里是专属女阴雄，吸吸。', source: '《淋语八级教程》弹幕' },
   { term: '第五淋格', type: 'meme', hero: '庄周', meaning: '"第五人格"的淋化称呼，常与"淋者荣耀"连用刷屏。', example: '现在已经成为淋者荣耀第五淋格专属女阴雄。', source: '《淋语八级教程》弹幕' },
   { term: '女阴雄', type: 'slang', hero: '庄周', meaning: '"女英雄"的淋化，"英雄"整体也写作"阴雄"。', example: '中路庄周，本可的女阴雄。', source: '《淋语八级教程》弹幕' },
@@ -150,9 +135,6 @@ const flashcards = [
   { term: '臭脚美味排行', type: 'meme', hero: '庄周', meaning: '通讯录向游戏栏目"王者对抗路臭脚美味排行"，把对抗路英雄做成"美味榜"，弹幕回"真菌感染警告"。', example: '对抗路臭脚美味排行第一期，夯！', source: '《王者对抗路臭脚美味排行——第一期》' },
   { term: '变身茄子', type: 'meme', hero: '妮蔻', meaning: '弹幕给模仿系英雄的外号（"《模仿者/变身茄子》""变身茄子"），指谁都能变。', example: '变身茄子妮蔻，该削了，靴靴。', source: '《通讯录英雄大合集》弹幕' },
 ];
-
-// 淋语英雄人物传：淋语圈公认的通讯录女王与网红 + 游戏区通讯录常玩角色
-// rank: 神位/称号 | group: real 通讯录真人 / game 游戏角色 | links: 已核实的 B站来源
 const heroes = [
   { name: '淋淋', alias: '蔡依林 / Jolin / 宇宙之母', img: 'img/hero-1.png', group: 'real',
     rank: '圣父 · 通讯录女王', intro: '淋语的缔造者与淋宇宙的中心。脱胎于唱跳歌手蔡依林的"林"，由黑文化演变为半娱乐亚文化。代表作《舞娘》《花蝴蝶》《地才》演唱会，金句"努力一定会成功"（《地才》宣言）。', tags: ['宇宙之母', '地才', '天后本后'],
@@ -302,7 +284,6 @@ const heroes = [
     words: ['主播', '直播', '恐怖', '死了', '说话', '开心', '感动', '眼泪', '顶级', '二流'],
     links: [{ label: '施柔儿早期良心狂暴100分（经典"网络太残酷了"开场）', url: 'https://www.bilibili.com/video/BV1QCpheWEFz' },
       { label: '施柔儿直播被通讯录玩弄鼓掌之间，非常良心', url: 'https://www.bilibili.com/video/BV15m4y1179Y' }] },
-  // —— 游戏角色分区：通讯录玩家常玩、并被通讯录话术改造的英雄 ——
   { name: '庄周', alias: '食人鱼 / 九尾的鱼', img: 'img/hero-23.png', group: 'game',
     rank: '游戏区 · 无用之用', intro: '《王者荣耀》坦克兼辅助。通讯录圈把它当成"女阴雄"代表，并留下"中路庄周，九尾伟大，C 位给队友，自己做最危险的工作"这套说法，弹幕补一句"无用之用，和庄子的思想对上了"。', tags: ['中路庄周', '九尾伟大', '法强食人鱼', '淋者荣耀'],
     baike: '庄周，《王者荣耀》中的坦克 / 辅助英雄，以二技能叠层造成伤害与减速、大招为队友提供免控与护盾为特点。在通讯录常玩的《淋者荣耀》（"王者荣耀"的淋化）语境里，它被玩成一整套梗：B站《发明项目：中路庄周，九尾伟大，C 位给队友，自己做最危险的工作》记录老将中单选手"九尾"选出庄周绝杀的对局，弹幕刷"伟大！！！""无用之用""庄周叠 2 是食人鱼来的""世人都忘记了曾经的法强食人鱼了吗"；评论区则补刀"最擅长承伤的中路选手选到坦克，这不是拿到专武了吗"。另有"臭脚美味排行"这类通讯录向对抗路栏目，弹幕以"合乎粥礼""真菌感染警告"回应。',
@@ -332,11 +313,7 @@ const heroes = [
     links: [{ label: '[Dota2] 这拉比克也太帅了！Yapzor 疯狂偷技能秀爆', url: 'https://www.bilibili.com/video/BV1wb41177tk' },
       { label: '通讯录英雄大合集（"通讯录拉比克附带A杖效果"）', url: 'https://www.bilibili.com/video/BV1AP411k7m2' }] },
 ];
-
-// 经典淋语名言：仿照名人名言的形式，标明出处
-// hero: 关联英雄（用于人物详情页聚合）；src 为语料实录出处，不虚构
 const quotes = [
-  // —— 淋淋（歌词与演唱会金句，均为淋语固定典故） ——
   { text: '努力一定会成功。', author: '淋淋', hero: '淋淋', src: '《地才》演唱会宣言，《高等淋语》弹幕复读', verify: '《地才》宣言原句，语料内以长弹幕形式复述' },
   { text: '不素天才，素地才惹。', author: '淋淋', hero: '淋淋', src: '《高等淋语》第三课弹幕（地才宣言淋化）' },
   { text: '那画面太美我不敢看。', author: '淋淋', hero: '淋淋', src: '《布拉格广场》（2003）' },
@@ -348,7 +325,6 @@ const quotes = [
   { text: '之前大家一直用淋语是为了黑，但希望大家用另外一种眼光审判。', author: '本质骑士', src: '《Billie Eilish〈Bad guy〉淋语翻译》评论区' },
   { text: '淋语对于通讯录真的有一股天然的吸力惹，本可认识的朋友里就没有不会淋语的。', author: '《高等淋语》评论区', src: '《高等淋语》第三课评论区' },
   { text: '学习淋语素一个很繁琐并且需要大量实践的事情厚，加油吧标注们。', author: '《高等淋语》评论区', src: '《高等淋语》第三课评论区' },
-  // —— 英雄语录与直播实录 ——
   { text: '心在跳，是爱情如烈火。', author: '那艺娜', hero: '那艺娜', src: '《爱如火》（2022）' },
   { text: '退票退票退票退票！', author: '那艺娜巡演观众', hero: '那艺娜', src: '《「爱如火」蛋仔乐队》弹幕' },
   { text: '有点像杨幂。', author: '三梦奇缘', hero: '三梦奇缘', src: '《这是什么梗：三梦奇缘？分幂物？》弹幕（成名源头）' },
@@ -366,7 +342,6 @@ const quotes = [
   { text: '你们通讯录害得我家破人亡。', author: '施柔儿', hero: '施柔儿', src: '《施柔儿早期良心狂暴100分》弹幕引用原话' },
   { text: '拿黄瓜和男人比，你是真没吃过啊。', author: '地黄瓜', src: '《"拿黄瓜和男人比！你是真没吃过啊"》' },
   { text: '王钦朕（老地瓜）应该是T1.5，楼兰国名画都出自他之手。', author: '《通讯录英雄大合集》弹幕', hero: '老地瓜', src: '《通讯录英雄大合集》弹幕' },
-  // —— 强度榜与体系判词 ——
   { text: '带狂暴就是 T0。', author: '《通讯录英雄大合集》弹幕', src: '《通讯录英雄大合集》弹幕' },
   { text: '谢谢，我莲强度不低，芝士上手有门槛。', author: '《通讯录英雄大合集》弹幕', hero: '淋淋', src: '《通讯录英雄大合集》弹幕' },
   { text: '谢谢，我莲只是克制当初 T0 那一娜出的对策卡。', author: '《通讯录英雄大合集》弹幕', hero: '淋淋', src: '《通讯录英雄大合集》弹幕' },
@@ -378,7 +353,6 @@ const quotes = [
   { text: '这是一个 lonely 的问题。', author: '《通讯录英雄大合集》弹幕', src: '《通讯录英雄大合集》弹幕' },
   { text: '没有最弱的英雄，只有最弱的人类。', author: '《通讯录英雄大合集》弹幕', src: '《通讯录英雄大合集》弹幕' },
   { text: '这个很强，会召唤肘姐，同一棵树下的芒果。', author: '《通讯录英雄大合集》弹幕', hero: '肘姐', src: '《通讯录英雄大合集》弹幕' },
-  // —— 游戏区 ——
   { text: '中路庄周，九尾伟大，C 位给队友，自己做最危险的工作。', author: '《中路庄周》标题', hero: '庄周', src: '《发明项目：中路庄周，九尾伟大》' },
   { text: '世人都忘记了曾经的法强食人鱼了吗？', author: '《中路庄周》弹幕', hero: '庄周', src: '《发明项目：中路庄周，九尾伟大》弹幕' },
   { text: '无用之用，这一块。', author: '《中路庄周》弹幕', hero: '庄周', src: '《发明项目：中路庄周，九尾伟大》弹幕' },
@@ -386,15 +360,7 @@ const quotes = [
   { text: '妮蔻也什么都能变啊，妮蔻该削了。', author: '《通讯录英雄大合集》弹幕', hero: '妮蔻', src: '《通讯录英雄大合集》弹幕' },
   { text: '通讯录拉比克，可以用所有通讯录英雄的技能，附带 A 杖效果。', author: '《通讯录英雄大合集》弹幕', hero: '拉比克', src: '《通讯录英雄大合集》弹幕' },
 ];
-
-// ————————————————————————————————————————————————
-// 迭代 #4 扩充：语料来自 corpus5-7（B站淋语 tag、通讯录英雄 tag、游戏 tag 共 177 个视频的
-// 标题 / 简介 / 弹幕 / 评论区实录），每条都在 mined.txt 与 attest.txt 里可对到原文。
-// ————————————————————————————————————————————————
-
-// 新增词卡（梗 / 语气词 / 典故）
 const extraCards = [
-  // —— 语气与自称 ——
   { term: '天呐噜', type: 'particle', meaning: '"天哪"的淋化感叹。弹幕里"天啦噜""天了噜""天呐噜"都有人写，正统派坚持只认"天啦噜"。', example: '天呐噜，怎么刷到这个惹', source: '《淋语的学习与使用实用教程》弹幕' },
   { term: '咧', type: 'particle', meaning: '句末语气词，楼兰语系常用，相当于"了"。', example: '完颜慧德把皇上气拥咧', source: '《完颜慧德把皇上气拥咧》标题' },
   { term: '惹惹惹', type: 'particle', meaning: '连用"惹"堆叠情绪，表示激动到语无伦次。', example: '惹惹惹，厚', source: '《淋语的学习与使用实用教程》弹幕' },
@@ -411,7 +377,6 @@ const extraCards = [
   { term: '气die', type: 'slang', meaning: '"气死"的中英混用写法，"笑die""笔笔羊鼠"是同一套。', example: '气die噜', source: '《淋语的学习与使用实用教程》弹幕' },
   { term: '开吸', type: 'slang', meaning: '"开始吸入"的省写，指被魅惑到不行。', example: '本可人直接开吸噜', source: '《淋语的学习与使用实用教程》弹幕' },
   { term: '精髓', type: 'slang', meaning: '评判淋语正宗程度的指标，"没学到精髓"等于不合格。', example: '是天啦噜，不是天了噜，真素没学到精髓惹', source: '《淋语的学习与使用实用教程》弹幕' },
-  // —— 数字与道具梗 ——
   { term: '130', type: 'meme', meaning: '淋语圣数：满分 130 分、130 级、130 亿人、第 130 次首谈，怎么夸张都不为过。', example: '珍素淋语130级惹', source: '《高等淋语》弹幕' },
   { term: '13', type: 'meme', meaning: '"13"当量词用，和"淋"谐音，眼泪、人口、封印都按 13 计。', example: '淋淋为你感动的流下13滴眼泪', source: '《【淋神】角色演示》弹幕' },
   { term: '乌干达', type: 'meme', meaning: '淋语圈的奖励与惩罚道具，"奖励130根乌干达"，失去还能去美丽旗舰店补货。', example: '珍素努力惹，奖励130根乌干达', source: '《淋语的学习与使用实用教程》弹幕' },
@@ -423,7 +388,6 @@ const extraCards = [
   { term: '官方语言', type: 'meme', meaning: '纠正别人别把淋语当小语种："这素淋王星的官方语言"。', example: '呕，这是淋王星的官方语言，不素小语种惹', source: '《淋语的学习与使用实用教程》弹幕' },
   { term: '鸡笼锁定', type: 'slang', meaning: '被鸡笼（淋淋的谐音绰号）点名盯上，用来吓唬讲得不正宗的人。', example: '这淋语不正宗靴靴，UP主你已经被鸡笼锁定噜', source: '《淋语的学习与使用实用教程》弹幕' },
   { term: '我院', type: 'slang', hero: '完颜慧德', meaning: '机构化自称，"我院""你院"，配心理咨熊师人设使用。', example: '我院表示清者自清惹 / 你院淋神降临噜', source: '《淋语的学习与使用实用教程》《高等淋语》弹幕' },
-  // —— 歌词与舞台典故 ——
   { term: '糕难度淋美感', type: 'lyric', hero: '淋淋', meaning: '"高难度零美感"的舞蹈点评被淋化成"糕难度淋美感"，两个谐音一起上。', example: '糕难度淋美感动作靴靴', source: '《高等淋语》弹幕' },
   { term: '横看成淋侧成凤', type: 'lyric', hero: '淋淋', meaning: '苏轼《题西林壁》的淋化改诗，用来夸"像淋又像凤（罗玉凤）"。', example: '横看成淋侧成凤，远近高低各不同', source: '《高等淋语》发展史弹幕' },
   { term: '阴后咏叹调', type: 'lyric', meaning: '莫扎特《夜后咏叹调》的淋化称呼，"夜"改"阴"。', example: '超高阴《阴后咏叹调》贝塔粉碎', source: '《超高阴〈阴后咏叹调〉贝塔粉碎》标题' },
@@ -432,7 +396,6 @@ const extraCards = [
   { term: '爱的宫痒', type: 'lyric', hero: '三梦奇缘', meaning: '《爱的供养》跑调版的空耳，弹幕连"癌"都写出来了。', example: '《癌的宫痒》 / 爱的宫痒', source: '《这是什么梗：三梦奇缘？分幂物？》弹幕' },
   { term: '一淡解千愁', type: 'slang', meaning: '"一笑解千愁"的淋化，"淡"替"笑"。', example: '一淡解千愁', source: '《一淡解千愁》标题' },
   { term: '阴中大吸特吸', type: 'meme', hero: '淋淋', meaning: '地才淋在"阴中"（圈里）大吸特吸，形容吸力全开。', example: '地才淋化身阴中大吸特吸，吃的真好', source: '《地才淋化身阴中大吸特吸》标题' },
-  // —— 姐圈与英雄 tag 语料 ——
   { term: '母体', type: 'slang', hero: '三梦奇缘', meaning: '指"永远不会过气的本体"，封给墓姐的最高称号。', example: '墓姐是母体，永远不会过气', source: '《三梦奇缘直播发飙10.0》评论区' },
   { term: 'flop', type: 'slang', meaning: '英文"过气"直接借用，"flop两年""flop过一段时间"。', example: '之前flop过一段时间，现在的人数是万人迷不敢想的', source: '《三梦奇缘直播发飙10.0》评论区' },
   { term: '事业第二春', type: 'slang', meaning: '翻红的说法，配"母体"使用。', example: '墓姐事业第二春了', source: '《三梦奇缘直播发飙10.0》评论区' },
@@ -474,8 +437,6 @@ const extraCards = [
   { term: '艺术成这样', type: 'slang', meaning: '看不懂但大受震撼的评语。', example: '怎么会艺术成这样', source: '《高等淋语》弹幕' },
   { term: '宇宙黑洞回响', type: 'meme', meaning: '形容音效/声线过于深邃的整活评语。', example: '来自宇宙黑洞的回响音效', source: '《高等淋语》弹幕' }
 ];
-
-// 新增名言（author/src 全部为语料实录的出处）
 const extraQuotes = [
   { text: '天惹噜，我淋真素太美丽了噜。', author: '《来自淋淋的强大吸力》简介', hero: '淋淋', src: '《【经典重现】来自淋淋的强大吸力 恶搞蔡依淋神作》简介' },
   { text: '不给硬币小心被吸了噜。', author: '《来自淋淋的强大吸力》简介', hero: '淋淋', src: '《【经典重现】来自淋淋的强大吸力》简介' },
@@ -539,10 +500,7 @@ const extraQuotes = [
   { text: '你有一根摄人心魄的钩子。', author: '《淋者荣耀》标题', src: '《【淋者荣耀】你有一根摄人心魄的钩子》' },
   { text: '玛雅，敢说就行。', author: '《淋者荣耀》弹幕', hero: '梵谷', src: '《【淋者荣耀】去把老娘的圣杯面具40cd拿过来！》弹幕' },
 ];
-
-// 新增英雄：游戏区补 3 位，另立「淋语UP主」分区（头像为其 B 站真实头像）
 const extraHeroes = [
-  // —— 游戏角色分区 ——
   { name: '孙策', alias: '白袜体育生 / 擦边主播', img: 'img/hero-27.png', group: 'game',
     rank: '游戏区 · 白袜 T0', intro: '《王者荣耀》里被通讯录圈封成"185 臭脚白袜直男体育生"的对抗路，标题本身就是一张人设卡。', tags: ['白袜', '体育生', '臭脚', '擦边主播'],
     baike: '孙策，《王者荣耀》的战士英雄，因驾船冲锋的机制被切片作者配上"首谈成为通讯录擦边主播的心路历程"这套人设，标题《【王者淋耀】185臭脚白袜直男体育生孙策首谈成为通讯录擦边主播的心路历程》把"185""臭脚""白袜""直男""体育生"五个通讯录符号一次凑齐。《淋者荣耀》系列旁白固定用"我泔"自称，"我泔诞下传限不会给任何人好脸色"成为弹幕口头禅。庄周教学视频的弹幕还会喊一句"黄总：孙策你等等我呀"。',
@@ -561,7 +519,6 @@ const extraHeroes = [
     works: ['淋神角色演示', '特务夜地才兰'],
     words: ['演技', '英雄', '游戏', '变身', '顶级', '离谱', '退网', '封号', '举报', '辣眼'],
     links: [{ label: '【淋神】角色演示-「腋淋：特务夜地才兰」', url: 'https://www.bilibili.com/video/BV1xY4y1g7J2' }] },
-  // —— 淋语UP主分区 ——
   { name: '上司磯太', alias: '淋语教程奠基人', img: 'img/hero-30.png', group: 'up',
     rank: 'UP主 · 实用教程', intro: '把淋语整理成"学习与使用实用教程"的搬运者，弹幕在他下面交作业、背书、互喷正宗度。', tags: ['阿婆主', '精髓', '清者自清', '乌干达', '鸡笼锁定'],
     baike: '上司磯太，B站《淋语的学习与使用实用教程》（约 50 万播放）的上传者，简介标注源自优酷。这堂课的弹幕是淋语语法最密集的一手语料："你敢说惹？""清者自清厚／靴靴／噜"三种句尾同时出现；有人强调"是天啦噜，不是天了噜，真素没学到精髓惹"，有人坚持"这是淋王星的官方语言，不素小语种惹"，还有人喊"up的声音可以把我骂射噜""本可人已经报警惹"。judge 不正宗的固定判词是"UP主你已经被鸡笼锁定噜"。',
@@ -662,7 +619,6 @@ const extraHeroes = [
     words: ['坦克', '游戏', '皮肤', '队友', '中路', '辅助', '英雄', '装备', '大招', '顶级'],
     links: [{ label: '庄周教学！秒变食人鱼！高伤害奥义！嘎嘎乱杀！', url: 'https://www.bilibili.com/video/BV1mL411g7Q1' }] }
 ];
-
 const extraQuotes2 = [
   { text: '给我华道歉，婷芷造谣我华。', author: '《淋者荣耀》弹幕', src: '《【淋者荣耀】我泔诞下传限不给任何人好脸色》弹幕' },
   { text: '婷芷陷害我狸！！！', author: '《淋者荣耀》弹幕', src: '《【淋者荣耀】我泔诞下传限不给任何人好脸色》弹幕' },
@@ -692,28 +648,54 @@ const extraCards2 = [
   { term: '贝塔已经锁定你', type: 'meme', hero: '新酱爱追剧', meaning: '改自“莫愁前路无知己”的弹幕诗，把贝塔与锁定句式缝在一起。', example: '莫愁前路无知妓，贝塔已经锁定你', source: '《「淋语八级教程」Genius（地才）》弹幕' },
   { term: '风姿', type: 'slang', meaning: '“疯子”的淋化谐音，弹幕用来形容一个方案离谱得像风姿来的。', example: '妈呀，完全风姿来的吧，这个豆包 / 有点像风姿', source: '《让豆包教穿搭，反耳被豆包用淋语羞辱了》《【淋者荣耀】去把老娘的圣杯面具40cd拿过来！》弹幕' },
 ];
-
-// @platform: 补充数据包双端加载，Node 走 require，浏览器/小程序从 window 取同步注入的全局
-const extra3 = (typeof require === 'function') ? require('./lore-extra3') : (typeof window !== 'undefined' ? window.LORE_EXTRA3 : {});
-const extra4 = (typeof require === 'function') ? require('./lore-extra4') : (typeof window !== 'undefined' ? window.LORE_EXTRA4 : {});
-const extra5 = (typeof require === 'function') ? require('./lore-extra5') : (typeof window !== 'undefined' ? window.LORE_EXTRA5 : {});
-const extra6 = (typeof require === 'function') ? require('./lore-extra6') : (typeof window !== 'undefined' ? window.LORE_EXTRA6 : {});
-const extra7 = (typeof require === 'function') ? require('./lore-extra7') : (typeof window !== 'undefined' ? window.LORE_EXTRA7 : {});
-const extra8 = (typeof require === 'function') ? require('./lore-extra8') : (typeof window !== 'undefined' ? window.LORE_EXTRA8 : {});
-const extra9 = (typeof require === 'function') ? require('./lore-extra9') : (typeof window !== 'undefined' ? window.LORE_EXTRA9 : {});
-const extra10 = (typeof require === 'function') ? require('./lore-extra10') : (typeof window !== 'undefined' ? window.LORE_EXTRA10 : {});
-const extra11 = (typeof require === 'function') ? require('./lore-extra11') : (typeof window !== 'undefined' ? window.LORE_EXTRA11 : {});
-const extra12 = (typeof require === 'function') ? require('./lore-extra12') : (typeof window !== 'undefined' ? window.LORE_EXTRA12 : {});
-const extra13 = (typeof require === 'function') ? require('./lore-extra13') : (typeof window !== 'undefined' ? window.LORE_EXTRA13 : {});
-const extra14 = (typeof require === 'function') ? require('./lore-extra14') : (typeof window !== 'undefined' ? window.LORE_EXTRA14 : {});
-const extra15 = (typeof require === 'function') ? require('./lore-extra15') : (typeof window !== 'undefined' ? window.LORE_EXTRA15 : {});
-const extra16 = (typeof require === 'function') ? require('./lore-extra16') : (typeof window !== 'undefined' ? window.LORE_EXTRA16 : {});
-const extra18 = (typeof require === 'function') ? require('./lore-extra18') : (typeof window !== 'undefined' ? window.LORE_EXTRA18 : {});
-
+const extra3 = unpack((typeof require === 'function') ? require('./lore-extra3') : (typeof window !== 'undefined' ? window.LORE_EXTRA3 : {}));
+const extra4 = unpack((typeof require === 'function') ? require('./lore-extra4') : (typeof window !== 'undefined' ? window.LORE_EXTRA4 : {}));
+const extra5 = unpack((typeof require === 'function') ? require('./lore-extra5') : (typeof window !== 'undefined' ? window.LORE_EXTRA5 : {}));
+const extra6 = unpack((typeof require === 'function') ? require('./lore-extra6') : (typeof window !== 'undefined' ? window.LORE_EXTRA6 : {}));
+const extra7 = unpack((typeof require === 'function') ? require('./lore-extra7') : (typeof window !== 'undefined' ? window.LORE_EXTRA7 : {}));
+const extra8 = unpack((typeof require === 'function') ? require('./lore-extra8') : (typeof window !== 'undefined' ? window.LORE_EXTRA8 : {}));
+const extra9 = unpack((typeof require === 'function') ? require('./lore-extra9') : (typeof window !== 'undefined' ? window.LORE_EXTRA9 : {}));
+const extra10 = unpack((typeof require === 'function') ? require('./lore-extra10') : (typeof window !== 'undefined' ? window.LORE_EXTRA10 : {}));
+const extra11 = unpack((typeof require === 'function') ? require('./lore-extra11') : (typeof window !== 'undefined' ? window.LORE_EXTRA11 : {}));
+const extra12 = unpack((typeof require === 'function') ? require('./lore-extra12') : (typeof window !== 'undefined' ? window.LORE_EXTRA12 : {}));
+const extra13 = unpack((typeof require === 'function') ? require('./lore-extra13') : (typeof window !== 'undefined' ? window.LORE_EXTRA13 : {}));
+const extra14 = unpack((typeof require === 'function') ? require('./lore-extra14') : (typeof window !== 'undefined' ? window.LORE_EXTRA14 : {}));
+const extra15 = unpack((typeof require === 'function') ? require('./lore-extra15') : (typeof window !== 'undefined' ? window.LORE_EXTRA15 : {}));
+const extra16 = unpack((typeof require === 'function') ? require('./lore-extra16') : (typeof window !== 'undefined' ? window.LORE_EXTRA16 : {}));
+const extra18 = unpack((typeof require === 'function') ? require('./lore-extra18') : (typeof window !== 'undefined' ? window.LORE_EXTRA18 : {}));
+const extra19 = unpack((typeof require === 'function') ? require('./lore-extra19') : (typeof window !== 'undefined' ? window.LORE_EXTRA19 : {}));
+const COLS = {
+  cards: ['term', 'type', 'meaning', 'detail', 'example', 'source', 'verify', 'hero', 'aliases', 'rel'],
+  quotes: ['text', 'author', 'hero', 'src', 'scene', 'rel'],
+  heroes: ['name', 'alias', 'img', 'group', 'grp', 'rank', 'intro', 'baike', 'tags', 'works', 'words', 'links'],
+};
+function decodeRows(list, keys) {
+  if (!Array.isArray(list) || !list.length) return [];
+  if (!Array.isArray(list[0])) return list; // 已是对象数组
+  const out = new Array(list.length);
+  for (let i = 0; i < list.length; i++) {
+    const row = list[i];
+    const o = {};
+    for (let j = 0; j < keys.length; j++) {
+      const v = row[j];
+      if (v !== null && v !== undefined) o[keys[j]] = v;
+    }
+    out[i] = o;
+  }
+  return out;
+}
+function unpack(mod) {
+  if (!mod) return { cards: [], quotes: [], heroes: [], heroMerge: [], quoteMerge: [] };
+  if (!mod.__col) return mod;
+  return Object.assign({}, mod, {
+    cards: mod.cards ? decodeRows(mod.cards.rows, mod.cards.keys || COLS.cards) : [],
+    quotes: mod.quotes ? decodeRows(mod.quotes.rows, mod.quotes.keys || COLS.quotes) : [],
+    heroes: mod.heroes ? decodeRows(mod.heroes.rows, mod.heroes.keys || COLS.heroes) : [],
+    heroMerge: mod.heroMerge || [],
+    quoteMerge: mod.quoteMerge || [],
+  });
+}
 const keep = (arr, key, drop) => (drop && drop.length ? arr.filter((x) => !drop.includes(x[key])) : arr);
-
-// 各内容表都有 term/body UNIQUE 约束，跨轮次补充时同名条目以先出现者为准：
-// 先过剔除名单，再按 key 去重，避免后轮补充把前轮已收录的条目覆盖掉。
 const uniq = (arr, key) => {
   const seen = new Set();
   const out = [];
@@ -725,14 +707,8 @@ const uniq = (arr, key) => {
   }
   return out;
 };
-
-// 跨批次 concat 后必须去重：同一批词卡可能在多轮里都被判定要剔除，
-// 名单重复不会让删除多执行一次，但会让 pruned.cards 的长度对不上真实剔除数，审计时没法对账。
 const dropCards = [...new Set(extra4.dropCards.concat(extra5.dropCards || []))];
 const dropQuotes = [...new Set(extra4.dropQuotes.concat(extra5.dropQuotes || []))];
-
-// 早期补入的游戏角色只写了"游戏分区 / 游戏区 · 称号"这种笼统前缀，分区筛选时会被
-// 归到一个无意义的大桶里。这里按角色原型把 rank 前缀改写成真实分区，称号部分原样保留。
 const REZONE = {
   我华: '淋者荣耀', 我泔: '淋者荣耀', 我虞: '淋者荣耀', 我妲: '淋者荣耀',
   我元: '淋者荣耀', 我曌: '淋者荣耀', 孙策: '淋者荣耀', 元歌: '淋者荣耀',
@@ -749,10 +725,9 @@ const rezoned = (arr) =>
     const title = cut > 0 ? rank.slice(cut).trim() : rank;
     return Object.assign({}, h, { rank: title ? zone + ' · ' + title : zone });
   });
-
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards),
     'term',
     dropCards
   ),
@@ -760,7 +735,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -768,18 +743,12 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes),
     'text',
     dropQuotes
   ),
   'text'
 );
-
-// 第十一轮：既有轮次的条目是硬编码在 lore.js / lore-extra*.js 里的，
-// 在扩充脚本里直接改写不会写盘。所以第十一轮的「补充」统一在这里应用：
-//   aliasMerge —— 给既有词卡补别名、补释义、补来源；
-//   heroMerge —— 给既有人物补别名/标签/作品/关联词条/外链。
-// 同一语义位下的不同译法在这里统一并入既有条目，不新增重复行。
 const applyAliasMerge = (rows, merges) => {
   if (!merges || !merges.length) return rows;
   const byTerm = new Map(rows.map((r) => [r.term, r]));
@@ -801,7 +770,6 @@ const applyAliasMerge = (rows, merges) => {
   }
   return rows;
 };
-
 const applyHeroMerge = (rows, merges) => {
   if (!merges || !merges.length) return rows;
   const byName = new Map(rows.map((r) => [r.name, r]));
@@ -832,16 +800,12 @@ const applyHeroMerge = (rows, merges) => {
   }
   return rows;
 };
-
 applyAliasMerge(allCards, extra11.aliasMerge);
 applyAliasMerge(allCards, extra12.aliasMerge);
 applyAliasMerge(allCards, extra13.aliasMerge);
 applyHeroMerge(allHeroes, extra11.heroMerge);
 applyHeroMerge(allHeroes, extra12.heroMerge);
 applyHeroMerge(allHeroes, extra13.heroMerge);
-
-// 第十三轮新增 quoteMerge：把「这句话就出现在 TA 本人视频里」的自动归属补进既有名言。
-// 与 aliasMerge 同纪律——只在 hero 为空时写入，绝不覆盖开发者手工改过的归属。
 const applyQuoteMerge = (rows, merges) => {
   if (!merges || !merges.length) return rows;
   const byText = new Map(rows.map((r) => [r.text, r]));
@@ -857,35 +821,22 @@ applyQuoteMerge(allQuotes, extra14.quoteMerge);
 applyQuoteMerge(allQuotes, extra15.quoteMerge);
 applyQuoteMerge(allQuotes, extra16.quoteMerge);
 applyQuoteMerge(allQuotes, extra18.quoteMerge);
+applyQuoteMerge(allQuotes, extra19.quoteMerge);
 applyHeroMerge(allHeroes, extra14.heroMerge);
 applyHeroMerge(allHeroes, extra15.heroMerge);
 applyHeroMerge(allHeroes, extra16.heroMerge);
 applyHeroMerge(allHeroes, extra18.heroMerge);
-
-// 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
-// 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。
-// 这里统一收敛到 key，中文名只留在界面上。
+applyHeroMerge(allHeroes, extra19.heroMerge);
 const CARD_TYPE_ALIAS = { 俚语梗: 'slang', 网络梗: 'meme', 语气词: 'particle', 歌词典故: 'lyric' };
 for (const c of allCards) {
   if (CARD_TYPE_ALIAS[c.type]) c.type = CARD_TYPE_ALIAS[c.type];
 }
-
-// hero 列名义上是「引用 heroes.name」，但早期内容把它当自由文本用过，混进了三类不是人名的值：
-//   1. 人物昵称（"掉毛母鸡霞"其实指霞、"你茶萨勒芬妮"其实指萨勒芬妮）；
-//   2. 分区名 / 群体名（"淋者荣耀""淋神"根本不是人）。
-// 这些值让「人物详情页 → 词卡/名言」永远聚合不到内容，等于挂着一条断链。
-// 这里统一收敛：能对上真实人物的改成真名，对不上一律清空，随后由 inferHero 按来源重新判一次。
 const HERO_REF_FIXUPS = {
   掉毛母鸡霞: '霞',
   泔水婆莫甘娜: '莫甘娜',
   你茶萨勒芬妮: '萨勒芬妮',
 };
-
-// 分区名与群体名不是人物，清空归属后由 inferHero 按来源重新判，判不出就当作通用淋语条目
 const NOT_A_PERSON = new Set(['淋者荣耀', '淋神', '特蕾爽']);
-
-// 对照的是人物表里的真名，不是"条目自己引用过的人名"——
-// 用后者的话，"你茶萨勒芬妮"会因为没有条目以"萨勒芬妮"为归属而被判成查无此人。
 function normalizeHeroRef(rows, heroNameSet) {
   for (const r of rows) {
     if (!r.hero) continue;
@@ -902,34 +853,16 @@ function normalizeHeroRef(rows, heroNameSet) {
     if (!heroNameSet.has(v)) r.hero = '';
   }
 }
-
-// 挂在已剔除人物名下的条目，条目本身一并剔除：那批人与淋语无关（刷量短视频、路人互怼），
-// 此前只删了人物表里的行，名言与词卡还留在库里，于是继续以"某人语录"的名义流通。
 const removedHeroes = new Set(extra5.dropHeroes || []);
 const orphanCards = allCards.filter((c) => removedHeroes.has(String(c.hero || '').trim()));
 const orphanQuotes = allQuotes.filter((q) => removedHeroes.has(String(q.hero || '').trim()));
-
 const heroNameSet = new Set(allHeroes.map((h) => h.name));
 normalizeHeroRef(allCards, heroNameSet);
 normalizeHeroRef(allQuotes, heroNameSet);
-
 const keptCards = keep(allCards, 'term', dropCards.concat(orphanCards.map((c) => c.term)));
 const keptQuotes = keep(allQuotes, 'text', dropQuotes.concat(orphanQuotes.map((q) => q.text)));
-
-// ---- 词卡 / 名言的归属推断 ----
-// 这段以前写在渲染层 app.js 里，只在人物详情页聚合的那一瞬间生效：来源命中正则就临时
-// 算成某个人的，卡本身并没有留下任何痕迹，开发者也没法在界面上看到或改这条归属。
-// 现在下沉到内容层，推断结果会随条目一起写进 cards.hero / quotes.hero。
-//
-// 归属判断只用两种依据，都不靠印象：
-//   1. 同一条来源在已有条目里已经归属某个人 —— 新条目照抄，这是最可靠的一类；
-//   2. 下面的 HERO_SOURCE_RULES 关键词表 —— 覆盖来源写法不同、但讲的是同一个人的情况。
-// 两者都判不出来就留空：宁可让条目显示为通用淋语，也不要挂错人。
 const HERO_SOURCE_RULES = [
   { hero: '淋淋', re: /舞娘|花蝴蝶|美人计|布拉格|72\s*变|特务J|蔡依林|地才|骑士精神|野蛮游戏|我知道你很难过|淋系视频弹幕|淋语口头禅/ },
-  // 只认「这个人出的教程」类来源。像「淋语基础语气词」「淋语常用词」「淋文化黑话」这类
-  // 是通用词条不是某人的作品——早先把它们一并塞进这条规则，结果「天啦噜」「惹」「厚」
-  // 等 88 张通用语气词卡全被挂到指南杰斯猫名下，人物页等于被通用词汇淹了。
   { hero: '指南杰斯猫', re: /高等淋语|淋语的实用教程|淋语的学习与使用实用教程|淋语八级教程/ },
   { hero: '三梦奇缘', re: /三梦奇缘|墓系/ },
   { hero: '周阴婷', re: /周阴婷|阴阴，果然是你/ },
@@ -954,14 +887,34 @@ const HERO_SOURCE_RULES = [
   { hero: '艾希', re: /艾希/ },
   { hero: '萨勒芬妮', re: /萨勒芬妮/ },
   { hero: '霞', re: /《第五人格》|第五淋格/ },
+  { hero: '捷风', re: /捷风|婕提|捷丰/ },
+  { hero: '夜露', re: /夜露|夜戮|蓝色小丑/ },
+  { hero: '芮娜', re: /芮娜|蕾娜|瑞纳|苪娜|锐纳/ },
+  { hero: '猎枭', re: /猎枭|苏法|猎鸟/ },
+  { hero: '贤者', re: /贤者|圣祈|奶妈/ },
+  { hero: '奇乐', re: /奇乐|恺宙/ },
+  { hero: '尚勃勒', re: /尚勃勒|钱博尔|钱包/ },
+  { hero: '瑟符', re: /瑟符|保安/ },
+  { hero: '炼狱', re: /炼狱|布史东/ },
+  { hero: '不死鸟', re: /不死鸟|菲尼克斯|火男/ },
+  { hero: '雷兹', re: /雷兹|炸弹妹/ },
+  { hero: '星礈', re: /星礈|黑妹/ },
+  { hero: '蝰蛇', re: /蝰蛇|薇蝮/ },
+  { hero: '暮蝶', re: /暮蝶|克洛芙|慕蝶/ },
+  { hero: '幽影', re: /幽影|欧门/ },
+  { hero: '海神', re: /海神|哈勃/ },
+  { hero: '铁臂', re: /铁臂/ },
+  { hero: '斯凯', re: /斯凯|丝凯/ },
+  { hero: '盖可', re: /盖可|盖克|皮蛋|丢丢|鲨鲨/ },
+  { hero: '钛狐', re: /钛狐|钛湖/ },
+  { hero: '壹决', re: /壹决|一决|一绝/ },
+  { hero: '幻棱', re: /幻棱/ },
+  { hero: '维斯', re: /维斯/ },
+  { hero: '钢锁', re: /钢锁|钢索|我🔒/ },
+  { hero: '霓虹', re: /霓虹/ },
+  { hero: '遐思', re: /遐思/ },
 ];
-
-// 通用来源：语料文件名、裸 BV 号、论坛帖号、百科/小组条目。这些出处本身不指向任何人物，
-// 拿它们去学"这条属于谁"必然学错——`corpus12.graph.txt 弹幕` 就曾把「霸榜」「客串」
-// 「精彩live」一并算成蔡依林的。通用来源一律不参与学习。
 const GENERIC_SOURCE = /corpus|\.txt|^BV[0-9A-Za-z]{10}$|tid=|豆瓣|萌娘百科|百科/;
-
-// 来源完全相同才算同一个人；同一个来源串在不同条目里指向过两个人，就不学，交给关键词表判
 function learnSourceHero(rows, srcKey) {
   const vote = new Map();
   for (const r of rows) {
@@ -975,14 +928,11 @@ function learnSourceHero(rows, srcKey) {
   for (const [s, set] of vote) if (set.size === 1) out.set(s, [...set][0]);
   return out;
 }
-
-// ---- 溯源兜底 ----
-// 早期几轮收的短句（"郭门永存！""退票退票退票退票！"）只有"《某视频》弹幕"这样的内部记法，
-// 语料里逐字查得到的中长句没问题，短句因为不足 10 字过不了 attest 的连续命中门槛，
-// 于是长期挂在未溯源名单里。这里统一补一条站内检索直链：搜的就是这句原文，
-// 点开能看到它出自哪些视频，比空着强，也不算编造出处（项目里 lore-extra7 已经在用同类链接）。
-const SEARCH_URL = (q) =>
-  'https://search.bilibili.com/all?keyword=' + encodeURIComponent(String(q || '').slice(0, 30));
+const SEARCH_URL = (q) => {
+  let s = String(q || '').slice(0, 30);
+  if (/[\uD800-\uDBFF]$/.test(s)) s = s.slice(0, -1);
+  return 'https://search.bilibili.com/all?keyword=' + encodeURIComponent(s);
+};
 for (const q of keptQuotes) {
   if (/https?:\/\//i.test(String(q.src || '')) || String(q.verify || '').trim()) continue;
   q.verify = SEARCH_URL(q.text);
@@ -991,17 +941,11 @@ for (const c of keptCards) {
   if (/https?:\/\//i.test(String(c.source || '')) || String(c.verify || '').trim()) continue;
   c.verify = SEARCH_URL(c.example || c.term);
 }
-
 const CARD_SOURCE_HERO = learnSourceHero(keptCards, 'source');
 const QUOTE_SOURCE_HERO = learnSourceHero(keptQuotes, 'src');
-
 function inferHero(src, learned, heroNames) {
   const s = String(src || '').trim();
   if (!s) return '';
-  // 显式规则表优先于从数据里学到的映射。学到的映射会把一条原始标注传染给同来源的所有条目：
-  // 词卡「欧米伽」被错标成淋淋后，同为《高等淋语》第三课弹幕的「吸入」「难逃一吸」
-  // 「暴风吸入」「吸域风情」「尊素」全跟着被算成淋淋的，而这五个词跟蔡依林毫无关系。
-  // 规则表是人工过一遍的，学到的映射只是原始数据的回声，前者优先。
   for (const rule of HERO_SOURCE_RULES) {
     if (rule.re.test(s) && heroNames.has(rule.hero)) return rule.hero;
   }
@@ -1009,13 +953,6 @@ function inferHero(src, learned, heroNames) {
   if (exact && heroNames.has(exact)) return exact;
   return '';
 }
-
-// 代表作补全：34 位人物的 works 少于 3 条，其中艾希/霞/萨勒芬妮为 0。
-// 由 scripts/harvest-works.js 采集、逐条筛过后采纳，两类来源都不含任何新断言：
-//   · 视频——B 站公开搜索接口，作者名与人物名精确一致，且标题本身是淋语内容
-//     （作者名对上还不够：《四万血海诺：最新科研辅助流》是老凡Fv 发的，但那不是淋语代表作，已剔除）
-//   · 词卡·名言——游戏角色没有"作品"但有"名场面"，取其名下已带可追溯来源的条目
-// 逐条出处见 evidence/works-*.json。
 const WORKS_TOPUP = {
   妮蔻: ['词卡·变身茄子'],
   拉比克: ['词卡·A杖效果'],
@@ -1034,7 +971,6 @@ const WORKS_TOPUP = {
   霞: ['词卡·掉毛母鸡'],
   萨勒芬妮: ['词卡·平衡车天后', '名言·平衡车是尖叫婆，你茶坐的是轮椅。'],
 };
-
 const topUpWorks = (arr) =>
   arr.map((h) => {
     const add = WORKS_TOPUP[h.name];
@@ -1043,28 +979,23 @@ const topUpWorks = (arr) =>
     for (const w of add) if (!works.includes(w)) works.push(w);
     return Object.assign({}, h, { works });
   });
-
 const __export = {
   flashcards: keptCards,
   heroes: topUpWorks(allHeroes),
   quotes: keptQuotes,
-  // 审计剔除的名单：升级时要从已有库里把这些内置条目真正删掉，光靠过滤对老库没用
   pruned: {
     cards: [...new Set(dropCards.concat(orphanCards.map((c) => c.term)))],
     quotes: [...new Set(dropQuotes.concat(orphanQuotes.map((q) => q.text)))],
     heroes: extra5.dropHeroes || [],
   },
   heroNames: heroNameSet,
-  // 补 hero 关联时用：已有人物名白名单，防止规则表把名字写错后往库里塞出一个查无此人的引用
   inferCardHero(card) {
     return inferHero(card && card.source, CARD_SOURCE_HERO, __export.heroNames);
   },
   inferQuoteHero(quote) {
     return inferHero(quote && quote.src, QUOTE_SOURCE_HERO, __export.heroNames);
   },
-  // 归属推断的规则表本身也导出去，界面与审计脚本要能看见"为什么这条被判给了某个人"
   heroSourceRules: HERO_SOURCE_RULES.map((r) => ({ hero: r.hero, pattern: String(r.re.source) })),
 };
-// @platform: 双端导出，Node/打包器走 module.exports，浏览器/小程序同步脚本走 window 全局
 if (typeof module === 'object' && module.exports) module.exports = __export;
 else if (typeof window !== 'undefined') window.LORE_DATA = __export;

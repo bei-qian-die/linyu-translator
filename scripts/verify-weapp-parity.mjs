@@ -2,6 +2,7 @@
 // 以 src/core/seed.json 为唯一数据源，跑 test/core.test.js 的全部用例 + 全量词条 + 组合句，
 // 逐字符比对两套 translateText 的输出。任一条不一致直接失败。
 import fs from 'node:fs';
+import assert from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
@@ -10,7 +11,23 @@ const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const coreSeed = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'core', 'seed.json'), 'utf8'));
-const mpSeed = require('../miniprogram/data/seed.js');
+// 小程序端 seed 是列式编码（{__col:1, words:{keys,rows}}）以压主包，这里先还原再比对。
+const decodeCol = (part) => {
+  if (!part || !Array.isArray(part.rows)) return part;
+  const { keys, rows } = part;
+  return rows.map((row) => {
+    const o = {};
+    for (let i = 0; i < keys.length; i++) {
+      const v = row[i];
+      if (v !== null && v !== undefined) o[keys[i]] = v;
+    }
+    return o;
+  });
+};
+const rawMpSeed = require('../miniprogram/data/seed.js');
+const mpSeed = rawMpSeed.__col
+  ? { words: decodeCol(rawMpSeed.words), rules: decodeCol(rawMpSeed.rules) }
+  : rawMpSeed;
 const coreTranslator = require('../src/core/translator.js');
 const mpTranslator = require('../miniprogram/core/translator.js');
 
@@ -137,7 +154,11 @@ if (failures.length) {
 }
 
 // 数据必须同源：即便翻译结果偶然一致，seed 不同步也会在下次数据更新时埋雷
-if (JSON.stringify(coreSeed) !== JSON.stringify(mpSeed)) {
+// 用深比较而不是 JSON.stringify：小程序端是列式编码，解码回来的 key 顺序按「首次出现」排列，
+// 与原 JSON 的书写顺序不一定相同，stringify 会比出假差异。
+try {
+  assert.deepStrictEqual(mpSeed, coreSeed);
+} catch {
   console.log('FAIL [parity] 小程序 seed 与 src/core/seed.json 不一致，请先运行 npm run weapp:sync');
   process.exit(1);
 }
