@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-10-27T02:20:00.000Z",
+  "round": 21,
+  "zone": "守望淋锋",
+  "corpusFile": "corpus/corpus-web21.txt",
+  "sources": [
+    {
+      "url": "https://www.vgover.com/news/154735",
+      "title": "《守望先锋》各英雄绰号外号盘点（梗图分享）",
+      "site": "电玩帮",
+      "use": "守望英雄官方名 ↔ 玩家外号对照主表（天使=摩西/神秘摩西女、秩序之光=辛梅塔/阿三 等）"
+    },
+    {
+      "url": "https://www.gamemale.com/archiver/tid-133550.html",
+      "title": "【守望淋锋】最近站街小品两则",
+      "site": "GameMale",
+      "up": "瓦摘纳养鼠",
+      "use": "淋语成句主矿：钻地婆-探奇、你花、铁拳、娜娜、站街、吸入、做法害人、一日为奴终身下贱"
+    },
+    {
+      "url": "https://bbs.nga.cn/read.php?page=2&tid=43409821",
+      "title": "[杂谈]为什么天使被称作摩西女?",
+      "site": "NGA 守望先锋版",
+      "use": "摩西女=淋语梗出圈的实证；你摩/我摩 自称体系原句"
+    },
+    {
+      "url": "https://ngabbs.com/read.php?tid=47719568",
+      "title": "为啥旺达幻视三部曲有这么多讲淋语的观众",
+      "site": "NGA",
+      "use": "「从守望的阿三和莫伊拉就是一堆我莫我辛的」——我莫/我辛 自称体系实证"
+    },
+    {
+      "url": "https://bbs.nga.cn/read.php?tid=9339277",
+      "title": "有没有帖子总结下守望里的黑话，角色昵称啊",
+      "site": "NGA 守望先锋版",
+      "use": "黑话与昵称：走地鸡、幼儿源、打铁、双飞、老汉推车"
+    },
+    {
+      "url": "https://post.smzdm.com/p/apqpz4r0/",
+      "title": "守望先锋：英雄外号大盘点，最后一个只有老玩家才懂",
+      "site": "什么值得买 · 转自 B站 漓江塔的喵大人",
+      "use": "外号来源逐条解释（美羊羊=奥丽莎、花男=生命之梭、鲑鱼大帝=拉玛刹）"
+    },
+    {
+      "url": "http://ow.replays.net/m/news/201606/845.html",
+      "title": "你平常怎么叫他们 守望先锋各英雄常见外号",
+      "site": "锐派游戏",
+      "use": "老玩家叫法：阿三妹、摄像头、传送门、炸弹人、王大锤"
+    },
+    {
+      "url": "https://www.962.net/wz/151376.html",
+      "title": "一可的守望大厅视频合集 夏一可守望先锋英雄指南",
+      "site": "乐游网",
+      "use": "UP主夏一可的英雄标签语（老汉推车、近战妈妈、自带外挂）"
+    },
+    {
+      "url": "https://www.gamersky.com/wenku/201612/846771_4.shtml",
+      "title": "小轩在不在？我是娇妹 2016年十大经典“游戏梗”",
+      "site": "游民星空",
+      "use": "守望屁股 / 吸一口 / 有基佬开我裤链 出处"
+    },
+    {
+      "url": "http://ow.replays.net/news/201606/909.html",
+      "title": "守望先锋为什么能吸引并不感兴趣的我?",
+      "site": "锐派游戏",
+      "use": "吸一口 / 开箱先锋 / 全场最佳 出处"
+    }
+  ]
+}

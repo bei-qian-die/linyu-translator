@@ -1,0 +1,1 @@
+module.exports = { cards: [], quotes: [], heroes: [], heroMerge: [], quoteMerge: [] };

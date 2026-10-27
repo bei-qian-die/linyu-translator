@@ -127,10 +127,20 @@ async function doGitee() {
   }
 
   const have = new Set((rel.assets || []).map((a) => a.name));
+  // Gitee 单文件上限 100MB（GitHub 是 2GB）。桌面安装包从 1.24.0 起涨到 101MB，
+  // 直接传会被 400 打回；这里跳过并提示「请走 GitHub」，别让整轮发布卡在一个资产上。
+  const GITEE_MAX = 100 * 1024 * 1024;
   for (const file of ASSETS) {
     const base = path.basename(file);
     if (have.has(base)) {
       console.log('[gitee] 跳过已存在资产', base);
+      continue;
+    }
+    const size = fs.statSync(file).size;
+    if (size > GITEE_MAX) {
+      console.log(
+        `[gitee] 跳过 ${base}（${(size / 1024 / 1024).toFixed(1)}MB 超过 Gitee 单文件 100MB 上限，桌面版请从 GitHub Release 下载）`
+      );
       continue;
     }
     const form = new FormData();

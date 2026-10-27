@@ -819,7 +819,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards, extra21.cards),
     'term',
     dropCards
   ),
@@ -827,7 +827,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes, extra21.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -835,7 +835,7 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes, extra21.quotes),
     'text',
     dropQuotes
   ),

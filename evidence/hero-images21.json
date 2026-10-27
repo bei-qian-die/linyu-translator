@@ -1,0 +1,1075 @@
+{
+  "generatedAt": "2026-10-27T04:00:29.549966",
+  "count": 56,
+  "note": "只做裁剪/缩放/转码，无 AI 生成；来源为百度图库、必应图库与 B 站视频封面，逐条记在 sourceUrl。",
+  "map": {
+    "D.Va": {
+      "img": "img/hero-457.png",
+      "source": "https://img1.baidu.com/it/u=2808732363,4065298482&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=897",
+      "crop": "center"
+    },
+    "查莉娅": {
+      "img": "img/hero-458.png",
+      "source": "",
+      "crop": "top"
+    },
+    "莱因哈特": {
+      "img": "img/hero-459.png",
+      "source": "https://img1.baidu.com/it/u=488279447,1499366723&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=646",
+      "crop": "top"
+    },
+    "路霸": {
+      "img": "img/hero-460.png",
+      "source": "",
+      "crop": "top"
+    },
+    "温斯顿": {
+      "img": "img/hero-461.png",
+      "source": "https://img1.baidu.com/it/u=3395701358,2977818258&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=632",
+      "crop": "top"
+    },
+    "奥丽莎": {
+      "img": "img/hero-462.png",
+      "source": "https://img2.baidu.com/it/u=8311114,1106559383&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
+      "crop": "top"
+    },
+    "破坏球": {
+      "img": "img/hero-463.png",
+      "source": "",
+      "crop": "center"
+    },
+    "西格玛": {
+      "img": "img/hero-464.png",
+      "source": "https://img2.baidu.com/it/u=2180060403,3689915437&fm=253&fmt=auto&app=138&f=JPG?w=349&h=500",
+      "crop": "top"
+    },
+    "渣客女王": {
+      "img": "img/hero-465.png",
+      "source": "",
+      "crop": "center"
+    },
+    "拉玛刹": {
+      "img": "img/hero-466.png",
+      "source": "https://img2.baidu.com/it/u=3769110642,3547618489&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+      "crop": "center"
+    },
+    "毛加": {
+      "img": "img/hero-467.png",
+      "source": "",
+      "crop": "top"
+    },
+    "骇灾": {
+      "img": "img/hero-468.png",
+      "source": "https://ok.166.net/reunionpub/1_kol_20241231_dd63e8a455d0876801fd829b194f79eb.png",
+      "crop": "top"
+    },
+    "金驭": {
+      "img": "img/hero-469.png",
+      "source": "https://image.9game.cn/2016/10/19/14529963.jpg",
+      "crop": "top"
+    },
+    "D.Mon": {
+      "img": "img/hero-470.png",
+      "source": "https://gd-hbimg.huaban.com/d52ca26a5b63d06b59c6220b1414c5b1dee69ac5d5cb-yzkoRW_fw240",
+      "crop": "top"
+    },
+    "末日铁拳": {
+      "img": "img/hero-471.png",
+      "source": "https://img1.baidu.com/it/u=3568592034,1149981797&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=603",
+      "crop": "top"
+    },
+    "源氏": {
+      "img": "img/hero-472.png",
+      "source": "https://img1.baidu.com/it/u=4016260587,454182421&fm=253&fmt=auto&app=120&f=JPEG?w=540&h=1200",
+      "crop": "top"
+    },
+    "半藏": {
+      "img": "img/hero-473.png",
+      "source": "",
+      "crop": "top"
+    },
+    "死神": {
+      "img": "img/hero-474.png",
+      "source": "https://img2.baidu.com/it/u=1775309428,1105110624&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=743",
+      "crop": "top"
+    },
+    "猎空": {
+      "img": "img/hero-475.png",
+      "source": "https://img2.baidu.com/it/u=2300553852,2579933297&fm=253&fmt=auto&app=138&f=JPEG?w=354&h=500",
+      "crop": "top"
+    },
+    "卡西迪": {
+      "img": "img/hero-476.png",
+      "source": "https://gd-hbimg.huaban.com/34e7d7e7d8ca98ad8eb75c19ffb44dc20c3782ed253374-840bSJ_fw240",
+      "crop": "top"
+    },
+    "狂鼠": {
+      "img": "img/hero-477.png",
+      "source": "https://img1.baidu.com/it/u=1424919230,2240344577&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=642",
+      "crop": "top"
+    },
+    "法老之鹰": {
+      "img": "img/hero-478.png",
+      "source": "",
+      "crop": "top"
+    },
+    "美": {
+      "img": "img/hero-479.png",
+      "source": "https://img1.baidu.com/it/u=1179652439,3177949783&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=708",
+      "crop": "top"
+    },
+    "士兵:76": {
+      "img": "img/hero-480.png",
+      "source": "",
+      "crop": "top"
+    },
+    "托比昂": {
+      "img": "img/hero-481.png",
+      "source": "https://gd-hbimg.huaban.com/83923bb13e8c36fd7254ae1dd0b77f7aebfeee841389a0-T53gh9_fw658webp",
+      "crop": "center"
+    },
+    "堡垒": {
+      "img": "img/hero-482.png",
+      "source": "https://img1.baidu.com/it/u=1414378328,194354213&fm=253&fmt=auto&app=138&f=PNG?w=500&h=658",
+      "crop": "top"
+    },
+    "黑百合": {
+      "img": "img/hero-483.png",
+      "source": "https://img0.baidu.com/it/u=713424385,3771942263&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=992",
+      "crop": "top"
+    },
+    "艾什": {
+      "img": "img/hero-484.png",
+      "source": "",
+      "crop": "top"
+    },
+    "回声": {
+      "img": "img/hero-485.png",
+      "source": "https://www.pngmart.com/files/22/Overwatch-PNG-Isolated-Image.png",
+      "crop": "top"
+    },
+    "索杰恩": {
+      "img": "img/hero-486.png",
+      "source": "https://img.166.net/reunionpub/1_kol_20250801_6929f89f6841eca529f736c52f444541.png?imageView&amp;tostatic=0&amp;thumbnail=1500x0",
+      "crop": "center"
+    },
+    "探奇": {
+      "img": "img/hero-487.png",
+      "source": "https://gd-hbimg.huaban.com/4ba048738f7ed4aed1ed7ebc0742e929b34ba0c086e830-EAibEp_fw240",
+      "crop": "top"
+    },
+    "秩序之光": {
+      "img": "img/hero-488.png",
+      "source": "http://www.game-art-hq.com/wp-content/uploads/2016/05/Symmetra-Overwatch-Official-Game-Art.png",
+      "crop": "top"
+    },
+    "弗蕾娅": {
+      "img": "img/hero-489.png",
+      "source": "",
+      "crop": "center"
+    },
+    "斩仇": {
+      "img": "img/hero-490.png",
+      "source": "https://www.pngmart.com/files/22/Overwatch-PNG-Isolated-Image.png",
+      "crop": "top"
+    },
+    "安燃": {
+      "img": "img/hero-491.png",
+      "source": "https://gd-hbimg.huaban.com/db339b8e37bae85b6755635a49d07ebe641d4b34705c0-wqxyYj_fw658",
+      "crop": "top"
+    },
+    "埃姆雷": {
+      "img": "img/hero-492.png",
+      "source": "https://gd-hbimg.huaban.com/78814f480422a09205359f5f39a3aae8a05ebeedb14c9-u7a4Vj_fw240",
+      "crop": "top"
+    },
+    "西拉": {
+      "img": "img/hero-493.png",
+      "source": "https://gd-hbimg.huaban.com/a9d1549c249fd114fe52c1006a9063e00106438e365b8-usUWpY_fw658webp",
+      "crop": "top"
+    },
+    "死怨": {
+      "img": "img/hero-494.png",
+      "source": "https://gd-hbimg.huaban.com/b1b27e87653070614550d3544484188dc49b3dbfdb34f-pVNl59_fw236",
+      "crop": "top"
+    },
+    "天使": {
+      "img": "img/hero-495.png",
+      "source": "https://img2.baidu.com/it/u=1242240344,2748210636&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=913",
+      "crop": "top"
+    },
+    "莫伊拉": {
+      "img": "img/hero-496.png",
+      "source": "https://img1.baidu.com/it/u=492252136,711658462&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=818",
+      "crop": "top"
+    },
+    "安娜": {
+      "img": "img/hero-497.png",
+      "source": "https://img1.baidu.com/it/u=1887977471,614646471&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=860",
+      "crop": "top"
+    },
+    "卢西奥": {
+      "img": "img/hero-498.png",
+      "source": "https://img2.baidu.com/it/u=4096178562,654976794&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=885",
+      "crop": "top"
+    },
+    "禅雅塔": {
+      "img": "img/hero-499.png",
+      "source": "https://img2.baidu.com/it/u=3699987249,930973972&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=645",
+      "crop": "top"
+    },
+    "布丽吉塔": {
+      "img": "img/hero-500.png",
+      "source": "",
+      "crop": "top"
+    },
+    "巴蒂斯特": {
+      "img": "img/hero-501.png",
+      "source": "",
+      "crop": "top"
+    },
+    "黑影": {
+      "img": "img/hero-502.png",
+      "source": "",
+      "crop": "top"
+    },
+    "雾子": {
+      "img": "img/hero-503.png",
+      "source": "",
+      "crop": "top"
+    },
+    "生命之梭": {
+      "img": "img/hero-504.png",
+      "source": "https://img2.baidu.com/it/u=3372589773,1399288264&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=679",
+      "crop": "top"
+    },
+    "伊拉锐": {
+      "img": "img/hero-505.png",
+      "source": "",
+      "crop": "top"
+    },
+    "朱诺": {
+      "img": "img/hero-506.png",
+      "source": "",
+      "crop": "top"
+    },
+    "无漾": {
+      "img": "img/hero-507.png",
+      "source": "https://img2.baidu.com/it/u=4015450379,809114963&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=696",
+      "crop": "top"
+    },
+    "飞天猫": {
+      "img": "img/hero-508.png",
+      "source": "",
+      "crop": "top"
+    },
+    "瑞稀": {
+      "img": "img/hero-509.png",
+      "source": "https://www.pngplay.com/wp-content/uploads/11/Overwatch-Transparent-Images.png",
+      "crop": "top"
+    },
+    "血律": {
+      "img": "img/hero-510.png",
+      "source": "",
+      "crop": "top"
+    },
+    "守望淋锋 · 阿三专题区": {
+      "img": "img/hero-511.png",
+      "source": "",
+      "crop": "center"
+    },
+    "摩西女专题区": {
+      "img": "img/hero-512.png",
+      "source": "",
+      "crop": "center"
+    }
+  },
+  "items": [
+    {
+      "name": "D.Va",
+      "img": "img/hero-457.png",
+      "thumb": "img/thumb/hero-457.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=2808732363,4065298482&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=897",
+      "candTitle": "《守望先锋:归来》(守望先锋2》的dva新形象",
+      "origSize": [
+        800,
+        897
+      ],
+      "crop": "center",
+      "bytes": 106256
+    },
+    {
+      "name": "查莉娅",
+      "img": "img/hero-458.png",
+      "thumb": "img/thumb/hero-458.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        478,
+        759
+      ],
+      "crop": "top",
+      "bytes": 69097
+    },
+    {
+      "name": "莱因哈特",
+      "img": "img/hero-459.png",
+      "thumb": "img/thumb/hero-459.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=488279447,1499366723&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=646",
+      "candTitle": "莱因哈特:《守望先锋》的英勇坦克设计",
+      "origSize": [
+        500,
+        646
+      ],
+      "crop": "top",
+      "bytes": 78889
+    },
+    {
+      "name": "路霸",
+      "img": "img/hero-460.png",
+      "thumb": "img/thumb/hero-460.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        860,
+        1057
+      ],
+      "crop": "top",
+      "bytes": 68837
+    },
+    {
+      "name": "温斯顿",
+      "img": "img/hero-461.png",
+      "thumb": "img/thumb/hero-461.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=3395701358,2977818258&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=632",
+      "candTitle": "守望先锋皮肤鉴赏-温斯顿",
+      "origSize": [
+        500,
+        632
+      ],
+      "crop": "top",
+      "bytes": 106841
+    },
+    {
+      "name": "奥丽莎",
+      "img": "img/hero-462.png",
+      "thumb": "img/thumb/hero-462.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=8311114,1106559383&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
+      "candTitle": "守望先锋2第8赛季新神话皮肤公布:\"巨兽\"奥丽莎#守望先锋2##守望先锋",
+      "origSize": [
+        500,
+        889
+      ],
+      "crop": "top",
+      "bytes": 115167
+    },
+    {
+      "name": "破坏球",
+      "img": "img/hero-463.png",
+      "thumb": "img/thumb/hero-463.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1084,
+        1050
+      ],
+      "crop": "center",
+      "bytes": 75803
+    },
+    {
+      "name": "西格玛",
+      "img": "img/hero-464.png",
+      "thumb": "img/thumb/hero-464.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=2180060403,3689915437&fm=253&fmt=auto&app=138&f=JPG?w=349&h=500",
+      "candTitle": "是游戏《 a target=\"_blank\" href=\"/item/守望先锋/16025868\" data",
+      "origSize": [
+        349,
+        500
+      ],
+      "crop": "top",
+      "bytes": 85589
+    },
+    {
+      "name": "渣客女王",
+      "img": "img/hero-465.png",
+      "thumb": "img/thumb/hero-465.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        658,
+        731
+      ],
+      "crop": "center",
+      "bytes": 65208
+    },
+    {
+      "name": "拉玛刹",
+      "img": "img/hero-466.png",
+      "thumb": "img/thumb/hero-466.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=3769110642,3547618489&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+      "candTitle": "《守望先锋2》拉玛刹官方技能介绍 首个节奏型重装英雄",
+      "origSize": [
+        889,
+        500
+      ],
+      "crop": "center",
+      "bytes": 121276
+    },
+    {
+      "name": "毛加",
+      "img": "img/hero-467.png",
+      "thumb": "img/thumb/hero-467.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        860,
+        1067
+      ],
+      "crop": "top",
+      "bytes": 67100
+    },
+    {
+      "name": "骇灾",
+      "img": "img/hero-468.png",
+      "thumb": "img/thumb/hero-468.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://ok.166.net/reunionpub/1_kol_20241231_dd63e8a455d0876801fd829b194f79eb.png",
+      "candTitle": "英雄百科】骇灾_守望先锋 | 大神",
+      "origSize": [
+        752,
+        2160
+      ],
+      "crop": "top",
+      "bytes": 41447
+    },
+    {
+      "name": "金驭",
+      "img": "img/hero-469.png",
+      "thumb": "img/thumb/hero-469.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://image.9game.cn/2016/10/19/14529963.jpg",
+      "candTitle": "守望先锋首组OW英雄立绘 不禁使人笑掉大牙 辣眼睛_九游手机游戏",
+      "origSize": [
+        550,
+        792
+      ],
+      "crop": "top",
+      "bytes": 32104
+    },
+    {
+      "name": "D.Mon",
+      "img": "img/hero-470.png",
+      "thumb": "img/thumb/hero-470.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/d52ca26a5b63d06b59c6220b1414c5b1dee69ac5d5cb-yzkoRW_fw240",
+      "candTitle": "人物立绘-守望先锋-花瓣网|陪你做生活的设计师 | g (927×1920)",
+      "origSize": [
+        240,
+        299
+      ],
+      "crop": "top",
+      "bytes": 52617
+    },
+    {
+      "name": "末日铁拳",
+      "img": "img/hero-471.png",
+      "thumb": "img/thumb/hero-471.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=3568592034,1149981797&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=603",
+      "candTitle": "正装铁拳守望先锋可穿戴头盔摆件全身盔甲手工eva模型道具cos服装",
+      "origSize": [
+        500,
+        603
+      ],
+      "crop": "top",
+      "bytes": 49438
+    },
+    {
+      "name": "源氏",
+      "img": "img/hero-472.png",
+      "thumb": "img/thumb/hero-472.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=4016260587,454182421&fm=253&fmt=auto&app=120&f=JPEG?w=540&h=1200",
+      "candTitle": "守望先锋d.va 源氏壁纸",
+      "origSize": [
+        540,
+        1200
+      ],
+      "crop": "top",
+      "bytes": 69833
+    },
+    {
+      "name": "半藏",
+      "img": "img/hero-473.png",
+      "thumb": "img/thumb/hero-473.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        860,
+        1379
+      ],
+      "crop": "top",
+      "bytes": 68880
+    },
+    {
+      "name": "死神",
+      "img": "img/hero-474.png",
+      "thumb": "img/thumb/hero-474.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=1775309428,1105110624&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=743",
+      "candTitle": "守望先锋2死神皮肤有哪些",
+      "origSize": [
+        500,
+        743
+      ],
+      "crop": "top",
+      "bytes": 87533
+    },
+    {
+      "name": "猎空",
+      "img": "img/hero-475.png",
+      "thumb": "img/thumb/hero-475.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=2300553852,2579933297&fm=253&fmt=auto&app=138&f=JPEG?w=354&h=500",
+      "candTitle": "守望先锋 猎空者变胖之后还能那么灵活吗",
+      "origSize": [
+        354,
+        500
+      ],
+      "crop": "top",
+      "bytes": 120971
+    },
+    {
+      "name": "卡西迪",
+      "img": "img/hero-476.png",
+      "thumb": "img/thumb/hero-476.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/34e7d7e7d8ca98ad8eb75c19ffb44dc20c3782ed253374-840bSJ_fw240",
+      "candTitle": "人物立绘-守望先锋-花瓣网|陪你做生活的设计师 | g (927×1920)",
+      "origSize": [
+        240,
+        750
+      ],
+      "crop": "top",
+      "bytes": 104499
+    },
+    {
+      "name": "狂鼠",
+      "img": "img/hero-477.png",
+      "thumb": "img/thumb/hero-477.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=1424919230,2240344577&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=642",
+      "candTitle": "守望先锋国服狂鼠的语音是谁配的",
+      "origSize": [
+        500,
+        642
+      ],
+      "crop": "top",
+      "bytes": 67356
+    },
+    {
+      "name": "法老之鹰",
+      "img": "img/hero-478.png",
+      "thumb": "img/thumb/hero-478.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        900,
+        1137
+      ],
+      "crop": "top",
+      "bytes": 62222
+    },
+    {
+      "name": "美",
+      "img": "img/hero-479.png",
+      "thumb": "img/thumb/hero-479.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=1179652439,3177949783&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=708",
+      "candTitle": "守望先锋 小美",
+      "origSize": [
+        500,
+        708
+      ],
+      "crop": "top",
+      "bytes": 74219
+    },
+    {
+      "name": "士兵:76",
+      "img": "img/hero-480.png",
+      "thumb": "img/thumb/hero-480.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1074,
+        1440
+      ],
+      "crop": "top",
+      "bytes": 79798
+    },
+    {
+      "name": "托比昂",
+      "img": "img/hero-481.png",
+      "thumb": "img/thumb/hero-481.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/83923bb13e8c36fd7254ae1dd0b77f7aebfeee841389a0-T53gh9_fw658webp",
+      "candTitle": "枪战英雄模型 PBR（守望先锋 托比昂 3D 渲染）",
+      "origSize": [
+        2400,
+        1350
+      ],
+      "crop": "center",
+      "bytes": 55894
+    },
+    {
+      "name": "堡垒",
+      "img": "img/hero-482.png",
+      "thumb": "img/thumb/hero-482.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=1414378328,194354213&fm=253&fmt=auto&app=138&f=PNG?w=500&h=658",
+      "candTitle": "《守望先锋》英雄堡垒的背景故事!",
+      "origSize": [
+        500,
+        658
+      ],
+      "crop": "top",
+      "bytes": 80959
+    },
+    {
+      "name": "黑百合",
+      "img": "img/hero-483.png",
+      "thumb": "img/thumb/hero-483.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img0.baidu.com/it/u=713424385,3771942263&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=992",
+      "candTitle": "「守望先锋」致命蝎尾黑百合——暗影中的一枪毙命!",
+      "origSize": [
+        800,
+        992
+      ],
+      "crop": "top",
+      "bytes": 77047
+    },
+    {
+      "name": "艾什",
+      "img": "img/hero-484.png",
+      "thumb": "img/thumb/hero-484.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        860,
+        1715
+      ],
+      "crop": "top",
+      "bytes": 60730
+    },
+    {
+      "name": "回声",
+      "img": "img/hero-485.png",
+      "thumb": "img/thumb/hero-485.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://www.pngmart.com/files/22/Overwatch-PNG-Isolated-Image.png",
+      "candTitle": "Overwatch, Heroes, Action, Teamwork, Skills PNG",
+      "origSize": [
+        961,
+        1252
+      ],
+      "crop": "top",
+      "bytes": 68963
+    },
+    {
+      "name": "索杰恩",
+      "img": "img/hero-486.png",
+      "thumb": "img/thumb/hero-486.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://img.166.net/reunionpub/1_kol_20250801_6929f89f6841eca529f736c52f444541.png?imageView&amp;tostatic=0&amp;thumbnail=1500x0",
+      "candTitle": "守望先锋】索杰恩神话皮肤曝光_守望先锋 | 大神",
+      "origSize": [
+        1122,
+        1232
+      ],
+      "crop": "center",
+      "bytes": 104674
+    },
+    {
+      "name": "探奇",
+      "img": "img/hero-487.png",
+      "thumb": "img/thumb/hero-487.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/4ba048738f7ed4aed1ed7ebc0742e929b34ba0c086e830-EAibEp_fw240",
+      "candTitle": "人物立绘-守望先锋-花瓣网|陪你做生活的设计师 | g (927×1920)",
+      "origSize": [
+        240,
+        750
+      ],
+      "crop": "top",
+      "bytes": 105598
+    },
+    {
+      "name": "秩序之光",
+      "img": "img/hero-488.png",
+      "thumb": "img/thumb/hero-488.webp",
+      "source": "必应图库",
+      "sourceUrl": "http://www.game-art-hq.com/wp-content/uploads/2016/05/Symmetra-Overwatch-Official-Game-Art.png",
+      "candTitle": "Symmetra from Overwatch – Game Art",
+      "origSize": [
+        1884,
+        3901
+      ],
+      "crop": "top",
+      "bytes": 43249
+    },
+    {
+      "name": "弗蕾娅",
+      "img": "img/hero-489.png",
+      "thumb": "img/thumb/hero-489.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1998,
+        1124
+      ],
+      "crop": "center",
+      "bytes": 106400
+    },
+    {
+      "name": "斩仇",
+      "img": "img/hero-490.png",
+      "thumb": "img/thumb/hero-490.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://www.pngmart.com/files/22/Overwatch-PNG-Isolated-Image.png",
+      "candTitle": "Overwatch, Heroes, Action, Teamwork, Skills PNG",
+      "origSize": [
+        961,
+        1252
+      ],
+      "crop": "top",
+      "bytes": 68963
+    },
+    {
+      "name": "安燃",
+      "img": "img/hero-491.png",
+      "thumb": "img/thumb/hero-491.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/db339b8e37bae85b6755635a49d07ebe641d4b34705c0-wqxyYj_fw658",
+      "candTitle": "自己收藏的守望先锋原画设定集",
+      "origSize": [
+        658,
+        877
+      ],
+      "crop": "top",
+      "bytes": 60787
+    },
+    {
+      "name": "埃姆雷",
+      "img": "img/hero-492.png",
+      "thumb": "img/thumb/hero-492.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/78814f480422a09205359f5f39a3aae8a05ebeedb14c9-u7a4Vj_fw240",
+      "candTitle": "守望先锋-机甲-科幻-角色-立绘-花瓣网|陪你做生活的设计师 | oncept, John Polidora : The Los ...",
+      "origSize": [
+        240,
+        1886
+      ],
+      "crop": "top",
+      "bytes": 76410
+    },
+    {
+      "name": "西拉",
+      "img": "img/hero-493.png",
+      "thumb": "img/thumb/hero-493.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/a9d1549c249fd114fe52c1006a9063e00106438e365b8-usUWpY_fw658webp",
+      "candTitle": "Overwatch [1]图片_奇幻图片素材-花瓣网",
+      "origSize": [
+        600,
+        800
+      ],
+      "crop": "top",
+      "bytes": 64971
+    },
+    {
+      "name": "死怨",
+      "img": "img/hero-494.png",
+      "thumb": "img/thumb/hero-494.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://gd-hbimg.huaban.com/b1b27e87653070614550d3544484188dc49b3dbfdb34f-pVNl59_fw236",
+      "candTitle": "人物立绘-守望先锋-花瓣网|陪你做生活的设计师 | g (927×1920)",
+      "origSize": [
+        236,
+        738
+      ],
+      "crop": "top",
+      "bytes": 116508
+    },
+    {
+      "name": "天使",
+      "img": "img/hero-495.png",
+      "thumb": "img/thumb/hero-495.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=1242240344,2748210636&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=913",
+      "candTitle": "暴雪嘉年华:《守望先锋2》高清设定图 天使姐姐美炸_英雄",
+      "origSize": [
+        500,
+        913
+      ],
+      "crop": "top",
+      "bytes": 61723
+    },
+    {
+      "name": "莫伊拉",
+      "img": "img/hero-496.png",
+      "thumb": "img/thumb/hero-496.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=492252136,711658462&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=818",
+      "candTitle": "守望先锋皮肤鉴赏-莫伊拉 - 知乎",
+      "origSize": [
+        500,
+        818
+      ],
+      "crop": "top",
+      "bytes": 87457
+    },
+    {
+      "name": "安娜",
+      "img": "img/hero-497.png",
+      "thumb": "img/thumb/hero-497.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img1.baidu.com/it/u=1887977471,614646471&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=860",
+      "candTitle": "守望先锋2安娜皮肤有哪些",
+      "origSize": [
+        500,
+        860
+      ],
+      "crop": "top",
+      "bytes": 78074
+    },
+    {
+      "name": "卢西奥",
+      "img": "img/hero-498.png",
+      "thumb": "img/thumb/hero-498.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=4096178562,654976794&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=885",
+      "candTitle": "先锋守望先锋2概念艺术数字艺术作品卢西奥守望先锋暴雪娱乐白色背景",
+      "origSize": [
+        500,
+        885
+      ],
+      "crop": "top",
+      "bytes": 58528
+    },
+    {
+      "name": "禅雅塔",
+      "img": "img/hero-499.png",
+      "thumb": "img/thumb/hero-499.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=3699987249,930973972&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=645",
+      "candTitle": "守望先锋:禅雅塔角色深度解析",
+      "origSize": [
+        500,
+        645
+      ],
+      "crop": "top",
+      "bytes": 68447
+    },
+    {
+      "name": "布丽吉塔",
+      "img": "img/hero-500.png",
+      "thumb": "img/thumb/hero-500.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1166,
+        1600
+      ],
+      "crop": "top",
+      "bytes": 71659
+    },
+    {
+      "name": "巴蒂斯特",
+      "img": "img/hero-501.png",
+      "thumb": "img/thumb/hero-501.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        860,
+        1580
+      ],
+      "crop": "top",
+      "bytes": 61392
+    },
+    {
+      "name": "黑影",
+      "img": "img/hero-502.png",
+      "thumb": "img/thumb/hero-502.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        492,
+        1178
+      ],
+      "crop": "top",
+      "bytes": 61738
+    },
+    {
+      "name": "雾子",
+      "img": "img/hero-503.png",
+      "thumb": "img/thumb/hero-503.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1080,
+        2400
+      ],
+      "crop": "top",
+      "bytes": 89147
+    },
+    {
+      "name": "生命之梭",
+      "img": "img/hero-504.png",
+      "thumb": "img/thumb/hero-504.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=3372589773,1399288264&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=679",
+      "candTitle": "守望先锋花男:菩萨心,光照亮",
+      "origSize": [
+        500,
+        679
+      ],
+      "crop": "top",
+      "bytes": 94258
+    },
+    {
+      "name": "伊拉锐",
+      "img": "img/hero-505.png",
+      "thumb": "img/thumb/hero-505.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        2100,
+        2800
+      ],
+      "crop": "top",
+      "bytes": 58587
+    },
+    {
+      "name": "朱诺",
+      "img": "img/hero-506.png",
+      "thumb": "img/thumb/hero-506.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        394,
+        700
+      ],
+      "crop": "top",
+      "bytes": 65401
+    },
+    {
+      "name": "无漾",
+      "img": "img/hero-507.png",
+      "thumb": "img/thumb/hero-507.webp",
+      "source": "百度图库",
+      "sourceUrl": "https://img2.baidu.com/it/u=4015450379,809114963&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=696",
+      "candTitle": "守望先锋##无漾",
+      "origSize": [
+        500,
+        696
+      ],
+      "crop": "top",
+      "bytes": 97850
+    },
+    {
+      "name": "飞天猫",
+      "img": "img/hero-508.png",
+      "thumb": "img/thumb/hero-508.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        658,
+        877
+      ],
+      "crop": "top",
+      "bytes": 60787
+    },
+    {
+      "name": "瑞稀",
+      "img": "img/hero-509.png",
+      "thumb": "img/thumb/hero-509.webp",
+      "source": "必应图库",
+      "sourceUrl": "https://www.pngplay.com/wp-content/uploads/11/Overwatch-Transparent-Images.png",
+      "candTitle": "Overwatch Icons, Characters, Logos PNG Picture",
+      "origSize": [
+        961,
+        1252
+      ],
+      "crop": "top",
+      "bytes": 68963
+    },
+    {
+      "name": "血律",
+      "img": "img/hero-510.png",
+      "thumb": "img/thumb/hero-510.webp",
+      "source": "必应图库",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        640,
+        1137
+      ],
+      "crop": "top",
+      "bytes": 59901
+    },
+    {
+      "name": "守望淋锋 · 阿三专题区",
+      "img": "img/hero-511.png",
+      "thumb": "img/thumb/hero-511.webp",
+      "source": "B站视频封面",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1920,
+        1080
+      ],
+      "crop": "center",
+      "bytes": 107701
+    },
+    {
+      "name": "摩西女专题区",
+      "img": "img/hero-512.png",
+      "thumb": "img/thumb/hero-512.webp",
+      "source": "B站视频封面",
+      "sourceUrl": "",
+      "candTitle": "(fix 补抓)",
+      "origSize": [
+        1920,
+        1080
+      ],
+      "crop": "center",
+      "bytes": 111873
+    }
+  ],
+  "pending": [],
+  "missing": []
+}

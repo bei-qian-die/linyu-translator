@@ -1,0 +1,802 @@
+[
+  {
+    "term": "先锋",
+    "zh": "先锋",
+    "type": "slang",
+    "meaning": "重装类副职责之一，擅长跳跃进场，脱离战场后能快速回少量血量。",
+    "example": "守望先锋 好莱坞岩浆跑酷 作者：一位勇士骂骂咧咧 代码 BE060",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 20
+  },
+  {
+    "term": "对面",
+    "zh": "对面",
+    "type": "slang",
+    "meaning": "敌方队伍；「玩奶遇到对面有狗的看这期就行了」。",
+    "example": "今天国服比赛小路霸霸上场了，那张图还赢了对面毛加/奥丽莎[笑哭]",
+    "source": "https://www.bilibili.com/video/BV1hrWF6mEgy",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 20
+  },
+  {
+    "term": "法鸡",
+    "zh": "法老之鹰",
+    "type": "slang",
+    "meaning": "输出。台服叫法拉更省事；「落地法拉不如鸡」的段子衍生出「法鸡」，不会飞的叫走地鸡。",
+    "example": "【时间模玩04】Figma法老之鹰  [ 法鸡现货低于订价，难道不香吗？？？]",
+    "source": "https://bbs.nga.cn/read.php?tid=9339277",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 20
+  },
+  {
+    "term": "大招",
+    "zh": "大招",
+    "type": "slang",
+    "meaning": "终极技能（Q 键）；「血律大招语音13语对比」这类视频专门盘大招语音的空耳梗。",
+    "example": "回声现在还是靠她大招逆转战局的偏多，毕竟俩个T大招，对面不好接",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 20
+  },
+  {
+    "term": "素",
+    "zh": "那就",
+    "type": "slang",
+    "meaning": "淋语里最基础的谐音替换——「是」一律写成「素」；守望区全篇都在用（本可也素、真不愧素、那素）。",
+    "example": "完蛋，我第一喜欢玩索杰恩第二喜欢玩源氏。难道我真的素直男[难过]",
+    "source": "https://www.gamemale.com/archiver/tid-133550.html",
+    "slot": "守望淋锋/守望整活梗",
+    "score": 20
+  },
+  {
+    "term": "摄像头",
+    "zh": "哨戒炮",
+    "type": "slang",
+    "meaning": "秩序之光（阿三）的哨戒炮，因为常被放在角落、外形像摄像头而得名。",
+    "example": "6个摄像头能布防封锁两个过道口，3个摄像头只能封锁一个要口。",
+    "source": "http://ow.replays.net/m/news/201606/845.html",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 20
+  },
+  {
+    "term": "雾子",
+    "zh": "雾子",
+    "type": "slang",
+    "meaning": "支援。巫女设定，官方名就叫雾子；2026 年赛季里有过「雾子加强」的热补丁调整，玩家讨论度高。",
+    "example": "雾子开大丢四个标和开大给激素，两标飞死老马[doge]源氏很多余",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 20
+  },
+  {
+    "term": "威能",
+    "zh": "威能",
+    "type": "slang",
+    "meaning": "2026 年第一赛季的新系统：每位英雄都有专属威能，比赛中先选一个次级威能再选一个主要威能来强化技能组。",
+    "example": "讲道理群奶威能虽然挺有用但现在路霸强度应该给他常驻的[笑哭]",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋",
+    "score": 20
+  },
+  {
+    "term": "球",
+    "zh": "破坏球",
+    "type": "slang",
+    "meaning": "重装。本体是一只装在球形机甲里的仓鼠，所以叫球或仓鼠；重力坠击（下压）玩家叫「坐」。",
+    "example": "去哪找 up 这种又玩守望又搞抽象还是阿森纳球迷的人啊[doge]",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 20
+  },
+  {
+    "term": "传送门",
+    "zh": "传送面板",
+    "type": "slang",
+    "meaning": "秩序之光的传送面板，玩家叫传送门；「传送门在这里」「传送门打掉了」是报点常用句。",
+    "example": "注意听声音 传送门也是蓝甲和血听到蓝甲要爆炸了就t走就好了",
+    "source": "http://ow.replays.net/m/news/201606/845.html",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 20
+  },
+  {
+    "term": "守望淋锋",
+    "zh": "守望",
+    "type": "slang",
+    "meaning": "《守望先锋》的淋化写法，先→淋。通讯录玩家把各个游戏区都改成「X淋X」，守望区就是守望淋锋；论坛里也有直接写 0W 的（把 O 写成 0）。2026 年官方虽然去掉了名称里的「2」，老玩家仍习惯写守望先锋2 / 守望2 来区分旧版本。",
+    "example": "Hello婊贝们大家坏，最近本可沉迷亚服守望淋锋不可自拔惹",
+    "source": "https://www.gamemale.com/archiver/tid-133550.html",
+    "slot": "守望淋锋",
+    "score": 20
+  },
+  {
+    "term": "跳",
+    "zh": "喷射背包",
+    "type": "slang",
+    "meaning": "温斯顿的喷射背包，玩家叫跳（落地那下也叫坐）。",
+    "example": "血律这个造型非常像迈克尔杰克逊啊，出场我还以为会跳太空步呢",
+    "source": "https://www.bilibili.com/read/cv12440820/",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 19
+  },
+  {
+    "term": "摩西女",
+    "zh": "天使",
+    "type": "slang",
+    "meaning": "支援。英文名 Mercy 连读像「摩西」，繁体译慈悲；「摩西女」最早是通讯录淋语梗，后来破圈被大众玩家接受，用起来多带贬低或自嘲。自称我摩、指认你摩。",
+    "example": "【守望淋锋】又素血律Daddy掌掴单牵摩西女平凡的一天鸭",
+    "source": "https://bbs.nga.cn/read.php?page=2&tid=43409821",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 19
+  },
+  {
+    "term": "生存",
+    "zh": "生存",
+    "type": "slang",
+    "meaning": "支援类副职责之一，偏自保与续航。",
+    "example": "这复活机会是专门留给大狗的，大狗嚼是唯一生存压力最大的地方",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 19
+  },
+  {
+    "term": "联动",
+    "zh": "联动",
+    "type": "slang",
+    "meaning": "与其它 IP 的联动活动；2026 年有《守望先锋》×《剑星》联动。",
+    "example": "一看联动我想买，但一看是黑百合不会玩，买来也只能吃灰，瞬间放弃",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 19
+  },
+  {
+    "term": "铁拳",
+    "zh": "末日铁拳",
+    "type": "slang",
+    "meaning": "重装。名字简称铁拳；站街小品里形容新角色「有点像铁拳转世 promax」。",
+    "example": "回复 @沙城二中第一铁拳 : 阿三不好打摩西的，除非摩西不会玩。",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 19
+  },
+  {
+    "term": "阴",
+    "zh": "阴",
+    "type": "slang",
+    "meaning": "又阴又恶心的打法；「老六路霸」「这点位不阴？」都是同一层意思。",
+    "example": "皇家赛道秩序之光阴人点位，布置陷阱等待猎物的到来【守望先锋2】",
+    "source": "https://bbs.nga.cn/read.php?tid=9339277",
+    "slot": "守望淋锋/守望整活梗",
+    "score": 19
+  },
+  {
+    "term": "输出",
+    "zh": "输出",
+    "type": "slang",
+    "meaning": "三大职责之一，负责搜索并歼灭敌人；玩家叫 C 位或 dps。预设职责队列每队 2 名。",
+    "example": "新英雄血律快速了解！新机制扣除最大生命值！超强输出辅助！",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 18
+  },
+  {
+    "term": "闪",
+    "zh": "闪",
+    "type": "slang",
+    "meaning": "源氏的闪（E 反弹），玩家直接叫闪或 E。",
+    "example": "离开闪光直接闪现到pp狂鼠的夹子上。抱歉没能让pp大人尽兴",
+    "source": "https://www.bilibili.com/read/cv12440820/",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 18
+  },
+  {
+    "term": "大锤",
+    "zh": "莱因哈特",
+    "type": "slang",
+    "meaning": "重装。手里一把巨型重锤，是最直观的外号来源；「王大锤」是顺口加成，「老汉推车」来自他冲锋撞人的样子（夏一可英雄指南的标签语）。",
+    "example": "莱因哈特 大锤、王大锤：最常见的叫法。因为举着一把类似大锤的武器",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 18
+  },
+  {
+    "term": "半藏",
+    "zh": "半藏",
+    "type": "slang",
+    "meaning": "输出。源氏的哥哥，岛田家忍者；官方名就叫半藏，玩家多直呼其名或叫忍者。",
+    "example": "开局半藏让源氏给配了 【bilibilionly同人扶持计划】",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 18
+  },
+  {
+    "term": "索杰恩",
+    "zh": "索杰恩",
+    "type": "slang",
+    "meaning": "输出。全名维维安·蔡斯，玩家多用官方名索杰恩；NGA 讨论里拿「你会管索杰恩叫维维安·蔡斯吗」来调侃硬叫英文名的行为。",
+    "example": "完蛋，我第一喜欢玩索杰恩第二喜欢玩源氏。难道我真的素直男[难过]",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 18
+  },
+  {
+    "term": "赛季",
+    "zh": "赛季",
+    "type": "slang",
+    "meaning": "2026-02-11 起的第一赛季「黑爪之治」上线，一次性推出 5 位新英雄与副职责系统。",
+    "example": "新赛季最强的草系精灵有哪些？这都是你花的来时路 洛克王国世界",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 18
+  },
+  {
+    "term": "无漾",
+    "zh": "无漾",
+    "type": "slang",
+    "meaning": "支援。五行大学水学院的学生，能驭水治疗也能输出；站街小品里有「叶无漾的大水好像发到本可身上了」的成句。",
+    "example": "我打大师以上的对局，十个无漾看不见一个点左的，到底是谁在教点左？",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 18
+  },
+  {
+    "term": "战术",
+    "zh": "战术",
+    "type": "slang",
+    "meaning": "支援类副职责之一，偏提供增益与功能性。",
+    "example": "为什么不能给我影生存职责，这个战术真的没啥用的感觉...",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 18
+  },
+  {
+    "term": "麦克雷",
+    "zh": "卡西迪",
+    "type": "slang",
+    "meaning": "输出。原名麦克雷取自一名暴雪员工，该员工爆出丑闻后官方改名为卡西迪，但老玩家仍叫麦克雷；牛仔是角色原型，麦爹是夏一可指南里的标签。",
+    "example": "这就是我摩，复活一个麦克雷的功夫队友全4⃣️了[星星眼]",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "堡垒",
+    "zh": "堡垒",
+    "type": "slang",
+    "meaning": "输出。名字短顺口所以没外号，但常和托比昂造的「炮台」混称，报点时要区分。",
+    "example": "炮台：请注意和英雄堡垒区分。炮台通常是指托比昂造出的炮台",
+    "source": "https://bbs.nga.cn/read.php?tid=9339277",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "回声",
+    "zh": "回声",
+    "type": "slang",
+    "meaning": "输出。官方名回声，英文名 Echo，能复制敌方英雄大招。",
+    "example": "fleta现在成法鸡回声专精了？感觉没看过他玩别的英雄了",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "小美",
+    "zh": "美",
+    "type": "slang",
+    "meaning": "输出。全名周美灵，中国姑娘，玩家叫小美；右键弹道无衰减，打得准伤害比麦克雷还高，于是有麦克美的说法。",
+    "example": "今年才开始玩ow，一进游戏就无师自通地开始玩小美我光回声惹🙄",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "斩仇",
+    "zh": "斩仇",
+    "type": "slang",
+    "meaning": "输出。原本是罗马斗兽场的冠军选手，也是黑爪前任首领的女儿；用高机动高伤害的巨剑。",
+    "example": "byd只有45一刀单出这个还没斩仇原生强[无限暖暖_毛线汪汪]",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "狗",
+    "zh": "狗",
+    "type": "slang",
+    "meaning": "高机动绕后抓人的打法/玩家。「玩奶遇到对面有狗的看这期就行了」是守望淋锋的实战标题。",
+    "example": "这复活机会是专门留给大狗的，大狗嚼是唯一生存压力最大的地方",
+    "source": "https://www.bilibili.com/video/BV1hrWF6mEgy",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 17
+  },
+  {
+    "term": "猪",
+    "zh": "路霸",
+    "type": "slang",
+    "meaning": "重装。胖且最早台服叫「拦路猪」，于是被叫猪；链钩技能直接就叫钩子。DOTA 玩家因为他像缝合怪也叫屠夫。",
+    "example": "【Kaneki】直接用起死怨进化皮“裁决者”，43杀幸福荷兰猪",
+    "source": "http://ow.replays.net/m/news/201606/845.html",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "艾什",
+    "zh": "艾什",
+    "type": "slang",
+    "meaning": "输出。官方名艾什，玩家常直接写英文名 Ashe；旧 wiki 有「艾米」的异译，国服官网现行名为艾什。",
+    "example": "我咋记得艾什特写应该都是能看到眼睛的呀 这真的是游戏里面的么",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "死怨",
+    "zh": "死怨",
+    "type": "slang",
+    "meaning": "输出。2026 年加入的输出英雄，国服官网标为新英雄；已有玩家用「裁决者」进化皮打出高击杀的实战录像。",
+    "example": "【Kaneki】直接用起死怨进化皮“裁决者”，43杀幸福荷兰猪",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 17
+  },
+  {
+    "term": "闪光",
+    "zh": "猎空",
+    "type": "slang",
+    "meaning": "输出。最早台服翻译名就是「闪光」，英文名 Tracer 也直译闪光，同时契合她的闪回技能；粤语区沿用至今。",
+    "example": "离开闪光直接闪现到pp狂鼠的夹子上。抱歉没能让pp大人尽兴",
+    "source": "https://post.smzdm.com/p/apqpz4r0/",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 16
+  },
+  {
+    "term": "重装",
+    "zh": "重装",
+    "type": "slang",
+    "meaning": "三大职责之一，负责承受伤害和冲散对方防御；玩家报点时叫坦克或 T 位。预设职责队列每队限 1 名重装。",
+    "example": "三个重装，两个奶妈，一个……剑圣？闪剑圣你在干什么啊",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 16
+  },
+  {
+    "term": "竞技",
+    "zh": "竞技",
+    "type": "slang",
+    "meaning": "竞技模式；迷惑行为大全有「街机模式骂人菜，竞技模式劝人佛」。",
+    "example": "[3★] 法鸡/法拉/法老之鹰，帕拉伊苏竞技，新赛季复建 随便玩玩！",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 16
+  },
+  {
+    "term": "DJ",
+    "zh": "卢西奥",
+    "type": "slang",
+    "meaning": "支援。本人就是音乐 DJ，技能和加速治疗都跟音乐有关；在「摩西宇宙」里被叫打碟摩西（天使叫摩西、朱诺叫火星摩西、生命之梭叫男摩西）。",
+    "example": "DJ（卢西奥）直接对应其角色身份，卢西奥本身就是一名音乐DJ",
+    "source": "https://post.smzdm.com/p/apqpz4r0/",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 16
+  },
+  {
+    "term": "巴蒂",
+    "zh": "巴蒂斯特",
+    "type": "slang",
+    "meaning": "支援。简称巴蒂，也有按谐音写 8D 的；维生立场技能玩家叫锁血。",
+    "example": "黑影其实一直都是中立，安娜和76巴蒂什么的都和她交易过",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 16
+  },
+  {
+    "term": "你花",
+    "zh": "你花",
+    "type": "slang",
+    "meaning": "生命之梭（花男）的指认写法。原句「你花也素一个无法无天的女支女惹」。",
+    "example": "新赛季最强的草系精灵有哪些？这都是你花的来时路 洛克王国世界",
+    "source": "https://www.gamemale.com/archiver/tid-133550.html",
+    "slot": "守望淋锋/守望自称体系",
+    "score": 16
+  },
+  {
+    "term": "小锤",
+    "zh": "布丽吉塔",
+    "type": "slang",
+    "meaning": "支援。莱因哈特的教女，用小型连枷锤；为了和「大锤」区分叫小锤或锤妹。老 wiki 也写作「布丽玛」。",
+    "example": "小锤/锤妹（布里吉塔）布里吉塔是莱因哈特的教女，使用小型连枷锤",
+    "source": "https://post.smzdm.com/p/apqpz4r0/",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 16
+  },
+  {
+    "term": "睡针",
+    "zh": "麻醉镖",
+    "type": "slang",
+    "meaning": "安娜的麻醉镖，把人打睡，玩家叫睡针。",
+    "example": "安娜点那个睡针激素，加一个激素给充能。用一次睡针加四分之一大招",
+    "source": "https://www.bilibili.com/read/cv12440820/",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 16
+  },
+  {
+    "term": "好莱坞",
+    "zh": "好莱坞",
+    "type": "slang",
+    "meaning": "攻击/护送（混合）地图，也是死斗与团队死斗地图。",
+    "example": "守望先锋 好莱坞岩浆跑酷 作者：一位勇士骂骂咧咧 代码 BE060",
+    "source": "https://ow.blizzard.cn/game/maps/",
+    "slot": "守望淋锋/守望地图舞台",
+    "score": 16
+  },
+  {
+    "term": "角斗领域",
+    "zh": "角斗领域",
+    "type": "slang",
+    "meaning": "2026 年第一赛季上线的强化玩法模式：在比赛中做贡献赚角斗资金，买道具和异能升级英雄。",
+    "example": "2026.10.24 慈悲之心角斗领域4:3天使MVP第十赛季复活流",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋",
+    "score": 15
+  },
+  {
+    "term": "毛妹",
+    "zh": "查莉娅",
+    "type": "slang",
+    "meaning": "重装。俄罗斯人，被简称为毛子→毛妹；「俄罗斯雨姐」是因为造型和带派大 jio 的激光。她的盾分主盾（给自己）和副盾（给别人），报点时常要区分。",
+    "example": "毛妹（查莉娅）源于网络对俄罗斯人的俗称“毛子”，因发音相似而衍生",
+    "source": "https://www.vgover.com/news/154735",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 15
+  },
+  {
+    "term": "大师",
+    "zh": "大师",
+    "type": "slang",
+    "meaning": "排位段位之一；「本可终于上大师了」是站街玩家的整活标题。",
+    "example": "我打大师以上的对局，十个无漾看不见一个点左的，到底是谁在教点左？",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 15
+  },
+  {
+    "term": "单排",
+    "zh": "单排",
+    "type": "slang",
+    "meaning": "一个人排队打排位；「单排血律抵达宗师」。",
+    "example": "【冷门拯救计划】秩序之光78%胜率单排上宗师，单排玩家必练英雄！",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 15
+  },
+  {
+    "term": "你摩",
+    "zh": "你",
+    "type": "slang",
+    "meaning": "守望区的「你＋角色单字」指认法。你摩指天使（摩西女），你花指生命之梭（花男），你光指秩序之光，你铁指末日铁拳，你D 指 D.Va。",
+    "example": "直接修复了一个bug（你摩再次惨遭削弱，你花的bug倒是还好",
+    "source": "https://bbs.nga.cn/read.php?page=2&tid=43409821",
+    "slot": "守望淋锋/守望自称体系",
+    "score": 15
+  },
+  {
+    "term": "数值",
+    "zh": "数值",
+    "type": "slang",
+    "meaning": "英雄的强度数据；「现在伤害素超模的」「进入数值大崩坏时代」都是本赛季的常见说法。",
+    "example": "这不是天使的基操吗，ow1就是这么玩的，被砍数值奶量应该是没强度了",
+    "source": "https://www.gamemale.com/archiver/tid-133550.html",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 15
+  },
+  {
+    "term": "复活",
+    "zh": "复活",
+    "type": "slang",
+    "meaning": "死亡后回到重生室再出场；「什么叫点里有个重生室」就是吐槽这类名场面。",
+    "example": "这复活机会是专门留给大狗的，大狗嚼是唯一生存压力最大的地方",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 15
+  },
+  {
+    "term": "宗师",
+    "zh": "宗师",
+    "type": "slang",
+    "meaning": "排位高段位之一；「单排血律抵达宗师」「韩服宗师局」都是常见标题。",
+    "example": "【冷门拯救计划】秩序之光78%胜率单排上宗师，单排玩家必练英雄！",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 15
+  },
+  {
+    "term": "英杰",
+    "zh": "英杰",
+    "type": "slang",
+    "meaning": "排位段位之一（大师之上）。",
+    "example": "国服英杰跟正常玩家没多大关系只能说，要么剧组要么蝴蝶天使",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 15
+  },
+  {
+    "term": "支援",
+    "zh": "支援",
+    "type": "slang",
+    "meaning": "三大职责之一，负责治疗、护盾、增伤和封锁敌人；玩家叫辅助、奶、奶位。预设职责队列每队 2 名。",
+    "example": "职业生涯之辅助篇 血律六连胜定级英杰4支援 难道LIP真的是山羊🐐？",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 15
+  },
+  {
+    "term": "常驻",
+    "zh": "常驻",
+    "type": "slang",
+    "meaning": "常玩的英雄；通讯录区说「游戏内通讯录常玩的英雄」就是这个意思。",
+    "example": "讲道理群奶威能虽然挺有用但现在路霸强度应该给他常驻的[笑哭]",
+    "source": "https://ngabbs.com/read.php?tid=47719568",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 15
+  },
+  {
+    "term": "黑爪",
+    "zh": "黑爪",
+    "type": "slang",
+    "meaning": "《守望先锋》世界观里的反派组织「黑爪」，2026 年第一赛季故事线就叫「黑爪之治」。",
+    "example": "守望先锋怕黑爪利用老头引爆炸弹，这里来找他了，",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋",
+    "score": 14
+  },
+  {
+    "term": "和尚",
+    "zh": "禅雅塔",
+    "type": "slang",
+    "meaning": "支援。智械僧侣的身份、外形加佛系说话风格，玩家叫和尚。",
+    "example": "什么时候加一个和尚进来，给一个橙色的威能，开大跳河选金银队友复活",
+    "source": "https://post.smzdm.com/p/apqpz4r0/",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 14
+  },
+  {
+    "term": "花男",
+    "zh": "生命之梭",
+    "type": "slang",
+    "meaning": "支援。全身和技能特效都是花朵元素，玩家叫花男；在摩西宇宙里叫男摩西。站街小品里直接写「你花也素一个无法无天的女支女惹」。",
+    "example": "花男（生命之梭）基于其外观设计，角色全身及技能特效包含大量花朵元素",
+    "source": "https://www.gamemale.com/archiver/tid-133550.html",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 14
+  },
+  {
+    "term": "集火",
+    "zh": "集火",
+    "type": "slang",
+    "meaning": "全队集中火力打同一个目标；「集火效率出不来」是常见复盘说法。",
+    "example": "因为门血比阿三都厚，一个人拆的慢，得集火，但集火就有很大的问题了",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 14
+  },
+  {
+    "term": "埃姆雷",
+    "zh": "埃姆雷",
+    "type": "slang",
+    "meaning": "输出。2026 年加入的输出英雄，国服官网现行名埃姆雷。",
+    "example": "之前玩埃姆雷也是出门就给这个 ，然后不停的拿手雷炸自己[笑哭]",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 14
+  },
+  {
+    "term": "我莫",
+    "zh": "莫伊拉",
+    "type": "slang",
+    "meaning": "支援。简称莫姨；通讯录自称我莫，「最喜欢用我莫吸入一些狗位惹」「我摩牵着我莫驾驭着神圣的浦西之光降临人间」都是这一轨的原句。生化之球分黑球（伤害）黄球（治疗），消散叫飘。",
+    "example": "那我有点尬住了，我莫名其妙的先吧最后这个隧道给做了",
+    "source": "https://ngabbs.com/read.php?tid=47719568",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 14
+  },
+  {
+    "term": "医疗",
+    "zh": "医疗",
+    "type": "slang",
+    "meaning": "支援类副职责之一，偏治疗量；「血律莫伊拉两位医疗大师的对话很针锋相对」就是这一层的说法。",
+    "example": "古早的杀鸡还真是黑啊，还有当年的医疗包也太耐用了",
+    "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
+    "slot": "守望淋锋/守望英雄位分",
+    "score": 14
+  },
+  {
+    "term": "漓江塔",
+    "zh": "漓江塔",
+    "type": "slang",
+    "meaning": "占领要点 / 勇夺锦旗地图，中国风夜市场景。",
+    "example": "我就说嘛，我在漓江塔那个地方传送的时候就死活感觉点不开传送门。",
+    "source": "https://ow.blizzard.cn/game/maps/",
+    "slot": "守望淋锋/守望地图舞台",
+    "score": 14
+  },
+  {
+    "term": "段位",
+    "zh": "段位",
+    "type": "slang",
+    "meaning": "排位等级；「同样差不多的段位」是复盘视频的常见说法。",
+    "example": "【学习资料】翡翠这个段位就是爱浪——守望先锋排位复盘（白金-翡翠）",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 14
+  },
+  {
+    "term": "猩猩",
+    "zh": "温斯顿",
+    "type": "slang",
+    "meaning": "重装。大猩猩外形，外号直白；「王师傅」是老玩家的戏称。喷射背包叫跳（或坐），屏障发射器叫罩子。",
+    "example": "毛妹猩猩西格玛大锤最严厉的父亲，和小美一样打t比打c猛",
+    "source": "https://bbs.nga.cn/read.php?tid=9339277",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 14
+  },
+  {
+    "term": "西拉",
+    "zh": "西拉",
+    "type": "slang",
+    "meaning": "输出。2026 年加入的输出英雄，国服官网现行名西拉。",
+    "example": "西拉杰：我想做的，在至冬的《焰羽谷集群意识》成功了",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 14
+  },
+  {
+    "term": "我摩",
+    "zh": "我摩",
+    "type": "slang",
+    "meaning": "天使（摩西女）的自称写法。原句「我摩味大无需多盐」。",
+    "example": "这就是我摩，复活一个麦克雷的功夫队友全4⃣️了[星星眼]",
+    "source": "https://bbs.nga.cn/read.php?page=2&tid=43409821",
+    "slot": "守望淋锋/守望自称体系",
+    "score": 14
+  },
+  {
+    "term": "全场最佳",
+    "zh": "全场最佳",
+    "type": "slang",
+    "meaning": "每局结束时给表现最亮眼玩家的特写镜头；玩家也用它指代「高光时刻」，有整活视频专门盘点「守望先锋专属全场最佳」。",
+    "example": "莫伊拉莫伊拉莫伊拉莫伊拉~莫伊拉按住右键能上全场最佳",
+    "source": "http://ow.replays.net/m/news/201606/845.html",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 14
+  },
+  {
+    "term": "金身",
+    "zh": "强固防御",
+    "type": "slang",
+    "meaning": "奥丽莎的强固防御，开启时免伤且全身变金，玩家叫金身。",
+    "example": "刘念这波应该先集火血律的，金身无人机羊驼你闪光200发子弹也打不死啊",
+    "source": "https://www.bilibili.com/read/cv12440820/",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 14
+  },
+  {
+    "term": "排位",
+    "zh": "排位",
+    "type": "slang",
+    "meaning": "竞技模式（排位赛）；「经典快速甩锅王，天梯上分练英雄」。",
+    "example": "【学习资料】翡翠这个段位就是爱浪——守望先锋排位复盘（白金-翡翠）",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 14
+  },
+  {
+    "term": "钻石",
+    "zh": "钻石",
+    "type": "slang",
+    "meaning": "排位段位之一。",
+    "example": "OW朱诺单排日记2026-10-26（守望先锋-朱诺-钻石）",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望赛事圈",
+    "score": 14
+  },
+  {
+    "term": "金驭",
+    "zh": "金驭",
+    "type": "slang",
+    "meaning": "重装。2026 年加入的重装英雄，国服官网现行名金驭。",
+    "example": "迅驰该给金驭的，异化迅驰披着斗篷，宽度正好能赶上金驭",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 13
+  },
+  {
+    "term": "我辛",
+    "zh": "辛梅塔",
+    "type": "slang",
+    "meaning": "输出。秩序之光的台服音译名，NGA 上「从守望的阿三和莫伊拉就是一堆我莫我辛的」说的是这一轨；自称写成我辛。也是通讯录英雄对照表的第十四项，即辛梅塔 = 秩序之光 = 阿三 = 我光 / 我辛 这条三轨链。",
+    "example": "第几季了这是 我辛不是赔钱货吗怎么这么猛了这里，一打三都行",
+    "source": "https://ngabbs.com/read.php?tid=47719568",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 13
+  },
+  {
+    "term": "伊拉锐",
+    "zh": "伊拉锐",
+    "type": "slang",
+    "meaning": "支援。唯一幸存的印蒂勇士，太阳之力既能治愈创伤也能制造毁灭。",
+    "example": "剑星主要是脸部建模好，这联动只有衣服，脸还是守望的脸，给伊拉锐个皮肤不是爆炸",
+    "source": "https://www.yxzzd.com/56183.html",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 13
+  },
+  {
+    "term": "坐",
+    "zh": "重力坠击",
+    "type": "slang",
+    "meaning": "破坏球的重力坠击，玩家叫坐（下压）。",
+    "example": "雪毛面对EZHAN的堡垒：靠e,zh(an)有坐",
+    "source": "https://www.bilibili.com/read/cv12440820/",
+    "slot": "守望淋锋/守望技能术语",
+    "score": 13
+  },
+  {
+    "term": "尼泊尔",
+    "zh": "尼泊尔",
+    "type": "slang",
+    "meaning": "占领要点 / 勇夺锦旗地图。",
+    "example": "up是右键控油还是空格呀。这个技巧有个实用地点就是那个尼泊尔。",
+    "source": "https://ow.blizzard.cn/game/maps/",
+    "slot": "守望淋锋/守望地图舞台",
+    "score": 13
+  },
+  {
+    "term": "美羊羊",
+    "zh": "奥丽莎",
+    "type": "slang",
+    "meaning": "重装。女性设定加头顶弯角，像动画角色美羊羊；强固防御技能玩家叫「金身」（开技能时全身变金）。",
+    "example": "美羊羊（奥丽莎）根据奥丽莎的女性设定及其头顶的弯角造型",
+    "source": "https://post.smzdm.com/p/apqpz4r0/",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 12
+  },
+  {
+    "term": "安燃",
+    "zh": "安燃",
+    "type": "slang",
+    "meaning": "输出。2026 年加入的输出英雄，国服官网现行名安燃。",
+    "example": "我想问喔自己是简中的配音，然后我发语音其他非简中的玩家和我听到一样吗，就比如安燃那个你在爪子",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 12
+  },
+  {
+    "term": "飞天猫",
+    "zh": "飞天猫",
+    "type": "slang",
+    "meaning": "支援。2026 年加入的支援英雄，国服官网现行名飞天猫。",
+    "example": "难度中等    血律彩蛋和隐藏飞天猫是一起的先拿彩蛋后拿猫",
+    "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
+    "slot": "守望淋锋/守望角色淋名",
+    "score": 12
+  },
+  {
+    "term": "蹲",
+    "zh": "蹲点",
+    "type": "slang",
+    "meaning": "埋伏在某个点位等敌人；新版本路霸教学直接叫「老六路霸」。",
+    "example": "这个应该是套了天使飞的代码，把标枪当做目标，所以下蹲取消能超级跳",
+    "source": "https://www.bilibili.com/read/cv4001799/",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 12
+  },
+  {
+    "term": "双飞",
+    "zh": "双飞",
+    "type": "slang",
+    "meaning": "法老之鹰升空、天使跟着在天上加血加攻的经典组合打法。",
+    "example": "守望先锋法老之鹰：和天使双飞套路爽（您懂得）",
+    "source": "http://ow.replays.net/m/news/201606/845.html",
+    "slot": "守望淋锋/守望对局黑话",
+    "score": 12
+  }
+]
