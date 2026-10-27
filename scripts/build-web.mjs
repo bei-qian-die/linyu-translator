@@ -192,21 +192,19 @@ async function main() {
   // seed-data.js + seed.json（与 build-mobile.mjs 一致）
   const seedJsonPath = path.join(root, 'src', 'core', 'seed.json');
   const seedJsonText = await fs.readFile(seedJsonPath, 'utf8');
+  // 内容指纹的输入文件列表：自动扫描 src/core 下的全部 lore-extra*.js。
+  // 之前这里是手写枚举（build-web 只列到 extra13、build-mobile 只列到 extra21），
+  // 新增轮次时忘记同步枚举 → 内容哈希不变 → 老用户端不会触发 upgradeSeed，
+  // 新数据静默不落地。手写枚举是这类事故的温床，改成扫描。
+  const loreExtraFiles = (await fs.readdir(path.join(root, 'src', 'core')))
+    .filter((f) => /^lore-extra\d+\.js$/.test(f))
+    .sort((a, b) => Number(a.match(/\d+/)[0]) - Number(b.match(/\d+/)[0]))
+    .map((f) => 'src/core/' + f);
   const contentFiles = [
     'src/core/seed.json',
     'src/core/deprecated.js',
     'src/core/lore.js',
-    'src/core/lore-extra3.js',
-    'src/core/lore-extra4.js',
-    'src/core/lore-extra5.js',
-    'src/core/lore-extra6.js',
-    'src/core/lore-extra7.js',
-    'src/core/lore-extra8.js',
-    'src/core/lore-extra9.js',
-    'src/core/lore-extra10.js',
-    'src/core/lore-extra11.js',
-    'src/core/lore-extra12.js',
-    'src/core/lore-extra13.js',
+    ...loreExtraFiles,
   ];
   const hash = await contentHash(contentFiles);
   const seedJs = `// 由 scripts/build-web.mjs 自动生成；source: src/core/seed.json\n` +

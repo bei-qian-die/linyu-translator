@@ -84,6 +84,7 @@ async function attest() {
     run('业务层用例', ['test/service.test.js']),
     run('五板块 CRUD 契约', ['scripts/crud-check.js']),
     run('英雄配图串图检查', ['scripts/audit-hero-img-dup.js']),
+    run('lore-extra 登记一致性', ['scripts/audit-lore-extra-registry.js']),
     attest(),
     syntaxCheck(),
   ];
