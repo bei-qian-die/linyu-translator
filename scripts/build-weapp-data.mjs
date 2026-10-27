@@ -31,6 +31,7 @@ const FILES = [
   ['lore-extra19.js', 'data/lore-extra19.js'],
   ['lore-extra20.js', 'data/lore-extra20.js'],
   ['lore-extra21.js', 'data/lore-extra21.js'],
+  ['lore-extra23.js', 'data/lore-extra23.js'],
   ['lore-extra15.js', 'data/lore-extra15.js'],
 ];
 

@@ -1,0 +1,1404 @@
+{
+ "generatedAt": "2026-10-27T09:46:26.866Z",
+ "stats": {
+  "newFiles": 132,
+  "keeps": 8,
+  "empties": 6
+ },
+ "rows": [
+  {
+   "name": "幻棱",
+   "img": "img/hero-341.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/幻棱/baidu_0.jpg",
+   "url": "https://img2.baidu.com/it/u=944030392,1939270105&fm=253&fmt=auto&app=138&f=PNG?w=551&h=500",
+   "title": "幻棱",
+   "from": "baidu",
+   "note": "换官方立绘"
+  },
+  {
+   "name": "钛狐",
+   "img": "img/hero-346.png",
+   "newFile": "pool_hero-cand19_钛狐_4.jpg",
+   "src": "evidence/qc23-cand/钛狐/pool_hero-cand19_钛狐_4.jpg",
+   "url": "https://img2.baidu.com/it/u=1665089642,1013559743&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+   "title": "《无畏契约手游》钛狐定位与技能展示 钛狐有什么技能",
+   "from": "pool:hero-cand19",
+   "note": "换手游定位展示图"
+  },
+  {
+   "name": "贤者",
+   "img": "img/hero-352.png",
+   "newFile": "pool_hero-cand19_贤者_3.jpg",
+   "src": "evidence/qc23-cand/贤者/pool_hero-cand19_贤者_3.jpg",
+   "url": "https://img2.baidu.com/it/u=1830576513,3028363198&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+   "title": "《无畏契约手游》贤者定位与技能展示 贤者有什么技能-游民星空 gamer",
+   "from": "pool:hero-cand19",
+   "note": "换手游定位展示图"
+  },
+  {
+   "name": "维斯",
+   "img": "img/hero-355.png",
+   "newFile": "pool_hero-cand19_维斯_3.jpg",
+   "src": "evidence/qc23-cand/维斯/pool_hero-cand19_维斯_3.jpg",
+   "url": "https://img1.baidu.com/it/u=33921642,4273401418&fm=253&fmt=auto&app=120&f=JPEG?w=888&h=500",
+   "title": "《无畏契约手游》英雄玩法介绍 | 维斯",
+   "from": "pool:hero-cand19",
+   "note": "换手游英雄玩法图"
+  },
+  {
+   "name": "遐思",
+   "img": "img/hero-356.png",
+   "newFile": "pool_hero-cand19_遐思_5.jpg",
+   "src": "evidence/qc23-cand/遐思/pool_hero-cand19_遐思_5.jpg",
+   "url": "https://img2.baidu.com/it/u=1316129988,731227962&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "新英雄「遐思」选角动画,精通奖励//无畏契约",
+   "from": "pool:hero-cand19",
+   "note": "换选角动画官方图"
+  },
+  {
+   "name": "丢丢",
+   "img": "img/hero-360.png",
+   "newFile": "pool_hero-cand19_丢丢_3.jpg",
+   "src": "evidence/qc23-cand/丢丢/pool_hero-cand19_丢丢_3.jpg",
+   "url": "https://img2.baidu.com/it/u=3962575155,358345041&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "无畏契约 丢丢来了",
+   "from": "pool:hero-cand19",
+   "note": "换丢丢专题图"
+  },
+  {
+   "name": "鲨鲨",
+   "img": "img/hero-361.png",
+   "newFile": "pool_hero-cand19_鲨鲨_3.jpg",
+   "src": "evidence/qc23-cand/鲨鲨/pool_hero-cand19_鲨鲨_3.jpg",
+   "url": "https://img2.baidu.com/it/u=3624945210,107195975&fm=253&fmt=auto&app=120&f=JPEG?w=801&h=500",
+   "title": "【无畏契约】鲨鲨!",
+   "from": "pool:hero-cand19",
+   "note": "换鲨鲨专题图"
+  },
+  {
+   "name": "西拉",
+   "img": "img/hero-493.png",
+   "newFile": "pool_hero-cand21_西拉_2.jpg",
+   "src": "evidence/qc23-cand/西拉/pool_hero-cand21_西拉_2.jpg",
+   "url": "https://img1.baidu.com/it/u=442286200,3494954911&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "title": "《守望先锋》新英雄\"西拉\"角色宣传片公开",
+   "from": "pool:hero-cand21",
+   "note": "换角色宣传片封面"
+  },
+  {
+   "name": "守望淋锋 · 阿三专题区",
+   "img": "img/hero-511.png",
+   "newFile": "baidu_3.jpg",
+   "src": "evidence/qc23-cand/守望淋锋 · 阿三专题区/baidu_3.jpg",
+   "url": "https://img2.baidu.com/it/u=244343022,2485553830&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=707",
+   "title": "秩序之光",
+   "from": "baidu",
+   "note": "换秩序之光官方图"
+  },
+  {
+   "name": "腋淋",
+   "img": "img/hero-29.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/腋淋/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/d4628535e5dde71190ef083455bdd91b9d16fcfacbec?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：夜兰",
+   "from": "baike",
+   "note": "换百科词条图(夜兰)"
+  },
+  {
+   "name": "我雅",
+   "img": "img/hero-117.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/我雅/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/342ac65c10385343fbf2ffd56f42a77eca80643822bf?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：八重神子",
+   "from": "baike",
+   "note": "换百科词条图(八重神子)"
+  },
+  {
+   "name": "纳阴妲",
+   "img": "img/hero-118.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/纳阴妲/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/6609c93d70cf3bc79f3da3719d55ada1cd11738bfcab?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：纳西妲",
+   "from": "baike",
+   "note": "换百科词条图(纳西妲)"
+  },
+  {
+   "name": "流浪者",
+   "img": "img/hero-76.png",
+   "newFile": "baidu_3.jpg",
+   "src": "evidence/qc23-cand/流浪者/baidu_3.jpg",
+   "url": "https://img2.baidu.com/it/u=444277059,1459682748&fm=253&fmt=auto&app=138&f=JPEG?w=630&h=500",
+   "title": "散兵流浪者全身立绘",
+   "from": "baidu",
+   "note": "换全身立绘"
+  },
+  {
+   "name": "刻晴",
+   "img": "img/hero-78.png",
+   "newFile": "baidu_2.jpg",
+   "src": "evidence/qc23-cand/刻晴/baidu_2.jpg",
+   "url": "https://img2.baidu.com/it/u=109768084,3218358270&fm=253&fmt=auto&app=138&f=PNG?w=500&h=514",
+   "title": "21刻晴霓裾翩跹",
+   "from": "baidu",
+   "note": "换霓裾翩跹"
+  },
+  {
+   "name": "小丑",
+   "img": "img/hero-338.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/小丑/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=2765659798,279648570&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=668",
+   "title": "🎭第五监管者档案:小丑裘克",
+   "from": "baidu",
+   "note": "换监管者档案图"
+  },
+  {
+   "name": "大天狗",
+   "img": "img/hero-192.png",
+   "newFile": "baidu_7.jpg",
+   "src": "evidence/qc23-cand/大天狗/baidu_7.jpg",
+   "url": "https://img1.baidu.com/it/u=1870699165,4008098894&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281",
+   "title": "p data-id=\"gnbkedvlvo\">大天狗,是网易公司研发",
+   "from": "baidu",
+   "note": "换阴阳师大天狗百科图"
+  },
+  {
+   "name": "血律Daddy",
+   "img": "img/hero-126.png",
+   "newFile": "pool_hero-cand21_血律_1.jpg",
+   "src": "evidence/qc23-cand/血律Daddy/pool_hero-cand21_血律_1.jpg",
+   "url": "https://img0.baidu.com/it/u=1855146424,1376822223&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500",
+   "title": "黑人吸血鬼!守望先锋新英雄 血律 靶场演示!",
+   "from": "pool:hero-cand21",
+   "note": "与血律区分:换靶场演示图"
+  },
+  {
+   "name": "枝性美克里斯",
+   "img": "img/hero-128.png",
+   "newFile": "baidu_6.jpg",
+   "src": "evidence/qc23-cand/枝性美克里斯/baidu_6.jpg",
+   "url": "https://img2.baidu.com/it/u=155819984,2775464823&fm=253&fmt=auto&app=138&f=PNG?w=500&h=675",
+   "title": "黎明杀机wiki_bwiki_哔哩哔哩",
+   "from": "baidu",
+   "note": "换bwiki立绘"
+  },
+  {
+   "name": "威龙daddy",
+   "img": "img/hero-131.png",
+   "newFile": "baidu_4.jpg",
+   "src": "evidence/qc23-cand/威龙daddy/baidu_4.jpg",
+   "url": "https://img2.baidu.com/it/u=2867779450,1617762891&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=803",
+   "title": "三角洲行动:威龙(王宇昊)",
+   "from": "baidu",
+   "note": "换威龙(王宇昊)官方图"
+  },
+  {
+   "name": "机械师",
+   "img": "img/hero-363.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/机械师/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=1114032760,3773533121&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=707",
+   "title": "机械师:特雷西雷兹尼克,一个新的幸存者机械师,出生后不久就失去了",
+   "from": "baidu",
+   "note": "换官方图"
+  },
+  {
+   "name": "舞女",
+   "img": "img/hero-364.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/舞女/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=478806047,3313933413&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=832",
+   "title": "第5人格# 舞女#玛格丽莎图片",
+   "from": "baidu",
+   "note": "换官方海报"
+  },
+  {
+   "name": "调酒师",
+   "img": "img/hero-368.png",
+   "newFile": "pool_hero-cand18_调酒师_0.jpg",
+   "src": "evidence/qc23-cand/调酒师/pool_hero-cand18_调酒师_0.jpg",
+   "url": "https://img1.baidu.com/it/u=3014118920,1621831469&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+   "title": "调酒师\"黛米·波本,游戏《 a target=\"_blank\" href=\"/item/第五人格",
+   "from": "pool:hero-cand18",
+   "note": "换黛米·波本原皮图"
+  },
+  {
+   "name": "玩具商",
+   "img": "img/hero-373.png",
+   "newFile": "pool_hero-cand18b_玩具商_0.jpg",
+   "src": "evidence/qc23-cand/玩具商/pool_hero-cand18b_玩具商_0.jpg",
+   "url": "https://img2.baidu.com/it/u=4082977988,1290816306&fm=253&fmt=auto&app=138&f=PNG?w=500&h=667",
+   "title": "玩具商 - 第五人格wiki_bwiki_哔哩哔哩",
+   "from": "pool:hero-cand18b",
+   "note": "换bwiki图"
+  },
+  {
+   "name": "病患",
+   "img": "img/hero-371.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/病患/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=3537695294,198625005&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=506",
+   "title": "病患精华二,紫皮惊艳亮相!",
+   "from": "baidu",
+   "note": "换官方紫皮图"
+  },
+  {
+   "name": "胡桃",
+   "img": "img/hero-77.png",
+   "newFile": "baidu_3.jpg",
+   "src": "evidence/qc23-cand/胡桃/baidu_3.jpg",
+   "url": "https://img1.baidu.com/it/u=2561530640,2603260973&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=723",
+   "title": "胡桃",
+   "from": "baidu",
+   "note": "换官方立绘"
+  },
+  {
+   "name": "FLY组合",
+   "img": "img/hero-202.png",
+   "newFile": "pool_hero-cand11_FLY组合__0.jpg",
+   "src": "evidence/qc23-cand/FLY组合/pool_hero-cand11_FLY组合__0.jpg",
+   "url": "https://img0.baidu.com/it/u=1884531015,3165298998&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=750",
+   "title": "蔡依林沙宣品牌代言人##蔡依林##蔡依林齐刘海短发造型",
+   "from": "pool:hero-cand11",
+   "note": "与FLY组合工作室区分:换蔡依林代言图"
+  },
+  {
+   "name": "庄周",
+   "img": "img/hero-23.png",
+   "newFile": "baidu_9.jpg",
+   "src": "evidence/qc23-cand/庄周/baidu_9.jpg",
+   "url": "https://img0.baidu.com/it/u=2180037833,151744264&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=881",
+   "title": "庄周 梦蝶:一场奇幻的梦境之旅 🦋",
+   "from": "baidu",
+   "note": "换官方立绘(原百科为庄子)"
+  },
+  {
+   "name": "鹿头",
+   "img": "img/hero-339.png",
+   "newFile": "baidu_8.jpg",
+   "src": "evidence/qc23-cand/鹿头/baidu_8.jpg",
+   "url": "https://img0.baidu.com/it/u=1778666836,2974500957&fm=253&fmt=auto&app=138&f=JPEG?w=513&h=914",
+   "title": "鹿头相关动画 - 抖音",
+   "from": "baidu",
+   "note": "换GAMEKEEPER官方卡面(现图为错人)"
+  },
+  {
+   "name": "禅雅塔",
+   "img": "img/hero-499.png",
+   "newFile": "pool_hero-cand21_禅雅塔_1.jpg",
+   "src": "evidence/qc23-cand/禅雅塔/pool_hero-cand21_禅雅塔_1.jpg",
+   "url": "https://img1.baidu.com/it/u=2281009729,2695905257&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500",
+   "title": "禅雅塔 神话皮肤 貔貅",
+   "from": "pool:hero-cand21",
+   "note": "换貔貅皮肤渲染"
+  },
+  {
+   "name": "我琴",
+   "img": "img/hero-51.png",
+   "newFile": "baidu_3.jpg",
+   "src": "evidence/qc23-cand/我琴/baidu_3.jpg",
+   "url": "https://img0.baidu.com/it/u=3123487248,2939395333&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
+   "title": "琴瑟仙女 娑娜 【更新】 英雄预览 - 英雄联盟手游 | classic sona",
+   "from": "baidu",
+   "note": "换琴瑟仙女官方预览"
+  },
+  {
+   "name": "我鸟",
+   "img": "img/hero-53.png",
+   "newFile": "baidu_2.jpg",
+   "src": "evidence/qc23-cand/我鸟/baidu_2.jpg",
+   "url": "https://img0.baidu.com/it/u=363340022,615349899&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=707",
+   "title": "知更鸟-知更鸟星穹铁道",
+   "from": "baidu",
+   "note": "换知更鸟官方立绘"
+  },
+  {
+   "name": "K/O",
+   "img": "img/hero-357.png",
+   "newFile": "pool_hero-cand19_K_O_4.jpg",
+   "src": "evidence/qc23-cand/K/O/pool_hero-cand19_K_O_4.jpg",
+   "url": "https://img0.baidu.com/it/u=2728170931,1215856300&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
+   "title": "【todo】kay/o才是最全能的决斗者",
+   "from": "pool:hero-cand19",
+   "note": "换KAY/O官方图"
+  },
+  {
+   "name": "炼狱",
+   "img": "img/hero-347.png",
+   "newFile": "pool_hero-cand19_炼狱_1.jpg",
+   "src": "evidence/qc23-cand/炼狱/pool_hero-cand19_炼狱_1.jpg",
+   "url": "https://img0.baidu.com/it/u=3611949627,3938627921&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=833",
+   "title": "无畏契约人物站姿(图片格式)",
+   "from": "pool:hero-cand19",
+   "note": "换布史东站姿图"
+  },
+  {
+   "name": "皮蛋",
+   "img": "img/hero-358.png",
+   "newFile": "pool_hero-cand19_皮蛋_1.jpg",
+   "src": "evidence/qc23-cand/皮蛋/pool_hero-cand19_皮蛋_1.jpg",
+   "url": "http://t15.baidu.com/it/u=4022904810,1905530923&fm=224&app=112&f=JPEG?w=500&h=500",
+   "title": "无畏契约盖可皮蛋嗨宝丢丢盖克通玩偶瓦罗兰特顽皮搭档毛绒宠物 盖可",
+   "from": "pool:hero-cand19",
+   "note": "换官方毛绒周边实物图(现图为错人)"
+  },
+  {
+   "name": "火花",
+   "img": "img/hero-295.png",
+   "newFile": "baidu_5.jpg",
+   "src": "evidence/qc23-cand/火花/baidu_5.jpg",
+   "url": "https://img1.baidu.com/it/u=2960014506,3316244495&fm=253&fmt=auto&app=138&f=PNG?w=750&h=500",
+   "title": "洛克王国火花",
+   "from": "baidu",
+   "note": "换官方渲染(现图为AI图)"
+  },
+  {
+   "name": "加尔",
+   "img": "",
+   "newFile": "pool_hero-cand16_加尔_2.jpg",
+   "src": "evidence/qc23-cand/加尔/pool_hero-cand16_加尔_2.jpg",
+   "url": "https://img2.baidu.com/it/u=3705970072,3451113684&fm=253&fmt=auto&app=120&f=JPEG?w=887&h=500",
+   "title": "洛克s3赛季传说精灵加尔pv来啦",
+   "from": "pool:hero-cand16",
+   "note": "换官方PV画面"
+  },
+  {
+   "name": "孙策",
+   "img": "img/hero-27.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/孙策/baidu_0.jpg",
+   "url": "https://img2.baidu.com/it/u=4213032161,1249248742&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1120",
+   "title": "五款龙年限定皮肤中,我认为,孙策的龙年限定可谓是当之无愧的榜首",
+   "from": "baidu",
+   "note": "换龙年限定图(原百科为历史孙策)"
+  },
+  {
+   "name": "猎枭",
+   "img": "img/hero-342.png",
+   "newFile": "pool_hero-cand19_猎枭_0.jpg",
+   "src": "evidence/qc23-cand/猎枭/pool_hero-cand19_猎枭_0.jpg",
+   "url": "https://img1.baidu.com/it/u=2449419456,3381668339&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 猎枭(苏法)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "铁臂",
+   "img": "img/hero-343.png",
+   "newFile": "pool_hero-cand19_铁臂_0.jpg",
+   "src": "evidence/qc23-cand/铁臂/pool_hero-cand19_铁臂_0.jpg",
+   "url": "https://img0.baidu.com/it/u=2560393070,3364038760&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 铁臂(叛奇)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "斯凯",
+   "img": "img/hero-344.png",
+   "newFile": "pool_hero-cand19_斯凯_0.jpg",
+   "src": "evidence/qc23-cand/斯凯/pool_hero-cand19_斯凯_0.jpg",
+   "url": "https://img1.baidu.com/it/u=1656991605,3559189486&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=766",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 斯凯(丝凯)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "盖可",
+   "img": "img/hero-345.png",
+   "newFile": "pool_hero-cand19_盖可_0.jpg",
+   "src": "evidence/qc23-cand/盖可/pool_hero-cand19_盖可_0.jpg",
+   "url": "https://img0.baidu.com/it/u=300777364,1496248818&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 盖可(盖克)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "星礈",
+   "img": "img/hero-348.png",
+   "newFile": "pool_hero-cand19_星礈_0.jpg",
+   "src": "evidence/qc23-cand/星礈/pool_hero-cand19_星礈_0.jpg",
+   "url": "https://img1.baidu.com/it/u=3043827108,3533203608&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 星礈(亚星卓)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "幽影",
+   "img": "img/hero-349.png",
+   "newFile": "pool_hero-cand19_幽影_0.jpg",
+   "src": "evidence/qc23-cand/幽影/pool_hero-cand19_幽影_0.jpg",
+   "url": "https://img1.baidu.com/it/u=1710225734,1658508648&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 幽影(欧门)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "海神",
+   "img": "img/hero-350.png",
+   "newFile": "pool_hero-cand19_海神_0.jpg",
+   "src": "evidence/qc23-cand/海神/pool_hero-cand19_海神_0.jpg",
+   "url": "https://img2.baidu.com/it/u=1140900594,3420187874&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 海神(哈泊)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "瑟符",
+   "img": "img/hero-351.png",
+   "newFile": "pool_hero-cand19_瑟符_0.jpg",
+   "src": "evidence/qc23-cand/瑟符/pool_hero-cand19_瑟符_0.jpg",
+   "url": "https://img2.baidu.com/it/u=2021242335,374183959&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+   "title": "瑟符(cypher),别名为监控男,零,保安,射击游戏《无畏契约》中的特务 a",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "尚勃勒",
+   "img": "img/hero-353.png",
+   "newFile": "pool_hero-cand19_尚勃勒_0.jpg",
+   "src": "evidence/qc23-cand/尚勃勒/pool_hero-cand19_尚勃勒_0.jpg",
+   "url": "https://img1.baidu.com/it/u=2670708053,4294315764&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=816",
+   "title": "《无畏契约手游》全角色定位与技能一览_哨卫-尚勃勒-游民星空 gamer",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "钢锁",
+   "img": "img/hero-354.png",
+   "newFile": "pool_hero-cand19_钢锁_0.jpg",
+   "src": "evidence/qc23-cand/钢锁/pool_hero-cand19_钢锁_0.jpg",
+   "url": "https://img2.baidu.com/it/u=2829653077,1740976213&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=767",
+   "title": "《无畏契约(valorant)》全英雄技能一览 - 钢锁(蒂罗)",
+   "from": "pool:hero-cand19",
+   "note": "复核通过"
+  },
+  {
+   "name": "地才女特务",
+   "img": "img/hero-363.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/地才女特务/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/a6b74a883a65369ca412fcef789b5eb79f0ffe9e.jpg",
+   "title": "B站头像：地才女特务",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "仔仔无畏契约",
+   "img": "img/hero-364.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/仔仔无畏契约/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/4c64bd92d2a4bf03c8f68eb1b975543af52d1269.jpg",
+   "title": "B站头像：仔仔无畏契约",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "无畏契约情报员啊",
+   "img": "img/hero-365.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/无畏契约情报员啊/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/ea6ab4cac434710b1bea32773f6c436f553bfc00.jpg",
+   "title": "B站头像：无畏契约情报员啊",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "谋生者白言",
+   "img": "img/hero-366.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/谋生者白言/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/8d88bd4081fc53b0cfc24279896044f0cfdb7558.jpg",
+   "title": "B站头像：谋生者白言",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "乃酱",
+   "img": "img/hero-367.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/乃酱/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/88929a0b99acf44e7dff2707dc4c4bb29c6e985f.jpg",
+   "title": "B站头像：乃酱",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "绿泡泡Reyna",
+   "img": "img/hero-368.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/绿泡泡Reyna/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/b2068ef6192830b7c37ec5a15db8b8365090e576.jpg",
+   "title": "B站头像：绿泡泡Reyna",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "无畏辐能联盟",
+   "img": "img/hero-369.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/无畏辐能联盟/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/e893215a2d7a8b90e3bbc737f0b95c0f912165b7.jpg",
+   "title": "B站头像：无畏辐能联盟",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "无畏战术大师兄",
+   "img": "img/hero-370.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/无畏战术大师兄/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/5f398f9ae56b840956c4432fff1b64eac2e9c1d5.jpg",
+   "title": "B站头像：无畏战术大师兄",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "汉堡_无畏契约",
+   "img": "img/hero-371.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/汉堡_无畏契约/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/d903eb096426e10526b5e96a77c5d36c7f4e3038.jpg",
+   "title": "B站头像：汉堡_无畏契约",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "布锅锅",
+   "img": "img/hero-372.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/布锅锅/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/ab4607609f06096d5960eb541350a0e318ce4eaf.jpg",
+   "title": "B站头像：布锅锅",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "无畏契约皮肤",
+   "img": "img/hero-373.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/无畏契约皮肤/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/1430c2b5901500c3d91856291b34ccfcf29470bd.jpg",
+   "title": "B站头像：无畏契约皮肤",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "喜欢看星星的派大星",
+   "img": "img/hero-374.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/喜欢看星星的派大星/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/5f0dba7c40f95dd10a721cea9ae2c0c8a0767408.jpg",
+   "title": "B站头像：喜欢看星星的派大星",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "老老老老老鱼干",
+   "img": "img/hero-375.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/老老老老老鱼干/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/6ecb9415f52919fe108a292ec9a5e1874d142ccc.jpg",
+   "title": "B站头像：老老老老老鱼干",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "冰可乐Raze",
+   "img": "img/hero-376.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/冰可乐Raze/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/ce4e6f8d00a4b9b17ca83ca808a17dafbbed486e.jpg",
+   "title": "B站头像：冰可乐Raze",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "404就是小刘",
+   "img": "img/hero-377.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/404就是小刘/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/2550078fe3ff2d6c2ccd60ffb307a87c711f39d3.jpg",
+   "title": "B站头像：404就是小刘",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "木彡1",
+   "img": "img/hero-378.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/木彡1/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/27fc5198a97cea883f0daf0d6920a0d0548d3ba5.jpg",
+   "title": "B站头像：木彡1",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "胡里奥小朋友",
+   "img": "img/hero-379.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/胡里奥小朋友/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/4c349f33578a68a69bbfe510943426295b6d253d.jpg",
+   "title": "B站头像：胡里奥小朋友",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "夜光山雀",
+   "img": "img/hero-380.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/夜光山雀/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/6c617525665116a7d2b5241c45de1d16749487ec.jpg",
+   "title": "B站头像：夜光山雀",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "欧阳风5019",
+   "img": "img/hero-381.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/欧阳风5019/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/8d10dacd536aa5cc3aacd1b81871a65bf5cbb198.jpg",
+   "title": "B站头像：欧阳风5019",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "大东彦",
+   "img": "img/hero-382.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/大东彦/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/442b895d10bbce6a5cd5746fc383f27fb06207e0.jpg",
+   "title": "B站头像：大东彦",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "康康",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/康康/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/6e440a2aeada032445206bdae73ac38b868c7600.jpg",
+   "title": "B站头像：是你们的康康",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "Aspas",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/Aspas/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/594fbd17230f01068a6fb3a8386687bf35daad0b.jpg",
+   "title": "B站头像：Aspas1229",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "kaajak",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/kaajak/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/61c8618dc94271afabcf133712ebbb549de4ae3a.jpg",
+   "title": "B站头像：FNC_kaajak",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "Eggsterr",
+   "img": "",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/Eggsterr/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=553908273,1754802209&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+   "title": "新闻列表_5eplay - 5eplay赛凡网",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "lukxo",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/lukxo/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/46f7ffc73e5869c792f90b8b9e754fefe2a92a30.jpg",
+   "title": "B站头像：世界第一幻棱lukxo",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "grim",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/grim/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/4a82e98f66f95922c1c72c80a03ff895321768c0.jpg",
+   "title": "B站头像：格瑞莫grim0",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "ziptie",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/ziptie/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/55f03c5fc2991d726b8c686438b7921171d71ece.jpg",
+   "title": "B站头像：基亚利安ziptie",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "SpiritZ1",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/SpiritZ1/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/b85cd2ed1f2fab9352ad2d76b1e1914b47c55f27.jpg",
+   "title": "B站头像：宋玉SpiritZ1",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "Evnii",
+   "img": "",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/Evnii/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=3914551746,4148512185&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750",
+   "title": "ewc官摄",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "SoMarcus",
+   "img": "",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/SoMarcus/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=2401290741,3997092807&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=750",
+   "title": "✨",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "张钊",
+   "img": "",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/张钊/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/97864ee17ada7abf794d6bf9b973bc11e891c683.jpg",
+   "title": "B站头像：张钊Chris",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "宿伞之魂",
+   "img": "img/hero-340.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/宿伞之魂/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=2578547733,3822429406&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+   "title": "宿伞之魂地官赦罪",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "蜡像师",
+   "img": "img/hero-352.png",
+   "newFile": "pool_hero-cand18b_蜡像师_0.jpg",
+   "src": "evidence/qc23-cand/蜡像师/pool_hero-cand18b_蜡像师_0.jpg",
+   "url": "https://img2.baidu.com/it/u=1195502729,3403481084&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=748",
+   "title": "第五监管者图鉴:蜡像师菲利普",
+   "from": "pool:hero-cand18b",
+   "note": "复核通过"
+  },
+  {
+   "name": "杂技演员",
+   "img": "img/hero-369.png",
+   "newFile": "pool_hero-cand18_杂技演员_0.jpg",
+   "src": "evidence/qc23-cand/杂技演员/pool_hero-cand18_杂技演员_0.jpg",
+   "url": "https://img1.baidu.com/it/u=1782180646,1719094895&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1018",
+   "title": "第五人格杂技演员绞",
+   "from": "pool:hero-cand18",
+   "note": "复核通过"
+  },
+  {
+   "name": "空军",
+   "img": "img/hero-374.png",
+   "newFile": "pool_hero-cand18b_空军_1.jpg",
+   "src": "evidence/qc23-cand/空军/pool_hero-cand18b_空军_1.jpg",
+   "url": "https://img2.baidu.com/it/u=2570037436,451418553&fm=253&fmt=auto&app=138&f=PNG?w=500&h=667",
+   "title": "空军- 第五人格wiki_bwiki_哔哩哔哩",
+   "from": "pool:hero-cand18b",
+   "note": "复核通过"
+  },
+  {
+   "name": "金驭",
+   "img": "img/hero-469.png",
+   "newFile": "pool_hero-cand21_金驭_0.jpg",
+   "src": "evidence/qc23-cand/金驭/pool_hero-cand21_金驭_0.jpg",
+   "url": "https://img2.baidu.com/it/u=1761726939,827685090&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
+   "title": "[守望先锋]金驭驭驭我的金金(bushi)",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "探奇",
+   "img": "img/hero-487.png",
+   "newFile": "pool_hero-cand21_探奇_0.jpg",
+   "src": "evidence/qc23-cand/探奇/pool_hero-cand21_探奇_0.jpg",
+   "url": "https://img2.baidu.com/it/u=1183342137,3454304535&fm=253&fmt=auto&app=120&f=JPEG?w=1057&h=500",
+   "title": "准备好创造历史吧:\"探奇\"开发历程一瞥 - 新闻 - 《守望先锋》官方",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "斩仇",
+   "img": "img/hero-490.png",
+   "newFile": "pool_hero-cand21_斩仇_1.jpg",
+   "src": "evidence/qc23-cand/斩仇/pool_hero-cand21_斩仇_1.jpg",
+   "url": "https://img0.baidu.com/it/u=609015461,836240813&fm=253&fmt=auto&app=120&f=JPEG?w=797&h=449",
+   "title": "九游游戏娱乐《守望先锋2》新英雄斩仇外形引争议,官方美术师作出回应",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "安燃",
+   "img": "img/hero-491.png",
+   "newFile": "pool_hero-cand21_安燃_0.jpg",
+   "src": "evidence/qc23-cand/安燃/pool_hero-cand21_安燃_0.jpg",
+   "url": "https://img2.baidu.com/it/u=1841650466,2261942346&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "安燃已上线正式服开启体验 上号玩起来吧!",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "死怨",
+   "img": "img/hero-494.png",
+   "newFile": "pool_hero-cand21_死怨_0.jpg",
+   "src": "evidence/qc23-cand/死怨/pool_hero-cand21_死怨_0.jpg",
+   "url": "https://img0.baidu.com/it/u=1377464866,3618003532&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "守望先锋-死怨旋风冲锋龙卷风",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "飞天猫",
+   "img": "img/hero-508.png",
+   "newFile": "pool_hero-cand21_飞天猫_0.jpg",
+   "src": "evidence/qc23-cand/飞天猫/pool_hero-cand21_飞天猫_0.jpg",
+   "url": "https://img2.baidu.com/it/u=808361654,95956576&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "title": "如果你在过去两周里一直在玩《守望先锋》,你可能经常被一对小型推进",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "瑞稀",
+   "img": "img/hero-509.png",
+   "newFile": "pool_hero-cand21_瑞稀_0.jpg",
+   "src": "evidence/qc23-cand/瑞稀/pool_hero-cand21_瑞稀_0.jpg",
+   "url": "https://img1.baidu.com/it/u=2691275104,3574705448&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "守望先锋新辅助英雄 【瑞稀】官方介绍视频",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "血律",
+   "img": "img/hero-510.png",
+   "newFile": "pool_hero-cand21_血律_0.jpg",
+   "src": "evidence/qc23-cand/血律/pool_hero-cand21_血律_0.jpg",
+   "url": "https://img2.baidu.com/it/u=1979477725,356257135&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "守望先锋新英雄\"血律\"官方cg",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "骇灾",
+   "img": "img/hero-468.png",
+   "newFile": "pool_hero-cand21_骇灾_1.jpg",
+   "src": "evidence/qc23-cand/骇灾/pool_hero-cand21_骇灾_1.jpg",
+   "url": "https://img1.baidu.com/it/u=1988313231,4156903751&fm=253&fmt=auto&app=138&f=JPEG?w=1461&h=500",
+   "title": "新闻 - 《守望先锋》官方网站",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "阿三",
+   "img": "img/hero-62.png",
+   "newFile": "pool_hero-cand21_秩序之光_0.jpg",
+   "src": "evidence/qc23-cand/阿三/pool_hero-cand21_秩序之光_0.jpg",
+   "url": "https://img0.baidu.com/it/u=1408586623,3404594995&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666",
+   "title": "守望先锋人物角色设定➡建筑师秩序之光",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "摩西女",
+   "img": "img/hero-127.png",
+   "newFile": "pool_hero-cand21_天使_0.jpg",
+   "src": "evidence/qc23-cand/摩西女/pool_hero-cand21_天使_0.jpg",
+   "url": "https://img0.baidu.com/it/u=1921972193,2671455688&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "title": "守望先锋天使英雄威能介绍",
+   "from": "pool:hero-cand21",
+   "note": "复核通过"
+  },
+  {
+   "name": "摩西女专题区",
+   "img": "img/hero-512.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/摩西女专题区/baidu_0.jpg",
+   "url": "https://img2.baidu.com/it/u=2394618753,1596249812&fm=253&fmt=auto&app=138&f=JPEG?w=985&h=500",
+   "title": "天使",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "珊瑚宫心海",
+   "img": "img/hero-28.png",
+   "newFile": "baidu_1.jpg",
+   "src": "evidence/qc23-cand/珊瑚宫心海/baidu_1.jpg",
+   "url": "https://img2.baidu.com/it/u=3596831734,1462691117&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=739",
+   "title": "珊瑚宫心海",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "雷电将军",
+   "img": "img/hero-75.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/雷电将军/baidu_0.jpg",
+   "url": "https://img2.baidu.com/it/u=3013642599,307027650&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1043",
+   "title": "雷电将军",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "妮露",
+   "img": "img/hero-79.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/妮露/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/c8ea15ce36d3d539b6006a7ccbd3fe50352ac65c1a4d?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：妮露",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "莱欧斯利",
+   "img": "img/hero-119.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/莱欧斯利/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/622762d0f703918fa0ec90042c6a319759ee3c6d6eff?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：莱欧斯利",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "元歌",
+   "img": "img/hero-24.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/元歌/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/342ac65c10385343fbf215f2314fa77eca80643822e9?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：元歌",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "妮蔻",
+   "img": "img/hero-25.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/妮蔻/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/55e736d12f2eb9389b50d8c6062a9235e5dde711c1e4?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：妮蔻",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "我华",
+   "img": "img/hero-47.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我华/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=1554122640,2102547376&fm=253&fmt=auto&app=120&f=JPEG?w=1215&h=730",
+   "title": "💫伽罗太华仙气爆棚💫",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我泔",
+   "img": "img/hero-48.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我泔/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=3072736526,1099213242&fm=253&fmt=auto&app=120&f=JPEG?w=1143&h=800",
+   "title": "甄姬新皮肤局内特效待优化",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我妲",
+   "img": "img/hero-49.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我妲/baidu_0.jpg",
+   "url": "https://img2.baidu.com/it/u=3174491987,32834458&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=500",
+   "title": "妲己.魅力维加斯",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我虞",
+   "img": "img/hero-50.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我虞/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=1404375415,4078827940&fm=253&fmt=auto&app=138&f=JPEG?w=639&h=500",
+   "title": "虞姬年限皮肤测评大招彩蛋太隐晦特效足够华丽建模海报绝美",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "蒜姐",
+   "img": "img/hero-120.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/蒜姐/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=2289193095,738440016&fm=253&fmt=auto&app=120&f=PNG?w=1200&h=800",
+   "title": "上官婉儿",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我米",
+   "img": "img/hero-121.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我米/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=3811570178,3682761306&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666",
+   "title": "米莱迪英雄皮肤海报",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我月",
+   "img": "img/hero-122.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我月/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=1055641042,715550467&fm=253&fmt=auto&app=138&f=JPEG?w=918&h=500",
+   "title": "海月金乌新皮肤:太阳神鸟特效全揭秘",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我曌",
+   "img": "img/hero-123.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/我曌/baidu_0.jpg",
+   "url": "https://img1.baidu.com/it/u=1516018041,1877906086&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+   "title": "【皮肤展示】武则天全新基础皮肤「锦绣凤华」即将上线,局内特效抢先",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "我光",
+   "img": "img/hero-52.png",
+   "newFile": "baidu_7.jpg",
+   "src": "evidence/qc23-cand/我光/baidu_7.jpg",
+   "url": "https://img2.baidu.com/it/u=2581193338,686264877&fm=253&fmt=auto&app=138&f=JPEG?w=819&h=500",
+   "title": "英雄联盟皮肤原画 光辉女郎 拉克丝",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "琴女",
+   "img": "img/hero-211.png",
+   "newFile": "pool_hero-cand11_琴女__0.jpg",
+   "src": "evidence/qc23-cand/琴女/pool_hero-cand11_琴女__0.jpg",
+   "url": "https://img0.baidu.com/it/u=3123487248,2939395333&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500",
+   "title": "琴瑟仙女 娑娜 【更新】 英雄预览 - 英雄联盟手游 | classic sona",
+   "from": "pool:hero-cand11",
+   "note": "复核通过"
+  },
+  {
+   "name": "薇恩",
+   "img": "img/hero-154.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/薇恩/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/0823dd54564e9258d109017145dec658ccbf6d81e0a5?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：薇恩",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "淋光",
+   "img": "img/hero-130.png",
+   "newFile": "cover_BV1RgAUzDEVD.jpg",
+   "src": "evidence/qc23-cand/淋光/cover_BV1RgAUzDEVD.jpg",
+   "url": "http://i0.hdslb.com/bfs/archive/6481abb2089d367029918c213c1efc47b9d5d8ab.jpg",
+   "title": "B站封面：《β坏:星淋铁道》淋光角色PV——「万湿如益」",
+   "from": "bili-cover",
+   "note": "复核通过"
+  },
+  {
+   "name": "拉比克",
+   "img": "img/hero-26.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/拉比克/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/9a504fc2d56285359b3918a69aef76c6a6ef6358?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：拉比克",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "杀生院",
+   "img": "img/hero-70.jpg",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/杀生院/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/d53f8794a4c27d1eb6376ec115d5ad6eddc438a5?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：杀生院祈荒",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "杂技女亡帕克",
+   "img": "img/hero-133.png",
+   "newFile": "baidu_0.jpg",
+   "src": "evidence/qc23-cand/杂技女亡帕克/baidu_0.jpg",
+   "url": "https://img0.baidu.com/it/u=2667042792,1443295148&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500",
+   "title": "帕克puck - 英雄数据库 - 《dota2》官方网站",
+   "from": "baidu",
+   "note": "复核通过"
+  },
+  {
+   "name": "黑天鹅",
+   "img": "img/hero-208.png",
+   "newFile": "pool_hero-cand11_黑天鹅__0.jpg",
+   "src": "evidence/qc23-cand/黑天鹅/pool_hero-cand11_黑天鹅__0.jpg",
+   "url": "https://img0.baidu.com/it/u=981658430,2399568779&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
+   "title": ">崩坏星穹铁道黑天鹅什么时候up>黑天鹅立绘热衷于收集独一无二的记忆",
+   "from": "pool:hero-cand11",
+   "note": "复核通过"
+  },
+  {
+   "name": "郭老师",
+   "img": "img/hero-6.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/郭老师/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/b5ffc91fbca2fb585a024c22870dd4ab01fb0eda.jpg",
+   "title": "B站头像：郭老师",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "完颜慧德",
+   "img": "img/hero-15.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/完颜慧德/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/c5d9d4c431d81a094cd50febb3f8bc5b7b9271ce.jpg",
+   "title": "B站头像：完颜慧德",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "开心姐",
+   "img": "img/hero-20.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/开心姐/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/effb86e379494e304745ef6003dfbfdf12911950.jpg",
+   "title": "B站头像：开心姐姐在美国",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "施柔儿",
+   "img": "img/hero-22.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/施柔儿/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/70a7effcb1bb16efc25d714e3b3164ff48f7398b.jpg",
+   "title": "B站头像：霸主施柔儿_",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "大啵仙女",
+   "img": "img/hero-37.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/大啵仙女/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/efde0b4b675f17d9b165721fe9fe0c33657bb440.jpg",
+   "title": "B站头像：大啵仙女",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "暴躁的鹿鹿",
+   "img": "img/hero-54.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/暴躁的鹿鹿/user_0.jpg",
+   "url": "https://i0.hdslb.com/bfs/face/6bd33b9e01c94b1fa24c98c6a6627b8bdbce4a6a.jpg",
+   "title": "B站头像：暴躁的鹿鹿",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "阴婷宝",
+   "img": "img/hero-116.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/阴婷宝/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/c10267ab21f67205c32cfd2513af9f4b6877f2c2.jpg",
+   "title": "B站头像：阴婷宝宝",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "FLY 组合工作室",
+   "img": "img/hero-151.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/FLY 组合工作室/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/bae344c1e721dc02d1ceab1bab249eed68d14250.jpg",
+   "title": "B站头像：FLY组合工作室公众号",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "杯糕姐",
+   "img": "img/hero-228.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/杯糕姐/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/08650d0088ea693945b6998cb06369e5bb9eeaa7.jpg",
+   "title": "B站头像：杯糕姐",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "胡艺莲",
+   "img": "img/hero-270.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/胡艺莲/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/7ebd71e2a1849bd8ad6242d055a4fcc3fd11ae7d.jpg",
+   "title": "B站头像：胡艺莲",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "火淋",
+   "img": "img/hero-129.png",
+   "newFile": "cover_BV1mAL26DE2e.jpg",
+   "src": "evidence/qc23-cand/火淋/cover_BV1mAL26DE2e.jpg",
+   "url": "http://i2.hdslb.com/bfs/archive/39a4f58c284c83ac4455780e9724d283273c5b2a.jpg",
+   "title": "B站封面：《β坏:星淋铁道》火淋角色PV——「轰动演出」",
+   "from": "bili-cover",
+   "note": "复核通过"
+  },
+  {
+   "name": "霉霉",
+   "img": "img/hero-10.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/霉霉/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/b3fb43166d224f4a20a4344aa7ae87529822720e7b6a?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：泰勒·斯威夫特",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "凤仙子",
+   "img": "img/hero-60.png",
+   "newFile": "baike_0.jpg",
+   "src": "evidence/qc23-cand/凤仙子/baike_0.jpg",
+   "url": "https://bkimg.cdn.bcebos.com/pic/cefc1e178a82b9012aaa6a1e748da9773912ef9c?x-bce-process=image/format,f_auto",
+   "title": "百度百科词条图：罗玉凤",
+   "from": "baike",
+   "note": "复核通过"
+  },
+  {
+   "name": "淋淋",
+   "img": "img/hero-1.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/淋淋/user_0.jpg",
+   "url": "https://i2.hdslb.com/bfs/face/c95dad563e1eded0fe9d9c1b0c61dfd0b7c969d8.jpg",
+   "title": "B站头像：蔡依林",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "三梦奇缘",
+   "img": "img/hero-4.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/三梦奇缘/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/718500aa8e5abb60f5db9d215aa78d2fbd35984f.jpg",
+   "title": "B站头像：三梦奇缘_",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  },
+  {
+   "name": "何老师",
+   "img": "img/hero-17.png",
+   "newFile": "user_0.jpg",
+   "src": "evidence/qc23-cand/何老师/user_0.jpg",
+   "url": "https://i1.hdslb.com/bfs/face/e61192772e6ef07bcc46d02cb84b8d8bf4f5960f.jpg",
+   "title": "B站头像：心理咨询师-何老师",
+   "from": "bili-user-avatar",
+   "note": "复核通过"
+  }
+ ],
+ "keeps": [
+  {
+   "name": "铁T成长",
+   "img": "img/hero-134.png",
+   "note": "现图已是出处视频封面(BV16LeEz9EwM)，无需更换"
+  },
+  {
+   "name": "周阴婷",
+   "img": "img/hero-2.png",
+   "note": "真人无合规图源：头像为梗图、视频封面均带大字，保留原图"
+  },
+  {
+   "name": "英中啊英中",
+   "img": "img/hero-201.png",
+   "note": "现图为周阴婷经典古早照；候选均为梗图/二创，保留原图"
+  },
+  {
+   "name": "玛莎",
+   "img": "img/hero-16.png",
+   "note": "B站头像为动漫图不能代表本人，保留现真人图"
+  },
+  {
+   "name": "埃及艳后",
+   "img": "img/hero-18.png",
+   "note": "B站头像为激光眼梗图，保留现真人图"
+  },
+  {
+   "name": "鹅妈妈",
+   "img": "img/hero-12.png",
+   "note": "人物志封面带大字、无头像可用，保留原图"
+  },
+  {
+   "name": "肘姐",
+   "img": "img/hero-13.png",
+   "note": "头像为梗图编辑，保留原图"
+  },
+  {
+   "name": "淋形针LinerClip",
+   "img": "img/hero-229.png",
+   "note": "现图为本人节目封面《如何快速掌握淋语》，勉强可用"
+  }
+ ],
+ "empties": [
+  {
+   "name": "黑梦的狗",
+   "img": "",
+   "note": "候选均为黑梦(菲德)本人图，非追猎者；保持空图待补"
+  },
+  {
+   "name": "奇乐的机器人",
+   "img": "img/hero-359.png",
+   "note": "现图为无关幻想王子(带水印)；候选均为奇乐本人图，非炮台装置；清空待补"
+  },
+  {
+   "name": "锤头鹳",
+   "img": "",
+   "note": "候选均为UI/大字视频截图，保持空图待补"
+  },
+  {
+   "name": "夜枭",
+   "img": "",
+   "note": "候选均为游戏UI截图，保持空图待补"
+  },
+  {
+   "name": "可丽希亚",
+   "img": "",
+   "note": "候选均为游戏截图，保持空图待补"
+  },
+  {
+   "name": "阿洛",
+   "img": "",
+   "note": "候选为阿布(错宠)或大字横幅，保持空图待补"
+  }
+ ]
+}

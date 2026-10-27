@@ -1,0 +1,2579 @@
+{
+ "generatedAt": "2026-10-27T09:09:54.254Z",
+ "total": 146,
+ "candManifest": "evidence/qc23-cand.json",
+ "items": [
+  {
+   "name": "幻棱",
+   "alias": "幻棱闪回、Waylay",
+   "img": "img/hero-341.png",
+   "rank": "瓦罗淋特 · 决斗者",
+   "group": "game",
+   "baike": "本名 Waylay，泰国，决斗者。外号「闪回」直接来自她的回溯技能，形容「冲进去还能闪回来」的赖皮感；语料把它拼进阵容讨论「幻棱突击闪回」。",
+   "bvs": [
+    "BV15hMy6uEkM"
+   ],
+   "owners": [],
+   "cands": 14,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "猎枭",
+   "alias": "苏法、猎鸟、猎枭王、Sova",
+   "img": "img/hero-342.png",
+   "rank": "瓦罗淋特 · 先锋者",
+   "group": "game",
+   "baike": "本名 Sova，俄罗斯北莫尔斯克，先锋者。台服译名「苏法」；「猎鸟」是「枭」读成「鸟」的谐音降格；「猎枭王」是专精玩家的自封。语料金句：「猎枭这英雄没啥想象力，",
+   "bvs": [
+    "BV1fcHnzZEkG"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "铁臂",
+   "alias": "铁臂阿童木、Breach",
+   "img": "img/hero-343.png",
+   "rank": "瓦罗淋特 · 先锋者",
+   "group": "game",
+   "baike": "本名 Breach，瑞典，先锋者。外号「铁臂阿童木」直接把「铁臂」接到童年动画主角名上，语料里当成就弹幕刷（「达成成就:铁臂阿童木」）。",
+   "bvs": [
+    "BV15hMy6uEkM"
+   ],
+   "owners": [],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "斯凯",
+   "alias": "丝凯、Skye",
+   "img": "img/hero-344.png",
+   "rank": "瓦罗淋特 · 先锋者",
+   "group": "game",
+   "baike": "本名 Skye，澳大利亚宁宾，先锋者。语料里的用法多是战绩式提及（「对面斯凯五杀自己红了」），说明她常被当成「别人家的打野」。",
+   "bvs": [
+    "BV15hMy6uEkM"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "盖可",
+   "alias": "盖克、盖乃的可子、盖可病毒、皮蛋之父、Gekko",
+   "img": "img/hero-345.png",
+   "rank": "瓦罗淋特 · 先锋者",
+   "group": "game",
+   "baike": "本名 Gekko，美国洛杉矶，先锋者。写法「盖可／盖克」双轨；「盖乃的可子」是把名字拆开重拼的错读梗；「盖可病毒」指他的宠物技能黏人；「我们盖可玩家就这样吃」是",
+   "bvs": [
+    "BV18u2zBkEdM"
+   ],
+   "owners": [
+    "欧阳风5019"
+   ],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "钛狐",
+   "alias": "钛湖、Tejo",
+   "img": "img/hero-346.png",
+   "rank": "瓦罗淋特 · 先锋者",
+   "group": "game",
+   "baike": "本名 Tejo，哥伦比亚，先锋者。「钛湖」是评论区常用谐音；语料评价两极——「钛狐本身就不弱啊，不知道为什么出场率就是低」与「机器人又贵还只有一个」。",
+   "bvs": [
+    "BV15Fad6YEQx"
+   ],
+   "owners": [
+    "无畏契约情报员啊"
+   ],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "炼狱",
+   "alias": "布史东、炼狱小姐姐、老妈、Brimstone",
+   "img": "img/hero-347.png",
+   "rank": "瓦罗淋特 · 控场者",
+   "group": "game",
+   "baike": "本名 Brimstone，美国巴尔的摩，控场者。台服译名「布史东」；「炼狱小姐姐」是把硬汉角色性转式拟人，「老妈」来自他照顾全队的队长人设；语料金句「炼狱小姐姐",
+   "bvs": [
+    "BV1Gann6eEvL"
+   ],
+   "owners": [
+    "木彡1"
+   ],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "星礈",
+   "alias": "黑妹、Astra",
+   "img": "img/hero-348.png",
+   "rank": "瓦罗淋特 · 控场者",
+   "group": "game",
+   "baike": "本名 Astra，加纳阿克拉，控场者。外号「黑妹」按外形取名，玩家口语几乎不用本名；她的墙被称为「黑妹大盾」，语料里与「炸弹妹的地雷」并列进阵容讨论。",
+   "bvs": [
+    "BV15hMy6uEkM"
+   ],
+   "owners": [],
+   "cands": 14,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "幽影",
+   "alias": "幽影小猫、幽影袖剑、Omen",
+   "img": "img/hero-349.png",
+   "rank": "瓦罗淋特 · 控场者",
+   "group": "game",
+   "baike": "本名 Omen，出身不详（幽灵），控场者。「幽影小猫」把无脸幽灵拟成猫，是典型萌化降格；「推黑」是对他致盲技能的按效果取名；南瓜惊魂夜皮肤把他做成「幽影小猫」。",
+   "bvs": [
+    "BV16mnx6ZEbt"
+   ],
+   "owners": [],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "海神",
+   "alias": "嘎达嘎达、Harbor",
+   "img": "img/hero-350.png",
+   "rank": "瓦罗淋特 · 控场者",
+   "group": "game",
+   "baike": "本名 Harbor，印度，控场者。外号「嘎达嘎达」出自标题「这海神怎么一直嘎达嘎达」；他的水域道具被叫「水池」，语料里把它拼进「超级下包连招」。",
+   "bvs": [
+    "BV1vGnv6CEyH"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "瑟符",
+   "alias": "保安、老保安、Cypher",
+   "img": "img/hero-351.png",
+   "rank": "瓦罗淋特 · 哨卫者",
+   "group": "game",
+   "baike": "本名 Cypher，摩洛哥卡萨布兰卡，哨卫者。外号「保安」按功能取名（布陷阱看家），「老保安」是对专精玩家的敬称（语料「我400h老保安」）；道具「拌线／绊线」",
+   "bvs": [
+    "BV1sK5f65EoT"
+   ],
+   "owners": [
+    "无畏战术大师兄"
+   ],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "贤者",
+   "alias": "圣祈、奶妈、我贤、我光、Sage",
+   "img": "img/hero-352.png",
+   "rank": "瓦罗淋特 · 哨卫者",
+   "group": "game",
+   "baike": "本名 Sage，中国陕西，哨卫者。台服译名「圣祈」；「奶妈」按功能取名（唯一能奶队友）；「我贤」是「我＋官称」自称式；「我光」是与隔壁光女做类比的跨区外号（「你",
+   "bvs": [
+    "BV1oVs3zzEbT"
+   ],
+   "owners": [
+    "地才女特务"
+   ],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "尚勃勒",
+   "alias": "钱博尔、钱包、Chamber",
+   "img": "img/hero-353.png",
+   "rank": "瓦罗淋特 · 哨卫者",
+   "group": "game",
+   "baike": "本名 Chamber，法国，哨卫者。台服译名「钱博尔」；「钱包」既谐音 Chamber／钱袋，也因为他一身绅士行头；语料里「冠军钱包的控图和瞄准」把两个叫法写在",
+   "bvs": [
+    "BV1Uvnt6yEGY"
+   ],
+   "owners": [
+    "圣诞ChristmasLdw"
+   ],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "钢锁",
+   "alias": "钢锁大姐、我🔒、Deadlock",
+   "img": "img/hero-354.png",
+   "rank": "瓦罗淋特 · 哨卫者",
+   "group": "game",
+   "baike": "本名 Deadlock，挪威，哨卫者。自称写法「我🔒」（锁＝🔒），旧条目「钢索／为爱走钢索」即指同一角色，本轮已并入；「大姐」是淋语里对强势女性角色的常用拟",
+   "bvs": [
+    "BV1zYnQ6PEqt"
+   ],
+   "owners": [
+    "smoyrf10150"
+   ],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "维斯",
+   "alias": "维斯Plus、Vyse",
+   "img": "img/hero-355.png",
+   "rank": "瓦罗淋特 · 哨卫者",
+   "group": "game",
+   "baike": "本名 Vyse，出身不详，哨卫者。「Plus」是升级版梗，语料原话「666维斯Plus版来了」；她的技能被叫「荆棘」「隔断墙」，与钢锁的对位在语料里有具体描写。",
+   "bvs": [
+    "BV1xmnR6HEUv"
+   ],
+   "owners": [],
+   "cands": 10,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "遐思",
+   "alias": "Reverie",
+   "img": "img/hero-356.png",
+   "rank": "瓦罗淋特 · 新特工",
+   "group": "game",
+   "baike": "官方名「遐思」，定位与出身以官方预告为准（本轮未收录未核实的数值设定）。语料里只有初评：「这英雄太吃驾驶员操作了」「审阅视频被活活遐思两次惹」。",
+   "bvs": [
+    "BV19sn86FEcV"
+   ],
+   "owners": [
+    "喜欢看星星的派大星"
+   ],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "K/O",
+   "alias": "KAY/O、KO",
+   "img": "img/hero-357.png",
+   "rank": "瓦罗淋特 · 先锋者",
+   "group": "game",
+   "baike": "本名 KAY/O，未来机器人，先锋者。语料里的记忆点是「为什么ko管芮娜叫女王」，这条语音彩蛋成了解读芮娜人设的依据。",
+   "bvs": [
+    "BV15hMy6uEkM"
+   ],
+   "owners": [],
+   "cands": 11,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19",
+    "pool:hero-cand19b"
+   ]
+  },
+  {
+   "name": "皮蛋",
+   "alias": "盖可的皮蛋",
+   "img": "img/hero-358.png",
+   "rank": "瓦罗淋特 · 召唤兽",
+   "group": "game",
+   "baike": "《无畏契约》盖可（Gekko）的召唤兽，外形像一团生物。玩家把它当独立角色讨论：语料「皮蛋，快去拆除爆能器！」「直接远距离用皮蛋」。",
+   "bvs": [
+    "BV18u2zBkEdM"
+   ],
+   "owners": [
+    "欧阳风5019"
+   ],
+   "cands": 12,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19",
+    "pool:hero-cand19b"
+   ]
+  },
+  {
+   "name": "奇乐的机器人",
+   "alias": "奇乐的炮台、机器",
+   "img": "img/hero-359.png",
+   "rank": "瓦罗淋特 · 召唤兽",
+   "group": "game",
+   "baike": "《无畏契约》奇乐（Killjoy）的装置。语料原文「钛狐很好玩，就是机器人又贵还只有一个」「之前听到奇乐说『难不成让我给爆能器装两条腿吗』」。",
+   "bvs": [
+    "BV1Mx421Q7XN"
+   ],
+   "owners": [],
+   "cands": 10,
+   "candSources": [
+    "pool:hero-cand19",
+    "pool:hero-cand19b"
+   ]
+  },
+  {
+   "name": "丢丢",
+   "alias": "盖可的丢丢",
+   "img": "img/hero-360.png",
+   "rank": "瓦罗淋特 · 召唤兽",
+   "group": "game",
+   "baike": "《无畏契约》盖可的召唤兽，功能是闪光。语料原文「盖可一定要学会『皮蛋+丢丢』以及『提前引爆鲨鲨』的小技巧」。",
+   "bvs": [
+    "BV18u2zBkEdM"
+   ],
+   "owners": [
+    "欧阳风5019"
+   ],
+   "cands": 8,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "鲨鲨",
+   "alias": "盖可的鲨鲨",
+   "img": "img/hero-361.png",
+   "rank": "瓦罗淋特 · 召唤兽",
+   "group": "game",
+   "baike": "《无畏契约》盖可的召唤兽，鲨鱼形态，可提前引爆。语料原文「盖可一定要学会『皮蛋+丢丢』以及『提前引爆鲨鲨』的小技巧」。",
+   "bvs": [
+    "BV18u2zBkEdM"
+   ],
+   "owners": [
+    "欧阳风5019"
+   ],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand19"
+   ]
+  },
+  {
+   "name": "地才女特务",
+   "alias": "女特务、地才女特务",
+   "img": "img/hero-363.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，主打瓦罗兰特淋语整活与女特工拟人。代表作《我贤的每一次复活都已经暗中标注了价格》《仙女的守点 淡淡的 美美的 阴阴的》《鸡女有鸡女的路但绝对不",
+   "bvs": [
+    "BV1oVs3zzEbT",
+    "BV1pVUmBfEip"
+   ],
+   "owners": [
+    "地才女特务"
+   ],
+   "cands": 3,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "仔仔无畏契约",
+   "alias": "仔仔、国一夜露",
+   "img": "img/hero-364.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，夜露专精。代表作《【仔仔夜露/国一夜露】90分钟夜露集锦和残局思路，送给削弱前夜露的一场电影》——这条标题本身就是夜露被削的社区记录。",
+   "bvs": [
+    "BV12h411P7iB"
+   ],
+   "owners": [
+    "夏布去"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "无畏契约情报员啊",
+   "alias": "情报员",
+   "img": "img/hero-365.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，主打女瓦与技巧向短视频。代表作《老己你做到了冷静对枪》《老己你已经变得非常勇敢了》《爆炸就是艺术——钛狐教学》。",
+   "bvs": [
+    "BV15Fad6YEQx"
+   ],
+   "owners": [
+    "无畏契约情报员啊"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "谋生者白言",
+   "alias": "白言",
+   "img": "img/hero-366.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，夜露教学。代表作《夜露全局思路：你也能打出的职业级进点套餐》《〈夜露谋杀案5〉》。语料里夜露削弱时有人点名「此处@谋生者白言」。",
+   "bvs": [
+    "BV1wkJQ6NEGD"
+   ],
+   "owners": [
+    "迪奥鸽鸽DIOgege"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "乃酱",
+   "alias": "乃酱",
+   "img": "img/hero-367.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，夜露相关。代表作《夜露太强了大家快来玩啊！》——在夜露被连削的版本里喊强，属于典型的反讽式安利。",
+   "bvs": [
+    "BV1E9pJ67EDf"
+   ],
+   "owners": [
+    "乃酱"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "绿泡泡Reyna",
+   "alias": "芮娜本人",
+   "img": "img/hero-368.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，芮娜专精。代表作《\"芮娜玩家的救星\"来了，让你的芮娜更进一步。》《在全员神话局轰炸29-5的战绩！》以及每日《纯净版 芮娜本人》切片。",
+   "bvs": [
+    "BV1YwKbzKEPu"
+   ],
+   "owners": [
+    "是小希同学呀over"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "无畏辐能联盟",
+   "alias": "辐能联盟",
+   "img": "img/hero-369.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，特工教学。代表作《芮娜「蕾娜」真·保姆级教学》《夜露「夜戮」真·保姆级教学 超级跳技巧一键上手》——标题里同时写国服与台服两个译名，是译法并存",
+   "bvs": [
+    "BV1wkJQ6NEGD"
+   ],
+   "owners": [
+    "迪奥鸽鸽DIOgege"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "无畏战术大师兄",
+   "alias": "大师兄",
+   "img": "img/hero-370.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，道具点位教学。代表作《亚海悬城保安道具点位 无畏契约新手保安教学 阳光保安套餐》《幽邃地窟猎枭点位 猎枭秒杀箭 探测箭点位》。",
+   "bvs": [
+    "BV1sK5f65EoT",
+    "BV1fcHnzZEkG"
+   ],
+   "owners": [
+    "无畏战术大师兄"
+   ],
+   "cands": 3,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "汉堡_无畏契约",
+   "alias": "汉堡",
+   "img": "img/hero-371.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，新手教学。代表作《0fps基础 无畏契约超新手の判断下包位置速成》《0fps基础 无畏契约新手必看の地图报点速成》《0fps基础 无畏契约新手",
+   "bvs": [
+    "BV1yE421L7jF"
+   ],
+   "owners": [
+    "约德尔大人"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "布锅锅",
+   "alias": "锅锅",
+   "img": "img/hero-372.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，做工具站。代表作《我自制了无畏契约语音网站！10809条语音全收录！支持中英双语！》《我自制了无畏契约道具点位网站：现已上传700个点位！》。",
+   "bvs": [
+    "BV1RUaZ6qEpn"
+   ],
+   "owners": [
+    "布锅锅"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "无畏契约皮肤",
+   "alias": "皮肤号",
+   "img": "img/hero-373.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，皮肤演示。代表作《地面效应/VENTURI 系列皮肤实机演示鉴赏》《噬源兽防卫工程/辐食动物/RDVR 皮肤炫彩实机演示》《闪耀之星/偶像星梦",
+   "bvs": [
+    "BV1qG4y1L7qS"
+   ],
+   "owners": [
+    "无畏契约皮肤"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "喜欢看星星的派大星",
+   "alias": "派大星",
+   "img": "img/hero-374.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，皮肤与语音首发。代表作《新英雄「遐思」互动语音|无畏契约》《新皮肤「泡泡萌兽」全皮肤/全炫彩/全等级》《新皮肤「胧夜月华」全皮肤/全炫彩/全等",
+   "bvs": [
+    "BV19sn86FEcV"
+   ],
+   "owners": [
+    "喜欢看星星的派大星"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "老老老老老鱼干",
+   "alias": "鱼干",
+   "img": "img/hero-375.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，皮肤手感评测。代表作《无畏契约獠犬个人手感TOP5》《无畏契约特效狂徒手感排行榜TOP10》。",
+   "bvs": [
+    "BV1bs4y1N71U"
+   ],
+   "owners": [
+    "大东彦"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "冰可乐Raze",
+   "alias": "冰可乐、雷兹",
+   "img": "img/hero-376.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，雷兹向内容。代表作《雷兹希望大家天天开心》——标题是瓦区少见的温柔型开场。",
+   "bvs": [
+    "BV1mxnW6NEvM"
+   ],
+   "owners": [
+    "冰可乐Raze"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "404就是小刘",
+   "alias": "小刘",
+   "img": "img/hero-377.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，盖可教学。代表作《3分钟学会盖可怎么玩 盖克小技巧分享 新手教程 Gekko入门攻略》。标题里「盖可／盖克」两种写法并用。",
+   "bvs": [
+    "BV1to4y1474K"
+   ],
+   "owners": [
+    "404就是小刘"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "木彡1",
+   "alias": "木彡",
+   "img": "img/hero-378.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，瓦罗淋特整活。代表作《［瓦罗淋特］〈哒哒哒哒哒～好想玩奶妈～〉》。「奶妈」即贤者。",
+   "bvs": [
+    "BV1Gann6eEvL"
+   ],
+   "owners": [
+    "木彡1"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "胡里奥小朋友",
+   "alias": "胡里奥",
+   "img": "img/hero-379.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，大沙田契约系列。代表作《【大沙田契约】Vol.31 绞杀小号肛毛猴中》，简介自述「淋系视频，无不良价值观导向」，BGM 用蔡依林《特务J》。",
+   "bvs": [
+    "BV1zYnQ6PEqt"
+   ],
+   "owners": [
+    "smoyrf10150"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "夜光山雀",
+   "alias": "山雀",
+   "img": "img/hero-380.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，大沙田契约系列。代表作《【大沙田契约】我蛇向所有的烟位宣战！》——「我蛇」即蝰蛇的自称写法（我🐍 的文字版）。",
+   "bvs": [
+    "BV1zYnQ6PEqt"
+   ],
+   "owners": [
+    "smoyrf10150"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "欧阳风5019",
+   "alias": "欧阳风",
+   "img": "img/hero-381.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主，盖可向内容。代表作《我们盖可玩家就这样吃》《盐海矿镇盖可真强的吧》。",
+   "bvs": [
+    "BV18u2zBkEdM"
+   ],
+   "owners": [
+    "欧阳风5019"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "大东彦",
+   "alias": "东彦",
+   "img": "img/hero-382.png",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "B 站 UP 主／解说，做版本与平衡性分析。出处《【大东彦】猎枭大招削了变细了，钱包霓虹没削！是假消息》。这条是社区判断「哪条削弱传闻是假的」的主要依据。",
+   "bvs": [
+    "BV19gnY6TESz"
+   ],
+   "owners": [
+    "anno大笨蛋"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "康康",
+   "alias": "zmjjKK、康神",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "职业选手 zmjjKK，CN 赛区。中文昵称「康康」，「康神」是敬称。语料里「这水平来瓦能和康康掰掰手腕吗」「暮蝶acs快270比康康平均的还要高」两处都拿他当",
+   "bvs": [
+    "BV1jHJd6NEKm"
+   ],
+   "owners": [
+    "高能无畏"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "Aspas",
+   "alias": "老帕",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "职业选手 Aspas（MIBR）。中文社区叫「老帕」。语料出处《【MIBR Aspas】32杀！老帕是怎么又团队又能杀人的，击杀效率的典范，莲花古城芮娜》。",
+   "bvs": [
+    "BV1TwHL6CEs3"
+   ],
+   "owners": [
+    "蜀鼠pov"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "kaajak",
+   "alias": "FNC kaajak",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "职业选手 kaajak（FNC）。语料出处《【FNC kaajak】拉扯至上，利用传送扩大影响力 夜露 隐世修所》。他的打法是「阳光夜露」——不依赖闪传套餐。",
+   "bvs": [
+    "BV1wkJQ6NEGD"
+   ],
+   "owners": [
+    "迪奥鸽鸽DIOgege"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "Eggsterr",
+   "alias": "蛋哥、ENVY Eggsterr",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "职业选手 Eggsterr（ENVY），中文昵称「蛋哥」。语料出处《【ENVY Eggsterr】美服顶分炸鱼 最懂夜露排位的男人！隐世修所Haven 夜露Yo",
+   "bvs": [
+    "BV1wkJQ6NEGD"
+   ],
+   "owners": [
+    "迪奥鸽鸽DIOgege"
+   ],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "lukxo",
+   "alias": "LOUD lukxo",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "职业选手 lukxo（LOUD）。语料出处《【LOUD lukxo】冠军钱包的控图和瞄准 日落之城Sunset尚勃勒Chamber32杀打法解析》。「冠军钱包」",
+   "bvs": [
+    "BV1Uvnt6yEGY"
+   ],
+   "owners": [
+    "圣诞ChristmasLdw"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "grim",
+   "alias": "北美第一贤者 grim",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "北美高分玩家／主播，语料标签「北美第一贤者 grim」。出处《新英雄遐思提前试玩 这英雄太吃驾驶员操作了！【北美第一贤者grim】》。",
+   "bvs": [
+    "BV1EBHA68EJ5"
+   ],
+   "owners": [
+    "GDSage"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "ziptie",
+   "alias": "ziptie夜露",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "夜露玩家／内容作者。语料出处《【ziptie夜露】我fake了10000个主播》，以及「越看越难受 现在夜露都是一个样 没啥特色 ziptie都没活了」的社区感",
+   "bvs": [
+    "BV1wkJQ6NEGD"
+   ],
+   "owners": [
+    "迪奥鸽鸽DIOgege"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "SpiritZ1",
+   "alias": "塑水宗代言人",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "瓦罗高分玩家／内容作者。出处《【SpiritZ1】直架大王！塑水宗代言人！曾经的夜露大王！》。「塑水宗代言人」指他长期用塑水宗皮肤。",
+   "bvs": [
+    "BV1ugHG66EHy"
+   ],
+   "owners": [
+    "Akira-无畏契约"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "Evnii",
+   "alias": "专精六年芮娜",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "芮娜专精玩家。出处《【Evnii】专精了6年芮娜看上去是如何的...》。语料回应「高情商：专精六年芮娜」，是瓦区经典的阴阳式夸法。",
+   "bvs": [
+    "BV1YwKbzKEPu"
+   ],
+   "owners": [
+    "是小希同学呀over"
+   ],
+   "cands": 3,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "SoMarcus",
+   "alias": "宝可梦专精训练师",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "盖可专精玩家，曾在 NAVI 打职业、现为主播。出处《【SoMarcus】宝可梦专精训练师 隐世修所Haven盖可Gekko31杀打法解析》。外号「宝可梦专精训",
+   "bvs": [
+    "BV18u2zBkEdM"
+   ],
+   "owners": [
+    "欧阳风5019"
+   ],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "张钊",
+   "alias": "zhangzhao",
+   "img": "",
+   "rank": "UP主 · 瓦罗淋特",
+   "group": "real",
+   "baike": "职业选手。语料原文「明星选手里体现最明显的就是张钊，他首尔的时候也是单纯右手炮台，暮蝶acs快270比康康平均的还要高，打法像个demon2」。本轮只收录语料里",
+   "bvs": [
+    "BV1jHJd6NEKm"
+   ],
+   "owners": [
+    "高能无畏"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "黑梦的狗",
+   "alias": "追猎者、狗眼",
+   "img": "",
+   "rank": "瓦罗淋特 · 召唤兽",
+   "group": "game",
+   "baike": "《无畏契约》黑梦（Fade）的追猎者，外形像犬。玩家直接叫「狗」；她的诡眼也被叫「狗眼」。语料原文「这个东西的闪和道具跟黑梦的狗一样可研究的东西太多了」。",
+   "bvs": [
+    "BV1Mx421Q7XN"
+   ],
+   "owners": [],
+   "cands": 13,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand19",
+    "pool:hero-cand19b"
+   ]
+  },
+  {
+   "name": "小丑",
+   "alias": "裘克",
+   "img": "img/hero-338.png",
+   "rank": "第五淋格 · 监管者",
+   "group": "game",
+   "baike": "本名裘克，火箭冲刺是其招牌。「舞女反制小丑全方位教学」是典型对位教学标题。",
+   "bvs": [
+    "BV1yma16SENx"
+   ],
+   "owners": [],
+   "cands": 6,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "鹿头",
+   "alias": "班恩",
+   "img": "img/hero-339.png",
+   "rank": "第五淋格 · 监管者",
+   "group": "game",
+   "baike": "本名班恩。「共研服调整，因为鹿头常年运动，身体变瘦」是弹幕对建模改动的调侃。",
+   "bvs": [
+    "BV1wnHM67EMp"
+   ],
+   "owners": [],
+   "cands": 4,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "宿伞之魂",
+   "alias": "宿伞 / 谢必安 / 范无咎",
+   "img": "img/hero-340.png",
+   "rank": "第五淋格 · 监管者",
+   "group": "game",
+   "baike": "本名谢必安（白）与范无咎（黑）。玩家只用「宿伞」两个字，因为换形态等于换角色。",
+   "bvs": [
+    "BV1wnHM67EMp"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "蜡像师",
+   "alias": "菲利普",
+   "img": "img/hero-352.png",
+   "rank": "第五淋格 · 监管者",
+   "group": "game",
+   "baike": "别号蜡像师。「守尸屠」这个词常被用来形容他这类死守椅子的打法。",
+   "bvs": [
+    "BV1wnHM67EMp"
+   ],
+   "owners": [],
+   "cands": 24,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:hero-cand18b",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "机械师",
+   "alias": "特蕾西·列兹尼克 / 机械",
+   "img": "img/hero-363.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "本名特蕾西·列兹尼克。与心理学家并称「机械师心理」，是双辅组合的固定说法。",
+   "bvs": [
+    "BV1igPezEEpV"
+   ],
+   "owners": [],
+   "cands": 22,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "舞女",
+   "alias": "玛格丽莎 / 排位淋舞Queen",
+   "img": "img/hero-364.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "别号舞女。「排位淋舞Queen打扮打扮又出来slay噜」把段位、角色、英文梗缝成一个封号。",
+   "bvs": [
+    "BV1XW3i6QEbu"
+   ],
+   "owners": [],
+   "cands": 18,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "调酒师",
+   "alias": "黛米·波本 / 大爹调酒师",
+   "img": "img/hero-368.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "别号调酒师。「有大爹调酒师，外面状态随便补」是排位里最安心的局面。",
+   "bvs": [
+    "BV1igPezEEpV"
+   ],
+   "owners": [],
+   "cands": 20,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "杂技演员",
+   "alias": "麦克·莫顿 / 杂技",
+   "img": "img/hero-369.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "本名麦克·莫顿。「一个火球出手不仅 8S 封技能」是讨论其超标的原句。",
+   "bvs": [
+    "BV1igPezEEpV"
+   ],
+   "owners": [],
+   "cands": 22,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "病患",
+   "alias": "埃米尔",
+   "img": "img/hero-371.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "本名埃米尔。「魔术师和杂技演员都加强，病患又显得弱势了」是常年陪跑的角色。",
+   "bvs": [
+    "BV1igPezEEpV"
+   ],
+   "owners": [],
+   "cands": 18,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:hero-cand18b",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "玩具商",
+   "alias": "玩具商",
+   "img": "img/hero-373.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "别号玩具商。「求生者里混进来了个玩具商」这类弹幕常用来吐槽其道具太万金油。",
+   "bvs": [
+    "BV1igPezEEpV"
+   ],
+   "owners": [],
+   "cands": 18,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:hero-cand18b",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "空军",
+   "alias": "玛尔塔·贝坦菲尔 / 空军",
+   "img": "img/hero-374.png",
+   "rank": "第五淋格 · 求生者",
+   "group": "game",
+   "baike": "本名玛尔塔·贝坦菲尔。「0 收益事后枪」是分锅时最刺眼的罪名，也是她最大的争议点。",
+   "bvs": [
+    "BV1igPezEEpV"
+   ],
+   "owners": [],
+   "cands": 24,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand18",
+    "pool:hero-cand18b",
+    "pool:qc22"
+   ]
+  },
+  {
+   "name": "金驭",
+   "alias": "Jinwu / 金驭",
+   "img": "img/hero-469.png",
+   "rank": "守望淋锋 · 重装",
+   "group": "game",
+   "baike": "本名 Jinwu，官方定位 重装（副职责 铁壁），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：守望先锋中文维基英雄名单。",
+   "bvs": [],
+   "owners": [],
+   "cands": 11,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "探奇",
+   "alias": "Venture / 钻地婆 / 地鼠 / 钻头女",
+   "img": "img/hero-487.png",
+   "rank": "守望淋锋 · 输出",
+   "group": "game",
+   "baike": "本名 Venture，官方定位 输出（副职责 奇袭），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：本区视频《【守望淋锋】钻地婆站街初体",
+   "bvs": [],
+   "owners": [],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "斩仇",
+   "alias": "Vendetta / 斩仇",
+   "img": "img/hero-490.png",
+   "rank": "守望淋锋 · 输出",
+   "group": "game",
+   "baike": "本名 Vendetta，官方定位 输出（副职责 奇袭），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：2026 赛季英雄介绍。",
+   "bvs": [],
+   "owners": [],
+   "cands": 11,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "安燃",
+   "alias": "Anran / 安燃",
+   "img": "img/hero-491.png",
+   "rank": "守望淋锋 · 输出",
+   "group": "game",
+   "baike": "本名 Anran，官方定位 输出（副职责 专业），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：守望先锋中文维基英雄名单。",
+   "bvs": [],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "西拉",
+   "alias": "Sierra / 西拉",
+   "img": "img/hero-493.png",
+   "rank": "守望淋锋 · 输出",
+   "group": "game",
+   "baike": "本名 Sierra，官方定位 输出（副职责 奇袭），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：守望先锋中文维基英雄名单。",
+   "bvs": [],
+   "owners": [],
+   "cands": 5,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "死怨",
+   "alias": "Wraith / 死怨",
+   "img": "img/hero-494.png",
+   "rank": "守望淋锋 · 输出",
+   "group": "game",
+   "baike": "本名 Wraith，官方定位 输出（副职责 奇袭），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：守望先锋中文维基英雄名单。",
+   "bvs": [],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "飞天猫",
+   "alias": "Jetpack Cat / 飞天猫",
+   "img": "img/hero-508.png",
+   "rank": "守望淋锋 · 支援",
+   "group": "game",
+   "baike": "本名 Jetpack Cat，官方定位 支援（副职责 战术），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：守望先锋中文维基英雄名单。",
+   "bvs": [],
+   "owners": [],
+   "cands": 11,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "瑞稀",
+   "alias": "Mizuki / 瑞稀",
+   "img": "img/hero-509.png",
+   "rank": "守望淋锋 · 支援",
+   "group": "game",
+   "baike": "本名 Mizuki，官方定位 支援（副职责 生存），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：守望先锋中文维基英雄名单。",
+   "bvs": [],
+   "owners": [],
+   "cands": 11,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "血律",
+   "alias": "Bloodhound / 血律 / 血律大人 / 血律Daddy / Daddy",
+   "img": "img/hero-510.png",
+   "rank": "守望淋锋 · 支援",
+   "group": "game",
+   "baike": "本名 Bloodhound，官方定位 支援（副职责 医疗），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：本区视频《又素血律Daddy掌",
+   "bvs": [],
+   "owners": [],
+   "cands": 3,
+   "candSources": [
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "阿三",
+   "alias": "辛梅塔 / 秩序之光",
+   "img": "img/hero-62.png",
+   "rank": "守望淋锋 · · 1.6 万播放",
+   "group": "game",
+   "baike": "阿三是《守望先锋》在淋语区（写作“守望淋锋”）里的英雄化名。女王糖糖子的《【守望淋锋】玩阿三 爱做三》把一串通讯录代号写进简介：“女王 周阴婷 蔡依淋 罗玉凤 ",
+   "bvs": [
+    "BV1Dr421p7xU"
+   ],
+   "owners": [
+    "女王糖糖子"
+   ],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "血律Daddy",
+   "alias": "血律",
+   "img": "img/hero-126.png",
+   "rank": "守望淋锋 · · 掌掴单牵摩西女",
+   "group": "",
+   "baike": "血律Daddy 出自 B 站 UP「这个符很关键」《【守望淋锋】又素血律Daddy掌掴单牵摩西女平凡的一天鸭》（BV1qNnc6HEv6）。守望淋锋是《守望先锋",
+   "bvs": [
+    "BV1qNnc6HEv6"
+   ],
+   "owners": [
+    "这个符很关键"
+   ],
+   "cands": 3,
+   "candSources": [
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "摩西女",
+   "alias": "单牵摩西女",
+   "img": "img/hero-127.png",
+   "rank": "守望淋锋 · · 被掌掴的一方",
+   "group": "",
+   "baike": "摩西女出自 B 站 UP「这个符很关键」《【守望淋锋】又素血律Daddy掌掴单牵摩西女平凡的一天鸭》（BV1qNnc6HEv6），在标题里作为被掌掴的一方出现。",
+   "bvs": [
+    "BV1qNnc6HEv6"
+   ],
+   "owners": [
+    "这个符很关键"
+   ],
+   "cands": 4,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "骇灾",
+   "alias": "Hazard / 三体人 / 哈扎德",
+   "img": "img/hero-468.png",
+   "rank": "守望淋锋 · 重装",
+   "group": "game",
+   "baike": "本名 Hazard，官方定位 重装（副职责 先锋），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：2026 赛季介绍与社区「三体人」强度",
+   "bvs": [],
+   "owners": [],
+   "cands": 11,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "禅雅塔",
+   "alias": "Zenyatta / 和尚 / 禅雅塔",
+   "img": "img/hero-499.png",
+   "rank": "守望淋锋 · 支援",
+   "group": "game",
+   "baike": "本名 Zenyatta，官方定位 支援（副职责 战术），收录自《守望先锋》2026 赛季 54 位正式英雄名单。淋语外号来源：社区惯称「和尚」与迷惑行为大全「和",
+   "bvs": [],
+   "owners": [],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "摩西女专题区",
+   "alias": "",
+   "img": "img/hero-512.png",
+   "rank": "UP主 · 守望淋锋",
+   "group": "real",
+   "baike": "并非单一 UP 主。本轮把它作为「摩西女」这一淋名的语料锚点：「摩西女」＝天使（Mercy），因为一身白衣与救死扶伤的形象被比作摩西，衍生出神秘摩西女、单牵摩西",
+   "bvs": [],
+   "owners": [],
+   "cands": 2,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "珊瑚宫心海",
+   "alias": "心海 / 珍珠音色",
+   "img": "img/hero-28.png",
+   "rank": "淋者荣耀 · · 美神降临",
+   "group": "game",
+   "baike": "珊瑚宫心海，《原神》稻妻\"海祇岛\"的军师，水系法器角色。《高等淋语·游戏中的经典淋语盘点》的弹幕直接给她叠 buff：\"珊瑚宫心海 美神降临\"\"人美心善\"\"珍珠",
+   "bvs": [
+    "BV1sFRfYnEBK",
+    "BV1Dz421z7Wm"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "腋淋",
+   "alias": "夜兰 / 特务夜地才兰",
+   "img": "img/hero-29.png",
+   "rank": "原神 · · 淋神降临",
+   "group": "game",
+   "baike": "腋淋是 UP 主\"可淋\"的《【淋神】角色演示》里对《原神》角色夜兰的淋化改名，简介列出一整套通讯录 cast：夜兰－淋淋（CV：林雅文）、车夫－周阴婷、胖子盗宝",
+   "bvs": [
+    "BV1xY4y1g7J2"
+   ],
+   "owners": [
+    "可淋"
+   ],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "雷电将军",
+   "alias": "雷神 / 打雷婆 / Raiden / 影",
+   "img": "img/hero-75.png",
+   "rank": "原神 · 稻妻雷神",
+   "group": "game",
+   "baike": "雷电将军，《原神》稻妻地区的雷电神明及统治者，本名\"雷电影\"，追求\"永恒\"，以\"无想の一刀\"劈开稻妻海面。在 NGA 原神淋语词典中，其外号为\"打雷婆\"（谐音雷",
+   "bvs": [],
+   "owners": [],
+   "cands": 5,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "流浪者",
+   "alias": "散兵 / 恶毒母0 / 斯卡拉姆齐",
+   "img": "img/hero-76.png",
+   "rank": "原神 · 璃月散兵",
+   "group": "game",
+   "baike": "流浪者，《原神》可玩角色，原为稻妻的\"雷电将军\"创造的傀儡，早年在\"愚人众\"以\"散兵\"之名出场，性格阴郁、言辞刻薄，后经历剧情节点击破后更名\"流浪者\"。在原神淋",
+   "bvs": [],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "胡桃",
+   "alias": "棺材妹 / 往生堂堂主",
+   "img": "img/hero-77.png",
+   "rank": "原神 · 往生堂堂主",
+   "group": "game",
+   "baike": "胡桃，《原神》璃月地区的五星火系角色，往生堂第七十七代堂主，持\"护摩之杖\"，日常以写打油诗、主持殡仪为乐，是把\"生与死的边界\"消融在嬉笑里的设定。在原神淋语圈中",
+   "bvs": [],
+   "owners": [],
+   "cands": 6,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "刻晴",
+   "alias": "牛杂婆 / 玉衡星",
+   "img": "img/hero-78.png",
+   "rank": "原神 · 璃月七玉衡",
+   "group": "game",
+   "baike": "刻晴，《原神》璃月七星中的\"玉衡星\"，雷系单手剑角色，主张人定胜天、不迷信神明，是璃月最年轻有为的\"七星\"之一。在原神淋语圈中，其外号为\"牛杂婆\"（牛杂谐音戏谑",
+   "bvs": [],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "妮露",
+   "alias": "牛姐",
+   "img": "img/hero-79.png",
+   "rank": "原神 · 水神祭司",
+   "group": "game",
+   "baike": "妮露，《原神》须弥地区的水系角色，祖拜尔剧场的舞者，性格温柔且笃信水神\"小吉祥草王\"。在原神淋语圈中，其外号为\"牛姐\"（\"妮\"谐音\"牛\"），出自 NGA 淋语词",
+   "bvs": [],
+   "owners": [],
+   "cands": 7,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我雅",
+   "alias": "雅雅、你雅",
+   "img": "img/hero-117.png",
+   "rank": "淋神 · · 女王是怎样炼成的",
+   "group": "",
+   "baike": "我雅（雅雅/你雅）是 B 站 UP「ZaynZarka」《【淋神】你雅首谈女王是怎样炼成的》（BV1Mu4y1r7uv）的主角。该视频把原神角色放进\"首谈女王\"",
+   "bvs": [
+    "BV1Mu4y1r7uv"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "纳阴妲",
+   "alias": "小骚仙草王、纳西妲",
+   "img": "img/hero-118.png",
+   "rank": "淋神 · · 小骚仙草王",
+   "group": "",
+   "baike": "纳阴妲出自 B 站 UP「可淋」《【淋神】角色演示-「纳阴妲：小骚仙草王」（CV：茶多芬）》（BV1nR4y1r7Ga）。原神角色纳西妲的官方称号是\"小吉祥草王",
+   "bvs": [
+    "BV1nR4y1r7Ga"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "莱欧斯利",
+   "alias": "公爵、典狱长",
+   "img": "img/hero-119.png",
+   "rank": "淋神 · · 入赘草行久",
+   "group": "",
+   "baike": "莱欧斯利是原神枫丹角色，在 B 站 UP「棠梨煎雪碧噢」《【淋神】莱欧斯利入赘草行久，现人神巫女陷害万达国际》（BV11w411B7YX）里被写成入赘叙事的主角",
+   "bvs": [
+    "BV11w411B7YX"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "庄周",
+   "alias": "食人鱼 / 九尾的鱼",
+   "img": "img/hero-23.png",
+   "rank": "淋者荣耀 · · 无用之用",
+   "group": "game",
+   "baike": "庄周，《王者荣耀》中的坦克 / 辅助英雄，以二技能叠层造成伤害与减速、大招为队友提供免控与护盾为特点。在通讯录常玩的《淋者荣耀》（\"王者荣耀\"的淋化）语境里，它",
+   "bvs": [
+    "BV1xjHy6dEen",
+    "BV1csHy6nEGn",
+    "BV1aMRfBWEQP"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "元歌",
+   "alias": "什么都能变 / 中国魔形女",
+   "img": "img/hero-24.png",
+   "rank": "淋者荣耀 · · 模仿大师",
+   "group": "game",
+   "baike": "元歌，《王者荣耀》中以傀儡与形态变化为核心的高难度英雄，操作门槛高、可复制对面造型与技能表现。在\"通讯录英雄大合集\"里，弹幕直接把它当成\"英雄强度榜\"的解释工具",
+   "bvs": [
+    "BV1c3411t7Li",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "芒果君101号"
+   ],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "妮蔻",
+   "alias": "万花通灵 / 变身茄子",
+   "img": "img/hero-25.png",
+   "rank": "淋者荣耀 · · 该削了",
+   "group": "game",
+   "baike": "妮蔻（Neeko，《英雄联盟》中的万花通灵），以伪装、变身与群体控制见长，可化身友方英雄混入阵中。通讯录圈在讨论\"模仿系英雄\"时把她与元歌放在同一档，\"通讯录英",
+   "bvs": [
+    "BV1et411Q7dN"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "孙策",
+   "alias": "白袜体育生 / 擦边主播",
+   "img": "img/hero-27.png",
+   "rank": "淋者荣耀 · · 白袜 T0",
+   "group": "game",
+   "baike": "孙策，《王者荣耀》的战士英雄，因驾船冲锋的机制被切片作者配上\"首谈成为通讯录擦边主播的心路历程\"这套人设，标题《【王者淋耀】185臭脚白袜直男体育生孙策首谈成为",
+   "bvs": [
+    "BV1uA4m1N7MC"
+   ],
+   "owners": [
+    "去听潮声吧"
+   ],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我华",
+   "alias": "伽罗 / 太华 / 貂蝉 / 你华",
+   "img": "img/hero-47.png",
+   "rank": "淋者荣耀 · · 单条 52 万播放",
+   "group": "game",
+   "baike": "我华是《王者荣耀》英雄伽罗（皮肤“太华”）在淋语区的通讯录化名。四乐化碳的《淋者荣耀》系列把峡谷当成后宫剧来解说：英雄以“我华/你华”自称，加强叫“如加”，皮肤",
+   "bvs": [
+    "BV1nx4y1f7Em",
+    "BV1c14y1d7GV"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我泔",
+   "alias": "甄姬 / 你泔 / 泔水婆",
+   "img": "img/hero-48.png",
+   "rank": "淋者荣耀 · · 32 万播放",
+   "group": "game",
+   "baike": "我泔是《王者荣耀》英雄甄姬在淋语区的化名（甄→泔）。《泔水婆甘露寺归来！岂不是全后宫都要跟我姓甄？》把甄姬的“甘露寺”梗写成后宫复位剧本，评论区因此产出“我泔二",
+   "bvs": [
+    "BV1CM4m1R7Ve",
+    "BV1MHn2z7E3h"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我妲",
+   "alias": "妲己",
+   "img": "img/hero-49.png",
+   "rank": "淋者荣耀 · · 11 万播放",
+   "group": "game",
+   "baike": "我妲是《王者荣耀》英雄妲己在淋语区的化名。四乐化碳的《我妲不素妖孽是祥瑞！！》把妲己“妖孽”设定反转成“祥瑞”，配套还有《【淋者荣耀】妲己巅峰赛13万分实录》。",
+   "bvs": [
+    "BV1WV4y1Y7Hh"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我虞",
+   "alias": "虞姬",
+   "img": "img/hero-50.png",
+   "rank": "淋者荣耀 · · 11 万播放",
+   "group": "game",
+   "baike": "我虞是《王者荣耀》英雄虞姬在淋语区的化名。《我虞slay全场踢出130只罗马大帝！》把“踢出 130”（姐圈数字）与“罗马大帝”（对家代号）缝成标题；评论区给她",
+   "bvs": [
+    "BV19V41137xy"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "蒜姐",
+   "alias": "飞天婆、上官婉儿",
+   "img": "img/hero-120.png",
+   "rank": "王者淋耀 · · 推销自用好物",
+   "group": "",
+   "baike": "蒜姐是王者荣耀上官婉儿的淋语外号（另称飞天婆，见 Aziteee/linyu-translator 王者淋耀词库）。B 站 UP「嘶哈嘶哈惹」《【王者淋耀】蒜姐",
+   "bvs": [
+    "BV1gFp26uEWj"
+   ],
+   "owners": [
+    "嘶哈嘶哈惹"
+   ],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我米",
+   "alias": "米莱狄、超生婆、下蛋婆",
+   "img": "img/hero-121.png",
+   "rank": "王者淋耀 · · 累累的罪行",
+   "group": "",
+   "baike": "我米出自 B 站 UP「汤圆爱玩我椪的棘藤棒」《【王者淋耀】你们对我米所做的这些累累的罪行，不会消失，也不会被遗忘，更不会被原谅》（BV1NqKDzQEfz）。",
+   "bvs": [
+    "BV1NqKDzQEfz"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我月",
+   "alias": "海月、蓝月亮",
+   "img": "img/hero-122.png",
+   "rank": "王者淋耀 · · 吸力比李华强",
+   "group": "",
+   "baike": "我月出自 B 站 UP「Chongyue朔朔日记」《【淋月峡谷吸人日记】蓝月亮吸1🐔我月的优美伤害可不是李华能比拟的惹》（BV1zV4y137ya）。\"淋月峡",
+   "bvs": [
+    "BV1zV4y137ya"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "我曌",
+   "alias": "武则天、曌",
+   "img": "img/hero-123.png",
+   "rank": "淋者荣耀 · · · 知心性情大气巧思",
+   "group": "",
+   "baike": "我曌出自 B 站 UP「晦暗雨季」《【淋者荣耀】我曌知心性情大气巧思！》（BV1P3HK61Ea1）。晦暗雨季是淋者荣耀区的高产 UP，这条把\"知心性情大气巧思",
+   "bvs": [
+    "BV1P3HK61Ea1"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我琴",
+   "alias": "娑娜 / 琴女 / 你琴",
+   "img": "img/hero-51.png",
+   "rank": "阴雄淋盟 · · 8.7 万播放",
+   "group": "game",
+   "baike": "我琴是《英雄联盟》英雄娑娜（琴女）在淋语区的化名。四乐化碳的《【阴雄淋盟】中单琴女释出！电刑AQA秒了！》与美味芳吉吉的《【通讯录LOL黑话】阴雄淋盟软辅五美篇",
+   "bvs": [
+    "BV1rFGbzFEvp",
+    "BV1wT411U75b"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我光",
+   "alias": "拉克丝 / 光辉女郎 / 胱秽女郎 / 拉克淋",
+   "img": "img/hero-52.png",
+   "rank": "阴雄淋盟 · · 44 万播放",
+   "group": "game",
+   "baike": "我光是《英雄联盟》英雄拉克丝（光辉女郎）在淋语区的化名。椰树花的狗ovO 的《是的，一切都是我光做的，那又怎样？》单条 44 万播放、6758 点赞，弹幕把她写",
+   "bvs": [
+    "BV1ZM4y1273S",
+    "BV11u411P7k9",
+    "BV1oK421b7rC"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "琴女",
+   "alias": "琴女 / 琴女QA / 娑娜",
+   "img": "img/hero-211.png",
+   "rank": "英雄淋盟 · 拉扯型远程",
+   "group": "game",
+   "baike": "琴女，即《英雄联盟》的英雄「布兰妮·斯塔克」（玩家俗称琴女/娑娜）。NGA 玩家社区《到底什么是淋学啊?》里，吧友在总结淋语圈的英雄偏好时提到「LOL 琴女我记",
+   "bvs": [
+    "BV1wT411U75b"
+   ],
+   "owners": [],
+   "cands": 16,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand11"
+   ]
+  },
+  {
+   "name": "薇恩",
+   "alias": "滚地婆 / VN / 峡谷清洁工 / 薇恩",
+   "img": "img/hero-154.png",
+   "rank": "英雄淋盟 · · 滚地婆",
+   "group": "game",
+   "baike": "《英雄联盟》ADC，以翻滚和真实伤害见长。 “滚地婆”来自 Q 技能翻滚；“峡谷清洁工”则是把她清线/收割的定位写成保洁。 本条按词库既有外号与可回源出处整理，",
+   "bvs": [],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "我鸟",
+   "alias": "知更鸟 / 知根鸟",
+   "img": "img/hero-53.png",
+   "rank": "星淋铁道 · · 8.3 万播放",
+   "group": "game",
+   "baike": "我鸟是《崩坏：星穹铁道》角色知更鸟在淋语区的化名（可淋的恶搞 MV 标题直接写成《【星淋铁道】知根鸟「今夜有点馋」MV》）。评论区用官方公告腔给她写应援长文：“",
+   "bvs": [
+    "BV1hx4y1s7gL"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "火淋",
+   "alias": "轰动演出",
+   "img": "img/hero-129.png",
+   "rank": "星淋铁道 · · 轰动演出",
+   "group": "",
+   "baike": "火淋出自 B 站 UP「软妹很努力」《《β坏:星淋铁道》火淋角色PV——「轰动演出」》（BV1mAL26DE2e）。星淋铁道是《崩坏：星穹铁道》在淋语区的叫法（",
+   "bvs": [
+    "BV1mAL26DE2e"
+   ],
+   "owners": [
+    "软妹很努力"
+   ],
+   "cands": 9,
+   "candSources": [
+    "bili-cover",
+    "baidu"
+   ]
+  },
+  {
+   "name": "淋光",
+   "alias": "万湿如益",
+   "img": "img/hero-130.png",
+   "rank": "星淋铁道 · · 万湿如益",
+   "group": "",
+   "baike": "淋光出自 B 站 UP「软妹很努力」《《β坏:星淋铁道》淋光角色PV——「万湿如益」》（BV1RgAUzDEVD）。与同系列的「火淋·轰动演出」一样，走的是把官",
+   "bvs": [
+    "BV1RgAUzDEVD"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "bili-cover",
+    "baidu"
+   ]
+  },
+  {
+   "name": "拉比克",
+   "alias": "大魔导师 / A杖拉比克",
+   "img": "img/hero-26.png",
+   "rank": "DOTA 区 · · 通讯录拉比克",
+   "group": "game",
+   "baike": "拉比克（Rubick，《Dota 2》中的大魔导师），核心机制是窃取并即时使用敌方英雄的技能，因此长期被视为\"秀操作\"的象征，切片标题直言\"这拉比克也太帅了！Y",
+   "bvs": [
+    "BV1wb41177tk",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "芒果君101号"
+   ],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "杀生院",
+   "alias": "杀生院祈荒 / 二游男同初代皇后",
+   "img": "img/hero-70.jpg",
+   "rank": "FGO 二游区 · 角色",
+   "group": "game",
+   "baike": "杀生院祈荒在 NGA 的定性是\"二游男同圈初代皇后\"，社区给出的理由有两条：一是人设上属男通讯录偏爱的婊里婊气的坏女人，\"素的一切都是我院做的，如果我院道歉你会",
+   "bvs": [],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "枝性美克里斯",
+   "alias": "克里斯",
+   "img": "img/hero-128.png",
+   "rank": "淋明杀鸡 · · 惨遭冻肉陷害",
+   "group": "",
+   "baike": "枝性美克里斯出自 B 站 UP「男孩你别叫我天使」《[淋明杀机]枝性美克里斯惨遭冻肉陷害》（BV1eibdzTEos）。淋明杀鸡是《黎明杀机》在淋语区的叫法，该",
+   "bvs": [
+    "BV1eibdzTEos",
+    "BV1NvbszqEK8"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "威龙daddy",
+   "alias": "风暴玛焰、白袜",
+   "img": "img/hero-131.png",
+   "rank": "三角淋行动 · · 白袜被窃",
+   "group": "",
+   "baike": "威龙daddy 出自 B 站 UP「喊我一声欧尼酱」《三角淋行动》女特务首次潜入风暴玛焰窃取威龙daddy的白袜》（BV1B6uMz8EhA）。三角淋行动是《三",
+   "bvs": [
+    "BV1B6uMz8EhA"
+   ],
+   "owners": [],
+   "cands": 8,
+   "candSources": [
+    "baidu"
+   ]
+  },
+  {
+   "name": "杂技女亡帕克",
+   "alias": "帕克、杂技女亡",
+   "img": "img/hero-133.png",
+   "rank": "DOTA 区 · · 淋动全场",
+   "group": "",
+   "baike": "杂技女亡帕克出自 B 站 UP「Arisus_」《βeta2 杂技女亡帕克淋动全场-完整版》（BV1vyZWYVE5V）。βeta 是淋语圈代表符号贝塔的英文写",
+   "bvs": [
+    "BV1vyZWYVE5V"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "铁T成长",
+   "alias": "铁T、成长",
+   "img": "img/hero-134.png",
+   "rank": "撅战淋安京 · · 用爱翻转全世界",
+   "group": "",
+   "baike": "铁T成长出自 B 站 UP「桐颜灿」《一秒不减！整局解说单排射手教学，铁T成长用爱翻转全世界【撅战！淋安京】26》（BV16LeEz9EwM）。\"撅战！淋安京\"",
+   "bvs": [
+    "BV16LeEz9EwM"
+   ],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "bili-cover",
+    "baidu"
+   ]
+  },
+  {
+   "name": "大天狗",
+   "alias": "大天狗 / 狗子 / 掉毛狗 / 天狗",
+   "img": "img/hero-192.png",
+   "rank": "阴淋师 · · 掉毛狗",
+   "group": "game",
+   "baike": "《阴阳师》SSR 式神，以羽刃暴风和群攻见长。 “掉毛狗”来自“今天大天狗掉毛了吗”的二创，羽刃暴风是他的群攻招牌。 本条按词库既有外号与可回源出处整理，未添加",
+   "bvs": [],
+   "owners": [],
+   "cands": 9,
+   "candSources": [
+    "baidu",
+    "baike"
+   ]
+  },
+  {
+   "name": "黑天鹅",
+   "alias": "黑天鹅 / 鹅 / 崩铁黑天鹅",
+   "img": "img/hero-208.png",
+   "rank": "崩坏星穹铁道 · 赔钱货",
+   "group": "game",
+   "baike": "黑天鹅，《崩坏：星穹铁道》的五星同命角色，设定为「智识」命途，以华丽优雅的舞台美学著称。在淋语圈的英雄审美里，她与王者杨玉环、阴阳师青行灯、原神珊瑚宫心海一起被",
+   "bvs": [],
+   "owners": [],
+   "cands": 16,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand11"
+   ]
+  },
+  {
+   "name": "淋淋",
+   "alias": "蔡依林 / Jolin / 宇宙之母",
+   "img": "img/hero-1.png",
+   "rank": "圣父 · 通讯录女王",
+   "group": "real",
+   "baike": "蔡依林（Jolin Tsai），1980年9月15日生于台湾新北，华语流行唱跳歌手。1999年凭专辑《1019》出道，代表作《看我72变》《舞娘》《特务J》《花",
+   "bvs": [
+    "BV17s411N7g9",
+    "BV1yy4y1v7sa",
+    "BV17p411d7Mh"
+   ],
+   "owners": [
+    "LowVulgar"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "周阴婷",
+   "alias": "阴中",
+   "img": "img/hero-2.png",
+   "rank": "圣子",
+   "group": "real",
+   "baike": "周阴婷，网络 ID\"阴中\"，情感类视频博主。因在淋文化圈中被赋予固定神位设定——与\"圣父\"淋淋对应的\"圣子\"，被纳入淋宇宙人物体系，类比宗教中上帝与耶稣的关系。",
+   "bvs": [
+    "BV12u411P7k2"
+   ],
+   "owners": [
+    "大巴扎妈妈桑"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "三梦奇缘",
+   "alias": "杨幂 / 墓姐 / 杨冥 / 楼兰干尸",
+   "img": "img/hero-4.png",
+   "rank": "墓系当家花旦",
+   "group": "real",
+   "baike": "三梦奇缘，网络 cosplay 主播，包子铺出身。因外貌、气质被网友评论\"有点像杨幂\"而走红，\"墓系\"一词（谐音\"幂系\"）即由此而来。其跨\"三界\"的模仿作品与独",
+   "bvs": [
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "芒果君101号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "郭老师",
+   "alias": "郭蓑衣 / 郭子 / 郭门",
+   "img": "img/hero-6.png",
+   "rank": "集美教母 · 郭门开创者",
+   "group": "real",
+   "baike": "郭老师，网络化名郭蓑衣，抽象文化代表主播。其独特口音与自创词形成\"郭语\"体系，将\"姐妹\"念作\"集美\"并迅速全网普及，\"耶斯莫拉\"等口头禅广为流传。粉丝以\"郭门\"",
+   "bvs": [
+    "BV1gyA6zxEXB",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "中郭甄选",
+    "芒果君101号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "霉霉",
+   "alias": "Taylor Swift / 泰勒·斯威夫特",
+   "img": "img/hero-10.png",
+   "rank": "欧美顶流 DIVA",
+   "group": "real",
+   "baike": "Taylor Swift（泰勒·斯威夫特，昵称\"霉霉\"），1989年12月13日生于美国，创作歌手。以乡村音乐出道，《Love Story》《Shake It ",
+   "bvs": [
+    "BV16tGa64Em6"
+   ],
+   "owners": [
+    "得闲蛋堡吃点"
+   ],
+   "cands": 1,
+   "candSources": [
+    "baike"
+   ]
+  },
+  {
+   "name": "鹅妈妈",
+   "alias": "秦豪 / DO脸仙人",
+   "img": "img/hero-12.png",
+   "rank": "直播圈抽象queen",
+   "group": "real",
+   "baike": "鹅妈妈，本名秦豪，男，网络主播。因长期、多次整容被称为\"DO脸仙人\"\"国服TS\"\"把整容医院手术台躺热的男人\"。直播以抓马互动与金句出圈；人物纪录片《类の人》（",
+   "bvs": [
+    "BV1AP411k7m2",
+    "BV1wr2fBpEH9"
+   ],
+   "owners": [
+    "芒果君101号"
+   ],
+   "cands": 10,
+   "candSources": [
+    "bili-cover",
+    "baidu"
+   ]
+  },
+  {
+   "name": "肘姐",
+   "alias": "你肘 / 肘门",
+   "img": "img/hero-13.png",
+   "rank": "T0 · 狂暴战神",
+   "group": "real",
+   "baike": "肘姐，东北籍直播主播，因连麦对线与极快的语速输出被视为通讯录圈的\"T0 狂暴战神\"。其出圈视频《肘姐连麦直男黑皮体育生！但是却被嫉妒的通讯录举报下播！》里，她与",
+   "bvs": [
+    "BV1XL411i7cc",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "芒果君101号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "完颜慧德",
+   "alias": "楼兰女皇 / 完老师 / 完豆射手",
+   "img": "img/hero-15.png",
+   "rank": "T0 · 当前版本答案",
+   "group": "real",
+   "baike": "完颜慧德，网络主播，以连麦答疑、近似\"心理咨询师\"的直播形式走红。其发音把陕北方言与普通话混合，把\"运动\"说成\"用洞\"、\"结婚\"说成\"结轰\"、\"闺蜜\"说成\"敌蜜",
+   "bvs": [
+    "BV1yu4y1r7mL",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "Arantery",
+    "芒果君101号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "玛莎",
+   "alias": "郭门大师姐",
+   "img": "img/hero-16.png",
+   "rank": "淋者荣耀 · 郭门大师姐",
+   "group": "real",
+   "baike": "玛莎，主播，因最早系统掌握郭语并被郭老师本人认证为\"郭门大师姐\"而进入通讯录英雄谱。B站《【郭语大师课】郭老师与郭门大师姐玛莎爆笑连麦》记录二人连麦，并再次提起",
+   "bvs": [
+    "BV1gyA6zxEXB",
+    "BV1g9HQe5EfL"
+   ],
+   "owners": [
+    "中郭甄选"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "何老师",
+   "alias": "心理咨询何老师",
+   "img": "img/hero-17.png",
+   "rank": "T0 · 版本真神",
+   "group": "real",
+   "baike": "何老师，职业心理咨询师，因在直播间连麦解答通讯录上麦整活者的提问而被封为\"通讯录体验服新英雄\"。其名场面是把\"倾听\"说成\"蜻蜓\"、把\"男儿/柔儿\"读成\"湿疣儿\"",
+   "bvs": [
+    "BV1dV411u7qQ",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "芒果君101号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "埃及艳后",
+   "alias": "爱及艳后 / 对策卡",
+   "img": "img/hero-18.png",
+   "rank": "淋者荣耀 · · 对策卡",
+   "group": "real",
+   "baike": "埃及艳后，网络表演者，其个人 MV《爱及艳后》（词曲：云天逆声）把\"埃及\"唱作\"爱及\"，成为通讯录圈名场面。弹幕反应两极：一边刷\"开口跪\"\"转音 slay\"\"和",
+   "bvs": [
+    "BV1Zw411c73Y",
+    "BV1AP411k7m2"
+   ],
+   "owners": [
+    "账号已注销",
+    "芒果君101号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "开心姐",
+   "alias": "老英雄开心姐",
+   "img": "img/hero-20.png",
+   "rank": "T0 · 开山鼻祖",
+   "group": "real",
+   "baike": "开心姐，通讯录圈的早期\"老英雄\"。B站《通讯录老英雄开心姐精神抖擞，怒斥黑粉绝不嘴软！》把这场对抗称为\"一场没有硝烟的通讯录英雄伏击战\"，其直播中被记录下的表达",
+   "bvs": [
+    "BV13Qac6uEqK",
+    "BV1444y1c7FN"
+   ],
+   "owners": [
+    "开心糖雪球"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "施柔儿",
+   "alias": "湿柔儿 / 大网猴",
+   "img": "img/hero-22.png",
+   "rank": "T2 · 狂暴冷却中",
+   "group": "real",
+   "baike": "施柔儿，网络主播，其名场面被剪成《施柔儿早期良心狂暴100分（经典\"网络太残酷了\"开场注意音量）》，开场白\"网络太残酷了\"以及\"你们通讯录害得我家破人亡\"被弹幕",
+   "bvs": [
+    "BV1QCpheWEFz",
+    "BV15m4y1179Y"
+   ],
+   "owners": [
+    "账号已注销"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "大啵仙女",
+   "alias": "强大吸力",
+   "img": "img/hero-37.png",
+   "rank": "UP主 · 吸力警告",
+   "group": "up",
+   "baike": "大啵仙女，B站《【经典重现】来自淋淋的强大吸力 恶搞蔡依淋神作》（约 37 万播放）作者，简介写\"源自网络 天惹噜 我淋真素太美丽了噜 不给硬币小心被吸了噜=-",
+   "bvs": [
+    "BV1Ax411K7qv"
+   ],
+   "owners": [
+    "大啵仙女"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "暴躁的鹿鹿",
+   "alias": "阴雄淋盟黑话",
+   "img": "img/hero-54.png",
+   "rank": "UP主 · 57 万播放",
+   "group": "up",
+   "baike": "暴躁的鹿鹿是《〈阴雄淋盟〉——淋语大全，通讯录黑话，英雄外号》（57 万播放、9149 点赞）与《英雄联盟鉴gay指南》（15 万播放）的作者。前者把《英雄联盟",
+   "bvs": [
+    "BV1iz4y177AR",
+    "BV1VW4y1w7Yj"
+   ],
+   "owners": [
+    "暴躁的鹿鹿"
+   ],
+   "cands": 3,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  },
+  {
+   "name": "凤仙子",
+   "alias": "罗玉凤 / 凤姐 / 凤仙花",
+   "img": "img/hero-60.png",
+   "rank": "真人分区 · 淋文化元老",
+   "group": "real",
+   "baike": "凤仙子即罗玉凤（凤姐），淋文化语料里与淋淋、周阴婷并列的“姐圈三巨头”之一。《宫锁淋玉DVD版 第130集 罗玉凤眼睁睁看着淋淋吸走洛阴川》（阴TV，4.2 万",
+   "bvs": [
+    "BV1E4411b7td",
+    "BV1DK411U7hR"
+   ],
+   "owners": [
+    "阴TV"
+   ],
+   "cands": 1,
+   "candSources": [
+    "baike"
+   ]
+  },
+  {
+   "name": "阴婷宝",
+   "alias": "周阴婷主题 AI 语音助手",
+   "img": "img/hero-116.png",
+   "rank": "AI 助手 / 周阴婷主题二创",
+   "group": "real",
+   "baike": "阴婷宝，2021 年 FLY 组合工作室在 B 站发布的\"周阴婷主题 AI 语音助手\"作品（15.6 万播），是国内首个内置周阴婷语音包的 AI 产品，可说淋语",
+   "bvs": [
+    "BV1s54y1p7R1"
+   ],
+   "owners": [
+    "FLY组合工作室公众号"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "英中啊英中",
+   "alias": "英中啊英中 / 周阴中 / 周英庭 / 英中 / 周阴婷（2009 贴吧红人）",
+   "img": "img/hero-201.png",
+   "rank": "淋系三大艺人 · 阴",
+   "group": "real",
+   "baike": "英中啊英中，2009 年百度贴吧红人。在蔡依林新专辑《花蝴蝶》受争议时期，作为网友「英中啊英中」为拥护偶像蔡依林，对娱乐圈其他当红歌手发起地图炮，引发众网友攻击",
+   "bvs": [
+    "BV1k14y147ED"
+   ],
+   "owners": [
+    "木头人的磁带旧时光"
+   ],
+   "cands": 8,
+   "candSources": [
+    "pool:hero-cand11"
+   ]
+  },
+  {
+   "name": "FLY组合",
+   "alias": "FLY / FLY组合 / 淋凤阴 / 三木木吧",
+   "img": "img/hero-202.png",
+   "rank": "淋系三大艺人 · 组合",
+   "group": "real",
+   "baike": "FLY组合，又称「淋凤阴」，是 2010 年时期确立地位的三大淋系艺人组合。萌娘百科「淋语」词条的「关联人物」章节把蔡依林（淋淋）、罗玉凤（凤姐）、周阴婷（周阴",
+   "bvs": [
+    "BV1as4y1R76r"
+   ],
+   "owners": [
+    "贝塔娱乐"
+   ],
+   "cands": 9,
+   "candSources": [
+    "bili-user-avatar",
+    "pool:hero-cand11"
+   ]
+  },
+  {
+   "name": "杯糕姐",
+   "alias": "杯糕姐 / 杯糕",
+   "img": "img/hero-228.png",
+   "rank": "淋语UP主 · 谐音梗",
+   "group": "up",
+   "baike": "杯糕姐，B 站淋语区 UP 主。名字来自淋语最常见的谐音梗之一「杯糕」＝「抱歉」。她的视频以盘点各类音效出处为主，评论区大量使用「引茎据典」「杯糕化」这类同套谐",
+   "bvs": [
+    "BV1QWpK68Eg3"
+   ],
+   "owners": [
+    "Xurey-"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "淋形针LinerClip",
+   "alias": "淋形针 / LinerClip / 淋形针LinerClip",
+   "img": "img/hero-229.png",
+   "rank": "淋语UP主 · 教程",
+   "group": "up",
+   "baike": "淋形针 LinerClip，B 站的淋语教程类节目，节目形式仿自「回形针 PaperClip」——后者在视频里只念「回形针」而不出现「PaperClip」，「淋",
+   "bvs": [
+    "BV1zK4y1T7d3"
+   ],
+   "owners": [
+    "阴TV"
+   ],
+   "cands": 0,
+   "candSources": []
+  },
+  {
+   "name": "胡艺莲",
+   "alias": "艺莲 / 地铁歌姬",
+   "img": "img/hero-270.png",
+   "rank": "姐圈 · 艺字辈",
+   "group": "up",
+   "baike": "胡艺莲，姐圈“艺字辈”代表人物。B站语料里她与那艺娜的对线是连续剧：《娜娜紧急公关！解释怒怼胡艺莲原因：她不正能量，带坏下一代！》《那艺娜陨落，胡艺莲C位！艺字",
+   "bvs": [
+    "BV1ZL41127Ss",
+    "BV1NFnt6zE8f"
+   ],
+   "owners": [
+    "巾郭英雄"
+   ],
+   "cands": 1,
+   "candSources": [
+    "bili-user-avatar"
+   ]
+  },
+  {
+   "name": "锤头鹳",
+   "alias": "锤头鹳 / 鹳女王 / 我锤头 / 锤头",
+   "img": "",
+   "rank": "洛克淋国 · · 鹳女王",
+   "group": "game",
+   "baike": "锤头鹳是《洛克王国：世界》的精灵。洛克淋国区称其「鹳女王/我锤头”，玩梗“锤头鹳是体系队女子最好的保镖”“不像我锤头，从来都是虫队的好朋友”。",
+   "bvs": [
+    "BV1H2nU6ZENd"
+   ],
+   "owners": [
+    "南极石化了"
+   ],
+   "cands": 18,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand15"
+   ]
+  },
+  {
+   "name": "夜枭",
+   "alias": "夜枭 / 夜宵 / 夜枭队",
+   "img": "",
+   "rank": "洛克淋国 · · 夜宵",
+   "group": "game",
+   "baike": "夜枭是《洛克王国：世界》的幽系精灵。洛克淋国区玩梗“榨干所有精灵后夜枭一路平推”“夜枭怎么这么赔钱啊”。",
+   "bvs": [
+    "BV11wN96uEJE"
+   ],
+   "owners": [],
+   "cands": 12,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand15"
+   ]
+  },
+  {
+   "name": "可丽希亚",
+   "alias": "可丽希亚 / 可丽希亚公主 / 希丽亚",
+   "img": "",
+   "rank": "洛克淋国 · · 可丽希亚",
+   "group": "game",
+   "baike": "可丽希亚是《洛克王国》核心 NPC 之一，页游与手游剧情里都与小洛克搭档；B 站有《可丽希亚只是在……》《可丽希亚与小洛克》等短片。",
+   "bvs": [
+    "BV1vDDBB8EZB"
+   ],
+   "owners": [],
+   "cands": 14,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand16"
+   ]
+  },
+  {
+   "name": "阿洛",
+   "alias": "阿洛 / 洛克 / 小洛克本体",
+   "img": "",
+   "rank": "洛克淋国 · · 阿洛",
+   "group": "game",
+   "baike": "阿洛是《洛克王国》里代表玩家的小男孩 NPC，官方与二创都把他当作「小洛克」的具象形象。",
+   "bvs": [
+    "BV16dna62E45"
+   ],
+   "owners": [],
+   "cands": 6,
+   "candSources": [
+    "pool:hero-cand16"
+   ]
+  },
+  {
+   "name": "加尔",
+   "alias": "加尔 / 小加尔",
+   "img": "",
+   "rank": "洛克淋国 · · 加尔",
+   "group": "game",
+   "baike": "加尔是《洛克王国》中的精灵／NPC，页游里以「想吃脆脆的可可果就要先经历一下考验哦（加尔）」的活动登场。",
+   "bvs": [
+    "BV1bioSBcEqg"
+   ],
+   "owners": [],
+   "cands": 14,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand16"
+   ]
+  },
+  {
+   "name": "火花",
+   "alias": "火花 / 小火花 / 火神前身 / 御三家",
+   "img": "img/hero-295.png",
+   "rank": "洛克淋国 · · 小火花",
+   "group": "game",
+   "baike": "火花是洛克王国初始三精灵之一，火属性，依次进化为焰火、火神；手游延续同一进化链，前期克制大量剧情 BOSS。",
+   "bvs": [
+    "BV1YmQ6BPECH"
+   ],
+   "owners": [],
+   "cands": 18,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand15"
+   ]
+  },
+  {
+   "name": "守望淋锋 · 阿三专题区",
+   "alias": "",
+   "img": "img/hero-511.png",
+   "rank": "UP主 · 守望淋锋",
+   "group": "real",
+   "baike": "并非单一 UP 主，而是 B 站搜索「阿三 守望先锋」返回的视频集合。本轮把它作为「阿三」这一淋名的语料锚点收录：15 条以上标题逐字含「阿三」。",
+   "bvs": [],
+   "owners": [],
+   "cands": 5,
+   "candSources": [
+    "baidu",
+    "pool:hero-cand21"
+   ]
+  },
+  {
+   "name": "FLY 组合工作室",
+   "alias": "FLY 工作室 / FLY组合工作室公众号",
+   "img": "img/hero-151.png",
+   "rank": "B 站 UP / 阴婷宝 AI 作者",
+   "group": "real",
+   "baike": "FLY 组合工作室，B 站 UP 主体（账号现名「FLY组合工作室公众号」，mid 22720137），2021 年在 B 站发布「阴婷宝 AI 语音助手」作品",
+   "bvs": [
+    "BV1s54y1p7R1"
+   ],
+   "owners": [
+    "FLY组合工作室公众号"
+   ],
+   "cands": 2,
+   "candSources": [
+    "bili-user-avatar",
+    "bili-bv-avatar"
+   ]
+  }
+ ]
+}

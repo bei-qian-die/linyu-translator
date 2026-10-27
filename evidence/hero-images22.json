@@ -1,0 +1,448 @@
+{
+ "generatedAt": "2026-10-27T13:45:22.276392",
+ "count": 55,
+ "note": "第五淋格板块配图修复；来源=百度图库(第五人格+人名+图鉴)/B站封面/UP头像；无 AI 生成。",
+ "map": {
+  "医生": {
+   "img": "img/hero-174.png",
+   "pick": 4,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=116478402,246344161&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1132",
+   "note": "",
+   "bytes": 113130
+  },
+  "律师": {
+   "img": "img/hero-385.png",
+   "pick": 5,
+   "src": "cand3",
+   "sourceUrl": "https://img1.baidu.com/it/u=3833997848,1962424662&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=708",
+   "note": "官方立绘蓝西装持文件",
+   "bytes": 51248
+  },
+  "园丁": {
+   "img": "img/hero-381.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3202203199,3275803392&fm=253&fmt=auto&app=138&f=JPEG?w=542&h=500",
+   "note": "",
+   "bytes": 32946
+  },
+  "空军": {
+   "img": "img/hero-374.png",
+   "pick": 3,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=543417721,911062843&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=654",
+   "note": "官方生日海报，底部1/5大字标题",
+   "bytes": 76293
+  },
+  "佣兵": {
+   "img": "img/hero-359.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=877019569,1343560933&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "note": "",
+   "bytes": 70914
+  },
+  "机械师": {
+   "img": "img/hero-363.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=45937370,1887782393&fm=253&fmt=auto&app=138&f=JPEG?w=285&h=285",
+   "note": "",
+   "bytes": 15776
+  },
+  "盲女": {
+   "img": "img/hero-358.png",
+   "pick": 4,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=384376623,2066418829&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=737",
+   "note": "",
+   "bytes": 37829
+  },
+  "舞女": {
+   "img": "img/hero-364.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=4042088785,672793612&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=570",
+   "note": "",
+   "bytes": 45505
+  },
+  "调香师": {
+   "img": "img/hero-176.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=4272164952,1594026223&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=972",
+   "note": "",
+   "bytes": 41832
+  },
+  "魔术师": {
+   "img": "img/hero-365.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3502350621,2956523286&fm=253&fmt=auto&app=138&f=JPEG?w=1132&h=800",
+   "note": "",
+   "bytes": 106786
+  },
+  "冒险家": {
+   "img": "img/hero-366.png",
+   "pick": 3,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3079412102,2302236676&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=999",
+   "note": "",
+   "bytes": 45825
+  },
+  "勘探员": {
+   "img": "img/hero-367.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=2192690981,798397283&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=981",
+   "note": "",
+   "bytes": 61865
+  },
+  "调酒师": {
+   "img": "img/hero-368.png",
+   "pick": 4,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3295717083,4071604619&fm=253&fmt=auto&app=138&f=JPEG?w=629&h=500",
+   "note": "",
+   "bytes": 54072
+  },
+  "杂技演员": {
+   "img": "img/hero-369.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=3835425166,3642476813&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "note": "P5联动官方海报，主体在右侧",
+   "bytes": 117631
+  },
+  "画家": {
+   "img": "img/hero-370.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=2343133503,2787720505&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666",
+   "note": "",
+   "bytes": 33506
+  },
+  "病患": {
+   "img": "img/hero-371.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3024456874,4208316951&fm=253&fmt=auto&app=138&f=JPEG?w=629&h=500",
+   "note": "",
+   "bytes": 42913
+  },
+  "心理学家": {
+   "img": "img/hero-372.png",
+   "pick": 3,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=986500619,2442957192&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=846",
+   "note": "",
+   "bytes": 41508
+  },
+  "玩具商": {
+   "img": "img/hero-373.png",
+   "pick": 6,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=1596441598,3927082607&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=882",
+   "note": "",
+   "bytes": 66985
+  },
+  "咒术师": {
+   "img": "img/hero-375.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=680336975,2199792207&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666",
+   "note": "",
+   "bytes": 39619
+  },
+  "前锋": {
+   "img": "img/hero-376.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3343564555,3200817790&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=897",
+   "note": "",
+   "bytes": 56852
+  },
+  "昆虫学者": {
+   "img": "img/hero-377.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3347286594,2505839734&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
+   "note": "",
+   "bytes": 48019
+  },
+  "囚徒": {
+   "img": "img/hero-378.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=1561622649,1503391262&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "note": "",
+   "bytes": 51316
+  },
+  "邮差": {
+   "img": "img/hero-379.png",
+   "pick": 3,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=1891677066,2291370468&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=863",
+   "note": "",
+   "bytes": 39161
+  },
+  "入殓师": {
+   "img": "img/hero-380.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3243496158,3145926074&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+   "note": "官方CG，底部一行剧情字幕",
+   "bytes": 34383
+  },
+  "小提琴家": {
+   "img": "img/hero-382.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=2546401463,2179032565&fm=253&fmt=auto?w=800&h=1026",
+   "note": "",
+   "bytes": 78234
+  },
+  "牛仔": {
+   "img": "img/hero-383.png",
+   "pick": 4,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=1884438228,1554320912&fm=253&fmt=auto&app=138&f=JPEG?w=513&h=716",
+   "note": "",
+   "bytes": 124116
+  },
+  "野人": {
+   "img": "img/hero-384.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3209710923,2250419490&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=670",
+   "note": "",
+   "bytes": 29939
+  },
+  "幸运儿": {
+   "img": "img/hero-386.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=2538560326,1014703430&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=671",
+   "note": "",
+   "bytes": 45996
+  },
+  "古董商": {
+   "img": "img/hero-387.png",
+   "pick": 1,
+   "src": "cand3",
+   "sourceUrl": "https://img0.baidu.com/it/u=1021604433,2763385300&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=896",
+   "note": "",
+   "bytes": 116849
+  },
+  "守墓人": {
+   "img": "img/hero-388.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3321487000,3042326706&fm=253&fmt=auto&app=138&f=JPEG?w=290&h=500",
+   "note": "",
+   "bytes": 17822
+  },
+  "击球手": {
+   "img": "img/hero-389.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=1484126018,1981703027&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=897",
+   "note": "",
+   "bytes": 121522
+  },
+  "守夜人": {
+   "img": "img/hero-353.png",
+   "pick": 5,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=989000384,3861544894&fm=253&fmt=auto&app=138&f=JPEG?w=699&h=500",
+   "note": "",
+   "bytes": 20013
+  },
+  "蜡像师": {
+   "img": "img/hero-352.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=4235398921,4150195278&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+   "note": "",
+   "bytes": 87729
+  },
+  "记录员": {
+   "img": "img/hero-356.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3846778849,2142088125&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=723",
+   "note": "",
+   "bytes": 38070
+  },
+  "疯眼": {
+   "img": "img/hero-357.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3740198325,4230792728&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=896",
+   "note": "",
+   "bytes": 132333
+  },
+  "隐士": {
+   "img": "img/hero-347.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=826529820,110143892&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=513",
+   "note": "",
+   "bytes": 23644
+  },
+  "使徒": {
+   "img": "img/hero-346.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=3112156030,2714863209&fm=253&fmt=auto&app=138&f=JPEG?w=728&h=500",
+   "note": "",
+   "bytes": 42447
+  },
+  "梦之女巫": {
+   "img": "img/hero-349.png",
+   "pick": 5,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=3511252690,3849091691&fm=253&fmt=auto&app=138&f=JPEG?w=888&h=500",
+   "note": "",
+   "bytes": 52620
+  },
+  "蜘蛛": {
+   "img": "img/hero-350.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img2.baidu.com/it/u=2034855263,3992141953&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1054",
+   "note": "官方皮肤蛛机甲渲染图",
+   "bytes": 59311
+  },
+  "爱哭鬼": {
+   "img": "img/hero-348.png",
+   "pick": 1,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=2961819684,2888737811&fm=253&fmt=auto&app=138&f=JPEG?w=523&h=500",
+   "note": "",
+   "bytes": 19869
+  },
+  "黄衣之主": {
+   "img": "img/hero-355.png",
+   "pick": 0,
+   "src": "cand3",
+   "sourceUrl": "https://img2.baidu.com/it/u=1417145073,2983577248&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=683",
+   "note": "",
+   "bytes": 56158
+  },
+  "摄影师": {
+   "img": "img/hero-345.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=3269203369,1701163724&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=714",
+   "note": "",
+   "bytes": 37746
+  },
+  "红夫人": {
+   "img": "img/hero-344.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "https://img1.baidu.com/it/u=2043904735,3735141038&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=746",
+   "note": "",
+   "bytes": 22820
+  },
+  "愚人金": {
+   "img": "img/hero-341.png",
+   "pick": 4,
+   "src": "cand3",
+   "sourceUrl": "https://img1.baidu.com/it/u=58811083,3486579366&fm=253&fmt=auto&app=138&f=JPEG?w=1281&h=800",
+   "note": "",
+   "bytes": 40383
+  },
+  "时空之影": {
+   "img": "img/hero-342.png",
+   "pick": 3,
+   "src": "cand3",
+   "sourceUrl": "https://img1.baidu.com/it/u=1589704919,2628822569&fm=253&fmt=auto&app=120&f=JPEG?w=599&h=500",
+   "note": "",
+   "bytes": 38619
+  },
+  "喧嚣": {
+   "img": "img/hero-343.png",
+   "pick": 1,
+   "src": "cand3",
+   "sourceUrl": "https://img1.baidu.com/it/u=507456580,1027295740&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=916",
+   "note": "",
+   "bytes": 60060
+  },
+  "破轮": {
+   "img": "img/hero-354.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=1344059126,1047896568&fm=253&fmt=auto&app=138&f=JPEG?w=934&h=500",
+   "note": "",
+   "bytes": 72420
+  },
+  "邦邦": {
+   "img": "img/hero-351.png",
+   "pick": 2,
+   "src": "cand2",
+   "sourceUrl": "https://img0.baidu.com/it/u=1039918247,2202365453&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=619",
+   "note": "",
+   "bytes": 34245
+  },
+  "大副": {
+   "img": "img/hero-271.png",
+   "pick": 0,
+   "src": "cand3",
+   "sourceUrl": "https://img2.baidu.com/it/u=2280517422,82233678&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=849",
+   "note": "",
+   "bytes": 36058
+  },
+  "凤蝶": {
+   "img": "img/hero-125.png",
+   "pick": 0,
+   "src": "cand2",
+   "sourceUrl": "http://i0.hdslb.com/bfs/archive/b70a8e6a61203537aa2e5dcf51f23020187f9bcd.jpg",
+   "note": "淋化创作角色，B站视频封面",
+   "bytes": 706368
+  },
+  "淋人金Daddy": {
+   "img": "img/hero-124.png",
+   "pick": 4,
+   "src": "cand3",
+   "sourceUrl": "https://img1.baidu.com/it/u=58811083,3486579366&fm=253&fmt=auto&app=138&f=JPEG?w=1281&h=800",
+   "note": "愚人金的淋化形象，与愚人金共用官方图",
+   "bytes": 40383
+  },
+  "一只叫艾文的海豚": {
+   "img": "img/hero-136.png",
+   "pick": 0,
+   "src": "cand1",
+   "sourceUrl": "https://i1.hdslb.com/bfs/face/5a50d01902776250adbfcd337a4b514fa2cf8f52.jpg",
+   "note": "B站头像",
+   "bytes": 70133
+  },
+  "松下丶Aoki": {
+   "img": "img/hero-265.png",
+   "pick": 0,
+   "src": "cand1",
+   "sourceUrl": "https://i0.hdslb.com/bfs/face/92797244b12b077e25d74d40f6e0d83e2f80a5fa.jpg",
+   "note": "B站头像",
+   "bytes": 148023
+  },
+  "gulpppppp": {
+   "img": "img/hero-390.png",
+   "pick": 0,
+   "src": "cand1",
+   "sourceUrl": "https://i1.hdslb.com/bfs/face/bdb30078a5cf249f31ca49c8502a96e7d8879866.jpg",
+   "note": "B站头像",
+   "bytes": 57533
+  },
+  "懂法的txz": {
+   "img": "img/hero-391.png",
+   "pick": 0,
+   "src": "cand1",
+   "sourceUrl": "https://i0.hdslb.com/bfs/face/6a99430c0ef3998a3f0bba347b3db43ac2238594.jpg",
+   "note": "B站头像",
+   "bytes": 168868
+  }
+ },
+ "missing": []
+}
