@@ -722,6 +722,7 @@ const extra19 = unpack((typeof require === 'function') ? require('./lore-extra19
 const extra20 = unpack((typeof require === 'function') ? require('./lore-extra20') : (typeof window !== 'undefined' ? window.LORE_EXTRA20 : {}));
 const extra21 = unpack((typeof require === 'function') ? require('./lore-extra21') : (typeof window !== 'undefined' ? window.LORE_EXTRA21 : {}));
 const extra23 = unpack((typeof require === 'function') ? require('./lore-extra23') : (typeof window !== 'undefined' ? window.LORE_EXTRA23 : {}));
+const extra24 = unpack((typeof require === 'function') ? require('./lore-extra24') : (typeof window !== 'undefined' ? window.LORE_EXTRA24 : {}));
 
 // ---- 数据解包 ----
 // 小程序端为了压主包体积，把 lore-extraN.js 存成「列式编码」：
@@ -804,6 +805,7 @@ const REZONE = {
   庄周: '淋者荣耀', 妮蔻: '淋者荣耀', 玛莎: '淋者荣耀', 珊瑚宫心海: '淋者荣耀',
   埃及艳后: '淋者荣耀', 我琴: '阴雄淋盟', 我光: '阴雄淋盟', 我鸟: '星淋铁道',
   阿三: '守望淋锋', 提瓦淋新人桑: 'FGO 二游区', 腋淋: '原神', 拉比克: 'DOTA 区',
+  铁T成长: '淋安京', '青行灯（淋安京）': '淋安京', 拉克丝: '英雄淋盟', 迪希雅: '淋神',
 };
 const rezoned = (arr) =>
   arr.map((h) => {
@@ -817,7 +819,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards, extra21.cards, extra23.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards, extra21.cards, extra23.cards, extra24.cards),
     'term',
     dropCards
   ),
@@ -825,7 +827,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes, extra21.heroes, extra23.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes, extra21.heroes, extra23.heroes, extra24.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -833,7 +835,7 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes, extra21.quotes, extra23.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes, extra21.quotes, extra23.quotes, extra24.quotes),
     'text',
     dropQuotes
   ),
@@ -928,6 +930,7 @@ applyQuoteMerge(allQuotes, extra19.quoteMerge);
 applyQuoteMerge(allQuotes, extra20.quoteMerge);
 applyQuoteMerge(allQuotes, extra21.quoteMerge);
 applyQuoteMerge(allQuotes, extra23.quoteMerge);
+applyQuoteMerge(allQuotes, extra24.quoteMerge);
 applyHeroMerge(allHeroes, extra14.heroMerge);
 applyHeroMerge(allHeroes, extra15.heroMerge);
 applyHeroMerge(allHeroes, extra16.heroMerge);
@@ -936,6 +939,7 @@ applyHeroMerge(allHeroes, extra19.heroMerge);
 applyHeroMerge(allHeroes, extra20.heroMerge);
 applyHeroMerge(allHeroes, extra21.heroMerge);
 applyHeroMerge(allHeroes, extra23.heroMerge);
+applyHeroMerge(allHeroes, extra24.heroMerge);
 
 // 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
 // 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。

@@ -232,10 +232,13 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
   // lore-extraN.js：小程序端是列式编码，按解码后的内容比（等价编码不算不同步）
   // lore.js / tokenizer.js / translator.js：小程序端会裁掉整行注释与空行以省主包体积，
   // 比对时同样先做一次同样的裁剪，再逐字比。
+  // 与 build-weapp-data.mjs 的 slim 口径一致：整行注释、空行、行首缩进都不参与比较
+  // （缩进不影响语义；第 24 轮起小程序主包逼近 2MB，副本去缩进是正经的省体积手段）。
   const strip = (t) =>
     t
       .split('\n')
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
+      .map((line) => line.replace(/^\s+/, ''))
       .join('\n');
   for (const [mpFile, coreFile] of files) {
     const mpPath = path.join(MP, mpFile);

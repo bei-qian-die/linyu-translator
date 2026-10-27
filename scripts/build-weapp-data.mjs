@@ -32,6 +32,7 @@ const FILES = [
   ['lore-extra20.js', 'data/lore-extra20.js'],
   ['lore-extra21.js', 'data/lore-extra21.js'],
   ['lore-extra23.js', 'data/lore-extra23.js'],
+  ['lore-extra24.js', 'data/lore-extra24.js'],
   ['lore-extra15.js', 'data/lore-extra15.js'],
 ];
 
@@ -143,6 +144,7 @@ for (const [from, to] of FILES) {
     content = content
       .split('\n')
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
+      .map((line) => line.replace(/^\s+/, ''))
       .join('\n');
   }
   if (writeIfChanged(dst, content)) changed += 1;

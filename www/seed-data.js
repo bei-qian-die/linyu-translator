@@ -1531,7 +1531,9 @@ window.__SEED_DATA = {
       "linyu": "扶组",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "游戏术语/称呼类",
-      "pop": "低"
+      "pop": "低",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "sense": "祝类式神的本职说法，给团队增益和控制；也是装备六大类之一。"
     },
     {
       "zh": "坦克",
@@ -3616,14 +3618,17 @@ window.__SEED_DATA = {
       "zh": "MVP",
       "linyu": "MVP",
       "slot": "字母缩写/游戏术语/评价判断",
-      "pop": "低"
+      "pop": "低",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "sense": "全场最佳；合集第 8 集「因为我拿MVP多得离谱」、第 20 集「青行灯MVP」。"
     },
     {
       "zh": "T0",
       "linyu": "T0",
       "slot": "字母缩写/游戏术语/评价判断",
       "pop": "中",
-      "sense": "强度榜最高档的写法，语料里小写 t0 直接排人（把辅助当宝放t0），句式表挂强度榜句式并带出处。"
+      "sense": "强度榜最高档的写法，语料里小写 t0 直接排人（把辅助当宝放t0），句式表挂强度榜句式并带出处。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
     },
     {
       "zh": "T1",
@@ -3849,7 +3854,9 @@ window.__SEED_DATA = {
       "linyu": "主动放弃努力",
       "verify": "https://search.bilibili.com/all?keyword=%E6%91%86%E7%83%82+%E4%B8%BB%E5%8A%A8%E6%94%BE%E5%BC%83%E5%8A%AA%E5%8A%9B",
       "slot": "生活日常/戏谑",
-      "pop": "低"
+      "pop": "低",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "sense": "不想赢、随便打。"
     },
     {
       "zh": "内卷",
@@ -4455,7 +4462,7 @@ window.__SEED_DATA = {
     {
       "zh": "铁T",
       "linyu": "铁T",
-      "alias": "XX铁t、铁t、铁蹄、铁T拉",
+      "alias": "XX铁t、铁t、铁蹄、铁T拉、铁T成长、铁T雅",
       "slot": "称呼类",
       "sense": "\"XX铁t\"指短发、有男人气质的女角色（铁T拉=优菈、铁T斗=北斗、铁T雅=迪希雅），不是单纯形容短发。",
       "source": "https://bbs.nga.cn/read.php?tid=35415629",
@@ -6459,7 +6466,7 @@ window.__SEED_DATA = {
     {
       "zh": "大沙田",
       "linyu": "大沙田",
-      "alias": "南宁市大沙田街道",
+      "alias": "南宁市大沙田街道、决战！大沙田、决战大沙田",
       "slot": "圈层黑话",
       "sense": "周阴婷住址所在的南宁市良庆区街道名，淋语圈的打卡梗。",
       "source": "https://moegirl.uk/index.php?title=%E6%B7%8B%E6%96%87%E5%8C%96",
@@ -7779,7 +7786,7 @@ window.__SEED_DATA = {
     {
       "zh": "站街",
       "linyu": "站街",
-      "alias": "站街女、站街婆、拉客、接客、站街、站街惹、围险、围险惹、站街日记、站街小品",
+      "alias": "站街女、站街婆、拉客、接客、站街、站街惹、围险、围险惹、站街日记、站街小品、下路站街、站街行规",
       "slot": "调侃/戏谑",
       "sense": "原指街头拉客，淋语里常用来调侃“主动倒贴”“到处找存在感”，也用于游戏里“站桩输出”。",
       "source": "https://m.douban.com/group/topic/95535646/",
@@ -8208,7 +8215,7 @@ window.__SEED_DATA = {
     {
       "zh": "地才",
       "linyu": "地才",
-      "alias": "地才宣言、不是天才是地才、地才、地才蓝、地才帽、努力一定会成功",
+      "alias": "地才宣言、不是天才是地才、地才、地才蓝、地才帽、努力一定会成功、是地才",
       "slot": "圈层黑话",
       "sense": "出自蔡依林《地才》演唱会：不是天才，是地才。淋语里用来强调努力、自嘲天赋不足。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -22211,9 +22218,3277 @@ window.__SEED_DATA = {
       "source": "https://www.bilibili.com/video/BV1qNnc6HEv6",
       "pop": "低",
       "rel": []
+    },
+    {
+      "zh": "决战平安京",
+      "linyu": "淋安京",
+      "alias": "撅战！淋安京、撅战淋安京、决战！大沙田、大沙田、平阴京、扒鸡",
+      "slot": "淋安京",
+      "sense": "网易《阴阳师》IP 的 5V5 无符文对称 MOBA 手游（2018-01-12 安卓公测）的淋化名。三种淋化写法并存：撅战！淋安京（决战→撅战、平安京→淋安京，UP 主桐颜灿的合集名）、决战！大沙田（把「平安京」换成淋语梗地点「大沙田」的社区戏仿）、平阴京（阴淋师区的混用写法）。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": [
+        "淋安京",
+        "大沙田",
+        "撅战"
+      ]
+    },
+    {
+      "zh": "决战！大沙田",
+      "linyu": "决战！大沙田",
+      "alias": "决战大沙田、大沙田",
+      "slot": "淋安京",
+      "sense": "淋语圈对《决战！平安京》的戏仿写法：后半段换成地名梗「大沙田」。B 站上八级大蜗牛、松下丶Aoki、悲惨圣母院_Sebastian、醒时末爱都用它做过标题。",
+      "source": "https://www.bilibili.com/video/BV1xEGFzWEwG",
+      "pop": "低",
+      "rel": [
+        "大沙田",
+        "撅战"
+      ]
+    },
+    {
+      "zh": "撅战",
+      "linyu": "撅战",
+      "alias": "撅战！淋安京",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "「决战」的淋化谐音（决→撅）。撅战！淋安京 = 决战！平安京，是本区的招牌前缀。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "淋安京"
+      ]
+    },
+    {
+      "zh": "扒鸡",
+      "linyu": "扒鸡",
+      "alias": "退坑扒鸡",
+      "slot": "淋安京",
+      "sense": "《决战！平安京》的玩家俗称（萌娘百科记为「常用译名」）。评论区「退坑扒鸡了再也不玩了」就是这么来的。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": [
+        "决战平安京"
+      ]
+    },
+    {
+      "zh": "平阴京",
+      "linyu": "平阴京",
+      "alias": "",
+      "slot": "淋安京",
+      "sense": "阴淋师区与淋安京区混用时的写法，语出 B 站视频「我们平阴京有自己的拉克丝」。",
+      "source": "https://www.bilibili.com/video/BV1Xw411A7rY",
+      "pop": "低",
+      "rel": [
+        "淋安京",
+        "阴淋师"
+      ]
+    },
+    {
+      "zh": "为崽而战",
+      "linyu": "为崽而战",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "《决战！平安京》里普通 5V5 对战模式的官方名称（萌娘百科口径），可用限免式神。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": [
+        "决战平安京"
+      ]
+    },
+    {
+      "zh": "紧那罗",
+      "linyu": "紧那罗",
+      "alias": "我紧、机制天后、六边形战士",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。合集第 1 集「我紧首谈下路站街行规」和第 28 集「机制天后六边形战士紧那罗」的主角，自称我紧。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": [
+        "我紧"
+      ]
+    },
+    {
+      "zh": "阿织",
+      "linyu": "阿织",
+      "alias": "我织、又茶又混",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 8 集「我织完全不在乎被别人说又茶又混，因为我拿MVP多得离谱」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我织"
+      ]
+    },
+    {
+      "zh": "彼岸花",
+      "linyu": "彼岸花",
+      "alias": "我花、黄泉花境",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 4 集「中路只有一种花，那就素我彼岸花！」，自称我花。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我花"
+      ]
+    },
+    {
+      "zh": "铃彦姬",
+      "linyu": "铃彦姬",
+      "alias": "我铃",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 10 集「我铃※欲火♂焚身，❤MVPの初体验~」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我铃"
+      ]
+    },
+    {
+      "zh": "妖狐",
+      "linyu": "妖狐",
+      "alias": "我狐、地才",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。合集第 22 集「有人说，我狐不是天才，是地才！」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我狐"
+      ]
+    },
+    {
+      "zh": "化鲸",
+      "linyu": "化鲸",
+      "alias": "我鲸",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。合集第 19 集「射手环境难不如玩辅助，我鲸为分走钢索」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我鲸"
+      ]
+    },
+    {
+      "zh": "鬼女红叶",
+      "linyu": "鬼女红叶",
+      "alias": "我红、红叶、法刺红叶",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 6 集「中路靠啥能红？答案素我红叶！」、第 27 集「高冷法刺红叶严刑拷打兰兰」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我红"
+      ]
+    },
+    {
+      "zh": "鬼使白",
+      "linyu": "鬼使白",
+      "alias": "我白、鬼白",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 7 集「玩别的中单持续红温，不如选出鬼白来混分」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我白"
+      ]
+    },
+    {
+      "zh": "千姬",
+      "linyu": "千姬",
+      "alias": "我千、蚁钳素蚁钳",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 3 集「千姬：蚁钳素蚁钳，仙在素仙在」，评论区有「我千素女王」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我千"
+      ]
+    },
+    {
+      "zh": "兰兰",
+      "linyu": "兰兰",
+      "alias": "我兰",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 27 集里被红叶「严刑拷打」的那位。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我兰"
+      ]
+    },
+    {
+      "zh": "天照",
+      "linyu": "天照",
+      "alias": "我照",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。评论区「我照没有沉重的秘密，都是轻松快乐的」说的就是她。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": [
+        "我照"
+      ]
+    },
+    {
+      "zh": "不知火",
+      "linyu": "不知火",
+      "alias": "我离",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。评论区「怎么不玩我离，我离1344233秒了所有人靴靴」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": [
+        "我离"
+      ]
+    },
+    {
+      "zh": "桔梗",
+      "linyu": "桔梗",
+      "alias": "AD桔梗、普通女人桔梗",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。合集第 15/16/21/23 集的主角，玩家爱称 AD 桔梗。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": [
+        "我桔"
+      ]
+    },
+    {
+      "zh": "青行灯（淋安京）",
+      "linyu": "青行灯",
+      "alias": "我灯、灯",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。同 IP 双分区：阴淋师区已有「青行灯 / 赔钱货」条目，本区另有专属语录（合集第 20/23/24 集），故按分区分列。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我灯"
+      ]
+    },
+    {
+      "zh": "雪女",
+      "linyu": "雪女",
+      "alias": "我雪、卖辅",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。合集第 5 集「中单的尽头是什么？是卖辅！——雪女」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我雪"
+      ]
+    },
+    {
+      "zh": "神乐",
+      "linyu": "神乐",
+      "alias": "我神",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。合集第 17 集「我上大嘤嘤师，就素为了能快乐玩神乐的！」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": [
+        "我神"
+      ]
+    },
+    {
+      "zh": "鸩",
+      "linyu": "鸩",
+      "alias": "T3射手",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。合集第 13 集「鸩无语，这年头还能看到T3射手内战」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "铁鼠",
+      "linyu": "铁鼠",
+      "alias": "我鼠",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我鼠"
+      ]
+    },
+    {
+      "zh": "九命猫",
+      "linyu": "九命猫",
+      "alias": "我猫",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我猫"
+      ]
+    },
+    {
+      "zh": "妖刀姬",
+      "linyu": "妖刀姬",
+      "alias": "我刀",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神，也可走忍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我刀"
+      ]
+    },
+    {
+      "zh": "茨木童子",
+      "linyu": "茨木童子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "酒吞童子",
+      "linyu": "酒吞童子",
+      "alias": "我酒",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我酒"
+      ]
+    },
+    {
+      "zh": "鬼切",
+      "linyu": "鬼切",
+      "alias": "我切",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。2024-09 维护后定位由侍/忍调整为忍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我切"
+      ]
+    },
+    {
+      "zh": "须佐之男",
+      "linyu": "须佐之男",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "闻人翊悬",
+      "linyu": "闻人翊悬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "灶门炭治郎",
+      "linyu": "灶门炭治郎",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。联动式神，侍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "二口女",
+      "linyu": "二口女",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "首无",
+      "linyu": "首无",
+      "alias": "强力鞭击",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "以津真天",
+      "linyu": "以津真天",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "西凉",
+      "linyu": "西凉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阎魔",
+      "linyu": "阎魔",
+      "alias": "我阎",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。2024-09 维护后定位由射/巫调整为射。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我阎"
+      ]
+    },
+    {
+      "zh": "白狼",
+      "linyu": "白狼",
+      "alias": "我狼",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我狼"
+      ]
+    },
+    {
+      "zh": "管狐",
+      "linyu": "管狐",
+      "alias": "我管、竹林飞弹",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我管"
+      ]
+    },
+    {
+      "zh": "小松丸",
+      "linyu": "小松丸",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "御馔津",
+      "linyu": "御馔津",
+      "alias": "技爆流",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "百目鬼",
+      "linyu": "百目鬼",
+      "alias": "我百",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我百"
+      ]
+    },
+    {
+      "zh": "鬼童丸",
+      "linyu": "鬼童丸",
+      "alias": "我童",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我童"
+      ]
+    },
+    {
+      "zh": "猫掌柜",
+      "linyu": "猫掌柜",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "铃鹿御前",
+      "linyu": "铃鹿御前",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "青蛙瓷器",
+      "linyu": "青蛙瓷器",
+      "alias": "我蛙",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神，官网胜率榜前列常客。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我蛙"
+      ]
+    },
+    {
+      "zh": "薰",
+      "linyu": "薰",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "垢尝",
+      "linyu": "垢尝",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。2024-09 维护后定位由祝调整为祝/射。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "樱花妖",
+      "linyu": "樱花妖",
+      "alias": "我樱",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "射类式神。射类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我樱"
+      ]
+    },
+    {
+      "zh": "山兔",
+      "linyu": "山兔",
+      "alias": "我兔",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我兔"
+      ]
+    },
+    {
+      "zh": "萤草",
+      "linyu": "萤草",
+      "alias": "我草",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我草"
+      ]
+    },
+    {
+      "zh": "辉夜姬",
+      "linyu": "辉夜姬",
+      "alias": "我辉",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我辉"
+      ]
+    },
+    {
+      "zh": "惠比寿",
+      "linyu": "惠比寿",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神，官网胜率榜常客。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "一目连",
+      "linyu": "一目连",
+      "alias": "我连",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我连"
+      ]
+    },
+    {
+      "zh": "桃花妖",
+      "linyu": "桃花妖",
+      "alias": "我桃",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我桃"
+      ]
+    },
+    {
+      "zh": "花鸟卷",
+      "linyu": "花鸟卷",
+      "alias": "我鸟",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神，也可走巫。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我鸟"
+      ]
+    },
+    {
+      "zh": "日和坊",
+      "linyu": "日和坊",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "缘结神",
+      "linyu": "缘结神",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "匣中少女",
+      "linyu": "匣中少女",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "椒图",
+      "linyu": "椒图",
+      "alias": "扇底扬波",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "虫师",
+      "linyu": "虫师",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神，玩家口中「永远的 T0」。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "天井下",
+      "linyu": "天井下",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "书翁",
+      "linyu": "书翁",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "孟婆",
+      "linyu": "孟婆",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守调整为巫/守。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "兵俑",
+      "linyu": "兵俑",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守调整为守/祝。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "山童",
+      "linyu": "山童",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守调整为守/祝。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蟹姬",
+      "linyu": "蟹姬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "狸猫",
+      "linyu": "狸猫",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "座敷童子",
+      "linyu": "座敷童子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "食梦貘",
+      "linyu": "食梦貘",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "凤凰火",
+      "linyu": "凤凰火",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "吸血姬",
+      "linyu": "吸血姬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守调整为守/侍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "海坊主",
+      "linyu": "海坊主",
+      "alias": "我坊",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守调整为守/祝。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我坊"
+      ]
+    },
+    {
+      "zh": "犬神",
+      "linyu": "犬神",
+      "alias": "我狗",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。2024-09 维护后定位由侍/忍调整为侍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": [
+        "我狗"
+      ]
+    },
+    {
+      "zh": "般若",
+      "linyu": "般若",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "镰鼬",
+      "linyu": "镰鼬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神，官网胜率榜常客。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "小鹿男",
+      "linyu": "小鹿男",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神，官网胜率榜常客。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "青坊主",
+      "linyu": "青坊主",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "犬夜叉",
+      "linyu": "犬夜叉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。联动式神，侍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "傀儡师",
+      "linyu": "傀儡师",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。2024-09 维护后定位由侍调整为忍/侍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "两面佛",
+      "linyu": "两面佛",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "黑崎一护",
+      "linyu": "黑崎一护",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。联动式神，侍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "泷夜叉姬",
+      "linyu": "泷夜叉姬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "久次良",
+      "linyu": "久次良",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阿修罗",
+      "linyu": "阿修罗",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大岳丸",
+      "linyu": "大岳丸",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "麻仓叶",
+      "linyu": "麻仓叶",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。联动式神，侍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "夜刀神",
+      "linyu": "夜刀神",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "坂田银时",
+      "linyu": "坂田银时",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。联动式神，侍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "雪童子",
+      "linyu": "雪童子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "络新妇",
+      "linyu": "络新妇",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神，也可走忍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "黑童子",
+      "linyu": "黑童子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守/侍调整为守。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "鸦天狗",
+      "linyu": "鸦天狗",
+      "alias": "群鸦乱舞",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "鬼使黑",
+      "linyu": "鬼使黑",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "判官",
+      "linyu": "判官",
+      "alias": "狼毫笔",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "金鱼姬",
+      "linyu": "金鱼姬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "荒",
+      "linyu": "荒",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "面灵气",
+      "linyu": "面灵气",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "清姬",
+      "linyu": "清姬",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "烟烟罗",
+      "linyu": "烟烟罗",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "妖琴师",
+      "linyu": "妖琴师",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "玉藻前",
+      "linyu": "玉藻前",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "荒川之主",
+      "linyu": "荒川之主",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "白童子",
+      "linyu": "白童子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "追月神",
+      "linyu": "追月神",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "一反木棉",
+      "linyu": "一反木棉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神，也可走忍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大司命",
+      "linyu": "大司命",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "云外镜",
+      "linyu": "云外镜",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "恐山安娜",
+      "linyu": "恐山安娜",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。联动式神，巫类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "星熊童子",
+      "linyu": "星熊童子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "申屠子夜",
+      "linyu": "申屠子夜",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "帝释天",
+      "linyu": "帝释天",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "巫类式神。巫类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "姑获鸟",
+      "linyu": "姑获鸟",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "骨女",
+      "linyu": "骨女",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "夜叉",
+      "linyu": "夜叉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "万年竹",
+      "linyu": "万年竹",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "跳跳妹妹",
+      "linyu": "跳跳妹妹",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。2024-09 维护后定位由忍调整为忍/巫。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "杀生丸",
+      "linyu": "杀生丸",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。联动式神，忍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "山风",
+      "linyu": "山风",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "小袖之手",
+      "linyu": "小袖之手",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "白藏主",
+      "linyu": "白藏主",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "朽木露琪亚",
+      "linyu": "朽木露琪亚",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。联动式神，忍类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "海忍",
+      "linyu": "海忍",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "纸舞",
+      "linyu": "纸舞",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "入内雀",
+      "linyu": "入内雀",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "忍类式神。忍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "风狸",
+      "linyu": "风狸",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神，官网胜率榜常客。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "少羽大天狗",
+      "linyu": "少羽大天狗",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "祝类式神。祝类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "跳跳哥哥",
+      "linyu": "跳跳哥哥",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。守类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "人面树",
+      "linyu": "人面树",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。2024-09 维护后定位由守/侍调整为守。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "灶门祢豆子",
+      "linyu": "灶门祢豆子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "守类式神。联动式神，守类。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "觉",
+      "linyu": "觉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神淋名",
+      "sense": "侍类式神。侍类式神。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "我紧",
+      "linyu": "我紧",
+      "alias": "紧那罗",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "紧那罗的自称。合集第 1 集「我紧首谈下路站街行规」、第 9 集「新版本我紧依旧素女王」、第 12 集「我紧美cry，四杀了靴靴」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "紧那罗"
+      ]
+    },
+    {
+      "zh": "我织",
+      "linyu": "我织",
+      "alias": "阿织",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "阿织的自称。合集第 8 集「我织完全不在乎被别人说又茶又混」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "阿织"
+      ]
+    },
+    {
+      "zh": "我花",
+      "linyu": "我花",
+      "alias": "彼岸花",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "彼岸花的自称。合集第 4 集「中路只有一种花，那就素我彼岸花！」、第 14 集「我花不怕别人说，就怕别人不说」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "彼岸花"
+      ]
+    },
+    {
+      "zh": "我铃（淋安京）",
+      "linyu": "我铃",
+      "alias": "铃彦姬",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "铃彦姬的自称。合集第 10 集「我铃※欲火♂焚身」。注意：洛克淋国区已有「我铃」（报恩铃铃），属同形异义。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "铃彦姬"
+      ]
+    },
+    {
+      "zh": "我狐",
+      "linyu": "我狐",
+      "alias": "妖狐",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "妖狐的自称。合集第 22 集「有人说，我狐不是天才，是地才！」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "妖狐"
+      ]
+    },
+    {
+      "zh": "我鲸",
+      "linyu": "我鲸",
+      "alias": "化鲸",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "化鲸的自称。合集第 19 集「我鲸为分走钢索」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "化鲸"
+      ]
+    },
+    {
+      "zh": "我红（淋安京）",
+      "linyu": "我红",
+      "alias": "鬼女红叶",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "鬼女红叶的自称。合集第 6 集「答案素我红叶！」、评论「我红1a秒了靴靴」。注意：淋威争锋区已有「我红」（猩红女巫），属同形异义。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "高",
+      "rel": [
+        "鬼女红叶"
+      ]
+    },
+    {
+      "zh": "我白",
+      "linyu": "我白",
+      "alias": "鬼使白",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "鬼使白的自称。合集第 7 集「不如选出鬼白来混分」，玩家写作我白。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "鬼使白"
+      ]
+    },
+    {
+      "zh": "我千",
+      "linyu": "我千",
+      "alias": "千姬",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "千姬的自称。合集第 3 集「千姬：蚁钳素蚁钳，仙在素仙在」，评论「我千素女王」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "千姬"
+      ]
+    },
+    {
+      "zh": "我兰",
+      "linyu": "我兰",
+      "alias": "兰兰",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "兰兰的自称。合集第 27 集「高冷法刺红叶严刑拷打兰兰」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "兰兰"
+      ]
+    },
+    {
+      "zh": "我照",
+      "linyu": "我照",
+      "alias": "天照",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "天照的自称。评论「我照没有沉重的秘密，都是轻松快乐的」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "天照"
+      ]
+    },
+    {
+      "zh": "我离",
+      "linyu": "我离",
+      "alias": "不知火",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "不知火的自称。评论「怎么不玩我离，我离1344233秒了所有人靴靴」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "不知火"
+      ]
+    },
+    {
+      "zh": "我灯",
+      "linyu": "我灯",
+      "alias": "青行灯",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "青行灯的自称。合集第 24 集「青行灯：都亮起来吧！」，玩家写作我灯。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "青行灯"
+      ]
+    },
+    {
+      "zh": "我雪",
+      "linyu": "我雪",
+      "alias": "雪女",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "雪女的自称。合集第 5 集「中单的尽头是什么？是卖辅！——雪女」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "雪女"
+      ]
+    },
+    {
+      "zh": "我神",
+      "linyu": "我神",
+      "alias": "神乐",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "神乐的自称。合集第 17 集「我上大嘤嘤师，就素为了能快乐玩神乐的！」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "神乐"
+      ]
+    },
+    {
+      "zh": "我鼠",
+      "linyu": "我鼠",
+      "alias": "铁鼠",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "铁鼠的自称。射类式神铁鼠的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "铁鼠"
+      ]
+    },
+    {
+      "zh": "我猫",
+      "linyu": "我猫",
+      "alias": "九命猫",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "九命猫的自称。忍类式神九命猫的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "九命猫"
+      ]
+    },
+    {
+      "zh": "我狗",
+      "linyu": "我狗",
+      "alias": "犬神",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "犬神的自称。侍类式神犬神的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "犬神"
+      ]
+    },
+    {
+      "zh": "我刀",
+      "linyu": "我刀",
+      "alias": "妖刀姬",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "妖刀姬的自称。侍类式神妖刀姬的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "妖刀姬"
+      ]
+    },
+    {
+      "zh": "我酒",
+      "linyu": "我酒",
+      "alias": "酒吞童子",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "酒吞童子的自称。侍类式神酒吞童子的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "酒吞童子"
+      ]
+    },
+    {
+      "zh": "我切",
+      "linyu": "我切",
+      "alias": "鬼切",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "鬼切的自称。忍类式神鬼切的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "鬼切"
+      ]
+    },
+    {
+      "zh": "我阎",
+      "linyu": "我阎",
+      "alias": "阎魔",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "阎魔的自称。射类式神阎魔的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "阎魔"
+      ]
+    },
+    {
+      "zh": "我狼",
+      "linyu": "我狼",
+      "alias": "白狼",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "白狼的自称。射类式神白狼的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "白狼"
+      ]
+    },
+    {
+      "zh": "我管",
+      "linyu": "我管",
+      "alias": "管狐",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "管狐的自称。射类式神管狐的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "管狐"
+      ]
+    },
+    {
+      "zh": "我百",
+      "linyu": "我百",
+      "alias": "百目鬼",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "百目鬼的自称。射类式神百目鬼的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "百目鬼"
+      ]
+    },
+    {
+      "zh": "我童",
+      "linyu": "我童",
+      "alias": "鬼童丸",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "鬼童丸的自称。射类式神鬼童丸的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "鬼童丸"
+      ]
+    },
+    {
+      "zh": "我蛙",
+      "linyu": "我蛙",
+      "alias": "青蛙瓷器",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "青蛙瓷器的自称。射类式神青蛙瓷器的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "青蛙瓷器"
+      ]
+    },
+    {
+      "zh": "我樱",
+      "linyu": "我樱",
+      "alias": "樱花妖",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "樱花妖的自称。射类式神樱花妖的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "樱花妖"
+      ]
+    },
+    {
+      "zh": "我兔",
+      "linyu": "我兔",
+      "alias": "山兔",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "山兔的自称。祝类式神山兔的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "山兔"
+      ]
+    },
+    {
+      "zh": "我草",
+      "linyu": "我草",
+      "alias": "萤草",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "萤草的自称。祝类式神萤草的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "萤草"
+      ]
+    },
+    {
+      "zh": "我辉",
+      "linyu": "我辉",
+      "alias": "辉夜姬",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "辉夜姬的自称。祝类式神辉夜姬的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "辉夜姬"
+      ]
+    },
+    {
+      "zh": "我连",
+      "linyu": "我连",
+      "alias": "一目连",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "一目连的自称。祝类式神一目连的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": [
+        "一目连"
+      ]
+    },
+    {
+      "zh": "我桃",
+      "linyu": "我桃",
+      "alias": "桃花妖",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "桃花妖的自称。祝类式神桃花妖的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "桃花妖"
+      ]
+    },
+    {
+      "zh": "我鸟（淋安京）",
+      "linyu": "我鸟",
+      "alias": "花鸟卷",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "花鸟卷的自称。祝类式神花鸟卷的自称。注意：另有「我鸟」（知更鸟），属同形异义。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "花鸟卷"
+      ]
+    },
+    {
+      "zh": "我坊",
+      "linyu": "我坊",
+      "alias": "海坊主",
+      "slot": "淋安京 / 淋安京自称体系",
+      "sense": "海坊主的自称。守类式神海坊主的自称。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": [
+        "海坊主"
+      ]
+    },
+    {
+      "zh": "巫",
+      "linyu": "巫",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "法师，依靠法术输出，适合走中路。 例：判官、大天狗、金鱼姬、荒、鬼女红叶、雪女、彼岸花、鬼使白、面灵气、青行灯、清姬。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "侍",
+      "linyu": "侍",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "战士，近战输出，适合走上路。 例：般若、犬神、茨木童子、酒吞童子、雪童子、络新妇、傀儡师、犬夜叉、镰鼬、小鹿男。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "忍",
+      "linyu": "忍",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "刺客，近战高爆发，适合打野帮各路带节奏。 例：以津真天、姑获鸟、九命猫、妖刀姬、骨女、夜叉、万年竹、杀生丸、山风。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "射",
+      "linyu": "射",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "射手，远程持续输出，需要辅助配合，适合走下路。 例：青蛙瓷器、鸩、白狼、妖狐、管狐、首无、二口女、小松丸、御馔津、桔梗。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "守",
+      "linyu": "守",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "肉盾，血量高皮厚打前排，适合走上路。 例：鸦天狗、黑童子、狸猫、兵俑、吸血姬、海坊主、凤凰火、山童、座敷童子、蟹姬。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "祝",
+      "linyu": "祝",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "辅助，给团队提供增益和控制，适合走下路帮射手发育。 例：辉夜姬、惠比寿、山兔、海坊主、萤草、一目连、桃花妖、花鸟卷、日和坊。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "法师",
+      "linyu": "法师",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "巫类式神的本职说法，走中路靠法术输出。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "战士",
+      "linyu": "战士",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "侍类式神的本职说法，近战输出走上路。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "刺客",
+      "linyu": "刺客",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "忍类式神的本职说法，近战高爆发打野。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "射手",
+      "linyu": "射手",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "射类式神的本职说法，远程持续输出走下路。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "上路",
+      "linyu": "上路",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "侍与守类式神的主战场。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "下路",
+      "linyu": "下路",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "射与祝类式神的主战场，淋语区叫「站街」。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "打野",
+      "linyu": "打野",
+      "alias": "",
+      "slot": "淋安京 / 淋安京式神位分",
+      "sense": "忍类式神的主战场，靠野怪起节奏。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "资质赛",
+      "linyu": "资质赛",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "按段位匹配对手的排位模式，达到指定魂火可提升段位；人品值低于 90 不能参加。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "魂火",
+      "linyu": "魂火",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "资质赛里提升段位的积分，打满即可晋级。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "初心者",
+      "linyu": "初心者",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第一段。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "见习生",
+      "linyu": "见习生",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第二段。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "得业生",
+      "linyu": "得业生",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第三段。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阴阳少属",
+      "linyu": "阴阳少属",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第四段。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阴阳中司",
+      "linyu": "阴阳中司",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第五段。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阴阳大允",
+      "linyu": "阴阳大允",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第六段，大允以上开启禁选模式。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阴阳名士",
+      "linyu": "阴阳名士",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的第七段。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大阴阳师",
+      "linyu": "大阴阳师",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "八段位的最高段，前 1～999 名称为大阴阳师之主；大阴阳师以上开启迷雾模式。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "大嘤嘤师",
+      "linyu": "大嘤嘤师",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "大阴阳师的淋化写法（阴→嘤），出自合集第 17 集「我上大嘤嘤师，就素为了能快乐玩神乐的！」。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "禁选",
+      "linyu": "禁选",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "大允以上段位开启的禁用/选人模式。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "迷雾",
+      "linyu": "迷雾",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "大阴阳师以上段位开启的迷雾模式（视野受限）。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "百鬼奕",
+      "linyu": "百鬼奕",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "3V3V3 娱乐模式，击杀数达到 30 即获胜。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "逢魔之战",
+      "linyu": "逢魔之战",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "娱乐模式，每个式神获得一个技能强化，各项数据提升。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蜃气之界",
+      "linyu": "蜃气之界",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "娱乐模式，每方五名玩家使用同一式神。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "绮乱秘境",
+      "linyu": "绮乱秘境",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "娱乐模式，可自由把不同式神的技能组合在一起。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "混战狭间",
+      "linyu": "混战狭间",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "随机 5V5 单线对战的娱乐模式。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "麻将棋",
+      "linyu": "麻将棋",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "自走棋玩法，即《阴阳师·智走棋》。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "限免",
+      "linyu": "限免",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "每周限免式神，不买也能玩。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "周免",
+      "linyu": "周免",
+      "alias": "",
+      "slot": "淋安京 / 淋安京段位赛制",
+      "sense": "同限免，每周轮换的免费式神。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "灵咒",
+      "linyu": "灵咒",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "开局携带的两个主动技能：降伏、祓除、盾守、瞬步、束魂、俊足、侵蚀、自愈、役灵、神行、迅劫、砺心。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阴阳术",
+      "linyu": "阴阳术",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "全局生效的被动技能，可选一个主阴阳术 + 一个副阴阳术，按式神定位而不同。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "武器",
+      "linyu": "武器",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备六大类之一，增强物理伤害（攻击力、攻速、暴击、物穿），适用于侍、射、忍。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "法器",
+      "linyu": "法器",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备六大类之一，增强法术输出。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "防具",
+      "linyu": "防具",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备六大类之一，增强生存能力。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "猎具",
+      "linyu": "猎具",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备六大类之一，用于打野与续航。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "足具",
+      "linyu": "足具",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备六大类之一，移速类装备。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "初级",
+      "linyu": "初级",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备三等级之一，开局就能买的低级装备。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "中级",
+      "linyu": "中级",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备三等级之一，攒够金币后合成。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "高级",
+      "linyu": "高级",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "装备三等级之一，一局最多买 6 件。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "复生之酒",
+      "linyu": "复生之酒",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "年兽掉落，拾取后 120 秒内被封印可原地复生，复生时对周围敌人造成真实伤害和减速。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "赏金特典",
+      "linyu": "赏金特典",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "赛季任务奖励系统，做任务或氪金解锁。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "澄心值",
+      "linyu": "澄心值",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "消耗道具提升，2000 / 8000 / 15000 分别解锁彩蛋互动、特写、专属局内信号。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "勾玉",
+      "linyu": "勾玉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "游戏货币，100 勾玉（10 元）抽一次达摩降福。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "史诗",
+      "linyu": "史诗",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "皮肤品质档位，评论里常有「配得上高级史诗」的说法。",
+      "source": "https://baike.com/wikiid/7229204755908771855",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "达摩",
+      "linyu": "达摩",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "达摩降福：100 勾玉抽一个金达摩（金蛋），可得皮肤、体验卡、达摩币。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "祈福神龛",
+      "linyu": "祈福神龛",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "用纸签和绘马抽皮肤、澄心值道具的地方。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "人品值",
+      "linyu": "人品值",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "低于 90 不能打资质赛，低于 60 不能打真人对战，可用保释金恢复，满分 110。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "阴阳寮",
+      "linyu": "阴阳寮",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "30 级可创建，加入可获得更多经验与奖励。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "保释金",
+      "linyu": "保释金",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "恢复人品值的花费：1 人品值 = 1000 金币，7 天内无处罚可退回。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "金币",
+      "linyu": "金币",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "击杀敌方单位或野怪获得，用来买装备。",
+      "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "出装",
+      "linyu": "出装",
+      "alias": "",
+      "slot": "淋安京 / 淋安京装备经济",
+      "sense": "一局里的装备搭配思路，视频区最常见的题材（如「XX出装，决战平安京」）。",
+      "source": "https://moba.163.com/index.html",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "石距",
+      "linyu": "石距",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "河道大型野怪之一，随机登场；石距之畏给全队冷却缩减与攻速，击败 3 次额外获得石距之力。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "地震鲶",
+      "linyu": "地震鲶",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "河道大型野怪之一；地震鲶之怒给全队百分比双抗，击败 3 次额外获得地震鲶之力。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蜃气楼",
+      "linyu": "蜃气楼",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "河道大型野怪之一；蜃气楼之惑给全队百分比法强与攻击力，击败 3 次额外获得蜃气楼之力。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "年兽",
+      "linyu": "年兽",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "大型野怪；年兽之惧让伤害附带灼烧真实伤害，灼烧满 4 秒降下天火。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "巫女大蛇",
+      "linyu": "巫女大蛇",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "封印后掉落悲鸣之旗，把三路小兵换成百鬼夜行兵线，全队获得巫女大蛇之力（+45 攻击法强、每秒回 1% 血）。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "业原火",
+      "linyu": "业原火",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "封印后掉落面具，拾取者获得一次性技能业火降星，召唤紫色能量陨石砸塔。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "八岐大蛇",
+      "linyu": "八岐大蛇",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "游戏里的野怪与大 BOSS，也是蛊惑黑晴明打开阴界大门的那一位。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "麒麟",
+      "linyu": "麒麟",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "从《阴阳师》移植来的地图野怪，击杀后获得视野、经验、金币与对野怪伤害提升。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "野怪",
+      "linyu": "野怪",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "地图上的中立怪物，打野式神的经济来源。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "河道",
+      "linyu": "河道",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "石距 / 地震鲶 / 蜃气楼登场的位置。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "兵线",
+      "linyu": "兵线",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "三路小兵；拿到悲鸣之旗后会换成百鬼夜行兵线。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "悲鸣之旗",
+      "linyu": "悲鸣之旗",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "封印巫女大蛇掉落，把己方三路小兵替换为百鬼夜行兵线，持续三波。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "防御塔",
+      "linyu": "防御塔",
+      "alias": "",
+      "slot": "淋安京 / 淋安京地图野区",
+      "sense": "三路推塔目标；业火降星就是用来砸塔的。",
+      "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "躺赢",
+      "linyu": "躺赢",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "队友带飞自己没出力就赢了。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "越塔",
+      "linyu": "越塔",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "冲进敌方防御塔攻击范围里杀人。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "蹲草",
+      "linyu": "蹲草",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "藏在草丛里等敌人经过。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "下饭",
+      "linyu": "下饭",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "打得很菜、很搞笑；合集简介「京极下饭日常」和评论「下饭神作」都是这个意思。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "混分",
+      "linyu": "混分",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "不carry只求不掉分地打，合集第 7 集「不如选出鬼白来混分」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "红温",
+      "linyu": "红温",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "打急眼了、血压上来了；评论「头一次打红温了」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "卖辅",
+      "linyu": "卖辅",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "中单不务正业跑去做辅助的活，合集第 5 集「中单的尽头是什么？是卖辅！」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "AD",
+      "linyu": "AD",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "Attack Damage 的缩写，射手位；平安京玩家爱说「AD 桔梗」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "内战",
+      "linyu": "内战",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "同位置两个式神互打，合集第 13 集「T3射手内战」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "团战",
+      "linyu": "团战",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "五打五的正面交火。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "退坑",
+      "linyu": "退坑",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "弃游不玩了，评论「退坑扒鸡了再也不玩了」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "滚雪球",
+      "linyu": "滚雪球",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "优势越滚越大，评论「对面经济就滚雪球」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "脆皮",
+      "linyu": "脆皮",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "血量薄、容易秒，评论「ad 是所有位置最脆皮的」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "暴击",
+      "linyu": "暴击",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "暴击流出装，评论「暴击上限高更吃队友保护」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "特效流",
+      "linyu": "特效流",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "靠装备特效打输出的流派，评论「特效流下限高，好处是可以出肉」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "半肉",
+      "linyu": "半肉",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "半输出半防御的出装思路，评论「资质我还是喜欢出半肉」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "路人局",
+      "linyu": "路人局",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "没有组队、随机队友的对局。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "组排",
+      "linyu": "组排",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "组队排队，评论里有「两个组排的」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "双排",
+      "linyu": "双排",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "两个人组队排队。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "送人头",
+      "linyu": "送人头",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "白白送死给对面送经济。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "T3",
+      "linyu": "T3",
+      "alias": "",
+      "slot": "淋安京 / 淋安京对局黑话",
+      "sense": "玩家自发给式神分档的说法，合集第 13 集「T3射手」。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "蚁钳",
+      "linyu": "蚁钳",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "「以前」的淋化谐音；合集第 3 集「千姬：蚁钳素蚁钳，仙在素仙在」＝以前是以前，现在是现在。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "仙在",
+      "linyu": "仙在",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "「现在」的淋化谐音，与上一条成对出现。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "我千素女王",
+      "linyu": "我千素女王",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "评论区原句，式神千姬玩家的自封。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "赔穿地心",
+      "linyu": "赔穿地心",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "评论区原句「你千的紫色心情但素你千依旧赔穿地心」：赔钱赔到底。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "紫色心情",
+      "linyu": "紫色心情",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "来自评论「策划捣鼓了半天你千的紫色心情」，指式神皮肤的主色调企划。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "为京常在",
+      "linyu": "为京常在",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "评论里把玩平安京写成宫斗：「平安京，18年初入MOBA后宫，为京常在」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "京嫔",
+      "linyu": "京嫔",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "同上条宫斗梗：越级晋升京嫔、京妃。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "骇人鲸",
+      "linyu": "骇人鲸",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "评论「这种冒金光的女人最终都是这种骇人鲸的命运吗」，化鲸的双关。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "沉重的秘密",
+      "linyu": "沉重的秘密",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "淋语名台词在平安京区的复用，评论「我照没有沉重的秘密，都是轻松快乐的」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "拔锤子",
+      "linyu": "拔锤子",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "合集第 18 集「我们是最好的姐妹（拔锤子）」——姐妹情深但随时开打。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "麻麻",
+      "linyu": "麻麻",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "合集第 2 集「喜欢麻麻的紧色心情吗？」，玩家对式神的亲昵称呼。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "紧色",
+      "linyu": "紧色",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "紧那罗的「紧」＋色，合集第 2 集标题里的造词。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "驴叫",
+      "linyu": "驴叫",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "合集第 29 集「这个人怎么穿着马年新皮发出驴叫啊？」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "马年新皮",
+      "linyu": "马年新皮",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "同上条，指当年马年限定新皮肤。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "靴靴",
+      "linyu": "靴靴",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "「谢谢」的淋化写法；合集第 12 集「四杀了靴靴」、评论「我红1a秒了靴靴」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "美cry",
+      "linyu": "美cry",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "「美死」的淋化写法；合集第 12 集「我紧美cry」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "普通女人",
+      "linyu": "普通女人",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "淋语里对「普通女孩 / 素人」的调侃；合集第 23 集「下路偶遇普通女人桔梗」。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "惹",
+      "linyu": "惹",
+      "alias": "",
+      "slot": "淋安京 / 淋安京整活梗",
+      "sense": "淋语句末语气词，全区的句尾标配。",
+      "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
+      "pop": "高",
+      "rel": []
+    },
+    {
+      "zh": "铁T成长",
+      "linyu": "铁T成长",
+      "alias": "",
+      "slot": "淋安京 / 淋安京通讯录tag",
+      "sense": "本区锚点人物：UP 主桐颜灿《一秒不减！整局解说单排射手教学，铁T成长用爱翻转全世界【撅战！淋安京】26》的主角。",
+      "source": "https://www.bilibili.com/video/BV16LeEz9EwM",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "铁T雅",
+      "linyu": "铁T雅",
+      "alias": "",
+      "slot": "淋安京 / 淋安京通讯录tag",
+      "sense": "铁T 系里已确认的变体之一（迪希雅）。语料可查。",
+      "source": "https://www.bilibili.com/video/BV16LeEz9EwM",
+      "pop": "低",
+      "rel": []
+    },
+    {
+      "zh": "后宫",
+      "linyu": "后宫",
+      "alias": "",
+      "slot": "淋安京 / 淋安京通讯录tag",
+      "sense": "评论「初入MOBA后宫」把各游戏写成后宫。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "本命",
+      "linyu": "本命",
+      "alias": "",
+      "slot": "淋安京 / 淋安京通讯录tag",
+      "sense": "最喜欢的式神 / 角色。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "中",
+      "rel": []
+    },
+    {
+      "zh": "同担",
+      "linyu": "同担",
+      "alias": "",
+      "slot": "淋安京 / 淋安京通讯录tag",
+      "sense": "喜欢同一个角色的同好。",
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "pop": "低",
+      "rel": []
     }
   ],
   "rules": [
+    {
+      "pattern": "(?:那就素|就素|素)我(?:彼岸花|红叶|紧|织|铃|狐|鲸|灯|雪|神|千|兰|照|离)",
+      "template": "那就素我彼岸花",
+      "note": "淋安京式神自称判断句",
+      "scene": "游戏 / 分区",
+      "examples": "中路只有一种花，那就素我彼岸花！；中路靠啥能红？答案素我红叶！；我千素女王。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "我(?:紧|织|花|铃|狐|鲸|红|白|千|兰|照|离|灯|雪|神)[^，。！？]{0,12}",
+      "template": "我紧美cry",
+      "note": "淋安京式神自称起句",
+      "scene": "游戏 / 分区",
+      "examples": "我紧美cry，四杀了靴靴！；我织完全不在乎被别人说又茶又混；我花不怕别人说，就怕别人不说。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:蚁钳|仙在)素(?:蚁钳|仙在)",
+      "template": "蚁钳素蚁钳，仙在素仙在",
+      "note": "「以前是以前，现在是现在」的淋化谐音对句",
+      "scene": "调侃",
+      "examples": "千姬：蚁钳素蚁钳，仙在素仙在。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "[\\u4e00-\\u9fa5]{0,6}素女王",
+      "template": "我千素女王",
+      "note": "「X是女王」的淋化写法",
+      "scene": "夸赞",
+      "examples": "我千素女王；无所谓，新版本我紧依旧素女王。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:下路|中路|上路)[^，。！？]{0,8}(?:站街|卖辅|混分|内战)",
+      "template": "下路站街行规",
+      "note": "分路 + 打法的淋安京句式",
+      "scene": "游戏 / 分区",
+      "examples": "我紧首谈下路站街行规；中单的尽头是什么？是卖辅！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "不是天才[，,]?是地才",
+      "template": "不是天才，是地才",
+      "note": "蔡依淋地才梗在淋安京区的复用",
+      "scene": "调侃",
+      "examples": "有人说，我狐不是天才，是地才！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:秒了|1a秒了)[^，。！？]{0,6}靴靴",
+      "template": "秒了靴靴",
+      "note": "击杀后的淋语收尾",
+      "scene": "游戏",
+      "examples": "我红1a秒了靴靴；我离1344233秒了所有人靴靴。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "本可[^，。！？]{0,8}惹",
+      "template": "本可来套盾惹",
+      "note": "本可 + 惹 的淋语句式",
+      "scene": "自称",
+      "examples": "本可来套盾惹；本可也香翅。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:这素在|素在)[？?]?",
+      "template": "这素在？",
+      "note": "「这是什么」的淋化疑问",
+      "scene": "吐槽",
+      "examples": "这素在？",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:普通女人)[^，。！？]{0,6}",
+      "template": "普通女人桔梗",
+      "note": "淋语对素人的调侃称呼 + 式神名",
+      "scene": "调侃",
+      "examples": "下路偶遇普通女人桔梗，青行灯尽显女王风范！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:决战|撅战)[！!]?(?:淋安京|大沙田)",
+      "template": "决战！大沙田",
+      "note": "分区名的两种淋化写法",
+      "scene": "游戏 / 分区",
+      "examples": "撅战！淋安京；决战！大沙田。",
+      "src": "https://www.bilibili.com/video/BV1xEGFzWEwG"
+    },
+    {
+      "pattern": "(?:为京|京嫔|京妃)[^，。！？]{0,10}",
+      "template": "为京常在",
+      "note": "把玩平安京写成宫斗的评论体",
+      "scene": "评论",
+      "examples": "平安京，18年初入MOBA后宫，为京常在；越级晋升京嫔，不日再次晋升京妃。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:大嘤嘤师|大阴阳师)",
+      "template": "我上大嘤嘤师",
+      "note": "最高段位的淋化说法",
+      "scene": "游戏",
+      "examples": "我上大嘤嘤师，就素为了能快乐玩神乐的！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:严刑拷打|教教你)[^，。！？]{0,10}",
+      "template": "严刑拷打兰兰",
+      "note": "对局里单方面压制的淋化说法",
+      "scene": "游戏",
+      "examples": "高冷法刺红叶严刑拷打兰兰；开玄云会教教你什么是规矩什么是体统。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:我看|我们)?最好(?:的)?姐妹",
+      "template": "我们是最好的姐妹",
+      "note": "淋语姐妹情句式",
+      "scene": "调侃",
+      "examples": "我们是最好的姐妹（拔锤子）。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:赔穿地心|赔钱货)",
+      "template": "赔穿地心",
+      "note": "「赔钱」的淋化夸张说法",
+      "scene": "吐槽",
+      "examples": "你千的紫色心情但素你千依旧赔穿地心。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:沉重的秘密|轻松快乐)",
+      "template": "没有沉重的秘密",
+      "note": "淋语名台词在平安京区的复用",
+      "scene": "吐槽",
+      "examples": "我照没有沉重的秘密，都是轻松快乐的。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:骇人鲸|骇人)[^，。！？]{0,8}",
+      "template": "骇人鲸的命运",
+      "note": "化鲸的双关梗",
+      "scene": "调侃",
+      "examples": "这种冒金光的女人最终都是这种骇人鲸的命运吗。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:下饭|神作)[^，。！？]{0,6}",
+      "template": "下饭神作",
+      "note": "打得菜但好笑的夸法",
+      "scene": "评论",
+      "examples": "速更速更！币都给你，下饭神作！",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:红温|气红温了)",
+      "template": "真的气红温了",
+      "note": "打急眼了的玩家说法",
+      "scene": "评论",
+      "examples": "真的气红温了；头一次打红温了。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:机制天后|六边形战士)[^，。！？]{0,8}",
+      "template": "机制天后六边形战士紧那罗",
+      "note": "给式神封后的淋语称号",
+      "scene": "夸赞",
+      "examples": "机制天后六边形战士紧那罗！你别管六边形大不大。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:又茶又混|又茶)[^，。！？]{0,10}",
+      "template": "又茶又混",
+      "note": "玩家自嘲打法的淋语说法",
+      "scene": "吐槽",
+      "examples": "我织完全不在乎被别人说又茶又混，因为我拿MVP多得离谱。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:为分走钢索|走钢索)",
+      "template": "我鲸为分走钢索",
+      "note": "为上分铤而走险的说法",
+      "scene": "游戏",
+      "examples": "射手环境难不如玩辅助，我鲸为分走钢索。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:有的是力气和手段|有的是力气)",
+      "template": "有的是力气和手段",
+      "note": "淋语夸口句式（英雄淋盟区也有同形句）",
+      "scene": "夸赞",
+      "examples": "AD桔梗在下路有的是力气和手段！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:退坑|入坑)[^，。！？]{0,8}",
+      "template": "退坑扒鸡",
+      "note": "弃游说法 + 游戏俗称",
+      "scene": "评论",
+      "examples": "你们玩吧！我玩了7年，退坑扒鸡了再也不玩了。",
+      "src": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+    },
+    {
+      "pattern": "(?:整局解说|单排射手教学)",
+      "template": "整局解说单排射手教学",
+      "note": "本区锚点视频的标题构句法",
+      "scene": "视频标题",
+      "examples": "一秒不减！整局解说单排射手教学，铁T成长用爱翻转全世界。",
+      "src": "https://www.bilibili.com/video/BV16LeEz9EwM"
+    },
+    {
+      "pattern": "(?:用爱翻转全世界)",
+      "template": "用爱翻转全世界",
+      "note": "本区锚点 UP 主的口癖式标题后缀",
+      "scene": "视频标题",
+      "examples": "铁T成长用爱翻转全世界。",
+      "src": "https://www.bilibili.com/video/BV16LeEz9EwM"
+    },
+    {
+      "pattern": "(?:MVP)[^，。！？]{0,6}(?:多得离谱|初体验)",
+      "template": "MVP多得离谱",
+      "note": "晒战绩的淋语句式",
+      "scene": "夸赞",
+      "examples": "因为我拿MVP多得离谱；我铃※欲火♂焚身，❤MVPの初体验~。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:都亮起来吧|尽显女王风范)",
+      "template": "都亮起来吧",
+      "note": "青行灯专属的两句标题",
+      "scene": "视频标题",
+      "examples": "青行灯：都亮起来吧！；青行灯尽显女王风范！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:T3|T0)[^，。！？]{0,6}(?:射手|内战)",
+      "template": "T3射手内战",
+      "note": "玩家给式神分档的说法",
+      "scene": "游戏",
+      "examples": "鸩无语，这年头还能看到T3射手内战；虫师还是不是T0。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:AD)[^，。！？]{0,4}(?:桔梗|教学局|下路)",
+      "template": "AD桔梗",
+      "note": "平安京玩家对射手桔梗的爱称",
+      "scene": "游戏",
+      "examples": "AD桔梗教学局，挑战全网最新最细AD桔梗下路QA秒了教学；AD桔梗在下路有的是力气和手段！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:讲个鬼故事)[^，。！？]{0,10}",
+      "template": "讲个鬼故事",
+      "note": "标题党句式 + 反转",
+      "scene": "视频标题",
+      "examples": "讲个鬼故事，青行灯MVP！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:一个很恐怖的式神|很恐怖)",
+      "template": "一个很恐怖的式神",
+      "note": "标题党句式",
+      "scene": "视频标题",
+      "examples": "一个很恐怖的式神（不是）。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:喜欢麻麻|麻麻)的?[^，。！？]{0,8}",
+      "template": "喜欢麻麻的紧色心情吗",
+      "note": "玩家对式神的亲昵称呼句式",
+      "scene": "视频标题",
+      "examples": "喜欢麻麻的紧色心情吗？",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:中单|中路)的尽头[^，。！？]{0,8}",
+      "template": "中单的尽头是什么",
+      "note": "自问自答的标题构句法",
+      "scene": "视频标题",
+      "examples": "中单的尽头是什么？是卖辅！——雪女。",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:中路靠啥能红|靠啥能红)",
+      "template": "中路靠啥能红",
+      "note": "自问自答标题 + 式神双关（红叶/红）",
+      "scene": "视频标题",
+      "examples": "中路靠啥能红？答案素我红叶！",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:都快|快)20\\d{2}了[^，。！？]{0,14}",
+      "template": "都快2025了",
+      "note": "吐槽版本变迁的标题构句法",
+      "scene": "视频标题",
+      "examples": "都快2025了，怎么下路还有人爱玩AD桔梗啊？",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:穿着|发出)[^，。！？]{0,10}(?:新皮|驴叫)",
+      "template": "穿着马年新皮发出驴叫",
+      "note": "吐槽皮肤的标题句式",
+      "scene": "视频标题",
+      "examples": "这个人怎么穿着马年新皮发出驴叫啊？",
+      "src": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431"
+    },
+    {
+      "pattern": "(?:魔化|逢魔之战)[^，。！？]{0,8}",
+      "template": "孔雀明王·魔化",
+      "note": "逢魔之战强化的写法",
+      "scene": "游戏",
+      "examples": "孔雀明王·魔化 二技能翎随舞。",
+      "src": "https://ds.163.com/article/66e824a852fac75df8b3b1b4/"
+    },
+    {
+      "pattern": "(?:定位调整|式神定位)[^，。！？]{0,14}",
+      "template": "兵佣:守→守/祝",
+      "note": "官方维护公告里的定位调整写法",
+      "scene": "公告",
+      "examples": "兵佣:守→守/祝；吸血姬:守→守/侍；鬼切:侍/忍→忍。",
+      "src": "https://ds.163.com/article/66e824a852fac75df8b3b1b4/"
+    },
     {
       "pattern": "臭[^，。]{1,4}\\s*[，,]?\\s*救救我",
       "template": "臭X 救救我，我被他给盯上了！",
@@ -26398,5 +29673,5 @@ window.__SEED_DATA = {
   ]
 }
 ;
-window.LINYU_VERSION = "1.26.0";
-window.LINYU_CONTENT_HASH = "1c6069521207b48e";
+window.LINYU_VERSION = "1.27.0";
+window.LINYU_CONTENT_HASH = "504104d04078e497";
