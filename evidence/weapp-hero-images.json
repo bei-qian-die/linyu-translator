@@ -1,0 +1,5580 @@
+{
+ "generatedAt": "2026-10-28T14:39:03",
+ "listSize": 96,
+ "detailSize": 136,
+ "listQuality": 66,
+ "detailQuality": 64,
+ "count": 557,
+ "map": {
+  "淋淋": {
+   "name": "淋淋",
+   "group": "real",
+   "num": "hero-626",
+   "src": "src/renderer/img/hero-626.png",
+   "list": "miniprogram/img/hero-626.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-626.webp",
+   "listBytes": 1516,
+   "detailBytes": 2326
+  },
+  "周阴婷": {
+   "name": "周阴婷",
+   "group": "real",
+   "num": "hero-2",
+   "src": "src/renderer/img/hero-2.png",
+   "list": "miniprogram/img/hero-2.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-2.webp",
+   "listBytes": 3352,
+   "detailBytes": 5124
+  },
+  "那艺娜": {
+   "name": "那艺娜",
+   "group": "real",
+   "num": "hero-3",
+   "src": "src/renderer/img/hero-3.png",
+   "list": "miniprogram/img/hero-3.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-3.webp",
+   "listBytes": 1682,
+   "detailBytes": 2642
+  },
+  "三梦奇缘": {
+   "name": "三梦奇缘",
+   "group": "real",
+   "num": "hero-627",
+   "src": "src/renderer/img/hero-627.png",
+   "list": "miniprogram/img/hero-627.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-627.webp",
+   "listBytes": 1350,
+   "detailBytes": 2242
+  },
+  "万人迷": {
+   "name": "万人迷",
+   "group": "real",
+   "num": "hero-5",
+   "src": "src/renderer/img/hero-5.png",
+   "list": "miniprogram/img/hero-5.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-5.webp",
+   "listBytes": 1582,
+   "detailBytes": 2536
+  },
+  "郭老师": {
+   "name": "郭老师",
+   "group": "real",
+   "num": "hero-628",
+   "src": "src/renderer/img/hero-628.png",
+   "list": "miniprogram/img/hero-628.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-628.webp",
+   "listBytes": 2362,
+   "detailBytes": 3922
+  },
+  "指南杰斯猫": {
+   "name": "指南杰斯猫",
+   "group": "real",
+   "num": "hero-7",
+   "src": "src/renderer/img/hero-7.png",
+   "list": "miniprogram/img/hero-7.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-7.webp",
+   "listBytes": 2604,
+   "detailBytes": 3920
+  },
+  "霉霉": {
+   "name": "霉霉",
+   "group": "real",
+   "num": "hero-629",
+   "src": "src/renderer/img/hero-629.png",
+   "list": "miniprogram/img/hero-629.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-629.webp",
+   "listBytes": 1204,
+   "detailBytes": 1960
+  },
+  "鹅妈妈": {
+   "name": "鹅妈妈",
+   "group": "real",
+   "num": "hero-12",
+   "src": "src/renderer/img/hero-12.png",
+   "list": "miniprogram/img/hero-12.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-12.webp",
+   "listBytes": 3410,
+   "detailBytes": 5194
+  },
+  "肘姐": {
+   "name": "肘姐",
+   "group": "real",
+   "num": "hero-13",
+   "src": "src/renderer/img/hero-13.png",
+   "list": "miniprogram/img/hero-13.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-13.webp",
+   "listBytes": 2354,
+   "detailBytes": 3630
+  },
+  "梵谷": {
+   "name": "梵谷",
+   "group": "real",
+   "num": "hero-14",
+   "src": "src/renderer/img/hero-14.png",
+   "list": "miniprogram/img/hero-14.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-14.webp",
+   "listBytes": 1484,
+   "detailBytes": 2264
+  },
+  "完颜慧德": {
+   "name": "完颜慧德",
+   "group": "real",
+   "num": "hero-630",
+   "src": "src/renderer/img/hero-630.png",
+   "list": "miniprogram/img/hero-630.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-630.webp",
+   "listBytes": 2416,
+   "detailBytes": 4084
+  },
+  "玛莎": {
+   "name": "玛莎",
+   "group": "real",
+   "num": "hero-16",
+   "src": "src/renderer/img/hero-16.png",
+   "list": "miniprogram/img/hero-16.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-16.webp",
+   "listBytes": 1876,
+   "detailBytes": 2924
+  },
+  "何老师": {
+   "name": "何老师",
+   "group": "real",
+   "num": "hero-631",
+   "src": "src/renderer/img/hero-631.png",
+   "list": "miniprogram/img/hero-631.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-631.webp",
+   "listBytes": 2030,
+   "detailBytes": 3330
+  },
+  "埃及艳后": {
+   "name": "埃及艳后",
+   "group": "real",
+   "num": "hero-18",
+   "src": "src/renderer/img/hero-18.png",
+   "list": "miniprogram/img/hero-18.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-18.webp",
+   "listBytes": 1612,
+   "detailBytes": 2486
+  },
+  "老地瓜": {
+   "name": "老地瓜",
+   "group": "real",
+   "num": "hero-19",
+   "src": "src/renderer/img/hero-19.png",
+   "list": "miniprogram/img/hero-19.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-19.webp",
+   "listBytes": 2410,
+   "detailBytes": 3754
+  },
+  "开心姐": {
+   "name": "开心姐",
+   "group": "real",
+   "num": "hero-632",
+   "src": "src/renderer/img/hero-632.png",
+   "list": "miniprogram/img/hero-632.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-632.webp",
+   "listBytes": 2254,
+   "detailBytes": 4104
+  },
+  "埋汰姐": {
+   "name": "埋汰姐",
+   "group": "real",
+   "num": "hero-21",
+   "src": "src/renderer/img/hero-21.png",
+   "list": "miniprogram/img/hero-21.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-21.webp",
+   "listBytes": 1450,
+   "detailBytes": 2252
+  },
+  "施柔儿": {
+   "name": "施柔儿",
+   "group": "real",
+   "num": "hero-633",
+   "src": "src/renderer/img/hero-633.png",
+   "list": "miniprogram/img/hero-633.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-633.webp",
+   "listBytes": 1026,
+   "detailBytes": 1482
+  },
+  "庄周": {
+   "name": "庄周",
+   "group": "game",
+   "num": "hero-600",
+   "src": "src/renderer/img/hero-600.png",
+   "list": "miniprogram/img/hero-600.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-600.webp",
+   "listBytes": 2242,
+   "detailBytes": 3906
+  },
+  "元歌": {
+   "name": "元歌",
+   "group": "game",
+   "num": "hero-601",
+   "src": "src/renderer/img/hero-601.png",
+   "list": "miniprogram/img/hero-601.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-601.webp",
+   "listBytes": 1670,
+   "detailBytes": 2804
+  },
+  "妮蔻": {
+   "name": "妮蔻",
+   "group": "game",
+   "num": "hero-602",
+   "src": "src/renderer/img/hero-602.png",
+   "list": "miniprogram/img/hero-602.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-602.webp",
+   "listBytes": 2274,
+   "detailBytes": 3722
+  },
+  "拉比克": {
+   "name": "拉比克",
+   "group": "game",
+   "num": "hero-619",
+   "src": "src/renderer/img/hero-619.png",
+   "list": "miniprogram/img/hero-619.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-619.webp",
+   "listBytes": 1748,
+   "detailBytes": 3104
+  },
+  "孙策": {
+   "name": "孙策",
+   "group": "game",
+   "num": "hero-603",
+   "src": "src/renderer/img/hero-603.png",
+   "list": "miniprogram/img/hero-603.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-603.webp",
+   "listBytes": 2300,
+   "detailBytes": 3836
+  },
+  "珊瑚宫心海": {
+   "name": "珊瑚宫心海",
+   "group": "game",
+   "num": "hero-590",
+   "src": "src/renderer/img/hero-590.png",
+   "list": "miniprogram/img/hero-590.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-590.webp",
+   "listBytes": 3154,
+   "detailBytes": 5432
+  },
+  "腋淋": {
+   "name": "腋淋",
+   "group": "game",
+   "num": "hero-591",
+   "src": "src/renderer/img/hero-591.png",
+   "list": "miniprogram/img/hero-591.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-591.webp",
+   "listBytes": 2352,
+   "detailBytes": 4244
+  },
+  "上司磯太": {
+   "name": "上司磯太",
+   "group": "up",
+   "num": "hero-30",
+   "src": "src/renderer/img/hero-30.png",
+   "list": "miniprogram/img/hero-30.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-30.webp",
+   "listBytes": 2286,
+   "detailBytes": 3850
+  },
+  "四乐化碳": {
+   "name": "四乐化碳",
+   "group": "up",
+   "num": "hero-31",
+   "src": "src/renderer/img/hero-31.png",
+   "list": "miniprogram/img/hero-31.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-31.webp",
+   "listBytes": 2136,
+   "detailBytes": 3518
+  },
+  "晦暗雨季": {
+   "name": "晦暗雨季",
+   "group": "up",
+   "num": "hero-32",
+   "src": "src/renderer/img/hero-32.png",
+   "list": "miniprogram/img/hero-32.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-32.webp",
+   "listBytes": 1282,
+   "detailBytes": 1874
+  },
+  "新酱爱追剧": {
+   "name": "新酱爱追剧",
+   "group": "up",
+   "num": "hero-33",
+   "src": "src/renderer/img/hero-33.png",
+   "list": "miniprogram/img/hero-33.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-33.webp",
+   "listBytes": 2110,
+   "detailBytes": 3130
+  },
+  "生鼠不暝": {
+   "name": "生鼠不暝",
+   "group": "up",
+   "num": "hero-34",
+   "src": "src/renderer/img/hero-34.png",
+   "list": "miniprogram/img/hero-34.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-34.webp",
+   "listBytes": 2524,
+   "detailBytes": 3742
+  },
+  "去听潮声吧": {
+   "name": "去听潮声吧",
+   "group": "up",
+   "num": "hero-36",
+   "src": "src/renderer/img/hero-36.png",
+   "list": "miniprogram/img/hero-36.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-36.webp",
+   "listBytes": 3618,
+   "detailBytes": 5694
+  },
+  "大啵仙女": {
+   "name": "大啵仙女",
+   "group": "up",
+   "num": "hero-634",
+   "src": "src/renderer/img/hero-634.png",
+   "list": "miniprogram/img/hero-634.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-634.webp",
+   "listBytes": 1426,
+   "detailBytes": 2196
+  },
+  "可淋": {
+   "name": "可淋",
+   "group": "up",
+   "num": "hero-38",
+   "src": "src/renderer/img/hero-38.png",
+   "list": "miniprogram/img/hero-38.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-38.webp",
+   "listBytes": 2920,
+   "detailBytes": 4552
+  },
+  "水烈鸟_ZZK": {
+   "name": "水烈鸟_ZZK",
+   "group": "up",
+   "num": "hero-40",
+   "src": "src/renderer/img/hero-40.png",
+   "list": "miniprogram/img/hero-40.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-40.webp",
+   "listBytes": 1460,
+   "detailBytes": 2308
+  },
+  "羊崽爱吃芒果": {
+   "name": "羊崽爱吃芒果",
+   "group": "up",
+   "num": "hero-41",
+   "src": "src/renderer/img/hero-41.png",
+   "list": "miniprogram/img/hero-41.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-41.webp",
+   "listBytes": 2276,
+   "detailBytes": 3544
+  },
+  "正义的钻石男高": {
+   "name": "正义的钻石男高",
+   "group": "up",
+   "num": "hero-42",
+   "src": "src/renderer/img/hero-42.png",
+   "list": "miniprogram/img/hero-42.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-42.webp",
+   "listBytes": 1560,
+   "detailBytes": 2432
+  },
+  "斯琴低娃老师": {
+   "name": "斯琴低娃老师",
+   "group": "up",
+   "num": "hero-43",
+   "src": "src/renderer/img/hero-43.png",
+   "list": "miniprogram/img/hero-43.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-43.webp",
+   "listBytes": 1536,
+   "detailBytes": 2028
+  },
+  "初武": {
+   "name": "初武",
+   "group": "up",
+   "num": "hero-44",
+   "src": "src/renderer/img/hero-44.png",
+   "list": "miniprogram/img/hero-44.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-44.webp",
+   "listBytes": 1610,
+   "detailBytes": 2572
+  },
+  "老凡Fv": {
+   "name": "老凡Fv",
+   "group": "up",
+   "num": "hero-45",
+   "src": "src/renderer/img/hero-45.png",
+   "list": "miniprogram/img/hero-45.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-45.webp",
+   "listBytes": 1716,
+   "detailBytes": 2620
+  },
+  "四时猫舍": {
+   "name": "四时猫舍",
+   "group": "up",
+   "num": "hero-46",
+   "src": "src/renderer/img/hero-46.png",
+   "list": "miniprogram/img/hero-46.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-46.webp",
+   "listBytes": 1636,
+   "detailBytes": 2636
+  },
+  "我华": {
+   "name": "我华",
+   "group": "game",
+   "num": "hero-604",
+   "src": "src/renderer/img/hero-604.png",
+   "list": "miniprogram/img/hero-604.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-604.webp",
+   "listBytes": 2464,
+   "detailBytes": 4188
+  },
+  "我泔": {
+   "name": "我泔",
+   "group": "game",
+   "num": "hero-605",
+   "src": "src/renderer/img/hero-605.png",
+   "list": "miniprogram/img/hero-605.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-605.webp",
+   "listBytes": 2122,
+   "detailBytes": 3658
+  },
+  "我妲": {
+   "name": "我妲",
+   "group": "game",
+   "num": "hero-606",
+   "src": "src/renderer/img/hero-606.png",
+   "list": "miniprogram/img/hero-606.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-606.webp",
+   "listBytes": 2162,
+   "detailBytes": 3544
+  },
+  "我虞": {
+   "name": "我虞",
+   "group": "game",
+   "num": "hero-607",
+   "src": "src/renderer/img/hero-607.png",
+   "list": "miniprogram/img/hero-607.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-607.webp",
+   "listBytes": 1684,
+   "detailBytes": 2846
+  },
+  "我琴": {
+   "name": "我琴",
+   "group": "game",
+   "num": "hero-612",
+   "src": "src/renderer/img/hero-612.png",
+   "list": "miniprogram/img/hero-612.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-612.webp",
+   "listBytes": 2372,
+   "detailBytes": 3908
+  },
+  "我光": {
+   "name": "我光",
+   "group": "game",
+   "num": "hero-613",
+   "src": "src/renderer/img/hero-613.png",
+   "list": "miniprogram/img/hero-613.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-613.webp",
+   "listBytes": 2854,
+   "detailBytes": 4746
+  },
+  "我鸟": {
+   "name": "我鸟",
+   "group": "game",
+   "num": "hero-616",
+   "src": "src/renderer/img/hero-616.png",
+   "list": "miniprogram/img/hero-616.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-616.webp",
+   "listBytes": 1362,
+   "detailBytes": 2206
+  },
+  "阿三": {
+   "name": "阿三",
+   "group": "game",
+   "num": "hero-584",
+   "src": "src/renderer/img/hero-584.png",
+   "list": "miniprogram/img/hero-584.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-584.webp",
+   "listBytes": 2100,
+   "detailBytes": 3580
+  },
+  "凤仙子": {
+   "name": "凤仙子",
+   "group": "real",
+   "num": "hero-636",
+   "src": "src/renderer/img/hero-636.png",
+   "list": "miniprogram/img/hero-636.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-636.webp",
+   "listBytes": 1278,
+   "detailBytes": 2020
+  },
+  "暴躁的鹿鹿": {
+   "name": "暴躁的鹿鹿",
+   "group": "up",
+   "num": "hero-635",
+   "src": "src/renderer/img/hero-635.png",
+   "list": "miniprogram/img/hero-635.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-635.webp",
+   "listBytes": 2076,
+   "detailBytes": 3460
+  },
+  "坚决不打羊胎素": {
+   "name": "坚决不打羊胎素",
+   "group": "up",
+   "num": "hero-55",
+   "src": "src/renderer/img/hero-55.png",
+   "list": "miniprogram/img/hero-55.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-55.webp",
+   "listBytes": 1978,
+   "detailBytes": 2896
+  },
+  "妖女即将收服BadBoy": {
+   "name": "妖女即将收服BadBoy",
+   "group": "up",
+   "num": "hero-56",
+   "src": "src/renderer/img/hero-56.png",
+   "list": "miniprogram/img/hero-56.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-56.webp",
+   "listBytes": 858,
+   "detailBytes": 1258
+  },
+  "提瓦淋新人桑": {
+   "name": "提瓦淋新人桑",
+   "group": "up",
+   "num": "hero-57",
+   "src": "src/renderer/img/hero-57.png",
+   "list": "miniprogram/img/hero-57.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-57.webp",
+   "listBytes": 2510,
+   "detailBytes": 4030
+  },
+  "伤心凉茶": {
+   "name": "伤心凉茶",
+   "group": "up",
+   "num": "hero-58",
+   "src": "src/renderer/img/hero-58.png",
+   "list": "miniprogram/img/hero-58.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-58.webp",
+   "listBytes": 1790,
+   "detailBytes": 2532
+  },
+  "一米六也很厉害啦": {
+   "name": "一米六也很厉害啦",
+   "group": "up",
+   "num": "hero-59",
+   "src": "src/renderer/img/hero-59.png",
+   "list": "miniprogram/img/hero-59.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-59.webp",
+   "listBytes": 1620,
+   "detailBytes": 2276
+  },
+  "女王糖糖子": {
+   "name": "女王糖糖子",
+   "group": "up",
+   "num": "hero-66",
+   "src": "src/renderer/img/hero-66.png",
+   "list": "miniprogram/img/hero-66.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-66.webp",
+   "listBytes": 2334,
+   "detailBytes": 3720
+  },
+  "水蓝蓝": {
+   "name": "水蓝蓝",
+   "group": "game",
+   "num": "hero-67",
+   "src": "src/renderer/img/hero-67.png",
+   "list": "miniprogram/img/hero-67.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-67.webp",
+   "listBytes": 1782,
+   "detailBytes": 2694
+  },
+  "雕刻家": {
+   "name": "雕刻家",
+   "group": "game",
+   "num": "hero-68",
+   "src": "src/renderer/img/hero-68.jpg",
+   "list": "miniprogram/img/hero-68.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-68.webp",
+   "listBytes": 1388,
+   "detailBytes": 2292
+  },
+  "泡泡": {
+   "name": "泡泡",
+   "group": "game",
+   "num": "hero-69",
+   "src": "src/renderer/img/hero-69.png",
+   "list": "miniprogram/img/hero-69.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-69.webp",
+   "listBytes": 970,
+   "detailBytes": 1500
+  },
+  "杀生院": {
+   "name": "杀生院",
+   "group": "game",
+   "num": "hero-620",
+   "src": "src/renderer/img/hero-620.png",
+   "list": "miniprogram/img/hero-620.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-620.webp",
+   "listBytes": 3534,
+   "detailBytes": 6198
+  },
+  "艾希": {
+   "name": "艾希",
+   "group": "game",
+   "num": "hero-71",
+   "src": "src/renderer/img/hero-71.jpg",
+   "list": "miniprogram/img/hero-71.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-71.webp",
+   "listBytes": 1746,
+   "detailBytes": 2904
+  },
+  "莫甘娜": {
+   "name": "莫甘娜",
+   "group": "game",
+   "num": "hero-72",
+   "src": "src/renderer/img/hero-72.jpg",
+   "list": "miniprogram/img/hero-72.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-72.webp",
+   "listBytes": 1702,
+   "detailBytes": 2754
+  },
+  "霞": {
+   "name": "霞",
+   "group": "game",
+   "num": "hero-73",
+   "src": "src/renderer/img/hero-73.png",
+   "list": "miniprogram/img/hero-73.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-73.webp",
+   "listBytes": 1716,
+   "detailBytes": 2864
+  },
+  "萨勒芬妮": {
+   "name": "萨勒芬妮",
+   "group": "game",
+   "num": "hero-74",
+   "src": "src/renderer/img/hero-74.jpg",
+   "list": "miniprogram/img/hero-74.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-74.webp",
+   "listBytes": 2102,
+   "detailBytes": 3376
+  },
+  "雷电将军": {
+   "name": "雷电将军",
+   "group": "game",
+   "num": "hero-592",
+   "src": "src/renderer/img/hero-592.png",
+   "list": "miniprogram/img/hero-592.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-592.webp",
+   "listBytes": 2206,
+   "detailBytes": 3582
+  },
+  "流浪者": {
+   "name": "流浪者",
+   "group": "game",
+   "num": "hero-593",
+   "src": "src/renderer/img/hero-593.png",
+   "list": "miniprogram/img/hero-593.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-593.webp",
+   "listBytes": 3208,
+   "detailBytes": 5224
+  },
+  "胡桃": {
+   "name": "胡桃",
+   "group": "game",
+   "num": "hero-594",
+   "src": "src/renderer/img/hero-594.png",
+   "list": "miniprogram/img/hero-594.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-594.webp",
+   "listBytes": 1848,
+   "detailBytes": 2988
+  },
+  "刻晴": {
+   "name": "刻晴",
+   "group": "game",
+   "num": "hero-595",
+   "src": "src/renderer/img/hero-595.png",
+   "list": "miniprogram/img/hero-595.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-595.webp",
+   "listBytes": 2474,
+   "detailBytes": 3936
+  },
+  "妮露": {
+   "name": "妮露",
+   "group": "game",
+   "num": "hero-596",
+   "src": "src/renderer/img/hero-596.png",
+   "list": "miniprogram/img/hero-596.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-596.webp",
+   "listBytes": 2318,
+   "detailBytes": 4230
+  },
+  "阴婷宝": {
+   "name": "阴婷宝",
+   "group": "real",
+   "num": "hero-637",
+   "src": "src/renderer/img/hero-637.png",
+   "list": "miniprogram/img/hero-637.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-637.webp",
+   "listBytes": 1340,
+   "detailBytes": 2052
+  },
+  "木头人的磁带旧时光": {
+   "name": "木头人的磁带旧时光",
+   "group": "real",
+   "num": "hero-150",
+   "src": "src/renderer/img/hero-150.png",
+   "list": "miniprogram/img/hero-150.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-150.webp",
+   "listBytes": 1728,
+   "detailBytes": 2716
+  },
+  "FLY 组合工作室": {
+   "name": "FLY 组合工作室",
+   "group": "real",
+   "num": "hero-644",
+   "src": "src/renderer/img/hero-644.png",
+   "list": "miniprogram/img/hero-644.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-644.webp",
+   "listBytes": 1312,
+   "detailBytes": 1990
+  },
+  "我雅": {
+   "name": "我雅",
+   "group": "",
+   "num": "hero-597",
+   "src": "src/renderer/img/hero-597.png",
+   "list": "miniprogram/img/hero-597.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-597.webp",
+   "listBytes": 2294,
+   "detailBytes": 4198
+  },
+  "纳阴妲": {
+   "name": "纳阴妲",
+   "group": "",
+   "num": "hero-598",
+   "src": "src/renderer/img/hero-598.png",
+   "list": "miniprogram/img/hero-598.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-598.webp",
+   "listBytes": 2116,
+   "detailBytes": 3896
+  },
+  "莱欧斯利": {
+   "name": "莱欧斯利",
+   "group": "",
+   "num": "hero-599",
+   "src": "src/renderer/img/hero-599.png",
+   "list": "miniprogram/img/hero-599.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-599.webp",
+   "listBytes": 2200,
+   "detailBytes": 3818
+  },
+  "蒜姐": {
+   "name": "蒜姐",
+   "group": "",
+   "num": "hero-608",
+   "src": "src/renderer/img/hero-608.png",
+   "list": "miniprogram/img/hero-608.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-608.webp",
+   "listBytes": 2164,
+   "detailBytes": 3570
+  },
+  "我米": {
+   "name": "我米",
+   "group": "",
+   "num": "hero-609",
+   "src": "src/renderer/img/hero-609.png",
+   "list": "miniprogram/img/hero-609.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-609.webp",
+   "listBytes": 1906,
+   "detailBytes": 3128
+  },
+  "我月": {
+   "name": "我月",
+   "group": "",
+   "num": "hero-610",
+   "src": "src/renderer/img/hero-610.png",
+   "list": "miniprogram/img/hero-610.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-610.webp",
+   "listBytes": 2594,
+   "detailBytes": 4464
+  },
+  "我曌": {
+   "name": "我曌",
+   "group": "",
+   "num": "hero-611",
+   "src": "src/renderer/img/hero-611.png",
+   "list": "miniprogram/img/hero-611.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-611.webp",
+   "listBytes": 2140,
+   "detailBytes": 3614
+  },
+  "淋人金Daddy": {
+   "name": "淋人金Daddy",
+   "group": "",
+   "num": "hero-124",
+   "src": "src/renderer/img/hero-124.png",
+   "list": "miniprogram/img/hero-124.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-124.webp",
+   "listBytes": 1162,
+   "detailBytes": 1702
+  },
+  "凤蝶": {
+   "name": "凤蝶",
+   "group": "",
+   "num": "hero-125",
+   "src": "src/renderer/img/hero-125.png",
+   "list": "miniprogram/img/hero-125.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-125.webp",
+   "listBytes": 2168,
+   "detailBytes": 3608
+  },
+  "血律Daddy": {
+   "name": "血律Daddy",
+   "group": "",
+   "num": "hero-585",
+   "src": "src/renderer/img/hero-585.png",
+   "list": "miniprogram/img/hero-585.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-585.webp",
+   "listBytes": 2152,
+   "detailBytes": 3740
+  },
+  "摩西女": {
+   "name": "摩西女",
+   "group": "",
+   "num": "hero-586",
+   "src": "src/renderer/img/hero-586.png",
+   "list": "miniprogram/img/hero-586.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-586.webp",
+   "listBytes": 1540,
+   "detailBytes": 2466
+  },
+  "枝性美克里斯": {
+   "name": "枝性美克里斯",
+   "group": "",
+   "num": "hero-621",
+   "src": "src/renderer/img/hero-621.png",
+   "list": "miniprogram/img/hero-621.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-621.webp",
+   "listBytes": 942,
+   "detailBytes": 1598
+  },
+  "火淋": {
+   "name": "火淋",
+   "group": "",
+   "num": "hero-617",
+   "src": "src/renderer/img/hero-617.png",
+   "list": "miniprogram/img/hero-617.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-617.webp",
+   "listBytes": 3226,
+   "detailBytes": 5674
+  },
+  "淋光": {
+   "name": "淋光",
+   "group": "",
+   "num": "hero-618",
+   "src": "src/renderer/img/hero-618.png",
+   "list": "miniprogram/img/hero-618.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-618.webp",
+   "listBytes": 2234,
+   "detailBytes": 3722
+  },
+  "威龙daddy": {
+   "name": "威龙daddy",
+   "group": "",
+   "num": "hero-622",
+   "src": "src/renderer/img/hero-622.png",
+   "list": "miniprogram/img/hero-622.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-622.webp",
+   "listBytes": 1368,
+   "detailBytes": 2436
+  },
+  "交女王": {
+   "name": "交女王",
+   "group": "",
+   "num": "hero-132",
+   "src": "src/renderer/img/hero-132.png",
+   "list": "miniprogram/img/hero-132.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-132.webp",
+   "listBytes": 1652,
+   "detailBytes": 2478
+  },
+  "杂技女亡帕克": {
+   "name": "杂技女亡帕克",
+   "group": "",
+   "num": "hero-623",
+   "src": "src/renderer/img/hero-623.png",
+   "list": "miniprogram/img/hero-623.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-623.webp",
+   "listBytes": 1164,
+   "detailBytes": 1982
+  },
+  "铁T成长": {
+   "name": "铁T成长",
+   "group": "",
+   "num": "hero-134",
+   "src": "src/renderer/img/hero-134.png",
+   "list": "miniprogram/img/hero-134.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-134.webp",
+   "listBytes": 3062,
+   "detailBytes": 4996
+  },
+  "武田晴海": {
+   "name": "武田晴海",
+   "group": "",
+   "num": "hero-135",
+   "src": "src/renderer/img/hero-135.png",
+   "list": "miniprogram/img/hero-135.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-135.webp",
+   "listBytes": 3072,
+   "detailBytes": 4632
+  },
+  "一只叫艾文的海豚": {
+   "name": "一只叫艾文的海豚",
+   "group": "",
+   "num": "hero-136",
+   "src": "src/renderer/img/hero-136.png",
+   "list": "miniprogram/img/hero-136.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-136.webp",
+   "listBytes": 2150,
+   "detailBytes": 3496
+  },
+  "嘶哈嘶哈惹": {
+   "name": "嘶哈嘶哈惹",
+   "group": "",
+   "num": "hero-137",
+   "src": "src/renderer/img/hero-137.png",
+   "list": "miniprogram/img/hero-137.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-137.webp",
+   "listBytes": 3770,
+   "detailBytes": 6340
+  },
+  "软妹很努力": {
+   "name": "软妹很努力",
+   "group": "",
+   "num": "hero-138",
+   "src": "src/renderer/img/hero-138.png",
+   "list": "miniprogram/img/hero-138.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-138.webp",
+   "listBytes": 1346,
+   "detailBytes": 2008
+  },
+  "木槿软辅": {
+   "name": "木槿软辅",
+   "group": "",
+   "num": "hero-139",
+   "src": "src/renderer/img/hero-139.png",
+   "list": "miniprogram/img/hero-139.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-139.webp",
+   "listBytes": 2486,
+   "detailBytes": 4214
+  },
+  "这个符很关键": {
+   "name": "这个符很关键",
+   "group": "",
+   "num": "hero-140",
+   "src": "src/renderer/img/hero-140.png",
+   "list": "miniprogram/img/hero-140.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-140.webp",
+   "listBytes": 2174,
+   "detailBytes": 3454
+  },
+  "大沙田鱼罐头": {
+   "name": "大沙田鱼罐头",
+   "group": "",
+   "num": "hero-141",
+   "src": "src/renderer/img/hero-141.png",
+   "list": "miniprogram/img/hero-141.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-141.webp",
+   "listBytes": 2310,
+   "detailBytes": 3792
+  },
+  "卡子有南云铁虎依赖症": {
+   "name": "卡子有南云铁虎依赖症",
+   "group": "",
+   "num": "hero-142",
+   "src": "src/renderer/img/hero-142.png",
+   "list": "miniprogram/img/hero-142.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-142.webp",
+   "listBytes": 3488,
+   "detailBytes": 5734
+  },
+  "喂奶牛喝奶": {
+   "name": "喂奶牛喝奶",
+   "group": "",
+   "num": "hero-143",
+   "src": "src/renderer/img/hero-143.png",
+   "list": "miniprogram/img/hero-143.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-143.webp",
+   "listBytes": 1502,
+   "detailBytes": 2214
+  },
+  "禁基的扣肉": {
+   "name": "禁基的扣肉",
+   "group": "",
+   "num": "hero-144",
+   "src": "src/renderer/img/hero-144.png",
+   "list": "miniprogram/img/hero-144.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-144.webp",
+   "listBytes": 2094,
+   "detailBytes": 3330
+  },
+  "13姬": {
+   "name": "13姬",
+   "group": "",
+   "num": "hero-145",
+   "src": "src/renderer/img/hero-145.png",
+   "list": "miniprogram/img/hero-145.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-145.webp",
+   "listBytes": 1352,
+   "detailBytes": 2102
+  },
+  "林雅文女王": {
+   "name": "林雅文女王",
+   "group": "",
+   "num": "hero-146",
+   "src": "src/renderer/img/hero-146.png",
+   "list": "miniprogram/img/hero-146.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-146.webp",
+   "listBytes": 3864,
+   "detailBytes": 6682
+  },
+  "清光山间月": {
+   "name": "清光山间月",
+   "group": "",
+   "num": "hero-147",
+   "src": "src/renderer/img/hero-147.png",
+   "list": "miniprogram/img/hero-147.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-147.webp",
+   "listBytes": 1358,
+   "detailBytes": 1914
+  },
+  "恋爱顾问曹小派": {
+   "name": "恋爱顾问曹小派",
+   "group": "",
+   "num": "hero-148",
+   "src": "src/renderer/img/hero-148.png",
+   "list": "miniprogram/img/hero-148.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-148.webp",
+   "listBytes": 2030,
+   "detailBytes": 3150
+  },
+  "橘吱捞饭": {
+   "name": "橘吱捞饭",
+   "group": "",
+   "num": "hero-149",
+   "src": "src/renderer/img/hero-149.png",
+   "list": "miniprogram/img/hero-149.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-149.webp",
+   "listBytes": 3540,
+   "detailBytes": 5918
+  },
+  "阿狸": {
+   "name": "阿狸",
+   "group": "game",
+   "num": "hero-152",
+   "src": "src/renderer/img/hero-152.png",
+   "list": "miniprogram/img/hero-152.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-152.webp",
+   "listBytes": 2474,
+   "detailBytes": 4008
+  },
+  "卡莎": {
+   "name": "卡莎",
+   "group": "game",
+   "num": "hero-153",
+   "src": "src/renderer/img/hero-153.png",
+   "list": "miniprogram/img/hero-153.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-153.webp",
+   "listBytes": 1436,
+   "detailBytes": 2300
+  },
+  "薇恩": {
+   "name": "薇恩",
+   "group": "game",
+   "num": "hero-615",
+   "src": "src/renderer/img/hero-615.png",
+   "list": "miniprogram/img/hero-615.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-615.webp",
+   "listBytes": 2312,
+   "detailBytes": 3732
+  },
+  "佐伊": {
+   "name": "佐伊",
+   "group": "game",
+   "num": "hero-155",
+   "src": "src/renderer/img/hero-155.png",
+   "list": "miniprogram/img/hero-155.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-155.webp",
+   "listBytes": 2842,
+   "detailBytes": 4498
+  },
+  "阿卡丽": {
+   "name": "阿卡丽",
+   "group": "game",
+   "num": "hero-156",
+   "src": "src/renderer/img/hero-156.png",
+   "list": "miniprogram/img/hero-156.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-156.webp",
+   "listBytes": 2692,
+   "detailBytes": 4248
+  },
+  "金克丝": {
+   "name": "金克丝",
+   "group": "game",
+   "num": "hero-157",
+   "src": "src/renderer/img/hero-157.png",
+   "list": "miniprogram/img/hero-157.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-157.webp",
+   "listBytes": 1224,
+   "detailBytes": 1934
+  },
+  "卡尔玛": {
+   "name": "卡尔玛",
+   "group": "game",
+   "num": "hero-158",
+   "src": "src/renderer/img/hero-158.png",
+   "list": "miniprogram/img/hero-158.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-158.webp",
+   "listBytes": 1832,
+   "detailBytes": 2950
+  },
+  "娜美": {
+   "name": "娜美",
+   "group": "game",
+   "num": "hero-159",
+   "src": "src/renderer/img/hero-159.png",
+   "list": "miniprogram/img/hero-159.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-159.webp",
+   "listBytes": 2718,
+   "detailBytes": 4462
+  },
+  "貂蝉": {
+   "name": "貂蝉",
+   "group": "game",
+   "num": "hero-160",
+   "src": "src/renderer/img/hero-160.png",
+   "list": "miniprogram/img/hero-160.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-160.webp",
+   "listBytes": 1946,
+   "detailBytes": 3256
+  },
+  "王昭君": {
+   "name": "王昭君",
+   "group": "game",
+   "num": "hero-161",
+   "src": "src/renderer/img/hero-161.png",
+   "list": "miniprogram/img/hero-161.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-161.webp",
+   "listBytes": 3366,
+   "detailBytes": 5608
+  },
+  "西施": {
+   "name": "西施",
+   "group": "game",
+   "num": "hero-162",
+   "src": "src/renderer/img/hero-162.png",
+   "list": "miniprogram/img/hero-162.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-162.webp",
+   "listBytes": 1898,
+   "detailBytes": 3230
+  },
+  "上官婉儿": {
+   "name": "上官婉儿",
+   "group": "game",
+   "num": "hero-163",
+   "src": "src/renderer/img/hero-163.png",
+   "list": "miniprogram/img/hero-163.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-163.webp",
+   "listBytes": 2448,
+   "detailBytes": 4046
+  },
+  "米莱狄": {
+   "name": "米莱狄",
+   "group": "game",
+   "num": "hero-164",
+   "src": "src/renderer/img/hero-164.png",
+   "list": "miniprogram/img/hero-164.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-164.webp",
+   "listBytes": 1704,
+   "detailBytes": 2720
+  },
+  "公孙离": {
+   "name": "公孙离",
+   "group": "game",
+   "num": "hero-165",
+   "src": "src/renderer/img/hero-165.png",
+   "list": "miniprogram/img/hero-165.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-165.webp",
+   "listBytes": 3086,
+   "detailBytes": 5296
+  },
+  "小乔": {
+   "name": "小乔",
+   "group": "game",
+   "num": "hero-166",
+   "src": "src/renderer/img/hero-166.png",
+   "list": "miniprogram/img/hero-166.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-166.webp",
+   "listBytes": 2052,
+   "detailBytes": 3286
+  },
+  "可莉": {
+   "name": "可莉",
+   "group": "game",
+   "num": "hero-167",
+   "src": "src/renderer/img/hero-167.png",
+   "list": "miniprogram/img/hero-167.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-167.webp",
+   "listBytes": 2742,
+   "detailBytes": 4360
+  },
+  "七七": {
+   "name": "七七",
+   "group": "game",
+   "num": "hero-168",
+   "src": "src/renderer/img/hero-168.png",
+   "list": "miniprogram/img/hero-168.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-168.webp",
+   "listBytes": 2002,
+   "detailBytes": 3252
+  },
+  "夜兰": {
+   "name": "夜兰",
+   "group": "game",
+   "num": "hero-169",
+   "src": "src/renderer/img/hero-169.png",
+   "list": "miniprogram/img/hero-169.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-169.webp",
+   "listBytes": 2982,
+   "detailBytes": 4808
+  },
+  "优菈": {
+   "name": "优菈",
+   "group": "game",
+   "num": "hero-170",
+   "src": "src/renderer/img/hero-170.png",
+   "list": "miniprogram/img/hero-170.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-170.webp",
+   "listBytes": 3454,
+   "detailBytes": 5534
+  },
+  "北斗": {
+   "name": "北斗",
+   "group": "game",
+   "num": "hero-171",
+   "src": "src/renderer/img/hero-171.png",
+   "list": "miniprogram/img/hero-171.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-171.webp",
+   "listBytes": 3192,
+   "detailBytes": 5204
+  },
+  "八重神子": {
+   "name": "八重神子",
+   "group": "game",
+   "num": "hero-172",
+   "src": "src/renderer/img/hero-172.png",
+   "list": "miniprogram/img/hero-172.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-172.webp",
+   "listBytes": 2866,
+   "detailBytes": 4566
+  },
+  "纳西妲": {
+   "name": "纳西妲",
+   "group": "game",
+   "num": "hero-173",
+   "src": "src/renderer/img/hero-173.png",
+   "list": "miniprogram/img/hero-173.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-173.webp",
+   "listBytes": 3446,
+   "detailBytes": 5826
+  },
+  "医生": {
+   "name": "医生",
+   "group": "game",
+   "num": "hero-174",
+   "src": "src/renderer/img/hero-174.png",
+   "list": "miniprogram/img/hero-174.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-174.webp",
+   "listBytes": 2244,
+   "detailBytes": 3834
+  },
+  "渔女": {
+   "name": "渔女",
+   "group": "game",
+   "num": "hero-175",
+   "src": "src/renderer/img/hero-175.png",
+   "list": "miniprogram/img/hero-175.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-175.webp",
+   "listBytes": 1974,
+   "detailBytes": 3324
+  },
+  "调香师": {
+   "name": "调香师",
+   "group": "game",
+   "num": "hero-176",
+   "src": "src/renderer/img/hero-176.png",
+   "list": "miniprogram/img/hero-176.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-176.webp",
+   "listBytes": 1324,
+   "detailBytes": 2178
+  },
+  "小女孩": {
+   "name": "小女孩",
+   "group": "game",
+   "num": "hero-177",
+   "src": "src/renderer/img/hero-177.png",
+   "list": "miniprogram/img/hero-177.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-177.webp",
+   "listBytes": 2654,
+   "detailBytes": 4356
+  },
+  "祭司": {
+   "name": "祭司",
+   "group": "game",
+   "num": "hero-178",
+   "src": "src/renderer/img/hero-178.png",
+   "list": "miniprogram/img/hero-178.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-178.webp",
+   "listBytes": 2502,
+   "detailBytes": 3960
+  },
+  "蝰蛇": {
+   "name": "蝰蛇",
+   "group": "game",
+   "num": "hero-179",
+   "src": "src/renderer/img/hero-179.png",
+   "list": "miniprogram/img/hero-179.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-179.webp",
+   "listBytes": 1812,
+   "detailBytes": 2802
+  },
+  "暮蝶": {
+   "name": "暮蝶",
+   "group": "game",
+   "num": "hero-180",
+   "src": "src/renderer/img/hero-180.png",
+   "list": "miniprogram/img/hero-180.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-180.webp",
+   "listBytes": 2426,
+   "detailBytes": 3800
+  },
+  "黑梦": {
+   "name": "黑梦",
+   "group": "game",
+   "num": "hero-181",
+   "src": "src/renderer/img/hero-181.png",
+   "list": "miniprogram/img/hero-181.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-181.webp",
+   "listBytes": 2480,
+   "detailBytes": 3908
+  },
+  "奇乐": {
+   "name": "奇乐",
+   "group": "game",
+   "num": "hero-182",
+   "src": "src/renderer/img/hero-182.png",
+   "list": "miniprogram/img/hero-182.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-182.webp",
+   "listBytes": 2344,
+   "detailBytes": 3688
+  },
+  "春丽": {
+   "name": "春丽",
+   "group": "game",
+   "num": "hero-183",
+   "src": "src/renderer/img/hero-183.png",
+   "list": "miniprogram/img/hero-183.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-183.webp",
+   "listBytes": 2964,
+   "detailBytes": 4768
+  },
+  "阿鬼": {
+   "name": "阿鬼",
+   "group": "game",
+   "num": "hero-184",
+   "src": "src/renderer/img/hero-184.png",
+   "list": "miniprogram/img/hero-184.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-184.webp",
+   "listBytes": 1758,
+   "detailBytes": 2716
+  },
+  "曼侬": {
+   "name": "曼侬",
+   "group": "game",
+   "num": "hero-185",
+   "src": "src/renderer/img/hero-185.png",
+   "list": "miniprogram/img/hero-185.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-185.webp",
+   "listBytes": 3732,
+   "detailBytes": 6164
+  },
+  "李允珍": {
+   "name": "李允珍",
+   "group": "game",
+   "num": "hero-186",
+   "src": "src/renderer/img/hero-186.png",
+   "list": "miniprogram/img/hero-186.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-186.webp",
+   "listBytes": 1616,
+   "detailBytes": 2494
+  },
+  "凤敏": {
+   "name": "凤敏",
+   "group": "game",
+   "num": "hero-187",
+   "src": "src/renderer/img/hero-187.png",
+   "list": "miniprogram/img/hero-187.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-187.webp",
+   "listBytes": 1456,
+   "detailBytes": 2322
+  },
+  "迪莫": {
+   "name": "迪莫",
+   "group": "game",
+   "num": "hero-188",
+   "src": "src/renderer/img/hero-188.png",
+   "list": "miniprogram/img/hero-188.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-188.webp",
+   "listBytes": 2906,
+   "detailBytes": 4632
+  },
+  "魔力猫": {
+   "name": "魔力猫",
+   "group": "game",
+   "num": "hero-189",
+   "src": "src/renderer/img/hero-189.png",
+   "list": "miniprogram/img/hero-189.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-189.webp",
+   "listBytes": 2092,
+   "detailBytes": 3282
+  },
+  "阿米娅": {
+   "name": "阿米娅",
+   "group": "game",
+   "num": "hero-190",
+   "src": "src/renderer/img/hero-190.png",
+   "list": "miniprogram/img/hero-190.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-190.webp",
+   "listBytes": 798,
+   "detailBytes": 1222
+  },
+  "乌尔比安": {
+   "name": "乌尔比安",
+   "group": "game",
+   "num": "hero-191",
+   "src": "src/renderer/img/hero-191.png",
+   "list": "miniprogram/img/hero-191.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-191.webp",
+   "listBytes": 3148,
+   "detailBytes": 5076
+  },
+  "大天狗": {
+   "name": "大天狗",
+   "group": "game",
+   "num": "hero-624",
+   "src": "src/renderer/img/hero-624.png",
+   "list": "miniprogram/img/hero-624.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-624.webp",
+   "listBytes": 1778,
+   "detailBytes": 2744
+  },
+  "知更鸟": {
+   "name": "知更鸟",
+   "group": "game",
+   "num": "hero-193",
+   "src": "src/renderer/img/hero-193.png",
+   "list": "miniprogram/img/hero-193.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-193.webp",
+   "listBytes": 3460,
+   "detailBytes": 5712
+  },
+  "罗玉凤": {
+   "name": "罗玉凤",
+   "group": "real",
+   "num": "hero-200",
+   "src": "src/renderer/img/hero-200.png",
+   "list": "miniprogram/img/hero-200.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-200.webp",
+   "listBytes": 2040,
+   "detailBytes": 3224
+  },
+  "英中啊英中": {
+   "name": "英中啊英中",
+   "group": "real",
+   "num": "hero-201",
+   "src": "src/renderer/img/hero-201.png",
+   "list": "miniprogram/img/hero-201.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-201.webp",
+   "listBytes": 1310,
+   "detailBytes": 1796
+  },
+  "FLY组合": {
+   "name": "FLY组合",
+   "group": "real",
+   "num": "hero-638",
+   "src": "src/renderer/img/hero-638.png",
+   "list": "miniprogram/img/hero-638.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-638.webp",
+   "listBytes": 1316,
+   "detailBytes": 2188
+  },
+  "张元英": {
+   "name": "张元英",
+   "group": "real",
+   "num": "hero-203",
+   "src": "src/renderer/img/hero-203.png",
+   "list": "miniprogram/img/hero-203.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-203.webp",
+   "listBytes": 1386,
+   "detailBytes": 2040
+  },
+  "孙尚香": {
+   "name": "孙尚香",
+   "group": "game",
+   "num": "hero-205",
+   "src": "src/renderer/img/hero-205.png",
+   "list": "miniprogram/img/hero-205.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-205.webp",
+   "listBytes": 2120,
+   "detailBytes": 3260
+  },
+  "百里守约": {
+   "name": "百里守约",
+   "group": "game",
+   "num": "hero-206",
+   "src": "src/renderer/img/hero-206.png",
+   "list": "miniprogram/img/hero-206.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-206.webp",
+   "listBytes": 1714,
+   "detailBytes": 2784
+  },
+  "杨玉环": {
+   "name": "杨玉环",
+   "group": "game",
+   "num": "hero-204",
+   "src": "src/renderer/img/hero-204.png",
+   "list": "miniprogram/img/hero-204.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-204.webp",
+   "listBytes": 1612,
+   "detailBytes": 2572
+  },
+  "青行灯": {
+   "name": "青行灯",
+   "group": "game",
+   "num": "hero-207",
+   "src": "src/renderer/img/hero-207.png",
+   "list": "miniprogram/img/hero-207.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-207.webp",
+   "listBytes": 1894,
+   "detailBytes": 2938
+  },
+  "黑天鹅": {
+   "name": "黑天鹅",
+   "group": "game",
+   "num": "hero-625",
+   "src": "src/renderer/img/hero-625.png",
+   "list": "miniprogram/img/hero-625.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-625.webp",
+   "listBytes": 2342,
+   "detailBytes": 4010
+  },
+  "陈": {
+   "name": "陈",
+   "group": "game",
+   "num": "hero-209",
+   "src": "src/renderer/img/hero-209.png",
+   "list": "miniprogram/img/hero-209.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-209.webp",
+   "listBytes": 1178,
+   "detailBytes": 1880
+  },
+  "青子": {
+   "name": "青子",
+   "group": "game",
+   "num": "hero-210",
+   "src": "src/renderer/img/hero-210.png",
+   "list": "miniprogram/img/hero-210.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-210.webp",
+   "listBytes": 3606,
+   "detailBytes": 5916
+  },
+  "琴女": {
+   "name": "琴女",
+   "group": "game",
+   "num": "hero-614",
+   "src": "src/renderer/img/hero-614.png",
+   "list": "miniprogram/img/hero-614.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-614.webp",
+   "listBytes": 2372,
+   "detailBytes": 3908
+  },
+  "本吧英雄绰号大科普": {
+   "name": "本吧英雄绰号大科普",
+   "group": "up",
+   "num": "hero-212",
+   "src": "src/renderer/img/hero-212.png",
+   "list": "miniprogram/img/hero-212.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-212.webp",
+   "listBytes": 1434,
+   "detailBytes": 2160
+  },
+  "聊赠一枝竹": {
+   "name": "聊赠一枝竹",
+   "group": "up",
+   "num": "hero-213",
+   "src": "src/renderer/img/hero-213.png",
+   "list": "miniprogram/img/hero-213.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-213.webp",
+   "listBytes": 2734,
+   "detailBytes": 4034
+  },
+  "杯糕姐": {
+   "name": "杯糕姐",
+   "group": "up",
+   "num": "hero-639",
+   "src": "src/renderer/img/hero-639.png",
+   "list": "miniprogram/img/hero-639.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-639.webp",
+   "listBytes": 1998,
+   "detailBytes": 3288
+  },
+  "淋形针LinerClip": {
+   "name": "淋形针LinerClip",
+   "group": "up",
+   "num": "hero-229",
+   "src": "src/renderer/img/hero-229.png",
+   "list": "miniprogram/img/hero-229.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-229.webp",
+   "listBytes": 2170,
+   "detailBytes": 3442
+  },
+  "安妮": {
+   "name": "安妮",
+   "group": "game",
+   "num": "hero-230",
+   "src": "src/renderer/img/hero-230.png",
+   "list": "miniprogram/img/hero-230.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-230.webp",
+   "listBytes": 2336,
+   "detailBytes": 3860
+  },
+  "瑟庄妮": {
+   "name": "瑟庄妮",
+   "group": "game",
+   "num": "hero-231",
+   "src": "src/renderer/img/hero-231.png",
+   "list": "miniprogram/img/hero-231.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-231.webp",
+   "listBytes": 1860,
+   "detailBytes": 3054
+  },
+  "卡特琳娜": {
+   "name": "卡特琳娜",
+   "group": "game",
+   "num": "hero-232",
+   "src": "src/renderer/img/hero-232.png",
+   "list": "miniprogram/img/hero-232.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-232.webp",
+   "listBytes": 1488,
+   "detailBytes": 2590
+  },
+  "丽桑卓": {
+   "name": "丽桑卓",
+   "group": "game",
+   "num": "hero-233",
+   "src": "src/renderer/img/hero-233.png",
+   "list": "miniprogram/img/hero-233.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-233.webp",
+   "listBytes": 2760,
+   "detailBytes": 4666
+  },
+  "婕拉": {
+   "name": "婕拉",
+   "group": "game",
+   "num": "hero-234",
+   "src": "src/renderer/img/hero-234.png",
+   "list": "miniprogram/img/hero-234.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-234.webp",
+   "listBytes": 1860,
+   "detailBytes": 3046
+  },
+  "克烈": {
+   "name": "克烈",
+   "group": "game",
+   "num": "hero-235",
+   "src": "src/renderer/img/hero-235.png",
+   "list": "miniprogram/img/hero-235.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-235.webp",
+   "listBytes": 1358,
+   "detailBytes": 2112
+  },
+  "阿木木": {
+   "name": "阿木木",
+   "group": "game",
+   "num": "hero-236",
+   "src": "src/renderer/img/hero-236.png",
+   "list": "miniprogram/img/hero-236.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-236.webp",
+   "listBytes": 1926,
+   "detailBytes": 3060
+  },
+  "芮尔": {
+   "name": "芮尔",
+   "group": "game",
+   "num": "hero-237",
+   "src": "src/renderer/img/hero-237.png",
+   "list": "miniprogram/img/hero-237.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-237.webp",
+   "listBytes": 2078,
+   "detailBytes": 3442
+  },
+  "奈德丽": {
+   "name": "奈德丽",
+   "group": "game",
+   "num": "hero-238",
+   "src": "src/renderer/img/hero-238.png",
+   "list": "miniprogram/img/hero-238.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-238.webp",
+   "listBytes": 1590,
+   "detailBytes": 2584
+  },
+  "厄运小姐": {
+   "name": "厄运小姐",
+   "group": "game",
+   "num": "hero-239",
+   "src": "src/renderer/img/hero-239.png",
+   "list": "miniprogram/img/hero-239.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-239.webp",
+   "listBytes": 3142,
+   "detailBytes": 5098
+  },
+  "乐芙娜": {
+   "name": "乐芙娜",
+   "group": "game",
+   "num": "hero-240",
+   "src": "src/renderer/img/hero-240.png",
+   "list": "miniprogram/img/hero-240.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-240.webp",
+   "listBytes": 2006,
+   "detailBytes": 3184
+  },
+  "凝光": {
+   "name": "凝光",
+   "group": "game",
+   "num": "hero-241",
+   "src": "src/renderer/img/hero-241.png",
+   "list": "miniprogram/img/hero-241.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-241.webp",
+   "listBytes": 2832,
+   "detailBytes": 4692
+  },
+  "坎蒂丝": {
+   "name": "坎蒂丝",
+   "group": "game",
+   "num": "hero-242",
+   "src": "src/renderer/img/hero-242.png",
+   "list": "miniprogram/img/hero-242.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-242.webp",
+   "listBytes": 2856,
+   "detailBytes": 4492
+  },
+  "梦见月瑞希": {
+   "name": "梦见月瑞希",
+   "group": "game",
+   "num": "hero-243",
+   "src": "src/renderer/img/hero-243.png",
+   "list": "miniprogram/img/hero-243.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-243.webp",
+   "listBytes": 3464,
+   "detailBytes": 5724
+  },
+  "翡翠": {
+   "name": "翡翠",
+   "group": "game",
+   "num": "hero-244",
+   "src": "src/renderer/img/hero-244.png",
+   "list": "miniprogram/img/hero-244.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-244.webp",
+   "listBytes": 992,
+   "detailBytes": 1476
+  },
+  "灵砂": {
+   "name": "灵砂",
+   "group": "game",
+   "num": "hero-245",
+   "src": "src/renderer/img/hero-245.png",
+   "list": "miniprogram/img/hero-245.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-245.webp",
+   "listBytes": 1928,
+   "detailBytes": 3028
+  },
+  "黑塔": {
+   "name": "黑塔",
+   "group": "game",
+   "num": "hero-246",
+   "src": "src/renderer/img/hero-246.png",
+   "list": "miniprogram/img/hero-246.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-246.webp",
+   "listBytes": 1508,
+   "detailBytes": 2332
+  },
+  "女娲": {
+   "name": "女娲",
+   "group": "game",
+   "num": "hero-247",
+   "src": "src/renderer/img/hero-247.png",
+   "list": "miniprogram/img/hero-247.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-247.webp",
+   "listBytes": 2616,
+   "detailBytes": 4510
+  },
+  "安琪拉": {
+   "name": "安琪拉",
+   "group": "game",
+   "num": "hero-248",
+   "src": "src/renderer/img/hero-248.png",
+   "list": "miniprogram/img/hero-248.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-248.webp",
+   "listBytes": 3540,
+   "detailBytes": 5714
+  },
+  "芈月": {
+   "name": "芈月",
+   "group": "game",
+   "num": "hero-249",
+   "src": "src/renderer/img/hero-249.png",
+   "list": "miniprogram/img/hero-249.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-249.webp",
+   "listBytes": 2274,
+   "detailBytes": 3612
+  },
+  "镜": {
+   "name": "镜",
+   "group": "game",
+   "num": "hero-250",
+   "src": "src/renderer/img/hero-250.png",
+   "list": "miniprogram/img/hero-250.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-250.webp",
+   "listBytes": 2052,
+   "detailBytes": 3392
+  },
+  "海诺": {
+   "name": "海诺",
+   "group": "game",
+   "num": "hero-251",
+   "src": "src/renderer/img/hero-251.png",
+   "list": "miniprogram/img/hero-251.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-251.webp",
+   "listBytes": 2012,
+   "detailBytes": 3018
+  },
+  "重岳": {
+   "name": "重岳",
+   "group": "game",
+   "num": "hero-252",
+   "src": "src/renderer/img/hero-252.png",
+   "list": "miniprogram/img/hero-252.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-252.webp",
+   "listBytes": 1376,
+   "detailBytes": 2128
+  },
+  "玛恩纳": {
+   "name": "玛恩纳",
+   "group": "game",
+   "num": "hero-253",
+   "src": "src/renderer/img/hero-253.png",
+   "list": "miniprogram/img/hero-253.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-253.webp",
+   "listBytes": 2872,
+   "detailBytes": 4598
+  },
+  "龙舌兰": {
+   "name": "龙舌兰",
+   "group": "game",
+   "num": "hero-254",
+   "src": "src/renderer/img/hero-254.png",
+   "list": "miniprogram/img/hero-254.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-254.webp",
+   "listBytes": 1126,
+   "detailBytes": 1770
+  },
+  "能天使": {
+   "name": "能天使",
+   "group": "game",
+   "num": "hero-255",
+   "src": "src/renderer/img/hero-255.png",
+   "list": "miniprogram/img/hero-255.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-255.webp",
+   "listBytes": 1898,
+   "detailBytes": 2986
+  },
+  "红蝶": {
+   "name": "红蝶",
+   "group": "game",
+   "num": "hero-256",
+   "src": "src/renderer/img/hero-256.png",
+   "list": "miniprogram/img/hero-256.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-256.webp",
+   "listBytes": 1160,
+   "detailBytes": 1782
+  },
+  "杰克": {
+   "name": "杰克",
+   "group": "game",
+   "num": "hero-257",
+   "src": "src/renderer/img/hero-257.png",
+   "list": "miniprogram/img/hero-257.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-257.webp",
+   "listBytes": 1718,
+   "detailBytes": 2720
+  },
+  "孔雀明王": {
+   "name": "孔雀明王",
+   "group": "game",
+   "num": "hero-258",
+   "src": "src/renderer/img/hero-258.png",
+   "list": "miniprogram/img/hero-258.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-258.webp",
+   "listBytes": 1944,
+   "detailBytes": 3130
+  },
+  "三角头": {
+   "name": "三角头",
+   "group": "game",
+   "num": "hero-259",
+   "src": "src/renderer/img/hero-259.png",
+   "list": "miniprogram/img/hero-259.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-259.webp",
+   "listBytes": 1804,
+   "detailBytes": 2890
+  },
+  "德古拉": {
+   "name": "德古拉",
+   "group": "game",
+   "num": "hero-260",
+   "src": "src/renderer/img/hero-260.png",
+   "list": "miniprogram/img/hero-260.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-260.webp",
+   "listBytes": 1352,
+   "detailBytes": 2168
+  },
+  "胡艺莲": {
+   "name": "胡艺莲",
+   "group": "up",
+   "num": "hero-640",
+   "src": "src/renderer/img/hero-640.png",
+   "list": "miniprogram/img/hero-640.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-640.webp",
+   "listBytes": 974,
+   "detailBytes": 1394
+  },
+  "芒果君101号": {
+   "name": "芒果君101号",
+   "group": "up",
+   "num": "hero-261",
+   "src": "src/renderer/img/hero-261.png",
+   "list": "miniprogram/img/hero-261.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-261.webp",
+   "listBytes": 1654,
+   "detailBytes": 2752
+  },
+  "一个安东尼": {
+   "name": "一个安东尼",
+   "group": "up",
+   "num": "hero-262",
+   "src": "src/renderer/img/hero-262.png",
+   "list": "miniprogram/img/hero-262.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-262.webp",
+   "listBytes": 3336,
+   "detailBytes": 5906
+  },
+  "零时序": {
+   "name": "零时序",
+   "group": "up",
+   "num": "hero-263",
+   "src": "src/renderer/img/hero-263.png",
+   "list": "miniprogram/img/hero-263.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-263.webp",
+   "listBytes": 1368,
+   "detailBytes": 2070
+  },
+  "不是地才素天才": {
+   "name": "不是地才素天才",
+   "group": "up",
+   "num": "hero-264",
+   "src": "src/renderer/img/hero-264.png",
+   "list": "miniprogram/img/hero-264.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-264.webp",
+   "listBytes": 2818,
+   "detailBytes": 4472
+  },
+  "松下丶Aoki": {
+   "name": "松下丶Aoki",
+   "group": "up",
+   "num": "hero-265",
+   "src": "src/renderer/img/hero-265.png",
+   "list": "miniprogram/img/hero-265.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-265.webp",
+   "listBytes": 2004,
+   "detailBytes": 3286
+  },
+  "阴TV": {
+   "name": "阴TV",
+   "group": "up",
+   "num": "hero-266",
+   "src": "src/renderer/img/hero-266.png",
+   "list": "miniprogram/img/hero-266.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-266.webp",
+   "listBytes": 1082,
+   "detailBytes": 1534
+  },
+  "poke萌虻": {
+   "name": "poke萌虻",
+   "group": "up",
+   "num": "hero-267",
+   "src": "src/renderer/img/hero-267.png",
+   "list": "miniprogram/img/hero-267.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-267.webp",
+   "listBytes": 3274,
+   "detailBytes": 5156
+  },
+  "xx辰丶": {
+   "name": "xx辰丶",
+   "group": "up",
+   "num": "hero-268",
+   "src": "src/renderer/img/hero-268.png",
+   "list": "miniprogram/img/hero-268.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-268.webp",
+   "listBytes": 1498,
+   "detailBytes": 2418
+  },
+  "郭门小神童": {
+   "name": "郭门小神童",
+   "group": "up",
+   "num": "hero-269",
+   "src": "src/renderer/img/hero-269.png",
+   "list": "miniprogram/img/hero-269.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-269.webp",
+   "listBytes": 1474,
+   "detailBytes": 2376
+  },
+  "大副": {
+   "name": "大副",
+   "group": "game",
+   "num": "hero-271",
+   "src": "src/renderer/img/hero-271.png",
+   "list": "miniprogram/img/hero-271.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-271.webp",
+   "listBytes": 1158,
+   "detailBytes": 1914
+  },
+  "玛薇卡": {
+   "name": "玛薇卡",
+   "group": "game",
+   "num": "hero-272",
+   "src": "src/renderer/img/hero-272.png",
+   "list": "miniprogram/img/hero-272.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-272.webp",
+   "listBytes": 2104,
+   "detailBytes": 3480
+  },
+  "火神": {
+   "name": "火神",
+   "group": "game",
+   "num": "hero-273",
+   "src": "src/renderer/img/hero-273.png",
+   "list": "miniprogram/img/hero-273.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-273.webp",
+   "listBytes": 1982,
+   "detailBytes": 3066
+  },
+  "冥古龙": {
+   "name": "冥古龙",
+   "group": "game",
+   "num": "hero-274",
+   "src": "src/renderer/img/hero-274.png",
+   "list": "miniprogram/img/hero-274.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-274.webp",
+   "listBytes": 2718,
+   "detailBytes": 4404
+  },
+  "花衣蝶": {
+   "name": "花衣蝶",
+   "group": "game",
+   "num": "hero-275",
+   "src": "src/renderer/img/hero-275.png",
+   "list": "miniprogram/img/hero-275.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-275.webp",
+   "listBytes": 2254,
+   "detailBytes": 3728
+  },
+  "音速犬": {
+   "name": "音速犬",
+   "group": "game",
+   "num": "hero-277",
+   "src": "src/renderer/img/hero-277.png",
+   "list": "miniprogram/img/hero-277.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-277.webp",
+   "listBytes": 3396,
+   "detailBytes": 5168
+  },
+  "恶魔狼": {
+   "name": "恶魔狼",
+   "group": "game",
+   "num": "hero-278",
+   "src": "src/renderer/img/hero-278.png",
+   "list": "miniprogram/img/hero-278.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-278.webp",
+   "listBytes": 2658,
+   "detailBytes": 3932
+  },
+  "雪影娃娃": {
+   "name": "雪影娃娃",
+   "group": "game",
+   "num": "hero-279",
+   "src": "src/renderer/img/hero-279.png",
+   "list": "miniprogram/img/hero-279.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-279.webp",
+   "listBytes": 3174,
+   "detailBytes": 5244
+  },
+  "布灵布灵": {
+   "name": "布灵布灵",
+   "group": "game",
+   "num": "hero-281",
+   "src": "src/renderer/img/hero-281.png",
+   "list": "miniprogram/img/hero-281.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-281.webp",
+   "listBytes": 1440,
+   "detailBytes": 2028
+  },
+  "波多西": {
+   "name": "波多西",
+   "group": "game",
+   "num": "hero-282",
+   "src": "src/renderer/img/hero-282.png",
+   "list": "miniprogram/img/hero-282.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-282.webp",
+   "listBytes": 2290,
+   "detailBytes": 3498
+  },
+  "饮雪狂兽": {
+   "name": "饮雪狂兽",
+   "group": "game",
+   "num": "hero-283",
+   "src": "src/renderer/img/hero-283.png",
+   "list": "miniprogram/img/hero-283.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-283.webp",
+   "listBytes": 2698,
+   "detailBytes": 4138
+  },
+  "水灵": {
+   "name": "水灵",
+   "group": "game",
+   "num": "hero-284",
+   "src": "src/renderer/img/hero-284.png",
+   "list": "miniprogram/img/hero-284.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-284.webp",
+   "listBytes": 1466,
+   "detailBytes": 2262
+  },
+  "彩蝶鲨": {
+   "name": "彩蝶鲨",
+   "group": "game",
+   "num": "hero-285",
+   "src": "src/renderer/img/hero-285.png",
+   "list": "miniprogram/img/hero-285.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-285.webp",
+   "listBytes": 2694,
+   "detailBytes": 4120
+  },
+  "白金独角兽": {
+   "name": "白金独角兽",
+   "group": "game",
+   "num": "hero-286",
+   "src": "src/renderer/img/hero-286.png",
+   "list": "miniprogram/img/hero-286.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-286.webp",
+   "listBytes": 1940,
+   "detailBytes": 2992
+  },
+  "奇梦咪": {
+   "name": "奇梦咪",
+   "group": "game",
+   "num": "hero-287",
+   "src": "src/renderer/img/hero-287.png",
+   "list": "miniprogram/img/hero-287.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-287.webp",
+   "listBytes": 1916,
+   "detailBytes": 2952
+  },
+  "小幽幽": {
+   "name": "小幽幽",
+   "group": "game",
+   "num": "hero-288",
+   "src": "src/renderer/img/hero-288.png",
+   "list": "miniprogram/img/hero-288.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-288.webp",
+   "listBytes": 2598,
+   "detailBytes": 3754
+  },
+  "一只高脂阴猫": {
+   "name": "一只高脂阴猫",
+   "group": "up",
+   "num": "hero-289",
+   "src": "src/renderer/img/hero-289.png",
+   "list": "miniprogram/img/hero-289.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-289.webp",
+   "listBytes": 1486,
+   "detailBytes": 2268
+  },
+  "翊坤宫娘娘": {
+   "name": "翊坤宫娘娘",
+   "group": "up",
+   "num": "hero-290",
+   "src": "src/renderer/img/hero-290.png",
+   "list": "miniprogram/img/hero-290.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-290.webp",
+   "listBytes": 2046,
+   "detailBytes": 3036
+  },
+  "森先茶茶": {
+   "name": "森先茶茶",
+   "group": "up",
+   "num": "hero-291",
+   "src": "src/renderer/img/hero-291.png",
+   "list": "miniprogram/img/hero-291.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-291.webp",
+   "listBytes": 2518,
+   "detailBytes": 3828
+  },
+  "南极石化了": {
+   "name": "南极石化了",
+   "group": "up",
+   "num": "hero-292",
+   "src": "src/renderer/img/hero-292.png",
+   "list": "miniprogram/img/hero-292.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-292.webp",
+   "listBytes": 1296,
+   "detailBytes": 1958
+  },
+  "苏卡Remix": {
+   "name": "苏卡Remix",
+   "group": "up",
+   "num": "hero-293",
+   "src": "src/renderer/img/hero-293.png",
+   "list": "miniprogram/img/hero-293.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-293.webp",
+   "listBytes": 2878,
+   "detailBytes": 4642
+  },
+  "喵喵": {
+   "name": "喵喵",
+   "group": "game",
+   "num": "hero-294",
+   "src": "src/renderer/img/hero-294.png",
+   "list": "miniprogram/img/hero-294.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-294.webp",
+   "listBytes": 886,
+   "detailBytes": 1422
+  },
+  "火花": {
+   "name": "火花",
+   "group": "game",
+   "num": "hero-642",
+   "src": "src/renderer/img/hero-642.png",
+   "list": "miniprogram/img/hero-642.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-642.webp",
+   "listBytes": 1940,
+   "detailBytes": 2884
+  },
+  "罗隐": {
+   "name": "罗隐",
+   "group": "game",
+   "num": "hero-296",
+   "src": "src/renderer/img/hero-296.png",
+   "list": "miniprogram/img/hero-296.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-296.webp",
+   "listBytes": 2100,
+   "detailBytes": 3390
+  },
+  "瞌睡王": {
+   "name": "瞌睡王",
+   "group": "game",
+   "num": "hero-297",
+   "src": "src/renderer/img/hero-297.png",
+   "list": "miniprogram/img/hero-297.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-297.webp",
+   "listBytes": 2468,
+   "detailBytes": 3858
+  },
+  "鸭吉吉": {
+   "name": "鸭吉吉",
+   "group": "game",
+   "num": "hero-298",
+   "src": "src/renderer/img/hero-298.png",
+   "list": "miniprogram/img/hero-298.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-298.webp",
+   "listBytes": 1346,
+   "detailBytes": 2028
+  },
+  "水球球": {
+   "name": "水球球",
+   "group": "game",
+   "num": "hero-299",
+   "src": "src/renderer/img/hero-299.png",
+   "list": "miniprogram/img/hero-299.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-299.webp",
+   "listBytes": 732,
+   "detailBytes": 1190
+  },
+  "奇丽花": {
+   "name": "奇丽花",
+   "group": "game",
+   "num": "hero-300",
+   "src": "src/renderer/img/hero-300.png",
+   "list": "miniprogram/img/hero-300.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-300.webp",
+   "listBytes": 1154,
+   "detailBytes": 1636
+  },
+  "草依虫": {
+   "name": "草依虫",
+   "group": "game",
+   "num": "hero-301",
+   "src": "src/renderer/img/hero-301.png",
+   "list": "miniprogram/img/hero-301.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-301.webp",
+   "listBytes": 1422,
+   "detailBytes": 2210
+  },
+  "鬼雾": {
+   "name": "鬼雾",
+   "group": "game",
+   "num": "hero-302",
+   "src": "src/renderer/img/hero-302.png",
+   "list": "miniprogram/img/hero-302.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-302.webp",
+   "listBytes": 786,
+   "detailBytes": 1182
+  },
+  "利灯鱼": {
+   "name": "利灯鱼",
+   "group": "game",
+   "num": "hero-303",
+   "src": "src/renderer/img/hero-303.png",
+   "list": "miniprogram/img/hero-303.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-303.webp",
+   "listBytes": 1070,
+   "detailBytes": 1718
+  },
+  "炫目鸡": {
+   "name": "炫目鸡",
+   "group": "game",
+   "num": "hero-304",
+   "src": "src/renderer/img/hero-304.png",
+   "list": "miniprogram/img/hero-304.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-304.webp",
+   "listBytes": 808,
+   "detailBytes": 1284
+  },
+  "刺蜗贝": {
+   "name": "刺蜗贝",
+   "group": "game",
+   "num": "hero-305",
+   "src": "src/renderer/img/hero-305.png",
+   "list": "miniprogram/img/hero-305.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-305.webp",
+   "listBytes": 1388,
+   "detailBytes": 2114
+  },
+  "独眼巨魔": {
+   "name": "独眼巨魔",
+   "group": "game",
+   "num": "hero-306",
+   "src": "src/renderer/img/hero-306.png",
+   "list": "miniprogram/img/hero-306.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-306.webp",
+   "listBytes": 1008,
+   "detailBytes": 1526
+  },
+  "河马小天使": {
+   "name": "河马小天使",
+   "group": "game",
+   "num": "hero-307",
+   "src": "src/renderer/img/hero-307.png",
+   "list": "miniprogram/img/hero-307.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-307.webp",
+   "listBytes": 1576,
+   "detailBytes": 2480
+  },
+  "喷火鸟": {
+   "name": "喷火鸟",
+   "group": "game",
+   "num": "hero-308",
+   "src": "src/renderer/img/hero-308.png",
+   "list": "miniprogram/img/hero-308.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-308.webp",
+   "listBytes": 1868,
+   "detailBytes": 2986
+  },
+  "陈铁兽": {
+   "name": "陈铁兽",
+   "group": "game",
+   "num": "hero-309",
+   "src": "src/renderer/img/hero-309.png",
+   "list": "miniprogram/img/hero-309.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-309.webp",
+   "listBytes": 2294,
+   "detailBytes": 3664
+  },
+  "龙希帕尔": {
+   "name": "龙希帕尔",
+   "group": "game",
+   "num": "hero-310",
+   "src": "src/renderer/img/hero-310.png",
+   "list": "miniprogram/img/hero-310.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-310.webp",
+   "listBytes": 1168,
+   "detailBytes": 1856
+  },
+  "圣羽翼王": {
+   "name": "圣羽翼王",
+   "group": "game",
+   "num": "hero-311",
+   "src": "src/renderer/img/hero-311.png",
+   "list": "miniprogram/img/hero-311.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-311.webp",
+   "listBytes": 2214,
+   "detailBytes": 3400
+  },
+  "幽颖树": {
+   "name": "幽颖树",
+   "group": "game",
+   "num": "hero-312",
+   "src": "src/renderer/img/hero-312.png",
+   "list": "miniprogram/img/hero-312.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-312.webp",
+   "listBytes": 2212,
+   "detailBytes": 3484
+  },
+  "幽铃": {
+   "name": "幽铃",
+   "group": "game",
+   "num": "hero-313",
+   "src": "src/renderer/img/hero-313.png",
+   "list": "miniprogram/img/hero-313.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-313.webp",
+   "listBytes": 1768,
+   "detailBytes": 2844
+  },
+  "多灵主": {
+   "name": "多灵主",
+   "group": "game",
+   "num": "hero-314",
+   "src": "src/renderer/img/hero-314.png",
+   "list": "miniprogram/img/hero-314.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-314.webp",
+   "listBytes": 2050,
+   "detailBytes": 3124
+  },
+  "巴哈姆特": {
+   "name": "巴哈姆特",
+   "group": "game",
+   "num": "hero-315",
+   "src": "src/renderer/img/hero-315.png",
+   "list": "miniprogram/img/hero-315.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-315.webp",
+   "listBytes": 3076,
+   "detailBytes": 5108
+  },
+  "凡鹰": {
+   "name": "凡鹰",
+   "group": "game",
+   "num": "hero-316",
+   "src": "src/renderer/img/hero-316.png",
+   "list": "miniprogram/img/hero-316.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-316.webp",
+   "listBytes": 1346,
+   "detailBytes": 2074
+  },
+  "大耳帽兜": {
+   "name": "大耳帽兜",
+   "group": "game",
+   "num": "hero-317",
+   "src": "src/renderer/img/hero-317.png",
+   "list": "miniprogram/img/hero-317.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-317.webp",
+   "listBytes": 1684,
+   "detailBytes": 2488
+  },
+  "卡瓦重": {
+   "name": "卡瓦重",
+   "group": "game",
+   "num": "hero-318",
+   "src": "src/renderer/img/hero-318.png",
+   "list": "miniprogram/img/hero-318.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-318.webp",
+   "listBytes": 1836,
+   "detailBytes": 2834
+  },
+  "阿布": {
+   "name": "阿布",
+   "group": "game",
+   "num": "hero-319",
+   "src": "src/renderer/img/hero-319.png",
+   "list": "miniprogram/img/hero-319.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-319.webp",
+   "listBytes": 1648,
+   "detailBytes": 2518
+  },
+  "卷毛鸭": {
+   "name": "卷毛鸭",
+   "group": "game",
+   "num": "hero-320",
+   "src": "src/renderer/img/hero-320.png",
+   "list": "miniprogram/img/hero-320.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-320.webp",
+   "listBytes": 1014,
+   "detailBytes": 1536
+  },
+  "云梦豚": {
+   "name": "云梦豚",
+   "group": "game",
+   "num": "hero-321",
+   "src": "src/renderer/img/hero-321.png",
+   "list": "miniprogram/img/hero-321.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-321.webp",
+   "listBytes": 712,
+   "detailBytes": 1110
+  },
+  "吉洛斯": {
+   "name": "吉洛斯",
+   "group": "game",
+   "num": "hero-322",
+   "src": "src/renderer/img/hero-322.png",
+   "list": "miniprogram/img/hero-322.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-322.webp",
+   "listBytes": 824,
+   "detailBytes": 1388
+  },
+  "咔咔鸟": {
+   "name": "咔咔鸟",
+   "group": "game",
+   "num": "hero-323",
+   "src": "src/renderer/img/hero-323.png",
+   "list": "miniprogram/img/hero-323.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-323.webp",
+   "listBytes": 2006,
+   "detailBytes": 3114
+  },
+  "梦想三三": {
+   "name": "梦想三三",
+   "group": "game",
+   "num": "hero-324",
+   "src": "src/renderer/img/hero-324.png",
+   "list": "miniprogram/img/hero-324.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-324.webp",
+   "listBytes": 2252,
+   "detailBytes": 3392
+  },
+  "绒仙子": {
+   "name": "绒仙子",
+   "group": "game",
+   "num": "hero-325",
+   "src": "src/renderer/img/hero-325.png",
+   "list": "miniprogram/img/hero-325.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-325.webp",
+   "listBytes": 1224,
+   "detailBytes": 1772
+  },
+  "失心蜂": {
+   "name": "失心蜂",
+   "group": "game",
+   "num": "hero-326",
+   "src": "src/renderer/img/hero-326.png",
+   "list": "miniprogram/img/hero-326.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-326.webp",
+   "listBytes": 1948,
+   "detailBytes": 2984
+  },
+  "障眼魔": {
+   "name": "障眼魔",
+   "group": "game",
+   "num": "hero-327",
+   "src": "src/renderer/img/hero-327.png",
+   "list": "miniprogram/img/hero-327.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-327.webp",
+   "listBytes": 1592,
+   "detailBytes": 2520
+  },
+  "夜游魔": {
+   "name": "夜游魔",
+   "group": "game",
+   "num": "hero-328",
+   "src": "src/renderer/img/hero-328.png",
+   "list": "miniprogram/img/hero-328.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-328.webp",
+   "listBytes": 1700,
+   "detailBytes": 2790
+  },
+  "上岸蛙": {
+   "name": "上岸蛙",
+   "group": "game",
+   "num": "hero-329",
+   "src": "src/renderer/img/hero-329.png",
+   "list": "miniprogram/img/hero-329.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-329.webp",
+   "listBytes": 1268,
+   "detailBytes": 2008
+  },
+  "吸泥鸥": {
+   "name": "吸泥鸥",
+   "group": "game",
+   "num": "hero-330",
+   "src": "src/renderer/img/hero-330.png",
+   "list": "miniprogram/img/hero-330.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-330.webp",
+   "listBytes": 1158,
+   "detailBytes": 1748
+  },
+  "朔夜伊芙": {
+   "name": "朔夜伊芙",
+   "group": "game",
+   "num": "hero-331",
+   "src": "src/renderer/img/hero-331.png",
+   "list": "miniprogram/img/hero-331.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-331.webp",
+   "listBytes": 1602,
+   "detailBytes": 2618
+  },
+  "茶博士蔚星": {
+   "name": "茶博士蔚星",
+   "group": "game",
+   "num": "hero-332",
+   "src": "src/renderer/img/hero-332.png",
+   "list": "miniprogram/img/hero-332.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-332.webp",
+   "listBytes": 1282,
+   "detailBytes": 2054
+  },
+  "安宁": {
+   "name": "安宁",
+   "group": "game",
+   "num": "hero-333",
+   "src": "src/renderer/img/hero-333.png",
+   "list": "miniprogram/img/hero-333.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-333.webp",
+   "listBytes": 1398,
+   "detailBytes": 2466
+  },
+  "加尔": {
+   "name": "加尔",
+   "group": "game",
+   "num": "hero-641",
+   "src": "src/renderer/img/hero-641.png",
+   "list": "miniprogram/img/hero-641.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-641.webp",
+   "listBytes": 1130,
+   "detailBytes": 1810
+  },
+  "小丑": {
+   "name": "小丑",
+   "group": "game",
+   "num": "hero-564",
+   "src": "src/renderer/img/hero-564.png",
+   "list": "miniprogram/img/hero-564.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-564.webp",
+   "listBytes": 1444,
+   "detailBytes": 2380
+  },
+  "鹿头": {
+   "name": "鹿头",
+   "group": "game",
+   "num": "hero-565",
+   "src": "src/renderer/img/hero-565.png",
+   "list": "miniprogram/img/hero-565.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-565.webp",
+   "listBytes": 2934,
+   "detailBytes": 5312
+  },
+  "宿伞之魂": {
+   "name": "宿伞之魂",
+   "group": "game",
+   "num": "hero-566",
+   "src": "src/renderer/img/hero-566.png",
+   "list": "miniprogram/img/hero-566.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-566.webp",
+   "listBytes": 2152,
+   "detailBytes": 3742
+  },
+  "愚人金": {
+   "name": "愚人金",
+   "group": "game",
+   "num": "hero-341",
+   "src": "src/renderer/img/hero-341.png",
+   "list": "miniprogram/img/hero-341.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-341.webp",
+   "listBytes": 1162,
+   "detailBytes": 1702
+  },
+  "时空之影": {
+   "name": "时空之影",
+   "group": "game",
+   "num": "hero-342",
+   "src": "src/renderer/img/hero-342.png",
+   "list": "miniprogram/img/hero-342.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-342.webp",
+   "listBytes": 1880,
+   "detailBytes": 3158
+  },
+  "喧嚣": {
+   "name": "喧嚣",
+   "group": "game",
+   "num": "hero-343",
+   "src": "src/renderer/img/hero-343.png",
+   "list": "miniprogram/img/hero-343.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-343.webp",
+   "listBytes": 2348,
+   "detailBytes": 3806
+  },
+  "红夫人": {
+   "name": "红夫人",
+   "group": "game",
+   "num": "hero-344",
+   "src": "src/renderer/img/hero-344.png",
+   "list": "miniprogram/img/hero-344.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-344.webp",
+   "listBytes": 1024,
+   "detailBytes": 1588
+  },
+  "摄影师": {
+   "name": "摄影师",
+   "group": "game",
+   "num": "hero-345",
+   "src": "src/renderer/img/hero-345.png",
+   "list": "miniprogram/img/hero-345.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-345.webp",
+   "listBytes": 1346,
+   "detailBytes": 2260
+  },
+  "使徒": {
+   "name": "使徒",
+   "group": "game",
+   "num": "hero-346",
+   "src": "src/renderer/img/hero-346.png",
+   "list": "miniprogram/img/hero-346.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-346.webp",
+   "listBytes": 1352,
+   "detailBytes": 2266
+  },
+  "隐士": {
+   "name": "隐士",
+   "group": "game",
+   "num": "hero-347",
+   "src": "src/renderer/img/hero-347.png",
+   "list": "miniprogram/img/hero-347.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-347.webp",
+   "listBytes": 948,
+   "detailBytes": 1634
+  },
+  "爱哭鬼": {
+   "name": "爱哭鬼",
+   "group": "game",
+   "num": "hero-348",
+   "src": "src/renderer/img/hero-348.png",
+   "list": "miniprogram/img/hero-348.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-348.webp",
+   "listBytes": 900,
+   "detailBytes": 1436
+  },
+  "梦之女巫": {
+   "name": "梦之女巫",
+   "group": "game",
+   "num": "hero-349",
+   "src": "src/renderer/img/hero-349.png",
+   "list": "miniprogram/img/hero-349.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-349.webp",
+   "listBytes": 1552,
+   "detailBytes": 2528
+  },
+  "蜘蛛": {
+   "name": "蜘蛛",
+   "group": "game",
+   "num": "hero-350",
+   "src": "src/renderer/img/hero-350.png",
+   "list": "miniprogram/img/hero-350.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-350.webp",
+   "listBytes": 1760,
+   "detailBytes": 2912
+  },
+  "邦邦": {
+   "name": "邦邦",
+   "group": "game",
+   "num": "hero-351",
+   "src": "src/renderer/img/hero-351.png",
+   "list": "miniprogram/img/hero-351.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-351.webp",
+   "listBytes": 1620,
+   "detailBytes": 2578
+  },
+  "蜡像师": {
+   "name": "蜡像师",
+   "group": "game",
+   "num": "hero-567",
+   "src": "src/renderer/img/hero-567.png",
+   "list": "miniprogram/img/hero-567.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-567.webp",
+   "listBytes": 1076,
+   "detailBytes": 1766
+  },
+  "守夜人": {
+   "name": "守夜人",
+   "group": "game",
+   "num": "hero-353",
+   "src": "src/renderer/img/hero-353.png",
+   "list": "miniprogram/img/hero-353.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-353.webp",
+   "listBytes": 760,
+   "detailBytes": 1198
+  },
+  "破轮": {
+   "name": "破轮",
+   "group": "game",
+   "num": "hero-354",
+   "src": "src/renderer/img/hero-354.png",
+   "list": "miniprogram/img/hero-354.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-354.webp",
+   "listBytes": 1798,
+   "detailBytes": 2990
+  },
+  "黄衣之主": {
+   "name": "黄衣之主",
+   "group": "game",
+   "num": "hero-355",
+   "src": "src/renderer/img/hero-355.png",
+   "list": "miniprogram/img/hero-355.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-355.webp",
+   "listBytes": 2392,
+   "detailBytes": 3960
+  },
+  "记录员": {
+   "name": "记录员",
+   "group": "game",
+   "num": "hero-356",
+   "src": "src/renderer/img/hero-356.png",
+   "list": "miniprogram/img/hero-356.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-356.webp",
+   "listBytes": 1340,
+   "detailBytes": 2170
+  },
+  "疯眼": {
+   "name": "疯眼",
+   "group": "game",
+   "num": "hero-357",
+   "src": "src/renderer/img/hero-357.png",
+   "list": "miniprogram/img/hero-357.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-357.webp",
+   "listBytes": 3134,
+   "detailBytes": 5780
+  },
+  "盲女": {
+   "name": "盲女",
+   "group": "game",
+   "num": "hero-358",
+   "src": "src/renderer/img/hero-358.png",
+   "list": "miniprogram/img/hero-358.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-358.webp",
+   "listBytes": 1350,
+   "detailBytes": 2252
+  },
+  "佣兵": {
+   "name": "佣兵",
+   "group": "game",
+   "num": "hero-359",
+   "src": "src/renderer/img/hero-359.png",
+   "list": "miniprogram/img/hero-359.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-359.webp",
+   "listBytes": 2270,
+   "detailBytes": 3770
+  },
+  "机械师": {
+   "name": "机械师",
+   "group": "game",
+   "num": "hero-568",
+   "src": "src/renderer/img/hero-568.png",
+   "list": "miniprogram/img/hero-568.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-568.webp",
+   "listBytes": 1986,
+   "detailBytes": 3236
+  },
+  "舞女": {
+   "name": "舞女",
+   "group": "game",
+   "num": "hero-569",
+   "src": "src/renderer/img/hero-569.png",
+   "list": "miniprogram/img/hero-569.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-569.webp",
+   "listBytes": 1874,
+   "detailBytes": 3064
+  },
+  "魔术师": {
+   "name": "魔术师",
+   "group": "game",
+   "num": "hero-365",
+   "src": "src/renderer/img/hero-365.png",
+   "list": "miniprogram/img/hero-365.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-365.webp",
+   "listBytes": 2238,
+   "detailBytes": 3746
+  },
+  "冒险家": {
+   "name": "冒险家",
+   "group": "game",
+   "num": "hero-366",
+   "src": "src/renderer/img/hero-366.png",
+   "list": "miniprogram/img/hero-366.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-366.webp",
+   "listBytes": 1354,
+   "detailBytes": 2166
+  },
+  "勘探员": {
+   "name": "勘探员",
+   "group": "game",
+   "num": "hero-367",
+   "src": "src/renderer/img/hero-367.png",
+   "list": "miniprogram/img/hero-367.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-367.webp",
+   "listBytes": 1846,
+   "detailBytes": 3038
+  },
+  "调酒师": {
+   "name": "调酒师",
+   "group": "game",
+   "num": "hero-570",
+   "src": "src/renderer/img/hero-570.png",
+   "list": "miniprogram/img/hero-570.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-570.webp",
+   "listBytes": 1172,
+   "detailBytes": 1880
+  },
+  "杂技演员": {
+   "name": "杂技演员",
+   "group": "game",
+   "num": "hero-571",
+   "src": "src/renderer/img/hero-571.png",
+   "list": "miniprogram/img/hero-571.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-571.webp",
+   "listBytes": 1366,
+   "detailBytes": 2194
+  },
+  "画家": {
+   "name": "画家",
+   "group": "game",
+   "num": "hero-370",
+   "src": "src/renderer/img/hero-370.png",
+   "list": "miniprogram/img/hero-370.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-370.webp",
+   "listBytes": 1240,
+   "detailBytes": 1996
+  },
+  "病患": {
+   "name": "病患",
+   "group": "game",
+   "num": "hero-572",
+   "src": "src/renderer/img/hero-572.png",
+   "list": "miniprogram/img/hero-572.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-572.webp",
+   "listBytes": 2532,
+   "detailBytes": 4614
+  },
+  "心理学家": {
+   "name": "心理学家",
+   "group": "game",
+   "num": "hero-372",
+   "src": "src/renderer/img/hero-372.png",
+   "list": "miniprogram/img/hero-372.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-372.webp",
+   "listBytes": 1198,
+   "detailBytes": 2084
+  },
+  "玩具商": {
+   "name": "玩具商",
+   "group": "game",
+   "num": "hero-573",
+   "src": "src/renderer/img/hero-573.png",
+   "list": "miniprogram/img/hero-573.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-573.webp",
+   "listBytes": 492,
+   "detailBytes": 816
+  },
+  "空军": {
+   "name": "空军",
+   "group": "game",
+   "num": "hero-574",
+   "src": "src/renderer/img/hero-574.png",
+   "list": "miniprogram/img/hero-574.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-574.webp",
+   "listBytes": 758,
+   "detailBytes": 1250
+  },
+  "咒术师": {
+   "name": "咒术师",
+   "group": "game",
+   "num": "hero-375",
+   "src": "src/renderer/img/hero-375.png",
+   "list": "miniprogram/img/hero-375.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-375.webp",
+   "listBytes": 1296,
+   "detailBytes": 2208
+  },
+  "前锋": {
+   "name": "前锋",
+   "group": "game",
+   "num": "hero-376",
+   "src": "src/renderer/img/hero-376.png",
+   "list": "miniprogram/img/hero-376.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-376.webp",
+   "listBytes": 2726,
+   "detailBytes": 5054
+  },
+  "昆虫学者": {
+   "name": "昆虫学者",
+   "group": "game",
+   "num": "hero-377",
+   "src": "src/renderer/img/hero-377.png",
+   "list": "miniprogram/img/hero-377.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-377.webp",
+   "listBytes": 2062,
+   "detailBytes": 3484
+  },
+  "囚徒": {
+   "name": "囚徒",
+   "group": "game",
+   "num": "hero-378",
+   "src": "src/renderer/img/hero-378.png",
+   "list": "miniprogram/img/hero-378.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-378.webp",
+   "listBytes": 1432,
+   "detailBytes": 2330
+  },
+  "邮差": {
+   "name": "邮差",
+   "group": "game",
+   "num": "hero-379",
+   "src": "src/renderer/img/hero-379.png",
+   "list": "miniprogram/img/hero-379.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-379.webp",
+   "listBytes": 1038,
+   "detailBytes": 1754
+  },
+  "入殓师": {
+   "name": "入殓师",
+   "group": "game",
+   "num": "hero-380",
+   "src": "src/renderer/img/hero-380.png",
+   "list": "miniprogram/img/hero-380.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-380.webp",
+   "listBytes": 1120,
+   "detailBytes": 2076
+  },
+  "园丁": {
+   "name": "园丁",
+   "group": "game",
+   "num": "hero-381",
+   "src": "src/renderer/img/hero-381.png",
+   "list": "miniprogram/img/hero-381.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-381.webp",
+   "listBytes": 1560,
+   "detailBytes": 2708
+  },
+  "小提琴家": {
+   "name": "小提琴家",
+   "group": "game",
+   "num": "hero-382",
+   "src": "src/renderer/img/hero-382.png",
+   "list": "miniprogram/img/hero-382.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-382.webp",
+   "listBytes": 1618,
+   "detailBytes": 2780
+  },
+  "牛仔": {
+   "name": "牛仔",
+   "group": "game",
+   "num": "hero-383",
+   "src": "src/renderer/img/hero-383.png",
+   "list": "miniprogram/img/hero-383.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-383.webp",
+   "listBytes": 1914,
+   "detailBytes": 3162
+  },
+  "野人": {
+   "name": "野人",
+   "group": "game",
+   "num": "hero-384",
+   "src": "src/renderer/img/hero-384.png",
+   "list": "miniprogram/img/hero-384.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-384.webp",
+   "listBytes": 1092,
+   "detailBytes": 1772
+  },
+  "律师": {
+   "name": "律师",
+   "group": "game",
+   "num": "hero-385",
+   "src": "src/renderer/img/hero-385.png",
+   "list": "miniprogram/img/hero-385.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-385.webp",
+   "listBytes": 2016,
+   "detailBytes": 3340
+  },
+  "幸运儿": {
+   "name": "幸运儿",
+   "group": "game",
+   "num": "hero-386",
+   "src": "src/renderer/img/hero-386.png",
+   "list": "miniprogram/img/hero-386.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-386.webp",
+   "listBytes": 1850,
+   "detailBytes": 2958
+  },
+  "古董商": {
+   "name": "古董商",
+   "group": "game",
+   "num": "hero-387",
+   "src": "src/renderer/img/hero-387.png",
+   "list": "miniprogram/img/hero-387.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-387.webp",
+   "listBytes": 2810,
+   "detailBytes": 5040
+  },
+  "守墓人": {
+   "name": "守墓人",
+   "group": "game",
+   "num": "hero-388",
+   "src": "src/renderer/img/hero-388.png",
+   "list": "miniprogram/img/hero-388.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-388.webp",
+   "listBytes": 1250,
+   "detailBytes": 2126
+  },
+  "击球手": {
+   "name": "击球手",
+   "group": "game",
+   "num": "hero-389",
+   "src": "src/renderer/img/hero-389.png",
+   "list": "miniprogram/img/hero-389.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-389.webp",
+   "listBytes": 2916,
+   "detailBytes": 5368
+  },
+  "gulpppppp": {
+   "name": "gulpppppp",
+   "group": "real",
+   "num": "hero-390",
+   "src": "src/renderer/img/hero-390.png",
+   "list": "miniprogram/img/hero-390.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-390.webp",
+   "listBytes": 1412,
+   "detailBytes": 2252
+  },
+  "懂法的txz": {
+   "name": "懂法的txz",
+   "group": "real",
+   "num": "hero-391",
+   "src": "src/renderer/img/hero-391.png",
+   "list": "miniprogram/img/hero-391.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-391.webp",
+   "listBytes": 1898,
+   "detailBytes": 3146
+  },
+  "不死鸟": {
+   "name": "不死鸟",
+   "group": "game",
+   "num": "hero-334",
+   "src": "src/renderer/img/hero-334.png",
+   "list": "miniprogram/img/hero-334.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-334.webp",
+   "listBytes": 1162,
+   "detailBytes": 1838
+  },
+  "捷风": {
+   "name": "捷风",
+   "group": "game",
+   "num": "hero-335",
+   "src": "src/renderer/img/hero-335.png",
+   "list": "miniprogram/img/hero-335.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-335.webp",
+   "listBytes": 1156,
+   "detailBytes": 1862
+  },
+  "雷兹": {
+   "name": "雷兹",
+   "group": "game",
+   "num": "hero-336",
+   "src": "src/renderer/img/hero-336.png",
+   "list": "miniprogram/img/hero-336.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-336.webp",
+   "listBytes": 1338,
+   "detailBytes": 2318
+  },
+  "芮娜": {
+   "name": "芮娜",
+   "group": "game",
+   "num": "hero-337",
+   "src": "src/renderer/img/hero-337.png",
+   "list": "miniprogram/img/hero-337.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-337.webp",
+   "listBytes": 1280,
+   "detailBytes": 2224
+  },
+  "霓虹": {
+   "name": "霓虹",
+   "group": "game",
+   "num": "hero-338",
+   "src": "src/renderer/img/hero-338.png",
+   "list": "miniprogram/img/hero-338.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-338.webp",
+   "listBytes": 1442,
+   "detailBytes": 2352
+  },
+  "夜露": {
+   "name": "夜露",
+   "group": "game",
+   "num": "hero-339",
+   "src": "src/renderer/img/hero-339.png",
+   "list": "miniprogram/img/hero-339.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-339.webp",
+   "listBytes": 2730,
+   "detailBytes": 4910
+  },
+  "壹决": {
+   "name": "壹决",
+   "group": "game",
+   "num": "hero-340",
+   "src": "src/renderer/img/hero-340.png",
+   "list": "miniprogram/img/hero-340.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-340.webp",
+   "listBytes": 2796,
+   "detailBytes": 4458
+  },
+  "幻棱": {
+   "name": "幻棱",
+   "group": "game",
+   "num": "hero-513",
+   "src": "src/renderer/img/hero-513.png",
+   "list": "miniprogram/img/hero-513.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-513.webp",
+   "listBytes": 1560,
+   "detailBytes": 2574
+  },
+  "猎枭": {
+   "name": "猎枭",
+   "group": "game",
+   "num": "hero-514",
+   "src": "src/renderer/img/hero-514.png",
+   "list": "miniprogram/img/hero-514.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-514.webp",
+   "listBytes": 1768,
+   "detailBytes": 2812
+  },
+  "铁臂": {
+   "name": "铁臂",
+   "group": "game",
+   "num": "hero-515",
+   "src": "src/renderer/img/hero-515.png",
+   "list": "miniprogram/img/hero-515.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-515.webp",
+   "listBytes": 1896,
+   "detailBytes": 3026
+  },
+  "K/O": {
+   "name": "K/O",
+   "group": "game",
+   "num": "hero-529",
+   "src": "src/renderer/img/hero-529.png",
+   "list": "miniprogram/img/hero-529.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-529.webp",
+   "listBytes": 2282,
+   "detailBytes": 3860
+  },
+  "斯凯": {
+   "name": "斯凯",
+   "group": "game",
+   "num": "hero-516",
+   "src": "src/renderer/img/hero-516.png",
+   "list": "miniprogram/img/hero-516.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-516.webp",
+   "listBytes": 2234,
+   "detailBytes": 3716
+  },
+  "盖可": {
+   "name": "盖可",
+   "group": "game",
+   "num": "hero-517",
+   "src": "src/renderer/img/hero-517.png",
+   "list": "miniprogram/img/hero-517.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-517.webp",
+   "listBytes": 1754,
+   "detailBytes": 2900
+  },
+  "钛狐": {
+   "name": "钛狐",
+   "group": "game",
+   "num": "hero-518",
+   "src": "src/renderer/img/hero-518.png",
+   "list": "miniprogram/img/hero-518.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-518.webp",
+   "listBytes": 1308,
+   "detailBytes": 2270
+  },
+  "炼狱": {
+   "name": "炼狱",
+   "group": "game",
+   "num": "hero-519",
+   "src": "src/renderer/img/hero-519.png",
+   "list": "miniprogram/img/hero-519.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-519.webp",
+   "listBytes": 1290,
+   "detailBytes": 2166
+  },
+  "星礈": {
+   "name": "星礈",
+   "group": "game",
+   "num": "hero-520",
+   "src": "src/renderer/img/hero-520.png",
+   "list": "miniprogram/img/hero-520.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-520.webp",
+   "listBytes": 1784,
+   "detailBytes": 3186
+  },
+  "幽影": {
+   "name": "幽影",
+   "group": "game",
+   "num": "hero-521",
+   "src": "src/renderer/img/hero-521.png",
+   "list": "miniprogram/img/hero-521.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-521.webp",
+   "listBytes": 2116,
+   "detailBytes": 3506
+  },
+  "海神": {
+   "name": "海神",
+   "group": "game",
+   "num": "hero-522",
+   "src": "src/renderer/img/hero-522.png",
+   "list": "miniprogram/img/hero-522.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-522.webp",
+   "listBytes": 1414,
+   "detailBytes": 2344
+  },
+  "瑟符": {
+   "name": "瑟符",
+   "group": "game",
+   "num": "hero-523",
+   "src": "src/renderer/img/hero-523.png",
+   "list": "miniprogram/img/hero-523.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-523.webp",
+   "listBytes": 1410,
+   "detailBytes": 2144
+  },
+  "贤者": {
+   "name": "贤者",
+   "group": "game",
+   "num": "hero-524",
+   "src": "src/renderer/img/hero-524.png",
+   "list": "miniprogram/img/hero-524.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-524.webp",
+   "listBytes": 2386,
+   "detailBytes": 3698
+  },
+  "尚勃勒": {
+   "name": "尚勃勒",
+   "group": "game",
+   "num": "hero-525",
+   "src": "src/renderer/img/hero-525.png",
+   "list": "miniprogram/img/hero-525.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-525.webp",
+   "listBytes": 2446,
+   "detailBytes": 4176
+  },
+  "钢锁": {
+   "name": "钢锁",
+   "group": "game",
+   "num": "hero-526",
+   "src": "src/renderer/img/hero-526.png",
+   "list": "miniprogram/img/hero-526.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-526.webp",
+   "listBytes": 1240,
+   "detailBytes": 2116
+  },
+  "维斯": {
+   "name": "维斯",
+   "group": "game",
+   "num": "hero-527",
+   "src": "src/renderer/img/hero-527.png",
+   "list": "miniprogram/img/hero-527.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-527.webp",
+   "listBytes": 2556,
+   "detailBytes": 4106
+  },
+  "遐思": {
+   "name": "遐思",
+   "group": "game",
+   "num": "hero-528",
+   "src": "src/renderer/img/hero-528.png",
+   "list": "miniprogram/img/hero-528.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-528.webp",
+   "listBytes": 1844,
+   "detailBytes": 3104
+  },
+  "地才女特务": {
+   "name": "地才女特务",
+   "group": "real",
+   "num": "hero-533",
+   "src": "src/renderer/img/hero-533.png",
+   "list": "miniprogram/img/hero-533.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-533.webp",
+   "listBytes": 1786,
+   "detailBytes": 2986
+  },
+  "仔仔无畏契约": {
+   "name": "仔仔无畏契约",
+   "group": "real",
+   "num": "hero-534",
+   "src": "src/renderer/img/hero-534.png",
+   "list": "miniprogram/img/hero-534.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-534.webp",
+   "listBytes": 770,
+   "detailBytes": 1070
+  },
+  "无畏契约情报员啊": {
+   "name": "无畏契约情报员啊",
+   "group": "real",
+   "num": "hero-535",
+   "src": "src/renderer/img/hero-535.png",
+   "list": "miniprogram/img/hero-535.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-535.webp",
+   "listBytes": 3198,
+   "detailBytes": 5646
+  },
+  "谋生者白言": {
+   "name": "谋生者白言",
+   "group": "real",
+   "num": "hero-536",
+   "src": "src/renderer/img/hero-536.png",
+   "list": "miniprogram/img/hero-536.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-536.webp",
+   "listBytes": 2202,
+   "detailBytes": 3578
+  },
+  "乃酱": {
+   "name": "乃酱",
+   "group": "real",
+   "num": "hero-537",
+   "src": "src/renderer/img/hero-537.png",
+   "list": "miniprogram/img/hero-537.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-537.webp",
+   "listBytes": 2488,
+   "detailBytes": 3482
+  },
+  "绿泡泡Reyna": {
+   "name": "绿泡泡Reyna",
+   "group": "real",
+   "num": "hero-538",
+   "src": "src/renderer/img/hero-538.png",
+   "list": "miniprogram/img/hero-538.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-538.webp",
+   "listBytes": 1880,
+   "detailBytes": 3136
+  },
+  "无畏辐能联盟": {
+   "name": "无畏辐能联盟",
+   "group": "real",
+   "num": "hero-539",
+   "src": "src/renderer/img/hero-539.png",
+   "list": "miniprogram/img/hero-539.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-539.webp",
+   "listBytes": 1476,
+   "detailBytes": 2198
+  },
+  "无畏战术大师兄": {
+   "name": "无畏战术大师兄",
+   "group": "real",
+   "num": "hero-540",
+   "src": "src/renderer/img/hero-540.png",
+   "list": "miniprogram/img/hero-540.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-540.webp",
+   "listBytes": 1162,
+   "detailBytes": 1374
+  },
+  "汉堡_无畏契约": {
+   "name": "汉堡_无畏契约",
+   "group": "real",
+   "num": "hero-541",
+   "src": "src/renderer/img/hero-541.png",
+   "list": "miniprogram/img/hero-541.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-541.webp",
+   "listBytes": 1874,
+   "detailBytes": 2880
+  },
+  "布锅锅": {
+   "name": "布锅锅",
+   "group": "real",
+   "num": "hero-542",
+   "src": "src/renderer/img/hero-542.png",
+   "list": "miniprogram/img/hero-542.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-542.webp",
+   "listBytes": 1238,
+   "detailBytes": 1734
+  },
+  "无畏契约皮肤": {
+   "name": "无畏契约皮肤",
+   "group": "real",
+   "num": "hero-543",
+   "src": "src/renderer/img/hero-543.png",
+   "list": "miniprogram/img/hero-543.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-543.webp",
+   "listBytes": 492,
+   "detailBytes": 666
+  },
+  "喜欢看星星的派大星": {
+   "name": "喜欢看星星的派大星",
+   "group": "real",
+   "num": "hero-544",
+   "src": "src/renderer/img/hero-544.png",
+   "list": "miniprogram/img/hero-544.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-544.webp",
+   "listBytes": 1112,
+   "detailBytes": 1954
+  },
+  "老老老老老鱼干": {
+   "name": "老老老老老鱼干",
+   "group": "real",
+   "num": "hero-545",
+   "src": "src/renderer/img/hero-545.png",
+   "list": "miniprogram/img/hero-545.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-545.webp",
+   "listBytes": 1940,
+   "detailBytes": 3020
+  },
+  "冰可乐Raze": {
+   "name": "冰可乐Raze",
+   "group": "real",
+   "num": "hero-546",
+   "src": "src/renderer/img/hero-546.png",
+   "list": "miniprogram/img/hero-546.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-546.webp",
+   "listBytes": 2458,
+   "detailBytes": 4042
+  },
+  "404就是小刘": {
+   "name": "404就是小刘",
+   "group": "real",
+   "num": "hero-547",
+   "src": "src/renderer/img/hero-547.png",
+   "list": "miniprogram/img/hero-547.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-547.webp",
+   "listBytes": 1596,
+   "detailBytes": 2862
+  },
+  "木彡1": {
+   "name": "木彡1",
+   "group": "real",
+   "num": "hero-548",
+   "src": "src/renderer/img/hero-548.png",
+   "list": "miniprogram/img/hero-548.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-548.webp",
+   "listBytes": 1990,
+   "detailBytes": 3350
+  },
+  "胡里奥小朋友": {
+   "name": "胡里奥小朋友",
+   "group": "real",
+   "num": "hero-549",
+   "src": "src/renderer/img/hero-549.png",
+   "list": "miniprogram/img/hero-549.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-549.webp",
+   "listBytes": 1596,
+   "detailBytes": 2384
+  },
+  "夜光山雀": {
+   "name": "夜光山雀",
+   "group": "real",
+   "num": "hero-550",
+   "src": "src/renderer/img/hero-550.png",
+   "list": "miniprogram/img/hero-550.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-550.webp",
+   "listBytes": 1692,
+   "detailBytes": 2612
+  },
+  "欧阳风5019": {
+   "name": "欧阳风5019",
+   "group": "real",
+   "num": "hero-551",
+   "src": "src/renderer/img/hero-551.png",
+   "list": "miniprogram/img/hero-551.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-551.webp",
+   "listBytes": 2098,
+   "detailBytes": 3580
+  },
+  "康康": {
+   "name": "康康",
+   "group": "real",
+   "num": "hero-553",
+   "src": "src/renderer/img/hero-553.png",
+   "list": "miniprogram/img/hero-553.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-553.webp",
+   "listBytes": 916,
+   "detailBytes": 1312
+  },
+  "Aspas": {
+   "name": "Aspas",
+   "group": "real",
+   "num": "hero-554",
+   "src": "src/renderer/img/hero-554.png",
+   "list": "miniprogram/img/hero-554.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-554.webp",
+   "listBytes": 1270,
+   "detailBytes": 2000
+  },
+  "kaajak": {
+   "name": "kaajak",
+   "group": "real",
+   "num": "hero-555",
+   "src": "src/renderer/img/hero-555.png",
+   "list": "miniprogram/img/hero-555.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-555.webp",
+   "listBytes": 1798,
+   "detailBytes": 2862
+  },
+  "Eggsterr": {
+   "name": "Eggsterr",
+   "group": "real",
+   "num": "hero-556",
+   "src": "src/renderer/img/hero-556.png",
+   "list": "miniprogram/img/hero-556.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-556.webp",
+   "listBytes": 1960,
+   "detailBytes": 3096
+  },
+  "lukxo": {
+   "name": "lukxo",
+   "group": "real",
+   "num": "hero-557",
+   "src": "src/renderer/img/hero-557.png",
+   "list": "miniprogram/img/hero-557.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-557.webp",
+   "listBytes": 1872,
+   "detailBytes": 2898
+  },
+  "grim": {
+   "name": "grim",
+   "group": "real",
+   "num": "hero-558",
+   "src": "src/renderer/img/hero-558.png",
+   "list": "miniprogram/img/hero-558.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-558.webp",
+   "listBytes": 1674,
+   "detailBytes": 2738
+  },
+  "ziptie": {
+   "name": "ziptie",
+   "group": "real",
+   "num": "hero-559",
+   "src": "src/renderer/img/hero-559.png",
+   "list": "miniprogram/img/hero-559.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-559.webp",
+   "listBytes": 1024,
+   "detailBytes": 1880
+  },
+  "SpiritZ1": {
+   "name": "SpiritZ1",
+   "group": "real",
+   "num": "hero-560",
+   "src": "src/renderer/img/hero-560.png",
+   "list": "miniprogram/img/hero-560.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-560.webp",
+   "listBytes": 2422,
+   "detailBytes": 4104
+  },
+  "Evnii": {
+   "name": "Evnii",
+   "group": "real",
+   "num": "hero-561",
+   "src": "src/renderer/img/hero-561.png",
+   "list": "miniprogram/img/hero-561.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-561.webp",
+   "listBytes": 2112,
+   "detailBytes": 3410
+  },
+  "SoMarcus": {
+   "name": "SoMarcus",
+   "group": "real",
+   "num": "hero-562",
+   "src": "src/renderer/img/hero-562.png",
+   "list": "miniprogram/img/hero-562.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-562.webp",
+   "listBytes": 1636,
+   "detailBytes": 2520
+  },
+  "大东彦": {
+   "name": "大东彦",
+   "group": "real",
+   "num": "hero-552",
+   "src": "src/renderer/img/hero-552.png",
+   "list": "miniprogram/img/hero-552.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-552.webp",
+   "listBytes": 2172,
+   "detailBytes": 3210
+  },
+  "张钊": {
+   "name": "张钊",
+   "group": "real",
+   "num": "hero-563",
+   "src": "src/renderer/img/hero-563.png",
+   "list": "miniprogram/img/hero-563.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-563.webp",
+   "listBytes": 1228,
+   "detailBytes": 1902
+  },
+  "皮蛋": {
+   "name": "皮蛋",
+   "group": "game",
+   "num": "hero-530",
+   "src": "src/renderer/img/hero-530.png",
+   "list": "miniprogram/img/hero-530.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-530.webp",
+   "listBytes": 1798,
+   "detailBytes": 2936
+  },
+  "丢丢": {
+   "name": "丢丢",
+   "group": "game",
+   "num": "hero-531",
+   "src": "src/renderer/img/hero-531.png",
+   "list": "miniprogram/img/hero-531.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-531.webp",
+   "listBytes": 1094,
+   "detailBytes": 1786
+  },
+  "鲨鲨": {
+   "name": "鲨鲨",
+   "group": "game",
+   "num": "hero-532",
+   "src": "src/renderer/img/hero-532.png",
+   "list": "miniprogram/img/hero-532.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-532.webp",
+   "listBytes": 1732,
+   "detailBytes": 2760
+  },
+  "猎天使魔女": {
+   "name": "猎天使魔女",
+   "group": "game",
+   "num": "hero-362",
+   "src": "src/renderer/img/hero-362.png",
+   "list": "miniprogram/img/hero-362.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-362.webp",
+   "listBytes": 1502,
+   "detailBytes": 2468
+  },
+  "美国队长": {
+   "name": "美国队长",
+   "group": "game",
+   "num": "hero-393",
+   "src": "src/renderer/img/hero-393.png",
+   "list": "miniprogram/img/hero-393.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-393.webp",
+   "listBytes": 2086,
+   "detailBytes": 3588
+  },
+  "奇异博士": {
+   "name": "奇异博士",
+   "group": "game",
+   "num": "hero-394",
+   "src": "src/renderer/img/hero-394.png",
+   "list": "miniprogram/img/hero-394.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-394.webp",
+   "listBytes": 2466,
+   "detailBytes": 4430
+  },
+  "格鲁特": {
+   "name": "格鲁特",
+   "group": "game",
+   "num": "hero-395",
+   "src": "src/renderer/img/hero-395.png",
+   "list": "miniprogram/img/hero-395.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-395.webp",
+   "listBytes": 3344,
+   "detailBytes": 6152
+  },
+  "浩克": {
+   "name": "浩克",
+   "group": "game",
+   "num": "hero-396",
+   "src": "src/renderer/img/hero-396.png",
+   "list": "miniprogram/img/hero-396.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-396.webp",
+   "listBytes": 1948,
+   "detailBytes": 3352
+  },
+  "万磁王": {
+   "name": "万磁王",
+   "group": "game",
+   "num": "hero-397",
+   "src": "src/renderer/img/hero-397.png",
+   "list": "miniprogram/img/hero-397.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-397.webp",
+   "listBytes": 2294,
+   "detailBytes": 4050
+  },
+  "潘妮·帕克": {
+   "name": "潘妮·帕克",
+   "group": "game",
+   "num": "hero-398",
+   "src": "src/renderer/img/hero-398.png",
+   "list": "miniprogram/img/hero-398.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-398.webp",
+   "listBytes": 2548,
+   "detailBytes": 4796
+  },
+  "索尔": {
+   "name": "索尔",
+   "group": "game",
+   "num": "hero-399",
+   "src": "src/renderer/img/hero-399.png",
+   "list": "miniprogram/img/hero-399.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-399.webp",
+   "listBytes": 2756,
+   "detailBytes": 4962
+  },
+  "毒液": {
+   "name": "毒液",
+   "group": "game",
+   "num": "hero-400",
+   "src": "src/renderer/img/hero-400.png",
+   "list": "miniprogram/img/hero-400.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-400.webp",
+   "listBytes": 2450,
+   "detailBytes": 4278
+  },
+  "石头人": {
+   "name": "石头人",
+   "group": "game",
+   "num": "hero-401",
+   "src": "src/renderer/img/hero-401.png",
+   "list": "miniprogram/img/hero-401.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-401.webp",
+   "listBytes": 2498,
+   "detailBytes": 4314
+  },
+  "白皇后": {
+   "name": "白皇后",
+   "group": "game",
+   "num": "hero-402",
+   "src": "src/renderer/img/hero-402.png",
+   "list": "miniprogram/img/hero-402.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-402.webp",
+   "listBytes": 2576,
+   "detailBytes": 4518
+  },
+  "安吉拉": {
+   "name": "安吉拉",
+   "group": "game",
+   "num": "hero-403",
+   "src": "src/renderer/img/hero-403.png",
+   "list": "miniprogram/img/hero-403.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-403.webp",
+   "listBytes": 2636,
+   "detailBytes": 4508
+  },
+  "小淘气": {
+   "name": "小淘气",
+   "group": "game",
+   "num": "hero-404",
+   "src": "src/renderer/img/hero-404.png",
+   "list": "miniprogram/img/hero-404.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-404.webp",
+   "listBytes": 2188,
+   "detailBytes": 3918
+  },
+  "恶魔恐龙": {
+   "name": "恶魔恐龙",
+   "group": "game",
+   "num": "hero-405",
+   "src": "src/renderer/img/hero-405.png",
+   "list": "miniprogram/img/hero-405.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-405.webp",
+   "listBytes": 1914,
+   "detailBytes": 3070
+  },
+  "红兜帽": {
+   "name": "红兜帽",
+   "group": "game",
+   "num": "hero-406",
+   "src": "src/renderer/img/hero-406.png",
+   "list": "miniprogram/img/hero-406.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-406.webp",
+   "listBytes": 2244,
+   "detailBytes": 3826
+  },
+  "黑寡妇": {
+   "name": "黑寡妇",
+   "group": "game",
+   "num": "hero-407",
+   "src": "src/renderer/img/hero-407.png",
+   "list": "miniprogram/img/hero-407.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-407.webp",
+   "listBytes": 2318,
+   "detailBytes": 3646
+  },
+  "黑豹": {
+   "name": "黑豹",
+   "group": "game",
+   "num": "hero-408",
+   "src": "src/renderer/img/hero-408.png",
+   "list": "miniprogram/img/hero-408.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-408.webp",
+   "listBytes": 1940,
+   "detailBytes": 3562
+  },
+  "鹰眼": {
+   "name": "鹰眼",
+   "group": "game",
+   "num": "hero-409",
+   "src": "src/renderer/img/hero-409.png",
+   "list": "miniprogram/img/hero-409.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-409.webp",
+   "listBytes": 2288,
+   "detailBytes": 3948
+  },
+  "海拉": {
+   "name": "海拉",
+   "group": "game",
+   "num": "hero-410",
+   "src": "src/renderer/img/hero-410.png",
+   "list": "miniprogram/img/hero-410.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-410.webp",
+   "listBytes": 2948,
+   "detailBytes": 5104
+  },
+  "铁拳": {
+   "name": "铁拳",
+   "group": "game",
+   "num": "hero-411",
+   "src": "src/renderer/img/hero-411.png",
+   "list": "miniprogram/img/hero-411.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-411.webp",
+   "listBytes": 2308,
+   "detailBytes": 3884
+  },
+  "钢铁侠": {
+   "name": "钢铁侠",
+   "group": "game",
+   "num": "hero-412",
+   "src": "src/renderer/img/hero-412.png",
+   "list": "miniprogram/img/hero-412.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-412.webp",
+   "listBytes": 2268,
+   "detailBytes": 4004
+  },
+  "魔剑客": {
+   "name": "魔剑客",
+   "group": "game",
+   "num": "hero-413",
+   "src": "src/renderer/img/hero-413.png",
+   "list": "miniprogram/img/hero-413.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-413.webp",
+   "listBytes": 2658,
+   "detailBytes": 4538
+  },
+  "神奇先生": {
+   "name": "神奇先生",
+   "group": "game",
+   "num": "hero-414",
+   "src": "src/renderer/img/hero-414.png",
+   "list": "miniprogram/img/hero-414.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-414.webp",
+   "listBytes": 1920,
+   "detailBytes": 3300
+  },
+  "月光骑士": {
+   "name": "月光骑士",
+   "group": "game",
+   "num": "hero-415",
+   "src": "src/renderer/img/hero-415.png",
+   "list": "miniprogram/img/hero-415.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-415.webp",
+   "listBytes": 2052,
+   "detailBytes": 3522
+  },
+  "纳摩": {
+   "name": "纳摩",
+   "group": "game",
+   "num": "hero-416",
+   "src": "src/renderer/img/hero-416.png",
+   "list": "miniprogram/img/hero-416.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-416.webp",
+   "listBytes": 2346,
+   "detailBytes": 4166
+  },
+  "灵蝶": {
+   "name": "灵蝶",
+   "group": "game",
+   "num": "hero-417",
+   "src": "src/renderer/img/hero-417.png",
+   "list": "miniprogram/img/hero-417.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-417.webp",
+   "listBytes": 2316,
+   "detailBytes": 3908
+  },
+  "猩红女巫": {
+   "name": "猩红女巫",
+   "group": "game",
+   "num": "hero-418",
+   "src": "src/renderer/img/hero-418.png",
+   "list": "miniprogram/img/hero-418.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-418.webp",
+   "listBytes": 2492,
+   "detailBytes": 4190
+  },
+  "蜘蛛侠": {
+   "name": "蜘蛛侠",
+   "group": "game",
+   "num": "hero-419",
+   "src": "src/renderer/img/hero-419.png",
+   "list": "miniprogram/img/hero-419.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-419.webp",
+   "listBytes": 1646,
+   "detailBytes": 3036
+  },
+  "松鼠女": {
+   "name": "松鼠女",
+   "group": "game",
+   "num": "hero-420",
+   "src": "src/renderer/img/hero-420.png",
+   "list": "miniprogram/img/hero-420.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-420.webp",
+   "listBytes": 2456,
+   "detailBytes": 4034
+  },
+  "星爵": {
+   "name": "星爵",
+   "group": "game",
+   "num": "hero-421",
+   "src": "src/renderer/img/hero-421.png",
+   "list": "miniprogram/img/hero-421.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-421.webp",
+   "listBytes": 2834,
+   "detailBytes": 5020
+  },
+  "暴风女": {
+   "name": "暴风女",
+   "group": "game",
+   "num": "hero-422",
+   "src": "src/renderer/img/hero-422.png",
+   "list": "miniprogram/img/hero-422.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-422.webp",
+   "listBytes": 2254,
+   "detailBytes": 4134
+  },
+  "惩罚者": {
+   "name": "惩罚者",
+   "group": "game",
+   "num": "hero-423",
+   "src": "src/renderer/img/hero-423.png",
+   "list": "miniprogram/img/hero-423.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-423.webp",
+   "listBytes": 2190,
+   "detailBytes": 3946
+  },
+  "冬兵": {
+   "name": "冬兵",
+   "group": "game",
+   "num": "hero-424",
+   "src": "src/renderer/img/hero-424.png",
+   "list": "miniprogram/img/hero-424.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-424.webp",
+   "listBytes": 2200,
+   "detailBytes": 3866
+  },
+  "金刚狼": {
+   "name": "金刚狼",
+   "group": "game",
+   "num": "hero-425",
+   "src": "src/renderer/img/hero-425.png",
+   "list": "miniprogram/img/hero-425.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-425.webp",
+   "listBytes": 2636,
+   "detailBytes": 4466
+  },
+  "霹雳火": {
+   "name": "霹雳火",
+   "group": "game",
+   "num": "hero-426",
+   "src": "src/renderer/img/hero-426.png",
+   "list": "miniprogram/img/hero-426.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-426.webp",
+   "listBytes": 2064,
+   "detailBytes": 3546
+  },
+  "凤凰女": {
+   "name": "凤凰女",
+   "group": "game",
+   "num": "hero-427",
+   "src": "src/renderer/img/hero-427.png",
+   "list": "miniprogram/img/hero-427.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-427.webp",
+   "listBytes": 1908,
+   "detailBytes": 3356
+  },
+  "刀锋战士": {
+   "name": "刀锋战士",
+   "group": "game",
+   "num": "hero-428",
+   "src": "src/renderer/img/hero-428.png",
+   "list": "miniprogram/img/hero-428.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-428.webp",
+   "listBytes": 1930,
+   "detailBytes": 3304
+  },
+  "夜魔侠": {
+   "name": "夜魔侠",
+   "group": "game",
+   "num": "hero-429",
+   "src": "src/renderer/img/hero-429.png",
+   "list": "miniprogram/img/hero-429.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-429.webp",
+   "listBytes": 1816,
+   "detailBytes": 2964
+  },
+  "艾尔莎·血石": {
+   "name": "艾尔莎·血石",
+   "group": "game",
+   "num": "hero-430",
+   "src": "src/renderer/img/hero-430.png",
+   "list": "miniprogram/img/hero-430.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-430.webp",
+   "listBytes": 2864,
+   "detailBytes": 5064
+  },
+  "黑猫": {
+   "name": "黑猫",
+   "group": "game",
+   "num": "hero-431",
+   "src": "src/renderer/img/hero-431.png",
+   "list": "miniprogram/img/hero-431.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-431.webp",
+   "listBytes": 2540,
+   "detailBytes": 4334
+  },
+  "雷光眼": {
+   "name": "雷光眼",
+   "group": "game",
+   "num": "hero-432",
+   "src": "src/renderer/img/hero-432.png",
+   "list": "miniprogram/img/hero-432.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-432.webp",
+   "listBytes": 2096,
+   "detailBytes": 3568
+  },
+  "屠神者格尔": {
+   "name": "屠神者格尔",
+   "group": "game",
+   "num": "hero-433",
+   "src": "src/renderer/img/hero-433.png",
+   "list": "miniprogram/img/hero-433.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-433.webp",
+   "listBytes": 2326,
+   "detailBytes": 4034
+  },
+  "亚当术士": {
+   "name": "亚当术士",
+   "group": "game",
+   "num": "hero-434",
+   "src": "src/renderer/img/hero-434.png",
+   "list": "miniprogram/img/hero-434.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-434.webp",
+   "listBytes": 2372,
+   "detailBytes": 4340
+  },
+  "斗篷与匕首": {
+   "name": "斗篷与匕首",
+   "group": "game",
+   "num": "hero-435",
+   "src": "src/renderer/img/hero-435.png",
+   "list": "miniprogram/img/hero-435.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-435.webp",
+   "listBytes": 2300,
+   "detailBytes": 3878
+  },
+  "隐形女": {
+   "name": "隐形女",
+   "group": "game",
+   "num": "hero-436",
+   "src": "src/renderer/img/hero-436.png",
+   "list": "miniprogram/img/hero-436.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-436.webp",
+   "listBytes": 2306,
+   "detailBytes": 4126
+  },
+  "陆行鲨杰夫": {
+   "name": "陆行鲨杰夫",
+   "group": "game",
+   "num": "hero-437",
+   "src": "src/renderer/img/hero-437.png",
+   "list": "miniprogram/img/hero-437.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-437.webp",
+   "listBytes": 1998,
+   "detailBytes": 3374
+  },
+  "洛基": {
+   "name": "洛基",
+   "group": "game",
+   "num": "hero-438",
+   "src": "src/renderer/img/hero-438.png",
+   "list": "miniprogram/img/hero-438.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-438.webp",
+   "listBytes": 2700,
+   "detailBytes": 4940
+  },
+  "冰月花雪": {
+   "name": "冰月花雪",
+   "group": "game",
+   "num": "hero-439",
+   "src": "src/renderer/img/hero-439.png",
+   "list": "miniprogram/img/hero-439.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-439.webp",
+   "listBytes": 2374,
+   "detailBytes": 4218
+  },
+  "曼蒂斯": {
+   "name": "曼蒂斯",
+   "group": "game",
+   "num": "hero-440",
+   "src": "src/renderer/img/hero-440.png",
+   "list": "miniprogram/img/hero-440.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-440.webp",
+   "listBytes": 2224,
+   "detailBytes": 3828
+  },
+  "火箭浣熊": {
+   "name": "火箭浣熊",
+   "group": "game",
+   "num": "hero-441",
+   "src": "src/renderer/img/hero-441.png",
+   "list": "miniprogram/img/hero-441.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-441.webp",
+   "listBytes": 3026,
+   "detailBytes": 5616
+  },
+  "奥创": {
+   "name": "奥创",
+   "group": "game",
+   "num": "hero-442",
+   "src": "src/renderer/img/hero-442.png",
+   "list": "miniprogram/img/hero-442.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-442.webp",
+   "listBytes": 2294,
+   "detailBytes": 4054
+  },
+  "牌皇": {
+   "name": "牌皇",
+   "group": "game",
+   "num": "hero-443",
+   "src": "src/renderer/img/hero-443.png",
+   "list": "miniprogram/img/hero-443.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-443.webp",
+   "listBytes": 2244,
+   "detailBytes": 3836
+  },
+  "白狐": {
+   "name": "白狐",
+   "group": "game",
+   "num": "hero-444",
+   "src": "src/renderer/img/hero-444.png",
+   "list": "miniprogram/img/hero-444.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-444.webp",
+   "listBytes": 2878,
+   "detailBytes": 5182
+  },
+  "百光花火": {
+   "name": "百光花火",
+   "group": "game",
+   "num": "hero-445",
+   "src": "src/renderer/img/hero-445.png",
+   "list": "miniprogram/img/hero-445.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-445.webp",
+   "listBytes": 3264,
+   "detailBytes": 5494
+  },
+  "死侍": {
+   "name": "死侍",
+   "group": "game",
+   "num": "hero-446",
+   "src": "src/renderer/img/hero-446.png",
+   "list": "miniprogram/img/hero-446.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-446.webp",
+   "listBytes": 2692,
+   "detailBytes": 4780
+  },
+  "甜甜痞颜": {
+   "name": "甜甜痞颜",
+   "group": "real",
+   "num": "hero-447",
+   "src": "src/renderer/img/hero-447.png",
+   "list": "miniprogram/img/hero-447.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-447.webp",
+   "listBytes": 1760,
+   "detailBytes": 2604
+  },
+  "鑫河万点": {
+   "name": "鑫河万点",
+   "group": "real",
+   "num": "hero-448",
+   "src": "src/renderer/img/hero-448.png",
+   "list": "miniprogram/img/hero-448.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-448.webp",
+   "listBytes": 1450,
+   "detailBytes": 2228
+  },
+  "良心洗脚妹": {
+   "name": "良心洗脚妹",
+   "group": "real",
+   "num": "hero-449",
+   "src": "src/renderer/img/hero-449.png",
+   "list": "miniprogram/img/hero-449.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-449.webp",
+   "listBytes": 692,
+   "detailBytes": 1050
+  },
+  "地才蓝灬频道": {
+   "name": "地才蓝灬频道",
+   "group": "real",
+   "num": "hero-450",
+   "src": "src/renderer/img/hero-450.png",
+   "list": "miniprogram/img/hero-450.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-450.webp",
+   "listBytes": 4248,
+   "detailBytes": 7152
+  },
+  "鲁迅欺负周树人": {
+   "name": "鲁迅欺负周树人",
+   "group": "real",
+   "num": "hero-451",
+   "src": "src/renderer/img/hero-451.png",
+   "list": "miniprogram/img/hero-451.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-451.webp",
+   "listBytes": 1942,
+   "detailBytes": 3126
+  },
+  "Wooden依末": {
+   "name": "Wooden依末",
+   "group": "real",
+   "num": "hero-452",
+   "src": "src/renderer/img/hero-452.png",
+   "list": "miniprogram/img/hero-452.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-452.webp",
+   "listBytes": 2022,
+   "detailBytes": 3146
+  },
+  "赫斯特特特": {
+   "name": "赫斯特特特",
+   "group": "real",
+   "num": "hero-453",
+   "src": "src/renderer/img/hero-453.png",
+   "list": "miniprogram/img/hero-453.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-453.webp",
+   "listBytes": 1692,
+   "detailBytes": 2726
+  },
+  "Z_Magnus": {
+   "name": "Z_Magnus",
+   "group": "real",
+   "num": "hero-454",
+   "src": "src/renderer/img/hero-454.png",
+   "list": "miniprogram/img/hero-454.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-454.webp",
+   "listBytes": 1554,
+   "detailBytes": 2612
+  },
+  "一小罐啤酒": {
+   "name": "一小罐啤酒",
+   "group": "real",
+   "num": "hero-455",
+   "src": "src/renderer/img/hero-455.png",
+   "list": "miniprogram/img/hero-455.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-455.webp",
+   "listBytes": 1958,
+   "detailBytes": 3332
+  },
+  "Haker没有C": {
+   "name": "Haker没有C",
+   "group": "real",
+   "num": "hero-456",
+   "src": "src/renderer/img/hero-456.png",
+   "list": "miniprogram/img/hero-456.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-456.webp",
+   "listBytes": 2458,
+   "detailBytes": 4072
+  },
+  "D.Va": {
+   "name": "D.Va",
+   "group": "game",
+   "num": "hero-457",
+   "src": "src/renderer/img/hero-457.png",
+   "list": "miniprogram/img/hero-457.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-457.webp",
+   "listBytes": 2308,
+   "detailBytes": 3668
+  },
+  "查莉娅": {
+   "name": "查莉娅",
+   "group": "game",
+   "num": "hero-458",
+   "src": "src/renderer/img/hero-458.png",
+   "list": "miniprogram/img/hero-458.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-458.webp",
+   "listBytes": 1682,
+   "detailBytes": 2712
+  },
+  "莱因哈特": {
+   "name": "莱因哈特",
+   "group": "game",
+   "num": "hero-459",
+   "src": "src/renderer/img/hero-459.png",
+   "list": "miniprogram/img/hero-459.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-459.webp",
+   "listBytes": 1796,
+   "detailBytes": 3156
+  },
+  "路霸": {
+   "name": "路霸",
+   "group": "game",
+   "num": "hero-460",
+   "src": "src/renderer/img/hero-460.png",
+   "list": "miniprogram/img/hero-460.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-460.webp",
+   "listBytes": 2050,
+   "detailBytes": 3284
+  },
+  "温斯顿": {
+   "name": "温斯顿",
+   "group": "game",
+   "num": "hero-461",
+   "src": "src/renderer/img/hero-461.png",
+   "list": "miniprogram/img/hero-461.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-461.webp",
+   "listBytes": 2194,
+   "detailBytes": 3518
+  },
+  "奥丽莎": {
+   "name": "奥丽莎",
+   "group": "game",
+   "num": "hero-462",
+   "src": "src/renderer/img/hero-462.png",
+   "list": "miniprogram/img/hero-462.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-462.webp",
+   "listBytes": 2404,
+   "detailBytes": 4178
+  },
+  "破坏球": {
+   "name": "破坏球",
+   "group": "game",
+   "num": "hero-463",
+   "src": "src/renderer/img/hero-463.png",
+   "list": "miniprogram/img/hero-463.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-463.webp",
+   "listBytes": 1852,
+   "detailBytes": 3008
+  },
+  "西格玛": {
+   "name": "西格玛",
+   "group": "game",
+   "num": "hero-464",
+   "src": "src/renderer/img/hero-464.png",
+   "list": "miniprogram/img/hero-464.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-464.webp",
+   "listBytes": 1824,
+   "detailBytes": 2970
+  },
+  "渣客女王": {
+   "name": "渣客女王",
+   "group": "game",
+   "num": "hero-465",
+   "src": "src/renderer/img/hero-465.png",
+   "list": "miniprogram/img/hero-465.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-465.webp",
+   "listBytes": 1742,
+   "detailBytes": 2672
+  },
+  "拉玛刹": {
+   "name": "拉玛刹",
+   "group": "game",
+   "num": "hero-466",
+   "src": "src/renderer/img/hero-466.png",
+   "list": "miniprogram/img/hero-466.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-466.webp",
+   "listBytes": 2538,
+   "detailBytes": 4296
+  },
+  "毛加": {
+   "name": "毛加",
+   "group": "game",
+   "num": "hero-467",
+   "src": "src/renderer/img/hero-467.png",
+   "list": "miniprogram/img/hero-467.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-467.webp",
+   "listBytes": 1770,
+   "detailBytes": 2786
+  },
+  "骇灾": {
+   "name": "骇灾",
+   "group": "game",
+   "num": "hero-587",
+   "src": "src/renderer/img/hero-587.png",
+   "list": "miniprogram/img/hero-587.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-587.webp",
+   "listBytes": 2028,
+   "detailBytes": 3452
+  },
+  "金驭": {
+   "name": "金驭",
+   "group": "game",
+   "num": "hero-575",
+   "src": "src/renderer/img/hero-575.png",
+   "list": "miniprogram/img/hero-575.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-575.webp",
+   "listBytes": 2030,
+   "detailBytes": 3434
+  },
+  "D.Mon": {
+   "name": "D.Mon",
+   "group": "game",
+   "num": "hero-470",
+   "src": "src/renderer/img/hero-470.png",
+   "list": "miniprogram/img/hero-470.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-470.webp",
+   "listBytes": 1250,
+   "detailBytes": 1996
+  },
+  "末日铁拳": {
+   "name": "末日铁拳",
+   "group": "game",
+   "num": "hero-471",
+   "src": "src/renderer/img/hero-471.png",
+   "list": "miniprogram/img/hero-471.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-471.webp",
+   "listBytes": 1024,
+   "detailBytes": 1602
+  },
+  "源氏": {
+   "name": "源氏",
+   "group": "game",
+   "num": "hero-472",
+   "src": "src/renderer/img/hero-472.png",
+   "list": "miniprogram/img/hero-472.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-472.webp",
+   "listBytes": 1308,
+   "detailBytes": 2212
+  },
+  "半藏": {
+   "name": "半藏",
+   "group": "game",
+   "num": "hero-473",
+   "src": "src/renderer/img/hero-473.png",
+   "list": "miniprogram/img/hero-473.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-473.webp",
+   "listBytes": 1786,
+   "detailBytes": 2876
+  },
+  "死神": {
+   "name": "死神",
+   "group": "game",
+   "num": "hero-474",
+   "src": "src/renderer/img/hero-474.png",
+   "list": "miniprogram/img/hero-474.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-474.webp",
+   "listBytes": 1522,
+   "detailBytes": 2434
+  },
+  "猎空": {
+   "name": "猎空",
+   "group": "game",
+   "num": "hero-475",
+   "src": "src/renderer/img/hero-475.png",
+   "list": "miniprogram/img/hero-475.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-475.webp",
+   "listBytes": 2910,
+   "detailBytes": 4778
+  },
+  "卡西迪": {
+   "name": "卡西迪",
+   "group": "game",
+   "num": "hero-476",
+   "src": "src/renderer/img/hero-476.png",
+   "list": "miniprogram/img/hero-476.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-476.webp",
+   "listBytes": 2334,
+   "detailBytes": 4020
+  },
+  "狂鼠": {
+   "name": "狂鼠",
+   "group": "game",
+   "num": "hero-477",
+   "src": "src/renderer/img/hero-477.png",
+   "list": "miniprogram/img/hero-477.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-477.webp",
+   "listBytes": 1664,
+   "detailBytes": 2830
+  },
+  "法老之鹰": {
+   "name": "法老之鹰",
+   "group": "game",
+   "num": "hero-478",
+   "src": "src/renderer/img/hero-478.png",
+   "list": "miniprogram/img/hero-478.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-478.webp",
+   "listBytes": 1722,
+   "detailBytes": 3182
+  },
+  "美": {
+   "name": "美",
+   "group": "game",
+   "num": "hero-479",
+   "src": "src/renderer/img/hero-479.png",
+   "list": "miniprogram/img/hero-479.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-479.webp",
+   "listBytes": 2034,
+   "detailBytes": 3256
+  },
+  "士兵:76": {
+   "name": "士兵:76",
+   "group": "game",
+   "num": "hero-480",
+   "src": "src/renderer/img/hero-480.png",
+   "list": "miniprogram/img/hero-480.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-480.webp",
+   "listBytes": 1736,
+   "detailBytes": 2980
+  },
+  "托比昂": {
+   "name": "托比昂",
+   "group": "game",
+   "num": "hero-481",
+   "src": "src/renderer/img/hero-481.png",
+   "list": "miniprogram/img/hero-481.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-481.webp",
+   "listBytes": 1144,
+   "detailBytes": 1730
+  },
+  "堡垒": {
+   "name": "堡垒",
+   "group": "game",
+   "num": "hero-482",
+   "src": "src/renderer/img/hero-482.png",
+   "list": "miniprogram/img/hero-482.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-482.webp",
+   "listBytes": 1506,
+   "detailBytes": 2388
+  },
+  "黑百合": {
+   "name": "黑百合",
+   "group": "game",
+   "num": "hero-483",
+   "src": "src/renderer/img/hero-483.png",
+   "list": "miniprogram/img/hero-483.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-483.webp",
+   "listBytes": 1248,
+   "detailBytes": 2070
+  },
+  "艾什": {
+   "name": "艾什",
+   "group": "game",
+   "num": "hero-484",
+   "src": "src/renderer/img/hero-484.png",
+   "list": "miniprogram/img/hero-484.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-484.webp",
+   "listBytes": 1226,
+   "detailBytes": 1938
+  },
+  "回声": {
+   "name": "回声",
+   "group": "game",
+   "num": "hero-485",
+   "src": "src/renderer/img/hero-485.png",
+   "list": "miniprogram/img/hero-485.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-485.webp",
+   "listBytes": 1552,
+   "detailBytes": 2600
+  },
+  "索杰恩": {
+   "name": "索杰恩",
+   "group": "game",
+   "num": "hero-486",
+   "src": "src/renderer/img/hero-486.png",
+   "list": "miniprogram/img/hero-486.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-486.webp",
+   "listBytes": 2250,
+   "detailBytes": 3594
+  },
+  "探奇": {
+   "name": "探奇",
+   "group": "game",
+   "num": "hero-576",
+   "src": "src/renderer/img/hero-576.png",
+   "list": "miniprogram/img/hero-576.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-576.webp",
+   "listBytes": 1800,
+   "detailBytes": 2802
+  },
+  "秩序之光": {
+   "name": "秩序之光",
+   "group": "game",
+   "num": "hero-488",
+   "src": "src/renderer/img/hero-488.png",
+   "list": "miniprogram/img/hero-488.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-488.webp",
+   "listBytes": 1120,
+   "detailBytes": 1840
+  },
+  "弗蕾娅": {
+   "name": "弗蕾娅",
+   "group": "game",
+   "num": "hero-489",
+   "src": "src/renderer/img/hero-489.png",
+   "list": "miniprogram/img/hero-489.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-489.webp",
+   "listBytes": 2116,
+   "detailBytes": 3594
+  },
+  "斩仇": {
+   "name": "斩仇",
+   "group": "game",
+   "num": "hero-577",
+   "src": "src/renderer/img/hero-577.png",
+   "list": "miniprogram/img/hero-577.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-577.webp",
+   "listBytes": 1934,
+   "detailBytes": 3296
+  },
+  "安燃": {
+   "name": "安燃",
+   "group": "game",
+   "num": "hero-578",
+   "src": "src/renderer/img/hero-578.png",
+   "list": "miniprogram/img/hero-578.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-578.webp",
+   "listBytes": 2192,
+   "detailBytes": 3442
+  },
+  "埃姆雷": {
+   "name": "埃姆雷",
+   "group": "game",
+   "num": "hero-492",
+   "src": "src/renderer/img/hero-492.png",
+   "list": "miniprogram/img/hero-492.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-492.webp",
+   "listBytes": 1134,
+   "detailBytes": 1872
+  },
+  "西拉": {
+   "name": "西拉",
+   "group": "game",
+   "num": "hero-579",
+   "src": "src/renderer/img/hero-579.png",
+   "list": "miniprogram/img/hero-579.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-579.webp",
+   "listBytes": 1288,
+   "detailBytes": 1982
+  },
+  "死怨": {
+   "name": "死怨",
+   "group": "game",
+   "num": "hero-580",
+   "src": "src/renderer/img/hero-580.png",
+   "list": "miniprogram/img/hero-580.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-580.webp",
+   "listBytes": 2176,
+   "detailBytes": 3444
+  },
+  "天使": {
+   "name": "天使",
+   "group": "game",
+   "num": "hero-495",
+   "src": "src/renderer/img/hero-495.png",
+   "list": "miniprogram/img/hero-495.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-495.webp",
+   "listBytes": 1400,
+   "detailBytes": 2304
+  },
+  "莫伊拉": {
+   "name": "莫伊拉",
+   "group": "game",
+   "num": "hero-496",
+   "src": "src/renderer/img/hero-496.png",
+   "list": "miniprogram/img/hero-496.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-496.webp",
+   "listBytes": 1744,
+   "detailBytes": 2794
+  },
+  "安娜": {
+   "name": "安娜",
+   "group": "game",
+   "num": "hero-497",
+   "src": "src/renderer/img/hero-497.png",
+   "list": "miniprogram/img/hero-497.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-497.webp",
+   "listBytes": 1424,
+   "detailBytes": 2222
+  },
+  "卢西奥": {
+   "name": "卢西奥",
+   "group": "game",
+   "num": "hero-498",
+   "src": "src/renderer/img/hero-498.png",
+   "list": "miniprogram/img/hero-498.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-498.webp",
+   "listBytes": 1416,
+   "detailBytes": 2312
+  },
+  "禅雅塔": {
+   "name": "禅雅塔",
+   "group": "game",
+   "num": "hero-588",
+   "src": "src/renderer/img/hero-588.png",
+   "list": "miniprogram/img/hero-588.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-588.webp",
+   "listBytes": 1960,
+   "detailBytes": 3288
+  },
+  "布丽吉塔": {
+   "name": "布丽吉塔",
+   "group": "game",
+   "num": "hero-500",
+   "src": "src/renderer/img/hero-500.png",
+   "list": "miniprogram/img/hero-500.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-500.webp",
+   "listBytes": 1732,
+   "detailBytes": 2930
+  },
+  "巴蒂斯特": {
+   "name": "巴蒂斯特",
+   "group": "game",
+   "num": "hero-501",
+   "src": "src/renderer/img/hero-501.png",
+   "list": "miniprogram/img/hero-501.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-501.webp",
+   "listBytes": 1514,
+   "detailBytes": 2540
+  },
+  "黑影": {
+   "name": "黑影",
+   "group": "game",
+   "num": "hero-502",
+   "src": "src/renderer/img/hero-502.png",
+   "list": "miniprogram/img/hero-502.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-502.webp",
+   "listBytes": 1560,
+   "detailBytes": 2490
+  },
+  "雾子": {
+   "name": "雾子",
+   "group": "game",
+   "num": "hero-503",
+   "src": "src/renderer/img/hero-503.png",
+   "list": "miniprogram/img/hero-503.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-503.webp",
+   "listBytes": 1466,
+   "detailBytes": 2308
+  },
+  "生命之梭": {
+   "name": "生命之梭",
+   "group": "game",
+   "num": "hero-504",
+   "src": "src/renderer/img/hero-504.png",
+   "list": "miniprogram/img/hero-504.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-504.webp",
+   "listBytes": 1748,
+   "detailBytes": 2898
+  },
+  "伊拉锐": {
+   "name": "伊拉锐",
+   "group": "game",
+   "num": "hero-505",
+   "src": "src/renderer/img/hero-505.png",
+   "list": "miniprogram/img/hero-505.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-505.webp",
+   "listBytes": 1154,
+   "detailBytes": 1828
+  },
+  "朱诺": {
+   "name": "朱诺",
+   "group": "game",
+   "num": "hero-506",
+   "src": "src/renderer/img/hero-506.png",
+   "list": "miniprogram/img/hero-506.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-506.webp",
+   "listBytes": 1694,
+   "detailBytes": 2754
+  },
+  "无漾": {
+   "name": "无漾",
+   "group": "game",
+   "num": "hero-507",
+   "src": "src/renderer/img/hero-507.png",
+   "list": "miniprogram/img/hero-507.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-507.webp",
+   "listBytes": 2080,
+   "detailBytes": 3516
+  },
+  "飞天猫": {
+   "name": "飞天猫",
+   "group": "game",
+   "num": "hero-581",
+   "src": "src/renderer/img/hero-581.png",
+   "list": "miniprogram/img/hero-581.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-581.webp",
+   "listBytes": 2310,
+   "detailBytes": 3802
+  },
+  "瑞稀": {
+   "name": "瑞稀",
+   "group": "game",
+   "num": "hero-582",
+   "src": "src/renderer/img/hero-582.png",
+   "list": "miniprogram/img/hero-582.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-582.webp",
+   "listBytes": 1822,
+   "detailBytes": 2992
+  },
+  "血律": {
+   "name": "血律",
+   "group": "game",
+   "num": "hero-583",
+   "src": "src/renderer/img/hero-583.png",
+   "list": "miniprogram/img/hero-583.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-583.webp",
+   "listBytes": 1502,
+   "detailBytes": 2616
+  },
+  "守望淋锋 · 阿三专题区": {
+   "name": "守望淋锋 · 阿三专题区",
+   "group": "real",
+   "num": "hero-643",
+   "src": "src/renderer/img/hero-643.png",
+   "list": "miniprogram/img/hero-643.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-643.webp",
+   "listBytes": 1876,
+   "detailBytes": 3028
+  },
+  "摩西女专题区": {
+   "name": "摩西女专题区",
+   "group": "real",
+   "num": "hero-589",
+   "src": "src/renderer/img/hero-589.png",
+   "list": "miniprogram/img/hero-589.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-589.webp",
+   "listBytes": 1436,
+   "detailBytes": 2348
+  },
+  "紧那罗": {
+   "name": "紧那罗",
+   "group": "game",
+   "num": "hero-645",
+   "src": "src/renderer/img/hero-645.png",
+   "list": "miniprogram/img/hero-645.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-645.webp",
+   "listBytes": 1074,
+   "detailBytes": 1748
+  },
+  "阿织": {
+   "name": "阿织",
+   "group": "game",
+   "num": "hero-646",
+   "src": "src/renderer/img/hero-646.png",
+   "list": "miniprogram/img/hero-646.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-646.webp",
+   "listBytes": 2578,
+   "detailBytes": 4338
+  },
+  "彼岸花": {
+   "name": "彼岸花",
+   "group": "game",
+   "num": "hero-647",
+   "src": "src/renderer/img/hero-647.png",
+   "list": "miniprogram/img/hero-647.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-647.webp",
+   "listBytes": 1546,
+   "detailBytes": 2708
+  },
+  "铃彦姬": {
+   "name": "铃彦姬",
+   "group": "game",
+   "num": "hero-648",
+   "src": "src/renderer/img/hero-648.png",
+   "list": "miniprogram/img/hero-648.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-648.webp",
+   "listBytes": 1568,
+   "detailBytes": 2798
+  },
+  "妖狐": {
+   "name": "妖狐",
+   "group": "game",
+   "num": "hero-649",
+   "src": "src/renderer/img/hero-649.png",
+   "list": "miniprogram/img/hero-649.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-649.webp",
+   "listBytes": 1340,
+   "detailBytes": 2212
+  },
+  "化鲸": {
+   "name": "化鲸",
+   "group": "game",
+   "num": "hero-650",
+   "src": "src/renderer/img/hero-650.png",
+   "list": "miniprogram/img/hero-650.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-650.webp",
+   "listBytes": 1912,
+   "detailBytes": 3254
+  },
+  "鬼女红叶": {
+   "name": "鬼女红叶",
+   "group": "game",
+   "num": "hero-651",
+   "src": "src/renderer/img/hero-651.png",
+   "list": "miniprogram/img/hero-651.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-651.webp",
+   "listBytes": 2176,
+   "detailBytes": 3572
+  },
+  "鬼使白": {
+   "name": "鬼使白",
+   "group": "game",
+   "num": "hero-652",
+   "src": "src/renderer/img/hero-652.png",
+   "list": "miniprogram/img/hero-652.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-652.webp",
+   "listBytes": 1458,
+   "detailBytes": 2394
+  },
+  "千姬": {
+   "name": "千姬",
+   "group": "game",
+   "num": "hero-653",
+   "src": "src/renderer/img/hero-653.png",
+   "list": "miniprogram/img/hero-653.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-653.webp",
+   "listBytes": 2554,
+   "detailBytes": 4278
+  },
+  "兰兰": {
+   "name": "兰兰",
+   "group": "game",
+   "num": "hero-654",
+   "src": "src/renderer/img/hero-654.png",
+   "list": "miniprogram/img/hero-654.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-654.webp",
+   "listBytes": 1804,
+   "detailBytes": 2988
+  },
+  "天照": {
+   "name": "天照",
+   "group": "game",
+   "num": "hero-655",
+   "src": "src/renderer/img/hero-655.png",
+   "list": "miniprogram/img/hero-655.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-655.webp",
+   "listBytes": 1804,
+   "detailBytes": 2988
+  },
+  "不知火": {
+   "name": "不知火",
+   "group": "game",
+   "num": "hero-656",
+   "src": "src/renderer/img/hero-656.png",
+   "list": "miniprogram/img/hero-656.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-656.webp",
+   "listBytes": 1538,
+   "detailBytes": 2546
+  },
+  "桔梗": {
+   "name": "桔梗",
+   "group": "game",
+   "num": "hero-657",
+   "src": "src/renderer/img/hero-657.png",
+   "list": "miniprogram/img/hero-657.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-657.webp",
+   "listBytes": 1912,
+   "detailBytes": 3254
+  },
+  "青行灯（淋安京）": {
+   "name": "青行灯（淋安京）",
+   "group": "game",
+   "num": "hero-658",
+   "src": "src/renderer/img/hero-658.png",
+   "list": "miniprogram/img/hero-658.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-658.webp",
+   "listBytes": 2710,
+   "detailBytes": 4478
+  },
+  "雪女": {
+   "name": "雪女",
+   "group": "game",
+   "num": "hero-659",
+   "src": "src/renderer/img/hero-659.png",
+   "list": "miniprogram/img/hero-659.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-659.webp",
+   "listBytes": 1866,
+   "detailBytes": 3202
+  },
+  "神乐": {
+   "name": "神乐",
+   "group": "game",
+   "num": "hero-660",
+   "src": "src/renderer/img/hero-660.png",
+   "list": "miniprogram/img/hero-660.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-660.webp",
+   "listBytes": 2252,
+   "detailBytes": 3740
+  },
+  "鸩": {
+   "name": "鸩",
+   "group": "game",
+   "num": "hero-661",
+   "src": "src/renderer/img/hero-661.png",
+   "list": "miniprogram/img/hero-661.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-661.webp",
+   "listBytes": 1594,
+   "detailBytes": 2538
+  },
+  "铁鼠": {
+   "name": "铁鼠",
+   "group": "game",
+   "num": "hero-662",
+   "src": "src/renderer/img/hero-662.png",
+   "list": "miniprogram/img/hero-662.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-662.webp",
+   "listBytes": 1448,
+   "detailBytes": 2352
+  },
+  "九命猫": {
+   "name": "九命猫",
+   "group": "game",
+   "num": "hero-663",
+   "src": "src/renderer/img/hero-663.png",
+   "list": "miniprogram/img/hero-663.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-663.webp",
+   "listBytes": 1732,
+   "detailBytes": 2620
+  },
+  "妖刀姬": {
+   "name": "妖刀姬",
+   "group": "game",
+   "num": "hero-664",
+   "src": "src/renderer/img/hero-664.png",
+   "list": "miniprogram/img/hero-664.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-664.webp",
+   "listBytes": 1216,
+   "detailBytes": 2016
+  },
+  "茨木童子": {
+   "name": "茨木童子",
+   "group": "game",
+   "num": "hero-665",
+   "src": "src/renderer/img/hero-665.png",
+   "list": "miniprogram/img/hero-665.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-665.webp",
+   "listBytes": 1918,
+   "detailBytes": 3106
+  },
+  "酒吞童子": {
+   "name": "酒吞童子",
+   "group": "game",
+   "num": "hero-666",
+   "src": "src/renderer/img/hero-666.png",
+   "list": "miniprogram/img/hero-666.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-666.webp",
+   "listBytes": 1910,
+   "detailBytes": 3146
+  },
+  "鬼切": {
+   "name": "鬼切",
+   "group": "game",
+   "num": "hero-667",
+   "src": "src/renderer/img/hero-667.png",
+   "list": "miniprogram/img/hero-667.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-667.webp",
+   "listBytes": 2152,
+   "detailBytes": 3496
+  },
+  "须佐之男": {
+   "name": "须佐之男",
+   "group": "game",
+   "num": "hero-668",
+   "src": "src/renderer/img/hero-668.png",
+   "list": "miniprogram/img/hero-668.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-668.webp",
+   "listBytes": 2826,
+   "detailBytes": 4630
+  },
+  "闻人翊悬": {
+   "name": "闻人翊悬",
+   "group": "game",
+   "num": "hero-669",
+   "src": "src/renderer/img/hero-669.png",
+   "list": "miniprogram/img/hero-669.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-669.webp",
+   "listBytes": 2962,
+   "detailBytes": 5300
+  },
+  "灶门炭治郎": {
+   "name": "灶门炭治郎",
+   "group": "game",
+   "num": "hero-670",
+   "src": "src/renderer/img/hero-670.png",
+   "list": "miniprogram/img/hero-670.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-670.webp",
+   "listBytes": 1838,
+   "detailBytes": 2862
+  },
+  "二口女": {
+   "name": "二口女",
+   "group": "game",
+   "num": "hero-671",
+   "src": "src/renderer/img/hero-671.png",
+   "list": "miniprogram/img/hero-671.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-671.webp",
+   "listBytes": 1966,
+   "detailBytes": 3486
+  },
+  "首无": {
+   "name": "首无",
+   "group": "game",
+   "num": "hero-672",
+   "src": "src/renderer/img/hero-672.png",
+   "list": "miniprogram/img/hero-672.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-672.webp",
+   "listBytes": 762,
+   "detailBytes": 1240
+  },
+  "以津真天": {
+   "name": "以津真天",
+   "group": "game",
+   "num": "hero-673",
+   "src": "src/renderer/img/hero-673.png",
+   "list": "miniprogram/img/hero-673.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-673.webp",
+   "listBytes": 960,
+   "detailBytes": 1556
+  },
+  "西凉": {
+   "name": "西凉",
+   "group": "game",
+   "num": "hero-674",
+   "src": "src/renderer/img/hero-674.png",
+   "list": "miniprogram/img/hero-674.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-674.webp",
+   "listBytes": 2252,
+   "detailBytes": 3740
+  },
+  "阎魔": {
+   "name": "阎魔",
+   "group": "game",
+   "num": "hero-675",
+   "src": "src/renderer/img/hero-675.png",
+   "list": "miniprogram/img/hero-675.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-675.webp",
+   "listBytes": 2614,
+   "detailBytes": 4804
+  },
+  "白狼": {
+   "name": "白狼",
+   "group": "game",
+   "num": "hero-676",
+   "src": "src/renderer/img/hero-676.png",
+   "list": "miniprogram/img/hero-676.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-676.webp",
+   "listBytes": 2988,
+   "detailBytes": 5202
+  },
+  "管狐": {
+   "name": "管狐",
+   "group": "game",
+   "num": "hero-677",
+   "src": "src/renderer/img/hero-677.png",
+   "list": "miniprogram/img/hero-677.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-677.webp",
+   "listBytes": 1792,
+   "detailBytes": 2694
+  },
+  "小松丸": {
+   "name": "小松丸",
+   "group": "game",
+   "num": "hero-678",
+   "src": "src/renderer/img/hero-678.png",
+   "list": "miniprogram/img/hero-678.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-678.webp",
+   "listBytes": 2496,
+   "detailBytes": 3922
+  },
+  "御馔津": {
+   "name": "御馔津",
+   "group": "game",
+   "num": "hero-679",
+   "src": "src/renderer/img/hero-679.png",
+   "list": "miniprogram/img/hero-679.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-679.webp",
+   "listBytes": 1904,
+   "detailBytes": 3214
+  },
+  "百目鬼": {
+   "name": "百目鬼",
+   "group": "game",
+   "num": "hero-680",
+   "src": "src/renderer/img/hero-680.png",
+   "list": "miniprogram/img/hero-680.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-680.webp",
+   "listBytes": 1930,
+   "detailBytes": 3252
+  },
+  "鬼童丸": {
+   "name": "鬼童丸",
+   "group": "game",
+   "num": "hero-681",
+   "src": "src/renderer/img/hero-681.png",
+   "list": "miniprogram/img/hero-681.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-681.webp",
+   "listBytes": 1290,
+   "detailBytes": 2296
+  },
+  "青蛙瓷器": {
+   "name": "青蛙瓷器",
+   "group": "game",
+   "num": "hero-682",
+   "src": "src/renderer/img/hero-682.png",
+   "list": "miniprogram/img/hero-682.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-682.webp",
+   "listBytes": 2040,
+   "detailBytes": 3436
+  },
+  "樱花妖": {
+   "name": "樱花妖",
+   "group": "game",
+   "num": "hero-683",
+   "src": "src/renderer/img/hero-683.png",
+   "list": "miniprogram/img/hero-683.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-683.webp",
+   "listBytes": 2180,
+   "detailBytes": 3738
+  },
+  "山兔": {
+   "name": "山兔",
+   "group": "game",
+   "num": "hero-684",
+   "src": "src/renderer/img/hero-684.png",
+   "list": "miniprogram/img/hero-684.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-684.webp",
+   "listBytes": 3054,
+   "detailBytes": 5056
+  },
+  "萤草": {
+   "name": "萤草",
+   "group": "game",
+   "num": "hero-685",
+   "src": "src/renderer/img/hero-685.png",
+   "list": "miniprogram/img/hero-685.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-685.webp",
+   "listBytes": 2584,
+   "detailBytes": 4262
+  },
+  "桐颜灿": {
+   "name": "桐颜灿",
+   "group": "real",
+   "num": "hero-686",
+   "src": "src/renderer/img/hero-686.png",
+   "list": "miniprogram/img/hero-686.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-686.webp",
+   "listBytes": 1480,
+   "detailBytes": 2422
+  },
+  "八级大蜗牛": {
+   "name": "八级大蜗牛",
+   "group": "real",
+   "num": "hero-687",
+   "src": "src/renderer/img/hero-687.png",
+   "list": "miniprogram/img/hero-687.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-687.webp",
+   "listBytes": 2010,
+   "detailBytes": 3182
+  },
+  "悲惨圣母院_Sebastian": {
+   "name": "悲惨圣母院_Sebastian",
+   "group": "real",
+   "num": "hero-688",
+   "src": "src/renderer/img/hero-688.png",
+   "list": "miniprogram/img/hero-688.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-688.webp",
+   "listBytes": 2712,
+   "detailBytes": 4640
+  },
+  "醒时末爱": {
+   "name": "醒时末爱",
+   "group": "real",
+   "num": "hero-689",
+   "src": "src/renderer/img/hero-689.png",
+   "list": "miniprogram/img/hero-689.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-689.webp",
+   "listBytes": 2642,
+   "detailBytes": 4430
+  },
+  "一击肘飞女施主": {
+   "name": "一击肘飞女施主",
+   "group": "real",
+   "num": "hero-690",
+   "src": "src/renderer/img/hero-690.png",
+   "list": "miniprogram/img/hero-690.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-690.webp",
+   "listBytes": 1660,
+   "detailBytes": 2534
+  },
+  "诗云工作室STANZA": {
+   "name": "诗云工作室STANZA",
+   "group": "real",
+   "num": "hero-691",
+   "src": "src/renderer/img/hero-691.png",
+   "list": "miniprogram/img/hero-691.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-691.webp",
+   "listBytes": 1262,
+   "detailBytes": 1920
+  },
+  "酣睡之乐": {
+   "name": "酣睡之乐",
+   "group": "real",
+   "num": "hero-692",
+   "src": "src/renderer/img/hero-692.png",
+   "list": "miniprogram/img/hero-692.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-692.webp",
+   "listBytes": 2228,
+   "detailBytes": 3778
+  },
+  "一大碗白米粥zz": {
+   "name": "一大碗白米粥zz",
+   "group": "real",
+   "num": "hero-693",
+   "src": "src/renderer/img/hero-693.png",
+   "list": "miniprogram/img/hero-693.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-693.webp",
+   "listBytes": 854,
+   "detailBytes": 1184
+  },
+  "核桃包子味": {
+   "name": "核桃包子味",
+   "group": "real",
+   "num": "hero-694",
+   "src": "src/renderer/img/hero-694.png",
+   "list": "miniprogram/img/hero-694.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-694.webp",
+   "listBytes": 2024,
+   "detailBytes": 3308
+  },
+  "情绪细菌": {
+   "name": "情绪细菌",
+   "group": "real",
+   "num": "hero-695",
+   "src": "src/renderer/img/hero-695.png",
+   "list": "miniprogram/img/hero-695.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-695.webp",
+   "listBytes": 1334,
+   "detailBytes": 2240
+  },
+  "喜欢辅助的涳明Ovo": {
+   "name": "喜欢辅助的涳明Ovo",
+   "group": "real",
+   "num": "hero-696",
+   "src": "src/renderer/img/hero-696.png",
+   "list": "miniprogram/img/hero-696.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-696.webp",
+   "listBytes": 1980,
+   "detailBytes": 3042
+  },
+  "丶唯一的唯一": {
+   "name": "丶唯一的唯一",
+   "group": "real",
+   "num": "hero-697",
+   "src": "src/renderer/img/hero-697.png",
+   "list": "miniprogram/img/hero-697.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-697.webp",
+   "listBytes": 2124,
+   "detailBytes": 3646
+  },
+  "冬田美铃": {
+   "name": "冬田美铃",
+   "group": "real",
+   "num": "hero-698",
+   "src": "src/renderer/img/hero-698.png",
+   "list": "miniprogram/img/hero-698.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-698.webp",
+   "listBytes": 2742,
+   "detailBytes": 4190
+  },
+  "决战平安亰官方": {
+   "name": "决战平安亰官方",
+   "group": "real",
+   "num": "hero-699",
+   "src": "src/renderer/img/hero-699.png",
+   "list": "miniprogram/img/hero-699.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-699.webp",
+   "listBytes": 2730,
+   "detailBytes": 4288
+  },
+  "玉南辉": {
+   "name": "玉南辉",
+   "group": "real",
+   "num": "hero-700",
+   "src": "src/renderer/img/hero-700.png",
+   "list": "miniprogram/img/hero-700.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-700.webp",
+   "listBytes": 2334,
+   "detailBytes": 3974
+  },
+  "诗雨南宁": {
+   "name": "诗雨南宁",
+   "group": "real",
+   "num": "hero-701",
+   "src": "src/renderer/img/hero-701.png",
+   "list": "miniprogram/img/hero-701.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-701.webp",
+   "listBytes": 812,
+   "detailBytes": 1274
+  },
+  "拉克丝": {
+   "name": "拉克丝",
+   "group": "game",
+   "num": "hero-702",
+   "src": "src/renderer/img/hero-702.png",
+   "list": "miniprogram/img/hero-702.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-702.webp",
+   "listBytes": 2424,
+   "detailBytes": 3946
+  },
+  "迪希雅": {
+   "name": "迪希雅",
+   "group": "game",
+   "num": "hero-703",
+   "src": "src/renderer/img/hero-703.png",
+   "list": "miniprogram/img/hero-703.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-703.webp",
+   "listBytes": 2372,
+   "detailBytes": 4272
+  },
+  "卢雅那": {
+   "name": "卢雅那",
+   "group": "game",
+   "num": "hero-704",
+   "src": "src/renderer/img/hero-704.png",
+   "list": "miniprogram/img/hero-704.webp",
+   "detail": "miniprogram/pkg-hero/img/hero-704.webp",
+   "listBytes": 2414,
+   "detailBytes": 4062
+  }
+ }
+}

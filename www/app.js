@@ -33,6 +33,13 @@ createApp({
     const liveOn = ref(true);
     const trace = ref(null);
     const uncovered = ref([]);
+    // Phase 1：上下文消歧开关（默认关）。开启后走别名/语境选词，消除「每句都本可」的单调生硬。
+    const disamOn = ref(false);
+    // Phase 2：LLM 润色开关（默认关）。开启后正式翻译会调用本地 Ollama / 云端代理做流畅度润色。
+    const polishOn = ref(false);
+    const polishedFlag = ref(false);
+    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端用本机 Ollama，留空即可）。
+    const proxyUrl = ref('');
     const samples = ref(['你今天真好看！', '我不知道呢，感觉很开心', '太可爱了吧哈哈哈哈', '谢谢宝贝的抱抱']);
 
     const toast = reactive({ text: '', undo: null });
@@ -305,16 +312,54 @@ createApp({
       }
     }
 
+    // Phase 1：上下文消歧开关（默认关）。开启后走别名/语境选词。
+    function toggleDisam() {
+      disamOn.value = !disamOn.value;
+      window.api.setPref('disambiguate', JSON.stringify(disamOn.value)).catch(() => {});
+    }
+
+    // Phase 2：LLM 润色后处理开关。开启后正式翻译会经大模型润色（预览态不打模型）。
+    // 联动：开启润色时自动连带开启上下文消歧——润色层在「已消歧的草稿」上效果最好，
+    // 二者一起开能避免「塔塔」这类局部生硬被带进模型又救不回来。
+    function togglePolish() {
+      polishOn.value = !polishOn.value;
+      window.api.setPref('polishEnabled', JSON.stringify(polishOn.value)).catch(() => {});
+      if (polishOn.value && !disamOn.value) {
+        disamOn.value = true;
+        window.api.setPref('disambiguate', JSON.stringify(true)).catch(() => {});
+      }
+    }
+
+    // Web / 小程序端：保存云端润色代理地址（桌面端用本机 Ollama，无需填）。
+    function saveProxyUrl() {
+      const url = String(proxyUrl.value || '').trim();
+      window.api.setPref('polishProxyUrl', JSON.stringify(url)).catch(() => {});
+      say(url ? '已保存润色代理地址♥' : '已清空润色代理地址');
+    }
+
     async function doTranslate() {
       if (!input.value.trim() || loading.value) return;
       clearTimeout(previewTimer);
       loading.value = true;
+      polishedFlag.value = false;
       try {
         const r = await call(window.api.translate(input.value));
         output.value = r.dst;
         trace.value = r.trace;
         uncovered.value = r.uncovered || [];
         isPreview.value = false;
+        // Phase 2：开启润色且模型可达时，再做一次 LLM 流畅度润色（草稿保留在 r.dst 可比对）
+        if (polishOn.value && r.dst) {
+          try {
+            const p = await call(window.api.polish(input.value, r.dst));
+            if (p && p.polished) {
+              output.value = p.text;
+              polishedFlag.value = true;
+            }
+          } catch {
+            /* 润色失败不影响主翻译结果，沿用草稿 */
+          }
+        }
       } catch (err) {
         fail(err);
       } finally {
@@ -1281,6 +1326,9 @@ createApp({
       applyTheme(parsePref(prefs['ui.theme'], 'white'));
       historyLimit.value = Number(parsePref(prefs['history.limit'], 200)) || 200;
       if (!parsePref(prefs['ui.live'], true)) liveOn.value = false;
+      if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
+      if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
+      proxyUrl.value = String(parsePref(prefs['polishProxyUrl'], '') || '').trim();
 
       // 屏幕方向：进 App 先锁竖屏，只有用户在设置里开过「跟随设备旋转」才放开
       try {
@@ -1338,7 +1386,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, proxyUrl, saveProxyUrl, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,

@@ -92,6 +92,10 @@
     </view>
     <view class="promise">
       <text class="promise-mark">·</text>
+      <text class="promise-text">人物配图取自百度百科、百度图库与 B 站公开内容，未使用任何 AI 生成图像；部分人物暂无公开图源，以姓名首字占位。</text>
+    </view>
+    <view class="promise">
+      <text class="promise-mark">·</text>
       <text class="promise-text">如内容涉及侵权，欢迎通过下方「意见反馈」联系删除。</text>
     </view>
   </view>

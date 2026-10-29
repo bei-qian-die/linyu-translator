@@ -9,7 +9,7 @@ const THEMES = [
   { key: 'rose', label: '玫', en: 'ROSE', full: '玫粉 · ROSE', desc: '粉白纸面 · 深玫压色' },
 ];
 
-const DEFAULT_PREFS = { theme: 'white', live: true, historyLimit: 200 };
+const DEFAULT_PREFS = { theme: 'white', live: true, polish: false, disambiguate: false, historyLimit: 200 };
 
 const CHROME = {
   white: {
@@ -61,6 +61,7 @@ function normalize(raw) {
   if (prefs.theme === 'pink') prefs.theme = 'rose';
   if (!CHROME[prefs.theme]) prefs.theme = DEFAULT_PREFS.theme;
   prefs.live = prefs.live !== false;
+  prefs.polish = prefs.polish === true;
   const limit = Number(prefs.historyLimit);
   prefs.historyLimit = isHistoryLimit(limit) ? limit : DEFAULT_PREFS.historyLimit;
   return prefs;

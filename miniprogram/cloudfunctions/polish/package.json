@@ -1,0 +1,7 @@
+{
+  "name": "polish",
+  "version": "1.0.0",
+  "description": "淋语翻译器 · 云端润色云函数（小程序 callFunction + Web HTTP 访问双模式）",
+  "main": "index.js",
+  "dependencies": {}
+}

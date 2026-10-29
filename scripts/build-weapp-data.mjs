@@ -12,28 +12,29 @@ const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'))
 
 const FILES = [
   ['tokenizer.js', 'core/tokenizer.js'],
+  ['variant.js', 'core/variant.js'],
   ['translator.js', 'core/translator.js'],
-  ['lore.js', 'data/lore.js'],
-  ['lore-extra3.js', 'data/lore-extra3.js'],
-  ['lore-extra4.js', 'data/lore-extra4.js'],
-  ['lore-extra5.js', 'data/lore-extra5.js'],
-  ['lore-extra6.js', 'data/lore-extra6.js'],
-  ['lore-extra7.js', 'data/lore-extra7.js'],
-  ['lore-extra8.js', 'data/lore-extra8.js'],
-  ['lore-extra9.js', 'data/lore-extra9.js'],
-  ['lore-extra10.js', 'data/lore-extra10.js'],
-  ['lore-extra11.js', 'data/lore-extra11.js'],
-  ['lore-extra12.js', 'data/lore-extra12.js'],
-  ['lore-extra13.js', 'data/lore-extra13.js'],
-  ['lore-extra14.js', 'data/lore-extra14.js'],
-  ['lore-extra16.js', 'data/lore-extra16.js'],
-  ['lore-extra18.js', 'data/lore-extra18.js'],
-  ['lore-extra19.js', 'data/lore-extra19.js'],
-  ['lore-extra20.js', 'data/lore-extra20.js'],
-  ['lore-extra21.js', 'data/lore-extra21.js'],
-  ['lore-extra23.js', 'data/lore-extra23.js'],
-  ['lore-extra24.js', 'data/lore-extra24.js'],
-  ['lore-extra15.js', 'data/lore-extra15.js'],
+  ['lore.js', 'pkg-hero/data/lore.js'],
+  ['lore-extra3.js', 'pkg-hero/data/lore-extra3.js'],
+  ['lore-extra4.js', 'pkg-hero/data/lore-extra4.js'],
+  ['lore-extra5.js', 'pkg-hero/data/lore-extra5.js'],
+  ['lore-extra6.js', 'pkg-hero/data/lore-extra6.js'],
+  ['lore-extra7.js', 'pkg-hero/data/lore-extra7.js'],
+  ['lore-extra8.js', 'pkg-hero/data/lore-extra8.js'],
+  ['lore-extra9.js', 'pkg-hero/data/lore-extra9.js'],
+  ['lore-extra10.js', 'pkg-hero/data/lore-extra10.js'],
+  ['lore-extra11.js', 'pkg-hero/data/lore-extra11.js'],
+  ['lore-extra12.js', 'pkg-hero/data/lore-extra12.js'],
+  ['lore-extra13.js', 'pkg-hero/data/lore-extra13.js'],
+  ['lore-extra14.js', 'pkg-hero/data/lore-extra14.js'],
+  ['lore-extra16.js', 'pkg-hero/data/lore-extra16.js'],
+  ['lore-extra18.js', 'pkg-hero/data/lore-extra18.js'],
+  ['lore-extra19.js', 'pkg-hero/data/lore-extra19.js'],
+  ['lore-extra20.js', 'pkg-hero/data/lore-extra20.js'],
+  ['lore-extra21.js', 'pkg-hero/data/lore-extra21.js'],
+  ['lore-extra23.js', 'pkg-hero/data/lore-extra23.js'],
+  ['lore-extra24.js', 'pkg-hero/data/lore-extra24.js'],
+  ['lore-extra15.js', 'pkg-hero/data/lore-extra15.js'],
 ];
 
 function writeIfChanged(file, content) {
@@ -44,7 +45,9 @@ function writeIfChanged(file, content) {
 }
 
 fs.mkdirSync(path.join(OUT, 'core'), { recursive: true });
-fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
+// 词卡/名言/人物数据放 pkg-hero 分包：主包超 2MB 的主因，
+// 分包可 require 主包的 data/_sst.js（字符串表仍在主包，避免拆表）。
+fs.mkdirSync(path.join(OUT, 'pkg-hero', 'data'), { recursive: true });
 
 let changed = 0;
 
@@ -145,7 +148,10 @@ for (const [from, to] of FILES) {
       .split('\n')
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
       .map((line) => line.replace(/^\s+/, ''))
-      .join('\n');
+      .join('\n')
+      // 小程序端 lore.js 落在分包 pkg-hero/data/，字符串表仍留在主包 data/：
+      // 这里是分包 require 主包，方向合法（反向不行）。不替换会直接找不到模块。
+      .replace("require('./_sst.js')", "require('../../data/_sst.js')");
   }
   if (writeIfChanged(dst, content)) changed += 1;
 }

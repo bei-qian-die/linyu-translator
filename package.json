@@ -1,6 +1,6 @@
 {
   "name": "linyu-translator",
-  "version": "1.27.0",
+  "version": "1.30.0",
   "description": "中文 -> 淋语 翻译器（Electron + SQLite / Capacitor + sql.js）",
   "main": "src/main/main.js",
   "author": "qiuzh",
@@ -8,8 +8,9 @@
   "scripts": {
     "start": "node scripts/prepare-desktop.mjs && electron .",
     "check": "node scripts/check.js",
-    "test": "node test/core.test.js && node test/db.test.js && node test/service.test.js && node test/weapp.test.js",
+    "test": "node test/core.test.js && node test/variant.test.js && node test/db.test.js && node test/service.test.js && node test/weapp.test.js",
     "test:core": "node test/core.test.js",
+    "test:variant": "node test/variant.test.js",
     "test:db": "node test/db.test.js",
     "e2e": "node scripts/e2e-dev.js && node scripts/e2e-data.js",
     "dist": "node scripts/prepare-desktop.mjs && electron-builder --win",
@@ -43,7 +44,8 @@
     "@capacitor/share": "^6.0.4",
     "scrypt-js": "^3.0.1",
     "sql.js": "^1.13.0",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "wrangler": "^4.154.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^6.2.2",

@@ -82,9 +82,9 @@ function filterList(source, keyword) {
 }
 
 // 翻译耗时采样在 services/perf.js，关于页只依赖 perf，不需要加载整个 seed（B13 / A4）
-function translate(input) {
+function translate(input, disambiguate) {
   const start = Date.now();
-  const out = translateText(input, { words: seed.words, rules: seed.rules });
+  const out = translateText(input, { words: seed.words, rules: seed.rules, disambiguate: Boolean(disambiguate) });
   perf.record(Date.now() - start, input);
   return out;
 }
@@ -93,4 +93,29 @@ function translateStats() {
   return perf.stats();
 }
 
-module.exports = { words, rules, wordMap, counts, filterList, translate, translateStats };
+// 云端润色（可选后处理）：本地引擎先出草稿，再调云函数 polish 做流畅化。
+// 未初始化云开发 / 云函数不可用 / 任何异常 → 原样返回草稿，绝不影响翻译主链路。
+function polishViaCloud(source, draft) {
+  return new Promise((resolve) => {
+    try {
+      if (!draft) return resolve(draft);
+      if (typeof wx === 'undefined' || !wx.cloud || typeof wx.cloud.callFunction !== 'function') {
+        return resolve(draft);
+      }
+      wx.cloud.callFunction({
+        name: 'polish',
+        data: { source: source || '', draft },
+        success: (res) => {
+          const r = res && res.result;
+          const text = r && typeof r.text === 'string' ? r.text : '';
+          resolve(text || draft);
+        },
+        fail: () => resolve(draft),
+      });
+    } catch (err) {
+      resolve(draft);
+    }
+  });
+}
+
+module.exports = { words, rules, wordMap, counts, filterList, translate, translateStats, polishViaCloud };

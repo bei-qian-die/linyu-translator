@@ -58,15 +58,27 @@
   <view class="result">
     <view class="result-head">
       <text class="result-label">淋语结果</text>
-      <view class="live {{liveOn ? 'on' : ''}}" bindtap="toggleLive" aria-role="button" aria-label="实时预览开关">
-        <text class="live-dot"></text>
-        <text class="live-label">实时预览</text>
-        <text class="live-state">{{liveOn ? '开' : '关'}}</text>
+      <view class="result-toggles">
+        <view class="live {{liveOn ? 'on' : ''}}" bindtap="toggleLive" aria-role="button" aria-label="实时预览开关">
+          <text class="live-dot"></text>
+          <text class="live-label">实时预览</text>
+          <text class="live-state">{{liveOn ? '开' : '关'}}</text>
+        </view>
+        <view class="live {{disamOn ? 'on' : ''}}" bindtap="toggleDisam" aria-role="button" aria-label="语境消歧开关">
+          <text class="live-dot"></text>
+          <text class="live-label">消歧</text>
+          <text class="live-state">{{disamOn ? '开' : '关'}}</text>
+        </view>
+        <view class="live {{polishOn ? 'on' : ''}}" bindtap="togglePolish" aria-role="button" aria-label="LLM 润色开关">
+          <text class="live-dot"></text>
+          <text class="live-label">润色</text>
+          <text class="live-state">{{polishOn ? '开' : '关'}}</text>
+        </view>
       </view>
     </view>
     <text class="result-text {{output ? '' : 'is-hint'}}" user-select="{{true}}">{{output || hint}}</text>
     <view wx:if="{{output}}" class="result-foot">
-      <text class="result-note">{{outputLength}} 字 · {{isPreview ? '预览不记入历史' : historyNote}}</text>
+      <text class="result-note">{{outputLength}} 字 · {{polishedFlag ? '已润色 ♥ · ' : ''}}{{isPreview ? '预览不记入历史' : historyNote}}</text>
       <view class="result-actions">
         <view class="result-act" hover-class="act-hover" bindtap="copyOutput">复制</view>
         <button class="result-act" hover-class="act-hover" open-type="share">分享</button>

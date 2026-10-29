@@ -8,6 +8,14 @@ const tokenizerMod = (typeof require === 'function')
   : (typeof window !== 'undefined' ? (/** @type {any} */ (window).LINYU_TOKENIZER) : { buildTokenizer: () => (/** @type {any} */ (null)) });
 const { buildTokenizer } = tokenizerMod;
 
+// 语境选变体模块（slot / sense / rel）。脚本没加载时降级成不开消歧，
+// 保证老打包产物不会因为少一个 <script> 直接崩。
+// @platform: Node 用 require，浏览器/小程序从 window 取
+const variantMod = (typeof require === 'function')
+  ? require('./variant')
+  : (typeof window !== 'undefined' ? (/** @type {any} */ (window).LINYU_VARIANT) : null);
+const { buildVariantIndex, analyzeSource, createContext, chooseVariant } = variantMod || (/** @type {any} */ ({}));
+
 const END_FLAVOR = ['♥', '惹♥', '噜♥', '厚♥'];
 const SPLIT_RE = /([。！？!?；;]+)/;
 const CJK_RE = /[一-鿿]/;
@@ -24,7 +32,35 @@ const CJK_RE = /[一-鿿]/;
  * @typedef {Object} Word
  * @property {string} zh
  * @property {string} linyu
+ * @property {string} [alias]
+ * @property {string} [slot]
+ * @property {string} [sense]
+ * @property {string[]} [rel]
  */
+
+// ---- 语境选变体 ----
+// 词表编译、风格 / 领域推断、候选打分都在 core/variant.js 里（四端共用同一份）。
+// 这里只负责：把 words 编成索引（按内容签名缓存）、逐句喂语境、按选中的译法记 trace。
+// 默认路径（disambiguate=false）仍走原来的 Map<zh, linyu>，不付任何额外开销。
+
+// 语境后缀：替代原来的轮询 END_FLAVOR。
+// 问句不给后缀（? 本身已带语气），已以语气词结尾的不重复加，陈述句按内容哈希取噜/惹/厚 制造变化。
+const PARTICLE_END = /[惹噜厚♥嘛哦吖捏呀]$/;
+const QUESTION_HINT = /[吗呢怎么为什么谁什么咋哪儿哪]/;
+/**
+ * @param {string} content
+ * @param {string} delim
+ */
+function pickFlavor(content, delim) {
+  if (PARTICLE_END.test(content)) return '';
+  if (delim === '！' || delim === '!') return '♥';
+  if (delim === '？' || delim === '?') return '';
+  if (QUESTION_HINT.test(content)) return '';
+  const flavors = ['噜', '惹', '厚'];
+  let h = 0;
+  for (const ch of content) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return flavors[h % flavors.length];
+}
 
 /**
  * @param {Rule[]} rules
@@ -68,6 +104,9 @@ function pushTrace(ctx, entry) {
 // 用 null 当哨兵保证第一次一定走编译分支。
 let tokCache = { sig: null, map: new Map(), segment: (text) => [...text] };
 let ruleCache = { sig: null, compiled: [] };
+// 语境选变体索引缓存（独立于默认 map，避免影响默认路径）
+/** @type {{ sig: string|null, table: any }} */
+let tableCache = { sig: null, table: null };
 
 // 把句子按规则拆成 [{raw} | {parts, groups}] 序列，规则按声明顺序串行套用。
 // re 直接复用 compileRules 编译好的实例（循环里显式清零 lastIndex）——
@@ -113,12 +152,33 @@ function collectUncovered(ctx, run) {
   if (ctx.uncovered.length < 40) ctx.uncovered.push(clean);
 }
 
-function wordPass(items, segment, map, ctx) {
+/**
+ * @param {any[]} items
+ * @param {(text:string)=>string[]} segment
+ * @param {Map<string,any>} lookup 默认路径是 Map<zh,linyu>，消歧路径是 Map<zh, entry>
+ * @param {any} ctx
+ * @param {boolean} disambiguate
+ * @param {any} [vctx] 消歧路径的语境状态（core/variant.js 的 VariantCtx）
+ */
+function wordPass(items, segment, lookup, ctx, disambiguate, vctx) {
   const replace = (s) => {
+    const tokens = segment(s);
     let out = '';
     let run = '';
-    for (const t of segment(s)) {
-      const hit = map.get(t);
+    for (const t of tokens) {
+      let hit = null;
+      let why = '';
+      if (disambiguate) {
+        const entry = lookup.get(t);
+        if (entry) {
+          const picked = chooseVariant(entry, vctx);
+          hit = picked.text;
+          why = picked.why;
+        }
+      } else {
+        const plain = lookup.get(t);
+        hit = plain === undefined ? null : plain;
+      }
       if (hit == null) {
         run += t;
         out += t;
@@ -128,7 +188,8 @@ function wordPass(items, segment, map, ctx) {
         collectUncovered(ctx, run);
         run = '';
       }
-      pushTrace(ctx, { kind: 'word', from: t, to: hit });
+      if (disambiguate) pushTrace(ctx, { kind: 'word', from: t, to: hit, why });
+      else pushTrace(ctx, { kind: 'word', from: t, to: hit });
       out += hit;
     }
     if (run) collectUncovered(ctx, run);
@@ -146,13 +207,15 @@ function wordPass(items, segment, map, ctx) {
 
 /**
  * @param {string} text
- * @param {{ words: Word[], rules: Rule[], trace?: any[]|null, uncovered?: string[]|null, traceLimit?: number }} options
+ * @param {{ words: Word[], rules: Rule[], trace?: any[]|null, uncovered?: string[]|null, traceLimit?: number, disambiguate?: boolean }} options
  * @returns {string}
  */
 function translateText(text, options) {
   // options 在测试里会被省略，运行时走默认空对象；类型上按完整形状收，避免后面每处判空
   const opts = options || (/** @type {any} */ ({}));
   const { words, rules } = opts;
+  // 语境选变体依赖 variant 模块；模块缺失时降级为不开消歧，而不是崩掉
+  const disambiguate = Boolean(opts.disambiguate) && typeof chooseVariant === 'function';
   const ctx = {
     trace: opts.trace || null,
     traceLimit: opts.traceLimit || 240,
@@ -162,17 +225,44 @@ function translateText(text, options) {
   const input = String(text || '');
   if (!input.trim()) return '';
 
+  // 签名要覆盖选变体用到的全部字段（linyu / alias / slot / sense）：只按 zh 算签名的话，
+  // 开发者改完译文或候选、别名，索引还是旧的。长度和已经足够便宜地探测这类改动。
   const sig = words.map((w) => w.zh).join('\u0001');
-  if (tokCache.sig !== sig) {
-    const map = new Map(words.map((w) => [w.zh, w.linyu]));
-    tokCache = { sig, map, segment: buildTokenizer(words.map((w) => w.zh)) };
+  let detail = 0;
+  for (const w of words) {
+    detail += (w.linyu ? w.linyu.length : 0) + (w.alias ? w.alias.length : 0)
+      + (w.slot ? w.slot.length : 0) + (w.sense ? w.sense.length : 0);
   }
+  const vsig = sig + '#' + words.length + '#' + detail;
+
+  if (tokCache.sig !== vsig) {
+    const map = new Map(words.map((w) => [w.zh, w.linyu]));
+    tokCache = { sig: vsig, map, segment: buildTokenizer(words.map((w) => w.zh)) };
+  }
+  const map = tokCache.map;
+  const segment = tokCache.segment;
+
+  /** @type {Map<string,any>|null} */
+  let table = null;
+  /** @type {any} */
+  let vctx = null;
+  if (disambiguate) {
+    if (!tableCache.sig || tableCache.sig !== vsig) {
+      tableCache = { sig: vsig, table: buildVariantIndex(words) };
+    }
+    const index = tableCache.table;
+    table = index.entries;
+    // 文档级语境先扫一遍：整段在说守望还是王者，比逐句猜测稳
+    vctx = createContext(index);
+    const doc = analyzeSource(input, index);
+    vctx.domain = doc.domain;
+    vctx.style = doc.style;
+  }
+
   const rsig = rules.map((r) => r.pattern + '\u0000' + (r.template || '')).join('\u0001');
   if (ruleCache.sig !== rsig) {
     ruleCache = { sig: rsig, compiled: compileRules(rules) };
   }
-  const map = tokCache.map;
-  const segment = tokCache.segment;
   const compiled = ruleCache.compiled;
 
   let flavorCount = 0;
@@ -190,16 +280,39 @@ function translateText(text, options) {
           out += delim;
           continue;
         }
-        let s = wordPass(applyRules(content, compiled, ctx), segment, map, ctx);
-        if (!/[♥]$/.test(s)) {
-          if (delim === '。' || delim === '' || delim === '；' || delim === ';') {
-            if (!/[嘛哦吖惹捏]$/.test(s) && delim !== '；' && delim !== ';') {
-              s += END_FLAVOR[flavorCount % END_FLAVOR.length];
-              flavorCount += 1;
-              if (delim === '。') delim = '';
+        if (disambiguate && vctx) {
+          // 逐句把原文喂给语境：hook（我莫 的 莫）要在本句里找到角色名，
+          // 句内出现更明确的领域 / 风格线索时覆盖文档级判断。
+          vctx.source = content;
+          const local = analyzeSource(content, tableCache.table);
+          if (local.domain) vctx.domain = local.domain;
+          if (local.style) vctx.style = local.style;
+        }
+        let s = wordPass(applyRules(content, compiled, ctx), segment, disambiguate ? table : map, ctx, disambiguate, vctx);
+        if (disambiguate) {
+          // 语境后缀：问句/已带语气词不给后缀，陈述句按内容哈希取噜/惹/厚 制造自然变化
+          if (!/[♥]$/.test(s)) {
+            if (delim === '。' || delim === '' || delim === '；' || delim === ';') {
+              if (!/[嘛哦吖惹捏呀]$/.test(s) && delim !== '；' && delim !== ';') {
+                const fl = pickFlavor(s, delim);
+                if (fl) s += fl;
+              }
+            } else if (delim === '！' || delim === '!') {
+              s += '♥';
             }
-          } else if (delim === '！' || delim === '!') {
-            s += '♥';
+          }
+        } else {
+          // 原逻辑：轮询 END_FLAVOR（保持默认行为不变，现有测试依赖它）
+          if (!/[♥]$/.test(s)) {
+            if (delim === '。' || delim === '' || delim === '；' || delim === ';') {
+              if (!/[嘛哦吖惹捏]$/.test(s) && delim !== '；' && delim !== ';') {
+                s += END_FLAVOR[flavorCount % END_FLAVOR.length];
+                flavorCount += 1;
+                if (delim === '。') delim = '';
+              }
+            } else if (delim === '！' || delim === '!') {
+              s += '♥';
+            }
           }
         }
         out += s + delim;

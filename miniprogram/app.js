@@ -7,6 +7,10 @@ const { HISTORY_KEY, flush: flushHistory } = require('./services/history');
 const counts = require('./data/counts');
 const version = require('./data/version');
 
+// 云开发环境 ID：在「微信开发者工具 → 云开发」开通环境后，把环境 ID 填到这里
+// （形如 'linyu-3g8xxxxx'）。留空则不初始化云开发，小程序仍可纯本地翻译。
+const CLOUD_ENV = 'cloud1-d2g2xfwdo0d1c6f60';
+
 function realtimeLog() {
   try {
     if (typeof wx.getRealtimeLogManager === 'function') return wx.getRealtimeLogManager();
@@ -21,6 +25,9 @@ App({
     version,
     theme: 'white',
     live: true,
+    polish: false,
+    disambiguate: false,
+    cloudReady: false,
     historyLimit: 200,
     pendingInput: '',
     counts,
@@ -30,9 +37,24 @@ App({
     const prefs = getPrefs();
     this.globalData.theme = prefs.theme;
     this.globalData.live = prefs.live;
+    this.globalData.polish = prefs.polish;
+    this.globalData.disambiguate = prefs.disambiguate;
     this.globalData.historyLimit = prefs.historyLimit;
     applyChrome(prefs.theme, { customNav: true });
+    this.initCloud();
     this.setupPrivacy();
+  },
+
+  // 初始化云开发（用于云端润色）。未配置 CLOUD_ENV 或基础库不支持时静默跳过，
+  // 小程序退回纯本地翻译，不影响现有功能。
+  initCloud() {
+    if (!CLOUD_ENV || typeof wx.cloud === 'undefined') return;
+    try {
+      wx.cloud.init({ env: CLOUD_ENV, traceUser: true });
+      this.globalData.cloudReady = true;
+    } catch (err) {
+      this.reportError('cloud_init', err);
+    }
   },
 
   // 剪贴板属微信隐私接口：后台声明「读取你的剪切板」+ app.json 开 __usePrivacyCheck__ 后，
@@ -84,6 +106,18 @@ App({
     return prefs.live;
   },
 
+  setPolish(on) {
+    const prefs = setPref('polish', Boolean(on));
+    this.globalData.polish = prefs.polish;
+    return prefs.polish;
+  },
+
+  setDisambiguate(on) {
+    const prefs = setPref('disambiguate', Boolean(on));
+    this.globalData.disambiguate = prefs.disambiguate;
+    return prefs.disambiguate;
+  },
+
   setHistoryLimit(limit) {
     this.globalData.historyLimit = Number(limit) || 200;
   },
@@ -97,6 +131,7 @@ App({
     const prefs = resetPrefs();
     this.globalData.theme = prefs.theme;
     this.globalData.live = prefs.live;
+    this.globalData.disambiguate = prefs.disambiguate;
     this.globalData.historyLimit = prefs.historyLimit;
     this.globalData.pendingInput = '';
     applyChrome(prefs.theme, { customNav: true });

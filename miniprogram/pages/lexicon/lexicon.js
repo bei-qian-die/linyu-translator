@@ -1,11 +1,14 @@
 'use strict';
 
 const content = require('../../services/content');
-const { copy, chromeMetrics } = require('../../utils/ui');
+const { chromeMetrics } = require('../../utils/ui');
 const { syncChrome } = require('../../utils/pageBase');
 
 const PAGE_SIZE = 30;
 
+// 主包只保留纯文本检索（词库 / 句式）。词卡 / 名言 / 人物连同 557 张人物图和 570KB 数据
+// 一起在 pkg-hero 分包 —— 主包有 2MB 硬上限，这些内容放在主包会直接把包撑爆。
+// tab 栏仍然显示 5 个（带计数，让用户知道有多少内容），后三个点击跳分包。
 const TABS = [
   { key: 'words', label: '词库' },
   { key: 'rules', label: '句式' },
@@ -13,6 +16,12 @@ const TABS = [
   { key: 'quotes', label: '名言' },
   { key: 'heroes', label: '人物' },
 ];
+
+const REMOTE_TABS = {
+  cards: '/pkg-hero/pages/browse/browse?tab=cards',
+  quotes: '/pkg-hero/pages/browse/browse?tab=quotes',
+  heroes: '/pkg-hero/pages/browse/browse?tab=heroes',
+};
 
 const TAB_META = {
   words: {
@@ -22,18 +31,6 @@ const TAB_META = {
   rules: {
     placeholder: '搜索正则 / 模板 / 场景…',
     empty: '还没有句式',
-  },
-  cards: {
-    placeholder: '搜索词名 / 释义 / 出处…',
-    empty: '还没有词卡',
-  },
-  quotes: {
-    placeholder: '搜索名言 / 发言人 / 出处…',
-    empty: '还没有名言',
-  },
-  heroes: {
-    placeholder: '搜索名字 / 称号 / 标签…',
-    empty: '这个分组还没有人物',
   },
 };
 
@@ -71,48 +68,17 @@ Page({
     emptyTitle: TAB_META.words.empty,
     emptySub: '内容会随版本更新',
     ready: false,
-    cardFilters: [],
-    cardType: 'all',
-    heroGroups: [],
-    heroGroup: 'real',
-    heroZones: [],
-    heroZone: '',
     statusBar: 20,
     navBarH: 64,
     navTop: 82,
   },
 
   onLoad() {
-    // 先铺主题与骨架屏，lore（v1.18 约 1.23MB）解析放到下一帧，页面先上屏不白屏（C10）
     this.setData(
       Object.assign({ theme: getApp().globalData.theme }, chromeMetrics()),
       () => {
-        const defer = wx.nextTick ? wx.nextTick.bind(wx) : (fn) => fn();
-        defer(() => {
-          let lore = null;
-          try {
-            lore = require('../../services/lore');
-          } catch (err) {
-            console.error('[linyu] lore 加载失败', err);
-            const app = getApp();
-            if (app && app.reportError) app.reportError('lore_load_error', err);
-          }
-          this._lore = lore || {
-            heroes: [], cards: [], quotes: [],
-            cardFilters: [], heroGroups: [], heroZones: [],
-          };
-          this.setData(
-            {
-              cardFilters: this._lore.cardFilters,
-              heroGroups: this._lore.heroGroups,
-              heroZones: this._lore.heroZones,
-            },
-            () => {
-              this.applyFilter(true);
-              this.setData({ ready: true });
-            }
-          );
-        });
+        this.applyFilter(true);
+        this.setData({ ready: true });
       }
     );
   },
@@ -127,6 +93,11 @@ Page({
 
   switchTab(e) {
     const key = e.currentTarget.dataset.key;
+    // 词卡 / 名言 / 人物在分包，直接跳过去，本页 tab 状态不变
+    if (REMOTE_TABS[key]) {
+      wx.navigateTo({ url: REMOTE_TABS[key] });
+      return;
+    }
     if (!TAB_META[key] || key === this.data.tab) return;
     clearTimeout(this._searchTimer);
     this.setData(
@@ -134,8 +105,6 @@ Page({
         tab: key,
         keyword: '',
         placeholder: TAB_META[key].placeholder,
-        cardType: 'all',
-        heroZone: '',
       },
       () => {
         this.applyFilter(true);
@@ -158,25 +127,6 @@ Page({
     this.setData({ keyword: '' }, () => this.applyFilter(true));
   },
 
-  changeCardType(e) {
-    const key = e.currentTarget.dataset.key;
-    if (!key || key === this.data.cardType) return;
-    this.setData({ cardType: key }, () => this.applyFilter(true));
-  },
-
-  changeHeroGroup(e) {
-    const key = e.currentTarget.dataset.key;
-    if (!key || key === this.data.heroGroup) return;
-    this.setData({ heroGroup: key, heroZone: '' }, () => this.applyFilter(true));
-  },
-
-  changeHeroZone(e) {
-    const raw = e.currentTarget.dataset.key;
-    const zone = raw === 'all' ? '' : raw || '';
-    if (zone === this.data.heroZone) return;
-    this.setData({ heroZone: zone }, () => this.applyFilter(true));
-  },
-
   // 视图模型裁剪（B2）：只下发 WXML 真正用到的字段，不下发 searchText；
   // 有关键词时给主要展示字段附带高亮片段（C6）
   toViewModel(tab, item, index, keyword) {
@@ -193,100 +143,35 @@ Page({
         source: item.source,
       };
     }
-    if (tab === 'rules') {
-      return {
-        id: item.id,
-        note: item.note,
-        scene: item.scene,
-        pattern: item.pattern,
-        patternParts: splitHit(item.pattern, keyword),
-        template: item.template,
-        templateParts: splitHit(item.template, keyword),
-        examples: item.examples,
-        src: item.src,
-      };
-    }
-    if (tab === 'cards') {
-      return {
-        id: item.id,
-        typeLabel: item.typeLabel,
-        hero: item.hero,
-        term: item.term,
-        termParts: splitHit(item.term, keyword),
-        aliasesText: item.aliasesText,
-        meaning: item.meaning,
-        meaningParts: splitHit(item.meaning, keyword),
-        example: item.example,
-        detail: item.detail,
-        source: item.source,
-      };
-    }
-    if (tab === 'quotes') {
-      return {
-        id: item.id,
-        text: item.text,
-        textParts: splitHit(item.text, keyword),
-        author: item.author,
-        src: item.src,
-      };
-    }
-    // heroes
     return {
       id: item.id,
-      initial: item.initial,
-      name: item.name,
-      nameParts: splitHit(item.name, keyword),
-      rank: item.rank,
-      alias: item.alias,
-      intro: item.intro,
-      introParts: splitHit(item.intro, keyword),
-      tags: item.tags,
+      note: item.note,
+      scene: item.scene,
+      pattern: item.pattern,
+      patternParts: splitHit(item.pattern, keyword),
+      template: item.template,
+      templateParts: splitHit(item.template, keyword),
+      examples: item.examples,
+      src: item.src,
     };
   },
 
   applyFilter(reset) {
     const tab = this.data.tab;
     const keyword = this.data.keyword;
-    let base;
-
-    if (tab === 'heroes') {
-      base = this._lore.heroes.filter((h) => h.group === this.data.heroGroup);
-      if (this.data.heroGroup === 'game' && this.data.heroZone) {
-        base = base.filter((h) => h.zone === this.data.heroZone);
-      }
-    } else if (tab === 'words' || tab === 'rules') {
-      base = content[tab] || [];
-    } else {
-      base = this._lore[tab] || [];
-    }
-
-    if (tab === 'cards' && this.data.cardType !== 'all') {
-      base = base.filter((c) => c.type === this.data.cardType);
-    }
+    const base = content[tab] || [];
 
     const filtered = content.filterList(base, keyword);
     this._filtered = filtered;
     const visible = Math.min(PAGE_SIZE, filtered.length);
     this._shownCount = visible;
     const page = filtered.slice(0, visible).map((item, index) => this.toViewModel(tab, item, index, keyword));
-    const hasFilter =
-      Boolean(keyword.trim()) ||
-      (tab === 'cards' && this.data.cardType !== 'all') ||
-      (tab === 'heroes' && (Boolean(this.data.heroZone) || this.data.heroGroup !== 'real'));
 
     let emptyTitle = TAB_META[tab].empty;
     let emptySub = '内容会随版本更新';
     if (keyword.trim()) {
       emptyTitle = '没有匹配的内容';
       emptySub = '换个关键词试试';
-    } else if (tab === 'cards' && this.data.cardType !== 'all') {
-      emptyTitle = '这个分类还没有词卡';
-      emptySub = '换个分类试试';
-    } else if (tab === 'heroes' && (this.data.heroZone || this.data.heroGroup !== 'real')) {
-      emptyTitle = '这个分组还没有人物';
-      emptySub = '换个分组试试';
-    } else if (hasFilter) {
-      emptySub = '换个筛选条件试试';
     }
 
     this.setData({
@@ -320,15 +205,6 @@ Page({
 
   onReachBottom() {
     this.loadMore();
-  },
-
-  openHero(e) {
-    const id = e.currentTarget.dataset.id;
-    wx.navigateTo({ url: '/pages/hero/hero?id=' + id });
-  },
-
-  copyQuote(e) {
-    copy(e.currentTarget.dataset.text, '名言已复制♥');
   },
 
   onShareAppMessage() {

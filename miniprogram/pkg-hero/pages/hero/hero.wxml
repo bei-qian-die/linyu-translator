@@ -1,0 +1,154 @@
+<view class="page theme-{{theme}}">
+  <block wx:if="{{hero}}">
+    <view class="eyebrow">
+      <view class="eyebrow-left"><text>CHARACTER</text><text class="eyebrow-mark">/</text><text>人物</text></view>
+      <text class="eyebrow-right">只读档案</text>
+    </view>
+
+    <view class="hero-top rise">
+      <view class="hero-avatar">
+        <text class="hero-initial">{{hero.initial}}</text>
+        <image
+          wx:if="{{photo}}"
+          class="hero-photo"
+          src="{{photo}}"
+          mode="aspectFill"
+          lazy-load
+          binderror="onPhotoError"
+        />
+      </view>
+      <view class="hero-head">
+        <view class="hero-name">
+          <text class="hero-name-text">{{hero.name}}</text>
+          <text class="hero-rank">{{hero.rank}}</text>
+        </view>
+        <view wx:if="{{hero.alias}}" class="hero-alias">又名：{{hero.alias}}</view>
+        <view wx:if="{{hero.tags.length}}" class="hero-tags">
+          <text class="h-tag" wx:for="{{hero.tags}}" wx:for-item="tag" wx:key="*this">#{{tag}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="stats-bar">{{stats}}</view>
+
+    <view class="section-label">人物简介</view>
+    <view class="intro-text">{{hero.intro}}</view>
+
+    <block wx:if="{{hero.baike}}">
+      <view class="section-label">百科详情</view>
+      <view class="baike-text">{{hero.baike}}</view>
+    </block>
+
+    <block wx:if="{{hero.works.length}}">
+      <view class="section-label">代表作</view>
+      <view class="work-list">
+        <text class="work-chip" wx:for="{{hero.works}}" wx:key="*this">{{item}}</text>
+      </view>
+    </block>
+
+    <block wx:if="{{links.length}}">
+      <view class="section-label">来源 · 相关链接</view>
+      <view class="link-list">
+        <view class="link-row" wx:for="{{links}}" wx:key="url">
+          <view class="link-body">
+            <view class="link-label">{{item.label}}</view>
+            <view class="link-url">{{item.url}}</view>
+          </view>
+          <view class="link-copy" data-url="{{item.url}}" catchtap="copyLink">复制</view>
+        </view>
+      </view>
+      <view class="tap-hint">小程序内无法直接打开外部链接，复制后到浏览器粘贴访问</view>
+    </block>
+
+    <block wx:if="{{related.words.length}}">
+      <view class="section-label">关联词库</view>
+      <view class="word-list">
+        <view
+          class="word-card"
+          wx:for="{{related.words}}"
+          wx:key="zh"
+          data-text="{{item.zh}} ➜ {{item.linyu}}"
+          hover-class="tap-soft"
+          bindtap="copyWord"
+        >
+          <view class="word-line">
+            <text class="word-zh">{{item.zh}}</text>
+            <text class="word-arrow">→</text>
+            <text class="word-ly">{{item.linyu}}</text>
+          </view>
+          <view wx:if="{{item.sense}}" class="word-sense">{{item.sense}}</view>
+        </view>
+      </view>
+      <view class="tap-hint">点击词条可复制</view>
+    </block>
+
+    <block wx:if="{{related.rules.length}}">
+      <view class="section-label">相关句式</view>
+      <view class="rule-list">
+        <view class="rule-card" wx:for="{{related.rules}}" wx:key="id">
+          <view class="rule-head">
+            <text class="rule-id">#{{item.id}}</text>
+            <text wx:if="{{item.note}}" class="h-tag">{{item.note}}</text>
+          </view>
+          <view class="rule-row">
+            <text class="rule-label">匹配</text>
+            <text class="rule-pattern">{{item.pattern}}</text>
+          </view>
+          <view class="rule-row">
+            <text class="rule-label accent">替换</text>
+            <text class="rule-template">{{item.template}}</text>
+          </view>
+          <view wx:if="{{item.examples}}" class="rule-example">例：{{item.examples}}</view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="{{related.cards.length}}">
+      <view class="section-label">相关词卡</view>
+      <view class="lore-list">
+        <view class="lore-card" wx:for="{{related.cards}}" wx:key="id">
+          <view class="lore-card-head">
+            <text class="fc-type">{{item.typeLabel}}</text>
+          </view>
+          <view class="lore-term">{{item.term}}</view>
+          <view wx:if="{{item.aliasesText}}" class="lore-alias">又名：{{item.aliasesText}}</view>
+          <view class="lore-meaning">{{item.meaning}}</view>
+          <view wx:if="{{item.example}}" class="lore-example">例：{{item.example}}</view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="{{related.quotes.length}}">
+      <view class="section-label">相关名言</view>
+      <view class="quote-list">
+        <view
+          class="quote-card"
+          wx:for="{{related.quotes}}"
+          wx:key="id"
+          data-text="{{item.text}} —— {{item.author}}"
+          bindlongpress="copyQuote"
+        >
+          <view class="q-text">{{item.text}}</view>
+          <view class="q-meta">
+            <text class="q-author">—— {{item.author}}</text>
+            <text wx:if="{{item.src}}" class="q-src">{{item.src}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="tap-hint">长按名言可复制</view>
+    </block>
+
+    <view class="back-bar">
+      <view class="btn-ghost back-btn" bindtap="backToLexicon">返回淋语词库</view>
+    </view>
+    <view class="tip">内容整理自公开语料，仅供娱乐 · 配图取自公开图源，侵权即删</view>
+  </block>
+
+  <empty-state
+    wx:else
+    title="没有找到这位人物"
+    sub="链接可能已过期，回词库重新找找"
+    primary-text="返回词库"
+    bindprimary="backToLexicon"
+  />
+</view>

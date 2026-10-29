@@ -3,12 +3,17 @@
 const fs = require('fs');
 const path = require('path');
 const assert = require('assert');
+const zlib = require('zlib');
 
 const ROOT = path.resolve(__dirname, '..');
 const MP = path.join(ROOT, 'miniprogram');
 
+// 人物详情页已迁入分包 pkg-hero（配图轮次：详情图随分包走），其余四个页面在主包
+const PAGE_ROUTES = { hero: 'pkg-hero/pages/hero/hero', browse: 'pkg-hero/pages/browse/browse' };
+
 // 小程序运行时依赖全局 wx / Page / getApp，先铺一层最小桩再 require 业务模块
 const storage = new Map();
+const navigations = [];
 let lastPageConfig = null;
 let lastClipboard = '';
 let lastToast = '';
@@ -38,7 +43,9 @@ global.wx = {
   setNavigationBarTitle() {},
   hideShareMenu() {},
   switchTab() {},
-  navigateTo() {},
+  navigateTo(options) {
+    navigations.push(options.url);
+  },
   pageScrollTo() {},
   reportEvent() {},
   vibrateShort() {},
@@ -98,7 +105,7 @@ const seed = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'core', 'seed.jso
 const history = require('../miniprogram/services/history');
 const prefs = require('../miniprogram/services/prefs');
 const content = require('../miniprogram/services/content');
-const loreService = require('../miniprogram/services/lore');
+const loreService = require('../miniprogram/pkg-hero/services/lore');
 const weappTranslator = require('../miniprogram/core/translator');
 const coreTranslator = require('../src/core/translator');
 
@@ -137,7 +144,8 @@ function applyPath(target, key, value) {
 }
 
 function loadPage(name) {
-  const file = require.resolve(`../miniprogram/pages/${name}/${name}.js`);
+  const route = PAGE_ROUTES[name] || `pages/${name}/${name}`;
+  const file = require.resolve(`../miniprogram/${route}.js`);
   delete require.cache[file];
   lastPageConfig = null;
   require(file);
@@ -215,19 +223,19 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
   const files = [
     ['core/tokenizer.js', 'tokenizer.js'],
     ['core/translator.js', 'translator.js'],
-    ['data/lore.js', 'lore.js'],
-    ['data/lore-extra3.js', 'lore-extra3.js'],
-    ['data/lore-extra4.js', 'lore-extra4.js'],
-    ['data/lore-extra5.js', 'lore-extra5.js'],
-    ['data/lore-extra6.js', 'lore-extra6.js'],
-    ['data/lore-extra7.js', 'lore-extra7.js'],
-    ['data/lore-extra8.js', 'lore-extra8.js'],
-    ['data/lore-extra9.js', 'lore-extra9.js'],
-    ['data/lore-extra10.js', 'lore-extra10.js'],
-    ['data/lore-extra11.js', 'lore-extra11.js'],
-    ['data/lore-extra12.js', 'lore-extra12.js'],
-    ['data/lore-extra13.js', 'lore-extra13.js'],
-    ['data/lore-extra14.js', 'lore-extra14.js'],
+    ['pkg-hero/data/lore.js', 'lore.js'],
+    ['pkg-hero/data/lore-extra3.js', 'lore-extra3.js'],
+    ['pkg-hero/data/lore-extra4.js', 'lore-extra4.js'],
+    ['pkg-hero/data/lore-extra5.js', 'lore-extra5.js'],
+    ['pkg-hero/data/lore-extra6.js', 'lore-extra6.js'],
+    ['pkg-hero/data/lore-extra7.js', 'lore-extra7.js'],
+    ['pkg-hero/data/lore-extra8.js', 'lore-extra8.js'],
+    ['pkg-hero/data/lore-extra9.js', 'lore-extra9.js'],
+    ['pkg-hero/data/lore-extra10.js', 'lore-extra10.js'],
+    ['pkg-hero/data/lore-extra11.js', 'lore-extra11.js'],
+    ['pkg-hero/data/lore-extra12.js', 'lore-extra12.js'],
+    ['pkg-hero/data/lore-extra13.js', 'lore-extra13.js'],
+    ['pkg-hero/data/lore-extra14.js', 'lore-extra14.js'],
   ];
   // lore-extraN.js：小程序端是列式编码，按解码后的内容比（等价编码不算不同步）
   // lore.js / tokenizer.js / translator.js：小程序端会裁掉整行注释与空行以省主包体积，
@@ -239,7 +247,10 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
       .split('\n')
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
       .map((line) => line.replace(/^\s+/, ''))
-      .join('\n');
+      .join('\n')
+      // 小程序端 lore.js 落在 pkg-hero 分包，require 字符串表要写 ../../data/_sst.js，
+      // 主端是 ./_sst.js。这是分包布局决定的路径差异，不该算「内容不同步」。
+      .replace(/require\('(?:\.\.\/\.\.\/data\/|\.\/)_sst\.js'\)/g, "require('__SST__')");
   for (const [mpFile, coreFile] of files) {
     const mpPath = path.join(MP, mpFile);
     if (/lore-extra\d+\.js$/.test(coreFile)) {
@@ -301,7 +312,7 @@ run('500 字本地翻译平均耗时低于 100ms', () => {
 });
 
 run('内容条目数量与源数据一致', () => {
-  const lore = require('../miniprogram/data/lore');
+  const lore = require('../miniprogram/pkg-hero/data/lore');
   assert.strictEqual(content.counts.words, seed.words.length);
   assert.strictEqual(content.counts.rules, seed.rules.length);
   assert.strictEqual(content.counts.cards, lore.flashcards.length);
@@ -409,10 +420,14 @@ run('偏好设置归一化与主题应用', () => {
 
 run('页面文件齐全且已注册', () => {
   const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
-  const pages = ['index', 'lexicon', 'history', 'about', 'hero'];
+  const pages = ['index', 'lexicon', 'history', 'about', 'hero', 'browse'];
+  const subPages = (appJson.subPackages || []).flatMap((p) =>
+    (p.pages || []).map((page) => `${p.root}/${page}`)
+  );
   for (const name of pages) {
-    const route = `pages/${name}/${name}`;
-    assert(appJson.pages.includes(route), `${route} 未在 app.json 注册`);
+    const route = PAGE_ROUTES[name] || `pages/${name}/${name}`;
+    const registered = appJson.pages.includes(route) || subPages.includes(route);
+    assert(registered, `${route} 未在 app.json 注册`);
     for (const ext of ['js', 'json', 'wxml', 'wxss']) {
       assert(fs.existsSync(path.join(MP, `${route}.${ext}`)), `缺少 ${route}.${ext}`);
     }
@@ -423,6 +438,8 @@ run('页面文件齐全且已注册', () => {
     assert(appJson.pages.includes(tab.pagePath), `tabBar 页面 ${tab.pagePath} 未注册`);
   }
   assert(!appJson.tabBar.list.some((t) => t.pagePath === 'pages/hero/hero'), '人物详情不应进 tabBar');
+  // 人物详情必须在分包里，否则详情图无处安放（主包放不下 557 张图）
+  assert(subPages.includes('pkg-hero/pages/hero/hero'), '人物详情页应注册在 pkg-hero 分包');
 });
 
 run('自定义 tabBar 与 app.json 声明一致（B7）', () => {
@@ -466,7 +483,7 @@ run('页面脚本可加载并完成人物数据装配', () => {
   assert.strictEqual(heroPage.data.hero.name, loreService.heroes[0].name);
   assert(heroPage.data.stats.includes('词条'));
   const share = heroPage.onShareAppMessage();
-  assert.strictEqual(share.path, '/pages/hero/hero?id=0');
+  assert.strictEqual(share.path, '/pkg-hero/pages/hero/hero?id=0');
 
   heroPage.onLoad({ id: '99999' });
   assert.strictEqual(heroPage.data.notFound, true);
@@ -474,7 +491,7 @@ run('页面脚本可加载并完成人物数据装配', () => {
 
 run('WXML 事件处理函数均已实现', () => {
   for (const name of ['index', 'lexicon', 'history', 'about', 'hero']) {
-    const wxml = fs.readFileSync(path.join(MP, `pages/${name}/${name}.wxml`), 'utf8');
+    const wxml = fs.readFileSync(path.join(MP, `${PAGE_ROUTES[name] || `pages/${name}/${name}`}.wxml`), 'utf8');
     const handlers = new Set();
     const re = /\b(?:bind|catch)[a-z]+="([^"]+)"/g;
     let match = re.exec(wxml);
@@ -529,7 +546,7 @@ run('公共组件齐全且已全局注册（C1）', () => {
   assert(appWxss.includes('@import "styles/theme.wxss"'), 'app.wxss 未引入主题文件');
   assert(fs.existsSync(path.join(MP, 'styles', 'theme.wxss')), '缺少 styles/theme.wxss');
   for (const name of ['index', 'lexicon', 'history', 'about']) {
-    const wxml = fs.readFileSync(path.join(MP, `pages/${name}/${name}.wxml`), 'utf8');
+    const wxml = fs.readFileSync(path.join(MP, `${PAGE_ROUTES[name] || `pages/${name}/${name}`}.wxml`), 'utf8');
     assert(wxml.includes('<nav-bar'), `${name} 页未使用 nav-bar 组件`);
   }
 });
@@ -594,14 +611,56 @@ runAsync('历史批量选择删除流程（C7）', async () => {
   assert.strictEqual(history.readHistory()[0].input, '记录一', '最新一条被选中删除，应剩下更早的记录');
 });
 
-run('主包体积小于 2MB 且不含人物图片', () => {
+run('包体预算：主包与各分包分别小于 2MB，图片按档位落位', () => {
+  const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
+  const subRoots = (appJson.subPackages || []).map((p) => p.root);
+  const rel = (file) => path.relative(MP, file).split(path.sep);
+  const isSub = (file) => subRoots.includes(rel(file)[0]);
+
   const files = walk(MP);
-  const bytes = files.reduce((total, file) => total + fs.statSync(file).size, 0);
-  const mb = (bytes / 1024 / 1024).toFixed(2);
-  assert(bytes < 2 * 1024 * 1024, `主包 ${mb}MB 超过 2MB`);
-  const images = files.filter((file) => /\.(png|jpe?g|webp|gif)$/i.test(file));
-  assert.strictEqual(images.length, 0, `主包不应包含图片：${images.join(', ')}`);
-  console.log(`     主包体积 ${mb}MB / ${files.length} 个文件`);
+  const main = files.filter((f) => !isSub(f));
+  // 微信的 2MB 限的是上传压缩后的代码包：图片压不动、JS 能压三分之二，
+  // 所以必须按 gzip 后体积算，按原始字节算会把预算误判成超标。
+  const size = (list) =>
+    list.reduce((total, file) => {
+      const raw = fs.readFileSync(file);
+      const gz = /\.(png|jpe?g|webp|gif|mp4|mp3|wav)$/i.test(file)
+        ? raw.length
+        : zlib.gzipSync(raw, { level: 9 }).length;
+      return total + gz;
+    }, 0);
+  const mb = (bytes) => (bytes / 1024 / 1024).toFixed(2);
+
+  const mainBytes = size(main);
+  assert(mainBytes < 2 * 1024 * 1024, `主包 ${mb(mainBytes)}MB 超过 2MB`);
+
+  for (const root of subRoots) {
+    const subFiles = files.filter((f) => rel(f)[0] === root);
+    const subBytes = size(subFiles);
+    assert(subBytes < 2 * 1024 * 1024, `分包 ${root} ${mb(subBytes)}MB 超过 2MB`);
+    console.log(`     分包 ${root} ${mb(subBytes)}MB / ${subFiles.length} 个文件`);
+  }
+
+  // 557 张人物图只留一套，全部在 pkg-hero 分包：主包一张都不该有。
+  // 以前是「主包 96px 列表图 + 分包 136px 详情图」两套并存，白占 1MB 主包预算。
+  const mainImgs = main.filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f));
+  const subImgs = files.filter((f) => isSub(f) && /\.(png|jpe?g|webp|gif)$/i.test(f));
+  assert.strictEqual(mainImgs.length, 0, '主包不应保留人物图，图统一放 pkg-hero 分包');
+  assert(subImgs.length > 0, '分包缺少人物图');
+  for (const file of subImgs) {
+    assert(/[\\/]img[\\/]hero-\d+\.webp$/.test(file), `分包出现非人物图：${path.relative(MP, file)}`);
+    assert(fs.statSync(file).size <= 16 * 1024, `分包人物图过大：${path.relative(MP, file)}`);
+  }
+  console.log(`     主包 ${mb(mainBytes)}MB / ${main.length} 个文件`);
+
+  // 图片路径是模板里拼的（/img/{{item.img}}.webp），静态扫描认不出依赖，
+  // 开着「上传时过滤无依赖文件」会把 557 张图整批剔掉 —— 必须关。
+  const projCfg = JSON.parse(fs.readFileSync(path.join(MP, 'project.config.json'), 'utf8'));
+  assert.strictEqual(
+    projCfg.setting.ignoreUploadUnusedFiles,
+    false,
+    '动态拼接的图片路径需关闭 ignoreUploadUnusedFiles，否则上传时图片会被过滤'
+  );
 });
 
 run('小程序端不包含网络上传/下载调用', () => {
@@ -645,6 +704,30 @@ run('A1 隐私声明与剪贴板降级', () => {
   global.wx.setClipboardData = original;
 });
 
+run('主包词库页把词卡/名言/人物三个 tab 交给分包', () => {
+  const page = loadPage('lexicon');
+  page.onLoad();
+  navigations.length = 0;
+  for (const key of ['cards', 'quotes', 'heroes']) {
+    page.switchTab({ currentTarget: { dataset: { key } } });
+  }
+  assert.deepStrictEqual(
+    navigations,
+    [
+      '/pkg-hero/pages/browse/browse?tab=cards',
+      '/pkg-hero/pages/browse/browse?tab=quotes',
+      '/pkg-hero/pages/browse/browse?tab=heroes',
+    ],
+    '词卡/名言/人物应跳转到 pkg-hero 分包浏览页'
+  );
+  assert.strictEqual(page.data.tab, 'words', '跳到分包不应改变主包页自身的 tab 状态');
+
+  navigations.length = 0;
+  page.switchTab({ currentTarget: { dataset: { key: 'rules' } } });
+  assert.deepStrictEqual(navigations, [], '句式仍在主包内切换，不应跳转');
+  assert.strictEqual(page.data.tab, 'rules');
+});
+
 run('A4 首屏数据解耦', () => {
   const appSrc = fs.readFileSync(path.join(MP, 'app.js'), 'utf8');
   assert(!/require\(['"]\.\/services\/(content|lore)['"]\)/.test(appSrc), 'app.js 不应加载 content/lore');
@@ -652,9 +735,14 @@ run('A4 首屏数据解耦', () => {
   const contentSrc = fs.readFileSync(path.join(MP, 'services', 'content.js'), 'utf8');
   assert(!contentSrc.includes('data/lore'), 'content.js 不应加载 lore');
   const lexiconSrc = fs.readFileSync(path.join(MP, 'pages', 'lexicon', 'lexicon.js'), 'utf8');
-  assert(lexiconSrc.includes("require('../../services/lore')"), '词库页应延迟加载 lore');
-  const heroSrc = fs.readFileSync(path.join(MP, 'pages', 'hero', 'hero.js'), 'utf8');
-  assert(heroSrc.includes("require('../../services/lore')"), '人物页应延迟加载 lore');
+  // 主包词库页只做词条/句式检索；词卡/名言/人物整块在 pkg-hero 分包，
+  // 主包一旦 require lore，1MB 数据连同人物图就会被算进主包预算。
+  assert(!lexiconSrc.includes('services/lore'), '主包词库页不应加载 lore（已移入 pkg-hero 分包）');
+  assert(lexiconSrc.includes('REMOTE_TABS'), '主包词库页应把词卡/名言/人物三个 tab 指向分包');
+  const browseSrc = fs.readFileSync(path.join(MP, PAGE_ROUTES.browse + '.js'), 'utf8');
+  assert(browseSrc.includes("require('../../services/lore')"), '分包浏览页应延迟加载 lore');
+  const heroSrc = fs.readFileSync(path.join(MP, PAGE_ROUTES.hero + '.js'), 'utf8');
+  assert(heroSrc.includes("require('../../services/lore')"), '人物页应延迟加载 lore（同分包）');
   const aboutSrc = fs.readFileSync(path.join(MP, 'pages', 'about', 'about.js'), 'utf8');
   assert(!aboutSrc.includes("services/content"), '关于页不应为耗时统计加载 seed');
   assert(aboutSrc.includes("services/perf"), '关于页应只加载 perf');
@@ -759,12 +847,53 @@ runAsync('A3 本地词表与分享/历史双闸门', async () => {
   assert(page.data.historyNote.includes('未写入'), '结果区状态不应误报已写入历史');
 });
 
+run('配图链路：列表与详情都能拿到真实图片路径', () => {
+  const loreSvc = require('../miniprogram/pkg-hero/services/lore');
+  const withImg = loreSvc.heroes.filter((h) => h.img);
+  const noImg = loreSvc.heroes.filter((h) => !h.img);
+  assert(withImg.length > 500, `有图人物过少：${withImg.length}`);
+  for (const hero of withImg) {
+    assert(/^hero-\d+$/.test(hero.img), `图片编号不规范：${hero.name} ${hero.img}`);
+    assert.strictEqual(hero.thumb, `/pkg-hero/img/${hero.img}.webp`, `${hero.name} 缩略图路径不对`);
+  }
+  for (const hero of noImg) {
+    assert.strictEqual(hero.thumb, '', `${hero.name} 无图时 thumb 应为空`);
+  }
+
+  // 列表：视图模型必须把 thumb 透出来（白名单字段，漏了就是满屏首字方块）
+  const listPage = loadPage('browse');
+  listPage.onLoad({ tab: 'heroes' });
+  listPage.setData({ tab: 'heroes', heroGroup: 'game' });
+  listPage.applyFilter(true);
+  const shown = listPage.data.shown;
+  assert(shown.length > 0, '人物列表为空');
+  const withImgVm = shown.filter((item) => item.thumb);
+  assert(withImgVm.length > 0, '列表视图模型没有透出 thumb');
+  for (const item of withImgVm) {
+    assert(/^\/pkg-hero\/img\/hero-\d+\.webp$/.test(item.thumb), `列表缩略图路径异常：${item.thumb}`);
+  }
+
+  // 详情：photo 指向分包里的 136px 图
+  const heroPage = loadPage('hero');
+  heroPage.onLoad({ id: '0' });
+  assert(/^\.\.\/\.\.\/img\/hero-\d+\.webp$/.test(heroPage.data.photo), '详情图应指向分包相对路径');
+  heroPage.onPhotoError();
+  assert.strictEqual(heroPage.data.photo, '', '图片加载失败后应回落首字占位');
+
+  const noImgIdx = String(loreSvc.heroes.findIndex((h) => !h.img));
+  if (noImgIdx !== '-1') {
+    heroPage.onLoad({ id: noImgIdx });
+    assert.strictEqual(heroPage.data.photo, '', '无图人物不应拼出图片路径');
+  }
+});
+
 run('B2 视图模型不下发 searchText', () => {
   const page = loadPage('lexicon');
   const wordVm = page.toViewModel('words', content.words[0], 0, '');
   assert(!('searchText' in wordVm), '词条视图模型不应携带 searchText');
-  const card = require('../miniprogram/services/lore').cards[0];
-  const cardVm = page.toViewModel('cards', card, 0, '');
+  const browsePage = loadPage('browse');
+  const card = require('../miniprogram/pkg-hero/services/lore').cards[0];
+  const cardVm = browsePage.toViewModel('cards', card, 0, '');
   assert(!('searchText' in cardVm), '词卡视图模型不应携带 searchText');
 });
 
@@ -869,7 +998,7 @@ run('B6/B8 主题同步收口与 customNav 分支', () => {
     const src = fs.readFileSync(path.join(MP, 'pages', name, `${name}.js`), 'utf8');
     assert(src.includes('syncChrome(this'), `${name} 未使用 syncChrome`);
   }
-  const heroSrc = fs.readFileSync(path.join(MP, 'pages', 'hero', 'hero.js'), 'utf8');
+  const heroSrc = fs.readFileSync(path.join(MP, PAGE_ROUTES.hero + '.js'), 'utf8');
   assert(heroSrc.includes('syncChrome(this)'));
   assert(!heroSrc.includes('{ tab: false }'), 'hero 页不应再传无效的第二个实参');
 
@@ -917,8 +1046,8 @@ run('B14 提审配置与版本单一来源', () => {
 });
 
 run('B11 lore 聚合依赖的 drop 字段不可剥离', () => {
-  const e4 = require('../miniprogram/data/lore-extra4');
-  const e5 = require('../miniprogram/data/lore-extra5');
+  const e4 = require('../miniprogram/pkg-hero/data/lore-extra4');
+  const e5 = require('../miniprogram/pkg-hero/data/lore-extra5');
   assert(Array.isArray(e4.dropCards) && Array.isArray(e4.dropQuotes));
   assert(Array.isArray(e5.dropCards) && Array.isArray(e5.dropQuotes) && Array.isArray(e5.dropHeroes));
   const dropped = new Set([...e4.dropCards, ...e5.dropCards]);

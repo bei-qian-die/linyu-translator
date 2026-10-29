@@ -45,6 +45,8 @@
           <span class="lang ly">淋语</span>
           <span class="live-row">
             <label class="live-toggle"><input type="checkbox" :checked="liveOn" @change="toggleLive" />边输入边预览</label>
+            <label class="live-toggle"><input type="checkbox" :checked="disamOn" @change="toggleDisam" />上下文消歧</label>
+            <label class="live-toggle"><input type="checkbox" :checked="polishOn" @change="togglePolish" />LLM 润色</label>
             <span class="live-badge" v-if="previewing">预览中…</span>
             <span class="live-badge" v-else-if="isPreview">实时预览 · 不记入历史</span>
           </span>
@@ -67,7 +69,10 @@
           <div class="panel out-panel">
             <div class="out-text" :class="{ hint: !output }">{{ output || '翻译结果会出现在这里，保证淋味十足♥' }}</div>
             <div class="panel-foot">
-              <span class="count" v-if="output">{{ output.length }} 字</span>
+              <span v-if="output">
+                <span class="count">{{ output.length }} 字</span>
+                <span class="live-badge" v-if="polishedFlag">已润色 ♥</span>
+              </span>
               <span v-else></span>
               <button class="ghost" v-show="output" @click="copyOutput">复制结果</button>
             </div>
@@ -83,7 +88,7 @@
                 <ul class="trace-list">
                   <li v-for="(t, i) in trace" :key="i">
                     <span class="tr-kind">{{ t.kind === 'word' ? '词条' : '句式' }}</span>
-                    <span class="tr-body" v-if="t.kind === 'word'">{{ t.from }} <b>➜</b> {{ t.to }}</span>
+                    <span class="tr-body" v-if="t.kind === 'word'">{{ t.from }} <b>➜</b> {{ t.to }}<em class="tr-why" v-if="t.why">（{{ t.why }}）</em></span>
                     <span class="tr-body" v-else>#{{ t.id }} <code>{{ t.pattern }}</code> 命中「{{ t.from }}」{{ t.note ? '（' + t.note + '）' : '' }}</span>
                   </li>
                 </ul>
@@ -541,6 +546,17 @@
         </div>
         <p class="tip">主题即时生效，下次打开自动记住♥</p>
 
+        <div class="setting-divider"></div>
+        <span class="setting-label">翻译增强 · LLM 润色（云端代理）</span>
+        <p class="setting-desc">
+          「上下文消歧」「LLM 润色」开关在翻译页工具栏。桌面端用本机 Ollama 润色，无需填下面地址；
+          Web / 小程序端没有本地模型，需填写一个部署好的润色代理地址才能开启 LLM 润色。
+        </p>
+        <div class="auth-row">
+          <input v-model.trim="proxyUrl" placeholder="https://你的代理域名/polish" style="flex:1 1 260px" />
+          <button class="ghost small" @click="saveProxyUrl">保存地址</button>
+        </div>
+
         <template v-if="orientSupported">
           <div class="setting-divider"></div>
           <span class="setting-label">屏幕方向</span>
@@ -709,10 +725,14 @@
   <script src="core/lore-extra24.js"></script>
   <script src="core/lore.js"></script>
   <script src="core/tokenizer.js"></script>
+  <script src="core/variant.js"></script>
   <script src="core/translator.js"></script>
   <script src="core/db.js"></script>
   <script src="core/auth.js"></script>
   <script src="core/service.js"></script>
+
+  <!-- Phase 2 润色层（与平台无关）：Web / 小程序端靠它构造云端代理客户端，桌面端只用其纯函数 -->
+  <script src="core/llm-polish.js"></script>
 
   <!-- 移动入口：api + entry -->
   <script src="mobile/api.js"></script>

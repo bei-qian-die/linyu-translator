@@ -149,14 +149,21 @@ const cases = buildCases();
 const failures = [];
 const started = Date.now();
 
-for (const { input, label } of cases) {
-  const want = coreTranslator.translateText(input, coreCtx);
-  const got = mpTranslator.translateText(input, mpCtx);
-  if (want !== got) failures.push({ input, label, want, got });
+// 两条路径都要一致：
+//   默认路径 = Map<zh,linyu> 直查；消歧路径 = core/variant.js 按 slot/sense/rel 选变体。
+// 后者是新引擎的主战场，两边只要有一处权重或候选顺序不同，逐字符比对立刻炸出来。
+for (const mode of [false, true]) {
+  const cctx = mode ? { ...coreCtx, disambiguate: true } : coreCtx;
+  const mctx = mode ? { ...mpCtx, disambiguate: true } : mpCtx;
+  for (const { input, label } of cases) {
+    const want = coreTranslator.translateText(input, cctx);
+    const got = mpTranslator.translateText(input, mctx);
+    if (want !== got) failures.push({ input, label: (mode ? '[消歧] ' : '') + label, want, got });
+  }
 }
 
 const elapsed = Date.now() - started;
-console.log(`[parity] ${cases.length} 条用例，耗时 ${elapsed}ms`);
+console.log(`[parity] ${cases.length} 条用例 × 2 条路径，耗时 ${elapsed}ms`);
 
 if (failures.length) {
   console.log(`FAIL [parity] ${failures.length} 条不一致`);

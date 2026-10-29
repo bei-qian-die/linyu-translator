@@ -5,9 +5,12 @@
 > **在线体验（Web 版，无需安装）**：<https://linyu-translator.app.workbuddy.host/?sharecode=KYSNKQPHS7>
 > 桌面版与安卓版见 [Releases](https://github.com/bei-qian-die/linyu-translator/releases)。
 
-## 当前版本：**1.23.0**
+## 当前版本：**1.29.0**
 
-五大板块规模：词库 **1769** / 句式 **455** / 词卡 **1072** / 人物传 **383 位** / 名言 **2706**。
+五大板块规模：词库 **2435** / 句式 **588** / 词卡 **1375** / 人物传 **563 位** / 名言 **3199**。
+
+最新一次发布（2026-10-28）：
+- 1.29.0 引擎升级——**语境选变体**：把词库的 `slot` / `sense` / `rel` 三个字段变成可计算的语境信号，同一个中文词的上百个淋语说法不再靠随机挑，而是按「领域（守望 / 王者 / 瓦 / 平安京…）+ 风格（卖萌 / 自嘲 / 清宫）+ 同句呼应」打分。纯本地、零网络、零延迟，桌面 / 安卓 / Web / 小程序四端同一套权重，一致性脚本已覆盖消歧路径的逐字符比对；详见 `release/1.29.0-notes.md`
 
 最新一次发布（2026-10-26）：
 - 1.23.0 第十九轮扩充（瓦罗淋特分区）：词库 +301、句式 +43、词卡 +158、名言 +406、人物传 +61（24 位契约者 / 32 位 UP 主与职业选手 / 5 位召唤兽），49 张真实配图；「瓦罗淋特」语义位 6→141 条、变体 96，新增 8 个专属子语义位；修正 6 项既有缺陷；主包压到 1.90MB；详见 `release/1.23.0-notes.md`
@@ -99,7 +102,7 @@
 ## 代码结构
 
 ```
-src/core/     纯逻辑，四端共用：db / translator / tokenizer / auth / lore / service
+src/core/     纯逻辑，四端共用：db / translator / variant / tokenizer / auth / lore / service
 src/main/     Electron 主进程：IPC 转发 + 平台相关（对话框、media 目录、日志、窗口几何）
 src/mobile/   Capacitor WebView：文件选择 / 分享 / 屏幕方向，并用 service 组出 window.api
 src/web/      网页端：idbAdapter / webEntry / patch-app / web.css（第四端的适配层）
@@ -110,6 +113,8 @@ src/renderer/ 界面：Vue 3，index.html + app.js + style.css
 都在 `src/core/service.js`；桌面 `main.js`、移动 `api.js`、Web `webEntry.js` 只是转发，
 加接口不用改多处。每端各自留着平台特有的那一半：桌面管 `userData/media` 与文件对话框，
 移动端管 Capacitor 插件与屏幕方向，Web 端管 IndexedDB 与浏览器生命周期。
+
+翻译链路分三层，各自可以单独关掉：`translator.js` 默认路径（`Map<zh,linyu>` 直查，最稳）→ `variant.js` 语境选变体（按 slot / sense / rel 打分，`disambiguate` 开关）→ `llm-polish.js` 云端 LLM 润色（可选后处理，失败回退草稿）。
 
 `service.js` 的约定是**成功返回数据、失败一律 throw**：桌面用 `wrap` 捕获成
 `{ ok:false, error }`，移动端用 `safe()` 捕获成同样的形状，渲染层看到的东西一致。
@@ -124,7 +129,7 @@ src/renderer/ 界面：Vue 3，index.html + app.js + style.css
 `appid` 从 `touristappid` 换成自己的小程序 AppID（没有 AppID 时可用测试号预览）。页面注册在
 `app.json`，底部四个 tab：翻译 / 词库 / 历史 / 关于；人物详情是 `wx.navigateTo` 打开的二级页。
 
-**数据同步**：`miniprogram/core/`、`miniprogram/data/` 是生成产物，不要手改。改了
+**数据同步**：`miniprogram/core/`、`miniprogram/data/`、`miniprogram/pkg-hero/data/` 是生成产物，不要手改。改了
 `src/core/seed.json`、`lore*.js`、`translator.js`、`tokenizer.js` 后运行：
 
 ```bash
@@ -140,8 +145,16 @@ npm run test:weapp
 历史本机存储（100/200/500/1000 条可调）、三套主题（纯白/粉紫/黑，导航栏与 tabBar 同步变色）、
 词库五板块只读浏览与人物详情。主题、实时预览、历史条数都存在 `wx.storage`。
 
+**包结构（微信主包 2MB 硬上限，按 gzip 后计）**：
+
+- 主包只放翻译与检索：`core/`（引擎）、`data/seed.js` + `data/_sst.js`（2435 词条 / 588 句式）、四个 tab 页
+- `pkg-hero` 分包放全部浏览类内容：词卡 / 名言 / 人物浏览页、人物详情页、`data/lore*.js`、557 张人物图
+- 词库页的「词卡 / 名言 / 人物」三个 tab 点击直接 `navigateTo` 进分包，词库 / 句式仍在主包内切换
+- 实测主包 0.53MB / 分包 1.53MB，两边都留了扩两三轮内容的余量
+
 **刻意不做**：开发者登录与五板块 CRUD、导入导出、人物图上传、TTS、收藏、云同步、广告。
-人物头像用姓名首字渐变块，主包里没有图片——人物原图共 8.4MB，放不进 2MB 主包；
+人物头像用姓名首字渐变块兜底（图片加载失败自动回落到首字），557 张人物图（112×112 WebP，
+共 1388KB）全部放在 `pkg-hero` 分包，主包一张都不留；
 外部链接在小程序里不能直接打开，人物详情页改成「复制链接后到浏览器访问」。
 小程序不发任何翻译网络请求，输入内容不上传，历史可用「关于 → 清除历史与偏好设置」一键删除。
 

@@ -3,9 +3,26 @@
     "pages/index/index",
     "pages/lexicon/lexicon",
     "pages/history/history",
-    "pages/about/about",
-    "pages/hero/hero"
+    "pages/about/about"
   ],
+  "subPackages": [
+    {
+      "root": "pkg-hero",
+      "name": "hero",
+      "pages": [
+        "pages/hero/hero",
+        "pages/browse/browse"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/lexicon/lexicon": {
+      "network": "all",
+      "packages": [
+        "hero"
+      ]
+    }
+  },
   "window": {
     "navigationBarTitleText": "淋语翻译器",
     "navigationBarBackgroundColor": "#f7f5f1",

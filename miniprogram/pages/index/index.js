@@ -25,6 +25,9 @@ Page({
     outputLength: 0,
     maxLen: MAX_LEN,
     liveOn: true,
+    polishOn: false,
+    disamOn: false,
+    polishedFlag: false,
     previewing: false,
     isPreview: false,
     historyNote: '已写入本机历史',
@@ -41,7 +44,7 @@ Page({
     // 一次 setData 合并主题、实时翻译开关与自绘导航尺寸，减少首屏渲染次数（B10）
     this.setData(
       Object.assign(
-        { theme: app.globalData.theme, liveOn: app.globalData.live },
+        { theme: app.globalData.theme, liveOn: app.globalData.live, polishOn: app.globalData.polish, disamOn: app.globalData.disambiguate },
         chromeMetrics()
       )
     );
@@ -73,7 +76,7 @@ Page({
   onShow() {
     const app = getApp();
     syncChrome(this, 0);
-    this.setData({ liveOn: app.globalData.live });
+    this.setData({ liveOn: app.globalData.live, polishOn: app.globalData.polish, disamOn: app.globalData.disambiguate });
 
     const pending = app.globalData.pendingInput;
     if (pending) {
@@ -132,7 +135,7 @@ Page({
   // 翻译主链路兜底：数据异常导致抛错时原样返回，保证预览/翻译流程不中断（A5）
   safeTranslate(input) {
     try {
-      return content.translate(input);
+      return content.translate(input, this.data.disamOn);
     } catch (err) {
       const app = getApp();
       if (app && app.reportError) app.reportError('translate_error', err);
@@ -219,6 +222,32 @@ Page({
     if (this.data.input.trim()) this.runPreview();
   },
 
+  toggleDisam() {
+    this.setDisam(!this.data.disamOn);
+  },
+
+  setDisam(on) {
+    const next = Boolean(on);
+    getApp().setDisambiguate(next);
+    this.setData({ disamOn: next });
+    if (next && this.data.input.trim()) this.runPreview();
+  },
+
+  togglePolish() {
+    this.setPolish(!this.data.polishOn);
+  },
+
+  setPolish(on) {
+    const next = Boolean(on);
+    getApp().setPolish(next);
+    // 作废正在进行中的润色请求，避免旧结果覆盖新状态
+    this._polishSeq = (this._polishSeq || 0) + 1;
+    this.setData({ polishOn: next, polishedFlag: false });
+    if (next && !getApp().globalData.cloudReady) {
+      toast('云开发未初始化，润色暂不可用');
+    }
+  },
+
   // 本地翻译是同步毫秒级，直接完成，不需要 setTimeout 与假 loading（C4）
   doTranslate() {
     const input = this.data.input;
@@ -229,15 +258,39 @@ Page({
 
     clearTimeout(this._previewTimer);
     const output = this.safeTranslate(input);
+    const wantPolish = this.data.polishOn;
     this.setData({
       output,
       outputLength: output.length,
       previewing: false,
       isPreview: false,
-      historyNote: '校验中…',
+      polishedFlag: false,
+      historyNote: wantPolish ? '润色中…' : '校验中…',
     });
-    this.secCheckAndRemember(input, output);
-    // 只有输出真正变化时才震动，避免重复点击重复震动（C5）
+
+    if (!wantPolish) {
+      this.vibrateOnce(output);
+      this.secCheckAndRemember(input, output);
+      return;
+    }
+
+    // 云端润色：本地草稿先展示，润色结果回来再替换；用 seq 丢弃过期结果
+    const seq = (this._polishSeq = (this._polishSeq || 0) + 1);
+    content.polishViaCloud(input, output).then((polished) => {
+      if (seq !== this._polishSeq) return;
+      const finalText = polished && polished !== output ? polished : output;
+      this.setData({
+        output: finalText,
+        outputLength: finalText.length,
+        polishedFlag: finalText !== output,
+      });
+      this.vibrateOnce(finalText);
+      this.secCheckAndRemember(input, finalText);
+    });
+  },
+
+  // 只有输出真正变化时才震动，避免重复点击重复震动（C5）
+  vibrateOnce(output) {
     if (output && output !== this._lastOutput) {
       this._lastOutput = output;
       try {

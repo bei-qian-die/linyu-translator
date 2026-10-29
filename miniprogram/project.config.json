@@ -1,6 +1,7 @@
 {
   "description": "淋语翻译器 · 微信小程序端",
   "miniprogramRoot": "./",
+  "cloudfunctionRoot": "cloudfunctions/",
   "compileType": "miniprogram",
   "appid": "wxc690278e3bd52b9a",
   "projectname": "linyu-translator-weapp",
@@ -13,7 +14,7 @@
     "minified": true,
     "coverView": true,
     "checkSiteMap": true,
-    "ignoreUploadUnusedFiles": true,
+    "ignoreUploadUnusedFiles": false,
     "useCompilerPlugins": false,
     "compileWorklet": false,
     "uglifyFileName": false,

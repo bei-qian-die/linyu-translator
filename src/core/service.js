@@ -37,7 +37,7 @@ const SECTIONS = [
  * @param {string} deps.version 应用版本号
  * @param {Object} [deps.config] 阈值覆盖
  */
-function createService({ db, auth, translator, version, config }) {
+function createService({ db, auth, translator, version, config, polish }) {
   const cfg = config || {};
   const TRACE_LIMIT = cfg.traceLimit || 240;
   const UNDO_WINDOW_MS = cfg.undoWindowMs || 60000;
@@ -155,9 +155,32 @@ function createService({ db, auth, translator, version, config }) {
       trace,
       uncovered,
       traceLimit: TRACE_LIMIT,
+      // Phase 1 上下文消歧：默认关闭，开启后走别名/语境选词，不影响未开启时的行为
+      disambiguate: readPref('disambiguate', false),
     });
     if (src.trim() && !preview) db.addHistory(src, dst);
     return { dst, preview, trace: wantTrace ? trace : null, uncovered: wantTrace ? uncovered : null };
+  }
+
+  /**
+   * Phase 2 LLM 润色后处理（异步）。
+   * 把规则引擎产出的草稿交给本地大模型做流畅度润色；无 polish 注入或任何异常
+   * 都安全回退到草稿。预览态不应调用本方法（每次击键都打模型太慢）。
+   * @param {string} source 原文（中文）
+   * @param {string} draft 引擎产出的淋语草稿
+   * @returns {Promise<{ polished: boolean, text: string, available: boolean, error?: string }>}
+   */
+  async function polishDraft(source, draft) {
+    if (typeof polish !== 'function') {
+      return { polished: false, text: String(draft || ''), available: false };
+    }
+    try {
+      const text = await polish(String(source || ''), String(draft || ''));
+      const t = String(text || draft || '');
+      return { polished: t !== String(draft || ''), text: t, available: true };
+    } catch (e) {
+      return { polished: false, text: String(draft || ''), available: true, error: e && e.message };
+    }
   }
 
   // ---- 五板块 CRUD ----
@@ -272,6 +295,7 @@ function createService({ db, auth, translator, version, config }) {
 
     // 翻译
     translate,
+    polishDraft,
 
     // 五板块
     crud,

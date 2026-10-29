@@ -143,6 +143,13 @@ const PREF_KEYS = new Set([
   'ui.theme',
   'ui.live',
   'ui.autoRotate',
+  // Phase 1/2 翻译增强开关与本地模型配置
+  'disambiguate',
+  'polishEnabled',
+  'ollamaBaseUrl',
+  'ollamaModel',
+  // Web / 小程序端云端润色代理地址（桌面端无需填）
+  'polishProxyUrl',
 ]);
 
 const SECTIONS = {

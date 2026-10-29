@@ -179,6 +179,12 @@
   margin-bottom: 22rpx;
 }
 
+.result-toggles {
+  display: flex;
+  align-items: center;
+  flex: none;
+}
+
 .result-label {
   font-size: 20rpx;
   font-weight: 600;
