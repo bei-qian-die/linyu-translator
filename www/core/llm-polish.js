@@ -98,6 +98,85 @@ function retentionOk(draft, polished, source) {
   return ratio >= 0.5 && (hasGlyph || kept > 0);
 }
 
+/**
+ * 清掉模型复述出来的提示词骨架。
+ * qwen3 经常把「原文：… / 润色后：…」整段学回来，甚至带引号、带 ``` 包裹，
+ * 直接塞进结果栏就会出现「润色后：本可不造厚…」这种脏输出（护栏还会判定通过）。
+ * @param {string} raw
+ * @returns {string}
+ */
+function cleanPolishOutput(raw) {
+  let s = stripThink(raw).replace(/^```[a-z]*\n?|```$/gi, '');
+  const marks = [...s.matchAll(/润色后\s*[:：]/g)];
+  if (marks.length) {
+    const last = marks[marks.length - 1];
+    s = s.slice(last.index + last[0].length);
+  }
+  s = s
+    .split(/\r?\n/)
+    .map((t) => t.trim())
+    .filter((t) => t && !/^(原文|草稿|润色后)\s*[:：]/.test(t))
+    .join('\n')
+    .trim();
+  return s.replace(/^[「『“"']+|[」』”"']+$/g, '').trim();
+}
+
+// ---- 模型发现（纯函数 + 探测）----
+
+/**
+ * 纯函数：从本机已装模型里挑一个可用的润色模型。
+ * 起因：默认写死 `qwen3:8b`，但本机实际装的是 `qwen3:8b-fast`（自定义 Modelfile），
+ * 二者名字不等 → /api/chat 返回 404 → polish 静默回退草稿，用户只看到「没润色」。
+ * 优先级：用户显式指定 > 同名不带 tag > 同 base 名（qwen3:*) > 任意 qwen3 > 第一个模型。
+ * @param {Array<string|{name?:string}>} available /api/tags 返回的模型列表（也接受裸名字数组）
+ * @param {string} [wanted] 用户偏好里的模型名
+ * @returns {string} 选中的模型名；无可用模型返回 ''
+ */
+function pickModel(available, wanted) {
+  const list = (available || [])
+    .map((m) => (typeof m === 'string' ? m : m && m.name))
+    .filter(Boolean);
+  if (!list.length) return '';
+  // 「fast / no_think」这类变体是本机为降低思考链开销自定义的，同等条件下优先：
+  // 实测同一张卡上 qwen3:8b 首次响应 ~37s，qwen3:8b-fast 只要 ~10s，选错就等于超时。
+  const isFast = (n) => /fast|no[-_]?think/i.test(n);
+  const w = String(wanted || '').trim();
+  if (w && list.includes(w)) return w; // 用户显式指定就照办
+  if (w) {
+    const base = w.split(':')[0];
+    const same = list.filter((n) => n.split(':')[0] === base);
+    if (same.length) return same.find(isFast) || same[0];
+  }
+  const qwen = list.filter((n) => /^qwen3/i.test(n));
+  const hit = qwen.find(isFast) || qwen.find((n) => /8b/i.test(n)) || qwen[0];
+  return hit || list[0];
+}
+
+/**
+ * 读取本机 Ollama 的模型列表（失败返回空数组，不抛）。
+ * @param {string} [baseUrl]
+ * @param {Function} [fetchImpl]
+ * @returns {Promise<string[]>}
+ */
+async function listOllamaModels(baseUrl, fetchImpl) {
+  const f = fetchImpl || (typeof fetch === 'function' ? fetch : null);
+  if (!f) return [];
+  try {
+    const c = new AbortController();
+    const t = setTimeout(() => c.abort(), 4000);
+    const r = await f(String(baseUrl || 'http://localhost:11434').replace(/\/$/, '') + '/api/tags', {
+      signal: c.signal,
+    });
+    clearTimeout(t);
+    if (!r.ok) return [];
+    const data = await r.json();
+    const arr = (data && data.models) || [];
+    return arr.map((m) => (typeof m === 'string' ? m : m && m.name)).filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
 // ---- Ollama 客户端（transport 无关）----
 
 /**
@@ -109,7 +188,9 @@ function createOllamaClient(opts) {
   const baseUrl = (opts && opts.baseUrl) || 'http://localhost:11434';
   const model = (opts && opts.model) || 'qwen3:8b';
   const fetchImpl = (opts && opts.fetchImpl) || (typeof fetch === 'function' ? fetch : null);
-  const timeoutMs = (opts && opts.timeoutMs) || 30000;
+  // 实测 RTX 4060 笔电上 qwen3:8b Q4_K_M + few-shot 提示：短句约 10s，长草稿 / 冷加载到 25~40s。
+  // 原来 30s 会被掐断 → 静默回退草稿，表现就是「勾了润色但没反应」。
+  const timeoutMs = (opts && opts.timeoutMs) || 90000;
   const temperature = (opts && opts.temperature) != null ? opts.temperature : 0.45;
 
   async function isAvailable() {
@@ -161,7 +242,8 @@ function createOllamaClient(opts) {
     try {
       const messages = buildPolishMessages({ source, draft });
       const out = await chat(messages);
-      const polished = stripThink(out);
+      // 先剥掉模型复述的「润色后：」骨架，再判护栏 —— 否则脏前缀会被当成合格结果留下
+      const polished = cleanPolishOutput(out);
       if (!polished) return draft;
       if (!retentionOk(draft, polished, source)) return draft;
       return polished;
@@ -241,9 +323,9 @@ function createHttpProxyClient(opts) {
 
 // @platform: 双端导出，Node/打包器走 module.exports，浏览器/小程序同步脚本走 window 全局
 if (typeof module === 'object' && module.exports) {
-  module.exports = { buildPolishMessages, createOllamaClient, createHttpProxyClient, linyuChars, retentionOk, stripThink };
+  module.exports = { buildPolishMessages, createOllamaClient, createHttpProxyClient, linyuChars, pickModel, listOllamaModels, cleanPolishOutput, retentionOk, stripThink };
 } else if (typeof window !== 'undefined') {
-  window.LINYU_POLISH = { buildPolishMessages, createOllamaClient, createHttpProxyClient, linyuChars, retentionOk, stripThink };
+  window.LINYU_POLISH = { buildPolishMessages, createOllamaClient, createHttpProxyClient, linyuChars, pickModel, listOllamaModels, cleanPolishOutput, retentionOk, stripThink };
 }
 
 }).call(window);

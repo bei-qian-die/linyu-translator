@@ -74,6 +74,7 @@
                 <span class="live-badge" v-if="polishedFlag">已润色 ♥</span>
               </span>
               <span v-else></span>
+              <button class="ghost" v-show="output && !polishedFlag && !isPreview" :disabled="polishing" @click="polishNow">{{ polishing ? '润色中…' : '润色 ♥' }}</button>
               <button class="ghost" v-show="output" @click="copyOutput">复制结果</button>
             </div>
             <div class="trace-box" v-if="isDev && trace && (trace.length || uncovered.length)">
@@ -96,7 +97,7 @@
             </div>
           </div>
         </div>
-        <p class="tip">纯本地词库翻译 · 词条和句式需在「设置 → 开发者模式」登录后自行增删改 · Ctrl+Enter 翻译，Ctrl+, 设置</p>
+        <p class="tip">纯本地词库翻译 · 词条和句式需在「设置 → 开发者模式」登录后自行增删改 · Ctrl+Enter 翻译，Ctrl+, 设置 · 勾选「LLM 润色」或点结果下方「润色 ♥」用本机 Ollama 润色</p>
       </section>
 
       <!-- 词库页 -->

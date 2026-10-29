@@ -38,6 +38,8 @@ createApp({
     // Phase 2：LLM 润色开关（默认关）。开启后正式翻译会调用本地 Ollama / 云端代理做流畅度润色。
     const polishOn = ref(false);
     const polishedFlag = ref(false);
+    // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
+    const polishing = ref(false);
     // 云端润色代理地址（仅 Web / 小程序端需要；桌面端用本机 Ollama，留空即可）。
     const proxyUrl = ref('');
     const samples = ref(['你今天真好看！', '我不知道呢，感觉很开心', '太可爱了吧哈哈哈哈', '谢谢宝贝的抱抱']);
@@ -364,6 +366,29 @@ createApp({
         fail(err);
       } finally {
         loading.value = false;
+      }
+    }
+
+    // 手动润色：对当前输出结果再跑一次 LLM 润色（不需要提前打开工具栏的开关）。
+    // 失败要把原因说出来 —— 以前润色失败是静默回退草稿，用户只会觉得「功能没做」。
+    async function polishNow() {
+      if (!output.value || polishing.value) return;
+      polishing.value = true;
+      try {
+        const p = await call(window.api.polish(input.value, output.value));
+        if (p && p.polished) {
+          output.value = p.text;
+          polishedFlag.value = true;
+          say('润色完成♥');
+        } else if (p && p.error) {
+          say('润色没生效：' + p.error);
+        } else {
+          say('模型觉得这句已经很淋了，保留原句');
+        }
+      } catch (e) {
+        say('润色失败：' + ((e && e.message) || e));
+      } finally {
+        polishing.value = false;
       }
     }
 
@@ -1386,7 +1411,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, proxyUrl, saveProxyUrl, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,
