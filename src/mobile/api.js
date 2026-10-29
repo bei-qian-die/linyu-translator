@@ -143,6 +143,22 @@
     // src/core/service.js —— 与桌面主进程是同一份，加接口不用再改两处。
     // 这个文件只留 Capacitor 相关的部分：文件选择、分享、媒体、屏幕方向、日志缓冲。
     const serviceMod = root.LINYU_SERVICE || {};
+
+    // Phase 2（Web / 小程序端）：没有本地模型，润色走「云端代理」。
+    // 代理地址存在偏好 polishProxyUrl 里；未配置时 polish 闭包直接回退草稿，
+    // svc.polishDraft 也就安全返回原稿（polished:false），不影响主翻译。
+    function makeProxyPolish() {
+      return async (source, draft) => {
+        const prefs = (db && typeof db.getPrefs === 'function') ? db.getPrefs() : {};
+        const url = prefs['polishProxyUrl'];
+        if (!url) return draft;
+        const mod = root.LINYU_POLISH;
+        if (!mod || !mod.createHttpProxyClient) return draft;
+        const client = mod.createHttpProxyClient({ baseUrl: String(url) });
+        return client.polish(source, draft);
+      };
+    }
+
     const svc = serviceMod.createService({
       db,
       auth,
@@ -154,6 +170,8 @@
         attemptLimit: ATTEMPT_LIMIT || 5,
         lockMs: LOCK_MS || 30000,
       },
+      // Web / 小程序端注入云端代理润色；桌面端走 preload→主进程 Ollama，不走这里。
+      polish: makeProxyPolish(),
     });
 
     let ioListeners = [];
@@ -296,6 +314,9 @@
       isCapacitor: isCapacitor(),
 
       translate: (text, mode) => safe(() => Promise.resolve(svc.translate(text, mode))),
+
+      // Phase 2（Web / 小程序端）：LLM 润色后处理。代理不可达时返回草稿原样（polished:false）。
+      polish: (source, draft) => safe(() => Promise.resolve(svc.polishDraft(source, draft))),
 
       // ---- 认证：门禁与失败锁定都在 service 里 ----
       authStatus: () => safe(() => Promise.resolve(svc.authStatus())),

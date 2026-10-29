@@ -8,6 +8,7 @@ const { createDb } = require('../core/db');
 const { translateText } = require('../core/translator');
 const { createAuth, DEFAULT_USER, DEFAULT_PASSWORD } = require('../core/auth');
 const { createService } = require('../core/service');
+const { createOllamaClient, listOllamaModels, pickModel } = require('../core/llm-polish');
 const lore = require('../core/lore');
 
 let store = null;
@@ -56,9 +57,54 @@ function initStore() {
     upgradeContent(s);
     // 业务规则统一走 src/core/service.js：门禁、撤销槽位、导入暂存过期、登录锁定
     // 都只在那一份里，主进程只留下平台相关的部分（对话框、media 目录、日志、窗口）。
-    svc = createService({ db: s, auth, translator: { translateText }, version: app.getVersion() });
+    svc = createService({
+      db: s,
+      auth,
+      translator: { translateText },
+      version: app.getVersion(),
+      // Phase 2：把本地 Ollama（qwen3:8b）作为润色后处理层。polish 是个闭包，
+      // 运行时按偏好（ollamaBaseUrl / ollamaModel）现建客户端，模型不可用则回退草稿。
+      polish: makePolish(),
+    });
     return s;
   });
+}
+
+// 构造润色函数：读库里的偏好决定连哪个本地模型，调用 Ollama /api/chat 做淋语润色。
+// 用户没显式指定模型时，按本机 /api/tags 实际装了谁自动挑（60s 内复用结果），
+// 否则写死的默认名一旦和本机 tag 不一致（qwen3:8b vs qwen3:8b-fast）就会永远静默回退草稿。
+const modelCache = { at: 0, baseUrl: '', model: '' };
+
+function makePolish() {
+  return async (source, draft) => {
+    const prefs = store ? store.getPrefs() : {};
+    const raw = (k, d) => {
+      const v = prefs[k];
+      if (v == null || v === '') return d;
+      try {
+        return JSON.parse(v);
+      } catch {
+        return v;
+      }
+    };
+    const baseUrl = raw('ollamaBaseUrl', 'http://localhost:11434');
+    let model = String(raw('ollamaModel', '') || '').trim();
+    if (!model) {
+      const fresh = modelCache.baseUrl === baseUrl && Date.now() - modelCache.at < 60000;
+      model = fresh && modelCache.model ? modelCache.model : '';
+      if (!model) {
+        model = pickModel(await listOllamaModels(baseUrl), '');
+        modelCache.at = Date.now();
+        modelCache.baseUrl = baseUrl;
+        modelCache.model = model;
+      }
+    }
+    if (!model) {
+      throw new Error('本机 Ollama 里没有可用模型（' + baseUrl + '），或 Ollama 未启动');
+    }
+    const client = createOllamaClient({ baseUrl, model });
+    return client.polish(source, draft);
+  };
 }
 
 // 覆盖安装的老库不会凭空长出新版内容，也不会在升级时被清掉剔除的梗与名言，
@@ -116,6 +162,8 @@ function restoreMedia(list) {
 
 function registerIpc() {
   ipcMain.handle('ly:translate', wrap((text, mode) => svc.translate(text, mode)));
+  // Phase 2：LLM 润色后处理。桌面主进程跑本地 Ollama，模型不可达时 polishDraft 回退草稿。
+  ipcMain.handle('ly:polish', wrap(async (source, draft) => svc.polishDraft(source, draft)));
 
   ipcMain.handle('ly:auth:status', wrap(() => svc.authStatus()));
   ipcMain.handle('ly:auth:login', wrap((username, password) => {

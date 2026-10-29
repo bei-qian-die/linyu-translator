@@ -1,0 +1,9 @@
+{
+  "name": "linyu-polish-proxy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "淋语翻译器云端润色代理（Vercel Serverless 版本）",
+  "engines": {
+    "node": "22.x"
+  }
+}

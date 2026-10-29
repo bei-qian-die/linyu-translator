@@ -1478,6 +1478,13 @@ tbody tr:hover {
   color: var(--ink);
 }
 
+/* 语境选变体的理由：为什么这个词选了这一个说法（风格 / 领域 / 呼应上一个词） */
+.tr-why {
+  color: var(--faint);
+  font-style: normal;
+  font-size: 11px;
+}
+
 /* ---------- 分页 ---------- */
 .pager {
   display: flex;

@@ -58,6 +58,9 @@ const browserGlobals = {
   requestAnimationFrame: 'readonly',
   CustomEvent: 'readonly',
   FileReader: 'readonly',
+  // llm-polish.js 的 Ollama / 云端代理请求靠 AbortController 做超时中断（Node 与 WebView 都有）
+  AbortController: 'readonly',
+  fetch: 'readonly',
   Uint8Array: 'readonly',
   WebView: 'readonly',
   Capacitor: 'readonly',

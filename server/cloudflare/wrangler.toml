@@ -1,0 +1,12 @@
+name = "linyu-polish-proxy"
+main = "worker.js"
+compatibility_date = "2025-10-01"
+
+# 非敏感配置放这里；密钥请用：wrangler secret put LLM_API_KEY
+[vars]
+LLM_API_KIND = "openai"
+LLM_API_BASE = "https://api.deepseek.com/v1"
+LLM_MODEL = "deepseek-chat"
+
+# 本地调试：wrangler dev 会自动把 [vars] 注入 env
+# 部署前务必执行：wrangler secret put LLM_API_KEY  （交互式粘贴你的 API Key）

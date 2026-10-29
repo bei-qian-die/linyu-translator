@@ -4,6 +4,8 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('api', {
   translate: (text, mode) => ipcRenderer.invoke('ly:translate', text, mode),
+  // Phase 2：LLM 润色后处理（桌面主进程跑本地 Ollama）。模型不可达时返回草稿原样。
+  polish: (source, draft) => ipcRenderer.invoke('ly:polish', source, draft),
 
   authStatus: () => ipcRenderer.invoke('ly:auth:status'),
   login: (user, pass) => ipcRenderer.invoke('ly:auth:login', user, pass),
