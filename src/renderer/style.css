@@ -2087,3 +2087,309 @@ body[data-mobile] .modal-wide {
     padding: 10px 14px;
   }
 }
+
+/* ---------- 音乐板块 ----------
+   静态音源库：分组筛选 + 卡片网格。卡片自带「音乐页 / 样例视频」两个出口，
+   二创样例只展示荒诞点 + 点赞 + 时长，正文标题截断（完整文案在 title 属性里）。 */
+
+.music-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.music-groups {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.music-group {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.music-group:hover {
+  border-color: var(--pink);
+  color: var(--ink);
+}
+
+.music-group.on {
+  background: var(--grad);
+  border-color: transparent;
+  color: #fff;
+}
+
+.mg-count {
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: 0.72;
+}
+
+.music-search {
+  flex: 1 1 220px;
+  min-width: 180px;
+  margin-bottom: 0;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.music-card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px 16px 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mc-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mc-no {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mc-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.mc-title h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mc-author {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mc-tag {
+  flex: none;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--accent);
+  border: 1px solid var(--line);
+}
+
+.mc-stats {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.mc-stats b {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mc-dim {
+  color: var(--muted);
+}
+
+.mc-styles {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.mc-style {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--surface-soft);
+  color: var(--accent2);
+}
+
+.mc-examples {
+  border-top: 1px dashed var(--line);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mc-ex-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.mc-ex-author {
+  color: var(--ink);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60%;
+}
+
+.mc-ex-meta {
+  flex: none;
+}
+
+.mc-ex-point {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.mc-ex-title {
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--placeholder);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mc-ex .link {
+  margin-top: 4px;
+  margin-right: 0;
+  font-size: 12px;
+  padding: 0;
+}
+
+.mc-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+.mc-keyword {
+  font-size: 11px;
+  color: var(--placeholder);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .music-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+body[data-mobile] .music-toolbar {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+body[data-mobile] .music-search {
+  flex: none;
+}
+
+body[data-mobile] .music-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+
+body[data-mobile] .music-card {
+  padding: 13px 14px 10px;
+  gap: 8px;
+}
+
+body[data-mobile] .music-group {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* ---------- 顶栏导航在窄屏换行 + 横滚 ----------
+   1.32.0 加了「音乐」后导航到 8 项：1366px 下正好排满（568px 不溢出），
+   但 390px 宽的手机上 flex 会把它压成「一列一个字」。窄屏改成换到第二行、
+   横向可滚，标题与圆钮留在第一行。桌面宽度下这一整段都不生效。 */
+@media (max-width: 860px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    padding: 10px 16px;
+  }
+
+  .tabs {
+    order: 3;
+    flex: 1 0 100%;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tabs button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 6px 13px;
+    font-size: 13px;
+  }
+}
+
+body[data-mobile] .topbar {
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+body[data-mobile] .tabs {
+  order: 3;
+  flex: 1 0 100%;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+body[data-mobile] .tabs::-webkit-scrollbar {
+  display: none;
+}
+
+body[data-mobile] .tabs button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 13px;
+}

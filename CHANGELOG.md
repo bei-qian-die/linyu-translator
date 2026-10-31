@@ -2,6 +2,21 @@
 
 淋语翻译器（Electron + sql.js）。版本号与 `package.json` 一致，产物在 `release/`。
 
+## 1.32.0（2026-11-01）
+
+四端同时上线**音乐板块**：抖音「野花香 × Gulp」两条梗音源的搞怪二创收成结构化音源库——21 首音乐 / 25 条二创样例，桌面 / 安卓 / Web 点开直达抖音原页，小程序复制链接。数据只写一份，四端生成同一份 `music.js`。
+
+- 新增 `src/core/music-douyin.json`（原始数据集，字段名与抖音采集交付物一致）+ `scripts/build-music.mjs` 生成 `src/core/music.js` 与 `miniprogram/data/music.js`，两文件逐字一致
+- 生成脚本即门禁：链接形态（只允许 `music/<id>` 与 `video/<19 位>`）、`music_id`/`aweme_id`/slug 全批唯一、`music_used` 与上层音乐名一致、`examples` 非空，任一不过直接非零退出不产文件
+- 新增 `test/music.test.js`（26 条）并挂进 `npm test`：数据契约、分组筛选、计数格式化、四端一致性、擦边关键词回归
+- 渲染层：顶栏新增「音乐」tab（第 7 位），分组胶囊 + 搜索 + 卡片（音乐名/作者/使用量/玩法标签/样例点赞与时长/一句话荒诞点/核验日期），每张卡直连音乐页与样例视频
+- 顶栏 tab 7→8 项：桌面 1366px 刚好排满（568px 不溢出），≤860px 与安卓端改为「标题第一行 + tab 第二行横滚」，不再压成竖排单字
+- 小程序：tabBar 4→5 项（微信上限），新增 `pages/music/music`，自定义 tabBar 补 `icon-music`（SVG mask，与其余四个同一套画法），历史/关于页 tab 序号顺延；小程序内不能跳站外，改为复制音乐链接 / 视频链接 / 搜索词
+- 数据口径：40+ 组关键词矩阵站内检索（登录态拦 `search/item` 接口）入池 1738 条，逐条开页核验落点（音乐页拦 `music/detail`、作品页拦 `aweme/detail`），同 `music_id` / `aweme_id` 去重、同作者上限 2 条；播放量平台已不公开故整批留空，不估算
+- 合规：剔除擦边向吞咽音用法、AI 带货号与搬运号，B 组只留配音/诗朗诵/教学/卡点类玩法
+- 装饰性改动：`body[data-mobile] .tabs` 与窄屏媒体查询接管导航滚动
+- 详细说明见 `release/1.32.0-notes.md`；包体核验：桌面 exe 用 CDP 实点「音乐」tab 渲染 21 张卡，APK 解包含 `assets/public/core/music.js` 与 `version.json: 1.32.0`
+
 ## 1.31.0（2026-11-01）
 
 桌面端新增「智谱 GLM 直连」润色引擎：设置 → 翻译增强 · LLM 润色引擎 选「智谱 GLM 直连」，填 Key 即可润色，**不用装 Ollama**。

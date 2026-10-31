@@ -44,7 +44,7 @@ Page({
   },
 
   onShow() {
-    syncChrome(this, 2);
+    syncChrome(this, 3);
     this._selected = new Set();
     this.reload();
   },

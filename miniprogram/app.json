@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/lexicon/lexicon",
+    "pages/music/music",
     "pages/history/history",
     "pages/about/about"
   ],
@@ -44,6 +45,10 @@
       {
         "pagePath": "pages/lexicon/lexicon",
         "text": "词库"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐"
       },
       {
         "pagePath": "pages/history/history",

@@ -5,12 +5,12 @@
 > **在线体验（Web 版，无需安装）**：<https://linyu-translator.app.workbuddy.host/?sharecode=KYSNKQPHS7>
 > 桌面版与安卓版见 [Releases](https://github.com/bei-qian-die/linyu-translator/releases)。
 
-## 当前版本：**1.29.0**
+## 当前版本：**1.32.0**
 
-五大板块规模：词库 **2435** / 句式 **588** / 词卡 **1375** / 人物传 **563 位** / 名言 **3199**。
+五大板块规模：词库 **2435** / 句式 **588** / 词卡 **1375** / 人物传 **563 位** / 名言 **3199**。另有**音乐板块 21 首**（抖音搞怪二创音源，25 条二创样例）。
 
-最新一次发布（2026-10-28）：
-- 1.29.0 引擎升级——**语境选变体**：把词库的 `slot` / `sense` / `rel` 三个字段变成可计算的语境信号，同一个中文词的上百个淋语说法不再靠随机挑，而是按「领域（守望 / 王者 / 瓦 / 平安京…）+ 风格（卖萌 / 自嘲 / 清宫）+ 同句呼应」打分。纯本地、零网络、零延迟，桌面 / 安卓 / Web / 小程序四端同一套权重，一致性脚本已覆盖消歧路径的逐字符比对；详见 `release/1.29.0-notes.md`
+最新一次发布（2026-11-01）：
+- 1.32.0 **四端同时上线「音乐板块」**：把抖音「野花香 × Gulp」两条梗音源的搞怪二创收成结构化音源库——21 首音乐（野花香 7 / Gulp 9 / 双音源 5）、25 条二创样例，每条链接都逐条开页核验过落点，桌面 / 安卓 / Web 点开直达抖音原页，小程序内改为复制链接（平台不允许跳站外）。数据只写一份 `src/core/music-douyin.json`，`npm run music:build` 生成四端共用的 `music.js`，单测守住链接形态、id 唯一性、作者上限与四端逐字一致；详见 `release/1.32.0-notes.md`
 
 最新一次发布（2026-10-26）：
 - 1.23.0 第十九轮扩充（瓦罗淋特分区）：词库 +301、句式 +43、词卡 +158、名言 +406、人物传 +61（24 位契约者 / 32 位 UP 主与职业选手 / 5 位召唤兽），49 张真实配图；「瓦罗淋特」语义位 6→141 条、变体 96，新增 8 个专属子语义位；修正 6 项既有缺陷；主包压到 1.90MB；详见 `release/1.23.0-notes.md`
@@ -84,6 +84,25 @@
 
 `heroes` 没有再单独加一份「关联词条」列——`words` 已经是这个字段，加 `relWords` 只会多一处可能对不上的重复数据。
 
+### 音乐板块（不进库）
+
+音乐板块是**只读静态数据**，刻意不建表、不进导出/备份/同步：它跟用户的翻译历史无关，换个设备也该看到同一份。
+数据链路只有一条——
+
+```
+src/core/music-douyin.json   ← 人工采集 + 逐条开页核验的原始数据集（字段名与抖音采集交付物一致）
+        │  npm run music:build（带门禁校验）
+        ├─→ src/core/music.js          （桌面 require / 浏览器 window.MUSIC_DATA）
+        └─→ miniprogram/data/music.js  （小程序 require，内容与上者逐字一致）
+```
+
+字段：音乐 `name / author / tag / style[] / musicUrl / musicId / searchKeyword / usageCount / verifiedAt / examples[]`，
+样例 `title / author / videoUrl / awemeId / likeCount / duration / memePoint`。
+`npm run music:build` 会 reject 掉链接形态不对、`music_id`/`aweme_id` 重复、`music_used` 与上层音乐名不一致的数据集；
+`test/music.test.js` 再守一遍同一批约束 + 四端逐字一致。播放量抖音网页端已不公开，`play_count` 整批为空，界面不显示而不是估一个。
+
+打开方式是分端的：桌面 `shell.openExternal`、安卓 Capacitor Browser、Web 新标签、小程序复制链接（微信不允许跳站外页）。
+
 人物图有一份 WebP 缩略图 `src/renderer/img/thumb/`：列表用缩略图、详情页用原图，
 缩略图 404 时会自动退回原图（新增人物图后忘了跑压缩脚本也不会裂图）。
 整理图片用 `python scripts/optimize-images.py --dry-run`（需要 Pillow，只压缩不改文件名——
@@ -102,7 +121,7 @@
 ## 代码结构
 
 ```
-src/core/     纯逻辑，四端共用：db / translator / variant / tokenizer / auth / lore / service
+src/core/     纯逻辑，四端共用：db / translator / variant / tokenizer / auth / lore / music / service
 src/main/     Electron 主进程：IPC 转发 + 平台相关（对话框、media 目录、日志、窗口几何）
 src/mobile/   Capacitor WebView：文件选择 / 分享 / 屏幕方向，并用 service 组出 window.api
 src/web/      网页端：idbAdapter / webEntry / patch-app / web.css（第四端的适配层）

@@ -5,6 +5,7 @@
 const TABS = [
   { path: '/pages/index/index', label: '翻译', icon: 'translate' },
   { path: '/pages/lexicon/lexicon', label: '词库', icon: 'book' },
+  { path: '/pages/music/music', label: '音乐', icon: 'music' },
   { path: '/pages/history/history', label: '历史', icon: 'clock' },
   { path: '/pages/about/about', label: '关于', icon: 'info' },
 ];

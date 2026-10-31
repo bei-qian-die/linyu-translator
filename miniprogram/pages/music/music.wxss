@@ -1,0 +1,191 @@
+/* 音乐板块（tab 页）——沿用词库的「发丝分隔线 + 无卡片边框」语言，
+   只在分组胶囊与样例区做一点点区分，避免整页变成一堆盒子。 */
+
+.mg-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 14rpx;
+  margin: 32rpx 0 20rpx;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mg-tab {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  padding: 12rpx 24rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 999rpx;
+  color: var(--muted);
+  font-size: 23rpx;
+  line-height: 1.4;
+}
+
+.mg-tab.on {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.mg-count {
+  margin-left: 8rpx;
+  font-size: 18rpx;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-item {
+  padding: 30rpx 0 26rpx;
+  border-bottom: 2rpx solid var(--line);
+}
+
+.mi-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.mi-no {
+  flex: none;
+  margin-right: 12rpx;
+  font-size: 18rpx;
+  letter-spacing: 0.08em;
+  color: var(--faint);
+}
+
+.mi-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.mi-tag {
+  flex: none;
+  margin-left: 12rpx;
+  padding: 2rpx 12rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 6rpx;
+  font-size: 17rpx;
+  color: var(--muted);
+}
+
+.mi-author {
+  margin-top: 6rpx;
+  font-size: 21rpx;
+  color: var(--faint);
+  word-break: break-all;
+}
+
+.mi-stats {
+  margin-top: 10rpx;
+  font-size: 21rpx;
+}
+
+.mi-num {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.mi-dim {
+  color: var(--muted);
+  font-size: 21rpx;
+}
+
+.mi-styles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  margin-top: 12rpx;
+}
+
+.mi-style {
+  padding: 2rpx 12rpx;
+  border-radius: 4rpx;
+  background: var(--soft);
+  color: var(--accent);
+  font-size: 18rpx;
+  line-height: 1.6;
+}
+
+.mi-ex {
+  margin-top: 16rpx;
+  padding: 16rpx 20rpx;
+  border-left: 4rpx solid var(--line-strong);
+  background: var(--soft);
+}
+
+.mi-ex-top {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 14rpx;
+  font-size: 19rpx;
+  color: var(--faint);
+}
+
+.mi-ex-author {
+  color: var(--ink);
+  font-size: 21rpx;
+}
+
+.mi-ex-point {
+  margin-top: 8rpx;
+  font-size: 23rpx;
+  line-height: 1.7;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.mi-link {
+  display: inline-block;
+  margin-top: 10rpx;
+  font-size: 21rpx;
+  color: var(--accent);
+}
+
+.mi-acts {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 20rpx;
+}
+
+.mi-btn {
+  flex: 1;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  border: 2rpx solid var(--accent);
+  border-radius: 8rpx;
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 23rpx;
+  letter-spacing: 0.02em;
+}
+
+.mi-btn.ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.mi-btn-hover {
+  opacity: 0.72;
+}
+
+.mi-foot {
+  margin-top: 12rpx;
+  font-size: 18rpx;
+  color: var(--faint);
+  word-break: break-all;
+}

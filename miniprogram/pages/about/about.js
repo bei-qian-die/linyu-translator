@@ -51,7 +51,7 @@ Page({
       historyCount: readHistory().length,
       perf: translateStats(),
     });
-    syncChrome(this, 3);
+    syncChrome(this, 4);
   },
 
   chooseTheme(e) {

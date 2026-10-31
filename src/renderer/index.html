@@ -503,6 +503,73 @@
         </div>
       </section>
 
+      <!-- 音乐页：纯静态音源库，不读写数据库。每条音乐挂 1–2 条二创样例，
+           链接统一走 openLink（桌面 shell.openExternal / 安卓 Capacitor Browser / Web 新标签） -->
+      <section v-show="view === 'music'" class="manage-page music-page">
+        <div class="lore-head">
+          <h2>音乐板块 · 抖音搞怪二创音源</h2>
+          <p>野花香 × Gulp 两条梗音源，{{ musicCount }} 首音乐配 {{ musicVideoCount }} 条二创样例；每条链接都开页核验过落点（{{ musicCollectedAt }}），点开直达抖音原页。</p>
+        </div>
+
+        <div class="music-toolbar">
+          <div class="music-groups">
+            <button
+              v-for="g in musicGroups"
+              :key="g.key"
+              class="music-group"
+              :class="{ on: musicGroup === g.key }"
+              :title="g.desc"
+              @click="switchMusicGroup(g.key)"
+            >{{ g.label }}<span class="mg-count">{{ g.count }}</span></button>
+          </div>
+          <input class="search music-search" v-model.trim="musicSearch" placeholder="搜音乐名 / 作者 / 玩法标签…" />
+        </div>
+
+        <div class="music-grid">
+          <article class="music-card" v-for="(m, i) in filteredMusic" :key="m.id">
+            <div class="mc-head">
+              <span class="mc-no">{{ String(i + 1).padStart(2, '0') }}</span>
+              <div class="mc-title">
+                <h3 :title="m.name">{{ m.name }}</h3>
+                <span class="mc-author">@{{ m.author }}</span>
+              </div>
+              <span class="mc-tag">{{ m.tag }}</span>
+            </div>
+
+            <div class="mc-stats">
+              <span v-if="m.usageCount"><b>{{ fmtMusicCount(m.usageCount) }}</b> 人在用</span>
+              <span v-else class="mc-dim">使用量未知</span>
+              <span class="mc-dim">·</span>
+              <span class="mc-dim">{{ m.examples.length }} 条样例</span>
+            </div>
+
+            <div class="mc-styles">
+              <span class="mc-style" v-for="s in m.style" :key="s">{{ s }}</span>
+            </div>
+
+            <div class="mc-examples">
+              <div class="mc-ex" v-for="e in m.examples" :key="e.awemeId">
+                <div class="mc-ex-top">
+                  <span class="mc-ex-author">@{{ e.author }}</span>
+                  <span class="mc-ex-meta" v-if="e.likeCount">♥ {{ fmtMusicCount(e.likeCount) }}</span>
+                  <span class="mc-ex-meta" v-if="e.duration">{{ fmtMusicDur(e.duration) }}</span>
+                </div>
+                <p class="mc-ex-point">{{ e.memePoint }}</p>
+                <p class="mc-ex-title" :title="e.title">{{ shortTitle(e.title) }}</p>
+                <button class="link" @click="openLink(e.videoUrl)">看这条二创 →</button>
+              </div>
+            </div>
+
+            <div class="mc-actions">
+              <button class="go small" @click="openLink(m.musicUrl)">打开音乐页</button>
+              <button class="ghost small" @click="copyPlain(m.searchKeyword, '搜索词已复制')">复制搜索词</button>
+            </div>
+            <p class="mc-keyword">抖音搜索：{{ m.searchKeyword }} · 链接核验 {{ m.verifiedAt }}</p>
+          </article>
+        </div>
+        <div class="empty" v-if="!filteredMusic.length">这一组没有匹配的音乐，换个词或点「全部」看看</div>
+      </section>
+
       <!-- 历史页 -->
       <section v-show="view === 'history'" class="manage-page">
         <div class="hist-head">
@@ -752,6 +819,9 @@
   <script src="core/lore-extra23.js"></script>
   <script src="core/lore-extra24.js"></script>
   <script src="core/lore.js"></script>
+  <!-- 音乐板块数据（生成物：scripts/build-music.mjs ← src/core/music-douyin.json）
+       纯静态数据 + 纯函数，不依赖 db / 网络；缺失时音乐页自动降级成空态，不影响其余页面 -->
+  <script src="core/music.js"></script>
   <script src="core/tokenizer.js"></script>
   <script src="core/variant.js"></script>
   <script src="core/translator.js"></script>

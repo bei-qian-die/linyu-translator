@@ -420,7 +420,7 @@ run('偏好设置归一化与主题应用', () => {
 
 run('页面文件齐全且已注册', () => {
   const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
-  const pages = ['index', 'lexicon', 'history', 'about', 'hero', 'browse'];
+  const pages = ['index', 'lexicon', 'music', 'history', 'about', 'hero', 'browse'];
   const subPages = (appJson.subPackages || []).flatMap((p) =>
     (p.pages || []).map((page) => `${p.root}/${page}`)
   );
@@ -433,7 +433,8 @@ run('页面文件齐全且已注册', () => {
     }
     JSON.parse(fs.readFileSync(path.join(MP, `${route}.json`), 'utf8'));
   }
-  assert.strictEqual(appJson.tabBar.list.length, 4);
+  // 1.32.0 起 5 个 tab（翻译 / 词库 / 音乐 / 历史 / 关于），已是微信 tabBar 上限
+  assert.strictEqual(appJson.tabBar.list.length, 5);
   for (const tab of appJson.tabBar.list) {
     assert(appJson.pages.includes(tab.pagePath), `tabBar 页面 ${tab.pagePath} 未注册`);
   }
@@ -470,7 +471,7 @@ run('自定义 tabBar 与 app.json 声明一致（B7）', () => {
 });
 
 run('页面脚本可加载并完成人物数据装配', () => {
-  for (const name of ['index', 'lexicon', 'history', 'about', 'hero']) {
+  for (const name of ['index', 'lexicon', 'music', 'history', 'about', 'hero']) {
     const page = loadPage(name);
     assert.strictEqual(typeof page.onLoad, 'function', `${name} 缺少 onLoad`);
     assert.strictEqual(typeof page.onShow, 'function', `${name} 缺少 onShow`);
@@ -490,7 +491,7 @@ run('页面脚本可加载并完成人物数据装配', () => {
 });
 
 run('WXML 事件处理函数均已实现', () => {
-  for (const name of ['index', 'lexicon', 'history', 'about', 'hero']) {
+  for (const name of ['index', 'lexicon', 'music', 'history', 'about', 'hero']) {
     const wxml = fs.readFileSync(path.join(MP, `${PAGE_ROUTES[name] || `pages/${name}/${name}`}.wxml`), 'utf8');
     const handlers = new Set();
     const re = /\b(?:bind|catch)[a-z]+="([^"]+)"/g;
@@ -545,7 +546,7 @@ run('公共组件齐全且已全局注册（C1）', () => {
   const appWxss = fs.readFileSync(path.join(MP, 'app.wxss'), 'utf8');
   assert(appWxss.includes('@import "styles/theme.wxss"'), 'app.wxss 未引入主题文件');
   assert(fs.existsSync(path.join(MP, 'styles', 'theme.wxss')), '缺少 styles/theme.wxss');
-  for (const name of ['index', 'lexicon', 'history', 'about']) {
+  for (const name of ['index', 'lexicon', 'music', 'history', 'about']) {
     const wxml = fs.readFileSync(path.join(MP, `${PAGE_ROUTES[name] || `pages/${name}/${name}`}.wxml`), 'utf8');
     assert(wxml.includes('<nav-bar'), `${name} 页未使用 nav-bar 组件`);
   }
@@ -994,7 +995,7 @@ runAsync('B5 历史搜索 150ms 防抖', async () => {
 });
 
 run('B6/B8 主题同步收口与 customNav 分支', () => {
-  for (const name of ['index', 'lexicon', 'history', 'about']) {
+  for (const name of ['index', 'lexicon', 'music', 'history', 'about']) {
     const src = fs.readFileSync(path.join(MP, 'pages', name, `${name}.js`), 'utf8');
     assert(src.includes('syncChrome(this'), `${name} 未使用 syncChrome`);
   }

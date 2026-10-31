@@ -21,6 +21,7 @@ createApp({
       { key: 'cards', label: '词卡' },
       { key: 'heroes', label: '人物传' },
       { key: 'quotes', label: '名言' },
+      { key: 'music', label: '音乐' },
       { key: 'history', label: '历史' },
     ];
     const view = ref('translate');
@@ -40,8 +41,15 @@ createApp({
     const polishedFlag = ref(false);
     // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
     const polishing = ref(false);
-    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端用本机 Ollama，留空即可）。
+    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端不看它）。
     const proxyUrl = ref('');
+    // 桌面端润色引擎：'ollama' 本机模型 / 'zhipu' 智谱 GLM 直连（填 Key 即用）
+    const polishEngine = ref('ollama');
+    const zhipuKey = ref('');
+    const zhipuBase = ref('https://open.bigmodel.cn/api/paas/v4');
+    const zhipuModel = ref('glm-4-flash');
+    const probing = ref(false);
+    const probeMsg = ref('');
     const samples = ref(['你今天真好看！', '我不知道呢，感觉很开心', '太可爱了吧哈哈哈哈', '谢谢宝贝的抱抱']);
 
     const toast = reactive({ text: '', undo: null });
@@ -332,11 +340,53 @@ createApp({
       }
     }
 
-    // Web / 小程序端：保存云端润色代理地址（桌面端用本机 Ollama，无需填）。
+    // Web / 小程序端：保存云端润色代理地址（桌面端不看它）。
     function saveProxyUrl() {
       const url = String(proxyUrl.value || '').trim();
       window.api.setPref('polishProxyUrl', JSON.stringify(url)).catch(() => {});
       say(url ? '已保存润色代理地址♥' : '已清空润色代理地址');
+    }
+
+    // 桌面端润色引擎切换：'ollama' 本机模型 / 'zhipu' 智谱直连
+    function setPolishEngine(key) {
+      polishEngine.value = key === 'zhipu' ? 'zhipu' : 'ollama';
+      probeMsg.value = '';
+      window.api.setPref('polishEngine', JSON.stringify(polishEngine.value)).catch(() => {});
+      say(polishEngine.value === 'zhipu' ? '润色引擎：智谱 GLM 直连' : '润色引擎：本机 Ollama');
+    }
+
+    // 保存智谱配置（Key 只存本机库；输入框是 password，不写进任何日志）
+    function saveZhipu() {
+      const base = String(zhipuBase.value || '').trim() || 'https://open.bigmodel.cn/api/paas/v4';
+      const model = String(zhipuModel.value || '').trim() || 'glm-4-flash';
+      const key = String(zhipuKey.value || '').trim();
+      window.api.setPref('zhipuBaseUrl', JSON.stringify(base)).catch(() => {});
+      window.api.setPref('zhipuModel', JSON.stringify(model)).catch(() => {});
+      window.api.setPref('zhipuApiKey', JSON.stringify(key)).catch(() => {});
+      probeMsg.value = '';
+      say(key ? '已保存智谱配置♥' : '已清空智谱 Key');
+    }
+
+    // 测试连接：用固定样例真跑一次，成功就把润色结果贴出来，失败显示原因
+    async function probePolish() {
+      if (probing.value) return;
+      probing.value = true;
+      probeMsg.value = '';
+      try {
+        const r = await call(
+          window.api.probePolish({
+            engine: 'zhipu',
+            zhipuBaseUrl: String(zhipuBase.value || '').trim(),
+            zhipuModel: String(zhipuModel.value || '').trim(),
+            zhipuApiKey: String(zhipuKey.value || '').trim(),
+          })
+        );
+        probeMsg.value = (r && r.changed ? '✓ ' : '· ') + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
+      } catch (e) {
+        probeMsg.value = '✗ ' + ((e && e.message) || e);
+      } finally {
+        probing.value = false;
+      }
     }
 
     async function doTranslate() {
@@ -436,6 +486,7 @@ createApp({
         case 'cards':  return { label: '词卡',    count: cardCount.value,    unit: '张' };
         case 'heroes': return { label: '人物传',  count: allHeroCount.value, unit: '位' };
         case 'quotes': return { label: '名言',    count: quoteCount.value,   unit: '条' };
+        case 'music':  return { label: '音乐板块', count: musicCount.value,   unit: '首' };
         default:       return null;
       }
     });
@@ -807,6 +858,65 @@ createApp({
       }
     }
     const heroNameOpts = computed(() => heroes.value.map((h) => h.name));
+
+    // ---- 音乐板块 ----
+    // 这一块是纯静态数据（src/core/music.js，抖音搞怪二创音源 batch 1），刻意不进库：
+    // 它跟用户的翻译历史/词库无关，不该被导出、备份、同步带着跑，也不用等 db 初始化。
+    // 老打包产物里没有 core/music.js 时 window.MUSIC_DATA 不存在 → 这里退化成空列表 + 空态，
+    // 不抛错、不影响其它页面（和 variant.js 缺失时降级同一个思路）。
+    const musicData = (typeof window !== 'undefined' && window.MUSIC_DATA) || null;
+    const musicItems = (musicData && musicData.items) || [];
+    const musicGroups = (musicData && musicData.groups) || [];
+    const musicCollectedAt = (musicData && musicData.collectedAt) || '';
+    const musicGroup = ref('all');
+    const musicSearch = ref('');
+    const musicCount = computed(() => musicItems.length);
+    const musicVideoCount = computed(() =>
+      musicItems.reduce((sum, it) => sum + ((it.examples && it.examples.length) || 0), 0)
+    );
+    const musicTags = computed(() => {
+      const seen = [];
+      for (const it of musicItems) for (const s of it.style || []) if (!seen.includes(s)) seen.push(s);
+      return seen;
+    });
+    const filteredMusic = computed(() => {
+      if (musicData && typeof musicData.filter === 'function') {
+        return musicData.filter(musicGroup.value, musicSearch.value);
+      }
+      return musicItems;
+    });
+    function switchMusicGroup(key) {
+      musicGroup.value = key;
+    }
+    // 数据模块自带的中文计数/时长格式化；模块缺失时给个不炸的兜底
+    function fmtMusicCount(raw) {
+      if (raw == null || raw === '') return '';
+      return musicData && musicData.formatCount ? musicData.formatCount(raw) : String(raw);
+    }
+    function fmtMusicDur(sec) {
+      return musicData && musicData.formatDuration ? musicData.formatDuration(sec) : '';
+    }
+    // 复制到剪贴板（音乐页要复制搜索词/链接，抖音里粘一下就能搜到）
+    async function copyPlain(text, tip) {
+      const str = String(text || '');
+      if (!str) return;
+      try {
+        await navigator.clipboard.writeText(str);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = str;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      say(tip || '已复制♥');
+    }
+    // 二创标题里 hashtag 太多，列表里只留前 26 字，完整文案在 title 属性里
+    function shortTitle(t) {
+      const s = String(t || '').replace(/\s+/g, ' ').trim();
+      return s.length > 26 ? s.slice(0, 26) + '…' : s;
+    }
 
     // ---- 人物传 ----
     const heroes = ref([]);
@@ -1354,6 +1464,10 @@ createApp({
       if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
       if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
       proxyUrl.value = String(parsePref(prefs['polishProxyUrl'], '') || '').trim();
+      polishEngine.value = parsePref(prefs['polishEngine'], 'ollama') === 'zhipu' ? 'zhipu' : 'ollama';
+      zhipuKey.value = String(parsePref(prefs['zhipuApiKey'], '') || '').trim();
+      zhipuBase.value = String(parsePref(prefs['zhipuBaseUrl'], 'https://open.bigmodel.cn/api/paas/v4') || '') || 'https://open.bigmodel.cn/api/paas/v4';
+      zhipuModel.value = String(parsePref(prefs['zhipuModel'], 'glm-4-flash') || '') || 'glm-4-flash';
 
       // 屏幕方向：进 App 先锁竖屏，只有用户在设置里开过「跟随设备旋转」才放开
       try {
@@ -1411,7 +1525,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,
@@ -1427,6 +1541,9 @@ createApp({
       flipped, flipCard, typeLabel, cardForm, editingCardId, saveCard, resetCardForm, editCard, removeCard,
       quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage,
       quoteForm, editingQuoteId, saveQuote, resetQuoteForm, editQuote, removeQuote, heroNameOpts,
+      musicItems, musicGroups, musicGroup, switchMusicGroup, musicSearch, filteredMusic,
+      musicCount, musicVideoCount, musicTags, musicCollectedAt, fmtMusicCount, fmtMusicDur,
+      copyPlain, shortTitle,
       heroes, heroSearch, imgFailed, markImgFail, selectedHero, openHero, backToHeroes, heroSrc, heroThumb, onHeroImgError,
       heroCards, heroQuotes, heroWords, heroRules, heroSearchUrl, openLink,
       heroGroups, heroGroup, switchHeroGroup, filteredHeroes, heroCount,
