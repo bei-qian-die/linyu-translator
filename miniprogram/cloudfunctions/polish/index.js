@@ -38,14 +38,14 @@ const CJK_RE = /[\u4e00-\u9fff]/;
 
 // 淋语润色师 · glm-4-flash 优化版
 // 词表全部来自 src/core/seed.json 实测存在项，未收录的一律视为假淋语
-// （注意：本机核对时 小仙女下凡 / 命大惹 在 seed.json 里查不到，见 git log 说明）
+// 已剔除 seed.json 查不到的两条（小仙女下凡 / 命大惹），其余均可在 linyu 或 alias 字段命中
 const LINYU_LEXICON = {
   self: '本可 / 本可儿 / 本可人儿 / 本仙女 / 本仙子 / 本小仙女 / 本宝 / 本宝宝 / 本猪妞 / 本猪猪女孩 / 本土妞 / 本村妞 / 本宫 / 本座 / 本尊 / 本娘娘 / 奴家 / 小女子 / 咱家 / 本淋',
-  you:  '小仙女 / 小仙女下凡 / 集美 / 小主 / 贵人',
+  you:  '小仙女 / 集美 / 小主 / 贵人',
   he:   '塔',
   marker: '是→素 / 这→这 / 什么→神马 / 怎么→肿么办 / 这样→酱紫 / 没有→木有 / 真→珍 / 说→缩 / 吃→呲 / 玩→丸 / 一起→一企 / 谢谢→靴靴',
   tail:  '惹 / 噜 / 厚 / 捏 / 呀 / 啦 / 哦 / 靴靴 / ♥',
-  emo:   '笑鼠 / 吓鼠 / 夭寿 / 天啦噜 / 厚礼蟹 / 服惹 / 命大惹'
+  emo:   '笑鼠 / 吓鼠 / 夭寿 / 天啦噜 / 厚礼蟹 / 服惹'
 };
 
 const SYSTEM = [
@@ -207,7 +207,7 @@ function retentionOk(draft, polished, source) {
   const hasGlyph = LINYU_GLYPHS.split('').some((g) => po.includes(g));
   const hasMarker = MARKER_PAIRS.some(([, ly]) => ly.length > 1 && po.includes(ly));
   const hasSelf = /本可|本仙女|本仙子|本宝|本猪|本土|本村|本宫|本座|本尊|本娘|奴家|小女子|咱家|本淋/.test(po);
-  const hasEmo = /笑鼠|吓鼠|夭寿|天啦噜|厚礼蟹|服惹|命大惹/.test(po);
+  const hasEmo = /笑鼠|吓鼠|夭寿|天啦噜|厚礼蟹|服惹/.test(po);
   return hasGlyph || hasMarker || hasSelf || hasEmo;
 }
 
