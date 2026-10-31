@@ -8,7 +8,7 @@ const { createDb } = require('../core/db');
 const { translateText } = require('../core/translator');
 const { createAuth, DEFAULT_USER, DEFAULT_PASSWORD } = require('../core/auth');
 const { createService } = require('../core/service');
-const { createOllamaClient, listOllamaModels, pickModel } = require('../core/llm-polish');
+const { createOllamaClient, createOpenAIChatClient, listOllamaModels, pickModel } = require('../core/llm-polish');
 const lore = require('../core/lore');
 
 let store = null;
@@ -70,40 +70,95 @@ function initStore() {
   });
 }
 
-// 构造润色函数：读库里的偏好决定连哪个本地模型，调用 Ollama /api/chat 做淋语润色。
-// 用户没显式指定模型时，按本机 /api/tags 实际装了谁自动挑（60s 内复用结果），
+// 构造润色函数：按偏好选引擎（本机 Ollama / 智谱 GLM 直连），两边共用同一份提示词与护栏。
+// 用户没显式指定 Ollama 模型时，按本机 /api/tags 实际装了谁自动挑（60s 内复用结果），
 // 否则写死的默认名一旦和本机 tag 不一致（qwen3:8b vs qwen3:8b-fast）就会永远静默回退草稿。
 const modelCache = { at: 0, baseUrl: '', model: '' };
 
+const ZHIPU_BASE_DEFAULT = 'https://open.bigmodel.cn/api/paas/v4';
+const ZHIPU_MODEL_DEFAULT = 'glm-4-flash';
+
+function readPolishConfig(prefs) {
+  const p = prefs || (store ? store.getPrefs() : {});
+  const raw = (k, d) => {
+    const v = p[k];
+    if (v == null || v === '') return d;
+    try {
+      return JSON.parse(v);
+    } catch {
+      return v;
+    }
+  };
+  return {
+    engine: String(raw('polishEngine', 'ollama') || 'ollama').toLowerCase(),
+    ollamaBaseUrl: String(raw('ollamaBaseUrl', 'http://localhost:11434') || ''),
+    ollamaModel: String(raw('ollamaModel', '') || '').trim(),
+    zhipuBaseUrl: String(raw('zhipuBaseUrl', ZHIPU_BASE_DEFAULT) || '') || ZHIPU_BASE_DEFAULT,
+    zhipuApiKey: String(raw('zhipuApiKey', '') || '').trim(),
+    zhipuModel: String(raw('zhipuModel', ZHIPU_MODEL_DEFAULT) || '').trim() || ZHIPU_MODEL_DEFAULT,
+  };
+}
+
+// 按配置造客户端：返回 { name, polish }，两种引擎对上层是同一个接口。
+async function buildPolishClient(cfg) {
+  if (cfg.engine === 'zhipu' || cfg.engine === 'openai') {
+    if (!cfg.zhipuApiKey) throw new Error('未填智谱 API Key（设置 → 翻译增强 · 润色引擎）');
+    const client = createOpenAIChatClient({
+      baseUrl: cfg.zhipuBaseUrl,
+      apiKey: cfg.zhipuApiKey,
+      model: cfg.zhipuModel,
+      strict: true, // 直连要能把 Key 错 / 超时 / 限流 明确报出来，别静默回退草稿
+    });
+    return { name: client.name, polish: (src, draft) => client.polish(src, draft) };
+  }
+
+  const baseUrl = cfg.ollamaBaseUrl || 'http://localhost:11434';
+  let model = cfg.ollamaModel;
+  if (!model) {
+    const fresh = modelCache.baseUrl === baseUrl && Date.now() - modelCache.at < 60000;
+    model = fresh && modelCache.model ? modelCache.model : '';
+    if (!model) {
+      model = pickModel(await listOllamaModels(baseUrl), '');
+      modelCache.at = Date.now();
+      modelCache.baseUrl = baseUrl;
+      modelCache.model = model;
+    }
+  }
+  if (!model) {
+    throw new Error('本机 Ollama 里没有可用模型（' + baseUrl + '），或 Ollama 未启动');
+  }
+  const client = createOllamaClient({ baseUrl, model });
+  return { name: client.name, polish: (src, draft) => client.polish(src, draft) };
+}
+
 function makePolish() {
   return async (source, draft) => {
-    const prefs = store ? store.getPrefs() : {};
-    const raw = (k, d) => {
-      const v = prefs[k];
-      if (v == null || v === '') return d;
-      try {
-        return JSON.parse(v);
-      } catch {
-        return v;
-      }
-    };
-    const baseUrl = raw('ollamaBaseUrl', 'http://localhost:11434');
-    let model = String(raw('ollamaModel', '') || '').trim();
-    if (!model) {
-      const fresh = modelCache.baseUrl === baseUrl && Date.now() - modelCache.at < 60000;
-      model = fresh && modelCache.model ? modelCache.model : '';
-      if (!model) {
-        model = pickModel(await listOllamaModels(baseUrl), '');
-        modelCache.at = Date.now();
-        modelCache.baseUrl = baseUrl;
-        modelCache.model = model;
-      }
-    }
-    if (!model) {
-      throw new Error('本机 Ollama 里没有可用模型（' + baseUrl + '），或 Ollama 未启动');
-    }
-    const client = createOllamaClient({ baseUrl, model });
+    const client = await buildPolishClient(readPolishConfig());
     return client.polish(source, draft);
+  };
+}
+
+// 设置页「测试连接」：用固定样例跑一遍当前配置，回报引擎、耗时与输出。
+// 走 strict 客户端，失败要把原因带回去，而不是像正式翻译那样静默回退。
+const PROBE_SAMPLE = { source: '救命，气死我了。', draft: '救命，我气死了。' };
+
+async function probePolish(overrides) {
+  const cfg = Object.assign(readPolishConfig(), overrides || {});
+  if (cfg.engine === 'zhipu' || cfg.engine === 'openai') {
+    if (!cfg.zhipuApiKey) throw new Error('请先填智谱 API Key');
+  } else if (!cfg.ollamaBaseUrl) {
+    throw new Error('请先填 Ollama 地址');
+  }
+  const client = await buildPolishClient(cfg);
+  const t0 = Date.now();
+  const text = await client.polish(PROBE_SAMPLE.source, PROBE_SAMPLE.draft);
+  return {
+    engine: client.name,
+    ms: Date.now() - t0,
+    source: PROBE_SAMPLE.source,
+    draft: PROBE_SAMPLE.draft,
+    text,
+    changed: text !== PROBE_SAMPLE.draft,
   };
 }
 
@@ -164,6 +219,8 @@ function registerIpc() {
   ipcMain.handle('ly:translate', wrap((text, mode) => svc.translate(text, mode)));
   // Phase 2：LLM 润色后处理。桌面主进程跑本地 Ollama，模型不可达时 polishDraft 回退草稿。
   ipcMain.handle('ly:polish', wrap(async (source, draft) => svc.polishDraft(source, draft)));
+  // 设置页「测试连接」：手动触发一次润色样例，失败把原因带回去给 toast
+  ipcMain.handle('ly:polish:probe', wrap(async (opts) => probePolish(opts || {})));
 
   ipcMain.handle('ly:auth:status', wrap(() => svc.authStatus()));
   ipcMain.handle('ly:auth:login', wrap((username, password) => {

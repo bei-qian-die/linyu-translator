@@ -2,6 +2,17 @@
 
 淋语翻译器（Electron + sql.js）。版本号与 `package.json` 一致，产物在 `release/`。
 
+## 1.31.0（2026-11-01）
+
+桌面端新增「智谱 GLM 直连」润色引擎：设置 → 翻译增强 · LLM 润色引擎 选「智谱 GLM 直连」，填 Key 即可润色，**不用装 Ollama**。
+
+- `src/core/llm-polish.js` 新增 `createOpenAIChatClient`（标准 `/chat/completions`，默认 `https://open.bigmodel.cn/api/paas/v4` + `glm-4-flash`），与 Ollama 客户端共用同一份提示词、输出清洗与护栏（抽出 `wrapPolish`）
+- 主进程按偏好分流：`polishEngine` = `ollama`（默认）/ `zhipu`；智谱走 strict 模式，Key 错 / 超时 / 限流会把原因报给界面，不再静默回退草稿
+- 设置页新增引擎切换、Key（password 输入）、模型与接口地址、**测试连接**按钮（用「救命，我气死了。」真跑一遍，回显耗时与结果）
+- 修桌面版护栏漏洞：原来只看淋语字符保留率，模型把「塔」改回「他」也能过（`他来了惹` 残留「惹」= 0.5 达标）→ 新增人称回退判定（塔→他/她、本可系→我、小仙女→你）
+- 新增 `test/polish.test.js`（11 条，假 fetch 不联网）：请求形状 / Bearer Key / 模型名 / 输出清洗 / 护栏回退 / strict 报错 / 超时文案 / 模型挑选
+- Key 仅存本机 `linyu.db` 的偏好表，随请求发往服务端，不上传第三方
+
 ## 1.30.0 桌面端补丁（2026-10-29）
 
 桌面安装包重新构建，把 10-28 晚写完、但从没打进过 exe 的 **LLM 润色** 一起发了出去（旧包 1.27.0 构建于 10-28 01:47，早于润色代码 21 小时）。

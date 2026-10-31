@@ -82,8 +82,23 @@ function linyuChars(draft, source) {
  * 用淋语独有字符的保留率衡量：模型把暗语整段翻回中文时这些字符几乎归零 → 失败回退；
  * 只做单字/同义微调时仍保留大半 → 放行。阈值 0.5。
  */
+// 桌面端提示词允许调语序 / 同义替换（缩↔说、喜翻↔中意），所以不能像云端那样逐字查白名单；
+// 但「把人称词根改回中文」是硬禁，单独盯这三组，否则模型写「他来了惹」也能靠残留的「惹」蒙混过关。
+const SELF_FORMS = ['本可', '本仙女', '本仙子', '本宫', '本座', '本尊', '本娘娘', '本猪妞', '奴家', '小女子', '咱家', '本淋'];
+
+function revertedPronoun(draft, polished) {
+  // 第三人称：草稿有「塔」，结果既没「塔」又冒回「他/她」
+  if (draft.includes('塔') && !polished.includes('塔') && /[他她]/.test(polished)) return true;
+  // 第一人称：草稿有淋语自称，结果一个都没留却写成「我」
+  if (SELF_FORMS.some((w) => draft.includes(w)) && !SELF_FORMS.some((w) => polished.includes(w)) && polished.includes('我')) return true;
+  // 第二人称：草稿有「小仙女」，结果丢了又写成「你」
+  if (draft.includes('小仙女') && !polished.includes('小仙女') && polished.includes('你')) return true;
+  return false;
+}
+
 function retentionOk(draft, polished, source) {
   if (!polished) return false;
+  if (revertedPronoun(String(draft || ''), String(polished || ''))) return false;
   const hasGlyph = LINYU_GLYPHS.split('').some((g) => polished.includes(g));
   const chs = linyuChars(draft, source);
   if (!chs.length) return hasGlyph || CJK_RE.test(polished);
@@ -231,25 +246,105 @@ function createOllamaClient(opts) {
     return stripThink(content);
   }
 
-  /**
-   * 润色入口：草稿 → 润色后文本。
-   * 内部含护栏，任何异常 / 护栏失败都回退草稿，绝不外抛。
-   */
-  async function polish(source, draft) {
+  // 润色入口：草稿 → 润色后文本（提示词 / 清洗 / 护栏 / 回退都在 wrapPolish 里，
+  // 与智谱直连、云端代理共用同一份实现，避免三处各写一遍又走样）。
+  return {
+    name: 'ollama:' + model,
+    model,
+    isAvailable,
+    chat,
+    polish: wrapPolish(chat, { strict: Boolean(opts && opts.strict) }),
+  };
+}
+
+// ---- 润色入口工厂：任何 chat(messages) 实现都能套上「提示词 + 清洗 + 护栏 + 回退」----
+
+/**
+ * 把「发送消息的函数」包成统一的 polish(source, draft)。
+ * 默认失败一律回退草稿（翻译永远有输出）；opt.strict 时改为抛出，
+ * 桌面端「智谱直连」用它，好让设置页/结果栏把「Key 错 / 超时」真正显示出来。
+ * @param {(messages: any[]) => Promise<string>} chat
+ * @param {{ strict?: boolean }} [opt]
+ */
+function wrapPolish(chat, opt) {
+  const strict = Boolean(opt && opt.strict);
+  return async function polish(source, draft) {
     try {
-      const messages = buildPolishMessages({ source, draft });
-      const out = await chat(messages);
-      // 先剥掉模型复述的「润色后：」骨架，再判护栏 —— 否则脏前缀会被当成合格结果留下
+      const out = await chat(buildPolishMessages({ source, draft }));
       const polished = cleanPolishOutput(out);
       if (!polished) return draft;
       if (!retentionOk(draft, polished, source)) return draft;
       return polished;
-    } catch {
-      return draft; // 模型不可用 / 超时 / 解析失败 → 原样返回草稿
+    } catch (e) {
+      if (strict) throw e;
+      return draft;
     }
+  };
+}
+
+// ---- OpenAI 兼容客户端（智谱 GLM / DeepSeek / 任何 /v1 服务）----
+
+/**
+ * 「填个 Key 就能用」的润色客户端，默认指向智谱 open.bigmodel.cn。
+ * 桌面端不装 Ollama 时走这条路：同一个提示词、同一套护栏，只是 transport 换成
+ * 标准 chat/completions（Key 只存在本机库的偏好里，随请求发往服务端）。
+ * @param {{ baseUrl?: string, apiKey?: string, model?: string, fetchImpl?: Function,
+ *           timeoutMs?: number, temperature?: number, strict?: boolean }} opts
+ */
+function createOpenAIChatClient(opts) {
+  const baseUrl = String((opts && opts.baseUrl) || 'https://open.bigmodel.cn/api/paas/v4').replace(/\/$/, '');
+  const apiKey = String((opts && opts.apiKey) || '').trim();
+  const model = String((opts && opts.model) || 'glm-4-flash').trim() || 'glm-4-flash';
+  const fetchImpl = (opts && opts.fetchImpl) || (typeof fetch === 'function' ? fetch : null);
+  // glm-4-flash 正常 2~8s；留 30s 给网络抖动，再长就该报错了
+  const timeoutMs = (opts && opts.timeoutMs) || 30000;
+  const temperature = (opts && opts.temperature) != null ? opts.temperature : 0.45;
+
+  async function isAvailable() {
+    return Boolean(fetchImpl && apiKey);
   }
 
-  return { name: 'ollama:' + model, isAvailable, chat, polish };
+  async function chat(messages) {
+    if (!fetchImpl) throw new Error('运行环境缺少 fetch');
+    if (!apiKey) throw new Error('未填写 API Key');
+    const body = { model, messages, stream: false, temperature, top_p: 0.9, max_tokens: 320 };
+    const c = new AbortController();
+    const t = setTimeout(() => c.abort(), timeoutMs);
+    let res;
+    try {
+      res = await fetchImpl(baseUrl + '/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + apiKey },
+        body: JSON.stringify(body),
+        signal: c.signal,
+      });
+    } catch (e) {
+      const msg = e && e.name === 'AbortError' ? '模型接口超时（' + timeoutMs + 'ms）' : '连不上模型接口：' + (e && e.message);
+      throw new Error(msg, { cause: e });
+    } finally {
+      clearTimeout(t);
+    }
+    if (!res.ok) {
+      let detail = '';
+      try {
+        detail = String(await res.text()).slice(0, 200);
+      } catch {
+        /* 响应体读不出来就只报状态码 */
+      }
+      throw new Error('模型接口返回 ' + res.status + (detail ? '：' + detail : ''));
+    }
+    const data = await res.json();
+    const msg = data && data.choices && data.choices[0] && data.choices[0].message;
+    return stripThink(String((msg && msg.content) || ''));
+  }
+
+  return {
+    name: 'openai:' + model,
+    model,
+    isAvailable,
+    chat,
+    polish: wrapPolish(chat, { strict: Boolean(opts && opts.strict) }),
+  };
 }
 
 // ---- HTTP 云端代理客户端（transport 无关）----
@@ -320,7 +415,7 @@ function createHttpProxyClient(opts) {
 
 // @platform: 双端导出，Node/打包器走 module.exports，浏览器/小程序同步脚本走 window 全局
 if (typeof module === 'object' && module.exports) {
-  module.exports = { buildPolishMessages, createOllamaClient, createHttpProxyClient, linyuChars, pickModel, listOllamaModels, cleanPolishOutput, retentionOk, stripThink };
+  module.exports = { buildPolishMessages, createOllamaClient, createOpenAIChatClient, createHttpProxyClient, linyuChars, pickModel, listOllamaModels, cleanPolishOutput, retentionOk, stripThink, wrapPolish };
 } else if (typeof window !== 'undefined') {
-  window.LINYU_POLISH = { buildPolishMessages, createOllamaClient, createHttpProxyClient, linyuChars, pickModel, listOllamaModels, cleanPolishOutput, retentionOk, stripThink };
+  window.LINYU_POLISH = { buildPolishMessages, createOllamaClient, createOpenAIChatClient, createHttpProxyClient, linyuChars, pickModel, listOllamaModels, cleanPolishOutput, retentionOk, stripThink, wrapPolish };
 }

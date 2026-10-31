@@ -548,15 +548,42 @@
         <p class="tip">主题即时生效，下次打开自动记住♥</p>
 
         <div class="setting-divider"></div>
-        <span class="setting-label">翻译增强 · LLM 润色（云端代理）</span>
+        <span class="setting-label">翻译增强 · LLM 润色引擎</span>
         <p class="setting-desc">
-          「上下文消歧」「LLM 润色」开关在翻译页工具栏。桌面端用本机 Ollama 润色，无需填下面地址；
-          Web / 小程序端没有本地模型，需填写一个部署好的润色代理地址才能开启 LLM 润色。
+          「上下文消歧」「LLM 润色」开关在翻译页工具栏。桌面端两种引擎任选：
+          <b>本机 Ollama</b>（不花钱，但要装模型）或 <b>智谱 GLM 直连</b>（填个 Key 就能用，不用装 Ollama）。
         </p>
+        <div class="theme-opts">
+          <button class="theme-opt" :class="{ on: polishEngine === 'ollama' }" @click="setPolishEngine('ollama')">
+            本机 Ollama
+          </button>
+          <button class="theme-opt" :class="{ on: polishEngine === 'zhipu' }" @click="setPolishEngine('zhipu')">
+            智谱 GLM 直连
+          </button>
+        </div>
+
+        <template v-if="polishEngine === 'zhipu'">
+          <div class="auth-row">
+            <input v-model.trim="zhipuKey" type="password" autocomplete="off" placeholder="智谱 API Key（open.bigmodel.cn 控制台获取）" style="flex:1 1 260px" />
+          </div>
+          <div class="auth-row">
+            <input v-model.trim="zhipuModel" placeholder="glm-4-flash" style="flex:0 0 140px" />
+            <input v-model.trim="zhipuBase" placeholder="https://open.bigmodel.cn/api/paas/v4" style="flex:1 1 240px" />
+          </div>
+          <div class="auth-row">
+            <button class="ghost small" @click="saveZhipu">保存</button>
+            <button class="ghost small" :disabled="probing" @click="probePolish">{{ probing ? '测试中…' : '测试连接' }}</button>
+            <span class="live-badge" v-if="probeMsg">{{ probeMsg }}</span>
+          </div>
+          <p class="tip">Key 只存在本机 linyu.db，不外传；换电脑要重填。测试连接会用「救命，我气死了。」跑一遍看看效果。</p>
+        </template>
+        <p class="tip" v-else>用本机 Ollama 润色，模型自动从已装列表里选；可在下方填写自定义地址。</p>
+
         <div class="auth-row">
-          <input v-model.trim="proxyUrl" placeholder="https://你的代理域名/polish" style="flex:1 1 260px" />
+          <input v-model.trim="proxyUrl" placeholder="https://你的代理域名/polish（Web / 小程序端用）" style="flex:1 1 260px" />
           <button class="ghost small" @click="saveProxyUrl">保存地址</button>
         </div>
+        <p class="tip">上面这个代理地址只给 Web / 小程序用（那两端没有本地模型）；桌面端不看它。</p>
 
         <template v-if="orientSupported">
           <div class="setting-divider"></div>

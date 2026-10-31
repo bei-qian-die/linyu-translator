@@ -40,8 +40,15 @@ createApp({
     const polishedFlag = ref(false);
     // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
     const polishing = ref(false);
-    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端用本机 Ollama，留空即可）。
+    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端不看它）。
     const proxyUrl = ref('');
+    // 桌面端润色引擎：'ollama' 本机模型 / 'zhipu' 智谱 GLM 直连（填 Key 即用）
+    const polishEngine = ref('ollama');
+    const zhipuKey = ref('');
+    const zhipuBase = ref('https://open.bigmodel.cn/api/paas/v4');
+    const zhipuModel = ref('glm-4-flash');
+    const probing = ref(false);
+    const probeMsg = ref('');
     const samples = ref(['你今天真好看！', '我不知道呢，感觉很开心', '太可爱了吧哈哈哈哈', '谢谢宝贝的抱抱']);
 
     const toast = reactive({ text: '', undo: null });
@@ -332,11 +339,53 @@ createApp({
       }
     }
 
-    // Web / 小程序端：保存云端润色代理地址（桌面端用本机 Ollama，无需填）。
+    // Web / 小程序端：保存云端润色代理地址（桌面端不看它）。
     function saveProxyUrl() {
       const url = String(proxyUrl.value || '').trim();
       window.api.setPref('polishProxyUrl', JSON.stringify(url)).catch(() => {});
       say(url ? '已保存润色代理地址♥' : '已清空润色代理地址');
+    }
+
+    // 桌面端润色引擎切换：'ollama' 本机模型 / 'zhipu' 智谱直连
+    function setPolishEngine(key) {
+      polishEngine.value = key === 'zhipu' ? 'zhipu' : 'ollama';
+      probeMsg.value = '';
+      window.api.setPref('polishEngine', JSON.stringify(polishEngine.value)).catch(() => {});
+      say(polishEngine.value === 'zhipu' ? '润色引擎：智谱 GLM 直连' : '润色引擎：本机 Ollama');
+    }
+
+    // 保存智谱配置（Key 只存本机库；输入框是 password，不写进任何日志）
+    function saveZhipu() {
+      const base = String(zhipuBase.value || '').trim() || 'https://open.bigmodel.cn/api/paas/v4';
+      const model = String(zhipuModel.value || '').trim() || 'glm-4-flash';
+      const key = String(zhipuKey.value || '').trim();
+      window.api.setPref('zhipuBaseUrl', JSON.stringify(base)).catch(() => {});
+      window.api.setPref('zhipuModel', JSON.stringify(model)).catch(() => {});
+      window.api.setPref('zhipuApiKey', JSON.stringify(key)).catch(() => {});
+      probeMsg.value = '';
+      say(key ? '已保存智谱配置♥' : '已清空智谱 Key');
+    }
+
+    // 测试连接：用固定样例真跑一次，成功就把润色结果贴出来，失败显示原因
+    async function probePolish() {
+      if (probing.value) return;
+      probing.value = true;
+      probeMsg.value = '';
+      try {
+        const r = await call(
+          window.api.probePolish({
+            engine: 'zhipu',
+            zhipuBaseUrl: String(zhipuBase.value || '').trim(),
+            zhipuModel: String(zhipuModel.value || '').trim(),
+            zhipuApiKey: String(zhipuKey.value || '').trim(),
+          })
+        );
+        probeMsg.value = (r && r.changed ? '✓ ' : '· ') + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
+      } catch (e) {
+        probeMsg.value = '✗ ' + ((e && e.message) || e);
+      } finally {
+        probing.value = false;
+      }
     }
 
     async function doTranslate() {
@@ -1354,6 +1403,10 @@ createApp({
       if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
       if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
       proxyUrl.value = String(parsePref(prefs['polishProxyUrl'], '') || '').trim();
+      polishEngine.value = parsePref(prefs['polishEngine'], 'ollama') === 'zhipu' ? 'zhipu' : 'ollama';
+      zhipuKey.value = String(parsePref(prefs['zhipuApiKey'], '') || '').trim();
+      zhipuBase.value = String(parsePref(prefs['zhipuBaseUrl'], 'https://open.bigmodel.cn/api/paas/v4') || '') || 'https://open.bigmodel.cn/api/paas/v4';
+      zhipuModel.value = String(parsePref(prefs['zhipuModel'], 'glm-4-flash') || '') || 'glm-4-flash';
 
       // 屏幕方向：进 App 先锁竖屏，只有用户在设置里开过「跟随设备旋转」才放开
       try {
@@ -1411,7 +1464,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,

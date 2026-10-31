@@ -4,8 +4,10 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('api', {
   translate: (text, mode) => ipcRenderer.invoke('ly:translate', text, mode),
-  // Phase 2：LLM 润色后处理（桌面主进程跑本地 Ollama）。模型不可达时返回草稿原样。
+  // Phase 2：LLM 润色后处理（桌面端按设置选引擎：本机 Ollama / 智谱 GLM 直连）。
   polish: (source, draft) => ipcRenderer.invoke('ly:polish', source, draft),
+  // 设置页「测试连接」：用固定样例试跑一次当前引擎，失败会把原因带回来
+  probePolish: (opts) => ipcRenderer.invoke('ly:polish:probe', opts),
 
   authStatus: () => ipcRenderer.invoke('ly:auth:status'),
   login: (user, pass) => ipcRenderer.invoke('ly:auth:login', user, pass),
