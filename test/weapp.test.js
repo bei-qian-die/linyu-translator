@@ -1062,6 +1062,33 @@ run('词库合规扫描清单已归档', () => {
   assert(files.length > 0, '缺少 evidence/weapp-content-audit-*.md');
 });
 
+// 云端润色（智谱 glm-4-flash）提示词与护栏：提示词允许换词，护栏必须同步放宽，
+// 否则 few-shot 里的合法输出会被自己的护栏拦掉，用户看到的就是「润色没反应」。
+run('云端润色提示词与护栏自洽', () => {
+  const cf = require(path.join(MP, 'cloudfunctions/polish/index.js'));
+  const M = cf._internal;
+
+  // ① 4 条 few-shot 的期望输出必须放行（提示词说什么，护栏就得认）
+  const shots = M.buildPolishMessages({ source: '', draft: '' });
+  const pairs = [];
+  for (let i = 1; i < shots.length - 1; i += 2) pairs.push([shots[i].content, shots[i + 1].content]);
+  assert.strictEqual(pairs.length, 4, 'few-shot 应为 4 条');
+  for (const [u, a] of pairs) {
+    const m = u.match(/原文：([\s\S]*?)\n草稿：([\s\S]*?)\n润色后：/);
+    assert(m, 'few-shot 用户消息格式不符: ' + u);
+    assert(M.retentionOk(m[2], a, m[1]), 'few-shot 答案被护栏拦下: ' + m[2] + ' -> ' + a);
+  }
+
+  // ② 必须拦下的四类：中文回退 / 自造淋语 / 整句重写 / 丢「塔」
+  assert.strictEqual(M.retentionOk('塔来惹。', '他来了惹', '他来了。'), false, '中文回退未拦');
+  assert.strictEqual(M.retentionOk('塔来惹。', '塔来惹绝绝子', '他来了。'), false, '自造淋语未拦');
+  assert.strictEqual(M.retentionOk('塔来惹。', '今天天气真好呀', '他来了。'), false, '整句重写未拦');
+  assert.strictEqual(M.retentionOk('塔来惹。', '本可来惹', '她来了。'), false, '丢「塔」未拦');
+
+  // ③ 原样输出（弃权规则）必须放行，不能把「没改」判成失败
+  assert.strictEqual(M.retentionOk('塔来惹。', '塔来惹。', '他来了。'), true, '弃权原样输出被误拦');
+});
+
 (async () => {
   for (const { name, fn } of pending) {
     try {
