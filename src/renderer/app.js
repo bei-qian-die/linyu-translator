@@ -41,13 +41,6 @@ createApp({
     const polishedFlag = ref(false);
     // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
     const polishing = ref(false);
-    // 本项目自带的云端润色代理：微信云开发云函数 polish 的 HTTP 访问地址。
-    // 云函数已部署在环境 cloud1-d2g2xfwdo0d1c6f60，Key 存在云函数环境变量里，
-    // 浏览器只发 source/draft，永远看不到 Key。前提是控制台「HTTP 访问服务」
-    // 里给云函数加过 /polish 这条路径。
-    const DEFAULT_PROXY_URL = 'https://cloud1-d2g2xfwdo0d1c6f60.service.tcloudbase.com/polish';
-    // 云端润色代理地址（仅 Web / 小程序 / 手机端需要；桌面端不看它）。
-    const proxyUrl = ref(nonDesktop ? DEFAULT_PROXY_URL : '');
     // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 提供，
     // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
     const nonDesktop = typeof window.api.isCapacitor === 'boolean';
@@ -61,6 +54,13 @@ createApp({
           : window.Capacitor.platform && window.Capacitor.platform !== 'web')
     );
     const browserWeb = nonDesktop && !capNative;
+    // 本项目自带的云端润色代理：微信云开发云函数 polish 的 HTTP 访问地址。
+    // 云函数已部署在环境 cloud1-d2g2xfwdo0d1c6f60，Key 存在云函数环境变量里，
+    // 浏览器只发 source/draft，永远看不到 Key。前提是控制台「HTTP 访问服务」
+    // 里给云函数加过 /polish 这条路径。
+    const DEFAULT_PROXY_URL = 'https://cloud1-d2g2xfwdo0d1c6f60.service.tcloudbase.com/polish';
+    // 云端润色代理地址（仅 Web / 小程序 / 手机端需要；桌面端不看它）。
+    const proxyUrl = ref(nonDesktop ? DEFAULT_PROXY_URL : '');
     // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱直连 / 'proxy' 云端代理 / 'cloud' 内置免 Key 通道
     // 浏览器默认走 cloud：它和页面同源，不受 CORS 与 CSP 的跨域限制，开箱即用。
     const polishEngine = ref(nonDesktop ? (browserWeb ? 'cloud' : 'zhipu') : 'ollama');
