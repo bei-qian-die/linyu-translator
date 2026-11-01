@@ -406,6 +406,12 @@
 
     function makeProxyPolish() {
       return async (source, draft) => {
+        // 缓存放在最外层：之前只挂在 cloudPolish 里，走代理通道时完全绕过，
+        // 同一句第二次照样重算（实测 4.3s）。这里先查一次，两条通道共享同一份缓存。
+        const cacheKey = String(source || '') + '\u0000' + String(draft || '');
+        const hit = pcacheGet(cacheKey);
+        if (hit) return hit;
+
         // 默认引擎：手机上没得选（没有本地模型），浏览器直连必被 CORS 拦，
         // 所以「没设置过」就走同源代理 /polish（后端 glm-4-flash，免费额度）。
         // 这个默认值必须和渲染层 polishEngine 的初值一致，否则 UI 显示「云端代理」
@@ -426,7 +432,10 @@
             _proxyDead = true;
           } else {
             try {
-              return await client.polish(source, draft);
+              const text = await client.polish(source, draft);
+              // 只缓存真正的改写结果；返回草稿说明护栏拦了，下次仍值得重试
+              if (text && text !== draft) pcacheSet(cacheKey, text);
+              return text;
             } catch {
               _proxyDead = true;
             }
