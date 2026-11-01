@@ -1,743 +1,2166 @@
 {
-  "source": "douyin",
-  "batch": 1,
-  "collected_at": "2026-11-01",
-  "items": [
+ "source": "douyin",
+ "batch": 2,
+ "collected_at": "2026-11-01",
+ "items": [
+  {
+   "id": "yhx_wildflower_dj",
+   "name": "野花香（DJ何鹏版）",
+   "author": "莫斯满/老猫",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "DJ加速",
+    "土味",
+    "广场舞"
+   ],
+   "music_url": "https://www.douyin.com/music/6717476084788611843",
+   "music_id": "6717476084788611843",
+   "share_url": null,
+   "search_keyword": "野花香 DJ",
+   "usage_count": "915990",
+   "verified_at": "2026-11-01",
+   "examples": [
     {
-      "id": "yhx_wildflower_dj",
-      "name": "野花香（DJ何鹏版）",
-      "author": "莫斯满/老猫",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "DJ加速",
-        "土味",
-        "广场舞"
-      ],
-      "music_url": "https://www.douyin.com/music/6717476084788611843",
-      "music_id": "6717476084788611843",
-      "share_url": null,
-      "search_keyword": "野花香 DJ",
-      "usage_count": "915990",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "快乐的日子，没有烦恼😜#随性摇摆 #广场舞小鲁班#00后跳广场舞 #泰裤辣 #就是玩儿",
-          "author": "可爱小鲁班～Li甜.",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7239176467702238464",
-          "aweme_id": "7239176467702238464",
-          "play_count": null,
-          "like_count": "99340",
-          "duration": 15,
-          "meme_point": "00 后自称「广场舞小鲁班」，跟着 DJ 加速版甩手摇摆，土味神曲被跳出街舞范儿",
-          "music_used": "野花香（DJ何鹏版）"
-        },
-        {
-          "title": "#野花香 请你来到我身边，我们一醉到天亮😇#抖音热歌 #dj #跟着节奏嗨起来 #dou来跳舞 #小夕手势舞 @DOU+小助手",
-          "author": "小夕💞",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7087517114382224673",
-          "aweme_id": "7087517114382224673",
-          "play_count": null,
-          "like_count": "8455",
-          "duration": 15,
-          "meme_point": "手势舞卡野花香副歌，一句「一醉到天亮」把土味情话跳到最高点",
-          "music_used": "野花香（DJ何鹏版）"
-        }
-      ]
+     "title": "快乐的日子，没有烦恼😜#随性摇摆 #广场舞小鲁班#00后跳广场舞 #泰裤辣 #就是玩儿",
+     "author": "可爱小鲁班～Li甜.",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7239176467702238464",
+     "aweme_id": "7239176467702238464",
+     "play_count": null,
+     "like_count": "99340",
+     "duration": 15,
+     "meme_point": "00 后自称「广场舞小鲁班」，跟着 DJ 加速版甩手摇摆，土味神曲被跳出街舞范儿",
+     "music_used": "野花香（DJ何鹏版）"
     },
     {
-      "id": "yhx_wildflower_donggu",
-      "name": "野花香（DJ咚鼓版）",
-      "author": "豪大大",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "DJ加速",
-        "游戏整活",
-        "卡点"
-      ],
-      "music_url": "https://www.douyin.com/music/6898194366112729101",
-      "music_id": "6898194366112729101",
-      "share_url": null,
-      "search_keyword": "野花香 咚鼓",
-      "usage_count": "47506",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "玩老头的心都黑#第五人格 #游戏日常 #佣兵 #下饭操作 #整活 ",
-          "author": "树枝",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7109481500407581987",
-          "aweme_id": "7109481500407581987",
-          "play_count": null,
-          "like_count": "96200",
-          "duration": 72,
-          "meme_point": "第五人格佣兵下饭操作，队友倒地那一刻正好砸在咚鼓重拍上，越菜越燃",
-          "music_used": "野花香（DJ咚鼓版）"
-        }
-      ]
-    },
-    {
-      "id": "yhx_wildflower_yixuan",
-      "name": "野花香(DJ翊轩)（副歌）",
-      "author": "未知艺人",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "DJ加速",
-        "对口型",
-        "卡点"
-      ],
-      "music_url": "https://www.douyin.com/music/7572161777913677850",
-      "music_id": "7572161777913677850",
-      "share_url": null,
-      "search_keyword": "野花香 DJ翊轩",
-      "usage_count": "20110",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "最后摆拍摄造型的时候，不小心出了点小状况#依伊呀 #爸爸带娃 #亲子互动 #亲子相处趣味时刻 #甜妹",
-          "author": "依伊呀",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7651175912247918068",
-          "aweme_id": "7651175912247918068",
-          "play_count": null,
-          "like_count": "49058",
-          "duration": 10,
-          "meme_point": "爸爸带娃摆拍，副歌一进正好是孩子翻车那一秒，剪辑卡点比带娃还准",
-          "music_used": "野花香(DJ翊轩)（副歌）"
-        }
-      ]
-    },
-    {
-      "id": "yhx_wildflower_cover_zhengyun",
-      "name": "翻唱男声版_野花香",
-      "author": "正云",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "翻唱",
-        "土味"
-      ],
-      "music_url": "https://www.douyin.com/music/6722365108558334734",
-      "music_id": "6722365108558334734",
-      "share_url": null,
-      "search_keyword": "野花香 男声翻唱",
-      "usage_count": "56607",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "正云男声翻唱版《#野花香 》前部分，原唱：@莫斯满🌸野花香🌸天籁之爱🌸 ，大家多多支持和关注原唱",
-          "author": "正云",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/6722374256728018183",
-          "aweme_id": "6722374256728018183",
-          "play_count": null,
-          "like_count": "57268",
-          "duration": 46,
-          "meme_point": "男声一本正经深情翻唱土味神曲，越唱得像情歌越离谱",
-          "music_used": "翻唱男声版_野花香"
-        }
-      ]
-    },
-    {
-      "id": "yhx_thefeels_remix",
-      "name": "The野花香完整版勿盗",
-      "author": "TDOONG<3",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "remix",
-        "Kpop缝合",
-        "卡点"
-      ],
-      "music_url": "https://www.douyin.com/music/7063733763347417887",
-      "music_id": "7063733763347417887",
-      "share_url": null,
-      "search_keyword": "The野花香",
-      "usage_count": "1911",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "#thefeels x #野花香 remix完整来了 #twice （这次赶上了）",
-          "author": "TDOONG<3",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7063733719345024259",
-          "aweme_id": "7063733719345024259",
-          "play_count": null,
-          "like_count": "243287",
-          "duration": 38,
-          "meme_point": "把 TWICE《The Feels》和野花香缝在同一拍点上，Kpop 编舞配土味旋律，违和感就是笑点",
-          "music_used": "The野花香完整版勿盗"
-        },
-        {
-          "title": "#twice #thefeels #野花香 #jiafei #每次都想装作很倔强 周一哪有不疯的",
-          "author": "Sandwich三文君",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7529468565163543862",
-          "aweme_id": "7529468565163543862",
-          "play_count": null,
-          "like_count": "184",
-          "duration": 38,
-          "meme_point": "同一条 remix 的二次演绎，两首歌当一首跳，动作对得比原曲还齐",
-          "music_used": "The野花香完整版勿盗"
-        }
-      ]
-    },
-    {
-      "id": "yhx_yuansheng_ait",
-      "name": "用原声艾特",
-      "author": "⭐️-736.Tuan.言鸩",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "抽象",
-        "二次元",
-        "魔性翻跳"
-      ],
-      "music_url": "https://www.douyin.com/music/7061120811919870733",
-      "music_id": "7061120811919870733",
-      "share_url": null,
-      "search_keyword": "野花香 DJ 原声",
-      "usage_count": "7028",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "#野花香 #野花香dj #ooc致歉 #原神 #行秋 我还是要点脸的戴个口罩",
-          "author": "X瑶_o0O",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7065888319380540672",
-          "aweme_id": "7065888319380540672",
-          "play_count": null,
-          "like_count": "79227",
-          "duration": 11,
-          "meme_point": "原神行秋戴两层口罩跳野花香，标题自带「OOC 致歉」，羞耻感拉满",
-          "music_used": "用原声艾特"
-        },
-        {
-          "title": "Ok ok抖音给我的标签是颜值达人好的👌#野花香魔性翻跳",
-          "author": "Lisa辰",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7064909651283938600",
-          "aweme_id": "7064909651283938600",
-          "play_count": null,
-          "like_count": "25037",
-          "duration": 11,
-          "meme_point": "自嘲「抖音给我贴的标签是颜值达人」，用魔性翻跳抗议算法标签",
-          "music_used": "用原声艾特"
-        }
-      ]
-    },
-    {
-      "id": "yhx_badromance",
-      "name": "野花香 坏浪漫",
-      "author": "SelenaDelgadoLopez",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香",
-      "style": [
-        "抽象",
-        "meme",
-        "混音"
-      ],
-      "music_url": "https://www.douyin.com/music/7150210531964357413",
-      "music_id": "7150210531964357413",
-      "share_url": null,
-      "search_keyword": "野花香 坏浪漫",
-      "usage_count": "8968",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "#jiafei #floptropica #fyp #meme",
-          "author": "jiafei🙄💅",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7435068452752166153",
-          "aweme_id": "7435068452752166153",
-          "play_count": null,
-          "like_count": "45430",
-          "duration": 30,
-          "meme_point": "floptok 迷因号把 Lady Gaga 的 Bad Romance 和野花香混剪，半分钟全是网络黑话",
-          "music_used": "野花香 坏浪漫"
-        }
-      ]
-    },
-    {
-      "id": "gulp_bala_voice",
-      "name": "@好想放假创作的原声",
-      "author": "好想放假",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "抽象",
-        "配音",
-        "动画恶搞"
-      ],
-      "music_url": "https://www.douyin.com/music/7671201139664259883",
-      "music_id": "7671201139664259883",
-      "share_url": null,
-      "search_keyword": "gulp 杯糕姐",
-      "usage_count": "3667",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "美琪美雪一家由于中了黑魔法药粉，一直在打gulp#杯糕姐 #gulp #配音 #抽象 #搞笑",
-          "author": "好想放假",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7671201209537517041",
-          "aweme_id": "7671201209537517041",
-          "play_count": null,
-          "like_count": "511944",
-          "duration": 28,
-          "meme_point": "《巴啦啦小魔仙》台词全换成 gulp，一家人轮流咽口水，童年回忆当场塌房",
-          "music_used": "@好想放假创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_pet_chant",
-      "name": "@翅老母创作的原声",
-      "author": "翅老母",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "抽象",
-        "萌宠",
-        "配音"
-      ],
-      "music_url": "https://www.douyin.com/music/7637854252278352667",
-      "music_id": "7637854252278352667",
-      "share_url": null,
-      "search_keyword": "gulp 萌宠",
-      "usage_count": "290",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "吟唱中。。。#gulp #萌宠 #猎奇 #音乐剧 #土松",
-          "author": "翅老母",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7637854289394217939",
-          "aweme_id": "7637854289394217939",
-          "play_count": null,
-          "like_count": "384188",
-          "duration": 12,
-          "meme_point": "宠物张嘴瞬间卡进 gulp，再配音乐剧式运镜，一只土松秒变女高音",
-          "music_used": "@翅老母创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_poem_recital",
-      "name": "@西兰花创作的原声",
-      "author": "西兰花",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "抽象",
-        "诗朗诵",
-        "谐音梗"
-      ],
-      "music_url": "https://www.douyin.com/music/7489698746578520871",
-      "music_id": "7489698746578520871",
-      "share_url": null,
-      "search_keyword": "gulp 诗朗诵",
-      "usage_count": "67859",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "gulp诗朗诵《望江南》 #想一万次不如回家吃一次 #cupcakke #杯糕姐 #英语 #英语口语",
-          "author": "洋滇女王（积极向上版）",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7693899290011604453",
-          "aweme_id": "7693899290011604453",
-          "play_count": null,
-          "like_count": "126906",
-          "duration": 21,
-          "meme_point": "用 gulp 的节奏朗诵温庭筠《望江南》，古典意境被一声咽口水彻底毁掉",
-          "music_used": "@西兰花创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_birthday_song",
-      "name": "@宾果系入入创作的原声",
-      "author": "宾果系入入",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "抽象",
-        "鬼畜",
-        "教学"
-      ],
-      "music_url": "https://www.douyin.com/music/7582201644104813339",
-      "music_id": "7582201644104813339",
-      "share_url": null,
-      "search_keyword": "gulp 生日歌",
-      "usage_count": "258",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "让我们一起庆祝即将迎来gulpthday的朋友们！#cupcakke #gulp #生日歌 #教学 #鬼畜",
-          "author": "宾果系入入",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7582201606759042363",
-          "aweme_id": "7582201606759042363",
-          "play_count": null,
-          "like_count": "136653",
-          "duration": 28,
-          "meme_point": "生日快乐歌改成 gulpthday，还出教程教怎么唱，鬼畜和仪式感并存",
-          "music_used": "@宾果系入入创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_dance_beat",
-      "name": "@见不到郑在玹不改名创作的原声",
-      "author": "见不到郑在玹不改名",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "卡点",
-        "舞蹈"
-      ],
-      "music_url": "https://www.douyin.com/music/7655977234477533987",
-      "music_id": "7655977234477533987",
-      "share_url": null,
-      "search_keyword": "gulp 舞蹈",
-      "usage_count": "379",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "甩gulp 舞 #杯糕姐 #cupcakke",
-          "author": "见不到郑在玹不改名",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7655977338942215417",
-          "aweme_id": "7655977338942215417",
-          "play_count": null,
-          "like_count": "118831",
-          "duration": 21,
-          "meme_point": "每个 gulp 音配一个甩头动作，十几个卡点连打，比的是身体反应速度",
-          "music_used": "@见不到郑在玹不改名创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_repeat_loop",
-      "name": "@优雅莲创作的原声",
-      "author": "优雅莲",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "抽象",
-        "卡点",
-        "循环洗脑"
-      ],
-      "music_url": "https://www.douyin.com/music/7581024546029505343",
-      "music_id": "7581024546029505343",
-      "share_url": null,
-      "search_keyword": "gulp 搞笑",
-      "usage_count": "1602",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "所有人反复播放#搞笑 #抽象 #gulp #杯糕姐 #cupcakke",
-          "author": "优雅莲",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7581024598516665529",
-          "aweme_id": "7581024598516665529",
-          "play_count": null,
-          "like_count": "137674",
-          "duration": 8,
-          "meme_point": "短短 8 秒直接喊「所有人反复播放」，把扩散这件事交给观众",
-          "music_used": "@优雅莲创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_wordbook",
-      "name": "@无印创作的原声",
-      "author": "无印",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "谐音梗",
-        "英语教学"
-      ],
-      "music_url": "https://www.douyin.com/music/7601343212608408356",
-      "music_id": "7601343212608408356",
-      "share_url": null,
-      "search_keyword": "gulp 背单词",
-      "usage_count": "50",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "gulp其实是一个很好的词 谢谢  #gulp #英语 #背单词 #学习 #高考英语 #抖音精选高考应援联盟 #2026高考",
-          "author": "无印",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7601343296837685604",
-          "aweme_id": "7601343296837685604",
-          "play_count": null,
-          "like_count": "102835",
-          "duration": 96,
-          "meme_point": "拿 gulp 讲词根词义，一本正经做高考英语应援，越正经越好笑",
-          "music_used": "@无印创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_laugh_challenge",
-      "name": "@杰克gulp母创作的原声",
-      "author": "杰克gulp母",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "不笑挑战",
-        "抽象"
-      ],
-      "music_url": "https://www.douyin.com/music/7621530857391622954",
-      "music_id": "7621530857391622954",
-      "share_url": null,
-      "search_keyword": "gulp 不笑挑战",
-      "usage_count": "2487",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "挑战成功！\n#cupcakke #cupcakkeremix #不笑挑战 #杰克gulp母 #日常",
-          "author": "杰克gulp母",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7621530986505291155",
-          "aweme_id": "7621530986505291155",
-          "play_count": null,
-          "like_count": "176262",
-          "duration": 32,
-          "meme_point": "不笑挑战：主播一本正经播报，gulp 一响自己先崩，全片全是破功瞬间",
-          "music_used": "@杰克gulp母创作的原声"
-        },
-        {
-          "title": "就多余挑战\n#gulp #杯糕姐 #不笑挑战 @抖音小助手",
-          "author": "Rice",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7621884183921363643",
-          "aweme_id": "7621884183921363643",
-          "play_count": null,
-          "like_count": "144587",
-          "duration": 6,
-          "meme_point": "不到 6 秒就笑场，「就多余挑战」四个字直接把挑战本身的荒谬点破",
-          "music_used": "@杰克gulp母创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "gulp_english_class",
-      "name": "@Nicki Minaj创作的原声",
-      "author": "Nicki Minaj",
-      "en_name": null,
-      "type": "music",
-      "tag": "Gulp",
-      "style": [
-        "谐音梗",
-        "课堂梗"
-      ],
-      "music_url": "https://www.douyin.com/music/7650454485304511242",
-      "music_id": "7650454485304511242",
-      "share_url": null,
-      "search_keyword": "gulp 英语早读",
-      "usage_count": "627",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "英语老师想要的英语早自习：\n#cupcakke #cupcakke杯糕姐 #cupcakke音乐 #杯糕姐 #英语早读",
-          "author": "Nicki Minaj",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7650454520665635301",
-          "aweme_id": "7650454520665635301",
-          "play_count": null,
-          "like_count": "97674",
-          "duration": 16,
-          "meme_point": "把 gulp 剪成英语早读齐诵素材，整段制造「全班一起咽口水」的画面",
-          "music_used": "@Nicki Minaj创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "yg_fruit_remix",
-      "name": "@水溶性薄荷创作的原声",
-      "author": "水溶性薄荷",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香+Gulp",
-      "style": [
-        "混音",
-        "童年动画",
-        "双音源"
-      ],
-      "music_url": "https://www.douyin.com/music/7450152479737989926",
-      "music_id": "7450152479737989926",
-      "share_url": null,
-      "search_keyword": "野花香 gulp 果宝特攻",
-      "usage_count": "863",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "【杯糕/jiafei】果宝特攻主题曲 #cupcakke #jiafei #野花香 #果宝特攻 #童年动画",
-          "author": "水溶性薄荷",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7450152504869817610",
-          "aweme_id": "7450152504869817610",
-          "play_count": null,
-          "like_count": "15321",
-          "duration": 80,
-          "meme_point": "童年动画主题曲被杯糕姐嗓子接管，副歌一进来就是熟悉的 gulp 卡点",
-          "music_used": "@水溶性薄荷创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "yg_qingzang_remix",
-      "name": "@水溶性薄荷创作的原声",
-      "author": "水溶性薄荷",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香+Gulp",
-      "style": [
-        "混音",
-        "缝合",
-        "双音源"
-      ],
-      "music_url": "https://www.douyin.com/music/7484294960603319051",
-      "music_id": "7484294960603319051",
-      "share_url": null,
-      "search_keyword": "野花香 gulp 青藏",
-      "usage_count": "24",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "【cupcakke/jiafei】青藏gulp原 #cupcakke #野花香 #jiafei #青藏高原 #治愈系",
-          "author": "水溶性薄荷",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7484294233155751178",
-          "aweme_id": "7484294233155751178",
-          "play_count": null,
-          "like_count": "7343",
-          "duration": 136,
-          "meme_point": "野花香 + 青藏高原 + gulp 三合一，136 秒越唱越高，缝合到离谱",
-          "music_used": "@水溶性薄荷创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "yg_eggparty_remix",
-      "name": "@碇信志创作的原声",
-      "author": "碇信志",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香+Gulp",
-      "style": [
-        "remix",
-        "游戏",
-        "双音源"
-      ],
-      "music_url": "https://www.douyin.com/music/7276819857125985080",
-      "music_id": "7276819857125985080",
-      "share_url": null,
-      "search_keyword": "野花香 gulp 蛋仔",
-      "usage_count": "1535",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "SWEET JIAFEI x CUPCAKKE #蛋仔派对 #jiafei #cupcakke #野花香 #remix",
-          "author": "碇信志",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7276819803539508515",
-          "aweme_id": "7276819803539508515",
-          "play_count": null,
-          "like_count": "6633",
-          "duration": 34,
-          "meme_point": "蛋仔派对画风配双音源 remix，可爱皮 + 脏 adlib，反差制造荒诞",
-          "music_used": "@碇信志创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "yg_cosmic_remix",
-      "name": "@郑若曲（耍大牌版）创作的原声",
-      "author": "郑若曲（耍大牌版）",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香+Gulp",
-      "style": [
-        "混音",
-        "Kpop缝合",
-        "双音源"
-      ],
-      "music_url": "https://www.douyin.com/music/7640866449574660891",
-      "music_id": "7640866449574660891",
-      "share_url": null,
-      "search_keyword": "野花香 gulp cosmic",
-      "usage_count": "292",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "Jiafei/cupcakKe - cosmic #redvelvet #裴珠泫 #cupcakke #jiafei #野花香",
-          "author": "郑若曲（耍大牌版）",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7640866408410393531",
-          "aweme_id": "7640866408410393531",
-          "play_count": null,
-          "like_count": "6386",
-          "duration": 225,
-          "meme_point": "把 Red Velvet 的 cosmic 拆成两半，一半野花香一半杯糕，整首曲子完成曲风叛变",
-          "music_used": "@郑若曲（耍大牌版）创作的原声"
-        }
-      ]
-    },
-    {
-      "id": "yg_love_remix",
-      "name": "@WLDFLWR野花唱片创作的原声",
-      "author": "WLDFLWR野花唱片",
-      "en_name": null,
-      "type": "music",
-      "tag": "野花香+Gulp",
-      "style": [
-        "混音",
-        "抒情对撞",
-        "双音源"
-      ],
-      "music_url": "https://www.douyin.com/music/7692655467718855424",
-      "music_id": "7692655467718855424",
-      "share_url": null,
-      "search_keyword": "野花香 gulp 特别爱你",
-      "usage_count": "39",
-      "verified_at": "2026-11-01",
-      "examples": [
-        {
-          "title": "我真的特别爱你-杯糕x野花香remix #音频后期制作 #治愈系氛围感拉满 #杯糕姐 #我真的特别爱你 #野花香",
-          "author": "WLDFLWR野花唱片",
-          "type": "video",
-          "video_url": "https://www.douyin.com/video/7692655513931510513",
-          "aweme_id": "7692655513931510513",
-          "play_count": null,
-          "like_count": "2322",
-          "duration": 22,
-          "meme_point": "把一首深情的歌和杯糕姐的吞咽音对撞，温柔与猎奇同时出现",
-          "music_used": "@WLDFLWR野花唱片创作的原声"
-        }
-      ]
+     "title": "#野花香 请你来到我身边，我们一醉到天亮😇#抖音热歌 #dj #跟着节奏嗨起来 #dou来跳舞 #小夕手势舞 @DOU+小助手",
+     "author": "小夕💞",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7087517114382224673",
+     "aweme_id": "7087517114382224673",
+     "play_count": null,
+     "like_count": "8455",
+     "duration": 15,
+     "meme_point": "手势舞卡野花香副歌，一句「一醉到天亮」把土味情话跳到最高点",
+     "music_used": "野花香（DJ何鹏版）"
     }
-  ]
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx_wildflower_donggu",
+   "name": "野花香（DJ咚鼓版）",
+   "author": "豪大大",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "DJ加速",
+    "游戏整活",
+    "卡点"
+   ],
+   "music_url": "https://www.douyin.com/music/6898194366112729101",
+   "music_id": "6898194366112729101",
+   "share_url": null,
+   "search_keyword": "野花香 咚鼓",
+   "usage_count": "47506",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "玩老头的心都黑#第五人格 #游戏日常 #佣兵 #下饭操作 #整活 ",
+     "author": "树枝",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7109481500407581987",
+     "aweme_id": "7109481500407581987",
+     "play_count": null,
+     "like_count": "96200",
+     "duration": 72,
+     "meme_point": "第五人格佣兵下饭操作，队友倒地那一刻正好砸在咚鼓重拍上，越菜越燃",
+     "music_used": "野花香（DJ咚鼓版）"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx_wildflower_yixuan",
+   "name": "野花香(DJ翊轩)（副歌）",
+   "author": "未知艺人",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "DJ加速",
+    "对口型",
+    "卡点"
+   ],
+   "music_url": "https://www.douyin.com/music/7572161777913677850",
+   "music_id": "7572161777913677850",
+   "share_url": null,
+   "search_keyword": "野花香 DJ翊轩",
+   "usage_count": "20110",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "最后摆拍摄造型的时候，不小心出了点小状况#依伊呀 #爸爸带娃 #亲子互动 #亲子相处趣味时刻 #甜妹",
+     "author": "依伊呀",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7651175912247918068",
+     "aweme_id": "7651175912247918068",
+     "play_count": null,
+     "like_count": "49058",
+     "duration": 10,
+     "meme_point": "爸爸带娃摆拍，副歌一进正好是孩子翻车那一秒，剪辑卡点比带娃还准",
+     "music_used": "野花香(DJ翊轩)（副歌）"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx_wildflower_cover_zhengyun",
+   "name": "翻唱男声版_野花香",
+   "author": "正云",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "翻唱",
+    "土味"
+   ],
+   "music_url": "https://www.douyin.com/music/6722365108558334734",
+   "music_id": "6722365108558334734",
+   "share_url": null,
+   "search_keyword": "野花香 男声翻唱",
+   "usage_count": "56607",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "正云男声翻唱版《#野花香 》前部分，原唱：@莫斯满🌸野花香🌸天籁之爱🌸 ，大家多多支持和关注原唱",
+     "author": "正云",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/6722374256728018183",
+     "aweme_id": "6722374256728018183",
+     "play_count": null,
+     "like_count": "57268",
+     "duration": 46,
+     "meme_point": "男声一本正经深情翻唱土味神曲，越唱得像情歌越离谱",
+     "music_used": "翻唱男声版_野花香"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx_thefeels_remix",
+   "name": "The野花香完整版勿盗",
+   "author": "TDOONG<3",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "remix",
+    "Kpop缝合",
+    "卡点"
+   ],
+   "music_url": "https://www.douyin.com/music/7063733763347417887",
+   "music_id": "7063733763347417887",
+   "share_url": null,
+   "search_keyword": "The野花香",
+   "usage_count": "1911",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "#thefeels x #野花香 remix完整来了 #twice （这次赶上了）",
+     "author": "TDOONG<3",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7063733719345024259",
+     "aweme_id": "7063733719345024259",
+     "play_count": null,
+     "like_count": "243287",
+     "duration": 38,
+     "meme_point": "把 TWICE《The Feels》和野花香缝在同一拍点上，Kpop 编舞配土味旋律，违和感就是笑点",
+     "music_used": "The野花香完整版勿盗"
+    },
+    {
+     "title": "#twice #thefeels #野花香 #jiafei #每次都想装作很倔强 周一哪有不疯的",
+     "author": "Sandwich三文君",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7529468565163543862",
+     "aweme_id": "7529468565163543862",
+     "play_count": null,
+     "like_count": "184",
+     "duration": 38,
+     "meme_point": "同一条 remix 的二次演绎，两首歌当一首跳，动作对得比原曲还齐",
+     "music_used": "The野花香完整版勿盗"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx_yuansheng_ait",
+   "name": "用原声艾特",
+   "author": "⭐️-736.Tuan.言鸩",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "抽象",
+    "二次元",
+    "魔性翻跳"
+   ],
+   "music_url": "https://www.douyin.com/music/7061120811919870733",
+   "music_id": "7061120811919870733",
+   "share_url": null,
+   "search_keyword": "野花香 DJ 原声",
+   "usage_count": "7028",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "#野花香 #野花香dj #ooc致歉 #原神 #行秋 我还是要点脸的戴个口罩",
+     "author": "X瑶_o0O",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7065888319380540672",
+     "aweme_id": "7065888319380540672",
+     "play_count": null,
+     "like_count": "79227",
+     "duration": 11,
+     "meme_point": "原神行秋戴两层口罩跳野花香，标题自带「OOC 致歉」，羞耻感拉满",
+     "music_used": "用原声艾特"
+    },
+    {
+     "title": "Ok ok抖音给我的标签是颜值达人好的👌#野花香魔性翻跳",
+     "author": "Lisa辰",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7064909651283938600",
+     "aweme_id": "7064909651283938600",
+     "play_count": null,
+     "like_count": "25037",
+     "duration": 11,
+     "meme_point": "自嘲「抖音给我贴的标签是颜值达人」，用魔性翻跳抗议算法标签",
+     "music_used": "用原声艾特"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx_badromance",
+   "name": "野花香 坏浪漫",
+   "author": "SelenaDelgadoLopez",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "抽象",
+    "meme",
+    "混音"
+   ],
+   "music_url": "https://www.douyin.com/music/7150210531964357413",
+   "music_id": "7150210531964357413",
+   "share_url": null,
+   "search_keyword": "野花香 坏浪漫",
+   "usage_count": "8968",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "#jiafei #floptropica #fyp #meme",
+     "author": "jiafei🙄💅",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7435068452752166153",
+     "aweme_id": "7435068452752166153",
+     "play_count": null,
+     "like_count": "45430",
+     "duration": 30,
+     "meme_point": "floptok 迷因号把 Lady Gaga 的 Bad Romance 和野花香混剪，半分钟全是网络黑话",
+     "music_used": "野花香 坏浪漫"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_bala_voice",
+   "name": "@好想放假创作的原声",
+   "author": "好想放假",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "抽象",
+    "配音",
+    "动画恶搞"
+   ],
+   "music_url": "https://www.douyin.com/music/7671201139664259883",
+   "music_id": "7671201139664259883",
+   "share_url": null,
+   "search_keyword": "gulp 杯糕姐",
+   "usage_count": "3667",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "美琪美雪一家由于中了黑魔法药粉，一直在打gulp#杯糕姐 #gulp #配音 #抽象 #搞笑",
+     "author": "好想放假",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7671201209537517041",
+     "aweme_id": "7671201209537517041",
+     "play_count": null,
+     "like_count": "511944",
+     "duration": 28,
+     "meme_point": "《巴啦啦小魔仙》台词全换成 gulp，一家人轮流咽口水，童年回忆当场塌房",
+     "music_used": "@好想放假创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_pet_chant",
+   "name": "@翅老母创作的原声",
+   "author": "翅老母",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "抽象",
+    "萌宠",
+    "配音"
+   ],
+   "music_url": "https://www.douyin.com/music/7637854252278352667",
+   "music_id": "7637854252278352667",
+   "share_url": null,
+   "search_keyword": "gulp 萌宠",
+   "usage_count": "290",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "吟唱中。。。#gulp #萌宠 #猎奇 #音乐剧 #土松",
+     "author": "翅老母",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7637854289394217939",
+     "aweme_id": "7637854289394217939",
+     "play_count": null,
+     "like_count": "384188",
+     "duration": 12,
+     "meme_point": "宠物张嘴瞬间卡进 gulp，再配音乐剧式运镜，一只土松秒变女高音",
+     "music_used": "@翅老母创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_poem_recital",
+   "name": "@西兰花创作的原声",
+   "author": "西兰花",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "抽象",
+    "诗朗诵",
+    "谐音梗"
+   ],
+   "music_url": "https://www.douyin.com/music/7489698746578520871",
+   "music_id": "7489698746578520871",
+   "share_url": null,
+   "search_keyword": "gulp 诗朗诵",
+   "usage_count": "67859",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "gulp诗朗诵《望江南》 #想一万次不如回家吃一次 #cupcakke #杯糕姐 #英语 #英语口语",
+     "author": "洋滇女王（积极向上版）",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7693899290011604453",
+     "aweme_id": "7693899290011604453",
+     "play_count": null,
+     "like_count": "126906",
+     "duration": 21,
+     "meme_point": "用 gulp 的节奏朗诵温庭筠《望江南》，古典意境被一声咽口水彻底毁掉",
+     "music_used": "@西兰花创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_birthday_song",
+   "name": "@宾果系入入创作的原声",
+   "author": "宾果系入入",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "抽象",
+    "鬼畜",
+    "教学"
+   ],
+   "music_url": "https://www.douyin.com/music/7582201644104813339",
+   "music_id": "7582201644104813339",
+   "share_url": null,
+   "search_keyword": "gulp 生日歌",
+   "usage_count": "258",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "让我们一起庆祝即将迎来gulpthday的朋友们！#cupcakke #gulp #生日歌 #教学 #鬼畜",
+     "author": "宾果系入入",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7582201606759042363",
+     "aweme_id": "7582201606759042363",
+     "play_count": null,
+     "like_count": "136653",
+     "duration": 28,
+     "meme_point": "生日快乐歌改成 gulpthday，还出教程教怎么唱，鬼畜和仪式感并存",
+     "music_used": "@宾果系入入创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_dance_beat",
+   "name": "@见不到郑在玹不改名创作的原声",
+   "author": "见不到郑在玹不改名",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "卡点",
+    "舞蹈"
+   ],
+   "music_url": "https://www.douyin.com/music/7655977234477533987",
+   "music_id": "7655977234477533987",
+   "share_url": null,
+   "search_keyword": "gulp 舞蹈",
+   "usage_count": "379",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "甩gulp 舞 #杯糕姐 #cupcakke",
+     "author": "见不到郑在玹不改名",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7655977338942215417",
+     "aweme_id": "7655977338942215417",
+     "play_count": null,
+     "like_count": "118831",
+     "duration": 21,
+     "meme_point": "每个 gulp 音配一个甩头动作，十几个卡点连打，比的是身体反应速度",
+     "music_used": "@见不到郑在玹不改名创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_repeat_loop",
+   "name": "@优雅莲创作的原声",
+   "author": "优雅莲",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "抽象",
+    "卡点",
+    "循环洗脑"
+   ],
+   "music_url": "https://www.douyin.com/music/7581024546029505343",
+   "music_id": "7581024546029505343",
+   "share_url": null,
+   "search_keyword": "gulp 搞笑",
+   "usage_count": "1602",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "所有人反复播放#搞笑 #抽象 #gulp #杯糕姐 #cupcakke",
+     "author": "优雅莲",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7581024598516665529",
+     "aweme_id": "7581024598516665529",
+     "play_count": null,
+     "like_count": "137674",
+     "duration": 8,
+     "meme_point": "短短 8 秒直接喊「所有人反复播放」，把扩散这件事交给观众",
+     "music_used": "@优雅莲创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_wordbook",
+   "name": "@无印创作的原声",
+   "author": "无印",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "谐音梗",
+    "英语教学"
+   ],
+   "music_url": "https://www.douyin.com/music/7601343212608408356",
+   "music_id": "7601343212608408356",
+   "share_url": null,
+   "search_keyword": "gulp 背单词",
+   "usage_count": "50",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "gulp其实是一个很好的词 谢谢  #gulp #英语 #背单词 #学习 #高考英语 #抖音精选高考应援联盟 #2026高考",
+     "author": "无印",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7601343296837685604",
+     "aweme_id": "7601343296837685604",
+     "play_count": null,
+     "like_count": "102835",
+     "duration": 96,
+     "meme_point": "拿 gulp 讲词根词义，一本正经做高考英语应援，越正经越好笑",
+     "music_used": "@无印创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_laugh_challenge",
+   "name": "@杰克gulp母创作的原声",
+   "author": "杰克gulp母",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "不笑挑战",
+    "抽象"
+   ],
+   "music_url": "https://www.douyin.com/music/7621530857391622954",
+   "music_id": "7621530857391622954",
+   "share_url": null,
+   "search_keyword": "gulp 不笑挑战",
+   "usage_count": "2487",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "挑战成功！\n#cupcakke #cupcakkeremix #不笑挑战 #杰克gulp母 #日常",
+     "author": "杰克gulp母",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7621530986505291155",
+     "aweme_id": "7621530986505291155",
+     "play_count": null,
+     "like_count": "176262",
+     "duration": 32,
+     "meme_point": "不笑挑战：主播一本正经播报，gulp 一响自己先崩，全片全是破功瞬间",
+     "music_used": "@杰克gulp母创作的原声"
+    },
+    {
+     "title": "就多余挑战\n#gulp #杯糕姐 #不笑挑战 @抖音小助手",
+     "author": "Rice",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7621884183921363643",
+     "aweme_id": "7621884183921363643",
+     "play_count": null,
+     "like_count": "144587",
+     "duration": 6,
+     "meme_point": "不到 6 秒就笑场，「就多余挑战」四个字直接把挑战本身的荒谬点破",
+     "music_used": "@杰克gulp母创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "gulp_english_class",
+   "name": "@Nicki Minaj创作的原声",
+   "author": "Nicki Minaj",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "谐音梗",
+    "课堂梗"
+   ],
+   "music_url": "https://www.douyin.com/music/7650454485304511242",
+   "music_id": "7650454485304511242",
+   "share_url": null,
+   "search_keyword": "gulp 英语早读",
+   "usage_count": "627",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "英语老师想要的英语早自习：\n#cupcakke #cupcakke杯糕姐 #cupcakke音乐 #杯糕姐 #英语早读",
+     "author": "Nicki Minaj",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7650454520665635301",
+     "aweme_id": "7650454520665635301",
+     "play_count": null,
+     "like_count": "97674",
+     "duration": 16,
+     "meme_point": "把 gulp 剪成英语早读齐诵素材，整段制造「全班一起咽口水」的画面",
+     "music_used": "@Nicki Minaj创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yg_fruit_remix",
+   "name": "@水溶性薄荷创作的原声",
+   "author": "水溶性薄荷",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香+Gulp",
+   "style": [
+    "混音",
+    "童年动画",
+    "双音源"
+   ],
+   "music_url": "https://www.douyin.com/music/7450152479737989926",
+   "music_id": "7450152479737989926",
+   "share_url": null,
+   "search_keyword": "野花香 gulp 果宝特攻",
+   "usage_count": "863",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "【杯糕/jiafei】果宝特攻主题曲 #cupcakke #jiafei #野花香 #果宝特攻 #童年动画",
+     "author": "水溶性薄荷",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7450152504869817610",
+     "aweme_id": "7450152504869817610",
+     "play_count": null,
+     "like_count": "15321",
+     "duration": 80,
+     "meme_point": "童年动画主题曲被杯糕姐嗓子接管，副歌一进来就是熟悉的 gulp 卡点",
+     "music_used": "@水溶性薄荷创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yg_qingzang_remix",
+   "name": "@水溶性薄荷创作的原声",
+   "author": "水溶性薄荷",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香+Gulp",
+   "style": [
+    "混音",
+    "缝合",
+    "双音源"
+   ],
+   "music_url": "https://www.douyin.com/music/7484294960603319051",
+   "music_id": "7484294960603319051",
+   "share_url": null,
+   "search_keyword": "野花香 gulp 青藏",
+   "usage_count": "24",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "【cupcakke/jiafei】青藏gulp原 #cupcakke #野花香 #jiafei #青藏高原 #治愈系",
+     "author": "水溶性薄荷",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7484294233155751178",
+     "aweme_id": "7484294233155751178",
+     "play_count": null,
+     "like_count": "7343",
+     "duration": 136,
+     "meme_point": "野花香 + 青藏高原 + gulp 三合一，136 秒越唱越高，缝合到离谱",
+     "music_used": "@水溶性薄荷创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yg_eggparty_remix",
+   "name": "@碇信志创作的原声",
+   "author": "碇信志",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香+Gulp",
+   "style": [
+    "remix",
+    "游戏",
+    "双音源"
+   ],
+   "music_url": "https://www.douyin.com/music/7276819857125985080",
+   "music_id": "7276819857125985080",
+   "share_url": null,
+   "search_keyword": "野花香 gulp 蛋仔",
+   "usage_count": "1535",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "SWEET JIAFEI x CUPCAKKE #蛋仔派对 #jiafei #cupcakke #野花香 #remix",
+     "author": "碇信志",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7276819803539508515",
+     "aweme_id": "7276819803539508515",
+     "play_count": null,
+     "like_count": "6633",
+     "duration": 34,
+     "meme_point": "蛋仔派对画风配双音源 remix，可爱皮 + 脏 adlib，反差制造荒诞",
+     "music_used": "@碇信志创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yg_cosmic_remix",
+   "name": "@郑若曲（耍大牌版）创作的原声",
+   "author": "郑若曲（耍大牌版）",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香+Gulp",
+   "style": [
+    "混音",
+    "Kpop缝合",
+    "双音源"
+   ],
+   "music_url": "https://www.douyin.com/music/7640866449574660891",
+   "music_id": "7640866449574660891",
+   "share_url": null,
+   "search_keyword": "野花香 gulp cosmic",
+   "usage_count": "292",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "Jiafei/cupcakKe - cosmic #redvelvet #裴珠泫 #cupcakke #jiafei #野花香",
+     "author": "郑若曲（耍大牌版）",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7640866408410393531",
+     "aweme_id": "7640866408410393531",
+     "play_count": null,
+     "like_count": "6386",
+     "duration": 225,
+     "meme_point": "把 Red Velvet 的 cosmic 拆成两半，一半野花香一半杯糕，整首曲子完成曲风叛变",
+     "music_used": "@郑若曲（耍大牌版）创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yg_love_remix",
+   "name": "@WLDFLWR野花唱片创作的原声",
+   "author": "WLDFLWR野花唱片",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香+Gulp",
+   "style": [
+    "混音",
+    "抒情对撞",
+    "双音源"
+   ],
+   "music_url": "https://www.douyin.com/music/7692655467718855424",
+   "music_id": "7692655467718855424",
+   "share_url": null,
+   "search_keyword": "野花香 gulp 特别爱你",
+   "usage_count": "39",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "我真的特别爱你-杯糕x野花香remix #音频后期制作 #治愈系氛围感拉满 #杯糕姐 #我真的特别爱你 #野花香",
+     "author": "WLDFLWR野花唱片",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7692655513931510513",
+     "aweme_id": "7692655513931510513",
+     "play_count": null,
+     "like_count": "2322",
+     "duration": 22,
+     "meme_point": "把一首深情的歌和杯糕姐的吞咽音对撞，温柔与猎奇同时出现",
+     "music_used": "@WLDFLWR野花唱片创作的原声"
+    }
+   ],
+   "source": "douyin",
+   "platform_id": null
+  },
+  {
+   "id": "yhx2_jiafei_scream",
+   "source": "douyin",
+   "name": "jiafei尖叫原版",
+   "author": "SelenaDelgadoLopez",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "Jiafei",
+    "尖叫音",
+    "发疯文学"
+   ],
+   "music_url": "https://www.douyin.com/music/7127105430370781983",
+   "music_id": "7127105430370781983",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "jiafei 尖叫",
+   "usage_count": "2273",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "#内向文静腼腆害羞  #发疯文学 #开学前的精神状态 #池程程 我看谁还敢说池程程是低脂女王？",
+     "author": "池程程",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7271940842162539815",
+     "aweme_id": "7271940842162539815",
+     "play_count": null,
+     "like_count": "367651",
+     "duration": null,
+     "meme_point": "文案自称内向文静腼腆害羞，画面配一嗓子 jiafei 尖叫，人设和音效当场对撞",
+     "music_used": "jiafei尖叫原版"
+    },
+    {
+     "title": "#get你的同款紫薇 #记录生活 #精神状态 #研究生日常 #北京大学",
+     "author": "芋仔Yuji",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7289011711049321789",
+     "aweme_id": "7289011711049321789",
+     "play_count": null,
+     "like_count": "198951",
+     "duration": null,
+     "meme_point": "北大研究生日常片段，硬塞尖叫音当「精神状态」字幕的音效注解",
+     "music_used": "jiafei尖叫原版"
+    },
+    {
+     "title": "#内向文静腼腆害羞 #街头采访 #精神状态 #纯欲 姐妹咱们以后拽一点",
+     "author": "池程程",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7271198451285757238",
+     "aweme_id": "7271198451285757238",
+     "play_count": null,
+     "like_count": "83968",
+     "duration": null,
+     "meme_point": "街头采访剪成尖叫循环，收尾一句「姐妹咱们以后拽一点」把梗收干净",
+     "music_used": "jiafei尖叫原版"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_jiafei_truefan",
+   "source": "douyin",
+   "name": "jiafei真爱粉挑战",
+   "author": "Black Jiafei",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "真爱粉测试",
+    "卡点",
+    "接梗"
+   ],
+   "music_url": "https://www.douyin.com/music/7308234432832473866",
+   "music_id": "7308234432832473866",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "jiafei 真爱粉挑战",
+   "usage_count": "328",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "不乘的守宫对宿管的呵斥#豹纹守宫#姐姐你不乘 #爬宠#守宫#搞怪妞",
+     "author": "新哥特异宠的日常",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7528416252231552296",
+     "aweme_id": "7528416252231552296",
+     "play_count": null,
+     "like_count": "179191",
+     "duration": null,
+     "meme_point": "豹纹守宫对着宿管「呵斥」，卡点全压在真爱粉挑战的鼓点上",
+     "music_used": "jiafei真爱粉挑战"
+    },
+    {
+     "title": "这对吗…\n上楼梯的时候无畏迎面走来\n经过我旁边的时候终于说出了一句：“无畏，hello！”\n他也对我挥挥手，好可爱！\n（",
+     "author": "海盐冰茶真好喝",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7455610817434619176",
+     "aweme_id": "7455610817434619176",
+     "play_count": null,
+     "like_count": "39076",
+     "duration": null,
+     "meme_point": "楼梯口偶遇偶像喊一声 hello，回头补真爱粉挑战当「追星通关音」",
+     "music_used": "jiafei真爱粉挑战"
+    },
+    {
+     "title": "qa秒了，都听过的可以毕业了🙄💅\n#jiafei #cupcakke #tiktok #真爱粉测试 #精神状态belik",
+     "author": "黑眉",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7508352562296327443",
+     "aweme_id": "7508352562296327443",
+     "play_count": null,
+     "like_count": "5123",
+     "duration": null,
+     "meme_point": "把真爱粉测试做成答题现场，答错自动补一嗓子 jiafei 尖叫",
+     "music_used": "jiafei真爱粉挑战"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_cover_dingding_clip",
+   "source": "douyin",
+   "name": "野花香（Cover 老猫）（剪辑版）",
+   "author": "丁丁",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "剪辑版",
+    "港剧配音",
+    "抽象段子"
+   ],
+   "music_url": "https://www.douyin.com/music/7079587079050512397",
+   "music_id": "7079587079050512397",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "野花香 Cover 老猫",
+   "usage_count": "637",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "Vivienne其实还想吃个buffet… #tvb港剧 #抽象 #段子 #剧情 #粤语",
+     "author": "九是吕黄",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7507723721869528377",
+     "aweme_id": "7507723721869528377",
+     "play_count": null,
+     "like_count": "155784",
+     "duration": null,
+     "meme_point": "TVB 港剧台词配剪辑版副歌，「Vivienne 其实还想吃个 buffet」戏腔撞土味",
+     "music_used": "野花香（Cover 老猫）（剪辑版）"
+    },
+    {
+     "title": "飒一下 #iphone17",
+     "author": "王麻衣",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7551715545206295866",
+     "aweme_id": "7551715545206295866",
+     "play_count": null,
+     "like_count": "55855",
+     "duration": null,
+     "meme_point": "一句「飒一下」正踩在副歌四拍上，剪辑版只留最洗脑那几秒",
+     "music_used": "野花香（Cover 老猫）（剪辑版）"
+    },
+    {
+     "title": "2025年度总结\n新的一年也多多指教哩！#游戏破壁计划 #第五人格五骥映春 #第五人格#杰佣 #ooc致歉",
+     "author": "斯诺因 all day（催更滚",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7602691072422335666",
+     "aweme_id": "7602691072422335666",
+     "play_count": null,
+     "like_count": "12978",
+     "duration": null,
+     "meme_point": "第五人格年度总结拿野花香当 BGM，结尾挂一句 OOC 致歉当免责",
+     "music_used": "野花香（Cover 老猫）（剪辑版）"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_cover_dingding",
+   "source": "douyin",
+   "name": "野花香（Cover 老猫）",
+   "author": "丁丁",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "翻唱",
+    "生活记录",
+    "跟练"
+   ],
+   "music_url": "https://www.douyin.com/music/7076436541257664525",
+   "music_id": "7076436541257664525",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "野花香 Cover 老猫 完整版",
+   "usage_count": "576",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "新挑战！四天不吃饭只喝水 听说是雷神断食法 #挑战96小时断食 #挑战四天不吃饭只喝水  #女大学生 #减肥 #挑战不可",
+     "author": "怡动小马达！",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7448225903143832889",
+     "aweme_id": "7448225903143832889",
+     "play_count": null,
+     "like_count": "84228",
+     "duration": null,
+     "meme_point": "四天不吃饭只喝水，全程循环野花香，把「饿」拍成一首节奏挑战",
+     "music_used": "野花香（Cover 老猫）"
+    },
+    {
+     "title": "从此，我在学生心里将是食神的存在。#班主任   #我的职场高光时刻 #教师日常 #教师 #四川",
+     "author": "李圆波波",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7485746895374077220",
+     "aweme_id": "7485746895374077220",
+     "play_count": null,
+     "like_count": "38576",
+     "duration": null,
+     "meme_point": "班主任端出「食神」人设，野花香当上菜 BGM，学生反应做收尾",
+     "music_used": "野花香（Cover 老猫）"
+    },
+    {
+     "title": "野花香居家锻炼，每天10分钟一起锻炼身体，减脂瘦身！#居家锻炼 #运动健身 #跟我一起做运动 #暴汗燃脂瘦全身 #每天坚",
+     "author": "健哥有氧健身（减脂 塑形 运动）",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7266743930677366051",
+     "aweme_id": "7266743930677366051",
+     "play_count": null,
+     "like_count": "4483",
+     "duration": null,
+     "meme_point": "把土味神曲改造成居家燃脂课，每天十分钟跟练瘦全身",
+     "music_used": "野花香（Cover 老猫）"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_dj_cixin",
+   "source": "douyin",
+   "name": "野花香DJ版",
+   "author": "刺心",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "DJ加速",
+    "戏曲后台",
+    "换装卡点"
+   ],
+   "music_url": "https://www.douyin.com/music/7689607861068008243",
+   "music_id": "7689607861068008243",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "野花香DJ 戏曲后台",
+   "usage_count": "4902",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "今日分享快乐，演出接单中#戏曲表演 #美女演员 #戏曲后台大揭秘",
+     "author": "小蔡蔡👑《炎晖演艺公司》",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7696057305557476579",
+     "aweme_id": "7696057305557476579",
+     "play_count": null,
+     "like_count": "48278",
+     "duration": null,
+     "meme_point": "戏曲演员后台换装，DJ 版野花香当出场曲，「演出接单中」挂成字幕",
+     "music_used": "野花香DJ版"
+    },
+    {
+     "title": "演出接单中#后台欢乐多 #戏曲表演 #美女老板 #演出我们是专业的",
+     "author": "小蔡蔡👑《炎晖演艺公司》",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7695322141701666403",
+     "aweme_id": "7695322141701666403",
+     "play_count": null,
+     "like_count": "3083",
+     "duration": null,
+     "meme_point": "同一套后台素材换文案再发，靠副歌四拍卡换装节点",
+     "music_used": "野花香DJ版"
+    },
+    {
+     "title": "#真实生活分享计划 不要问强扭的瓜甜不甜，先扭下来再说",
+     "author": "刘大美",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7696837621889188467",
+     "aweme_id": "7696837621889188467",
+     "play_count": null,
+     "like_count": "2073",
+     "duration": null,
+     "meme_point": "「不要问强扭的瓜甜不甜，先扭下来再说」配野花香DJ，摆拍也能蹭上节奏",
+     "music_used": "野花香DJ版"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_max_fifth",
+   "source": "douyin",
+   "name": "野花香max",
+   "author": "YennJ234",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "第五人格",
+    "角色二创",
+    "模板"
+   ],
+   "music_url": "https://www.douyin.com/music/7132081382301371144",
+   "music_id": "7132081382301371144",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "野花香max 第五人格",
+   "usage_count": "466",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "野花香下半年要回归吗#第五人格 #潘丽娟 #魅力女人",
+     "author": "五槟",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7132464963423145223",
+     "aweme_id": "7132464963423145223",
+     "play_count": null,
+     "like_count": "5471",
+     "duration": null,
+     "meme_point": "一句「野花香下半年要回归吗」配第五人格剪辑，把梗音源当角色 tag 用",
+     "music_used": "野花香max"
+    },
+    {
+     "title": "双马尾，长耳朵，大眼睛，我知道！一定联动守夜👉！！#第五人格守夜人#非人哉小玉#联动 （如触雷请自行划走）",
+     "author": "Hopeless",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7265695132073151796",
+     "aweme_id": "7265695132073151796",
+     "play_count": null,
+     "like_count": "5666",
+     "duration": null,
+     "meme_point": "双马尾长耳朵角色图配 max 版，评论区直接刷「联动守夜」",
+     "music_used": "野花香max"
+    },
+    {
+     "title": "#聊天记录 #聊天截屏 #好朋友 救命🌚🌚",
+     "author": "石页",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7469047600470084876",
+     "aweme_id": "7469047600470084876",
+     "play_count": null,
+     "like_count": "1299",
+     "duration": null,
+     "meme_point": "聊天记录截图当画面，野花香max 负责把互怼推向高潮",
+     "music_used": "野花香max"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_hll_cover",
+   "source": "douyin",
+   "name": "野花香（DJ版）（Cover 莫斯满 & 老猫）",
+   "author": "H.L.L",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "Cover",
+    "交际舞",
+    "抽象模板"
+   ],
+   "music_url": "https://www.douyin.com/music/7424113914314541095",
+   "music_id": "7424113914314541095",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "野花香 DJ Cover 莫斯满",
+   "usage_count": "1716",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "无法用言语表达的，我称之为感觉 #宜宾朱老幺#跳舞使我快乐 #抽象",
+     "author": "宜宾朱老幺",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7528674328381918498",
+     "aweme_id": "7528674328381918498",
+     "play_count": null,
+     "like_count": "7589",
+     "duration": null,
+     "meme_point": "「无法用言语表达的，我称之为感觉」，跳舞全靠野花香 DJ 版撑住气场",
+     "music_used": "野花香（DJ版）（Cover 莫斯满 & 老猫）"
+    },
+    {
+     "title": "拿捏男人我自有一套 #vlog日常 #媚骨天成 #交际舞",
+     "author": "杨肉串",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7625298368847477066",
+     "aweme_id": "7625298368847477066",
+     "play_count": null,
+     "like_count": "15283",
+     "duration": null,
+     "meme_point": "交际舞配土味 DJ，文案「拿捏男人我自有一套」和曲子互相拆台",
+     "music_used": "野花香（DJ版）（Cover 莫斯满 & 老猫）"
+    },
+    {
+     "title": "两份兽设抽象吊图模板，欢迎使用\n#兽设 #吊图 #抽象 #模板",
+     "author": "烈舍",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7470506972698266918",
+     "aweme_id": "7470506972698266918",
+     "play_count": null,
+     "like_count": "1122",
+     "duration": null,
+     "meme_point": "兽设吊图模板配野花香，把「抽象」做成可套用的两格模板",
+     "music_used": "野花香（DJ版）（Cover 莫斯满 & 老猫）"
+    }
+   ]
+  },
+  {
+   "id": "yhx2_jiahua",
+   "source": "douyin",
+   "name": "家花没有野花香（剪辑版）",
+   "author": "夏松柏+冬杨柳",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香",
+   "style": [
+    "广场舞",
+    "谐音梗",
+    "早安打卡"
+   ],
+   "music_url": "https://www.douyin.com/music/7652181251093497894",
+   "music_id": "7652181251093497894",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "家花没有野花香",
+   "usage_count": "6388",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "#热门音乐🔥 #抖音热歌推荐🔥 #热门话题立即参与",
+     "author": "韦超",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7657425072495590001",
+     "aweme_id": "7657425072495590001",
+     "play_count": null,
+     "like_count": "19309",
+     "duration": null,
+     "meme_point": "挂着热门音乐标签搬运式发布，只留副歌当卡点底噪",
+     "music_used": "家花没有野花香（剪辑版）"
+    },
+    {
+     "title": "家人们早安，喜欢跳广场舞的一起来 ，身体好，空气好，哪里有风景哪里都是舞台 👍👍👍🌹🌹🌹🌹🌹🌹",
+     "author": "开心快乐🔥🔥🔥🔥🔥",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7656225113365137123",
+     "aweme_id": "7656225113365137123",
+     "play_count": null,
+     "like_count": "12741",
+     "duration": null,
+     "meme_point": "早安广场舞打卡，「哪里有风景哪里都是舞台」配剪辑版",
+     "music_used": "家花没有野花香（剪辑版）"
+    },
+    {
+     "title": "#经典流行音乐治愈系 家花没有野花香，味道其实都一样样……",
+     "author": "💖₅²⁰丽丽¹ᶟ₁₄",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7672809780172574886",
+     "aweme_id": "7672809780172574886",
+     "play_count": null,
+     "like_count": "1391",
+     "duration": null,
+     "meme_point": "文案接一句「家花没有野花香，味道其实都一样样」，把谐音梗当场翻译成顺口溜",
+     "music_used": "家花没有野花香（剪辑版）"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_sfx_pack",
+   "source": "douyin",
+   "name": "@3141692654创作的原声",
+   "author": "3141692654",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "音效素材",
+    "英语配音",
+    "转场音"
+   ],
+   "music_url": "https://www.douyin.com/music/7522110472464812840",
+   "music_id": "7522110472464812840",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "gulp 音效素材",
+   "usage_count": "1380",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "Gulp gulp gulp音效素材拿去#英语配音素材 #素材 #音效",
+     "author": "3141692654",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7522110586647498043",
+     "aweme_id": "7522110586647498043",
+     "play_count": null,
+     "like_count": "4230",
+     "duration": null,
+     "meme_point": "直接把 gulp 三连当音效素材放出来，标题写明「英语配音素材拿去」",
+     "music_used": "@3141692654创作的原声"
+    },
+    {
+     "title": "申请查看编剧歌单#瑞克和莫蒂 #gulp #cupcakke #杯糕姐",
+     "author": "菟旯",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7670129402512831910",
+     "aweme_id": "7670129402512831910",
+     "play_count": null,
+     "like_count": "407",
+     "duration": null,
+     "meme_point": "用 gulp 当转场音，把《瑞克和莫蒂》剪成一串歌单梗",
+     "music_used": "@3141692654创作的原声"
+    },
+    {
+     "title": "无题。#gulp",
+     "author": "something（重做卢卡真理之下",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7694883914515246074",
+     "aweme_id": "7694883914515246074",
+     "play_count": null,
+     "like_count": "347",
+     "duration": null,
+     "meme_point": "只写「无题」，画面全靠 gulp 循环撑住气氛",
+     "music_used": "@3141692654创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_voice_coach",
+   "source": "douyin",
+   "name": "@敏感纸条创作的原声",
+   "author": "敏感纸条",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "发声教学",
+    "吞咽音",
+    "保姆级"
+   ],
+   "music_url": "https://www.douyin.com/music/7596574867751799562",
+   "music_id": "7596574867751799562",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "gulp 发声教学",
+   "usage_count": "14",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "gulp发声保姆级教程 #cupcakke #gulp #gulp发声教学 #敏感纸条 #教学视频",
+     "author": "敏感纸条",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7596574939172384113",
+     "aweme_id": "7596574939172384113",
+     "play_count": null,
+     "like_count": "5784",
+     "duration": null,
+     "meme_point": "「gulp 发声保姆级教程」，把一声吞咽拆成发声位置教学",
+     "music_used": "@敏感纸条创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_abstract_gen",
+   "source": "douyin",
+   "name": "@抽象生成器创作的原声",
+   "author": "抽象生成器",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "Remix合集",
+    "音乐鉴赏",
+    "抽象"
+   ],
+   "music_url": "https://www.douyin.com/music/7456976261991336754",
+   "music_id": "7456976261991336754",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "杯糕姐 remix 合集",
+   "usage_count": "9738",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "Cupcakke Remix 音乐鉴赏合集 #jiafei #杯糕姐 #cupcakke #音乐 #搞笑 @DOU+小助",
+     "author": "抽象生成器",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7456975082062204223",
+     "aweme_id": "7456975082062204223",
+     "play_count": null,
+     "like_count": "84066",
+     "duration": null,
+     "meme_point": "把 cupcakKe remix 做成「音乐鉴赏合集」，四百秒里塞满 gulp",
+     "music_used": "@抽象生成器创作的原声"
+    },
+    {
+     "title": "所有人都该去支持。#疯狂动物城#gulp",
+     "author": "是磊磊啊🌈",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7579010191333551737",
+     "aweme_id": "7579010191333551737",
+     "play_count": null,
+     "like_count": "104476",
+     "duration": null,
+     "meme_point": "《疯狂动物城》二创配 gulp 音效，一句「所有人都该去支持」收尾",
+     "music_used": "@抽象生成器创作的原声"
+    },
+    {
+     "title": "技能教学 #gulp #cupcakke #杯糕姐 #杯糕 #抽象",
+     "author": "洋滇女王（积极向上版）",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7675712590928356729",
+     "aweme_id": "7675712590928356729",
+     "play_count": null,
+     "like_count": "47029",
+     "duration": null,
+     "meme_point": "标签写「技能教学」，实际在演示怎么把 gulp 塞进任何一句话",
+     "music_used": "@抽象生成器创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_renyu",
+   "source": "douyin",
+   "name": "@GUO_猫创作的原声",
+   "author": "GUO_猫",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "人鱼梗",
+    "配音",
+    "谐音"
+   ],
+   "music_url": "https://www.douyin.com/music/7630516566060223282",
+   "music_id": "7630516566060223282",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "人鱼之gulp",
+   "usage_count": "450",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "《人鱼之gulp》“gulp是我觉得很神圣啊”CupcakKe#音乐 #音乐分享 #CupcakKe #杯糕姐 #人鱼之",
+     "author": "GUO_猫",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7630516822656609970",
+     "aweme_id": "7630516822656609970",
+     "play_count": null,
+     "like_count": "39219",
+     "duration": null,
+     "meme_point": "《人鱼之gulp》，把一声吞咽解释成「gulp 是我觉得很神圣啊」",
+     "music_used": "@GUO_猫创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_nvna",
+   "source": "douyin",
+   "name": "@杨一饿创作的原声",
+   "author": "杨一饿",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "模仿",
+    "语录集锦",
+    "接梗"
+   ],
+   "music_url": "https://www.douyin.com/music/7686126812849572617",
+   "music_id": "7686126812849572617",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "娜艺娜 gulp 模仿",
+   "usage_count": "66",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "飞莎儿gulp 模仿娜艺娜语录集锦 #飞莎儿#阿豆子#ky不是烤鸭#死神君#阿猹",
+     "author": "杨一饿",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7686126676354387246",
+     "aweme_id": "7686126676354387246",
+     "play_count": null,
+     "like_count": "18573",
+     "duration": null,
+     "meme_point": "模仿娜艺娜语录集锦，每句尾巴都挂一个 gulp 当标点",
+     "music_used": "@杨一饿创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_jackgulp",
+   "source": "douyin",
+   "name": "@杰克gulp母创作的原声",
+   "author": "杰克gulp母",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "不笑挑战",
+    "翻车现场",
+    "系列"
+   ],
+   "music_url": "https://www.douyin.com/music/7621074853575134003",
+   "music_id": "7621074853575134003",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "gulp 不笑挑战",
+   "usage_count": "743",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "挑战失败！\n#cupcakkeremix #cupcakke #杯糕姐 #杰克gulp母 #日常",
+     "author": "杰克gulp母",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7621074908844141942",
+     "aweme_id": "7621074908844141942",
+     "play_count": null,
+     "like_count": "73581",
+     "duration": null,
+     "meme_point": "不笑挑战自己先笑场，标题直接写「挑战失败」认输",
+     "music_used": "@杰克gulp母创作的原声"
+    },
+    {
+     "title": "再次挑战失败😤#杯糕姐 #gulp #不笑挑战#翻车现场",
+     "author": "Rice",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7623355860761313145",
+     "aweme_id": "7623355860761313145",
+     "play_count": null,
+     "like_count": "67015",
+     "duration": null,
+     "meme_point": "翻车现场合集，「再次挑战失败」成了系列固定标题",
+     "music_used": "@杰克gulp母创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "gulp2_bucketbear",
+   "source": "douyin",
+   "name": "@大中华杯糕熊（🦋号直播）创作的原声",
+   "author": "大中华杯糕熊（🦋号直播）",
+   "en_name": null,
+   "type": "music",
+   "tag": "Gulp",
+   "style": [
+    "水时长",
+    "短音效",
+    "口癖"
+   ],
+   "music_url": "https://www.douyin.com/music/7699686017271368482",
+   "music_id": "7699686017271368482",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "想gulp gulp 杯糕熊",
+   "usage_count": "367",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "想gulp gulp #杯糕姐#杯糕熊",
+     "author": "大中华杯糕熊（🦋号直播）",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7699686112785182321",
+     "aweme_id": "7699686112785182321",
+     "play_count": null,
+     "like_count": "28114",
+     "duration": null,
+     "meme_point": "十五秒只干一件事：连喊「想 gulp gulp」，靠重复把音效变口癖",
+     "music_used": "@大中华杯糕熊（🦋号直播）创作的原声"
+    }
+   ]
+  },
+  {
+   "id": "yg2_abstract_gen",
+   "source": "douyin",
+   "name": "杯糕姐 Remix 音乐合集（野花香×gulp）",
+   "author": "抽象生成器",
+   "en_name": null,
+   "type": "music",
+   "tag": "野花香+Gulp",
+   "style": [
+    "双音源",
+    "Remix合集",
+    "缝合"
+   ],
+   "music_url": "https://www.douyin.com/music/7474210872034937651",
+   "music_id": "7474210872034937651",
+   "platform_id": null,
+   "share_url": null,
+   "search_keyword": "杯糕姐 remix 野花香 gulp",
+   "usage_count": "735",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "杯糕姐 Cupcakke Remix 音乐合集鉴赏 #杯糕姐 #cupcakke #jiafei #音乐 #搞笑 @DO",
+     "author": "抽象生成器",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7474209230417956137",
+     "aweme_id": "7474209230417956137",
+     "play_count": null,
+     "like_count": "2064",
+     "duration": null,
+     "meme_point": "杯糕姐 Remix 合集，野花香与 gulp 在同一份歌单里首尾相接",
+     "music_used": "杯糕姐 Remix 音乐合集（野花香×gulp）"
+    },
+    {
+     "title": "我讨厌的人你们给我等着#审美积累 #jiafei #gulp #杯糕姐 #野花香",
+     "author": "你崔什么崔",
+     "type": "video",
+     "video_url": "https://www.douyin.com/video/7527849887343332635",
+     "aweme_id": "7527849887343332635",
+     "play_count": null,
+     "like_count": "563",
+     "duration": null,
+     "meme_point": "「我讨厌的人你们给我等着」一句话挂满 jiafei、gulp、野花香三个 tag",
+     "music_used": "杯糕姐 Remix 音乐合集（野花香×gulp）"
+    }
+   ]
+  },
+  {
+   "id": "bili_yhx_jiafei_remix",
+   "source": "bilibili",
+   "name": "野花香（Jiafei Remix）",
+   "author": "Daily天利",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香",
+   "style": [
+    "Jiafei",
+    "Remix",
+    "缝合"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1jD421u7x7",
+   "music_id": null,
+   "platform_id": "BV1jD421u7x7",
+   "share_url": null,
+   "search_keyword": "野花香 remix",
+   "usage_count": "1057778",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "野Flower香 / FLOWER (Jiafei Remix) - JISOO",
+     "author": "Waynie_7",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1wm4y1z7Vv",
+     "aweme_id": "BV1wm4y1z7Vv",
+     "play_count": 3145239,
+     "like_count": "90034",
+     "duration": 178,
+     "meme_point": "把 JISOO《FLOWER》拆成「野Flower香」，副歌直接换成野花香四拍",
+     "music_used": "野花香（Jiafei Remix）"
+    },
+    {
+     "title": "Jiafei 野花香remix制作教学01",
+     "author": "Chasel懿辰",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1qm411Z7dW",
+     "aweme_id": "BV1qm411Z7dW",
+     "play_count": 8950,
+     "like_count": "808",
+     "duration": 670,
+     "meme_point": "不发布成品先发教学，一步步把野花香 remix 的工程拆给观众",
+     "music_used": "野花香（Jiafei Remix）"
+    },
+    {
+     "title": "20分钟的jiafei核短视频纯享",
+     "author": "ロボット工学",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1TP411r79m",
+     "aweme_id": "BV1TP411r79m",
+     "play_count": 955347,
+     "like_count": "20236",
+     "duration": 1264,
+     "meme_point": "二十分钟 jiafei 核纯剪，把尖叫音堆成一份压力测试歌单",
+     "music_used": "野花香（Jiafei Remix）"
+    }
+   ]
+  },
+  {
+   "id": "bili_yhx_xingqiong",
+   "source": "bilibili",
+   "name": "野花香2.0（星穹金曲版）",
+   "author": "-不灵-",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香",
+   "style": [
+    "游戏缝合",
+    "金曲系列",
+    "抽象"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1Nx4y1t7nj",
+   "music_id": null,
+   "platform_id": "BV1Nx4y1t7nj",
+   "share_url": null,
+   "search_keyword": "星穹金曲 野花香",
+   "usage_count": "3579306",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "【星穹金曲】野花香4.0至尊版震撼发布！疯癫升级！",
+     "author": "-不灵-",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1Wx8ozoEku",
+     "aweme_id": "BV1Wx8ozoEku",
+     "play_count": 1874203,
+     "like_count": "171925",
+     "duration": 109,
+     "meme_point": "4.0 至尊版「疯癫升级」，把同一段副歌重新编排成更吵的一版",
+     "music_used": "野花香2.0（星穹金曲版）"
+    },
+    {
+     "title": "【星穹金曲】野⚡花⚡香⚡🌺😍🌹",
+     "author": "-不灵-",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1t94y1K7jD",
+     "aweme_id": "BV1t94y1K7jD",
+     "play_count": 1515084,
+     "like_count": "154328",
+     "duration": 111,
+     "meme_point": "标题直接改成「野⚡花⚡香⚡🌺😍🌹」，用字符排版替代封面设计",
+     "music_used": "野花香2.0（星穹金曲版）"
+    },
+    {
+     "title": "【原神金曲】野花香的风还是吹到了纳塔",
+     "author": "-不灵-",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1orHMeYEki",
+     "aweme_id": "BV1orHMeYEki",
+     "play_count": 971100,
+     "like_count": "81699",
+     "duration": 102,
+     "meme_point": "把星穹金曲搬到原神纳塔，「野花香的风还是吹到了纳塔」",
+     "music_used": "野花香2.0（星穹金曲版）"
+    }
+   ]
+  },
+  {
+   "id": "bili_yhx_meme_guide",
+   "source": "bilibili",
+   "name": "jiafei 是什么梗",
+   "author": "梗指南",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香",
+   "style": [
+    "梗科普",
+    "起源考据",
+    "解说"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1dw411B7BY",
+   "music_id": null,
+   "platform_id": "BV1dw411B7BY",
+   "share_url": null,
+   "search_keyword": "jiafei 是什么梗",
+   "usage_count": "2520066",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "【梗百科】每次都想装作很倔强是啥梗？",
+     "author": "梗百科",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1qY4y1T7jR",
+     "aweme_id": "BV1qY4y1T7jR",
+     "play_count": 1202780,
+     "like_count": "37543",
+     "duration": 228,
+     "meme_point": "从「每次都想装作很倔强」一句歌词倒推野花香梗的传播路径",
+     "music_used": "jiafei 是什么梗"
+    },
+    {
+     "title": "【神の人】Jiafei:真正的国际顶流，独特的尖叫美学，野花香国际宣传大使，解析jiafei文化的发展历史",
+     "author": "伤心凉茶",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV13DM3z4EoA",
+     "aweme_id": "BV13DM3z4EoA",
+     "play_count": 3668041,
+     "like_count": "33940",
+     "duration": 365,
+     "meme_point": "把 jiafei 封成「国际顶流」做人物志，标题自封野花香国际宣传大使",
+     "music_used": "jiafei 是什么梗"
+    }
+   ]
+  },
+  {
+   "id": "bili_yhx_penbeat",
+   "source": "bilibili",
+   "name": "PENBEAT 野花香（Remix）",
+   "author": "pber-鲁诺",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香",
+   "style": [
+    "笔敲",
+    "打击乐",
+    "Remix"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1Q1hbzAEys",
+   "music_id": null,
+   "platform_id": "BV1Q1hbzAEys",
+   "share_url": null,
+   "search_keyword": "野花香 penbeat",
+   "usage_count": "112921",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "【重音テト】野花香DJ",
+     "author": "德意志骨科official",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1j84y1v7fn",
+     "aweme_id": "BV1j84y1v7fn",
+     "play_count": 13869,
+     "like_count": "783",
+     "duration": 196,
+     "meme_point": "用重音テト的声库翻唱野花香DJ，虚拟歌手唱土味神曲",
+     "music_used": "PENBEAT 野花香（Remix）"
+    },
+    {
+     "title": "不看后悔一辈子 看了一辈子后悔×极致潮流「野花香」！【吕和今Asota&展麟Finn】",
+     "author": "Afaer-吕和今Asota",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1kH4y1B7ZY",
+     "aweme_id": "BV1kH4y1B7ZY",
+     "play_count": 810139,
+     "like_count": "51489",
+     "duration": 207,
+     "meme_point": "标题自嘲「看了一辈子后悔」，把野花香做成极致潮流的舞台",
+     "music_used": "PENBEAT 野花香（Remix）"
+    }
+   ]
+  },
+  {
+   "id": "bili_yhx_guangchangwu",
+   "source": "bilibili",
+   "name": "野花香 广场舞（32 步教学）",
+   "author": "糖豆app",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香",
+   "style": [
+    "广场舞",
+    "教学",
+    "跟练"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1dC4y1h7wx",
+   "music_id": null,
+   "platform_id": "BV1dC4y1h7wx",
+   "share_url": null,
+   "search_keyword": "野花香 广场舞 教学",
+   "usage_count": "299025",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "健康一生广场舞《DJ野花香》背面,32步零基础入门,正在热播中",
+     "author": "健康一生广场舞",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1k54y1U7Eq",
+     "aweme_id": "BV1k54y1U7Eq",
+     "play_count": 11543,
+     "like_count": "19",
+     "duration": 194,
+     "meme_point": "只拍背面不拍正面，32 步零基础跟练，专治「看不会」",
+     "music_used": "野花香 广场舞（32 步教学）"
+    },
+    {
+     "title": "广场舞《野花香》火爆DJ动感32步，瘦全身减脂小白必看",
+     "author": "糖豆app",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1Ra4y1a7gY",
+     "aweme_id": "BV1Ra4y1a7gY",
+     "play_count": 17289,
+     "like_count": "14",
+     "duration": 169,
+     "meme_point": "同一支舞换个「瘦全身」的说法再发一遍，标题比舞更卖力",
+     "music_used": "野花香 广场舞（32 步教学）"
+    }
+   ]
+  },
+  {
+   "id": "bili_yhx_supermarket",
+   "source": "bilibili",
+   "name": "野花香 remix 已在国外超市外放",
+   "author": "UBody-on-my-mind",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香",
+   "style": [
+    "海外出圈",
+    "超市外放",
+    "反应"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV15u411E7mk",
+   "music_id": null,
+   "platform_id": "BV15u411E7mk",
+   "share_url": null,
+   "search_keyword": "野花香 超市 外放",
+   "usage_count": "320597",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "野花香  DJ",
+     "author": "十字路口的盲人",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV19q4y1B7FM",
+     "aweme_id": "BV19q4y1B7FM",
+     "play_count": 122363,
+     "like_count": "1240",
+     "duration": 195,
+     "meme_point": "整段只有 DJ 版原曲配一张封面，标题就两个字「野花香 DJ」",
+     "music_used": "野花香 remix 已在国外超市外放"
+    }
+   ]
+  },
+  {
+   "id": "bili_gulp_sfx_guide",
+   "source": "bilibili",
+   "name": "【杯糕姐】盘点各种音效出处",
+   "author": "Xurey-",
+   "en_name": null,
+   "type": "video",
+   "tag": "Gulp",
+   "style": [
+    "音效考据",
+    "盘点",
+    "淋语"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1QWpK68Eg3",
+   "music_id": null,
+   "platform_id": "BV1QWpK68Eg3",
+   "share_url": null,
+   "search_keyword": "cupcakke 音效 出处",
+   "usage_count": "342123",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "gulp的全球发阴",
+     "author": "沉迷哲学的猫",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1rSTizgEEv",
+     "aweme_id": "BV1rSTizgEEv",
+     "play_count": 301965,
+     "like_count": "9378",
+     "duration": 55,
+     "meme_point": "把 gulp 称作「全球发阴」，用一本正经的语气解说一个怪音效",
+     "music_used": "【杯糕姐】盘点各种音效出处"
+    },
+    {
+     "title": "【cupcakKe】gulp gulp gulp！",
+     "author": "霍尼女孩",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1iVPszsEz6",
+     "aweme_id": "BV1iVPszsEz6",
+     "play_count": 299571,
+     "like_count": "2374",
+     "duration": 64,
+     "meme_point": "标题就是三连 gulp，整段只干一件事：把吞咽音拆成节拍",
+     "music_used": "【杯糕姐】盘点各种音效出处"
+    }
+   ]
+  },
+  {
+   "id": "bili_gulp_voice_coach",
+   "source": "bilibili",
+   "name": "gulp 发声保姆级教学",
+   "author": "敏感纸条",
+   "en_name": null,
+   "type": "video",
+   "tag": "Gulp",
+   "style": [
+    "发声教学",
+    "吞咽音",
+    "教程"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV1kCkpB6Esr",
+   "music_id": null,
+   "platform_id": "BV1kCkpB6Esr",
+   "share_url": null,
+   "search_keyword": "gulp 发声 教学 哔哩哔哩",
+   "usage_count": "107757",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "不同音效的gulp",
+     "author": "Wonder上城渚日记",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1c5mKYyEt7",
+     "aweme_id": "BV1c5mKYyEt7",
+     "play_count": 18699,
+     "like_count": "529",
+     "duration": 96,
+     "meme_point": "把不同音效的 gulp 排成一列逐条对比，像音色试听",
+     "music_used": "gulp 发声保姆级教学"
+    }
+   ]
+  },
+  {
+   "id": "bili_gulp_pure",
+   "source": "bilibili",
+   "name": "[glup gulp gulp] 纯享版",
+   "author": "无比滴不想开学",
+   "en_name": null,
+   "type": "video",
+   "tag": "Gulp",
+   "style": [
+    "纯享",
+    "循环",
+    "卡点"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV11ReGeWEKG",
+   "music_id": null,
+   "platform_id": "BV11ReGeWEKG",
+   "share_url": null,
+   "search_keyword": "gulp 纯享版",
+   "usage_count": "268009",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "gogogogo纯享版来啦！",
+     "author": "binbin灰",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1iJ426FEYE",
+     "aweme_id": "BV1iJ426FEYE",
+     "play_count": 145088,
+     "like_count": "11499",
+     "duration": 13,
+     "meme_point": "换成 gogogogo 继续纯享，同一套模板换个词再发一遍",
+     "music_used": "[glup gulp gulp] 纯享版"
+    },
+    {
+     "title": "若不是你突然gulp进我生活（绿色cupcakke版）",
+     "author": "洋滇女王",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1CM8G6nEJ3",
+     "aweme_id": "BV1CM8G6nEJ3",
+     "play_count": 78977,
+     "like_count": "6206",
+     "duration": 65,
+     "meme_point": "拿《若不是你突然闯进我生活》的旋律填 gulp，「绿色」版改编",
+     "music_used": "[glup gulp gulp] 纯享版"
+    },
+    {
+     "title": "Let It Go (CupcakKe Remix) 当艾莎不再是good girl",
+     "author": "Horizonss_",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1dW4y1q7cz",
+     "aweme_id": "BV1dW4y1q7cz",
+     "play_count": 635930,
+     "like_count": "15415",
+     "duration": 225,
+     "meme_point": "《Let It Go》remix 成 gulp 版，「当艾莎不再是 good girl」",
+     "music_used": "[glup gulp gulp] 纯享版"
+    }
+   ]
+  },
+  {
+   "id": "bili_yg_remix_battle",
+   "source": "bilibili",
+   "name": "阴乐争霸赛（杯糕 × Jiafei Remix）",
+   "author": "MG音乐电台",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香+Gulp",
+   "style": [
+    "双音源",
+    "对撞",
+    "电台"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV11dz5BUEh6",
+   "music_id": null,
+   "platform_id": "BV11dz5BUEh6",
+   "share_url": null,
+   "search_keyword": "阴乐争霸赛 杯糕 jiafei",
+   "usage_count": "155964",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "【杯糕产品阴乐】芒种【Jiafei & CupCakke Remix】",
+     "author": "暮色-Infi",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV11dSyB4EuS",
+     "aweme_id": "BV11dSyB4EuS",
+     "play_count": 154552,
+     "like_count": "5698",
+     "duration": 217,
+     "meme_point": "《芒种》被塞进 Jiafei 与 CupcakKe 两条音轨，国风撞淋语",
+     "music_used": "阴乐争霸赛（杯糕 × Jiafei Remix）"
+    },
+    {
+     "title": "【补如档】杯糕之声 插曲do-re-mi（cupcakke remix）",
+     "author": "水溶性薄荷",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1MU5GzuEXD",
+     "aweme_id": "BV1MU5GzuEXD",
+     "play_count": 207490,
+     "like_count": "10714",
+     "duration": 133,
+     "meme_point": "把《杯糕之声》插曲 do-re-mi 改成 remix 补档",
+     "music_used": "阴乐争霸赛（杯糕 × Jiafei Remix）"
+    },
+    {
+     "title": "floptropica 交换舞台：cupcakKe - 野花香(原唱：Jiafei)",
+     "author": "郑若曲",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV15eiPeXEfa",
+     "aweme_id": "BV15eiPeXEfa",
+     "play_count": 12238,
+     "like_count": "534",
+     "duration": 74,
+     "meme_point": "floptropica 交换舞台，cupcakKe 上台唱野花香",
+     "music_used": "阴乐争霸赛（杯糕 × Jiafei Remix）"
+    }
+   ]
+  },
+  {
+   "id": "bili_yg_mashup",
+   "source": "bilibili",
+   "name": "火红的萨日朗 × 野花香 ft. CupcakKe",
+   "author": "Azhe是阿哲",
+   "en_name": null,
+   "type": "video",
+   "tag": "野花香+Gulp",
+   "style": [
+    "双音源",
+    "民歌缝合",
+    "Remix"
+   ],
+   "music_url": "https://www.bilibili.com/video/BV14PsreUEdn",
+   "music_id": null,
+   "platform_id": "BV14PsreUEdn",
+   "share_url": null,
+   "search_keyword": "野花香 萨日朗 缝合",
+   "usage_count": "23947",
+   "verified_at": "2026-11-01",
+   "examples": [
+    {
+     "title": "cupcakKe/Jiafei -Whiplash aespa",
+     "author": "郑若曲",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1KjwqeyEWP",
+     "aweme_id": "BV1KjwqeyEWP",
+     "play_count": 217768,
+     "like_count": "8664",
+     "duration": 185,
+     "meme_point": "aespa《Whiplash》被拆成 cupcakKe/Jiafei 双人版",
+     "music_used": "火红的萨日朗 × 野花香 ft. CupcakKe"
+    },
+    {
+     "title": "YOASOBI-IDOL/アイドル(CupcakKe&Jiafei Remix)",
+     "author": "斯忒诺桑",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1JT41187nJ",
+     "aweme_id": "BV1JT41187nJ",
+     "play_count": 32990,
+     "like_count": "1455",
+     "duration": 86,
+     "meme_point": "YOASOBI《IDOL》换两条淋语音轨，副歌直接对撞",
+     "music_used": "火红的萨日朗 × 野花香 ft. CupcakKe"
+    },
+    {
+     "title": "Jiafei/cupcakKe - Bad Romance LADY GAGA",
+     "author": "郑若曲",
+     "type": "video",
+     "video_url": "https://www.bilibili.com/video/BV1jHSbBvES2",
+     "aweme_id": "BV1jHSbBvES2",
+     "play_count": 28680,
+     "like_count": "1198",
+     "duration": 294,
+     "meme_point": "Lady Gaga《Bad Romance》remix 成 jiafei/cupcakKe 版",
+     "music_used": "火红的萨日朗 × 野花香 ft. CupcakKe"
+    }
+   ]
+  }
+ ],
+ "platforms": [
+  "douyin",
+  "bilibili"
+ ]
 }

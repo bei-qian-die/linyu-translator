@@ -2134,6 +2134,44 @@ body[data-mobile] .modal-wide {
   opacity: 0.72;
 }
 
+/* 平台筛选（全部 / 抖音 / B 站）——做成一段分段控件，跟左边分组胶囊拉开层级 */
+.music-platforms {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px 3px 10px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+}
+
+.music-plat-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+.music-plat-chip {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.music-plat-chip:hover {
+  color: var(--ink);
+}
+
+.music-plat-chip.on {
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 .music-search {
   flex: 1 1 220px;
   min-width: 180px;
@@ -2193,6 +2231,27 @@ body[data-mobile] .modal-wide {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* 平台徽章：抖音用主题粉、B 站用官方蓝，颜色就是最快的区分 */
+.mc-plat {
+  flex: none;
+  font-size: 11px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.mc-plat.douyin {
+  background: rgba(254, 44, 85, 0.12);
+  color: #fe2c55;
+}
+
+.mc-plat.bilibili {
+  background: rgba(0, 174, 236, 0.14);
+  color: #00aeec;
 }
 
 .mc-tag {
@@ -2335,6 +2394,11 @@ body[data-mobile] .music-card {
 body[data-mobile] .music-group {
   padding: 6px 12px;
   font-size: 12px;
+}
+
+/* 手机上平台筛选别占一整行：跟分组胶囊同一排往下折 */
+body[data-mobile] .music-platforms {
+  padding-left: 10px;
 }
 
 /* ---------- 顶栏导航在窄屏换行 + 横滚 ----------

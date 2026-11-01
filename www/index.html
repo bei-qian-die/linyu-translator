@@ -503,12 +503,12 @@
         </div>
       </section>
 
-      <!-- 音乐页：纯静态音源库，不读写数据库。每条音乐挂 1–2 条二创样例，
+      <!-- 音乐页：纯静态音源库，不读写数据库。抖音条目挂在音乐页、B 站条目挂在引用该音源的作品页，
            链接统一走 openLink（桌面 shell.openExternal / 安卓 Capacitor Browser / Web 新标签） -->
       <section v-show="view === 'music'" class="manage-page music-page">
         <div class="lore-head">
-          <h2>音乐板块 · 抖音搞怪二创音源</h2>
-          <p>野花香 × Gulp 两条梗音源，{{ musicCount }} 首音乐配 {{ musicVideoCount }} 条二创样例；每条链接都开页核验过落点（{{ musicCollectedAt }}），点开直达抖音原页。</p>
+          <h2>音乐板块 · 抖音 × 哔哩哔哩搞怪二创音源</h2>
+          <p>野花香 × Gulp 两条梗音源，{{ musicCount }} 条音源配 {{ musicVideoCount }} 条二创样例（抖音 {{ musicPlatformCount.douyin }} · B 站 {{ musicPlatformCount.bilibili }}）；每条链接都开页核验过落点（{{ musicCollectedAt }}），点开直达原页。</p>
         </div>
 
         <div class="music-toolbar">
@@ -522,7 +522,17 @@
               @click="switchMusicGroup(g.key)"
             >{{ g.label }}<span class="mg-count">{{ g.count }}</span></button>
           </div>
-          <input class="search music-search" v-model.trim="musicSearch" placeholder="搜音乐名 / 作者 / 玩法标签…" />
+          <div class="music-platforms">
+            <span class="music-plat-label">平台</span>
+            <button
+              v-for="p in musicPlatforms"
+              :key="p.key"
+              class="music-plat-chip"
+              :class="{ on: musicPlatform === p.key }"
+              @click="musicPlatform = p.key"
+            >{{ p.label }}</button>
+          </div>
+          <input class="search music-search" v-model.trim="musicSearch" placeholder="搜音源名 / 作者 / 玩法标签…" />
         </div>
 
         <div class="music-grid">
@@ -533,11 +543,12 @@
                 <h3 :title="m.name">{{ m.name }}</h3>
                 <span class="mc-author">@{{ m.author }}</span>
               </div>
+              <span class="mc-plat" :class="m.source">{{ m.source === 'bilibili' ? 'B 站' : '抖音' }}</span>
               <span class="mc-tag">{{ m.tag }}</span>
             </div>
 
             <div class="mc-stats">
-              <span v-if="m.usageCount"><b>{{ fmtMusicCount(m.usageCount) }}</b> 人在用</span>
+              <span v-if="m.usageCount"><b>{{ fmtMusicCount(m.usageCount) }}</b> {{ m.source === 'bilibili' ? '播放' : '人在用' }}</span>
               <span v-else class="mc-dim">使用量未知</span>
               <span class="mc-dim">·</span>
               <span class="mc-dim">{{ m.examples.length }} 条样例</span>
@@ -552,6 +563,7 @@
                 <div class="mc-ex-top">
                   <span class="mc-ex-author">@{{ e.author }}</span>
                   <span class="mc-ex-meta" v-if="e.likeCount">♥ {{ fmtMusicCount(e.likeCount) }}</span>
+                  <span class="mc-ex-meta" v-if="!e.likeCount && e.playCount">{{ fmtMusicCount(e.playCount) }} 播放</span>
                   <span class="mc-ex-meta" v-if="e.duration">{{ fmtMusicDur(e.duration) }}</span>
                 </div>
                 <p class="mc-ex-point">{{ e.memePoint }}</p>
@@ -561,13 +573,13 @@
             </div>
 
             <div class="mc-actions">
-              <button class="go small" @click="openLink(m.musicUrl)">打开音乐页</button>
+              <button class="go small" @click="openLink(m.musicUrl)">{{ m.source === 'bilibili' ? '打开原作品页' : '打开音乐页' }}</button>
               <button class="ghost small" @click="copyPlain(m.searchKeyword, '搜索词已复制')">复制搜索词</button>
             </div>
-            <p class="mc-keyword">抖音搜索：{{ m.searchKeyword }} · 链接核验 {{ m.verifiedAt }}</p>
+            <p class="mc-keyword">{{ m.platform }}搜索：{{ m.searchKeyword }} · 链接核验 {{ m.verifiedAt }}</p>
           </article>
         </div>
-        <div class="empty" v-if="!filteredMusic.length">这一组没有匹配的音乐，换个词或点「全部」看看</div>
+        <div class="empty" v-if="!filteredMusic.length">这一组没有匹配的音源，换个词或点「全部」看看</div>
       </section>
 
       <!-- 历史页 -->

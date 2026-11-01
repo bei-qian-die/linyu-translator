@@ -5,11 +5,12 @@
 > **在线体验（Web 版，无需安装）**：<https://linyu-translator.app.workbuddy.host/?sharecode=KYSNKQPHS7>
 > 桌面版与安卓版见 [Releases](https://github.com/bei-qian-die/linyu-translator/releases)。
 
-## 当前版本：**1.32.0**
+## 当前版本：**1.33.0**
 
-五大板块规模：词库 **2435** / 句式 **588** / 词卡 **1375** / 人物传 **563 位** / 名言 **3199**。另有**音乐板块 21 首**（抖音搞怪二创音源，25 条二创样例）。
+五大板块规模：词库 **2435** / 句式 **588** / 词卡 **1375** / 人物传 **563 位** / 名言 **3199**。另有**音乐板块 48 条音源**（抖音 × 哔哩哔哩搞怪二创音源，88 条二创样例）。
 
 最新一次发布（2026-11-01）：
+- 1.33.0 **音乐板块扩到双平台**：在原有 21 条抖音音源基础上新增 27 条（抖音 16 / 哔哩哔哩 11），累计 **48 条音源 / 88 条二创样例**（抖音 37 / B 站 11；野花香 21 / Gulp 19 / 双音源 8）。B 站没有独立音乐页，条目落点改为「引用该音源的作品页（BV 号）」，`music_id` 为 `null`、`platform_id` 存 BV；门禁从「只认抖音链接」改成分平台校验（链接白名单、必填规则、去重分池、示例 id 全局唯一、同作者跨平台 ≤2），单测 26 → 38 条断言；界面加平台徽章与「全部平台 / 抖音 / B 站」筛选，措辞按平台切换（人在用↔播放、打开音乐页↔打开原作品页）；详见 `release/1.33.0-notes.md`
 - 1.32.0 **四端同时上线「音乐板块」**：把抖音「野花香 × Gulp」两条梗音源的搞怪二创收成结构化音源库——21 首音乐（野花香 7 / Gulp 9 / 双音源 5）、25 条二创样例，每条链接都逐条开页核验过落点，桌面 / 安卓 / Web 点开直达抖音原页，小程序内改为复制链接（平台不允许跳站外）。数据只写一份 `src/core/music-douyin.json`，`npm run music:build` 生成四端共用的 `music.js`，单测守住链接形态、id 唯一性、作者上限与四端逐字一致；详见 `release/1.32.0-notes.md`
 
 最新一次发布（2026-10-26）：
@@ -90,16 +91,20 @@
 数据链路只有一条——
 
 ```
-src/core/music-douyin.json   ← 人工采集 + 逐条开页核验的原始数据集（字段名与抖音采集交付物一致）
-        │  npm run music:build（带门禁校验）
+src/core/music-douyin.json   ← 人工采集 + 逐条开页核验的原始数据集（抖音 × 哔哩哔哩，字段名与采集交付物一致）
+        │  npm run music:build（带分平台门禁校验）
         ├─→ src/core/music.js          （桌面 require / 浏览器 window.MUSIC_DATA）
         └─→ miniprogram/data/music.js  （小程序 require，内容与上者逐字一致）
 ```
 
-字段：音乐 `name / author / tag / style[] / musicUrl / musicId / searchKeyword / usageCount / verifiedAt / examples[]`，
-样例 `title / author / videoUrl / awemeId / likeCount / duration / memePoint`。
-`npm run music:build` 会 reject 掉链接形态不对、`music_id`/`aweme_id` 重复、`music_used` 与上层音乐名不一致的数据集；
-`test/music.test.js` 再守一遍同一批约束 + 四端逐字一致。播放量抖音网页端已不公开，`play_count` 整批为空，界面不显示而不是估一个。
+字段：音源 `id / source / name / author / tag / style[] / musicUrl / musicId / platformId / searchKeyword / usageCount / verifiedAt / examples[]`，
+样例 `title / author / videoUrl / awemeId / likeCount / playCount / duration / memePoint`。
+
+两平台的差别只在落点：抖音有独立音乐页（`music/<id>`，`music_id` 必填、`platform_id` 为 `null`），
+哔哩哔哩没有独立音乐页（`musicUrl` 指向引用该音源的作品页，`music_id` 为 `null`、`platform_id` 存 BV 号，`awemeId` 同样存 BV）。
+`npm run music:build` 会 reject 掉链接形态不对、`music_id`/`platform_id` 重复、B 站条目 `music_id` 非 null、示例 id 跨平台重复、
+`music_used` 与上层音源名不一致的数据集；`test/music.test.js` 再守一遍同一批约束（含「同一作者跨平台 ≤2 条」）+ 四端逐字一致。
+播放量抖音网页端已不公开，抖音条目 `play_count` 整批为 null 且界面不显示，而不是估一个；B 站公开播放量，`play_count` 有值。
 
 打开方式是分端的：桌面 `shell.openExternal`、安卓 Capacitor Browser、Web 新标签、小程序复制链接（微信不允许跳站外页）。
 

@@ -79,6 +79,52 @@
   color: var(--muted);
 }
 
+/* 平台徽章：B 站用官方蓝、抖音用主题粉，颜色是最快的区分 */
+.mi-plat {
+  flex: none;
+  margin-left: 12rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 6rpx;
+  font-size: 17rpx;
+  line-height: 1.5;
+}
+
+.mi-plat.dy {
+  background: rgba(254, 44, 85, 0.12);
+  color: #fe2c55;
+}
+
+.mi-plat.bili {
+  background: rgba(0, 174, 236, 0.14);
+  color: #00aeec;
+}
+
+/* 平台筛选：比分组胶囊小一号，横排可滚 */
+.plat-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12rpx;
+  margin: 0 0 20rpx;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.plat-tab {
+  flex: 0 0 auto;
+  padding: 8rpx 20rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 999rpx;
+  color: var(--muted);
+  font-size: 20rpx;
+  line-height: 1.4;
+}
+
+.plat-tab.on {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.03);
+}
+
 .mi-author {
   margin-top: 6rpx;
   font-size: 21rpx;

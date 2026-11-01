@@ -3,11 +3,11 @@
 
   <view class="eyebrow">
     <view class="eyebrow-left"><text>MUSIC</text><text class="eyebrow-mark">/</text><text>音乐</text></view>
-    <text class="eyebrow-right">{{total}} 首 · {{videoTotal}} 条样例</text>
+    <text class="eyebrow-right">{{total}} 条 · {{videoTotal}} 条样例</text>
   </view>
 
-  <view class="page-title">抖音里的<view class="pt-line">搞怪二创音源<text class="pt-dot">。</text></view></view>
-  <view class="page-sub">野花香 × Gulp 两条梗音源，每条链接都在 {{collectedAt}} 逐个开页核验过落点。小程序内不能直接跳抖音，点一下复制链接，去浏览器或抖音粘贴打开。</view>
+  <view class="page-title">抖音与 B 站里的<view class="pt-line">搞怪二创音源<text class="pt-dot">。</text></view></view>
+  <view class="page-sub">野花香 × Gulp 两条梗音源，每条链接都在 {{collectedAt}} 逐个开页核验过落点。小程序内不能直接跳站外，点一下复制链接，去浏览器或对应 App 粘贴打开。</view>
 
   <view class="mg-tabs">
     <view
@@ -19,12 +19,22 @@
     ><text class="mg-label">{{item.label}}</text><text class="mg-count">{{item.count}}</text></view>
   </view>
 
+  <view class="plat-tabs">
+    <view
+      class="plat-tab {{platform === item.key ? 'on' : ''}}"
+      wx:for="{{platforms}}"
+      wx:key="key"
+      data-key="{{item.key}}"
+      bindtap="switchPlatform"
+    >{{item.label}}</view>
+  </view>
+
   <view class="search-box">
     <view class="search-ico"></view>
     <input
       class="search-input"
       value="{{keyword}}"
-      placeholder="搜音乐名 / 作者 / 玩法标签"
+      placeholder="搜音源名 / 作者 / 玩法标签"
       placeholder-class="placeholder"
       confirm-type="search"
       bindinput="onSearch"
@@ -37,11 +47,12 @@
       <view class="mi-head">
         <text class="mi-no">{{item.no}}</text>
         <text class="mi-name">{{item.name}}</text>
+        <text class="mi-plat {{item.platClass}}">{{item.platformLabel}}</text>
         <text class="mi-tag">{{item.tagLabel}}</text>
       </view>
       <view class="mi-author">@{{item.author}}</view>
       <view class="mi-stats">
-        <block wx:if="{{item.usageText}}"><text class="mi-num">{{item.usageText}}</text><text class="mi-dim"> 人在用</text></block>
+        <block wx:if="{{item.usageText}}"><text class="mi-num">{{item.usageText}}</text><text class="mi-dim"> {{item.usageUnit}}</text></block>
         <text wx:else class="mi-dim">使用量未知</text>
         <text class="mi-dim"> · {{item.exampleCount}} 条样例</text>
       </view>
@@ -54,23 +65,24 @@
         <view class="mi-ex-top">
           <text class="mi-ex-author">@{{ex.author}}</text>
           <text class="mi-dim" wx:if="{{ex.likeText}}">♥ {{ex.likeText}}</text>
+          <text class="mi-dim" wx:if="{{ex.playText}}">{{ex.playText}}</text>
           <text class="mi-dim" wx:if="{{ex.durText}}">{{ex.durText}}</text>
         </view>
         <view class="mi-ex-point">{{ex.memePoint}}</view>
-        <text class="mi-link" data-url="{{ex.videoUrl}}" catchtap="copyVideo">复制视频链接 ›</text>
+        <text class="mi-link" data-url="{{ex.videoUrl}}" catchtap="copyVideo">复制这条二创链接 ›</text>
       </view>
 
       <view class="mi-acts">
-        <view class="mi-btn" hover-class="mi-btn-hover" data-url="{{item.musicUrl}}" catchtap="copyMusic">复制音乐链接</view>
+        <view class="mi-btn" hover-class="mi-btn-hover" data-url="{{item.musicUrl}}" catchtap="copyMusic">{{item.musicActLabel}}</view>
         <view class="mi-btn ghost" hover-class="mi-btn-hover" data-kw="{{item.searchKeyword}}" catchtap="copyKeyword">复制搜索词</view>
       </view>
-      <view class="mi-foot">抖音搜索：{{item.searchKeyword}} · 核验 {{item.verifiedAt}}</view>
+      <view class="mi-foot">{{item.platformLabel}}搜索：{{item.searchKeyword}} · 核验 {{item.verifiedAt}}</view>
     </view>
   </view>
 
   <empty-state
     wx:if="{{!list.length}}"
-    title="没匹配到音乐"
+    title="没匹配到音源"
     sub="换个词，或点「全部」看看"
     show-reset
     bind:reset="clearSearch"

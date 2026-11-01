@@ -19,16 +19,23 @@ music.groups.forEach((g) => {
 
 // 卡片渲染需要的一切都在 JS 里算好：WXML 里做不了格式化（没有 Number/ toFixed）
 function decorate(item, index) {
+  // 两平台的差别只落在「词」和「落点」上：抖音是音乐页 + 人在用，B 站是作品页 + 播放量
+  const isBili = item.source === 'bilibili';
   return {
     id: item.id,
     no: String(index + 1).padStart(2, '0'),
     name: item.name,
     author: item.author,
+    platformLabel: isBili ? 'B 站' : '抖音',
+    platClass: isBili ? 'bili' : 'dy',
     tagLabel: TAG_LABEL[item.tag] || item.tag,
     usageText: item.usageCount ? music.formatCount(item.usageCount) : '',
+    usageUnit: isBili ? '播放' : '人在用',
     style: item.style,
     exampleCount: item.examples.length,
     musicUrl: item.musicUrl,
+    musicActLabel: isBili ? '复制作品链接' : '复制音乐链接',
+    copyVideoTip: isBili ? '作品链接已复制，去浏览器打开' : '视频链接已复制，去抖音打开',
     searchKeyword: item.searchKeyword,
     verifiedAt: item.verifiedAt,
     examples: item.examples.map((ex) => ({
@@ -37,6 +44,7 @@ function decorate(item, index) {
       videoUrl: ex.videoUrl,
       memePoint: ex.memePoint,
       likeText: ex.likeCount ? music.formatCount(ex.likeCount) : '',
+      playText: !ex.likeCount && ex.playCount ? music.formatCount(ex.playCount) + ' 播放' : '',
       durText: ex.duration ? music.formatDuration(ex.duration) : '',
     })),
   };
@@ -50,6 +58,8 @@ Page({
     navTop: 82,
     groups: music.groups,
     group: 'all',
+    platforms: music.platformFilters || [{ key: 'all', label: '全部平台' }],
+    platform: 'all',
     keyword: '',
     list: [],
     total: music.items.length,
@@ -68,7 +78,9 @@ Page({
   },
 
   refresh() {
-    const rows = music.filter(this.data.group, this.data.keyword).map(decorate);
+    const rows = music
+      .filter(this.data.group, this.data.keyword, this.data.platform)
+      .map(decorate);
     this.setData({ list: rows });
   },
 
@@ -78,6 +90,13 @@ Page({
     this.setData({ group: key });
     this.refresh();
     wx.pageScrollTo({ scrollTop: 0, duration: 180 });
+  },
+
+  switchPlatform(e) {
+    const key = e.currentTarget.dataset.key;
+    if (!key || key === this.data.platform) return;
+    this.setData({ platform: key });
+    this.refresh();
   },
 
   onSearch(e) {
@@ -92,29 +111,31 @@ Page({
 
   copyMusic(e) {
     const url = e.currentTarget.dataset.url;
-    copy(url, '音乐页链接已复制');
+    const isBili = String(url || '').indexOf('bilibili.com') >= 0;
+    copy(url, isBili ? '作品链接已复制，去浏览器打开' : '音乐页链接已复制');
   },
 
   copyVideo(e) {
     const url = e.currentTarget.dataset.url;
-    copy(url, '视频链接已复制');
+    const isBili = String(url || '').indexOf('bilibili.com') >= 0;
+    copy(url, isBili ? '作品链接已复制，去浏览器打开' : '视频链接已复制，去抖音打开');
   },
 
   copyKeyword(e) {
     const kw = e.currentTarget.dataset.kw;
-    copy(kw, '搜索词已复制，去抖音搜');
+    copy(kw, '搜索词已复制，去对应平台搜');
   },
 
   onShareAppMessage() {
     return {
-      title: `淋语翻译器 · 抖音搞怪二创音源 ${this.data.total} 首`,
+      title: `淋语翻译器 · 抖音 × B 站搞怪二创音源 ${this.data.total} 条`,
       path: '/pages/music/music',
     };
   },
 
   onShareTimeline() {
     return {
-      title: `淋语翻译器 · 抖音搞怪二创音源 ${this.data.total} 首`,
+      title: `淋语翻译器 · 抖音 × B 站搞怪二创音源 ${this.data.total} 条`,
       query: '',
     };
   },

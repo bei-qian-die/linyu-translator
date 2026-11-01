@@ -860,20 +860,28 @@ createApp({
     const heroNameOpts = computed(() => heroes.value.map((h) => h.name));
 
     // ---- 音乐板块 ----
-    // 这一块是纯静态数据（src/core/music.js，抖音搞怪二创音源 batch 1），刻意不进库：
+    // 这一块是纯静态数据（src/core/music.js，抖音 × B 站搞怪二创音源 batch 2），刻意不进库：
     // 它跟用户的翻译历史/词库无关，不该被导出、备份、同步带着跑，也不用等 db 初始化。
     // 老打包产物里没有 core/music.js 时 window.MUSIC_DATA 不存在 → 这里退化成空列表 + 空态，
     // 不抛错、不影响其它页面（和 variant.js 缺失时降级同一个思路）。
     const musicData = (typeof window !== 'undefined' && window.MUSIC_DATA) || null;
     const musicItems = (musicData && musicData.items) || [];
     const musicGroups = (musicData && musicData.groups) || [];
+    const musicPlatforms = (musicData && musicData.platformFilters) || [{ key: 'all', label: '全部平台' }];
     const musicCollectedAt = (musicData && musicData.collectedAt) || '';
     const musicGroup = ref('all');
+    const musicPlatform = ref('all');
     const musicSearch = ref('');
     const musicCount = computed(() => musicItems.length);
     const musicVideoCount = computed(() =>
       musicItems.reduce((sum, it) => sum + ((it.examples && it.examples.length) || 0), 0)
     );
+    // 头部那句「抖音 x 条 · B 站 y 条」按实际数据算，不写死
+    const musicPlatformCount = computed(() => {
+      const acc = { douyin: 0, bilibili: 0 };
+      for (const it of musicItems) if (acc[it.source] !== undefined) acc[it.source]++;
+      return acc;
+    });
     const musicTags = computed(() => {
       const seen = [];
       for (const it of musicItems) for (const s of it.style || []) if (!seen.includes(s)) seen.push(s);
@@ -881,9 +889,12 @@ createApp({
     });
     const filteredMusic = computed(() => {
       if (musicData && typeof musicData.filter === 'function') {
-        return musicData.filter(musicGroup.value, musicSearch.value);
+        return musicData.filter(musicGroup.value, musicSearch.value, musicPlatform.value);
       }
-      return musicItems;
+      // 模块缺失时的兜底：至少按平台筛一层，别把两平台混在一起
+      return musicPlatform.value === 'all'
+        ? musicItems
+        : musicItems.filter((it) => it.source === musicPlatform.value);
     });
     function switchMusicGroup(key) {
       musicGroup.value = key;
@@ -1542,6 +1553,7 @@ createApp({
       quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage,
       quoteForm, editingQuoteId, saveQuote, resetQuoteForm, editQuote, removeQuote, heroNameOpts,
       musicItems, musicGroups, musicGroup, switchMusicGroup, musicSearch, filteredMusic,
+      musicPlatforms, musicPlatform, musicPlatformCount,
       musicCount, musicVideoCount, musicTags, musicCollectedAt, fmtMusicCount, fmtMusicDur,
       copyPlain, shortTitle,
       heroes, heroSearch, imgFailed, markImgFail, selectedHero, openHero, backToHeroes, heroSrc, heroThumb, onHeroImgError,
