@@ -43,8 +43,11 @@ createApp({
     const polishing = ref(false);
     // 云端润色代理地址（仅 Web / 小程序端需要；桌面端不看它）。
     const proxyUrl = ref('');
-    // 桌面端润色引擎：'ollama' 本机模型 / 'zhipu' 智谱 GLM 直连（填 Key 即用）
-    const polishEngine = ref('ollama');
+    // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 提供，
+    // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
+    const nonDesktop = typeof window.api.isCapacitor === 'boolean';
+    // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱 GLM 直连（填 Key 即用）
+    const polishEngine = ref(nonDesktop ? 'zhipu' : 'ollama');
     const zhipuKey = ref('');
     const zhipuBase = ref('https://open.bigmodel.cn/api/paas/v4');
     const zhipuModel = ref('glm-4-flash');
@@ -1475,7 +1478,9 @@ createApp({
       if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
       if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
       proxyUrl.value = String(parsePref(prefs['polishProxyUrl'], '') || '').trim();
-      polishEngine.value = parsePref(prefs['polishEngine'], 'ollama') === 'zhipu' ? 'zhipu' : 'ollama';
+      polishEngine.value = parsePref(prefs['polishEngine'], nonDesktop ? 'zhipu' : 'ollama') === 'zhipu' ? 'zhipu' : 'ollama';
+      // 手机 / 网页没有本机 Ollama，老偏好里若还存着 ollama 就自动纠回直连
+      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = 'zhipu';
       zhipuKey.value = String(parsePref(prefs['zhipuApiKey'], '') || '').trim();
       zhipuBase.value = String(parsePref(prefs['zhipuBaseUrl'], 'https://open.bigmodel.cn/api/paas/v4') || '') || 'https://open.bigmodel.cn/api/paas/v4';
       zhipuModel.value = String(parsePref(prefs['zhipuModel'], 'glm-4-flash') || '') || 'glm-4-flash';
@@ -1536,7 +1541,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, nonDesktop, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,
