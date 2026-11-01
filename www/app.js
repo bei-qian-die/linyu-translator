@@ -34,16 +34,27 @@ createApp({
     const liveOn = ref(true);
     const trace = ref(null);
     const uncovered = ref([]);
+    // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 的 createApi 提供，
+    // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
+    // 坑：Web 端在 db 初始化完成前，window.api 是 webEntry.js 挂的占位 Proxy，
+    // 它的 isCapacitor 是【函数】(返回 false) 而不是布尔，`typeof === 'boolean'` 会判成
+    // 桌面环境 —— 于是浏览器里也冒出「本机 Ollama」选项、润色默认关。三种形态都认：
+    //   占位 Proxy：__isStub === true、isCapacitor 是函数
+    //   真实 api  ：isCapacitor 是布尔
+    //   Electron  ：两者都没有 → 桌面
+    const __api = window.api || {};
+    const nonDesktop =
+      __api.__isStub === true ||
+      typeof __api.isCapacitor === 'boolean' ||
+      typeof __api.isCapacitor === 'function';
     // Phase 1：上下文消歧开关（默认关）。开启后走别名/语境选词，消除「每句都本可」的单调生硬。
     const disamOn = ref(false);
-    // Phase 2：LLM 润色开关（默认关）。开启后正式翻译会调用本地 Ollama / 云端代理做流畅度润色。
-    const polishOn = ref(false);
+    // Phase 2：LLM 润色开关。桌面默认关（没装 Ollama 会白等），
+    // 手机 / 浏览器默认开：内置通道免 Key，外部访客不用去工具栏找开关就能直接看到润色效果。
+    const polishOn = ref(nonDesktop);
     const polishedFlag = ref(false);
     // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
     const polishing = ref(false);
-    // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 提供，
-    // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
-    const nonDesktop = typeof window.api.isCapacitor === 'boolean';
     // 安卓 App 里 Capacitor 的原生 HTTP 通道能绕开 CORS；纯浏览器没有这条路。
     // 智谱 open.bigmodel.cn 不返回任何 Access-Control-Allow-* 头（实测 OPTIONS 无 ACAO），
     // 所以浏览器直连无论 Key 对不对都会被拦 —— 必须走云端代理。
@@ -1524,7 +1535,9 @@ createApp({
       historyLimit.value = Number(parsePref(prefs['history.limit'], 200)) || 200;
       if (!parsePref(prefs['ui.live'], true)) liveOn.value = false;
       if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
-      if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
+      // 外部访客默认开润色：他们不会主动去工具栏找这个开关，而内置通道免 Key、
+      // 开了就能直接看到效果。桌面端保持默认关（没装 Ollama 会白等）。
+      polishOn.value = parsePref(prefs['polishEnabled'], nonDesktop) === true;
       proxyUrl.value = String(
         parsePref(prefs['polishProxyUrl'], nonDesktop ? DEFAULT_PROXY_URL : '') || ''
       ).trim();

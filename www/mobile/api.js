@@ -221,12 +221,57 @@
     }
 
     // 走云服务跑一次润色：SDK 只支持流式，这里把增量拼成整句再交给同一套护栏。
-    async function cloudPolish(source, draft) {
-      const mod = root.LINYU_POLISH;
-      const cloud = cloudClient();
-      if (!cloud) throw new Error('内置通道未就绪（云 SDK 没加载）');
-      if (!mod || !mod.buildPolishMessages) throw new Error('润色模块未加载');
+    // ---- 结果缓存：外部访客量大，同一句反复润色没必要每次都烧额度 ----
+    // key = 原文 + 草稿（草稿本身已由本地引擎确定性生成，同句必同草稿）。
+    // 存 localStorage 让刷新/二次访问也命中；写失败（隐私模式 / 配额满）就只留内存。
+    const PCACHE_KEY = 'linyu.polish.cache.v1';
+    const PCACHE_MAX = 300;
+    let _pcache = null;
 
+    function pcacheLoad() {
+      if (_pcache) return _pcache;
+      _pcache = {};
+      try {
+        const raw = root.localStorage && root.localStorage.getItem(PCACHE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === 'object') _pcache = parsed;
+        }
+      } catch {
+        _pcache = {};
+      }
+      return _pcache;
+    }
+
+    function pcacheGet(k) {
+      const c = pcacheLoad();
+      const hit = c[k];
+      return hit && typeof hit.t === 'string' ? hit.t : '';
+    }
+
+    function pcacheSet(k, t) {
+      const c = pcacheLoad();
+      c[k] = { t, at: Date.now() };
+      const keys = Object.keys(c);
+      if (keys.length > PCACHE_MAX) {
+        // 简单淘汰：按写入时间丢掉最旧的一半，避免无限涨
+        keys
+          .sort((a, b) => (c[a].at || 0) - (c[b].at || 0))
+          .slice(0, keys.length - Math.floor(PCACHE_MAX * 0.7))
+          .forEach((x) => delete c[x]);
+      }
+      try {
+        root.localStorage && root.localStorage.setItem(PCACHE_KEY, JSON.stringify(c));
+      } catch {
+        /* 存不下不影响本会话的内存命中 */
+      }
+    }
+
+    // 模型目录一次会话只拉一次（每次润色都拉一遍纯属浪费一次往返）
+    let _modelId = '';
+
+    async function cloudModelId(cloud) {
+      if (_modelId) return _modelId;
       const list = await cloud.llm.models.list();
       const usable = (list || []).filter((m) => m && m.disabled !== true);
       if (!usable.length) throw new Error('云服务没有可用模型');
@@ -237,21 +282,76 @@
         usable.find((m) => PREFER.indexOf(m.id) >= 0) ||
         usable.find((m) => /^glm/i.test(String(m.id))) ||
         usable[0];
+      _modelId = String(model.id);
+      return _modelId;
+    }
 
-      let text = '';
-      const stream = cloud.llm.chat.completions.create({
-        model: model.id,
-        messages: mod.buildPolishMessages({ source, draft }),
-        stream: true,
-        temperature: 0.45,
-      });
-      for await (const chunk of stream) {
-        const delta = chunk && chunk.choices && chunk.choices[0] && chunk.choices[0].delta;
-        if (delta && delta.content) text += delta.content;
+    // 把云服务抛出的原始错误翻成用户看得懂的一句话（设置页与 toast 共用）
+    function cloudErrorText(e) {
+      const code = String((e && ((e.error && e.error.code) || e.code || e.status)) || '');
+      const msg = String((e && ((e.error && e.error.message) || e.message)) || e || '');
+      if (/429|rate.?limit|too.?many/i.test(code + ' ' + msg)) {
+        return '润色通道当前太挤（限流），过一会儿再点一次';
       }
-      const out = mod.cleanPolishOutput ? mod.cleanPolishOutput(text) : String(text || '').trim();
-      if (!out) return draft;
-      return mod.retentionOk && !mod.retentionOk(draft, out, source) ? draft : out;
+      if (/402|403|quota|exceed|balance|insufficient/i.test(code + ' ' + msg)) {
+        return '内置润色额度已用完，可改用「云端代理」或自己填 Key';
+      }
+      if (/401|unauthor/i.test(code + ' ' + msg)) return '内置通道鉴权失败';
+      if (/timeout|abort/i.test(code + ' ' + msg)) return '内置通道超时，稍后再试';
+      return '内置通道不可用：' + (msg || code || '未知原因');
+    }
+
+    // 流式接口本身没有超时控制：网络卡住时 await 会一直挂着，翻译按钮一直转圈。
+    // 外部访客不能等太久，15s 还没出就放弃（草稿照常显示）。
+    function withTimeout(promise, ms, msg) {
+      let timer = null;
+      const guard = new Promise((_resolve, reject) => {
+        timer = setTimeout(() => reject(new Error(msg)), ms);
+      });
+      return Promise.race([promise, guard]).finally(() => {
+        if (timer) clearTimeout(timer);
+      });
+    }
+
+    async function cloudPolish(source, draft) {
+      const mod = root.LINYU_POLISH;
+      if (!mod || !mod.buildPolishMessages) throw new Error('润色模块未加载');
+
+      const key = String(source || '') + '\u0000' + String(draft || '');
+      const cached = pcacheGet(key);
+      if (cached) return cached;
+
+      const cloud = cloudClient();
+      if (!cloud) throw new Error('内置通道未就绪（云 SDK 没加载）');
+
+      try {
+        const model = await cloudModelId(cloud);
+        let text = '';
+        await withTimeout(
+          (async () => {
+            const stream = cloud.llm.chat.completions.create({
+              model,
+              messages: mod.buildPolishMessages({ source, draft }),
+              stream: true,
+              temperature: 0.45,
+            });
+            for await (const chunk of stream) {
+              const delta = chunk && chunk.choices && chunk.choices[0] && chunk.choices[0].delta;
+              if (delta && delta.content) text += delta.content;
+            }
+          })(),
+          15000,
+          '内置通道超时'
+        );
+        const out = mod.cleanPolishOutput ? mod.cleanPolishOutput(text) : String(text || '').trim();
+        if (!out) return draft;
+        if (mod.retentionOk && !mod.retentionOk(draft, out, source)) return draft;
+        // 只缓存「过了护栏的有效润色」，护栏拦下的不缓存，免得下次直接拿到草稿
+        pcacheSet(key, out);
+        return out;
+      } catch (e) {
+        throw new Error(cloudErrorText(e), { cause: e });
+      }
     }
 
     // 按偏好造一个润色客户端；返回 null 表示「没配置，别调模型」
@@ -283,16 +383,16 @@
 
     function makeProxyPolish() {
       return async (source, draft) => {
-        const engine = String(readPolishPref('polishEngine', '') || '').toLowerCase();
-        if (engine === 'cloud') {
-          try {
-            return await cloudPolish(source, draft);
-          } catch {
-            return draft; // 正式翻译永远要有可用输出
-          }
+        // 默认引擎：手机上没得选（没有本地模型），浏览器直连必被 CORS 拦，
+        // 所以「没设置过」就等于走免 Key 内置通道 —— 外部访客不用进设置页也能用。
+        const engine = String(readPolishPref('polishEngine', 'cloud') || 'cloud').toLowerCase();
+        if (engine === 'cloud' || engine === 'ollama') {
+          // 抛出而不是吞掉：service.polishDraft 会把原因写进 error 字段，
+          // 「润色 ♥」按钮才能显示「额度用完了」「模型没就绪」而不是静默无反应。
+          return await cloudPolish(source, draft);
         }
         const client = pickPolishClient();
-        if (!client) return draft;
+        if (!client) throw new Error('还没配置润色通道');
         return client.polish(source, draft);
       };
     }
