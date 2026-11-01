@@ -639,7 +639,8 @@
         <p class="setting-desc" v-else>
           「上下文消歧」「LLM 润色」开关在翻译页工具栏。浏览器里<b>无法直连智谱</b>——
           open.bigmodel.cn 没有开放跨域（CORS），Key 填得再对也会被拦下。
-          默认走<b>内置通道</b>（本站云服务，免 Key，开箱即用）；也可以填自己的云端代理。
+          默认走<b>云端代理</b>（本站中转，后端调用智谱 glm-4-flash 免费额度，Key 保存在服务端，
+          访客既不用下载也不用填 Key）；代理不可达时自动回落到内置通道。
         </p>
         <div class="theme-opts" v-if="!nonDesktop">
           <button class="theme-opt" :class="{ on: polishEngine === 'ollama' }" @click="setPolishEngine('ollama')">
@@ -654,7 +655,7 @@
             内置通道（免 Key）
           </button>
           <button class="theme-opt" :class="{ on: polishEngine === 'proxy' }" @click="setPolishEngine('proxy')">
-            云端代理
+            云端代理 · glm-4-flash
           </button>
           <button class="theme-opt" :class="{ on: polishEngine === 'zhipu' }" @click="setPolishEngine('zhipu')">
             智谱 GLM 直连<template v-if="browserWeb">（仅 App）</template>
@@ -663,8 +664,8 @@
 
         <template v-if="polishEngine === 'cloud'">
           <p class="tip">
-            内置通道由本站云服务调模型，不用填 Key，也不用部署代理。模型由平台目录决定，
-            输出风格可能与智谱略有差异；润色仍会过同一套淋语护栏，不合格就保留原草稿。
+            内置通道由本站云服务调模型，不用填 Key。模型由平台目录决定（目前是 GLM-5.3-Flash），
+            输出风格与智谱略有差异；润色仍会过同一套淋语护栏，不合格就保留原草稿。
           </p>
           <div class="auth-row">
             <button class="ghost small" :disabled="probing" @click="probePolish">{{ probing ? '测试中…' : '测试连接' }}</button>

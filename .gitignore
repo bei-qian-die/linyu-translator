@@ -72,3 +72,11 @@ evidence/*-audit-*.md
 #   work/      : 抖音/淋语 memes 等内容采集与产出草稿（约 1.2GB），纯本地工作数据
 ref_bv/
 work/
+
+# 润色代理的密钥（只留在本机/服务器，绝不进版本库）
+polish-proxy/.env
+polish-proxy/.env.*
+# 云函数配置里含 API Key，不进版本库
+miniprogram/cloudfunctions/polish/config.json
+linyu-server/.env
+linyu-server/public/

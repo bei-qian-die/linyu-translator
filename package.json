@@ -34,7 +34,8 @@
     "format": "prettier --write \"src/**/*.{js,css,html}\" \"scripts/**/*.js\" \"test/**/*.js\"",
     "typecheck": "tsc -p jsconfig.json",
     "test:service": "node test/service.test.js",
-    "prepare-desktop": "node scripts/prepare-desktop.mjs"
+    "prepare-desktop": "node scripts/prepare-desktop.mjs",
+    "server:prepare": "node scripts/prepare-server.mjs"
   },
   "dependencies": {
     "@capacitor/android": "^6.1.2",

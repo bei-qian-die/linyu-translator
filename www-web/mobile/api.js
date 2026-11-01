@@ -375,25 +375,67 @@
       }
 
       if (engine === 'ollama') return null; // 手机/网页没有本机 Ollama，交给上层提示
-      // engine === 'proxy'（云端代理）以及未指定引擎时的兜底，都按代理地址走
-      const url = String(o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || '').trim();
+      // engine === 'proxy'（云端代理）以及未指定引擎时的兜底，都按代理地址走。
+      // 没存过地址时用同源的 /polish —— 访客不用进设置页填任何东西就能用上 glm-4-flash。
+      const url = resolveProxyUrl(
+        o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || DEFAULT_PROXY_PATH
+      );
       if (!url || !mod.createHttpProxyClient) return null;
       return mod.createHttpProxyClient({ baseUrl: url });
     }
 
+    // 同源润色代理（linyu-server 一体服务的 /polish），没配置过地址时用它
+    const DEFAULT_PROXY_PATH = '/polish';
+
+    // 平台的访问网关要求每个请求都带 sharecode，连 /polish 这种接口也不例外，
+    // 不带会直接返回「链接不完整」的 HTML。同源相对路径就自动把当前页的
+    // sharecode 带上；用户填的绝对地址（自己的代理）原样使用，不动它。
+    function resolveProxyUrl(raw) {
+      const url = String(raw || '').trim();
+      if (!url || url.charAt(0) !== '/') return url;
+      if (/[?&]sharecode=/.test(url)) return url;
+      let sc = '';
+      try {
+        const sp = new root.URLSearchParams((root.location && root.location.search) || '');
+        sc = sp.get('sharecode') || '';
+      } catch {
+        /* 取不到就当没有，退回不带参数的地址 */
+      }
+      return sc ? url + (url.indexOf('?') >= 0 ? '&' : '?') + 'sharecode=' + encodeURIComponent(sc) : url;
+    }
+
+    // 代理通道探测失败后本次会话不再重试：否则每翻一句都要先白等一次失败往返。
+    let _proxyDead = false;
+
     function makeProxyPolish() {
       return async (source, draft) => {
         // 默认引擎：手机上没得选（没有本地模型），浏览器直连必被 CORS 拦，
-        // 所以「没设置过」就等于走免 Key 内置通道 —— 外部访客不用进设置页也能用。
-        const engine = String(readPolishPref('polishEngine', 'cloud') || 'cloud').toLowerCase();
+        // 所以「没设置过」就走同源代理 /polish（后端 glm-4-flash，免费额度）。
+        // 这个默认值必须和渲染层 polishEngine 的初值一致，否则 UI 显示「云端代理」
+        // 而底层偷偷走内置通道 —— 之前就是这里不一致，/polish 一次都没被调用过。
+        const engine = String(readPolishPref('polishEngine', 'proxy') || 'proxy').toLowerCase();
         if (engine === 'cloud' || engine === 'ollama') {
           // 抛出而不是吞掉：service.polishDraft 会把原因写进 error 字段，
           // 「润色 ♥」按钮才能显示「额度用完了」「模型没就绪」而不是静默无反应。
           return await cloudPolish(source, draft);
         }
-        const client = pickPolishClient();
-        if (!client) throw new Error('还没配置润色通道');
-        return client.polish(source, draft);
+
+        // 代理通道：调自己的中转（智谱 glm-4-flash，Key 在服务端）。
+        // 代理没绑好 / 超时 / 被限流时自动回退内置通道 —— 外部访客不该因为
+        // 服务端没配好就看到「润色没反应」，宁可先用平台模型顶上。
+        if (!_proxyDead) {
+          const client = pickPolishClient();
+          if (!client) {
+            _proxyDead = true;
+          } else {
+            try {
+              return await client.polish(source, draft);
+            } catch {
+              _proxyDead = true;
+            }
+          }
+        }
+        return await cloudPolish(source, draft);
       };
     }
 
@@ -425,7 +467,10 @@
 
       // 云端代理：同样跑一遍样例，把 HTTP 状态 / 超时 / 空结果的原因带回去
       if (engine === 'proxy') {
-        const url = String(o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || '').trim();
+        // 与正式润色一致：没配置过就用同源 /polish，测试连接才测得到真实链路
+        const url = resolveProxyUrl(
+          o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || DEFAULT_PROXY_PATH
+        );
         if (!url) throw new Error('还没填云端代理地址');
         if (!mod.createHttpProxyClient) throw new Error('润色模块未加载（core/llm-polish.js）');
         const pc = mod.createHttpProxyClient({ baseUrl: url, strict: true, fetchImpl: nativeFetch(30000) });

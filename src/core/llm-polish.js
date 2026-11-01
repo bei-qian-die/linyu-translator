@@ -19,6 +19,10 @@
  */
 
 const LINYU_GLYPHS = '♥惹噜厚';
+// 除语气字外，这些明确的淋语标志词也算「有淋语气质」。
+// 少了它们，「这神马情况捏？」这种完全合格的输出会被判成「没气质」丢掉 ——
+// 护栏的作用是拦住「模型输出成大白话」，不是拦住合法润色。
+const LINYU_MARKERS = ['捏', '靴靴', '神马', '酱紫', '木有', '肿么办', '一企', '厚礼蟹', '笑鼠', '夭寿'];
 const CJK_RE = /[一-鿿]/;
 
 // ---- 纯函数：提示词构造 ----
@@ -99,7 +103,8 @@ function revertedPronoun(draft, polished) {
 function retentionOk(draft, polished, source) {
   if (!polished) return false;
   if (revertedPronoun(String(draft || ''), String(polished || ''))) return false;
-  const hasGlyph = LINYU_GLYPHS.split('').some((g) => polished.includes(g));
+  const hasGlyph =
+    LINYU_GLYPHS.split('').some((g) => polished.includes(g)) || LINYU_MARKERS.some((w) => polished.includes(w));
   const chs = linyuChars(draft, source);
   if (!chs.length) return hasGlyph || CJK_RE.test(polished);
   const set = new Set(chs);
@@ -107,6 +112,11 @@ function retentionOk(draft, polished, source) {
   let kept = 0;
   for (const c of set) if (inPolished.has(c)) kept += 1;
   const ratio = kept / set.size;
+  // 出现明确淋语标志词（神马/酱紫/靴靴/捏…）= 模型在正经玩淋语，不是在把草稿翻译成大白话。
+  // 这种句子里草稿特有字被同义替换是正常的（「这是啥情况」→「这神马情况捏」，「啥」必然消失），
+  // 用保留率去卡会把合格输出全拦掉。人称回退已在上面的 revertedPronoun 单独把关。
+  const hasMarker = LINYU_MARKERS.some((w) => polished.includes(w));
+  if (hasMarker) return true;
   return ratio >= 0.5 && (hasGlyph || kept > 0);
 }
 

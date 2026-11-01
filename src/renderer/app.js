@@ -65,16 +65,15 @@ createApp({
           : window.Capacitor.platform && window.Capacitor.platform !== 'web')
     );
     const browserWeb = nonDesktop && !capNative;
-    // 本项目自带的云端润色代理：微信云开发云函数 polish 的 HTTP 访问地址。
-    // 云函数已部署在环境 cloud1-d2g2xfwdo0d1c6f60，Key 存在云函数环境变量里，
-    // 浏览器只发 source/draft，永远看不到 Key。前提是控制台「HTTP 访问服务」
-    // 里给云函数加过 /polish 这条路径。
-    const DEFAULT_PROXY_URL = 'https://cloud1-d2g2xfwdo0d1c6f60.service.tcloudbase.com/polish';
+    // 润色代理默认地址：同源的 /polish（linyu-server 一体服务里跑着智谱 glm-4-flash）。
+    // 用相对路径而不是完整域名，是为了换域名/换部署都不改代码；同源也就没有跨域问题，
+    // Key 只存在服务端进程里，访客既不用下载也不用填 Key。
+    const DEFAULT_PROXY_URL = '/polish';
     // 云端润色代理地址（仅 Web / 小程序 / 手机端需要；桌面端不看它）。
     const proxyUrl = ref(nonDesktop ? DEFAULT_PROXY_URL : '');
     // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱直连 / 'proxy' 云端代理 / 'cloud' 内置免 Key 通道
     // 浏览器默认走 cloud：它和页面同源，不受 CORS 与 CSP 的跨域限制，开箱即用。
-    const polishEngine = ref(nonDesktop ? (browserWeb ? 'cloud' : 'zhipu') : 'ollama');
+    const polishEngine = ref(nonDesktop ? (browserWeb ? 'proxy' : 'zhipu') : 'ollama');
     const zhipuKey = ref('');
     const zhipuBase = ref('https://open.bigmodel.cn/api/paas/v4');
     const zhipuModel = ref('glm-4-flash');
@@ -1541,13 +1540,13 @@ createApp({
       proxyUrl.value = String(
         parsePref(prefs['polishProxyUrl'], nonDesktop ? DEFAULT_PROXY_URL : '') || ''
       ).trim();
-      const engineDefault = nonDesktop ? (browserWeb ? 'cloud' : 'zhipu') : 'ollama';
+      const engineDefault = nonDesktop ? (browserWeb ? 'proxy' : 'zhipu') : 'ollama';
       const engineSaved = String(parsePref(prefs['polishEngine'], engineDefault) || '').toLowerCase();
       polishEngine.value = ENGINE_LABEL[engineSaved] ? engineSaved : engineDefault;
       // 手机 / 网页没有本机 Ollama，老偏好里若还存着 ollama 就自动纠回可用引擎
-      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = browserWeb ? 'cloud' : 'zhipu';
+      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = browserWeb ? 'proxy' : 'zhipu';
       // 纯浏览器直连智谱必被 CORS 拦，老偏好若停在 zhipu 也纠到内置通道
-      if (browserWeb && polishEngine.value === 'zhipu') polishEngine.value = 'cloud';
+      if (browserWeb && polishEngine.value === 'zhipu') polishEngine.value = 'proxy';
       zhipuKey.value = String(parsePref(prefs['zhipuApiKey'], '') || '').trim();
       zhipuBase.value = String(parsePref(prefs['zhipuBaseUrl'], 'https://open.bigmodel.cn/api/paas/v4') || '') || 'https://open.bigmodel.cn/api/paas/v4';
       zhipuModel.value = String(parsePref(prefs['zhipuModel'], 'glm-4-flash') || '') || 'glm-4-flash';

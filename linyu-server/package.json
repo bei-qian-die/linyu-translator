@@ -1,0 +1,13 @@
+{
+  "name": "linyu-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "淋语翻译器 Web 一体服务：托管静态站 + 智谱 glm-4-flash 润色中转",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
