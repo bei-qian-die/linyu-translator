@@ -18,7 +18,7 @@
         渲染层不发任何跨域请求。
       · 没有 Cordova 遗留的 gap: 与 ssl.gstatic.com。
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval'; style-src 'self'; img-src 'self' data: blob: content:; media-src 'self' data: blob:; connect-src 'self' data: blob:;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval'; style-src 'self'; img-src 'self' data: blob: content:; media-src 'self' data: blob:; connect-src 'self' data: blob: https: wss:;" />
   <title>淋语翻译器</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -632,9 +632,14 @@
           「上下文消歧」「LLM 润色」开关在翻译页工具栏。桌面端两种引擎任选：
           <b>本机 Ollama</b>（不花钱，但要装模型）或 <b>智谱 GLM 直连</b>（填个 Key 就能用，不用装 Ollama）。
         </p>
+        <p class="setting-desc" v-else-if="!browserWeb">
+          「上下文消歧」「LLM 润色」开关在翻译页工具栏。手机 App 没有本机模型，润色走
+          <b>智谱 GLM 直连</b>（App 用原生 HTTP，不受浏览器跨域限制）或下面的云端代理地址。
+        </p>
         <p class="setting-desc" v-else>
-          「上下文消歧」「LLM 润色」开关在翻译页工具栏。手机端没有本机模型，润色走
-          <b>智谱 GLM 直连</b>（填 Key 即可）或下面的云端代理地址。
+          「上下文消歧」「LLM 润色」开关在翻译页工具栏。浏览器里<b>无法直连智谱</b>——
+          open.bigmodel.cn 没有开放跨域（CORS），Key 填得再对也会被拦下。
+          默认走<b>内置通道</b>（本站云服务，免 Key，开箱即用）；也可以填自己的云端代理。
         </p>
         <div class="theme-opts" v-if="!nonDesktop">
           <button class="theme-opt" :class="{ on: polishEngine === 'ollama' }" @click="setPolishEngine('ollama')">
@@ -644,6 +649,28 @@
             智谱 GLM 直连
           </button>
         </div>
+        <div class="theme-opts" v-if="nonDesktop">
+          <button v-if="browserWeb" class="theme-opt" :class="{ on: polishEngine === 'cloud' }" @click="setPolishEngine('cloud')">
+            内置通道（免 Key）
+          </button>
+          <button class="theme-opt" :class="{ on: polishEngine === 'proxy' }" @click="setPolishEngine('proxy')">
+            云端代理
+          </button>
+          <button class="theme-opt" :class="{ on: polishEngine === 'zhipu' }" @click="setPolishEngine('zhipu')">
+            智谱 GLM 直连<template v-if="browserWeb">（仅 App）</template>
+          </button>
+        </div>
+
+        <template v-if="polishEngine === 'cloud'">
+          <p class="tip">
+            内置通道由本站云服务调模型，不用填 Key，也不用部署代理。模型由平台目录决定，
+            输出风格可能与智谱略有差异；润色仍会过同一套淋语护栏，不合格就保留原草稿。
+          </p>
+          <div class="auth-row">
+            <button class="ghost small" :disabled="probing" @click="probePolish">{{ probing ? '测试中…' : '测试连接' }}</button>
+            <span class="live-badge" v-if="probeMsg">{{ probeMsg }}</span>
+          </div>
+        </template>
 
         <template v-if="polishEngine === 'zhipu'">
           <div class="auth-row">
@@ -658,6 +685,9 @@
             <button class="ghost small" :disabled="probing" @click="probePolish">{{ probing ? '测试中…' : '测试连接' }}</button>
             <span class="live-badge" v-if="probeMsg">{{ probeMsg }}</span>
           </div>
+          <p class="tip" v-if="browserWeb">
+            当前是浏览器环境：智谱接口没有 CORS 头，这里的直连一定会失败（不是 Key 的问题）。要真用，请切到「云端代理」。
+          </p>
           <p class="tip">Key 只存在本机 linyu.db（手机端存在 App 私有存储），不外传；换设备要重填。测试连接会用「救命，我气死了。」跑一遍看看效果。</p>
         </template>
         <p class="tip" v-else-if="!nonDesktop">用本机 Ollama 润色，模型自动从已装列表里选；可在下方填写自定义地址。</p>
@@ -665,8 +695,13 @@
         <div class="auth-row">
           <input v-model.trim="proxyUrl" placeholder="https://你的代理域名/polish（Web / 小程序端用）" style="flex:1 1 260px" />
           <button class="ghost small" @click="saveProxyUrl">保存地址</button>
+          <button class="ghost small" :disabled="probing" @click="probeProxy">{{ probing ? '测试中…' : '测试代理' }}</button>
         </div>
         <p class="tip">上面这个代理地址给 Web / 小程序 / 手机端用（Key 留服务端）；桌面端不看它。</p>
+        <p class="tip" v-if="browserWeb">
+          小程序端已有云函数 <code>polish</code>，在云开发控制台「HTTP 访问服务」给它加一个 <code>/polish</code> 路径，
+          把拿到的 https 地址填在这里即可，Key 不用暴露给浏览器。
+        </p>
 
         <template v-if="orientSupported">
           <div class="setting-divider"></div>

@@ -196,6 +196,64 @@
       };
     }
 
+    // ---- 内置云通道（WorkBuddy 云服务 LLM，免 Key）----
+    // 浏览器直连智谱会被 CORS 拦死，代理又需要用户自己有后端。
+    // 云服务的数据面与本页同源（endpoint 就是站点域名），SDK 由构建脚本注入，
+    // publishableKey 只标识应用、服务端按 Origin 校验，放在前端是安全的。
+    let _cloud = null;
+    function cloudClient() {
+      if (_cloud) return _cloud;
+      // cloudSync.js 已经建好实例就复用，避免同页两个 client
+      if (root.LINYU_CLOUD_CLIENT) {
+        _cloud = root.LINYU_CLOUD_CLIENT;
+        return _cloud;
+      }
+      const WBC = root.WorkBuddyCloud;
+      const cfg = root.LINYU_CLOUD;
+      if (!WBC || !cfg || !cfg.endpoint || !cfg.publishableKey) return null;
+      if (typeof WBC.createWorkBuddyCloud !== 'function') return null;
+      _cloud = WBC.createWorkBuddyCloud({
+        endpoint: cfg.endpoint,
+        publishableKey: cfg.publishableKey,
+        oauthRelayBaseUrl: cfg.oauthRelayBaseUrl,
+      });
+      return _cloud;
+    }
+
+    // 走云服务跑一次润色：SDK 只支持流式，这里把增量拼成整句再交给同一套护栏。
+    async function cloudPolish(source, draft) {
+      const mod = root.LINYU_POLISH;
+      const cloud = cloudClient();
+      if (!cloud) throw new Error('内置通道未就绪（云 SDK 没加载）');
+      if (!mod || !mod.buildPolishMessages) throw new Error('润色模块未加载');
+
+      const list = await cloud.llm.models.list();
+      const usable = (list || []).filter((m) => m && m.disabled !== true);
+      if (!usable.length) throw new Error('云服务没有可用模型');
+      // 目录里第一个是 auto（平台路由），润色要风格稳定，优先固定 GLM 系：
+      // 实测 glm-5.3-flash 单句 1.9s，输出「救命惹，本可气到跺脚厚。」能过护栏。
+      const PREFER = ['glm-5.3-flash', 'glm-4.6', 'glm-4.7', 'glm-5.0', 'glm-5.2'];
+      const model =
+        usable.find((m) => PREFER.indexOf(m.id) >= 0) ||
+        usable.find((m) => /^glm/i.test(String(m.id))) ||
+        usable[0];
+
+      let text = '';
+      const stream = cloud.llm.chat.completions.create({
+        model: model.id,
+        messages: mod.buildPolishMessages({ source, draft }),
+        stream: true,
+        temperature: 0.45,
+      });
+      for await (const chunk of stream) {
+        const delta = chunk && chunk.choices && chunk.choices[0] && chunk.choices[0].delta;
+        if (delta && delta.content) text += delta.content;
+      }
+      const out = mod.cleanPolishOutput ? mod.cleanPolishOutput(text) : String(text || '').trim();
+      if (!out) return draft;
+      return mod.retentionOk && !mod.retentionOk(draft, out, source) ? draft : out;
+    }
+
     // 按偏好造一个润色客户端；返回 null 表示「没配置，别调模型」
     function pickPolishClient(opts) {
       const mod = root.LINYU_POLISH;
@@ -217,6 +275,7 @@
       }
 
       if (engine === 'ollama') return null; // 手机/网页没有本机 Ollama，交给上层提示
+      // engine === 'proxy'（云端代理）以及未指定引擎时的兜底，都按代理地址走
       const url = String(o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || '').trim();
       if (!url || !mod.createHttpProxyClient) return null;
       return mod.createHttpProxyClient({ baseUrl: url });
@@ -224,6 +283,14 @@
 
     function makeProxyPolish() {
       return async (source, draft) => {
+        const engine = String(readPolishPref('polishEngine', '') || '').toLowerCase();
+        if (engine === 'cloud') {
+          try {
+            return await cloudPolish(source, draft);
+          } catch {
+            return draft; // 正式翻译永远要有可用输出
+          }
+        }
         const client = pickPolishClient();
         if (!client) return draft;
         return client.polish(source, draft);
@@ -240,7 +307,41 @@
         throw new Error('手机端没有本机 Ollama，请改用「智谱 GLM 直连」或云端代理');
       }
       const mod = root.LINYU_POLISH;
-      if (!mod || !mod.createOpenAIChatClient) throw new Error('润色模块未加载（core/llm-polish.js）');
+      if (!mod) throw new Error('润色模块未加载（core/llm-polish.js）');
+
+      // 内置云通道：免 Key，直接跑样例
+      if (engine === 'cloud') {
+        const t0c = Date.now();
+        const textc = await cloudPolish(PROBE_SAMPLE.source, PROBE_SAMPLE.draft);
+        return {
+          engine: 'cloud',
+          ms: Date.now() - t0c,
+          source: PROBE_SAMPLE.source,
+          draft: PROBE_SAMPLE.draft,
+          text: textc,
+          changed: textc !== PROBE_SAMPLE.draft,
+        };
+      }
+
+      // 云端代理：同样跑一遍样例，把 HTTP 状态 / 超时 / 空结果的原因带回去
+      if (engine === 'proxy') {
+        const url = String(o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || '').trim();
+        if (!url) throw new Error('还没填云端代理地址');
+        if (!mod.createHttpProxyClient) throw new Error('润色模块未加载（core/llm-polish.js）');
+        const pc = mod.createHttpProxyClient({ baseUrl: url, strict: true, fetchImpl: nativeFetch(30000) });
+        const t1 = Date.now();
+        const text1 = await pc.polish(PROBE_SAMPLE.source, PROBE_SAMPLE.draft);
+        return {
+          engine: pc.name,
+          ms: Date.now() - t1,
+          source: PROBE_SAMPLE.source,
+          draft: PROBE_SAMPLE.draft,
+          text: text1,
+          changed: text1 !== PROBE_SAMPLE.draft,
+        };
+      }
+
+      if (!mod.createOpenAIChatClient) throw new Error('润色模块未加载（core/llm-polish.js）');
       const client = pickPolishClient({
         engine: 'zhipu',
         strict: true,
