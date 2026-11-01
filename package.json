@@ -56,7 +56,8 @@
     "electron-builder": "^25.1.8",
     "eslint": "^10.13.0",
     "prettier": "^3.9.10",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "@tencent-ai/workbuddy-cloud-sdk": "dev"
   },
   "build": {
     "appId": "com.qiuzh.linyu-translator",

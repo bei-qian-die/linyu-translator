@@ -137,6 +137,32 @@ async function main() {
   // 渲染层
   await copyDir(path.join(root, 'src', 'renderer'), out);
 
+  // CSP：App 里直连智谱 / 走用户自填代理地址，域名事先不可知，
+  // connect-src 必须放开到任意 https（CapacitorHttp 原生通道不受 CSP 约束，
+  // 但插件缺失时退回 fetch 就会被拦）。源文件保持严格，只改构建产物。
+  {
+    const indexPath = path.join(out, 'index.html');
+    const raw = await fs.readFile(indexPath, 'utf8');
+    const patched = raw.replace(
+      /connect-src 'self' data: blob:;/,
+      "connect-src 'self' data: blob: https: wss:;"
+    );
+    if (patched !== raw) await fs.writeFile(indexPath, patched, 'utf8');
+  }
+
+  // CSP：App 里直连智谱 / 走用户自填代理地址，域名事先不可知，
+  // connect-src 必须放开到任意 https（CapacitorHttp 原生通道不受 CSP 约束，
+  // 但插件缺失时退回 fetch 就会被拦）。源文件保持严格，只改构建产物。
+  {
+    const indexPath = path.join(out, 'index.html');
+    const raw = await fs.readFile(indexPath, 'utf8');
+    const patched = raw.replace(
+      /connect-src 'self' data: blob:;/,
+      "connect-src 'self' data: blob: https: wss:;"
+    );
+    if (patched !== raw) await fs.writeFile(indexPath, patched, 'utf8');
+  }
+
   // 核心模块（deprecated.js 也带上：它只往 window.LINYU_DEPRECATED 挂剔除名单，db.js 的
   // require 分支在浏览器里走不到，之前删掉它反而让 index.html 的 <script> 404）
   await copyDir(path.join(root, 'src', 'core'), path.join(out, 'core'));

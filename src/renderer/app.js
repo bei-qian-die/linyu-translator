@@ -41,13 +41,29 @@ createApp({
     const polishedFlag = ref(false);
     // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
     const polishing = ref(false);
-    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端不看它）。
-    const proxyUrl = ref('');
+    // 本项目自带的云端润色代理：微信云开发云函数 polish 的 HTTP 访问地址。
+    // 云函数已部署在环境 cloud1-d2g2xfwdo0d1c6f60，Key 存在云函数环境变量里，
+    // 浏览器只发 source/draft，永远看不到 Key。前提是控制台「HTTP 访问服务」
+    // 里给云函数加过 /polish 这条路径。
+    const DEFAULT_PROXY_URL = 'https://cloud1-d2g2xfwdo0d1c6f60.service.tcloudbase.com/polish';
+    // 云端润色代理地址（仅 Web / 小程序 / 手机端需要；桌面端不看它）。
+    const proxyUrl = ref(nonDesktop ? DEFAULT_PROXY_URL : '');
     // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 提供，
     // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
     const nonDesktop = typeof window.api.isCapacitor === 'boolean';
-    // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱 GLM 直连（填 Key 即用）
-    const polishEngine = ref(nonDesktop ? 'zhipu' : 'ollama');
+    // 安卓 App 里 Capacitor 的原生 HTTP 通道能绕开 CORS；纯浏览器没有这条路。
+    // 智谱 open.bigmodel.cn 不返回任何 Access-Control-Allow-* 头（实测 OPTIONS 无 ACAO），
+    // 所以浏览器直连无论 Key 对不对都会被拦 —— 必须走云端代理。
+    const capNative = Boolean(
+      window.Capacitor &&
+        (typeof window.Capacitor.isNativePlatform === 'function'
+          ? window.Capacitor.isNativePlatform()
+          : window.Capacitor.platform && window.Capacitor.platform !== 'web')
+    );
+    const browserWeb = nonDesktop && !capNative;
+    // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱直连 / 'proxy' 云端代理 / 'cloud' 内置免 Key 通道
+    // 浏览器默认走 cloud：它和页面同源，不受 CORS 与 CSP 的跨域限制，开箱即用。
+    const polishEngine = ref(nonDesktop ? (browserWeb ? 'cloud' : 'zhipu') : 'ollama');
     const zhipuKey = ref('');
     const zhipuBase = ref('https://open.bigmodel.cn/api/paas/v4');
     const zhipuModel = ref('glm-4-flash');
@@ -351,11 +367,13 @@ createApp({
     }
 
     // 桌面端润色引擎切换：'ollama' 本机模型 / 'zhipu' 智谱直连
+    const ENGINE_LABEL = { ollama: '本机 Ollama', zhipu: '智谱 GLM 直连', proxy: '云端代理', cloud: '内置通道（免 Key）' };
+
     function setPolishEngine(key) {
-      polishEngine.value = key === 'zhipu' ? 'zhipu' : 'ollama';
+      polishEngine.value = ENGINE_LABEL[key] ? key : nonDesktop ? 'zhipu' : 'ollama';
       probeMsg.value = '';
       window.api.setPref('polishEngine', JSON.stringify(polishEngine.value)).catch(() => {});
-      say(polishEngine.value === 'zhipu' ? '润色引擎：智谱 GLM 直连' : '润色引擎：本机 Ollama');
+      say('润色引擎：' + ENGINE_LABEL[polishEngine.value]);
     }
 
     // 保存智谱配置（Key 只存本机库；输入框是 password，不写进任何日志）
@@ -373,18 +391,48 @@ createApp({
     // 测试连接：用固定样例真跑一次，成功就把润色结果贴出来，失败显示原因
     async function probePolish() {
       if (probing.value) return;
+      const engine = ['proxy', 'cloud'].indexOf(polishEngine.value) >= 0 ? polishEngine.value : 'zhipu';
+      // 浏览器直连智谱一定被 CORS 拦，别让请求真的发出去白等 30 秒
+      if (engine === 'zhipu' && browserWeb) {
+        probeMsg.value = '✗ 浏览器不允许跨域直连智谱（对方接口没开 CORS），Key 正确也连不上。请用「内置通道」或安卓 App';
+        return;
+      }
       probing.value = true;
       probeMsg.value = '';
       try {
         const r = await call(
           window.api.probePolish({
-            engine: 'zhipu',
+            engine,
+            polishProxyUrl: String(proxyUrl.value || '').trim(),
             zhipuBaseUrl: String(zhipuBase.value || '').trim(),
             zhipuModel: String(zhipuModel.value || '').trim(),
             zhipuApiKey: String(zhipuKey.value || '').trim(),
           })
         );
-        probeMsg.value = (r && r.changed ? '✓ ' : '· ') + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
+        if (r && r.changed === false) {
+          probeMsg.value = '· 通道通了（' + (r.ms || 0) + 'ms），但输出与草稿相同，检查代理侧模型是否可用';
+        } else {
+          probeMsg.value = '✓ ' + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
+        }
+      } catch (e) {
+        probeMsg.value = '✗ ' + ((e && e.message) || e);
+      } finally {
+        probing.value = false;
+      }
+    }
+
+    // 代理地址单独测试：地址填错 / 域名不通时不用先保存再猜
+    async function probeProxy() {
+      if (probing.value) return;
+      probing.value = true;
+      probeMsg.value = '';
+      try {
+        const r = await call(
+          window.api.probePolish({ engine: 'proxy', polishProxyUrl: String(proxyUrl.value || '').trim() })
+        );
+        probeMsg.value = r && r.changed === false
+          ? '· 代理通了（' + (r.ms || 0) + 'ms），但没改动文本，检查代理侧模型'
+          : '✓ ' + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
       } catch (e) {
         probeMsg.value = '✗ ' + ((e && e.message) || e);
       } finally {
@@ -1477,10 +1525,16 @@ createApp({
       if (!parsePref(prefs['ui.live'], true)) liveOn.value = false;
       if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
       if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
-      proxyUrl.value = String(parsePref(prefs['polishProxyUrl'], '') || '').trim();
-      polishEngine.value = parsePref(prefs['polishEngine'], nonDesktop ? 'zhipu' : 'ollama') === 'zhipu' ? 'zhipu' : 'ollama';
-      // 手机 / 网页没有本机 Ollama，老偏好里若还存着 ollama 就自动纠回直连
-      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = 'zhipu';
+      proxyUrl.value = String(
+        parsePref(prefs['polishProxyUrl'], nonDesktop ? DEFAULT_PROXY_URL : '') || ''
+      ).trim();
+      const engineDefault = nonDesktop ? (browserWeb ? 'cloud' : 'zhipu') : 'ollama';
+      const engineSaved = String(parsePref(prefs['polishEngine'], engineDefault) || '').toLowerCase();
+      polishEngine.value = ENGINE_LABEL[engineSaved] ? engineSaved : engineDefault;
+      // 手机 / 网页没有本机 Ollama，老偏好里若还存着 ollama 就自动纠回可用引擎
+      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = browserWeb ? 'cloud' : 'zhipu';
+      // 纯浏览器直连智谱必被 CORS 拦，老偏好若停在 zhipu 也纠到内置通道
+      if (browserWeb && polishEngine.value === 'zhipu') polishEngine.value = 'cloud';
       zhipuKey.value = String(parsePref(prefs['zhipuApiKey'], '') || '').trim();
       zhipuBase.value = String(parsePref(prefs['zhipuBaseUrl'], 'https://open.bigmodel.cn/api/paas/v4') || '') || 'https://open.bigmodel.cn/api/paas/v4';
       zhipuModel.value = String(parsePref(prefs['zhipuModel'], 'glm-4-flash') || '') || 'glm-4-flash';
@@ -1541,7 +1595,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, nonDesktop, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, probeProxy, nonDesktop, browserWeb, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,

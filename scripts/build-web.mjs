@@ -256,15 +256,19 @@ async function main() {
 
   // CSP 放宽：云服务接入需要
   //   · script-src 增加 cdn.jsdelivr.net（WorkBuddy Cloud SDK 走 CDN IIFE 形式）
-  //   · connect-src 增加 www.workbuddy.cn（OAuth Relay 回调换票）
-  // 数据面 /.cloud/** 与页面同源，'self' 已覆盖。
+  //   · connect-src 放开到任意 https
+  // 最后这条是必须的：润色要么直连智谱（open.bigmodel.cn），要么走用户自己填的
+  // 云端代理（*.service.tcloudbase.com / *.workers.dev …），域名事先不可知。
+  // 原来写死 connect-src 'self' 时，浏览器连请求都发不出去，直接报
+  // 「Refused to connect ... violates the Content Security Policy」——
+  // 表现就是「Key 填对了也连不上」。
   html = html.replace(
     /script-src 'self' 'unsafe-eval';/,
     "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net;"
   );
   html = html.replace(
     /connect-src 'self' data: blob:;/,
-    "connect-src 'self' data: blob: https://www.workbuddy.cn;"
+    "connect-src 'self' data: blob: https: wss:;"
   );
 
   // 在 style.css 后追加 web.css + cloud.css + mobile.css

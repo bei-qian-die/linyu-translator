@@ -362,6 +362,9 @@ function createHttpProxyClient(opts) {
   const baseUrl = (opts && opts.baseUrl) || '';
   const fetchImpl = (opts && opts.fetchImpl) || (typeof fetch === 'function' ? fetch : null);
   const timeoutMs = (opts && opts.timeoutMs) || 30000;
+  // strict：正式翻译要「失败即回退草稿」，但设置页「测试连接」必须把原因说清楚，
+  // 否则代理填错、DNS 不通、返回 401 全都表现成「润色没反应」。
+  const strict = Boolean(opts && opts.strict);
 
   async function isAvailable() {
     if (!baseUrl) return false;
@@ -385,8 +388,14 @@ function createHttpProxyClient(opts) {
    * 润色入口：草稿 → 润色后文本。
    * 发往代理，拿到 { text } 后用 retentionOk 兜底；任何异常 / 无地址 / 护栏失败都回退草稿。
    */
+  function fail(msg) {
+    if (strict) throw new Error(msg);
+    return null;
+  }
+
   async function polish(source, draft) {
-    if (!baseUrl || !fetchImpl) return draft;
+    if (!baseUrl) return strict ? Promise.reject(new Error('还没填云端代理地址')) : draft;
+    if (!fetchImpl) return strict ? Promise.reject(new Error('当前运行环境没有 fetch')) : draft;
     try {
       const c = new AbortController();
       const t = setTimeout(() => c.abort(), timeoutMs);
@@ -397,15 +406,35 @@ function createHttpProxyClient(opts) {
         signal: c.signal,
       });
       clearTimeout(t);
-      if (!res.ok) return draft;
-      const data = await res.json();
+      if (!res.ok) {
+        const bad = fail('代理返回 HTTP ' + res.status + '（' + baseUrl + '）');
+        return bad === null ? draft : bad;
+      }
+      let data = null;
+      try {
+        data = await res.json();
+      } catch {
+        data = null;
+      }
       const text = data && data.text;
-      if (!text) return draft;
+      if (!text) {
+        const empty = fail('代理没有返回润色结果（检查代理是否配好大模型 Key）');
+        return empty === null ? draft : empty;
+      }
       const out = String(text);
       // 双重护栏：客户端再判一次，确保永远输出淋语
       if (!retentionOk(draft, out, source)) return draft;
       return out;
-    } catch {
+    } catch (e) {
+      if (strict && e && e.message && e.message.indexOf('代理') === 0) throw e;
+      if (strict) {
+        throw new Error(
+          e && e.name === 'AbortError'
+            ? '代理请求超时（' + timeoutMs + 'ms）'
+            : '连不上代理：' + ((e && e.message) || e) + '（地址 ' + baseUrl + '，跨域或域名不可达都会被拦）',
+          { cause: e }
+        );
+      }
       return draft; // 代理不可达 / 超时 / 解析失败 → 原样返回草稿
     }
   }

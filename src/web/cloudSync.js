@@ -30,6 +30,8 @@
     oauthRelayBaseUrl: 'https://www.workbuddy.cn/v2/as/genie-baas/oauth',
     publishableKey: 'wbpk_Sd4kigAmHhvYV7chB2LAcw_MZ3UuUaOBD6IjNlyQDc1EnfXIveVZwTI',
   };
+  // 润色（mobile/api.js）要复用同一个 client 的 llm 模块，别再建第二个实例
+  window.LINYU_CLOUD = PUBLIC_CONFIG;
 
   var cloud = null;
   var session = null;
@@ -53,6 +55,7 @@
         publishableKey: PUBLIC_CONFIG.publishableKey,
       });
       sdkError = '';
+      window.LINYU_CLOUD_CLIENT = cloud;
     } catch (err) {
       sdkError = '云服务初始化失败：' + (err && err.message ? err.message : String(err));
       cloud = null;

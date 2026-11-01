@@ -8,7 +8,7 @@ const { createDb } = require('../core/db');
 const { translateText } = require('../core/translator');
 const { createAuth, DEFAULT_USER, DEFAULT_PASSWORD } = require('../core/auth');
 const { createService } = require('../core/service');
-const { createOllamaClient, createOpenAIChatClient, listOllamaModels, pickModel } = require('../core/llm-polish');
+const { createOllamaClient, createOpenAIChatClient, createHttpProxyClient, listOllamaModels, pickModel } = require('../core/llm-polish');
 const lore = require('../core/lore');
 
 let store = null;
@@ -96,11 +96,19 @@ function readPolishConfig(prefs) {
     zhipuBaseUrl: String(raw('zhipuBaseUrl', ZHIPU_BASE_DEFAULT) || '') || ZHIPU_BASE_DEFAULT,
     zhipuApiKey: String(raw('zhipuApiKey', '') || '').trim(),
     zhipuModel: String(raw('zhipuModel', ZHIPU_MODEL_DEFAULT) || '').trim() || ZHIPU_MODEL_DEFAULT,
+    polishProxyUrl: String(raw('polishProxyUrl', '') || '').trim(),
   };
 }
 
 // 按配置造客户端：返回 { name, polish }，两种引擎对上层是同一个接口。
 async function buildPolishClient(cfg) {
+  // 云端代理：桌面端默认不用，但设置页「测试代理」要能测到同一个地址
+  if (cfg.engine === 'proxy') {
+    if (!cfg.polishProxyUrl) throw new Error('还没填云端代理地址');
+    const client = createHttpProxyClient({ baseUrl: cfg.polishProxyUrl, strict: true });
+    return { name: client.name, polish: (src, draft) => client.polish(src, draft) };
+  }
+
   if (cfg.engine === 'zhipu' || cfg.engine === 'openai') {
     if (!cfg.zhipuApiKey) throw new Error('未填智谱 API Key（设置 → 翻译增强 · 润色引擎）');
     const client = createOpenAIChatClient({
@@ -146,6 +154,8 @@ async function probePolish(overrides) {
   const cfg = Object.assign(readPolishConfig(), overrides || {});
   if (cfg.engine === 'zhipu' || cfg.engine === 'openai') {
     if (!cfg.zhipuApiKey) throw new Error('请先填智谱 API Key');
+  } else if (cfg.engine === 'proxy') {
+    if (!cfg.polishProxyUrl) throw new Error('请先填云端代理地址');
   } else if (!cfg.ollamaBaseUrl) {
     throw new Error('请先填 Ollama 地址');
   }
