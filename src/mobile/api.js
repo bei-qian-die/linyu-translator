@@ -144,18 +144,117 @@
     // 这个文件只留 Capacitor 相关的部分：文件选择、分享、媒体、屏幕方向、日志缓冲。
     const serviceMod = root.LINYU_SERVICE || {};
 
-    // Phase 2（Web / 小程序端）：没有本地模型，润色走「云端代理」。
-    // 代理地址存在偏好 polishProxyUrl 里；未配置时 polish 闭包直接回退草稿，
-    // svc.polishDraft 也就安全返回原稿（polished:false），不影响主翻译。
+    // Phase 2（Web / 小程序 / 安卓端）：没有本地 Ollama，润色有两种来源——
+    //   ① 智谱 GLM 直连（设置里填 Key，浏览器/WebView 直接 fetch open.bigmodel.cn）
+    //   ② 云端代理（polishProxyUrl，Key 留在服务端）
+    // 都没配时闭包直接回退草稿，svc.polishDraft 返回 polished:false，不影响主翻译。
+    function readPolishPref(k, d) {
+      const prefs = (db && typeof db.getPrefs === 'function') ? db.getPrefs() : {};
+      const v = prefs[k];
+      if (v == null || v === '') return d;
+      try {
+        return JSON.parse(v);
+      } catch {
+        return v;
+      }
+    }
+
+    // 安卓 WebView 里 fetch 受 CORS 限制（Origin 是 https://localhost），智谱接口不一定放行。
+    // Capacitor 自带的原生 HTTP 通道不受 CORS 约束，优先用它；Web 浏览器没有这个插件就退回 fetch。
+    function nativeFetch(timeoutMs) {
+      const cap = root.Capacitor;
+      const plugin = cap && cap.Plugins && cap.Plugins.CapacitorHttp;
+      if (!plugin || typeof plugin.request !== 'function') return undefined;
+      return async (url, init) => {
+        const o = init || {};
+        let data;
+        if (o.body) {
+          try {
+            data = JSON.parse(o.body);
+          } catch {
+            data = o.body;
+          }
+        }
+        const r = await plugin.request({
+          url: String(url),
+          method: o.method || 'GET',
+          headers: o.headers || {},
+          data,
+          connectTimeout: timeoutMs,
+          readTimeout: timeoutMs,
+        });
+        const raw = typeof r.data === 'string' ? r.data : JSON.stringify(r.data);
+        return {
+          ok: r.status >= 200 && r.status < 300,
+          status: r.status,
+          json: async () => (typeof r.data === 'string' ? JSON.parse(r.data) : r.data),
+          text: async () => raw,
+        };
+      };
+    }
+
+    // 按偏好造一个润色客户端；返回 null 表示「没配置，别调模型」
+    function pickPolishClient(opts) {
+      const mod = root.LINYU_POLISH;
+      if (!mod) return null;
+      const o = opts || {};
+      const engine = String(o.engine || readPolishPref('polishEngine', '') || '').toLowerCase();
+      const strict = Boolean(o.strict);
+
+      if (engine === 'zhipu') {
+        const apiKey = String(o.zhipuApiKey != null ? o.zhipuApiKey : readPolishPref('zhipuApiKey', '') || '').trim();
+        if (!apiKey || !mod.createOpenAIChatClient) return null;
+        return mod.createOpenAIChatClient({
+          baseUrl: String((o.zhipuBaseUrl != null ? o.zhipuBaseUrl : readPolishPref('zhipuBaseUrl', '')) || ''),
+          apiKey,
+          model: String((o.zhipuModel != null ? o.zhipuModel : readPolishPref('zhipuModel', '')) || ''),
+          strict,
+          fetchImpl: nativeFetch(30000),
+        });
+      }
+
+      if (engine === 'ollama') return null; // 手机/网页没有本机 Ollama，交给上层提示
+      const url = String(o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || '').trim();
+      if (!url || !mod.createHttpProxyClient) return null;
+      return mod.createHttpProxyClient({ baseUrl: url });
+    }
+
     function makeProxyPolish() {
       return async (source, draft) => {
-        const prefs = (db && typeof db.getPrefs === 'function') ? db.getPrefs() : {};
-        const url = prefs['polishProxyUrl'];
-        if (!url) return draft;
-        const mod = root.LINYU_POLISH;
-        if (!mod || !mod.createHttpProxyClient) return draft;
-        const client = mod.createHttpProxyClient({ baseUrl: String(url) });
+        const client = pickPolishClient();
+        if (!client) return draft;
         return client.polish(source, draft);
+      };
+    }
+
+    // 设置页「测试连接」：手机端没有主进程，这里用同一份 core 客户端直接跑样例。
+    // strict 打开，Key 错 / CORS / 超时都要把原因带回给界面。
+    const PROBE_SAMPLE = { source: '救命，气死我了。', draft: '救命，我气死了。' };
+    async function runProbe(opts) {
+      const o = opts || {};
+      const engine = String(o.engine || readPolishPref('polishEngine', 'zhipu') || 'zhipu').toLowerCase();
+      if (engine === 'ollama') {
+        throw new Error('手机端没有本机 Ollama，请改用「智谱 GLM 直连」或云端代理');
+      }
+      const mod = root.LINYU_POLISH;
+      if (!mod || !mod.createOpenAIChatClient) throw new Error('润色模块未加载（core/llm-polish.js）');
+      const client = pickPolishClient({
+        engine: 'zhipu',
+        strict: true,
+        zhipuApiKey: o.zhipuApiKey,
+        zhipuBaseUrl: o.zhipuBaseUrl,
+        zhipuModel: o.zhipuModel,
+      });
+      if (!client) throw new Error('请先填智谱 API Key');
+      const t0 = Date.now();
+      const text = await client.polish(PROBE_SAMPLE.source, PROBE_SAMPLE.draft);
+      return {
+        engine: client.name,
+        ms: Date.now() - t0,
+        source: PROBE_SAMPLE.source,
+        draft: PROBE_SAMPLE.draft,
+        text,
+        changed: text !== PROBE_SAMPLE.draft,
       };
     }
 
@@ -315,8 +414,10 @@
 
       translate: (text, mode) => safe(() => Promise.resolve(svc.translate(text, mode))),
 
-      // Phase 2（Web / 小程序端）：LLM 润色后处理。代理不可达时返回草稿原样（polished:false）。
+      // Phase 2（Web / 小程序 / 安卓端）：LLM 润色后处理。不可达时返回草稿原样（polished:false）。
       polish: (source, draft) => safe(() => Promise.resolve(svc.polishDraft(source, draft))),
+      // 设置页「测试连接」：与桌面端同名同参，用到同一份 core 客户端
+      probePolish: (opts) => safe(() => runProbe(opts)),
 
       // ---- 认证：门禁与失败锁定都在 service 里 ----
       authStatus: () => safe(() => Promise.resolve(svc.authStatus())),
