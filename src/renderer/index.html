@@ -33,6 +33,8 @@
       <div class="stat" v-if="currentStat">{{ currentStat.label }} {{ currentStat.count }} {{ currentStat.unit }}</div>
       <span class="mode-chip" :class="{ on: isDev }">{{ isDev ? '开发者模式' : '只读' }}</span>
       <button class="gear orient" v-if="orientSupported" :title="orient === 'landscape' ? '切换到竖屏' : '切换到横屏'" :aria-label="orient === 'landscape' ? '切换到竖屏' : '切换到横屏'" @click="toggleOrient"><i class="oi" :class="{ land: orient === 'landscape' }"></i></button>
+      <!-- 版本公告：只能由用户点这个按钮打开，任何初始化流程都不许把它置为 true -->
+      <button class="gear announce" title="版本公告" aria-label="版本公告" @click="openChangelog"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="m3 11 18-5v12L3 14v-3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" /><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></svg></button>
       <button class="gear" title="设置（Ctrl+,）" @click="openSettings">⚙</button>
     </header>
 
@@ -825,6 +827,27 @@
       </div>
     </div>
 
+    <!-- 版本公告弹窗：初始状态关闭，只在用户点顶栏「公告」按钮后出现（不自动弹、不做未读红点） -->
+    <div class="modal-mask" v-show="showChangelog" @click.self="closeChangelog">
+      <div class="modal changelog-modal">
+        <div class="modal-head">
+          <h3>版本公告</h3>
+          <button class="link" @click="closeChangelog">关闭</button>
+        </div>
+        <div class="changelog-body">
+          <div class="cl-meta" v-if="changelog.version">
+            <span class="cl-ver">v{{ changelog.version }}</span>
+            <span class="cl-date" v-if="changelog.date">{{ changelog.date }}</span>
+          </div>
+          <p class="cl-summary" v-if="changelog.summary">{{ changelog.summary }}</p>
+          <ul class="cl-list" v-if="changelog.items.length">
+            <li v-for="(it, i) in changelog.items" :key="i">{{ it }}</li>
+          </ul>
+          <p class="tip" v-if="!changelog.items.length">暂无公告</p>
+        </div>
+      </div>
+    </div>
+
     <transition name="fade">
       <div class="toast" v-if="toast.text">
         <span>{{ toast.text }}</span>
@@ -870,10 +893,13 @@
   <script src="core/lore-extra21.js"></script>
   <script src="core/lore-extra23.js"></script>
   <script src="core/lore-extra24.js"></script>
+  <script src="core/lore-extra25.js"></script>
   <script src="core/lore.js"></script>
   <!-- 音乐板块数据（生成物：scripts/build-music.mjs ← src/core/music-douyin.json）
        纯静态数据 + 纯函数，不依赖 db / 网络；缺失时音乐页自动降级成空态，不影响其余页面 -->
   <script src="core/music.js"></script>
+  <!-- 版本公告数据（scripts/build-changelog.mjs 从 CHANGELOG.md 生成，跟随 package.json 版本） -->
+  <script src="core/changelog.js"></script>
   <script src="core/tokenizer.js"></script>
   <script src="core/variant.js"></script>
   <script src="core/translator.js"></script>

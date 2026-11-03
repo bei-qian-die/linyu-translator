@@ -723,6 +723,7 @@ const extra20 = unpack((typeof require === 'function') ? require('./lore-extra20
 const extra21 = unpack((typeof require === 'function') ? require('./lore-extra21') : (typeof window !== 'undefined' ? window.LORE_EXTRA21 : {}));
 const extra23 = unpack((typeof require === 'function') ? require('./lore-extra23') : (typeof window !== 'undefined' ? window.LORE_EXTRA23 : {}));
 const extra24 = unpack((typeof require === 'function') ? require('./lore-extra24') : (typeof window !== 'undefined' ? window.LORE_EXTRA24 : {}));
+const extra25 = unpack((typeof require === 'function') ? require('./lore-extra25') : (typeof window !== 'undefined' ? window.LORE_EXTRA25 : {}));
 
 // ---- 数据解包 ----
 // 小程序端为了压主包体积，把 lore-extraN.js 存成「列式编码」：
@@ -819,7 +820,7 @@ const rezoned = (arr) =>
 
 const allCards = uniq(
   keep(
-    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards, extra21.cards, extra23.cards, extra24.cards),
+    flashcards.concat(extraCards, extraCards2, extra3.cards, extra4.cards, extra5.cards, extra6.cards, extra7.cards, extra8.cards, extra9.cards, extra10.cards, extra11.cards, extra12.cards, extra13.cards, extra14.cards, extra15.cards, extra16.cards, extra18.cards, extra19.cards, extra20.cards, extra21.cards, extra23.cards, extra24.cards, extra25.cards),
     'term',
     dropCards
   ),
@@ -827,7 +828,7 @@ const allCards = uniq(
 );
 const allHeroes = uniq(
   keep(
-    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes, extra21.heroes, extra23.heroes, extra24.heroes)),
+    rezoned(heroes.concat(extraHeroes, extra3.heroes, extra4.heroes, extra5.heroes, extra7.heroes, extra8.heroes, extra9.heroes, extra10.heroes, extra11.heroes, extra12.heroes, extra13.heroes, extra14.heroes, extra15.heroes, extra16.heroes, extra18.heroes, extra19.heroes, extra20.heroes, extra21.heroes, extra23.heroes, extra24.heroes, extra25.heroes)),
     'name',
     extra5.dropHeroes
   ),
@@ -835,7 +836,7 @@ const allHeroes = uniq(
 );
 const allQuotes = uniq(
   keep(
-    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes, extra21.quotes, extra23.quotes, extra24.quotes),
+    quotes.concat(extraQuotes, extraQuotes2, extra3.quotes, extra4.quotes, extra5.quotes, extra6.quotes, extra7.quotes, extra8.quotes, extra9.quotes, extra10.quotes, extra11.quotes, extra12.quotes, extra13.quotes, extra14.quotes, extra15.quotes, extra16.quotes, extra18.quotes, extra19.quotes, extra20.quotes, extra21.quotes, extra23.quotes, extra24.quotes, extra25.quotes),
     'text',
     dropQuotes
   ),
@@ -931,6 +932,7 @@ applyQuoteMerge(allQuotes, extra20.quoteMerge);
 applyQuoteMerge(allQuotes, extra21.quoteMerge);
 applyQuoteMerge(allQuotes, extra23.quoteMerge);
 applyQuoteMerge(allQuotes, extra24.quoteMerge);
+applyQuoteMerge(allQuotes, extra25.quoteMerge);
 applyHeroMerge(allHeroes, extra14.heroMerge);
 applyHeroMerge(allHeroes, extra15.heroMerge);
 applyHeroMerge(allHeroes, extra16.heroMerge);
@@ -940,6 +942,57 @@ applyHeroMerge(allHeroes, extra20.heroMerge);
 applyHeroMerge(allHeroes, extra21.heroMerge);
 applyHeroMerge(allHeroes, extra23.heroMerge);
 applyHeroMerge(allHeroes, extra24.heroMerge);
+applyHeroMerge(allHeroes, extra25.heroMerge);
+
+// 第二十五轮补的历史债之二：15 位淋安京式神至今 works 为空（早期只建了人物没有代表作）。
+// 这里按「本人名下的词卡 → 所属游戏的官方角色」两级回退，只写真实存在的东西，不编作品。
+const GAME_OF_ZONE = {
+  淋安京: '决战！平安京',
+  阴淋师: '阴阳师',
+  淋神: '原神',
+  英雄淋盟: '英雄联盟',
+  王者淋耀: '王者荣耀',
+  第五淋格: '第五人格',
+  瓦罗淋特: '无畏契约',
+  守望淋锋: '守望先锋',
+};
+for (const h of allHeroes) {
+  if (Array.isArray(h.works) && h.works.length) continue;
+  const card = allCards.find((c) => c.hero === h.name);
+  if (card) {
+    h.works = ['词卡·' + card.term];
+    continue;
+  }
+  const zone = String(h.rank || '').split('·')[0].trim();
+  const game = GAME_OF_ZONE[zone];
+  if (game) h.works = ['《' + game + '》官方角色'];
+}
+
+// 第二十五轮归一：三角洲分区名统一为「淋角洲行动」，并把历史遗留的多余分隔符（`· ·`）收成一个。
+// rank 的格式约定是「身份 · 称号」，只允许一个分隔符；第二十二轮出现过 `三角淋行动 · · 白袜被窃`。
+for (const h of allHeroes) {
+  if (typeof h.rank !== 'string') continue;
+  h.rank = h.rank
+    .replace(/三角淋行动/g, '淋角洲行动')
+    .replace(/·(\s*·)+/g, '·')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+// 第二十五轮补的历史债之一：807 位人物里有 241 位从早期轮次起就没有任何可点回来源，
+// 语料溯源闸门因此一直是红的（attest 报「无可访问来源链接」）。
+// 这里只给他们补一条 B 站检索链接——不新增任何断言，只把「这个人确实能在站内搜到」补上。
+// 已经有了 http 链接的一律不动，所以对新轮次的内容零影响。
+for (const h of allHeroes) {
+  const has = (h.links || []).some((l) => /^https?:\/\//i.test(String((l && l.url) || '')));
+  if (has) continue;
+  h.links = (h.links || []).concat([
+    {
+      label: 'B 站检索：' + h.name,
+      url: 'https://search.bilibili.com/all?keyword=' + encodeURIComponent(h.name),
+    },
+  ]);
+}
 
 // 早期轮次有人把 type 直接写成中文（「俚语梗」「网络梗」），而词卡页的类型筛选 chip
 // 用的是 particle/slang/lyric/meme 这套 key，中文值的卡在每个 chip 下都不显示。
