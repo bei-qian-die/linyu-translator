@@ -22,6 +22,10 @@
  */
 
 const LINYU_GLYPHS = '♥惹噜厚';
+// 除语气字外，这些明确的淋语标志词也算「有淋语气质」。
+// 少了它们，「这神马情况捏？」这种完全合格的输出会被判成「没气质」丢掉 ——
+// 护栏的作用是拦住「模型输出成大白话」，不是拦住合法润色。
+const LINYU_MARKERS = ['捏', '靴靴', '神马', '酱紫', '木有', '肿么办', '一企', '厚礼蟹', '笑鼠', '夭寿'];
 const CJK_RE = /[一-鿿]/;
 
 // ---- 纯函数：提示词构造 ----
@@ -102,7 +106,8 @@ function revertedPronoun(draft, polished) {
 function retentionOk(draft, polished, source) {
   if (!polished) return false;
   if (revertedPronoun(String(draft || ''), String(polished || ''))) return false;
-  const hasGlyph = LINYU_GLYPHS.split('').some((g) => polished.includes(g));
+  const hasGlyph =
+    LINYU_GLYPHS.split('').some((g) => polished.includes(g)) || LINYU_MARKERS.some((w) => polished.includes(w));
   const chs = linyuChars(draft, source);
   if (!chs.length) return hasGlyph || CJK_RE.test(polished);
   const set = new Set(chs);
@@ -110,6 +115,11 @@ function retentionOk(draft, polished, source) {
   let kept = 0;
   for (const c of set) if (inPolished.has(c)) kept += 1;
   const ratio = kept / set.size;
+  // 出现明确淋语标志词（神马/酱紫/靴靴/捏…）= 模型在正经玩淋语，不是在把草稿翻译成大白话。
+  // 这种句子里草稿特有字被同义替换是正常的（「这是啥情况」→「这神马情况捏」，「啥」必然消失），
+  // 用保留率去卡会把合格输出全拦掉。人称回退已在上面的 revertedPronoun 单独把关。
+  const hasMarker = LINYU_MARKERS.some((w) => polished.includes(w));
+  if (hasMarker) return true;
   return ratio >= 0.5 && (hasGlyph || kept > 0);
 }
 
@@ -365,6 +375,9 @@ function createHttpProxyClient(opts) {
   const baseUrl = (opts && opts.baseUrl) || '';
   const fetchImpl = (opts && opts.fetchImpl) || (typeof fetch === 'function' ? fetch : null);
   const timeoutMs = (opts && opts.timeoutMs) || 30000;
+  // strict：正式翻译要「失败即回退草稿」，但设置页「测试连接」必须把原因说清楚，
+  // 否则代理填错、DNS 不通、返回 401 全都表现成「润色没反应」。
+  const strict = Boolean(opts && opts.strict);
 
   async function isAvailable() {
     if (!baseUrl) return false;
@@ -388,8 +401,14 @@ function createHttpProxyClient(opts) {
    * 润色入口：草稿 → 润色后文本。
    * 发往代理，拿到 { text } 后用 retentionOk 兜底；任何异常 / 无地址 / 护栏失败都回退草稿。
    */
+  function fail(msg) {
+    if (strict) throw new Error(msg);
+    return null;
+  }
+
   async function polish(source, draft) {
-    if (!baseUrl || !fetchImpl) return draft;
+    if (!baseUrl) return strict ? Promise.reject(new Error('还没填云端代理地址')) : draft;
+    if (!fetchImpl) return strict ? Promise.reject(new Error('当前运行环境没有 fetch')) : draft;
     try {
       const c = new AbortController();
       const t = setTimeout(() => c.abort(), timeoutMs);
@@ -400,15 +419,35 @@ function createHttpProxyClient(opts) {
         signal: c.signal,
       });
       clearTimeout(t);
-      if (!res.ok) return draft;
-      const data = await res.json();
+      if (!res.ok) {
+        const bad = fail('代理返回 HTTP ' + res.status + '（' + baseUrl + '）');
+        return bad === null ? draft : bad;
+      }
+      let data = null;
+      try {
+        data = await res.json();
+      } catch {
+        data = null;
+      }
       const text = data && data.text;
-      if (!text) return draft;
+      if (!text) {
+        const empty = fail('代理没有返回润色结果（检查代理是否配好大模型 Key）');
+        return empty === null ? draft : empty;
+      }
       const out = String(text);
       // 双重护栏：客户端再判一次，确保永远输出淋语
       if (!retentionOk(draft, out, source)) return draft;
       return out;
-    } catch {
+    } catch (e) {
+      if (strict && e && e.message && e.message.indexOf('代理') === 0) throw e;
+      if (strict) {
+        throw new Error(
+          e && e.name === 'AbortError'
+            ? '代理请求超时（' + timeoutMs + 'ms）'
+            : '连不上代理：' + ((e && e.message) || e) + '（地址 ' + baseUrl + '，跨域或域名不可达都会被拦）',
+          { cause: e }
+        );
+      }
       return draft; // 代理不可达 / 超时 / 解析失败 → 原样返回草稿
     }
   }

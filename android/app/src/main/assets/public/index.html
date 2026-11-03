@@ -18,7 +18,7 @@
         渲染层不发任何跨域请求。
       · 没有 Cordova 遗留的 gap: 与 ssl.gstatic.com。
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval'; style-src 'self'; img-src 'self' data: blob: content:; media-src 'self' data: blob:; connect-src 'self' data: blob:;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self' 'unsafe-eval'; style-src 'self'; img-src 'self' data: blob: content:; media-src 'self' data: blob:; connect-src 'self' data: blob: https: wss:;" />
   <title>淋语翻译器</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,6 +33,8 @@
       <div class="stat" v-if="currentStat">{{ currentStat.label }} {{ currentStat.count }} {{ currentStat.unit }}</div>
       <span class="mode-chip" :class="{ on: isDev }">{{ isDev ? '开发者模式' : '只读' }}</span>
       <button class="gear orient" v-if="orientSupported" :title="orient === 'landscape' ? '切换到竖屏' : '切换到横屏'" :aria-label="orient === 'landscape' ? '切换到竖屏' : '切换到横屏'" @click="toggleOrient"><i class="oi" :class="{ land: orient === 'landscape' }"></i></button>
+      <!-- 版本公告：只能由用户点这个按钮打开，任何初始化流程都不许把它置为 true -->
+      <button class="gear announce" title="版本公告" aria-label="版本公告" @click="openChangelog"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="m3 11 18-5v12L3 14v-3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" /><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" /></svg></button>
       <button class="gear" title="设置（Ctrl+,）" @click="openSettings">⚙</button>
     </header>
 
@@ -632,9 +634,15 @@
           「上下文消歧」「LLM 润色」开关在翻译页工具栏。桌面端两种引擎任选：
           <b>本机 Ollama</b>（不花钱，但要装模型）或 <b>智谱 GLM 直连</b>（填个 Key 就能用，不用装 Ollama）。
         </p>
+        <p class="setting-desc" v-else-if="!browserWeb">
+          「上下文消歧」「LLM 润色」开关在翻译页工具栏。手机 App 没有本机模型，润色走
+          <b>智谱 GLM 直连</b>（App 用原生 HTTP，不受浏览器跨域限制）或下面的云端代理地址。
+        </p>
         <p class="setting-desc" v-else>
-          「上下文消歧」「LLM 润色」开关在翻译页工具栏。手机端没有本机模型，润色走
-          <b>智谱 GLM 直连</b>（填 Key 即可）或下面的云端代理地址。
+          「上下文消歧」「LLM 润色」开关在翻译页工具栏。浏览器里<b>无法直连智谱</b>——
+          open.bigmodel.cn 没有开放跨域（CORS），Key 填得再对也会被拦下。
+          默认走<b>云端代理</b>（本站中转，后端调用智谱 glm-4-flash 免费额度，Key 保存在服务端，
+          访客既不用下载也不用填 Key）；代理不可达时自动回落到内置通道。
         </p>
         <div class="theme-opts" v-if="!nonDesktop">
           <button class="theme-opt" :class="{ on: polishEngine === 'ollama' }" @click="setPolishEngine('ollama')">
@@ -644,6 +652,28 @@
             智谱 GLM 直连
           </button>
         </div>
+        <div class="theme-opts" v-if="nonDesktop">
+          <button v-if="browserWeb" class="theme-opt" :class="{ on: polishEngine === 'cloud' }" @click="setPolishEngine('cloud')">
+            内置通道（免 Key）
+          </button>
+          <button class="theme-opt" :class="{ on: polishEngine === 'proxy' }" @click="setPolishEngine('proxy')">
+            云端代理 · glm-4-flash
+          </button>
+          <button class="theme-opt" :class="{ on: polishEngine === 'zhipu' }" @click="setPolishEngine('zhipu')">
+            智谱 GLM 直连<template v-if="browserWeb">（仅 App）</template>
+          </button>
+        </div>
+
+        <template v-if="polishEngine === 'cloud'">
+          <p class="tip">
+            内置通道由本站云服务调模型，不用填 Key。模型由平台目录决定（目前是 GLM-5.3-Flash），
+            输出风格与智谱略有差异；润色仍会过同一套淋语护栏，不合格就保留原草稿。
+          </p>
+          <div class="auth-row">
+            <button class="ghost small" :disabled="probing" @click="probePolish">{{ probing ? '测试中…' : '测试连接' }}</button>
+            <span class="live-badge" v-if="probeMsg">{{ probeMsg }}</span>
+          </div>
+        </template>
 
         <template v-if="polishEngine === 'zhipu'">
           <div class="auth-row">
@@ -658,6 +688,9 @@
             <button class="ghost small" :disabled="probing" @click="probePolish">{{ probing ? '测试中…' : '测试连接' }}</button>
             <span class="live-badge" v-if="probeMsg">{{ probeMsg }}</span>
           </div>
+          <p class="tip" v-if="browserWeb">
+            当前是浏览器环境：智谱接口没有 CORS 头，这里的直连一定会失败（不是 Key 的问题）。要真用，请切到「云端代理」。
+          </p>
           <p class="tip">Key 只存在本机 linyu.db（手机端存在 App 私有存储），不外传；换设备要重填。测试连接会用「救命，我气死了。」跑一遍看看效果。</p>
         </template>
         <p class="tip" v-else-if="!nonDesktop">用本机 Ollama 润色，模型自动从已装列表里选；可在下方填写自定义地址。</p>
@@ -665,8 +698,13 @@
         <div class="auth-row">
           <input v-model.trim="proxyUrl" placeholder="https://你的代理域名/polish（Web / 小程序端用）" style="flex:1 1 260px" />
           <button class="ghost small" @click="saveProxyUrl">保存地址</button>
+          <button class="ghost small" :disabled="probing" @click="probeProxy">{{ probing ? '测试中…' : '测试代理' }}</button>
         </div>
         <p class="tip">上面这个代理地址给 Web / 小程序 / 手机端用（Key 留服务端）；桌面端不看它。</p>
+        <p class="tip" v-if="browserWeb">
+          小程序端已有云函数 <code>polish</code>，在云开发控制台「HTTP 访问服务」给它加一个 <code>/polish</code> 路径，
+          把拿到的 https 地址填在这里即可，Key 不用暴露给浏览器。
+        </p>
 
         <template v-if="orientSupported">
           <div class="setting-divider"></div>
@@ -789,6 +827,27 @@
       </div>
     </div>
 
+    <!-- 版本公告弹窗：初始状态关闭，只在用户点顶栏「公告」按钮后出现（不自动弹、不做未读红点） -->
+    <div class="modal-mask" v-show="showChangelog" @click.self="closeChangelog">
+      <div class="modal changelog-modal">
+        <div class="modal-head">
+          <h3>版本公告</h3>
+          <button class="link" @click="closeChangelog">关闭</button>
+        </div>
+        <div class="changelog-body">
+          <div class="cl-meta" v-if="changelog.version">
+            <span class="cl-ver">v{{ changelog.version }}</span>
+            <span class="cl-date" v-if="changelog.date">{{ changelog.date }}</span>
+          </div>
+          <p class="cl-summary" v-if="changelog.summary">{{ changelog.summary }}</p>
+          <ul class="cl-list" v-if="changelog.items.length">
+            <li v-for="(it, i) in changelog.items" :key="i">{{ it }}</li>
+          </ul>
+          <p class="tip" v-if="!changelog.items.length">暂无公告</p>
+        </div>
+      </div>
+    </div>
+
     <transition name="fade">
       <div class="toast" v-if="toast.text">
         <span>{{ toast.text }}</span>
@@ -834,10 +893,13 @@
   <script src="core/lore-extra21.js"></script>
   <script src="core/lore-extra23.js"></script>
   <script src="core/lore-extra24.js"></script>
+  <script src="core/lore-extra25.js"></script>
   <script src="core/lore.js"></script>
   <!-- 音乐板块数据（生成物：scripts/build-music.mjs ← src/core/music-douyin.json）
        纯静态数据 + 纯函数，不依赖 db / 网络；缺失时音乐页自动降级成空态，不影响其余页面 -->
   <script src="core/music.js"></script>
+  <!-- 版本公告数据（scripts/build-changelog.mjs 从 CHANGELOG.md 生成，跟随 package.json 版本） -->
+  <script src="core/changelog.js"></script>
   <script src="core/tokenizer.js"></script>
   <script src="core/variant.js"></script>
   <script src="core/translator.js"></script>

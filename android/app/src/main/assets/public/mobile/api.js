@@ -196,6 +196,164 @@
       };
     }
 
+    // ---- 内置云通道（WorkBuddy 云服务 LLM，免 Key）----
+    // 浏览器直连智谱会被 CORS 拦死，代理又需要用户自己有后端。
+    // 云服务的数据面与本页同源（endpoint 就是站点域名），SDK 由构建脚本注入，
+    // publishableKey 只标识应用、服务端按 Origin 校验，放在前端是安全的。
+    let _cloud = null;
+    function cloudClient() {
+      if (_cloud) return _cloud;
+      // cloudSync.js 已经建好实例就复用，避免同页两个 client
+      if (root.LINYU_CLOUD_CLIENT) {
+        _cloud = root.LINYU_CLOUD_CLIENT;
+        return _cloud;
+      }
+      const WBC = root.WorkBuddyCloud;
+      const cfg = root.LINYU_CLOUD;
+      if (!WBC || !cfg || !cfg.endpoint || !cfg.publishableKey) return null;
+      if (typeof WBC.createWorkBuddyCloud !== 'function') return null;
+      _cloud = WBC.createWorkBuddyCloud({
+        endpoint: cfg.endpoint,
+        publishableKey: cfg.publishableKey,
+        oauthRelayBaseUrl: cfg.oauthRelayBaseUrl,
+      });
+      return _cloud;
+    }
+
+    // 走云服务跑一次润色：SDK 只支持流式，这里把增量拼成整句再交给同一套护栏。
+    // ---- 结果缓存：外部访客量大，同一句反复润色没必要每次都烧额度 ----
+    // key = 原文 + 草稿（草稿本身已由本地引擎确定性生成，同句必同草稿）。
+    // 存 localStorage 让刷新/二次访问也命中；写失败（隐私模式 / 配额满）就只留内存。
+    const PCACHE_KEY = 'linyu.polish.cache.v1';
+    const PCACHE_MAX = 300;
+    let _pcache = null;
+
+    function pcacheLoad() {
+      if (_pcache) return _pcache;
+      _pcache = {};
+      try {
+        const raw = root.localStorage && root.localStorage.getItem(PCACHE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === 'object') _pcache = parsed;
+        }
+      } catch {
+        _pcache = {};
+      }
+      return _pcache;
+    }
+
+    function pcacheGet(k) {
+      const c = pcacheLoad();
+      const hit = c[k];
+      return hit && typeof hit.t === 'string' ? hit.t : '';
+    }
+
+    function pcacheSet(k, t) {
+      const c = pcacheLoad();
+      c[k] = { t, at: Date.now() };
+      const keys = Object.keys(c);
+      if (keys.length > PCACHE_MAX) {
+        // 简单淘汰：按写入时间丢掉最旧的一半，避免无限涨
+        keys
+          .sort((a, b) => (c[a].at || 0) - (c[b].at || 0))
+          .slice(0, keys.length - Math.floor(PCACHE_MAX * 0.7))
+          .forEach((x) => delete c[x]);
+      }
+      try {
+        root.localStorage && root.localStorage.setItem(PCACHE_KEY, JSON.stringify(c));
+      } catch {
+        /* 存不下不影响本会话的内存命中 */
+      }
+    }
+
+    // 模型目录一次会话只拉一次（每次润色都拉一遍纯属浪费一次往返）
+    let _modelId = '';
+
+    async function cloudModelId(cloud) {
+      if (_modelId) return _modelId;
+      const list = await cloud.llm.models.list();
+      const usable = (list || []).filter((m) => m && m.disabled !== true);
+      if (!usable.length) throw new Error('云服务没有可用模型');
+      // 目录里第一个是 auto（平台路由），润色要风格稳定，优先固定 GLM 系：
+      // 实测 glm-5.3-flash 单句 1.9s，输出「救命惹，本可气到跺脚厚。」能过护栏。
+      const PREFER = ['glm-5.3-flash', 'glm-4.6', 'glm-4.7', 'glm-5.0', 'glm-5.2'];
+      const model =
+        usable.find((m) => PREFER.indexOf(m.id) >= 0) ||
+        usable.find((m) => /^glm/i.test(String(m.id))) ||
+        usable[0];
+      _modelId = String(model.id);
+      return _modelId;
+    }
+
+    // 把云服务抛出的原始错误翻成用户看得懂的一句话（设置页与 toast 共用）
+    function cloudErrorText(e) {
+      const code = String((e && ((e.error && e.error.code) || e.code || e.status)) || '');
+      const msg = String((e && ((e.error && e.error.message) || e.message)) || e || '');
+      if (/429|rate.?limit|too.?many/i.test(code + ' ' + msg)) {
+        return '润色通道当前太挤（限流），过一会儿再点一次';
+      }
+      if (/402|403|quota|exceed|balance|insufficient/i.test(code + ' ' + msg)) {
+        return '内置润色额度已用完，可改用「云端代理」或自己填 Key';
+      }
+      if (/401|unauthor/i.test(code + ' ' + msg)) return '内置通道鉴权失败';
+      if (/timeout|abort/i.test(code + ' ' + msg)) return '内置通道超时，稍后再试';
+      return '内置通道不可用：' + (msg || code || '未知原因');
+    }
+
+    // 流式接口本身没有超时控制：网络卡住时 await 会一直挂着，翻译按钮一直转圈。
+    // 外部访客不能等太久，15s 还没出就放弃（草稿照常显示）。
+    function withTimeout(promise, ms, msg) {
+      let timer = null;
+      const guard = new Promise((_resolve, reject) => {
+        timer = setTimeout(() => reject(new Error(msg)), ms);
+      });
+      return Promise.race([promise, guard]).finally(() => {
+        if (timer) clearTimeout(timer);
+      });
+    }
+
+    async function cloudPolish(source, draft) {
+      const mod = root.LINYU_POLISH;
+      if (!mod || !mod.buildPolishMessages) throw new Error('润色模块未加载');
+
+      const key = String(source || '') + '\u0000' + String(draft || '');
+      const cached = pcacheGet(key);
+      if (cached) return cached;
+
+      const cloud = cloudClient();
+      if (!cloud) throw new Error('内置通道未就绪（云 SDK 没加载）');
+
+      try {
+        const model = await cloudModelId(cloud);
+        let text = '';
+        await withTimeout(
+          (async () => {
+            const stream = cloud.llm.chat.completions.create({
+              model,
+              messages: mod.buildPolishMessages({ source, draft }),
+              stream: true,
+              temperature: 0.45,
+            });
+            for await (const chunk of stream) {
+              const delta = chunk && chunk.choices && chunk.choices[0] && chunk.choices[0].delta;
+              if (delta && delta.content) text += delta.content;
+            }
+          })(),
+          15000,
+          '内置通道超时'
+        );
+        const out = mod.cleanPolishOutput ? mod.cleanPolishOutput(text) : String(text || '').trim();
+        if (!out) return draft;
+        if (mod.retentionOk && !mod.retentionOk(draft, out, source)) return draft;
+        // 只缓存「过了护栏的有效润色」，护栏拦下的不缓存，免得下次直接拿到草稿
+        pcacheSet(key, out);
+        return out;
+      } catch (e) {
+        throw new Error(cloudErrorText(e), { cause: e });
+      }
+    }
+
     // 按偏好造一个润色客户端；返回 null 表示「没配置，别调模型」
     function pickPolishClient(opts) {
       const mod = root.LINYU_POLISH;
@@ -217,16 +375,76 @@
       }
 
       if (engine === 'ollama') return null; // 手机/网页没有本机 Ollama，交给上层提示
-      const url = String(o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || '').trim();
+      // engine === 'proxy'（云端代理）以及未指定引擎时的兜底，都按代理地址走。
+      // 没存过地址时用同源的 /polish —— 访客不用进设置页填任何东西就能用上 glm-4-flash。
+      const url = resolveProxyUrl(
+        o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || DEFAULT_PROXY_PATH
+      );
       if (!url || !mod.createHttpProxyClient) return null;
       return mod.createHttpProxyClient({ baseUrl: url });
     }
 
+    // 同源润色代理（linyu-server 一体服务的 /polish），没配置过地址时用它
+    const DEFAULT_PROXY_PATH = '/polish';
+
+    // 平台的访问网关要求每个请求都带 sharecode，连 /polish 这种接口也不例外，
+    // 不带会直接返回「链接不完整」的 HTML。同源相对路径就自动把当前页的
+    // sharecode 带上；用户填的绝对地址（自己的代理）原样使用，不动它。
+    function resolveProxyUrl(raw) {
+      const url = String(raw || '').trim();
+      if (!url || url.charAt(0) !== '/') return url;
+      if (/[?&]sharecode=/.test(url)) return url;
+      let sc = '';
+      try {
+        const sp = new root.URLSearchParams((root.location && root.location.search) || '');
+        sc = sp.get('sharecode') || '';
+      } catch {
+        /* 取不到就当没有，退回不带参数的地址 */
+      }
+      return sc ? url + (url.indexOf('?') >= 0 ? '&' : '?') + 'sharecode=' + encodeURIComponent(sc) : url;
+    }
+
+    // 代理通道探测失败后本次会话不再重试：否则每翻一句都要先白等一次失败往返。
+    let _proxyDead = false;
+
     function makeProxyPolish() {
       return async (source, draft) => {
-        const client = pickPolishClient();
-        if (!client) return draft;
-        return client.polish(source, draft);
+        // 缓存放在最外层：之前只挂在 cloudPolish 里，走代理通道时完全绕过，
+        // 同一句第二次照样重算（实测 4.3s）。这里先查一次，两条通道共享同一份缓存。
+        const cacheKey = String(source || '') + '\u0000' + String(draft || '');
+        const hit = pcacheGet(cacheKey);
+        if (hit) return hit;
+
+        // 默认引擎：手机上没得选（没有本地模型），浏览器直连必被 CORS 拦，
+        // 所以「没设置过」就走同源代理 /polish（后端 glm-4-flash，免费额度）。
+        // 这个默认值必须和渲染层 polishEngine 的初值一致，否则 UI 显示「云端代理」
+        // 而底层偷偷走内置通道 —— 之前就是这里不一致，/polish 一次都没被调用过。
+        const engine = String(readPolishPref('polishEngine', 'proxy') || 'proxy').toLowerCase();
+        if (engine === 'cloud' || engine === 'ollama') {
+          // 抛出而不是吞掉：service.polishDraft 会把原因写进 error 字段，
+          // 「润色 ♥」按钮才能显示「额度用完了」「模型没就绪」而不是静默无反应。
+          return await cloudPolish(source, draft);
+        }
+
+        // 代理通道：调自己的中转（智谱 glm-4-flash，Key 在服务端）。
+        // 代理没绑好 / 超时 / 被限流时自动回退内置通道 —— 外部访客不该因为
+        // 服务端没配好就看到「润色没反应」，宁可先用平台模型顶上。
+        if (!_proxyDead) {
+          const client = pickPolishClient();
+          if (!client) {
+            _proxyDead = true;
+          } else {
+            try {
+              const text = await client.polish(source, draft);
+              // 只缓存真正的改写结果；返回草稿说明护栏拦了，下次仍值得重试
+              if (text && text !== draft) pcacheSet(cacheKey, text);
+              return text;
+            } catch {
+              _proxyDead = true;
+            }
+          }
+        }
+        return await cloudPolish(source, draft);
       };
     }
 
@@ -240,7 +458,44 @@
         throw new Error('手机端没有本机 Ollama，请改用「智谱 GLM 直连」或云端代理');
       }
       const mod = root.LINYU_POLISH;
-      if (!mod || !mod.createOpenAIChatClient) throw new Error('润色模块未加载（core/llm-polish.js）');
+      if (!mod) throw new Error('润色模块未加载（core/llm-polish.js）');
+
+      // 内置云通道：免 Key，直接跑样例
+      if (engine === 'cloud') {
+        const t0c = Date.now();
+        const textc = await cloudPolish(PROBE_SAMPLE.source, PROBE_SAMPLE.draft);
+        return {
+          engine: 'cloud',
+          ms: Date.now() - t0c,
+          source: PROBE_SAMPLE.source,
+          draft: PROBE_SAMPLE.draft,
+          text: textc,
+          changed: textc !== PROBE_SAMPLE.draft,
+        };
+      }
+
+      // 云端代理：同样跑一遍样例，把 HTTP 状态 / 超时 / 空结果的原因带回去
+      if (engine === 'proxy') {
+        // 与正式润色一致：没配置过就用同源 /polish，测试连接才测得到真实链路
+        const url = resolveProxyUrl(
+          o.polishProxyUrl != null ? o.polishProxyUrl : readPolishPref('polishProxyUrl', '') || DEFAULT_PROXY_PATH
+        );
+        if (!url) throw new Error('还没填云端代理地址');
+        if (!mod.createHttpProxyClient) throw new Error('润色模块未加载（core/llm-polish.js）');
+        const pc = mod.createHttpProxyClient({ baseUrl: url, strict: true, fetchImpl: nativeFetch(30000) });
+        const t1 = Date.now();
+        const text1 = await pc.polish(PROBE_SAMPLE.source, PROBE_SAMPLE.draft);
+        return {
+          engine: pc.name,
+          ms: Date.now() - t1,
+          source: PROBE_SAMPLE.source,
+          draft: PROBE_SAMPLE.draft,
+          text: text1,
+          changed: text1 !== PROBE_SAMPLE.draft,
+        };
+      }
+
+      if (!mod.createOpenAIChatClient) throw new Error('润色模块未加载（core/llm-polish.js）');
       const client = pickPolishClient({
         engine: 'zhipu',
         strict: true,

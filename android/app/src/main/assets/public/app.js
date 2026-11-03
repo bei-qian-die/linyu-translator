@@ -34,20 +34,46 @@ createApp({
     const liveOn = ref(true);
     const trace = ref(null);
     const uncovered = ref([]);
+    // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 的 createApi 提供，
+    // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
+    // 坑：Web 端在 db 初始化完成前，window.api 是 webEntry.js 挂的占位 Proxy，
+    // 它的 isCapacitor 是【函数】(返回 false) 而不是布尔，`typeof === 'boolean'` 会判成
+    // 桌面环境 —— 于是浏览器里也冒出「本机 Ollama」选项、润色默认关。三种形态都认：
+    //   占位 Proxy：__isStub === true、isCapacitor 是函数
+    //   真实 api  ：isCapacitor 是布尔
+    //   Electron  ：两者都没有 → 桌面
+    const __api = window.api || {};
+    const nonDesktop =
+      __api.__isStub === true ||
+      typeof __api.isCapacitor === 'boolean' ||
+      typeof __api.isCapacitor === 'function';
     // Phase 1：上下文消歧开关（默认关）。开启后走别名/语境选词，消除「每句都本可」的单调生硬。
     const disamOn = ref(false);
-    // Phase 2：LLM 润色开关（默认关）。开启后正式翻译会调用本地 Ollama / 云端代理做流畅度润色。
-    const polishOn = ref(false);
+    // Phase 2：LLM 润色开关。桌面默认关（没装 Ollama 会白等），
+    // 手机 / 浏览器默认开：内置通道免 Key，外部访客不用去工具栏找开关就能直接看到润色效果。
+    const polishOn = ref(nonDesktop);
     const polishedFlag = ref(false);
     // 手动润色按钮的进行态（点一次润色，不依赖上面的开关）
     const polishing = ref(false);
-    // 云端润色代理地址（仅 Web / 小程序端需要；桌面端不看它）。
-    const proxyUrl = ref('');
-    // 非桌面（安卓 WebView / 浏览器）：window.api 由 src/mobile/api.js 提供，
-    // 它带 isCapacitor 布尔字段；Electron preload 没有这个字段 —— 用它区分两种运行环境。
-    const nonDesktop = typeof window.api.isCapacitor === 'boolean';
-    // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱 GLM 直连（填 Key 即用）
-    const polishEngine = ref(nonDesktop ? 'zhipu' : 'ollama');
+    // 安卓 App 里 Capacitor 的原生 HTTP 通道能绕开 CORS；纯浏览器没有这条路。
+    // 智谱 open.bigmodel.cn 不返回任何 Access-Control-Allow-* 头（实测 OPTIONS 无 ACAO），
+    // 所以浏览器直连无论 Key 对不对都会被拦 —— 必须走云端代理。
+    const capNative = Boolean(
+      window.Capacitor &&
+        (typeof window.Capacitor.isNativePlatform === 'function'
+          ? window.Capacitor.isNativePlatform()
+          : window.Capacitor.platform && window.Capacitor.platform !== 'web')
+    );
+    const browserWeb = nonDesktop && !capNative;
+    // 润色代理默认地址：同源的 /polish（linyu-server 一体服务里跑着智谱 glm-4-flash）。
+    // 用相对路径而不是完整域名，是为了换域名/换部署都不改代码；同源也就没有跨域问题，
+    // Key 只存在服务端进程里，访客既不用下载也不用填 Key。
+    const DEFAULT_PROXY_URL = '/polish';
+    // 云端润色代理地址（仅 Web / 小程序 / 手机端需要；桌面端不看它）。
+    const proxyUrl = ref(nonDesktop ? DEFAULT_PROXY_URL : '');
+    // 润色引擎：'ollama' 本机模型（仅桌面）/ 'zhipu' 智谱直连 / 'proxy' 云端代理 / 'cloud' 内置免 Key 通道
+    // 浏览器默认走 cloud：它和页面同源，不受 CORS 与 CSP 的跨域限制，开箱即用。
+    const polishEngine = ref(nonDesktop ? (browserWeb ? 'proxy' : 'zhipu') : 'ollama');
     const zhipuKey = ref('');
     const zhipuBase = ref('https://open.bigmodel.cn/api/paas/v4');
     const zhipuModel = ref('glm-4-flash');
@@ -88,6 +114,33 @@ createApp({
     function openSettings() {
       showSettings.value = true;
       if (isDev.value) loadBackups();
+    }
+
+    // ---- 版本公告（只读静态数据，不进库）----
+    // 内容来自 core/changelog.js（由 scripts/build-changelog.mjs 从根目录 CHANGELOG.md 生成），
+    // 和 music 一样不落库：它不是用户数据，不该被导出 / 备份 / 同步带着跑。
+    // 老打包产物没有这个文件时 window.CHANGELOG_DATA 不存在 → 显示「暂无公告」，不抛错。
+    //
+    // 硬约束：showChangelog 初始必须是 false，且全文件只有 openChangelog() 会把它置 true。
+    // 进 App、刷新页面、检测到版本变化都不许自动打开——没有未读红点，也没有首次进入引导。
+    const changelogData = (typeof window !== 'undefined' && window.CHANGELOG_DATA) || null;
+    const changelog =
+      changelogData && changelogData.version
+        ? {
+            version: String(changelogData.version),
+            date: String(changelogData.date || ''),
+            summary: String(changelogData.summary || ''),
+            items: Array.isArray(changelogData.items)
+              ? changelogData.items.filter((t) => typeof t === 'string' && t.trim())
+              : [],
+          }
+        : { version: '', date: '', summary: '', items: [] };
+    const showChangelog = ref(false);
+    function openChangelog() {
+      showChangelog.value = true;
+    }
+    function closeChangelog() {
+      showChangelog.value = false;
     }
 
     // ---- 屏幕方向（原生 App 才能锁；桌面 supported=false，按钮不渲染）----
@@ -351,11 +404,13 @@ createApp({
     }
 
     // 桌面端润色引擎切换：'ollama' 本机模型 / 'zhipu' 智谱直连
+    const ENGINE_LABEL = { ollama: '本机 Ollama', zhipu: '智谱 GLM 直连', proxy: '云端代理', cloud: '内置通道（免 Key）' };
+
     function setPolishEngine(key) {
-      polishEngine.value = key === 'zhipu' ? 'zhipu' : 'ollama';
+      polishEngine.value = ENGINE_LABEL[key] ? key : nonDesktop ? 'zhipu' : 'ollama';
       probeMsg.value = '';
       window.api.setPref('polishEngine', JSON.stringify(polishEngine.value)).catch(() => {});
-      say(polishEngine.value === 'zhipu' ? '润色引擎：智谱 GLM 直连' : '润色引擎：本机 Ollama');
+      say('润色引擎：' + ENGINE_LABEL[polishEngine.value]);
     }
 
     // 保存智谱配置（Key 只存本机库；输入框是 password，不写进任何日志）
@@ -373,18 +428,48 @@ createApp({
     // 测试连接：用固定样例真跑一次，成功就把润色结果贴出来，失败显示原因
     async function probePolish() {
       if (probing.value) return;
+      const engine = ['proxy', 'cloud'].indexOf(polishEngine.value) >= 0 ? polishEngine.value : 'zhipu';
+      // 浏览器直连智谱一定被 CORS 拦，别让请求真的发出去白等 30 秒
+      if (engine === 'zhipu' && browserWeb) {
+        probeMsg.value = '✗ 浏览器不允许跨域直连智谱（对方接口没开 CORS），Key 正确也连不上。请用「内置通道」或安卓 App';
+        return;
+      }
       probing.value = true;
       probeMsg.value = '';
       try {
         const r = await call(
           window.api.probePolish({
-            engine: 'zhipu',
+            engine,
+            polishProxyUrl: String(proxyUrl.value || '').trim(),
             zhipuBaseUrl: String(zhipuBase.value || '').trim(),
             zhipuModel: String(zhipuModel.value || '').trim(),
             zhipuApiKey: String(zhipuKey.value || '').trim(),
           })
         );
-        probeMsg.value = (r && r.changed ? '✓ ' : '· ') + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
+        if (r && r.changed === false) {
+          probeMsg.value = '· 通道通了（' + (r.ms || 0) + 'ms），但输出与草稿相同，检查代理侧模型是否可用';
+        } else {
+          probeMsg.value = '✓ ' + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
+        }
+      } catch (e) {
+        probeMsg.value = '✗ ' + ((e && e.message) || e);
+      } finally {
+        probing.value = false;
+      }
+    }
+
+    // 代理地址单独测试：地址填错 / 域名不通时不用先保存再猜
+    async function probeProxy() {
+      if (probing.value) return;
+      probing.value = true;
+      probeMsg.value = '';
+      try {
+        const r = await call(
+          window.api.probePolish({ engine: 'proxy', polishProxyUrl: String(proxyUrl.value || '').trim() })
+        );
+        probeMsg.value = r && r.changed === false
+          ? '· 代理通了（' + (r.ms || 0) + 'ms），但没改动文本，检查代理侧模型'
+          : '✓ ' + (r.ms || 0) + 'ms：' + ((r && r.text) || '');
       } catch (e) {
         probeMsg.value = '✗ ' + ((e && e.message) || e);
       } finally {
@@ -524,6 +609,15 @@ createApp({
       // 第二十四轮：淋安京的 9 个专属子语义位（顺序＝词库里的阅读顺序）
       '淋安京式神位分', '淋安京式神淋名', '淋安京自称体系', '淋安京对局黑话', '淋安京段位赛制',
       '淋安京装备经济', '淋安京地图野区', '淋安京整活梗', '淋安京通讯录tag',
+      // 第二十五轮：四分区同期开区 —— 淋可梦 7 位 / 奥奇淋说 7 位 / 淋角洲行动 7 位 / divatag 6 位
+      '淋可梦精灵淋名', '淋可梦属性质阶', '淋可梦对战术语', '淋可梦图鉴版本',
+      '淋可梦自称体系', '淋可梦整活梗', '淋可梦通讯录tag',
+      '奥奇精灵淋名', '奥奇属性系别', '奥奇职业定位', '奥奇战力培养',
+      '奥奇自称体系', '奥奇整活梗', '奥奇通讯录tag',
+      '淋角洲干员位分', '淋角洲干员淋名', '淋角洲枪械装备', '淋角洲撤离术语',
+      '淋角洲地图点位', '淋角洲自称体系', '淋角洲整活梗',
+      'diva人物淋名', 'diva称号位分', 'diva作品金曲', 'diva饭圈黑话', 'diva自称体系', 'diva整活梗',
+      '淋可梦', '奥奇淋说', 'divatag',
       '守望淋锋', '瓦罗淋特', '淋威争锋', '街头霸淋', '淋月峡谷', '淋安京', '三角淋行动',
       '淋角洲行动', '星奴谷', '绝区淋', '淋潮', '淋日方舟', '阴淋师', '洛克淋国',
       // 第十三轮补全语义位后新增的分区（人称/语气之后、游戏分区之后各归一段）
@@ -1476,11 +1570,19 @@ createApp({
       historyLimit.value = Number(parsePref(prefs['history.limit'], 200)) || 200;
       if (!parsePref(prefs['ui.live'], true)) liveOn.value = false;
       if (parsePref(prefs['disambiguate'], false)) disamOn.value = true;
-      if (parsePref(prefs['polishEnabled'], false)) polishOn.value = true;
-      proxyUrl.value = String(parsePref(prefs['polishProxyUrl'], '') || '').trim();
-      polishEngine.value = parsePref(prefs['polishEngine'], nonDesktop ? 'zhipu' : 'ollama') === 'zhipu' ? 'zhipu' : 'ollama';
-      // 手机 / 网页没有本机 Ollama，老偏好里若还存着 ollama 就自动纠回直连
-      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = 'zhipu';
+      // 外部访客默认开润色：他们不会主动去工具栏找这个开关，而内置通道免 Key、
+      // 开了就能直接看到效果。桌面端保持默认关（没装 Ollama 会白等）。
+      polishOn.value = parsePref(prefs['polishEnabled'], nonDesktop) === true;
+      proxyUrl.value = String(
+        parsePref(prefs['polishProxyUrl'], nonDesktop ? DEFAULT_PROXY_URL : '') || ''
+      ).trim();
+      const engineDefault = nonDesktop ? (browserWeb ? 'proxy' : 'zhipu') : 'ollama';
+      const engineSaved = String(parsePref(prefs['polishEngine'], engineDefault) || '').toLowerCase();
+      polishEngine.value = ENGINE_LABEL[engineSaved] ? engineSaved : engineDefault;
+      // 手机 / 网页没有本机 Ollama，老偏好里若还存着 ollama 就自动纠回可用引擎
+      if (nonDesktop && polishEngine.value === 'ollama') polishEngine.value = browserWeb ? 'proxy' : 'zhipu';
+      // 纯浏览器直连智谱必被 CORS 拦，老偏好若停在 zhipu 也纠到内置通道
+      if (browserWeb && polishEngine.value === 'zhipu') polishEngine.value = 'proxy';
       zhipuKey.value = String(parsePref(prefs['zhipuApiKey'], '') || '').trim();
       zhipuBase.value = String(parsePref(prefs['zhipuBaseUrl'], 'https://open.bigmodel.cn/api/paas/v4') || '') || 'https://open.bigmodel.cn/api/paas/v4';
       zhipuModel.value = String(parsePref(prefs['zhipuModel'], 'glm-4-flash') || '') || 'glm-4-flash';
@@ -1520,7 +1622,8 @@ createApp({
           e.preventDefault();
           openSettings();
         } else if (e.key === 'Escape') {
-          if (showSettings.value) showSettings.value = false;
+          if (showChangelog.value) closeChangelog();
+          else if (showSettings.value) showSettings.value = false;
           else if (view.value === 'heroes' && selectedHero.value) backToHeroes();
           else if (view.value === 'heroes' && heroEditing.value) cancelHeroForm();
         }
@@ -1541,7 +1644,7 @@ createApp({
 
     return {
       tabs, view, switchView,
-      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, nonDesktop, trace, uncovered, addWordFor,
+      input, output, loading, previewing, isPreview, liveOn, toggleLive, disamOn, toggleDisam, polishOn, togglePolish, polishedFlag, polishing, polishNow, proxyUrl, saveProxyUrl, polishEngine, setPolishEngine, zhipuKey, zhipuBase, zhipuModel, probing, probeMsg, saveZhipu, probePolish, probeProxy, nonDesktop, browserWeb, trace, uncovered, addWordFor,
       samples, doTranslate, copyOutput,
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,
@@ -1574,6 +1677,7 @@ createApp({
       check, checkIssues, runInspect, cleanHeroWords, deleteInvalidWords, openLogs,
       toast, say, doUndo, appVersion,
       theme, themeList, setTheme, showSettings, openSettings,
+      changelog, showChangelog, openChangelog, closeChangelog,
       orientSupported, orient, autoRotate, toggleOrient, toggleAutoRotate,
     };
   },

@@ -8,12 +8,36 @@ const { readHistory } = require('../../services/history');
 const { confirm, toast, chromeMetrics } = require('../../utils/ui');
 const { syncChrome } = require('../../utils/pageBase');
 
+// 版本公告：与桌面 / 安卓 / Web 同一份内容，由 scripts/build-changelog.mjs 从 CHANGELOG.md 生成。
+// 小程序没有构建链，只能 require 同步文件；老包里没有这个文件时降级成空公告（页面显示「暂无公告」），
+// 不让 about 页因为缺一个数据文件直接白屏。
+function readChangelog() {
+  try {
+    const raw = require('../../data/changelog');
+    return {
+      version: String(raw.version || ''),
+      date: String(raw.date || ''),
+      summary: String(raw.summary || ''),
+      items: Array.isArray(raw.items)
+        ? raw.items.filter((t) => typeof t === 'string' && t.trim())
+        : [],
+    };
+  } catch (err) {
+    return { version: '', date: '', summary: '', items: [] };
+  }
+}
+
+const changelog = readChangelog();
+
 Page({
   data: {
     theme: 'white',
     version,
     switchColor: accentFor('white'),
     counts,
+    // 公告弹层默认关闭：onLoad / onShow 都不许打开，只有用户点「版本公告」那一行才会开
+    changelog,
+    showChangelog: false,
     stats: [
       { num: counts.words, label: '词条' },
       { num: counts.rules, label: '句式' },
@@ -72,6 +96,18 @@ Page({
     this.setData({ live: on });
     toast(on ? '实时预览已开启' : '实时预览已关闭');
   },
+
+  // 公告层唯一的打开入口：用户点「版本公告」那一行
+  openChangelog() {
+    this.setData({ showChangelog: true });
+  },
+
+  closeChangelog() {
+    this.setData({ showChangelog: false });
+  },
+
+  // 面板自身的点击不冒泡到遮罩，否则点内容区也会关掉
+  noop() {},
 
   async clearAll() {
     const ok = await confirm({

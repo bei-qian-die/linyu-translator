@@ -116,6 +116,33 @@ createApp({
       if (isDev.value) loadBackups();
     }
 
+    // ---- 版本公告（只读静态数据，不进库）----
+    // 内容来自 core/changelog.js（由 scripts/build-changelog.mjs 从根目录 CHANGELOG.md 生成），
+    // 和 music 一样不落库：它不是用户数据，不该被导出 / 备份 / 同步带着跑。
+    // 老打包产物没有这个文件时 window.CHANGELOG_DATA 不存在 → 显示「暂无公告」，不抛错。
+    //
+    // 硬约束：showChangelog 初始必须是 false，且全文件只有 openChangelog() 会把它置 true。
+    // 进 App、刷新页面、检测到版本变化都不许自动打开——没有未读红点，也没有首次进入引导。
+    const changelogData = (typeof window !== 'undefined' && window.CHANGELOG_DATA) || null;
+    const changelog =
+      changelogData && changelogData.version
+        ? {
+            version: String(changelogData.version),
+            date: String(changelogData.date || ''),
+            summary: String(changelogData.summary || ''),
+            items: Array.isArray(changelogData.items)
+              ? changelogData.items.filter((t) => typeof t === 'string' && t.trim())
+              : [],
+          }
+        : { version: '', date: '', summary: '', items: [] };
+    const showChangelog = ref(false);
+    function openChangelog() {
+      showChangelog.value = true;
+    }
+    function closeChangelog() {
+      showChangelog.value = false;
+    }
+
     // ---- 屏幕方向（原生 App 才能锁；桌面 supported=false，按钮不渲染）----
     const orientSupported = ref(false);
     const orient = ref('portrait');
@@ -582,6 +609,15 @@ createApp({
       // 第二十四轮：淋安京的 9 个专属子语义位（顺序＝词库里的阅读顺序）
       '淋安京式神位分', '淋安京式神淋名', '淋安京自称体系', '淋安京对局黑话', '淋安京段位赛制',
       '淋安京装备经济', '淋安京地图野区', '淋安京整活梗', '淋安京通讯录tag',
+      // 第二十五轮：四分区同期开区 —— 淋可梦 7 位 / 奥奇淋说 7 位 / 淋角洲行动 7 位 / divatag 6 位
+      '淋可梦精灵淋名', '淋可梦属性质阶', '淋可梦对战术语', '淋可梦图鉴版本',
+      '淋可梦自称体系', '淋可梦整活梗', '淋可梦通讯录tag',
+      '奥奇精灵淋名', '奥奇属性系别', '奥奇职业定位', '奥奇战力培养',
+      '奥奇自称体系', '奥奇整活梗', '奥奇通讯录tag',
+      '淋角洲干员位分', '淋角洲干员淋名', '淋角洲枪械装备', '淋角洲撤离术语',
+      '淋角洲地图点位', '淋角洲自称体系', '淋角洲整活梗',
+      'diva人物淋名', 'diva称号位分', 'diva作品金曲', 'diva饭圈黑话', 'diva自称体系', 'diva整活梗',
+      '淋可梦', '奥奇淋说', 'divatag',
       '守望淋锋', '瓦罗淋特', '淋威争锋', '街头霸淋', '淋月峡谷', '淋安京', '三角淋行动',
       '淋角洲行动', '星奴谷', '绝区淋', '淋潮', '淋日方舟', '阴淋师', '洛克淋国',
       // 第十三轮补全语义位后新增的分区（人称/语气之后、游戏分区之后各归一段）
@@ -1586,7 +1622,8 @@ createApp({
           e.preventDefault();
           openSettings();
         } else if (e.key === 'Escape') {
-          if (showSettings.value) showSettings.value = false;
+          if (showChangelog.value) closeChangelog();
+          else if (showSettings.value) showSettings.value = false;
           else if (view.value === 'heroes' && selectedHero.value) backToHeroes();
           else if (view.value === 'heroes' && heroEditing.value) cancelHeroForm();
         }
@@ -1640,6 +1677,7 @@ createApp({
       check, checkIssues, runInspect, cleanHeroWords, deleteInvalidWords, openLogs,
       toast, say, doUndo, appVersion,
       theme, themeList, setTheme, showSettings, openSettings,
+      changelog, showChangelog, openChangelog, closeChangelog,
       orientSupported, orient, autoRotate, toggleOrient, toggleAutoRotate,
     };
   },

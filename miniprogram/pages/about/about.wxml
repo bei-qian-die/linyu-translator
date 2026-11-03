@@ -21,6 +21,21 @@
   </view>
 
   <view class="sec-head">
+    <text class="sec-title">版本公告</text>
+    <text class="sec-hint">这一版更新了什么</text>
+  </view>
+  <view class="notice-row" bindtap="openChangelog" hover-class="notice-row-hover">
+    <view class="notice-copy">
+      <view class="notice-name">
+        <text>版本公告</text>
+        <text wx:if="{{changelog.version}}" class="notice-ver">V{{changelog.version}}</text>
+      </view>
+      <view class="notice-desc">{{changelog.version ? changelog.date + ' · ' + changelog.summary : '暂无公告'}}</view>
+    </view>
+    <text class="notice-arrow">›</text>
+  </view>
+
+  <view class="sec-head">
     <text class="sec-title">外观</text>
     <text class="sec-hint">三种语气</text>
   </view>
@@ -114,4 +129,26 @@
   </view>
 
   <view class="about-foot">零广告 · 零账号 · 零上传<br />致敬每一份认真玩梗的快乐 <text class="foot-heart">♥</text></view>
+
+  <!-- 版本公告弹层：默认不渲染（showChangelog=false），只有点上面那一行才会展开 -->
+  <view class="notice-mask" wx:if="{{showChangelog}}" bindtap="closeChangelog">
+    <view class="notice-panel" catchtap="noop">
+      <view class="notice-panel-head">
+        <text class="notice-panel-title">版本公告</text>
+        <text class="notice-close" bindtap="closeChangelog">关闭</text>
+      </view>
+      <view class="notice-panel-meta" wx:if="{{changelog.version}}">
+        <text class="notice-panel-ver">V{{changelog.version}}</text>
+        <text class="notice-panel-date">{{changelog.date}}</text>
+      </view>
+      <scroll-view class="notice-panel-body" scroll-y>
+        <view class="notice-summary" wx:if="{{changelog.summary}}">{{changelog.summary}}</view>
+        <view class="notice-item" wx:for="{{changelog.items}}" wx:key="*this">
+          <text class="notice-dot">·</text>
+          <text class="notice-item-text">{{item}}</text>
+        </view>
+        <view class="notice-empty" wx:if="{{!changelog.items.length}}">暂无公告</view>
+      </scroll-view>
+    </view>
+  </view>
 </view>

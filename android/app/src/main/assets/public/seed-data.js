@@ -677,7 +677,11 @@ window.__SEED_DATA = {
       "linyu": "天后本后",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "人物/称呼类",
-      "pop": "低"
+      "pop": "低",
+      "alias": "淋淋、Jolin",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "唱歌",
@@ -1074,7 +1078,7 @@ window.__SEED_DATA = {
     {
       "zh": "姐妹",
       "linyu": "集美",
-      "alias": "集美、集美们、姐妹、解解、解解们、美美、美美们、集妹、姐妹们",
+      "alias": "集美、集美们、姐妹、解解、解解们、美美、美美们、集妹、姐妹们、姐妹花",
       "slot": "称呼类",
       "sense": "\"集美\"是\"姐妹\"的谐音（郭老师发扬全网），\"解解\"是\"姐姐\"的通假，gay 圈互称姐妹时尤爱用。",
       "source": "http://mp.weixin.qq.com/s?__biz=MzUyNTEwNjIxMg==&mid=2247483742&idx=3&sn=0c3f25da4446cb840bba1752cf9bb73e",
@@ -1213,7 +1217,11 @@ window.__SEED_DATA = {
       "linyu": "艳唱",
       "slot": "歌舞影视/戏谑/基础谐音替换",
       "pop": "低",
-      "sense": "“演唱”倒读并谐音成“艳唱”（一路艳唱到现在路人甲给了我很多很好的乌干达）。"
+      "sense": "“演唱”倒读并谐音成“艳唱”（一路艳唱到现在路人甲给了我很多很好的乌干达）。",
+      "alias": "concert",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "天后",
@@ -1221,8 +1229,11 @@ window.__SEED_DATA = {
       "slot": "人物/圈层黑话/调侃",
       "pop": "中",
       "sense": "对“天后”位格的夸张封号，属圈内最高级戏称。",
-      "alias": "办法天后、机制天后",
-      "source": "https://www.gamemale.com/archiver/tid-133550.html"
+      "alias": "办法天后、机制天后、diva",
+      "source": "https://www.gamemale.com/archiver/tid-133550.html",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "结婚",
@@ -1487,7 +1498,11 @@ window.__SEED_DATA = {
       "linyu": "阴雄",
       "slot": "游戏术语/构词法/基础谐音替换",
       "pop": "中",
-      "sense": "“英”→“阴”（《淋物大战僵湿：阴雄》），分区名“阴雄淋盟”用的就是这条替换。"
+      "sense": "“英”→“阴”（《淋物大战僵湿：阴雄》），分区名“阴雄淋盟”用的就是这条替换。",
+      "alias": "英",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "游戏",
@@ -1504,7 +1519,10 @@ window.__SEED_DATA = {
       "pop": "低",
       "alias": "皮、外观",
       "source": "https://www.bilibili.com/video/BV1qG4y1L7qS",
-      "sense": "武器与角色外观，瓦区消费的主体，语料里讨论量远超战术。"
+      "sense": "武器与角色外观，瓦区消费的主体，语料里讨论量远超战术。",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "队友",
@@ -1512,9 +1530,12 @@ window.__SEED_DATA = {
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "游戏术语/称呼类/基础谐音替换",
       "pop": "低",
-      "alias": "队伍、自家",
+      "alias": "队伍、自家、队",
       "source": "https://www.bilibili.com/video/BV1sDnR6JEUm",
-      "sense": "所有吐槽的源头，语料原句「这么努力在C结果队友全在送」。"
+      "sense": "所有吐槽的源头，语料原句「这么努力在C结果队友全在送」。",
+      "rel": [
+        "淋角洲行动"
+      ]
     },
     {
       "zh": "中路",
@@ -1533,7 +1554,11 @@ window.__SEED_DATA = {
       "slot": "游戏术语/称呼类",
       "pop": "低",
       "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
-      "sense": "祝类式神的本职说法，给团队增益和控制；也是装备六大类之一。"
+      "sense": "祝类式神的本职说法，给团队增益和控制；也是装备六大类之一。",
+      "alias": "奶",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "坦克",
@@ -1851,7 +1876,11 @@ window.__SEED_DATA = {
       "zh": "顶流",
       "linyu": "母体",
       "slot": "饭圈运营/圈层黑话",
-      "pop": "低"
+      "pop": "低",
+      "alias": "顶级流量",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "吸引力",
@@ -2006,7 +2035,11 @@ window.__SEED_DATA = {
       "linyu": "黑子",
       "slot": "称呼类/饭圈运营/贬义",
       "pop": "低",
-      "sense": "黑粉＝黑子（终于了解黑子为啥喜欢串他了）。"
+      "sense": "黑粉＝黑子（终于了解黑子为啥喜欢串他了）。",
+      "alias": "黑子",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "欧皇",
@@ -2112,7 +2145,11 @@ window.__SEED_DATA = {
       "linyu": "发烂发臭",
       "slot": "饭圈运营/贬义",
       "pop": "低",
-      "sense": "塌房之后的下场写作“发烂发臭惹”。"
+      "sense": "塌房之后的下场写作“发烂发臭惹”。",
+      "alias": "翻车",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "洗白",
@@ -2208,8 +2245,11 @@ window.__SEED_DATA = {
       "slot": "游戏术语/评价判断",
       "pop": "低",
       "sense": "强度判词（完颜慧德就是当前版本答案，造梗能力最强），句式表挂强度判词。",
-      "alias": "版本答案、T0、开荒顶配",
-      "source": "https://shike.it168.com/news/18763.html"
+      "alias": "版本答案、T0、开荒顶配、强势",
+      "source": "https://shike.it168.com/news/18763.html",
+      "rel": [
+        "淋可梦"
+      ]
     },
     {
       "zh": "气晕",
@@ -2237,7 +2277,11 @@ window.__SEED_DATA = {
       "linyu": "不给硬币小心被吸了噜",
       "slot": "饭圈运营/调侃/圈层黑话",
       "pop": "低",
-      "sense": "催投币的威胁式套话（不给硬币小心被吸了噜），“吸”是圈内动词。"
+      "sense": "催投币的威胁式套话（不给硬币小心被吸了噜），“吸”是圈内动词。",
+      "alias": "不氪",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "大赦天下",
@@ -2679,8 +2723,11 @@ window.__SEED_DATA = {
       "slot": "情绪/游戏术语/构词法",
       "pop": "低",
       "sense": "中间插一个“如”字，评论直接刷“破如防”，句式表把“我狸就这样破如防惹”列为破防句式。",
-      "alias": "红温",
-      "source": "https://www.bilibili.com/video/BV1qCn96NEaH"
+      "alias": "红温、崩",
+      "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "发癫",
@@ -2739,7 +2786,11 @@ window.__SEED_DATA = {
       "slot": "游戏术语/戏谑",
       "pop": "低",
       "sense": "“集火/干掉他”的整句写法（评论：即刻绞杀），句式表列绞杀句式。",
-      "source": "https://www.bilibili.com/read/cv4001799/"
+      "source": "https://www.bilibili.com/read/cv4001799/",
+      "alias": "秒一个",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "雪藏",
@@ -3167,7 +3218,11 @@ window.__SEED_DATA = {
       "linyu": "评论区",
       "slot": "饭圈运营/分区",
       "pop": "高",
-      "sense": "平台位置词直接沿用（无人问津的评论区），计数即通用词频。"
+      "sense": "平台位置词直接沿用（无人问津的评论区），计数即通用词频。",
+      "alias": "评论",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "弹幕",
@@ -3628,7 +3683,11 @@ window.__SEED_DATA = {
       "slot": "字母缩写/游戏术语/评价判断",
       "pop": "中",
       "sense": "强度榜最高档的写法，语料里小写 t0 直接排人（把辅助当宝放t0），句式表挂强度榜句式并带出处。",
-      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp"
+      "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
+      "alias": "一线",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "T1",
@@ -3702,27 +3761,43 @@ window.__SEED_DATA = {
       "zh": "超话",
       "linyu": "超话",
       "slot": "饭圈运营/分区",
-      "pop": "低"
+      "pop": "低",
+      "alias": "超话社区",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "签到",
       "linyu": "签到",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "饭圈运营",
-      "pop": "低"
+      "pop": "低",
+      "alias": "打卡",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "打投",
       "linyu": "打投",
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "饭圈运营",
-      "pop": "低"
+      "pop": "低",
+      "alias": "投票",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "控评",
       "linyu": "控评",
       "slot": "饭圈运营",
-      "pop": "低"
+      "pop": "低",
+      "alias": "刷评论",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "锦鲤",
@@ -3736,14 +3811,22 @@ window.__SEED_DATA = {
       "linyu": "擅追爱豆",
       "verify": "https://search.bilibili.com/all?keyword=%E7%A7%81%E7%94%9F+%E6%93%85%E8%BF%BD%E7%88%B1%E8%B1%86",
       "slot": "饭圈运营/称呼类/贬义",
-      "pop": "低"
+      "pop": "低",
+      "alias": "私生饭",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "站姐",
       "linyu": "资深跟拍粉",
       "verify": "https://search.bilibili.com/all?keyword=%E7%AB%99%E5%A7%90+%E8%B5%84%E6%B7%B1%E8%B7%9F%E6%8B%8D%E7%B2%89",
       "slot": "饭圈运营/称呼类",
-      "pop": "低"
+      "pop": "低",
+      "alias": "站子",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "毒唯",
@@ -3764,7 +3847,11 @@ window.__SEED_DATA = {
       "linyu": "为爱豆打 call",
       "verify": "https://search.bilibili.com/all?keyword=%E5%BA%94%E6%8F%B4+%E4%B8%BA%E7%88%B1%E8%B1%86%E6%89%93%20call",
       "slot": "饭圈运营/英文谐音",
-      "pop": "低"
+      "pop": "低",
+      "alias": "打 call",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "氪金",
@@ -3772,9 +3859,12 @@ window.__SEED_DATA = {
       "verify": "https://search.bilibili.com/all?keyword=%E6%B0%AA%E9%87%91+%E5%A4%A7%E9%87%8F%E5%85%85%E9%92%B1",
       "slot": "游戏术语/生活日常",
       "pop": "低",
-      "alias": "钞能力、氪佬、富婆",
+      "alias": "钞能力、氪佬、富婆、充钱",
       "source": "https://newsstroll.com/Game/377934.html",
-      "sense": "棱镜球 160 一个，普通玩家能省则省，只有「钞能力者」才取之不尽。"
+      "sense": "棱镜球 160 一个，普通玩家能省则省，只有「钞能力者」才取之不尽。",
+      "rel": [
+        "奥奇淋说"
+      ]
     },
     {
       "zh": "氪金大佬",
@@ -3898,7 +3988,11 @@ window.__SEED_DATA = {
       "linyu": "经典出圈画面",
       "verify": "https://search.bilibili.com/all?keyword=%E5%90%8D%E5%9C%BA%E9%9D%A2+%E7%BB%8F%E5%85%B8%E5%87%BA%E5%9C%88%E7%94%BB%E9%9D%A2",
       "slot": "饭圈运营/圈层黑话",
-      "pop": "低"
+      "pop": "低",
+      "alias": "经典",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "封神场面",
@@ -4136,7 +4230,7 @@ window.__SEED_DATA = {
     {
       "zh": "本仙女",
       "linyu": "本仙女",
-      "alias": "本小仙女、本仙子、本仙女儿、本仙、本小仙、本仙女儿儿",
+      "alias": "本小仙女、本仙子、本仙女儿、本仙、本小仙、本仙女儿儿、本可",
       "slot": "第一人称自称",
       "sense": "卖萌向第一人称，配合\"本宝宝\"\"人家\"体系，是圈内最出圈的一支自称。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -6016,7 +6110,7 @@ window.__SEED_DATA = {
     {
       "zh": "骑士精神",
       "linyu": "骑士精神",
-      "alias": "本质骑士精神",
+      "alias": "本质骑士精神、本质骑士",
       "slot": "圈层黑话",
       "sense": "淋淋歌曲名，也是\"本质骑士\"这一自称的出处。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -6314,13 +6408,16 @@ window.__SEED_DATA = {
       "pop": "低"
     },
     {
-      "zh": "三角淋行动",
-      "linyu": "三角淋行动",
-      "alias": "淋角洲行动",
-      "slot": "分区",
-      "sense": "《三角洲行动》在淋语区的两种写法，2025 年后新开的分区。",
+      "zh": "淋角洲行动",
+      "linyu": "淋角洲行动",
+      "alias": "三角淋行动、三角洲行动",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "《三角洲行动》在淋语区的规范名（淋角洲行动），早期写法「三角淋行动」保留为别名。",
       "source": "https://www.bilibili.com/video/BV1B6uMz8EhA",
-      "pop": "低"
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
     },
     {
       "zh": "星奴谷",
@@ -6454,7 +6551,7 @@ window.__SEED_DATA = {
     {
       "zh": "统统闪开",
       "linyu": "统统闪开",
-      "alias": "驾到、统统闪开！！",
+      "alias": "驾到、统统闪开！！、闪开",
       "slot": "调侃/戏谑",
       "sense": "宫斗登场套话搬进游戏区的产物，与\"驾到\"连用。",
       "source": "https://www.bilibili.com/video/BV1vugxzBEEp",
@@ -6466,7 +6563,7 @@ window.__SEED_DATA = {
     {
       "zh": "大沙田",
       "linyu": "大沙田",
-      "alias": "南宁市大沙田街道、决战！大沙田、决战大沙田",
+      "alias": "南宁市大沙田街道、决战！大沙田、决战大沙田、沙田",
       "slot": "圈层黑话",
       "sense": "周阴婷住址所在的南宁市良庆区街道名，淋语圈的打卡梗。",
       "source": "https://moegirl.uk/index.php?title=%E6%B7%8B%E6%96%87%E5%8C%96",
@@ -6603,11 +6700,14 @@ window.__SEED_DATA = {
     {
       "zh": "生图",
       "linyu": "生图",
-      "alias": "精修",
+      "alias": "精修、原图",
       "slot": "圈层黑话",
       "sense": "泛用/待确认：饭圈词\"生图（未修图）\"，在淋语圈用来给淋淋维权。",
       "source": "https://www.bilibili.com/video/BV1as4y1R76r",
-      "pop": "低"
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
     },
     {
       "zh": "外翻",
@@ -6714,7 +6814,7 @@ window.__SEED_DATA = {
     {
       "zh": "通讯录入侵",
       "linyu": "通讯录入侵",
-      "alias": "通讯录终于入侵XX了",
+      "alias": "通讯录终于入侵XX了、入侵",
       "slot": "圈层黑话",
       "sense": "形容淋语扩散到某个新游戏/新分区的说法，评论区见到新分区时的标准反应。",
       "source": "https://www.bilibili.com/video/BV1B6uMz8EhA",
@@ -8215,7 +8315,7 @@ window.__SEED_DATA = {
     {
       "zh": "地才",
       "linyu": "地才",
-      "alias": "地才宣言、不是天才是地才、地才、地才蓝、地才帽、努力一定会成功、是地才",
+      "alias": "地才宣言、不是天才是地才、地才、地才蓝、地才帽、努力一定会成功、是地才、淋淋",
       "slot": "圈层黑话",
       "sense": "出自蔡依林《地才》演唱会：不是天才，是地才。淋语里用来强调努力、自嘲天赋不足。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -8293,7 +8393,7 @@ window.__SEED_DATA = {
     {
       "zh": "那艺娜",
       "linyu": "那艺娜",
-      "alias": "娜娜、那艺娜老师",
+      "alias": "娜娜、那艺娜老师、抽象女王",
       "slot": "圈层黑话 / 人物",
       "sense": "淋语圈姐圈人物，与三梦奇缘的连麦/PK 是圈内名场面。",
       "source": "https://search.bilibili.com/all?keyword=%E9%82%A3%E8%89%BA%E5%A8%9C%20%E6%B7%8B%E8%AF%AD",
@@ -8462,9 +8562,9 @@ window.__SEED_DATA = {
     {
       "zh": "霉霉",
       "linyu": "霉霉",
-      "alias": "Taylor Swift、泰勒丝、我霉",
-      "slot": "圈层黑话 / 人物",
-      "sense": "欧美 Diva 圈对 Taylor Swift 的称呼，淋语圈常用“我霉”参与 diva 互撕叙事。",
+      "alias": "Taylor Swift、泰勒丝、我霉、泰勒·斯威夫特",
+      "slot": "divatag / diva人物淋名",
+      "sense": "欧美 Diva 圈对 Taylor Swift 的称呼，淋语圈常用“我霉”参与 diva 互撕叙事。（DIVA 分区）",
       "source": "https://search.bilibili.com/all?keyword=%E9%9C%89%E9%9C%89%20%E6%B7%8B%E8%AF%AD",
       "pop": "高",
       "rel": [
@@ -8476,8 +8576,8 @@ window.__SEED_DATA = {
       "zh": "玛莎",
       "linyu": "玛莎",
       "alias": "玛莎姐、Martha",
-      "slot": "圈层黑话 / 人物",
-      "sense": "淋语圈/欧美圈人物，常出现在 diva 互撕与姐圈叙事中。",
+      "slot": "divatag / diva人物淋名",
+      "sense": "淋语圈/欧美圈人物，常出现在 diva 互撕与姐圈叙事中。（DIVA 分区）",
       "source": "https://search.bilibili.com/all?keyword=%E7%8E%9B%E8%8E%8E%20%E6%B7%8B%E8%AF%AD",
       "pop": "低",
       "rel": [
@@ -8995,7 +9095,7 @@ window.__SEED_DATA = {
     {
       "zh": "退票",
       "linyu": "退票",
-      "alias": "退票退票、安可",
+      "alias": "退票退票、安可、退",
       "slot": "调侃/戏谑",
       "sense": "演唱会/直播梗，表达“不满意，重来”。",
       "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E7%A5%A8%20%E6%B7%8B%E8%AF%AD",
@@ -9216,7 +9316,7 @@ window.__SEED_DATA = {
     {
       "zh": "下水道",
       "linyu": "下水道",
-      "alias": "下水道英雄、版本弃子",
+      "alias": "下水道英雄、版本弃子、冷板凳、冷门",
       "slot": "调侃/戏谑",
       "sense": "指强度垫底、无人问津的角色。",
       "source": "https://search.bilibili.com/all?keyword=%E4%B8%8B%E6%B0%B4%E9%81%93%20%E8%8B%B1%E9%9B%84%20%E6%B7%8B%E8%AF%AD",
@@ -9333,7 +9433,7 @@ window.__SEED_DATA = {
     {
       "zh": "打雷",
       "linyu": "打雷",
-      "alias": "打雷婆、雷神、雷电将军",
+      "alias": "打雷婆、雷神、雷电将军、雷",
       "slot": "淋神 / 调侃",
       "sense": "原神雷电将军的外号“打雷婆”衍生词，也用来形容雷系角色。",
       "source": "https://nga.178.com/read.php?page=2&tid=35415629",
@@ -11069,7 +11169,7 @@ window.__SEED_DATA = {
     {
       "zh": "大佬",
       "linyu": "大佬",
-      "alias": "大佬、大佬们、大佬带带我",
+      "alias": "大佬、大佬们、大佬带带我、大",
       "slot": "称呼类",
       "sense": "称呼类的敬称网络流行语变体，「大佬带带我」是圈层内求带的标准句式。",
       "source": "https://tieba.baidu.com/p/9747326338",
@@ -11344,7 +11444,7 @@ window.__SEED_DATA = {
     {
       "zh": "抢票",
       "linyu": "抢票",
-      "alias": "抢票、抢票惹、抢票大作战、手速要快",
+      "alias": "抢票、抢票惹、抢票大作战、手速要快、秒杀",
       "slot": "圈层黑话",
       "sense": "圈层黑话的日常梗。贴吧词表收录，指抢演唱会/演出门票，是淋语圈最普及的现实生活梗之一。",
       "source": "https://tieba.baidu.com/p/9747326338",
@@ -11923,7 +12023,7 @@ window.__SEED_DATA = {
     {
       "zh": "日不落",
       "linyu": "日不落",
-      "alias": "淋不落",
+      "alias": "淋不落、不落的太阳",
       "slot": "歌舞影视/歌词梗",
       "sense": "淋淋《日不落》，淋语八级教材级歌词来源，台湾淋语圈繁体讨论高频。",
       "source": "淋淋《日不落》（2007） https://baike.baidu.com/item/%E6%97%A5%E4%B8%8D%E8%90%BD",
@@ -11935,7 +12035,7 @@ window.__SEED_DATA = {
     {
       "zh": "大艺术家",
       "linyu": "大艺术家",
-      "alias": "淋艺术家",
+      "alias": "淋艺术家、艺术家",
       "slot": "歌舞影视/歌词梗",
       "sense": "淋淋《大艺术家》，媒体评“蔡依林发明了全宇宙最流行的淋语”的报道标题即用此歌指代。",
       "source": "淋淋《大艺术家》（2007）、柠檬娱乐台报道 https://baike.baidu.com/item/%E5%A4%A7%E8%89%BA%E6%9C%AF%E5%AE%B6",
@@ -11947,7 +12047,7 @@ window.__SEED_DATA = {
     {
       "zh": "美人计",
       "linyu": "美人计",
-      "alias": "淋人计",
+      "alias": "淋人计、锁定",
       "slot": "歌舞影视/歌词梗",
       "sense": "淋淋《美人计》，走钢索、锁定、路人甲等一批淋语词的母本专辑主打。",
       "source": "淋淋《美人计》（2010） https://baike.baidu.com/item/%E7%BE%8E%E4%BA%BA%E8%AE%A1",
@@ -12172,7 +12272,7 @@ window.__SEED_DATA = {
     {
       "zh": "回归",
       "linyu": "回宫",
-      "alias": "回宫、回春、二进宫",
+      "alias": "回宫、回春、二进宫、comeback",
       "slot": "洛克淋国/宫斗体",
       "sense": "精灵强度回升或复刻返场，用宫斗腔说成「回宫/回春/二进宫」：“加油光队居然也有回宫的一天”“素人果果再回春”“竟然是二进宫”。",
       "source": "https://www.bilibili.com/video/BV1vrJ166EtG 、https://www.bilibili.com/video/BV1z2eM6kEJQ",
@@ -13210,7 +13310,7 @@ window.__SEED_DATA = {
     {
       "zh": "异色",
       "linyu": "异色",
-      "alias": "异色、炫彩、黑白炫彩、异色精灵",
+      "alias": "异色、炫彩、黑白炫彩、异色精灵、闪光",
       "slot": "洛克淋国/游戏术语",
       "sense": "精灵的稀有色，S5 之后「异色可看性格」，还出现黑白炫彩报价表。",
       "source": "https://www.bilibili.com/video/BV12wnX65Eoj 、https://www.bilibili.com/video/BV1uMn46LExb",
@@ -13290,7 +13390,7 @@ window.__SEED_DATA = {
     {
       "zh": "返场",
       "linyu": "返厂",
-      "alias": "返厂、二进宫、回宫",
+      "alias": "返厂、二进宫、回宫、再唱",
       "slot": "洛克淋国/游戏术语",
       "sense": "限定精灵重新上架叫「返厂」，与宫斗体的「回宫／二进宫」同义。",
       "source": "https://www.bilibili.com/video/BV1mGn46rEwt 、https://www.bilibili.com/video/BV13KHG6VExg",
@@ -13650,7 +13750,7 @@ window.__SEED_DATA = {
     {
       "zh": "假唱",
       "linyu": "对嘴",
-      "alias": "对嘴、对嘴型",
+      "alias": "对嘴、对嘴型、对口型",
       "slot": "歌舞影视",
       "sense": "指假唱，淋语圈老梗。",
       "source": "https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
@@ -14270,7 +14370,7 @@ window.__SEED_DATA = {
     {
       "zh": "老玩家",
       "linyu": "老玩家",
-      "alias": "老手",
+      "alias": "老手、老油条",
       "slot": "第五淋格/庄园术语",
       "sense": "身份暗号，通常后面接「基本上都知道吧」来压新人。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -14360,7 +14460,7 @@ window.__SEED_DATA = {
     {
       "zh": "莓莓小姐",
       "linyu": "莓莓小姐",
-      "alias": "",
+      "alias": "我莓、莓莓",
       "slot": "第五淋格/求生者位分",
       "sense": "整活标题「请叫我莓莓小姐」造出的自称，配套「小姐」位分体系。",
       "source": "https://www.bilibili.com/video/BV19agi6pE8X",
@@ -14540,7 +14640,7 @@ window.__SEED_DATA = {
     {
       "zh": "排位",
       "linyu": "排位",
-      "alias": "排位赛、竞技、天梯",
+      "alias": "排位赛、竞技、天梯、rank",
       "slot": "第五淋格/庄园赛事",
       "sense": "天梯模式，一切黑话的诞生地；「排位淋舞Queen」直接把排位写进称号。",
       "source": "https://www.bilibili.com/video/BV1XW3i6QEbu",
@@ -14550,7 +14650,7 @@ window.__SEED_DATA = {
     {
       "zh": "段位",
       "linyu": "段位",
-      "alias": "分段的",
+      "alias": "分段的、rank",
       "slot": "第五淋格/庄园赛事",
       "sense": "天梯等级；「拉低了老郭的段位」是把段位当身份贬损的用法。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -14800,7 +14900,7 @@ window.__SEED_DATA = {
     {
       "zh": "头盔",
       "linyu": "头盔",
-      "alias": "",
+      "alias": "头",
       "slot": "第五淋格/庄园术语",
       "sense": "防护类道具，吃一次伤害不掉状态，属最实用的保命件。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -15070,7 +15170,7 @@ window.__SEED_DATA = {
     {
       "zh": "分身",
       "linyu": "分身",
-      "alias": "",
+      "alias": "格子",
       "slot": "第五淋格/监管者黑话",
       "sense": "多个监管者的通用机制词，用来骗刀、卡位或双人夹击。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -15580,7 +15680,7 @@ window.__SEED_DATA = {
     {
       "zh": "报点",
       "linyu": "报位",
-      "alias": "报点",
+      "alias": "报点、报",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "把敌人位置说给队友；「喊点」强调要开口，「报位」是教学区更正式的说法。",
       "source": "https://www.bilibili.com/video/BV129yeBJELR",
@@ -15590,7 +15690,7 @@ window.__SEED_DATA = {
     {
       "zh": "架枪",
       "linyu": "架枪",
-      "alias": "架点",
+      "alias": "架点、架",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "提前把准星卡在敌人必经的出口等他从掩体后出来，「架点」是同义变体。",
       "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
@@ -15600,7 +15700,7 @@ window.__SEED_DATA = {
     {
       "zh": "对枪",
       "linyu": "拼枪",
-      "alias": "对枪",
+      "alias": "对枪、互射",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "双方正面互射；「拼枪」强调这是纯枪法交换，不靠道具。",
       "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
@@ -15620,7 +15720,7 @@ window.__SEED_DATA = {
     {
       "zh": "绕后",
       "linyu": "绕后",
-      "alias": "看屁股",
+      "alias": "看屁股、包抄",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "从侧后包夹；「看屁股」是队伍里的口语提醒，指留意背后有没有人摸过来。",
       "source": "https://www.bilibili.com/video/BV12h411P7iB",
@@ -15640,7 +15740,7 @@ window.__SEED_DATA = {
     {
       "zh": "压枪",
       "linyu": "压枪",
-      "alias": "压不住",
+      "alias": "压不住、控枪",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "连发时向下修正后坐力；「压不住」是新人最常见的自我抱怨。",
       "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
@@ -15780,7 +15880,7 @@ window.__SEED_DATA = {
     {
       "zh": "静步",
       "linyu": "静步",
-      "alias": "",
+      "alias": "静",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "按住走路键消音移动，与「漏脚步」相对。",
       "source": "https://www.bilibili.com/video/BV1YDXAB8Ea2",
@@ -15820,7 +15920,7 @@ window.__SEED_DATA = {
     {
       "zh": "脚步声",
       "linyu": "脚步",
-      "alias": "听声",
+      "alias": "听声、脚步",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "听声定位的基础，语料里「总听不清脚步声」是设置教程的高频标题。",
       "source": "https://www.bilibili.com/video/BV1YDXAB8Ea2",
@@ -15850,7 +15950,7 @@ window.__SEED_DATA = {
     {
       "zh": "补枪",
       "linyu": "补枪",
-      "alias": "跟枪",
+      "alias": "跟枪、补",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "队友开火后立刻接手，保证对手没机会换弹，是二突的核心职责。",
       "source": "https://www.bilibili.com/video/BV12h411P7iB",
@@ -17070,7 +17170,7 @@ window.__SEED_DATA = {
     {
       "zh": "刀皮",
       "linyu": "刀皮",
-      "alias": "近战皮",
+      "alias": "近战皮、近战皮肤",
       "slot": "瓦罗淋特/瓦罗皮肤经济",
       "sense": "近战武器皮肤，是瓦区攀比的核心；语料专门统计「冠军赛刀皮出场率」。",
       "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
@@ -17080,7 +17180,7 @@ window.__SEED_DATA = {
     {
       "zh": "枪皮",
       "linyu": "枪皮",
-      "alias": "武器皮",
+      "alias": "武器皮、武器皮肤",
       "slot": "瓦罗淋特/瓦罗皮肤经济",
       "sense": "枪械皮肤，按枪种分「狂徒皮／幻影皮」。",
       "source": "https://www.bilibili.com/video/BV1Hanh65E3s",
@@ -17180,7 +17280,7 @@ window.__SEED_DATA = {
     {
       "zh": "扫射",
       "linyu": "扫",
-      "alias": "扫射",
+      "alias": "扫射、扫",
       "slot": "瓦罗淋特/瓦罗枪械经济",
       "sense": "压住扳机连发，近距离与糊脸时使用。",
       "source": "https://www.bilibili.com/video/BV1Mm4y1771E",
@@ -17190,7 +17290,7 @@ window.__SEED_DATA = {
     {
       "zh": "狙击枪",
       "linyu": "狙",
-      "alias": "大狙",
+      "alias": "大狙、狙",
       "slot": "瓦罗淋特/瓦罗枪械经济",
       "sense": "单发高伤枪种的统称，「起狙」是经济宽裕时的常规动作。",
       "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
@@ -17200,7 +17300,7 @@ window.__SEED_DATA = {
     {
       "zh": "闪光弹",
       "linyu": "闪",
-      "alias": "闪光",
+      "alias": "闪光、闪",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "致盲道具，是所有进点动作的起手；「补个闪」是阵容讨论常用语。",
       "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
@@ -17230,7 +17330,7 @@ window.__SEED_DATA = {
     {
       "zh": "控图",
       "linyu": "控图",
-      "alias": "",
+      "alias": "控",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "先占住地图关键区域再进攻，是「默认」打法的目标。",
       "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
@@ -17830,7 +17930,7 @@ window.__SEED_DATA = {
     {
       "zh": "版本",
       "linyu": "版本",
-      "alias": "补丁、版本之子",
+      "alias": "补丁、版本之子、ver",
       "slot": "瓦罗淋特/瓦罗赛事梗",
       "sense": "游戏平衡周期；「下版本砍火男」是社区预测式玩笑。",
       "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
@@ -17870,7 +17970,7 @@ window.__SEED_DATA = {
     {
       "zh": "血量",
       "linyu": "血量",
-      "alias": "",
+      "alias": "HP",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "报点时最关键的数值，语料里「打了120」「还剩80血」都是精确报数。",
       "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
@@ -17900,7 +18000,7 @@ window.__SEED_DATA = {
     {
       "zh": "拉枪线",
       "linyu": "拉枪线",
-      "alias": "",
+      "alias": "拉线",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "两层意思：准星横向跟人；或把人引开给队友创造空间。",
       "source": "https://www.bilibili.com/video/BV12h411P7iB",
@@ -17920,7 +18020,7 @@ window.__SEED_DATA = {
     {
       "zh": "换位",
       "linyu": "换位",
-      "alias": "",
+      "alias": "切",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "攻守双方在半场后对调，也指队内轮转位置。",
       "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
@@ -17930,7 +18030,7 @@ window.__SEED_DATA = {
     {
       "zh": "开团",
       "linyu": "开团",
-      "alias": "",
+      "alias": "先手",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "主动发起交战；借自 MOBA 的说法，瓦区用来指第一个开火的人。",
       "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
@@ -17950,7 +18050,7 @@ window.__SEED_DATA = {
     {
       "zh": "冠军",
       "linyu": "冠军",
-      "alias": "",
+      "alias": "联盟冠军",
       "slot": "瓦罗淋特/瓦罗赛事梗",
       "sense": "既指赛事冠军，也指冠军套皮肤（冠军赛限定），语料里两种用法都有。",
       "source": "https://www.bilibili.com/video/BV1BAng6CEwf",
@@ -17960,7 +18060,7 @@ window.__SEED_DATA = {
     {
       "zh": "步枪",
       "linyu": "步枪",
-      "alias": "",
+      "alias": "AR",
       "slot": "瓦罗淋特/瓦罗枪械经济",
       "sense": "狂徒／幻影／獠犬／戍卫四把的统称，是每回合的主力投资。",
       "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
@@ -18129,7 +18229,7 @@ window.__SEED_DATA = {
     {
       "zh": "霰弹枪",
       "linyu": "喷子",
-      "alias": "喷",
+      "alias": "喷、喷子",
       "slot": "瓦罗淋特/瓦罗枪械经济",
       "sense": "霰弹枪的口语叫法，语料里「一个视频让你了解无畏契约所有喷子特性」是它的入门教材。",
       "source": "https://www.bilibili.com/video/BV1bs4y1N71U",
@@ -18682,7 +18782,7 @@ window.__SEED_DATA = {
     {
       "zh": "复活点",
       "linyu": "复活室",
-      "alias": "复活点",
+      "alias": "复活点、重生点",
       "slot": "淋威争锋/淋威模式玩法",
       "sense": "阵亡后等待复活的房间，语料原句「奶妈在复活室呆几秒变成了石头人叔叔怎么办」。",
       "source": "https://www.bilibili.com/video/BV1iHqQYgEtS",
@@ -20032,7 +20132,7 @@ window.__SEED_DATA = {
     {
       "zh": "飞天猫",
       "linyu": "飞天猫",
-      "alias": "",
+      "alias": "我喵",
       "slot": "守望淋锋/守望角色淋名",
       "sense": "支援。2026 年加入的支援英雄，国服官网现行名飞天猫。",
       "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
@@ -20160,7 +20260,7 @@ window.__SEED_DATA = {
     {
       "zh": "老娘",
       "linyu": "老娘",
-      "alias": "",
+      "alias": "本可",
       "slot": "守望淋锋/守望自称体系",
       "sense": "姐圈最常用的硬气自称，和「本可」一柔一刚。守望区常见「老娘今天就要用阿三上分」。",
       "source": "https://www.bilibili.com/video/BV1qNnc6HEv6",
@@ -20286,7 +20386,7 @@ window.__SEED_DATA = {
     {
       "zh": "支援",
       "linyu": "支援",
-      "alias": "辅助、奶、奶位、奶妈",
+      "alias": "辅助、奶、奶位、奶妈、支援兵",
       "slot": "守望淋锋/守望英雄位分",
       "sense": "三大职责之一，负责治疗、护盾、增伤和封锁敌人；玩家叫辅助、奶、奶位。预设职责队列每队 2 名。",
       "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
@@ -20308,7 +20408,7 @@ window.__SEED_DATA = {
     {
       "zh": "奶位",
       "linyu": "奶位",
-      "alias": "",
+      "alias": "治疗位",
       "slot": "守望淋锋/守望英雄位分",
       "sense": "支援职责的位置说法；「玩奶遇到对面有狗的看这期就行了」里的玩奶就是这个位置。",
       "source": "https://www.bilibili.com/video/BV1hrWF6mEgy",
@@ -20368,7 +20468,7 @@ window.__SEED_DATA = {
     {
       "zh": "侦察",
       "linyu": "侦察",
-      "alias": "",
+      "alias": "侦察兵",
       "slot": "守望淋锋/守望英雄位分",
       "sense": "输出类副职责之一，主打侦查与信息的一类输出。",
       "source": "https://overwatch.huijiwiki.com/wiki/%E8%81%8C%E8%B4%A3",
@@ -20494,7 +20594,7 @@ window.__SEED_DATA = {
     {
       "zh": "白给",
       "linyu": "白给",
-      "alias": "送",
+      "alias": "送、送了",
       "slot": "守望淋锋/守望对局黑话",
       "sense": "毫无意义地送掉人头或资源。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -20514,7 +20614,7 @@ window.__SEED_DATA = {
     {
       "zh": "蹲点",
       "linyu": "蹲",
-      "alias": "老六",
+      "alias": "老六、蹲",
       "slot": "守望淋锋/守望对局黑话",
       "sense": "埋伏在某个点位等敌人；新版本路霸教学直接叫「老六路霸」。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -21364,7 +21464,7 @@ window.__SEED_DATA = {
     {
       "zh": "赛季",
       "linyu": "赛季",
-      "alias": "S1、第一赛季",
+      "alias": "S1、第一赛季、S 赛季",
       "slot": "守望淋锋/守望赛事圈",
       "sense": "2026-02-11 起的第一赛季「黑爪之治」上线，一次性推出 5 位新英雄与副职责系统。",
       "source": "https://www.yxzzd.com/56183.html",
@@ -21404,7 +21504,7 @@ window.__SEED_DATA = {
     {
       "zh": "白金",
       "linyu": "白金",
-      "alias": "",
+      "alias": "资料片",
       "slot": "守望淋锋/守望赛事圈",
       "sense": "排位段位之一；复盘视频标题常见「白金-翡翠」。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -21414,7 +21514,7 @@ window.__SEED_DATA = {
     {
       "zh": "钻石",
       "linyu": "钻石",
-      "alias": "",
+      "alias": "钻",
       "slot": "守望淋锋/守望赛事圈",
       "sense": "排位段位之一。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -21514,7 +21614,7 @@ window.__SEED_DATA = {
     {
       "zh": "联动",
       "linyu": "联动",
-      "alias": "联动皮肤",
+      "alias": "联动皮肤、合作",
       "slot": "守望淋锋/守望赛事圈",
       "sense": "与其它 IP 的联动活动；2026 年有《守望先锋》×《剑星》联动。",
       "source": "https://overwatch.huijiwiki.com/wiki/%D3%A2%D0%DB",
@@ -22003,7 +22103,7 @@ window.__SEED_DATA = {
     {
       "zh": "老六",
       "linyu": "老六",
-      "alias": "老六路霸",
+      "alias": "老六路霸、阴人",
       "slot": "守望淋锋/守望整活梗",
       "sense": "喜欢蹲点阴人的玩家；「新版本老六路霸教学」。",
       "source": "https://bbs.nga.cn/read.php?tid=9339277",
@@ -22135,7 +22235,7 @@ window.__SEED_DATA = {
     {
       "zh": "开麦",
       "linyu": "开麦",
-      "alias": "闭麦",
+      "alias": "闭麦、真唱",
       "slot": "守望淋锋/守望整活梗",
       "sense": "守望是对语音依赖度极高的游戏，开麦＝接入队伍语音。弹幕常刷「开麦」催主播说话，也有「请求合作不语音，一进语音音量金」的段子。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -22177,7 +22277,7 @@ window.__SEED_DATA = {
     {
       "zh": "奶妈",
       "linyu": "奶妈",
-      "alias": "奶爸",
+      "alias": "奶爸、奶",
       "slot": "守望淋锋/守望整活梗",
       "sense": "支援位的俗称，女性英雄叫奶妈、男性叫奶爸。和「奶位」「本奶」「野生狗奶」同一族。",
       "source": "https://www.bilibili.com/video/BV1pdpx6gEQa",
@@ -22394,7 +22494,7 @@ window.__SEED_DATA = {
     {
       "zh": "千姬",
       "linyu": "千姬",
-      "alias": "我千、蚁钳素蚁钳",
+      "alias": "我千、蚁钳素蚁钳、我姬",
       "slot": "淋安京 / 淋安京式神淋名",
       "sense": "巫类式神。巫类式神。合集第 3 集「千姬：蚁钳素蚁钳，仙在素仙在」，评论区有「我千素女王」。",
       "source": "https://baike.com/wikiid/7229204755908771855",
@@ -23420,7 +23520,7 @@ window.__SEED_DATA = {
     {
       "zh": "帝释天",
       "linyu": "帝释天",
-      "alias": "",
+      "alias": "我帝",
       "slot": "淋安京 / 淋安京式神淋名",
       "sense": "巫类式神。巫类式神。",
       "source": "https://baike.com/wikiid/7229204755908771855",
@@ -24580,7 +24680,7 @@ window.__SEED_DATA = {
     {
       "zh": "金币",
       "linyu": "金币",
-      "alias": "",
+      "alias": "币",
       "slot": "淋安京 / 淋安京装备经济",
       "sense": "击杀敌方单位或野怪获得，用来买装备。",
       "source": "https://baike.baidu.com/item/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
@@ -24660,7 +24760,7 @@ window.__SEED_DATA = {
     {
       "zh": "八岐大蛇",
       "linyu": "八岐大蛇",
-      "alias": "",
+      "alias": "大蛇",
       "slot": "淋安京 / 淋安京地图野区",
       "sense": "游戏里的野怪与大 BOSS，也是蛊惑黑晴明打开阴界大门的那一位。",
       "source": "https://zh.moegirl.org.cn/%E5%86%B3%E6%88%98%E5%B9%B3%E5%AE%89%E4%BA%AC",
@@ -25040,7 +25140,7 @@ window.__SEED_DATA = {
     {
       "zh": "麻麻",
       "linyu": "麻麻",
-      "alias": "",
+      "alias": "妈",
       "slot": "淋安京 / 淋安京整活梗",
       "sense": "合集第 2 集「喜欢麻麻的紧色心情吗？」，玩家对式神的亲昵称呼。",
       "source": "https://space.bilibili.com/476690125/channel/collectiondetail?sid=2149431",
@@ -25150,7 +25250,7 @@ window.__SEED_DATA = {
     {
       "zh": "本命",
       "linyu": "本命",
-      "alias": "",
+      "alias": "我推、真爱",
       "slot": "淋安京 / 淋安京通讯录tag",
       "sense": "最喜欢的式神 / 角色。",
       "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
@@ -25166,6 +25266,16998 @@ window.__SEED_DATA = {
       "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
       "pop": "低",
       "rel": []
+    },
+    {
+      "zh": "皮卡丘",
+      "linyu": "皮卡丘",
+      "alias": "皮神、皮卡、我皮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "电属性，系列吉祥物，动画里从不肯进精灵球。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9A%AE%E5%8D%A1%E4%B8%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "雷丘",
+      "linyu": "雷丘",
+      "alias": "皮神进化、大皮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "皮卡丘的进化型，电属性，靠雷之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B7%E4%B8%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "皮丘",
+      "linyu": "皮丘",
+      "alias": "小皮、皮神小时候",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "皮卡丘的退化型，电属性，亲密度高时进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9A%AE%E4%B8%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "伊布",
+      "linyu": "伊布",
+      "alias": "我伊、进化之谜",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，八种进化分支，圈内称之为「进化界的顶流」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "水伊布",
+      "linyu": "水伊布",
+      "alias": "水布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的水属性进化型，靠水之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "雷伊布",
+      "linyu": "雷伊布",
+      "alias": "雷布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的雷属性进化型，靠雷之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B7%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火伊布",
+      "linyu": "火伊布",
+      "alias": "火布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的火属性进化型，靠火之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "太阳伊布",
+      "linyu": "太阳伊布",
+      "alias": "日布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的超能力属性进化型，白天亲密度高时进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%AA%E9%98%B3%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "月亮伊布",
+      "linyu": "月亮伊布",
+      "alias": "月布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的恶属性进化型，夜间亲密度高时进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%88%E4%BA%AE%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "叶伊布",
+      "linyu": "叶伊布",
+      "alias": "草布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的草属性进化型，苔藓岩石附近进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%B6%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "冰伊布",
+      "linyu": "冰伊布",
+      "alias": "冰布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的冰属性进化型，冻石附近进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "仙子伊布",
+      "linyu": "仙子伊布",
+      "alias": "仙布、妖精布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "伊布的妖精属性进化型，友好度与妖精招式达标后进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BB%99%E5%AD%90%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡比兽",
+      "linyu": "卡比兽",
+      "alias": "睡觉王、压路机",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，一天大部分时间在睡，堵路是它的成名技。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%AF%94%E5%85%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小卡比兽",
+      "linyu": "小卡比兽",
+      "alias": "小卡比",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "卡比兽的退化型，一般属性，食量惊人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E5%8D%A1%E6%AF%94%E5%85%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "可达鸭",
+      "linyu": "可达鸭",
+      "alias": "头痛鸭、呆鸭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性，头痛时念力失控，动画里的经典搞笑担当。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%AF%E8%BE%BE%E9%B8%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "哥达鸭",
+      "linyu": "哥达鸭",
+      "alias": "大呆鸭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "可达鸭的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%A5%E8%BE%BE%E9%B8%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "妙蛙种子",
+      "linyu": "妙蛙种子",
+      "alias": "蒜头王八、种子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草／毒属性御三家，背上的种子随进化开花。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%99%E8%9B%99%E7%A7%8D%E5%AD%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "妙蛙草",
+      "linyu": "妙蛙草",
+      "alias": "草种子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "妙蛙种子的进化型，草／毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%99%E8%9B%99%E8%8D%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "妙蛙花",
+      "linyu": "妙蛙花",
+      "alias": "大花、蒜头花",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "妙蛙种子的最终进化，草／毒属性，背上一朵巨花。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%99%E8%9B%99%E8%8A%B1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小火龙",
+      "linyu": "小火龙",
+      "alias": "火苗、小火焰",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，尾巴上的火焰代表生命力。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%81%AB%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火恐龙",
+      "linyu": "火恐龙",
+      "alias": "不听话、叛逆龙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小火龙的进化型，火属性，动画里进化后一度不听小智指挥。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E6%81%90%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "喷火龙",
+      "linyu": "喷火龙",
+      "alias": "老喷、大喷",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小火龙的最终进化，火／飞行属性，系列人气天花板之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%96%B7%E7%81%AB%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "杰尼龟",
+      "linyu": "杰尼龟",
+      "alias": "龟龟、水龟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，杰尼龟军团是动画经典桥段。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%B0%E5%B0%BC%E9%BE%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡咪龟",
+      "linyu": "卡咪龟",
+      "alias": "中龟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "杰尼龟的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E5%92%AA%E9%BE%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "水箭龟",
+      "linyu": "水箭龟",
+      "alias": "大龟、炮台",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "杰尼龟的最终进化，水属性，背上两门水炮。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E7%AE%AD%E9%BE%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "绿毛虫",
+      "linyu": "绿毛虫",
+      "alias": "虫虫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫属性，进化链短，是新手最早练满的精灵之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%BF%E6%AF%9B%E8%99%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "铁甲蛹",
+      "linyu": "铁甲蛹",
+      "alias": "硬壳、铁蛹",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "绿毛虫的进化型，虫属性，只会变硬。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%81%E7%94%B2%E8%9B%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "巴大蝶",
+      "linyu": "巴大蝶",
+      "alias": "大蝶",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "绿毛虫的最终进化，虫／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E5%A4%A7%E8%9D%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "独角虫",
+      "linyu": "独角虫",
+      "alias": "角虫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫／毒属性，与绿毛虫并列为新手双虫。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8B%AC%E8%A7%92%E8%99%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大针蜂",
+      "linyu": "大针蜂",
+      "alias": "毒蜂",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "独角虫的最终进化，虫／毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E9%92%88%E8%9C%82",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "波波",
+      "linyu": "波波",
+      "alias": "小雀",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般／飞行属性，关都最常见的路边鸟。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%A2%E6%B3%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大比鸟",
+      "linyu": "大比鸟",
+      "alias": "大鸟、波波王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "波波的最终进化，一般／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E6%AF%94%E9%B8%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小拉达",
+      "linyu": "小拉达",
+      "alias": "老鼠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，路边常见，动画里专偷食物。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%8B%89%E8%BE%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拉达",
+      "linyu": "拉达",
+      "alias": "大老鼠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小拉达的进化型，一般属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E8%BE%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "烈雀",
+      "linyu": "烈雀",
+      "alias": "凶雀",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般／飞行属性，领地意识极强。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%88%E9%9B%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大嘴雀",
+      "linyu": "大嘴雀",
+      "alias": "长嘴鸟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "烈雀的进化型，一般／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%98%B4%E9%9B%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "阿柏蛇",
+      "linyu": "阿柏蛇",
+      "alias": "小蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毒属性，火箭队经典搭档之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%BF%E6%9F%8F%E8%9B%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "阿柏怪",
+      "linyu": "阿柏怪",
+      "alias": "大蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "阿柏蛇的进化型，毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%BF%E6%9F%8F%E6%80%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "穿山鼠",
+      "linyu": "穿山鼠",
+      "alias": "地鼠甲",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "地面属性，背甲坚硬。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BF%E5%B1%B1%E9%BC%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "穿山王",
+      "linyu": "穿山王",
+      "alias": "穿山甲王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "穿山鼠的进化型，地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BF%E5%B1%B1%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "尼多兰",
+      "linyu": "尼多兰",
+      "alias": "女尼多",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毒属性，仅雌性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%BC%E5%A4%9A%E5%85%B0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "尼多后",
+      "linyu": "尼多后",
+      "alias": "女王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "尼多兰的最终进化，毒／地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%BC%E5%A4%9A%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "尼多朗",
+      "linyu": "尼多朗",
+      "alias": "男尼多",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毒属性，仅雄性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%BC%E5%A4%9A%E6%9C%97",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "尼多王",
+      "linyu": "尼多王",
+      "alias": "国王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "尼多朗的最终进化，毒／地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%BC%E5%A4%9A%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "六尾",
+      "linyu": "六尾",
+      "alias": "小火狐",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性，尾巴分六叉。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AD%E5%B0%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "九尾",
+      "linyu": "九尾",
+      "alias": "火狐、狐仙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "六尾的进化型，火属性，靠火之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B9%9D%E5%B0%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "胖丁",
+      "linyu": "胖丁",
+      "alias": "唱歌丁、麦克风",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般／妖精属性，唱歌能让全场睡着。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%96%E4%B8%81",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "胖可丁",
+      "linyu": "胖可丁",
+      "alias": "大胖丁",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "胖丁的进化型，一般／妖精属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%96%E5%8F%AF%E4%B8%81",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "超音蝠",
+      "linyu": "超音蝠",
+      "alias": "蝙蝠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毒／飞行属性，洞穴常见。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E9%9F%B3%E8%9D%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大嘴蝠",
+      "linyu": "大嘴蝠",
+      "alias": "大蝙蝠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "超音蝠的进化型，毒／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%98%B4%E8%9D%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "走路草",
+      "linyu": "走路草",
+      "alias": "草根",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草／毒属性，夜间会走动。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%B0%E8%B7%AF%E8%8D%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "霸王花",
+      "linyu": "霸王花",
+      "alias": "大花怪",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "走路草的最终进化，草／毒属性，靠叶之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9C%B8%E7%8E%8B%E8%8A%B1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "派拉斯",
+      "linyu": "派拉斯",
+      "alias": "蘑菇蟹",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫／草属性，背上是寄生菇。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%BE%E6%8B%89%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "派拉斯特",
+      "linyu": "派拉斯特",
+      "alias": "大蘑菇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "派拉斯的进化型，虫／草属性，本体被蘑菇支配。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%BE%E6%8B%89%E6%96%AF%E7%89%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "毛球",
+      "linyu": "毛球",
+      "alias": "毛虫蛾",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫／毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%9B%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "摩鲁蛾",
+      "linyu": "摩鲁蛾",
+      "alias": "大蛾",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毛球的进化型，虫／毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%91%A9%E9%B2%81%E8%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "地鼠",
+      "linyu": "地鼠",
+      "alias": "土拨鼠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "地面属性，只露出头。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E9%BC%A0",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "三地鼠",
+      "linyu": "三地鼠",
+      "alias": "三头地鼠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "地鼠的进化型，地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%9C%B0%E9%BC%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "喵喵",
+      "linyu": "喵喵",
+      "alias": "猫猫、金币猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，火箭队招牌，聚宝功是它的名技。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%96%B5%E5%96%B5",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "猫老大",
+      "linyu": "猫老大",
+      "alias": "大猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "喵喵的进化型，一般属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8C%AB%E8%80%81%E5%A4%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "呆呆兽",
+      "linyu": "呆呆兽",
+      "alias": "呆兽、尾巴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水／超能力属性，反应极慢，尾巴被咬也不痛。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%86%E5%91%86%E5%85%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "呆壳兽",
+      "linyu": "呆壳兽",
+      "alias": "呆壳、被咬的",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "呆呆兽的进化型，水／超能力属性，尾巴上挂着大舌贝。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%86%E5%A3%B3%E5%85%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小磁怪",
+      "linyu": "小磁怪",
+      "alias": "磁铁",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "电／钢属性，靠磁力浮空。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%A3%81%E6%80%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "三合一磁怪",
+      "linyu": "三合一磁怪",
+      "alias": "三磁怪",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小磁怪的进化型，电／钢属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%90%88%E4%B8%80%E7%A3%81%E6%80%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大葱鸭",
+      "linyu": "大葱鸭",
+      "alias": "葱鸭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般／飞行属性，自带大葱当武器。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E8%91%B1%E9%B8%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "嘟嘟",
+      "linyu": "嘟嘟",
+      "alias": "双头鸟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般／飞行属性，两个头。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%98%9F%E5%98%9F",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "嘟嘟利",
+      "linyu": "嘟嘟利",
+      "alias": "三头鸟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "嘟嘟的进化型，一般／飞行属性，三个头。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%98%9F%E5%98%9F%E5%88%A9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小海狮",
+      "linyu": "小海狮",
+      "alias": "海狮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%B5%B7%E7%8B%AE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "白海狮",
+      "linyu": "白海狮",
+      "alias": "大白海狮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小海狮的进化型，水／冰属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BD%E6%B5%B7%E7%8B%AE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "臭泥",
+      "linyu": "臭泥",
+      "alias": "泥巴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毒属性，由污染物质构成。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%87%AD%E6%B3%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "臭臭泥",
+      "linyu": "臭臭泥",
+      "alias": "大泥巴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "臭泥的进化型，毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%87%AD%E8%87%AD%E6%B3%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大舌贝",
+      "linyu": "大舌贝",
+      "alias": "贝壳",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性，会咬住呆呆兽的尾巴。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E8%88%8C%E8%B4%9D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "刺甲贝",
+      "linyu": "刺甲贝",
+      "alias": "刺壳",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "大舌贝的进化型，水／冰属性，靠水之石进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%BA%E7%94%B2%E8%B4%9D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "鬼斯",
+      "linyu": "鬼斯",
+      "alias": "小幽灵",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "幽灵／毒属性，气体状。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AC%BC%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "鬼斯通",
+      "linyu": "鬼斯通",
+      "alias": "幽灵手",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "鬼斯的进化型，幽灵／毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AC%BC%E6%96%AF%E9%80%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "耿鬼",
+      "linyu": "耿鬼",
+      "alias": "笑鬼、影子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "鬼斯的最终进化，幽灵／毒属性，笑容是招牌。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%BF%E9%AC%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大岩蛇",
+      "linyu": "大岩蛇",
+      "alias": "石头蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "岩石／地面属性，体长惊人但怕水。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%B2%A9%E8%9B%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "催眠貘",
+      "linyu": "催眠貘",
+      "alias": "食梦兽",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "超能力属性，靠吃梦为生。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%82%AC%E7%9C%A0%E8%B2%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "引梦貘人",
+      "linyu": "引梦貘人",
+      "alias": "大食梦",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "催眠貘的进化型，超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%95%E6%A2%A6%E8%B2%98%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "霹雳电球",
+      "linyu": "霹雳电球",
+      "alias": "电球",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "电属性，外形像精灵球，极易自爆。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9C%B9%E9%9B%B3%E7%94%B5%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "顽皮雷弹",
+      "linyu": "顽皮雷弹",
+      "alias": "大电球",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "霹雳电球的进化型，电属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A1%BD%E7%9A%AE%E9%9B%B7%E5%BC%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蛋蛋",
+      "linyu": "蛋蛋",
+      "alias": "蛋蛋树",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草／超能力属性，六个蛋。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9B%8B%E8%9B%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "椰蛋树",
+      "linyu": "椰蛋树",
+      "alias": "椰树、长脖子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "蛋蛋的进化型，草／超能力属性，阿罗拉形态脖子特别长。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%B0%E8%9B%8B%E6%A0%91",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡拉卡拉",
+      "linyu": "卡拉卡拉",
+      "alias": "骨头仔",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "地面属性，戴着头骨。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%8B%89%E5%8D%A1%E6%8B%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "嘎啦嘎啦",
+      "linyu": "嘎啦嘎啦",
+      "alias": "骨头棒",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "卡拉卡拉的进化型，地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%98%8E%E5%95%A6%E5%98%8E%E5%95%A6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "飞腿郎",
+      "linyu": "飞腿郎",
+      "alias": "踢腿",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "格斗属性，专练腿法。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A3%9E%E8%85%BF%E9%83%8E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "快拳郎",
+      "linyu": "快拳郎",
+      "alias": "拳击手",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "格斗属性，专练拳法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BF%AB%E6%8B%B3%E9%83%8E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大舌头",
+      "linyu": "大舌头",
+      "alias": "长舌头",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，舌头极长。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E8%88%8C%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "瓦斯弹",
+      "linyu": "瓦斯弹",
+      "alias": "毒气",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "毒属性，会自爆。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%93%A6%E6%96%AF%E5%BC%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "双弹瓦斯",
+      "linyu": "双弹瓦斯",
+      "alias": "双毒气",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "瓦斯弹的进化型，毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%BC%B9%E7%93%A6%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蔓藤怪",
+      "linyu": "蔓藤怪",
+      "alias": "藤蔓",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草属性，全身被藤蔓覆盖。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%94%93%E8%97%A4%E6%80%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "袋兽",
+      "linyu": "袋兽",
+      "alias": "袋龙、妈妈",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，育儿袋里带着幼崽。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A2%8B%E5%85%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "墨海马",
+      "linyu": "墨海马",
+      "alias": "小海马",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A2%A8%E6%B5%B7%E9%A9%AC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "海刺龙",
+      "linyu": "海刺龙",
+      "alias": "刺海马",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "墨海马的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%88%BA%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "角金鱼",
+      "linyu": "角金鱼",
+      "alias": "金鱼",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A7%92%E9%87%91%E9%B1%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "金鱼王",
+      "linyu": "金鱼王",
+      "alias": "大金鱼",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "角金鱼的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E9%B1%BC%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "海星星",
+      "linyu": "海星星",
+      "alias": "海星",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性，核心是宝石。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E6%98%9F%E6%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝石海星",
+      "linyu": "宝石海星",
+      "alias": "大星",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "海星星的进化型，水／超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E7%9F%B3%E6%B5%B7%E6%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "魔墙人偶",
+      "linyu": "魔墙人偶",
+      "alias": "哑剧、墙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "超能力／妖精属性，能造出隐形墙。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%94%E5%A2%99%E4%BA%BA%E5%81%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "一般",
+      "linyu": "一般",
+      "alias": "普通系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制面窄，但免疫幽灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E8%88%AC",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火",
+      "linyu": "火",
+      "alias": "火系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，怕水、岩石、地面。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "水",
+      "linyu": "水",
+      "alias": "水系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，怕电、草。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "草",
+      "linyu": "草",
+      "alias": "草系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，怕火、冰、毒、飞行、虫。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8D%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "电",
+      "linyu": "电",
+      "alias": "电系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，只被地面克制。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "冰",
+      "linyu": "冰",
+      "alias": "冰系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制龙、飞行、草、地面。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "格斗",
+      "linyu": "格斗",
+      "alias": "格斗系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制一般、岩石、钢、冰、恶。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A0%BC%E6%96%97",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "毒",
+      "linyu": "毒",
+      "alias": "毒系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制草、妖精。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%92",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "地面",
+      "linyu": "地面",
+      "alias": "地系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，免疫电，克制火、电、毒、岩石、钢。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E9%9D%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "飞行",
+      "linyu": "飞行",
+      "alias": "飞行系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，免疫地面。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A3%9E%E8%A1%8C",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "超能力",
+      "linyu": "超能力",
+      "alias": "超能系、念力",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制格斗、毒。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E8%83%BD%E5%8A%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "虫",
+      "linyu": "虫",
+      "alias": "虫系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制草、超能力、恶。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%99%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "岩石",
+      "linyu": "岩石",
+      "alias": "岩系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制火、冰、飞行、虫。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B2%A9%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "幽灵",
+      "linyu": "幽灵",
+      "alias": "鬼系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，免疫一般与格斗。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%BD%E7%81%B5",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "龙",
+      "linyu": "龙",
+      "alias": "龙系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，克制龙本身。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "恶",
+      "linyu": "恶",
+      "alias": "恶系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，免疫超能力。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%81%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "钢",
+      "linyu": "钢",
+      "alias": "钢系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，抗性最多，怕火、格斗、地面。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%92%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "妖精",
+      "linyu": "妖精",
+      "alias": "仙系",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "十八属性之一，免疫龙，克制格斗、龙、恶。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%96%E7%B2%BE",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "闪光",
+      "linyu": "闪光",
+      "alias": "异色、闪",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "与普通个体颜色不同的稀有外观，遇率极低。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E5%85%89",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "个体值",
+      "linyu": "个体值",
+      "alias": "IV、努力的天赋",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "每只精灵天生的六项数值上限，孵蛋党最在意的东西。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%AA%E4%BD%93%E5%80%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "努力值",
+      "linyu": "努力值",
+      "alias": "EV、打点",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "后天训练累积的数值成长，靠击败精灵或道具获得。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%AA%E5%8A%9B%E5%80%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "性格",
+      "linyu": "性格",
+      "alias": "加减项",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "影响两项数值的成长，决定这只精灵的路线。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%80%A7%E6%A0%BC",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "特性",
+      "linyu": "特性",
+      "alias": "被动",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "精灵天生自带的被动效果。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%B9%E6%80%A7",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "隐藏特性",
+      "linyu": "隐藏特性",
+      "alias": "梦特",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "正常游戏里不易获得的稀有特性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9A%90%E8%97%8F%E7%89%B9%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "招式",
+      "linyu": "招式",
+      "alias": "技能",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "精灵能学会的攻击或变化技。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%9B%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "技能机",
+      "linyu": "技能机",
+      "alias": "TM、学习机",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "一次性教会精灵指定招式的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%80%E8%83%BD%E6%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "PP",
+      "linyu": "PP",
+      "alias": "技能点",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "招式的可用次数，用完就得回宝可梦中心。",
+      "source": "https://search.bilibili.com/all?keyword=PP",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "先制",
+      "linyu": "先制",
+      "alias": "先手技",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "无视速度优先出手的招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%88%E5%88%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "双属性",
+      "linyu": "双属性",
+      "alias": "复合属性、复合",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "一只精灵同时拥有两种属性，抗性与弱点相乘。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%B1%9E%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "克制",
+      "linyu": "克制",
+      "alias": "效果拔群、克",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "属性相性占优，伤害翻倍。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%8B%E5%88%B6",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "免疫",
+      "linyu": "免疫",
+      "alias": "无效",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "属性相性完全无效，伤害为零。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%8D%E7%96%AB",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "抵抗",
+      "linyu": "抵抗",
+      "alias": "效果不好",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "属性相性吃亏，伤害减半。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%B5%E6%8A%97",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "弱点",
+      "linyu": "弱点",
+      "alias": "怕的东西",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "被克制的那一项属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B1%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "太晶化",
+      "linyu": "太晶化",
+      "alias": "结晶",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "第九世代的战斗机制，可临时改变属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%AA%E6%99%B6%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "极巨化",
+      "linyu": "极巨化",
+      "alias": "变大",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "第八世代的战斗机制，体型与血量同时放大。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%81%E5%B7%A8%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "mega进化",
+      "linyu": "mega进化",
+      "alias": "超进化",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "第六世代的战斗机制，需携带对应进化石。",
+      "source": "https://search.bilibili.com/all?keyword=mega%E8%BF%9B%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "Z招式",
+      "linyu": "Z招式",
+      "alias": "Z技能",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "第七世代的一次性强力招式。",
+      "source": "https://search.bilibili.com/all?keyword=Z%E6%8B%9B%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "亲密度",
+      "linyu": "亲密度",
+      "alias": "好感度",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "影响部分精灵进化的隐藏数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%B2%E5%AF%86%E5%BA%A6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "经验值",
+      "linyu": "经验值",
+      "alias": "经验",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "击败精灵或完成任务获得，攒满即升级。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%8F%E9%AA%8C%E5%80%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "野生",
+      "linyu": "野生",
+      "alias": "野怪",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "未被收服的精灵，出现在草丛与洞穴里。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%8E%E7%94%9F",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "捕获",
+      "linyu": "捕获",
+      "alias": "收服、抓",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "用精灵球把野生精灵收进队伍。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%95%E8%8E%B7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "精灵球",
+      "linyu": "精灵球",
+      "alias": "球",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "最基础的捕获道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大师球",
+      "linyu": "大师球",
+      "alias": "必中球",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "必定捕获成功，全游戏数量极少。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%B8%88%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "高级球",
+      "linyu": "高级球",
+      "alias": "好球",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "捕获率高于精灵球。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AB%98%E7%BA%A7%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "超级球",
+      "linyu": "超级球",
+      "alias": "中球",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "捕获率介于精灵球与高级球之间。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E7%BA%A7%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "进化",
+      "linyu": "进化",
+      "alias": "升级形态",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "达到条件后形态与数值提升。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%9B%E5%8C%96",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "退化",
+      "linyu": "退化",
+      "alias": "返祖",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "进化链上更早的形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "进化石",
+      "linyu": "进化石",
+      "alias": "石头",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "触发特定进化的道具，如火之石、水之石。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%9B%E5%8C%96%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "交换",
+      "linyu": "交换",
+      "alias": "换精灵",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "两台机器互传精灵，部分精灵靠交换进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%A4%E6%8D%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "联机",
+      "linyu": "联机",
+      "alias": "对战连接",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "与其它玩家连线对战或交换。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E6%9C%BA",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "双打",
+      "linyu": "双打",
+      "alias": "双人战",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "两只对两只的对战规则。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E6%89%93",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "单打",
+      "linyu": "单打",
+      "alias": "单挑",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "一只对一只的对战规则。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%95%E6%89%93",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "天气",
+      "linyu": "天气",
+      "alias": "场地效果",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "晴天、雨天、沙暴、冰雹等影响伤害的环境。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%B0%94",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "换人",
+      "linyu": "换人",
+      "alias": "切人",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "把场上精灵换下，消耗一次行动。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%A2%E4%BA%BA",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "联防",
+      "linyu": "联防",
+      "alias": "接力防",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠换人抵消属性弱点。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E9%98%B2",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "保命",
+      "linyu": "保命",
+      "alias": "苟",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠替身、保护等招式拖延回合。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E5%91%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拉满",
+      "linyu": "拉满",
+      "alias": "满配",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "把数值或努力值练到上限。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E6%BB%A1",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "满血",
+      "linyu": "满血",
+      "alias": "血量满",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "血量未受损。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BB%A1%E8%A1%80",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "抓宠",
+      "linyu": "抓宠",
+      "alias": "收图鉴",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "专门为了补齐图鉴而捕获精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%93%E5%AE%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "孵蛋",
+      "linyu": "孵蛋",
+      "alias": "蛋党",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠 breeding 筛个体值与性格。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%B5%E8%9B%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蛋种",
+      "linyu": "蛋种",
+      "alias": "蛋",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "孵化出来的幼体精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9B%8B%E7%A7%8D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "遗传",
+      "linyu": "遗传",
+      "alias": "继承招式",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "子代继承父代的特定招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%81%97%E4%BC%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "属性一致加成",
+      "linyu": "属性一致加成",
+      "alias": "本系加成",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "使用与自身属性相同的招式时伤害加成。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B1%9E%E6%80%A7%E4%B8%80%E8%87%B4%E5%8A%A0%E6%88%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "打点",
+      "linyu": "打点",
+      "alias": "伤害计算",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "算准伤害数值决定能不能一击带走。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "铺场",
+      "linyu": "铺场",
+      "alias": "控场",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "先布好场地与状态再进攻。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%BA%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "收头",
+      "linyu": "收头",
+      "alias": "补刀",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "把残血对手打掉，拿人头。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%B6%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "逆属性",
+      "linyu": "逆属性",
+      "alias": "反克制",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "在被克制的情况下强行打赢。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%86%E5%B1%9E%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "一键秒杀",
+      "linyu": "一键秒杀",
+      "alias": "一发带走",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "一招把对手打满血带走。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E9%94%AE%E7%A7%92%E6%9D%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "稳吃",
+      "linyu": "稳吃",
+      "alias": "抗得住",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "确定能扛下一次攻击。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A8%B3%E5%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "强吃",
+      "linyu": "强吃",
+      "alias": "硬扛",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "明知会受伤仍然硬接。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%BA%E5%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "猜拳",
+      "linyu": "猜拳",
+      "alias": "心理博弈",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "双方互相猜对方的下一步。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8C%9C%E6%8B%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "读",
+      "linyu": "读",
+      "alias": "预判",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提前判断对手操作并抢先应对。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "反向读",
+      "linyu": "反向读",
+      "alias": "反预判",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "猜到对手会预判，于是反着来。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E5%90%91%E8%AF%BB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "预判",
+      "linyu": "预判",
+      "alias": "读招",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提前判断对手的招式选择。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A2%84%E5%88%A4",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "替身",
+      "linyu": "替身",
+      "alias": "分身",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "用血量换一个吸收伤害的替身。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9B%BF%E8%BA%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "保护",
+      "linyu": "保护",
+      "alias": "挡",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "本回合免疫伤害，常用于试探。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E6%8A%A4",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "剑舞",
+      "linyu": "剑舞",
+      "alias": "强化",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提升攻击的强化招式，蓄力型打法的核心。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%91%E8%88%9E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "电磁波",
+      "linyu": "电磁波",
+      "alias": "麻痹",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "让对手麻痹，速度大幅下降。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%B5%E7%A3%81%E6%B3%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "剧毒",
+      "linyu": "剧毒",
+      "alias": "毒",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "让对手陷入持续掉血的剧毒状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%A7%E6%AF%92",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "击掌奇袭",
+      "linyu": "击掌奇袭",
+      "alias": "开场拍",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "先制招式，命中后让对手本回合无法行动。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BB%E6%8E%8C%E5%A5%87%E8%A2%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "打工",
+      "linyu": "打工",
+      "alias": "刷本",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "反复刷同一场战斗攒经验或道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E5%B7%A5",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "刷闪",
+      "linyu": "刷闪",
+      "alias": "刷异色",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "反复遇敌只为刷出闪光个体。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B7%E9%97%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "抗性",
+      "linyu": "抗性",
+      "alias": "抵抗力、抵抗",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "对某属性的减伤能力。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%97%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "速度线",
+      "linyu": "速度线",
+      "alias": "快过谁",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "对战中判断能否先手的速度分界。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9F%E5%BA%A6%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "围巾",
+      "linyu": "围巾",
+      "alias": "速围",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提升速度但锁招的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%B4%E5%B7%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "剩饭",
+      "linyu": "剩饭",
+      "alias": "回血道具",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "每回合回复少量血量的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%A9%E9%A5%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "命玉",
+      "linyu": "命玉",
+      "alias": "生命宝珠",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提升伤害但每击自损的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%BD%E7%8E%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "零封",
+      "linyu": "零封",
+      "alias": "完封",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "一只精灵打穿对手全队。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B6%E5%B0%81",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "图鉴",
+      "linyu": "图鉴",
+      "alias": "宝可梦图鉴",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "记录已捕获精灵的道具，也是圈内的收集体系。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BE%E9%89%B4",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "御三家",
+      "linyu": "御三家",
+      "alias": "初始三只",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "每个地区开局可选的草／火／水三只精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%A1%E4%B8%89%E5%AE%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "博士",
+      "linyu": "博士",
+      "alias": "宝可梦博士",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "发放初始精灵的研究者，每代换人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%9A%E5%A3%AB",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "训练家",
+      "linyu": "训练家",
+      "alias": "玩家",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "收服并培养精灵的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AE%AD%E7%BB%83%E5%AE%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "道馆",
+      "linyu": "道馆",
+      "alias": "体育馆",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "地区内的八个挑战点，打完拿徽章。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%81%93%E9%A6%86",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "四天王",
+      "linyu": "四天王",
+      "alias": "四大",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "联盟前的最后四道关卡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9B%E5%A4%A9%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "联盟",
+      "linyu": "联盟",
+      "alias": "宝可梦联盟",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "道馆与四天王之上的最高赛事机构。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E7%9B%9F",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦中心",
+      "linyu": "宝可梦中心",
+      "alias": "回血点",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "免费治疗精灵的设施。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E4%B8%AD%E5%BF%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "乔伊",
+      "linyu": "乔伊",
+      "alias": "护士",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "宝可梦中心的护士，各代同姓。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B9%94%E4%BC%8A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "君莎",
+      "linyu": "君莎",
+      "alias": "女警",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "宝可梦世界的警察，各代同姓。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%9B%E8%8E%8E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火箭队",
+      "linyu": "火箭队",
+      "alias": "反派",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "关都地区的反派组织，三人组是动画经典。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E7%AE%AD%E9%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "关都",
+      "linyu": "关都",
+      "alias": "第一世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "红绿蓝黄所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%B3%E9%83%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "城都",
+      "linyu": "城都",
+      "alias": "第二世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "金银水晶所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9F%8E%E9%83%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "丰缘",
+      "linyu": "丰缘",
+      "alias": "第三世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "红蓝宝石所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%B0%E7%BC%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "神奥",
+      "linyu": "神奥",
+      "alias": "第四世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "钻石珍珠所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E5%A5%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "合众",
+      "linyu": "合众",
+      "alias": "第五世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "黑白所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%88%E4%BC%97",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡洛斯",
+      "linyu": "卡洛斯",
+      "alias": "第六世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "XY 所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%B4%9B%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "阿罗拉",
+      "linyu": "阿罗拉",
+      "alias": "第七世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "日月所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%BF%E7%BD%97%E6%8B%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "伽勒尔",
+      "linyu": "伽勒尔",
+      "alias": "第八世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "剑盾所在的地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%BD%E5%8B%92%E5%B0%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "帕底亚",
+      "linyu": "帕底亚",
+      "alias": "第九世代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "朱紫所在的地区，圈内戏称「帕底亚大沙田」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%95%E5%BA%95%E4%BA%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "红绿",
+      "linyu": "红绿",
+      "alias": "初代",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "1996 年的最初两版。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E7%BB%BF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蓝",
+      "linyu": "蓝",
+      "alias": "初代第三版",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "初代的第三个版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%93%9D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "黄",
+      "linyu": "黄",
+      "alias": "皮卡丘版",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "以皮卡丘为初始精灵的特别版。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BB%84",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "金银",
+      "linyu": "金银",
+      "alias": "第二世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "城都地区的两版。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E9%93%B6",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "水晶",
+      "linyu": "水晶",
+      "alias": "资料片",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "金银的资料片。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E6%99%B6",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "红蓝宝石",
+      "linyu": "红蓝宝石",
+      "alias": "第三世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "丰缘地区的两版。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E8%93%9D%E5%AE%9D%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "绿宝石",
+      "linyu": "绿宝石",
+      "alias": "资料片",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "红蓝宝石的资料片，烈空坐是封面神。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%BF%E5%AE%9D%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火红叶绿",
+      "linyu": "火红叶绿",
+      "alias": "重制版",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "初代的重制版。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E7%BA%A2%E5%8F%B6%E7%BB%BF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "珍珠钻石",
+      "linyu": "珍珠钻石",
+      "alias": "第四世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "神奥地区的两版。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8F%8D%E7%8F%A0%E9%92%BB%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "黑白",
+      "linyu": "黑白",
+      "alias": "第五世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "合众地区的两版。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BB%91%E7%99%BD",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "黑2白2",
+      "linyu": "黑2白2",
+      "alias": "正统续作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "少见的直接续作而非资料片。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BB%912%E7%99%BD2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "XY",
+      "linyu": "XY",
+      "alias": "第六世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "卡洛斯地区的两版，首次全 3D 化。",
+      "source": "https://search.bilibili.com/all?keyword=XY",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "日月",
+      "linyu": "日月",
+      "alias": "第七世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "阿罗拉地区的两版，取消道馆改诸岛巡礼。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%97%A5%E6%9C%88",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "剑盾",
+      "linyu": "剑盾",
+      "alias": "第八世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "伽勒尔地区的两版，极巨化登场。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%91%E7%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "传说阿尔宙斯",
+      "linyu": "传说阿尔宙斯",
+      "alias": "阿尔宙斯",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "洗翠地区的外传，玩法大改。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%A0%E8%AF%B4%E9%98%BF%E5%B0%94%E5%AE%99%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "朱紫",
+      "linyu": "朱紫",
+      "alias": "第九世代正作",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "帕底亚地区的两版，太晶化登场。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%B1%E7%B4%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "诸岛巡礼",
+      "linyu": "诸岛巡礼",
+      "alias": "替代道馆",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "日月用来替代道馆的挑战体系。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%B8%E5%B2%9B%E5%B7%A1%E7%A4%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "霸主",
+      "linyu": "霸主",
+      "alias": "首领",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "日月里体型巨大的野生精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9C%B8%E4%B8%BB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "华丽大赛",
+      "linyu": "华丽大赛",
+      "alias": "选美",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "以招式表演打分的比赛。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%8E%E4%B8%BD%E5%A4%A7%E8%B5%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "对战塔",
+      "linyu": "对战塔",
+      "alias": "塔",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "连胜制的挑战设施。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%B9%E6%88%98%E5%A1%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本训练家",
+      "linyu": "本训练家",
+      "alias": "本可、老娘",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "以训练家身份自称，配「就决定是你了」使用。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E8%AE%AD%E7%BB%83%E5%AE%B6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本博士",
+      "linyu": "本博士",
+      "alias": "本可",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "把自己当宝可梦博士时的自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%8D%9A%E5%A3%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本冠军",
+      "linyu": "本冠军",
+      "alias": "老娘",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "自封冠军时的自称，多用于赢了对战之后。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%86%A0%E5%86%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "我皮",
+      "linyu": "我皮",
+      "alias": "皮神",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "「我X」式代称，指皮卡丘。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E7%9A%AE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "我伊",
+      "linyu": "我伊",
+      "alias": "伊布",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "「我X」式代称，指伊布。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E4%BC%8A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "就决定是你了",
+      "linyu": "就决定是你了",
+      "alias": "决定是你",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "动画里投出精灵球前的固定台词。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%B1%E5%86%B3%E5%AE%9A%E6%98%AF%E4%BD%A0%E4%BA%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "皮卡皮卡",
+      "linyu": "皮卡皮卡",
+      "alias": "皮卡丘叫声",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "皮卡丘的叫声，弹幕复读专用。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9A%AE%E5%8D%A1%E7%9A%AE%E5%8D%A1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "十万伏特",
+      "linyu": "十万伏特",
+      "alias": "十万",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "皮卡丘的招牌电系招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%81%E4%B8%87%E4%BC%8F%E7%89%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "冲浪",
+      "linyu": "冲浪",
+      "alias": "水上",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "水系招式，也有特殊活动版皮卡丘会。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B2%E6%B5%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "电球",
+      "linyu": "电球",
+      "alias": "皮卡丘的电球",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "速度越快伤害越高的电系招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%B5%E7%90%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "可达鸭头痛",
+      "linyu": "可达鸭头痛",
+      "alias": "头痛",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "头痛时念力爆发，是动画名场面。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%AF%E8%BE%BE%E9%B8%AD%E5%A4%B4%E7%97%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "可达鸭发呆",
+      "linyu": "可达鸭发呆",
+      "alias": "呆",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "反应慢半拍，被用来形容走神。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%AF%E8%BE%BE%E9%B8%AD%E5%8F%91%E5%91%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡比兽睡觉",
+      "linyu": "卡比兽睡觉",
+      "alias": "睡觉",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "卡比兽的常态，堵路时最有效。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%AF%94%E5%85%BD%E7%9D%A1%E8%A7%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡比兽压路",
+      "linyu": "卡比兽压路",
+      "alias": "压路",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "体型巨大挡在路中间。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%AF%94%E5%85%BD%E5%8E%8B%E8%B7%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "野生XX出现",
+      "linyu": "野生XX出现",
+      "alias": "野生的",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "仿游戏遇敌提示的句式。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%8E%E7%94%9FXX%E5%87%BA%E7%8E%B0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "升级",
+      "linyu": "升级",
+      "alias": "升级了",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "仿游戏提示语，用来形容任何进步。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%87%E7%BA%A7",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "捕获成功",
+      "linyu": "捕获成功",
+      "alias": "抓到了",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "仿游戏的捕获提示。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%95%E8%8E%B7%E6%88%90%E5%8A%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "图鉴编号",
+      "linyu": "图鉴编号",
+      "alias": "编号",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "按图鉴顺序编号，圈内用编号代称精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BE%E9%89%B4%E7%BC%96%E5%8F%B7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦大师",
+      "linyu": "宝可梦大师",
+      "alias": "淋可梦大师",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "系列动画的终极目标，也是本分区别名。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%A4%A7%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "成为宝可梦大师",
+      "linyu": "成为宝可梦大师",
+      "alias": "大师之路",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "动画主题句，常用于立 flag。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%90%E4%B8%BA%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%A4%A7%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "一球超人",
+      "linyu": "一球超人",
+      "alias": "狗豪",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "讽刺《旅途》主角小豪一球必中的设定。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E7%90%83%E8%B6%85%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "狗豪",
+      "linyu": "狗豪",
+      "alias": "小豪",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "对小豪的贬称，因收服方式引发争议。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8B%97%E8%B1%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小智障",
+      "linyu": "小智障",
+      "alias": "小智",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "对小智的调侃式叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%99%BA%E9%9A%9C",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "老喷",
+      "linyu": "老喷",
+      "alias": "喷火龙",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "喷火龙的亲昵叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%81%E5%96%B7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "皮神",
+      "linyu": "皮神",
+      "alias": "皮卡丘",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "皮卡丘的神化叫法，指其战力超规格。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9A%AE%E7%A5%9E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蒜头王八",
+      "linyu": "蒜头王八",
+      "alias": "妙蛙种子",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "妙蛙种子的外形梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%92%9C%E5%A4%B4%E7%8E%8B%E5%85%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火恐龙不听话",
+      "linyu": "火恐龙不听话",
+      "alias": "叛逆",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "指火恐龙进化后一度不听指挥。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E6%81%90%E9%BE%99%E4%B8%8D%E5%90%AC%E8%AF%9D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "波克比",
+      "linyu": "波克比",
+      "alias": "蛋",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "从蛋里孵出的妖精属性精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%A2%E5%85%8B%E6%AF%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "胖丁唱歌",
+      "linyu": "胖丁唱歌",
+      "alias": "催眠曲",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "胖丁的歌声让全场睡着，包括自己。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%96%E4%B8%81%E5%94%B1%E6%AD%8C",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "胖丁的笔",
+      "linyu": "胖丁的笔",
+      "alias": "马克笔",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "动画里胖丁拿笔在睡着的人脸上画画。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%96%E4%B8%81%E7%9A%84%E7%AC%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "鲤鱼王",
+      "linyu": "鲤鱼王",
+      "alias": "最弱",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "公认最弱精灵，只会水溅跃。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%B2%A4%E9%B1%BC%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "鲤鱼王翻身",
+      "linyu": "鲤鱼王翻身",
+      "alias": "翻身",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "指鲤鱼王进化成暴鲤龙后的逆转。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%B2%A4%E9%B1%BC%E7%8E%8B%E7%BF%BB%E8%BA%AB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "暴鲤龙",
+      "linyu": "暴鲤龙",
+      "alias": "大凶",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "鲤鱼王的进化型，水／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9A%B4%E9%B2%A4%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "铁甲贝夹头",
+      "linyu": "铁甲贝夹头",
+      "alias": "夹住",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "大舌贝咬住呆呆兽尾巴的名场面。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%81%E7%94%B2%E8%B4%9D%E5%A4%B9%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "耿鬼笑",
+      "linyu": "耿鬼笑",
+      "alias": "笑",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "耿鬼的招牌笑容，弹幕常用。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%BF%E9%AC%BC%E7%AC%91",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "梦幻",
+      "linyu": "梦幻",
+      "alias": "初代幻兽",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "超能力属性幻之精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A2%A6%E5%B9%BB",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "超梦",
+      "linyu": "超梦",
+      "alias": "最强",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "梦幻的克隆体，超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E6%A2%A6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "梦幻vs超梦",
+      "linyu": "梦幻vs超梦",
+      "alias": "剧场版",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "剧场版《超梦的逆袭》的核心对决。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A2%A6%E5%B9%BBvs%E8%B6%85%E6%A2%A6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "帕底亚大嘴鸥",
+      "linyu": "帕底亚大嘴鸥",
+      "alias": "大嘴鸥",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "朱紫地区常见的水／飞行属性精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%95%E5%BA%95%E4%BA%9A%E5%A4%A7%E5%98%B4%E9%B8%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大沙田学院",
+      "linyu": "大沙田学院",
+      "alias": "帕底亚学院",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "把帕底亚学院淋化成「大沙田学院」，是淋可梦区的开区梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E6%B2%99%E7%94%B0%E5%AD%A6%E9%99%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦肉鸽",
+      "linyu": "宝可梦肉鸽",
+      "alias": "肉鸽",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "指同人 roguelike 玩法，圈内常刷。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E8%82%89%E9%B8%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "御三家图鉴",
+      "linyu": "御三家图鉴",
+      "alias": "三只合集",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "把各代御三家排在一起的内容格式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%A1%E4%B8%89%E5%AE%B6%E5%9B%BE%E9%89%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "满级",
+      "linyu": "满级",
+      "alias": "一百级",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "等级练到上限。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BB%A1%E7%BA%A7",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "亲密度满",
+      "linyu": "亲密度满",
+      "alias": "满好感",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "亲密度练满，部分精灵靠这个进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%B2%E5%AF%86%E5%BA%A6%E6%BB%A1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "闪光遇率",
+      "linyu": "闪光遇率",
+      "alias": "遇率",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "刷闪时最在意的概率数字。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E5%85%89%E9%81%87%E7%8E%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "一血",
+      "linyu": "一血",
+      "alias": "先手带走",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "第一条命被打掉，或第一滴血。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E8%A1%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "读条",
+      "linyu": "读条",
+      "alias": "蓄力",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "蓄力型招式的等待回合。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BB%E6%9D%A1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "我推",
+      "linyu": "我推",
+      "alias": "本命",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "饭圈式叫法，指自己主推的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%8E%A8",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "皮卡丘婆",
+      "linyu": "皮卡丘婆",
+      "alias": "皮神婆",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "对皮卡丘死忠粉的圈内叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9A%AE%E5%8D%A1%E4%B8%98%E5%A9%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "伊布控",
+      "linyu": "伊布控",
+      "alias": "八个伊布",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "伊布八分支全收的收集党。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%8A%E5%B8%83%E6%8E%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "超梦嬷",
+      "linyu": "超梦嬷",
+      "alias": "超梦婆",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "对超梦过度溺爱的粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E6%A2%A6%E5%AC%B7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "御三家控",
+      "linyu": "御三家控",
+      "alias": "三只都要",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "每代御三家都要练满的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%A1%E4%B8%89%E5%AE%B6%E6%8E%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "对战党",
+      "linyu": "对战党",
+      "alias": "打排位",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "只关心对战强度的那一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%B9%E6%88%98%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "收图党",
+      "linyu": "收图党",
+      "alias": "图鉴党",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "以补图鉴为乐的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%B6%E5%9B%BE%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "孵蛋婆",
+      "linyu": "孵蛋婆",
+      "alias": "蛋党",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "把孵蛋当主业的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%B5%E8%9B%8B%E5%A9%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "闪光猎人",
+      "linyu": "闪光猎人",
+      "alias": "刷闪党",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "专门刷闪光个体的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E5%85%89%E7%8C%8E%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "图鉴党",
+      "linyu": "图鉴党",
+      "alias": "全集齐、集卡",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "以图鉴全满为目标的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BE%E9%89%B4%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "龙控",
+      "linyu": "龙控",
+      "alias": "龙系本命",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "只练龙属性的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99%E6%8E%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "萌系控",
+      "linyu": "萌系控",
+      "alias": "可爱就行",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "只看外形不看强度的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%90%8C%E7%B3%BB%E6%8E%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦老公",
+      "linyu": "宝可梦老公",
+      "alias": "老公",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "把某只精灵当老公的叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E8%80%81%E5%85%AC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦老婆",
+      "linyu": "宝可梦老婆",
+      "alias": "老婆",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "把某只精灵当老婆的叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E8%80%81%E5%A9%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "对战萌新",
+      "linyu": "对战萌新",
+      "alias": "萌新",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "刚入对战坑的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%B9%E6%88%98%E8%90%8C%E6%96%B0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "赤焰龙皇",
+      "linyu": "赤焰龙皇",
+      "alias": "龙皇、赤焰",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "火系龙形精灵，龙皇分支的代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%A4%E7%84%B0%E9%BE%99%E7%9A%87",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "次元圣龙",
+      "linyu": "次元圣龙",
+      "alias": "圣龙",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙系精灵，次元主题的圣龙形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AC%A1%E5%85%83%E5%9C%A3%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "食神米淇淋",
+      "linyu": "食神米淇淋",
+      "alias": "米淇淋",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "美食系精灵，以冰淇淋为主题。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A3%9F%E7%A5%9E%E7%B1%B3%E6%B7%87%E6%B7%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战神·天蛮王",
+      "linyu": "战神·天蛮王",
+      "alias": "天蛮王、蛮王",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "战神系精灵，语料里被点名「加强超标」。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E7%A5%9E%C2%B7%E5%A4%A9%E8%9B%AE%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "巨神泰坦",
+      "linyu": "巨神泰坦",
+      "alias": "泰坦",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "巨人职业的量级精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A8%E7%A5%9E%E6%B3%B0%E5%9D%A6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "龙炎",
+      "linyu": "龙炎",
+      "alias": "我炎",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙系精灵，语料里与帝释天并提。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99%E7%82%8E",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "王龙",
+      "linyu": "王龙",
+      "alias": "龙王",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙皇分支的高位形态，能造分身。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E9%BE%99",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "幻王龙",
+      "linyu": "幻王龙",
+      "alias": "幻王",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "王龙的幻化分支。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%BB%E7%8E%8B%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "龙梵",
+      "linyu": "龙梵",
+      "alias": "我梵",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙系精灵，语料里反复被夸「帅」。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99%E6%A2%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神运龙梵",
+      "linyu": "神运龙梵",
+      "alias": "神运",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙梵的神运形态，圈内公认最帅一版。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%BF%90%E9%BE%99%E6%A2%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "星际龙梵",
+      "linyu": "星际龙梵",
+      "alias": "星际",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙梵的星际形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%98%9F%E9%99%85%E9%BE%99%E6%A2%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "龙修",
+      "linyu": "龙修",
+      "alias": "我修",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙系精灵，语料里被吐槽「市区」。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99%E4%BF%AE",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神运龙修",
+      "linyu": "神运龙修",
+      "alias": "绝版龙修",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "龙修的神运形态，已绝版，回归党常求返厂。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%BF%90%E9%BE%99%E4%BF%AE",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "路因",
+      "linyu": "路因",
+      "alias": "我路",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "能带分身的精灵，常与王龙一起上。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E5%9B%A0",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "卡拉",
+      "linyu": "卡拉",
+      "alias": "我卡",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "平民元素师，语料里被问「为什么能一直进化」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%8B%89",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "诺亚",
+      "linyu": "诺亚",
+      "alias": "我诺",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "通灵师体系核心之一，语料里与维达并提。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BA%E4%BA%9A",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "小诺",
+      "linyu": "小诺",
+      "alias": "诺诺",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "诺亚的少年形态，有生日会。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E8%AF%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "诺妈",
+      "linyu": "诺妈",
+      "alias": "诺雅妈",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "诺雅的通俗叫法，语料里与昆吾并列。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BA%E5%A6%88",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "诺雅",
+      "linyu": "诺雅",
+      "alias": "我雅",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "通灵师之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BA%E9%9B%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "昆吾",
+      "linyu": "昆吾",
+      "alias": "我昆",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "通灵师之一，与诺雅组神草阵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%98%86%E5%90%BE",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "究",
+      "linyu": "究",
+      "alias": "我究",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "通灵师之一，语料里被评「太要手法」。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%B6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "伊桑",
+      "linyu": "伊桑",
+      "alias": "我桑",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "通灵师，语料里玩家催它上岗。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%8A%E6%A1%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "维达",
+      "linyu": "维达",
+      "alias": "我维",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "与诺亚同队的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%B4%E8%BE%BE",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "九九",
+      "linyu": "九九",
+      "alias": "我九",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵，语料里被拿来对比「掉毛」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B9%9D%E4%B9%9D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "凡尔维斯",
+      "linyu": "凡尔维斯",
+      "alias": "秘阁精灵",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "秘阁体系精灵，语料里与伊桑同队。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%A1%E5%B0%94%E7%BB%B4%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "光次",
+      "linyu": "光次",
+      "alias": "传奇耐增王",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "光系精灵，因反复加强被叫「传奇耐增王」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%89%E6%AC%A1",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "戴安娜",
+      "linyu": "戴安娜",
+      "alias": "我戴",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "语料里被玩家喊加强的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%B4%E5%AE%89%E5%A8%9C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "幻希",
+      "linyu": "幻希",
+      "alias": "我希",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "幻化系精灵，语料里说它加强是为了进弥雅队。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%BB%E5%B8%8C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "弥雅",
+      "linyu": "弥雅",
+      "alias": "我弥",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "队伍核心精灵之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%A5%E9%9B%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "果元天尊",
+      "linyu": "果元天尊",
+      "alias": "数值怪",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "联动精灵，公认数值离谱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%9C%E5%85%83%E5%A4%A9%E5%B0%8A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "果宝战神",
+      "linyu": "果宝战神",
+      "alias": "果宝",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "果宝特攻联动精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%9C%E5%AE%9D%E6%88%98%E7%A5%9E",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "魔霸天王",
+      "linyu": "魔霸天王",
+      "alias": "魔霸",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "联动精灵，语料里猜它「不氪」。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%94%E9%9C%B8%E5%A4%A9%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "国宝战神",
+      "linyu": "国宝战神",
+      "alias": "国宝",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "联动精灵，语料里猜它「不肝」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BD%E5%AE%9D%E6%88%98%E7%A5%9E",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奶龙",
+      "linyu": "奶龙",
+      "alias": "小奶龙",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "联动精灵，语料里被指「害了奥奇」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%B6%E9%BE%99",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "帝皇侠",
+      "linyu": "帝皇侠",
+      "alias": "帝皇",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "联动精灵，语料里被叹「PVE 看不到我」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%9D%E7%9A%87%E4%BE%A0",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "果宝特攻",
+      "linyu": "果宝特攻",
+      "alias": "果宝",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "联动 IP 名，语料里说它「两边跑」。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%9C%E5%AE%9D%E7%89%B9%E6%94%BB",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "修尔",
+      "linyu": "修尔",
+      "alias": "我修",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵，语料里与菠萝并提。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%AE%E5%B0%94",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "橙留香",
+      "linyu": "橙留香",
+      "alias": "橙子",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "果宝特攻角色，语料里被猜是诺亚。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A9%99%E7%95%99%E9%A6%99",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "菠萝吹雪",
+      "linyu": "菠萝吹雪",
+      "alias": "菠萝",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "果宝特攻角色，语料里被猜是修尔。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8F%A0%E8%90%9D%E5%90%B9%E9%9B%AA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "熊猫",
+      "linyu": "熊猫",
+      "alias": "国宝熊猫",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵，语料里与天蛮王组神草阵。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%86%8A%E7%8C%AB",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "黄金瑞",
+      "linyu": "黄金瑞",
+      "alias": "黄金",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵，语料里被吐槽源兽等级低。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BB%84%E9%87%91%E7%91%9E",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "王龙源兽",
+      "linyu": "王龙源兽",
+      "alias": "源兽",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "给王龙系精灵使用的源兽材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E9%BE%99%E6%BA%90%E5%85%BD",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "星迹",
+      "linyu": "星迹",
+      "alias": "星迹形态",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵的形态版本名，语料里公认最帅。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%98%9F%E8%BF%B9",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神运",
+      "linyu": "神运",
+      "alias": "神运形态",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵的形态版本名，介于星迹与新形态之间。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%BF%90",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "灵初",
+      "linyu": "灵初",
+      "alias": "灵初形态",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "精灵的最新形态版本，语料里被指「游戏死在灵初」。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%B5%E5%88%9D",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "通灵师",
+      "linyu": "通灵师",
+      "alias": "通灵",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "职业体系里的一类，靠通灵召唤作战。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9A%E7%81%B5%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "元素师",
+      "linyu": "元素师",
+      "alias": "元素",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "职业体系里的一类，卡拉就是平民元素师。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%83%E7%B4%A0%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "召唤师",
+      "linyu": "召唤师",
+      "alias": "召唤",
+      "slot": "奥奇淋说 / 奥奇精灵淋名",
+      "sense": "九职业之一，靠召唤物作战。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%AC%E5%94%A4%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "肉盾",
+      "linyu": "肉盾",
+      "alias": "坦克",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，负责前排承伤。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%82%89%E7%9B%BE",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "射击",
+      "linyu": "射击",
+      "alias": "远程",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，远程物理输出。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%84%E5%87%BB",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "魔法",
+      "linyu": "魔法",
+      "alias": "法师",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，远程法术输出。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%94%E6%B3%95",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "平衡",
+      "linyu": "平衡",
+      "alias": "万金油",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，攻守均衡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B3%E8%A1%A1",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "利爪",
+      "linyu": "利爪",
+      "alias": "近战",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，近战物理输出。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%A9%E7%88%AA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "治疗",
+      "linyu": "治疗",
+      "alias": "奶",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，负责回血。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B2%BB%E7%96%97",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "巨人",
+      "linyu": "巨人",
+      "alias": "大个",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "九职业之一，体型与血量极大。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A8%E4%BA%BA",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "前排",
+      "linyu": "前排",
+      "alias": "前",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "队伍里站最前面的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%8D%E6%8E%92",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "后排",
+      "linyu": "后排",
+      "alias": "后",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "队伍里站最后面的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%8E%E6%8E%92",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "控场",
+      "linyu": "控场",
+      "alias": "控制",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "负责限制对手行动。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%A7%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神草阵",
+      "linyu": "神草阵",
+      "alias": "神草队",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "以神草属性为核心的阵容，语料里的高频打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%8D%89%E9%98%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "平民阵容",
+      "linyu": "平民阵容",
+      "alias": "平民队",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "不依赖氪金精灵的阵容，联动新精灵常被做成平民队。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B3%E6%B0%91%E9%98%B5%E5%AE%B9",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "一气化三清",
+      "linyu": "一气化三清",
+      "alias": "三化",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "形容一只精灵分化出多个形态，语料里的玩梗说法。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E6%B0%94%E5%8C%96%E4%B8%89%E6%B8%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "加强计划",
+      "linyu": "加强计划",
+      "alias": "加强",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "官方定期上调老精灵强度的计划，语料里的主线话题。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%A0%E5%BC%BA%E8%AE%A1%E5%88%92",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "三区鼎立",
+      "linyu": "三区鼎立",
+      "alias": "三王鼎立",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "形容三个阵营互相牵制，语料里被改写成「三区鼎立」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%8C%BA%E9%BC%8E%E7%AB%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "联动精灵",
+      "linyu": "联动精灵",
+      "alias": "联动宠",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "联动活动推出的精灵，因为不能进化被吐槽。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E5%8A%A8%E7%B2%BE%E7%81%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "形态固化剂",
+      "linyu": "形态固化剂",
+      "alias": "固化剂",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "固定精灵形态的道具，语料里玩家催它上线。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BD%A2%E6%80%81%E5%9B%BA%E5%8C%96%E5%89%82",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "性转哥",
+      "linyu": "性转哥",
+      "alias": "性转",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "语料里对某类评论者的戏称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%80%A7%E8%BD%AC%E5%93%A5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "掉毛",
+      "linyu": "掉毛",
+      "alias": "没伤害",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "形容精灵输出低、作用小。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%89%E6%AF%9B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "市区",
+      "linyu": "市区",
+      "alias": "拉胯",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "「拉胯」的谐音写法，语料里高频。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%82%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "仓管",
+      "linyu": "仓管",
+      "alias": "仓库管理员",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "指抽到就放进仓库不用的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BB%93%E7%AE%A1",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "返厂",
+      "linyu": "返厂",
+      "alias": "返场",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "绝版精灵重新上架。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%94%E5%8E%82",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "开荒",
+      "linyu": "开荒",
+      "alias": "前期",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "新号从零开始推图。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E8%8D%92",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "魂",
+      "linyu": "魂",
+      "alias": "魂值",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵的核心资源数值，语料里说「伤害没有，魂也没有」。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%82",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战力",
+      "linyu": "战力",
+      "alias": "战斗力",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵强度的综合数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%8A%9B",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "星级",
+      "linyu": "星级",
+      "alias": "星",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵的星级，影响上限。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%98%9F%E7%BA%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "超进化",
+      "linyu": "超进化",
+      "alias": "进化",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵的进阶形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E8%BF%9B%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "究极进化",
+      "linyu": "究极进化",
+      "alias": "究极",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "更高一阶的进化形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%B6%E6%9E%81%E8%BF%9B%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "觉醒",
+      "linyu": "觉醒",
+      "alias": "觉",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升精灵属性的养成环节。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A7%89%E9%86%92",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "天赋",
+      "linyu": "天赋",
+      "alias": "资质",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "影响成长上限的隐藏数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E8%B5%8B",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "符文",
+      "linyu": "符文",
+      "alias": "铭文",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "给精灵加属性的装备体系。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AC%A6%E6%96%87",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "突破",
+      "linyu": "突破",
+      "alias": "突",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升精灵等级上限的操作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AA%81%E7%A0%B4",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "羁绊",
+      "linyu": "羁绊",
+      "alias": "缘分",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "特定精灵同队时的加成。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BE%81%E7%BB%8A",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "普通",
+      "linyu": "普通",
+      "alias": "普通系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一，无克制优势。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%99%AE%E9%80%9A",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "风",
+      "linyu": "风",
+      "alias": "风系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A3%8E",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "土",
+      "linyu": "土",
+      "alias": "土系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%9F",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "暗",
+      "linyu": "暗",
+      "alias": "暗系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9A%97",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "光",
+      "linyu": "光",
+      "alias": "光系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "机械",
+      "linyu": "机械",
+      "alias": "机系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%BA%E6%A2%B0",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "美食",
+      "linyu": "美食",
+      "alias": "食系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一，食神米淇淋属此系。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BE%8E%E9%A3%9F",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "武",
+      "linyu": "武",
+      "alias": "武系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AD%A6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "超能",
+      "linyu": "超能",
+      "alias": "超能系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E8%83%BD",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "幻化",
+      "linyu": "幻化",
+      "alias": "幻系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一，幻王龙属此系。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%BB%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "恶魔",
+      "linyu": "恶魔",
+      "alias": "魔系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%81%B6%E9%AD%94",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "萌",
+      "linyu": "萌",
+      "alias": "萌系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一，莓莓小姐属此系。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%90%8C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战神",
+      "linyu": "战神",
+      "alias": "战神系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "二十系之一，天蛮王属此系。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E7%A5%9E",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神火",
+      "linyu": "神火",
+      "alias": "神火系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "六神属性之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E7%81%AB",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神水",
+      "linyu": "神水",
+      "alias": "神水系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "六神属性之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E6%B0%B4",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神草",
+      "linyu": "神草",
+      "alias": "神草系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "六神属性之一，神草阵的核心。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%8D%89",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神暗",
+      "linyu": "神暗",
+      "alias": "神暗系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "六神属性之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E6%9A%97",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神光",
+      "linyu": "神光",
+      "alias": "神光系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "六神属性之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "神灵",
+      "linyu": "神灵",
+      "alias": "神灵系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "六神属性之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E7%81%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本召唤师",
+      "linyu": "本召唤师",
+      "alias": "本可",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "以召唤师身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%8F%AC%E5%94%A4%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本精灵",
+      "linyu": "本精灵",
+      "alias": "本可",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "以精灵身份自称，多用于自嘲。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E7%B2%BE%E7%81%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我莓",
+      "linyu": "我莓",
+      "alias": "莓莓",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指莓莓小姐。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E8%8E%93",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我龙",
+      "linyu": "我龙",
+      "alias": "龙梵",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指龙系本命。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我喵",
+      "linyu": "我喵",
+      "alias": "飞天猫",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指飞天猫。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%96%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本命精灵",
+      "linyu": "本命精灵",
+      "alias": "本命",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "最钟爱的那只精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%91%BD%E7%B2%BE%E7%81%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "莓莓婆",
+      "linyu": "莓莓婆",
+      "alias": "莓莓控",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "对莓莓小姐死忠的粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8E%93%E8%8E%93%E5%A9%86",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战力党",
+      "linyu": "战力党",
+      "alias": "强度党",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "只关心战力数值的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%8A%9B%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇战士",
+      "linyu": "奥奇战士",
+      "alias": "奥奇",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "对奥奇玩家的自称，语料里的高频称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%88%98%E5%A3%AB",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇大陆",
+      "linyu": "奥奇大陆",
+      "alias": "大陆",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "游戏世界观的称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%A4%A7%E9%99%86",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "精灵图鉴",
+      "linyu": "精灵图鉴",
+      "alias": "图鉴",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "收录精灵的图鉴体系。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%89%B4",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "组合技",
+      "linyu": "组合技",
+      "alias": "连携",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "多只精灵配合释放的技能。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%84%E5%90%88%E6%8A%80",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "决战大沙田",
+      "linyu": "决战！大沙田",
+      "alias": "大沙田",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "把「决战！奥奇」改写成「决战！大沙田」的整活叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B3%E6%88%98%E5%A4%A7%E6%B2%99%E7%94%B0",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "莓莓小姐请出招",
+      "linyu": "莓莓小姐请出招",
+      "alias": "请出招",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "围绕莓莓小姐的整活句式。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8E%93%E8%8E%93%E5%B0%8F%E5%A7%90%E8%AF%B7%E5%87%BA%E6%8B%9B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奶龙害了奥奇",
+      "linyu": "奶龙害了奥奇",
+      "alias": "奶龙",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "语料里对奶龙联动后果的评价。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%B6%E9%BE%99%E5%AE%B3%E4%BA%86%E5%A5%A5%E5%A5%87",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "回归党",
+      "linyu": "回归党",
+      "alias": "回归",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "离开后重新回坑的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E5%BD%92%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "策划",
+      "linyu": "策划",
+      "alias": "ch",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "对开发组的称呼，语料里高频出现。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AD%96%E5%88%92",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "CH",
+      "linyu": "CH",
+      "alias": "策划",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "策划的缩写写法。",
+      "source": "https://search.bilibili.com/all?keyword=CH",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "洗地",
+      "linyu": "洗地",
+      "alias": "护",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "替官方说话。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%97%E5%9C%B0",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "数值怪",
+      "linyu": "数值怪",
+      "alias": "超标",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "数值明显高于同级的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%95%B0%E5%80%BC%E6%80%AA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "压强度",
+      "linyu": "压强度",
+      "alias": "削",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "把精灵强度往下调。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8E%8B%E5%BC%BA%E5%BA%A6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "上位",
+      "linyu": "上位",
+      "alias": "替代",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "能取代旧精灵位置的新精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8A%E4%BD%8D",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "绝版",
+      "linyu": "绝版",
+      "alias": "不再出",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "活动结束后无法再获得的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%9D%E7%89%88",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "威龙",
+      "linyu": "威龙",
+      "alias": "威龙daddy、风暴玛焰",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员，语料里最早被写成「白袜被窃」主角。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A8%81%E9%BE%99",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "红狼",
+      "linyu": "红狼",
+      "alias": "我狼",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员，语料里出现「红狼阵亡姿势」。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E7%8B%BC",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "疾风",
+      "linyu": "疾风",
+      "alias": "我风",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员，语料里「大招大加强」。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%96%BE%E9%A3%8E",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "无名",
+      "linyu": "无名",
+      "alias": "我名",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%97%A0%E5%90%8D",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "乌鲁鲁",
+      "linyu": "乌鲁鲁",
+      "alias": "我鲁",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B9%8C%E9%B2%81%E9%B2%81",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "比特",
+      "linyu": "比特",
+      "alias": "我比",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%94%E7%89%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "银翼",
+      "linyu": "银翼",
+      "alias": "我翼",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "突击干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%B6%E7%BF%BC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "深蓝",
+      "linyu": "深蓝",
+      "alias": "我蓝",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "工程干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%B1%E8%93%9D",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "牧羊人",
+      "linyu": "牧羊人",
+      "alias": "羊",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "工程干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%A7%E7%BE%8A%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "蜂医",
+      "linyu": "蜂医",
+      "alias": "蜂",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "支援干员，负责治疗。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9C%82%E5%8C%BB",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "蛊",
+      "linyu": "蛊",
+      "alias": "我蛊",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "支援干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9B%8A",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "蝶",
+      "linyu": "蝶",
+      "alias": "我蝶",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "支援干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9D%B6",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "露娜",
+      "linyu": "露娜",
+      "alias": "我娜",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "侦察干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9C%B2%E5%A8%9C",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "骇爪",
+      "linyu": "骇爪",
+      "alias": "爪",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "侦察干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AA%87%E7%88%AA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "回响",
+      "linyu": "回响",
+      "alias": "S9 新干员",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "S9 赛季新增的侦察干员。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E5%93%8D",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "液氮",
+      "linyu": "液氮",
+      "alias": "N-Two",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "S10 预告的工程干员，属未上线内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B6%B2%E6%B0%AE",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "交女王",
+      "linyu": "交女王",
+      "alias": "统统闪开",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "圈内对某位干员的整活称呼，rank 里挂「统统闪开」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%A4%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "突击",
+      "linyu": "突击",
+      "alias": "突击兵",
+      "slot": "淋角洲行动 / 淋角洲干员位分",
+      "sense": "四大兵种之一，正面推进。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AA%81%E5%87%BB",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "工程",
+      "linyu": "工程",
+      "alias": "工程兵",
+      "slot": "淋角洲行动 / 淋角洲干员位分",
+      "sense": "四大兵种之一，破障与架设。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A5%E7%A8%8B",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "一号位",
+      "linyu": "一号位",
+      "alias": "一突",
+      "slot": "淋角洲行动 / 淋角洲干员位分",
+      "sense": "队伍里第一个进门的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E5%8F%B7%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "二号位",
+      "linyu": "二号位",
+      "alias": "二突",
+      "slot": "淋角洲行动 / 淋角洲干员位分",
+      "sense": "跟在一号位后面补枪的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%8C%E5%8F%B7%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "护航",
+      "linyu": "护航",
+      "alias": "带",
+      "slot": "淋角洲行动 / 淋角洲干员位分",
+      "sense": "替队友挡枪或掩护撤离。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%A4%E8%88%AA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "探路",
+      "linyu": "探路",
+      "alias": "摸",
+      "slot": "淋角洲行动 / 淋角洲干员位分",
+      "sense": "先一步确认前方是否安全。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%A2%E8%B7%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "冲锋枪",
+      "linyu": "冲锋枪",
+      "alias": "SMG",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "主武器类型，近距离射速快。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B2%E9%94%8B%E6%9E%AA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "轻机枪",
+      "linyu": "轻机枪",
+      "alias": "机枪",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "主武器类型，压制力强。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BD%BB%E6%9C%BA%E6%9E%AA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "手枪",
+      "linyu": "手枪",
+      "alias": "副武器",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "副武器类型。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%8B%E6%9E%AA",
+      "pop": "高",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "弹药",
+      "linyu": "弹药",
+      "alias": "子弹",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "按口径区分，赛季结束会过期。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E8%8D%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "口径",
+      "linyu": "口径",
+      "alias": "弹径",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "子弹规格，决定能不能通用。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%A3%E5%BE%84",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "弹匣",
+      "linyu": "弹匣",
+      "alias": "弹夹",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "装弹容量。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E5%8C%A3",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "瞄具",
+      "linyu": "瞄具",
+      "alias": "镜",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "影响开镜倍率的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9E%84%E5%85%B7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "消音器",
+      "linyu": "消音器",
+      "alias": "消",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低枪声暴露范围。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B6%88%E9%9F%B3%E5%99%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "握把",
+      "linyu": "握把",
+      "alias": "把",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低后坐力的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8F%A1%E6%8A%8A",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "护甲",
+      "linyu": "护甲",
+      "alias": "甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "吸收伤害的防具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%A4%E7%94%B2",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "背包",
+      "linyu": "背包",
+      "alias": "包",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "决定能带多少战利品。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%8C%E5%8C%85",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "医疗包",
+      "linyu": "医疗包",
+      "alias": "医疗",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "回复血量的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8C%BB%E7%96%97%E5%8C%85",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "止痛药",
+      "linyu": "止痛药",
+      "alias": "止痛",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "短时间免疫疼痛影响。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AD%A2%E7%97%9B%E8%8D%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "制式券",
+      "linyu": "制式券",
+      "alias": "兑换券",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "换取制式装备的券。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B6%E5%BC%8F%E5%88%B8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "金枪客",
+      "linyu": "金枪客",
+      "alias": "金枪",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "语料里的赛季任务名。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E6%9E%AA%E5%AE%A2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离",
+      "linyu": "撤离",
+      "alias": "撤",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "带着战利品离开地图，成功即结算收益。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离点",
+      "linyu": "撤离点",
+      "alias": "撤点",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "地图上可撤离的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离失败",
+      "linyu": "撤离失败",
+      "alias": "白给",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "没撤出去，战利品全丢。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E5%A4%B1%E8%B4%A5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "搜刮",
+      "linyu": "搜刮",
+      "alias": "摸金",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "在地图里翻找物资。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%90%9C%E5%88%AE",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "舔包",
+      "linyu": "舔包",
+      "alias": "捡包",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "搜刮别人掉落的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%94%E5%8C%85",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "爆仓",
+      "linyu": "爆仓",
+      "alias": "装不下",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "背包塞满，带不走更多东西。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%88%86%E4%BB%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "进图",
+      "linyu": "进图",
+      "alias": "开图",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "进入对局。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%9B%E5%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "出图",
+      "linyu": "出图",
+      "alias": "撤出",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "离开对局。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BA%E5%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "哈夫克",
+      "linyu": "哈夫克",
+      "alias": "哈弗",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "游戏内的重要阵营／据点名，也是「哈夫币」的词根。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%A4%AB%E5%85%8B",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "哈夫币",
+      "linyu": "哈夫币",
+      "alias": "哈弗币",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "游戏内货币。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%A4%AB%E5%B8%81",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "曼德尔砖",
+      "linyu": "曼德尔砖",
+      "alias": "砖",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "高价值可交易的战利品，语料里的核心经济物。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9B%BC%E5%BE%B7%E5%B0%94%E7%A0%96",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "保险箱",
+      "linyu": "保险箱",
+      "alias": "保险",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "死亡后仍能保住部分物品的容器。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E9%99%A9%E7%AE%B1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "产值",
+      "linyu": "产值",
+      "alias": "收益",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "一局带出的总价值。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%A7%E5%80%BC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本局收益",
+      "linyu": "本局收益",
+      "alias": "这局赚了",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "单局结算金额。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%B1%80%E6%94%B6%E7%9B%8A",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "跑刀",
+      "linyu": "跑刀",
+      "alias": "空手跑",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "不带装备只带刀进场捞物资。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%91%E5%88%80",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "搬砖",
+      "linyu": "搬砖",
+      "alias": "刷砖",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "反复刷曼德尔砖换钱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%90%AC%E7%A0%96",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "卡战备",
+      "linyu": "卡战备",
+      "alias": "卡装备",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "故意压低装备等级以匹配低强度对局。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%88%98%E5%A4%87",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "大战场",
+      "linyu": "大战场",
+      "alias": "大图",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "大规模团队对抗模式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E6%88%98%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "上等兵",
+      "linyu": "上等兵",
+      "alias": "上等",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "大战场段位之一，通往统帅的台阶。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8A%E7%AD%89%E5%85%B5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "统帅",
+      "linyu": "统帅",
+      "alias": "最高段",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "大战场最高段位。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%9F%E5%B8%85",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "群星",
+      "linyu": "群星",
+      "alias": "S11 群星",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "S11 赛季的赛季名。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BE%A4%E6%98%9F",
+      "pop": "高",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "零号大坝",
+      "linyu": "零号大坝",
+      "alias": "大坝",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图名。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B6%E5%8F%B7%E5%A4%A7%E5%9D%9D",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "长弓溪谷",
+      "linyu": "长弓溪谷",
+      "alias": "长弓",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图名，语料里「普通长弓爆率真高」。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%95%BF%E5%BC%93%E6%BA%AA%E8%B0%B7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "巴克什",
+      "linyu": "巴克什",
+      "alias": "巴克",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图名。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E5%85%8B%E4%BB%80",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "航天基地",
+      "linyu": "航天基地",
+      "alias": "航天",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图名，语料里「去航天送人」。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%AA%E5%A4%A9%E5%9F%BA%E5%9C%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "潮汐监狱",
+      "linyu": "潮汐监狱",
+      "alias": "监狱",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图名，语料里「在监狱跑刀」。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BD%AE%E6%B1%90%E7%9B%91%E7%8B%B1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "雷达站",
+      "linyu": "雷达站",
+      "alias": "雷达",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B7%E8%BE%BE%E7%AB%99",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "行政楼",
+      "linyu": "行政楼",
+      "alias": "行政",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A1%8C%E6%94%BF%E6%A5%BC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "变电站",
+      "linyu": "变电站",
+      "alias": "变电",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%98%E7%94%B5%E7%AB%99",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "水电站",
+      "linyu": "水电站",
+      "alias": "水电",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E7%94%B5%E7%AB%99",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "水泥厂",
+      "linyu": "水泥厂",
+      "alias": "水泥",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E6%B3%A5%E5%8E%82",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "军营",
+      "linyu": "军营",
+      "alias": "军",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%9B%E8%90%A5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "码头",
+      "linyu": "码头",
+      "alias": "港",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A0%81%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "堵桥",
+      "linyu": "堵桥",
+      "alias": "守桥",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "在地图桥梁处伏击过路玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A0%B5%E6%A1%A5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "生物样本",
+      "linyu": "生物样本",
+      "alias": "样本",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的高价值物资点。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%9F%E7%89%A9%E6%A0%B7%E6%9C%AC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本干员",
+      "linyu": "本干员",
+      "alias": "本可",
+      "slot": "淋角洲行动 / 淋角洲自称体系",
+      "sense": "以干员身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%B9%B2%E5%91%98",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本女特务",
+      "linyu": "本女特务",
+      "alias": "女特务",
+      "slot": "淋角洲行动 / 淋角洲自称体系",
+      "sense": "淋角洲区特有的自称，源自「女特务潜入」系列视频。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%A5%B3%E7%89%B9%E5%8A%A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "白袜被窃",
+      "linyu": "白袜被窃",
+      "alias": "白袜",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "「女特务潜入风暴玛焰窃取白袜」系列视频的标题梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BD%E8%A2%9C%E8%A2%AB%E7%AA%83",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "干员们",
+      "linyu": "干员们",
+      "alias": "干员",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "对全体干员的称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B2%E5%91%98%E4%BB%AC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离成功",
+      "linyu": "撤离成功",
+      "alias": "撤了",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "仿游戏结算提示的句式。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E6%88%90%E5%8A%9F",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "牢哥",
+      "linyu": "牢哥",
+      "alias": "牢",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "语料里的自称，指一起坐牢打游戏的兄弟。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%A2%E5%93%A5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "鼠鼠",
+      "linyu": "鼠鼠",
+      "alias": "老鼠人",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "对只敢躲着捡漏的玩家的自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BC%A0%E9%BC%A0",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "反打",
+      "linyu": "反打",
+      "alias": "打回去",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "被压之后反身开火。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E6%89%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "一换一",
+      "linyu": "一换一",
+      "alias": "换了",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "用自己一条命换对手一条命。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E6%8D%A2%E4%B8%80",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "开红",
+      "linyu": "开红",
+      "alias": "红了",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "血量见底。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E7%BA%A2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "回血",
+      "linyu": "回血",
+      "alias": "打药",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "使用医疗包恢复血量。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E8%A1%80",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "摸金校尉",
+      "linyu": "摸金校尉",
+      "alias": "摸金",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "专挑高价值物资点的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%91%B8%E9%87%91%E6%A0%A1%E5%B0%89",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "老板",
+      "linyu": "老板",
+      "alias": "金主",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "语料里对出资带打的人的称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%81%E6%9D%BF",
+      "pop": "高",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "带打",
+      "linyu": "带打",
+      "alias": "带",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "收费带人过任务或上分。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%A6%E6%89%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "摩斯密码",
+      "linyu": "摩斯密码",
+      "alias": "密码门",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "地图里按日期变化的密码门玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%91%A9%E6%96%AF%E5%AF%86%E7%A0%81",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "彩蛋",
+      "linyu": "彩蛋",
+      "alias": "隐藏",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "地图内隐藏的奖励点。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BD%A9%E8%9B%8B",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "特勤处",
+      "linyu": "特勤处",
+      "alias": "制造",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "游戏内的制造与交易系统。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%B9%E5%8B%A4%E5%A4%84",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角券",
+      "linyu": "三角券",
+      "alias": "点券",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "游戏内付费货币。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E5%88%B8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "哈弗币",
+      "linyu": "哈弗币",
+      "alias": "哈夫币",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "哈夫币的另一种写法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%BC%97%E5%B8%81",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "小猫咪",
+      "linyu": "小猫咪",
+      "alias": "猫",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "语料里对主播的昵称式叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%8C%AB%E5%92%AA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "俄舞",
+      "linyu": "俄舞",
+      "alias": "表情动作",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "游戏内的稀有表情动作。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%84%E8%88%9E",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "群聊曝光",
+      "linyu": "群聊曝光",
+      "alias": "内部群",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "「GTI 内部群聊大曝光」类整活视频的标题梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BE%A4%E8%81%8A%E6%9B%9D%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "逆R",
+      "linyu": "逆R",
+      "alias": "R 级",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "语料里对成人向二创的标注写法。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%86R",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "泰勒·斯威夫特",
+      "linyu": "泰勒·斯威夫特",
+      "alias": "霉霉、Taylor Swift",
+      "slot": "divatag / diva人物淋名",
+      "sense": "霉霉的本名，1989 年生，创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%B0%E5%8B%92%C2%B7%E6%96%AF%E5%A8%81%E5%A4%AB%E7%89%B9",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "麦当娜",
+      "linyu": "麦当娜",
+      "alias": "Madonna、娜姐",
+      "slot": "divatag / diva人物淋名",
+      "sense": "欧美流行天后，流行乐坛的标志性人物。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BA%A6%E5%BD%93%E5%A8%9C",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "碧昂丝",
+      "linyu": "碧昂丝",
+      "alias": "Beyoncé、碧神",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，格莱美获奖最多的艺人之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A2%A7%E6%98%82%E4%B8%9D",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Lady Gaga",
+      "linyu": "Lady Gaga",
+      "alias": "嘎嘎、Gaga",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，以舞台造型与视觉概念著称。",
+      "source": "https://search.bilibili.com/all?keyword=Lady%20Gaga",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Ariana Grande",
+      "linyu": "Ariana Grande",
+      "alias": "A 妹、爱莉安娜",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，以高音与转音著称。",
+      "source": "https://search.bilibili.com/all?keyword=Ariana%20Grande",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Adele",
+      "linyu": "Adele",
+      "alias": "阿黛尔",
+      "slot": "divatag / diva人物淋名",
+      "sense": "英国歌手，以情感型慢歌著称。",
+      "source": "https://search.bilibili.com/all?keyword=Adele",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "蕾哈娜",
+      "linyu": "蕾哈娜",
+      "alias": "Rihanna、日日",
+      "slot": "divatag / diva人物淋名",
+      "sense": "巴巴多斯歌手，兼具商业与时尚影响力。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%95%BE%E5%93%88%E5%A8%9C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "玛丽亚·凯莉",
+      "linyu": "玛丽亚·凯莉",
+      "alias": "Mariah Carey、牛姐",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，海豚音代表人物。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%9B%E4%B8%BD%E4%BA%9A%C2%B7%E5%87%AF%E8%8E%89",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "惠特妮·休斯顿",
+      "linyu": "惠特妮·休斯顿",
+      "alias": "Whitney Houston",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，《I Will Always Love You》原唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%83%A0%E7%89%B9%E5%A6%AE%C2%B7%E4%BC%91%E6%96%AF%E9%A1%BF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "席琳·迪翁",
+      "linyu": "席琳·迪翁",
+      "alias": "Celine Dion",
+      "slot": "divatag / diva人物淋名",
+      "sense": "加拿大歌手，《My Heart Will Go On》原唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%AD%E7%90%B3%C2%B7%E8%BF%AA%E7%BF%81",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "布兰妮",
+      "linyu": "布兰妮",
+      "alias": "Britney Spears、小甜甜",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，千禧年流行符号。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%83%E5%85%B0%E5%A6%AE",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "克里斯蒂娜",
+      "linyu": "克里斯蒂娜",
+      "alias": "Christina Aguilera",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，以爆发力唱功著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%8B%E9%87%8C%E6%96%AF%E8%92%82%E5%A8%9C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "珍妮·杰克逊",
+      "linyu": "珍妮·杰克逊",
+      "alias": "Janet Jackson",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，舞台型表演者。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8F%8D%E5%A6%AE%C2%B7%E6%9D%B0%E5%85%8B%E9%80%8A",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "王菲",
+      "linyu": "王菲",
+      "alias": "菲姐",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以独特声线与冷感气质著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E8%8F%B2",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "张惠妹",
+      "linyu": "张惠妹",
+      "alias": "阿妹",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，live 实力派代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%A0%E6%83%A0%E5%A6%B9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "孙燕姿",
+      "linyu": "孙燕姿",
+      "alias": "燕姿",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以清亮声线著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%99%E7%87%95%E5%A7%BF",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "萧亚轩",
+      "linyu": "萧亚轩",
+      "alias": "Elva",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语唱跳歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%90%A7%E4%BA%9A%E8%BD%A9",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "梅艳芳",
+      "linyu": "梅艳芳",
+      "alias": "梅姐",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手与演员，舞台天后。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A2%85%E8%89%B3%E8%8A%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "郑秀文",
+      "linyu": "郑秀文",
+      "alias": "Sammi",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手与演员，唱跳型艺人。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%83%91%E7%A7%80%E6%96%87",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "容祖儿",
+      "linyu": "容祖儿",
+      "alias": "Joey",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%B9%E7%A5%96%E5%84%BF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "滨崎步",
+      "linyu": "滨崎步",
+      "alias": "あゆ、Ayu",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本歌手，平成流行符号。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BB%A8%E5%B4%8E%E6%AD%A5",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "宇多田光",
+      "linyu": "宇多田光",
+      "alias": "Hikaru",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%87%E5%A4%9A%E7%94%B0%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "安室奈美惠",
+      "linyu": "安室奈美惠",
+      "alias": "安室",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本歌手，唱跳天后。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%89%E5%AE%A4%E5%A5%88%E7%BE%8E%E6%83%A0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "幸田来未",
+      "linyu": "幸田来未",
+      "alias": "Kumi",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B8%E7%94%B0%E6%9D%A5%E6%9C%AA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "BoA",
+      "linyu": "BoA",
+      "alias": "宝儿",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，日韩双市场代表人物。",
+      "source": "https://search.bilibili.com/all?keyword=BoA",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "李孝利",
+      "linyu": "李孝利",
+      "alias": "孝利",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，唱跳型艺人。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%8E%E5%AD%9D%E5%88%A9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "IU",
+      "linyu": "IU",
+      "alias": "李知恩",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=IU",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "泰妍",
+      "linyu": "泰妍",
+      "alias": "金泰妍",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，少女时代主唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%B0%E5%A6%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "麦当娜接班人",
+      "linyu": "麦当娜接班人",
+      "alias": "接班人",
+      "slot": "divatag / diva人物淋名",
+      "sense": "媒体给新生代女歌手的固定标签。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BA%A6%E5%BD%93%E5%A8%9C%E6%8E%A5%E7%8F%AD%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "惠姨",
+      "linyu": "惠姨",
+      "alias": "惠特妮",
+      "slot": "divatag / diva人物淋名",
+      "sense": "对惠特妮·休斯顿的昵称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%83%A0%E5%A7%A8",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "牛姐",
+      "linyu": "牛姐",
+      "alias": "玛丽亚·凯莉",
+      "slot": "divatag / diva人物淋名",
+      "sense": "对玛丽亚·凯莉的昵称，源自「牛式唱法」。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%9B%E5%A7%90",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "日日",
+      "linyu": "日日",
+      "alias": "蕾哈娜",
+      "slot": "divatag / diva人物淋名",
+      "sense": "对蕾哈娜的昵称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%97%A5%E6%97%A5",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "霉霉姐",
+      "linyu": "霉霉姐",
+      "alias": "霉霉",
+      "slot": "divatag / diva人物淋名",
+      "sense": "对霉霉的尊称式叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9C%89%E9%9C%89%E5%A7%90",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "宇宙之母",
+      "linyu": "宇宙之母",
+      "alias": "圣母",
+      "slot": "divatag / diva称号位分",
+      "sense": "divatag 分区的称号类词条，指被神化的天后。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%87%E5%AE%99%E4%B9%8B%E6%AF%8D",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "抽象女王",
+      "linyu": "抽象女王",
+      "alias": "那艺娜",
+      "slot": "divatag / diva称号位分",
+      "sense": "对那艺娜的称号。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%BD%E8%B1%A1%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "diva",
+      "linyu": "diva",
+      "alias": "DIVA、天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "本分区的核心词，泛指舞台型女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=diva",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "divatag",
+      "linyu": "divatag",
+      "alias": "DIVA",
+      "slot": "divatag / diva称号位分",
+      "sense": "本分区的规范名。",
+      "source": "https://search.bilibili.com/all?keyword=divatag",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "欧美顶流",
+      "linyu": "欧美顶流",
+      "alias": "欧美天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "欧美市场的顶级女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AC%A7%E7%BE%8E%E9%A1%B6%E6%B5%81",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "内娱唯一 DIVA",
+      "linyu": "内娱唯一 DIVA",
+      "alias": "内娱唯一",
+      "slot": "divatag / diva称号位分",
+      "sense": "那艺娜的固定称号。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%85%E5%A8%B1%E5%94%AF%E4%B8%80%20DIVA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "舞台之神",
+      "linyu": "舞台之神",
+      "alias": "舞台神",
+      "slot": "divatag / diva称号位分",
+      "sense": "形容现场表现力极强。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%9E%E5%8F%B0%E4%B9%8B%E7%A5%9E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "唱跳天后",
+      "linyu": "唱跳天后",
+      "alias": "唱跳",
+      "slot": "divatag / diva称号位分",
+      "sense": "既能唱又能跳的天后。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%94%B1%E8%B7%B3%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "live 女王",
+      "linyu": "live 女王",
+      "alias": "现场女王",
+      "slot": "divatag / diva称号位分",
+      "sense": "形容现场比录音室更强。",
+      "source": "https://search.bilibili.com/all?keyword=live%20%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "实力派",
+      "linyu": "实力派",
+      "alias": "唱功派",
+      "slot": "divatag / diva称号位分",
+      "sense": "以唱功而非流量取胜。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9E%E5%8A%9B%E6%B4%BE",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "偶像派",
+      "linyu": "偶像派",
+      "alias": "流量派",
+      "slot": "divatag / diva称号位分",
+      "sense": "以形象与人气取胜。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%81%B6%E5%83%8F%E6%B4%BE",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "选秀出身",
+      "linyu": "选秀出身",
+      "alias": "选秀",
+      "slot": "divatag / diva称号位分",
+      "sense": "通过选秀节目出道。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%89%E7%A7%80%E5%87%BA%E8%BA%AB",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "练习生",
+      "linyu": "练习生",
+      "alias": "练习",
+      "slot": "divatag / diva称号位分",
+      "sense": "偶像工业的训练体系出身。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%83%E4%B9%A0%E7%94%9F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "天后本后",
+      "linyu": "天后本后",
+      "alias": "本后",
+      "slot": "divatag / diva称号位分",
+      "sense": "强调「本人就是天后」的说法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E5%90%8E%E6%9C%AC%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "一姐",
+      "linyu": "一姐",
+      "alias": "公司一姐",
+      "slot": "divatag / diva称号位分",
+      "sense": "公司或厂牌内地位最高的女艺人。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E5%A7%90",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Love Story",
+      "linyu": "Love Story",
+      "alias": "爱情故事",
+      "slot": "divatag / diva作品金曲",
+      "sense": "霉霉的代表作之一。",
+      "source": "https://search.bilibili.com/all?keyword=Love%20Story",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Shake It Off",
+      "linyu": "Shake It Off",
+      "alias": "甩掉",
+      "slot": "divatag / diva作品金曲",
+      "sense": "霉霉的转型代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Shake%20It%20Off",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Cruel Summer",
+      "linyu": "Cruel Summer",
+      "alias": "残酷夏日",
+      "slot": "divatag / diva作品金曲",
+      "sense": "霉霉的高传唱曲目。",
+      "source": "https://search.bilibili.com/all?keyword=Cruel%20Summer",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Bad Blood",
+      "linyu": "Bad Blood",
+      "alias": "宿怨",
+      "slot": "divatag / diva作品金曲",
+      "sense": "霉霉的合作曲目。",
+      "source": "https://search.bilibili.com/all?keyword=Bad%20Blood",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Blank Space",
+      "linyu": "Blank Space",
+      "alias": "空白格",
+      "slot": "divatag / diva作品金曲",
+      "sense": "霉霉的代表作之一。",
+      "source": "https://search.bilibili.com/all?keyword=Blank%20Space",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "The Eras Tour",
+      "linyu": "The Eras Tour",
+      "alias": "时代巡演",
+      "slot": "divatag / diva作品金曲",
+      "sense": "霉霉的巡演，票房纪录级。",
+      "source": "https://search.bilibili.com/all?keyword=The%20Eras%20Tour",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "爱如火",
+      "linyu": "爱如火",
+      "alias": "心在跳是爱情如烈火",
+      "slot": "divatag / diva作品金曲",
+      "sense": "那艺娜的神曲，淋语圈应援 BGM。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%88%B1%E5%A6%82%E7%81%AB",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "舞娘",
+      "linyu": "舞娘",
+      "alias": "恒河水",
+      "slot": "divatag / diva作品金曲",
+      "sense": "蔡依林代表作，「恒河水」出自此曲歌词。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%9E%E5%A8%98",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "倒带",
+      "linyu": "倒带",
+      "alias": "倒带人生",
+      "slot": "divatag / diva作品金曲",
+      "sense": "蔡依林代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%80%92%E5%B8%A6",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "花蝴蝶",
+      "linyu": "花蝴蝶",
+      "alias": "美丽旗舰店",
+      "slot": "divatag / diva作品金曲",
+      "sense": "蔡依林代表作，「美丽旗舰店」出自此曲歌词。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8A%B1%E8%9D%B4%E8%9D%B6",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "布拉格广场",
+      "linyu": "布拉格广场",
+      "alias": "画面太美",
+      "slot": "divatag / diva作品金曲",
+      "sense": "蔡依林代表作，「那画面太美我不敢看」出自此曲。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%83%E6%8B%89%E6%A0%BC%E5%B9%BF%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "红豆",
+      "linyu": "红豆",
+      "alias": "相思",
+      "slot": "divatag / diva作品金曲",
+      "sense": "王菲代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E8%B1%86",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "听海",
+      "linyu": "听海",
+      "alias": "写信",
+      "slot": "divatag / diva作品金曲",
+      "sense": "张惠妹代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%AC%E6%B5%B7",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "记得",
+      "linyu": "记得",
+      "alias": "我记得",
+      "slot": "divatag / diva作品金曲",
+      "sense": "张惠妹代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AE%B0%E5%BE%97",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Halo",
+      "linyu": "Halo",
+      "alias": "光环",
+      "slot": "divatag / diva作品金曲",
+      "sense": "碧昂丝代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Halo",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Rolling in the Deep",
+      "linyu": "Rolling in the Deep",
+      "alias": "深陷",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Adele 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Rolling%20in%20the%20Deep",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Someone Like You",
+      "linyu": "Someone Like You",
+      "alias": "像你这样的人",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Adele 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Someone%20Like%20You",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "I Will Always Love You",
+      "linyu": "I Will Always Love You",
+      "alias": "永远爱你",
+      "slot": "divatag / diva作品金曲",
+      "sense": "惠特妮·休斯顿代表作。",
+      "source": "https://search.bilibili.com/all?keyword=I%20Will%20Always%20Love%20You",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "My Heart Will Go On",
+      "linyu": "My Heart Will Go On",
+      "alias": "我心永恒",
+      "slot": "divatag / diva作品金曲",
+      "sense": "席琳·迪翁代表作。",
+      "source": "https://search.bilibili.com/all?keyword=My%20Heart%20Will%20Go%20On",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Like a Prayer",
+      "linyu": "Like a Prayer",
+      "alias": "祈祷",
+      "slot": "divatag / diva作品金曲",
+      "sense": "麦当娜代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Like%20a%20Prayer",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Bad Romance",
+      "linyu": "Bad Romance",
+      "alias": "坏浪漫",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Lady Gaga 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Bad%20Romance",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Poker Face",
+      "linyu": "Poker Face",
+      "alias": "扑克脸",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Lady Gaga 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Poker%20Face",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Umbrella",
+      "linyu": "Umbrella",
+      "alias": "雨伞",
+      "slot": "divatag / diva作品金曲",
+      "sense": "蕾哈娜代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Umbrella",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "We Belong Together",
+      "linyu": "We Belong Together",
+      "alias": "我们属于彼此",
+      "slot": "divatag / diva作品金曲",
+      "sense": "玛丽亚·凯莉代表作。",
+      "source": "https://search.bilibili.com/all?keyword=We%20Belong%20Together",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Hero",
+      "linyu": "Hero",
+      "alias": "英雄",
+      "slot": "divatag / diva作品金曲",
+      "sense": "玛丽亚·凯莉代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Hero",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "…Baby One More Time",
+      "linyu": "…Baby One More Time",
+      "alias": "宝贝再来一次",
+      "slot": "divatag / diva作品金曲",
+      "sense": "布兰妮代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E2%80%A6Baby%20One%20More%20Time",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Genie in a Bottle",
+      "linyu": "Genie in a Bottle",
+      "alias": "瓶中的精灵",
+      "slot": "divatag / diva作品金曲",
+      "sense": "克里斯蒂娜代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Genie%20in%20a%20Bottle",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Seasons",
+      "linyu": "Seasons",
+      "alias": "四季",
+      "slot": "divatag / diva作品金曲",
+      "sense": "滨崎步代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Seasons",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "First Love",
+      "linyu": "First Love",
+      "alias": "初恋",
+      "slot": "divatag / diva作品金曲",
+      "sense": "宇多田光代表作。",
+      "source": "https://search.bilibili.com/all?keyword=First%20Love",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "No.1",
+      "linyu": "No.1",
+      "alias": "第一",
+      "slot": "divatag / diva作品金曲",
+      "sense": "BoA 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=No.1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "十面埋伏",
+      "linyu": "十面埋伏",
+      "alias": "埋伏",
+      "slot": "divatag / diva作品金曲",
+      "sense": "陈奕迅作品，常被拿来玩「伏」的谐音梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%81%E9%9D%A2%E5%9F%8B%E4%BC%8F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "浮夸",
+      "linyu": "浮夸",
+      "alias": "浮夸",
+      "slot": "divatag / diva作品金曲",
+      "sense": "陈奕迅代表作，舞台型唱功的演示曲。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%AE%E5%A4%B8",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "营业",
+      "linyu": "营业",
+      "alias": "营业中",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "艺人公开露面的状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%90%A5%E4%B8%9A",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "专辑",
+      "linyu": "专辑",
+      "alias": "唱片",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "音乐作品的发布形式。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%93%E8%BE%91",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "巡演",
+      "linyu": "巡演",
+      "alias": "巡回",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "多地连开的演唱会。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A1%E6%BC%94",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "舞台",
+      "linyu": "舞台",
+      "alias": "现场",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "表演场合。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%9E%E5%8F%B0",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "live",
+      "linyu": "live",
+      "alias": "现场版",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "现场演出。",
+      "source": "https://search.bilibili.com/all?keyword=live",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "翻唱",
+      "linyu": "翻唱",
+      "alias": "cover",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "翻唱他人作品。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BF%BB%E5%94%B1",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "原唱",
+      "linyu": "原唱",
+      "alias": "原作",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "歌曲的原始演唱者。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8E%9F%E5%94%B1",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "洗脑",
+      "linyu": "洗脑",
+      "alias": "上脑",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "旋律反复在脑中循环。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%97%E8%84%91",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "空降",
+      "linyu": "空降",
+      "alias": "空降热搜",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "突然登上热搜。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BA%E9%99%8D",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "热搜",
+      "linyu": "热搜",
+      "alias": "榜",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "平台热榜。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%AD%E6%90%9C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "出圈",
+      "linyu": "出圈",
+      "alias": "破圈",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "从小圈子扩散到大众。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BA%E5%9C%88",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "路转粉",
+      "linyu": "路转粉",
+      "alias": "转粉",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "路人变成粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E8%BD%AC%E7%B2%89",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "粉转黑",
+      "linyu": "粉转黑",
+      "alias": "转黑",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "粉丝变成黑粉。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%89%E8%BD%AC%E9%BB%91",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "打歌",
+      "linyu": "打歌",
+      "alias": "上节目",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "为宣传新歌上节目表演。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%AD%8C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "编舞",
+      "linyu": "编舞",
+      "alias": "choreography",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "舞蹈编排。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BC%96%E8%88%9E",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "走位",
+      "linyu": "走位",
+      "alias": "站位、位移",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "舞台上的位置调度。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%B0%E4%BD%8D",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "本 diva",
+      "linyu": "本diva",
+      "alias": "本后",
+      "slot": "divatag / diva自称体系",
+      "sense": "以 diva 身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%20diva",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "diva惹",
+      "linyu": "diva惹",
+      "alias": "惹",
+      "slot": "divatag / diva整活梗",
+      "sense": "把 diva 直接接上淋语语气词「惹」。",
+      "source": "https://search.bilibili.com/all?keyword=diva%E6%83%B9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "退票口在前苏联",
+      "linyu": "退票口在前苏联",
+      "alias": "前苏联",
+      "slot": "divatag / diva整活梗",
+      "sense": "把「退票」与「俄罗斯娜娜」人设缝在一起的梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E7%A5%A8%E5%8F%A3%E5%9C%A8%E5%89%8D%E8%8B%8F%E8%81%94",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "天后降临",
+      "linyu": "天后降临",
+      "alias": "降临",
+      "slot": "divatag / diva整活梗",
+      "sense": "形容天后登场的排面。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E5%90%8E%E9%99%8D%E4%B8%B4",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "翻车现场",
+      "linyu": "翻车现场",
+      "alias": "翻车",
+      "slot": "divatag / diva整活梗",
+      "sense": "现场表演失误的场面。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BF%BB%E8%BD%A6%E7%8E%B0%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "神级现场",
+      "linyu": "神级现场",
+      "alias": "神现场",
+      "slot": "divatag / diva整活梗",
+      "sense": "表现极佳的现场。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E7%BA%A7%E7%8E%B0%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "开口跪",
+      "linyu": "开口跪",
+      "alias": "一开口就跪",
+      "slot": "divatag / diva整活梗",
+      "sense": "形容一开口就惊艳。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E5%8F%A3%E8%B7%AA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "破音",
+      "linyu": "破音",
+      "alias": "跑调",
+      "slot": "divatag / diva整活梗",
+      "sense": "唱到破音。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A0%B4%E9%9F%B3",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "气声",
+      "linyu": "气声",
+      "alias": "气息",
+      "slot": "divatag / diva整活梗",
+      "sense": "用气息控制的唱法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%94%E5%A3%B0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "海豚音",
+      "linyu": "海豚音",
+      "alias": "哨音",
+      "slot": "divatag / diva整活梗",
+      "sense": "极高频的演唱技巧。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E8%B1%9A%E9%9F%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "转音",
+      "linyu": "转音",
+      "alias": "颤音",
+      "slot": "divatag / diva整活梗",
+      "sense": "旋律上的花腔处理。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BD%AC%E9%9F%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "换气",
+      "linyu": "换气",
+      "alias": "气息点",
+      "slot": "divatag / diva整活梗",
+      "sense": "演唱中的呼吸点。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%A2%E6%B0%94",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "大合唱",
+      "linyu": "大合唱",
+      "alias": "全场大合唱",
+      "slot": "divatag / diva整活梗",
+      "sense": "全场观众一起唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%90%88%E5%94%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "应援色",
+      "linyu": "应援色",
+      "alias": "灯牌色",
+      "slot": "divatag / diva整活梗",
+      "sense": "粉丝统一使用的颜色。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BA%94%E6%8F%B4%E8%89%B2",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "灯牌",
+      "linyu": "灯牌",
+      "alias": "应援灯",
+      "slot": "divatag / diva整活梗",
+      "sense": "现场举的发光牌。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AF%E7%89%8C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "红毯",
+      "linyu": "红毯",
+      "alias": "走红毯",
+      "slot": "divatag / diva整活梗",
+      "sense": "颁奖礼入场环节。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E6%AF%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "颁奖礼",
+      "linyu": "颁奖礼",
+      "alias": "颁奖典礼",
+      "slot": "divatag / diva整活梗",
+      "sense": "奖项颁发场合。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A2%81%E5%A5%96%E7%A4%BC",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "格莱美",
+      "linyu": "格莱美",
+      "alias": "Grammy",
+      "slot": "divatag / diva整活梗",
+      "sense": "国际音乐奖项。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A0%BC%E8%8E%B1%E7%BE%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "音乐节",
+      "linyu": "音乐节",
+      "alias": "festival",
+      "slot": "divatag / diva整活梗",
+      "sense": "户外多组艺人演出。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9F%B3%E4%B9%90%E8%8A%82",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "livehouse",
+      "linyu": "livehouse",
+      "alias": "live 房",
+      "slot": "divatag / diva整活梗",
+      "sense": "小型现场演出场地。",
+      "source": "https://search.bilibili.com/all?keyword=livehouse",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "巡演城市",
+      "linyu": "巡演城市",
+      "alias": "开城",
+      "slot": "divatag / diva整活梗",
+      "sense": "巡演落地的城市。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A1%E6%BC%94%E5%9F%8E%E5%B8%82",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "返场安可",
+      "linyu": "返场安可",
+      "alias": "再来一首",
+      "slot": "divatag / diva整活梗",
+      "sense": "观众喊加演。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%94%E5%9C%BA%E5%AE%89%E5%8F%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "主打歌",
+      "linyu": "主打歌",
+      "alias": "首单",
+      "slot": "divatag / diva整活梗",
+      "sense": "专辑的主推曲目。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%BB%E6%89%93%E6%AD%8C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "先行曲",
+      "linyu": "先行曲",
+      "alias": "预热曲",
+      "slot": "divatag / diva整活梗",
+      "sense": "专辑发布前的预热单曲。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%88%E8%A1%8C%E6%9B%B2",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "专辑销量",
+      "linyu": "专辑销量",
+      "alias": "销量",
+      "slot": "divatag / diva整活梗",
+      "sense": "衡量商业成绩的核心数字。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%93%E8%BE%91%E9%94%80%E9%87%8F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "流媒体",
+      "linyu": "流媒体",
+      "alias": "串流",
+      "slot": "divatag / diva整活梗",
+      "sense": "在线播放平台的数据。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%81%E5%AA%92%E4%BD%93",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "播放量",
+      "linyu": "播放量",
+      "alias": "播放",
+      "slot": "divatag / diva整活梗",
+      "sense": "内容被观看的次数。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%AD%E6%94%BE%E9%87%8F",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "小拳石",
+      "linyu": "小拳石",
+      "alias": "石头人",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "岩石／地面属性，关都洞穴常见。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%8B%B3%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "隆隆石",
+      "linyu": "隆隆石",
+      "alias": "滚石",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小拳石的进化型，岩石／地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9A%86%E9%9A%86%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "隆隆岩",
+      "linyu": "隆隆岩",
+      "alias": "大石头",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小拳石的最终进化，岩石／地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9A%86%E9%9A%86%E5%B2%A9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小火马",
+      "linyu": "小火马",
+      "alias": "火马",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性，鬃毛是火焰。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%81%AB%E9%A9%AC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "烈焰马",
+      "linyu": "烈焰马",
+      "alias": "大火马",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小火马的进化型，火属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%88%E7%84%B0%E9%A9%AC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "呆呆兽王",
+      "linyu": "呆呆王",
+      "alias": "呆王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "呆呆兽的另一条进化线，水／超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%86%E5%91%86%E5%85%BD%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小磁怪王",
+      "linyu": "自爆磁怪",
+      "alias": "磁王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "三合一磁怪的进化型，电／钢属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%A3%81%E6%80%AA%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大葱鸭王",
+      "linyu": "葱游兵",
+      "alias": "葱将军",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "大葱鸭的地区形态进化，格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E8%91%B1%E9%B8%AD%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "嘟嘟王",
+      "linyu": "嘟嘟利王",
+      "alias": "三头",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "嘟嘟利的强化形态称呼，语料里常被简称为三头。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%98%9F%E5%98%9F%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小海狮王",
+      "linyu": "海魔狮",
+      "alias": "海狮王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小海狮进化链的中段，水／冰属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%B5%B7%E7%8B%AE%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "臭泥王",
+      "linyu": "臭臭泥王",
+      "alias": "大臭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "臭臭泥的强化称呼，毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%87%AD%E6%B3%A5%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "鬼斯王",
+      "linyu": "超级耿鬼",
+      "alias": "大鬼",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "耿鬼的强化形态，幽灵／毒属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AC%BC%E6%96%AF%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大岩蛇王",
+      "linyu": "大钢蛇",
+      "alias": "钢蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "大岩蛇的进化型，钢／地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%B2%A9%E8%9B%87%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "催眠貘王",
+      "linyu": "引梦貘人王",
+      "alias": "大梦",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "引梦貘人的强化称呼，超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%82%AC%E7%9C%A0%E8%B2%98%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "雷弹王",
+      "linyu": "顽皮雷弹王",
+      "alias": "电球王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "顽皮雷弹的强化称呼，电属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B7%E5%BC%B9%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "椰蛋树王",
+      "linyu": "阿罗拉椰蛋树",
+      "alias": "长脖子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "椰蛋树的地区形态，草／龙属性，脖子极长。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%B0%E8%9B%8B%E6%A0%91%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "嘎啦嘎啦王",
+      "linyu": "阿罗拉嘎啦嘎啦",
+      "alias": "火骨头",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "嘎啦嘎啦的地区形态，火／幽灵属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%98%8E%E5%95%A6%E5%98%8E%E5%95%A6%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "快拳郎王",
+      "linyu": "拳王",
+      "alias": "拳",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "快拳郎的强化称呼，格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BF%AB%E6%8B%B3%E9%83%8E%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "飞腿郎王",
+      "linyu": "腿王",
+      "alias": "腿",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "飞腿郎的强化称呼，格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A3%9E%E8%85%BF%E9%83%8E%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "双弹瓦斯王",
+      "linyu": "伽勒尔双弹瓦斯",
+      "alias": "瓦斯王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "双弹瓦斯的地区形态，毒／妖精属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%BC%B9%E7%93%A6%E6%96%AF%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蔓藤怪王",
+      "linyu": "巨蔓藤",
+      "alias": "大藤",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "蔓藤怪的进化型，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%94%93%E8%97%A4%E6%80%AA%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "袋兽王",
+      "linyu": "超级袋兽",
+      "alias": "袋龙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "袋兽的强化形态，一般属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A2%8B%E5%85%BD%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "海刺龙王",
+      "linyu": "刺龙王",
+      "alias": "龙王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "海刺龙的进化型，水／龙属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%88%BA%E9%BE%99%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "金鱼王王",
+      "linyu": "角金鱼王",
+      "alias": "金鱼王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "金鱼王的强化称呼，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E9%B1%BC%E7%8E%8B%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝石海星王",
+      "linyu": "超级宝石海星",
+      "alias": "大星王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "宝石海星的强化称呼，水／超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E7%9F%B3%E6%B5%B7%E6%98%9F%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "魔墙人偶王",
+      "linyu": "吸盘魔偶",
+      "alias": "墙王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "魔墙人偶的旧译名，超能力／妖精属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%94%E5%A2%99%E4%BA%BA%E5%81%B6%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "飞天螳螂",
+      "linyu": "飞天螳螂",
+      "alias": "镰刀手",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫／飞行属性，双镰刀。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A3%9E%E5%A4%A9%E8%9E%B3%E8%9E%82",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "巨钳螳螂",
+      "linyu": "巨钳螳螂",
+      "alias": "钢螳螂",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "飞天螳螂的进化型，虫／钢属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A8%E9%92%B3%E8%9E%B3%E8%9E%82",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "凯罗斯",
+      "linyu": "凯罗斯",
+      "alias": "大甲",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫属性，语料里出现过「凯罗斯」的捕获记录。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%AF%E7%BD%97%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "肯泰罗",
+      "linyu": "肯泰罗",
+      "alias": "公牛",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，群居冲锋。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%82%AF%E6%B3%B0%E7%BD%97",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "鲤鱼王王",
+      "linyu": "暴鲤龙王",
+      "alias": "大凶王",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "暴鲤龙的强化称呼，水／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%B2%A4%E9%B1%BC%E7%8E%8B%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拉普拉斯",
+      "linyu": "拉普拉斯",
+      "alias": "乘龙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水／冰属性，旧译「乘龙」。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "百变怪",
+      "linyu": "百变怪",
+      "alias": "变身泥",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "一般属性，能变成对手的样子。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BE%E5%8F%98%E6%80%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "伊布王",
+      "linyu": "超级伊布",
+      "alias": "八布",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "对伊布全分支的统称。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%8A%E5%B8%83%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "三蜜蜂",
+      "linyu": "三蜜蜂",
+      "alias": "蜂",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "虫／飞行属性，雌性可进化。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%9C%9C%E8%9C%82",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蜂女王",
+      "linyu": "蜂女王",
+      "alias": "女王蜂",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "三蜜蜂的进化型，虫／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9C%82%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "帕奇利兹",
+      "linyu": "帕奇利兹",
+      "alias": "电松鼠",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "电属性，语料里被列为可爱系。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%95%E5%A5%87%E5%88%A9%E5%85%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小卡比",
+      "linyu": "小卡比兽",
+      "alias": "小卡比",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小卡比兽的简称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E5%8D%A1%E6%AF%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "路卡利欧",
+      "linyu": "路卡利欧",
+      "alias": "狗、格斗狗",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "格斗／钢属性，人气极高。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E5%8D%A1%E5%88%A9%E6%AC%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "利欧路",
+      "linyu": "利欧路",
+      "alias": "小狗",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "路卡利欧的退化型，格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%A9%E6%AC%A7%E8%B7%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "沙奈朵",
+      "linyu": "沙奈朵",
+      "alias": "女仆、裙子女",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "超能力／妖精属性，外形极受欢迎。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B2%99%E5%A5%88%E6%9C%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拉鲁拉丝",
+      "linyu": "拉鲁拉丝",
+      "alias": "小裙子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "沙奈朵的退化型，超能力／妖精属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E9%B2%81%E6%8B%89%E4%B8%9D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "奇鲁莉安",
+      "linyu": "奇鲁莉安",
+      "alias": "中裙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "沙奈朵的中间形态，超能力／妖精属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%87%E9%B2%81%E8%8E%89%E5%AE%89",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "艾路雷朵",
+      "linyu": "艾路雷朵",
+      "alias": "男仆",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "奇鲁莉安的雄性进化，超能力／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%89%BE%E8%B7%AF%E9%9B%B7%E6%9C%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "波加曼",
+      "linyu": "波加曼",
+      "alias": "企鹅",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，神奥地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%A2%E5%8A%A0%E6%9B%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "波皇子",
+      "linyu": "波皇子",
+      "alias": "中企鹅",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "波加曼的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%A2%E7%9A%87%E5%AD%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "帝王拿波",
+      "linyu": "帝王拿波",
+      "alias": "大帝企鹅",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "波加曼的最终进化，水／钢属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%9D%E7%8E%8B%E6%8B%BF%E6%B3%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "草苗龟",
+      "linyu": "草苗龟",
+      "alias": "小龟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草属性御三家，神奥地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8D%89%E8%8B%97%E9%BE%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "树林龟",
+      "linyu": "树林龟",
+      "alias": "中龟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草苗龟的进化型，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A0%91%E6%9E%97%E9%BE%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "土台龟",
+      "linyu": "土台龟",
+      "alias": "大树龟",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草苗龟的最终进化，草／地面属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%9F%E5%8F%B0%E9%BE%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "小火焰猴",
+      "linyu": "小火焰猴",
+      "alias": "小火猴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，神奥地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E7%81%AB%E7%84%B0%E7%8C%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "猛火猴",
+      "linyu": "猛火猴",
+      "alias": "火猴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小火焰猴的进化型，火／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8C%9B%E7%81%AB%E7%8C%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "烈焰猴",
+      "linyu": "烈焰猴",
+      "alias": "大圣",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "小火焰猴的最终进化，火／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%88%E7%84%B0%E7%8C%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "藤藤蛇",
+      "linyu": "藤藤蛇",
+      "alias": "藤蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草属性御三家，合众地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%97%A4%E8%97%A4%E8%9B%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "青藤蛇",
+      "linyu": "青藤蛇",
+      "alias": "中藤蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "藤藤蛇的进化型，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9D%92%E8%97%A4%E8%9B%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "君主蛇",
+      "linyu": "君主蛇",
+      "alias": "女王蛇",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "藤藤蛇的最终进化，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%9B%E4%B8%BB%E8%9B%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "暖暖猪",
+      "linyu": "暖暖猪",
+      "alias": "火猪",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，合众地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9A%96%E6%9A%96%E7%8C%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "炒炒猪",
+      "linyu": "炒炒猪",
+      "alias": "中火猪",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "暖暖猪的进化型，火／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%92%E7%82%92%E7%8C%AA",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "炎武王",
+      "linyu": "炎武王",
+      "alias": "武猪",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "暖暖猪的最终进化，火／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%8E%E6%AD%A6%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "水水獭",
+      "linyu": "水水獭",
+      "alias": "水獭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，合众地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E6%B0%B4%E7%8D%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "双刃丸",
+      "linyu": "双刃丸",
+      "alias": "双刀獭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水水獭的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%88%83%E4%B8%B8",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "大剑鬼",
+      "linyu": "大剑鬼",
+      "alias": "剑鬼",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水水獭的最终进化，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%89%91%E9%AC%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火狐狸",
+      "linyu": "火狐狸",
+      "alias": "狐狸",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，卡洛斯地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E7%8B%90%E7%8B%B8",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "长尾火狐",
+      "linyu": "长尾火狐",
+      "alias": "中狐狸",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火狐狸的进化型，火属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%95%BF%E5%B0%BE%E7%81%AB%E7%8B%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "妖火红狐",
+      "linyu": "妖火红狐",
+      "alias": "大狐狸",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火狐狸的最终进化，火／超能力属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%96%E7%81%AB%E7%BA%A2%E7%8B%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "呱呱泡蛙",
+      "linyu": "呱呱泡蛙",
+      "alias": "泡蛙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，卡洛斯地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%B1%E5%91%B1%E6%B3%A1%E8%9B%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "呱头蛙",
+      "linyu": "呱头蛙",
+      "alias": "中泡蛙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "呱呱泡蛙的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%B1%E5%A4%B4%E8%9B%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "甲贺忍蛙",
+      "linyu": "甲贺忍蛙",
+      "alias": "忍蛙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "呱呱泡蛙的最终进化，水／恶属性，人气极高。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%B2%E8%B4%BA%E5%BF%8D%E8%9B%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "哈力栗",
+      "linyu": "哈力栗",
+      "alias": "栗子",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草属性御三家，卡洛斯地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%8A%9B%E6%A0%97",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "胖胖哈力",
+      "linyu": "胖胖哈力",
+      "alias": "中栗",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "哈力栗的进化型，草／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%96%E8%83%96%E5%93%88%E5%8A%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "布里卡隆",
+      "linyu": "布里卡隆",
+      "alias": "大栗",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "哈力栗的最终进化，草／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%83%E9%87%8C%E5%8D%A1%E9%9A%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "木木枭",
+      "linyu": "木木枭",
+      "alias": "猫头鹰",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草／飞行属性御三家，阿罗拉地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%A8%E6%9C%A8%E6%9E%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "投羽枭",
+      "linyu": "投羽枭",
+      "alias": "中鸮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "木木枭的进化型，草／飞行属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%95%E7%BE%BD%E6%9E%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "狙射树枭",
+      "linyu": "狙射树枭",
+      "alias": "大鸮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "木木枭的最终进化，草／幽灵属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8B%99%E5%B0%84%E6%A0%91%E6%9E%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "火斑喵",
+      "linyu": "火斑喵",
+      "alias": "火猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，阿罗拉地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E6%96%91%E5%96%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "炎热喵",
+      "linyu": "炎热喵",
+      "alias": "中火猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火斑喵的进化型，火属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%8E%E7%83%AD%E5%96%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "炽焰咆哮虎",
+      "linyu": "炽焰咆哮虎",
+      "alias": "咆哮虎",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火斑喵的最终进化，火／恶属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%BD%E7%84%B0%E5%92%86%E5%93%AE%E8%99%8E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "球球海狮",
+      "linyu": "球球海狮",
+      "alias": "海狮球",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，阿罗拉地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%90%83%E7%90%83%E6%B5%B7%E7%8B%AE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "花漾海狮",
+      "linyu": "花漾海狮",
+      "alias": "中海狮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "球球海狮的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8A%B1%E6%BC%BE%E6%B5%B7%E7%8B%AE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "西狮海壬",
+      "linyu": "西狮海壬",
+      "alias": "大西狮",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "球球海狮的最终进化，水／妖精属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A5%BF%E7%8B%AE%E6%B5%B7%E5%A3%AC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "炎兔儿",
+      "linyu": "炎兔儿",
+      "alias": "火兔",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，伽勒尔地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%8E%E5%85%94%E5%84%BF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "腾蹴小将",
+      "linyu": "腾蹴小将",
+      "alias": "中火兔",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "炎兔儿的进化型，火属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%85%BE%E8%B9%B4%E5%B0%8F%E5%B0%86",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "闪焰王牌",
+      "linyu": "闪焰王牌",
+      "alias": "火焰兔",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "炎兔儿的最终进化，火属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E7%84%B0%E7%8E%8B%E7%89%8C",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "泪眼蜥",
+      "linyu": "泪眼蜥",
+      "alias": "水蜥",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，伽勒尔地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%AA%E7%9C%BC%E8%9C%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "变涩蜥",
+      "linyu": "变涩蜥",
+      "alias": "中水蜥",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "泪眼蜥的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%98%E6%B6%A9%E8%9C%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "千面避役",
+      "linyu": "千面避役",
+      "alias": "变色龙",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "泪眼蜥的最终进化，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%83%E9%9D%A2%E9%81%BF%E5%BD%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "敲音猴",
+      "linyu": "敲音猴",
+      "alias": "鼓猴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草属性御三家，伽勒尔地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%95%B2%E9%9F%B3%E7%8C%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "啪咚猴",
+      "linyu": "啪咚猴",
+      "alias": "中鼓猴",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "敲音猴的进化型，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%95%AA%E5%92%9A%E7%8C%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "轰擂金刚猩",
+      "linyu": "轰擂金刚猩",
+      "alias": "大猩猩",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "敲音猴的最终进化，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BD%B0%E6%93%82%E9%87%91%E5%88%9A%E7%8C%A9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "新叶喵",
+      "linyu": "新叶喵",
+      "alias": "草猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "草属性御三家，帕底亚地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%96%B0%E5%8F%B6%E5%96%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蒂蕾喵",
+      "linyu": "蒂蕾喵",
+      "alias": "中草猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "新叶喵的进化型，草属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%92%82%E8%95%BE%E5%96%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "魔幻假面喵",
+      "linyu": "魔幻假面喵",
+      "alias": "面具猫",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "新叶喵的最终进化，草／恶属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%94%E5%B9%BB%E5%81%87%E9%9D%A2%E5%96%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "呆火鳄",
+      "linyu": "呆火鳄",
+      "alias": "火鳄",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "火属性御三家，帕底亚地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%86%E7%81%AB%E9%B3%84",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "炙烫鳄",
+      "linyu": "炙烫鳄",
+      "alias": "中火鳄",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "呆火鳄的进化型，火属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%99%E7%83%AB%E9%B3%84",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "骨纹巨声鳄",
+      "linyu": "骨纹巨声鳄",
+      "alias": "大鳄",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "呆火鳄的最终进化，火／幽灵属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AA%A8%E7%BA%B9%E5%B7%A8%E5%A3%B0%E9%B3%84",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "润水鸭",
+      "linyu": "润水鸭",
+      "alias": "水鸭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "水属性御三家，帕底亚地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B6%A6%E6%B0%B4%E9%B8%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "涌跃鸭",
+      "linyu": "涌跃鸭",
+      "alias": "中水鸭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "润水鸭的进化型，水属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B6%8C%E8%B7%83%E9%B8%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "狂欢浪舞鸭",
+      "linyu": "狂欢浪舞鸭",
+      "alias": "舞鸭",
+      "slot": "淋可梦 / 淋可梦精灵淋名",
+      "sense": "润水鸭的最终进化，水／格斗属性。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8B%82%E6%AC%A2%E6%B5%AA%E8%88%9E%E9%B8%AD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "属性相性",
+      "linyu": "属性相性",
+      "alias": "相性",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "两种属性之间的克制关系表。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B1%9E%E6%80%A7%E7%9B%B8%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "种族值",
+      "linyu": "种族值",
+      "alias": "基础数值",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "每个物种固定的六项基础数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%8D%E6%97%8F%E5%80%BC",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "等级",
+      "linyu": "等级",
+      "alias": "级",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "精灵的成长等级，上限一百。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AD%89%E7%BA%A7",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "努力值上限",
+      "linyu": "努力值上限",
+      "alias": "510",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "一只精灵能分配的努习值总量上限。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%AA%E5%8A%9B%E5%80%BC%E4%B8%8A%E9%99%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "觉醒值",
+      "linyu": "觉醒值",
+      "alias": "极限训练",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "部分版本用于提升个体值的机制。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A7%89%E9%86%92%E5%80%BC",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "球种",
+      "linyu": "球种",
+      "alias": "精灵球种类",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "收服时使用的球，影响外观与孵化结果。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%90%83%E7%A7%8D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "印章",
+      "linyu": "印章",
+      "alias": "证章",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "精灵身上的稀有标记。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%B0%E7%AB%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "体型",
+      "linyu": "体型",
+      "alias": "大小",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "部分版本会记录的大小差异。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BD%93%E5%9E%8B",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "性别",
+      "linyu": "性别",
+      "alias": "公母",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "影响部分进化与配招。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%80%A7%E5%88%AB",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蛋组",
+      "linyu": "蛋组",
+      "alias": "孵化组",
+      "slot": "淋可梦 / 淋可梦属性质阶",
+      "sense": "决定能否配对的分类。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9B%8B%E7%BB%84",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "特性互换",
+      "linyu": "特性互换",
+      "alias": "换特性",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "交换双方特性的招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%B9%E6%80%A7%E4%BA%92%E6%8D%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "梦特药",
+      "linyu": "特性药",
+      "alias": "特性胶囊",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "改变精灵特性的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A2%A6%E7%89%B9%E8%8D%AF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "薄荷",
+      "linyu": "薄荷",
+      "alias": "性格修正",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "调整性格加成的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%96%84%E8%8D%B7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "银冠",
+      "linyu": "银色王冠",
+      "alias": "极限特训",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提升个体值的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%B6%E5%86%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "金冠",
+      "linyu": "金色王冠",
+      "alias": "满个体",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "把个体值直接拉满的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E5%86%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "PP 提升",
+      "linyu": "PP提升",
+      "alias": "PP 上限",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "提升招式可用次数的道具。",
+      "source": "https://search.bilibili.com/all?keyword=PP%20%E6%8F%90%E5%8D%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拼命",
+      "linyu": "拼命",
+      "alias": "挣扎",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "所有招式 PP 耗尽后的最后手段。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%BC%E5%91%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "状态",
+      "linyu": "状态异常",
+      "alias": "异常状态",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "中毒、麻痹、烧伤、睡眠、冰冻五种。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8A%B6%E6%80%81",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "烧伤",
+      "linyu": "烧伤",
+      "alias": "烧",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "攻击减半并持续掉血的状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%A7%E4%BC%A4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "睡眠",
+      "linyu": "睡眠",
+      "alias": "睡着",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "无法行动的异常状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9D%A1%E7%9C%A0",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "冰冻",
+      "linyu": "冰冻",
+      "alias": "冻住",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "无法行动，需靠招式或道具解除。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E5%86%BB",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "混乱",
+      "linyu": "混乱",
+      "alias": "晕",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "有概率攻击自己。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%B7%E4%B9%B1",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "退缩",
+      "linyu": "退缩",
+      "alias": "硬直",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "本回合无法行动。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E7%BC%A9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "击中要害",
+      "linyu": "击中要害",
+      "alias": "会心",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "伤害额外提升的判定。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BB%E4%B8%AD%E8%A6%81%E5%AE%B3",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "命中率",
+      "linyu": "命中率",
+      "alias": "命中",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "招式能否打中的概率。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%BD%E4%B8%AD%E7%8E%87",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "闪避率",
+      "linyu": "闪避率",
+      "alias": "闪避",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "躲开攻击的概率。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E9%81%BF%E7%8E%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "速度",
+      "linyu": "速度",
+      "alias": "速",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "决定出手顺序的数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9F%E5%BA%A6",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "攻击",
+      "linyu": "攻击",
+      "alias": "物攻",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "物理伤害的基础数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%BB%E5%87%BB",
+      "pop": "高",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "特攻",
+      "linyu": "特攻",
+      "alias": "特攻值",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "特殊伤害的基础数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%B9%E6%94%BB",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "防御",
+      "linyu": "防御",
+      "alias": "物防",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "抵抗物理伤害的数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B2%E5%BE%A1",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "特防",
+      "linyu": "特防",
+      "alias": "特防值",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "抵抗特殊伤害的数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%B9%E9%98%B2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "六维",
+      "linyu": "六维",
+      "alias": "面板",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "血量、攻击、防御、特攻、特防、速度六项合称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AD%E7%BB%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "努力分配",
+      "linyu": "努力分配",
+      "alias": "配点",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "把努力值分到具体数值上的方案。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%AA%E5%8A%9B%E5%88%86%E9%85%8D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "配招",
+      "linyu": "配招",
+      "alias": "招式搭配",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "一只精灵携带的四个招式组合。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%85%8D%E6%8B%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "队伍构筑",
+      "linyu": "队伍构筑",
+      "alias": "组队",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "围绕核心精灵搭出六只的阵容。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%9F%E4%BC%8D%E6%9E%84%E7%AD%91",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "核心",
+      "linyu": "核心",
+      "alias": "C",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "队伍里承担主要输出或战术的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A0%B8%E5%BF%83",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "垫刀",
+      "linyu": "垫刀",
+      "alias": "开胃菜",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "先派弱精灵消耗对手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9E%AB%E5%88%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "收尾",
+      "linyu": "收尾",
+      "alias": "清场",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "最后一只精灵负责结束战斗。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%B6%E5%B0%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "替身残留",
+      "linyu": "残留替身",
+      "alias": "替身还在",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "替身尚未被打掉的状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9B%BF%E8%BA%AB%E6%AE%8B%E7%95%99",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "开天气",
+      "linyu": "开天气",
+      "alias": "起天气",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "用招式把场地改成有利天气。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E5%A4%A9%E6%B0%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "撒菱",
+      "linyu": "撒菱",
+      "alias": "钉子",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "在对手场地布置伤害陷阱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%92%E8%8F%B1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "除雾",
+      "linyu": "除雾",
+      "alias": "清钉",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "清除场地上的陷阱。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%99%A4%E9%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "守住",
+      "linyu": "守住",
+      "alias": "保护",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "本回合免疫伤害。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%88%E4%BD%8F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "挑衅",
+      "linyu": "挑衅",
+      "alias": "封锁变化技",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "让对手只能使用攻击招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8C%91%E8%A1%85",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "挑拨",
+      "linyu": "挑拨",
+      "alias": "挑衅",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "挑衅的另一种写法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8C%91%E6%8B%A8",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拍落",
+      "linyu": "拍落",
+      "alias": "打掉道具",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "打掉对手持有的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%8D%E8%90%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "戏法",
+      "linyu": "戏法",
+      "alias": "换道具",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "交换双方的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%8F%E6%B3%95",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "寄生种子",
+      "linyu": "寄生种子",
+      "alias": "吸血种子",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "每回合吸取对手血量。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%84%E7%94%9F%E7%A7%8D%E5%AD%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "光合作用",
+      "linyu": "光合作用",
+      "alias": "回血",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "晴天时回复更多血量。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "剑舞强化",
+      "linyu": "剑舞流",
+      "alias": "强化流",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠剑舞叠攻击再一波带走的打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%91%E8%88%9E%E5%BC%BA%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "坦克流",
+      "linyu": "坦克流",
+      "alias": "肉盾流",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠高防御消耗对手的打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9D%A6%E5%85%8B%E6%B5%81",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "速攻流",
+      "linyu": "速攻流",
+      "alias": "速攻",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠速度先手压制的打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9F%E6%94%BB%E6%B5%81",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "天气队",
+      "linyu": "天气队",
+      "alias": "天候队",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "围绕某一天气构筑的队伍。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%B0%94%E9%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "空间队",
+      "linyu": "空间队",
+      "alias": "戏法空间",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "用戏法空间反转速度顺序的队伍。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BA%E9%97%B4%E9%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "接力队",
+      "linyu": "接力队",
+      "alias": "接棒",
+      "slot": "淋可梦 / 淋可梦对战术语",
+      "sense": "靠接棒把强化传给下一只的队伍。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%A5%E5%8A%9B%E9%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "洗翠",
+      "linyu": "洗翠",
+      "alias": "古代神奥",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "《传说阿尔宙斯》所在的古代地区。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%97%E7%BF%A0",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "蓝之圆盘",
+      "linyu": "蓝之圆盘",
+      "alias": "DLC",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "朱紫的追加内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%93%9D%E4%B9%8B%E5%9C%86%E7%9B%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "零之秘宝",
+      "linyu": "零之秘宝",
+      "alias": "DLC",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "朱紫的追加剧情。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%B6%E4%B9%8B%E7%A7%98%E5%AE%9D",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "铠之孤岛",
+      "linyu": "铠之孤岛",
+      "alias": "DLC",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "剑盾的追加内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%A0%E4%B9%8B%E5%AD%A4%E5%B2%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "冠之雪原",
+      "linyu": "冠之雪原",
+      "alias": "DLC",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "剑盾的追加内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%A0%E4%B9%8B%E9%9B%AA%E5%8E%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "究极之洞",
+      "linyu": "究极之洞",
+      "alias": "虫洞",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "日月里通往异界的通道。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%B6%E6%9E%81%E4%B9%8B%E6%B4%9E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "极巨巢穴",
+      "linyu": "极巨巢穴",
+      "alias": "巢穴",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "剑盾里刷极巨化精灵的玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%81%E5%B7%A8%E5%B7%A2%E7%A9%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "太晶团体战",
+      "linyu": "太晶团体战",
+      "alias": "团体战",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "朱紫的多人挑战玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%AA%E6%99%B6%E5%9B%A2%E4%BD%93%E6%88%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦图鉴完成",
+      "linyu": "图鉴完成",
+      "alias": "全图鉴",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "把图鉴条目全部集齐。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%9B%BE%E9%89%B4%E5%AE%8C%E6%88%90",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "全国图鉴",
+      "linyu": "全国图鉴",
+      "alias": "全编号",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "跨地区统一的图鉴编号体系。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%A8%E5%9B%BD%E5%9B%BE%E9%89%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "地区图鉴",
+      "linyu": "地区图鉴",
+      "alias": "本地图鉴",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "只统计本地区精灵的图鉴。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E5%8C%BA%E5%9B%BE%E9%89%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "秘传招式",
+      "linyu": "秘传招式",
+      "alias": "HM",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "地图上使用的特殊招式，如冲浪、飞翔。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%98%E4%BC%A0%E6%8B%9B%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "自行车",
+      "linyu": "自行车",
+      "alias": "单车",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "地图上的代步工具。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%87%AA%E8%A1%8C%E8%BD%A6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "钓竿",
+      "linyu": "钓竿",
+      "alias": "钓鱼",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "在水域钓精灵的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%92%93%E7%AB%BF",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "甜甜香气",
+      "linyu": "甜甜香气",
+      "alias": "引怪",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "吸引野生精灵的招式。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%9C%E7%94%9C%E9%A6%99%E6%B0%94",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦寄放屋",
+      "linyu": "寄放屋",
+      "alias": "孵蛋屋",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "寄存精灵并孵化蛋的设施。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%AF%84%E6%94%BE%E5%B1%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦培育屋",
+      "linyu": "培育屋",
+      "alias": "育成",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "培养精灵的设施。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%9F%B9%E8%82%B2%E5%B1%8B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "友好商店",
+      "linyu": "友好商店",
+      "alias": "商店",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "购买道具的商店。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8B%E5%A5%BD%E5%95%86%E5%BA%97",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦发烧友俱乐部",
+      "linyu": "发烧友俱乐部",
+      "alias": "俱乐部",
+      "slot": "淋可梦 / 淋可梦图鉴版本",
+      "sense": "动画里的粉丝组织。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%8F%91%E7%83%A7%E5%8F%8B%E4%BF%B1%E4%B9%90%E9%83%A8",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本皮神",
+      "linyu": "本皮神",
+      "alias": "皮神",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "以皮卡丘身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E7%9A%AE%E7%A5%9E",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本伊布",
+      "linyu": "本伊布",
+      "alias": "伊布",
+      "slot": "淋可梦 / 淋可梦自称体系",
+      "sense": "以伊布身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "一球入魂",
+      "linyu": "一球入魂",
+      "alias": "一球",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "形容一球捕获。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E7%90%83%E5%85%A5%E9%AD%82",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "图鉴001",
+      "linyu": "图鉴001",
+      "alias": "001",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "图鉴第一号，常被用来指代起点。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BE%E9%89%B4001",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "初始精灵",
+      "linyu": "初始精灵",
+      "alias": "开局",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "开局选择的第一只精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%9D%E5%A7%8B%E7%B2%BE%E7%81%B5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "草丛",
+      "linyu": "草丛",
+      "alias": "草",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "野生精灵出现的常见地点。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8D%89%E4%B8%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "洞穴",
+      "linyu": "洞穴",
+      "alias": "洞",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "野生精灵出现的常见地点。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%9E%E7%A9%B4",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "水边",
+      "linyu": "水边",
+      "alias": "河边",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "水系精灵出现的常见地点。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E8%BE%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "钓上来",
+      "linyu": "钓上来",
+      "alias": "钓到",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "用钓竿捕获精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%92%93%E4%B8%8A%E6%9D%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "换装",
+      "linyu": "换装",
+      "alias": "换衣",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "给精灵或主角换外观。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%A2%E8%A3%85",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "拍照",
+      "linyu": "拍照",
+      "alias": "合影",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "与精灵合影的玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%8D%E7%85%A7",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "抚摸",
+      "linyu": "抚摸",
+      "alias": "撸",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "与精灵互动的玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%9A%E6%91%B8",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "喂食",
+      "linyu": "喂食",
+      "alias": "喂",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "给精灵吃东西提升亲密度。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%96%82%E9%A3%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "洗澡",
+      "linyu": "洗澡",
+      "alias": "清洁",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "清洁精灵的玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%97%E6%BE%A1",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "散步",
+      "linyu": "散步",
+      "alias": "遛",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "带精灵散步提升亲密度。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%95%A3%E6%AD%A5",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦咖啡",
+      "linyu": "宝可梦咖啡",
+      "alias": "咖啡厅",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "衍生作品里的休闲玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%92%96%E5%95%A1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦GO",
+      "linyu": "宝可梦GO",
+      "alias": "GO",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "手机定位玩法，圈内常说「出门抓」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6GO",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦大集结",
+      "linyu": "宝可梦大集结",
+      "alias": "大集结",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "团队对战衍生作，语料里有「宝淋梦大集结」。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%A4%A7%E9%9B%86%E7%BB%93",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦Sleep",
+      "linyu": "宝可梦Sleep",
+      "alias": "睡眠",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "以睡眠为主题的衍生作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6Sleep",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦UNITE",
+      "linyu": "宝可梦UNITE",
+      "alias": "UNITE",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "大集结的英文名。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6UNITE",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "方可梦",
+      "linyu": "方可梦",
+      "alias": "方块",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "《宝可梦探险寻宝》的圈内叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%96%B9%E5%8F%AF%E6%A2%A6",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "宝可梦肉鸽之夜",
+      "linyu": "肉鸽之夜",
+      "alias": "roguelike",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "同人 roguelike 玩法的叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%9D%E5%8F%AF%E6%A2%A6%E8%82%89%E9%B8%BD%E4%B9%8B%E5%A4%9C",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "改版",
+      "linyu": "改版",
+      "alias": "ROM",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "玩家自制的改版作品。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%B9%E7%89%88",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "单机改版",
+      "linyu": "单机改版",
+      "alias": "单机",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "不联机的改版作品。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%95%E6%9C%BA%E6%94%B9%E7%89%88",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "联机改版",
+      "linyu": "联机改版",
+      "alias": "线上",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "支持联机的改版作品。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E6%9C%BA%E6%94%B9%E7%89%88",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "存档",
+      "linyu": "存档",
+      "alias": "save",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "游戏进度文件。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%98%E6%A1%A3",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "金手指",
+      "linyu": "金手指",
+      "alias": "作弊码",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "修改游戏数据的代码。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E6%89%8B%E6%8C%87",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "刷钱",
+      "linyu": "刷钱",
+      "alias": "赚金币",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "反复刷取游戏货币。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B7%E9%92%B1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "刷糖果",
+      "linyu": "刷糖果",
+      "alias": "糖",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "刷取提升属性的糖果。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B7%E7%B3%96%E6%9E%9C",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "刷努力",
+      "linyu": "刷努力",
+      "alias": "打点",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "反复击败特定精灵攒努力值。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B7%E5%8A%AA%E5%8A%9B",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "刷等级",
+      "linyu": "刷等级",
+      "alias": "练级",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "反复战斗提升等级。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B7%E7%AD%89%E7%BA%A7",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "练级点",
+      "linyu": "练级点",
+      "alias": "刷级点",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "适合反复练级的地点。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%83%E7%BA%A7%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "四倍弱点",
+      "linyu": "四倍弱点",
+      "alias": "双克制",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "双属性叠加导致伤害翻四倍。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9B%E5%80%8D%E5%BC%B1%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "秒队",
+      "linyu": "秒队",
+      "alias": "清队",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "一只精灵打穿整队。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%92%E9%98%9F",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "换血",
+      "linyu": "换血",
+      "alias": "互拼",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "双方互相消耗血量。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%A2%E8%A1%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "读换",
+      "linyu": "读换",
+      "alias": "预判换人",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "预判对手换人并抢先应对。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BB%E6%8D%A2",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "猜拳局",
+      "linyu": "猜拳局",
+      "alias": "博弈局",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "靠心理博弈决定胜负的对局。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8C%9C%E6%8B%B3%E5%B1%80",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "阴人",
+      "linyu": "阴人",
+      "alias": "偷袭",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "用非常规打法偷袭对手。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B4%E4%BA%BA",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "绝活",
+      "linyu": "绝活",
+      "alias": "招牌",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "某位玩家或某只精灵的招牌打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%9D%E6%B4%BB",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "退环境",
+      "linyu": "退环境",
+      "alias": "下水道",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "因版本改动而失去竞争力的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E7%8E%AF%E5%A2%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "天花板",
+      "linyu": "天花板",
+      "alias": "上限",
+      "slot": "淋可梦 / 淋可梦整活梗",
+      "sense": "某只精灵能达到的最高强度。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E8%8A%B1%E6%9D%BF",
+      "pop": "中",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本命皮卡丘",
+      "linyu": "本命皮卡丘",
+      "alias": "皮神本命",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "把皮卡丘当本命的粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%91%BD%E7%9A%AE%E5%8D%A1%E4%B8%98",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "本命伊布",
+      "linyu": "本命伊布",
+      "alias": "伊布本命",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "把伊布当本命的粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%91%BD%E4%BC%8A%E5%B8%83",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "御三家本命",
+      "linyu": "御三家本命",
+      "alias": "三只都爱",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "御三家全都要的粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%A1%E4%B8%89%E5%AE%B6%E6%9C%AC%E5%91%BD",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "图鉴全满",
+      "linyu": "图鉴全满",
+      "alias": "全收",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "图鉴全部集齐的状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BE%E9%89%B4%E5%85%A8%E6%BB%A1",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "手办党",
+      "linyu": "手办党",
+      "alias": "周边党",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "收集实体周边的粉丝。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%8B%E5%8A%9E%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "卡牌党",
+      "linyu": "卡牌党",
+      "alias": "TCG",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "只玩集换式卡牌的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E7%89%8C%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "动画党",
+      "linyu": "动画党",
+      "alias": "看番",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "只看动画不玩游戏的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%A8%E7%94%BB%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "游戏党",
+      "linyu": "游戏党",
+      "alias": "玩正作",
+      "slot": "淋可梦 / 淋可梦通讯录tag",
+      "sense": "只玩正作游戏的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B8%B8%E6%88%8F%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "淋可梦"
+      ]
+    },
+    {
+      "zh": "糖果",
+      "linyu": "糖果",
+      "alias": "经验糖",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升精灵等级的经验道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B3%96%E6%9E%9C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "资质",
+      "linyu": "资质",
+      "alias": "天赋资质",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "决定精灵成长上限的隐藏数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%84%E8%B4%A8",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "洗练",
+      "linyu": "洗练",
+      "alias": "重铸",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "重置精灵属性的操作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%97%E7%BB%83",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "洗练石",
+      "linyu": "洗练石",
+      "alias": "石头",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "用于洗练的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%97%E7%BB%83%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "传承",
+      "linyu": "传承",
+      "alias": "继承",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把旧精灵的培养成果转移给新精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%A0%E6%89%BF",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "融合",
+      "linyu": "融合",
+      "alias": "合成",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把两只精灵合成为更高阶形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9E%8D%E5%90%88",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "升星",
+      "linyu": "升星",
+      "alias": "加星",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升精灵星级的操作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%87%E6%98%9F",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "进阶",
+      "linyu": "进阶",
+      "alias": "升阶",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升精灵阶级的操作。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%9B%E9%98%B6",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战魂",
+      "linyu": "战魂",
+      "alias": "魂",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵的核心强化系统。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E9%AD%82",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "光环",
+      "linyu": "光环",
+      "alias": "被动环",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "队伍层面的增益效果。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%89%E7%8E%AF",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "专属",
+      "linyu": "专属",
+      "alias": "专武",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "某只精灵独有的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%93%E5%B1%9E",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "时装",
+      "linyu": "时装",
+      "alias": "衣服",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "角色的外观替换。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%97%B6%E8%A3%85",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "坐骑",
+      "linyu": "坐骑",
+      "alias": "坐",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "角色的移动外观。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9D%90%E9%AA%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "家园",
+      "linyu": "家园",
+      "alias": "家",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "养成类附属玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%B6%E5%9B%AD",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "牧场",
+      "linyu": "牧场",
+      "alias": "养",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "放置类附属玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%A7%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "竞技场",
+      "linyu": "竞技场",
+      "alias": "JJC",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "玩家对战的场所。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%9E%E6%8A%80%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "传说段位",
+      "linyu": "传说段位",
+      "alias": "传说",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "排位里的高段位，语料里「学会直接保送传说段位」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%A0%E8%AF%B4%E6%AE%B5%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "挑战",
+      "linyu": "挑战",
+      "alias": "关卡",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵挑战活动。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8C%91%E6%88%98",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "秘阁",
+      "linyu": "秘阁",
+      "alias": "秘",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "高级挑战副本，凡尔维斯属秘阁体系。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%98%E9%98%81",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "副本",
+      "linyu": "副本",
+      "alias": "本",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "重复挑战的关卡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%AF%E6%9C%AC",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "限时活动",
+      "linyu": "限时活动",
+      "alias": "活动",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "有期限的活动。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%99%90%E6%97%B6%E6%B4%BB%E5%8A%A8",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "体力",
+      "linyu": "体力",
+      "alias": "体",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "挑战消耗的资源。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BD%93%E5%8A%9B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "仓库",
+      "linyu": "仓库",
+      "alias": "库",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "存放精灵的地方。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BB%93%E5%BA%93",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "分解",
+      "linyu": "分解",
+      "alias": "拆",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把道具拆成材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%86%E8%A7%A3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "兑换",
+      "linyu": "兑换",
+      "alias": "换",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "用材料换取道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%91%E6%8D%A2",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "商店",
+      "linyu": "商店",
+      "alias": "店",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "购买道具的地方。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%95%86%E5%BA%97",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "礼包",
+      "linyu": "礼包",
+      "alias": "包",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "打包出售的道具组合。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A4%BC%E5%8C%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "月卡",
+      "linyu": "月卡",
+      "alias": "卡",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "按月生效的付费特权。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%88%E5%8D%A1",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "首充",
+      "linyu": "首充",
+      "alias": "首",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "首次充值的奖励。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A6%96%E5%85%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "成长基金",
+      "linyu": "成长基金",
+      "alias": "基金",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "按等级发放的付费奖励。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%90%E9%95%BF%E5%9F%BA%E9%87%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "累充",
+      "linyu": "累充",
+      "alias": "累计充值",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "累计充值达标奖励。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B4%AF%E5%85%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "返钻",
+      "linyu": "返钻",
+      "alias": "返",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "充值后按比例返还钻石。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%94%E9%92%BB",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "保送",
+      "linyu": "保送",
+      "alias": "直升",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "指靠阵容或数值直接通关，语料里「学会直接保送传说段位」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E9%80%81",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "氪佬",
+      "linyu": "氪佬",
+      "alias": "大氪",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "花很多钱的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%AA%E4%BD%AC",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "白嫖党",
+      "linyu": "白嫖党",
+      "alias": "白嫖",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "完全不花钱的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BD%E5%AB%96%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "肝帝",
+      "linyu": "肝帝",
+      "alias": "肝",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "靠长时间在线推进度的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%82%9D%E5%B8%9D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "萌新",
+      "linyu": "萌新",
+      "alias": "新",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "新入坑的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%90%8C%E6%96%B0",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "攻略",
+      "linyu": "攻略",
+      "alias": "教学",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "通关或养成的指导内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%BB%E7%95%A5",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "阵容",
+      "linyu": "阵容",
+      "alias": "队",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "上阵精灵的组合。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B5%E5%AE%B9",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "搭配",
+      "linyu": "搭配",
+      "alias": "配",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "精灵与装备的组合方案。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%90%AD%E9%85%8D",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "速通",
+      "linyu": "速通",
+      "alias": "秒",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "快速通关。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9F%E9%80%9A",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "挑战赛",
+      "linyu": "挑战赛",
+      "alias": "比赛",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "竞技类赛事。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8C%91%E6%88%98%E8%B5%9B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "排行",
+      "linyu": "排行",
+      "alias": "榜",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "名次列表。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%92%E8%A1%8C",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战力榜",
+      "linyu": "战力榜",
+      "alias": "榜一",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "按战力排序的榜单。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%8A%9B%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "预告",
+      "linyu": "预告",
+      "alias": "前瞻",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "官方放出的下版本内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A2%84%E5%91%8A",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "更新公告",
+      "linyu": "更新公告",
+      "alias": "公告",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "版本更新的说明。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9B%B4%E6%96%B0%E5%85%AC%E5%91%8A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "维护",
+      "linyu": "维护",
+      "alias": "停机",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "服务器停机更新。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%B4%E6%8A%A4",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "补偿",
+      "linyu": "补偿",
+      "alias": "赔",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "维护或事故后的补偿奖励。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A1%A5%E5%81%BF",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "暗改",
+      "linyu": "暗改",
+      "alias": "偷偷改",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "不公告直接改数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9A%97%E6%94%B9",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "明改",
+      "linyu": "明改",
+      "alias": "公告改",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "公告说明的数值改动。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%98%8E%E6%94%B9",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "平衡性",
+      "linyu": "平衡性",
+      "alias": "平衡",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "精灵之间的强弱均衡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B3%E8%A1%A1%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "梯度",
+      "linyu": "梯度",
+      "alias": "T0",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "精灵强度的分档。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A2%AF%E5%BA%A6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "玩法",
+      "linyu": "玩法",
+      "alias": "模式",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "游戏内的玩法系统。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%A9%E6%B3%95",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "元素",
+      "linyu": "元素",
+      "alias": "系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "属性体系的另一种说法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%83%E7%B4%A0",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "克制关系",
+      "linyu": "克制关系",
+      "alias": "相克",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "属性之间的压制链条。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%8B%E5%88%B6%E5%85%B3%E7%B3%BB",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "主属性",
+      "linyu": "主属性",
+      "alias": "主系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "双属性里排在前面的一项。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%BB%E5%B1%9E%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "副属性",
+      "linyu": "副属性",
+      "alias": "副系",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "双属性里排在后面的一项。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%AF%E5%B1%9E%E6%80%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本系",
+      "linyu": "本系",
+      "alias": "同属性",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "与精灵自身属性一致的攻击。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E7%B3%BB",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战术位",
+      "linyu": "战术位",
+      "alias": "位",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "队伍里承担特定战术的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E6%9C%AF%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "副C",
+      "linyu": "副C",
+      "alias": "二号输出",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "承担次要输出的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%89%AFC",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "主C",
+      "linyu": "主C",
+      "alias": "一号输出",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "承担主要输出的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%BBC",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "盾位",
+      "linyu": "盾位",
+      "alias": "肉",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "负责承伤的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9B%BE%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "辅助位",
+      "linyu": "辅助位",
+      "alias": "辅",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "负责增益的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BE%85%E5%8A%A9%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "接团",
+      "linyu": "接团",
+      "alias": "后手",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "被动应战。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%A5%E5%9B%A2",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "阵容核心",
+      "linyu": "阵容核心",
+      "alias": "核心",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "整套阵容围绕的精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B5%E5%AE%B9%E6%A0%B8%E5%BF%83",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "替补",
+      "linyu": "替补",
+      "alias": "备",
+      "slot": "奥奇淋说 / 奥奇职业定位",
+      "sense": "未上阵的备选精灵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9B%BF%E8%A1%A5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "真爱党",
+      "linyu": "真爱党",
+      "alias": "为爱发电",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "不管强度只练本命的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9C%9F%E7%88%B1%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "收藏党",
+      "linyu": "收藏党",
+      "alias": "集齐",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "以收齐为目标的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%B6%E8%97%8F%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "外观党",
+      "linyu": "外观党",
+      "alias": "看脸",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "只看外观的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%96%E8%A7%82%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "竞技党",
+      "linyu": "竞技党",
+      "alias": "打排位",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "只打竞技场的一派。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%9E%E6%8A%80%E5%85%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "咸鱼",
+      "linyu": "咸鱼",
+      "alias": "躺",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "不怎么推进度的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%92%B8%E9%B1%BC",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "回坑",
+      "linyu": "回坑",
+      "alias": "回归",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "重新回到游戏。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E5%9D%91",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "弃坑",
+      "linyu": "弃坑",
+      "alias": "退坑",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "离开游戏。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%83%E5%9D%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "号贩子",
+      "linyu": "号贩子",
+      "alias": "卖号",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "买卖游戏账号的人。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%B7%E8%B4%A9%E5%AD%90",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "代打",
+      "linyu": "代打",
+      "alias": "代练",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "替别人打关卡的人，语料里有「帮忙打理号」的招揽。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BB%A3%E6%89%93",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本命莓莓",
+      "linyu": "本命莓莓",
+      "alias": "莓莓党",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "把莓莓小姐当本命的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%91%BD%E8%8E%93%E8%8E%93",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本可召唤师",
+      "linyu": "本可召唤师",
+      "alias": "本可",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "把召唤师身份与淋语自称合并。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%8F%AF%E5%8F%AC%E5%94%A4%E5%B8%88",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我诺",
+      "linyu": "我诺",
+      "alias": "诺亚",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指诺亚。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E8%AF%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我梵",
+      "linyu": "我梵",
+      "alias": "龙梵",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指龙梵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%A2%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我帝",
+      "linyu": "我帝",
+      "alias": "帝释天",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指帝释天。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%B8%9D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "我桑",
+      "linyu": "我桑",
+      "alias": "伊桑",
+      "slot": "奥奇淋说 / 奥奇自称体系",
+      "sense": "「我X」式代称，指伊桑。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%A1%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "M4A1",
+      "linyu": "M4A1",
+      "alias": "M4",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪，改装空间大。",
+      "source": "https://search.bilibili.com/all?keyword=M4A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "AK-12",
+      "linyu": "AK-12",
+      "alias": "AK",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=AK-12",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "AKM",
+      "linyu": "AKM",
+      "alias": "老 AK",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=AKM",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "QBZ95",
+      "linyu": "QBZ95",
+      "alias": "95 式",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=QBZ95",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "K416",
+      "linyu": "K416",
+      "alias": "K4",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=K416",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "K437",
+      "linyu": "K437",
+      "alias": "K437",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪，语料里列入赛季任务清单。",
+      "source": "https://search.bilibili.com/all?keyword=K437",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "AN94",
+      "linyu": "AN94",
+      "alias": "AN-94",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪，语料里与 K437 并列。",
+      "source": "https://search.bilibili.com/all?keyword=AN94",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "MCX",
+      "linyu": "MCX",
+      "alias": "精锐 MCX",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪，语料里被评「小夯」。",
+      "source": "https://search.bilibili.com/all?keyword=MCX",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M14",
+      "linyu": "M14",
+      "alias": "M14",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "战斗步枪，语料里提到「赛季定制 M14」。",
+      "source": "https://search.bilibili.com/all?keyword=M14",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "SR-25",
+      "linyu": "SR-25",
+      "alias": "SR25",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "半自动狙击步枪，语料里列入赛季清单。",
+      "source": "https://search.bilibili.com/all?keyword=SR-25",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "SVD",
+      "linyu": "SVD",
+      "alias": "德拉贡诺夫",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "半自动狙击步枪，语料里「改装费用仅需两个小金」。",
+      "source": "https://search.bilibili.com/all?keyword=SVD",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "AWM",
+      "linyu": "AWM",
+      "alias": "大狙",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "栓动狙击步枪，语料里说 CS2 大狙升级为三角洲 AWM。",
+      "source": "https://search.bilibili.com/all?keyword=AWM",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M250",
+      "linyu": "M250",
+      "alias": "M250",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "轻机枪，语料里列入赛季清单。",
+      "source": "https://search.bilibili.com/all?keyword=M250",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "PKM",
+      "linyu": "PKM",
+      "alias": "PKM",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "轻机枪，语料里列入赛季清单。",
+      "source": "https://search.bilibili.com/all?keyword=PKM",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M870",
+      "linyu": "M870",
+      "alias": "870",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "泵动霰弹枪。",
+      "source": "https://search.bilibili.com/all?keyword=M870",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "KS-23",
+      "linyu": "KS-23",
+      "alias": "KS23",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "霰弹枪。",
+      "source": "https://search.bilibili.com/all?keyword=KS-23",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "MP5",
+      "linyu": "MP5",
+      "alias": "MP5",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "冲锋枪。",
+      "source": "https://search.bilibili.com/all?keyword=MP5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "Vector",
+      "linyu": "Vector",
+      "alias": "维克托",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "冲锋枪，射速极高。",
+      "source": "https://search.bilibili.com/all?keyword=Vector",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "UZI",
+      "linyu": "UZI",
+      "alias": "乌兹",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "冲锋枪。",
+      "source": "https://search.bilibili.com/all?keyword=UZI",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "P90",
+      "linyu": "P90",
+      "alias": "P90",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "冲锋枪。",
+      "source": "https://search.bilibili.com/all?keyword=P90",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "G18",
+      "linyu": "G18",
+      "alias": "格洛克",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪，可连发。",
+      "source": "https://search.bilibili.com/all?keyword=G18",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "沙漠之鹰",
+      "linyu": "沙漠之鹰",
+      "alias": "沙鹰",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪，威力大。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B2%99%E6%BC%A0%E4%B9%8B%E9%B9%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "红点镜",
+      "linyu": "红点镜",
+      "alias": "红点",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "基础瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E7%82%B9%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "全息镜",
+      "linyu": "全息镜",
+      "alias": "全息",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "基础瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%A8%E6%81%AF%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "四倍镜",
+      "linyu": "四倍镜",
+      "alias": "4 倍",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中距离瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9B%E5%80%8D%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "六倍镜",
+      "linyu": "六倍镜",
+      "alias": "6 倍",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "远距离瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AD%E5%80%8D%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "热成像",
+      "linyu": "热成像",
+      "alias": "热成",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "可穿透烟雾观察的瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%AD%E6%88%90%E5%83%8F",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "镭射",
+      "linyu": "镭射",
+      "alias": "激光",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升腰射精度的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%95%AD%E5%B0%84",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "战术手电",
+      "linyu": "战术手电",
+      "alias": "手电",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "照明与干扰的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E6%9C%AF%E6%89%8B%E7%94%B5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "枪口制退器",
+      "linyu": "枪口制退器",
+      "alias": "制退",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低后坐力的枪口配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%AA%E5%8F%A3%E5%88%B6%E9%80%80%E5%99%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "弹鼓",
+      "linyu": "弹鼓",
+      "alias": "大弹匣",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升装弹量的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E9%BC%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "快拔弹匣",
+      "linyu": "快拔弹匣",
+      "alias": "快拔",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升换弹速度的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BF%AB%E6%8B%94%E5%BC%B9%E5%8C%A3",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "枪托",
+      "linyu": "枪托",
+      "alias": "托",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "影响后坐力与稳定性的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%AA%E6%89%98",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "一级甲",
+      "linyu": "一级甲",
+      "alias": "1 甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "最低等级的护甲。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E7%BA%A7%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三级甲",
+      "linyu": "三级甲",
+      "alias": "3 甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中等级护甲。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E7%BA%A7%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "六级甲",
+      "linyu": "六级甲",
+      "alias": "6 甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "最高等级护甲。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AD%E7%BA%A7%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "五级头",
+      "linyu": "五级头",
+      "alias": "5 头",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "高等级头盔。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%94%E7%BA%A7%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "战术背心",
+      "linyu": "战术背心",
+      "alias": "背心",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "携带弹匣与道具的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E6%9C%AF%E8%83%8C%E5%BF%83",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "胸挂",
+      "linyu": "胸挂",
+      "alias": "挂",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "快速取用道具的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%B8%E6%8C%82",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "吉利服",
+      "linyu": "吉利服",
+      "alias": "伪装",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升隐蔽性的服装。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%89%E5%88%A9%E6%9C%8D",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "红药",
+      "linyu": "红药",
+      "alias": "止血",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "快速止血的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E8%8D%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "蓝药",
+      "linyu": "蓝药",
+      "alias": "回复",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "回复体力的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%93%9D%E8%8D%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "肾上腺素",
+      "linyu": "肾上腺素",
+      "alias": "肾上腺素",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "短时间提升移动与恢复的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%82%BE%E4%B8%8A%E8%85%BA%E7%B4%A0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "止血带",
+      "linyu": "止血带",
+      "alias": "止血",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "控制出血的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AD%A2%E8%A1%80%E5%B8%A6",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "夹板",
+      "linyu": "夹板",
+      "alias": "固定",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "治疗骨折的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%B9%E6%9D%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "能量饮料",
+      "linyu": "能量饮料",
+      "alias": "饮料",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "短时间提升状态的消耗品。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%BD%E9%87%8F%E9%A5%AE%E6%96%99",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "锅",
+      "linyu": "锅",
+      "alias": "平底锅",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "可挡子弹的近战道具，语料里「一局四个锅」。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%94%85",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三桶油",
+      "linyu": "三桶油",
+      "alias": "油桶",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "高价值物资，语料里「三桶油只拿了一桶」。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E6%A1%B6%E6%B2%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "装甲车电池",
+      "linyu": "装甲车电池",
+      "alias": "电池",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "高价值物资。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A3%85%E7%94%B2%E8%BD%A6%E7%94%B5%E6%B1%A0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "小金",
+      "linyu": "小金",
+      "alias": "小金条",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中等价值的贵重物品。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E9%87%91",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "大红",
+      "linyu": "大红",
+      "alias": "大红物资",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "高价值物资的统称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E7%BA%A2",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "哈夫克公司",
+      "linyu": "哈夫克公司",
+      "alias": "哈夫克",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "游戏内的主要势力之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%A4%AB%E5%85%8B%E5%85%AC%E5%8F%B8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "GTI",
+      "linyu": "GTI",
+      "alias": "特勤处",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "玩家所属的阵营机构。",
+      "source": "https://search.bilibili.com/all?keyword=GTI",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "危险行动",
+      "linyu": "危险行动",
+      "alias": "摸金模式",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "带出物资的核心玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%B1%E9%99%A9%E8%A1%8C%E5%8A%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "烽火地带",
+      "linyu": "烽火地带",
+      "alias": "烽火",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "大战场模式。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%BD%E7%81%AB%E5%9C%B0%E5%B8%A6",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "全面战场",
+      "linyu": "全面战场",
+      "alias": "大战场",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "大规模对抗模式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%A8%E9%9D%A2%E6%88%98%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "夺金模式",
+      "linyu": "夺金模式",
+      "alias": "夺金",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "以争夺资源为目标的模式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%BA%E9%87%91%E6%A8%A1%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "空投",
+      "linyu": "空投",
+      "alias": "投",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "空运补给。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BA%E6%8A%95",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "直升机",
+      "linyu": "直升机",
+      "alias": "直升机撤离",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "部分地图的撤离载具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9B%B4%E5%8D%87%E6%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "载具",
+      "linyu": "载具",
+      "alias": "车",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "地图内可驾驶的交通工具。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BD%BD%E5%85%B7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "战术点",
+      "linyu": "战术点",
+      "alias": "点",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "地图上的关键控制点。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E6%9C%AF%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "密码门",
+      "linyu": "密码门",
+      "alias": "密码",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "需要输入每日密码的铁门。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%86%E7%A0%81%E9%97%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "每日密码",
+      "linyu": "每日密码",
+      "alias": "今日密码",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "每天更新的开门密码。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%8F%E6%97%A5%E5%AF%86%E7%A0%81",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "保险柜",
+      "linyu": "保险柜",
+      "alias": "柜",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "可撬开的高价值容器。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E9%99%A9%E6%9F%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "医疗箱",
+      "linyu": "医疗箱",
+      "alias": "药箱",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "可搜出医疗物资的容器。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8C%BB%E7%96%97%E7%AE%B1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "弹药箱",
+      "linyu": "弹药箱",
+      "alias": "弹箱",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "可搜出弹药的容器。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E8%8D%AF%E7%AE%B1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "工具箱",
+      "linyu": "工具箱",
+      "alias": "工箱",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "可搜出配件的容器。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A5%E5%85%B7%E7%AE%B1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "战利品",
+      "linyu": "战利品",
+      "alias": "东西",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "带出地图的物资统称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%88%A9%E5%93%81",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离倒计时",
+      "linyu": "撤离倒计时",
+      "alias": "倒计时",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "撤离点开启的等待时间。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E5%80%92%E8%AE%A1%E6%97%B6",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离直升机",
+      "linyu": "撤离直升机",
+      "alias": "直升机",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "部分地图的撤离方式。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E7%9B%B4%E5%8D%87%E6%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "掉线",
+      "linyu": "掉线",
+      "alias": "断",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "网络中断导致对局失败。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%89%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "卡点",
+      "linyu": "卡点",
+      "alias": "守点",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "在地图关键位置伏击。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E7%82%B9",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "标记",
+      "linyu": "标记",
+      "alias": "标",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "在视野内标注敌人。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A0%87%E8%AE%B0",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "视野",
+      "linyu": "视野",
+      "alias": "视",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "能看到敌人的范围。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A7%86%E9%87%8E",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "盲区",
+      "linyu": "盲区",
+      "alias": "死角",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "看不到的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9B%B2%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "掩体",
+      "linyu": "掩体",
+      "alias": "挡",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "可阻挡子弹的物体。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%A9%E4%BD%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "高台",
+      "linyu": "高台",
+      "alias": "高地",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "占据高度优势的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AB%98%E5%8F%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "退路",
+      "linyu": "退路",
+      "alias": "后路",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "撤退的路线。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E8%B7%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "正面刚",
+      "linyu": "正面刚",
+      "alias": "硬刚",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "正面对枪。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AD%A3%E9%9D%A2%E5%88%9A",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "点射",
+      "linyu": "点射",
+      "alias": "点",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "单发或短点射。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%82%B9%E5%B0%84",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "爆头",
+      "linyu": "爆头",
+      "alias": "头",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "击中头部。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%88%86%E5%A4%B4",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "打脚",
+      "linyu": "打脚",
+      "alias": "脚",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "攻击未受护甲保护的部位。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E8%84%9A",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "穿甲",
+      "linyu": "穿甲",
+      "alias": "穿",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "穿透护甲的伤害。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BF%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "反蹲",
+      "linyu": "反蹲",
+      "alias": "反",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "预判对手蹲点并反制。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E8%B9%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "枪声",
+      "linyu": "枪声",
+      "alias": "响",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "暴露位置的声响。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%AA%E5%A3%B0",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "拉人",
+      "linyu": "拉人",
+      "alias": "扶",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "把倒地的队友救起。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "倒地",
+      "linyu": "倒地",
+      "alias": "倒",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "失去行动能力但未死亡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%80%92%E5%9C%B0",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "团灭对手",
+      "linyu": "团灭对手",
+      "alias": "清队",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "把对手整队消灭。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%A2%E7%81%AD%E5%AF%B9%E6%89%8B",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本鼠鼠",
+      "linyu": "本鼠鼠",
+      "alias": "鼠鼠",
+      "slot": "淋角洲行动 / 淋角洲自称体系",
+      "sense": "以「鼠鼠」身份自称，指躲着捡漏的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E9%BC%A0%E9%BC%A0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本牢哥",
+      "linyu": "本牢哥",
+      "alias": "牢哥",
+      "slot": "淋角洲行动 / 淋角洲自称体系",
+      "sense": "以「牢哥」身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E7%89%A2%E5%93%A5",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本老板",
+      "linyu": "本老板",
+      "alias": "老板",
+      "slot": "淋角洲行动 / 淋角洲自称体系",
+      "sense": "以出资方身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E8%80%81%E6%9D%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "本摸金校尉",
+      "linyu": "本摸金校尉",
+      "alias": "摸金",
+      "slot": "淋角洲行动 / 淋角洲自称体系",
+      "sense": "以摸金玩家身份自称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E6%91%B8%E9%87%91%E6%A0%A1%E5%B0%89",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "干员威龙",
+      "linyu": "干员威龙",
+      "alias": "威龙",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "对威龙的正式称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B2%E5%91%98%E5%A8%81%E9%BE%99",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "干员红狼",
+      "linyu": "干员红狼",
+      "alias": "红狼",
+      "slot": "淋角洲行动 / 淋角洲干员淋名",
+      "sense": "对红狼的正式称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B2%E5%91%98%E7%BA%A2%E7%8B%BC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "凯蒂·佩里",
+      "linyu": "凯蒂·佩里",
+      "alias": "Katy Perry、水果姐",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，流行舞曲代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%AF%E8%92%82%C2%B7%E4%BD%A9%E9%87%8C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "麦莉·赛勒斯",
+      "linyu": "麦莉·赛勒斯",
+      "alias": "Miley Cyrus",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，从偶像转型为流行摇滚。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BA%A6%E8%8E%89%C2%B7%E8%B5%9B%E5%8B%92%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "赛琳娜·戈麦斯",
+      "linyu": "赛琳娜·戈麦斯",
+      "alias": "Selena Gomez",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手与演员。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%9B%E7%90%B3%E5%A8%9C%C2%B7%E6%88%88%E9%BA%A6%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "杜阿·利帕",
+      "linyu": "杜阿·利帕",
+      "alias": "Dua Lipa",
+      "slot": "divatag / diva人物淋名",
+      "sense": "英国歌手，迪斯科复兴代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%9C%E9%98%BF%C2%B7%E5%88%A9%E5%B8%95",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "比莉·艾利什",
+      "linyu": "比莉·艾利什",
+      "alias": "Billie Eilish",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国创作歌手，低语式唱法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%94%E8%8E%89%C2%B7%E8%89%BE%E5%88%A9%E4%BB%80",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "奥利维亚·罗德里戈",
+      "linyu": "奥利维亚·罗德里戈",
+      "alias": "Olivia Rodrigo",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国新生代创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%88%A9%E7%BB%B4%E4%BA%9A%C2%B7%E7%BD%97%E5%BE%B7%E9%87%8C%E6%88%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Sia",
+      "linyu": "Sia",
+      "alias": "希雅",
+      "slot": "divatag / diva人物淋名",
+      "sense": "澳大利亚创作歌手，以遮脸造型著称。",
+      "source": "https://search.bilibili.com/all?keyword=Sia",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Pink",
+      "linyu": "Pink",
+      "alias": "红粉佳人",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，以现场高空表演著称。",
+      "source": "https://search.bilibili.com/all?keyword=Pink",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "艾丽西亚·凯斯",
+      "linyu": "艾丽西亚·凯斯",
+      "alias": "Alicia Keys",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手与钢琴演奏者。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%89%BE%E4%B8%BD%E8%A5%BF%E4%BA%9A%C2%B7%E5%87%AF%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "詹妮弗·洛佩兹",
+      "linyu": "詹妮弗·洛佩兹",
+      "alias": "J.Lo",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手与演员，拉丁流行代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A9%B9%E5%A6%AE%E5%BC%97%C2%B7%E6%B4%9B%E4%BD%A9%E5%85%B9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "夏奇拉",
+      "linyu": "夏奇拉",
+      "alias": "Shakira",
+      "slot": "divatag / diva人物淋名",
+      "sense": "哥伦比亚歌手，拉丁流行代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%8F%E5%A5%87%E6%8B%89",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "凯莉·克拉克森",
+      "linyu": "凯莉·克拉克森",
+      "alias": "Kelly Clarkson",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，选秀出身。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%AF%E8%8E%89%C2%B7%E5%85%8B%E6%8B%89%E5%85%8B%E6%A3%AE",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "诺拉·琼斯",
+      "linyu": "诺拉·琼斯",
+      "alias": "Norah Jones",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国创作歌手，爵士流行。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BA%E6%8B%89%C2%B7%E7%90%BC%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "林忆莲",
+      "linyu": "林忆莲",
+      "alias": "Sandy",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以细腻唱功著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%97%E5%BF%86%E8%8E%B2",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "张韶涵",
+      "linyu": "张韶涵",
+      "alias": "Angela",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以高音著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%A0%E9%9F%B6%E6%B6%B5",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "杨丞琳",
+      "linyu": "杨丞琳",
+      "alias": "Rainie",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手与演员。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%A8%E4%B8%9E%E7%90%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "梁静茹",
+      "linyu": "梁静茹",
+      "alias": "Fish",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，情歌代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A2%81%E9%9D%99%E8%8C%B9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "刘若英",
+      "linyu": "刘若英",
+      "alias": "奶茶",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手与演员。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%98%E8%8B%A5%E8%8B%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "莫文蔚",
+      "linyu": "莫文蔚",
+      "alias": "Karen",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手与演员。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8E%AB%E6%96%87%E8%94%9A",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "陈慧琳",
+      "linyu": "陈慧琳",
+      "alias": "Kelly",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%99%88%E6%85%A7%E7%90%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "叶倩文",
+      "linyu": "叶倩文",
+      "alias": "Sally",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%B6%E5%80%A9%E6%96%87",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "徐怀钰",
+      "linyu": "徐怀钰",
+      "alias": "Yuki",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，千禧年流行符号。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%90%E6%80%80%E9%92%B0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "范晓萱",
+      "linyu": "范晓萱",
+      "alias": "Mavis",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，风格多变的创作型艺人。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8C%83%E6%99%93%E8%90%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "许茹芸",
+      "linyu": "许茹芸",
+      "alias": "芸式唱腔",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以气声唱法著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AE%B8%E8%8C%B9%E8%8A%B8",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "黄绮珊",
+      "linyu": "黄绮珊",
+      "alias": "黄妈",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以爆发力现场著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BB%84%E7%BB%AE%E7%8F%8A",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "谭维维",
+      "linyu": "谭维维",
+      "alias": "维维",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以现场实力著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B0%AD%E7%BB%B4%E7%BB%B4",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "李玟",
+      "linyu": "李玟",
+      "alias": "CoCo",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，国际化的唱跳代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%8E%E7%8E%9F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "张靓颖",
+      "linyu": "张靓颖",
+      "alias": "Jane",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，选秀出身。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%A0%E9%9D%93%E9%A2%96",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "周笔畅",
+      "linyu": "周笔畅",
+      "alias": "笔笔",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，选秀出身。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%A8%E7%AC%94%E7%95%85",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "邓紫棋",
+      "linyu": "邓紫棋",
+      "alias": "G.E.M.",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语歌手，以现场高音著称。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%82%93%E7%B4%AB%E6%A3%8B",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "蔡健雅",
+      "linyu": "蔡健雅",
+      "alias": "Tanya",
+      "slot": "divatag / diva人物淋名",
+      "sense": "华语创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%94%A1%E5%81%A5%E9%9B%85",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "陈慧娴",
+      "linyu": "陈慧娴",
+      "alias": "慧娴",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%99%88%E6%85%A7%E5%A8%B4",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "彭羚",
+      "linyu": "彭羚",
+      "alias": "Cass",
+      "slot": "divatag / diva人物淋名",
+      "sense": "中国香港歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BD%AD%E7%BE%9A",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "中岛美嘉",
+      "linyu": "中岛美嘉",
+      "alias": "Mika",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本歌手与演员。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%B2%9B%E7%BE%8E%E5%98%89",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "大冢爱",
+      "linyu": "大冢爱",
+      "alias": "Ai",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%86%A2%E7%88%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "MISIA",
+      "linyu": "MISIA",
+      "alias": "米希亚",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本歌手，以现场实力著称。",
+      "source": "https://search.bilibili.com/all?keyword=MISIA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "绚香",
+      "linyu": "绚香",
+      "alias": "Ayaka",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%9A%E9%A6%99",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "西野加奈",
+      "linyu": "西野加奈",
+      "alias": "Kana",
+      "slot": "divatag / diva人物淋名",
+      "sense": "日本歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A5%BF%E9%87%8E%E5%8A%A0%E5%A5%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "金请夏",
+      "linyu": "金请夏",
+      "alias": "请夏",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，solo 唱跳代表。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E8%AF%B7%E5%A4%8F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "宣美",
+      "linyu": "宣美",
+      "alias": "Sunmi",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%A3%E7%BE%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "金泫雅",
+      "linyu": "金泫雅",
+      "alias": "泫雅",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，舞台表现力强。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%91%E6%B3%AB%E9%9B%85",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "孝琳",
+      "linyu": "孝琳",
+      "alias": "Hyolyn",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，主唱出身。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%9D%E7%90%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "郑秀妍",
+      "linyu": "郑秀妍",
+      "alias": "Jessica",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%83%91%E7%A7%80%E5%A6%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "太妍",
+      "linyu": "太妍",
+      "alias": "泰妍",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国歌手，少女时代主唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%AA%E5%A6%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "IU 李知恩",
+      "linyu": "IU 李知恩",
+      "alias": "IU",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国创作歌手。",
+      "source": "https://search.bilibili.com/all?keyword=IU%20%E6%9D%8E%E7%9F%A5%E6%81%A9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Celine Dion 席琳",
+      "linyu": "席琳",
+      "alias": "Celine",
+      "slot": "divatag / diva人物淋名",
+      "sense": "加拿大歌手。",
+      "source": "https://search.bilibili.com/all?keyword=Celine%20Dion%20%E5%B8%AD%E7%90%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Madonna 麦当娜",
+      "linyu": "麦当娜",
+      "alias": "Madonna",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国流行天后。",
+      "source": "https://search.bilibili.com/all?keyword=Madonna%20%E9%BA%A6%E5%BD%93%E5%A8%9C",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Cher",
+      "linyu": "Cher",
+      "alias": "雪儿",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手与演员，常青树。",
+      "source": "https://search.bilibili.com/all?keyword=Cher",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Tina Turner",
+      "linyu": "Tina Turner",
+      "alias": "蒂娜·特纳",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，摇滚与灵魂乐代表。",
+      "source": "https://search.bilibili.com/all?keyword=Tina%20Turner",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Diana Ross",
+      "linyu": "Diana Ross",
+      "alias": "戴安娜·罗斯",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，Motown 代表。",
+      "source": "https://search.bilibili.com/all?keyword=Diana%20Ross",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Aretha Franklin",
+      "linyu": "Aretha Franklin",
+      "alias": "艾瑞莎·弗兰克林",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，灵魂乐女王。",
+      "source": "https://search.bilibili.com/all?keyword=Aretha%20Franklin",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Etta James",
+      "linyu": "Etta James",
+      "alias": "埃塔·詹姆斯",
+      "slot": "divatag / diva人物淋名",
+      "sense": "美国歌手，蓝调与灵魂乐。",
+      "source": "https://search.bilibili.com/all?keyword=Etta%20James",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "灵魂乐女王",
+      "linyu": "灵魂乐女王",
+      "alias": "Queen of Soul",
+      "slot": "divatag / diva称号位分",
+      "sense": "对 Aretha Franklin 的称号。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%B5%E9%AD%82%E4%B9%90%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "流行女王",
+      "linyu": "流行女王",
+      "alias": "Queen of Pop",
+      "slot": "divatag / diva称号位分",
+      "sense": "对麦当娜的称号。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%81%E8%A1%8C%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "流行公主",
+      "linyu": "流行公主",
+      "alias": "Princess of Pop",
+      "slot": "divatag / diva称号位分",
+      "sense": "对布兰妮的称号。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%81%E8%A1%8C%E5%85%AC%E4%B8%BB",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "R&B 天后",
+      "linyu": "R&B天后",
+      "alias": "R&B",
+      "slot": "divatag / diva称号位分",
+      "sense": "以节奏布鲁斯为主的女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=R%26B%20%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "舞曲天后",
+      "linyu": "舞曲天后",
+      "alias": "舞曲",
+      "slot": "divatag / diva称号位分",
+      "sense": "以舞曲为主的女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%9E%E6%9B%B2%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "情歌天后",
+      "linyu": "情歌天后",
+      "alias": "情歌",
+      "slot": "divatag / diva称号位分",
+      "sense": "以情歌为主的女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%83%85%E6%AD%8C%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "摇滚女王",
+      "linyu": "摇滚女王",
+      "alias": "摇滚",
+      "slot": "divatag / diva称号位分",
+      "sense": "以摇滚为主的女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%91%87%E6%BB%9A%E5%A5%B3%E7%8E%8B",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "爵士名伶",
+      "linyu": "爵士名伶",
+      "alias": "爵士",
+      "slot": "divatag / diva称号位分",
+      "sense": "以爵士为主的女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%88%B5%E5%A3%AB%E5%90%8D%E4%BC%B6",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "民族天后",
+      "linyu": "民族天后",
+      "alias": "民族",
+      "slot": "divatag / diva称号位分",
+      "sense": "以民族唱法见长的女歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%91%E6%97%8F%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "跨界天后",
+      "linyu": "跨界天后",
+      "alias": "跨界",
+      "slot": "divatag / diva称号位分",
+      "sense": "横跨多种风格的歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%A8%E7%95%8C%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "国际天后",
+      "linyu": "国际天后",
+      "alias": "国际",
+      "slot": "divatag / diva称号位分",
+      "sense": "在多个市场都有影响力的歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BD%E9%99%85%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "本土天后",
+      "linyu": "本土天后",
+      "alias": "本土",
+      "slot": "divatag / diva称号位分",
+      "sense": "在本土市场地位极高的歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%9C%9F%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "新生代天后",
+      "linyu": "新生代天后",
+      "alias": "新生代",
+      "slot": "divatag / diva称号位分",
+      "sense": "近年崛起的天后级歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%96%B0%E7%94%9F%E4%BB%A3%E5%A4%A9%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "天后接班人",
+      "linyu": "天后接班人",
+      "alias": "接班人",
+      "slot": "divatag / diva称号位分",
+      "sense": "被视为下一代天后的歌手。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E5%90%8E%E6%8E%A5%E7%8F%AD%E4%BA%BA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "主唱",
+      "linyu": "主唱",
+      "alias": "main vocal",
+      "slot": "divatag / diva称号位分",
+      "sense": "团体的主要演唱者。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%BB%E5%94%B1",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "主舞",
+      "linyu": "主舞",
+      "alias": "main dancer",
+      "slot": "divatag / diva称号位分",
+      "sense": "团体的主要舞蹈担当。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%BB%E8%88%9E",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "C 位",
+      "linyu": "C位",
+      "alias": "中心位",
+      "slot": "divatag / diva称号位分",
+      "sense": "团体表演的中心位置。",
+      "source": "https://search.bilibili.com/all?keyword=C%20%E4%BD%8D",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "ace",
+      "linyu": "ace",
+      "alias": "全能",
+      "slot": "divatag / diva称号位分",
+      "sense": "团体里综合能力最强的成员。",
+      "source": "https://search.bilibili.com/all?keyword=ace",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Firework",
+      "linyu": "Firework",
+      "alias": "烟花",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Katy Perry 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Firework",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Roar",
+      "linyu": "Roar",
+      "alias": "咆哮",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Katy Perry 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Roar",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Wrecking Ball",
+      "linyu": "Wrecking Ball",
+      "alias": "破坏球",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Miley Cyrus 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Wrecking%20Ball",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Flowers",
+      "linyu": "Flowers",
+      "alias": "花",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Miley Cyrus 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Flowers",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Lose You to Love Me",
+      "linyu": "Lose You to Love Me",
+      "alias": "失去你才能爱自己",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Selena Gomez 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Lose%20You%20to%20Love%20Me",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Levitating",
+      "linyu": "Levitating",
+      "alias": "悬浮",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Dua Lipa 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Levitating",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Bad Guy",
+      "linyu": "Bad Guy",
+      "alias": "坏人",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Billie Eilish 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Bad%20Guy",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "drivers license",
+      "linyu": "drivers license",
+      "alias": "驾照",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Olivia Rodrigo 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=drivers%20license",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Chandelier",
+      "linyu": "Chandelier",
+      "alias": "吊灯",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Sia 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Chandelier",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Just Give Me a Reason",
+      "linyu": "Just Give Me a Reason",
+      "alias": "给我一个理由",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Pink 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Just%20Give%20Me%20a%20Reason",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "If I Ain't Got You",
+      "linyu": "If I Ain't Got You",
+      "alias": "如果没有你",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Alicia Keys 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=If%20I%20Ain't%20Got%20You",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Jenny from the Block",
+      "linyu": "Jenny from the Block",
+      "alias": "街区的珍妮",
+      "slot": "divatag / diva作品金曲",
+      "sense": "J.Lo 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Jenny%20from%20the%20Block",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Waka Waka",
+      "linyu": "Waka Waka",
+      "alias": "非洲时刻",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Shakira 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Waka%20Waka",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Because of You",
+      "linyu": "Because of You",
+      "alias": "因为你",
+      "slot": "divatag / diva作品金曲",
+      "sense": "Kelly Clarkson 代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Because%20of%20You",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "至少还有你",
+      "linyu": "至少还有你",
+      "alias": "还有你",
+      "slot": "divatag / diva作品金曲",
+      "sense": "林忆莲代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%87%B3%E5%B0%91%E8%BF%98%E6%9C%89%E4%BD%A0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "隐形的翅膀",
+      "linyu": "隐形的翅膀",
+      "alias": "翅膀",
+      "slot": "divatag / diva作品金曲",
+      "sense": "张韶涵代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9A%90%E5%BD%A2%E7%9A%84%E7%BF%85%E8%86%80",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "暧昧",
+      "linyu": "暧昧",
+      "alias": "暧昧",
+      "slot": "divatag / diva作品金曲",
+      "sense": "杨丞琳代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9A%A7%E6%98%A7",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "勇气",
+      "linyu": "勇气",
+      "alias": "勇气",
+      "slot": "divatag / diva作品金曲",
+      "sense": "梁静茹代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8B%87%E6%B0%94",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "后来",
+      "linyu": "后来",
+      "alias": "后来",
+      "slot": "divatag / diva作品金曲",
+      "sense": "刘若英代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%8E%E6%9D%A5",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "阴天",
+      "linyu": "阴天",
+      "alias": "阴天",
+      "slot": "divatag / diva作品金曲",
+      "sense": "莫文蔚代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B4%E5%A4%A9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "记事本",
+      "linyu": "记事本",
+      "alias": "记事本",
+      "slot": "divatag / diva作品金曲",
+      "sense": "陈慧琳代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AE%B0%E4%BA%8B%E6%9C%AC",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "潇洒走一回",
+      "linyu": "潇洒走一回",
+      "alias": "潇洒",
+      "slot": "divatag / diva作品金曲",
+      "sense": "叶倩文代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BD%87%E6%B4%92%E8%B5%B0%E4%B8%80%E5%9B%9E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "我是女生",
+      "linyu": "我是女生",
+      "alias": "女生",
+      "slot": "divatag / diva作品金曲",
+      "sense": "徐怀钰代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%98%AF%E5%A5%B3%E7%94%9F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "氧气",
+      "linyu": "氧气",
+      "alias": "氧气",
+      "slot": "divatag / diva作品金曲",
+      "sense": "范晓萱代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%A7%E6%B0%94",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "独角戏",
+      "linyu": "独角戏",
+      "alias": "独角戏",
+      "slot": "divatag / diva作品金曲",
+      "sense": "许茹芸代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8B%AC%E8%A7%92%E6%88%8F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "等待",
+      "linyu": "等待",
+      "alias": "等待",
+      "slot": "divatag / diva作品金曲",
+      "sense": "黄绮珊代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AD%89%E5%BE%85",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "给你一点颜色",
+      "linyu": "给你一点颜色",
+      "alias": "颜色",
+      "slot": "divatag / diva作品金曲",
+      "sense": "谭维维代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%99%E4%BD%A0%E4%B8%80%E7%82%B9%E9%A2%9C%E8%89%B2",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Di Da Di",
+      "linyu": "Di Da Di",
+      "alias": "滴答滴",
+      "slot": "divatag / diva作品金曲",
+      "sense": "李玟代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Di%20Da%20Di",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "画心",
+      "linyu": "画心",
+      "alias": "画心",
+      "slot": "divatag / diva作品金曲",
+      "sense": "张靓颖代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%BB%E5%BF%83",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "笔记",
+      "linyu": "笔记",
+      "alias": "笔记",
+      "slot": "divatag / diva作品金曲",
+      "sense": "周笔畅代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AC%94%E8%AE%B0",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "光年之外",
+      "linyu": "光年之外",
+      "alias": "光年",
+      "slot": "divatag / diva作品金曲",
+      "sense": "邓紫棋代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%89%E5%B9%B4%E4%B9%8B%E5%A4%96",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "红色高跟鞋",
+      "linyu": "红色高跟鞋",
+      "alias": "高跟鞋",
+      "slot": "divatag / diva作品金曲",
+      "sense": "蔡健雅代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E8%89%B2%E9%AB%98%E8%B7%9F%E9%9E%8B",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "千千阙歌",
+      "linyu": "千千阙歌",
+      "alias": "阙歌",
+      "slot": "divatag / diva作品金曲",
+      "sense": "陈慧娴代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%83%E5%8D%83%E9%98%99%E6%AD%8C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "如梦初醒",
+      "linyu": "如梦初醒",
+      "alias": "初醒",
+      "slot": "divatag / diva作品金曲",
+      "sense": "彭羚代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%82%E6%A2%A6%E5%88%9D%E9%86%92",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "雪之华",
+      "linyu": "雪之华",
+      "alias": "雪花",
+      "slot": "divatag / diva作品金曲",
+      "sense": "中岛美嘉代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%AA%E4%B9%8B%E5%8D%8E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "樱桃",
+      "linyu": "樱桃",
+      "alias": "樱桃",
+      "slot": "divatag / diva作品金曲",
+      "sense": "大冢爱代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A8%B1%E6%A1%83",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "奥尔菲斯",
+      "linyu": "奥尔菲斯",
+      "alias": "Orphée",
+      "slot": "divatag / diva作品金曲",
+      "sense": "MISIA 代表作之一。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%B0%94%E8%8F%B2%E6%96%AF",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "三日月",
+      "linyu": "三日月",
+      "alias": "新月",
+      "slot": "divatag / diva作品金曲",
+      "sense": "绚香代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E6%97%A5%E6%9C%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "最佳恋爱",
+      "linyu": "最佳恋爱",
+      "alias": "恋爱",
+      "slot": "divatag / diva作品金曲",
+      "sense": "西野加奈代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%80%E4%BD%B3%E6%81%8B%E7%88%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "已经十二点",
+      "linyu": "已经十二点",
+      "alias": "十二点",
+      "slot": "divatag / diva作品金曲",
+      "sense": "请夏代表作。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%B2%E7%BB%8F%E5%8D%81%E4%BA%8C%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Gashina",
+      "linyu": "Gashina",
+      "alias": "加西娜",
+      "slot": "divatag / diva作品金曲",
+      "sense": "宣美代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Gashina",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Bubble Pop",
+      "linyu": "Bubble Pop",
+      "alias": "泡泡",
+      "slot": "divatag / diva作品金曲",
+      "sense": "泫雅代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Bubble%20Pop",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Good Girl",
+      "linyu": "Good Girl",
+      "alias": "好女孩",
+      "slot": "divatag / diva作品金曲",
+      "sense": "孝琳代表作。",
+      "source": "https://search.bilibili.com/all?keyword=Good%20Girl",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "打歌舞台",
+      "linyu": "打歌舞台",
+      "alias": "打歌",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "为新歌宣传的现场表演。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%AD%8C%E8%88%9E%E5%8F%B0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "音乐银行",
+      "linyu": "音乐银行",
+      "alias": "音银",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "韩国音乐节目。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9F%B3%E4%B9%90%E9%93%B6%E8%A1%8C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "人气歌谣",
+      "linyu": "人气歌谣",
+      "alias": "人歌",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "韩国音乐节目。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%BA%E6%B0%94%E6%AD%8C%E8%B0%A3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "M Countdown",
+      "linyu": "M Countdown",
+      "alias": "MCD",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "韩国音乐节目。",
+      "source": "https://search.bilibili.com/all?keyword=M%20Countdown",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "打榜",
+      "linyu": "打榜",
+      "alias": "冲榜",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "为歌曲冲榜单名次。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "销量榜",
+      "linyu": "销量榜",
+      "alias": "销量",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "按专辑销量排序的榜单。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%94%80%E9%87%8F%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "音源榜",
+      "linyu": "音源榜",
+      "alias": "音源",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "按播放数据排序的榜单。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9F%B3%E6%BA%90%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "空降一位",
+      "linyu": "空降一位",
+      "alias": "一位",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "新歌发布即登顶。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A9%BA%E9%99%8D%E4%B8%80%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "all kill",
+      "linyu": "all kill",
+      "alias": "全杀",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "同时拿下所有榜单第一。",
+      "source": "https://search.bilibili.com/all?keyword=all%20kill",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "PAK",
+      "linyu": "PAK",
+      "alias": "完美全杀",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "Perfect All-Kill 的缩写。",
+      "source": "https://search.bilibili.com/all?keyword=PAK",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "首日成绩",
+      "linyu": "首日成绩",
+      "alias": "首日",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "发布首日的播放与销量。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A6%96%E6%97%A5%E6%88%90%E7%BB%A9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "先行公开",
+      "linyu": "先行公开",
+      "alias": "预热",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "正式发布前先放出部分内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%88%E8%A1%8C%E5%85%AC%E5%BC%80",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "预告照",
+      "linyu": "预告照",
+      "alias": "预告",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "正式发布前的宣传图。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A2%84%E5%91%8A%E7%85%A7",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "概念照",
+      "linyu": "概念照",
+      "alias": "概念",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "围绕专辑概念的宣传图。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A6%82%E5%BF%B5%E7%85%A7",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "打歌服",
+      "linyu": "打歌服",
+      "alias": "舞台服",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "舞台表演的服装。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%AD%8C%E6%9C%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "造型",
+      "linyu": "造型",
+      "alias": "style",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "整体形象设计。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%A0%E5%9E%8B",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "妆造",
+      "linyu": "妆造",
+      "alias": "妆",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "妆容与造型的合称。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A6%86%E9%80%A0",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "路透",
+      "linyu": "路透",
+      "alias": "偷拍",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "提前流出的现场照片。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E9%80%8F",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "精修",
+      "linyu": "精修",
+      "alias": "修图",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "经过修图的照片。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E4%BF%AE",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "直拍",
+      "linyu": "直拍",
+      "alias": "fancam",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "只拍单个艺人的现场视频。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9B%B4%E6%8B%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "横拍",
+      "linyu": "横拍",
+      "alias": "横向",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "横向构图的现场视频。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A8%AA%E6%8B%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "竖拍",
+      "linyu": "竖拍",
+      "alias": "纵向",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "纵向构图的现场视频。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%96%E6%8B%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "饭拍",
+      "linyu": "饭拍",
+      "alias": "粉丝拍摄",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "粉丝拍摄的现场素材。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A5%AD%E6%8B%8D",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "cut",
+      "linyu": "cut",
+      "alias": "片段",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "从整场里剪出的单人片段。",
+      "source": "https://search.bilibili.com/all?keyword=cut",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "合体",
+      "linyu": "合体",
+      "alias": "回归团体",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "团体成员重新聚齐。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%88%E4%BD%93",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "单飞",
+      "linyu": "单飞",
+      "alias": "solo",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "成员独立发展。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%95%E9%A3%9E",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "solo 出道",
+      "linyu": "solo出道",
+      "alias": "单人出道",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "以个人身份出道。",
+      "source": "https://search.bilibili.com/all?keyword=solo%20%E5%87%BA%E9%81%93",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "初舞台",
+      "linyu": "初舞台",
+      "alias": "首演",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "新歌第一次现场表演。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%9D%E8%88%9E%E5%8F%B0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "末放",
+      "linyu": "末放",
+      "alias": "最后一次",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "打歌期的最后一场。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AB%E6%94%BE",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "安可舞台",
+      "linyu": "安可舞台",
+      "alias": "安可",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "拿一位后的加演。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%89%E5%8F%AF%E8%88%9E%E5%8F%B0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "一位公约",
+      "linyu": "一位公约",
+      "alias": "公约",
+      "slot": "divatag / diva饭圈黑话",
+      "sense": "承诺拿第一后要做的事。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E4%BD%8D%E5%85%AC%E7%BA%A6",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "气息稳",
+      "linyu": "气息稳",
+      "alias": "稳",
+      "slot": "divatag / diva整活梗",
+      "sense": "形容现场气息控制得好。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%94%E6%81%AF%E7%A8%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "真假音转换",
+      "linyu": "真假音转换",
+      "alias": "换声",
+      "slot": "divatag / diva整活梗",
+      "sense": "真声与假声之间的切换。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9C%9F%E5%81%87%E9%9F%B3%E8%BD%AC%E6%8D%A2",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "弱混",
+      "linyu": "弱混",
+      "alias": "混声",
+      "slot": "divatag / diva整活梗",
+      "sense": "弱混声的演唱技巧。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B1%E6%B7%B7",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "强混",
+      "linyu": "强混",
+      "alias": "强混声",
+      "slot": "divatag / diva整活梗",
+      "sense": "强混声的演唱技巧。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%BA%E6%B7%B7",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "咽音",
+      "linyu": "咽音",
+      "alias": "咽部发声",
+      "slot": "divatag / diva整活梗",
+      "sense": "一种高位置发声方式。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%92%BD%E9%9F%B3",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "关闭",
+      "linyu": "关闭",
+      "alias": "声带闭合",
+      "slot": "divatag / diva整活梗",
+      "sense": "声带闭合的演唱技术。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%B3%E9%97%AD",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "咬字",
+      "linyu": "咬字",
+      "alias": "吐字",
+      "slot": "divatag / diva整活梗",
+      "sense": "歌词的发音清晰度。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%92%AC%E5%AD%97",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "律动",
+      "linyu": "律动",
+      "alias": "groove",
+      "slot": "divatag / diva整活梗",
+      "sense": "节奏感的处理。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%8B%E5%8A%A8",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "即兴",
+      "linyu": "即兴",
+      "alias": "impro",
+      "slot": "divatag / diva整活梗",
+      "sense": "现场临时加的花腔。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%B3%E5%85%B4",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "加花",
+      "linyu": "加花",
+      "alias": "embellish",
+      "slot": "divatag / diva整活梗",
+      "sense": "在旋律上增加装饰音。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%A0%E8%8A%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "改编",
+      "linyu": "改编",
+      "alias": "arrange",
+      "slot": "divatag / diva整活梗",
+      "sense": "对原曲重新编曲。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%B9%E7%BC%96",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "串烧",
+      "linyu": "串烧",
+      "alias": "medley",
+      "slot": "divatag / diva整活梗",
+      "sense": "多首歌连唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%B2%E7%83%A7",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "清唱",
+      "linyu": "清唱",
+      "alias": "a cappella",
+      "slot": "divatag / diva整活梗",
+      "sense": "无伴奏演唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B8%85%E5%94%B1",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "合唱",
+      "linyu": "合唱",
+      "alias": "duet",
+      "slot": "divatag / diva整活梗",
+      "sense": "两人或多人共同演唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%88%E5%94%B1",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "feat",
+      "linyu": "feat",
+      "alias": "合作",
+      "slot": "divatag / diva整活梗",
+      "sense": "邀请他人参与演唱。",
+      "source": "https://search.bilibili.com/all?keyword=feat",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "remix",
+      "linyu": "remix",
+      "alias": "混音版",
+      "slot": "divatag / diva整活梗",
+      "sense": "重新混音的版本。",
+      "source": "https://search.bilibili.com/all?keyword=remix",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "现场版",
+      "linyu": "现场版",
+      "alias": "live 版",
+      "slot": "divatag / diva整活梗",
+      "sense": "现场录制的版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%B0%E5%9C%BA%E7%89%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "录音室版",
+      "linyu": "录音室版",
+      "alias": "studio 版",
+      "slot": "divatag / diva整活梗",
+      "sense": "录音室录制的版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BD%95%E9%9F%B3%E5%AE%A4%E7%89%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "MV",
+      "linyu": "MV",
+      "alias": "音乐录像",
+      "slot": "divatag / diva整活梗",
+      "sense": "歌曲的官方影像。",
+      "source": "https://search.bilibili.com/all?keyword=MV",
+      "pop": "高",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "舞蹈版",
+      "linyu": "舞蹈版",
+      "alias": "dance ver.",
+      "slot": "divatag / diva整活梗",
+      "sense": "以舞蹈为主的影像版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%9E%E8%B9%88%E7%89%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "练习室版",
+      "linyu": "练习室版",
+      "alias": "练习室",
+      "slot": "divatag / diva整活梗",
+      "sense": "在练习室拍摄的版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%83%E4%B9%A0%E5%AE%A4%E7%89%88",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "花絮",
+      "linyu": "花絮",
+      "alias": "behind",
+      "slot": "divatag / diva整活梗",
+      "sense": "拍摄过程的纪录片段。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8A%B1%E7%B5%AE",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "彩排",
+      "linyu": "彩排",
+      "alias": "rehearsal",
+      "slot": "divatag / diva整活梗",
+      "sense": "正式演出前的排练。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BD%A9%E6%8E%92",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "走台",
+      "linyu": "走台",
+      "alias": "试台",
+      "slot": "divatag / diva整活梗",
+      "sense": "在舞台上试位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%B0%E5%8F%B0",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "谢幕",
+      "linyu": "谢幕",
+      "alias": "鞠躬",
+      "slot": "divatag / diva整活梗",
+      "sense": "演出结束的致谢环节。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B0%A2%E5%B9%95",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "鞠躬",
+      "linyu": "鞠躬",
+      "alias": "谢",
+      "slot": "divatag / diva整活梗",
+      "sense": "谢幕动作。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9E%A0%E8%BA%AC",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "泪崩",
+      "linyu": "泪崩",
+      "alias": "哭",
+      "slot": "divatag / diva整活梗",
+      "sense": "情绪激动落泪。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%AA%E5%B4%A9",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "精灵蛋",
+      "linyu": "精灵蛋",
+      "alias": "蛋",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "孵化精灵的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E8%9B%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "孵化",
+      "linyu": "孵化",
+      "alias": "孵",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把精灵蛋孵成精灵的过程。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%B5%E5%8C%96",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "出战",
+      "linyu": "出战",
+      "alias": "上阵",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把精灵放进队伍。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BA%E6%88%98",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "上阵",
+      "linyu": "上阵",
+      "alias": "上场",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把精灵放进队伍。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8A%E9%98%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "下阵",
+      "linyu": "下阵",
+      "alias": "撤下",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把精灵从队伍里撤下。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8B%E9%98%B5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "替换",
+      "linyu": "替换",
+      "alias": "换",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把队伍里的精灵换掉。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9B%BF%E6%8D%A2",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "主角",
+      "linyu": "主角",
+      "alias": "玩家角色",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "玩家操作的角色。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%BB%E8%A7%92",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "召唤师等级",
+      "linyu": "召唤师等级",
+      "alias": "等级",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "玩家账号的等级。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%AC%E5%94%A4%E5%B8%88%E7%AD%89%E7%BA%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "玩家等级",
+      "linyu": "玩家等级",
+      "alias": "号等级",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "账号等级。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%A9%E5%AE%B6%E7%AD%89%E7%BA%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "经验",
+      "linyu": "经验",
+      "alias": "exp",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "升级所需的数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%8F%E9%AA%8C",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "体力上限",
+      "linyu": "体力上限",
+      "alias": "上限",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "体力能攒到的最大值。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BD%93%E5%8A%9B%E4%B8%8A%E9%99%90",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "每日任务",
+      "linyu": "每日任务",
+      "alias": "日常",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "每天可重复完成的任务。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%8F%E6%97%A5%E4%BB%BB%E5%8A%A1",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "周常",
+      "linyu": "周常",
+      "alias": "每周",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "每周刷新的任务。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%A8%E5%B8%B8",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "活跃度",
+      "linyu": "活跃度",
+      "alias": "活跃",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "完成日常累积的数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%BB%E8%B7%83%E5%BA%A6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "成就",
+      "linyu": "成就",
+      "alias": "achievement",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "达成条件后解锁的记录。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%90%E5%B0%B1",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "称号",
+      "linyu": "称号",
+      "alias": "title",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "显示在角色名旁的标签。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%B0%E5%8F%B7",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "荣誉",
+      "linyu": "荣誉",
+      "alias": "勋章",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "竞技或活动获得的标识。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8D%A3%E8%AA%89",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "公会",
+      "linyu": "公会",
+      "alias": "guild",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "玩家组织。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AC%E4%BC%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "好友",
+      "linyu": "好友",
+      "alias": "friend",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "互相加为好友的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%BD%E5%8F%8B",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "赠送",
+      "linyu": "赠送",
+      "alias": "送",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "给好友送道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B5%A0%E9%80%81",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "交易",
+      "linyu": "交易",
+      "alias": "买卖",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "玩家之间的道具流通。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%A4%E6%98%93",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "拍卖",
+      "linyu": "拍卖",
+      "alias": "拍",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "竞价购买道具的场所。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%8D%E5%8D%96",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "邮件",
+      "linyu": "邮件",
+      "alias": "信箱",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "领取奖励与通知的入口。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%82%AE%E4%BB%B6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "公告栏",
+      "linyu": "公告栏",
+      "alias": "公告",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "版本与活动信息的入口。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AC%E5%91%8A%E6%A0%8F",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "排行榜",
+      "linyu": "排行榜",
+      "alias": "榜单",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "按数值排序的名次表。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%92%E8%A1%8C%E6%A6%9C",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "世界频道",
+      "linyu": "世界频道",
+      "alias": "世界",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "全服可见的聊天频道。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%96%E7%95%8C%E9%A2%91%E9%81%93",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "私聊",
+      "linyu": "私聊",
+      "alias": "私",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "一对一的聊天。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%81%E8%81%8A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "组队",
+      "linyu": "组队",
+      "alias": "队",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "多人一起挑战。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%84%E9%98%9F",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "单人挑战",
+      "linyu": "单人挑战",
+      "alias": "solo",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "一个人完成的关卡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%95%E4%BA%BA%E6%8C%91%E6%88%98",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "多人副本",
+      "linyu": "多人副本",
+      "alias": "多人本",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "需要组队的副本。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%9A%E4%BA%BA%E5%89%AF%E6%9C%AC",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "世界BOSS",
+      "linyu": "世界BOSS",
+      "alias": "世界王",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "全服共同挑战的首领。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%96%E7%95%8CBOSS",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "活动BOSS",
+      "linyu": "活动BOSS",
+      "alias": "活动王",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "限时活动里的首领。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B4%BB%E5%8A%A8BOSS",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "限时挑战",
+      "linyu": "限时挑战",
+      "alias": "限时",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "有期限的挑战。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%99%90%E6%97%B6%E6%8C%91%E6%88%98",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "周年庆",
+      "linyu": "周年庆",
+      "alias": "周年",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "开服周年活动。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%91%A8%E5%B9%B4%E5%BA%86",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "开服",
+      "linyu": "开服",
+      "alias": "新服",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "服务器开放。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E6%9C%8D",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "合服",
+      "linyu": "合服",
+      "alias": "合并",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "多个服务器合并。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%88%E6%9C%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "新区",
+      "linyu": "新区",
+      "alias": "新",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "新开的服务器。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%96%B0%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "老区",
+      "linyu": "老区",
+      "alias": "老服",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "开服已久的服务器。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%81%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "服务器",
+      "linyu": "服务器",
+      "alias": "服",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "玩家所在的运行环境。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%8D%E5%8A%A1%E5%99%A8",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "页游",
+      "linyu": "页游",
+      "alias": "网页版",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "在浏览器里运行的本体。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A1%B5%E6%B8%B8",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "手游",
+      "linyu": "手游",
+      "alias": "手机版",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "移动端版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%8B%E6%B8%B8",
+      "pop": "高",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "端游",
+      "linyu": "端游",
+      "alias": "客户端",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "桌面客户端版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%AF%E6%B8%B8",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "移植",
+      "linyu": "移植",
+      "alias": "搬",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把内容从一个平台搬到另一个平台。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A7%BB%E6%A4%8D",
+      "pop": "中",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "联动服装",
+      "linyu": "联动服装",
+      "alias": "联动皮",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "联动活动推出的服装。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E5%8A%A8%E6%9C%8D%E8%A3%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "联动皮肤",
+      "linyu": "联动皮肤",
+      "alias": "联动皮",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "联动活动推出的皮肤。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E5%8A%A8%E7%9A%AE%E8%82%A4",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "联动坐骑",
+      "linyu": "联动坐骑",
+      "alias": "联动机",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "联动活动推出的坐骑。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E5%8A%A8%E5%9D%90%E9%AA%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "联动表情",
+      "linyu": "联动表情",
+      "alias": "表情",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "联动活动推出的表情。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E5%8A%A8%E8%A1%A8%E6%83%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "本命奥奇",
+      "linyu": "本命奥奇",
+      "alias": "奥奇本命",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "把奥奇当本命的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%91%BD%E5%A5%A5%E5%A5%87",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇老玩家",
+      "linyu": "奥奇老玩家",
+      "alias": "老玩家",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "从页游时代玩到现在的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E8%80%81%E7%8E%A9%E5%AE%B6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "页游老玩家",
+      "linyu": "页游老玩家",
+      "alias": "老页游",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "从页游版本一路玩过来的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A1%B5%E6%B8%B8%E8%80%81%E7%8E%A9%E5%AE%B6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "MG3",
+      "linyu": "MG3",
+      "alias": "机枪",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "通用机枪。",
+      "source": "https://search.bilibili.com/all?keyword=MG3",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M249",
+      "linyu": "M249",
+      "alias": "大机枪",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "轻机枪。",
+      "source": "https://search.bilibili.com/all?keyword=M249",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "SR-3M",
+      "linyu": "SR-3M",
+      "alias": "SR3M",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "紧凑型突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=SR-3M",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "AS VAL",
+      "linyu": "AS VAL",
+      "alias": "VAL",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "消音突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=AS%20VAL",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "VSS",
+      "linyu": "VSS",
+      "alias": "微声狙",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "消音狙击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=VSS",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "Groza",
+      "linyu": "Groza",
+      "alias": "狗杂",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "无托突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=Groza",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "OTs-14",
+      "linyu": "OTs-14",
+      "alias": "闪电",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "无托突击步枪。",
+      "source": "https://search.bilibili.com/all?keyword=OTs-14",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "QJB201",
+      "linyu": "QJB201",
+      "alias": "201 机枪",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "轻机枪。",
+      "source": "https://search.bilibili.com/all?keyword=QJB201",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "QBU201",
+      "linyu": "QBU201",
+      "alias": "201 狙",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "精确射手步枪。",
+      "source": "https://search.bilibili.com/all?keyword=QBU201",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M16A4",
+      "linyu": "M16A4",
+      "alias": "M16",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "突击步枪，三连发。",
+      "source": "https://search.bilibili.com/all?keyword=M16A4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "SCAR-H",
+      "linyu": "SCAR-H",
+      "alias": "SCAR",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "战斗步枪。",
+      "source": "https://search.bilibili.com/all?keyword=SCAR-H",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "G3",
+      "linyu": "G3",
+      "alias": "G3",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "战斗步枪。",
+      "source": "https://search.bilibili.com/all?keyword=G3",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "FAL",
+      "linyu": "FAL",
+      "alias": "FAL",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "战斗步枪。",
+      "source": "https://search.bilibili.com/all?keyword=FAL",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "MP7",
+      "linyu": "MP7",
+      "alias": "MP7",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "冲锋枪。",
+      "source": "https://search.bilibili.com/all?keyword=MP7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "PP-19",
+      "linyu": "PP-19",
+      "alias": "野牛",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "冲锋枪，弹鼓供弹。",
+      "source": "https://search.bilibili.com/all?keyword=PP-19",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "Saiga-12",
+      "linyu": "Saiga-12",
+      "alias": "Saiga",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "半自动霰弹枪。",
+      "source": "https://search.bilibili.com/all?keyword=Saiga-12",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M1014",
+      "linyu": "M1014",
+      "alias": "M1014",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "半自动霰弹枪。",
+      "source": "https://search.bilibili.com/all?keyword=M1014",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "DP-12",
+      "linyu": "DP-12",
+      "alias": "双管霰弹",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "双管霰弹枪。",
+      "source": "https://search.bilibili.com/all?keyword=DP-12",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "RPD",
+      "linyu": "RPD",
+      "alias": "RPD",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "轻机枪。",
+      "source": "https://search.bilibili.com/all?keyword=RPD",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "88 式机枪",
+      "linyu": "88式机枪",
+      "alias": "88 机",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "轻机枪。",
+      "source": "https://search.bilibili.com/all?keyword=88%20%E5%BC%8F%E6%9C%BA%E6%9E%AA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "92 式",
+      "linyu": "92式",
+      "alias": "92 手枪",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪。",
+      "source": "https://search.bilibili.com/all?keyword=92%20%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "54 式",
+      "linyu": "54式",
+      "alias": "五四",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪。",
+      "source": "https://search.bilibili.com/all?keyword=54%20%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "M1911",
+      "linyu": "M1911",
+      "alias": "1911",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪。",
+      "source": "https://search.bilibili.com/all?keyword=M1911",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "P226",
+      "linyu": "P226",
+      "alias": "P226",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪。",
+      "source": "https://search.bilibili.com/all?keyword=P226",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "Five-seveN",
+      "linyu": "Five-seveN",
+      "alias": "57",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "手枪，穿甲能力强。",
+      "source": "https://search.bilibili.com/all?keyword=Five-seveN",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "八倍镜",
+      "linyu": "八倍镜",
+      "alias": "8 倍",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "远距离瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AB%E5%80%8D%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三倍镜",
+      "linyu": "三倍镜",
+      "alias": "3 倍",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中距离瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%80%8D%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "二倍镜",
+      "linyu": "二倍镜",
+      "alias": "2 倍",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "近距离瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%8C%E5%80%8D%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "侧瞄",
+      "linyu": "侧瞄",
+      "alias": "斜瞄",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "侧向安装的瞄具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BE%A7%E7%9E%84",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "下挂榴弹",
+      "linyu": "下挂榴弹",
+      "alias": "榴弹",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "枪下挂载的榴弹发射器。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8B%E6%8C%82%E6%A6%B4%E5%BC%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "下挂霰弹",
+      "linyu": "下挂霰弹",
+      "alias": "下挂喷",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "枪下挂载的霰弹。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8B%E6%8C%82%E9%9C%B0%E5%BC%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "扩容弹匣",
+      "linyu": "扩容弹匣",
+      "alias": "扩容",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升装弹量的弹匣。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%A9%E5%AE%B9%E5%BC%B9%E5%8C%A3",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "轻量枪管",
+      "linyu": "轻量枪管",
+      "alias": "轻管",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低重量提升机动。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BD%BB%E9%87%8F%E6%9E%AA%E7%AE%A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "长枪管",
+      "linyu": "长枪管",
+      "alias": "长管",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升射程与精度。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%95%BF%E6%9E%AA%E7%AE%A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "短枪管",
+      "linyu": "短枪管",
+      "alias": "短管",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "提升机动降低射程。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9F%AD%E6%9E%AA%E7%AE%A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "补偿器",
+      "linyu": "补偿器",
+      "alias": "补偿",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低后坐力的枪口配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A1%A5%E5%81%BF%E5%99%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "消焰器",
+      "linyu": "消焰器",
+      "alias": "消焰",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低枪口火光。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B6%88%E7%84%B0%E5%99%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "二级甲",
+      "linyu": "二级甲",
+      "alias": "2 甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "低等级护甲。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%8C%E7%BA%A7%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "四级甲",
+      "linyu": "四级甲",
+      "alias": "4 甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中高等级护甲。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9B%E7%BA%A7%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "五级甲",
+      "linyu": "五级甲",
+      "alias": "5 甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "高等级护甲。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%94%E7%BA%A7%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "一级头",
+      "linyu": "一级头",
+      "alias": "1 头",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "最低等级头盔。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%80%E7%BA%A7%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "二级头",
+      "linyu": "二级头",
+      "alias": "2 头",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "低等级头盔。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%8C%E7%BA%A7%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三级头",
+      "linyu": "三级头",
+      "alias": "3 头",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中等级头盔。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E7%BA%A7%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "四级头",
+      "linyu": "四级头",
+      "alias": "4 头",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "中高等级头盔。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9B%E7%BA%A7%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "六级头",
+      "linyu": "六级头",
+      "alias": "6 头",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "最高等级头盔。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%AD%E7%BA%A7%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "防弹面罩",
+      "linyu": "防弹面罩",
+      "alias": "面罩",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "保护面部的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B2%E5%BC%B9%E9%9D%A2%E7%BD%A9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "弹药袋",
+      "linyu": "弹药袋",
+      "alias": "弹袋",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "携带弹药的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E8%8D%AF%E8%A2%8B",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "侦察无人机",
+      "linyu": "侦察无人机",
+      "alias": "无人机",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "用于探路的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BE%A6%E5%AF%9F%E6%97%A0%E4%BA%BA%E6%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "干扰器",
+      "linyu": "干扰器",
+      "alias": "干扰",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "干扰敌方设备的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B2%E6%89%B0%E5%99%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "破门锤",
+      "linyu": "破门锤",
+      "alias": "锤",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "破门的工具。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A0%B4%E9%97%A8%E9%94%A4",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "手雷",
+      "linyu": "手雷",
+      "alias": "雷",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "投掷爆炸物。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%8B%E9%9B%B7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "烟雾弹",
+      "linyu": "烟雾弹",
+      "alias": "烟",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "制造烟幕的投掷物。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%83%9F%E9%9B%BE%E5%BC%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "燃烧瓶",
+      "linyu": "燃烧瓶",
+      "alias": "燃烧",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "制造火区的投掷物。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%87%83%E7%83%A7%E7%93%B6",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "地雷",
+      "linyu": "地雷",
+      "alias": "雷",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "埋设的爆炸物。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E9%9B%B7",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "阔剑",
+      "linyu": "阔剑",
+      "alias": "定向雷",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "定向爆炸的地雷。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%94%E5%89%91",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "战术盾",
+      "linyu": "战术盾",
+      "alias": "盾",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "可推进的防弹盾。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E6%9C%AF%E7%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离率",
+      "linyu": "撤离率",
+      "alias": "撤率",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "成功撤离的对局比例。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E7%8E%87",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "存活率",
+      "linyu": "存活率",
+      "alias": "活率",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "存活到最后的比例。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%98%E6%B4%BB%E7%8E%87",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "KDA",
+      "linyu": "KDA",
+      "alias": "战绩",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "击杀、死亡、助攻的综合数字。",
+      "source": "https://search.bilibili.com/all?keyword=KDA",
+      "pop": "中",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "场均",
+      "linyu": "场均",
+      "alias": "平均",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "每局的平均数据。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%BA%E5%9D%87",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "击杀数",
+      "linyu": "击杀数",
+      "alias": "人头",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "累计击杀数量。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BB%E6%9D%80%E6%95%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "战备值",
+      "linyu": "战备值",
+      "alias": "战备",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "进场装备的总价值。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%A4%87%E5%80%BC",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "装备评分",
+      "linyu": "装备评分",
+      "alias": "评分",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "装备强度的综合评分。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A3%85%E5%A4%87%E8%AF%84%E5%88%86",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "撤离点数",
+      "linyu": "撤离点数",
+      "alias": "点数",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "部分模式的结算点数。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E7%82%B9%E6%95%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "水厂",
+      "linyu": "水厂",
+      "alias": "水",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位简称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%B4%E5%8E%82",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "研究所",
+      "linyu": "研究所",
+      "alias": "研究",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A0%94%E7%A9%B6%E6%89%80",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "地堡",
+      "linyu": "地堡",
+      "alias": "堡",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E5%A0%A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "隧道",
+      "linyu": "隧道",
+      "alias": "洞",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的通道。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9A%A7%E9%81%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "海岸线",
+      "linyu": "海岸线",
+      "alias": "海边",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图边缘的水域。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E5%B2%B8%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "农场",
+      "linyu": "农场",
+      "alias": "农",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%9C%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "仓库区",
+      "linyu": "仓库区",
+      "alias": "仓",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BB%93%E5%BA%93%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "集装箱",
+      "linyu": "集装箱",
+      "alias": "箱区",
+      "slot": "淋角洲行动 / 淋角洲地图点位",
+      "sense": "地图内的点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%86%E8%A3%85%E7%AE%B1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "开局抢点",
+      "linyu": "开局抢点",
+      "alias": "抢点",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "开局直奔关键点位。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E5%B1%80%E6%8A%A2%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "节奏",
+      "linyu": "节奏",
+      "alias": "pace",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "推进与交火的快慢。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8A%82%E5%A5%8F",
+      "pop": "高",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "拉距",
+      "linyu": "拉距",
+      "alias": "拉开",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "和对手保持距离。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E8%B7%9D",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "压枪线",
+      "linyu": "压枪线",
+      "alias": "压线",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "把对手压在一个方向。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8E%8B%E6%9E%AA%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "清点",
+      "linyu": "清点",
+      "alias": "清",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "逐个确认点位安全。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B8%85%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "奥奇新手",
+      "linyu": "奥奇新手",
+      "alias": "萌新",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "刚入坑奥奇的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%96%B0%E6%89%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇回归",
+      "linyu": "奥奇回归",
+      "alias": "回坑",
+      "slot": "奥奇淋说 / 奥奇通讯录tag",
+      "sense": "重新回到奥奇的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%9B%9E%E5%BD%92",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇联动季",
+      "linyu": "奥奇联动季",
+      "alias": "联动季",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "集中推出联动内容的档期。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E8%81%94%E5%8A%A8%E5%AD%A3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇版本",
+      "linyu": "奥奇版本",
+      "alias": "版本",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "当期内容版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E7%89%88%E6%9C%AC",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇挑战",
+      "linyu": "奥奇挑战",
+      "alias": "挑战",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "精灵挑战活动。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%8C%91%E6%88%98",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇竞技",
+      "linyu": "奥奇竞技",
+      "alias": "竞技",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "竞技场玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E7%AB%9E%E6%8A%80",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇家园",
+      "linyu": "奥奇家园",
+      "alias": "家园",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "养成类附属玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%AE%B6%E5%9B%AD",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇牧场",
+      "linyu": "奥奇牧场",
+      "alias": "牧场",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "放置类附属玩法。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E7%89%A7%E5%9C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇时装",
+      "linyu": "奥奇时装",
+      "alias": "时装",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "角色外观。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%97%B6%E8%A3%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇坐骑",
+      "linyu": "奥奇坐骑",
+      "alias": "坐骑",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "角色外观坐骑。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%9D%90%E9%AA%91",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇称号",
+      "linyu": "奥奇称号",
+      "alias": "称号",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "角色标签。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E7%A7%B0%E5%8F%B7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇荣誉",
+      "linyu": "奥奇荣誉",
+      "alias": "荣誉",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "竞技与活动获得的标识。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E8%8D%A3%E8%AA%89",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇公会",
+      "linyu": "奥奇公会",
+      "alias": "公会",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "玩家组织。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%85%AC%E4%BC%9A",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇好友",
+      "linyu": "奥奇好友",
+      "alias": "好友",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "互相加好友的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%A5%BD%E5%8F%8B",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇交易",
+      "linyu": "奥奇交易",
+      "alias": "交易",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "玩家之间的道具流通。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E4%BA%A4%E6%98%93",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇拍卖",
+      "linyu": "奥奇拍卖",
+      "alias": "拍卖",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "竞价购买道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%8B%8D%E5%8D%96",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇邮件",
+      "linyu": "奥奇邮件",
+      "alias": "邮件",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "领取奖励与通知。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E9%82%AE%E4%BB%B6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇排行榜",
+      "linyu": "奥奇排行榜",
+      "alias": "排行榜",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "按数值排序的榜单。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%8E%92%E8%A1%8C%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇世界频道",
+      "linyu": "奥奇世界频道",
+      "alias": "世界",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "全服聊天频道。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E4%B8%96%E7%95%8C%E9%A2%91%E9%81%93",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇组队",
+      "linyu": "奥奇组队",
+      "alias": "组队",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "多人一起挑战。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E7%BB%84%E9%98%9F",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇副本",
+      "linyu": "奥奇副本",
+      "alias": "副本",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "重复挑战的关卡。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%89%AF%E6%9C%AC",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇周年",
+      "linyu": "奥奇周年",
+      "alias": "周年",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "开服周年活动。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%91%A8%E5%B9%B4",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇开服",
+      "linyu": "奥奇开服",
+      "alias": "开服",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "服务器开放。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%BC%80%E6%9C%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇合服",
+      "linyu": "奥奇合服",
+      "alias": "合服",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "多个服务器合并。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%90%88%E6%9C%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇新区",
+      "linyu": "奥奇新区",
+      "alias": "新区",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "新开的服务器。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%96%B0%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇老区",
+      "linyu": "奥奇老区",
+      "alias": "老服",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "开服已久的服务器。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E8%80%81%E5%8C%BA",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇页游",
+      "linyu": "奥奇页游",
+      "alias": "页游",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "浏览器版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E9%A1%B5%E6%B8%B8",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇手游",
+      "linyu": "奥奇手游",
+      "alias": "手游",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "移动端版本。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%89%8B%E6%B8%B8",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇战力榜",
+      "linyu": "奥奇战力榜",
+      "alias": "战力榜",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "按战力排序的榜单。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%88%98%E5%8A%9B%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇攻略",
+      "linyu": "奥奇攻略",
+      "alias": "攻略",
+      "slot": "奥奇淋说 / 奥奇整活梗",
+      "sense": "通关与养成的指导内容。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%94%BB%E7%95%A5",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "精灵碎片",
+      "linyu": "精灵碎片",
+      "alias": "碎片",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "合成精灵用的碎片。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E7%A2%8E%E7%89%87",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "精灵精华",
+      "linyu": "精灵精华",
+      "alias": "精华",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "强化精灵用的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E7%B2%BE%E5%8D%8E",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "升星石",
+      "linyu": "升星石",
+      "alias": "星石",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "升星所需的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%87%E6%98%9F%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "进阶石",
+      "linyu": "进阶石",
+      "alias": "阶石",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "进阶所需的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%9B%E9%98%B6%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "突破石",
+      "linyu": "突破石",
+      "alias": "突石",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "突破等级上限的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AA%81%E7%A0%B4%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "觉醒石",
+      "linyu": "觉醒石",
+      "alias": "觉石",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "觉醒所需的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A7%89%E9%86%92%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "天赋石",
+      "linyu": "天赋石",
+      "alias": "天赋材料",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升天赋的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E8%B5%8B%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "符文石",
+      "linyu": "符文石",
+      "alias": "符文材料",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "打造符文的材料。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AC%A6%E6%96%87%E7%9F%B3",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "技能书",
+      "linyu": "技能书",
+      "alias": "书",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "提升招式等级的道具。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%80%E8%83%BD%E4%B9%A6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "出战位",
+      "linyu": "出战位",
+      "alias": "位置",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "队伍能容纳的精灵格数。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BA%E6%88%98%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "阵容位",
+      "linyu": "阵容位",
+      "alias": "格子",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "队伍里的上阵格数。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B5%E5%AE%B9%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "战力提升",
+      "linyu": "战力提升",
+      "alias": "提战",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "把战力往上拉的操作。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%8A%9B%E6%8F%90%E5%8D%87",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "属性克制",
+      "linyu": "属性克制",
+      "alias": "克制表",
+      "slot": "奥奇淋说 / 奥奇属性系别",
+      "sense": "属性之间相互压制的规则表。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B1%9E%E6%80%A7%E5%85%8B%E5%88%B6",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "奥奇币",
+      "linyu": "奥奇币",
+      "alias": "游戏币",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "游戏内的通用货币。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E5%B8%81",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "道具背包",
+      "linyu": "道具背包",
+      "alias": "道具格",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "存放道具的容量。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%81%93%E5%85%B7%E8%83%8C%E5%8C%85",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "精灵经验",
+      "linyu": "精灵经验",
+      "alias": "精灵exp",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵升级所需的数值。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E7%BB%8F%E9%AA%8C",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "精灵等级",
+      "linyu": "精灵等级",
+      "alias": "精灵级",
+      "slot": "奥奇淋说 / 奥奇战力培养",
+      "sense": "精灵自身的等级。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E7%AD%89%E7%BA%A7",
+      "pop": "低",
+      "rel": [
+        "奥奇淋说"
+      ]
+    },
+    {
+      "zh": "三角洲新手",
+      "linyu": "三角洲新手",
+      "alias": "萌新",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "刚入坑的玩家。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%96%B0%E6%89%8B",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲撤离点",
+      "linyu": "三角洲撤离点",
+      "alias": "撤点",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "可撤离的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%92%A4%E7%A6%BB%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲保险",
+      "linyu": "三角洲保险",
+      "alias": "保险",
+      "slot": "淋角洲行动 / 淋角洲撤离术语",
+      "sense": "死亡后保住物品的容器。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E4%BF%9D%E9%99%A9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲背包",
+      "linyu": "三角洲背包",
+      "alias": "背包",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "决定携带量的装备。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%83%8C%E5%8C%85",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲护甲",
+      "linyu": "三角洲护甲",
+      "alias": "护甲",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "吸收伤害的防具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%8A%A4%E7%94%B2",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲头盔",
+      "linyu": "三角洲头盔",
+      "alias": "头盔",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "保护头部的防具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%A4%B4%E7%9B%94",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲弹药",
+      "linyu": "三角洲弹药",
+      "alias": "弹药",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "按口径区分的子弹。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%BC%B9%E8%8D%AF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲弹匣",
+      "linyu": "三角洲弹匣",
+      "alias": "弹匣",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "装弹容量。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%BC%B9%E5%8C%A3",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲瞄具",
+      "linyu": "三角洲瞄具",
+      "alias": "瞄具",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "影响开镜倍率的配件。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E7%9E%84%E5%85%B7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲消音器",
+      "linyu": "三角洲消音器",
+      "alias": "消音",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低枪声暴露范围。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%B6%88%E9%9F%B3%E5%99%A8",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲握把",
+      "linyu": "三角洲握把",
+      "alias": "握把",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "降低后坐力。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%8F%A1%E6%8A%8A",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲枪管",
+      "linyu": "三角洲枪管",
+      "alias": "枪管",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "影响射程与后坐力。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%9E%AA%E7%AE%A1",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲后坐力",
+      "linyu": "三角洲后坐力",
+      "alias": "后坐力",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "连发时枪口上跳的幅度。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%90%8E%E5%9D%90%E5%8A%9B",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲腰射",
+      "linyu": "三角洲腰射",
+      "alias": "腰射",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "不开镜射击。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%85%B0%E5%B0%84",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲开镜",
+      "linyu": "三角洲开镜",
+      "alias": "开镜",
+      "slot": "淋角洲行动 / 淋角洲枪械装备",
+      "sense": "举枪瞄准。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%BC%80%E9%95%9C",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲压枪线",
+      "linyu": "三角洲压枪线",
+      "alias": "压线",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "把对手压在一个方向。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8E%8B%E6%9E%AA%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲掩体",
+      "linyu": "三角洲掩体",
+      "alias": "掩体",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "可阻挡子弹的物体。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%8E%A9%E4%BD%93",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲高台",
+      "linyu": "三角洲高台",
+      "alias": "高台",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "占据高度优势的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E9%AB%98%E5%8F%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲视野",
+      "linyu": "三角洲视野",
+      "alias": "视野",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "能看到敌人的范围。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A7%86%E9%87%8E",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲报点",
+      "linyu": "三角洲报点",
+      "alias": "报点",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "向队友报告敌人位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%8A%A5%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲标记",
+      "linyu": "三角洲标记",
+      "alias": "标记",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "标注敌人位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%A0%87%E8%AE%B0",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲绕后",
+      "linyu": "三角洲绕后",
+      "alias": "绕后",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "从侧翼接近。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E7%BB%95%E5%90%8E",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲包抄",
+      "linyu": "三角洲包抄",
+      "alias": "包抄",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "从两侧合围。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8C%85%E6%8A%84",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲拉枪线",
+      "linyu": "三角洲拉枪线",
+      "alias": "拉线",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "把敌人引到预设位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%8B%89%E6%9E%AA%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲卡点",
+      "linyu": "三角洲卡点",
+      "alias": "卡点",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "守住关键位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8D%A1%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲守点",
+      "linyu": "三角洲守点",
+      "alias": "守点",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "守住关键位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%AE%88%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲空投",
+      "linyu": "三角洲空投",
+      "alias": "空投",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "空运补给。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E7%A9%BA%E6%8A%95",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲直升机",
+      "linyu": "三角洲直升机",
+      "alias": "直升机",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "撤离或支援载具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E7%9B%B4%E5%8D%87%E6%9C%BA",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲载具",
+      "linyu": "三角洲载具",
+      "alias": "载具",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "可驾驶的交通工具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%BD%BD%E5%85%B7",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲装甲车",
+      "linyu": "三角洲装甲车",
+      "alias": "装甲车",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "地图内的高防御载具。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E8%A3%85%E7%94%B2%E8%BD%A6",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲战术点",
+      "linyu": "三角洲战术点",
+      "alias": "战术点",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "地图上的关键控制点。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E6%88%98%E6%9C%AF%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "三角洲地图",
+      "linyu": "三角洲地图",
+      "alias": "地图",
+      "slot": "淋角洲行动 / 淋角洲整活梗",
+      "sense": "对局所在的地图。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E8%A7%92%E6%B4%B2%E5%9C%B0%E5%9B%BE",
+      "pop": "低",
+      "rel": [
+        "淋角洲行动"
+      ]
+    },
+    {
+      "zh": "欧美DIVA",
+      "linyu": "欧美DIVA",
+      "alias": "欧美天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "欧美市场的天后群体。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AC%A7%E7%BE%8EDIVA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "内娱DIVA",
+      "linyu": "内娱DIVA",
+      "alias": "内娱天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "内娱市场的天后群体。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%85%E5%A8%B1DIVA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "港台DIVA",
+      "linyu": "港台DIVA",
+      "alias": "港台天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "中国香港与中国台湾地区的天后群体。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B8%AF%E5%8F%B0DIVA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "日韩DIVA",
+      "linyu": "日韩DIVA",
+      "alias": "日韩天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "日韩市场的天后群体。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%97%A5%E9%9F%A9DIVA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "华语DIVA",
+      "linyu": "华语DIVA",
+      "alias": "华语天后",
+      "slot": "divatag / diva称号位分",
+      "sense": "华语市场的天后群体。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%8E%E8%AF%ADDIVA",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "少女时代",
+      "linyu": "少女时代",
+      "alias": "SNSD",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，2007 年出道。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%91%E5%A5%B3%E6%97%B6%E4%BB%A3",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "TWICE",
+      "linyu": "TWICE",
+      "alias": "兔瓦斯",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，2015 年出道。",
+      "source": "https://search.bilibili.com/all?keyword=TWICE",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "BLACKPINK",
+      "linyu": "BLACKPINK",
+      "alias": "粉墨",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，2016 年出道。",
+      "source": "https://search.bilibili.com/all?keyword=BLACKPINK",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Red Velvet",
+      "linyu": "Red Velvet",
+      "alias": "红毛",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，2014 年出道。",
+      "source": "https://search.bilibili.com/all?keyword=Red%20Velvet",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "aespa",
+      "linyu": "aespa",
+      "alias": "艾斯帕",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，2020 年出道。",
+      "source": "https://search.bilibili.com/all?keyword=aespa",
+      "pop": "中",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "MAMAMOO",
+      "linyu": "MAMAMOO",
+      "alias": "妈妈木",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，以现场实力著称。",
+      "source": "https://search.bilibili.com/all?keyword=MAMAMOO",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
+    },
+    {
+      "zh": "Wonder Girls",
+      "linyu": "Wonder Girls",
+      "alias": "神奇女孩",
+      "slot": "divatag / diva人物淋名",
+      "sense": "韩国女团，2007 年出道。",
+      "source": "https://search.bilibili.com/all?keyword=Wonder%20Girls",
+      "pop": "低",
+      "rel": [
+        "divatag"
+      ]
     }
   ],
   "rules": [
@@ -29669,9 +46761,804 @@ window.__SEED_DATA = {
       "scene": "游戏区 / 护主",
       "examples": "玛皇是玛薇卡女王，麻辣妮别来蹭。",
       "src": "https://www.bilibili.com/video/BV1Mh4y1u75v"
+    },
+    {
+      "pattern": "(?:淋可梦|宝淋梦|淋可梦大师|宝可梦|精灵宝可梦|神奇宝贝)",
+      "output": "淋可梦",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%8F%AF%E6%A2%A6"
+    },
+    {
+      "pattern": "(?:就决定是你了|决定了，就是你了)",
+      "output": "就决定是你了惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%B1%E5%86%B3%E5%AE%9A%E6%98%AF%E4%BD%A0%E4%BA%86%E6%83%B9"
+    },
+    {
+      "pattern": "(?:皮卡皮卡|皮卡丘)",
+      "output": "我皮",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E7%9A%AE"
+    },
+    {
+      "pattern": "(?:十万伏特|十万|打雷)",
+      "output": "十万伏特厚",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%81%E4%B8%87%E4%BC%8F%E7%89%B9%E5%8E%9A"
+    },
+    {
+      "pattern": "(?:野生)(.{1,8})(?:出现了|出现)",
+      "output": "野生的$1出现噜",
+      "source": "https://search.bilibili.com/all?keyword=%E9%87%8E%E7%94%9F%E7%9A%84%241%E5%87%BA%E7%8E%B0%E5%99%9C"
+    },
+    {
+      "pattern": "(?:捕获成功|抓到了|收服了)",
+      "output": "捕获成功惹",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8D%95%E8%8E%B7%E6%88%90%E5%8A%9F%E6%83%B9"
+    },
+    {
+      "pattern": "(?:御三家|初始三只)",
+      "output": "御三家",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%A1%E4%B8%89%E5%AE%B6"
+    },
+    {
+      "pattern": "(?:图鉴编号|图鉴001|图鉴)",
+      "output": "图鉴惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%BE%E9%89%B4%E6%83%B9"
+    },
+    {
+      "pattern": "(?:宝可梦大师|成为宝可梦大师)",
+      "output": "成为淋可梦大师",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%90%E4%B8%BA%E6%B7%8B%E5%8F%AF%E6%A2%A6%E5%A4%A7%E5%B8%88"
+    },
+    {
+      "pattern": "(?:闪光|异色|刷闪)",
+      "output": "闪惹",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E6%83%B9"
+    },
+    {
+      "pattern": "(?:个体值|努力值|性格|特性)",
+      "output": "天赋惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E8%B5%8B%E6%83%B9"
+    },
+    {
+      "pattern": "(?:太晶化|极巨化|mega进化|超进化)",
+      "output": "变身惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%98%E8%BA%AB%E6%83%B9"
+    },
+    {
+      "pattern": "(?:可达鸭|头痛)",
+      "output": "可达鸭头痛噜",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%AF%E8%BE%BE%E9%B8%AD%E5%A4%B4%E7%97%9B%E5%99%9C"
+    },
+    {
+      "pattern": "(?:卡比兽|睡觉|压路)",
+      "output": "卡比兽在睡觉",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%AF%94%E5%85%BD%E5%9C%A8%E7%9D%A1%E8%A7%89"
+    },
+    {
+      "pattern": "(?:老喷|喷火龙)",
+      "output": "老喷",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%81%E5%96%B7"
+    },
+    {
+      "pattern": "(?:蒜头王八|妙蛙种子)",
+      "output": "蒜头王八",
+      "source": "https://search.bilibili.com/all?keyword=%E8%92%9C%E5%A4%B4%E7%8E%8B%E5%85%AB"
+    },
+    {
+      "pattern": "(?:鲤鱼王|水溅跃)",
+      "output": "鲤鱼王翻身",
+      "source": "https://search.bilibili.com/all?keyword=%E9%B2%A4%E9%B1%BC%E7%8E%8B%E7%BF%BB%E8%BA%AB"
+    },
+    {
+      "pattern": "(?:暴鲤龙|大凶)",
+      "output": "暴鲤龙",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9A%B4%E9%B2%A4%E9%BE%99"
+    },
+    {
+      "pattern": "(?:耿鬼|影子|笑鬼)",
+      "output": "耿鬼笑",
+      "source": "https://search.bilibili.com/all?keyword=%E8%80%BF%E9%AC%BC%E7%AC%91"
+    },
+    {
+      "pattern": "(?:超梦|梦幻)",
+      "output": "超梦",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E6%A2%A6"
+    },
+    {
+      "pattern": "(?:火箭队|三人组)",
+      "output": "火箭队",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E7%AE%AD%E9%98%9F"
+    },
+    {
+      "pattern": "(?:道馆|四天王|冠军|联盟)",
+      "output": "联盟",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E7%9B%9F"
+    },
+    {
+      "pattern": "(?:帕底亚|大沙田学院)",
+      "output": "帕底亚大沙田",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B8%95%E5%BA%95%E4%BA%9A%E5%A4%A7%E6%B2%99%E7%94%B0"
+    },
+    {
+      "pattern": "(?:经验值|升级了)",
+      "output": "升级惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%87%E7%BA%A7%E6%83%B9"
+    },
+    {
+      "pattern": "(?:满血|一血|零封|翻盘)",
+      "output": "翻盘",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BF%BB%E7%9B%98"
+    },
+    {
+      "pattern": "(?:孵蛋|蛋党|孵蛋婆)",
+      "output": "孵蛋惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AD%B5%E8%9B%8B%E6%83%B9"
+    },
+    {
+      "pattern": "(?:剑舞|强化|拉满)",
+      "output": "拉满",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E6%BB%A1"
+    },
+    {
+      "pattern": "(?:替身|保护|保命)",
+      "output": "保命",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E5%91%BD"
+    },
+    {
+      "pattern": "(?:剧毒|电磁波|麻痹)",
+      "output": "中毒惹",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E6%AF%92%E6%83%B9"
+    },
+    {
+      "pattern": "(?:双打|单打|联机|交换)",
+      "output": "来打一场",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%A5%E6%89%93%E4%B8%80%E5%9C%BA"
+    },
+    {
+      "pattern": "(?:我是训练家|本训练家)",
+      "output": "本训练家",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E8%AE%AD%E7%BB%83%E5%AE%B6"
+    },
+    {
+      "pattern": "(?:我的本命|我推)",
+      "output": "我推",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%8E%A8"
+    },
+    {
+      "pattern": "(?:龙控|萌系控|对战党|图鉴党)",
+      "output": "本命",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%91%BD"
+    },
+    {
+      "pattern": "(?:打不过|打不赢|被克制)",
+      "output": "逆属性噜",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%86%E5%B1%9E%E6%80%A7%E5%99%9C"
+    },
+    {
+      "pattern": "(?:真可爱|好可爱|米米嘟)",
+      "output": "米米嘟",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B1%B3%E7%B1%B3%E5%98%9F"
+    },
+    {
+      "pattern": "(?:这波操作|这波很强)",
+      "output": "这波很淋可梦",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%99%E6%B3%A2%E5%BE%88%E6%B7%8B%E5%8F%AF%E6%A2%A6"
+    },
+    {
+      "pattern": "(?:宝可梦中心|回血点|乔伊)",
+      "output": "去宝可梦中心",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8E%BB%E5%AE%9D%E5%8F%AF%E6%A2%A6%E4%B8%AD%E5%BF%83"
+    },
+    {
+      "pattern": "(?:君莎|女警|警察)",
+      "output": "君莎",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%9B%E8%8E%8E"
+    },
+    {
+      "pattern": "(?:野生宝可梦|路边怪)",
+      "output": "路边怪",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E8%BE%B9%E6%80%AA"
+    },
+    {
+      "pattern": "(?:我皮|我伊|我蛙)",
+      "output": "我皮",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E7%9A%AE"
+    },
+    {
+      "pattern": "(?:奥奇淋说|奥奇传说|奥奇)",
+      "output": "奥奇淋说",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%B7%8B%E8%AF%B4"
+    },
+    {
+      "pattern": "(?:莓莓小姐|莓莓)",
+      "output": "我莓",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E8%8E%93"
+    },
+    {
+      "pattern": "(?:赤焰龙皇|龙皇)",
+      "output": "龙皇",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99%E7%9A%87"
+    },
+    {
+      "pattern": "(?:次元圣龙|圣龙)",
+      "output": "圣龙",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%A3%E9%BE%99"
+    },
+    {
+      "pattern": "(?:食神米淇淋|米淇淋)",
+      "output": "米淇淋",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B1%B3%E6%B7%87%E6%B7%8B"
+    },
+    {
+      "pattern": "(?:飞天猫|我喵)",
+      "output": "我喵",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%96%B5"
+    },
+    {
+      "pattern": "(?:天蛮王|战神·天蛮王)",
+      "output": "天蛮王",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E8%9B%AE%E7%8E%8B"
+    },
+    {
+      "pattern": "(?:巨神泰坦|泰坦)",
+      "output": "泰坦",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%B0%E5%9D%A6"
+    },
+    {
+      "pattern": "(?:帝释天)",
+      "output": "我帝",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%B8%9D"
+    },
+    {
+      "pattern": "(?:千姬)",
+      "output": "我姬",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%A7%AC"
+    },
+    {
+      "pattern": "(?:八岐大蛇|大蛇)",
+      "output": "大蛇",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E8%9B%87"
+    },
+    {
+      "pattern": "(?:龙梵)",
+      "output": "我梵",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%A2%B5"
+    },
+    {
+      "pattern": "(?:王龙|龙王)",
+      "output": "王龙",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E9%BE%99"
+    },
+    {
+      "pattern": "(?:龙修)",
+      "output": "我修",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E4%BF%AE"
+    },
+    {
+      "pattern": "(?:诺亚|小诺)",
+      "output": "我诺",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E8%AF%BA"
+    },
+    {
+      "pattern": "(?:诺雅|诺妈)",
+      "output": "诺雅",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BA%E9%9B%85"
+    },
+    {
+      "pattern": "(?:昆吾)",
+      "output": "我昆",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%98%86"
+    },
+    {
+      "pattern": "(?:伊桑)",
+      "output": "我桑",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E6%A1%91"
+    },
+    {
+      "pattern": "(?:通灵师|通灵)",
+      "output": "通灵师",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9A%E7%81%B5%E5%B8%88"
+    },
+    {
+      "pattern": "(?:元素师|召唤师|肉盾|利爪|治疗|巨人)",
+      "output": "职业位",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%8C%E4%B8%9A%E4%BD%8D"
+    },
+    {
+      "pattern": "(?:神草阵|神草队)",
+      "output": "神草阵",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%8D%89%E9%98%B5"
+    },
+    {
+      "pattern": "(?:战力|战斗力)",
+      "output": "战力拉满",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%98%E5%8A%9B%E6%8B%89%E6%BB%A1"
+    },
+    {
+      "pattern": "(?:超进化|究极进化|觉醒)",
+      "output": "超进化惹",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B6%85%E8%BF%9B%E5%8C%96%E6%83%B9"
+    },
+    {
+      "pattern": "(?:符文|天赋|突破|羁绊)",
+      "output": "养成惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%BB%E6%88%90%E6%83%B9"
+    },
+    {
+      "pattern": "(?:加强|加强计划|压强度)",
+      "output": "加强惹",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8A%A0%E5%BC%BA%E6%83%B9"
+    },
+    {
+      "pattern": "(?:联动|联动精灵|联动宠)",
+      "output": "联动",
+      "source": "https://search.bilibili.com/all?keyword=%E8%81%94%E5%8A%A8"
+    },
+    {
+      "pattern": "(?:绝版|返厂|返场)",
+      "output": "返厂噜",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%94%E5%8E%82%E5%99%9C"
+    },
+    {
+      "pattern": "(?:仓管|掉毛|市区|拉胯)",
+      "output": "拉胯",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E8%83%AF"
+    },
+    {
+      "pattern": "(?:数值怪|超标)",
+      "output": "数值怪",
+      "source": "https://search.bilibili.com/all?keyword=%E6%95%B0%E5%80%BC%E6%80%AA"
+    },
+    {
+      "pattern": "(?:三区鼎立|三王鼎立)",
+      "output": "三区鼎立",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%8C%BA%E9%BC%8E%E7%AB%8B"
+    },
+    {
+      "pattern": "(?:精灵图鉴|奥奇大陆)",
+      "output": "精灵图鉴",
+      "source": "https://search.bilibili.com/all?keyword=%E7%B2%BE%E7%81%B5%E5%9B%BE%E9%89%B4"
+    },
+    {
+      "pattern": "(?:奥奇战士|奥奇玩家)",
+      "output": "奥奇战士",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A5%A5%E5%A5%87%E6%88%98%E5%A3%AB"
+    },
+    {
+      "pattern": "(?:决战！?大沙田|大沙田)",
+      "output": "决战！大沙田",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B3%E6%88%98%EF%BC%81%E5%A4%A7%E6%B2%99%E7%94%B0"
+    },
+    {
+      "pattern": "(?:我莓|我龙|我喵)",
+      "output": "我莓",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E8%8E%93"
+    },
+    {
+      "pattern": "(?:本召唤师|本精灵)",
+      "output": "本召唤师",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%8F%AC%E5%94%A4%E5%B8%88"
+    },
+    {
+      "pattern": "(?:这版很强|这版加强)",
+      "output": "这版很奥奇淋说",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%99%E7%89%88%E5%BE%88%E5%A5%A5%E5%A5%87%E6%B7%8B%E8%AF%B4"
+    },
+    {
+      "pattern": "(?:策划|CH)",
+      "output": "策划",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AD%96%E5%88%92"
+    },
+    {
+      "pattern": "(?:回归党|回坑)",
+      "output": "回归党",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9B%9E%E5%BD%92%E5%85%9A"
+    },
+    {
+      "pattern": "(?:我是奥奇玩家|我玩奥奇)",
+      "output": "本奥奇战士",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%A5%A5%E5%A5%87%E6%88%98%E5%A3%AB"
+    },
+    {
+      "pattern": "(?:淋角洲行动|三角淋行动|三角洲行动)",
+      "output": "淋角洲行动",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%A7%92%E6%B4%B2%E8%A1%8C%E5%8A%A8"
+    },
+    {
+      "pattern": "(?:威龙|威龙daddy|风暴玛焰)",
+      "output": "威龙daddy",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A8%81%E9%BE%99daddy"
+    },
+    {
+      "pattern": "(?:红狼)",
+      "output": "我狼",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E7%8B%BC"
+    },
+    {
+      "pattern": "(?:疾风)",
+      "output": "我风",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E9%A3%8E"
+    },
+    {
+      "pattern": "(?:乌鲁鲁)",
+      "output": "我鲁",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E9%B2%81"
+    },
+    {
+      "pattern": "(?:银翼)",
+      "output": "我翼",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E7%BF%BC"
+    },
+    {
+      "pattern": "(?:深蓝)",
+      "output": "我蓝",
+      "source": "https://search.bilibili.com/all?keyword=%E6%88%91%E8%93%9D"
+    },
+    {
+      "pattern": "(?:牧羊人)",
+      "output": "羊",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BE%8A"
+    },
+    {
+      "pattern": "(?:蜂医)",
+      "output": "蜂",
+      "source": "https://search.bilibili.com/all?keyword=%E8%9C%82"
+    },
+    {
+      "pattern": "(?:蛊|蝶)",
+      "output": "支援位",
+      "source": "https://search.bilibili.com/all?keyword=%E6%94%AF%E6%8F%B4%E4%BD%8D"
+    },
+    {
+      "pattern": "(?:露娜|骇爪|回响)",
+      "output": "侦察位",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BE%A6%E5%AF%9F%E4%BD%8D"
+    },
+    {
+      "pattern": "(?:突击|工程|支援|侦察)",
+      "output": "干员位",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B9%B2%E5%91%98%E4%BD%8D"
+    },
+    {
+      "pattern": "(?:撤离点|撤离)",
+      "output": "撤离惹",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%A4%E7%A6%BB%E6%83%B9"
+    },
+    {
+      "pattern": "(?:撤离失败|白给)",
+      "output": "白给噜",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BD%E7%BB%99%E5%99%9C"
+    },
+    {
+      "pattern": "(?:搜刮|摸金|舔包)",
+      "output": "搜刮",
+      "source": "https://search.bilibili.com/all?keyword=%E6%90%9C%E5%88%AE"
+    },
+    {
+      "pattern": "(?:爆仓|装不下)",
+      "output": "爆仓噜",
+      "source": "https://search.bilibili.com/all?keyword=%E7%88%86%E4%BB%93%E5%99%9C"
+    },
+    {
+      "pattern": "(?:哈夫克|哈夫币|哈弗币)",
+      "output": "哈夫币",
+      "source": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%A4%AB%E5%B8%81"
+    },
+    {
+      "pattern": "(?:曼德尔砖|搬砖|刷砖)",
+      "output": "搬砖",
+      "source": "https://search.bilibili.com/all?keyword=%E6%90%AC%E7%A0%96"
+    },
+    {
+      "pattern": "(?:保险箱|保险)",
+      "output": "保险箱",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BF%9D%E9%99%A9%E7%AE%B1"
+    },
+    {
+      "pattern": "(?:产值|收益)",
+      "output": "产值拉满",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BA%A7%E5%80%BC%E6%8B%89%E6%BB%A1"
+    },
+    {
+      "pattern": "(?:跑刀|空手跑)",
+      "output": "跑刀",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%91%E5%88%80"
+    },
+    {
+      "pattern": "(?:卡战备|卡装备)",
+      "output": "卡战备",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%A1%E6%88%98%E5%A4%87"
+    },
+    {
+      "pattern": "(?:大战场|段位|统帅|上等兵)",
+      "output": "上统帅",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%8A%E7%BB%9F%E5%B8%85"
+    },
+    {
+      "pattern": "(?:零号大坝|长弓溪谷|巴克什)",
+      "output": "进图",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%9B%E5%9B%BE"
+    },
+    {
+      "pattern": "(?:航天基地|潮汐监狱)",
+      "output": "航天",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%AA%E5%A4%A9"
+    },
+    {
+      "pattern": "(?:堵桥|守桥|老六)",
+      "output": "堵桥",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A0%B5%E6%A1%A5"
+    },
+    {
+      "pattern": "(?:一换一|反打|架枪)",
+      "output": "反打",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E6%89%93"
+    },
+    {
+      "pattern": "(?:打药|回血|开红)",
+      "output": "打药",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E8%8D%AF"
+    },
+    {
+      "pattern": "(?:步枪|冲锋枪|狙击枪|霰弹枪|轻机枪)",
+      "output": "枪械位",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9E%AA%E6%A2%B0%E4%BD%8D"
+    },
+    {
+      "pattern": "(?:护甲|头盔|背包)",
+      "output": "装备位",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A3%85%E5%A4%87%E4%BD%8D"
+    },
+    {
+      "pattern": "(?:刀皮|枪皮|皮肤)",
+      "output": "皮肤",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9A%AE%E8%82%A4"
+    },
+    {
+      "pattern": "(?:制式券|金枪客)",
+      "output": "制式券",
+      "source": "https://search.bilibili.com/all?keyword=%E5%88%B6%E5%BC%8F%E5%88%B8"
+    },
+    {
+      "pattern": "(?:摩斯密码|密码门|彩蛋)",
+      "output": "密码门",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%86%E7%A0%81%E9%97%A8"
+    },
+    {
+      "pattern": "(?:特勤处|制造)",
+      "output": "特勤处",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%B9%E5%8B%A4%E5%A4%84"
+    },
+    {
+      "pattern": "(?:白袜被窃|白袜)",
+      "output": "白袜被窃",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BD%E8%A2%9C%E8%A2%AB%E7%AA%83"
+    },
+    {
+      "pattern": "(?:统统闪开)",
+      "output": "统统闪开",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BB%9F%E7%BB%9F%E9%97%AA%E5%BC%80"
+    },
+    {
+      "pattern": "(?:本女特务|女特务)",
+      "output": "本女特务",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E5%A5%B3%E7%89%B9%E5%8A%A1"
+    },
+    {
+      "pattern": "(?:通讯录入侵|通讯录终于入侵)",
+      "output": "通讯录入侵",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%9A%E8%AE%AF%E5%BD%95%E5%85%A5%E4%BE%B5"
+    },
+    {
+      "pattern": "(?:鼠鼠|牢哥)",
+      "output": "鼠鼠",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BC%A0%E9%BC%A0"
+    },
+    {
+      "pattern": "(?:这局赚了|这局血赚)",
+      "output": "这局很淋角洲",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%99%E5%B1%80%E5%BE%88%E6%B7%8B%E8%A7%92%E6%B4%B2"
+    },
+    {
+      "pattern": "(?:divatag|DIVA|diva)",
+      "output": "divatag",
+      "source": "https://search.bilibili.com/all?keyword=divatag"
+    },
+    {
+      "pattern": "(?:霉霉|Taylor Swift|泰勒·斯威夫特)",
+      "output": "霉霉",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9C%89%E9%9C%89"
+    },
+    {
+      "pattern": "(?:那艺娜|娜娜)",
+      "output": "那艺娜",
+      "source": "https://search.bilibili.com/all?keyword=%E9%82%A3%E8%89%BA%E5%A8%9C"
+    },
+    {
+      "pattern": "(?:宇宙之母)",
+      "output": "宇宙之母",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%87%E5%AE%99%E4%B9%8B%E6%AF%8D"
+    },
+    {
+      "pattern": "(?:抽象女王)",
+      "output": "抽象女王",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%BD%E8%B1%A1%E5%A5%B3%E7%8E%8B"
+    },
+    {
+      "pattern": "(?:麦当娜|Madonna)",
+      "output": "麦当娜",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BA%A6%E5%BD%93%E5%A8%9C"
+    },
+    {
+      "pattern": "(?:碧昂丝|Beyoncé)",
+      "output": "碧昂丝",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A2%A7%E6%98%82%E4%B8%9D"
+    },
+    {
+      "pattern": "(?:Lady Gaga|嘎嘎)",
+      "output": "Lady Gaga",
+      "source": "https://search.bilibili.com/all?keyword=Lady%20Gaga"
+    },
+    {
+      "pattern": "(?:Ariana Grande|A 妹)",
+      "output": "A 妹",
+      "source": "https://search.bilibili.com/all?keyword=A%20%E5%A6%B9"
+    },
+    {
+      "pattern": "(?:Adele|阿黛尔)",
+      "output": "Adele",
+      "source": "https://search.bilibili.com/all?keyword=Adele"
+    },
+    {
+      "pattern": "(?:蕾哈娜|Rihanna)",
+      "output": "蕾哈娜",
+      "source": "https://search.bilibili.com/all?keyword=%E8%95%BE%E5%93%88%E5%A8%9C"
+    },
+    {
+      "pattern": "(?:玛丽亚·凯莉|牛姐)",
+      "output": "牛姐",
+      "source": "https://search.bilibili.com/all?keyword=%E7%89%9B%E5%A7%90"
+    },
+    {
+      "pattern": "(?:惠特妮·休斯顿|惠姨)",
+      "output": "惠姨",
+      "source": "https://search.bilibili.com/all?keyword=%E6%83%A0%E5%A7%A8"
+    },
+    {
+      "pattern": "(?:王菲|菲姐)",
+      "output": "王菲",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E8%8F%B2"
+    },
+    {
+      "pattern": "(?:张惠妹|阿妹)",
+      "output": "阿妹",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%BF%E5%A6%B9"
+    },
+    {
+      "pattern": "(?:蔡依林|Jolin|淋淋)",
+      "output": "淋淋",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%B7%8B"
+    },
+    {
+      "pattern": "(?:滨崎步|Ayu)",
+      "output": "滨崎步",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BB%A8%E5%B4%8E%E6%AD%A5"
+    },
+    {
+      "pattern": "(?:宇多田光)",
+      "output": "宇多田光",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AE%87%E5%A4%9A%E7%94%B0%E5%85%89"
+    },
+    {
+      "pattern": "(?:天后|diva)",
+      "output": "天后",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E5%90%8E"
+    },
+    {
+      "pattern": "(?:顶流|欧美顶流)",
+      "output": "顶流",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A1%B6%E6%B5%81"
+    },
+    {
+      "pattern": "(?:打投|控评|应援)",
+      "output": "打投",
+      "source": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%8A%95"
+    },
+    {
+      "pattern": "(?:超话|站姐)",
+      "output": "站姐",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%99%E5%A7%90"
+    },
+    {
+      "pattern": "(?:专辑|主打歌|先行曲)",
+      "output": "专辑",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%93%E8%BE%91"
+    },
+    {
+      "pattern": "(?:巡演|演唱会|安可)",
+      "output": "巡演",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B7%A1%E6%BC%94"
+    },
+    {
+      "pattern": "(?:抢票|退票)",
+      "output": "抢票",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%A2%E7%A5%A8"
+    },
+    {
+      "pattern": "(?:塌房|翻车)",
+      "output": "塌房",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A1%8C%E6%88%BF"
+    },
+    {
+      "pattern": "(?:开麦|假唱|真唱)",
+      "output": "开麦",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%80%E9%BA%A6"
+    },
+    {
+      "pattern": "(?:海豚音|转音|气声)",
+      "output": "海豚音",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E8%B1%9A%E9%9F%B3"
+    },
+    {
+      "pattern": "(?:神级现场|开口跪)",
+      "output": "神级现场",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A5%9E%E7%BA%A7%E7%8E%B0%E5%9C%BA"
+    },
+    {
+      "pattern": "(?:大合唱|应援色|灯牌)",
+      "output": "大合唱",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%90%88%E5%94%B1"
+    },
+    {
+      "pattern": "(?:红毯|颁奖礼|格莱美|金曲奖)",
+      "output": "红毯",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BA%A2%E6%AF%AF"
+    },
+    {
+      "pattern": "(?:livehouse|音乐节)",
+      "output": "livehouse",
+      "source": "https://search.bilibili.com/all?keyword=livehouse"
+    },
+    {
+      "pattern": "(?:粉转黑|路转粉|黑粉)",
+      "output": "转粉",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BD%AC%E7%B2%89"
+    },
+    {
+      "pattern": "(?:出圈|破圈|上热搜)",
+      "output": "出圈",
+      "source": "https://search.bilibili.com/all?keyword=%E5%87%BA%E5%9C%88"
+    },
+    {
+      "pattern": "(?:闭嘴惊艳)",
+      "output": "闭嘴惊艳",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AD%E5%98%B4%E6%83%8A%E8%89%B3"
+    },
+    {
+      "pattern": "(?:退票口在前苏联|退票)",
+      "output": "退票口在前苏联",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%80%E7%A5%A8%E5%8F%A3%E5%9C%A8%E5%89%8D%E8%8B%8F%E8%81%94"
+    },
+    {
+      "pattern": "(?:本仙女|本diva|天后本后)",
+      "output": "本仙女",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E4%BB%99%E5%A5%B3"
+    },
+    {
+      "pattern": "(?:diva惹)",
+      "output": "diva惹",
+      "source": "https://search.bilibili.com/all?keyword=diva%E6%83%B9"
+    },
+    {
+      "pattern": "(?:她是真正的 diva|好一个天后)",
+      "output": "天后降临",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E5%90%8E%E9%99%8D%E4%B8%B4"
+    },
+    {
+      "pattern": "(?:我是 diva|我就是天后)",
+      "output": "本仙女素 diva",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E4%BB%99%E5%A5%B3%E7%B4%A0%20diva"
     }
   ]
 }
 ;
-window.LINYU_VERSION = "1.33.0";
-window.LINYU_CONTENT_HASH = "504104d04078e497";
+window.LINYU_VERSION = "1.35.0";
+window.LINYU_CONTENT_HASH = "e1b177ec987ac703";
