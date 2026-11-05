@@ -1387,6 +1387,16 @@ tbody tr:hover {
     max-height: 78vh;
     padding: 16px;
   }
+
+  /* 窄屏翻页条一行装不下（上一页 / 页码 / 跳页框 / 下一页），允许折行而不是横向溢出 */
+  .pager {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .pg-jump-tip {
+    display: none;
+  }
 }
 
 body[data-mobile] .changelog-modal {
@@ -1586,6 +1596,90 @@ body[data-mobile] .changelog-modal {
 .pg-info {
   font-size: 12px;
   color: var(--muted);
+}
+
+/* ---------- 分页跳转（顶部工具条 + 底部翻页条各一份） ---------- */
+.pg-jump {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: -4px 0 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* 底部的这份嵌在 .pager 里，不要自己的上下外边距 */
+.pg-jump.inline {
+  margin: 0;
+}
+
+.pg-jump-label {
+  color: var(--muted);
+}
+
+.pg-input {
+  width: 62px;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  outline: none;
+  /* 去掉 Chrome / Safari 的数字微调箭头，页码框里那两个小三角只会碍事 */
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.pg-input::-webkit-outer-spin-button,
+.pg-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pg-input:focus {
+  border-color: var(--pink);
+}
+
+.pg-input::placeholder {
+  color: var(--placeholder);
+}
+
+.pg-jump-tip {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+/* 键盘直接敲数字时的浮层提示 */
+.kb-jump {
+  position: fixed;
+  right: 26px;
+  bottom: 92px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: var(--toast-bg);
+  color: var(--toast-fg);
+  font-size: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  pointer-events: none;
+}
+
+.kb-jump-num {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.kb-jump-txt {
+  opacity: 0.9;
 }
 
 .idx {
@@ -1833,6 +1927,25 @@ body[data-mobile] textarea {
 
 body[data-mobile] .search {
   padding: 11px 14px;
+}
+
+/* 跳页控件：触屏上要够大够好按；手机没有物理键盘，数字浮层直接不出现 */
+body[data-mobile] .pg-input {
+  width: 74px;
+  padding: 9px 10px;
+  font-size: 14px;
+}
+
+body[data-mobile] .pg-jump .ghost.small {
+  padding: 8px 14px;
+}
+
+body[data-mobile] .pg-jump-tip {
+  display: none;
+}
+
+body[data-mobile] .kb-jump {
+  display: none;
 }
 
 body[data-mobile] .form-grid input,

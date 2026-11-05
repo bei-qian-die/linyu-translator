@@ -35,6 +35,24 @@
     </view>
   </view>
 
+  <!-- 顶部跳页条：页码输入框直接改数字 + 跳转，不用一页一页按「加载更多」 -->
+  <view wx:if="{{ready && pages > 1}}" class="pg-bar">
+    <text class="pg-total">第 {{page}} / {{pages}} 页 · 共 {{matched}} 条</text>
+    <view class="pg-jump">
+      <text class="pg-label">跳至</text>
+      <input
+        class="pg-input"
+        type="number"
+        value="{{jumpVal}}"
+        confirm-type="go"
+        bindinput="onJumpInput"
+        bindconfirm="doJump"
+      />
+      <text class="pg-label">页</text>
+      <view class="pg-go" bindtap="doJump">跳转</view>
+    </view>
+  </view>
+
   <view wx:if="{{!ready}}" class="skeleton">
     <view class="sk-row" wx:for="{{[1, 2, 3, 4, 5]}}" wx:key="*this">
       <view class="sk-line w40"></view>
@@ -110,13 +128,28 @@
     bindreset="clearSearch"
   />
 
-  <list-foot
-    wx:if="{{shown.length}}"
-    has-more="{{hasMore}}"
-    rest="{{rest}}"
-    matched="{{matched}}"
-    bindmore="loadMore"
-  />
+  <!-- 底部翻页条：上一页 / 页码 / 下一页 + 第二个跳页框 -->
+  <view wx:if="{{shown.length && pages > 1}}" class="pg-bar pg-bar-foot">
+    <view class="pg-nav">
+      <view class="pg-btn {{page <= 1 ? 'off' : ''}}" data-delta="-1" bindtap="stepPage">‹ 上一页</view>
+      <text class="pg-total">第 {{page}} / {{pages}} 页</text>
+      <view class="pg-btn {{page >= pages ? 'off' : ''}}" data-delta="1" bindtap="stepPage">下一页 ›</view>
+    </view>
+    <view class="pg-jump">
+      <text class="pg-label">跳至</text>
+      <input
+        class="pg-input"
+        type="number"
+        value="{{jumpVal}}"
+        confirm-type="go"
+        bindinput="onJumpInput"
+        bindconfirm="doJump"
+      />
+      <text class="pg-label">页</text>
+      <view class="pg-go" bindtap="doJump">跳转</view>
+    </view>
+  </view>
+  <view wx:elif="{{shown.length}}" class="pg-end">共 {{matched}} 条</view>
   </block>
 
   <view class="tip">内容整理自公开语料，仅供娱乐 · 只读浏览</view>

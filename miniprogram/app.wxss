@@ -555,3 +555,86 @@ button::after {
     animation: none;
   }
 }
+
+/* ============================================================
+ * 分页条（词库 / 句式 / 词卡 / 名言 / 人物共用）
+ * 顶部一份「第 N / M 页 + 跳页框」，底部一份「上一页 / 页码 / 下一页 + 跳页框」。
+ * 之前是「加载更多」累积列表，想看到第 100 页只能一路滑下去。
+ * ============================================================ */
+.pg-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  margin: 8rpx 0 18rpx;
+}
+
+.pg-bar-foot {
+  flex-direction: column;
+  align-items: stretch;
+  margin: 26rpx 0 10rpx;
+}
+
+.pg-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rpx;
+}
+
+.pg-total {
+  font-size: 20rpx;
+  color: var(--faint);
+}
+
+.pg-btn {
+  padding: 10rpx 22rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  color: var(--ink);
+}
+
+.pg-btn.off {
+  opacity: 0.4;
+}
+
+.pg-jump {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.pg-label {
+  font-size: 20rpx;
+  color: var(--faint);
+}
+
+.pg-input {
+  width: 96rpx;
+  height: 54rpx;
+  min-height: 54rpx;
+  padding: 0 10rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 10rpx;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 22rpx;
+  text-align: center;
+}
+
+.pg-go {
+  padding: 10rpx 22rpx;
+  border-radius: 10rpx;
+  background: var(--cta-bg);
+  color: var(--cta-fg);
+  font-size: 20rpx;
+}
+
+.pg-end {
+  padding: 22rpx 0 10rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: var(--faint);
+}

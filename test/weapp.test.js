@@ -898,23 +898,45 @@ run('B2 视图模型不下发 searchText', () => {
   assert(!('searchText' in cardVm), '词卡视图模型不应携带 searchText');
 });
 
-run('B3 长列表增量 setData', () => {
+run('B3 长列表整页替换（分页模型）', () => {
   const page = loadPage('lexicon');
   page.onLoad();
   page._filtered = content.words;
-  page._shownCount = 30;
-  page.data.hasMore = true;
   page._patches = [];
-  page.loadMore();
-  const patch = page._patches[0];
-  assert(patch, '词库 loadMore 未调用 setData');
-  assert(!('shown' in patch), '词库 loadMore 不应全量替换 shown');
-  assert(Object.keys(patch).some((k) => k.startsWith('shown[')), '词库 loadMore 应使用增量路径');
-  assert.strictEqual(page.data.shown.length, 60, '词库第一页增量后应有 60 条');
+  page.goPage(1);
+  assert.strictEqual(page.data.shown.length, 30, '词库第 1 页应只有 30 条');
+  assert.strictEqual(page.data.page, 1);
+  assert.strictEqual(page.data.pages, Math.ceil(content.words.length / 30), '总页数应按 30 条一页算');
+
   page._patches = [];
-  page.loadMore();
-  assert.strictEqual(page.data.shown.length, 90, '词库连续加载应继续增量追加');
-  assert(Object.keys(page._patches[0]).some((k) => k.startsWith('shown[')));
+  page.goPage(2);
+  assert.strictEqual(page.data.page, 2);
+  assert.strictEqual(page.data.shown.length, 30, '翻到第 2 页仍只下发 30 条，不做累积');
+  assert.strictEqual(page.data.shown[0].zh, content.words[30].zh, '第 2 页第一条应是全量里的第 31 条');
+  // 页码框跟着当前页走，用户看得见「现在在第几页」
+  assert.strictEqual(page.data.jumpVal, '2');
+
+  // 夹范围：越界页码落在末页/首页，不会翻出空白页
+  page.goPage(9999);
+  assert.strictEqual(page.data.page, page.data.pages, '超出总页数应夹到末页');
+  page.goPage(0);
+  assert.strictEqual(page.data.page, 1, '页码 0 应夹回第 1 页');
+
+  // 跳页框：输入 → doJump，与「上一页/下一页」等价
+  page.onJumpInput({ detail: { value: '3' } });
+  assert.strictEqual(page.data.jumpVal, '3');
+  page.doJump();
+  assert.strictEqual(page.data.page, 3, '输入 3 后跳转应落在第 3 页');
+  page.onJumpInput({ detail: { value: '第12页' } });
+  page.doJump();
+  assert.strictEqual(page.data.page, 12, '夹带文字/全角的输入也要能解析出页码');
+  page.onJumpInput({ detail: { value: 'abc' } });
+  page.doJump();
+  assert.strictEqual(page.data.page, 12, '解析不出数字时保持当前页，不跳到空白');
+
+  // 输入框只收数字，且最多 4 位
+  page.onJumpInput({ detail: { value: 'a1b2c3d4e5' } });
+  assert.strictEqual(page.data.jumpVal, '1234');
 
   storage.clear();
   history.clearHistory();
@@ -935,6 +957,36 @@ run('B3 长列表增量 setData', () => {
   hp.loadMore();
   assert.strictEqual(hp.data.groups[0].items.length, 120, '历史连续加载应继续增量追加');
   assert.strictEqual(hp.data.hasMore, false);
+});
+
+run('B15 分页工具与分包页跳页', () => {
+  const pager = require('../miniprogram/utils/pager');
+  assert.strictEqual(pager.countPages(0, 30), 1, '空列表也应有一页，不能是 0 页');
+  assert.strictEqual(pager.countPages(61, 30), 3);
+  assert.strictEqual(pager.clampPage('7', 3), 3, '超出总页数应夹到末页');
+  assert.strictEqual(pager.clampPage('x', 3), 1, '解析不出数字当第 1 页');
+  assert.strictEqual(pager.parsePageInput('１２'), 12, '全角数字要能转成页码');
+  assert.strictEqual(pager.parsePageInput('第 9 页'), 9);
+  assert.strictEqual(pager.parsePageInput(''), null);
+  const slice = pager.pageSlice([1, 2, 3, 4, 5, 6, 7], 2, 3);
+  assert.deepStrictEqual(slice.items, [4, 5, 6], '第 2 页应取第 4~6 条');
+  assert.strictEqual(slice.from, 3);
+
+  const bp = loadPage('browse');
+  bp.onLoad({ tab: 'cards' });
+  assert.strictEqual(bp.data.page, 1, '分包页首次进入应在第 1 页');
+  assert(bp.data.pages > 1, '词卡总数应超过一页');
+  assert.strictEqual(bp.data.shown.length, 30, '分包页每页只下发 30 条');
+
+  bp.onJumpInput({ detail: { value: '4' } });
+  bp.doJump();
+  assert.strictEqual(bp.data.page, 4, '分包页输入 4 应跳到第 4 页');
+  assert.strictEqual(bp.data.shown.length, 30, '跳页后仍只下发一页');
+
+  // 换 tab 必须回到第 1 页，否则会出现「内容变了页码没变」的错位
+  bp.switchTab({ currentTarget: { dataset: { key: 'quotes' } } });
+  assert.strictEqual(bp.data.tab, 'quotes');
+  assert.strictEqual(bp.data.page, 1, '换 tab 应回到第 1 页');
 });
 
 run('B4 历史写缓存 + 异步节流', () => {

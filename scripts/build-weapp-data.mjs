@@ -34,7 +34,11 @@ const FILES = [
   ['lore-extra21.js', 'pkg-hero/data/lore-extra21.js'],
   ['lore-extra23.js', 'pkg-hero/data/lore-extra23.js'],
   ['lore-extra24.js', 'pkg-hero/data/lore-extra24.js'],
+  ['lore-extra25.js', 'pkg-hero/data/lore-extra25.js'],
   ['lore-extra15.js', 'pkg-hero/data/lore-extra15.js'],
+  // 版本公告：小程序没有构建链，只能 require 同步文件；内容与 src/core/changelog.js 逐字一致，
+  // 由 `npm run changelog:build` 从 CHANGELOG.md 生成，这里只做搬运。
+  ['changelog.js', 'data/changelog.js'],
 ];
 
 function writeIfChanged(file, content) {
@@ -131,6 +135,11 @@ for (const k of Object.keys(require_.cache)) {
 for (const [from, to] of FILES) {
   const src = path.join(SRC_CORE, from);
   const dst = path.join(OUT, to);
+  if (!fs.existsSync(src)) {
+    // changelog.js 是 npm run changelog:build 的产物，npm 脚本里已串在前面；
+    // 单独跑本脚本时给一句人话，而不是裸的 ENOENT
+    throw new Error(`缺少 ${path.relative(ROOT, src)}，先跑 npm run changelog:build`);
+  }
   if (/^lore-extra\d+\.js$/.test(from)) {
     delete require_.cache[require_.resolve(src)];
     const packed = packMod(require_(src));

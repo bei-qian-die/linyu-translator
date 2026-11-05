@@ -3,8 +3,9 @@
 const content = require('../../services/content');
 const { chromeMetrics } = require('../../utils/ui');
 const { syncChrome } = require('../../utils/pageBase');
+const pager = require('../../utils/pager');
 
-const PAGE_SIZE = 30;
+const PAGE_SIZE = pager.DEFAULT_SIZE;
 
 // 主包只保留纯文本检索（词库 / 句式）。词卡 / 名言 / 人物连同 557 张人物图和 570KB 数据
 // 一起在 pkg-hero 分包 —— 主包有 2MB 硬上限，这些内容放在主包会直接把包撑爆。
@@ -63,8 +64,9 @@ Page({
     placeholder: TAB_META.words.placeholder,
     shown: [],
     matched: 0,
-    hasMore: false,
-    rest: 0,
+    page: 1,
+    pages: 1,
+    jumpVal: '1',
     emptyTitle: TAB_META.words.empty,
     emptySub: '内容会随版本更新',
     ready: false,
@@ -163,9 +165,6 @@ Page({
 
     const filtered = content.filterList(base, keyword);
     this._filtered = filtered;
-    const visible = Math.min(PAGE_SIZE, filtered.length);
-    this._shownCount = visible;
-    const page = filtered.slice(0, visible).map((item, index) => this.toViewModel(tab, item, index, keyword));
 
     let emptyTitle = TAB_META[tab].empty;
     let emptySub = '内容会随版本更新';
@@ -174,37 +173,61 @@ Page({
       emptySub = '换个关键词试试';
     }
 
-    this.setData({
-      shown: page,
-      matched: filtered.length,
-      hasMore: filtered.length > visible,
-      rest: Math.max(0, filtered.length - visible),
-      emptyTitle,
-      emptySub,
+    this.setData({ matched: filtered.length, emptyTitle, emptySub }, () => {
+      // 换 tab / 换关键词都回到第 1 页；其它情况（翻页、跳页）保留当前页并自动夹范围
+      this.renderPage(reset || !this.data.page ? 1 : this.data.page);
     });
   },
 
-  // 增量 setData（B3）：只追加新条目路径，不再全量重建 shown
-  loadMore() {
-    if (!this.data.hasMore) return;
-    const tab = this.data.tab;
+  // 整页替换（B3 的第二版）：只把当前页的 30 条下发到 shown。
+  // 之前是累积追加，翻到第 100 页视图层要背 3000 个节点；整页替换后数据量恒定，
+  // 跳页也只是一次 slice，不用先「加载到那一页」。
+  renderPage(next) {
     const filtered = this._filtered || [];
-    const from = this._shownCount;
-    const to = Math.min(from + PAGE_SIZE, filtered.length);
-    if (to <= from) return;
-
-    const patch = {};
-    for (let i = from; i < to; i++) {
-      patch['shown[' + i + ']'] = this.toViewModel(tab, filtered[i], i, this.data.keyword);
-    }
-    patch.hasMore = filtered.length > to;
-    patch.rest = Math.max(0, filtered.length - to);
-    this._shownCount = to;
-    this.setData(patch);
+    const slice = pager.pageSlice(filtered, next, PAGE_SIZE);
+    const tab = this.data.tab;
+    const keyword = this.data.keyword;
+    this.setData({
+      shown: slice.items.map((item, i) => this.toViewModel(tab, item, slice.from + i, keyword)),
+      page: slice.page,
+      pages: slice.pages,
+      jumpVal: String(slice.page),
+    });
+    return slice.page;
   },
 
-  onReachBottom() {
-    this.loadMore();
+  // ---- 翻页 / 跳页 ----
+  // 页码输入框只收数字，保留 4 位（最多 9999 页，够用且不会把输入框撑爆）
+  onJumpInput(e) {
+    const digits = String(e.detail.value || '').replace(/[^0-9]/g, '').slice(0, 4);
+    this.setData({ jumpVal: digits });
+  },
+
+  doJump() {
+    const pages = this.data.pages;
+    const n = pager.parsePageInput(this.data.jumpVal);
+    if (n === null) {
+      this.setData({ jumpVal: String(this.data.page) });
+      wx.showToast({ title: `请输入 1~${pages} 的页码`, icon: 'none' });
+      return;
+    }
+    const landed = this.goPage(n);
+    if (n > pages) {
+      wx.showToast({ title: `共 ${pages} 页，已跳到末页`, icon: 'none' });
+    }
+    return landed;
+  },
+
+  stepPage(e) {
+    const delta = Number(e.currentTarget.dataset.delta) || 0;
+    if (!delta) return;
+    this.goPage(this.data.page + delta);
+  },
+
+  goPage(n) {
+    const landed = this.renderPage(n);
+    wx.pageScrollTo({ scrollTop: 0, duration: 0 });
+    return landed;
   },
 
   onShareAppMessage() {

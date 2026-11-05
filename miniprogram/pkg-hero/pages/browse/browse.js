@@ -5,8 +5,9 @@
 // 主包才腾得出空间。分包可以 require 主包的 services/content 与 data/_sst，反向不行。
 const content = require('../../../services/content');
 const { copy } = require('../../../utils/ui');
+const pager = require('../../../utils/pager');
 
-const PAGE_SIZE = 30;
+const PAGE_SIZE = pager.DEFAULT_SIZE;
 
 const TABS = [
   { key: 'cards', label: '词卡' },
@@ -61,8 +62,9 @@ Page({
     placeholder: TAB_META.cards.placeholder,
     shown: [],
     matched: 0,
-    hasMore: false,
-    rest: 0,
+    page: 1,
+    pages: 1,
+    jumpVal: '1',
     emptyTitle: TAB_META.cards.empty,
     emptySub: '内容会随版本更新',
     ready: false,
@@ -246,9 +248,6 @@ Page({
 
     const filtered = content.filterList(base, keyword);
     this._filtered = filtered;
-    const visible = Math.min(PAGE_SIZE, filtered.length);
-    this._shownCount = visible;
-    const page = filtered.slice(0, visible).map((item, index) => this.toViewModel(tab, item, index, keyword));
     const hasFilter =
       Boolean(keyword.trim()) ||
       (tab === 'cards' && this.data.cardType !== 'all') ||
@@ -269,37 +268,58 @@ Page({
       emptySub = '换个筛选条件试试';
     }
 
-    this.setData({
-      shown: page,
-      matched: filtered.length,
-      hasMore: filtered.length > visible,
-      rest: Math.max(0, filtered.length - visible),
-      emptyTitle,
-      emptySub,
+    this.setData({ matched: filtered.length, emptyTitle, emptySub }, () => {
+      // 换 tab / 换关键词 / 改筛选条件都回第 1 页；翻页时保留当前页并自动夹范围
+      this.renderPage(reset || !this.data.page ? 1 : this.data.page);
     });
   },
 
-  // 增量 setData（B3）：只追加新条目路径，不再全量重建 shown
-  loadMore() {
-    if (!this.data.hasMore) return;
-    const tab = this.data.tab;
+  // 整页替换（B3 的第二版）：只把当前页的 30 条下发到 shown，跳页不再需要「先加载到那一页」。
+  renderPage(next) {
     const filtered = this._filtered || [];
-    const from = this._shownCount;
-    const to = Math.min(from + PAGE_SIZE, filtered.length);
-    if (to <= from) return;
-
-    const patch = {};
-    for (let i = from; i < to; i++) {
-      patch['shown[' + i + ']'] = this.toViewModel(tab, filtered[i], i, this.data.keyword);
-    }
-    patch.hasMore = filtered.length > to;
-    patch.rest = Math.max(0, filtered.length - to);
-    this._shownCount = to;
-    this.setData(patch);
+    const slice = pager.pageSlice(filtered, next, PAGE_SIZE);
+    const tab = this.data.tab;
+    const keyword = this.data.keyword;
+    this.setData({
+      shown: slice.items.map((item, i) => this.toViewModel(tab, item, slice.from + i, keyword)),
+      page: slice.page,
+      pages: slice.pages,
+      jumpVal: String(slice.page),
+    });
+    return slice.page;
   },
 
-  onReachBottom() {
-    this.loadMore();
+  // ---- 翻页 / 跳页 ----
+  onJumpInput(e) {
+    const digits = String(e.detail.value || '').replace(/[^0-9]/g, '').slice(0, 4);
+    this.setData({ jumpVal: digits });
+  },
+
+  doJump() {
+    const pages = this.data.pages;
+    const n = pager.parsePageInput(this.data.jumpVal);
+    if (n === null) {
+      this.setData({ jumpVal: String(this.data.page) });
+      wx.showToast({ title: `请输入 1~${pages} 的页码`, icon: 'none' });
+      return;
+    }
+    const landed = this.goPage(n);
+    if (n > pages) {
+      wx.showToast({ title: `共 ${pages} 页，已跳到末页`, icon: 'none' });
+    }
+    return landed;
+  },
+
+  stepPage(e) {
+    const delta = Number(e.currentTarget.dataset.delta) || 0;
+    if (!delta) return;
+    this.goPage(this.data.page + delta);
+  },
+
+  goPage(n) {
+    const landed = this.renderPage(n);
+    wx.pageScrollTo({ scrollTop: 0, duration: 0 });
+    return landed;
   },
 
   openHero(e) {

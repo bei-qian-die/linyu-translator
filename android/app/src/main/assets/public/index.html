@@ -129,6 +129,23 @@
           </div>
         </div>
         <input class="search" :ref="(el) => setSearchRef('words', el)" v-model.trim="wordSearch" placeholder="搜索词条…（Ctrl+F）" />
+        <div class="pg-jump" v-if="wordsPages > 1">
+          <span class="pg-jump-label">跳至</span>
+          <input
+            class="pg-input"
+            type="number"
+            min="1"
+            :max="wordsPages"
+            inputmode="numeric"
+            placeholder="页码"
+            v-model="wordsJump.top"
+            @focus="$event.target.select()"
+            @keydown.enter.prevent="jumpWordsPage('top')"
+          />
+          <span class="pg-jump-label">页</span>
+          <button class="ghost small" @click="jumpWordsPage('top')">跳转</button>
+          <span class="pg-jump-tip">共 {{ wordsPages }} 页 · 敲数字 + 回车也能跳</span>
+        </div>
         <div class="filter-chips" v-if="wordSlots.length">
           <button class="chip" :class="{ on: wordSlot === '' }" @click="switchWordSlot('')">全部语义位</button>
           <button
@@ -167,6 +184,22 @@
         <div class="pager" v-if="wordsPages > 1">
           <button class="ghost small" :disabled="wordsPage === 1" @click="goWordsPage(wordsPage - 1)">‹ 上一页</button>
           <span class="pg-info">第 {{ wordsPage }} / {{ wordsPages }} 页 · 共 {{ wordsTotal }} 条</span>
+          <span class="pg-jump inline">
+            <span class="pg-jump-label">跳至</span>
+            <input
+              class="pg-input"
+              type="number"
+              min="1"
+              :max="wordsPages"
+              inputmode="numeric"
+              placeholder="页码"
+              v-model="wordsJump.bottom"
+              @focus="$event.target.select()"
+              @keydown.enter.prevent="jumpWordsPage('bottom')"
+            />
+            <span class="pg-jump-label">页</span>
+            <button class="ghost small" @click="jumpWordsPage('bottom')">跳转</button>
+          </span>
           <button class="ghost small" :disabled="wordsPage === wordsPages" @click="goWordsPage(wordsPage + 1)">下一页 ›</button>
         </div>
       </section>
@@ -192,6 +225,23 @@
         </div>
         <p class="fg-note bad" v-if="rulePatternOk === false">这个正则表达式编译不过去，先改成合法写法再保存。</p>
         <input class="search" :ref="(el) => setSearchRef('rules', el)" v-model.trim="ruleSearch" placeholder="搜索句式正则 / 模板 / 场景…" />
+        <div class="pg-jump" v-if="rulesPages > 1">
+          <span class="pg-jump-label">跳至</span>
+          <input
+            class="pg-input"
+            type="number"
+            min="1"
+            :max="rulesPages"
+            inputmode="numeric"
+            placeholder="页码"
+            v-model="rulesJump.top"
+            @focus="$event.target.select()"
+            @keydown.enter.prevent="jumpRulesPage('top')"
+          />
+          <span class="pg-jump-label">页</span>
+          <button class="ghost small" @click="jumpRulesPage('top')">跳转</button>
+          <span class="pg-jump-tip">共 {{ rulesPages }} 页 · 敲数字 + 回车也能跳</span>
+        </div>
         <div class="table-wrap">
           <table>
             <thead>
@@ -219,6 +269,22 @@
         <div class="pager" v-if="rulesPages > 1">
           <button class="ghost small" :disabled="rulesPage === 1" @click="goRulesPage(rulesPage - 1)">‹ 上一页</button>
           <span class="pg-info">第 {{ rulesPage }} / {{ rulesPages }} 页 · 共 {{ rulesTotal }} 条</span>
+          <span class="pg-jump inline">
+            <span class="pg-jump-label">跳至</span>
+            <input
+              class="pg-input"
+              type="number"
+              min="1"
+              :max="rulesPages"
+              inputmode="numeric"
+              placeholder="页码"
+              v-model="rulesJump.bottom"
+              @focus="$event.target.select()"
+              @keydown.enter.prevent="jumpRulesPage('bottom')"
+            />
+            <span class="pg-jump-label">页</span>
+            <button class="ghost small" @click="jumpRulesPage('bottom')">跳转</button>
+          </span>
           <button class="ghost small" :disabled="rulesPage === rulesPages" @click="goRulesPage(rulesPage + 1)">下一页 ›</button>
         </div>
         <p class="tip">句式按编号顺序生效（越靠前越优先），模板里 $1 表示第一个捕获组；句式命中的内容仍会继续做词条替换</p>
@@ -258,6 +324,23 @@
           </div>
         </div>
         <input class="search" :ref="(el) => setSearchRef('cards', el)" v-model.trim="cardSearch" placeholder="搜索词名 / 释义 / 出处…" />
+        <div class="pg-jump" v-if="cardsPages > 1">
+          <span class="pg-jump-label">跳至</span>
+          <input
+            class="pg-input"
+            type="number"
+            min="1"
+            :max="cardsPages"
+            inputmode="numeric"
+            placeholder="页码"
+            v-model="cardsJump.top"
+            @focus="$event.target.select()"
+            @keydown.enter.prevent="jumpCardsPage('top')"
+          />
+          <span class="pg-jump-label">页</span>
+          <button class="ghost small" @click="jumpCardsPage('top')">跳转</button>
+          <span class="pg-jump-tip">共 {{ cardsPages }} 页 · 敲数字 + 回车也能跳</span>
+        </div>
         <div class="card-grid">
           <div class="flashcard" v-for="c in pagedCards" :key="c.id" @click="flipCard(c.term)">
             <div class="fc-inner" :class="{ flipped: flipped.has(c.term) }">
@@ -283,6 +366,22 @@
         <div class="pager" v-if="cardsPages > 1">
           <button class="ghost small" :disabled="cardsPage === 1" @click="goCardsPage(cardsPage - 1)">‹ 上一页</button>
           <span class="pg-info">第 {{ cardsPage }} / {{ cardsPages }} 页 · 共 {{ cardsTotal }} 张</span>
+          <span class="pg-jump inline">
+            <span class="pg-jump-label">跳至</span>
+            <input
+              class="pg-input"
+              type="number"
+              min="1"
+              :max="cardsPages"
+              inputmode="numeric"
+              placeholder="页码"
+              v-model="cardsJump.bottom"
+              @focus="$event.target.select()"
+              @keydown.enter.prevent="jumpCardsPage('bottom')"
+            />
+            <span class="pg-jump-label">页</span>
+            <button class="ghost small" @click="jumpCardsPage('bottom')">跳转</button>
+          </span>
           <button class="ghost small" :disabled="cardsPage === cardsPages" @click="goCardsPage(cardsPage + 1)">下一页 ›</button>
         </div>
       </section>
@@ -483,6 +582,23 @@
           </div>
         </div>
         <input class="search" :ref="(el) => setSearchRef('quotes', el)" v-model.trim="quoteSearch" placeholder="搜索名言 / 发言人 / 出处…" />
+        <div class="pg-jump" v-if="quotesPages > 1">
+          <span class="pg-jump-label">跳至</span>
+          <input
+            class="pg-input"
+            type="number"
+            min="1"
+            :max="quotesPages"
+            inputmode="numeric"
+            placeholder="页码"
+            v-model="quotesJump.top"
+            @focus="$event.target.select()"
+            @keydown.enter.prevent="jumpQuotesPage('top')"
+          />
+          <span class="pg-jump-label">页</span>
+          <button class="ghost small" @click="jumpQuotesPage('top')">跳转</button>
+          <span class="pg-jump-tip">共 {{ quotesPages }} 页 · 敲数字 + 回车也能跳</span>
+        </div>
         <div class="quote-wall">
           <figure class="quote-card" v-for="q in pagedQuotes" :key="q.id">
             <div class="q-mark">“</div>
@@ -501,6 +617,22 @@
         <div class="pager" v-if="quotesPages > 1">
           <button class="ghost small" :disabled="quotesPage === 1" @click="goQuotesPage(quotesPage - 1)">‹ 上一页</button>
           <span class="pg-info">第 {{ quotesPage }} / {{ quotesPages }} 页 · 共 {{ quotesTotal }} 条</span>
+          <span class="pg-jump inline">
+            <span class="pg-jump-label">跳至</span>
+            <input
+              class="pg-input"
+              type="number"
+              min="1"
+              :max="quotesPages"
+              inputmode="numeric"
+              placeholder="页码"
+              v-model="quotesJump.bottom"
+              @focus="$event.target.select()"
+              @keydown.enter.prevent="jumpQuotesPage('bottom')"
+            />
+            <span class="pg-jump-label">页</span>
+            <button class="ghost small" @click="jumpQuotesPage('bottom')">跳转</button>
+          </span>
           <button class="ghost small" :disabled="quotesPage === quotesPages" @click="goQuotesPage(quotesPage + 1)">下一页 ›</button>
         </div>
       </section>
@@ -852,6 +984,14 @@
       <div class="toast" v-if="toast.text">
         <span>{{ toast.text }}</span>
         <button class="toast-undo" v-if="toast.undo" @click="doUndo">撤销</button>
+      </div>
+    </transition>
+
+    <!-- 键盘跳页提示：焦点不在输入框时直接敲数字，这里实时显示会跳到第几页 -->
+    <transition name="fade">
+      <div class="kb-jump" v-if="kbJump.show">
+        <span class="kb-jump-num">{{ kbJump.digits }}</span>
+        <span class="kb-jump-txt">{{ kbJumpText }}</span>
       </div>
     </transition>
   </div>

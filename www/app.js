@@ -186,6 +186,9 @@ createApp({
     }
 
     // ---- 分页 ----
+    // 每一处分页列表都带两个「跳至第 N 页」输入框（顶部工具条一个、底部翻页条一个）。
+    // 两者分开存草稿：在顶部输入的页码不会同步出现在底部，反之亦然 —— 共用一个 ref
+    // 会出现「上面输入 12，下面跟着显示 12」的诡异联动。
     function usePaged(sourceRef) {
       const page = ref(1);
       const total = computed(() => sourceRef.value.length);
@@ -194,17 +197,38 @@ createApp({
         const start = (page.value - 1) * PAGE_SIZE;
         return sourceRef.value.slice(start, start + PAGE_SIZE);
       });
+      const draft = reactive({ top: '', bottom: '' });
       function go(p) {
         page.value = Math.min(Math.max(1, p), pages.value);
         window.scrollTo(0, 0);
       }
+      // 把用户敲的东西解析成页码：容忍空格、全角数字、前后杂质（比如「第10页」只取 10）
+      function parsePage(raw) {
+        const text = raw === null || raw === undefined ? '' : String(raw);
+        const digits = text.replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0)).match(/\d+/);
+        if (!digits) return null;
+        const n = parseInt(digits[0], 10);
+        return Number.isFinite(n) && n > 0 ? n : null;
+      }
+      // which: 'top' | 'bottom'。返回是否真的跳了，方便外面提示
+      function jumpTo(which) {
+        const name = which === 'bottom' ? 'bottom' : 'top';
+        const n = parsePage(draft[name]);
+        draft.top = '';
+        draft.bottom = '';
+        if (n === null) return false;
+        go(n);
+        return true;
+      }
       function reset() {
         page.value = 1;
+        draft.top = '';
+        draft.bottom = '';
       }
       watch(pages, (n) => {
         if (page.value > n) page.value = n;
       });
-      return { page, pages, total, rows, go, reset };
+      return { page, pages, total, rows, go, reset, draft, jumpTo };
     }
 
     // ---- 开发者模式 ----
@@ -585,7 +609,7 @@ createApp({
       return matchRows(base, wordSearch.value, ['zh', 'linyu', 'alias', 'sense', 'source', 'slot']);
     });
     const wordsView = usePaged(filteredWords);
-    const { page: wordsPage, pages: wordsPages, total: wordsTotal, rows: pagedWords, go: goWordsPage, reset: resetWordsPage } = wordsView;
+    const { page: wordsPage, pages: wordsPages, total: wordsTotal, rows: pagedWords, go: goWordsPage, reset: resetWordsPage, jumpTo: jumpWordsPage, draft: wordsJump } = wordsView;
     watch(wordSearch, resetWordsPage);
 
     // 一个词条可以挂多个语义位（用「/」分隔），筛选时按拆分后的标签匹配。
@@ -728,7 +752,7 @@ createApp({
     });
     const filteredRules = computed(() => matchRows(rules.value, ruleSearch.value, ['pattern', 'template', 'note', 'scene', 'examples', 'src']));
     const rulesView = usePaged(filteredRules);
-    const { page: rulesPage, pages: rulesPages, total: rulesTotal, rows: pagedRules, go: goRulesPage, reset: resetRulesPage } = rulesView;
+    const { page: rulesPage, pages: rulesPages, total: rulesTotal, rows: pagedRules, go: goRulesPage, reset: resetRulesPage, jumpTo: jumpRulesPage, draft: rulesJump } = rulesView;
     watch(ruleSearch, resetRulesPage);
 
     async function loadRules() {
@@ -806,7 +830,7 @@ createApp({
       return matchRows(byType, cardSearch.value, ['term', 'meaning', 'detail', 'example', 'source', 'hero', 'rel']);
     });
     const cardsView = usePaged(filteredCards);
-    const { page: cardsPage, pages: cardsPages, total: cardsTotal, rows: pagedCards, go: goCardsPage, reset: resetCardsPage } = cardsView;
+    const { page: cardsPage, pages: cardsPages, total: cardsTotal, rows: pagedCards, go: goCardsPage, reset: resetCardsPage, jumpTo: jumpCardsPage, draft: cardsJump } = cardsView;
     watch([cardSearch, cardFilter], resetCardsPage);
 
     function flipCard(term) {
@@ -901,8 +925,48 @@ createApp({
     const editingQuoteId = computed(() => quoteForm.id);
     const filteredQuotes = computed(() => matchRows(quotes.value, quoteSearch.value, ['text', 'author', 'hero', 'src', 'scene', 'rel']));
     const quotesView = usePaged(filteredQuotes);
-    const { page: quotesPage, pages: quotesPages, total: quotesTotal, rows: pagedQuotes, go: goQuotesPage, reset: resetQuotesPage } = quotesView;
+    const { page: quotesPage, pages: quotesPages, total: quotesTotal, rows: pagedQuotes, go: goQuotesPage, reset: resetQuotesPage, jumpTo: jumpQuotesPage, draft: quotesJump } = quotesView;
     watch(quoteSearch, resetQuotesPage);
+
+    // ---- 键盘直接敲数字翻页 ----
+    // 焦点不在任何输入控件时，直接敲「1」「0」再回车，就跳到第 10 页 —— 不用先点输入框。
+    // 只在当前视图确实分了多页时才接管数字键，且输入控件聚焦时一律放行，
+    // 免得把搜索框、编辑表单里的数字吃掉。
+    const kbJump = reactive({ digits: '', show: false });
+    let kbTimer = null;
+    function activePager() {
+      switch (view.value) {
+        case 'words': return wordsView;
+        case 'rules': return rulesView;
+        case 'cards': return cardsView;
+        case 'quotes': return quotesView;
+        default: return null;
+      }
+    }
+    const kbJumpText = computed(() => (kbJump.digits ? `跳到第 ${kbJump.digits} 页 · 回车确认 · Esc 取消` : ''));
+    function kbClear() {
+      clearTimeout(kbTimer);
+      kbJump.digits = '';
+      kbJump.show = false;
+    }
+    function kbJumpGo() {
+      const pager = activePager();
+      const n = parseInt(kbJump.digits, 10);
+      kbClear();
+      if (!pager || !Number.isFinite(n)) return;
+      pager.go(n);
+      // 顶部/底部两个输入框同步显示落点，用户能看见「确实跳到第几页了」
+      pager.draft.top = String(pager.page.value);
+      pager.draft.bottom = String(pager.page.value);
+    }
+    // 数字键能否被当成页码：焦点不在输入控件、当前视图有分页
+    function kbDigitsOk(el) {
+      const tag = el && el.tagName ? el.tagName.toLowerCase() : '';
+      if (tag === 'input' || tag === 'textarea' || tag === 'select') return false;
+      if (el && el.isContentEditable) return false;
+      const pager = activePager();
+      return Boolean(pager && pager.pages.value > 1);
+    }
 
     async function loadQuotes() {
       try {
@@ -1621,8 +1685,17 @@ createApp({
         } else if (mod && e.key === ',') {
           e.preventDefault();
           openSettings();
+        } else if (e.key === 'Enter' && kbJump.show && kbJump.digits) {
+          e.preventDefault();
+          kbJumpGo();
+        } else if (!mod && !e.altKey && /^[0-9]$/.test(e.key) && kbDigitsOk(e.target)) {
+          kbJump.digits = (kbJump.digits + e.key).slice(0, 4);
+          kbJump.show = true;
+          clearTimeout(kbTimer);
+          kbTimer = setTimeout(kbClear, 2200);
         } else if (e.key === 'Escape') {
-          if (showChangelog.value) closeChangelog();
+          if (kbJump.show) kbClear();
+          else if (showChangelog.value) closeChangelog();
           else if (showSettings.value) showSettings.value = false;
           else if (view.value === 'heroes' && selectedHero.value) backToHeroes();
           else if (view.value === 'heroes' && heroEditing.value) cancelHeroForm();
@@ -1649,16 +1722,16 @@ createApp({
       words, wordSearch, wordForm, editingWordId, wordCount, popLevels, filteredWords, pagedWords,
       wordSlot, wordSlots, switchWordSlot,
       ruleCount, cardCount, quoteCount, allHeroCount, currentStat,
-      wordsPage, wordsPages, wordsTotal, goWordsPage, setSearchRef,
+      wordsPage, wordsPages, wordsTotal, goWordsPage, jumpWordsPage, wordsJump, setSearchRef,
       saveWord, resetWordForm, editWord, removeWord,
       rules, ruleSearch, ruleForm, editingRuleId, rulePatternOk, pagedRules,
-      rulesPage, rulesPages, rulesTotal, goRulesPage,
+      rulesPage, rulesPages, rulesTotal, goRulesPage, jumpRulesPage, rulesJump,
       saveRule, resetRuleForm, editRule, removeRule,
       history, histSearch, filteredHistory, setHistoryLimit, historyLimit, reuseHistory, clearHistory, fmtTime, fmtSize,
       cards, cardFilter, cardSearch, cardTypes, cardTypeOpts, filteredCards, pagedCards,
-      cardsPage, cardsPages, cardsTotal, goCardsPage,
+      cardsPage, cardsPages, cardsTotal, goCardsPage, jumpCardsPage, cardsJump, kbJump, kbJumpText,
       flipped, flipCard, typeLabel, cardForm, editingCardId, saveCard, resetCardForm, editCard, removeCard,
-      quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage,
+      quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage, jumpQuotesPage, quotesJump,
       quoteForm, editingQuoteId, saveQuote, resetQuoteForm, editQuote, removeQuote, heroNameOpts,
       musicItems, musicGroups, musicGroup, switchMusicGroup, musicSearch, filteredMusic,
       musicPlatforms, musicPlatform, musicPlatformCount,

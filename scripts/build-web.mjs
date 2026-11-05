@@ -214,6 +214,18 @@ async function main() {
   await fs.writeFile(path.join(out, 'seed-data.js'), seedJs, 'utf8');
   await copyFile(seedJsonPath, path.join(out, 'seed.json'));
 
+  // favicon：scripts/make-favicon.py 的产物（源图 build/icon.png）铺到产物根目录
+  const faviconDir = path.join(root, 'build', 'favicon');
+  const faviconFiles = ['favicon.ico', 'favicon-16.png', 'favicon-32.png', 'apple-touch-icon.png', 'icon-192.png'];
+  try {
+    for (const name of faviconFiles) {
+      await copyFile(path.join(faviconDir, name), path.join(out, name));
+    }
+  } catch (err) {
+    console.warn('[build-web] favicon 缺失，先跑 `python scripts/make-favicon.py`：', err.message);
+    throw err;
+  }
+
   // ---- Web 版 index.html：替换 <script> 加载顺序 ----
   // 用 src/renderer/index.html 作为基础，移除 Capacitor 特有脚本，加入 web/ 入口
   let html = await fs.readFile(path.join(out, 'index.html'), 'utf8');
@@ -239,7 +251,12 @@ async function main() {
     '  <meta property="og:title" content="淋语翻译器" />\n' +
     '  <meta property="og:description" content="中文 → 淋语在线翻译器，本地即时翻译；登录后支持云端词库与跨设备同步" />\n' +
     '  <meta property="og:type" content="website" />\n' +
-    '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 32 32\'><rect width=\'32\' height=\'32\' rx=\'8\' fill=\'%23e64fa2\'/><text x=\'16\' y=\'22\' text-anchor=\'middle\' font-size=\'18\' fill=\'white\'>淋</text></svg>" />'
+    // favicon 由 scripts/make-favicon.py 从 build/icon.png 生成，复制到产物根目录。
+    // 旧版是内联 SVG（粉底白字「淋」），换成应用图标的实拍位图。
+    '  <link rel="icon" href="favicon.ico" sizes="any" />\n' +
+    '  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />\n' +
+    '  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />\n' +
+    '  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />'
   );
 
   // CSP 放宽 blink: 用于 IndexedDB（Blob URL 存储图片时需要）
@@ -306,6 +323,11 @@ async function main() {
     // 处理根目录相对路径（seed-data.js, seed.json, style.css, app.js）
     html = html.replace(
       /(<(?:script src|link [^>]* href)=")(seed-data\.js|seed\.json|style\.css|app\.js)(")/g,
+      (m, pre, url, post) => pre + url + '?sharecode=' + sharecode + post
+    );
+    // favicon 也在根目录：少了 sharecode，站点会直接 403，标签页只能显示默认白纸图标
+    html = html.replace(
+      /(<link [^>]* href=")(favicon\.ico|favicon-16\.png|favicon-32\.png|apple-touch-icon\.png)(")/g,
       (m, pre, url, post) => pre + url + '?sharecode=' + sharecode + post
     );
   }
