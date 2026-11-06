@@ -347,6 +347,48 @@ function bakFiles() {
     mem.close();
   });
 
+  // ---- 音乐用户态：收藏 / 最近浏览（桌面与安卓共用这两张 SQLite 表）----
+  // 静态音源不进库，这两张表只存「收藏了哪条 slug」「最近点开过哪条 slug」。
+  await atest('收藏切换幂等：两次 toggle 回到原状态', async () => {
+    const mdb = await createDb({ seed, lore });
+    const before = mdb.getMusicFavs();
+    const r1 = mdb.toggleMusicFav('yhx-fav-probe', 'douyin');
+    assert.strictEqual(r1.data.favored, true);
+    assert.strictEqual(mdb.getMusicFavs().length, before.length + 1);
+    const r2 = mdb.toggleMusicFav('yhx-fav-probe', 'douyin');
+    assert.strictEqual(r2.data.favored, false);
+    assert.strictEqual(mdb.getMusicFavs().length, before.length);
+    assert.ok(!mdb.getMusicFavs().find((f) => f.id === 'yhx-fav-probe'), '取消后不该还在');
+    mdb.close();
+  });
+
+  await atest('收藏记录带平台字段且按时间倒序', async () => {
+    const mdb = await createDb({ seed, lore });
+    mdb.toggleMusicFav('fav-a', 'douyin');
+    mdb.toggleMusicFav('fav-b', 'bilibili');
+    const favs = mdb.getMusicFavs();
+    assert.strictEqual(favs.length, 2);
+    assert.strictEqual(favs[0].id, 'fav-b', '后收藏的应排在前');
+    assert.strictEqual(favs[0].platform, 'bilibili');
+    assert.ok(favs[0].createdAt, '缺少 createdAt');
+    mdb.close();
+  });
+
+  await atest('浏览记录去重、倒序并截断到最近 50 条', async () => {
+    const mdb = await createDb({ seed, lore });
+    for (let i = 0; i < 60; i++) mdb.markMusicSeen('seen-' + i);
+    const rows = mdb.getMusicSeen();
+    assert.strictEqual(rows.length, 50, '超过 50 条没截断');
+    assert.strictEqual(rows[0].id, 'seen-59', '最新一条不在最前');
+    assert.ok(!rows.find((r) => r.id === 'seen-0'), '最老一条没被挤掉');
+    mdb.markMusicSeen('seen-30');
+    const again = mdb.getMusicSeen();
+    assert.strictEqual(again.length, 50, '重复点开不该多出一行');
+    assert.strictEqual(again[0].id, 'seen-30', '重复点开后应回到最前');
+    assert.strictEqual(again.filter((r) => r.id === 'seen-30').length, 1, '去重失败');
+    mdb.close();
+  });
+
   console.log(failed ? `\n${failed} 项失败` : '\n数据层全部通过');
   process.exitCode = failed ? 1 : 0;
 })().catch((err) => {

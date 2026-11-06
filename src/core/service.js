@@ -361,6 +361,13 @@ function createService({ db, auth, translator, version, config, polish }) {
     },
     readPref,
     writePref,
+
+    // ---- 音乐用户态（收藏 / 最近浏览）----
+    // 静态音源不进库；这里只落用户自己的收藏与浏览记录，四端同名同语义。
+    getMusicFavs: () => db.getMusicFavs(),
+    toggleMusicFav: (id, platform) => ok(db.toggleMusicFav(id, platform)).data,
+    getMusicSeen: () => db.getMusicSeen(),
+    markMusicSeen: (id) => ok(db.markMusicSeen(id)).data,
   };
 }
 

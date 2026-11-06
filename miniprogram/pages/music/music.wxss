@@ -99,6 +99,101 @@
   color: #00aeec;
 }
 
+.mi-plat.netease {
+  background: rgba(236, 65, 65, 0.12);
+  color: #ec4141;
+}
+
+.mi-plat.qq {
+  background: rgba(49, 194, 124, 0.14);
+  color: #2aa86b;
+}
+
+/* 收藏心形：空心常态，实心表示已收藏 */
+.mi-fav {
+  flex: none;
+  margin-left: 12rpx;
+  padding: 0 6rpx;
+  font-size: 30rpx;
+  line-height: 1.2;
+  color: var(--faint);
+}
+
+.mi-fav.on {
+  color: #fe2c55;
+}
+
+/* 次级筛选：查看（全部/收藏/最近）+ 排序 + 每日/随机 */
+.sub-row,
+.sort-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12rpx;
+  margin-bottom: 16rpx;
+}
+
+.sub-chip,
+.sort-chip,
+.jump-chip {
+  flex: 0 0 auto;
+  padding: 8rpx 20rpx;
+  border: 2rpx solid var(--line);
+  border-radius: 999rpx;
+  color: var(--muted);
+  font-size: 20rpx;
+  line-height: 1.4;
+}
+
+.sub-chip.on,
+.sort-chip.on {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.jump-chip {
+  border-color: rgba(254, 44, 85, 0.3);
+  color: #fe2c55;
+}
+
+.sub-count {
+  margin-left: 6rpx;
+  font-size: 17rpx;
+  opacity: 0.75;
+}
+
+.hint-line,
+.pick-line {
+  margin: 0 0 16rpx;
+  font-size: 19rpx;
+  line-height: 1.6;
+  color: var(--faint);
+}
+
+.pick-name {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.pick-jump {
+  margin-left: 10rpx;
+  color: var(--accent);
+}
+
+/* 分享按钮：跟其它 mi-btn 同形，但要清掉原生 button 的默认样式 */
+.share-btn {
+  margin: 0;
+  width: auto;
+  font-size: 19rpx;
+  line-height: 1.5;
+  background: transparent;
+}
+
+.share-btn::after {
+  border: none;
+}
+
 /* 平台筛选：比分组胶囊小一号，横排可滚 */
 .plat-tabs {
   display: flex;

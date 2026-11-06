@@ -327,6 +327,12 @@ function registerIpc() {
   ipcMain.handle('ly:prefs:get', wrap(() => svc.getPrefs()));
   ipcMain.handle('ly:prefs:set', wrap((key, value) => svc.setPref(String(key), value)));
 
+  // 音乐用户态：只有收藏与浏览记录进库，静态音源本身仍走静态模块
+  ipcMain.handle('ly:music:favs', wrap(() => svc.getMusicFavs()));
+  ipcMain.handle('ly:music:toggleFav', wrap((id, platform) => svc.toggleMusicFav(id, platform)));
+  ipcMain.handle('ly:music:seen', wrap(() => svc.getMusicSeen()));
+  ipcMain.handle('ly:music:markSeen', wrap((id) => svc.markMusicSeen(id)));
+
   ipcMain.handle('ly:meta', wrap(() => svc.meta()));
 
   // ---- 以下是桌面独有的：图片目录、日志目录、外部链接 ----

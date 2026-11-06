@@ -24,6 +24,66 @@
   // 标记为 Web 环境
   window.__IS_WEB = true;
 
+  // ---- 音乐用户态：Web 端走 localStorage，不写 SQLite ----
+  // 键名 linyu.music.favs / linyu.music.seen 与现有的 linyu.pref.* 前缀并存但独立命名。
+  // 方法名与桌面 preload、安卓 service 完全一致；返回值也要同形：
+  // 成功返回数据本体（数组 / {id,favored}），失败抛异常 —— 由上层 safe() 包成 {ok,data}。
+  (function () {
+    var FAV_KEY = 'linyu.music.favs';
+    var SEEN_KEY = 'linyu.music.seen';
+    function read(key) {
+      try {
+        var raw = localStorage.getItem(key);
+        if (!raw) return [];
+        var arr = JSON.parse(raw);
+        return Array.isArray(arr) ? arr : [];
+      } catch (e) {
+        return [];
+      }
+    }
+    function write(key, arr) {
+      try {
+        localStorage.setItem(key, JSON.stringify(arr));
+      } catch (e) {
+        /* 隐私模式 / 配额满：静默降级为内存态，不打断音乐页 */
+      }
+    }
+    function slugOf(id) {
+      var s = String(id == null ? '' : id).trim();
+      if (!s) throw new Error('缺少音源 id');
+      return s;
+    }
+    window.__linyuMusicStore = {
+      getMusicFavs: function () {
+        return read(FAV_KEY);
+      },
+      toggleMusicFav: function (id, platform) {
+        var slug = slugOf(id);
+        var arr = read(FAV_KEY);
+        var idx = -1;
+        for (var i = 0; i < arr.length; i++) if (arr[i] && arr[i].id === slug) { idx = i; break; }
+        if (idx >= 0) {
+          arr.splice(idx, 1);
+          write(FAV_KEY, arr);
+          return { id: slug, favored: false };
+        }
+        arr.unshift({ id: slug, platform: String(platform || 'douyin'), createdAt: new Date().toISOString() });
+        write(FAV_KEY, arr);
+        return { id: slug, favored: true };
+      },
+      getMusicSeen: function () {
+        return read(SEEN_KEY).slice(0, 50);
+      },
+      markMusicSeen: function (id) {
+        var slug = slugOf(id);
+        var arr = read(SEEN_KEY).filter(function (x) { return x && x.id !== slug; });
+        arr.unshift({ id: slug, seenAt: new Date().toISOString() });
+        write(SEEN_KEY, arr.slice(0, 50));
+        return { id: slug, seen: true };
+      },
+    };
+  })();
+
   // ---- 0. 占位 window.api（与 entry.js 完全一致）----
   if (!window.api || typeof window.api.then !== 'function') {
     var __resolveReady;
@@ -62,6 +122,20 @@
               }
             } catch {}
             return Promise.resolve({ ok: true, data: prefs });
+          };
+        }
+        // 音乐用户态不依赖库初始化：库没就绪时也能直接读 localStorage，
+        // 避免音乐页刚打开就白屏（真实 api 就绪后由 mobile/api.js 接管，同源同一份数据）
+        if (prop === 'getMusicFavs' || prop === 'getMusicSeen' ||
+            prop === 'toggleMusicFav' || prop === 'markMusicSeen') {
+          return function () {
+            try {
+              var store = window.__linyuMusicStore;
+              var data = store[prop].apply(store, arguments);
+              return Promise.resolve({ ok: true, data: data });
+            } catch (err) {
+              return Promise.resolve({ ok: false, error: (err && err.message) || String(err) });
+            }
           };
         }
         // Web 端开放外部链接直接在浏览器新标签打开

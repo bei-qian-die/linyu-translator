@@ -1,7 +1,13 @@
 {
   "source": "douyin",
-  "batch": 3,
+  "batch": 4,
   "collected_at": "2026-11-06",
+  "platforms": [
+    "douyin",
+    "bilibili",
+    "netease",
+    "qqmusic"
+  ],
   "items": [
     {
       "id": "yhx_wildflower_dj",
@@ -2788,10 +2794,3199 @@
           "music_used": "TEXAS HOLD 'EM（Jiafei Remix·野花香美学版）"
         }
       ]
+    },
+    {
+      "id": "ne_1398451959",
+      "name": "野花香（DJ版）",
+      "author": "心歌",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1398451959",
+      "music_id": "1398451959",
+      "platform_id": "1398451959",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "3209",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "莫斯满&老猫 - 野花香（1080P官方MV）",
+          "author": "熊肚兜",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ZE411q7sy",
+          "aweme_id": "BV1ZE411q7sy",
+          "play_count": 692907,
+          "like_count": "12601",
+          "duration": 210,
+          "meme_point": "莫斯满&老猫 - 野花香（1080P官方MV）｜B 站「熊肚兜」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香（DJ版）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1449559492",
+      "name": "野花香 (DJ版)",
+      "author": "69/肖涵/沈子凡",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1449559492",
+      "music_id": "1449559492",
+      "platform_id": "1449559492",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "2010",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "新舞台新合唱！张玮& 金润吉&王谦&纪海星《野花香》魔力歌先生4K+Hi-Res",
+          "author": "微音视",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1CK9MBfE85",
+          "aweme_id": "BV1CK9MBfE85",
+          "play_count": 105395,
+          "like_count": "786",
+          "duration": 295,
+          "meme_point": "新舞台新合唱！张玮& 金润吉&王谦&纪海星《野花香》魔力歌先生4K+Hi-Res｜B 站「微音视」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (DJ版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2165412590",
+      "name": "野花香 (Haocore Mix)",
+      "author": "Daily天利/EndCat-终猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2165412590",
+      "music_id": "2165412590",
+      "platform_id": "2165412590",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "1660",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "小伙将落水的嫂子救了起来，没想到嫂子竟提出一个奇怪的要求........#山村野花香",
+          "author": "威哥电影",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1bRCRBjEoj",
+          "aweme_id": "BV1bRCRBjEoj",
+          "play_count": 63442,
+          "like_count": "176",
+          "duration": 810,
+          "meme_point": "小伙将落水的嫂子救了起来，没想到嫂子竟提出一个奇怪的要求........#山村野｜B 站「威哥电影」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (Haocore Mix)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1384290570",
+      "name": "野花香 (DJ何鹏版)",
+      "author": "莫斯满",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1384290570",
+      "music_id": "1384290570",
+      "platform_id": "1384290570",
+      "share_url": null,
+      "search_keyword": "野花香 广场舞",
+      "usage_count": "1515",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "你永远不知道扇宝到底有多潮【野花香】【歌词附】",
+          "author": "宝扇",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1t54y1T7o9",
+          "aweme_id": "BV1t54y1T7o9",
+          "play_count": 61466,
+          "like_count": "1535",
+          "duration": 193,
+          "meme_point": "你永远不知道扇宝到底有多潮【野花香】【歌词附】｜B 站「宝扇」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (DJ何鹏版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2145176909",
+      "name": "大香蕉野花香",
+      "author": "bubba777",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2145176909",
+      "music_id": "2145176909",
+      "platform_id": "2145176909",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "872",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "CupcakKe 杯糕姐唱 - 野花香 Jiafei之歌 【非AI】",
+          "author": "账号已注销",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Vm4y1Y7RA",
+          "aweme_id": "BV1Vm4y1Y7RA",
+          "play_count": 34283,
+          "like_count": "1461",
+          "duration": 193,
+          "meme_point": "CupcakKe 杯糕姐唱 - 野花香 Jiafei之歌 【非AI】｜B 站「账号已注销」的二创，把野花香音源当卡点 BGM",
+          "music_used": "大香蕉野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2020827343",
+      "name": "野花香(镜音连)",
+      "author": "蓝蓝不淘气",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2020827343",
+      "music_id": "2020827343",
+      "platform_id": "2020827343",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "518",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "《野花香》太洗脑了！",
+          "author": "影视溪溪酱",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV15ndrBjER3",
+          "aweme_id": "BV15ndrBjER3",
+          "play_count": 33671,
+          "like_count": "197",
+          "duration": 240,
+          "meme_point": "《野花香》太洗脑了！｜B 站「影视溪溪酱」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香(镜音连)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3365975994",
+      "name": "野花香 (Live版)",
+      "author": "金润吉/纪海星/王谦/张玮",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "翻唱"
+      ],
+      "music_url": "https://music.163.com/song?id=3365975994",
+      "music_id": "3365975994",
+      "platform_id": "3365975994",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "370",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "《野花香》2020最流行的广场舞，大家快来学跳健身",
+          "author": "支英专业健身",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1mg4y1b7hG",
+          "aweme_id": "BV1mg4y1b7hG",
+          "play_count": 24431,
+          "like_count": "28",
+          "duration": 163,
+          "meme_point": "《野花香》2020最流行的广场舞，大家快来学跳健身｜B 站「支英专业健身」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (Live版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2107045333",
+      "name": "野花香 × Super Freaky Girl (Jiafei Remix)",
+      "author": "Ouki Ellis/Nicki Minаj/Jiafei",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://music.163.com/song?id=2107045333",
+      "music_id": "2107045333",
+      "platform_id": "2107045333",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "354",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香( Delicate's Version)",
+          "author": "三梦的紫微帮",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1YP4y1Z76T",
+          "aweme_id": "BV1YP4y1Z76T",
+          "play_count": 19866,
+          "like_count": "644",
+          "duration": 62,
+          "meme_point": "野花香( Delicate's Version)｜B 站「三梦的紫微帮」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 × Super Freaky Girl (Jiafei Remix)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3322260199",
+      "name": "Gulp Gee",
+      "author": "Cupcakke Jiafei",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://music.163.com/song?id=3322260199",
+      "music_id": "3322260199",
+      "platform_id": "3322260199",
+      "share_url": null,
+      "search_keyword": "gulp",
+      "usage_count": "289",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "糕言糕语cupcakke语音不完全收录",
+          "author": "JiaFeirusty",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1E7WheKEMJ",
+          "aweme_id": "BV1E7WheKEMJ",
+          "play_count": 80121,
+          "like_count": "3297",
+          "duration": 122,
+          "meme_point": "糕言糕语cupcakke语音不完全收录｜B 站「JiaFeirusty」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "Gulp Gee"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2132310924",
+      "name": "Jiafei-群青·野花香",
+      "author": "bubba777",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei"
+      ],
+      "music_url": "https://music.163.com/song?id=2132310924",
+      "music_id": "2132310924",
+      "platform_id": "2132310924",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "120",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "家花不如野花香",
+          "author": "雷金雷夫",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1V67Q6UE3s",
+          "aweme_id": "BV1V67Q6UE3s",
+          "play_count": 17950,
+          "like_count": "663",
+          "duration": 61,
+          "meme_point": "家花不如野花香｜B 站「雷金雷夫」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Jiafei-群青·野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2634780971",
+      "name": "Gulp Gulp Gulp",
+      "author": "MEMESVICES",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://music.163.com/song?id=2634780971",
+      "music_id": "2634780971",
+      "platform_id": "2634780971",
+      "share_url": null,
+      "search_keyword": "gulp",
+      "usage_count": "44",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "让我一次吃个够！(Gulp!)【以撒的结合 忏悔 挑战41 异食挑战】",
+          "author": "铁锹文",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1NT41137jd",
+          "aweme_id": "BV1NT41137jd",
+          "play_count": 39488,
+          "like_count": "790",
+          "duration": 733,
+          "meme_point": "让我一次吃个够！(Gulp!)【以撒的结合 忏悔 挑战41 异食挑战】｜B 站「铁锹文」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "Gulp Gulp Gulp"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2122924266",
+      "name": "野花香 × Around the World × Slut Pop (Jiafei Remix)",
+      "author": "Ouki Ellis",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://music.163.com/song?id=2122924266",
+      "music_id": "2122924266",
+      "platform_id": "2122924266",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": "37",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "流行热歌广场舞《野花香》动感32步，背面演示",
+          "author": "玫香广场舞官方账号",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1cG4y1V7LL",
+          "aweme_id": "BV1cG4y1V7LL",
+          "play_count": 16082,
+          "like_count": "48",
+          "duration": 286,
+          "meme_point": "流行热歌广场舞《野花香》动感32步，背面演示｜B 站「玫香广场舞官方账号」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 × Around the World × Slut Pop (Jiafei Remix)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2748040156",
+      "name": "野花香",
+      "author": "乔艳艳/老猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2748040156",
+      "music_id": "2748040156",
+      "platform_id": "2748040156",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "33",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "［veritymob］野花香",
+          "author": "主人们好",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1xbnG6eEE6",
+          "aweme_id": "BV1xbnG6eEE6",
+          "play_count": 15025,
+          "like_count": "2412",
+          "duration": 34,
+          "meme_point": "［veritymob］野花香｜B 站「主人们好」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2669098645",
+      "name": "野花香 × Deli (Jiafei Remix)",
+      "author": "Ouki Ellis/Ice Spicе/Jiafei",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://music.163.com/song?id=2669098645",
+      "music_id": "2669098645",
+      "platform_id": "2669098645",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": "23",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香",
+          "author": "逗号ddd",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1F9pcz1EbZ",
+          "aweme_id": "BV1F9pcz1EbZ",
+          "play_count": 12436,
+          "like_count": "322",
+          "duration": 139,
+          "meme_point": "野花香｜B 站「逗号ddd」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 × Deli (Jiafei Remix)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2614287228",
+      "name": "野花香-DJ",
+      "author": "雨的喃呢",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2614287228",
+      "music_id": "2614287228",
+      "platform_id": "2614287228",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "22",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【官方MV】莫斯满&老猫《野花香》",
+          "author": "heatmusic音乐",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV11S4y1g7Gq",
+          "aweme_id": "BV11S4y1g7Gq",
+          "play_count": 11078,
+          "like_count": "67",
+          "duration": 210,
+          "meme_point": "【官方MV】莫斯满&老猫《野花香》｜B 站「heatmusic音乐」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香-DJ"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1430304483",
+      "name": "莫斯满-野花香（P-by remix）",
+      "author": "P-by",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "混音"
+      ],
+      "music_url": "https://music.163.com/song?id=1430304483",
+      "music_id": "1430304483",
+      "platform_id": "1430304483",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": "18",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【成都爱乐合唱团】返场必备 粉丝最爱《路边的野花不要采》|  谁不想去感受一下现场氛围呢？就想接一句“不采白不采”",
+          "author": "-LikeStar-",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV19V4y1U7au",
+          "aweme_id": "BV19V4y1U7au",
+          "play_count": 10564,
+          "like_count": "110",
+          "duration": 135,
+          "meme_point": "【成都爱乐合唱团】返场必备 粉丝最爱《路边的野花不要采》| 谁不想去感受一下现场｜B 站「-LikeStar-」的二创，把野花香音源当卡点 BGM",
+          "music_used": "莫斯满-野花香（P-by remix）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1448575859",
+      "name": "野花香",
+      "author": "慢悠悠",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1448575859",
+      "music_id": "1448575859",
+      "platform_id": "1448575859",
+      "share_url": null,
+      "search_keyword": "野花香 莫斯满",
+      "usage_count": "16",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "P2P中最伟大的野图——野花香",
+          "author": "DeepBlueBerry",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1AffAYTEXY",
+          "aweme_id": "BV1AffAYTEXY",
+          "play_count": 10358,
+          "like_count": "196",
+          "duration": 187,
+          "meme_point": "P2P中最伟大的野图——野花香｜B 站「DeepBlueBerry」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2091567031",
+      "name": "Gulp Gulp",
+      "author": "MEMESVICES",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://music.163.com/song?id=2091567031",
+      "music_id": "2091567031",
+      "platform_id": "2091567031",
+      "share_url": null,
+      "search_keyword": "gulp gulp",
+      "usage_count": "13",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "独gulp异乡为E客",
+          "author": "洋滇女王",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Kfn66mEYy",
+          "aweme_id": "BV1Kfn66mEYy",
+          "play_count": 33980,
+          "like_count": "3370",
+          "duration": 24,
+          "meme_point": "独gulp异乡为E客｜B 站「洋滇女王」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "Gulp Gulp"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1419506434",
+      "name": "野花香dj",
+      "author": "霖如萱",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1419506434",
+      "music_id": "1419506434",
+      "platform_id": "1419506434",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "11",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "热门流行健身操《野花香》简单易学，老少皆宜，让你越跳越健康",
+          "author": "专属天使广场舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1pK4y1G7C7",
+          "aweme_id": "BV1pK4y1G7C7",
+          "play_count": 9984,
+          "like_count": "8",
+          "duration": 185,
+          "meme_point": "热门流行健身操《野花香》简单易学，老少皆宜，让你越跳越健康｜B 站「专属天使广场舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香dj"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2733004104",
+      "name": "野花香(洛天依）",
+      "author": "LUXE/洛天依",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2733004104",
+      "music_id": "2733004104",
+      "platform_id": "2733004104",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "10",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "张玮&金润吉&王谦&纪海星《野花香》",
+          "author": "林假面",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1fr7W6VEpZ",
+          "aweme_id": "BV1fr7W6VEpZ",
+          "play_count": 9708,
+          "like_count": "60",
+          "duration": 521,
+          "meme_point": "张玮&金润吉&王谦&纪海星《野花香》｜B 站「林假面」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香(洛天依）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1809843847",
+      "name": "莫斯满-野花香 - 2020新版（DJMike ReMix）（DjMike remix）",
+      "author": "Mike",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版",
+        "混音"
+      ],
+      "music_url": "https://music.163.com/song?id=1809843847",
+      "music_id": "1809843847",
+      "platform_id": "1809843847",
+      "share_url": null,
+      "search_keyword": "野花香 莫斯满",
+      "usage_count": "5",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【maimai谱面创作/含实验性配置】野花香(Haocore Mix) MASTER 14+",
+          "author": "Tiampeo",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Pi421Y7nh",
+          "aweme_id": "BV1Pi421Y7nh",
+          "play_count": 9253,
+          "like_count": "282",
+          "duration": 180,
+          "meme_point": "【maimai谱面创作/含实验性配置】野花香(Haocore Mix) MAST｜B 站「Tiampeo」的二创，把野花香音源当卡点 BGM",
+          "music_used": "莫斯满-野花香 - 2020新版（DJMike ReMix）（DjMike remix）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3314318933",
+      "name": "野花香 (女生宿舍版)",
+      "author": "莫斯满",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3314318933",
+      "music_id": "3314318933",
+      "platform_id": "3314318933",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "4",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "超长版的野花香来了，唐山网红舞媚娘和大叔云天广场精彩吉特巴！",
+          "author": "朵宝朵9x1i",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1EK411Z7rY",
+          "aweme_id": "BV1EK411Z7rY",
+          "play_count": 7939,
+          "like_count": "36",
+          "duration": 251,
+          "meme_point": "超长版的野花香来了，唐山网红舞媚娘和大叔云天广场精彩吉特巴！｜B 站「朵宝朵9x1i」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (女生宿舍版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2129538971",
+      "name": "野花香 (DJ版）",
+      "author": "向云端",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2129538971",
+      "music_id": "2129538971",
+      "platform_id": "2129538971",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "4",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "一公舞台《野花香》彩排无修音 金润吉 张玮 王谦 纪海星",
+          "author": "一叫我小明明一",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV14sRbBcEJE",
+          "aweme_id": "BV14sRbBcEJE",
+          "play_count": 7814,
+          "like_count": "68",
+          "duration": 287,
+          "meme_point": "一公舞台《野花香》彩排无修音 金润吉 张玮 王谦 纪海星｜B 站「一叫我小明明一」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (DJ版）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2605979590",
+      "name": "野花香(Live)",
+      "author": "老猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "翻唱"
+      ],
+      "music_url": "https://music.163.com/song?id=2605979590",
+      "music_id": "2605979590",
+      "platform_id": "2605979590",
+      "share_url": null,
+      "search_keyword": "野花香 老猫",
+      "usage_count": "4",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "广场舞《野花香》歌好听，舞好看，欢迎欣赏",
+          "author": "李幺妹广场舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1oy4y147qm",
+          "aweme_id": "BV1oy4y147qm",
+          "play_count": 7557,
+          "like_count": "14",
+          "duration": 156,
+          "meme_point": "广场舞《野花香》歌好听，舞好看，欢迎欣赏｜B 站「李幺妹广场舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香(Live)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2614010246",
+      "name": "野花香 - DJ",
+      "author": "不是九尾",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2614010246",
+      "music_id": "2614010246",
+      "platform_id": "2614010246",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "3",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "摆胯瘦腰舞32步《野花香》DJ何鹏版，抖音很火，越跳越美丽，附教学",
+          "author": "杭州秀秀鬼步舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1iT4y1G7rG",
+          "aweme_id": "BV1iT4y1G7rG",
+          "play_count": 6808,
+          "like_count": "13",
+          "duration": 197,
+          "meme_point": "摆胯瘦腰舞32步《野花香》DJ何鹏版，抖音很火，越跳越美丽，附教学｜B 站「杭州秀秀鬼步舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 - DJ"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2748041161",
+      "name": "野花香 (DJ版)",
+      "author": "乔艳艳/老猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2748041161",
+      "music_id": "2748041161",
+      "platform_id": "2748041161",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "3",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "DJ版广场舞《野花香》歌声豪迈大气，节奏劲爆动感",
+          "author": "玲玲原创舞蹈",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1vy4y1s7ns",
+          "aweme_id": "BV1vy4y1s7ns",
+          "play_count": 5343,
+          "like_count": "10",
+          "duration": 189,
+          "meme_point": "DJ版广场舞《野花香》歌声豪迈大气，节奏劲爆动感｜B 站「玲玲原创舞蹈」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (DJ版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2728658341",
+      "name": "野花香(DJ版)",
+      "author": "DJ何鹏",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2728658341",
+      "music_id": "2728658341",
+      "platform_id": "2728658341",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "2",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "山村野花香",
+          "author": "影之守护者",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1YYo9BUEPy",
+          "aweme_id": "BV1YYo9BUEPy",
+          "play_count": 4795,
+          "like_count": "81",
+          "duration": 893,
+          "meme_point": "山村野花香｜B 站「影之守护者」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香(DJ版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2728659269",
+      "name": "野花香(DJ版)",
+      "author": "DJ何鹏",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2728659269",
+      "music_id": "2728659269",
+      "platform_id": "2728659269",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "2",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "网红热歌广场舞《野花开满山》背面演示，歌醉舞美简单易学",
+          "author": "开心健身广场舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Tx421Q77U",
+          "aweme_id": "BV1Tx421Q77U",
+          "play_count": 4167,
+          "like_count": "13",
+          "duration": 160,
+          "meme_point": "网红热歌广场舞《野花开满山》背面演示，歌醉舞美简单易学｜B 站「开心健身广场舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香(DJ版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3333093770",
+      "name": "野花香 (国际版)",
+      "author": "老猫/国际范儿",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3333093770",
+      "music_id": "3333093770",
+      "platform_id": "3333093770",
+      "share_url": null,
+      "search_keyword": "野花香 老猫",
+      "usage_count": "2",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "欣宝儿（野花香）又唱火了",
+          "author": "熊肚兜",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1c4411B7xH",
+          "aweme_id": "BV1c4411B7xH",
+          "play_count": 4137,
+          "like_count": "25",
+          "duration": 151,
+          "meme_point": "欣宝儿（野花香）又唱火了｜B 站「熊肚兜」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (国际版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3379669048",
+      "name": "野花香 (野人版)",
+      "author": "司徒兰芳/老猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3379669048",
+      "music_id": "3379669048",
+      "platform_id": "3379669048",
+      "share_url": null,
+      "search_keyword": "野花香 老猫",
+      "usage_count": "2",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "健康一生广场舞《野花香》32步老歌新跳,歌好听舞劲爆,分解教学",
+          "author": "健康一生广场舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Kt4y1v7vN",
+          "aweme_id": "BV1Kt4y1v7vN",
+          "play_count": 3556,
+          "like_count": "1",
+          "duration": 257,
+          "meme_point": "健康一生广场舞《野花香》32步老歌新跳,歌好听舞劲爆,分解教学｜B 站「健康一生广场舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 (野人版)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3394916136",
+      "name": "家花没有野花香",
+      "author": "夏松柏/冬杨柳",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3394916136",
+      "music_id": "3394916136",
+      "platform_id": "3394916136",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "2",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "32步广场舞《野花香》，简单易学，火热情歌！",
+          "author": "白玫瑰爱跳舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ne411x7vD",
+          "aweme_id": "BV1ne411x7vD",
+          "play_count": 3436,
+          "like_count": "5",
+          "duration": 203,
+          "meme_point": "32步广场舞《野花香》，简单易学，火热情歌！｜B 站「白玫瑰爱跳舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2614297214",
+      "name": "野花香-DJ",
+      "author": "雨的喃呢",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2614297214",
+      "music_id": "2614297214",
+      "platform_id": "2614297214",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "梁红演唱《野花香》，请你呀来到我的身旁，让我呀为你卸下行装",
+          "author": "群众王二",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1DJ411w7PA",
+          "aweme_id": "BV1DJ411w7PA",
+          "play_count": 3294,
+          "like_count": "14",
+          "duration": 213,
+          "meme_point": "梁红演唱《野花香》，请你呀来到我的身旁，让我呀为你卸下行装｜B 站「群众王二」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香-DJ"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2615910945",
+      "name": "AI星野_野花香(天利终猫Remix)",
+      "author": "嶼桻川流",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "混音"
+      ],
+      "music_url": "https://music.163.com/song?id=2615910945",
+      "music_id": "2615910945",
+      "platform_id": "2615910945",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "DJ何鹏版《野花香》8月又火了,32步醉人的步子舞,网络火爆,好看易学附分解",
+          "author": "健康一生广场舞",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1LK4y1Y7oZ",
+          "aweme_id": "BV1LK4y1Y7oZ",
+          "play_count": 2788,
+          "like_count": "7",
+          "duration": 249,
+          "meme_point": "DJ何鹏版《野花香》8月又火了,32步醉人的步子舞,网络火爆,好看易学附分解｜B 站「健康一生广场舞」的二创，把野花香音源当卡点 BGM",
+          "music_used": "AI星野_野花香(天利终猫Remix)"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3370197237",
+      "name": "野花香",
+      "author": "张桃/老猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3370197237",
+      "music_id": "3370197237",
+      "platform_id": "3370197237",
+      "share_url": null,
+      "search_keyword": "野花香 老猫",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "一曲《家花哪有野花香》好听又经典，献给天下男人，值得收藏！",
+          "author": "田野可可",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1fJ41117Z3",
+          "aweme_id": "BV1fJ41117Z3",
+          "play_count": 2751,
+          "like_count": "12",
+          "duration": 198,
+          "meme_point": "一曲《家花哪有野花香》好听又经典，献给天下男人，值得收藏！｜B 站「田野可可」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1860447716",
+      "name": "家花没有野花香",
+      "author": "知心哥",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1860447716",
+      "music_id": "1860447716",
+      "platform_id": "1860447716",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "东北二人转《野花香》",
+          "author": "A天命所归",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV184rDBwEDb",
+          "aweme_id": "BV184rDBwEDb",
+          "play_count": 2705,
+          "like_count": "18",
+          "duration": 1190,
+          "meme_point": "东北二人转《野花香》｜B 站「A天命所归」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3394916137",
+      "name": "家花没有野花香（女版）",
+      "author": "冬杨柳",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3394916137",
+      "music_id": "3394916137",
+      "platform_id": "3394916137",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "山村野花香",
+          "author": "小林瞳剧场",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1vbo9BHEeZ",
+          "aweme_id": "BV1vbo9BHEeZ",
+          "play_count": 2650,
+          "like_count": "41",
+          "duration": 559,
+          "meme_point": "山村野花香｜B 站「小林瞳剧场」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香（女版）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3394917129",
+      "name": "家花没有野花香（男版）",
+      "author": "夏松柏",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3394917129",
+      "music_id": "3394917129",
+      "platform_id": "3394917129",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香广场舞",
+          "author": "冷眼观世界者",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Zw41187e2",
+          "aweme_id": "BV1Zw41187e2",
+          "play_count": 2324,
+          "like_count": "14",
+          "duration": 33,
+          "meme_point": "野花香广场舞｜B 站「冷眼观世界者」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香（男版）"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_3395707612",
+      "name": "家花没有野花香",
+      "author": "睡眠火山",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=3395707612",
+      "music_id": "3395707612",
+      "platform_id": "3395707612",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "摆胯步子舞dj32步《野花香》原创网红全网",
+          "author": "bili_96463147464",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Bv411t7Jr",
+          "aweme_id": "BV1Bv411t7Jr",
+          "play_count": 2221,
+          "like_count": "5",
+          "duration": 267,
+          "meme_point": "摆胯步子舞dj32步《野花香》原创网红全网｜B 站「bili_96463147464」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_1880448311",
+      "name": "CⅩⅦ中华圣贤经《圣经》【壹佰壹拾柒】贫贱之交不可忘 糟糠之妻不下堂 家花没有野花香 野花哪有家花长",
+      "author": "申鑫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=1880448311",
+      "music_id": "1880448311",
+      "platform_id": "1880448311",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香--莫斯满--酷狗首唱现场版",
+          "author": "熊肚兜",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1m441127Rt",
+          "aweme_id": "BV1m441127Rt",
+          "play_count": 2168,
+          "like_count": "22",
+          "duration": 212,
+          "meme_point": "野花香--莫斯满--酷狗首唱现场版｜B 站「熊肚兜」的二创，把野花香音源当卡点 BGM",
+          "music_used": "CⅩⅦ中华圣贤经《圣经》【壹佰壹拾柒】贫贱之交不可忘 糟糠之妻不下堂 家花没有野花香 野花哪有家花长"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "ne_2692053158",
+      "name": "家花没有野花香",
+      "author": "黄文文",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://music.163.com/song?id=2692053158",
+      "music_id": "2692053158",
+      "platform_id": "2692053158",
+      "share_url": null,
+      "search_keyword": "家花没有野花香",
+      "usage_count": "1",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【舞立方】野花香（Haocore Mix）高级97%硬打手元",
+          "author": "ABCDEFGzyxwvu",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1L867YmEPP",
+          "aweme_id": "BV1L867YmEPP",
+          "play_count": 2084,
+          "like_count": "86",
+          "duration": 197,
+          "meme_point": "【舞立方】野花香（Haocore Mix）高级97%硬打手元｜B 站「ABCDEFGzyxwvu」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香"
+        }
+      ],
+      "source": "netease"
+    },
+    {
+      "id": "qq_00286gru2wrqyr",
+      "name": "野花香",
+      "author": "金润吉/纪海星/王谦/张玮",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/00286Gru2WrqyR",
+      "music_id": "00286Gru2WrqyR",
+      "platform_id": "00286Gru2WrqyR",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "swk的野花香",
+          "author": "余唯央祖",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Hjx96HEcZ",
+          "aweme_id": "BV1Hjx96HEcZ",
+          "play_count": 2037,
+          "like_count": "531",
+          "duration": 34,
+          "meme_point": "swk的野花香｜B 站「余唯央祖」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_001s8qdb4cm2n6",
+      "name": "野花香",
+      "author": "乌兰塔娜",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/001S8qDb4CM2N6",
+      "music_id": "001S8qDb4CM2N6",
+      "platform_id": "001S8qDb4CM2N6",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香",
+          "author": "dgy18787",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1y44y1Q7nD",
+          "aweme_id": "BV1y44y1Q7nD",
+          "play_count": 1951,
+          "like_count": "87",
+          "duration": 122,
+          "meme_point": "野花香｜B 站「dgy18787」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_00349xv10bghmz",
+      "name": "野花香",
+      "author": "啊公公",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/00349Xv10bGhmZ",
+      "music_id": "00349Xv10bGhmZ",
+      "platform_id": "00349Xv10bGhmZ",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香（Hardcore Mix）首杀ap",
+          "author": "Knlopa",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1qUFXz8EHD",
+          "aweme_id": "BV1qUFXz8EHD",
+          "play_count": 1536,
+          "like_count": "163",
+          "duration": 195,
+          "meme_point": "野花香（Hardcore Mix）首杀ap｜B 站「Knlopa」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_004gq0zv1jrca5",
+      "name": "野花香",
+      "author": "老猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/004Gq0zV1JRcA5",
+      "music_id": "004Gq0zV1JRcA5",
+      "platform_id": "004Gq0zV1JRcA5",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "强力甩脂健身操《野花香》快速暴汗燃 每天坚持20分钟 有效瘦全身",
+          "author": "艳姐健身分享",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1X24y1U7a2",
+          "aweme_id": "BV1X24y1U7a2",
+          "play_count": 1330,
+          "like_count": "4",
+          "duration": 689,
+          "meme_point": "强力甩脂健身操《野花香》快速暴汗燃 每天坚持20分钟 有效瘦全身｜B 站「艳姐健身分享」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_000d1qao2wkkoc",
+      "name": "野花香",
+      "author": "胡文博BOY",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/000d1qaO2wKkoc",
+      "music_id": "000d1qaO2wKkoc",
+      "platform_id": "000d1qaO2wKkoc",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【AI 星野 x Sensei 】野花香",
+          "author": "子骐浪迹天涯",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1zhxheVEnG",
+          "aweme_id": "BV1zhxheVEnG",
+          "play_count": 1273,
+          "like_count": "84",
+          "duration": 205,
+          "meme_point": "【AI 星野 x Sensei 】野花香｜B 站「子骐浪迹天涯」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_003qxeon1lmdaw",
+      "name": "野花香",
+      "author": "奶小深/奶总",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/003Qxeon1lmDAW",
+      "music_id": "003Qxeon1lmDAW",
+      "platform_id": "003Qxeon1lmDAW",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香法核版（Zxtrac Bootleg）",
+          "author": "诸葛南北_Marinel",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1n1421k73u",
+          "aweme_id": "BV1n1421k73u",
+          "play_count": 1271,
+          "like_count": "33",
+          "duration": 144,
+          "meme_point": "野花香法核版（Zxtrac Bootleg）｜B 站「诸葛南北_Marinel」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_004ya2dd2uc5hh",
+      "name": "野花香",
+      "author": "王超然",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/004YA2DD2Uc5HH",
+      "music_id": "004YA2DD2Uc5HH",
+      "platform_id": "004YA2DD2Uc5HH",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【舞蹈教学】野花香dj ，分解动作来啦，抓紧学起来吧",
+          "author": "一起学涂鸦",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV19u411d7V5",
+          "aweme_id": "BV19u411d7V5",
+          "play_count": 1198,
+          "like_count": "19",
+          "duration": 68,
+          "meme_point": "【舞蹈教学】野花香dj ，分解动作来啦，抓紧学起来吧｜B 站「一起学涂鸦」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_002udyu50ug7nl",
+      "name": "野花香",
+      "author": "叶娅訫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/002uDyu50UG7nl",
+      "music_id": "002uDyu50UG7nl",
+      "platform_id": "002uDyu50UG7nl",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "言和喊你跳广场舞！超带感金曲DJ《野花香》让你嗨个不停！",
+          "author": "塔赴P",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1e44y1P7ou",
+          "aweme_id": "BV1e44y1P7ou",
+          "play_count": 1085,
+          "like_count": "96",
+          "duration": 337,
+          "meme_point": "言和喊你跳广场舞！超带感金曲DJ《野花香》让你嗨个不停！｜B 站「塔赴P」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_001rzg3k4olkwx",
+      "name": "野花香",
+      "author": "Jiafei",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/001RzG3K4OLKwx",
+      "music_id": "001RzG3K4OLKwx",
+      "platform_id": "001RzG3K4OLKwx",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "不同音效の野花香",
+          "author": "米拉卡哈",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1kA4m137Gm",
+          "aweme_id": "BV1kA4m137Gm",
+          "play_count": 1063,
+          "like_count": "27",
+          "duration": 631,
+          "meme_point": "不同音效の野花香｜B 站「米拉卡哈」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_004t6p4v24vnwo",
+      "name": "野花香",
+      "author": "南方云",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/004T6P4v24vnWO",
+      "music_id": "004T6P4v24vnWO",
+      "platform_id": "004T6P4v24vnWO",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香（全损版）",
+          "author": "绝美人妻",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV16H4y1W7Di",
+          "aweme_id": "BV16H4y1W7Di",
+          "play_count": 1022,
+          "like_count": "29",
+          "duration": 205,
+          "meme_point": "野花香（全损版）｜B 站「绝美人妻」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_0026zx2c0ospb6",
+      "name": "野花香",
+      "author": "欣宝儿",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/0026zx2c0OSpb6",
+      "music_id": "0026zx2c0OSpb6",
+      "platform_id": "0026zx2c0OSpb6",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花伴奏【田震】",
+          "author": "崩牙猪",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1dd4y167ya",
+          "aweme_id": "BV1dd4y167ya",
+          "play_count": 846,
+          "like_count": "7",
+          "duration": 232,
+          "meme_point": "野花伴奏【田震】｜B 站「崩牙猪」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_000qy3ow0iqgxw",
+      "name": "野花香",
+      "author": "宋小睿",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/000QY3OW0IqGxw",
+      "music_id": "000QY3OW0IqGxw",
+      "platform_id": "000QY3OW0IqGxw",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "流行舞 《野花香》 翻跳",
+          "author": "发条兔子2",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1BECYBhE1A",
+          "aweme_id": "BV1BECYBhE1A",
+          "play_count": 808,
+          "like_count": "0",
+          "duration": 87,
+          "meme_point": "流行舞 《野花香》 翻跳｜B 站「发条兔子2」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_002qfk2b06owji",
+      "name": "野花香",
+      "author": "心歌",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/002qfK2B06oWji",
+      "music_id": "002qfK2B06oWji",
+      "platform_id": "002qfK2B06oWji",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香     编舞：@阿鸿舞蹈教学  在嘉 分解动作@小小新星",
+          "author": "雨殇HAH",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1tSGyehEvK",
+          "aweme_id": "BV1tSGyehEvK",
+          "play_count": 784,
+          "like_count": "20",
+          "duration": 153,
+          "meme_point": "野花香 编舞：@阿鸿舞蹈教学 在嘉 分解动作@小小新星｜B 站「雨殇HAH」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_0048uhiv3wptvn",
+      "name": "谁说家花没有野花香",
+      "author": "王爱民",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/0048uhIv3WptVn",
+      "music_id": "0048uhIv3WptVn",
+      "platform_id": "0048uhIv3WptVn",
+      "share_url": null,
+      "search_keyword": "野花香 广场舞",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "那艺娜版《野花香》，看着像伪人",
+          "author": "阴中娱乐",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1e9rfYKEXa",
+          "aweme_id": "BV1e9rfYKEXa",
+          "play_count": 743,
+          "like_count": "28",
+          "duration": 74,
+          "meme_point": "那艺娜版《野花香》，看着像伪人｜B 站「阴中娱乐」的二创，把野花香音源当卡点 BGM",
+          "music_used": "谁说家花没有野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_000pjxfk3lxrgl",
+      "name": "家花没有野花香其实味道都一样",
+      "author": "张海宝",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/000pJXFK3lXRgl",
+      "music_id": "000pJXFK3lXRgl",
+      "platform_id": "000pJXFK3lXRgl",
+      "share_url": null,
+      "search_keyword": "野花香 广场舞",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "广场舞 野花香",
+          "author": "普渡众生A",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1cP4y1D7f9",
+          "aweme_id": "BV1cP4y1D7f9",
+          "play_count": 731,
+          "like_count": "1",
+          "duration": 152,
+          "meme_point": "广场舞 野花香｜B 站「普渡众生A」的二创，把野花香音源当卡点 BGM",
+          "music_used": "家花没有野花香其实味道都一样"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_000tgamq1mcofk",
+      "name": "野花香",
+      "author": "老宇镇（精典广场舞传媒）",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/000tGAMQ1McoFk",
+      "music_id": "000tGAMQ1McoFk",
+      "platform_id": "000tGAMQ1McoFk",
+      "share_url": null,
+      "search_keyword": "野花香 广场舞",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "流行舞《野花香》翻跳",
+          "author": "发条兔子2",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1qnCYBcEoD",
+          "aweme_id": "BV1qnCYBcEoD",
+          "play_count": 690,
+          "like_count": "2",
+          "duration": 91,
+          "meme_point": "流行舞《野花香》翻跳｜B 站「发条兔子2」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_0034fj5e4bujv5",
+      "name": "映容雪广场舞《野花香》附教学",
+      "author": "未知歌手",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "广场舞"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/0034Fj5E4BUjv5",
+      "music_id": "0034Fj5E4BUjv5",
+      "platform_id": "0034Fj5E4BUjv5",
+      "share_url": null,
+      "search_keyword": "野花香 广场舞",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "广场舞《野花香》",
+          "author": "宽厚影视",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1RK4y1N7cx",
+          "aweme_id": "BV1RK4y1N7cx",
+          "play_count": 673,
+          "like_count": "6",
+          "duration": 190,
+          "meme_point": "广场舞《野花香》｜B 站「宽厚影视」的二创，把野花香音源当卡点 BGM",
+          "music_used": "映容雪广场舞《野花香》附教学"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_001rc2op2oxwf4",
+      "name": "野花香",
+      "author": "DJ大金/正云",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/001rC2OP2OXWf4",
+      "music_id": "001rC2OP2OXWf4",
+      "platform_id": "001rC2OP2OXWf4",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香大姨 真的很香啊",
+          "author": "乐舞一派",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Uw411u7hw",
+          "aweme_id": "BV1Uw411u7hw",
+          "play_count": 642,
+          "like_count": "1",
+          "duration": 39,
+          "meme_point": "野花香大姨 真的很香啊｜B 站「乐舞一派」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_0001bqir0qnr7f",
+      "name": "野花香",
+      "author": "赵中华",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/0001BQir0qnR7f",
+      "music_id": "0001BQir0qnR7f",
+      "platform_id": "0001BQir0qnR7f",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "姚莉  野花香 （1950）",
+          "author": "海上沉浮",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV15N4y1r7ZK",
+          "aweme_id": "BV15N4y1r7ZK",
+          "play_count": 641,
+          "like_count": "19",
+          "duration": 190,
+          "meme_point": "姚莉 野花香 （1950）｜B 站「海上沉浮」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_003fwr0j04gp0w",
+      "name": "野花香",
+      "author": "李仁斌",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/003FWr0j04GP0W",
+      "music_id": "003FWr0j04GP0W",
+      "platform_id": "003FWr0j04GP0W",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "又一首火起的歌曲《野花香》动感欢快32步健身舞 本视频附分解教学",
+          "author": "广场舞小七",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1uA41147LL",
+          "aweme_id": "BV1uA41147LL",
+          "play_count": 593,
+          "like_count": "1",
+          "duration": 147,
+          "meme_point": "又一首火起的歌曲《野花香》动感欢快32步健身舞 本视频附分解教学｜B 站「广场舞小七」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_003uydmw1tcd27",
+      "name": "野花香",
+      "author": "DJ花荣",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/003uYDMW1Tcd27",
+      "music_id": "003uYDMW1Tcd27",
+      "platform_id": "003uYDMW1Tcd27",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "⚡野花香銀⚡but with 朋友的酒",
+          "author": "大轟樹",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Twso6vEbt",
+          "aweme_id": "BV1Twso6vEbt",
+          "play_count": 571,
+          "like_count": "31",
+          "duration": 94,
+          "meme_point": "⚡野花香銀⚡but with 朋友的酒｜B 站「大轟樹」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_002j3kmb0brntc",
+      "name": "野花香",
+      "author": "闻嘉石",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/002J3kMB0BrNtc",
+      "music_id": "002J3kMB0BrNtc",
+      "platform_id": "002J3kMB0BrNtc",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "DJ情歌《野花香》，动感劲爆的节奏，听着就让人心情舒畅！",
+          "author": "月宁音乐",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1tA411p7CA",
+          "aweme_id": "BV1tA411p7CA",
+          "play_count": 455,
+          "like_count": "13",
+          "duration": 191,
+          "meme_point": "DJ情歌《野花香》，动感劲爆的节奏，听着就让人心情舒畅！｜B 站「月宁音乐」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_003vtqg20gfigu",
+      "name": "野花香",
+      "author": "阿超",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/003VtQG20gFigu",
+      "music_id": "003VtQG20gFigu",
+      "platform_id": "003VtQG20gFigu",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "推荐歌曲|超级无敌洗脑神曲《野花香》",
+          "author": "第五个季节i_",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1kN5R6bEBc",
+          "aweme_id": "BV1kN5R6bEBc",
+          "play_count": 429,
+          "like_count": "11",
+          "duration": 284,
+          "meme_point": "推荐歌曲|超级无敌洗脑神曲《野花香》｜B 站「第五个季节i_」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_004eeown2hz6w3",
+      "name": "莫斯满-野花香 - 2020新版",
+      "author": "Djmike",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/004EEOWn2hz6w3",
+      "music_id": "004EEOWn2hz6w3",
+      "platform_id": "004EEOWn2hz6w3",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香",
+          "author": "雨攻一善",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1LhKmzFERa",
+          "aweme_id": "BV1LhKmzFERa",
+          "play_count": 373,
+          "like_count": "11",
+          "duration": 196,
+          "meme_point": "野花香｜B 站「雨攻一善」的二创，把野花香音源当卡点 BGM",
+          "music_used": "莫斯满-野花香 - 2020新版"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "qq_0006q1f44gxjel",
+      "name": "野花香",
+      "author": "那敏达",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://y.qq.com/n/ryqq/songDetail/0006Q1f44gXjel",
+      "music_id": "0006Q1f44gXjel",
+      "platform_id": "0006Q1f44gXjel",
+      "share_url": null,
+      "search_keyword": "野花香 remix",
+      "usage_count": null,
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "男女对唱情歌《家花没有野花香》",
+          "author": "是唯圣人蒋有成",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1WX4y1V7Ka",
+          "aweme_id": "BV1WX4y1V7Ka",
+          "play_count": 332,
+          "like_count": "1",
+          "duration": 190,
+          "meme_point": "男女对唱情歌《家花没有野花香》｜B 站「是唯圣人蒋有成」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香"
+        }
+      ],
+      "source": "qqmusic"
+    },
+    {
+      "id": "bili_bv1jp421y7y3",
+      "name": "【Jiafei金曲】Magnetic (Ft.Cupcakke,Meifei)",
+      "author": "装纯的大叔",
+      "en_name": null,
+      "type": "video",
+      "tag": "Gulp",
+      "style": [
+        "Jiafei",
+        "音效"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1jp421y7y3",
+      "music_id": null,
+      "platform_id": "BV1jp421y7y3",
+      "share_url": null,
+      "search_keyword": "gulp 搞笑",
+      "usage_count": "457744",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "和霍尼一起学英语 Cupcakke × 有道词典",
+          "author": "Kokomi心心日记",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1SiNvzVEYx",
+          "aweme_id": "BV1SiNvzVEYx",
+          "play_count": 31833,
+          "like_count": "1362",
+          "duration": 133,
+          "meme_point": "和霍尼一起学英语 Cupcakke × 有道词典｜B 站「Kokomi心心日记」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "【Jiafei金曲】Magnetic (Ft.Cupcakke,Meifei)"
+        },
+        {
+          "title": "来不及了！gulp gulp gulp gulp gulp",
+          "author": "优雅的狼执事先生OVO",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Nnjf6QE2S",
+          "aweme_id": "BV1Nnjf6QE2S",
+          "play_count": 23248,
+          "like_count": "1830",
+          "duration": 20,
+          "meme_point": "来不及了！gulp gulp gulp gulp gulp｜B 站「优雅的狼执事先生OVO」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "【Jiafei金曲】Magnetic (Ft.Cupcakke,Meifei)"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv191ui6seo5",
+      "name": "gulp",
+      "author": "惇亓",
+      "en_name": null,
+      "type": "video",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV191ui6SEo5",
+      "music_id": null,
+      "platform_id": "BV191ui6SEo5",
+      "share_url": null,
+      "search_keyword": "gulp",
+      "usage_count": "161586",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "挑战教妹妹gulp发音",
+          "author": "超超超超超人的超",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1d6ad6NES4",
+          "aweme_id": "BV1d6ad6NES4",
+          "play_count": 22752,
+          "like_count": "1614",
+          "duration": 31,
+          "meme_point": "挑战教妹妹gulp发音｜B 站「超超超超超人的超」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "gulp"
+        },
+        {
+          "title": "欢迎gulp学家们补充",
+          "author": "洋滇女王",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ZFpe6SEYc",
+          "aweme_id": "BV1ZFpe6SEYc",
+          "play_count": 19711,
+          "like_count": "1539",
+          "duration": 30,
+          "meme_point": "欢迎gulp学家们补充｜B 站「洋滇女王」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "gulp"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1xhr5y4ewy",
+      "name": "［梦核杯糕］电子垃圾｜Downloading Windows（cupcakke remix）",
+      "author": "鏓__",
+      "en_name": null,
+      "type": "video",
+      "tag": "Gulp",
+      "style": [
+        "混音",
+        "音效"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1xHR5Y4EwY",
+      "music_id": null,
+      "platform_id": "BV1xHR5Y4EwY",
+      "share_url": null,
+      "search_keyword": "gulp 搞笑",
+      "usage_count": "147560",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "福瑞的还是风吹到了gulp gulp草原",
+          "author": "柠柠檬派派",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV11hnZ6fE1R",
+          "aweme_id": "BV11hnZ6fE1R",
+          "play_count": 12787,
+          "like_count": "858",
+          "duration": 56,
+          "meme_point": "福瑞的还是风吹到了gulp gulp草原｜B 站「柠柠檬派派」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "［梦核杯糕］电子垃圾｜Downloading Windows（cupcakke remix）"
+        },
+        {
+          "title": "〖街头霸淋6〗#65：GULP GULP GULP GULP",
+          "author": "茶林你坏事做尽",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1osQcYKEo3",
+          "aweme_id": "BV1osQcYKEo3",
+          "play_count": 12124,
+          "like_count": "654",
+          "duration": 358,
+          "meme_point": "〖街头霸淋6〗#65：GULP GULP GULP GULP｜B 站「茶林你坏事做尽」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "［梦核杯糕］电子垃圾｜Downloading Windows（cupcakke remix）"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv14wi1bcefw",
+      "name": "一想到你我就gulp gulp gulp 【奶油-cream-】",
+      "author": "Ace_Calemo",
+      "en_name": null,
+      "type": "video",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV14Wi1BcEFw",
+      "music_id": null,
+      "platform_id": "BV14Wi1BcEFw",
+      "share_url": null,
+      "search_keyword": "gulp",
+      "usage_count": "86048",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "Gulp Gulp-The Wiggles",
+          "author": "环球音乐中国",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1DUxN6NE97",
+          "aweme_id": "BV1DUxN6NE97",
+          "play_count": 10659,
+          "like_count": "336",
+          "duration": 83,
+          "meme_point": "Gulp Gulp-The Wiggles｜B 站「环球音乐中国」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "一想到你我就gulp gulp gulp 【奶油-cream-】"
+        },
+        {
+          "title": "gulp",
+          "author": "激动的草丛お",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV18SC8BCEAg",
+          "aweme_id": "BV18SC8BCEAg",
+          "play_count": 10485,
+          "like_count": "260",
+          "duration": 30,
+          "meme_point": "gulp｜B 站「激动的草丛お」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "一想到你我就gulp gulp gulp 【奶油-cream-】"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1gmpdezebi",
+      "name": "Gulp gulp gulp...🤤",
+      "author": "Arthurzinho",
+      "en_name": null,
+      "type": "video",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1gmpdeZEbi",
+      "music_id": null,
+      "platform_id": "BV1gmpdeZEbi",
+      "share_url": null,
+      "search_keyword": "gulp",
+      "usage_count": "74492",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【杯糕姐经典单曲】LGBT歌词版",
+          "author": "Wonder上城渚日记",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1y94y1F7c5",
+          "aweme_id": "BV1y94y1F7c5",
+          "play_count": 10140,
+          "like_count": "190",
+          "duration": 162,
+          "meme_point": "【杯糕姐经典单曲】LGBT歌词版｜B 站「Wonder上城渚日记」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "Gulp gulp gulp...🤤"
+        },
+        {
+          "title": "gulp",
+          "author": "gulpppppp",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ssaA6vEy4",
+          "aweme_id": "BV1ssaA6vEy4",
+          "play_count": 7469,
+          "like_count": "183",
+          "duration": 621,
+          "meme_point": "gulp｜B 站「gulpppppp」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "Gulp gulp gulp...🤤"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1k1gq6nefe",
+      "name": "二娃45：兄弟，我们野外，gulp gulp gulp…",
+      "author": "公交cknn",
+      "en_name": null,
+      "type": "video",
+      "tag": "Gulp",
+      "style": [
+        "音效"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1K1Gq6nEfE",
+      "music_id": null,
+      "platform_id": "BV1K1Gq6nEfE",
+      "share_url": null,
+      "search_keyword": "gulp",
+      "usage_count": "47034",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "白雪杯糕/gulpgulpgulpgulpgulp",
+          "author": "晨曦星海win10",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1jwJi6jE62",
+          "aweme_id": "BV1jwJi6jE62",
+          "play_count": 3880,
+          "like_count": "309",
+          "duration": 55,
+          "meme_point": "白雪杯糕/gulpgulpgulpgulpgulp｜B 站「晨曦星海win10」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "二娃45：兄弟，我们野外，gulp gulp gulp…"
+        },
+        {
+          "title": "gulp gulp",
+          "author": "老人仙",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV16gp96yE7R",
+          "aweme_id": "BV16gp96yE7R",
+          "play_count": 3747,
+          "like_count": "625",
+          "duration": 36,
+          "meme_point": "gulp gulp｜B 站「老人仙」的二创，把Gulp音源当卡点 BGM",
+          "music_used": "二娃45：兄弟，我们野外，gulp gulp gulp…"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1wu4y1c7nx",
+      "name": "Jiafei - All I Want For Christmas Is Products (野花香remix)",
+      "author": "账号已注销",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1Wu4y1c7Nx",
+      "music_id": null,
+      "platform_id": "BV1Wu4y1c7Nx",
+      "share_url": null,
+      "search_keyword": "野花香 合唱",
+      "usage_count": "46445",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香DJ",
+          "author": "琳琳的世界147",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV14E411E7Et",
+          "aweme_id": "BV14E411E7Et",
+          "play_count": 323,
+          "like_count": "4",
+          "duration": 212,
+          "meme_point": "野花香DJ｜B 站「琳琳的世界147」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Jiafei - All I Want For Christmas Is Products (野花香remix)"
+        },
+        {
+          "title": "【华龙音乐】莫斯满/老猫-野花香（DJ何鹏版）",
+          "author": "华龙音乐",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1cH4y1m7zA",
+          "aweme_id": "BV1cH4y1m7zA",
+          "play_count": 323,
+          "like_count": "3",
+          "duration": 205,
+          "meme_point": "【华龙音乐】莫斯满/老猫-野花香（DJ何鹏版）｜B 站「华龙音乐」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Jiafei - All I Want For Christmas Is Products (野花香remix)"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1rr4y1x7wn",
+      "name": "Bad Romance（野花香Remix）音源来自网络，二创仅供娱乐。",
+      "author": "魏布斯Waves",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "鬼畜改编"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1RR4y1X7wN",
+      "music_id": null,
+      "platform_id": "BV1RR4y1X7wN",
+      "share_url": null,
+      "search_keyword": "野花香 二创",
+      "usage_count": "37053",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "好听好看的火爆32步《野花香》请你呀来到我的身旁",
+          "author": "广场舞小七",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Hy4y1k7Fi",
+          "aweme_id": "BV1Hy4y1k7Fi",
+          "play_count": 307,
+          "like_count": "1",
+          "duration": 98,
+          "meme_point": "好听好看的火爆32步《野花香》请你呀来到我的身旁｜B 站「广场舞小七」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Bad Romance（野花香Remix）音源来自网络，二创仅供娱乐。"
+        },
+        {
+          "title": "热歌DJ《家花没有野花香，其实味道都一样》哥们听我讲一讲",
+          "author": "清清健身吧",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Am4y1S7BH",
+          "aweme_id": "BV1Am4y1S7BH",
+          "play_count": 304,
+          "like_count": "1",
+          "duration": 171,
+          "meme_point": "热歌DJ《家花没有野花香，其实味道都一样》哥们听我讲一讲｜B 站「清清健身吧」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Bad Romance（野花香Remix）音源来自网络，二创仅供娱乐。"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1624y1e7ay",
+      "name": "野花香 DJ版 莫斯满&老猫",
+      "author": "StardustMV",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1624y1E7AY",
+      "music_id": null,
+      "platform_id": "BV1624y1E7AY",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "19385",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【jiafei】 野花Distance 【野花香】",
+          "author": "Jinbiii",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Ws4y1w7KZ",
+          "aweme_id": "BV1Ws4y1w7KZ",
+          "play_count": 294,
+          "like_count": "14",
+          "duration": 25,
+          "meme_point": "【jiafei】 野花Distance 【野花香】｜B 站「Jinbiii」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 DJ版 莫斯满&老猫"
+        },
+        {
+          "title": "【洛天依】野花香",
+          "author": "hui风n刑",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1XiWAeEEzo",
+          "aweme_id": "BV1XiWAeEEzo",
+          "play_count": 282,
+          "like_count": "51",
+          "duration": 193,
+          "meme_point": "【洛天依】野花香｜B 站「hui风n刑」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香 DJ版 莫斯满&老猫"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1kgsaepe52",
+      "name": "《野花香》DJ版，节奏激情劲爆，豪迈大气，野性十足",
+      "author": "斌斌音乐",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1KGsaepE52",
+      "music_id": null,
+      "platform_id": "BV1KGsaepE52",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "15533",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香变调版酷狗音乐 不是用那个抖音剪辑是自己编的",
+          "author": "账号已注销",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1YcWPzrEdm",
+          "aweme_id": "BV1YcWPzrEdm",
+          "play_count": 266,
+          "like_count": "3",
+          "duration": 70,
+          "meme_point": "野花香变调版酷狗音乐 不是用那个抖音剪辑是自己编的｜B 站「账号已注销」的二创，把野花香音源当卡点 BGM",
+          "music_used": "《野花香》DJ版，节奏激情劲爆，豪迈大气，野性十足"
+        },
+        {
+          "title": "🎵DJ野花香",
+          "author": "一条小柯汝",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1VQrwY3EoH",
+          "aweme_id": "BV1VQrwY3EoH",
+          "play_count": 253,
+          "like_count": "4",
+          "duration": 88,
+          "meme_point": "🎵DJ野花香｜B 站「一条小柯汝」的二创，把野花香音源当卡点 BGM",
+          "music_used": "《野花香》DJ版，节奏激情劲爆，豪迈大气，野性十足"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1cf411n7gb",
+      "name": "twice闯中单曲 《the野花香remix》发布！！",
+      "author": "imyour_chen",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "混音"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1cF411n7Gb",
+      "music_id": null,
+      "platform_id": "BV1cF411n7Gb",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "12952",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "《野花香》伴奏，欢迎合拍！",
+          "author": "销魂悦喜",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Nw411t7Vn",
+          "aweme_id": "BV1Nw411t7Vn",
+          "play_count": 246,
+          "like_count": "2",
+          "duration": 70,
+          "meme_point": "《野花香》伴奏，欢迎合拍！｜B 站「销魂悦喜」的二创，把野花香音源当卡点 BGM",
+          "music_used": "twice闯中单曲 《the野花香remix》发布！！"
+        },
+        {
+          "title": "流行舞《野花香》馨馨背面演示",
+          "author": "发条兔子2",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Adk6BxEcv",
+          "aweme_id": "BV1Adk6BxEcv",
+          "play_count": 226,
+          "like_count": "3",
+          "duration": 90,
+          "meme_point": "流行舞《野花香》馨馨背面演示｜B 站「发条兔子2」的二创，把野花香音源当卡点 BGM",
+          "music_used": "twice闯中单曲 《the野花香remix》发布！！"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv14v4y1f7m6",
+      "name": "AAA莫斯满、老猫《野花香》DJ何鹏爆嗨版",
+      "author": "DJ歌曲排行榜",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV14v4y1f7m6",
+      "music_id": null,
+      "platform_id": "BV14v4y1f7m6",
+      "share_url": null,
+      "search_keyword": "野花香 广场舞",
+      "usage_count": "7466",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "金润吉｜《野花香》",
+          "author": "温柔收音局",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1hnVG6sEvg",
+          "aweme_id": "BV1hnVG6sEvg",
+          "play_count": 222,
+          "like_count": "1",
+          "duration": 225,
+          "meme_point": "金润吉｜《野花香》｜B 站「温柔收音局」的二创，把野花香音源当卡点 BGM",
+          "music_used": "AAA莫斯满、老猫《野花香》DJ何鹏爆嗨版"
+        },
+        {
+          "title": "野花香",
+          "author": "老余之音自媒体",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Cf4y1t76m",
+          "aweme_id": "BV1Cf4y1t76m",
+          "play_count": 220,
+          "like_count": "4",
+          "duration": 176,
+          "meme_point": "野花香｜B 站「老余之音自媒体」的二创，把野花香音源当卡点 BGM",
+          "music_used": "AAA莫斯满、老猫《野花香》DJ何鹏爆嗨版"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1xz421f7rs",
+      "name": "『滚动的天空』六星-野花香DJ \"💃姐妹们，晚上好 爱姐妹，爱家人👩‍❤️‍💋‍👩👩‍👩‍👧‍👧 女人最棒😘\"(250粉丝特辑-RSR)",
+      "author": "Amerike",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1Xz421f7Rs",
+      "music_id": null,
+      "platform_id": "BV1Xz421f7Rs",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "6580",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "[Project Sekai自制] 野花香（Haocore Mix）MASTER ⚡️Jiafei⚡️",
+          "author": "月の花の影",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1HDHV6wEer",
+          "aweme_id": "BV1HDHV6wEer",
+          "play_count": 187,
+          "like_count": "2",
+          "duration": 181,
+          "meme_point": "[Project Sekai自制] 野花香（Haocore Mix）MASTER｜B 站「月の花の影」的二创，把野花香音源当卡点 BGM",
+          "music_used": "『滚动的天空』六星-野花香DJ \"💃姐妹们，晚上好 爱姐妹，爱家人👩‍❤️‍💋‍👩👩‍👩‍👧‍👧 女人最棒😘\"(250粉丝特辑-RSR)"
+        },
+        {
+          "title": "歌词排版/野花香/粗糙版",
+          "author": "三朵三",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Qma4eqEdG",
+          "aweme_id": "BV1Qma4eqEdG",
+          "play_count": 184,
+          "like_count": "5",
+          "duration": 108,
+          "meme_point": "歌词排版/野花香/粗糙版｜B 站「三朵三」的二创，把野花香音源当卡点 BGM",
+          "music_used": "『滚动的天空』六星-野花香DJ \"💃姐妹们，晚上好 爱姐妹，爱家人👩‍❤️‍💋‍👩👩‍👩‍👧‍👧 女人最棒😘\"(250粉丝特辑-RSR)"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1fv4y1a7pg",
+      "name": "神经的野花（Psycho Jiafei Remix）",
+      "author": "小汤SKASON",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1FV4y1A7PG",
+      "music_id": null,
+      "platform_id": "BV1FV4y1A7PG",
+      "share_url": null,
+      "search_keyword": "野花香 混音",
+      "usage_count": "2865",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香《DJ何鹏版》，作曲/RAP：老猫；演唱：老猫、莫斯满。",
+          "author": "DJ舞曲视频音乐世界",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1bo4y1u7Se",
+          "aweme_id": "BV1bo4y1u7Se",
+          "play_count": 182,
+          "like_count": "4",
+          "duration": 189,
+          "meme_point": "野花香《DJ何鹏版》，作曲/RAP：老猫；演唱：老猫、莫斯满。｜B 站「DJ舞曲视频音乐世界」的二创，把野花香音源当卡点 BGM",
+          "music_used": "神经的野花（Psycho Jiafei Remix）"
+        },
+        {
+          "title": "DJ劲爆舞曲：胡文博BOY《野花香》野花香，野花美，野花惹人醉。",
+          "author": "声声悦耳1",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1DNNX67EQU",
+          "aweme_id": "BV1DNNX67EQU",
+          "play_count": 172,
+          "like_count": "1",
+          "duration": 172,
+          "meme_point": "DJ劲爆舞曲：胡文博BOY《野花香》野花香，野花美，野花惹人醉。｜B 站「声声悦耳1」的二创，把野花香音源当卡点 BGM",
+          "music_used": "神经的野花（Psycho Jiafei Remix）"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1fm4y1b7jy",
+      "name": "金智秀-只留下野花香就走了/Jisoo-Flower(Jiafei Remix)",
+      "author": "斯忒诺桑",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1fm4y1B7jY",
+      "music_id": null,
+      "platform_id": "BV1fm4y1B7jY",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "2830",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【全文军】野花香-DJ",
+          "author": "文军音像5店",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1JN411U7WA",
+          "aweme_id": "BV1JN411U7WA",
+          "play_count": 167,
+          "like_count": "1",
+          "duration": 192,
+          "meme_point": "【全文军】野花香-DJ｜B 站「文军音像5店」的二创，把野花香音源当卡点 BGM",
+          "music_used": "金智秀-只留下野花香就走了/Jisoo-Flower(Jiafei Remix)"
+        },
+        {
+          "title": "许嘉文——野花香家花美",
+          "author": "风筝大学2",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1nj411U7UU",
+          "aweme_id": "BV1nj411U7UU",
+          "play_count": 163,
+          "like_count": "0",
+          "duration": 266,
+          "meme_point": "许嘉文——野花香家花美｜B 站「风筝大学2」的二创，把野花香音源当卡点 BGM",
+          "music_used": "金智秀-只留下野花香就走了/Jisoo-Flower(Jiafei Remix)"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv18m4y1m7ck",
+      "name": "《野花香》扭腰舞版 Caramelldansen Jiafei Remix",
+      "author": "欧大菜",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "广场舞",
+        "混音",
+        "Jiafei"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV18m4y1m7CK",
+      "music_id": null,
+      "platform_id": "BV18m4y1m7CK",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "2641",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "【AI偶像】这首《家花没有野花香》，旋律熟悉，道理深刻，你认同歌词里说的吗？",
+          "author": "A1霞姐",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Aepi6KEQq",
+          "aweme_id": "BV1Aepi6KEQq",
+          "play_count": 151,
+          "like_count": "2",
+          "duration": 50,
+          "meme_point": "【AI偶像】这首《家花没有野花香》，旋律熟悉，道理深刻，你认同歌词里说的吗？｜B 站「A1霞姐」的二创，把野花香音源当卡点 BGM",
+          "music_used": "《野花香》扭腰舞版 Caramelldansen Jiafei Remix"
+        },
+        {
+          "title": "笛子演奏情感歌曲《野花香》，旋律优美，听醉方知野花香",
+          "author": "账号已注销",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1k7411c7kw",
+          "aweme_id": "BV1k7411c7kw",
+          "play_count": 135,
+          "like_count": "2",
+          "duration": 223,
+          "meme_point": "笛子演奏情感歌曲《野花香》，旋律优美，听醉方知野花香｜B 站「账号已注销」的二创，把野花香音源当卡点 BGM",
+          "music_used": "《野花香》扭腰舞版 Caramelldansen Jiafei Remix"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1n4411x71d",
+      "name": "网络爆火《野花香》DJ版，动感的旋律，忍不住循环听！",
+      "author": "酷嗨DJ音坊",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1n4411X71D",
+      "music_id": null,
+      "platform_id": "BV1n4411X71D",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "2615",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "#DJ何鹏 #莫斯满 #野花香 #扒带  莫斯满、老猫 - 野花香 (DJ何鹏版)高仿 工程模板",
+          "author": "DJ何友",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1rB67BQERu",
+          "aweme_id": "BV1rB67BQERu",
+          "play_count": 119,
+          "like_count": "3",
+          "duration": 192,
+          "meme_point": "#DJ何鹏 #莫斯满 #野花香 #扒带 莫斯满、老猫 - 野花香 (DJ何鹏版)｜B 站「DJ何友」的二创，把野花香音源当卡点 BGM",
+          "music_used": "网络爆火《野花香》DJ版，动感的旋律，忍不住循环听！"
+        },
+        {
+          "title": "二人转无敌经典《野花情》",
+          "author": "黑科技观察",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV19cnS67EAr",
+          "aweme_id": "BV19cnS67EAr",
+          "play_count": 105,
+          "like_count": "1",
+          "duration": 1207,
+          "meme_point": "二人转无敌经典《野花情》｜B 站「黑科技观察」的二创，把野花香音源当卡点 BGM",
+          "music_used": "网络爆火《野花香》DJ版，动感的旋律，忍不住循环听！"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1ph411e7tp",
+      "name": "DJ情歌《野花香》，激情劲爆，热情奔放，跟着节奏一起摇摆吧！",
+      "author": "月宁音乐",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版",
+        "广场舞"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1ph411e7Tp",
+      "music_id": null,
+      "platform_id": "BV1ph411e7Tp",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "2061",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香      分解动作@小小新星",
+          "author": "梦里寻梦kla",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1wD421u7bv",
+          "aweme_id": "BV1wD421u7bv",
+          "play_count": 89,
+          "like_count": "1",
+          "duration": 88,
+          "meme_point": "野花香 分解动作@小小新星｜B 站「梦里寻梦kla」的二创，把野花香音源当卡点 BGM",
+          "music_used": "DJ情歌《野花香》，激情劲爆，热情奔放，跟着节奏一起摇摆吧！"
+        },
+        {
+          "title": "阿茹娜劲爆歌曲《野花香》，节奏欢快，豪迈奔放！＃音乐分享＃情感歌曲＃诗与远方＃野花香",
+          "author": "八坂子墨",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1yW421F78z",
+          "aweme_id": "BV1yW421F78z",
+          "play_count": 86,
+          "like_count": "0",
+          "duration": 80,
+          "meme_point": "阿茹娜劲爆歌曲《野花香》，节奏欢快，豪迈奔放！＃音乐分享＃情感歌曲＃诗与远方＃野｜B 站「八坂子墨」的二创，把野花香音源当卡点 BGM",
+          "music_used": "DJ情歌《野花香》，激情劲爆，热情奔放，跟着节奏一起摇摆吧！"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1af41157bf",
+      "name": "野花香-莫斯满、老猫(DJ何鹏版)",
+      "author": "生而狂野-不羁的灵魂",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1aF41157BF",
+      "music_id": null,
+      "platform_id": "BV1aF41157BF",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "801",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "莫斯滿&老貓 Mo Si Man & Lao Mao【野花香】ye hua xiang DJ Remix【動態歌詞Lyrics】",
+          "author": "IIPRHR",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1zM411Y79F",
+          "aweme_id": "BV1zM411Y79F",
+          "play_count": 74,
+          "like_count": "1",
+          "duration": 193,
+          "meme_point": "莫斯滿&老貓 Mo Si Man & Lao Mao【野花香】ye hua xi｜B 站「IIPRHR」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香-莫斯满、老猫(DJ何鹏版)"
+        },
+        {
+          "title": "CupcakKe sings 野花香 / the Jiafei song13211727",
+          "author": "账号已注销",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1oF411d77x",
+          "aweme_id": "BV1oF411d77x",
+          "play_count": 72,
+          "like_count": "2",
+          "duration": 232,
+          "meme_point": "CupcakKe sings 野花香 / the Jiafei song1321｜B 站「账号已注销」的二创，把野花香音源当卡点 BGM",
+          "music_used": "野花香-莫斯满、老猫(DJ何鹏版)"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1t8x166e9k",
+      "name": "【句るり】The Feels (野花香remix).",
+      "author": "鱼鱼鱼鱼霾_",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "混音"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1T8x166E9K",
+      "music_id": null,
+      "platform_id": "BV1T8x166E9K",
+      "share_url": null,
+      "search_keyword": "野花香 二创",
+      "usage_count": "737",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "野花香。群友们。",
+          "author": "gourmet美食家",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1X84q6hEjE",
+          "aweme_id": "BV1X84q6hEjE",
+          "play_count": 68,
+          "like_count": "18",
+          "duration": 34,
+          "meme_point": "野花香。群友们。｜B 站「gourmet美食家」的二创，把野花香音源当卡点 BGM",
+          "music_used": "【句るり】The Feels (野花香remix)."
+        },
+        {
+          "title": "华语群星-野花十三香二人转 伴奏 高音质和声伴奏",
+          "author": "无损www",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1po4y1z7Ze",
+          "aweme_id": "BV1po4y1z7Ze",
+          "play_count": 67,
+          "like_count": "0",
+          "duration": 280,
+          "meme_point": "华语群星-野花十三香二人转 伴奏 高音质和声伴奏｜B 站「无损www」的二创，把野花香音源当卡点 BGM",
+          "music_used": "【句るり】The Feels (野花香remix)."
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv16m4y1f7qw",
+      "name": "香野花奔去.jiafei",
+      "author": "五洋道河湾桥Channel",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "Jiafei"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV16M4y1f7Qw",
+      "music_id": null,
+      "platform_id": "BV16M4y1f7Qw",
+      "share_url": null,
+      "search_keyword": "野花香",
+      "usage_count": "664",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "家花香还是野花香",
+          "author": "歪歌人",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1DVZxYGEce",
+          "aweme_id": "BV1DVZxYGEce",
+          "play_count": 55,
+          "like_count": "0",
+          "duration": 66,
+          "meme_point": "家花香还是野花香｜B 站「歪歌人」的二创，把野花香音源当卡点 BGM",
+          "music_used": "香野花奔去.jiafei"
+        },
+        {
+          "title": "野花香啊野花香原创音乐吉他弹唱野花香",
+          "author": "爱麦乐鸡的奶茶兔",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1tM4y1x7gz",
+          "aweme_id": "BV1tM4y1x7gz",
+          "play_count": 52,
+          "like_count": "1",
+          "duration": 102,
+          "meme_point": "野花香啊野花香原创音乐吉他弹唱野花香｜B 站「爱麦乐鸡的奶茶兔」的二创，把野花香音源当卡点 BGM",
+          "music_used": "香野花奔去.jiafei"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv1f6421c7gq",
+      "name": "DJ劲爆舞曲《莫斯满、老猫-野花香 (DJ何鹏版)》",
+      "author": "声声悦耳1",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1f6421c7GQ",
+      "music_id": null,
+      "platform_id": "BV1f6421c7GQ",
+      "share_url": null,
+      "search_keyword": "野花香 DJ",
+      "usage_count": "574",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "《野花香》",
+          "author": "灵魂舞者--",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV19D4y1c73r",
+          "aweme_id": "BV19D4y1c73r",
+          "play_count": 52,
+          "like_count": "0",
+          "duration": 102,
+          "meme_point": "《野花香》｜B 站「灵魂舞者--」的二创，把野花香音源当卡点 BGM",
+          "music_used": "DJ劲爆舞曲《莫斯满、老猫-野花香 (DJ何鹏版)》"
+        },
+        {
+          "title": "《野花香(DJ散人版)》歌甜景美，嘹亮歌声太美了",
+          "author": "攻カ酸",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1DL4y1Y7ou",
+          "aweme_id": "BV1DL4y1Y7ou",
+          "play_count": 51,
+          "like_count": "0",
+          "duration": 193,
+          "meme_point": "《野花香(DJ散人版)》歌甜景美，嘹亮歌声太美了｜B 站「攻カ酸」的二创，把野花香音源当卡点 BGM",
+          "music_used": "DJ劲爆舞曲《莫斯满、老猫-野花香 (DJ何鹏版)》"
+        }
+      ],
+      "source": "bilibili"
+    },
+    {
+      "id": "bili_bv18v4y1577f",
+      "name": "Dj舞曲《野花香》，演唱：心歌",
+      "author": "木子的音乐视频",
+      "en_name": null,
+      "type": "video",
+      "tag": "野花香",
+      "style": [
+        "DJ版"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV18V4y1577F",
+      "music_id": null,
+      "platform_id": "BV18V4y1577F",
+      "share_url": null,
+      "search_keyword": "野花香 搞笑",
+      "usage_count": "475",
+      "verified_at": "2026-11-06",
+      "examples": [
+        {
+          "title": "Xy.千辰2024.5.28仙音阁14点档《野花香（dj版）》",
+          "author": "阿诺诺酱",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1FaT5eyE5T",
+          "aweme_id": "BV1FaT5eyE5T",
+          "play_count": 44,
+          "like_count": "0",
+          "duration": 219,
+          "meme_point": "Xy.千辰2024.5.28仙音阁14点档《野花香（dj版）》｜B 站「阿诺诺酱」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Dj舞曲《野花香》，演唱：心歌"
+        },
+        {
+          "title": "金润吉 纪海星 王谦 张玮带来的歌曲《野花香》",
+          "author": "旦增曲奇",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1t5MD65EmN",
+          "aweme_id": "BV1t5MD65EmN",
+          "play_count": 34,
+          "like_count": "0",
+          "duration": 285,
+          "meme_point": "金润吉 纪海星 王谦 张玮带来的歌曲《野花香》｜B 站「旦增曲奇」的二创，把野花香音源当卡点 BGM",
+          "music_used": "Dj舞曲《野花香》，演唱：心歌"
+        }
+      ],
+      "source": "bilibili"
     }
-  ],
-  "platforms": [
-    "douyin",
-    "bilibili"
   ]
 }

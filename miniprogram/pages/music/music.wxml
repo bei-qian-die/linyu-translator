@@ -6,8 +6,8 @@
     <text class="eyebrow-right">{{total}} 条 · {{videoTotal}} 条样例</text>
   </view>
 
-  <view class="page-title">抖音与 B 站里的<view class="pt-line">搞怪二创音源<text class="pt-dot">。</text></view></view>
-  <view class="page-sub">野花香 × Gulp 两条梗音源，每条链接都在 {{collectedAt}} 逐个开页核验过落点。小程序内不能直接跳站外，点一下复制链接，去浏览器或对应 App 粘贴打开。</view>
+  <view class="page-title">四平台里的<view class="pt-line">搞怪二创音源<text class="pt-dot">。</text></view></view>
+  <view class="page-sub">野花香 × Gulp 两条梗音源，每条链接都在 {{collectedAt}} 逐个开页核验过落点。小程序内不能直接跳站外，点一下复制链接，去浏览器或对应 App 粘贴打开。收藏与最近浏览只存本机。</view>
 
   <view class="mg-tabs">
     <view
@@ -29,6 +29,33 @@
     >{{item.label}}</view>
   </view>
 
+  <!-- 次级筛选：收藏 / 最近浏览 / 排序 / 每日一条，全部在音乐页内部，不动 tabBar -->
+  <view class="sub-row">
+    <view
+      class="sub-chip {{view === item.key ? 'on' : ''}}"
+      wx:for="{{viewOpts}}"
+      wx:key="key"
+      data-key="{{item.key}}"
+      bindtap="switchView"
+    >{{item.label}}<text class="sub-count" wx:if="{{item.key === 'favs'}}">{{favCount}}</text><text class="sub-count" wx:elif="{{item.key === 'recent'}}">{{seenCount}}</text></view>
+  </view>
+
+  <view class="sort-row">
+    <view
+      class="sort-chip {{sort === item.key ? 'on' : ''}}"
+      wx:for="{{sortOpts}}"
+      wx:key="key"
+      data-key="{{item.key}}"
+      bindtap="setSort"
+    >{{item.label}}</view>
+    <view class="jump-chip" bindtap="jumpDaily">每日一条</view>
+    <view class="jump-chip" bindtap="jumpRandom">随机一条</view>
+  </view>
+
+  <view class="hint-line" wx:if="{{hotHint}}">热度按平台内归一化：抖音人在用 / B 站·QQ 播放 / 网易云评论，各自除以本站最大值再比，不跨平台直接比原始值。</view>
+  <view class="pick-line" wx:if="{{daily}}">今日推荐：<text class="pick-name">{{daily.name}}</text> · @{{daily.author}}（{{daily.tag}}）<text class="pick-jump" bindtap="jumpDaily">跳到这条 ›</text></view>
+  <view class="pick-line" wx:if="{{randomName}}">随机结果：<text class="pick-name">{{randomName}}</text><text class="pick-jump" bindtap="jumpRandom">再随机一条 ›</text></view>
+
   <view class="search-box">
     <view class="search-ico"></view>
     <input
@@ -43,12 +70,13 @@
   </view>
 
   <view class="music-list">
-    <view class="music-item" wx:for="{{list}}" wx:key="id">
+    <view class="music-item" id="mx-{{item.id}}" wx:for="{{list}}" wx:key="id">
       <view class="mi-head">
         <text class="mi-no">{{item.no}}</text>
         <text class="mi-name">{{item.name}}</text>
         <text class="mi-plat {{item.platClass}}">{{item.platformLabel}}</text>
         <text class="mi-tag">{{item.tagLabel}}</text>
+        <text class="mi-fav {{item.favored ? 'on' : ''}}" data-id="{{item.id}}" data-src="{{item.source}}" catchtap="toggleFav">{{item.favored ? '♥' : '♡'}}</text>
       </view>
       <view class="mi-author">@{{item.author}}</view>
       <view class="mi-stats">
@@ -69,12 +97,13 @@
           <text class="mi-dim" wx:if="{{ex.durText}}">{{ex.durText}}</text>
         </view>
         <view class="mi-ex-point">{{ex.memePoint}}</view>
-        <text class="mi-link" data-url="{{ex.videoUrl}}" catchtap="copyVideo">复制这条二创链接 ›</text>
+        <text class="mi-link" data-url="{{ex.videoUrl}}" data-id="{{item.id}}" catchtap="copyVideo">复制这条二创链接 ›</text>
       </view>
 
       <view class="mi-acts">
-        <view class="mi-btn" hover-class="mi-btn-hover" data-url="{{item.musicUrl}}" catchtap="copyMusic">{{item.musicActLabel}}</view>
+        <view class="mi-btn" hover-class="mi-btn-hover" data-url="{{item.musicUrl}}" data-id="{{item.id}}" catchtap="copyMusic">{{item.musicActLabel}}</view>
         <view class="mi-btn ghost" hover-class="mi-btn-hover" data-kw="{{item.searchKeyword}}" catchtap="copyKeyword">复制搜索词</view>
+        <button class="mi-btn ghost share-btn" open-type="share" data-id="{{item.id}}" bindtap="prepShare">分享</button>
       </view>
       <view class="mi-foot">{{item.platformLabel}}搜索：{{item.searchKeyword}} · 核验 {{item.verifiedAt}}</view>
     </view>
@@ -82,8 +111,8 @@
 
   <empty-state
     wx:if="{{!list.length}}"
-    title="没匹配到音源"
-    sub="换个词，或点「全部」看看"
+    title="{{emptyTitle}}"
+    sub="{{emptySub}}"
     show-reset
     bind:reset="clearSearch"
   />

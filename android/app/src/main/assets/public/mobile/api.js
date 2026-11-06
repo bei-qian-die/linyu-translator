@@ -535,6 +535,10 @@
     let orientListeners = [];
     let orientHandle = null;
 
+    // 音乐用户态：Web 端由 src/web/webEntry.js 挂 localStorage 实现（不写 SQLite）；
+    // 安卓走 db/service。两套实现同名同语义，渲染层不判平台。
+    const musicUserStore = () => (root.__linyuMusicStore) || svc;
+
     function readPref(key, fallback) {
       return svc.readPref(key, fallback);
     }
@@ -742,6 +746,13 @@
       listHistory: () => safe(() => Promise.resolve(svc.listHistory())),
       clearHistory: () => safe(() => Promise.resolve(svc.clearHistory())),
       getPrefs: () => safe(() => Promise.resolve(svc.getPrefs())),
+
+      // ---- 音乐用户态（收藏 / 最近浏览）----
+      // 返回形状与桌面 preload 一致：{ok:true,data}；data 为数组或 {id,favored}
+      getMusicFavs: () => safe(() => Promise.resolve(musicUserStore().getMusicFavs())),
+      toggleMusicFav: (id, platform) => safe(() => Promise.resolve(musicUserStore().toggleMusicFav(id, platform))),
+      getMusicSeen: () => safe(() => Promise.resolve(musicUserStore().getMusicSeen())),
+      markMusicSeen: (id) => safe(() => Promise.resolve(musicUserStore().markMusicSeen(id))),
       // 渲染层会写 window.api.setPref(...).catch(() => {})，必须返回 Promise 才与桌面
       // preload 的 ipc invoke 同形；同步返回对象会让 .catch 直接 TypeError。
       setPref: (key, value) => safe(() => Promise.resolve(svc.setPref(String(key), value))),

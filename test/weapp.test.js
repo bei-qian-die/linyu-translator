@@ -1142,6 +1142,54 @@ run('云端润色提示词与护栏自洽', () => {
   assert.strictEqual(M.retentionOk('塔来惹。', '塔来惹。', '他来了。'), true, '弃权原样输出被误拦');
 });
 
+run('音乐用户态：收藏幂等 + 浏览去重截断（services/musicFav.js）', () => {
+  const fav = require('../miniprogram/services/musicFav');
+  storage.delete(fav.FAV_KEY);
+  storage.delete(fav.SEEN_KEY);
+  fav.resetCache();
+
+  assert.strictEqual(fav.getMusicFavs().length, 0, '初始收藏应为空');
+  assert.strictEqual(fav.toggleMusicFav('yhx-probe', 'douyin').favored, true);
+  assert.strictEqual(fav.getMusicFavs().length, 1);
+  assert.strictEqual(fav.getMusicFavs()[0].platform, 'douyin');
+  assert.strictEqual(fav.toggleMusicFav('yhx-probe', 'douyin').favored, false, '再点一次应取消');
+  assert.strictEqual(fav.getMusicFavs().length, 0, '两次 toggle 应回到原状态');
+
+  // 清掉内存缓存还能读回来 → 证明真的落到 wx Storage 了
+  fav.toggleMusicFav('persist-probe', 'bilibili');
+  fav.resetCache();
+  assert.strictEqual(fav.getMusicFavs()[0].id, 'persist-probe');
+  assert.strictEqual(fav.getMusicFavs()[0].platform, 'bilibili');
+
+  for (let i = 0; i < 60; i++) fav.markMusicSeen('seen-' + i);
+  assert.strictEqual(fav.getMusicSeen().length, 50, '超过 50 条没截断');
+  assert.strictEqual(fav.getMusicSeen()[0].id, 'seen-59', '最新一条不在最前');
+  assert.ok(!fav.getMusicSeen().find((r) => r.id === 'seen-0'), '最老一条没被挤掉');
+  fav.markMusicSeen('seen-30');
+  const seen = fav.getMusicSeen();
+  assert.strictEqual(seen[0].id, 'seen-30', '重复点开后应回到最前');
+  assert.strictEqual(seen.filter((r) => r.id === 'seen-30').length, 1, '浏览记录去重失败');
+
+  storage.delete(fav.FAV_KEY);
+  storage.delete(fav.SEEN_KEY);
+  fav.resetCache();
+});
+
+run('音乐页只加次级筛选 chip，不动 tabBar（微信上限 5）', () => {
+  const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
+  assert.strictEqual(appJson.tabBar.list.length, 5, 'tabBar 超过微信上限');
+  assert.ok(!appJson.tabBar.list.some((t) => t.pagePath.includes('music-fav')), '收藏不该新开 tab');
+
+  const page = loadPage('music');
+  const views = (page.data.viewOpts || []).map((v) => v.key);
+  assert.ok(views.includes('favs') && views.includes('recent'), '收藏 / 最近浏览 chip 缺失');
+  const sorts = (page.data.sortOpts || []).map((v) => v.key);
+  assert.ok(sorts.includes('default') && sorts.includes('hot') && sorts.includes('recent'), '排序选项不完整');
+  // 收藏 / 浏览记录走本地服务，页面不直接碰 Storage
+  const src = fs.readFileSync(path.join(MP, 'pages', 'music', 'music.js'), 'utf8');
+  assert.ok(!/wx\.(get|set)StorageSync/.test(src), '页面里不该直接读写 Storage，应走 services/musicFav');
+});
+
 (async () => {
   for (const { name, fn } of pending) {
     try {

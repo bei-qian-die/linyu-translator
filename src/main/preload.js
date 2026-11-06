@@ -61,6 +61,13 @@ contextBridge.exposeInMainWorld('api', {
 
   getPrefs: () => ipcRenderer.invoke('ly:prefs:get'),
   setPref: (key, value) => ipcRenderer.invoke('ly:prefs:set', key, value),
+
+  // 音乐用户态（收藏 / 最近浏览），与 Web / 小程序端同名同语义
+  getMusicFavs: () => ipcRenderer.invoke('ly:music:favs'),
+  toggleMusicFav: (id, platform) => ipcRenderer.invoke('ly:music:toggleFav', id, platform),
+  getMusicSeen: () => ipcRenderer.invoke('ly:music:seen'),
+  markMusicSeen: (id) => ipcRenderer.invoke('ly:music:markSeen', id),
+
   openLogs: () => ipcRenderer.invoke('ly:logs:open'),
 
   openExternal: (url) => ipcRenderer.invoke('ly:openExternal', url),

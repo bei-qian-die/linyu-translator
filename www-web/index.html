@@ -656,8 +656,8 @@
            链接统一走 openLink（桌面 shell.openExternal / 安卓 Capacitor Browser / Web 新标签） -->
       <section v-show="view === 'music'" class="manage-page music-page">
         <div class="lore-head">
-          <h2>音乐板块 · 抖音 × 哔哩哔哩搞怪二创音源</h2>
-          <p>野花香 × Gulp 两条梗音源，{{ musicCount }} 条音源配 {{ musicVideoCount }} 条二创样例（抖音 {{ musicPlatformCount.douyin }} · B 站 {{ musicPlatformCount.bilibili }}）；每条链接都开页核验过落点（{{ musicCollectedAt }}），点开直达原页。</p>
+          <h2>音乐板块 · 四平台搞怪二创音源</h2>
+          <p>野花香 × Gulp 两条梗音源，{{ musicCount }} 条音源配 {{ musicVideoCount }} 条二创样例（{{ musicPlatformSummary }}）；每条链接都开页核验过落点（{{ musicCollectedAt }}），点开直达原页。收藏与最近浏览只存本地，不随导出/备份/同步跑。</p>
         </div>
 
         <div class="music-toolbar">
@@ -684,20 +684,46 @@
           <input class="search music-search" v-model.trim="musicSearch" placeholder="搜音源名 / 作者 / 玩法标签…" />
         </div>
 
+        <!-- 次级筛选行：收藏 / 最近浏览 / 排序 / 每日一条，全部落在音乐页内部，不新开顶层 tab -->
+        <div class="music-subbar">
+          <div class="music-views">
+            <span class="music-plat-label">查看</span>
+            <button
+              v-for="v in musicViewOpts"
+              :key="v.key"
+              class="music-plat-chip"
+              :class="{ on: musicView === v.key }"
+              @click="switchMusicView(v.key)"
+            >{{ v.label }}<span class="mg-count" v-if="v.key === 'favs'">{{ musicFavCount }}</span><span class="mg-count" v-else-if="v.key === 'recent'">{{ musicSeenCount }}</span></button>
+          </div>
+          <div class="music-daily">
+            <button class="ghost small" @click="focusMusic(musicDaily)">每日一条</button>
+            <button class="ghost small" @click="pickRandomMusic(); focusMusic(musicRandom)">随机一条</button>
+            <select class="limit-select" :value="musicSort" @change="musicSort = $event.target.value">
+              <option v-for="s in musicSortOpts" :key="s.key" :value="s.key">{{ s.label }}</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="music-sort-hint" v-if="musicSort === 'hot'">热度按平台内归一化排序：抖音「人在用」/ B 站播放 / 网易云评论 / QQ 播放各自除以本站最大值后再比，跨平台不直接比原始值。</p>
+        <p class="music-daily-line" v-if="musicDaily">今日推荐：<b>{{ musicDaily.name }}</b> · @{{ musicDaily.author }}（{{ musicDaily.tag }}）<button class="link" @click="focusMusic(musicDaily)">跳到这条并复制链接 →</button></p>
+        <p class="music-daily-line" v-if="musicRandom">随机结果：<b>{{ musicRandom.name }}</b> · @{{ musicRandom.author }}（{{ musicRandom.tag }}）<button class="link" @click="focusMusic(musicRandom)">跳到这条并复制链接 →</button></p>
+
         <div class="music-grid">
-          <article class="music-card" v-for="(m, i) in filteredMusic" :key="m.id">
+          <article class="music-card" :class="{ focused: musicFocusId === m.id }" :id="'music-' + m.id" v-for="(m, i) in filteredMusic" :key="m.id">
             <div class="mc-head">
               <span class="mc-no">{{ String(i + 1).padStart(2, '0') }}</span>
               <div class="mc-title">
                 <h3 :title="m.name">{{ m.name }}</h3>
                 <span class="mc-author">@{{ m.author }}</span>
               </div>
-              <span class="mc-plat" :class="m.source">{{ m.source === 'bilibili' ? 'B 站' : '抖音' }}</span>
+              <span class="mc-plat" :class="m.source">{{ m.platformShort || m.platform }}</span>
               <span class="mc-tag">{{ m.tag }}</span>
+              <button class="mc-fav" :class="{ on: isMusicFav(m.id) }" :title="isMusicFav(m.id) ? '取消收藏' : '收藏'" @click="toggleMusicFav(m)">{{ isMusicFav(m.id) ? '♥' : '♡' }}</button>
             </div>
 
             <div class="mc-stats">
-              <span v-if="m.usageCount"><b>{{ fmtMusicCount(m.usageCount) }}</b> {{ m.source === 'bilibili' ? '播放' : '人在用' }}</span>
+              <span v-if="m.usageCount"><b>{{ fmtMusicCount(m.usageCount) }}</b> {{ m.usageUnit || '使用量' }}</span>
               <span v-else class="mc-dim">使用量未知</span>
               <span class="mc-dim">·</span>
               <span class="mc-dim">{{ m.examples.length }} 条样例</span>
@@ -717,18 +743,19 @@
                 </div>
                 <p class="mc-ex-point">{{ e.memePoint }}</p>
                 <p class="mc-ex-title" :title="e.title">{{ shortTitle(e.title) }}</p>
-                <button class="link" @click="openLink(e.videoUrl)">看这条二创 →</button>
+                <button class="link" @click="openMusic(m, e.videoUrl)">看这条二创 →</button>
               </div>
             </div>
 
             <div class="mc-actions">
-              <button class="go small" @click="openLink(m.musicUrl)">{{ m.source === 'bilibili' ? '打开原作品页' : '打开音乐页' }}</button>
+              <button class="go small" @click="openMusic(m)">{{ m.source === 'bilibili' ? '打开原作品页' : '打开音乐页' }}</button>
               <button class="ghost small" @click="copyPlain(m.searchKeyword, '搜索词已复制')">复制搜索词</button>
+              <button class="ghost small" @click="shareMusic(m)">分享</button>
             </div>
             <p class="mc-keyword">{{ m.platform }}搜索：{{ m.searchKeyword }} · 链接核验 {{ m.verifiedAt }}</p>
           </article>
         </div>
-        <div class="empty" v-if="!filteredMusic.length">这一组没有匹配的音源，换个词或点「全部」看看</div>
+        <div class="empty" v-if="!filteredMusic.length">{{ musicEmptyText }}</div>
       </section>
 
       <!-- 历史页 -->

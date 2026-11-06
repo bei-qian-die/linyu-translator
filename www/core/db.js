@@ -129,6 +129,15 @@ CREATE TABLE IF NOT EXISTS deleted (
   key TEXT NOT NULL,
   PRIMARY KEY (kind, key)
 );
+CREATE TABLE IF NOT EXISTS music_favs (
+  id TEXT PRIMARY KEY,
+  platform TEXT DEFAULT 'douyin',
+  created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS music_seen (
+  id TEXT PRIMARY KEY,
+  seen_at TEXT NOT NULL
+);
 `;
 
 const DEFAULT_HISTORY_LIMIT = 200;
@@ -1227,6 +1236,48 @@ async function createDb({ filePath, seed, lore, onPersistError, version }) {
       const rows = all('SELECT * FROM history');
       run('DELETE FROM history');
       return { ok: true, undo: { kind: 'history', rows, label: '翻译历史' } };
+    },
+
+    // ---- 音乐用户态（收藏 / 最近浏览）----
+    // 静态音源（62→150+ 条）仍然只走 src/core/music.js 静态模块，不进库；
+    // 这里只存用户自己的「收藏了哪条 slug」「最近点开过哪条 slug」，不参与导出备份与云同步。
+    getMusicFavs() {
+      return all('SELECT id, platform, created_at FROM music_favs ORDER BY created_at DESC, rowid DESC').map(
+        (r) => ({ id: r.id, platform: r.platform, createdAt: r.created_at })
+      );
+    },
+    toggleMusicFav(id, platform) {
+      const slug = String(id || '').trim();
+      if (!slug) return { ok: false, error: '缺少音源 id' };
+      const exists = Boolean(all('SELECT id FROM music_favs WHERE id = ?', [slug])[0]);
+      if (exists) run('DELETE FROM music_favs WHERE id = ?', [slug]);
+      else {
+        run('INSERT INTO music_favs (id, platform, created_at) VALUES (?, ?, ?)', [
+          slug,
+          String(platform || 'douyin'),
+          new Date().toISOString(),
+        ]);
+      }
+      return { ok: true, data: { id: slug, favored: !exists } };
+    },
+    getMusicSeen() {
+      return all('SELECT id, seen_at FROM music_seen ORDER BY seen_at DESC, rowid DESC LIMIT 50').map((r) => ({
+        id: r.id,
+        seenAt: r.seen_at,
+      }));
+    },
+    markMusicSeen(id) {
+      const slug = String(id || '').trim();
+      if (!slug) return { ok: false, error: '缺少音源 id' };
+      batch(() => {
+        // 先删后插：重复点开要「回到最前」，而 SQLite 的 ON CONFLICT UPDATE 不会换 rowid，
+        // 同一毫秒内连续浏览时按 rowid 兜底排序会把老行留在原位。删掉重插 = 重新拿到最新 rowid。
+        run('DELETE FROM music_seen WHERE id = ?', [slug]);
+        run('INSERT INTO music_seen (id, seen_at) VALUES (?, ?)', [slug, new Date().toISOString()]);
+        // 只保留最近 50 条：同一条重复点开只更新时间，不新增行
+        run('DELETE FROM music_seen WHERE id NOT IN (SELECT id FROM music_seen ORDER BY seen_at DESC, rowid DESC LIMIT 50)');
+      });
+      return { ok: true, data: { id: slug, seen: true } };
     },
 
     // ---- 备份与恢复 ----

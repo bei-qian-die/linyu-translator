@@ -1021,8 +1021,9 @@ createApp({
     const heroNameOpts = computed(() => heroes.value.map((h) => h.name));
 
     // ---- 音乐板块 ----
-    // 这一块是纯静态数据（src/core/music.js，抖音 × B 站搞怪二创音源 batch 2），刻意不进库：
+    // 静态音源（src/core/music.js，四平台搞怪二创音源 batch 4）刻意不进库：
     // 它跟用户的翻译历史/词库无关，不该被导出、备份、同步带着跑，也不用等 db 初始化。
+    // 进用户态存储的只有「收藏了哪条 slug」「最近点开过哪条 slug」——那是用户自己的数据。
     // 老打包产物里没有 core/music.js 时 window.MUSIC_DATA 不存在 → 这里退化成空列表 + 空态，
     // 不抛错、不影响其它页面（和 variant.js 缺失时降级同一个思路）。
     const musicData = (typeof window !== 'undefined' && window.MUSIC_DATA) || null;
@@ -1033,33 +1034,216 @@ createApp({
     const musicGroup = ref('all');
     const musicPlatform = ref('all');
     const musicSearch = ref('');
+    // 次级筛选（音乐页内部 chip，不新开顶层 tab）：全部 / 我的收藏 / 最近浏览
+    const musicView = ref('all');
+    const musicViewOpts = [
+      { key: 'all', label: '全部音源' },
+      { key: 'favs', label: '我的收藏' },
+      { key: 'recent', label: '最近浏览' },
+    ];
+    const musicSort = ref('default');
+    const musicSortOpts = [
+      { key: 'default', label: '默认顺序' },
+      { key: 'hot', label: '热度（平台内归一化）' },
+      { key: 'recent', label: '最近采集' },
+    ];
+    const musicFavs = ref([]); // [{ id, platform, createdAt }]，按收藏时间倒序
+    const musicSeen = ref([]); // [{ id, seenAt }]，最近 50 条、去重
+    const musicRandomId = ref('');
+    const musicFocusId = ref('');
     const musicCount = computed(() => musicItems.length);
     const musicVideoCount = computed(() =>
       musicItems.reduce((sum, it) => sum + ((it.examples && it.examples.length) || 0), 0)
     );
-    // 头部那句「抖音 x 条 · B 站 y 条」按实际数据算，不写死
+    // 头部那句「抖音 x 条 · B 站 y 条 · 网易云 z 条…」按实际数据算，新增平台不用改这句话
     const musicPlatformCount = computed(() => {
-      const acc = { douyin: 0, bilibili: 0 };
-      for (const it of musicItems) if (acc[it.source] !== undefined) acc[it.source]++;
+      const acc = {};
+      for (const it of musicItems) acc[it.source] = (acc[it.source] || 0) + 1;
       return acc;
     });
+    const musicPlatformSummary = computed(() =>
+      musicPlatforms
+        .filter((p) => p.key !== 'all')
+        .map((p) => `${p.label} ${musicPlatformCount.value[p.key] || 0}`)
+        .join(' · ')
+    );
     const musicTags = computed(() => {
       const seen = [];
       for (const it of musicItems) for (const s of it.style || []) if (!seen.includes(s)) seen.push(s);
       return seen;
     });
-    const filteredMusic = computed(() => {
-      if (musicData && typeof musicData.filter === 'function') {
-        return musicData.filter(musicGroup.value, musicSearch.value, musicPlatform.value);
+    const musicFavIds = computed(() => new Set(musicFavs.value.map((f) => f.id)));
+    const musicFavCount = computed(() => musicFavs.value.length);
+    const musicSeenCount = computed(() => musicSeen.value.length);
+
+    // 热度排序：跨平台原始值不可比（抖音「人在用」/ B 站播放 / 网易云评论 / QQ 播放差几个数量级），
+    // 所以按平台内归一化（各自除以本站最大值）后再比，界面标注「平台内归一化」。
+    function musicHotRank(list) {
+      const maxBy = new Map();
+      for (const it of list) {
+        const n = Number(it.usageCount);
+        if (Number.isFinite(n) && n > 0) maxBy.set(it.source, Math.max(maxBy.get(it.source) || 0, n));
       }
-      // 模块缺失时的兜底：至少按平台筛一层，别把两平台混在一起
-      return musicPlatform.value === 'all'
-        ? musicItems
-        : musicItems.filter((it) => it.source === musicPlatform.value);
+      return list.slice().sort((a, b) => {
+        const sa = Number(a.usageCount);
+        const sb = Number(b.usageCount);
+        const ra = Number.isFinite(sa) && maxBy.get(a.source) > 0 ? sa / maxBy.get(a.source) : -1;
+        const rb = Number.isFinite(sb) && maxBy.get(b.source) > 0 ? sb / maxBy.get(b.source) : -1;
+        if (rb !== ra) return rb - ra;
+        return String(a.platform).localeCompare(String(b.platform)) || String(a.name).localeCompare(String(b.name));
+      });
+    }
+
+    const filteredMusic = computed(() => {
+      let list;
+      if (musicData && typeof musicData.filter === 'function') {
+        list = musicData.filter(musicGroup.value, musicSearch.value, musicPlatform.value);
+      } else {
+        // 模块缺失时的兜底：至少按平台筛一层，别把各平台混在一起
+        list = musicPlatform.value === 'all'
+          ? musicItems.slice()
+          : musicItems.filter((it) => it.source === musicPlatform.value);
+      }
+      if (musicView.value === 'favs') {
+        const ids = musicFavIds.value;
+        list = list.filter((it) => ids.has(it.id));
+      } else if (musicView.value === 'recent') {
+        const order = new Map(musicSeen.value.map((s, i) => [s.id, i]));
+        list = list.filter((it) => order.has(it.id)).sort((a, b) => order.get(a.id) - order.get(b.id));
+      }
+      if (musicSort.value === 'hot') return musicHotRank(list);
+      if (musicSort.value === 'recent') {
+        return list.slice().sort((a, b) => String(b.verifiedAt || '').localeCompare(String(a.verifiedAt || '')));
+      }
+      return list;
     });
+
+    const musicEmptyText = computed(() => {
+      if (musicView.value === 'favs') return '还没有收藏的音源：点卡片右上角的 ♡ 就能收进来';
+      if (musicView.value === 'recent') return '还没有浏览记录：点开任意一条音源链接后会记在这里（最多 50 条）';
+      return '这一组没有匹配的音源，换个词或点「全部」看看';
+    });
+
     function switchMusicGroup(key) {
       musicGroup.value = key;
+      musicFocusId.value = '';
     }
+    function switchMusicView(key) {
+      musicView.value = key;
+      musicFocusId.value = '';
+    }
+
+    // ---- 音乐用户态（收藏 / 最近浏览）----
+    // 四端 API 同名同语义：桌面 preload IPC → SQLite；安卓 service → SQLite；
+    // Web → localStorage（linyu.music.favs / linyu.music.seen）；小程序 → services/musicFav.js。
+    async function loadMusicUserState() {
+      try {
+        const favs = await call(window.api.getMusicFavs());
+        musicFavs.value = Array.isArray(favs) ? favs : [];
+      } catch {
+        musicFavs.value = [];
+      }
+      try {
+        const seen = await call(window.api.getMusicSeen());
+        musicSeen.value = Array.isArray(seen) ? seen : [];
+      } catch {
+        musicSeen.value = [];
+      }
+    }
+    function isMusicFav(id) {
+      return musicFavIds.value.has(id);
+    }
+    async function toggleMusicFav(it) {
+      try {
+        const r = await call(window.api.toggleMusicFav(it.id, it.source));
+        if (r && r.favored) {
+          musicFavs.value = [
+            { id: it.id, platform: it.source, createdAt: new Date().toISOString() },
+            ...musicFavs.value.filter((f) => f.id !== it.id),
+          ];
+          say('已收藏♥');
+        } else {
+          musicFavs.value = musicFavs.value.filter((f) => f.id !== it.id);
+          say('已取消收藏');
+        }
+      } catch (err) {
+        fail(err);
+      }
+    }
+    async function markMusicSeen(it) {
+      try {
+        await call(window.api.markMusicSeen(it.id));
+        musicSeen.value = [
+          { id: it.id, seenAt: new Date().toISOString() },
+          ...musicSeen.value.filter((s) => s.id !== it.id),
+        ].slice(0, 50);
+      } catch {
+        /* 浏览记录失败不影响打开链接 */
+      }
+    }
+    // 点开音源：先记一条浏览，再交给 openLink（桌面 shell / 安卓 Browser / Web 新标签）
+    function openMusic(it, url) {
+      markMusicSeen(it);
+      openLink(url || it.musicUrl);
+    }
+
+    // ---- 每日一条 / 随机一条 ----
+    // 每日一条用「本地日期 + slug」做确定性种子：同一天稳定、跨天自动换，不落库
+    function musicDayKey() {
+      const d = new Date();
+      return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    }
+    function musicHash(str) {
+      let h = 2166136261;
+      for (let i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      return h >>> 0;
+    }
+    const musicDaily = computed(() => {
+      if (!musicItems.length) return null;
+      const day = musicDayKey();
+      let best = musicItems[0];
+      let bestScore = -1;
+      for (const it of musicItems) {
+        const score = musicHash(day + '|' + it.id);
+        if (score > bestScore) {
+          bestScore = score;
+          best = it;
+        }
+      }
+      return best;
+    });
+    const musicRandom = computed(() => musicItems.find((it) => it.id === musicRandomId.value) || null);
+    function pickRandomMusic() {
+      if (!musicItems.length) return;
+      musicRandomId.value = musicItems[Math.floor(Math.random() * musicItems.length)].id;
+    }
+    // 跳到某条：把分组 / 平台 / 筛选复位到能让它出现的位置，滚动到卡片并复制链接
+    function focusMusic(it) {
+      if (!it) return;
+      const g = musicGroups.find((x) => x.tag === it.tag);
+      musicView.value = 'all';
+      musicGroup.value = g ? g.key : 'all';
+      musicPlatform.value = it.source;
+      musicSearch.value = '';
+      musicSort.value = 'default';
+      musicFocusId.value = it.id;
+      markMusicSeen(it);
+      copyPlain(it.musicUrl, '已跳到该条并复制链接');
+      setTimeout(() => {
+        const el = document.getElementById('music-' + it.id);
+        if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 60);
+    }
+    // 桌面 / 安卓 / Web 的分享：复制「一句话推荐 + 链接」（小程序另走 onShareAppMessage）
+    async function shareMusic(it) {
+      const rec = it.examples && it.examples[0] ? it.examples[0].memePoint : '';
+      const text = `${it.name}｜@${it.author}（${it.tag}）${rec ? '：' + rec : ''}\n${it.musicUrl}`;
+      await copyPlain(text, '推荐语 + 链接已复制');
+    }
+
     // 数据模块自带的中文计数/时长格式化；模块缺失时给个不炸的兜底
     function fmtMusicCount(raw) {
       if (raw == null || raw === '') return '';
@@ -1660,6 +1844,8 @@ createApp({
       loadWords();
       // 词卡/名言的「归属人物」输入框要靠 datalist 提示人名
       loadHeroes();
+      // 音乐用户态（收藏 / 最近浏览）异步读，不阻塞首屏
+      loadMusicUserState();
       refreshAuth();
       try {
         const m = await call(window.api.meta());
@@ -1734,8 +1920,12 @@ createApp({
       quotes, quoteSearch, pagedQuotes, quotesPage, quotesPages, quotesTotal, goQuotesPage, jumpQuotesPage, quotesJump,
       quoteForm, editingQuoteId, saveQuote, resetQuoteForm, editQuote, removeQuote, heroNameOpts,
       musicItems, musicGroups, musicGroup, switchMusicGroup, musicSearch, filteredMusic,
-      musicPlatforms, musicPlatform, musicPlatformCount,
+      musicPlatforms, musicPlatform, musicPlatformCount, musicPlatformSummary,
       musicCount, musicVideoCount, musicTags, musicCollectedAt, fmtMusicCount, fmtMusicDur,
+      musicView, musicViewOpts, switchMusicView, musicSort, musicSortOpts,
+      musicFavs, musicFavCount, musicSeen, musicSeenCount, isMusicFav, toggleMusicFav,
+      musicDaily, musicRandom, pickRandomMusic, focusMusic, shareMusic, openMusic, musicFocusId,
+      musicEmptyText,
       copyPlain, shortTitle,
       heroes, heroSearch, imgFailed, markImgFail, selectedHero, openHero, backToHeroes, heroSrc, heroThumb, onHeroImgError,
       heroCards, heroQuotes, heroWords, heroRules, heroSearchUrl, openLink,

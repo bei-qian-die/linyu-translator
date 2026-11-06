@@ -2456,6 +2456,89 @@ body[data-mobile] .modal-wide {
   color: #00aeec;
 }
 
+/* 官方音源平台：网易云用官方红、QQ 音乐用官方绿 */
+.mc-plat.netease {
+  background: rgba(236, 65, 65, 0.12);
+  color: #ec4141;
+}
+
+.mc-plat.qqmusic {
+  background: rgba(49, 194, 124, 0.14);
+  color: #2aa86b;
+}
+
+/* 收藏按钮：空心 ♡ 常态，实心 ♥ 表示已收藏 */
+.mc-fav {
+  flex: none;
+  width: 30px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+.mc-fav:hover {
+  transform: scale(1.08);
+  color: #fe2c55;
+}
+
+.mc-fav.on {
+  color: #fe2c55;
+  border-color: rgba(254, 44, 85, 0.45);
+  background: rgba(254, 44, 85, 0.08);
+}
+
+/* 次级筛选行：查看（全部/收藏/最近）+ 每日一条 / 随机一条 / 排序 */
+.music-subbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px 0 4px;
+}
+
+.music-views {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.music-daily {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.music-daily-line {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.music-daily-line b {
+  color: var(--text);
+}
+
+.music-sort-hint {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* 每日一条 / 随机一条跳到的那张卡片 */
+.music-card.focused {
+  border-color: rgba(254, 44, 85, 0.5);
+  box-shadow: 0 0 0 3px rgba(254, 44, 85, 0.12);
+}
+
 .mc-tag {
   flex: none;
   font-size: 11px;

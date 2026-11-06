@@ -6,17 +6,25 @@
  *   → src/core/music.js        （四端共用：桌面 require / 浏览器 window.MUSIC_DATA）
  *   → miniprogram/data/music.js（小程序 require）
  *
- * 为什么要过一道生成：原始 JSON 是「采编交付物」，字段名与 schema 保持和抖音采集侧一致
- * （snake_case，便于和 release/ 里的采集说明对齐）；界面侧想要的是可直接遍历的 JS 模块 +
- * 分组元数据 + 计数格式化。两层之间只允许本脚本做转换，避免手抄两处写歪。
+ * 为什么要过一道生成：原始 JSON 是「采编交付物」，字段名与 schema 保持和采集侧一致
+ * （snake_case）；界面侧想要的是可直接遍历的 JS 模块 + 分组元数据 + 计数格式化。
+ * 两层之间只允许本脚本做转换，避免手抄两处写歪。
  *
- * 校验即门禁：任何一条链接形态不对、music_id / aweme_id 重复、examples 为空、
+ * 轨道 B 之后，平台与梗都由配置/数据集驱动：
+ *   - 平台：scripts/music-platforms.js 的 PLATFORMS 表（新增平台 = 加一条配置）
+ *   - 分组：由数据集里的 tag 自动生成（新增梗 = 只改数据集）
+ * 本脚本不再出现 `if (source === 'douyin')` 这类硬分支。
+ *
+ * 校验即门禁：任何一条链接形态不对、平台内 id 重复、examples 为空、
  * music_used 与上层音乐名不一致，直接非零退出，不出产物。
  */
 
 import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import platforms from './music-platforms.js';
+
+const { PLATFORMS, TAG_ORDER, platformByKey, platformOfUrl, groupKeyOf, groupLabelOf } = platforms;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
@@ -24,40 +32,7 @@ const SRC = path.join(root, 'src', 'core', 'music-douyin.json');
 const OUT_CORE = path.join(root, 'src', 'core', 'music.js');
 const OUT_MP = path.join(root, 'miniprogram', 'data', 'music.js');
 
-// 分组：tag 是数据集里的原始归类，key 是界面上的筛选键
-const GROUPS = [
-  {
-    key: 'all',
-    label: '全部',
-    tag: null,
-    desc: '野花香 × Gulp 两个梗音源的全部入选条目',
-  },
-  {
-    key: 'yhx',
-    label: '野花香',
-    tag: '野花香',
-    desc: 'DJ 加速、土味广场舞、Kpop 缝合、嘉菲（Jiafei）抽象系',
-  },
-  {
-    key: 'gulp',
-    label: 'Gulp',
-    tag: 'Gulp',
-    desc: '吞咽音当万能音效：诗朗诵、早读、生日歌、不笑挑战',
-  },
-  {
-    key: 'yg',
-    label: '双音源',
-    tag: '野花香+Gulp',
-    desc: '两条梗音源同框混音，童年动画与抒情歌是重灾区',
-  },
-];
-
-const DY_MUSIC_URL_RE = /^https:\/\/www\.douyin\.com\/music\/\d+$/;
-const DY_VIDEO_URL_RE = /^https:\/\/www\.douyin\.com\/video\/\d{19}$/;
-// B 站没有独立音乐页：条目的 music_url 指向「引用该音源的作品页」，平台 id 是 BV 号
-const BILI_VIDEO_URL_RE = /^https:\/\/www\.bilibili\.com\/video\/(BV[0-9A-Za-z]{10})$/;
-const SOURCES = new Set(['douyin', 'bilibili']);
-const VALID_TAGS = new Set(GROUPS.map((g) => g.tag).filter(Boolean));
+const PLATFORM_KEYS = new Set(PLATFORMS.map((p) => p.key));
 
 function die(msg) {
   console.error('[build-music] ' + msg);
@@ -66,62 +41,69 @@ function die(msg) {
 
 function validate(ds) {
   if (!ds || !Array.isArray(ds.items) || !ds.items.length) die('数据集缺少 items');
-  const dyMusicIds = new Set();
-  const biliIds = new Set();
+  const problems = [];
+  const idsByPlatform = new Map();
   const exampleIds = new Set();
   const slugs = new Set();
-  const problems = [];
+
+  for (const key of ds.platforms || []) {
+    if (!PLATFORM_KEYS.has(key)) problems.push(`platforms 出现未注册平台（${key}）`);
+  }
 
   ds.items.forEach((it, i) => {
     const src = it.source || 'douyin';
     const tag = `items[${i}] ${it.id || '(无 id)'} [${src}]`;
-    if (!SOURCES.has(src)) problems.push(`${tag}: source 非法（${it.source}）`);
+    const plat = platformByKey(src);
+    if (!plat) {
+      problems.push(`${tag}: source 未在平台注册表登记（${it.source}）`);
+      return;
+    }
     for (const field of ['id', 'name', 'author', 'tag', 'music_url', 'search_keyword', 'verified_at']) {
       if (!it[field]) problems.push(`${tag}: 缺字段 ${field}`);
     }
     if (slugs.has(it.id)) problems.push(`${tag}: id 重复`);
     slugs.add(it.id);
-    if (!VALID_TAGS.has(it.tag)) problems.push(`${tag}: tag 非法（${it.tag}）`);
     if (!Array.isArray(it.style) || !it.style.length) problems.push(`${tag}: style 为空`);
     if (!Array.isArray(it.examples) || !it.examples.length) problems.push(`${tag}: 没有二创示例`);
 
-    if (src === 'douyin') {
-      if (!DY_MUSIC_URL_RE.test(it.music_url || '')) problems.push(`${tag}: music_url 不是抖音音乐页（${it.music_url}）`);
-      if (!it.music_id) problems.push(`${tag}: 抖音条目缺 music_id`);
-      if (String(it.music_id) !== String(it.music_url || '').split('/').pop()) {
-        problems.push(`${tag}: music_id 与 music_url 不一致`);
-      }
-      if (dyMusicIds.has(it.music_id)) problems.push(`${tag}: music_id 重复（${it.music_id}）`);
-      dyMusicIds.add(it.music_id);
-    } else {
-      const m = BILI_VIDEO_URL_RE.exec(it.music_url || '');
-      if (!m) problems.push(`${tag}: music_url 不是 B 站作品页（${it.music_url}）`);
-      if (!it.platform_id) problems.push(`${tag}: B 站条目缺 platform_id（BV 号）`);
-      if (m && it.platform_id !== m[1]) problems.push(`${tag}: platform_id 与 music_url 不一致`);
+    // 音源落点：按该平台的 urlRe 校验，捕获组 1 就是平台内唯一 id
+    const m = plat.musicUrlRe.exec(it.music_url || '');
+    if (!m) problems.push(`${tag}: music_url 不符合 ${plat.label} 的落点形态（${it.music_url}）`);
+    const urlId = m ? m[1] : '';
+    const idVal = it[plat.idField];
+    if (plat.idRequired && !idVal) problems.push(`${tag}: ${plat.label} 条目缺 ${plat.idField}`);
+    if (m && String(idVal) !== String(urlId)) problems.push(`${tag}: ${plat.idField} 与 music_url 不一致`);
+
+    if (plat.musicIdPolicy === 'required') {
+      if (!it.music_id) problems.push(`${tag}: 缺 music_id`);
+      else if (String(it.music_id) !== String(urlId)) problems.push(`${tag}: music_id 与 music_url 不一致`);
+    } else if (plat.musicIdPolicy === 'null') {
       if (it.music_id !== null && it.music_id !== undefined) {
-        problems.push(`${tag}: B 站条目 music_id 必须为 null（B 站无独立音乐 id）`);
+        problems.push(`${tag}: ${plat.label} 条目 music_id 必须为 null（该平台没有独立音乐 id）`);
       }
-      if (biliIds.has(it.platform_id)) problems.push(`${tag}: platform_id 重复（${it.platform_id}）`);
-      biliIds.add(it.platform_id);
+    } else if (plat.musicIdPolicy === 'copy') {
+      if (String(it.music_id) !== String(it.platform_id)) problems.push(`${tag}: music_id 应与 platform_id 同值`);
     }
 
+    const set = idsByPlatform.get(src) || new Set();
+    if (set.has(String(idVal))) problems.push(`${tag}: ${plat.idField} 在 ${plat.label} 内重复（${idVal}）`);
+    set.add(String(idVal));
+    idsByPlatform.set(src, set);
+
+    // 二创示例：落点可以跨平台（网易云 / QQ 音源的示例仍是抖音 / B 站作品），按链接反推平台
     (it.examples || []).forEach((ex, j) => {
       const etag = `${tag}.examples[${j}]`;
       for (const field of ['title', 'author', 'video_url', 'aweme_id', 'meme_point']) {
         if (!ex[field]) problems.push(`${etag}: 缺字段 ${field}`);
       }
-      if (src === 'douyin') {
-        if (!DY_VIDEO_URL_RE.test(ex.video_url || '')) problems.push(`${etag}: video_url 不是抖音作品页（${ex.video_url}）`);
-        if (String(ex.aweme_id) !== String(ex.video_url || '').split('/').pop()) {
-          problems.push(`${etag}: aweme_id 与 video_url 不一致`);
-        }
-      } else {
-        const m = BILI_VIDEO_URL_RE.exec(ex.video_url || '');
-        if (!m) problems.push(`${etag}: video_url 不是 B 站作品页（${ex.video_url}）`);
-        if (m && ex.aweme_id !== m[1]) problems.push(`${etag}: aweme_id（BV）与 video_url 不一致`);
+      const hit = platformOfUrl(ex.video_url);
+      if (!hit) {
+        problems.push(`${etag}: video_url 不属于任何已注册平台的二创落点（${ex.video_url}）`);
+      } else if (String(ex.aweme_id) !== String(hit.id)) {
+        problems.push(`${etag}: aweme_id 与 video_url 不一致`);
       }
-      if (exampleIds.has(ex.aweme_id)) problems.push(`${etag}: 示例 id 重复（${ex.aweme_id}）`);
-      exampleIds.add(ex.aweme_id);
+      if (exampleIds.has(String(ex.aweme_id))) problems.push(`${etag}: 示例 id 重复（${ex.aweme_id}）`);
+      exampleIds.add(String(ex.aweme_id));
       if (ex.music_used !== it.name) problems.push(`${etag}: music_used 与音乐名不一致`);
     });
   });
@@ -130,27 +112,29 @@ function validate(ds) {
     problems.forEach((p) => console.error('  ✗ ' + p));
     die(`校验未通过，共 ${problems.length} 处问题（没有生成任何文件）`);
   }
-  const platforms = ds.items.reduce((acc, it) => {
+
+  const platformCounts = ds.items.reduce((acc, it) => {
     const s = it.source || 'douyin';
     acc[s] = (acc[s] || 0) + 1;
     return acc;
   }, {});
   return {
-    musicCount: dyMusicIds.size + biliIds.size,
-    dyMusicCount: dyMusicIds.size,
-    biliCount: biliIds.size,
+    musicCount: ds.items.length,
     awemeCount: exampleIds.size,
-    platforms,
+    platforms: platformCounts,
   };
 }
 
 function normalize(it) {
-  const source = it.source || 'douyin';
+  const plat = platformByKey(it.source || 'douyin');
   return {
     id: it.id,
-    source,
-    // 平台名：界面要按平台给徽章 / 改动词（抖音「人在用」vs B 站「播放」）
-    platform: source === 'bilibili' ? '哔哩哔哩' : '抖音',
+    source: it.source || 'douyin',
+    // 平台名与使用量单位全部来自注册表，界面不再自己判平台
+    platform: plat.label,
+    platformShort: plat.shortLabel,
+    usageUnit: plat.usageUnit,
+    usageLabel: plat.usageLabel,
     name: it.name,
     author: it.author,
     tag: it.tag,
@@ -175,6 +159,53 @@ function normalize(it) {
   };
 }
 
+// 分组从数据集自动生成：tag → 一条分组；顺序先按 TAG_META 的 order，其余按条目数倒序
+function buildGroups(ds) {
+  const tagCount = new Map();
+  const tagStyles = new Map();
+  for (const it of ds.items) {
+    tagCount.set(it.tag, (tagCount.get(it.tag) || 0) + 1);
+    if (!tagStyles.has(it.tag)) tagStyles.set(it.tag, new Map());
+    const sc = tagStyles.get(it.tag);
+    for (const s of it.style || []) sc.set(s, (sc.get(s) || 0) + 1);
+  }
+
+  const tags = [...tagCount.keys()].sort((a, b) => {
+    const oa = TAG_ORDER.has(a) ? TAG_ORDER.get(a) : 999;
+    const ob = TAG_ORDER.has(b) ? TAG_ORDER.get(b) : 999;
+    if (oa !== ob) return oa - ob;
+    return (tagCount.get(b) || 0) - (tagCount.get(a) || 0);
+  });
+
+  const usedKeys = new Set(['all']);
+  const groups = [];
+  const platformTotal = (ds.platforms || []).length;
+  const awemeTotal = ds.items.reduce((n, it) => n + (it.examples || []).length, 0);
+  groups.push({
+    key: 'all',
+    label: '全部',
+    tag: null,
+    desc: `共 ${ds.items.length} 条音源 · ${awemeTotal} 条二创 · ${platformTotal} 个平台`,
+  });
+
+  for (const tag of tags) {
+    let key = groupKeyOf(tag);
+    if (usedKeys.has(key)) key = `${key}-${groups.length}`;
+    usedKeys.add(key);
+    const styles = [...(tagStyles.get(tag) || new Map()).entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map((x) => x[0]);
+    groups.push({
+      key,
+      label: groupLabelOf(tag),
+      tag,
+      desc: `音源 ${tagCount.get(tag)} 条` + (styles.length ? ` · 常见玩法：${styles.join(' / ')}` : ''),
+    });
+  }
+  return groups;
+}
+
 // 每条数据一行 JSON：文件小、diff 也能看，出问题时还能直接 grep 到某个 aweme_id
 function emitJson(value, indent) {
   const pad = ' '.repeat(indent);
@@ -187,43 +218,40 @@ function emitJson(value, indent) {
 }
 
 function renderModule(ds, stats) {
-  const groups = GROUPS.map((g) => ({
+  const groups = buildGroups(ds).map((g) => ({
     ...g,
     count: g.tag ? ds.items.filter((it) => it.tag === g.tag).length : ds.items.length,
   }));
   const items = ds.items.map(normalize);
 
+  const platformLine = PLATFORMS.filter((p) => stats.platforms[p.key])
+    .map((p) => `${p.shortLabel} ${stats.platforms[p.key]}`)
+    .join(' · ');
+
   const lines = [];
   lines.push('// @ts-check');
   lines.push("'use strict';");
   lines.push('');
-  lines.push('// 音乐板块数据（抖音 × 哔哩哔哩 搞怪二创音源 · batch ' + ds.batch + '）');
+  lines.push('// 音乐板块数据（搞怪二创音源 · batch ' + ds.batch + '）');
   lines.push('//');
   lines.push('// 生成物：由 `npm run music:build` 从 src/core/music-douyin.json 生成，不要手改这个文件。');
-  lines.push('// 采集口径与逐条核验记录见 release/1.33.0-notes.md；每条 verifiedAt 是那次打开原页确认');
-  lines.push('// 链接落点（抖音音乐页 / 抖音作品页 / B 站作品页）的日期。play_count 抖音网页端不公开，故为 null。');
+  lines.push('// 平台落点、使用量单位、分组与平台筛选器全部来自 scripts/music-platforms.js 注册表；');
+  lines.push('// 每条 verifiedAt 是那次打开原页确认链接落点的日期。抖音 play_count 网页端不公开，故为 null。');
   lines.push('//');
-  lines.push('// 两平台的差别只在「音源落在哪个页面」：抖音有独立音乐页（music/<id>），');
-  lines.push('// B 站没有，条目的 musicUrl 指向引用该音源的作品页（video/BVxxx），platformId 存 BV 号。');
-  lines.push('//');
-  lines.push(`// 规模：${stats.musicCount} 条音源 / ${stats.awemeCount} 条二创作品`
-    + `（抖音 ${stats.dyMusicCount} · B 站 ${stats.biliCount}；示例 id 全批唯一）。`);
+  lines.push('// 规模：' + stats.musicCount + ' 条音源 / ' + stats.awemeCount + ' 条二创作品（' + platformLine + '）。');
   lines.push('');
   lines.push('const MUSIC_PLATFORMS = ' + emitJson([
     { key: 'all', label: '全部' },
-    { key: 'douyin', label: '抖音' },
-    { key: 'bilibili', label: 'B 站' },
-  ], 0) + ';');
+  ].concat(PLATFORMS.map((p) => ({ key: p.key, label: p.shortLabel }))), 0) + ';');
   lines.push('');
   lines.push('const MUSIC_GROUPS = ' + emitJson(groups, 0) + ';');
   lines.push('');
   lines.push('const MUSIC_ITEMS = ' + emitJson(items, 0) + ';');
   lines.push('');
-  lines.push(`const MUSIC_SOURCE = ${JSON.stringify(ds.source || 'douyin')};`);
+  lines.push(`const MUSIC_SOURCE = ${JSON.stringify(ds.source || (ds.platforms || ['douyin'])[0] || 'douyin')};`);
   lines.push(`const MUSIC_PLATFORM_LIST = ${JSON.stringify(ds.platforms || ['douyin'])};`);
   lines.push(`const MUSIC_BATCH = ${JSON.stringify(ds.batch)};`);
   lines.push(`const MUSIC_COLLECTED_AT = ${JSON.stringify(ds.collected_at)};`);
-  lines.push('');
   lines.push(`const MUSIC_COUNTS = ${JSON.stringify({
     music: stats.musicCount,
     videos: stats.awemeCount,
@@ -289,8 +317,8 @@ function filterMusicItems(groupKey, keyword, platformKey) {
   filter: filterMusicItems,
 };`);
   lines.push('// @platform: 双端导出，Node/打包器走 module.exports，浏览器/小程序同步脚本走 window 全局');
-  lines.push('if (typeof module === \'object\' && module.exports) module.exports = __export;');
-  lines.push('else if (typeof window !== \'undefined\') window.MUSIC_DATA = __export;');
+  lines.push("if (typeof module === 'object' && module.exports) module.exports = __export;");
+  lines.push("else if (typeof window !== 'undefined') window.MUSIC_DATA = __export;");
   lines.push('');
   return lines.join('\n');
 }
