@@ -57,6 +57,7 @@ const SKIP_IN_CHECK = new Set([
   'web/patch-app.js',
   'web/cloudSync.js',
   'web/mobileUI.js',
+  'web/versionCheck.js',
 ]);
 const NEEDS_BEFORE = { 'core/db.js': ['fsAdapter'] };
 
@@ -150,7 +151,7 @@ async function main() {
   const webSrc = path.join(root, 'src', 'web');
   const webDst = path.join(out, 'web');
   await fs.mkdir(webDst, { recursive: true });
-  for (const name of ['idbAdapter.js', 'webEntry.js', 'patch-app.js', 'cloudSync.js', 'mobileUI.js', 'web.css', 'cloud.css', 'mobile.css']) {
+  for (const name of ['idbAdapter.js', 'webEntry.js', 'patch-app.js', 'cloudSync.js', 'mobileUI.js', 'versionCheck.js', 'web.css', 'cloud.css', 'mobile.css']) {
     await copyFile(path.join(webSrc, name), path.join(webDst, name));
   }
 
@@ -306,8 +307,29 @@ async function main() {
     '  <script src="web/patch-app.js"></script>\n' +
     `  <script src="${sdkScriptSrc}"></script>\n` +
     '  <script src="web/cloudSync.js"></script>\n' +
-    '  <script src="web/mobileUI.js"></script>'
+    '  <script src="web/mobileUI.js"></script>\n' +
+    '  <script src="web/versionCheck.js"></script>'
   );
+
+  // ---- 资源版本号（内容指纹）----
+  // 覆盖发布后资源 URL 一字不变，而网关不给 Cache-Control —— 手机浏览器会一直拿
+  // 启发式缓存里的旧 app.js / core/music.js，表现就是「新版本上线了手机看不到」。
+  // 给每个 URL 加 ?v=<版本-内容指纹>，内容一变 URL 就变，缓存自然失效。
+  const assetHash = createHash('sha256');
+  for (const rel of ['app.js', 'style.css', 'core/music.js', 'core/changelog.js', 'seed-data.js']) {
+    try {
+      assetHash.update(rel);
+      assetHash.update(await fs.readFile(path.join(out, rel)));
+    } catch { /* 可选资源缺失不影响指纹 */ }
+  }
+  const buildTag = pkg.version + '-' + assetHash.digest('hex').slice(0, 8);
+
+  // 入口 HTML 也不能被缓存：否则浏览器连新的 <script> 列表都拿不到
+  html = html.replace(
+    '<head>',
+    `<head>\n  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />\n  <meta http-equiv="Pragma" content="no-cache" />\n  <meta http-equiv="Expires" content="0" />`
+  );
+  html = html.replace(/<html lang="zh-CN">/, `<html lang="zh-CN" data-build="${buildTag}">`);
 
   // ---- sharecode 注入 ----
   // app.workbuddy.host 站点分享要求所有子资源请求带 ?sharecode=，
@@ -318,24 +340,24 @@ async function main() {
     // 匹配 <script src="X"> 和 <link ... href="X">（link 里 href 不一定紧接 link 后面）
     html = html.replace(
       /(<(?:script src|link [^>]* href)=")((?:vendor|core|mobile|web)\/[^"]+)/g,
-      (m, pre, url) => pre + url + '?sharecode=' + sharecode
+      (m, pre, url) => pre + url + '?v=' + buildTag + '&amp;sharecode=' + sharecode
     );
     // 处理根目录相对路径（seed-data.js, seed.json, style.css, app.js）
     html = html.replace(
       /(<(?:script src|link [^>]* href)=")(seed-data\.js|seed\.json|style\.css|app\.js)(")/g,
-      (m, pre, url, post) => pre + url + '?sharecode=' + sharecode + post
+      (m, pre, url, post) => pre + url + '?v=' + buildTag + '&amp;sharecode=' + sharecode + post
     );
     // favicon 也在根目录：少了 sharecode，站点会直接 403，标签页只能显示默认白纸图标
     html = html.replace(
       /(<link [^>]* href=")(favicon\.ico|favicon-16\.png|favicon-32\.png|apple-touch-icon\.png)(")/g,
-      (m, pre, url, post) => pre + url + '?sharecode=' + sharecode + post
+      (m, pre, url, post) => pre + url + '?v=' + buildTag + '&amp;sharecode=' + sharecode + post
     );
   }
 
   await fs.writeFile(path.join(out, 'index.html'), html, 'utf8');
 
   // 版本信息
-  await fs.writeFile(path.join(out, 'version.json'), JSON.stringify({ version: pkg.version, name: pkg.name, target: 'web' }, null, 2));
+  await fs.writeFile(path.join(out, 'version.json'), JSON.stringify({ version: pkg.version, name: pkg.name, target: 'web', build: buildTag }, null, 2));
 
   // 检查 bundle
   await checkBundle();

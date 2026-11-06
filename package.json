@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node scripts/build-changelog.mjs && node scripts/prepare-desktop.mjs && electron .",
     "check": "node scripts/check.js",
-    "test": "node test/core.test.js && node test/variant.test.js && node test/music.test.js && node test/changelog.test.js && node test/db.test.js && node test/service.test.js && node test/polish.test.js && node test/weapp.test.js",
+    "test": "node test/core.test.js && node test/variant.test.js && node test/music.test.js && node test/changelog.test.js && node test/db.test.js && node test/service.test.js && node test/polish.test.js && node test/weapp.test.js && node test/web-version-check.test.js",
     "test:core": "node test/core.test.js",
     "test:variant": "node test/variant.test.js",
     "test:db": "node test/db.test.js",
