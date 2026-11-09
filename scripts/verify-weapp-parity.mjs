@@ -12,7 +12,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const coreSeed = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'core', 'seed.json'), 'utf8'));
 // 小程序端 seed 是列式编码（{__col:1, __sst:1, words:{keys,rows}}）以压主包，这里先还原再比对。
-// __sst=1 时表格单元是全局字符串表（data/_sst.js）的下标。
+// __sst=1 时表格单元是主包字符串表（data/_sst.js）的下标；分包有自己独立的一张表。
 let MP_SST = null;
 try {
   MP_SST = require('../miniprogram/data/_sst.js');

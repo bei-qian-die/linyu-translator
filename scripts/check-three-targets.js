@@ -12,19 +12,20 @@ const counts = require(path.join(ROOT, 'miniprogram/data/counts.js'));
 console.log('=== 三端数据一致性 ===');
 console.log('Electron src/core/seed.json :', src.words.length, '词 /', src.rules.length, '句式');
 console.log('www/seed.json               :', www.words.length, '词 /', www.rules.length, '句式');
-console.log('miniprogram/data/seed.js    :', (wseed.match(/"zh":/g) || []).length, '词条');
+// v1.30 起小程序 seed 走列式编码（__col=1），不再有 "zh": 字样，改读 counts.js 的权威计数
+console.log('miniprogram/data/seed.js    :', (wseed.match(/"zh":/g) || []).length, '个 "zh": 字样（列式编码后天然为 0）');
 console.log('miniprogram/data/counts.js  :', JSON.stringify(counts));
 
 const has = (p) => fs.existsSync(path.join(ROOT, p));
 console.log('www/core 有 extra11/12       :', has('www/core/lore-extra11.js'), has('www/core/lore-extra12.js'));
-console.log('miniprogram/data extra11/12 :', has('miniprogram/data/lore-extra11.js'), has('miniprogram/data/lore-extra12.js'));
+console.log('miniprogram/pkg-hero extra11/12 :', has('miniprogram/pkg-hero/data/lore-extra11.js'), has('miniprogram/pkg-hero/data/lore-extra12.js'));
 console.log(
   'www/core/lore.js 挂了 extra12:',
   fs.readFileSync(path.join(ROOT, 'www/core/lore.js'), 'utf8').includes('lore-extra12')
 );
 console.log(
-  'miniprogram/data/lore.js 挂了 extra12:',
-  fs.readFileSync(path.join(ROOT, 'miniprogram/data/lore.js'), 'utf8').includes('lore-extra12')
+  'miniprogram/pkg-hero/data/lore.js 挂了 extra12:',
+  fs.readFileSync(path.join(ROOT, 'miniprogram/pkg-hero/data/lore.js'), 'utf8').includes('lore-extra12')
 );
 
 const vj = path.join(ROOT, 'www/version.json');
@@ -40,7 +41,7 @@ if (has('android/app/src/main/assets/public/seed-data.js')) {
 }
 
 // 三端词库条数必须完全一致
-const wCount = (wseed.match(/"zh":/g) || []).length;
+const wCount = counts.words;
 const aCount = fs.existsSync(aseed) ? (fs.readFileSync(aseed, 'utf8').match(/"zh":/g) || []).length : -1;
 const ok = src.words.length === www.words.length && src.words.length === wCount && src.words.length === aCount;
 console.log('\n结论: 三端词库条数一致 =', ok ? '是' : '否');

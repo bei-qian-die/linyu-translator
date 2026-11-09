@@ -10,7 +10,8 @@ const { translateText } = require('../core/translator');
 
 // seed 在小程序端是列式编码（{__col:1, __sst:1, words:{keys,rows}}）以压主包体积，
 // 这里还原成常规对象数组；如果拿到的是老格式（直接是 {words:[...]}）就原样返回。
-// __sst=1 表示表格单元存的是全局字符串表（data/_sst.js）的下标，见 scripts/build-weapp-data.mjs。
+// __sst=1 表示表格单元存的是主包字符串表（data/_sst.js）的下标，见 scripts/build-weapp-data.mjs。
+// 分包 pkg-hero 有自己的一张表，两张表各自独立编号，别混用。
 function decodeSeed(mod) {
   if (!mod || !mod.__col) return mod;
   let sst = null;

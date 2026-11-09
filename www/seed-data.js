@@ -1499,7 +1499,7 @@ window.__SEED_DATA = {
       "slot": "游戏术语/构词法/基础谐音替换",
       "pop": "中",
       "sense": "“英”→“阴”（《淋物大战僵湿：阴雄》），分区名“阴雄淋盟”用的就是这条替换。",
-      "alias": "英",
+      "alias": "英、阴熊",
       "rel": [
         "奥奇淋说"
       ]
@@ -8354,7 +8354,7 @@ window.__SEED_DATA = {
     {
       "zh": "阴婷",
       "linyu": "阴婷",
-      "alias": "阴婷仙子、阴中仙子、周阴婷",
+      "alias": "阴婷仙子、阴中仙子、周阴婷、英庭",
       "slot": "圈层黑话 / 人物",
       "sense": "淋语圈虚构/二创人物，常被写成“阴中仙子”，与周阴婷、凤仙子等构成淋剧人物谱。",
       "source": "https://search.bilibili.com/all?keyword=%E9%98%B4%E5%A9%B7%E4%BB%99%E5%AD%90%20%E6%B7%8B%E8%AF%AD",
@@ -8367,7 +8367,7 @@ window.__SEED_DATA = {
     {
       "zh": "周阴婷",
       "linyu": "周阴婷",
-      "alias": "阴婷、周阴中、阴中仙子、阴中、圣子",
+      "alias": "阴婷、周阴中、阴中仙子、阴中、圣子、周英庭",
       "slot": "圈层黑话 / 人物",
       "sense": "淋语圈最具代表性的二创人物之一，常被写成发专辑、首谈、宫斗的“淋系天后”。",
       "source": "https://search.bilibili.com/all?keyword=%E5%91%A8%E9%98%B4%E5%A9%B7%20%E6%B7%8B%E8%AF%AD",
@@ -42258,6 +42258,3209 @@ window.__SEED_DATA = {
       "rel": [
         "divatag"
       ]
+    },
+    {
+      "zh": "植物大战僵尸",
+      "linyu": "淋物大战阴尸",
+      "alias": "淋物大战阴尸、淋物大战浆尸、淋物大战僵湿、【肘物大战干尸】",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "圈内对《植物大战僵尸》的固定叫法：「淋物」= 植物，「阴尸」= 僵尸。",
+      "source": "https://www.bilibili.com/video/BV1R4421S7oj",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "植物",
+      "linyu": "淋物",
+      "alias": "淋物",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "对植物的统称，单数复数通用。",
+      "source": "https://www.bilibili.com/video/BV1R4421S7oj",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "僵尸",
+      "linyu": "阴尸",
+      "alias": "阴尸",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "对僵尸的统称；也泛指「没救了的局面」。",
+      "source": "https://www.bilibili.com/video/BV1R4421S7oj",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "植物（拟人）",
+      "linyu": "植男",
+      "alias": "植男",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "把植物拟人成男性角色时的叫法，带相亲/选拔口吻。",
+      "source": "https://www.bilibili.com/video/BV1UeP7zoE4g",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "向日葵",
+      "linyu": "血阴葵",
+      "alias": "血阴葵",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "向日葵的谐写，暗黑二创里常用。",
+      "source": "https://www.bilibili.com/video/BV1PzhA6AEsi",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "豌豆射手",
+      "linyu": "豌豆肌肉射手",
+      "alias": "豌豆肌肉射手",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "给豌豆射手加上「肌肉优熊」设定的拟人叫法。",
+      "source": "https://www.bilibili.com/video/BV1PzhA6AEsi",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "暗影豌豆",
+      "linyu": "暗阴豌豆",
+      "alias": "暗阴豌豆",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "豌豆系变体的谐写，「暗影」→「暗阴」。",
+      "source": "https://www.bilibili.com/video/BV1Ee4y1r7vU",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（恐怖版原创）",
+      "linyu": "凤淋姐妹花",
+      "alias": "凤淋姐妹花",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "恐怖版二创里的组合名，与「纸扎」连用。",
+      "source": "https://www.bilibili.com/video/BV1PzhA6AEsi",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "僵尸（拟人）",
+      "linyu": "肌肉优熊",
+      "alias": "肌肉优熊",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "把僵尸拟人成「优熊」体型的说法，杂交版高频。",
+      "source": "https://www.bilibili.com/video/BV1R4421S7oj",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（杂交版植物）",
+      "linyu": "橘瓣猎手",
+      "alias": "橘瓣猎手",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "杂交版新增植物的社区叫法。",
+      "source": "https://www.bilibili.com/video/BV1VBvKz5EnU",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "疯狂戴夫",
+      "linyu": "阴夫",
+      "alias": "阴夫",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "戴夫的谐写，也指「看家那位」。",
+      "source": "https://www.bilibili.com/video/BV1vV4y14785",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（僵尸形象）",
+      "linyu": "阴桃",
+      "alias": "阴桃",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "二创角色名，常与「买榜」连用。",
+      "source": "https://www.bilibili.com/video/BV1LC4y1J7bS",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（阻挡类植物）",
+      "linyu": "碧莲",
+      "alias": "碧莲",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "「白莲」的谐写，用来骂挡路的角色。",
+      "source": "https://www.bilibili.com/video/BV1Za411o7cy",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "墓碑",
+      "linyu": "三墓",
+      "alias": "三墓",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "「三座墓碑」的简称，也指开局被墓碑卡住。",
+      "source": "https://www.bilibili.com/video/BV1vV4y14785",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "僵尸聚会",
+      "linyu": "阴趴",
+      "alias": "阴趴",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "僵尸成群涌来时的说法。",
+      "source": "https://www.bilibili.com/video/BV1vV4y14785",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "拓维",
+      "linyu": "阴维",
+      "alias": "阴维",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "指代理发行方拓维，玩家不满修复/收费时的谐称。",
+      "source": "https://www.bilibili.com/video/BV1B14y1p7hk",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "僵尸援军",
+      "linyu": "阴兵",
+      "alias": "阴兵",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "成批出现的僵尸，也指排队卡顿。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B4%E5%85%B5",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（关卡名）",
+      "linyu": "阴墓迷城",
+      "alias": "阴墓迷城",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "穿越类二创里的关卡谐写。",
+      "source": "https://www.bilibili.com/video/BV1Kk3CeWE9o",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "植物战争",
+      "linyu": "花淋战争",
+      "alias": "花淋战争",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "系列分支名，「花园战争」的谐写。",
+      "source": "https://www.bilibili.com/video/BV1NDMAzsE99",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "回忆之旅",
+      "linyu": "淋忆之旅",
+      "alias": "淋忆之旅",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "怀旧模式/系列的谐写。",
+      "source": "https://www.bilibili.com/video/BV1iPatzKE1i",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（二创角色）",
+      "linyu": "艾吸",
+      "alias": "艾吸",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "二创角色名，常与「吸入阳气」连用。",
+      "source": "https://www.bilibili.com/video/BV1xg4y1o7i4",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "玫瑰",
+      "linyu": "我瑰",
+      "alias": "我瑰",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "杂交版植物「玫瑰」的自称式写法。",
+      "source": "https://www.bilibili.com/video/BV1NDMAzsE99",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（淋语分支）",
+      "linyu": "淋国话",
+      "alias": "淋国话",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "指用淋语腔调说话，带播音感。",
+      "source": "https://www.bilibili.com/video/BV1k14y147ED",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（装备名）",
+      "linyu": "圣杯面具",
+      "alias": "圣杯面具",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "二创里被反复点名的装备，常与「40cd」连用。",
+      "source": "https://www.bilibili.com/video/BV1KUuN6EEuf",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（技能）",
+      "linyu": "摄人心魄的钩子",
+      "alias": "摄人心魄的钩子、大烟花",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "形容一个技能又准又狠，钩住就跑不掉。",
+      "source": "https://www.bilibili.com/video/BV1qGZMB8E4b",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（对局）",
+      "linyu": "世纪守家",
+      "alias": "世纪守家",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "形容一场拖到最后一秒的守家局。",
+      "source": "https://www.bilibili.com/video/BV1ZLgr6zEZE",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（场面）",
+      "linyu": "白色烟花",
+      "alias": "白色烟花",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "形容一波打完场上什么都没有，白茫茫一片。",
+      "source": "https://www.bilibili.com/video/BV1KUuN6EEuf",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（人设）",
+      "linyu": "首谈反派女王",
+      "alias": "首谈反派女王",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "给反派角色补一段「首次回应」的戏码。",
+      "source": "https://www.bilibili.com/video/BV1YA4m1P7ss",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（行动）",
+      "linyu": "特务J行动",
+      "alias": "特务J行动",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "指偷偷摸摸绕后偷家的操作。",
+      "source": "https://www.bilibili.com/video/BV1Ee4y1r7vU",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（日常）",
+      "linyu": "每日挑担",
+      "alias": "每日挑担",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "形容每天重复同一套苦力流程。",
+      "source": "https://www.bilibili.com/video/BV1QJJQzFENd",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（玩法）",
+      "linyu": "抽卡环节",
+      "alias": "抽卡环节",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "指全靠运气的开箱环节。",
+      "source": "https://www.bilibili.com/video/BV1QJJQzFENd",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（称号）",
+      "linyu": "至尊大王",
+      "alias": "至尊大王",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "二创里给 Boss 级角色的戏称。",
+      "source": "https://www.bilibili.com/video/BV1gJYVz9ESk",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（行为）",
+      "linyu": "线下真实",
+      "alias": "线下真实",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "指跑到现实里去找人算账，玩梗用法。",
+      "source": "https://www.bilibili.com/video/BV1gJYVz9ESk",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（场景）",
+      "linyu": "蹦蹦阴趴",
+      "alias": "蹦蹦阴趴",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "僵尸成群蹦跳涌来的场面。",
+      "source": "https://www.bilibili.com/video/BV1vV4y14785",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（动作）",
+      "linyu": "孔雀舞",
+      "alias": "孔雀舞",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "形容摆姿势摆得很夸张。",
+      "source": "https://www.bilibili.com/video/BV1Bu4y1E77m",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（外号）",
+      "linyu": "泔水婆",
+      "alias": "泔水婆",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "圈内给某类角色的贬称。",
+      "source": "https://www.bilibili.com/video/BV1Hpu3zzEMu",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（自称）",
+      "linyu": "我娲",
+      "alias": "我娲",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "把角色名当第一人称用，带戏谑。",
+      "source": "https://www.bilibili.com/video/BV1CfEW6REZ6",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "半价吧",
+      "linyu": "淋价吧",
+      "alias": "淋价吧",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "贴吧里讨论折扣的据点，也是淋语聚集地。",
+      "source": "https://www.bilibili.com/video/BV1sZ4X6tEiP",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "（组合）",
+      "linyu": "琴茶双响炮",
+      "alias": "琴茶双响炮",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "两个角色的组合名，带双关。",
+      "source": "https://www.bilibili.com/video/BV1sZ4X6tEiP",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "围观",
+      "linyu": "看乐子",
+      "alias": "看乐子",
+      "slot": "淋物大战阴尸 / 二创术语",
+      "sense": "以围观取乐的心态。",
+      "source": "https://www.bilibili.com/video/BV1LC4y1J7bS",
+      "pop": "高",
+      "rel": [
+        "淋物大战阴尸",
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "双发射手",
+      "linyu": "双发射手",
+      "alias": "双发",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "一次两发豌豆，直线输出翻倍但价格也翻倍。 阳光 200。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%8F%91%E5%B0%84%E6%89%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "寒冰射手",
+      "linyu": "寒冰射手",
+      "alias": "冰豆",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "豌豆附带减速，专治冲脸的快僵尸。 阳光 175。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%92%E5%86%B0%E5%B0%84%E6%89%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "三线射手",
+      "linyu": "三线射手",
+      "alias": "三线",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "一发打三行，摆中间才划算。 阳光 325。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E7%BA%BF%E5%B0%84%E6%89%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "双子向日葵",
+      "linyu": "双子向日葵",
+      "alias": "双葵",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "一次产两份阳光，中期经济核心。 阳光 150。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%AD%90%E5%90%91%E6%97%A5%E8%91%B5",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "高坚果",
+      "linyu": "高坚果",
+      "alias": "高墙",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "加高版肉盾，撑杆跳僵尸翻不过来。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AB%98%E5%9D%9A%E6%9E%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "土豆雷",
+      "linyu": "土豆雷",
+      "alias": "土豆",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "埋地十五秒出土，专炸第一只贴脸的僵尸。 阳光 25。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%9F%E8%B1%86%E9%9B%B7",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "大嘴花",
+      "linyu": "大嘴花",
+      "alias": "食人花",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "一口吞一只，但吞完要嚼很久。 阳光 150。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%98%B4%E8%8A%B1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "小喷菇",
+      "linyu": "小喷菇",
+      "alias": "小喷",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "免费但射程短，只适合贴脸消耗。 阳光 0。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E5%96%B7%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "胆小菇",
+      "linyu": "胆小菇",
+      "alias": "胆小",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "僵尸靠近就缩起来，远程输出位。 阳光 25。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%83%86%E5%B0%8F%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "阳光菇",
+      "linyu": "阳光菇",
+      "alias": "阳光菇",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "夜关的经济植物，长大后产阳光。 阳光 25。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B3%E5%85%89%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "魅惑菇",
+      "linyu": "魅惑菇",
+      "alias": "魅惑",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "让吃下它的僵尸掉头帮你打。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%85%E6%83%91%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "磁力菇",
+      "linyu": "磁力菇",
+      "alias": "磁力",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "吸走铁桶、铁门一类金属装备。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%A3%81%E5%8A%9B%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "毁灭菇",
+      "linyu": "毁灭菇",
+      "alias": "毁灭",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "大范围爆炸并留下弹坑，一夜只能用一次。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%AF%81%E7%81%AD%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "寒冰菇",
+      "linyu": "寒冰菇",
+      "alias": "冰菇",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "全场冻结数秒，救场用。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%92%E5%86%B0%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "玉米加农炮",
+      "linyu": "玉米加农炮",
+      "alias": "玉米炮",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "占两格，手动瞄准，一发一炮清一片。 阳光 500。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%89%E7%B1%B3%E5%8A%A0%E5%86%9C%E7%82%AE",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "玉米投手",
+      "linyu": "玉米投手",
+      "alias": "玉米",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "扔玉米粒，偶尔扔黄油定身。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%89%E7%B1%B3%E6%8A%95%E6%89%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "西瓜投手",
+      "linyu": "西瓜投手",
+      "alias": "西瓜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "抛物线溅射，成群僵尸的克星。 阳光 300。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%A5%BF%E7%93%9C%E6%8A%95%E6%89%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "冰西瓜",
+      "linyu": "冰西瓜",
+      "alias": "冰瓜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "西瓜的冰系升级，溅射带减速。 阳光 200。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E8%A5%BF%E7%93%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "卷心菜投手",
+      "linyu": "卷心菜投手",
+      "alias": "卷心菜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "越过障碍的抛物线输出。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%B7%E5%BF%83%E8%8F%9C%E6%8A%95%E6%89%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "杨桃",
+      "linyu": "杨桃",
+      "alias": "星星果",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "五个方向同时射击，贴脸位收益最高。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%A8%E6%A1%83",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "窝瓜",
+      "linyu": "窝瓜",
+      "alias": "窝瓜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "压扁一只，压完就消失。 阳光 50。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AA%9D%E7%93%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "火爆辣椒",
+      "linyu": "火爆辣椒",
+      "alias": "辣椒",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "清空一整行，冰车也能烧。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E7%88%86%E8%BE%A3%E6%A4%92",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "地刺王",
+      "linyu": "地刺王",
+      "alias": "刺王",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "地刺的强化版，能扛多次碾压。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E5%88%BA%E7%8E%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "火炬树桩",
+      "linyu": "火炬树桩",
+      "alias": "火树",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "把穿过的豌豆点燃，伤害翻倍。 阳光 175。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E7%82%AC%E6%A0%91%E6%A1%A9",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "三叶草",
+      "linyu": "三叶草",
+      "alias": "风扇",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "吹走气球僵尸和迷雾。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%8F%B6%E8%8D%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "睡莲",
+      "linyu": "睡莲",
+      "alias": "莲叶",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "水面关的底座，不占输出位。 阳光 25。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9D%A1%E8%8E%B2",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "花盆",
+      "linyu": "花盆",
+      "alias": "盆",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "屋顶关的底座。 阳光 25。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8A%B1%E7%9B%86",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "路灯花",
+      "linyu": "路灯花",
+      "alias": "路灯",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "照亮迷雾，也能照出埋地僵尸。 阳光 25。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E7%81%AF%E8%8A%B1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "咖啡豆",
+      "linyu": "咖啡豆",
+      "alias": "咖啡",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "唤醒夜里睡着的蘑菇。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%92%96%E5%95%A1%E8%B1%86",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "墓碑吞噬者",
+      "linyu": "墓碑吞噬者",
+      "alias": "墓碑苔藓",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "吃掉墓碑，腾出种植位。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A2%93%E7%A2%91%E5%90%9E%E5%99%AC%E8%80%85",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "模仿者",
+      "linyu": "模仿者",
+      "alias": "变身茄子",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "复制一张卡，等于带两张同样的植物。 阳光 30。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A8%A1%E4%BB%BF%E8%80%85",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "南瓜头",
+      "linyu": "南瓜头",
+      "alias": "南瓜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "套在植物外面当护甲。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%97%E7%93%9C%E5%A4%B4",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "香蒲",
+      "linyu": "香蒲",
+      "alias": "猫尾",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "种在水里，自动锁敌打全屏。 阳光 225。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%A6%99%E8%92%B2",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "仙人掌",
+      "linyu": "仙人掌",
+      "alias": "仙人掌",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "专打气球僵尸，也能扎地面。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BB%99%E4%BA%BA%E6%8E%8C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "海蘑菇",
+      "linyu": "海蘑菇",
+      "alias": "海菇",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "水面关的免费蘑菇。 阳光 0。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E8%98%91%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "忧郁蘑菇",
+      "linyu": "忧郁蘑菇",
+      "alias": "大喷菇升级",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "四面喷射，贴脸群伤极强。 阳光 200。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BF%A7%E9%83%81%E8%98%91%E8%8F%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "冰莴苣",
+      "linyu": "冰莴苣",
+      "alias": "生菜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "一次性冻结一片僵尸。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E8%8E%B4%E8%8B%A3",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "大蒜",
+      "linyu": "大蒜",
+      "alias": "蒜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "把僵尸熏到隔壁行，改道神器。 阳光 50。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E8%92%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "吸金磁",
+      "linyu": "吸金磁",
+      "alias": "吸金",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "自动吸金币，挂机收益位。 阳光 50。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%90%B8%E9%87%91%E7%A3%81",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "玉米加农炮（β版）",
+      "linyu": "玉米加农炮（β版）",
+      "alias": "β玉米",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "β 版里被改得离谱的玉米炮，二创常拿它开玩笑。 阳光 500。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%89%E7%B1%B3%E5%8A%A0%E5%86%9C%E7%82%AE%EF%BC%88%CE%B2%E7%89%88%EF%BC%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "菜问",
+      "linyu": "菜问",
+      "alias": "菜问",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "近战拳脚，贴着打才有效。 阳光 175。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%8F%9C%E9%97%AE",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "弹簧豆",
+      "linyu": "弹簧豆",
+      "alias": "弹簧",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "把僵尸弹回起点，一次性。 阳光 50。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E7%B0%A7%E8%B1%86",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "火龙草",
+      "linyu": "火龙草",
+      "alias": "火龙",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "近距离喷火，一条线全烧。 阳光 150。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%81%AB%E9%BE%99%E8%8D%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "闪电芦苇",
+      "linyu": "闪电芦苇",
+      "alias": "电芦",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "链式闪电，连锁打一片。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%97%AA%E7%94%B5%E8%8A%A6%E8%8B%87",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "椰子加农炮",
+      "linyu": "椰子加农炮",
+      "alias": "椰子炮",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "手动瞄准的重炮，一发一片。 阳光 400。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%B0%E5%AD%90%E5%8A%A0%E5%86%9C%E7%82%AE",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "导向蓟",
+      "linyu": "导向蓟",
+      "alias": "导向",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "自动追踪，天上地下都打。 阳光 250。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%BC%E5%90%91%E8%93%9F",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "白萝卜",
+      "linyu": "白萝卜",
+      "alias": "萝卜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "把僵尸顶开一格，改道用。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%99%BD%E8%90%9D%E5%8D%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "竹笋",
+      "linyu": "竹笋",
+      "alias": "竹笋",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "从地里戳出来，扎一排。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%B9%E7%AC%8B",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "魔音甜菜",
+      "linyu": "魔音甜菜",
+      "alias": "甜菜",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "音波推走僵尸，节奏感很强。 阳光 150。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%AD%94%E9%9F%B3%E7%94%9C%E8%8F%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "龙舌兰",
+      "linyu": "龙舌兰",
+      "alias": "龙舌兰",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "近战高伤，一刀一只。 阳光 175。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%BE%99%E8%88%8C%E5%85%B0",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "板栗小队",
+      "linyu": "板栗小队",
+      "alias": "板栗",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "小兵挡路，能顶一会儿。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9D%BF%E6%A0%97%E5%B0%8F%E9%98%9F",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "南瓜灯",
+      "linyu": "南瓜灯",
+      "alias": "南瓜灯",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "照亮一片并灼烧靠近的僵尸。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%8D%97%E7%93%9C%E7%81%AF",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "冰龙草",
+      "linyu": "冰龙草",
+      "alias": "冰龙",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "冰系喷吐，减速加输出。 阳光 200。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E9%BE%99%E8%8D%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "爆裂葡萄",
+      "linyu": "爆裂葡萄",
+      "alias": "葡萄",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "弹跳爆炸，覆盖一整片。 阳光 150。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%88%86%E8%A3%82%E8%91%A1%E8%90%84",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "大丽花",
+      "linyu": "大丽花",
+      "alias": "大丽花",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "范围魅惑，专治抱团。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E4%B8%BD%E8%8A%B1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "缩小紫罗兰",
+      "linyu": "缩小紫罗兰",
+      "alias": "紫罗兰",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "把僵尸缩小，伤害降低。 阳光 50。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%BC%A9%E5%B0%8F%E7%B4%AB%E7%BD%97%E5%85%B0",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "瓷砖萝卜",
+      "linyu": "瓷砖萝卜",
+      "alias": "瓷砖",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "给相邻植物加成，体系核心。 阳光 0。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%93%B7%E7%A0%96%E8%90%9D%E5%8D%9C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "防风草",
+      "linyu": "防风草",
+      "alias": "防风草",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "把空中的打下来。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B2%E9%A3%8E%E8%8D%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "弹簧花",
+      "linyu": "弹簧花",
+      "alias": "弹簧花",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "弹飞贴脸的僵尸。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BC%B9%E7%B0%A7%E8%8A%B1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "电离草",
+      "linyu": "电离草",
+      "alias": "电离",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "持续放电，靠近就挨打。 阳光 125。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%94%B5%E7%A6%BB%E8%8D%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "三叶草（二代）",
+      "linyu": "三叶草（二代）",
+      "alias": "二代三叶草",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "吹走飞行单位并清雾。 阳光 100。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%8F%B6%E8%8D%89%EF%BC%88%E4%BA%8C%E4%BB%A3%EF%BC%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "寒冰菇（二代）",
+      "linyu": "寒冰菇（二代）",
+      "alias": "二代冰菇",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "全场冻结，救场牌。 阳光 75。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%AF%92%E5%86%B0%E8%8F%87%EF%BC%88%E4%BA%8C%E4%BB%A3%EF%BC%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "樱桃炸弹（二代）",
+      "linyu": "樱桃炸弹（二代）",
+      "alias": "二代樱桃",
+      "slot": "淋物大战阴尸 / 淋物名",
+      "sense": "范围爆炸，数值更高。 阳光 150。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A8%B1%E6%A1%83%E7%82%B8%E5%BC%B9%EF%BC%88%E4%BA%8C%E4%BB%A3%EF%BC%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "淋物"
+      ]
+    },
+    {
+      "zh": "普通僵尸",
+      "linyu": "普通僵尸",
+      "alias": "普僵",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "最基础的一只，一只豌豆就能解决。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%99%AE%E9%80%9A%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "旗帜僵尸",
+      "linyu": "旗帜僵尸",
+      "alias": "旗手",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "一波僵尸的领队，打掉就代表这波开始。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%97%97%E5%B8%9C%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "路障僵尸",
+      "linyu": "路障僵尸",
+      "alias": "路障",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "戴路障，血量普通僵尸的两倍。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B7%AF%E9%9A%9C%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "撑杆跳僵尸",
+      "linyu": "撑杆跳僵尸",
+      "alias": "撑杆",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "会跳过第一株植物，别把肉盾摆前排。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%92%91%E6%9D%86%E8%B7%B3%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "铁桶僵尸",
+      "linyu": "铁桶僵尸",
+      "alias": "铁桶",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "铁桶护头，血厚，怕磁力菇。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%81%E6%A1%B6%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "读报僵尸",
+      "linyu": "读报僵尸",
+      "alias": "读报",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "报纸被打破后暴走加速。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%AF%BB%E6%8A%A5%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "铁门僵尸",
+      "linyu": "铁门僵尸",
+      "alias": "铁门",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "拿铁门当盾，正面打不动，得绕后。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%81%E9%97%A8%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "橄榄球僵尸",
+      "linyu": "橄榄球僵尸",
+      "alias": "橄榄球",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "高速高血，冲锋型。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A9%84%E6%A6%84%E7%90%83%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "舞王僵尸",
+      "linyu": "舞王僵尸",
+      "alias": "舞王",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "会召唤伴舞，跳着跳着就贴脸了。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%88%9E%E7%8E%8B%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "伴舞僵尸",
+      "linyu": "伴舞僵尸",
+      "alias": "伴舞",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "被舞王召唤出来的四个跟班。",
+      "source": "https://search.bilibili.com/all?keyword=%E4%BC%B4%E8%88%9E%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "潜水僵尸",
+      "linyu": "潜水僵尸",
+      "alias": "潜水",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "水下潜行，只有靠近才露头。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BD%9C%E6%B0%B4%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "海豚骑士僵尸",
+      "linyu": "海豚骑士僵尸",
+      "alias": "海豚",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "骑着海豚直接跳过水面防线。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E8%B1%9A%E9%AA%91%E5%A3%AB%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "气球僵尸",
+      "linyu": "气球僵尸",
+      "alias": "气球",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "飞过防线，只有三叶草和仙人掌能打。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B0%94%E7%90%83%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "矿工僵尸",
+      "linyu": "矿工僵尸",
+      "alias": "矿工",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "从地底绕到后排，专偷输出位。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%9F%BF%E5%B7%A5%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "蹦极僵尸",
+      "linyu": "蹦极僵尸",
+      "alias": "蹦极",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "空降偷植物，落地就抱走一株。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%B9%A6%E6%9E%81%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "雪人僵尸",
+      "linyu": "雪人僵尸",
+      "alias": "雪人",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "稀有僵尸，打掉掉一堆宝贝。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%9B%AA%E4%BA%BA%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "投石车僵尸",
+      "linyu": "投石车僵尸",
+      "alias": "投石车",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "远程砸植物，得优先清。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%95%E7%9F%B3%E8%BD%A6%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "冰车僵尸",
+      "linyu": "冰车僵尸",
+      "alias": "冰车",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "一路碾过来，只有地刺和辣椒治得了。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E8%BD%A6%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "小鬼僵尸",
+      "linyu": "小鬼僵尸",
+      "alias": "小鬼",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "被巨人扔进后排的小个子。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E9%AC%BC%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "僵王博士",
+      "linyu": "僵王博士",
+      "alias": "僵王",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "最终 Boss，开机器砸场，得靠玉米炮集火。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%83%B5%E7%8E%8B%E5%8D%9A%E5%A3%AB",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "木乃伊僵尸",
+      "linyu": "木乃伊僵尸",
+      "alias": "木乃伊",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "夜间关卡形态，速度慢但耐打。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%9C%A8%E4%B9%83%E4%BC%8A%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "法老僵尸",
+      "linyu": "法老僵尸",
+      "alias": "法老",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "带护盾的精英形态。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B3%95%E8%80%81%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "章鱼僵尸",
+      "linyu": "章鱼僵尸",
+      "alias": "章鱼",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "扔章鱼盖住植物，得先清章鱼。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%AB%A0%E9%B1%BC%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "海盗船长僵尸",
+      "linyu": "海盗船长僵尸",
+      "alias": "船长",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "召唤鹦鹉偷植物。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B5%B7%E7%9B%97%E8%88%B9%E9%95%BF%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "滚筒僵尸",
+      "linyu": "滚筒僵尸",
+      "alias": "滚筒",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "滚着桶碾过来，得用地刺。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%BB%9A%E7%AD%92%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "铁盔僵尸",
+      "linyu": "铁盔僵尸",
+      "alias": "铁盔",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "头戴铁盔，正面很难打穿。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%93%81%E7%9B%94%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "探险家僵尸",
+      "linyu": "探险家僵尸",
+      "alias": "探险家",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "举着火把，烧植物。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8E%A2%E9%99%A9%E5%AE%B6%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "太阳神僵尸",
+      "linyu": "太阳神僵尸",
+      "alias": "太阳神",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "偷阳光，越拖越亏。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A4%AA%E9%98%B3%E7%A5%9E%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "冰霜僵尸",
+      "linyu": "冰霜僵尸",
+      "alias": "冰霜",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "攻击带减速，拖节奏。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%86%B0%E9%9C%9C%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "律师僵尸",
+      "linyu": "律师僵尸",
+      "alias": "律师",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "会给自己加护盾，得先破盾。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%BE%8B%E5%B8%88%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "迪斯科僵尸",
+      "linyu": "迪斯科僵尸",
+      "alias": "迪斯科",
+      "slot": "淋物大战阴尸 / 阴尸名",
+      "sense": "召唤伴舞，越打越多。",
+      "source": "https://search.bilibili.com/all?keyword=%E8%BF%AA%E6%96%AF%E7%A7%91%E5%83%B5%E5%B0%B8",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "阴尸"
+      ]
+    },
+    {
+      "zh": "阳光",
+      "linyu": "阳光",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "唯一货币，种植物全靠它，二创里也指「本钱」。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%98%B3%E5%85%89",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "冷却",
+      "linyu": "冷却",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "每张卡种下后要等的时间，冷却没好就只能干看着。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%86%B7%E5%8D%B4",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "卡槽",
+      "linyu": "卡槽",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "能带的卡位数量，卡槽不够是最常见的翻车点。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%8D%A1%E6%A7%BD",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "铲子",
+      "linyu": "铲子",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "铲掉已种植物，返还不了阳光，所以铲之前要想清楚。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%93%B2%E5%AD%90",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "小推车",
+      "linyu": "小推车",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "每行最后一道保险，僵尸走到尽头才会推出去，一行只能用一次。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%B0%8F%E6%8E%A8%E8%BD%A6",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "波次",
+      "linyu": "波次",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "一波一波刷新的僵尸数量，看波次决定要不要留大招。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B3%A2%E6%AC%A1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "守家",
+      "linyu": "守家",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把输出位往后放，等僵尸自己走过来。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%AE%88%E5%AE%B6",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "无尽模式",
+      "linyu": "无尽模式",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "无限刷波，考验阵型可持续性。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%97%A0%E5%B0%BD%E6%A8%A1%E5%BC%8F",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "杂交版",
+      "linyu": "杂交版",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "玩家自制改版，植物与僵尸都被杂交重做。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%9D%82%E4%BA%A4%E7%89%88",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "β版",
+      "linyu": "β版",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "另一个知名改版，数值离谱，二创素材富矿。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%CE%B2%E7%89%88",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "五阶",
+      "linyu": "五阶",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "植物升阶体系里的高档位，强度断层明显。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E4%BA%94%E9%98%B6",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "砸罐子",
+      "linyu": "砸罐子",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "拆罐子开盲盒的小游戏模式，运气成分极高。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%A0%B8%E7%BD%90%E5%AD%90",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "花园",
+      "linyu": "花园",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "禅境花园，养老收金币的地方。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E8%8A%B1%E5%9B%AD",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "屋顶",
+      "linyu": "屋顶",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "斜坡地形，抛物线植物才有优势。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%B1%8B%E9%A1%B6",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "泳池",
+      "linyu": "泳池",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "水面关，必须先用睡莲。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B3%B3%E6%B1%A0",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "拆迁",
+      "linyu": "拆迁",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把墓碑、障碍清掉的打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%8B%86%E8%BF%81",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "卡金币",
+      "linyu": "卡金币",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "利用漏洞刷金币，被官方修一次骂一次。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%8D%A1%E9%87%91%E5%B8%81",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "偷家",
+      "linyu": "偷家",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "矿工、蹦极一类绕后偷植物的统称。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%81%B7%E5%AE%B6",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "阳光上限",
+      "linyu": "阳光上限",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "场上阳光的存储上限，超过就不再涨。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%98%B3%E5%85%89%E4%B8%8A%E9%99%90",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "冷却时间",
+      "linyu": "冷却时间",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "卡牌重新可用的时间，决定节奏。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%86%B7%E5%8D%B4%E6%97%B6%E9%97%B4",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "卡组",
+      "linyu": "卡组",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "这一关带上的卡，一共就那么多格。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%8D%A1%E7%BB%84",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "中排",
+      "linyu": "中排",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "输出主力的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E4%B8%AD%E6%8E%92",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "换行",
+      "linyu": "换行",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把僵尸引到别的行，避开防线弱点。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%8D%A2%E8%A1%8C",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "补种",
+      "linyu": "补种",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "被吃掉后立刻补上，节奏不能断。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E8%A1%A5%E7%A7%8D",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "献祭",
+      "linyu": "献祭",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "故意让一株被吃，换整体节奏。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%8C%AE%E7%A5%AD",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "溢出伤害",
+      "linyu": "溢出伤害",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "一发打穿后继续打到后面的僵尸。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%BA%A2%E5%87%BA%E4%BC%A4%E5%AE%B3",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "空中单位",
+      "linyu": "空中单位",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "气球、鹦鹉一类飞行僵尸。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%A9%BA%E4%B8%AD%E5%8D%95%E4%BD%8D",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "水面单位",
+      "linyu": "水面单位",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "水里才能放的植物。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B0%B4%E9%9D%A2%E5%8D%95%E4%BD%8D",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "夜间关卡",
+      "linyu": "夜间关卡",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "蘑菇系主场的关卡。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%A4%9C%E9%97%B4%E5%85%B3%E5%8D%A1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "屋顶关卡",
+      "linyu": "屋顶关卡",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "斜坡地形，抛物线优先。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%B1%8B%E9%A1%B6%E5%85%B3%E5%8D%A1",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "最后一波",
+      "linyu": "最后一波",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "关卡收尾的大波次，通常留大招。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%9C%80%E5%90%8E%E4%B8%80%E6%B3%A2",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "狂暴",
+      "linyu": "狂暴",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "僵尸被打到残血后的加速状态。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%8B%82%E6%9A%B4",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "减速",
+      "linyu": "减速",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "寒冰系的持续控制。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%87%8F%E9%80%9F",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "弹坑",
+      "linyu": "弹坑",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "毁灭菇留下的坑，一段时间内不能种。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%BC%B9%E5%9D%91",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "眩晕",
+      "linyu": "眩晕",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "短暂定身，玉米黄油的常见效果。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%9C%A9%E6%99%95",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "跳波",
+      "linyu": "跳波",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "提前触发下一波，速通常用。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E8%B7%B3%E6%B3%A2",
+      "pop": "中",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "阴尸潮",
+      "linyu": "阴尸潮",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "一大波僵尸同时涌来。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%98%B4%E5%B0%B8%E6%BD%AE",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "阴尸波",
+      "linyu": "阴尸波",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "按波次刷新的一队僵尸。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%98%B4%E5%B0%B8%E6%B3%A2",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "白给波",
+      "linyu": "白给波",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "这一波不用防守，纯送。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%99%BD%E7%BB%99%E6%B3%A2",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "送头",
+      "linyu": "送头",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把植物种在必死位置，等于白送。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%80%81%E5%A4%B4",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "站桩",
+      "linyu": "站桩",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "植物站在原地不动，只能挨打。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%AB%99%E6%A1%A9",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "刮痧",
+      "linyu": "刮痧",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "伤害太低，打半天掉不了血。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%88%AE%E7%97%A7",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "抄作业",
+      "linyu": "抄作业",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "照搬别人的阵容。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%8A%84%E4%BD%9C%E4%B8%9A",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "开局崩",
+      "linyu": "开局崩",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "前两波没守住，后面全乱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%BC%80%E5%B1%80%E5%B4%A9",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "中期崩",
+      "linyu": "中期崩",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "阳光跟不上，阵容断层。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E4%B8%AD%E6%9C%9F%E5%B4%A9",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "后期翻",
+      "linyu": "后期翻",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "拖到后期靠重炮翻盘。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%90%8E%E6%9C%9F%E7%BF%BB",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "送分",
+      "linyu": "送分",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把胜利拱手让人。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%80%81%E5%88%86",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "喂饭",
+      "linyu": "喂饭",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把资源送到对方嘴里。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%96%82%E9%A5%AD",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "硬顶",
+      "linyu": "硬顶",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "不换阵，硬扛一波。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%A1%AC%E9%A1%B6",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "硬送",
+      "linyu": "硬送",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "明知会死还要种上去。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%A1%AC%E9%80%81",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "跳车",
+      "linyu": "跳车",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "中途退出对局。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E8%B7%B3%E8%BD%A6",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "上车",
+      "linyu": "上车",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "加入一局/一个车队。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E4%B8%8A%E8%BD%A6",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "掉榜",
+      "linyu": "掉榜",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "排名掉下去。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%8E%89%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "卡关",
+      "linyu": "卡关",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "某一关卡住过不去。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%8D%A1%E5%85%B3",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "卡波",
+      "linyu": "卡波",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "卡着波次不打，先攒资源。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%8D%A1%E6%B3%A2",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "卡阳光",
+      "linyu": "卡阳光",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "故意拖着不花阳光。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%8D%A1%E9%98%B3%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "偷阳光",
+      "linyu": "偷阳光",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "太阳神僵尸的偷取机制。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%81%B7%E9%98%B3%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "抢阳光",
+      "linyu": "抢阳光",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "抢在僵尸前把阳光收掉。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%8A%A2%E9%98%B3%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "骗手",
+      "linyu": "骗手",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "用假动作骗对方出手。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%AA%97%E6%89%8B",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "骗刀",
+      "linyu": "骗刀",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "用肉盾骗掉一次攻击。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%AA%97%E5%88%80",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "挨打位",
+      "linyu": "挨打位",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "专门用来挨打的位置。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%8C%A8%E6%89%93%E4%BD%8D",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "阴雄榜",
+      "linyu": "阴雄榜",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "二创里对强度榜的叫法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%98%B4%E9%9B%84%E6%A6%9C",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "淋物卡",
+      "linyu": "淋物卡",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "二创里对植物卡的说法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E7%89%A9%E5%8D%A1",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "蘑菇流",
+      "linyu": "蘑菇流",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "以蘑菇系为主的夜关打法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E8%98%91%E8%8F%87%E6%B5%81",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "冰瓜流",
+      "linyu": "冰瓜流",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "以冰西瓜为核心的减速阵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E5%86%B0%E7%93%9C%E6%B5%81",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "玉米炮流",
+      "linyu": "玉米炮流",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "以玉米加农炮为核心的后期阵。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%8E%89%E7%B1%B3%E7%82%AE%E6%B5%81",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "阴尸波次",
+      "linyu": "阴尸波次",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "僵尸刷新节奏的另一种说法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E9%98%B4%E5%B0%B8%E6%B3%A2%E6%AC%A1",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "白给阵",
+      "linyu": "白给阵",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "摆出来必输的阵容。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%99%BD%E7%BB%99%E9%98%B5",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "缩线",
+      "linyu": "缩线",
+      "alias": "",
+      "slot": "淋物大战阴尸 / 玩法黑话",
+      "sense": "把防线收到最后。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E7%BC%A9%E7%BA%BF",
+      "pop": "低",
+      "rel": [
+        "淋物大战阴尸",
+        "游戏术语"
+      ]
+    },
+    {
+      "zh": "逼太紧",
+      "linyu": "逼太紧",
+      "alias": "逼得太紧",
+      "slot": "评价判断",
+      "sense": "指责对方步步紧逼、不留余地。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%80%BC%E5%A4%AA%E7%B4%A7",
+      "pop": "高",
+      "rel": [
+        "评价判断"
+      ]
+    },
+    {
+      "zh": "淋魂",
+      "linyu": "灵魂",
+      "alias": "魂魄",
+      "slot": "构词法",
+      "sense": "「灵魂」的谐写，形容极致的淋味。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E9%AD%82",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋量",
+      "linyu": "流量",
+      "alias": "热度",
+      "slot": "构词法",
+      "sense": "「流量」的谐写，指话题热度。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E9%87%8F",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋动力",
+      "linyu": "零动力",
+      "alias": "没劲",
+      "slot": "构词法",
+      "sense": "「零动力」的谐写，形容毫无干劲。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%8A%A8%E5%8A%9B",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋点",
+      "linyu": "零点",
+      "alias": "时间点",
+      "slot": "构词法",
+      "sense": "「零点」的谐写，也指关键时刻。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E7%82%B9",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋光",
+      "linyu": "灵光",
+      "alias": "灵光一现",
+      "slot": "构词法",
+      "sense": "「灵光」的谐写，指突然想到。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%85%89",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋验",
+      "linyu": "灵验",
+      "alias": "应验",
+      "slot": "构词法",
+      "sense": "「灵验」的谐写，多用于许愿/还愿。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E9%AA%8C",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋堂",
+      "linyu": "灵堂",
+      "alias": "场面",
+      "slot": "构词法",
+      "sense": "「灵堂」的谐写，形容气氛凝固。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%A0%82",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋家",
+      "linyu": "林家",
+      "alias": "本家",
+      "slot": "构词法",
+      "sense": "指淋语圈自己人。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%AE%B6",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋门",
+      "linyu": "临门",
+      "alias": "入门",
+      "slot": "构词法",
+      "sense": "「临门」的谐写，指刚入门。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E9%97%A8",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋淋七",
+      "linyu": "零零七",
+      "alias": "编号梗",
+      "slot": "构词法",
+      "sense": "「007」的谐写，指天天加班。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%B7%8B%E4%B8%83",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋淋大法",
+      "linyu": "灵灵大法",
+      "alias": "固定梗",
+      "slot": "构词法",
+      "sense": "泛指一套淋语话术。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%B7%8B%E5%A4%A7%E6%B3%95",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋化",
+      "linyu": "淋化",
+      "alias": "改造",
+      "slot": "构词法",
+      "sense": "把普通句子改写成淋语句式。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%8C%96",
+      "pop": "高",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋腔",
+      "linyu": "腔调",
+      "alias": "口音",
+      "slot": "构词法",
+      "sense": "淋语的语调。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%85%94",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋学",
+      "linyu": "淋学",
+      "alias": "学问",
+      "slot": "圈层黑话",
+      "sense": "把淋语当学问研究的那一套。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%AD%A6",
+      "pop": "中",
+      "rel": [
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "淋语词典",
+      "linyu": "淋语词典",
+      "alias": "工具",
+      "slot": "圈层黑话",
+      "sense": "收集淋语词条的资料。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%AF%AD%E8%AF%8D%E5%85%B8",
+      "pop": "中",
+      "rel": [
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "光狸大战",
+      "linyu": "光狸大战",
+      "alias": "事件",
+      "slot": "圈层黑话",
+      "sense": "指当年贴吧的一次大规模互撕。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%89%E7%8B%B8%E5%A4%A7%E6%88%98",
+      "pop": "中",
+      "rel": [
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "玩梗",
+      "linyu": "玩梗",
+      "alias": "用梗",
+      "slot": "圈层黑话",
+      "sense": "主动使用网络梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E7%8E%A9%E6%A2%97",
+      "pop": "高",
+      "rel": [
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "抽象文化",
+      "linyu": "抽象文化",
+      "alias": "亚文化",
+      "slot": "圈层黑话",
+      "sense": "以解构、反讽为核心的网络文化。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%8A%BD%E8%B1%A1%E6%96%87%E5%8C%96",
+      "pop": "高",
+      "rel": [
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "阳间",
+      "linyu": "阳间",
+      "alias": "正常",
+      "slot": "评价判断",
+      "sense": "与「阴间」相对，指正常、体面。",
+      "source": "https://search.bilibili.com/all?keyword=%E9%98%B3%E9%97%B4",
+      "pop": "中",
+      "rel": [
+        "评价判断"
+      ]
+    },
+    {
+      "zh": "共情",
+      "linyu": "共情",
+      "alias": "代入",
+      "slot": "情绪",
+      "sense": "代入角色处境产生共鸣。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%85%B1%E6%83%85",
+      "pop": "中",
+      "rel": [
+        "情绪"
+      ]
+    },
+    {
+      "zh": "壁垒",
+      "linyu": "壁垒",
+      "alias": "门槛",
+      "slot": "圈层黑话",
+      "sense": "指圈内外之间的理解门槛。",
+      "source": "https://search.bilibili.com/all?keyword=%E5%A3%81%E5%9E%92",
+      "pop": "低",
+      "rel": [
+        "圈层黑话"
+      ]
+    },
+    {
+      "zh": "淋曲",
+      "linyu": "淋曲",
+      "alias": "歌曲",
+      "slot": "构词法",
+      "sense": "淋语化的翻唱或填词。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%9B%B2",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋词",
+      "linyu": "淋词",
+      "alias": "歌词",
+      "slot": "构词法",
+      "sense": "被改写过的歌词。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%AF%8D",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋句",
+      "linyu": "淋句",
+      "alias": "句子",
+      "slot": "构词法",
+      "sense": "一句标准的淋语句子。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%8F%A5",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋梗",
+      "linyu": "淋梗",
+      "alias": "梗",
+      "slot": "构词法",
+      "sense": "淋语圈的梗。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%A2%97",
+      "pop": "高",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋圈",
+      "linyu": "淋圈",
+      "alias": "圈子",
+      "slot": "构词法",
+      "sense": "淋语圈子。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%9C%88",
+      "pop": "高",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋组",
+      "linyu": "淋组",
+      "alias": "小组",
+      "slot": "构词法",
+      "sense": "一起做二创的小团体。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E7%BB%84",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋站",
+      "linyu": "淋站",
+      "alias": "站点",
+      "slot": "构词法",
+      "sense": "淋语内容集中的站点/账号。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E7%AB%99",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋号",
+      "linyu": "淋号",
+      "alias": "账号",
+      "slot": "构词法",
+      "sense": "做淋语内容的账号。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%8F%B7",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋本",
+      "linyu": "淋本",
+      "alias": "剧本",
+      "slot": "构词法",
+      "sense": "淋语剧本。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%9C%AC",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋奖",
+      "linyu": "淋奖",
+      "alias": "奖项",
+      "slot": "构词法",
+      "sense": "圈内自娱自乐的评选。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%A5%96",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋刊",
+      "linyu": "淋刊",
+      "alias": "刊物",
+      "slot": "构词法",
+      "sense": "淋语整理的合集。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%88%8A",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋名",
+      "linyu": "淋名",
+      "alias": "名字",
+      "slot": "构词法",
+      "sense": "淋语化的名字。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%90%8D",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋称",
+      "linyu": "淋称",
+      "alias": "称呼",
+      "slot": "构词法",
+      "sense": "淋语化的称呼。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E7%A7%B0",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋写",
+      "linyu": "淋写",
+      "alias": "改写",
+      "slot": "构词法",
+      "sense": "把普通文本改写成淋语。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%86%99",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋译",
+      "linyu": "淋译",
+      "alias": "翻译",
+      "slot": "构词法",
+      "sense": "把普通话译成淋语。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%AF%91",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋式",
+      "linyu": "淋式",
+      "alias": "方式",
+      "slot": "构词法",
+      "sense": "淋语式的表达方式。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%BC%8F",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋法",
+      "linyu": "淋法",
+      "alias": "方法",
+      "slot": "构词法",
+      "sense": "说淋语的方法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E6%B3%95",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋典",
+      "linyu": "淋典",
+      "alias": "词典",
+      "slot": "构词法",
+      "sense": "淋语词库。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%85%B8",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋题",
+      "linyu": "淋题",
+      "alias": "题目",
+      "slot": "构词法",
+      "sense": "淋语试题。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E9%A2%98",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋答",
+      "linyu": "淋答",
+      "alias": "回答",
+      "slot": "构词法",
+      "sense": "用淋语作答。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E7%AD%94",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋唱",
+      "linyu": "淋唱",
+      "alias": "演唱",
+      "slot": "构词法",
+      "sense": "用淋语腔调唱。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%94%B1",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋舞",
+      "linyu": "淋舞",
+      "alias": "舞蹈",
+      "slot": "构词法",
+      "sense": "配套的手势舞。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E8%88%9E",
+      "pop": "低",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋图包",
+      "linyu": "淋图包",
+      "alias": "表情包",
+      "slot": "构词法",
+      "sense": "成套的淋语表情包。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%9B%BE%E5%8C%85",
+      "pop": "中",
+      "rel": [
+        "构词法"
+      ]
+    },
+    {
+      "zh": "淋味十足",
+      "linyu": "淋味十足",
+      "alias": "很淋",
+      "slot": "评价判断",
+      "sense": "夸一段内容淋语含量高。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%91%B3%E5%8D%81%E8%B6%B3",
+      "pop": "中",
+      "rel": [
+        "评价判断"
+      ]
+    },
+    {
+      "zh": "淋到不行",
+      "linyu": "淋到不行",
+      "alias": "程度",
+      "slot": "评价判断",
+      "sense": "程度副词用法。",
+      "source": "https://search.bilibili.com/all?keyword=%E6%B7%8B%E5%88%B0%E4%B8%8D%E8%A1%8C",
+      "pop": "中",
+      "rel": [
+        "评价判断"
+      ]
     }
   ],
   "rules": [
@@ -47556,9 +50759,976 @@ window.__SEED_DATA = {
       "pattern": "(?:我是 diva|我就是天后)",
       "output": "本仙女素 diva",
       "source": "https://search.bilibili.com/all?keyword=%E6%9C%AC%E4%BB%99%E5%A5%B3%E7%B4%A0%20diva"
+    },
+    {
+      "pattern": "阳光(?:不够|不足|差一点)",
+      "template": "$1惹",
+      "note": "「阳光不够」→「阳光不够惹」",
+      "scene": "游戏",
+      "examples": "阳光不够惹，先补两朵葵|阳光不足噜，这波守不住",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:这|那)(?:波|一轮)(?:守不住|顶不住|要崩)",
+      "template": "$1波守不住惹",
+      "note": "波次告急",
+      "scene": "游戏",
+      "examples": "这波守不住惹，快放小推车|那波顶不住噜",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:铲了|铲掉|铲除)(?:重种|重来|算了)",
+      "template": "铲了重种，不亏",
+      "note": "铲子决策",
+      "scene": "游戏",
+      "examples": "铲了重种，不亏|铲掉算了，留着也是送",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:小推车|推车)(?:没了|用了|出了)",
+      "template": "$1没了就没了",
+      "note": "最后一道保险用掉",
+      "scene": "游戏",
+      "examples": "小推车没了就没了|推车出了，这行算废了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:又来|又是)(?:一波|一队)僵尸",
+      "template": "又来一波阴尸惹",
+      "note": "刷波吐槽",
+      "scene": "游戏",
+      "examples": "又来一波阴尸惹|又是一队阴尸，烦死",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:天梯|无尽)(?:打|冲|上)(?:到)?(\\d+)",
+      "template": "$1 层，够本了",
+      "note": "天梯成绩",
+      "scene": "游戏",
+      "examples": "天梯冲到 30 层，够本了|无尽打到 60 层噜",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:杂交|β)版(?:真|也太)(?:离谱|变态|超模)",
+      "template": "$1版真的离谱",
+      "note": "改版吐槽",
+      "scene": "游戏",
+      "examples": "杂交版也太离谱了|β版真的变态",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:卡槽|卡位)(?:不够|太少|满了)",
+      "template": "卡槽不够，带不了惹",
+      "note": "构筑限制",
+      "scene": "游戏",
+      "examples": "卡槽不够，带不了惹|卡位满了，换一张",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:这个|这只)(?:植物|淋物)(?:太|好)(?:赔钱|拉胯|没用)",
+      "template": "$1淋物太赔钱了",
+      "note": "强度吐槽",
+      "scene": "游戏",
+      "examples": "这个淋物太赔钱了|这只植物好拉胯",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:这个|这只)(?:僵尸|阴尸)(?:太|好)(?:阴|烦|难打)",
+      "template": "$1阴尸太阴了",
+      "note": "僵尸吐槽",
+      "scene": "游戏",
+      "examples": "这个阴尸太阴了|这只僵尸好烦",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:开局|前期)(?:先|要)(?:种|放|摆)(?:两排|一排)向日葵",
+      "template": "开局先两排血阴葵，稳",
+      "note": "开局套路",
+      "scene": "游戏",
+      "examples": "开局先两排血阴葵，稳|前期要一排向日葵",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:砸罐子|开罐)(?:又|全)(?:是|出)(?:空|垃圾)",
+      "template": "砸罐子又出垃圾惹",
+      "note": "盲盒吐槽",
+      "scene": "游戏",
+      "examples": "砸罐子又出垃圾惹|开罐全是空",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:最后|收尾)(?:的)?(?:一波|大波)",
+      "template": "最后一波惹，放大招",
+      "note": "终局节奏",
+      "scene": "游戏",
+      "examples": "最后一波惹，放大招|收尾这波别省",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "阳光(?:满了|溢出了|爆了)",
+      "template": "阳光满了，快花惹",
+      "note": "经济溢出",
+      "scene": "游戏",
+      "examples": "阳光满了，快花惹|阳光爆了，别浪费",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:这关|这图)(?:太|好)(?:难|阴|恶心)",
+      "template": "这关有点阴厚",
+      "note": "关卡吐槽",
+      "scene": "游戏",
+      "examples": "这关有点阴厚|这图太恶心了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:又被|被)(?:偷家|偷了后排)",
+      "template": "又被偷家噜",
+      "note": "后排被偷袭",
+      "scene": "游戏",
+      "examples": "又被偷家噜|被偷了后排，补一下",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:补种|补)(?:不过来|不上|不及)",
+      "template": "补不过来了惹",
+      "note": "节奏崩",
+      "scene": "游戏",
+      "examples": "补不过来了惹|补不上，放推车",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:这|那)阵容(?:能过|稳吗|行吗)",
+      "template": "这阵容能过吗厚",
+      "note": "阵容质疑",
+      "scene": "游戏",
+      "examples": "这阵容能过吗厚|那阵容稳吗",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:快)?换行(?:啊|呀)?",
+      "template": "快换行惹",
+      "note": "换行操作",
+      "scene": "游戏",
+      "examples": "快换行惹，那边空了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "献祭(?:一个|一株)",
+      "template": "献祭一个，换节奏",
+      "note": "战术献祭",
+      "scene": "游戏",
+      "examples": "献祭一个，换节奏|献祭一株，保住主输出",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "玉米(?:加农炮|炮)(?:好了|就绪|满了)",
+      "template": "玉米炮好了，瞄",
+      "note": "重炮就绪",
+      "scene": "游戏",
+      "examples": "玉米炮好了，瞄|炮就绪了，打后排",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:冰|冻)(?:一下|住它|住)",
+      "template": "冰一下，先拖住",
+      "note": "控制",
+      "scene": "游戏",
+      "examples": "冰一下，先拖住|冻住它，别让它走",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "五阶(?:植物|淋物)",
+      "template": "五阶的，强度断层",
+      "note": "升阶体系",
+      "scene": "游戏",
+      "examples": "五阶的，强度断层|五阶淋物真不一样",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "双发(?:摆|放)(?:中间|前排)",
+      "template": "双发摆中间才不亏",
+      "note": "摆位",
+      "scene": "游戏",
+      "examples": "双发摆中间才不亏|双发放前排是浪费",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:先|别)(?:憋|留)(?:着|大招)",
+      "template": "先憋着，别急着放",
+      "note": "留大招",
+      "scene": "游戏",
+      "examples": "先憋着，别急着放|留着，等最后一波",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "补刀",
+      "template": "补刀，别让它跑",
+      "note": "收残血",
+      "scene": "游戏",
+      "examples": "补刀，别让它跑|补一下，差点漏了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:上|到)屋顶(?:了|关)",
+      "template": "上屋顶惹，换抛物线",
+      "note": "地形",
+      "scene": "游戏",
+      "examples": "上屋顶惹，换抛物线|屋顶关，西瓜优先",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:泳池|水面)关",
+      "template": "泳池关，先睡莲",
+      "note": "水面关",
+      "scene": "游戏",
+      "examples": "泳池关，先睡莲|水面关记得带莲叶",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:起雾|迷雾)(?:了|来了)",
+      "template": "迷雾来了，路灯花",
+      "note": "迷雾机制",
+      "scene": "游戏",
+      "examples": "迷雾来了，路灯花|起雾了，视野没了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:夜|晚上)(?:关|场)",
+      "template": "夜关，咖啡豆准备",
+      "note": "夜间关",
+      "scene": "游戏",
+      "examples": "夜关，咖啡豆准备|晚上关，蘑菇主场",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "墓碑(?:卡位|挡路|占了)",
+      "template": "墓碑卡位，先清",
+      "note": "清障",
+      "scene": "游戏",
+      "examples": "墓碑卡位，先清|墓碑挡路，吞噬者上",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "速通",
+      "template": "速通就别种葵了",
+      "note": "速通打法",
+      "scene": "游戏",
+      "examples": "速通就别种葵了|速通直接跳波",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "守家",
+      "template": "守家，往后摆",
+      "note": "守家流",
+      "scene": "游戏",
+      "examples": "守家，往后摆|守家流就是稳",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "拆迁",
+      "template": "拆迁队上线",
+      "note": "清障流",
+      "scene": "游戏",
+      "examples": "拆迁队上线|拆迁打法，先拆再说",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "卡金币",
+      "template": "又在卡金币",
+      "note": "刷金币",
+      "scene": "游戏",
+      "examples": "又在卡金币|卡金币被修了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "跳波",
+      "template": "跳波，快",
+      "note": "提前触发",
+      "scene": "游戏",
+      "examples": "跳波，快|跳波能省时间",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "狂暴(?:了|状态)",
+      "template": "狂暴了，快补",
+      "note": "残血加速",
+      "scene": "游戏",
+      "examples": "狂暴了，快补|它狂暴了，别硬顶",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "弹坑(?:还在|没好)",
+      "template": "弹坑还没好",
+      "note": "毁灭菇余波",
+      "scene": "游戏",
+      "examples": "弹坑还没好|弹坑还在，种不了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:气球|飞行|空中)(?:僵尸|单位)",
+      "template": "有气球，三叶草呢",
+      "note": "空中单位",
+      "scene": "游戏",
+      "examples": "有气球，三叶草呢|空中单位，仙人掌打",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "章鱼(?:盖住|糊住|罩住)",
+      "template": "章鱼盖住了，先清",
+      "note": "章鱼机制",
+      "scene": "游戏",
+      "examples": "章鱼盖住了，先清|被章鱼糊了，快拆",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "铁桶(?:来了|过来)",
+      "template": "铁桶来了，磁力菇",
+      "note": "重甲",
+      "scene": "游戏",
+      "examples": "铁桶来了，磁力菇|铁桶过来，先缴械",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "撑杆跳(?:过来|跳过)",
+      "template": "撑杆跳，别摆前排",
+      "note": "越盾",
+      "scene": "游戏",
+      "examples": "撑杆跳，别摆前排|撑杆跳过来了，前排白给",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "读报(?:暴走|加速|破了)",
+      "template": "读报暴走了",
+      "note": "暴走机制",
+      "scene": "游戏",
+      "examples": "读报暴走了|报纸破了，它要冲了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "舞王(?:召|叫)(?:伴舞|小弟)",
+      "template": "舞王召伴舞了",
+      "note": "召唤",
+      "scene": "游戏",
+      "examples": "舞王召伴舞了|舞王开始叫人了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "巨人(?:砸|来了|过来)",
+      "template": "巨人砸场，玉米炮",
+      "note": "重装",
+      "scene": "游戏",
+      "examples": "巨人砸场，玉米炮|巨人来了，先集火",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "小鬼(?:被扔|扔进来|空降)",
+      "template": "小鬼扔进来了",
+      "note": "偷袭后排",
+      "scene": "游戏",
+      "examples": "小鬼扔进来了|小鬼空降，后排小心",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "蹦极(?:偷|抱走|空降)",
+      "template": "蹦极偷植物惹",
+      "note": "空降偷取",
+      "scene": "游戏",
+      "examples": "蹦极偷植物惹|蹦极来了，抱走一株",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "矿工(?:绕后|钻地|从后面)",
+      "template": "矿工绕后，后排注意",
+      "note": "绕后",
+      "scene": "游戏",
+      "examples": "矿工绕后，后排注意|矿工从后面来了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "冰车(?:碾|过来|开过来)",
+      "template": "冰车，地刺呢",
+      "note": "碾压",
+      "scene": "游戏",
+      "examples": "冰车，地刺呢|冰车碾过来，快扎胎",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "投石车(?:砸|远程)",
+      "template": "投石车，先清",
+      "note": "远程压制",
+      "scene": "游戏",
+      "examples": "投石车，先清|投石车在砸后排",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "雪人(?:出现|来了|出了)",
+      "template": "雪人！打它",
+      "note": "稀有掉落",
+      "scene": "游戏",
+      "examples": "雪人！打它|雪人出了，别让它跑",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "僵王(?:开|出来|上场)",
+      "template": "僵王开机器了",
+      "note": "Boss 战",
+      "scene": "游戏",
+      "examples": "僵王开机器了|僵王上场，集火",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "戴夫(?:说话|又|在)",
+      "template": "戴夫又歪比巴卜了",
+      "note": "NPC 台词",
+      "scene": "游戏",
+      "examples": "戴夫又歪比巴卜了|戴夫在那说话，谁听得懂",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:又)?更新(?:了|完)",
+      "template": "又更新，阴维修了什么",
+      "note": "版本更新",
+      "scene": "游戏",
+      "examples": "又更新，阴维修了什么|更新完更难了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:这|新)版本(?:改|削|加强)",
+      "template": "这版本改得离谱",
+      "note": "版本改动",
+      "scene": "游戏",
+      "examples": "这版本改得离谱|新版本把输出削了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:我的)?阵容(?:被)?(?:削|废)了",
+      "template": "阵容被削了惹",
+      "note": "削弱",
+      "scene": "游戏",
+      "examples": "阵容被削了惹|我这套被废了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:被)?雪藏(?:了)?",
+      "template": "这淋物被雪藏了",
+      "note": "弃用",
+      "scene": "游戏",
+      "examples": "这淋物被雪藏了|角色被雪藏，没得玩",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "(?:上|进)强度榜",
+      "template": "上强度榜了厚",
+      "note": "榜单",
+      "scene": "游戏",
+      "examples": "上强度榜了厚|进强度榜，可以吹了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "买榜",
+      "template": "这波我买榜了",
+      "note": "数据造假调侃",
+      "scene": "游戏",
+      "examples": "这波我买榜了|买榜买到第一",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A4%8D%E7%89%A9%E5%A4%A7%E6%88%98%E5%83%B5%E5%B0%B8%20%E6%B7%8B%E8%AF%AD"
+    },
+    {
+      "pattern": "但是",
+      "template": "氮素",
+      "note": "转折连词淋化",
+      "scene": "情绪",
+      "examples": "但是我不想惹→氮素我不想惹",
+      "src": "https://search.bilibili.com/all?keyword=%E8%BD%AC%E6%8A%98%E8%BF%9E%E8%AF%8D%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:是的|对啊|没错)",
+      "template": "素惹",
+      "note": "肯定应答淋化",
+      "scene": "认同",
+      "examples": "对啊，就是这样→素惹，就素这样",
+      "src": "https://search.bilibili.com/all?keyword=%E8%82%AF%E5%AE%9A%E5%BA%94%E7%AD%94%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:算了|就这样吧)",
+      "template": "算噜",
+      "note": "收尾放弃",
+      "scene": "情绪",
+      "examples": "算了，不玩了→算噜，不玩了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%94%B6%E5%B0%BE%E6%94%BE%E5%BC%83"
+    },
+    {
+      "pattern": "谢谢",
+      "template": "靴靴",
+      "note": "道谢淋化",
+      "scene": "认同",
+      "examples": "谢谢你→靴靴你",
+      "src": "https://search.bilibili.com/all?keyword=%E9%81%93%E8%B0%A2%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:笑死|好笑)",
+      "template": "孝死",
+      "note": "大笑淋化",
+      "scene": "调侃",
+      "examples": "笑死我了→孝死本可了",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E7%AC%91%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:我|本人)(?:觉得|认为)",
+      "template": "本可觉得",
+      "note": "第一人称软化",
+      "scene": "情绪",
+      "examples": "我觉得不行→本可觉得不行",
+      "src": "https://search.bilibili.com/all?keyword=%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E8%BD%AF%E5%8C%96"
+    },
+    {
+      "pattern": "(?:他|她)(?:太|好)(?:装|假)",
+      "template": "$1太白了",
+      "note": "白莲花指控",
+      "scene": "评价判断",
+      "examples": "他太装了→他太白了",
+      "src": "https://search.bilibili.com/all?keyword=%E7%99%BD%E8%8E%B2%E8%8A%B1%E6%8C%87%E6%8E%A7"
+    },
+    {
+      "pattern": "(?:你很|你也太)(?:厉害|强)",
+      "template": "$1可以厚",
+      "note": "反讽夸赞",
+      "scene": "调侃",
+      "examples": "你很强→你可以厚",
+      "src": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E8%AE%BD%E5%A4%B8%E8%B5%9E"
+    },
+    {
+      "pattern": "(?:气死|烦死)(?:我)?了",
+      "template": "$1气鼠了",
+      "note": "情绪收尾",
+      "scene": "情绪",
+      "examples": "气死我了→气鼠本可了",
+      "src": "https://search.bilibili.com/all?keyword=%E6%83%85%E7%BB%AA%E6%94%B6%E5%B0%BE"
+    },
+    {
+      "pattern": "(?:没救了|完蛋了)",
+      "template": "没救惹",
+      "note": "局面崩盘",
+      "scene": "情绪",
+      "examples": "完蛋了→没救惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%B1%80%E9%9D%A2%E5%B4%A9%E7%9B%98"
+    },
+    {
+      "pattern": "不过(?:我|话说)",
+      "template": "氮素本可",
+      "note": "转折变体",
+      "scene": "情绪",
+      "examples": "不过我觉得→氮素本可觉得",
+      "src": "https://search.bilibili.com/all?keyword=%E8%BD%AC%E6%8A%98%E5%8F%98%E4%BD%93"
+    },
+    {
+      "pattern": "(?:所以|因此)(?:我|才)",
+      "template": "所惹本可",
+      "note": "因果淋化",
+      "scene": "情绪",
+      "examples": "所以我才说→所惹本可才说",
+      "src": "https://search.bilibili.com/all?keyword=%E5%9B%A0%E6%9E%9C%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:因为|由于)(?:你|他)",
+      "template": "因惹你",
+      "note": "原因淋化",
+      "scene": "情绪",
+      "examples": "因为你→因惹你",
+      "src": "https://search.bilibili.com/all?keyword=%E5%8E%9F%E5%9B%A0%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:如果|要是)(?:你|他)",
+      "template": "如惹你",
+      "note": "假设淋化",
+      "scene": "情绪",
+      "examples": "如果你来→如惹你来",
+      "src": "https://search.bilibili.com/all?keyword=%E5%81%87%E8%AE%BE%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:虽然|虽说)(?:我|他)",
+      "template": "虽惹本可",
+      "note": "让步淋化",
+      "scene": "情绪",
+      "examples": "虽然我不行→虽惹本可不行",
+      "src": "https://search.bilibili.com/all?keyword=%E8%AE%A9%E6%AD%A5%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "而且(?:还|又)",
+      "template": "而惹还",
+      "note": "递进淋化",
+      "scene": "情绪",
+      "examples": "而且还贵→而惹还贵",
+      "src": "https://search.bilibili.com/all?keyword=%E9%80%92%E8%BF%9B%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:然后|接着)(?:就|又)",
+      "template": "然噜就",
+      "note": "顺承淋化",
+      "scene": "情绪",
+      "examples": "然后就崩了→然噜就崩了",
+      "src": "https://search.bilibili.com/all?keyword=%E9%A1%BA%E6%89%BF%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "真的(?:是|好)",
+      "template": "真素",
+      "note": "强调淋化",
+      "scene": "情绪",
+      "examples": "真的好美→真素好美",
+      "src": "https://search.bilibili.com/all?keyword=%E5%BC%BA%E8%B0%83%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "就是(?:说|这样)",
+      "template": "就素",
+      "note": "判断淋化",
+      "scene": "认同",
+      "examples": "就是说啊→就素啊",
+      "src": "https://search.bilibili.com/all?keyword=%E5%88%A4%E6%96%AD%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "不是(?:我|他)",
+      "template": "不素本可",
+      "note": "否定淋化",
+      "scene": "否定",
+      "examples": "不是我说→不素本可说",
+      "src": "https://search.bilibili.com/all?keyword=%E5%90%A6%E5%AE%9A%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "好像(?:是|有点)",
+      "template": "好熊像",
+      "note": "模糊判断",
+      "scene": "情绪",
+      "examples": "好像是吧→好熊像吧",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A8%A1%E7%B3%8A%E5%88%A4%E6%96%AD"
+    },
+    {
+      "pattern": "(?:什么|啥)(?:东西|鬼)",
+      "template": "什莫东西",
+      "note": "疑问淋化",
+      "scene": "疑问",
+      "examples": "什么东西→什莫东西",
+      "src": "https://search.bilibili.com/all?keyword=%E7%96%91%E9%97%AE%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "怎么(?:会|可能)",
+      "template": "怎莫会",
+      "note": "反问淋化",
+      "scene": "疑问",
+      "examples": "怎么会这样→怎莫会这样",
+      "src": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E9%97%AE%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:这样|这样子)",
+      "template": "酱紫",
+      "note": "指示淋化",
+      "scene": "情绪",
+      "examples": "这样不行→酱紫不行",
+      "src": "https://search.bilibili.com/all?keyword=%E6%8C%87%E7%A4%BA%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:那样|那样子)",
+      "template": "酿紫",
+      "note": "指示淋化",
+      "scene": "情绪",
+      "examples": "那样也行→酿紫也行",
+      "src": "https://search.bilibili.com/all?keyword=%E6%8C%87%E7%A4%BA%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "不要(?:这样|嘛)",
+      "template": "表酱紫",
+      "note": "劝阻淋化",
+      "scene": "祈使",
+      "examples": "不要这样→表酱紫",
+      "src": "https://search.bilibili.com/all?keyword=%E5%8A%9D%E9%98%BB%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:没有|没)(?:人|人管)",
+      "template": "没惹人管",
+      "note": "否定淋化",
+      "scene": "否定",
+      "examples": "没有人管→没惹人管",
+      "src": "https://search.bilibili.com/all?keyword=%E5%90%A6%E5%AE%9A%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "可以(?:吗|吗？)",
+      "template": "可乙吗",
+      "note": "征询淋化",
+      "scene": "疑问",
+      "examples": "可以吗→可乙吗",
+      "src": "https://search.bilibili.com/all?keyword=%E5%BE%81%E8%AF%A2%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:知道|晓得)(?:了|啦)",
+      "template": "造了",
+      "note": "知晓淋化",
+      "scene": "认同",
+      "examples": "知道了→造了",
+      "src": "https://search.bilibili.com/all?keyword=%E7%9F%A5%E6%99%93%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:喜欢|爱)(?:你|他)",
+      "template": "稀饭你",
+      "note": "好感淋化",
+      "scene": "情绪",
+      "examples": "喜欢你→稀饭你",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A5%BD%E6%84%9F%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:太|好)(?:美|漂亮)了",
+      "template": "$1美 cry",
+      "note": "夸赞淋化",
+      "scene": "夸赞",
+      "examples": "太美了→太美 cry",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A4%B8%E8%B5%9E%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:太|好)(?:帅|好看)了",
+      "template": "$1好看 die",
+      "note": "夸赞淋化",
+      "scene": "夸赞",
+      "examples": "太帅了→太好看 die",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A4%B8%E8%B5%9E%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:无语|无话可说)",
+      "template": "无语子",
+      "note": "无奈淋化",
+      "scene": "情绪",
+      "examples": "无语了→无语子",
+      "src": "https://search.bilibili.com/all?keyword=%E6%97%A0%E5%A5%88%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:绝了|太绝了)",
+      "template": "绝绝子",
+      "note": "夸赞淋化",
+      "scene": "夸赞",
+      "examples": "绝了→绝绝子",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A4%B8%E8%B5%9E%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:破防|绷不住)了",
+      "template": "破防惹",
+      "note": "情绪崩",
+      "scene": "情绪",
+      "examples": "破防了→破防惹",
+      "src": "https://search.bilibili.com/all?keyword=%E6%83%85%E7%BB%AA%E5%B4%A9"
+    },
+    {
+      "pattern": "(?:发疯|疯了)",
+      "template": "发疯惹",
+      "note": "失控淋化",
+      "scene": "情绪",
+      "examples": "我疯了→本可发疯惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A4%B1%E6%8E%A7%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:看乐子|看戏)",
+      "template": "看乐子惹",
+      "note": "围观淋化",
+      "scene": "调侃",
+      "examples": "看乐子→看乐子惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%9B%B4%E8%A7%82%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:出圈|火了)",
+      "template": "出圈惹",
+      "note": "传播淋化",
+      "scene": "评价判断",
+      "examples": "火了→出圈惹",
+      "src": "https://search.bilibili.com/all?keyword=%E4%BC%A0%E6%92%AD%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:赔钱|亏本)",
+      "template": "赔钱货",
+      "note": "亏损吐槽",
+      "scene": "评价判断",
+      "examples": "太赔钱了→赔钱货",
+      "src": "https://search.bilibili.com/all?keyword=%E4%BA%8F%E6%8D%9F%E5%90%90%E6%A7%BD"
+    },
+    {
+      "pattern": "(?:倒贴|主动贴)",
+      "template": "倒贴惹",
+      "note": "自嘲",
+      "scene": "调侃",
+      "examples": "倒贴了→倒贴惹",
+      "src": "https://search.bilibili.com/all?keyword=%E8%87%AA%E5%98%B2"
+    },
+    {
+      "pattern": "(?:名场面|经典)",
+      "template": "名场面惹",
+      "note": "场面评价",
+      "scene": "调侃",
+      "examples": "这是名场面→这名场面惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%9C%BA%E9%9D%A2%E8%AF%84%E4%BB%B7"
+    },
+    {
+      "pattern": "(?:二创|二次创作)",
+      "template": "二创惹",
+      "note": "创作淋化",
+      "scene": "调侃",
+      "examples": "二创一下→二创惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%88%9B%E4%BD%9C%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:切片|剪辑)",
+      "template": "切片惹",
+      "note": "剪辑淋化",
+      "scene": "调侃",
+      "examples": "剪个切片→切片惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%89%AA%E8%BE%91%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:玩梗|造梗)",
+      "template": "玩梗惹",
+      "note": "用梗淋化",
+      "scene": "调侃",
+      "examples": "玩个梗→玩梗惹",
+      "src": "https://search.bilibili.com/all?keyword=%E7%94%A8%E6%A2%97%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:阴间|离谱)到",
+      "template": "阴间到",
+      "note": "程度淋化",
+      "scene": "评价判断",
+      "examples": "离谱到不行→阴间到不行",
+      "src": "https://search.bilibili.com/all?keyword=%E7%A8%8B%E5%BA%A6%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:阳间|体面)",
+      "template": "阳间惹",
+      "note": "反差评价",
+      "scene": "评价判断",
+      "examples": "这算体面→这算阳间惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%8F%8D%E5%B7%AE%E8%AF%84%E4%BB%B7"
+    },
+    {
+      "pattern": "(?:强度榜|排行榜)上",
+      "template": "强度榜上",
+      "note": "榜单语境",
+      "scene": "游戏",
+      "examples": "榜上有名→强度榜上有名",
+      "src": "https://search.bilibili.com/all?keyword=%E6%A6%9C%E5%8D%95%E8%AF%AD%E5%A2%83"
+    },
+    {
+      "pattern": "(?:淋语|黑话)(?:八级|十级)",
+      "template": "淋语八级",
+      "note": "熟练度夸赞",
+      "scene": "夸赞",
+      "examples": "你黑话很熟→你淋语八级",
+      "src": "https://search.bilibili.com/all?keyword=%E7%86%9F%E7%BB%83%E5%BA%A6%E5%A4%B8%E8%B5%9E"
+    },
+    {
+      "pattern": "(?:教|学)(?:我|一下)淋语",
+      "template": "教本可淋语",
+      "note": "求教",
+      "scene": "祈使",
+      "examples": "教我淋语→教本可淋语",
+      "src": "https://search.bilibili.com/all?keyword=%E6%B1%82%E6%95%99"
+    },
+    {
+      "pattern": "(?:本可|我)(?:先|就)(?:走|撤)了",
+      "template": "本可先走噜",
+      "note": "告别淋化",
+      "scene": "告别",
+      "examples": "我先走了→本可先走噜",
+      "src": "https://search.bilibili.com/all?keyword=%E5%91%8A%E5%88%AB%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:拜拜|再见)",
+      "template": "拜拜噜",
+      "note": "告别淋化",
+      "scene": "告别",
+      "examples": "再见→拜拜噜",
+      "src": "https://search.bilibili.com/all?keyword=%E5%91%8A%E5%88%AB%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:谢谢)(?:大家|各位)",
+      "template": "靴靴各位",
+      "note": "群体道谢",
+      "scene": "认同",
+      "examples": "谢谢大家→靴靴各位",
+      "src": "https://search.bilibili.com/all?keyword=%E7%BE%A4%E4%BD%93%E9%81%93%E8%B0%A2"
+    },
+    {
+      "pattern": "(?:太)?(?:好笑|搞笑)了",
+      "template": "孝死噜",
+      "note": "笑声评价",
+      "scene": "调侃",
+      "examples": "太搞笑了→孝死噜",
+      "src": "https://search.bilibili.com/all?keyword=%E7%AC%91%E5%A3%B0%E8%AF%84%E4%BB%B7"
+    },
+    {
+      "pattern": "(?:救命|要命)",
+      "template": "救命惹",
+      "note": "夸张求助",
+      "scene": "情绪",
+      "examples": "救命啊→救命惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%A4%B8%E5%BC%A0%E6%B1%82%E5%8A%A9"
+    },
+    {
+      "pattern": "(?:受不了|忍不了)了",
+      "template": "受不了惹",
+      "note": "忍耐极限",
+      "scene": "情绪",
+      "examples": "受不了了→受不了惹",
+      "src": "https://search.bilibili.com/all?keyword=%E5%BF%8D%E8%80%90%E6%9E%81%E9%99%90"
+    },
+    {
+      "pattern": "(?:好)?(?:羡慕|嫉妒)",
+      "template": "羡慕惹",
+      "note": "情绪淋化",
+      "scene": "情绪",
+      "examples": "好羡慕→羡慕惹",
+      "src": "https://search.bilibili.com/all?keyword=%E6%83%85%E7%BB%AA%E6%B7%8B%E5%8C%96"
+    },
+    {
+      "pattern": "(?:真|好)(?:香|好吃)",
+      "template": "真香惹",
+      "note": "真香梗",
+      "scene": "调侃",
+      "examples": "真香→真香惹",
+      "src": "https://search.bilibili.com/all?keyword=%E7%9C%9F%E9%A6%99%E6%A2%97"
+    },
+    {
+      "pattern": "(?:笑不出来|哭)",
+      "template": "笑不出来惹",
+      "note": "苦涩",
+      "scene": "情绪",
+      "examples": "笑不出来→笑不出来惹",
+      "src": "https://search.bilibili.com/all?keyword=%E8%8B%A6%E6%B6%A9"
+    },
+    {
+      "pattern": "(?:懂|明白)了(?:吗)?",
+      "template": "懂了厚",
+      "note": "确认",
+      "scene": "认同",
+      "examples": "明白了吗→懂了厚",
+      "src": "https://search.bilibili.com/all?keyword=%E7%A1%AE%E8%AE%A4"
+    },
+    {
+      "pattern": "(?:不行|不可以)",
+      "template": "不行厚",
+      "note": "否决",
+      "scene": "否定",
+      "examples": "这个不行→这个不行厚",
+      "src": "https://search.bilibili.com/all?keyword=%E5%90%A6%E5%86%B3"
+    },
+    {
+      "pattern": "(?:等一下|等等)",
+      "template": "等一下噜",
+      "note": "暂停",
+      "scene": "祈使",
+      "examples": "等一下→等一下噜",
+      "src": "https://search.bilibili.com/all?keyword=%E6%9A%82%E5%81%9C"
+    },
+    {
+      "pattern": "(?:加油|冲)",
+      "template": "冲惹",
+      "note": "打气",
+      "scene": "夸赞",
+      "examples": "加油→冲惹",
+      "src": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%B0%94"
     }
   ]
-}
-;
-window.LINYU_VERSION = "1.38.0";
-window.LINYU_CONTENT_HASH = "e1b177ec987ac703";
+};
+window.LINYU_VERSION = "1.39.0";
+window.LINYU_CONTENT_HASH = "7e1e155c384588b8";

@@ -174,14 +174,17 @@ function walk(dir, out = []) {
 // 小程序端的 seed / lore-extra 是「列式编码」（{__col:1, __sst:1, keys, rows}）以压主包体积，
 // 主端仍是常规对象。一致性要按「解码后的内容」比，而不是按字节比——
 // 字节比在这里会把两种合法的等价编码判成不同步。
-// __sst=1 时表格单元存的是全局字符串表（data/_sst.js）的下标，要先还原。
-const MP_SST = (() => {
+// __sst=1 时表格单元存的是字符串表下标，要先还原。
+// 字符串表按包拆成了两张：主包 data/_sst.js 解 seed，分包 pkg-hero/data/_sst.js 解 lore-extraN。
+const loadSst = (rel) => {
   try {
-    return require('../miniprogram/data/_sst');
+    return require(rel);
   } catch (e) {
     return null;
   }
-})();
+};
+const MP_SST = loadSst('../miniprogram/data/_sst');
+const LORE_SST = loadSst('../miniprogram/pkg-hero/data/_sst');
 
 function decodeCol(part, sst) {
   if (!part || !Array.isArray(part.rows)) return part;
@@ -203,9 +206,9 @@ function decodeCol(part, sst) {
   });
 }
 
-function decodePacked(mod) {
+function decodePacked(mod, table = MP_SST) {
   if (!mod || !mod.__col) return mod;
-  const sst = mod.__sst ? MP_SST : null;
+  const sst = mod.__sst ? table : null;
   const out = {};
   for (const [k, v] of Object.entries(mod)) {
     if (k === '__col' || k === '__sst') continue;
@@ -248,8 +251,8 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
       .map((line) => line.replace(/^\s+/, ''))
       .join('\n')
-      // 小程序端 lore.js 落在 pkg-hero 分包，require 字符串表要写 ../../data/_sst.js，
-      // 主端是 ./_sst.js。这是分包布局决定的路径差异，不该算「内容不同步」。
+      // 小程序端 lore.js 落在 pkg-hero 分包，字符串表与它同目录（./_sst.js）；
+      // 主端也是 ./_sst.js。保留归一化是为了兼容旧版本写过的 ../../data/_sst.js。
       .replace(/require\('(?:\.\.\/\.\.\/data\/|\.\/)_sst\.js'\)/g, "require('__SST__')");
   for (const [mpFile, coreFile] of files) {
     const mpPath = path.join(MP, mpFile);
@@ -257,7 +260,7 @@ run('翻译引擎与词库/人物数据逐字同步', () => {
       // 两侧都要清缓存：lore.js 聚合时会 mutate core 侧的模块导出对象（aliasMerge 往 aliases 里追加），
       // 不清缓存就永远比的是被改过的运行时对象，而不是磁盘内容。
       for (const k of Object.keys(require.cache)) if (/lore-extra\d+\.js$/.test(k)) delete require.cache[k];
-      const mpData = decodePacked(require(mpPath));
+      const mpData = decodePacked(require(mpPath), LORE_SST);
       const corePath = path.join(ROOT, 'src', 'core', coreFile);
       const coreData = require(corePath);
       assert.deepStrictEqual(mpData, coreData, `${mpFile} 已过期，请运行 npm run weapp:sync`);
@@ -849,13 +852,15 @@ runAsync('A3 本地词表与分享/历史双闸门', async () => {
 });
 
 run('配图链路：列表与详情都能拿到真实图片路径', () => {
+  const { heroImage, HERO_IMG_BASE } = require('../miniprogram/pkg-hero/config/assets');
+  const isRemote = (v) => v.startsWith(HERO_IMG_BASE) && v.includes('.webp');
   const loreSvc = require('../miniprogram/pkg-hero/services/lore');
   const withImg = loreSvc.heroes.filter((h) => h.img);
   const noImg = loreSvc.heroes.filter((h) => !h.img);
   assert(withImg.length > 500, `有图人物过少：${withImg.length}`);
   for (const hero of withImg) {
     assert(/^hero-\d+$/.test(hero.img), `图片编号不规范：${hero.name} ${hero.img}`);
-    assert.strictEqual(hero.thumb, `/pkg-hero/img/${hero.img}.webp`, `${hero.name} 缩略图路径不对`);
+    assert.strictEqual(hero.thumb, heroImage(hero.img), `${hero.name} 缩略图路径不对`);
   }
   for (const hero of noImg) {
     assert.strictEqual(hero.thumb, '', `${hero.name} 无图时 thumb 应为空`);
@@ -871,13 +876,13 @@ run('配图链路：列表与详情都能拿到真实图片路径', () => {
   const withImgVm = shown.filter((item) => item.thumb);
   assert(withImgVm.length > 0, '列表视图模型没有透出 thumb');
   for (const item of withImgVm) {
-    assert(/^\/pkg-hero\/img\/hero-\d+\.webp$/.test(item.thumb), `列表缩略图路径异常：${item.thumb}`);
+    assert(isRemote(item.thumb), `列表缩略图路径异常：${item.thumb}`);
   }
 
-  // 详情：photo 指向分包里的 136px 图
+  // 详情：photo 与列表同源，指向远程图片（图片已从代码包排除）
   const heroPage = loadPage('hero');
   heroPage.onLoad({ id: '0' });
-  assert(/^\.\.\/\.\.\/img\/hero-\d+\.webp$/.test(heroPage.data.photo), '详情图应指向分包相对路径');
+  assert(isRemote(heroPage.data.photo), '详情图应指向远程图片');
   heroPage.onPhotoError();
   assert.strictEqual(heroPage.data.photo, '', '图片加载失败后应回落首字占位');
 

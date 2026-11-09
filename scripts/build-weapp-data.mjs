@@ -35,6 +35,7 @@ const FILES = [
   ['lore-extra23.js', 'pkg-hero/data/lore-extra23.js'],
   ['lore-extra24.js', 'pkg-hero/data/lore-extra24.js'],
   ['lore-extra25.js', 'pkg-hero/data/lore-extra25.js'],
+  ['lore-extra26.js', 'pkg-hero/data/lore-extra26.js'],
   ['lore-extra15.js', 'pkg-hero/data/lore-extra15.js'],
   // 版本公告：小程序没有构建链，只能 require 同步文件；内容与 src/core/changelog.js 逐字一致，
   // 由 `npm run changelog:build` 从 CHANGELOG.md 生成，这里只做搬运。
@@ -49,8 +50,8 @@ function writeIfChanged(file, content) {
 }
 
 fs.mkdirSync(path.join(OUT, 'core'), { recursive: true });
-// 词卡/名言/人物数据放 pkg-hero 分包：主包超 2MB 的主因，
-// 分包可 require 主包的 data/_sst.js（字符串表仍在主包，避免拆表）。
+// 字符串表按归属拆成两张：seed 表留主包（翻译首页必需），lore 表放 pkg-hero 分包。
+// 分包可以 require 主包资源，反过来不行；把 lore 专用的约 1MB 从主包挪走是主包瘦身的关键。
 fs.mkdirSync(path.join(OUT, 'pkg-hero', 'data'), { recursive: true });
 
 let changed = 0;
@@ -86,27 +87,36 @@ const unionKeys = (arr) => {
 //   string          → 整数下标
 //   number/boolean  → {n: 值}
 //   array/object    → {a: 值}
-const SST = [];
-const SST_INDEX = new Map();
-const sstPut = (s) => {
-  let i = SST_INDEX.get(s);
-  if (i === undefined) {
-    i = SST.length;
-    SST.push(s);
-    SST_INDEX.set(s, i);
-  }
-  return i;
-};
-const encCell = (v) => {
-  if (v === null || v === undefined) return null;
-  if (typeof v === 'string') return sstPut(v);
-  if (typeof v === 'number' || typeof v === 'boolean') return { n: v };
-  return { a: v };
-};
-const packTable = (arr) => {
-  const keys = unionKeys(arr);
-  return { keys, rows: arr.map((x) => keys.map((kk) => encCell(x[kk]))) };
-};
+function makeStringTable() {
+  const strings = [];
+  const index = new Map();
+  const put = (s) => {
+    let i = index.get(s);
+    if (i === undefined) {
+      i = strings.length;
+      strings.push(s);
+      index.set(s, i);
+    }
+    return i;
+  };
+  const encCell = (v) => {
+    if (v === null || v === undefined) return null;
+    if (typeof v === 'string') return put(v);
+    if (typeof v === 'number' || typeof v === 'boolean') return { n: v };
+    return { a: v };
+  };
+  const packTable = (arr) => {
+    const keys = unionKeys(arr);
+    return { keys, rows: arr.map((x) => keys.map((kk) => encCell(x[kk]))) };
+  };
+  return { strings, packTable };
+}
+
+// 两张表完全独立：seed 表进主包，lore 表进 pkg-hero 分包。
+// 之前共用一张表，分包专用的约 1MB 字符串全压在主包，把主包顶过了 2MB 红线。
+// 拆开后各自的下标从 0 重新编号，解码方读各自包内那张表即可。
+const SEED_SST = makeStringTable();
+const LORE_SST = makeStringTable();
 
 function packMod(mod) {
   // 先把所有非内容字段原样带过去（dropCards / dropQuotes / heroMerge / quoteMerge …），
@@ -119,7 +129,7 @@ function packMod(mod) {
   for (const k of ['cards', 'quotes', 'heroes']) {
     const arr = mod[k];
     if (!Array.isArray(arr)) continue;
-    out[k] = packTable(arr);
+    out[k] = LORE_SST.packTable(arr);
   }
   return out;
 }
@@ -153,14 +163,13 @@ for (const [from, to] of FILES) {
   // lore.js 里大段是「为什么这么写」的注释与归类表说明，主包吃紧时这些不参与运行。
   // 只在复制到小程序时裁掉「整行注释 + 纯空行」，主端 src/core/lore.js 保持原样。
   if (from === 'lore.js') {
+    // 小程序端 lore.js 落在分包 pkg-hero/data/，与分包字符串表 _sst.js 同目录，
+    // 主端写的 require('./_sst.js') 正好对上，不需要再改写路径。
     content = content
       .split('\n')
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
       .map((line) => line.replace(/^\s+/, ''))
-      .join('\n')
-      // 小程序端 lore.js 落在分包 pkg-hero/data/，字符串表仍留在主包 data/：
-      // 这里是分包 require 主包，方向合法（反向不行）。不替换会直接找不到模块。
-      .replace("require('./_sst.js')", "require('../../data/_sst.js')");
+      .join('\n');
   }
   if (writeIfChanged(dst, content)) changed += 1;
 }
@@ -170,12 +179,12 @@ const seed = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
 if (!Array.isArray(seed.words) || !seed.words.length) throw new Error('seed.words 为空');
 if (!Array.isArray(seed.rules) || !seed.rules.length) throw new Error('seed.rules 为空');
 
-// seed 也做列式编码：词库 1889 条 + 句式 489 条，每条重复写 zh/linyu/alias/sense/source/pop/slot
+// seed 也做列式编码：词库 3851 条 + 句式 747 条，每条重复写 zh/linyu/alias/sense/source/pop/slot
 // 这些 key 名本身就是大头。小程序端 services/content.js 的 decodeSeed() 负责还原。
-// 与 lore-extra 共用同一张全局字符串表（SST），避免两套表各存一份。
+// seed 用主包专属的 SEED_SST，与分包的 LORE_SST 互不干扰。
 const packSeed = (obj) => {
   const out = { __col: 1, __sst: 1 };
-  for (const k of ['words', 'rules']) out[k] = packTable(obj[k]);
+  for (const k of ['words', 'rules']) out[k] = SEED_SST.packTable(obj[k]);
   return out;
 };
 
@@ -187,16 +196,31 @@ const seedModule =
   ';\n';
 if (writeIfChanged(path.join(OUT, 'data', 'seed.js'), seedModule)) changed += 1;
 
-// 全局字符串表必须在所有 pack 之后落盘（下标是追加式的，先写会漏后面新增的串）。
-// 单独一个模块，lore.js 与 services/content.js 解码时都 require 它。
-const sstModule =
-  '// 由 scripts/build-weapp-data.mjs 生成，勿手改。\n' +
-  '// 全局字符串表：data/seed.js 与 data/lore-extraN.js 的表格单元存的是这张表的下标。\n' +
-  'module.exports = ' +
-  JSON.stringify(SST) +
-  ';\n';
-if (writeIfChanged(path.join(OUT, 'data', '_sst.js'), sstModule)) changed += 1;
-console.log(`[weapp] 字符串表 ${SST.length} 条，${(sstModule.length / 1024).toFixed(0)}KB`);
+// 两张表必须在所有 pack 之后落盘（下标是追加式的，先写会漏后面新增的串）。
+const writeSst = (file, table, note) => {
+  const source =
+    '// 由 scripts/build-weapp-data.mjs 生成，勿手改。\n' +
+    `// ${note}\n` +
+    'module.exports = ' +
+    JSON.stringify(table.strings) +
+    ';\n';
+  if (writeIfChanged(path.join(OUT, file), source)) changed += 1;
+  return source.length;
+};
+const seedSstBytes = writeSst(
+  'data/_sst.js',
+  SEED_SST,
+  '主包字符串表：data/seed.js 的表格单元存的是这张表的下标。'
+);
+const loreSstBytes = writeSst(
+  'pkg-hero/data/_sst.js',
+  LORE_SST,
+  '分包字符串表：pkg-hero/data/lore-extraN.js 的表格单元存的是这张表的下标。'
+);
+console.log(
+  `[weapp] 字符串表 seed ${SEED_SST.strings.length} 条 / ${(seedSstBytes / 1024).toFixed(0)}KB（主包），` +
+    `lore ${LORE_SST.strings.length} 条 / ${(loreSstBytes / 1024).toFixed(0)}KB（分包）`
+);
 
 const lore = await import(pathToFileURL(path.join(SRC_CORE, 'lore.js')).href);
 const counts = {

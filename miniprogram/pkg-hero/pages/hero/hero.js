@@ -2,6 +2,7 @@
 
 const { toast, copy } = require('../../../utils/ui');
 const { syncChrome } = require('../../../utils/pageBase');
+const { heroImage } = require('../../config/assets');
 
 Page({
   data: {
@@ -37,8 +38,8 @@ Page({
       related.cards.length + ' 词卡',
       related.quotes.length + ' 名言',
     ].join(' · ');
-    // 详情图在分包里，用相对路径引，避免依赖根路径解析
-    const photo = hero.img ? '../../img/' + hero.img + '.webp' : '';
+    // 详情图走远程 URL（图片已从代码包排除），与列表共用同一套地址
+    const photo = heroImage(hero.img);
     this.setData({ hero, photo, related, links: hero.links, stats, notFound: false });
     wx.setNavigationBarTitle({ title: hero.name });
   },
@@ -68,7 +69,7 @@ Page({
     wx.switchTab({ url: '/pages/lexicon/lexicon' });
   },
 
-  // 图片加载失败（分包未就绪、文件缺失）时撤掉 image，露出底下的首字方块
+  // 图片加载失败（未配合法域名、离线、资源缺失）时撤掉 image，露出底下的首字方块
   onPhotoError() {
     this.setData({ photo: '' });
   },

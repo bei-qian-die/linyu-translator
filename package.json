@@ -1,6 +1,6 @@
 {
   "name": "linyu-translator",
-  "version": "1.38.0",
+  "version": "1.39.0",
   "description": "中文 -> 淋语 翻译器（Electron + SQLite / Capacitor + sql.js）",
   "main": "src/main/main.js",
   "author": "qiuzh",
@@ -19,6 +19,7 @@
     "mobile:sync": "cap sync android",
     "mobile:run": "cap run android",
     "weapp:sync": "node scripts/build-changelog.mjs && node scripts/build-weapp-data.mjs",
+    "weapp:size": "node scripts/check-weapp-size.mjs",
     "music:build": "node scripts/build-music.mjs",
     "changelog:build": "node scripts/build-changelog.mjs",
     "test:changelog": "node test/changelog.test.js",

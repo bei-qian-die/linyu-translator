@@ -35,7 +35,11 @@
   "condition": {},
   "simulatorPluginLibVersion": {},
   "packOptions": {
-    "ignore": [],
+    "ignore": [
+      { "type": "file", "value": "README.md" },
+      { "type": "file", "value": "data/DATA-README.md" },
+      { "type": "folder", "value": "pkg-hero/img" }
+    ],
     "include": []
   },
   "editorSetting": {}

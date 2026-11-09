@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-build="1.38.0-ffc453b0">
+<html lang="zh-CN" data-build="1.39.0-cfd4db7b">
 <head>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
@@ -27,14 +27,14 @@
   <meta property="og:title" content="淋语翻译器" />
   <meta property="og:description" content="中文 → 淋语在线翻译器，本地即时翻译；登录后支持云端词库与跨设备同步" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="favicon.ico?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
-  <link rel="stylesheet" href="style.css?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
-  <link rel="stylesheet" href="web/web.css?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
-  <link rel="stylesheet" href="web/cloud.css?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
-  <link rel="stylesheet" href="web/mobile.css?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7" />
+  <link rel="icon" href="favicon.ico?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
+  <link rel="stylesheet" href="style.css?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
+  <link rel="stylesheet" href="web/web.css?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
+  <link rel="stylesheet" href="web/cloud.css?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
+  <link rel="stylesheet" href="web/mobile.css?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7" />
 </head>
 
 <body>
@@ -1042,70 +1042,71 @@
   </div>
 
   <!-- Vue 3 全局构建 -->
-  <script src="vendor/vue.global.prod.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="vendor/vue.global.prod.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- 第三方：sql.js (WASM SQLite) 与 scrypt-js -->
-  <script src="vendor/sql-wasm.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="vendor/scrypt.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="vendor/sql-wasm.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="vendor/scrypt.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- 内嵌的种子词库与句式（build 阶段从 src/core/seed.json 生成，同步加载，规避模拟器 WebView 的 fetch 拦截） -->
-  <script src="seed-data.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="seed-data.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- 基础设施先于 core：db.js 在加载时就把 window.fsAdapter / window.linyuScrypt 抓进自己的
        模块变量，晚于它挂才没用（Android 上曾因此整库打不开） -->
-  <script src="mobile/fsAdapter.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="mobile/scrypt.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="mobile/fsAdapter.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="mobile/scrypt.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- 核心：先加载 lore 各项（每个脚本会给 window 注入对应常量），再聚合到 LORE_DATA，最后 db/auth/翻译 -->
-  <script src="core/deprecated.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra3.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra4.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra5.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra6.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra7.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra8.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra9.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra10.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra11.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra12.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra13.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra14.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra15.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra16.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra18.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra19.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra20.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra21.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra23.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra24.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore-extra25.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/lore.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/deprecated.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra3.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra4.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra5.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra6.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra7.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra8.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra9.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra10.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra11.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra12.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra13.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra14.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra15.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra16.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra18.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra19.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra20.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra21.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra23.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra24.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra25.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore-extra26.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/lore.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
   <!-- 音乐板块数据（生成物：scripts/build-music.mjs ← src/core/music-douyin.json）
        纯静态数据 + 纯函数，不依赖 db / 网络；缺失时音乐页自动降级成空态，不影响其余页面 -->
-  <script src="core/music.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/music.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
   <!-- 版本公告数据（scripts/build-changelog.mjs 从 CHANGELOG.md 生成，跟随 package.json 版本） -->
-  <script src="core/changelog.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/tokenizer.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/variant.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/translator.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/db.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/auth.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="core/service.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/changelog.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/tokenizer.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/variant.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/translator.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/db.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/auth.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/service.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- Phase 2 润色层（与平台无关）：Web / 小程序端靠它构造云端代理客户端，桌面端只用其纯函数 -->
-  <script src="core/llm-polish.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="core/llm-polish.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- 移动入口：api + entry -->
-  <script src="mobile/api.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="web/idbAdapter.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="web/webEntry.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="mobile/api.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="web/idbAdapter.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="web/webEntry.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 
   <!-- 渲染层（最后加载，让上面的全局都生效） -->
-  <script src="app.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="web/patch-app.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="vendor/workbuddy-cloud-sdk.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="web/cloudSync.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="web/mobileUI.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
-  <script src="web/versionCheck.js?v=1.38.0-ffc453b0&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="app.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="web/patch-app.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="vendor/workbuddy-cloud-sdk.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="web/cloudSync.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="web/mobileUI.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
+  <script src="web/versionCheck.js?v=1.39.0-cfd4db7b&amp;sharecode=KYSNKQPHS7"></script>
 </body>
 </html>

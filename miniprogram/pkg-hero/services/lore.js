@@ -4,6 +4,7 @@
 // 只在词库页/人物页 onLoad 时按需加载，避免 App 启动即解析全部数据（A4）。
 const lore = require('../data/lore');
 const { wordMap, rules } = require('../../services/content');
+const { heroImage } = require('../config/assets');
 
 const CARD_TYPE_ALIASES = {
   语气词: 'particle',
@@ -95,7 +96,7 @@ const quotes = lore.quotes.map((q, index) => {
 const heroes = lore.heroes.map((h, index) => {
   const group = text(h.group) || 'real';
   // 配图编号：桌面端存的是 "img/hero-704.png"，小程序只保留 "hero-704"，
-  // 由页面按包位置拼路径（列表与详情同在本分包 pkg-hero/img/）。
+  // 由 config/assets.js 拼成远程图片 URL（图片已从代码包排除以压分包体积）。
   const imgNum = text(h.img).replace(/^img\//, '').replace(/\.[a-z0-9]+$/i, '');
   const hero = {
     id: index,
@@ -112,7 +113,7 @@ const heroes = lore.heroes.map((h, index) => {
     zone: '',
     initial: text(h.name).slice(0, 1) || '淋',
     img: imgNum,
-    thumb: imgNum ? '/pkg-hero/img/' + imgNum + '.webp' : '',
+    thumb: heroImage(imgNum),
   };
   hero.zone = heroZone(hero);
   hero.searchText = joinSearch([
