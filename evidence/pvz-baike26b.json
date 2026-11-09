@@ -1,0 +1,111 @@
+{
+ "harvestedAt": "2026-11-09T12:25:23.703Z",
+ "source": "wapbaike.baidu.com",
+ "report": [
+  {
+   "name": "豌豆射手",
+   "file": "豌豆射手.png",
+   "kind": "png",
+   "src": "https://bkimg.cdn.bcebos.com/smart/5ab5c9ea15ce36d3d539a6150aa42d87e950352a1bc5-bkimg-process,v_1,rw_1,rh_1,maxl_1242,pad_1,color_#ffffff",
+   "page": "https://wapbaike.baidu.com/item/%E8%B1%8C%E8%B1%86%E5%B0%84%E6%89%8B/8630515",
+   "lemma": "豌豆射手",
+   "id": "8630515",
+   "desc": "豌豆射手（Peashooter），中文别称豌豆、单发射手，是益智策略游戏《植物大战僵尸》系列中的基础攻击型植物，其名称源自英文单词“pea”（豌豆）与“shoo",
+   "bytes": 208138
+  },
+  {
+   "name": "向日葵",
+   "file": "向日葵.jpg",
+   "kind": "jpg",
+   "src": "https://bkimg.cdn.bcebos.com/pic/94cad1c8a786c9177f3efb63cf6667cf3bc79f3df96c",
+   "page": "https://wapbaike.baidu.com/item/%E5%90%91%E6%97%A5%E8%91%B5/7896556",
+   "lemma": "向日葵",
+   "id": "7896556",
+   "desc": "向日葵（Sunflower），是益智策略类塔防游戏《植物大战僵尸》系列的核心植物角色，由Laura Shigihara配音，中文版别名太阳花、小葵。作为游戏中的",
+   "bytes": 161808
+  },
+  {
+   "name": "坚果墙",
+   "err": "no lemma"
+  },
+  {
+   "name": "樱桃炸弹",
+   "err": "no lemma"
+  },
+  {
+   "name": "寒冰射手",
+   "file": "寒冰射手.jpg",
+   "kind": "jpg",
+   "src": "https://bkimg.cdn.bcebos.com/pic/b8014a90f603738da9779c8ffb40a751f81986184650",
+   "page": "https://wapbaike.baidu.com/item/%E5%AF%92%E5%86%B0%E5%B0%84%E6%89%8B/4404887",
+   "lemma": "寒冰射手",
+   "id": "4404887",
+   "desc": "寒冰射手（Snow Pea）是益智策略类塔防御战游戏《植物大战僵尸》、《植物大战僵尸2》和《植物大战僵尸3》中的植物。属于豌豆射手的变种。寒冰射手每次攻击发射一",
+   "bytes": 115998
+  },
+  {
+   "name": "大嘴花",
+   "err": "no lemma"
+  },
+  {
+   "name": "大喷菇",
+   "err": "no lemma"
+  },
+  {
+   "name": "土豆雷",
+   "err": "no lemma"
+  },
+  {
+   "name": "火爆辣椒",
+   "err": "no lemma"
+  },
+  {
+   "name": "地刺",
+   "err": "no lemma"
+  },
+  {
+   "name": "磁力菇",
+   "err": "no lemma"
+  },
+  {
+   "name": "模仿者",
+   "err": "no lemma"
+  },
+  {
+   "name": "三线射手",
+   "err": "no lemma"
+  },
+  {
+   "name": "杨桃",
+   "err": "no lemma"
+  },
+  {
+   "name": "睡莲",
+   "err": "failed"
+  },
+  {
+   "name": "墓碑吞噬者",
+   "err": "no lemma"
+  },
+  {
+   "name": "香蒲",
+   "err": "failed"
+  },
+  {
+   "name": "疯狂戴夫",
+   "err": "no lemma"
+  },
+  {
+   "name": "撑杆跳僵尸",
+   "err": "no lemma"
+  },
+  {
+   "name": "蹦极僵尸",
+   "err": "no lemma"
+  },
+  {
+   "name": "矿工僵尸",
+   "err": "no lemma"
+  }
+ ]
+}

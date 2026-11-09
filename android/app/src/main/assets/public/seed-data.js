@@ -51730,5 +51730,5 @@ window.__SEED_DATA = {
     }
   ]
 };
-window.LINYU_VERSION = "1.39.0";
-window.LINYU_CONTENT_HASH = "7e1e155c384588b8";
+window.LINYU_VERSION = "1.39.1";
+window.LINYU_CONTENT_HASH = "fafe64f8456bc9ee";

@@ -1,0 +1,184 @@
+{
+ "builtAt": "2026-11-09T12:34:24.261Z",
+ "report": [
+  {
+   "name": "豌豆射手",
+   "file": "hero-958.png",
+   "num": 958,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/smart/5ab5c9ea15ce36d3d539a6150aa42d87e950352a1bc5-bkimg-process,v_1,rw_1,rh_1,maxl_1242,pad_1,color_#ffffff",
+   "origin": "pvz-baike26/豌豆射手.png"
+  },
+  {
+   "name": "向日葵",
+   "file": "hero-959.png",
+   "num": 959,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/94cad1c8a786c9177f3efb63cf6667cf3bc79f3df96c",
+   "page": "https://wapbaike.baidu.com/item/%E5%90%91%E6%97%A5%E8%91%B5/7896556",
+   "origin": "pvz-baike26/向日葵.jpg"
+  },
+  {
+   "name": "坚果墙",
+   "file": "hero-960.png",
+   "num": 960,
+   "type": "百度百科词条图集",
+   "src": "https://bkimg.cdn.bcebos.com/smart/6159252dd42a28341983273659b5c9ea15cebfe1-bkimg-process,v_1,rw_1,rh_1,maxl_324",
+   "page": "https://baike.baidu.com/item/植物大战僵尸",
+   "origin": "pvz-baike-gallery/植物大战僵尸-6.png"
+  },
+  {
+   "name": "樱桃炸弹",
+   "file": "hero-961.png",
+   "num": 961,
+   "type": "百度百科词条图集",
+   "src": "https://bkimg.cdn.bcebos.com/smart/e61190ef76c6a7efa9ffbe1bfffaaf51f3de6635-bkimg-process,v_1,rw_1,rh_1,maxl_324",
+   "page": "https://baike.baidu.com/item/植物大战僵尸",
+   "origin": "pvz-baike-gallery/植物大战僵尸-5.png"
+  },
+  {
+   "name": "寒冰射手",
+   "file": "hero-962.png",
+   "num": 962,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/b8014a90f603738da9779c8ffb40a751f81986184650",
+   "page": "https://wapbaike.baidu.com/item/%E5%AF%92%E5%86%B0%E5%B0%84%E6%89%8B/4404887",
+   "origin": "pvz-baike26/寒冰射手.jpg"
+  },
+  {
+   "name": "大嘴花",
+   "file": "hero-963.png",
+   "num": 963,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/fd039245d688d43f8794350b5844c51b0ef41ad58d8a",
+   "origin": "pvz-baike26/大嘴花.png"
+  },
+  {
+   "name": "大喷菇",
+   "file": "hero-964.png",
+   "num": 964,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/8601a18b87d6277f9e2f09e8c7620830e924b9995692",
+   "origin": "pvz-baike26/大喷菇.png"
+  },
+  {
+   "name": "土豆雷",
+   "file": "hero-965.png",
+   "num": 965,
+   "type": "百度百科词条图集",
+   "src": "https://bkimg.cdn.bcebos.com/pic/d043ad4bd11373f0820247d11c595cfbfbedab64ae7d",
+   "page": "https://wapbaike.baidu.com/item/%E5%9C%9F%E8%B1%86%E5%9C%B0%E9%9B%B7",
+   "origin": "pvz-baike26/土豆雷.png"
+  },
+  {
+   "name": "火爆辣椒",
+   "file": "hero-966.png",
+   "num": 966,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/63d9f2d3572c11dfa9eccd1fab7d75d0f703918f64ce",
+   "origin": "pvz-baike26/火爆辣椒.jpg"
+  },
+  {
+   "name": "地刺",
+   "file": "hero-967.png",
+   "num": 967,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/37d3d539b6003af33a87fa46057dd15c1038534318c4",
+   "origin": "pvz-baike26/地刺.png"
+  },
+  {
+   "name": "磁力菇",
+   "file": "hero-968.png",
+   "num": 968,
+   "type": "百度百科词条图集",
+   "src": "https://bkimg.cdn.bcebos.com/smart/c2fdfc039245d688d43f028294956a1ed21b0ef48ec4-bkimg-process,v_1,rw_3,rh_4,maxl_641,pad_1",
+   "page": "https://baike.baidu.com/item/磁力菇",
+   "origin": "pvz-baike-gallery/磁力菇-2.png"
+  },
+  {
+   "name": "模仿者",
+   "file": "hero-969.png",
+   "num": 969,
+   "type": "360图片检索",
+   "src": "https://i1.hdslb.com/bfs/archive/508259db65467d1618971163df139814b94953fc.png",
+   "page": "http://www.bilibili.com/video/av59944263/",
+   "origin": "pvz-raw26b/imitater-2.png"
+  },
+  {
+   "name": "三线射手",
+   "file": "hero-970.png",
+   "num": 970,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/d788d43f8794a4c27d1e0c51d4ae0cd5ad6eddc4930c",
+   "origin": "pvz-baike26/三线射手.png"
+  },
+  {
+   "name": "杨桃",
+   "file": "hero-971.png",
+   "num": 971,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/dc54564e9258d109b3de347f3502dbbf6c81810ae7f1",
+   "page": "https://wapbaike.baidu.com/item/%E6%98%9F%E6%98%9F%E6%9E%9C",
+   "origin": "pvz-baike26/杨桃.png"
+  },
+  {
+   "name": "睡莲",
+   "file": "hero-972.png",
+   "num": 972,
+   "type": "360图片检索",
+   "src": "https://files.youxibao.com/imgfile/20260908/08175352rfgo.png",
+   "page": "https://m.youxibao.com/game/253372.html",
+   "origin": "pvz-raw26c/lilypad-5.png"
+  },
+  {
+   "name": "墓碑吞噬者",
+   "file": "hero-973.png",
+   "num": 973,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/eac4b74543a98226cffc1ceb6ed8ae014a90f703bdff",
+   "origin": "pvz-baike26/墓碑吞噬者.jpg"
+  },
+  {
+   "name": "香蒲",
+   "file": "hero-974.png",
+   "num": 974,
+   "type": "360图片检索",
+   "src": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20240604/1/1/ed05c305057ee681af9d4acae3098c7f.jpg",
+   "page": "https://www.9game.cn/news/10172131.html",
+   "origin": "pvz-raw26b/cattail-3.png"
+  },
+  {
+   "name": "疯狂戴夫",
+   "file": "hero-975.png",
+   "num": 975,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/0823dd54564e9258d109117275d8c658ccbf6d81e0ae",
+   "origin": "pvz-baike26/疯狂戴夫.jpg"
+  },
+  {
+   "name": "撑杆跳僵尸",
+   "file": "hero-976.png",
+   "num": 976,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/55e736d12f2eb9389b50cbbb33389235e5dde711c17d",
+   "page": "https://wapbaike.baidu.com/item/%E6%92%91%E6%9D%86%E5%83%B5%E5%B0%B8",
+   "origin": "pvz-baike26/撑杆跳僵尸.jpg"
+  },
+  {
+   "name": "蹦极僵尸",
+   "file": "hero-977.png",
+   "num": 977,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/fc1f4134970a304e251f22093792b086c9177e3ef6b7",
+   "origin": "pvz-baike26/蹦极僵尸.jpg"
+  },
+  {
+   "name": "矿工僵尸",
+   "file": "hero-978.png",
+   "num": 978,
+   "type": "百度百科词条主图",
+   "src": "https://bkimg.cdn.bcebos.com/pic/b58f8c5494eef01f3a29b52d04a48e25bc315d60d79a",
+   "origin": "pvz-baike26/矿工僵尸.jpg"
+  }
+ ]
+}
