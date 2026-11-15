@@ -1,7 +1,7 @@
 {
   "source": "douyin",
-  "batch": 4,
-  "collected_at": "2026-11-06",
+  "batch": 5,
+  "collected_at": "2026-11-15",
   "platforms": [
     "douyin",
     "bilibili",
@@ -5987,6 +5987,1461 @@
         }
       ],
       "source": "bilibili"
+    },
+    {
+      "id": "yhx5_jiafei_jack",
+      "source": "douyin",
+      "name": "@jiafei_JackAnderson创作的原声",
+      "author": "jiafei_JackAnderson",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "原声",
+        "缝合"
+      ],
+      "music_url": "https://www.douyin.com/music/7453343993867406121",
+      "music_id": "7453343993867406121",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "Jiafei JackAnderson 原声",
+      "usage_count": "740",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "红豆生南gulp#杯糕姐",
+          "author": "Da",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7465187459471641893",
+          "aweme_id": "7465187459471641893",
+          "play_count": null,
+          "like_count": "221324",
+          "duration": 8,
+          "meme_point": "把「红豆生南国」改成「红豆生南gulp」，古诗念到一半就被吞咽音截断",
+          "music_used": "@jiafei_JackAnderson创作的原声"
+        },
+        {
+          "title": "#cupcakke #meme #fyp #floptok #精神状态belike",
+          "author": "jiafei_JackAnderson",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7453344107377855802",
+          "aweme_id": "7453344107377855802",
+          "play_count": null,
+          "like_count": "129863",
+          "duration": 8,
+          "meme_point": "原声作者自己下场，把 floptok 那套精神状态文案直接配上 gulp 循环",
+          "music_used": "@jiafei_JackAnderson创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "yhx5_white_jiafei",
+      "source": "douyin",
+      "name": "@White Jiafei创作的原声",
+      "author": "White Jiafei",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "原声"
+      ],
+      "music_url": "https://www.douyin.com/music/7536176316446460691",
+      "music_id": "7536176316446460691",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "White Jiafei 原声",
+      "usage_count": "886",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "#gulp #杯糕姐 #meangirls 美美奔向2027，贱人们滚开",
+          "author": "赛特",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7654147722900113984",
+          "aweme_id": "7654147722900113984",
+          "play_count": null,
+          "like_count": "40390",
+          "duration": 6,
+          "meme_point": "用 gulp 当口号立年度人设，「美美奔向 2027，贱人们滚开」一股 mean girls 语气",
+          "music_used": "@White Jiafei创作的原声"
+        },
+        {
+          "title": "gulpgulpgulpgulp.好神圣呀好神圣呀#绘圈 #二次元oc #稿件勿用 #稿件展示#杯糕姐",
+          "author": "gd瑞拉",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7647874006678262491",
+          "aweme_id": "7647874006678262491",
+          "play_count": null,
+          "like_count": "106",
+          "duration": null,
+          "meme_point": "连写四个 gulp 当祷词，给二次元 OC 稿件配「神圣感」BGM",
+          "music_used": "@White Jiafei创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "yhx5_jiafei_suaimiao",
+      "source": "douyin",
+      "name": "@Jiafei_suaimiao创作的原声",
+      "author": "Jiafei_suaimiao",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "原声",
+        "抽象"
+      ],
+      "music_url": "https://www.douyin.com/music/7477815064100178724",
+      "music_id": "7477815064100178724",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "Jiafei suaimiao 原声",
+      "usage_count": "39",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "#cupcakke #jiafei #jiafei_suaimiao 当我不小心在市场放出我爱的音乐🎵💅💅💅",
+          "author": "Jiafei_suaimiao",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7477815173831560508",
+          "aweme_id": "7477815173831560508",
+          "play_count": null,
+          "like_count": "20579",
+          "duration": 8,
+          "meme_point": "把 jiafei 原声当「不小心在市场外放」的社死现场音，购物画面配发疯 BGM",
+          "music_used": "@Jiafei_suaimiao创作的原声"
+        },
+        {
+          "title": "#cucakke #审美积累 #杯糕 #杯糕姐 @TC-LGK",
+          "author": "Traevon🐶",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7607653078770804864",
+          "aweme_id": "7607653078770804864",
+          "play_count": null,
+          "like_count": "4",
+          "duration": 8,
+          "meme_point": "一边刷杯糕姐一边自称「审美积累」，反讽式自我培训",
+          "music_used": "@Jiafei_suaimiao创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "gulp5_cupcakke_a",
+      "source": "douyin",
+      "name": "@CupcakKe创作的原声",
+      "author": "CupcakKe",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "杯糕姐",
+        "原声",
+        "重复"
+      ],
+      "music_url": "https://www.douyin.com/music/7632743101341256475",
+      "music_id": "7632743101341256475",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "CupcakKe 原声 gulp",
+      "usage_count": "683",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "#杯糕姐#cupcakke  变奏训练🎵",
+          "author": "CupcakKe",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7632743191888651962",
+          "aweme_id": "7632743191888651962",
+          "play_count": null,
+          "like_count": "182618",
+          "duration": 9,
+          "meme_point": "把 gulp 当节拍器做变奏训练，一句一档越练越快",
+          "music_used": "@CupcakKe创作的原声"
+        },
+        {
+          "title": "一款gulp 件缓缓出现 #cupcakke #杯糕姐 #gulp #设计 #挂件 \n我就这样带着我的糕糕挂件到处晃",
+          "author": "AKUYA",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7645697956821598309",
+          "aweme_id": "7645697956821598309",
+          "play_count": null,
+          "like_count": "418",
+          "duration": 9,
+          "meme_point": "把 gulp 做成实体挂件，边晃边配原声，梗从音频变成周边",
+          "music_used": "@CupcakKe创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "gulp5_kpop_bibi",
+      "source": "douyin",
+      "name": "@kpop哔哔机创作的原声",
+      "author": "kpop哔哔机",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "杯糕姐",
+        "精神状态",
+        "卡点"
+      ],
+      "music_url": "https://www.douyin.com/music/7367758024045333260",
+      "music_id": "7367758024045333260",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "cupcakke 精神状态 belike",
+      "usage_count": "74714",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "我就这样#精神状态belike #第五人格 #cupcakke",
+          "author": "for爱味样",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7536856274525883705",
+          "aweme_id": "7536856274525883705",
+          "play_count": null,
+          "like_count": "648320",
+          "duration": 4,
+          "meme_point": "一句「我就这样」配第五人格对局截图，gulp 直接当精神状态音效",
+          "music_used": "@kpop哔哔机创作的原声"
+        },
+        {
+          "title": "我就这样#精神状态belike #第五人格 #cupcakke",
+          "author": "for爱味样",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7537598343145409802",
+          "aweme_id": "7537598343145409802",
+          "play_count": null,
+          "like_count": "591144",
+          "duration": 4,
+          "meme_point": "同款模板换一张对局截图重发，照样几十万赞，模板化二创的典型",
+          "music_used": "@kpop哔哔机创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "gulp5_beitata",
+      "source": "douyin",
+      "name": "@想听贝如塔🦪创作的原声",
+      "author": "想听贝如塔🦪",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "杯糕姐",
+        "原声",
+        "循环"
+      ],
+      "music_url": "https://www.douyin.com/music/7632363315670715162",
+      "music_id": "7632363315670715162",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "gulp 原声 贝如塔",
+      "usage_count": "4039",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "#听完你就知道该给谁听了 #当女孩失恋时 #当代女生必听 #杯糕 #感觉越来越好",
+          "author": "瑜.",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7632562653076350321",
+          "aweme_id": "7632562653076350321",
+          "play_count": null,
+          "like_count": "58261",
+          "duration": 13,
+          "meme_point": "打着「失恋必听」旗号推杯糕姐，评论区集体刷「感觉越来越好」",
+          "music_used": "@想听贝如塔🦪创作的原声"
+        },
+        {
+          "title": "愿你生hore🈷️来🈷️好---cupcakke\n#cupcakke #cupcakkeremix #杯糕姐 #杰克gulp母 #亚洲第一深情",
+          "author": "杰克gulp母",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7632580000751748197",
+          "aweme_id": "7632580000751748197",
+          "play_count": null,
+          "like_count": "23257",
+          "duration": 14,
+          "meme_point": "把生日祝福拆成谐音「hore 月来月好」，用 gulp 原声念贺词",
+          "music_used": "@想听贝如塔🦪创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "yhx5_aixy",
+      "source": "douyin",
+      "name": "@AIXY艾克希创作的原声",
+      "author": "AIXY艾克希",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "原声",
+        "抽象"
+      ],
+      "music_url": "https://www.douyin.com/music/7528295586542701358",
+      "music_id": "7528295586542701358",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "野花香 原声 AIXY",
+      "usage_count": "957",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "#杯糕姐#cupcakke",
+          "author": "CupcakKe",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7642705713106796913",
+          "aweme_id": "7642705713106796913",
+          "play_count": null,
+          "like_count": "138471",
+          "duration": 10,
+          "meme_point": "纯标签型二创，靠一段 gulp 变奏撑满整条视频，标题只留两个话题",
+          "music_used": "@AIXY艾克希创作的原声"
+        },
+        {
+          "title": "尼格买提/吕秀才 我真的没空陪你闹了 #杯糕姐 #cupcakke #jump #vogue #野百合小姐 BGM@郑若曲（不准点歌）",
+          "author": "AIXY艾克希",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7528295599175896330",
+          "aweme_id": "7528295599175896330",
+          "play_count": null,
+          "like_count": "5203",
+          "duration": 19,
+          "meme_point": "把主持人表情包与杯糕姐剪在一起，一句「我真的没空陪你闹了」收尾",
+          "music_used": "@AIXY艾克希创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "yhx5_buling",
+      "source": "douyin",
+      "name": "@-不灵-创作的原声",
+      "author": "-不灵-",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "原声",
+        "缝合"
+      ],
+      "music_url": "https://www.douyin.com/music/7326367856046705459",
+      "music_id": "7326367856046705459",
+      "platform_id": null,
+      "share_url": null,
+      "search_keyword": "野花香 原声 不灵",
+      "usage_count": "161",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "野野野野野野野！花！香！ 非常好的视频爱来自野花香~#崩坏星穹铁道 #庸与神的冠冕 #真理医生 #义父 #开拓者",
+          "author": "-不灵-",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7326367676115291401",
+          "aweme_id": "7326367676115291401",
+          "play_count": null,
+          "like_count": "257054",
+          "duration": 111,
+          "meme_point": "把野花香拆成「野野野野野野野！花！香！」连喊，配星穹铁道角色起哄",
+          "music_used": "@-不灵-创作的原声"
+        },
+        {
+          "title": "野野野野！野花香～#崩坏星穹铁道 #阮梅 #ooc致歉 #扭一扭",
+          "author": "佐洢",
+          "type": "video",
+          "video_url": "https://www.douyin.com/video/7348280384108399935",
+          "aweme_id": "7348280384108399935",
+          "play_count": null,
+          "like_count": "36027",
+          "duration": 24,
+          "meme_point": "同款连喊模板换角色，阮梅跟着「扭一扭」，ooc 也照发",
+          "music_used": "@-不灵-创作的原声"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv14x4y1o7ob",
+      "source": "bilibili",
+      "name": "死在野花香",
+      "author": "莉师傅的眼睫毛",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "鬼畜",
+        "缝合",
+        "梗曲"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV14X4y1o7oB",
+      "music_id": null,
+      "platform_id": "BV14X4y1o7oB",
+      "share_url": null,
+      "search_keyword": "死在野花香",
+      "usage_count": "853024",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "视频可以被偷走，那么野花香呢？",
+          "author": "恭喜本熊",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1v19yYbEeu",
+          "aweme_id": "BV1v19yYbEeu",
+          "play_count": 181837,
+          "like_count": "15407",
+          "duration": 96,
+          "meme_point": "把「视频可以被偷走」的套话直接套在野花香上，评论区接龙「那么野花香呢」",
+          "music_used": "死在野花香"
+        },
+        {
+          "title": "玩记者听野花香这辈子有了",
+          "author": "恭喜本熊",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1mHKVeoE9S",
+          "aweme_id": "BV1mHKVeoE9S",
+          "play_count": 61053,
+          "like_count": "4947",
+          "duration": 97,
+          "meme_point": "记者式开场播野花香，一句「这辈子有了」定调，弹幕齐刷听歌名场面",
+          "music_used": "死在野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv17uhve3e4k",
+      "source": "bilibili",
+      "name": "曼波の野花香",
+      "author": "包包sama啊",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "曼波",
+        "缝合",
+        "抽象"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV17uHve3E4k",
+      "music_id": null,
+      "platform_id": "BV17uHve3E4k",
+      "share_url": null,
+      "search_keyword": "曼波 野花香",
+      "usage_count": "343961",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "the 野花香  /背景素材",
+          "author": "Junalynnnnn",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1QQnM6wEAU",
+          "aweme_id": "BV1QQnM6wEAU",
+          "play_count": 24066,
+          "like_count": "3428",
+          "duration": 35,
+          "meme_point": "干脆把 the 野花香 做成纯背景素材，供人直接拿去二次剪辑",
+          "music_used": "曼波の野花香"
+        },
+        {
+          "title": "The野花香 原创外网",
+          "author": "杰水酱",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1k1JY6JE8D",
+          "aweme_id": "BV1k1JY6JE8D",
+          "play_count": 1585,
+          "like_count": "94",
+          "duration": 35,
+          "meme_point": "标注「原创外网」的搬运考据版，把野花香 remix 的海外源头讲了一遍",
+          "music_used": "曼波の野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1wh4y1h7kq",
+      "source": "bilibili",
+      "name": "Jiafei-群青·野花香",
+      "author": "Chasel懿辰",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "缝合",
+        "Kpop"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1wh4y1h7Kq",
+      "music_id": null,
+      "platform_id": "BV1wh4y1h7Kq",
+      "share_url": null,
+      "search_keyword": "jiafei 群青 野花香",
+      "usage_count": "185062",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "Jiafei-FLOWER·野花香 feat.Cupcakke👐💃",
+          "author": "Chasel懿辰",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1wb4y1u78a",
+          "aweme_id": "BV1wb4y1u78a",
+          "play_count": 106579,
+          "like_count": "4169",
+          "duration": 82,
+          "meme_point": "把野花香副歌塞进 FLOWER 的鼓点里，feat. 杯糕姐，缝合得一板一眼",
+          "music_used": "Jiafei-群青·野花香"
+        },
+        {
+          "title": "Jiafei-After 野花香 feat.Cupcakke🎇🎆",
+          "author": "Chasel懿辰",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV11u4y1L74v",
+          "aweme_id": "BV11u4y1L74v",
+          "play_count": 41713,
+          "like_count": "1310",
+          "duration": 69,
+          "meme_point": "Jiafei-After 版，野花香旋律当尾奏，情绪一转就进哭腔",
+          "music_used": "Jiafei-群青·野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1nn411z7gq",
+      "source": "bilibili",
+      "name": "one last 野花香（jiafei × cupcake）",
+      "author": "NACHUMII",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "杯糕姐",
+        "缝合"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1nN411z7Gq",
+      "music_id": null,
+      "platform_id": "BV1nN411z7Gq",
+      "share_url": null,
+      "search_keyword": "one last 野花香",
+      "usage_count": "184753",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "Ditto野花香(jiafei remix)｜NewJeans与jiafei女王最新合作曲",
+          "author": "不上剑桥不改名",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1qe4y1N7UT",
+          "aweme_id": "BV1qe4y1N7UT",
+          "play_count": 69846,
+          "like_count": "2298",
+          "duration": 186,
+          "meme_point": "NewJeans《Ditto》直接改词成野花香，副歌口型对得严丝合缝",
+          "music_used": "one last 野花香（jiafei × cupcake）"
+        },
+        {
+          "title": "野花A（the craol of Jiafei Products）",
+          "author": "bili_280629408",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Fc411D7dw",
+          "aweme_id": "BV1Fc411D7dw",
+          "play_count": 156155,
+          "like_count": "6070",
+          "duration": 72,
+          "meme_point": "把野花香做成「Jiafei 产品」式命名，封面按商品包装排版",
+          "music_used": "one last 野花香（jiafei × cupcake）"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1qe7vzbeox",
+      "source": "bilibili",
+      "name": "日V男声中文翻唱《野花香(DJ版)》",
+      "author": "心斋桥Ocuto",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "翻唱",
+        "日V",
+        "DJ加速"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1qE7VzbEox",
+      "music_id": null,
+      "platform_id": "BV1qE7VzbEox",
+      "share_url": null,
+      "search_keyword": "日V 男声 野花香 翻唱",
+      "usage_count": "179971",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "【现场生唱】野花香-莫斯满&老猫 这什么土嗨歌",
+          "author": "伊芙Eve_",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV16kdLYREnf",
+          "aweme_id": "BV16kdLYREnf",
+          "play_count": 710,
+          "like_count": "61",
+          "duration": 195,
+          "meme_point": "现场生唱版，唱完自己吐槽「这什么土嗨歌」，反差感拉满",
+          "music_used": "日V男声中文翻唱《野花香(DJ版)》"
+        },
+        {
+          "title": "【蕎安JOAN ft. 奧斯卡OSCAR】野花香 DJ【UTAUcover+UST】",
+          "author": "Mimisan15",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1CZ4y1d7xm",
+          "aweme_id": "BV1CZ4y1d7xm",
+          "play_count": 2222,
+          "like_count": "118",
+          "duration": 194,
+          "meme_point": "UTAU 虚拟歌手调教版，把 DJ 版拆成可复现的 ust 工程",
+          "music_used": "日V男声中文翻唱《野花香(DJ版)》"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv132ikepedg",
+      "source": "bilibili",
+      "name": "野花香（Haocore Mix Feat.otto）",
+      "author": "默雪SilentSnow",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Haocore",
+        "电棍",
+        "鬼畜"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV132iKepEDG",
+      "music_id": null,
+      "platform_id": "BV132iKepEDG",
+      "share_url": null,
+      "search_keyword": "野花香 Haocore",
+      "usage_count": "149321",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "Phigros自制谱/⚠️shader光敏警告⚠️]野花香 (Haocore Mix)【Feat.Jiafei】",
+          "author": "御空_yk",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1qGHZeiETj",
+          "aweme_id": "BV1qGHZeiETj",
+          "play_count": 3651,
+          "like_count": "111",
+          "duration": 370,
+          "meme_point": "直接给 Haocore Mix 做了 Phigros 自制谱，还带光敏警告",
+          "music_used": "野花香（Haocore Mix Feat.otto）"
+        },
+        {
+          "title": "【舞立方/自制谱】野花香（Haocore Mix）Lv.19 初见手元",
+          "author": "RUVista_Offical",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV17B6WYiEFK",
+          "aweme_id": "BV17B6WYiEFK",
+          "play_count": 1323,
+          "like_count": "36",
+          "duration": 196,
+          "meme_point": "舞立方自制谱 Lv.19 初见手元，野花香进了街机音游",
+          "music_used": "野花香（Haocore Mix Feat.otto）"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1rx421z7nv",
+      "source": "bilibili",
+      "name": "【雷安/手书】野花香",
+      "author": "蒸馏果酒酒酒酒",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "手书",
+        "同人",
+        "卡点"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1Rx421Z7NV",
+      "music_id": null,
+      "platform_id": "BV1Rx421Z7NV",
+      "share_url": null,
+      "search_keyword": "雷安 手书 野花香",
+      "usage_count": "69169",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "【鼬佐】野花香",
+          "author": "-雨溶_",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1F6ng6EEKU",
+          "aweme_id": "BV1F6ng6EEKU",
+          "play_count": 656,
+          "like_count": "177",
+          "duration": 35,
+          "meme_point": "同人配对换成鼬佐，野花香成了手书圈的通用 BGM",
+          "music_used": "【雷安/手书】野花香"
+        },
+        {
+          "title": "【变形金刚】the 野花香。每次都想装作很倔强。",
+          "author": "_施诗_",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV19Jx46eEmd",
+          "aweme_id": "BV19Jx46eEmd",
+          "play_count": 528,
+          "like_count": "59",
+          "duration": 36,
+          "meme_point": "变形金刚版 the 野花香，机械角色跟着「每次都想装作很倔强」摆头",
+          "music_used": "【雷安/手书】野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv14t42177sn",
+      "source": "bilibili",
+      "name": "【熊出没】野花香",
+      "author": "卓越LZP",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "动画缝合",
+        "土味",
+        "卡点"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV14t42177sN",
+      "music_id": null,
+      "platform_id": "BV14t42177sN",
+      "share_url": null,
+      "search_keyword": "熊出没 野花香",
+      "usage_count": "65368",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "完整版来了家人们the野花香twice野花香the野花香翻唱",
+          "author": "夏旋酱大魔王",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Th41177AD",
+          "aweme_id": "BV1Th41177AD",
+          "play_count": 550,
+          "like_count": "13",
+          "duration": 38,
+          "meme_point": "「完整版来了家人们」式标题，把 twice 与 the 野花香混成一首",
+          "music_used": "【熊出没】野花香"
+        },
+        {
+          "title": "【赠/meme】野花香",
+          "author": "night夜熙",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1L6JR6AEz8",
+          "aweme_id": "BV1L6JR6AEz8",
+          "play_count": 166,
+          "like_count": "20",
+          "duration": 34,
+          "meme_point": "赠/meme 版，把野花香当模板发给同好直接用",
+          "music_used": "【熊出没】野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1dm4m1y7yy",
+      "source": "bilibili",
+      "name": "世界第一野花香殿下",
+      "author": "弃弃气气",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "Jiafei",
+        "鬼畜",
+        "头衔梗"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1dM4m1y7yy",
+      "music_id": null,
+      "platform_id": "BV1dM4m1y7yy",
+      "share_url": null,
+      "search_keyword": "世界第一野花香殿下",
+      "usage_count": "56990",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "😍kkr：每次都想装作很倔强~但是见面自己却缴械投降~😊【夢ノ結唱HALO】野花香",
+          "author": "想去日照",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1X1436sEfG",
+          "aweme_id": "BV1X1436sEfG",
+          "play_count": 943,
+          "like_count": "67",
+          "duration": 112,
+          "meme_point": "合成音源唱「每次都想装作很倔强」，配上缴械投降的歌词反转",
+          "music_used": "世界第一野花香殿下"
+        },
+        {
+          "title": "［jiafei］尖叫 野花香-jiafei美学尖叫",
+          "author": "会飞四十六条腿青木P",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Rsh8ziEVH",
+          "aweme_id": "BV1Rsh8ziEVH",
+          "play_count": 1442,
+          "like_count": "31",
+          "duration": 37,
+          "meme_point": "把 jiafei 尖叫音单独抽出来，当野花香的前置音效",
+          "music_used": "世界第一野花香殿下"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1yk421y74x",
+      "source": "bilibili",
+      "name": "法核野花香（但是注入灵魂）",
+      "author": "EndCat-终猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "法核",
+        "混音",
+        "抽象"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1YK421y74x",
+      "music_id": null,
+      "platform_id": "BV1YK421y74x",
+      "share_url": null,
+      "search_keyword": "法核 野花香",
+      "usage_count": "30427",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "你们说想听我唱野花香",
+          "author": "EndCat-终猫",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Wz421z7pD",
+          "aweme_id": "BV1Wz421z7pD",
+          "play_count": 16911,
+          "like_count": "1348",
+          "duration": 86,
+          "meme_point": "先问「你们说想听我唱野花香」，开口直接翻车，弹幕笑成一片",
+          "music_used": "法核野花香（但是注入灵魂）"
+        },
+        {
+          "title": "冰 vs 野花香(FlowerCore Mix Feat.Jiafei)",
+          "author": "ch1ckNsh0ut",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1aXJ16AEA9",
+          "aweme_id": "BV1aXJ16AEA9",
+          "play_count": 85,
+          "like_count": "15",
+          "duration": 166,
+          "meme_point": "FlowerCore Mix 把野花香做成冰系音色，跟原版冷热对撞",
+          "music_used": "法核野花香（但是注入灵魂）"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1talg69efm",
+      "source": "bilibili",
+      "name": "VR周年KTV《野花香》",
+      "author": "秩序丶安",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "KTV",
+        "VR",
+        "翻唱"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1tALG69EFm",
+      "music_id": null,
+      "platform_id": "BV1tALG69EFm",
+      "share_url": null,
+      "search_keyword": "VR KTV 野花香",
+      "usage_count": "17072",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "我和我的长辈们 《野花香》",
+          "author": "无情码字机a",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Lu93BsEjX",
+          "aweme_id": "BV1Lu93BsEjX",
+          "play_count": 4570,
+          "like_count": "17",
+          "duration": 292,
+          "meme_point": "「我和我的长辈们」合家欢版，一家人张嘴就是野花香",
+          "music_used": "VR周年KTV《野花香》"
+        },
+        {
+          "title": "四人合唱《野花香》，这也太魔性了吧#魔力歌先生#魔力歌先生32强",
+          "author": "琢琢不是",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1CUDYBxEcB",
+          "aweme_id": "BV1CUDYBxEcB",
+          "play_count": 29547,
+          "like_count": "147",
+          "duration": 185,
+          "meme_point": "四人合唱，一开口就「这也太魔性了吧」，把综艺感拉满",
+          "music_used": "VR周年KTV《野花香》"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1jajw6meag",
+      "source": "bilibili",
+      "name": "郭老师野花香完整版",
+      "author": "好好好吃鱼yu",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "郭言郭语",
+        "土味",
+        "二创"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1jAJw6mEAg",
+      "music_id": null,
+      "platform_id": "BV1jAJw6mEAg",
+      "share_url": null,
+      "search_keyword": "郭老师 野花香",
+      "usage_count": "19742",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "野花香×大东北我的家乡",
+          "author": "零-零_五-",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1vZ34zmEEP",
+          "aweme_id": "BV1vZ34zmEEP",
+          "play_count": 2265,
+          "like_count": "67",
+          "duration": 199,
+          "meme_point": "野花香接《大东北我的家乡》，两首土味神曲强行串成一首",
+          "music_used": "郭老师野花香完整版"
+        },
+        {
+          "title": "【差错之中】也是直接搞上这个野花香了",
+          "author": "祉昔冥",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ygxg6iEwd",
+          "aweme_id": "BV1ygxg6iEwd",
+          "play_count": 1111,
+          "like_count": "171",
+          "duration": 17,
+          "meme_point": "标题「也是直接搞上这个野花香了」，随手拍式二创",
+          "music_used": "郭老师野花香完整版"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1p5iveteyv",
+      "source": "bilibili",
+      "name": "[AI COVER] BLACKPINK - 野花香",
+      "author": "BLACKNE1",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香",
+      "style": [
+        "AI翻唱",
+        "Kpop",
+        "缝合"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1p5iVetEYv",
+      "music_id": null,
+      "platform_id": "BV1p5iVetEYv",
+      "share_url": null,
+      "search_keyword": "AI COVER 野花香",
+      "usage_count": "499",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "【整活AI COVER】野花香 - 朴志焄(原唱:Jiafei)",
+          "author": "bili_607483406",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1k94y1h7y6",
+          "aweme_id": "BV1k94y1h7y6",
+          "play_count": 458,
+          "like_count": "26",
+          "duration": 193,
+          "meme_point": "整活 AI Cover 标「原唱:Jiafei」，把翻唱关系倒着写",
+          "music_used": "[AI COVER] BLACKPINK - 野花香"
+        },
+        {
+          "title": "【恋与深空 | 野花香】土到极致就是潮！哈特才没有破防！",
+          "author": "杨枝甘鹿LUU",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1r4421D7MF",
+          "aweme_id": "BV1r4421D7MF",
+          "play_count": 176152,
+          "like_count": "34053",
+          "duration": 74,
+          "meme_point": "《恋与深空》版，土到极致就是潮，角色跟着野花香破防",
+          "music_used": "[AI COVER] BLACKPINK - 野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1b5bcbjers",
+      "source": "bilibili",
+      "name": "gulp gulp gulp gulp",
+      "author": "女性桃",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "音效",
+        "重复",
+        "梗"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1B5BCBjErS",
+      "music_id": null,
+      "platform_id": "BV1B5BCBjErS",
+      "share_url": null,
+      "search_keyword": "gulp gulp gulp gulp",
+      "usage_count": "341384",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "Gulp Gulp Gulp Gulp CupcakKe",
+          "author": "九野君真的優",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ZVuUzgEbi",
+          "aweme_id": "BV1ZVuUzgEbi",
+          "play_count": 39735,
+          "like_count": "1455",
+          "duration": 44,
+          "meme_point": "纯音源版，标题就是连写四个 Gulp，评论区拿它当计数单位",
+          "music_used": "gulp gulp gulp gulp"
+        },
+        {
+          "title": "gulp gulp gulp tiktok meme sound effect",
+          "author": "七彩茄",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Jh4y1R71f",
+          "aweme_id": "BV1Jh4y1R71f",
+          "play_count": 2576,
+          "like_count": "61",
+          "duration": 2,
+          "meme_point": "标成 tiktok meme sound effect，直接当公共音效库发",
+          "music_used": "gulp gulp gulp gulp"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1g2q1buewa",
+      "source": "bilibili",
+      "name": "爱gulp的海狮",
+      "author": "沉迷哲学的猫",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "音效",
+        "动物",
+        "梗"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1g2q1BuEWa",
+      "music_id": null,
+      "platform_id": "BV1g2q1BuEWa",
+      "share_url": null,
+      "search_keyword": "爱gulp的海狮",
+      "usage_count": "151527",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "gulp↻↺",
+          "author": "Chemck",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1BtbZznEaB",
+          "aweme_id": "BV1BtbZznEaB",
+          "play_count": 2548,
+          "like_count": "276",
+          "duration": 41,
+          "meme_point": "标题只写「gulp↻↺」，靠循环箭头暗示无限吞咽",
+          "music_used": "爱gulp的海狮"
+        },
+        {
+          "title": "gulp gulp的吃",
+          "author": "M-IIInfinidy",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1AoxW6kEd4",
+          "aweme_id": "BV1AoxW6kEd4",
+          "play_count": 1565,
+          "like_count": "98",
+          "duration": 9,
+          "meme_point": "「gulp gulp的吃」把音效贴到吃东西画面上，越吃越抽象",
+          "music_used": "爱gulp的海狮"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1jjw86le51",
+      "source": "bilibili",
+      "name": "谈笑gulp鸿儒，往来gulp白丁",
+      "author": "洋滇女王",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "谐音梗",
+        "文言",
+        "梗"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1JJW86LE51",
+      "music_id": null,
+      "platform_id": "BV1JJW86LE51",
+      "share_url": null,
+      "search_keyword": "谈笑 gulp 鸿儒",
+      "usage_count": "10898",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "我是在gulp我自己",
+          "author": "洋滇女王",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1tiWU6jELo",
+          "aweme_id": "BV1tiWU6jELo",
+          "play_count": 3024,
+          "like_count": "321",
+          "duration": 34,
+          "meme_point": "「我是在gulp我自己」把吞咽音做成自嘲句式",
+          "music_used": "谈笑gulp鸿儒，往来gulp白丁"
+        },
+        {
+          "title": "新年我就这么gulp",
+          "author": "Hotguy_base",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1U4ZKB3Ecp",
+          "aweme_id": "BV1U4ZKB3Ecp",
+          "play_count": 1793,
+          "like_count": "64",
+          "duration": 9,
+          "meme_point": "「新年我就这么gulp」，把音效当拜年语音包",
+          "music_used": "谈笑gulp鸿儒，往来gulp白丁"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1igg9zbezj",
+      "source": "bilibili",
+      "name": "苹果杯糕铃声·倒gulp（CupcakKe Remix）",
+      "author": "羊毛衫子aa",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "铃声",
+        "倒放",
+        "梗"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1igG9zbEzJ",
+      "music_id": null,
+      "platform_id": "BV1igG9zbEzJ",
+      "share_url": null,
+      "search_keyword": "苹果铃声 倒gulp",
+      "usage_count": "6217",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "WeChat ringtone 微信铃声 (CupcakKe Remix)",
+          "author": "账号已注销",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Su411x7U7",
+          "aweme_id": "BV1Su411x7U7",
+          "play_count": 346860,
+          "like_count": "9603",
+          "duration": 19,
+          "meme_point": "WeChat ringtone 版，把吞咽音剪成微信来电铃声，评论区求原文件",
+          "music_used": "苹果杯糕铃声·倒gulp（CupcakKe Remix）"
+        },
+        {
+          "title": "早晨的野花（三星闹铃 Jiafei Remix）",
+          "author": "账号已注销",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ye411R7bw",
+          "aweme_id": "BV1ye411R7bw",
+          "play_count": 3223,
+          "like_count": "149",
+          "duration": 30,
+          "meme_point": "三星闹铃版 Jiafei Remix，闹钟一响就是野花香前奏",
+          "music_used": "苹果杯糕铃声·倒gulp（CupcakKe Remix）"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1altq6zebj",
+      "source": "bilibili",
+      "name": "不同音效的gulp gulp",
+      "author": "骇人的音响",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "音效对比",
+        "梗",
+        "合集"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1ALTQ6zEbJ",
+      "music_id": null,
+      "platform_id": "BV1ALTQ6zEbJ",
+      "share_url": null,
+      "search_keyword": "不同音效 gulp",
+      "usage_count": "3183",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "不同音效的杯糕姐Oh my god Daddy stop",
+          "author": "柠檬舒蕾",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1ECTXzJEX8",
+          "aweme_id": "BV1ECTXzJEX8",
+          "play_count": 9442,
+          "like_count": "252",
+          "duration": 417,
+          "meme_point": "同一句「Oh my god Daddy stop」换十几种音效，纯听感整活",
+          "music_used": "不同音效的gulp gulp"
+        },
+        {
+          "title": "《Gulp Gee》",
+          "author": "腿毛扎小辫i",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1Etnw6sEaT",
+          "aweme_id": "BV1Etnw6sEaT",
+          "play_count": 1965,
+          "like_count": "83",
+          "duration": 58,
+          "meme_point": "《Gulp Gee》把吞咽音编成一小段旋律，标题蹭 Gee",
+          "music_used": "不同音效的gulp gulp"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1fmouyseif",
+      "source": "bilibili",
+      "name": "cupcakKe - earthquake 金智秀",
+      "author": "郑若曲",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "缝合",
+        "Kpop",
+        "混音"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1FmoUYsEif",
+      "music_id": null,
+      "platform_id": "BV1FmoUYsEif",
+      "share_url": null,
+      "search_keyword": "cupcakke earthquake",
+      "usage_count": "76412",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "fesha（cupcakke remix）",
+          "author": "我不认识你呀-",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1tuskzCEmE",
+          "aweme_id": "BV1tuskzCEmE",
+          "play_count": 78692,
+          "like_count": "4604",
+          "duration": 186,
+          "meme_point": "fesha 版 cupcakke remix，把吞咽音垫在舞曲底鼓上",
+          "music_used": "cupcakKe - earthquake 金智秀"
+        },
+        {
+          "title": "第一天（cupcakke remix）",
+          "author": "闻德_",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1YJ2LBmEEi",
+          "aweme_id": "BV1YJ2LBmEEi",
+          "play_count": 20995,
+          "like_count": "1205",
+          "duration": 72,
+          "meme_point": "《第一天》混 cupcakke，中文歌直接被掰成欧美梗曲",
+          "music_used": "cupcakKe - earthquake 金智秀"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1r1oebxeka",
+      "source": "bilibili",
+      "name": "【MHWI/mod】虫棍gulp gulp gulp音效",
+      "author": "咆哮高压锅",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "游戏mod",
+        "音效",
+        "搞怪"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1R1oEBXEka",
+      "music_id": null,
+      "platform_id": "BV1R1oEBXEka",
+      "share_url": null,
+      "search_keyword": "虫棍 gulp 音效",
+      "usage_count": "1830",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "康夏酸（cupcakke remix）",
+          "author": "甜味儿椰",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1vQWg6DEAG",
+          "aweme_id": "BV1vQWg6DEAG",
+          "play_count": 20056,
+          "like_count": "1485",
+          "duration": 97,
+          "meme_point": "康夏酸混 cupcakke，把老歌搓成重复念白的梗曲",
+          "music_used": "【MHWI/mod】虫棍gulp gulp gulp音效"
+        },
+        {
+          "title": "茶山情歌 CupcakKe Remix",
+          "author": "比糕克",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV146DyBhEZ8",
+          "aweme_id": "BV146DyBhEZ8",
+          "play_count": 21242,
+          "like_count": "591",
+          "duration": 121,
+          "meme_point": "茶山情歌 Cupcakke Remix，民歌唱腔配吞咽音，违和到好笑",
+          "music_used": "【MHWI/mod】虫棍gulp gulp gulp音效"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1ae411j79z",
+      "source": "bilibili",
+      "name": "超新款iPhorn 14（cupcakKe联名款）",
+      "author": "abdci",
+      "en_name": null,
+      "type": "music",
+      "tag": "Gulp",
+      "style": [
+        "数码恶搞",
+        "缝合",
+        "梗"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1Ae411j79Z",
+      "music_id": null,
+      "platform_id": "BV1Ae411j79Z",
+      "share_url": null,
+      "search_keyword": "iPhorn cupcakke",
+      "usage_count": "22851",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "云南山歌剧《幸福家开野花》片段（三）",
+          "author": "吟傍梅花欲雪添",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1U24y177NR",
+          "aweme_id": "BV1U24y177NR",
+          "play_count": 2638,
+          "like_count": "16",
+          "duration": 87,
+          "meme_point": "IVE 的歌加 cupcakke 与 jiafei 客串，女团曲被塞进梗音",
+          "music_used": "超新款iPhorn 14（cupcakKe联名款）"
+        },
+        {
+          "title": "JUMP Ft.nayina、cupcakke&jiafei（原曲：BLACKPINK-JUMP）",
+          "author": "拼命小灯子",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1DZe7zKETi",
+          "aweme_id": "BV1DZe7zKETi",
+          "play_count": 2442,
+          "like_count": "77",
+          "duration": 167,
+          "meme_point": "BLACKPINK《JUMP》改造版，副歌换成 gulp 节奏",
+          "music_used": "超新款iPhorn 14（cupcakKe联名款）"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1r3fjyvesm",
+      "source": "bilibili",
+      "name": "Lady Gaga-Judas（jiafei Remix）× 野花香",
+      "author": "MmMm猫咪",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香+Gulp",
+      "style": [
+        "Jiafei",
+        "杯糕姐",
+        "缝合"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1r3fJYVESM",
+      "music_id": null,
+      "platform_id": "BV1r3fJYVESM",
+      "share_url": null,
+      "search_keyword": "Judas jiafei 野花香",
+      "usage_count": "12974",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "最新的杯糕姐+野花香+戳爷的rush remix😂",
+          "author": "UBody-on-my-mind",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1i94y1s78a",
+          "aweme_id": "BV1i94y1s78a",
+          "play_count": 4379,
+          "like_count": "201",
+          "duration": 71,
+          "meme_point": "杯糕姐 + 野花香 + 戳爷 rush 三合一，缝合层数直接拉满",
+          "music_used": "Lady Gaga-Judas（jiafei Remix）× 野花香"
+        },
+        {
+          "title": "【Fragaria Memories】你的野花香 -jiafei💐💐💐",
+          "author": "51368643",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1HZ421h7nK",
+          "aweme_id": "BV1HZ421h7nK",
+          "play_count": 2933,
+          "like_count": "167",
+          "duration": 96,
+          "meme_point": "「你的野花香」把 jiafei 和杯糕姐缝在一起，标题直接当情话用",
+          "music_used": "Lady Gaga-Judas（jiafei Remix）× 野花香"
+        }
+      ]
+    },
+    {
+      "id": "bili5_bv1pjasziexe",
+      "source": "bilibili",
+      "name": "BLACKPINK - GO（ft. jiafei, cupcakKe）",
+      "author": "水溶性鸡汤",
+      "en_name": null,
+      "type": "music",
+      "tag": "野花香+Gulp",
+      "style": [
+        "Kpop",
+        "缝合",
+        "AI"
+      ],
+      "music_url": "https://www.bilibili.com/video/BV1pjASziEXE",
+      "music_id": null,
+      "platform_id": "BV1pjASziEXE",
+      "share_url": null,
+      "search_keyword": "BLACKPINK jiafei cupcakke",
+      "usage_count": "4697",
+      "verified_at": "2026-11-15",
+      "examples": [
+        {
+          "title": "【杯糕姐/官方MV】全网最清晰的《CPR》官方MV（字幕版）",
+          "author": "Xurey-",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1xK9dBNEMa",
+          "aweme_id": "BV1xK9dBNEMa",
+          "play_count": 40707,
+          "like_count": "924",
+          "duration": 209,
+          "meme_point": "杯糕姐官方 MV 组里最干净的一支，被拿来当缝合素材源",
+          "music_used": "BLACKPINK - GO（ft. jiafei, cupcakKe）"
+        },
+        {
+          "title": "创造互联网现象级Remix，带你认识史上最Horny说唱女王CupcakKe",
+          "author": "Benson森森日记",
+          "type": "video",
+          "video_url": "https://www.bilibili.com/video/BV1dauRzHE9B",
+          "aweme_id": "BV1dauRzHE9B",
+          "play_count": 328133,
+          "like_count": "7162",
+          "duration": 1421,
+          "meme_point": "把 cupcakke 的互联网现象讲成考据向科普，弹幕边笑边记笔记",
+          "music_used": "BLACKPINK - GO（ft. jiafei, cupcakKe）"
+        }
+      ]
     }
   ]
 }
