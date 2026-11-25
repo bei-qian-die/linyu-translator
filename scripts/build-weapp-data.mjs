@@ -170,8 +170,30 @@ for (const [from, to] of FILES) {
       .filter((line) => !/^\s*\/\//.test(line) && line.trim() !== '')
       .map((line) => line.replace(/^\s+/, ''))
       .join('\n');
+    // 第二十七轮：extra27（近 30 天新梗）体量偏大，真实数据放主包（主包有 0.6MB 余量），
+    // 分包这里留一个转发模块（见下方 shim），所以 lore.js 的 require 路径不用改。
   }
   if (writeIfChanged(dst, content)) changed += 1;
+}
+
+// ---- 第二十七轮：extra27 真实数据落主包，分包只留一个 ≤100 字节的转发模块 ----
+// 原因：分包 pkg-hero 已经贴着 2MB 硬限，本轮 800+ 条目的中文正文放进去会直接超限。
+// 微信允许「分包 require 主包」，反过来不行，所以把数据放主包、分包转发即可。
+// unpack() 对没有 __col 的模块原样返回，两端都无需额外适配。
+{
+  const from = path.join(SRC_CORE, 'lore-extra27.js');
+  const toMain = path.join(OUT, 'data', 'lore-extra27.js');
+  const toSub = path.join(OUT, 'pkg-hero', 'data', 'lore-extra27.js');
+  if (fs.existsSync(from)) {
+    const body = fs.readFileSync(from, 'utf8');
+    if (writeIfChanged(toMain, body)) changed += 1;
+    const shim =
+      "'use strict';\n" +
+      '// 由 scripts/build-weapp-data.mjs 生成，勿手改。\n' +
+      '// 第二十七轮数据体量较大，真实内容放在主包 data/lore-extra27.js，这里只做转发。\n' +
+      "module.exports = require('../../data/lore-extra27.js');\n";
+    if (writeIfChanged(toSub, shim)) changed += 1;
+  }
 }
 
 const seedPath = path.join(SRC_CORE, 'seed.json');

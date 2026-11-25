@@ -2278,7 +2278,7 @@ window.__SEED_DATA = {
       "slot": "饭圈运营/调侃/圈层黑话",
       "pop": "低",
       "sense": "催投币的威胁式套话（不给硬币小心被吸了噜），“吸”是圈内动词。",
-      "alias": "不氪",
+      "alias": "不氪、白嫖姐、白嫖、零氪",
       "rel": [
         "奥奇淋说"
       ]
@@ -2559,7 +2559,8 @@ window.__SEED_DATA = {
       "linyu": "星淋铁道",
       "slot": "分区/游戏术语",
       "pop": "低",
-      "sense": "分区名：穹→淋（《β 坏：星淋铁道》知根鸟・仙子角色 PV）。"
+      "sense": "分区名：穹→淋（《β 坏：星淋铁道》知根鸟・仙子角色 PV）。",
+      "alias": "铁道婆、铁婆、铁道女、星铁婆、星铁、铁婆"
     },
     {
       "zh": "守望先锋",
@@ -2633,7 +2634,8 @@ window.__SEED_DATA = {
       "linyu": "我鸟",
       "slot": "称呼类/同形异义",
       "pop": "低",
-      "sense": "按角色名取单字成“我鸟”（每一声拉条，都来自于我鸟依赖了24年的嗓子）。"
+      "sense": "按角色名取单字成“我鸟”（每一声拉条，都来自于我鸟依赖了24年的嗓子）。",
+      "alias": "知根鸟、我鸟、鸟、仙子、知更鸟仙子"
     },
     {
       "zh": "心海",
@@ -2723,7 +2725,7 @@ window.__SEED_DATA = {
       "slot": "情绪/游戏术语/构词法",
       "pop": "低",
       "sense": "中间插一个“如”字，评论直接刷“破如防”，句式表把“我狸就这样破如防惹”列为破防句式。",
-      "alias": "红温、崩",
+      "alias": "红温、崩、破防姐、破防、破大防",
       "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
       "rel": [
         "divatag"
@@ -2839,7 +2841,8 @@ window.__SEED_DATA = {
       "linyu": "罚你六月周更",
       "slot": "催促/戏谑",
       "pop": "低",
-      "sense": "催更的处罚句式（死丫头五月就出来卖了一次，罚你六月周更），句式表催更句式。"
+      "sense": "催更的处罚句式（死丫头五月就出来卖了一次，罚你六月周更），句式表催更句式。",
+      "alias": "催更姐、催更、更新"
     },
     {
       "zh": "一问三不知",
@@ -3773,7 +3776,7 @@ window.__SEED_DATA = {
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "饭圈运营",
       "pop": "低",
-      "alias": "打卡",
+      "alias": "打卡、签到姐、签、打卡",
       "rel": [
         "奥奇淋说"
       ]
@@ -3784,7 +3787,7 @@ window.__SEED_DATA = {
       "verify": "台湾腔谐音 / 淋化替换体系，见萌娘百科「淋语」用语表 https://zh.moegirl.org.cn/%E6%B7%8B%E8%AF%AD",
       "slot": "饭圈运营",
       "pop": "低",
-      "alias": "投票",
+      "alias": "投票、打投姐、打投、投票",
       "rel": [
         "divatag"
       ]
@@ -3794,7 +3797,7 @@ window.__SEED_DATA = {
       "linyu": "控评",
       "slot": "饭圈运营",
       "pop": "低",
-      "alias": "刷评论",
+      "alias": "刷评论、控评姐、控评、刷评",
       "rel": [
         "divatag"
       ]
@@ -3946,7 +3949,8 @@ window.__SEED_DATA = {
       "slot": "生活日常/戏谑",
       "pop": "低",
       "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
-      "sense": "不想赢、随便打。"
+      "sense": "不想赢、随便打。",
+      "alias": "摆烂姐、摆、烂"
     },
     {
       "zh": "内卷",
@@ -9199,7 +9203,7 @@ window.__SEED_DATA = {
     {
       "zh": "拉踩",
       "linyu": "拉踩",
-      "alias": "一拉一踩、拉踩通稿",
+      "alias": "一拉一踩、拉踩通稿、拉踩姐、拉踩、踩一捧一",
       "slot": "调侃/戏谑",
       "sense": "饭圈话术，指通过贬低别人来抬高自己；淋语区用来排英雄强度。",
       "source": "https://search.bilibili.com/all?keyword=%E6%8B%89%E8%B8%A9%20%E6%B7%8B%E8%AF%AD",
@@ -14740,7 +14744,7 @@ window.__SEED_DATA = {
     {
       "zh": "前瞻",
       "linyu": "前瞻",
-      "alias": "",
+      "alias": "前瞻姐、前瞻、预告",
       "slot": "第五淋格/庄园赛事",
       "sense": "官方版本预告直播；「10.23 前瞻」这类标题后面必跟「钱包要被五宝掏空了」。",
       "source": "https://www.bilibili.com/video/BV1Dxnt6DE2Q",
@@ -14990,7 +14994,7 @@ window.__SEED_DATA = {
     {
       "zh": "背锅",
       "linyu": "背次锅",
-      "alias": "背锅",
+      "alias": "背锅、背锅姐、锅、背锅",
       "slot": "第五淋格/圈层黑话",
       "sense": "赛后分锅时被点名负责，加「次」是口语化写法（一次锅）。",
       "source": "https://www.bilibili.com/video/BV12PHL63EGP",
@@ -17720,7 +17724,7 @@ window.__SEED_DATA = {
     {
       "zh": "梗图",
       "linyu": "梗图",
-      "alias": "补档",
+      "alias": "补档、梗图姐、图、表情包",
       "slot": "瓦罗淋特/瓦罗整活梗",
       "sense": "把对局瞬间做成表情包，语料里以「超难蚌 瓦罗兰特梗图 补档」形式出现。",
       "source": "https://www.bilibili.com/video/BV1qCn96NEaH",
@@ -17970,7 +17974,7 @@ window.__SEED_DATA = {
     {
       "zh": "血量",
       "linyu": "血量",
-      "alias": "HP",
+      "alias": "HP、血量姐、血条、血量",
       "slot": "瓦罗淋特/瓦罗报点术语",
       "sense": "报点时最关键的数值，语料里「打了120」「还剩80血」都是精确报数。",
       "source": "https://www.bilibili.com/video/BV1QM4y1s7xM",
@@ -18030,7 +18034,7 @@ window.__SEED_DATA = {
     {
       "zh": "开团",
       "linyu": "开团",
-      "alias": "先手",
+      "alias": "先手、开团姐、开团、团",
       "slot": "瓦罗淋特/瓦罗战术术语",
       "sense": "主动发起交战；借自 MOBA 的说法，瓦区用来指第一个开火的人。",
       "source": "https://www.bilibili.com/video/BV1YwKbzKEPu",
@@ -20574,7 +20578,7 @@ window.__SEED_DATA = {
     {
       "zh": "团灭",
       "linyu": "团灭",
-      "alias": "全灭",
+      "alias": "全灭、团灭姐、团灭、被团灭",
       "slot": "守望淋锋/守望对局黑话",
       "sense": "一队全员被消灭；淋语区常写「秒了」「吸走了」来替代。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -20604,7 +20608,7 @@ window.__SEED_DATA = {
     {
       "zh": "划水",
       "linyu": "划水",
-      "alias": "混",
+      "alias": "混、划水姐、划、水",
       "slot": "守望淋锋/守望对局黑话",
       "sense": "不出力、跟着混。迷惑行为大全有「顺风局势偷偷混，真把自己当神棍」。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -20688,7 +20692,7 @@ window.__SEED_DATA = {
     {
       "zh": "甩锅",
       "linyu": "甩锅",
-      "alias": "经典快速甩锅王",
+      "alias": "经典快速甩锅王、甩锅姐、甩、锅",
       "slot": "守望淋锋/守望对局黑话",
       "sense": "输了把责任推给队友。迷惑行为大全有「经典快速甩锅王，天梯上分练英雄」。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -20780,7 +20784,7 @@ window.__SEED_DATA = {
     {
       "zh": "数值",
       "linyu": "数值",
-      "alias": "超模",
+      "alias": "超模、数值姐、数值、看数值",
       "slot": "守望淋锋/守望对局黑话",
       "sense": "英雄的强度数据；「现在伤害素超模的」「进入数值大崩坏时代」都是本赛季的常见说法。",
       "source": "https://www.gamemale.com/archiver/tid-133550.html",
@@ -21494,7 +21498,7 @@ window.__SEED_DATA = {
     {
       "zh": "翡翠",
       "linyu": "翡翠",
-      "alias": "",
+      "alias": "赌婆、我翡、翡翠婆、赌婆",
       "slot": "守望淋锋/守望赛事圈",
       "sense": "排位段位之一，位于白金与钻石之间；有「翡翠这个段位就是爱浪」的复盘说法。",
       "source": "https://www.bilibili.com/read/cv4001799/",
@@ -24830,7 +24834,7 @@ window.__SEED_DATA = {
     {
       "zh": "躺赢",
       "linyu": "躺赢",
-      "alias": "",
+      "alias": "躺赢姐、躺、白赢",
       "slot": "淋安京 / 淋安京对局黑话",
       "sense": "队友带飞自己没出力就赢了。",
       "source": "https://www.bilibili.com/video/BV1Fzxu6ZEBp",
@@ -32434,7 +32438,7 @@ window.__SEED_DATA = {
     {
       "zh": "热搜",
       "linyu": "热搜",
-      "alias": "榜",
+      "alias": "榜、热搜姐、热搜、上热搜",
       "slot": "divatag / diva饭圈黑话",
       "sense": "平台热榜。",
       "source": "https://search.bilibili.com/all?keyword=%E7%83%AD%E6%90%9C",
@@ -32446,7 +32450,7 @@ window.__SEED_DATA = {
     {
       "zh": "出圈",
       "linyu": "出圈",
-      "alias": "破圈",
+      "alias": "破圈、出圈姐、出圈、破圈",
       "slot": "divatag / diva饭圈黑话",
       "sense": "从小圈子扩散到大众。",
       "source": "https://search.bilibili.com/all?keyword=%E5%87%BA%E5%9C%88",
@@ -34462,7 +34466,7 @@ window.__SEED_DATA = {
     {
       "zh": "收尾",
       "linyu": "收尾",
-      "alias": "清场",
+      "alias": "清场、收尾姐、收、收场",
       "slot": "淋可梦 / 淋可梦对战术语",
       "sense": "最后一只精灵负责结束战斗。",
       "source": "https://search.bilibili.com/all?keyword=%E6%94%B6%E5%B0%BE",
@@ -35746,7 +35750,7 @@ window.__SEED_DATA = {
     {
       "zh": "体力",
       "linyu": "体力",
-      "alias": "体",
+      "alias": "体、体力姐、体力、树脂",
       "slot": "奥奇淋说 / 奥奇战力培养",
       "sense": "挑战消耗的资源。",
       "source": "https://search.bilibili.com/all?keyword=%E4%BD%93%E5%8A%9B",
@@ -35806,7 +35810,7 @@ window.__SEED_DATA = {
     {
       "zh": "礼包",
       "linyu": "礼包",
-      "alias": "包",
+      "alias": "包、礼包姐、包、福利",
       "slot": "奥奇淋说 / 奥奇战力培养",
       "sense": "打包出售的道具组合。",
       "source": "https://search.bilibili.com/all?keyword=%E7%A4%BC%E5%8C%85",
@@ -36058,7 +36062,7 @@ window.__SEED_DATA = {
     {
       "zh": "补偿",
       "linyu": "补偿",
-      "alias": "赔",
+      "alias": "赔、补偿姐、发补偿、补偿石",
       "slot": "奥奇淋说 / 奥奇整活梗",
       "sense": "维护或事故后的补偿奖励。",
       "source": "https://search.bilibili.com/all?keyword=%E8%A1%A5%E5%81%BF",
@@ -37342,7 +37346,7 @@ window.__SEED_DATA = {
     {
       "zh": "视野",
       "linyu": "视野",
-      "alias": "视",
+      "alias": "视、视野姐、视野、开视野",
       "slot": "淋角洲行动 / 淋角洲地图点位",
       "sense": "能看到敌人的范围。",
       "source": "https://search.bilibili.com/all?keyword=%E8%A7%86%E9%87%8E",
@@ -45461,6 +45465,3262 @@ window.__SEED_DATA = {
       "rel": [
         "评价判断"
       ]
+    },
+    {
+      "zh": "二相乐园",
+      "linyu": "二相婆园",
+      "alias": "二相、二相园",
+      "slot": "分区",
+      "sense": "4.7 版本新地图「二相乐园」，圈内简称「二相」，并衍生「二相婆园」的戏称。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "高",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "狸狸通信",
+      "linyu": "狸狸通心",
+      "alias": "狸狸周刊、狸狸通信社",
+      "slot": "分区",
+      "sense": "4.7 版本活动「狸狸通信」，因报社剧情被剪成大量切片，圈内写成「狸狸通心」。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "高",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "砂途刃风",
+      "linyu": "砂途刃风",
+      "alias": "砂金+貊泽+刃+风堇",
+      "slot": "游戏术语",
+      "sense": "4.7 主流配队，由砂金、貊泽、刃、风堇组成，二创里被当作「格调队」代名词。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "配队"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "格调队",
+      "linyu": "格调队",
+      "alias": "有格调、格调",
+      "slot": "游戏术语",
+      "sense": "指「砂途刃风」这类高配置阵容，引申为「有格调的队伍」，也用来酸人氪金。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "配队"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "0t",
+      "linyu": "0t姐",
+      "alias": "零t、0t绝境",
+      "slot": "游戏术语",
+      "sense": "零行动值通关（0 turn）的缩写，后衍生「0t姐」指专门打 0t 的玩家。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "成绩"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "行动值",
+      "linyu": "行动值婊",
+      "alias": "行动值、行动值焦虑",
+      "slot": "游戏术语",
+      "sense": "星铁战斗的行动条数值，0t 玩家用它比高低，普通玩家拿它自嘲焦虑。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "数值"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "绝境归寂",
+      "linyu": "绝境归寂",
+      "alias": "绝境、归寂",
+      "slot": "游戏术语",
+      "sense": "4.7 高难副本名，二创标题里常与「0t」连用。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "副本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "命途",
+      "linyu": "淋途",
+      "alias": "命途婆、命途选择",
+      "slot": "游戏术语",
+      "sense": "星铁的角色职业分类「命途」，淋化为「淋途」；也用来调侃人生道路。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "系统"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "欢愉",
+      "linyu": "欢愉姐",
+      "alias": "欢愉、欢愉命途",
+      "slot": "称呼类",
+      "sense": "命途「欢愉」的人格化戏称，专指花火一类角色；近 30 天 4.7 二相乐园剧情里高频。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "高",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "同谐",
+      "linyu": "同谐婆",
+      "alias": "同谐、协乐",
+      "slot": "游戏术语",
+      "sense": "命途「同谐」的戏称，调侃辅助角色「只会同谐不会输出」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "巡猎",
+      "linyu": "巡猎姐",
+      "alias": "巡猎、猎手",
+      "slot": "游戏术语",
+      "sense": "命途「巡猎」，多用来形容单体爆发角色；衍生「巡猎姐」的位分叫法。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "记忆",
+      "linyu": "记忆妹",
+      "alias": "记忆命途、忆者",
+      "slot": "游戏术语",
+      "sense": "3.x 新增命途「记忆」，圈内叫「记忆妹」，调侃忆灵队。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "毁灭",
+      "linyu": "毁灭婆",
+      "alias": "毁灭、毁灭命途",
+      "slot": "游戏术语",
+      "sense": "命途「毁灭」，因多为群攻大 C，被叫「毁灭婆」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "存护",
+      "linyu": "存护妈",
+      "alias": "存护、盾妈",
+      "slot": "游戏术语",
+      "sense": "命途「存护」，护盾角色的统称，戏称「存护妈」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "丰饶",
+      "linyu": "丰饶妈",
+      "alias": "丰饶、奶妈",
+      "slot": "游戏术语",
+      "sense": "命途「丰饶」，治疗角色统称，与「存护妈」并称两大妈。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "虚无",
+      "linyu": "虚无婆",
+      "alias": "虚无、虚无命途",
+      "slot": "游戏术语",
+      "sense": "命途「虚无」，DOT 队伍的核心，衍生的悲情梗「虚无星神」。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "智识",
+      "linyu": "智识婆",
+      "alias": "智识、群攻",
+      "slot": "游戏术语",
+      "sense": "命途「智识」，群攻角色的代称。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "低",
+      "rel": [
+        "命途"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "开拓者",
+      "linyu": "开脱者",
+      "alias": "开拓、开脱",
+      "slot": "第一人称自称",
+      "sense": "主角「开拓者」的淋化，取「开拓→开脱」的谐音，带「我只会开脱」的自嘲。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "主角"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "星琼",
+      "linyu": "星穷",
+      "alias": "星琼、穷琼",
+      "slot": "游戏术语",
+      "sense": "抽卡货币「星琼」的谐音，抽干了叫「星穷」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "高",
+      "rel": [
+        "货币"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "跃迁",
+      "linyu": "跃钱",
+      "alias": "跃迁、抽卡",
+      "slot": "游戏术语",
+      "sense": "「跃迁」谐成「跃钱」，指抽卡就是花钱。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "高",
+      "rel": [
+        "抽卡"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "大保底",
+      "linyu": "大保底",
+      "alias": "保底、歪保底",
+      "slot": "游戏术语",
+      "sense": "抽卡保底机制，圈内延伸出「保底也是一种爱」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "抽卡"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "歪",
+      "linyu": "歪惹",
+      "alias": "歪了、歪保底",
+      "slot": "情绪",
+      "sense": "抽卡没中当期角色的「歪」，加语气词成「歪惹」，是近 30 天弹幕里最常见的破防写法。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "高",
+      "rel": [
+        "抽卡",
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "星魂",
+      "linyu": "星魂姐",
+      "alias": "命座、E6",
+      "slot": "游戏术语",
+      "sense": "重复角色换来的星魂，氪满叫「满魂姐」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "遗器",
+      "linyu": "衣器",
+      "alias": "遗器、圣遗物",
+      "slot": "游戏术语",
+      "sense": "装备系统「遗器」，因刷词条痛苦被谐成「衣器」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "光锥",
+      "linyu": "光追",
+      "alias": "光锥、专武",
+      "slot": "游戏术语",
+      "sense": "武器系统「光锥」，谐作「光追」，也指显卡梗。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "行迹",
+      "linyu": "行鸡",
+      "alias": "行迹、技能树",
+      "slot": "游戏术语",
+      "sense": "技能树「行迹」的谐音写法。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "击破",
+      "linyu": "鸡破",
+      "alias": "弱点击破、超击破",
+      "slot": "游戏术语",
+      "sense": "「击破」的谐音，衍生「超鸡破」指超击破队。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "战斗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "超击破",
+      "linyu": "超鸡破",
+      "alias": "超击破队",
+      "slot": "游戏术语",
+      "sense": "3.x 主流玩法「超击破」，谐音后成了队伍代称。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "战斗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "战技",
+      "linyu": "战鸡",
+      "alias": "E技能、战技点",
+      "slot": "游戏术语",
+      "sense": "「战技」谐音写法，常与「战绩」混用玩梗。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "战斗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "终结技",
+      "linyu": "终姐技",
+      "alias": "大招、Q",
+      "slot": "游戏术语",
+      "sense": "「终结技」的淋化，取「终姐」的音。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "战斗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "秘技",
+      "linyu": "秘鸡",
+      "alias": "秘技、进场技",
+      "slot": "游戏术语",
+      "sense": "进场技「秘技」的谐音写法。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "低",
+      "rel": [
+        "战斗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "混沌回忆",
+      "linyu": "混沌婆",
+      "alias": "混沌、深渊",
+      "slot": "游戏术语",
+      "sense": "常驻高难「混沌回忆」，玩家口中的「混沌婆」，也是强度焦虑来源。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "副本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "虚构叙事",
+      "linyu": "虚构婆",
+      "alias": "虚构、群攻深渊",
+      "slot": "游戏术语",
+      "sense": "群攻向高难「虚构叙事」，戏称「虚构婆」。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "副本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "末日幻影",
+      "linyu": "末日婆",
+      "alias": "末日、末日幻影",
+      "slot": "游戏术语",
+      "sense": "高难副本「末日幻影」，简称「末日」。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "副本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "差分宇宙",
+      "linyu": "差分婆",
+      "alias": "差分、差分宇宙",
+      "slot": "游戏术语",
+      "sense": "肉鸽玩法「差分宇宙」，简称「差分」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "模拟宇宙",
+      "linyu": "模宇",
+      "alias": "模拟、模拟宇宙",
+      "slot": "游戏术语",
+      "sense": "肉鸽玩法「模拟宇宙」，简称「模宇」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "匹诺康尼",
+      "linyu": "匹城",
+      "alias": "匹诺、梦城",
+      "slot": "分区",
+      "sense": "2.x 主城「匹诺康尼」，圈内叫「匹城」「梦城」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "地图"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "翁法罗斯",
+      "linyu": "翁法",
+      "alias": "翁法罗斯、翁城",
+      "slot": "分区",
+      "sense": "3.x 主城「翁法罗斯」，简称「翁法」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "地图"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "定制深渊",
+      "linyu": "定制深渊",
+      "alias": "定制、定制怪",
+      "slot": "游戏术语",
+      "sense": "指高难副本按当期卡池设计，二创里用来吐槽「为你量身定制」。",
+      "source": "https://www.bilibili.com/video/BV1N6aR67EJa",
+      "pop": "高",
+      "rel": [
+        "副本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "主推",
+      "linyu": "主推姐",
+      "alias": "主推、官方亲女儿",
+      "slot": "称呼类",
+      "sense": "官方主推角色，衍生「主推姐」；「老娘真的是主推吗」是近 30 天的高传播反问句。",
+      "source": "https://www.bilibili.com/video/BV1N6aR67EJa",
+      "pop": "高",
+      "rel": [
+        "饭圈"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "砂金",
+      "linyu": "我砂",
+      "alias": "砂、砂砂、砂金哥、金毛",
+      "slot": "称呼类",
+      "sense": "角色砂金。存护命途的赌徒，圈内简称「砂」，配队名「砂途刃风」即以他打头。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "流萤",
+      "linyu": "我萤",
+      "alias": "萤、流萤妹、火萤",
+      "slot": "称呼类",
+      "sense": "角色流萤。以「我萤」自称式叫法最常用，配「萤火」意象。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "星期日",
+      "linyu": "周天哥",
+      "alias": "日哥、我日、星期日大人",
+      "slot": "称呼类",
+      "sense": "角色星期日。圈内叫「周天哥」，取「星期日=周天」的民间说法。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "黄泉",
+      "linyu": "拔刀姐",
+      "alias": "我泉、泉、黄泉娘娘",
+      "slot": "称呼类",
+      "sense": "角色黄泉。因终结技拔刀名场面被叫「拔刀姐」，二创标题常用「黄泉拔刀的那一刻」。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "椒丘",
+      "linyu": "我椒",
+      "alias": "椒、椒丘姐、椒椒",
+      "slot": "称呼类",
+      "sense": "角色椒丘。「我椒吸力大增」是近 30 天的高传播标题梗，指其吸附/聚怪能力。",
+      "source": "https://www.bilibili.com/video/BV1wzn26REQD",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "黑塔",
+      "linyu": "塔婆",
+      "alias": "我塔、黑塔婆、转转婆",
+      "slot": "称呼类",
+      "sense": "角色黑塔。因转圈动作被叫「转转婆」，与「塔婆」并用。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "姬子",
+      "linyu": "姬尊",
+      "alias": "我姬、姬子姐、老娘姬",
+      "slot": "称呼类",
+      "sense": "角色姬子。二创写成「姬尊」，配「老娘真的是主推吗」的自嘲。",
+      "source": "https://www.bilibili.com/video/BV1N6aR67EJa",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "景元",
+      "linyu": "景大将军",
+      "alias": "我景、景哥、将军",
+      "slot": "称呼类",
+      "sense": "角色景元。圈内固定叫「景大将军」，与他「神策将军」身份对应。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "刃",
+      "linyu": "刃哥",
+      "alias": "我刃、疯刃、刃刃",
+      "slot": "称呼类",
+      "sense": "角色刃。以「刃哥」最常用，配「不死」设定玩「死不了」的梗。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "卡芙卡",
+      "linyu": "卡妈",
+      "alias": "我卡、卡芙卡妈咪、卡妈",
+      "slot": "称呼类",
+      "sense": "角色卡芙卡。圈内统一叫「卡妈」，是星铁「妈咪」体系的源头之一。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "银狼",
+      "linyu": "狼妹",
+      "alias": "我狼、银狼妹、骇客婆",
+      "slot": "称呼类",
+      "sense": "角色银狼。骇客设定 + 少女外形，被叫「狼妹」「骇客婆」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "镜流",
+      "linyu": "剑仙婆",
+      "alias": "我镜、镜流姐、剑仙",
+      "slot": "称呼类",
+      "sense": "角色镜流。剑首设定，被叫「剑仙婆」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "丹恒",
+      "linyu": "小青龙",
+      "alias": "我恒、丹恒哥、饮月君",
+      "slot": "称呼类",
+      "sense": "角色丹恒。龙尊设定，圈内叫「小青龙」；变身态叫「饮月君」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "三月七",
+      "linyu": "三七",
+      "alias": "我七、三月妹、三月七",
+      "slot": "称呼类",
+      "sense": "角色三月七。简称「三七」，也指中药三七，形成双关。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "克拉拉",
+      "linyu": "机械妹",
+      "alias": "我拉、克拉拉妹、机械妹",
+      "slot": "称呼类",
+      "sense": "角色克拉拉。与机器人史瓦罗绑定，被叫「机械妹」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "停云",
+      "linyu": "狐狸婆",
+      "alias": "我云、停云姐、狐狸婆",
+      "slot": "称呼类",
+      "sense": "角色停云。狐人设定，被叫「狐狸婆」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "白露",
+      "linyu": "小龙女",
+      "alias": "我露、白露妹、龙女",
+      "slot": "称呼类",
+      "sense": "角色白露。龙族幼女设定，被叫「小龙女」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "藿藿",
+      "linyu": "胆小妹",
+      "alias": "我藿、藿藿妹、胆小妹",
+      "slot": "称呼类",
+      "sense": "角色藿藿。胆小设定，被叫「胆小妹」，配「怕鬼」的梗。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "银枝",
+      "linyu": "纯美哥",
+      "alias": "我枝、银枝哥、纯美哥",
+      "slot": "称呼类",
+      "sense": "角色银枝。「纯美」是其口头禅，圈内直接叫「纯美哥」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "托帕",
+      "linyu": "账账妈",
+      "alias": "我帕、托帕姐、账账妈",
+      "slot": "称呼类",
+      "sense": "角色托帕。与账账绑定，被叫「账账妈」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "真理医生",
+      "linyu": "真理哥",
+      "alias": "我真、医生、真理医生",
+      "slot": "称呼类",
+      "sense": "角色真理医生。以「真理哥」最常用，配「知识就是力量」的玩梗。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "云璃",
+      "linyu": "剑妹",
+      "alias": "我璃、云璃妹、剑妹",
+      "slot": "称呼类",
+      "sense": "角色云璃。剑术少女，被叫「剑妹」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "貊泽",
+      "linyu": "貊哥",
+      "alias": "我貊、貊泽哥、貊哥",
+      "slot": "称呼类",
+      "sense": "角色貊泽。4.7 格调队成员，「砂途刃风」里的「刃风」后缀与他相关。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "飞霄",
+      "linyu": "将军姐",
+      "alias": "我霄、飞霄姐、将军姐",
+      "slot": "称呼类",
+      "sense": "角色飞霄。曜青将军，被叫「将军姐」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "万敌",
+      "linyu": "敌哥",
+      "alias": "我敌、万敌哥、敌哥",
+      "slot": "称呼类",
+      "sense": "角色万敌。3.x 战士角色，圈内叫「敌哥」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "低",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "遐蝶",
+      "linyu": "蝶妹",
+      "alias": "我蝶、遐蝶妹、蝶妹",
+      "slot": "称呼类",
+      "sense": "角色遐蝶。3.x 人气角色，被叫「蝶妹」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "你让妈妈很失望",
+      "linyu": "你让妈妈很失望",
+      "alias": "妈妈很失望、让妈妈失望",
+      "slot": "情绪",
+      "sense": "近 30 天抖音/B 站的新梗句式，用长辈口吻反讽对方操作离谱；主窗口内被大量二创套用。",
+      "source": "https://www.bilibili.com/video/BV11tybzQE1U",
+      "pop": "高",
+      "rel": [
+        "新梗",
+        "反讽"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "2G 网速",
+      "linyu": "2G 主播",
+      "alias": "2G、网速太慢",
+      "slot": "调侃/戏谑",
+      "sense": "形容人跟不上新梗，「2G 主播遇上 5G 粉丝」是主窗口内的固定说法。",
+      "source": "https://www.bilibili.com/video/BV1SVsG6EEZg",
+      "pop": "高",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "抽象版福尔摩斯",
+      "linyu": "抽象福尔摩斯",
+      "alias": "抽象福尔摩斯、福尔摩斯",
+      "slot": "调侃/戏谑",
+      "sense": "指用离谱逻辑推理的网友，近 30 天随表情包上新扩散。",
+      "source": "https://www.bilibili.com/video/BV1N7436yEdV",
+      "pop": "中",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "跳叔脸",
+      "linyu": "跳叔脸",
+      "alias": "跳叔、叔脸",
+      "slot": "调侃/戏谑",
+      "sense": "11 月初从梗百科扩散的表情梗，专指某种夸张的「叔味」表情。",
+      "source": "https://www.bilibili.com/video/BV1C6xs6GEyY",
+      "pop": "中",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "弗洛洛梗图",
+      "linyu": "弗洛洛",
+      "alias": "弗洛洛梗、弗洛洛图",
+      "slot": "调侃/戏谑",
+      "sense": "「梗图到 3.8 还在发力」的主角，指一张反复被套用的老图。",
+      "source": "https://www.bilibili.com/video/BV1uRyLzoESH",
+      "pop": "中",
+      "rel": [
+        "新梗",
+        "老梗翻新"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "新老旧梗混搭",
+      "linyu": "有梗焉",
+      "alias": "有梗焉、混搭梗、新旧混搭、混搭、拼梗",
+      "slot": "调侃/戏谑",
+      "sense": "把老梗和新梗拼在一起的二创形式，近 30 天成为标题模板。",
+      "source": "https://www.bilibili.com/video/BV18tyGzmEiY",
+      "pop": "中",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "姐妹娥们",
+      "linyu": "姐妹娥们",
+      "alias": "娥们、姐妹娥",
+      "slot": "群体称呼",
+      "sense": "「姐妹们」的淋化，用「娥」代「姐」，主窗口内星淋铁道标题高频。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "自称",
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "直男勿入",
+      "linyu": "直男勿入",
+      "alias": "直男勿进、勿入",
+      "slot": "调侃/戏谑",
+      "sense": "圈层内容的分级提示，主窗口内崩铁男角色锐评系列把它做成固定标题前缀。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "高",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "恋老癖",
+      "linyu": "恋老癖",
+      "alias": "恋老、喜欢老人",
+      "slot": "调侃/戏谑",
+      "sense": "自嘲式认领，指偏爱叔系角色；「不是恋老癖，只是喜欢的人刚好是老人」是原句。",
+      "source": "https://www.bilibili.com/video/BV1KgYd6SENN",
+      "pop": "高",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "带资进组",
+      "linyu": "带资进组",
+      "alias": "带资、资进组",
+      "slot": "调侃/戏谑",
+      "sense": "原指演员带钱进剧组，星铁二创用来调侃高配角色「花钱买位置」。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "中",
+      "rel": [
+        "饭圈"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "交出顶尖答卷",
+      "linyu": "交出顶尖答卷",
+      "alias": "顶尖答卷、交答卷",
+      "slot": "评价判断",
+      "sense": "反讽式夸奖，主窗口内被用来形容「看起来努力其实一般」的表现。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "中",
+      "rel": [
+        "反讽"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "老娘真的是主推吗",
+      "linyu": "老娘真的是主推吗",
+      "alias": "真的是主推吗、主推吗",
+      "slot": "疑问",
+      "sense": "姬子二创标题衍生的反问句，用于质疑官方待遇。",
+      "source": "https://www.bilibili.com/video/BV1N6aR67EJa",
+      "pop": "高",
+      "rel": [
+        "反问"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "吸力大增",
+      "linyu": "吸力大增",
+      "alias": "吸力、我椒吸力",
+      "slot": "调侃/戏谑",
+      "sense": "原指角色聚怪能力，近 30 天被挪用于形容任何「把人吸过来」的场面。",
+      "source": "https://www.bilibili.com/video/BV1wzn26REQD",
+      "pop": "高",
+      "rel": [
+        "双关"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "轮椅数值",
+      "linyu": "轮椅数值",
+      "alias": "轮椅、数值神力",
+      "slot": "评价判断",
+      "sense": "指数值膨胀到「坐轮椅都能赢」，主窗口内「我琳的轮椅数值神力」是代表句。",
+      "source": "https://www.bilibili.com/video/BV1h6ynzrEJY",
+      "pop": "高",
+      "rel": [
+        "评价",
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "强势回宫",
+      "linyu": "强势回宫",
+      "alias": "回宫、我华回宫",
+      "slot": "调侃/戏谑",
+      "sense": "宫斗体说法，指角色/玩家重回强势位；近 30 天「我华强势回宫」带动复用。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "高",
+      "rel": [
+        "宫斗体"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "没有什么是我 with 不到的",
+      "linyu": "没有什么是我 with 不到的",
+      "alias": "with 不到、我 with",
+      "slot": "调侃/戏谑",
+      "sense": "中英混搭句式，主窗口内王者淋耀标题首创，表示「没有我搞不定的」。",
+      "source": "https://www.bilibili.com/video/BV12EyfzgEoo",
+      "pop": "高",
+      "rel": [
+        "新句式"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "头号粉丝",
+      "linyu": "头号粉丝",
+      "alias": "阿驴头号粉丝、粉丝",
+      "slot": "调侃/戏谑",
+      "sense": "「全场客人变为阿驴头号粉丝」的缩略，用来形容场面被某人控住。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "中",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "夺命女",
+      "linyu": "夺命女",
+      "alias": "夺命、寡妇",
+      "slot": "称呼类",
+      "sense": "守望英雄「黑百合」的圈内叫法之一（夺命狙击），主窗口内标题高频。",
+      "source": "https://www.bilibili.com/video/BV18kynzgE9A",
+      "pop": "中",
+      "rel": [
+        "守望"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我花被卷了进来",
+      "linyu": "我花被卷了进来",
+      "alias": "被卷进来、卷进来",
+      "slot": "调侃/戏谑",
+      "sense": "守望淋锋标题梗，指无辜角色被拉进节奏。",
+      "source": "https://www.bilibili.com/video/BV138s162Ed4",
+      "pop": "中",
+      "rel": [
+        "守望"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "老衲",
+      "linyu": "老衲",
+      "alias": "我老衲、老衲我",
+      "slot": "第一人称自称",
+      "sense": "自称的戏谑写法，源自「老衲」的自嘲式出家语气，主窗口内代练梗里高频。",
+      "source": "https://www.bilibili.com/video/BV1QJsN6wE56",
+      "pop": "中",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "女竞",
+      "linyu": "女竞",
+      "alias": "女竞玩家、女竞技",
+      "slot": "称呼类",
+      "sense": "「女性竞技玩家」的缩写，主窗口内被用来做反差标题。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "女支女",
+      "linyu": "女支女",
+      "alias": "支女、女支",
+      "slot": "称呼类",
+      "sense": "拆字避审写法，圈内互骂/自嘲用，语气重，慎用。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "生来惹火",
+      "linyu": "生来惹火",
+      "alias": "惹火、我阴生来惹火",
+      "slot": "评价判断",
+      "sense": "形容角色天生招黑或天生吸睛，主窗口内阴雄淋盟标题带动。",
+      "source": "https://www.bilibili.com/video/BV1Rcsg6UE8P",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "没有被邀请",
+      "linyu": "没有被邀请",
+      "alias": "你茶没有被邀请、没被邀请",
+      "slot": "调侃/戏谑",
+      "sense": "指某人不在场却被拉出来挨骂，源自「你茶没有被邀请」的固定句。",
+      "source": "https://www.bilibili.com/video/BV1SQsh6NECT",
+      "pop": "高",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "愚蠢却实在美丽",
+      "linyu": "愚蠢却实在美丽",
+      "alias": "实在美丽、愚蠢但美丽",
+      "slot": "评价判断",
+      "sense": "甄嬛体残句的挪用，主窗口内被用来评价「好看但菜」的角色。",
+      "source": "https://www.bilibili.com/video/BV1YsyWzJEQ7",
+      "pop": "高",
+      "rel": [
+        "宫斗体"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "大亩主",
+      "linyu": "大亩主",
+      "alias": "亩主、大母主",
+      "slot": "称呼类",
+      "sense": "「大地主」的谐音写法，第五淋格标题里指豪宅/大地图主人。",
+      "source": "https://www.bilibili.com/video/BV1uz4A6tEF9",
+      "pop": "中",
+      "rel": [
+        "第五"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "暴风吸入",
+      "linyu": "暴风吸入",
+      "alias": "吸入、暴风吸",
+      "slot": "调侃/戏谑",
+      "sense": "「吸入」的加强版，主窗口内与「130 根」连用构成固定夸张句。",
+      "source": "https://www.bilibili.com/video/BV1uz4A6tEF9",
+      "pop": "高",
+      "rel": [
+        "夸张"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "又在买榜",
+      "linyu": "又在买榜",
+      "alias": "买榜、买榜婆",
+      "slot": "调侃/戏谑",
+      "sense": "指角色/歌手靠运营刷存在；主窗口内「心海女士又在买榜」带动复用。",
+      "source": "https://www.bilibili.com/video/BV1Rz436bEx6",
+      "pop": "高",
+      "rel": [
+        "饭圈"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "小男孩队",
+      "linyu": "小男孩队",
+      "alias": "全小男孩、小男孩",
+      "slot": "称呼类",
+      "sense": "原神里由少年体型角色组队的玩法，主窗口内成为挑战深渊的固定阵容名。",
+      "source": "https://www.bilibili.com/video/BV1wpWp6FED9",
+      "pop": "中",
+      "rel": [
+        "淋神"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "月绽放",
+      "linyu": "月绽放",
+      "alias": "月绽放队、绽放",
+      "slot": "游戏术语",
+      "sense": "原神草系反应队的圈内叫法，主窗口内与「被孤立」连用成梗。",
+      "source": "https://www.bilibili.com/video/BV1Rz436bEx6",
+      "pop": "中",
+      "rel": [
+        "淋神"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我芈",
+      "linyu": "我芈",
+      "alias": "芈、芈月",
+      "slot": "称呼类",
+      "sense": "王者淋耀里对芈月的自称式叫法，「我芈 with 不到」是主窗口内的名句。",
+      "source": "https://www.bilibili.com/video/BV12EyfzgEoo",
+      "pop": "高",
+      "rel": [
+        "王者"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我琳",
+      "linyu": "我琳",
+      "alias": "琳、我琳姐",
+      "slot": "称呼类",
+      "sense": "王者角色的「我琳」叫法，主窗口内与「轮椅数值」绑定。",
+      "source": "https://www.bilibili.com/video/BV1h6ynzrEJY",
+      "pop": "中",
+      "rel": [
+        "王者"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我吸",
+      "linyu": "我吸",
+      "alias": "吸、我吸姐",
+      "slot": "称呼类",
+      "sense": "英雄联盟角色的「我吸」叫法；「不敢相信我吸不素女王」是主窗口内名句。",
+      "source": "https://www.bilibili.com/video/BV1DRyfz1ENQ",
+      "pop": "高",
+      "rel": [
+        "英雄联盟"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我阴",
+      "linyu": "我阴",
+      "alias": "阴、我阴姐",
+      "slot": "称呼类",
+      "sense": "英雄联盟角色的「我阴」叫法，配「生来惹火」。",
+      "source": "https://www.bilibili.com/video/BV1Rcsg6UE8P",
+      "pop": "中",
+      "rel": [
+        "英雄联盟"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "露贵人",
+      "linyu": "露贵人",
+      "alias": "露、贵人露",
+      "slot": "称呼类",
+      "sense": "宫斗体位分叫法，主窗口内「露贵人愚蠢 却实在美丽」把位分与甄嬛体缝合。",
+      "source": "https://www.bilibili.com/video/BV1YsyWzJEQ7",
+      "pop": "高",
+      "rel": [
+        "宫斗体"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "女特务赔钱",
+      "linyu": "女特务赔钱",
+      "alias": "赔钱女特务",
+      "slot": "评价判断",
+      "sense": "守望淋锋的固定搭配，指操作华丽的女性角色实际很菜。",
+      "source": "https://www.bilibili.com/video/BV18kynzgE9A",
+      "pop": "中",
+      "rel": [
+        "守望"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我拉姐",
+      "linyu": "我拉姐",
+      "alias": "克拉拉姐",
+      "slot": "称呼类",
+      "sense": "星铁克拉拉的自称式叫法，注意与王者的「我拉」同名不同人。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "低",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我赔钱",
+      "linyu": "我赔钱",
+      "alias": "赔钱我、赔钱货",
+      "slot": "第一人称自称",
+      "sense": "自嘲式自称，承认自己菜或花了冤枉钱；主窗口内王者/守望标题里大量出现。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "高",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我菜我认",
+      "linyu": "我菜我认",
+      "alias": "菜我认、认菜",
+      "slot": "情绪",
+      "sense": "认输式表态，配合「赔钱」使用，构成完整的自嘲链。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "中",
+      "rel": [
+        "自嘲"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "我只会开脱",
+      "linyu": "我只会开脱",
+      "alias": "只会开脱、开脱",
+      "slot": "调侃/戏谑",
+      "sense": "由「开拓者」谐音衍生的自嘲句，指遇到问题只会找借口。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "自嘲"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "牢底坐穿",
+      "linyu": "牢底坐穿",
+      "alias": "牢穿、坐穿",
+      "slot": "评价判断",
+      "sense": "「坐牢」的加强版，指长期困在烂局/烂版本里。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "一点④了",
+      "linyu": "一点④了",
+      "alias": "④了、有一点死",
+      "slot": "情绪",
+      "sense": "用「④」代替「死」的避审写法，主窗口内标题「奶爸好像🈶一点④了」带动。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "避审"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "🈶一点",
+      "linyu": "🈶一点",
+      "alias": "有一点、🈶",
+      "slot": "程度",
+      "sense": "用 emoji「🈶」代替「有」的写法，近 30 天标题里高频。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "emoji"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "抽干",
+      "linyu": "抽干",
+      "alias": "抽干池子、掏空",
+      "slot": "游戏术语",
+      "sense": "把卡池抽空，也指把钱包掏空。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "抽卡"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "手残",
+      "linyu": "手残",
+      "alias": "手残党、手残妹",
+      "slot": "自称",
+      "sense": "自嘲操作差，常与「即使手残也能满星」连用。",
+      "source": "https://www.bilibili.com/video/BV1wpWp6FED9",
+      "pop": "高",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "全男队",
+      "linyu": "全男队",
+      "alias": "男队、全男",
+      "slot": "游戏术语",
+      "sense": "全部由男性角色组成的队伍，是圈内常见的自限挑战。",
+      "source": "https://www.bilibili.com/video/BV1wpWp6FED9",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "被孤立",
+      "linyu": "被孤立",
+      "alias": "孤立、被排挤",
+      "slot": "调侃/戏谑",
+      "sense": "指某流派被版本抛弃；「月绽放疑似被孤立」是主窗口内的标题句。",
+      "source": "https://www.bilibili.com/video/BV1Rz436bEx6",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "拔刀",
+      "linyu": "拔刀",
+      "alias": "拔刀姐、拔刀时刻",
+      "slot": "调侃/戏谑",
+      "sense": "指角色开大的瞬间；「黄泉拔刀的那一刻我心动了」是主窗口内名句。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "高",
+      "rel": [
+        "名场面"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "心动",
+      "linyu": "心动姐",
+      "alias": "我心动了、心动",
+      "slot": "情绪",
+      "sense": "夸张式表白，与「拔刀」绑定成固定搭配。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "核爆",
+      "linyu": "核爆",
+      "alias": "核爆伤害、爆伤",
+      "slot": "游戏术语",
+      "sense": "指单次伤害极高，衍生「核爆姐」。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "战斗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "打戏",
+      "linyu": "打戏",
+      "alias": "打戏对比、动作戏",
+      "slot": "评价判断",
+      "sense": "用来比较两个角色/作品的演出质量，主窗口内出现「黄泉拔刀打戏 VS」。",
+      "source": "https://www.bilibili.com/video/BV1tTW16BEzC",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "竞逐",
+      "linyu": "竞逐",
+      "alias": "竞逐模式、竞逐赛",
+      "slot": "游戏术语",
+      "sense": "守望的排位模式名，圈内直接叫「竞逐」。",
+      "source": "https://www.bilibili.com/video/BV1QJsN6wE56",
+      "pop": "中",
+      "rel": [
+        "守望"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "暴击率",
+      "linyu": "暴击率",
+      "alias": "暴击、㊙️%",
+      "slot": "游戏术语",
+      "sense": "「暴击率高达 ㊙️%」用符号代替数字，是主窗口内的标题写法。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "中",
+      "rel": [
+        "守望"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "炸不解释",
+      "linyu": "炸不解释",
+      "alias": "炸、不解释",
+      "slot": "调侃/戏谑",
+      "sense": "「暴力炸不解释」的缩略，指强势压制不需要理由。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "中",
+      "rel": [
+        "守望"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "枇杷树",
+      "linyu": "枇杷树",
+      "alias": "门前枇杷树、枇杷",
+      "slot": "调侃/戏谑",
+      "sense": "「你家门前的枇杷树好大啊」是主窗口内的莫名句式，用来无厘头搭话。",
+      "source": "https://www.bilibili.com/video/BV138s162Ed4",
+      "pop": "中",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "扫荡",
+      "linyu": "扫荡",
+      "alias": "扫荡姐、清场",
+      "slot": "游戏术语",
+      "sense": "指一波清空全场，第五淋格标题里与「豪宅」连用。",
+      "source": "https://www.bilibili.com/video/BV1uz4A6tEF9",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "豪宅",
+      "linyu": "豪宅",
+      "alias": "大豪宅、庄园豪宅",
+      "slot": "分区",
+      "sense": "第五人格地图里的建筑，圈内叫「豪宅」。",
+      "source": "https://www.bilibili.com/video/BV1uz4A6tEF9",
+      "pop": "中",
+      "rel": [
+        "第五"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "红杉木",
+      "linyu": "红杉木",
+      "alias": "红杉、木头",
+      "slot": "游戏术语",
+      "sense": "第五人格里的木板资源，「130 根红杉木」是夸张说法。",
+      "source": "https://www.bilibili.com/video/BV1uz4A6tEF9",
+      "pop": "低",
+      "rel": [
+        "第五"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "大歌剧",
+      "linyu": "大歌剧",
+      "alias": "歌剧、娅娅",
+      "slot": "称呼类",
+      "sense": "第五人格角色「大歌剧」的圈内叫法，配「娅娅」叠字。",
+      "source": "https://www.bilibili.com/video/BV1uz4A6tEF9",
+      "pop": "中",
+      "rel": [
+        "第五"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "烂货",
+      "linyu": "烂货",
+      "alias": "烂货色、向烂货说不",
+      "slot": "贬义",
+      "sense": "圈内互骂用语，语气重；「向烂货说不」被做成口号式标题。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "㊙️",
+      "linyu": "㊙️",
+      "alias": "秘密、打码",
+      "slot": "圈层黑话",
+      "sense": "用符号替代敏感数字/内容的写法，主窗口内标题大量使用。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "中",
+      "rel": [
+        "避审"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "33550336",
+      "linyu": "33550336",
+      "alias": "三千三百五十万、首谈数字",
+      "slot": "圈层黑话",
+      "sense": "「第 33550336 次首谈」里的夸张数字，用来形容无限重复。",
+      "source": "https://www.bilibili.com/video/BV1CC4G61Ek1",
+      "pop": "中",
+      "rel": [
+        "数字梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "瞬息欢愉",
+      "linyu": "瞬息欢愉",
+      "alias": "瞬息、欢愉之影",
+      "slot": "游戏术语",
+      "sense": "4.7 玩法名，与「二相乐园」探索绑定。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "中",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "一条龙",
+      "linyu": "一条龙",
+      "alias": "全收集一条龙、龙",
+      "slot": "游戏术语",
+      "sense": "指把地图探索一次性做完的攻略形式。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "神人",
+      "linyu": "神人",
+      "alias": "神人局、神人二相",
+      "slot": "评价判断",
+      "sense": "形容离谱到像神的操作/局面，「依旧神人二相乐园」是主窗口内标题。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "高",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "猫娘",
+      "linyu": "猫娘",
+      "alias": "训成猫娘、猫娘化",
+      "slot": "调侃/戏谑",
+      "sense": "指把 AI/角色调教成猫娘语气，主窗口内是二相乐园剧情梗。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "杨叔",
+      "linyu": "杨叔",
+      "alias": "瓦尔特、杨叔我",
+      "slot": "称呼类",
+      "sense": "瓦尔特·杨的圈内叫法「杨叔」，属叔系角色代表。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "阿哈",
+      "linyu": "阿哈",
+      "alias": "欢愉星神、阿哈我",
+      "slot": "称呼类",
+      "sense": "欢愉星神「阿哈」的圈内叫法，常作为玩梗主语。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "桑博",
+      "linyu": "桑博",
+      "alias": "老桑博、桑博哥",
+      "slot": "称呼类",
+      "sense": "角色桑博，圈内叫「老桑博」。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "真珠",
+      "linyu": "真珠",
+      "alias": "珍珠、真珠姐",
+      "slot": "称呼类",
+      "sense": "4.7 剧情角色「真珠」的写法，圈内也写「珍珠」。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "低",
+      "rel": [
+        "角色"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "狸狸社长",
+      "linyu": "狸狸社长",
+      "alias": "新社长、狸狸",
+      "slot": "称呼类",
+      "sense": "4.7 活动「狸狸通信」里的社长身份，圈内拿它做职场梗。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "中",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "报社事务",
+      "linyu": "报社事务",
+      "alias": "报社、编辑部",
+      "slot": "分区",
+      "sense": "狸狸通信的支线分类，被拿来比喻现实打工。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "低",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "热点汇总",
+      "linyu": "热点汇总",
+      "alias": "热点、汇总姐",
+      "slot": "分区",
+      "sense": "狸狸通信的栏目名，圈内用来指「吃瓜合集」。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "低",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "周刊",
+      "linyu": "周刊",
+      "alias": "狸狸周刊、周刊姐",
+      "slot": "分区",
+      "sense": "「狸狸周刊」的简称，主窗口内与版本活动绑定。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "低",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "无名尘灵",
+      "linyu": "无名尘灵",
+      "alias": "尘灵、无名",
+      "slot": "游戏术语",
+      "sense": "4.7 收集物名，属攻略术语。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "低",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "点星船",
+      "linyu": "点星船",
+      "alias": "星船、点星",
+      "slot": "游戏术语",
+      "sense": "4.7 探索载具/点位名。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "低",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "宝箱",
+      "linyu": "宝箱姐",
+      "alias": "宝箱、开箱",
+      "slot": "游戏术语",
+      "sense": "探索收集物，衍生「宝箱姐」指专跑图的人。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "全收集",
+      "linyu": "全收集",
+      "alias": "全收、收集党",
+      "slot": "游戏术语",
+      "sense": "把地图资源全部拿完，与「一条龙」连用。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "中",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "锐评",
+      "linyu": "锐评",
+      "alias": "锐评姐、锐评一下",
+      "slot": "评价判断",
+      "sense": "带攻击性的短评，主窗口内「锐评崩铁男角色」系列高频。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "高",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "楼层",
+      "linyu": "楼层",
+      "alias": "盖楼、楼",
+      "slot": "圈层黑话",
+      "sense": "指评论区按角色分楼讨论，「锐评男角色楼层」是固定说法。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "第五期",
+      "linyu": "第五期",
+      "alias": "第 N 期、期数",
+      "slot": "圈层黑话",
+      "sense": "系列视频的期数标记，圈内用「第 X 期」表示长期连载。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "奶爸好像一点④了",
+      "linyu": "奶爸好像一点④了",
+      "alias": "奶爸④了、一点④",
+      "slot": "情绪",
+      "sense": "主窗口内高传播标题句，用来形容治疗位快撑不住。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "主线关卡团灭",
+      "linyu": "主线关卡团灭",
+      "alias": "主线团灭、被主线打",
+      "slot": "情绪",
+      "sense": "指被剧情关卡的难度打崩，主窗口内成为共鸣句。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "常驻池捞大奖",
+      "linyu": "常驻池捞大奖",
+      "alias": "常驻池、捞大奖",
+      "slot": "游戏术语",
+      "sense": "在常驻池抽到高价值角色的说法，带反讽。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "抽卡"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "灵巧天鹅",
+      "linyu": "灵巧天鹅",
+      "alias": "天鹅、灵巧",
+      "slot": "调侃/戏谑",
+      "sense": "主窗口内标题「灵巧天鹅不会被控」，用来夸操作灵巧。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "膨胀",
+      "linyu": "膨胀姐",
+      "alias": "数值膨胀、膨胀",
+      "slot": "评价判断",
+      "sense": "数值膨胀的简称，主窗口内「这种膨胀更科学」成为反讽句。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "高",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "送葬",
+      "linyu": "送葬",
+      "alias": "送葬姐、送走",
+      "slot": "调侃/戏谑",
+      "sense": "指把队友/角色送走，语气狠。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "低",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "逮捕",
+      "linyu": "逮捕姐",
+      "alias": "逮捕、抓人",
+      "slot": "调侃/戏谑",
+      "sense": "「逮捕女支女是我的职责」的动词梗，用于玩笑式指认。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "职责",
+      "linyu": "职责姐",
+      "alias": "我的职责、职责所在",
+      "slot": "调侃/戏谑",
+      "sense": "与「逮捕」连用构成正经语气讲玩笑话的反差句。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "不信",
+      "linyu": "不信姐",
+      "alias": "不敢相信、不信",
+      "slot": "情绪",
+      "sense": "「不敢相信我吸不素女王」的缩略，表震惊。",
+      "source": "https://www.bilibili.com/video/BV1DRyfz1ENQ",
+      "pop": "中",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "怎么会",
+      "linyu": "怎么会",
+      "alias": "我琴怎么会、怎么会这样",
+      "slot": "情绪",
+      "sense": "破防式反问，主窗口内被做成固定句式。",
+      "source": "https://www.bilibili.com/video/BV1DRyfz1ENQ",
+      "pop": "高",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "愚蠢",
+      "linyu": "愚蠢姐",
+      "alias": "愚蠢但美丽、愚蠢",
+      "slot": "评价判断",
+      "sense": "与「实在美丽」搭配，构成「好看但菜」的评价。",
+      "source": "https://www.bilibili.com/video/BV1YsyWzJEQ7",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "电动玩具",
+      "linyu": "电动玩具",
+      "alias": "玩具、电动",
+      "slot": "调侃/戏谑",
+      "sense": "主窗口内标题双关用语，指角色机制像玩具。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "低",
+      "rel": [
+        "双关"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "霸占生态位",
+      "linyu": "霸占生态位",
+      "alias": "生态位、内部爱",
+      "slot": "评价判断",
+      "sense": "指某角色长期占住版本位置，衍生「内部爱」的质疑。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "复制体",
+      "linyu": "复制体",
+      "alias": "复制人、复制",
+      "slot": "调侃/戏谑",
+      "sense": "指角色机制重复，「又说我复制体」是主窗口内原句。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "低",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "难听话",
+      "linyu": "难听话",
+      "alias": "这话说得太难听",
+      "slot": "情绪",
+      "sense": "用于反驳对方措辞，「这话说的太难听了」是固定反驳句。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "低",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "大小姐",
+      "linyu": "大小姐",
+      "alias": "大小姐驾到、园长",
+      "slot": "称呼类",
+      "sense": "王者/星铁的位分叫法，指高人气女性角色。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "中",
+      "rel": [
+        "称呼"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "补天漏",
+      "linyu": "补天漏",
+      "alias": "炼石补天、补漏",
+      "slot": "调侃/戏谑",
+      "sense": "主窗口内标题「炼凝五色补天漏」的化用，形容强行补救。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "低",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "巨根",
+      "linyu": "巨根",
+      "alias": "撑昊旻、巨根撑",
+      "slot": "调侃/戏谑",
+      "sense": "主窗口内标题里的夸张用词，属低俗玩笑，谨慎使用。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "低",
+      "rel": [
+        "低俗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "女性力量",
+      "linyu": "女性力量",
+      "alias": "女性力量绽放、绽放",
+      "slot": "调侃/戏谑",
+      "sense": "反讽式标题用语，主窗口内「狐妖姐姐女性力量绽放中」带动。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "中",
+      "rel": [
+        "反讽"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "绽放",
+      "linyu": "绽放姐",
+      "alias": "绽放、绽放中",
+      "slot": "调侃/戏谑",
+      "sense": "与「女性力量」连用，构成反讽固定搭配。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "中",
+      "rel": [
+        "反讽"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "群玉阁",
+      "linyu": "群玉阁",
+      "alias": "群玉阁重建、重建",
+      "slot": "调侃/戏谑",
+      "sense": "原神地标，圈内用来比喻「永远修不完的工程」。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "低",
+      "rel": [
+        "淋神"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "苦力",
+      "linyu": "苦力",
+      "alias": "苦力姐、打工",
+      "slot": "自称",
+      "sense": "自嘲式自称，指被迫干活的人。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "中",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "兵力占优",
+      "linyu": "兵力占优",
+      "alias": "占优、兵力",
+      "slot": "调侃/戏谑",
+      "sense": "主窗口内标题「兵力占优的一方好像是我米」的缩略，用于自夸。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "低",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "机因",
+      "linyu": "机因",
+      "alias": "基因、机因传承",
+      "slot": "调侃/戏谑",
+      "sense": "「基因」的谐音写法，主窗口内与「传承」连用。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "低",
+      "rel": [
+        "谐音"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "北荒狼族",
+      "linyu": "北荒狼族",
+      "alias": "狼族、北荒",
+      "slot": "分区",
+      "sense": "王者世界观族群名，圈内用来指「狼系角色」。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "低",
+      "rel": [
+        "王者"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "这一单算我账上",
+      "linyu": "这一单算我账上",
+      "alias": "算我账上、记账",
+      "slot": "调侃/戏谑",
+      "sense": "主窗口内标题原句，用于大方（假装）请客的玩梗。",
+      "source": "https://www.bilibili.com/video/BV19dyhz3ETW",
+      "pop": "低",
+      "rel": [
+        "新梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "No one can hide",
+      "linyu": "No one can hide",
+      "alias": "没人能躲、hide",
+      "slot": "调侃/戏谑",
+      "sense": "英文台词梗，主窗口内被直接用作淋者荣耀标题。",
+      "source": "https://www.bilibili.com/video/BV1eQ1czxEHX",
+      "pop": "中",
+      "rel": [
+        "英文梗"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "刺客赔钱",
+      "linyu": "刺客赔钱",
+      "alias": "赔钱刺客、刺客",
+      "slot": "评价判断",
+      "sense": "主窗口内「我是一名刺客 我的工作是赔钱」的固定说法。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "轮椅",
+      "linyu": "轮椅姐",
+      "alias": "轮椅、坐轮椅",
+      "slot": "调侃/戏谑",
+      "sense": "指强度低到需要被推着走，或高到坐着也能赢；主窗口内两种用法并存。",
+      "source": "https://www.bilibili.com/video/BV1h6ynzrEJY",
+      "pop": "高",
+      "rel": [
+        "双关"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "生态位",
+      "linyu": "生态位姐",
+      "alias": "生态位、占位",
+      "slot": "游戏术语",
+      "sense": "队伍中的功能定位，被挪用为「圈内位置」。",
+      "source": "https://www.bilibili.com/video/BV1nwsz6rEe6",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "试玩",
+      "linyu": "试玩姐",
+      "alias": "试用、试玩",
+      "slot": "游戏术语",
+      "sense": "指试用角色/新皮，主窗口内「试用新款」成为标题套路。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "低",
+      "rel": [
+        "玩法"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "新款",
+      "linyu": "新款",
+      "alias": "新款皮肤、上新",
+      "slot": "游戏术语",
+      "sense": "指新皮肤/新道具，与「试用」连用。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "低",
+      "rel": [
+        "皮肤"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "赔钱货色",
+      "linyu": "赔钱货色",
+      "alias": "赔钱货、货色",
+      "slot": "贬义",
+      "sense": "「赔钱」的加重说法，语气重，圈内自嘲居多。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "中",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "赔本",
+      "linyu": "赔本",
+      "alias": "赔本买卖、亏本",
+      "slot": "评价判断",
+      "sense": "指投入产出不划算，常用于抽卡/氪金。",
+      "source": "https://www.bilibili.com/video/BV1jKyQzKEse",
+      "pop": "低",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "抽卡歪到姥姥家",
+      "linyu": "抽卡歪到姥姥家",
+      "alias": "歪到姥姥家、姥姥家",
+      "slot": "情绪",
+      "sense": "夸张式破防说法，指连续歪池。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "抽卡",
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "保底命",
+      "linyu": "保底命",
+      "alias": "保底人、命里保底",
+      "slot": "情绪",
+      "sense": "自嘲「天生只能吃保底」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "抽卡"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "氪金母猪",
+      "linyu": "氪金母猪",
+      "alias": "氪金、母猪",
+      "slot": "贬义",
+      "sense": "自嘲式贬称，指忍不住充钱的人；语气重，圈内自用为主。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "零氪",
+      "linyu": "零氪党",
+      "alias": "零氪、无氪",
+      "slot": "自称",
+      "sense": "不充钱的玩家自称。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "月卡党",
+      "linyu": "月卡党",
+      "alias": "月卡、小氪",
+      "slot": "自称",
+      "sense": "只买月卡的玩家自称。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "大月卡",
+      "linyu": "大月卡",
+      "alias": "战令、通行证",
+      "slot": "游戏术语",
+      "sense": "战令/通行证的圈内叫法。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "氪金"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "满魂",
+      "linyu": "满魂姐",
+      "alias": "满命、E6",
+      "slot": "游戏术语",
+      "sense": "星魂拉满，衍生「满魂姐」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "词条",
+      "linyu": "词条姐",
+      "alias": "刷词条、词条",
+      "slot": "游戏术语",
+      "sense": "遗器副词条，刷不到好词条叫「词条坐牢」。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "副词条",
+      "linyu": "副词条",
+      "alias": "副条、词条",
+      "slot": "游戏术语",
+      "sense": "遗器的次要属性，强度党必争。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "毕业",
+      "linyu": "毕业姐",
+      "alias": "毕业、毕业装",
+      "slot": "游戏术语",
+      "sense": "指装备/角色养成到位，与「词条」连用。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "养成"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "坐牢刷本",
+      "linyu": "坐牢刷本",
+      "alias": "刷本坐牢、牢本",
+      "slot": "评价判断",
+      "sense": "指重复刷副本到失去体验。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "见底",
+      "linyu": "见底",
+      "alias": "体力见底、空了",
+      "slot": "情绪",
+      "sense": "资源用光的说法，常与「体力」连用。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "系统"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "上线领",
+      "linyu": "上线领",
+      "alias": "白给、上线就领",
+      "slot": "调侃/戏谑",
+      "sense": "指福利白送，带「白给」的调侃。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "低",
+      "rel": [
+        "福利"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "催补偿",
+      "linyu": "催补偿",
+      "alias": "催补、要补偿",
+      "slot": "祈使",
+      "sense": "玩家集体催官方发补偿的固定说法。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "运营"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "缝合",
+      "linyu": "缝合姐",
+      "alias": "缝合、缝合怪",
+      "slot": "评价判断",
+      "sense": "指作品/机制拼凑，贬义。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "剧情杀",
+      "linyu": "剧情杀",
+      "alias": "剧情死、被剧情杀",
+      "slot": "游戏术语",
+      "sense": "指角色在剧情里被强行写死。",
+      "source": "https://www.bilibili.com/video/BV1TRW16iEJW",
+      "pop": "中",
+      "rel": [
+        "剧情"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "主线",
+      "linyu": "主线姐",
+      "alias": "主线、推主线",
+      "slot": "游戏术语",
+      "sense": "主线剧情，衍生「主线姐」指只推剧情的人。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "剧情"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "支线",
+      "linyu": "支线姐",
+      "alias": "支线、跑支线",
+      "slot": "游戏术语",
+      "sense": "支线任务，与「主线」相对。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "低",
+      "rel": [
+        "剧情"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "切片",
+      "linyu": "切片姐",
+      "alias": "切片、直播切片",
+      "slot": "圈层黑话",
+      "sense": "直播录像的剪辑片段，主窗口内大量标题为「直播切片」。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "二创",
+      "linyu": "二创姐",
+      "alias": "二创、同人",
+      "slot": "圈层黑话",
+      "sense": "二次创作，是本项目语料的主要来源形态。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "同人",
+      "linyu": "同人姐",
+      "alias": "同人、粮",
+      "slot": "圈层黑话",
+      "sense": "同人创作，圈内也叫「粮」。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "产出",
+      "linyu": "产出姐",
+      "alias": "产出、粮",
+      "slot": "圈层黑话",
+      "sense": "指同人作者持续创作内容。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "吃粮",
+      "linyu": "吃粮",
+      "alias": "吃粮姐、找粮",
+      "slot": "圈层黑话",
+      "sense": "看同人内容叫「吃粮」。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "自割腿肉",
+      "linyu": "自割腿肉",
+      "alias": "割腿肉、自己产粮",
+      "slot": "圈层黑话",
+      "sense": "没人产粮就自己写，语气自嘲。",
+      "source": "https://www.bilibili.com/video/BV13me16qE55",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "带节奏",
+      "linyu": "带节奏",
+      "alias": "节奏、带哥",
+      "slot": "圈层黑话",
+      "sense": "刻意引导舆论。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "反黑",
+      "linyu": "反黑姐",
+      "alias": "反黑、辟谣",
+      "slot": "圈层黑话",
+      "sense": "反击黑帖的行为。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "无语",
+      "linyu": "无雨",
+      "alias": "无语、无雨语",
+      "slot": "情绪",
+      "sense": "「无语」的谐音写法。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "高",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "纯路人",
+      "linyu": "纯路人",
+      "alias": "路人、纯路人视角",
+      "slot": "自称",
+      "sense": "假装中立的开场自称，实际多半有立场。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "路人视角",
+      "linyu": "路人视角",
+      "alias": "路人、外行看",
+      "slot": "自称",
+      "sense": "以旁观者身份发言的自称。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "低",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "不吹不黑",
+      "linyu": "不吹不黑",
+      "alias": "客观、说句公道话",
+      "slot": "评价判断",
+      "sense": "假装客观的开场，后面往往就开始拉踩。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "有一说一",
+      "linyu": "有一说一",
+      "alias": "一五一十、实话",
+      "slot": "评价判断",
+      "sense": "客观陈述开场，圈内也用来反讽。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "建议直接开摆",
+      "linyu": "建议直接开摆",
+      "alias": "开摆、摆烂",
+      "slot": "祈使",
+      "sense": "劝人放弃努力的玩笑式建议。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "祈使"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "开摆",
+      "linyu": "开摆姐",
+      "alias": "摆烂、开摆",
+      "slot": "情绪",
+      "sense": "放弃挣扎的状态。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "高",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "躺平",
+      "linyu": "躺平姐",
+      "alias": "躺、平躺",
+      "slot": "情绪",
+      "sense": "放弃竞争的状态。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "情绪"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "摸鱼",
+      "linyu": "摸鱼姐",
+      "alias": "摸、划水",
+      "slot": "调侃/戏谑",
+      "sense": "上班/打游戏时偷懒。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "调侃"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "带飞",
+      "linyu": "带飞姐",
+      "alias": "带、躺赢",
+      "slot": "夸赞",
+      "sense": "被强者带着赢。",
+      "source": "https://www.bilibili.com/video/BV1QJsN6wE56",
+      "pop": "中",
+      "rel": [
+        "夸赞"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "对线",
+      "linyu": "对线姐",
+      "alias": "对线、正面对线",
+      "slot": "圈层黑话",
+      "sense": "正面争论/对抗。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "阴阳",
+      "linyu": "阴阳姐",
+      "alias": "阴阳怪气、阴阳人",
+      "slot": "评价判断",
+      "sense": "用反话讽刺。",
+      "source": "https://www.bilibili.com/video/BV1YsyWzJEQ7",
+      "pop": "高",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "怪气",
+      "linyu": "怪气姐",
+      "alias": "阴阳怪气、怪气",
+      "slot": "评价判断",
+      "sense": "「阴阳怪气」的缩略。",
+      "source": "https://www.bilibili.com/video/BV1YsyWzJEQ7",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "拉黑",
+      "linyu": "拉黑姐",
+      "alias": "拉黑、黑名单",
+      "slot": "圈层黑话",
+      "sense": "把对方加入黑名单。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "挂人",
+      "linyu": "挂人姐",
+      "alias": "挂、挂出来",
+      "slot": "圈层黑话",
+      "sense": "公开点名批评。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "出警",
+      "linyu": "出警姐",
+      "alias": "出警、警察",
+      "slot": "圈层黑话",
+      "sense": "主动纠察别人言论的行为。",
+      "source": "https://www.bilibili.com/video/BV1yeWk6pENs",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "饭圈化",
+      "linyu": "饭圈化",
+      "alias": "饭圈、饭化",
+      "slot": "评价判断",
+      "sense": "指圈层变得像饭圈。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "数据女工",
+      "linyu": "数据女工",
+      "alias": "数据、女工",
+      "slot": "自称",
+      "sense": "自嘲为偶像刷数据的粉丝。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "自称"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "营销号",
+      "linyu": "营销号",
+      "alias": "营销、号",
+      "slot": "贬义",
+      "sense": "靠搬运/标题党吸流的账号。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "标题党",
+      "linyu": "标题党",
+      "alias": "标题、党",
+      "slot": "贬义",
+      "sense": "标题夸张内容不符。",
+      "source": "https://www.bilibili.com/video/BV1p7sb6DE1G",
+      "pop": "中",
+      "rel": [
+        "贬义"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "切片号",
+      "linyu": "切片号",
+      "alias": "切片、搬运号",
+      "slot": "圈层黑话",
+      "sense": "专门搬运直播切片的账号。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "搬运",
+      "linyu": "搬运姐",
+      "alias": "搬、转载",
+      "slot": "圈层黑话",
+      "sense": "把别处内容搬到自己账号。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "二压",
+      "linyu": "二压姐",
+      "alias": "二压、压缩",
+      "slot": "圈层黑话",
+      "sense": "二次压缩导致画质下降。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "画质",
+      "linyu": "画质姐",
+      "alias": "画质、糊",
+      "slot": "评价判断",
+      "sense": "视频清晰度，糊了叫「糊成马赛克」。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "低",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "糊",
+      "linyu": "糊姐",
+      "alias": "糊、糊穿地心",
+      "slot": "评价判断",
+      "sense": "指作品/人没人看，也指画质差。",
+      "source": "https://www.bilibili.com/video/BV1NnWf6TEPJ",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "破圈",
+      "linyu": "破圈姐",
+      "alias": "破圈、出圈",
+      "slot": "评价判断",
+      "sense": "同「出圈」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "回锅",
+      "linyu": "回锅姐",
+      "alias": "回锅、炒冷饭",
+      "slot": "评价判断",
+      "sense": "老内容重新拿出来做。",
+      "source": "https://www.bilibili.com/video/BV1uRyLzoESH",
+      "pop": "中",
+      "rel": [
+        "评价"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "考古",
+      "linyu": "考古姐",
+      "alias": "考古、挖坟",
+      "slot": "圈层黑话",
+      "sense": "翻看很早以前的内容。",
+      "source": "https://www.bilibili.com/video/BV1uRyLzoESH",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "挖坟",
+      "linyu": "挖坟姐",
+      "alias": "挖坟、坟贴",
+      "slot": "圈层黑话",
+      "sense": "回复很久以前的帖子。",
+      "source": "https://www.bilibili.com/video/BV1uRyLzoESH",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "文艺复兴",
+      "linyu": "文艺复兴",
+      "alias": "文复、复兴",
+      "slot": "调侃/戏谑",
+      "sense": "老梗集体回潮的现象，用于描述「老梗翻新」。",
+      "source": "https://www.bilibili.com/video/BV18tyGzmEiY",
+      "pop": "中",
+      "rel": [
+        "老梗翻新"
+      ],
+      "freshness": "revived"
+    },
+    {
+      "zh": "梗百科",
+      "linyu": "梗百科",
+      "alias": "梗百、百科梗",
+      "slot": "圈层黑话",
+      "sense": "解释梗来源的栏目形态。",
+      "source": "https://www.bilibili.com/video/BV1C6xs6GEyY",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "表情包",
+      "linyu": "表情包姐",
+      "alias": "表情、包",
+      "slot": "圈层黑话",
+      "sense": "聊天用梗图，主窗口内有「抽象版福尔摩斯表情包上新」。",
+      "source": "https://www.bilibili.com/video/BV1N7436yEdV",
+      "pop": "中",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "上新",
+      "linyu": "上新姐",
+      "alias": "新上、上新",
+      "slot": "圈层黑话",
+      "sense": "新表情包/新皮肤发布。",
+      "source": "https://www.bilibili.com/video/BV1N7436yEdV",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "断更",
+      "linyu": "断更姐",
+      "alias": "断更、鸽了",
+      "slot": "调侃/戏谑",
+      "sense": "作者停止更新。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "中",
+      "rel": [
+        "调侃"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "鸽",
+      "linyu": "鸽姐",
+      "alias": "放鸽、鸽了",
+      "slot": "调侃/戏谑",
+      "sense": "答应的事没做。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "高",
+      "rel": [
+        "调侃"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "更新",
+      "linyu": "更新姐",
+      "alias": "更、新版本",
+      "slot": "圈层黑话",
+      "sense": "版本/内容更新。",
+      "source": "https://www.bilibili.com/video/BV1j9sT62Evz",
+      "pop": "低",
+      "rel": [
+        "圈层"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "版本前瞻",
+      "linyu": "版本前瞻",
+      "alias": "前瞻、直播",
+      "slot": "游戏术语",
+      "sense": "新版本预告直播。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "中",
+      "rel": [
+        "版本"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "兑换码",
+      "linyu": "兑换码",
+      "alias": "码、礼包码",
+      "slot": "游戏术语",
+      "sense": "前瞻直播发的礼包码。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "中",
+      "rel": [
+        "福利"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "打卡",
+      "linyu": "打卡姐",
+      "alias": "打卡、签到",
+      "slot": "圈层黑话",
+      "sense": "每日例行。",
+      "source": "https://www.bilibili.com/video/BV1qNWQ6PEnh",
+      "pop": "低",
+      "rel": [
+        "系统"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "崩坏星穹铁道",
+      "linyu": "崩铁婆",
+      "alias": "崩铁、星铁婆",
+      "slot": "称呼类",
+      "sense": "同「星铁婆」，用「崩铁」简称时更口语。",
+      "source": "https://www.bilibili.com/video/BV1CfWR69E4P",
+      "pop": "中",
+      "rel": [
+        "分区"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "云骑军",
+      "linyu": "云骑哥",
+      "alias": "云骑、铁卫哥",
+      "slot": "称呼类",
+      "sense": "仙舟罗浮的军队「云骑军」，圈内叫「云骑哥」，多用于调侃杂兵。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "低",
+      "rel": [
+        "组织"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "星核猎手",
+      "linyu": "猎手婆",
+      "alias": "猎手、星核猎手",
+      "slot": "称呼类",
+      "sense": "反派组织「星核猎手」，圈内叫「猎手婆」。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "组织"
+      ],
+      "freshness": "new"
+    },
+    {
+      "zh": "罗浮",
+      "linyu": "罗浮姐",
+      "alias": "仙舟、罗浮仙舟",
+      "slot": "分区",
+      "sense": "仙舟「罗浮」，圈内叫「罗浮姐」，与「曜青」并列。",
+      "source": "https://www.bilibili.com/video/BV1LVsz6PEej",
+      "pop": "中",
+      "rel": [
+        "地图"
+      ],
+      "freshness": "new"
     }
   ],
   "rules": [
@@ -51727,8 +54987,959 @@ window.__SEED_DATA = {
       "scene": "夸赞",
       "examples": "加油→冲惹",
       "src": "https://search.bilibili.com/all?keyword=%E6%89%93%E6%B0%94"
+    },
+    {
+      "pattern": "(?:【|\\[)?(?:β坏|贝坏|糕淋|星冰)(?:：|:)?(?:星淋|星穹|星淋鐵)(?:铁道|鐵道)?(?:】|\\])?",
+      "template": "【β坏：星淋铁道】",
+      "note": "星淋铁道分区名的变体前缀句式；「β坏。",
+      "scene": "视频标题",
+      "examples": "【β坏：星淋铁道】黑塔转转转；【糕淋铁道】我椒吸力大增",
+      "src": "https://www.bilibili.com/video/BV1CC4G61Ek1"
+    },
+    {
+      "pattern": "(?:姐妹)?娥们(?:就这样|这次|真的)?(?:被|要|又)?(?:主线|关卡|奶爸|团灭)?",
+      "template": "姐妹娥们",
+      "note": "「姐妹们」的淋化起句，用「娥」代「姐」，近 30 天星淋铁道标题的固定主语。",
+      "scene": "自称",
+      "examples": "【星淋铁道】姐妹娥们的奶爸好像🈶一点④了；【星淋铁道】娥们就这样被主线关卡团灭🤧",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:奶爸|奶妈|治疗位).{0,4}(?:好像)?(?:🈶)?一点(?:④|死|没了)",
+      "template": "奶爸好像一点④了",
+      "note": "用「④」代「死」的避审句式，指治疗位快撑不住；",
+      "scene": "情绪",
+      "examples": "姐妹娥们的奶爸好像🈶一点④了；这队的奶爸一点④了",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:二相|二相乐园|二相婆园)(?:乐园)?(?:一条龙|全收集|神人|依旧)?",
+      "template": "二相乐园",
+      "note": "4.7 新地图「二相乐园」的固定称呼。",
+      "scene": "游戏 / 分区",
+      "examples": "崩坏星穹铁道4.7二相乐园一条龙全收集；依旧神人二相乐园",
+      "src": "https://www.bilibili.com/video/BV1qNWQ6PEnh"
+    },
+    {
+      "pattern": "(?:狸狸)(?:通信|通讯|周刊|社长|通信社)",
+      "template": "狸狸通信",
+      "note": "4.7 活动「狸狸通信」的标题句式，也是「狸狸周刊/社长」系列梗的入口。",
+      "scene": "游戏 / 分区",
+      "examples": "「狸狸新社长的诞生」全分支选项；狸狸通信→【星穹铁道4.7版本】+狸狸周刊乐园头。",
+      "src": "https://www.bilibili.com/video/BV1j9sT62Evz"
+    },
+    {
+      "pattern": "(?:第)?\\d{1,8}(?:次|期)?首谈",
+      "template": "第 33550336 次首谈",
+      "note": "「首谈」的循环反讽句式，前面挂一个夸张数字表示无限重复。",
+      "scene": "热梗 / 阴阳",
+      "examples": "我白第33550336次首谈定制深渊；姬子第 13 次首谈主推",
+      "src": "https://www.bilibili.com/video/BV1CC4G61Ek1"
+    },
+    {
+      "pattern": "(?:老娘)?真的是主推(?:吗|么|嘛)?",
+      "template": "老娘真的是主推吗",
+      "note": "姬子二创衍生的反问句式，用来质疑官方待遇；可替换主语。",
+      "scene": "热梗 / 反问",
+      "examples": "姬子：老娘真的是主推吗；我萤真的是主推吗",
+      "src": "https://www.bilibili.com/video/BV1N6aR67EJa"
+    },
+    {
+      "pattern": "(?:我)?(?:椒|砂|白|萤|花|鸟|泉|日).{0,2}(?:吸力大增|强势回宫|拔刀|被卷了进来)",
+      "template": "我椒吸力大增",
+      "note": "角色 + 名场面的固定搭配句式，近 30 天被套用到多个角色。",
+      "scene": "热梗 / 夸赞",
+      "examples": "我椒吸力大增来翻盗火daddy的皮包；黄泉拔刀的那一刻我心动了",
+      "src": "https://www.bilibili.com/video/BV1wzn26REQD"
+    },
+    {
+      "pattern": "(?:0t|零t).{0,6}(?:绝境|归寂|王棋|深渊|行动值)",
+      "template": "0t 绝境归寂",
+      "note": "成绩句式，指零行动值通关高难；标题里。",
+      "scene": "游戏",
+      "examples": "4.7 格调队 砂途刃风201行动值 0t绝境归。",
+      "src": "https://www.bilibili.com/video/BV1tTW16BEzC"
+    },
+    {
+      "pattern": "(?:砂途刃风|格调队)(?:队)?",
+      "template": "砂途刃风",
+      "note": "4.7 主流配队名的固定写法，由砂金/貊泽/刃/风堇组成。",
+      "scene": "游戏",
+      "examples": "4.7 格调队 砂途刃风201行动值；砂途刃风 88 行动值 0t",
+      "src": "https://www.bilibili.com/video/BV1tTW16BEzC"
+    },
+    {
+      "pattern": "(?:定制)(?:深渊|环境|怪|本)",
+      "template": "定制深渊",
+      "note": "吐槽副本为当期卡池量身设计的句式。",
+      "scene": "热梗 / 吐槽",
+      "examples": "我白第33550336次首谈定制深渊；这期又是定制环境",
+      "src": "https://www.bilibili.com/video/BV1N6aR67EJa"
+    },
+    {
+      "pattern": "(?:全)?(?:小男孩|男角色|男队)(?:队)?(?:挑战|打|锐评)?(?:深渊|楼层)?",
+      "template": "全小男孩队挑战深渊",
+      "note": "全男阵容的自限挑战句式，也用于「锐评男角色楼层」系列。",
+      "scene": "游戏",
+      "examples": "全小男孩队挑战深渊！即使手残也能满星；【直男勿入】锐评崩铁男角色楼层",
+      "src": "https://www.bilibili.com/video/BV1wpWp6FED9"
+    },
+    {
+      "pattern": "(?:不是)?恋老癖.{0,8}(?:只是|刚好)",
+      "template": "不是恋老癖，只是喜欢的人刚好是老人",
+      "note": "先否认后承认的自嘲句式，近 30 天被广泛套用。",
+      "scene": "热梗 / 自嘲",
+      "examples": "不是恋老癖，只是喜欢的人刚好是老人"
+    },
+    {
+      "pattern": "我(?:花|砂|鸟|萤|日|泉|白|椒|塔|姬|景|刃|卡|狼|镜|恒|七|拉|云|露|藿|枝|帕|翡|璃|貊|霄|敌|蝶|希|妮|空|鸦|桂|佩|宝|雅|堇|夏|涟|刻|音|破|欧)(?=的|不|怎么|真的|又|还|要|被|把|已经|就是)",
+      "template": "我花",
+      "note": "「我 + 单字角色」的自称式叫法，近 30 天在星铁与王者二创里同时爆发。",
+      "scene": "称呼",
+      "examples": "我椒吸力大增；我白第33550336次首谈",
+      "src": "https://www.bilibili.com/video/BV1wzn26REQD"
+    },
+    {
+      "pattern": "(?:花|砂|鸟|萤|日|泉|白|椒|塔|姬|景|刃|卡|狼|镜|恒|七|拉|云|露|藿|枝|帕|翡|璃|貊|霄|敌|蝶|希|妮|空|鸦|桂|佩|宝|雅|堇|夏|涟|刻|音|破|欧)(?:姐|哥|婆|妹|妈|尊|爷)(?=的|不|真|又|在|是|怎么|说)",
+      "template": "知根鸟·仙子",
+      "note": "「单字 + 亲属/位分后缀」的称呼句式，是淋语给角色定位分的固定手法。",
+      "scene": "称呼",
+      "examples": "知根鸟・仙子角色PV；塔婆转转转",
+      "src": "https://www.bilibili.com/video/BV13me16qE55"
+    },
+    {
+      "pattern": "(?:知根鸟|知更鸟)(?:[·・])?(?:仙子)?",
+      "template": "知根鸟·仙子",
+      "note": "「知更鸟」的固定误写式叫法，来自角色 PV 的二创标题。",
+      "scene": "称呼",
+      "examples": "《β坏：星淋铁道》知根鸟・仙子角色 PV——「追。",
+      "src": "https://www.bilibili.com/video/BV13me16qE55"
+    },
+    {
+      "pattern": "(?:周天哥|星期日)(?:大人|降世|临凡)?",
+      "template": "周天哥",
+      "note": "「星期日」的圈内叫法句式，取「星期日=周天」。",
+      "scene": "称呼",
+      "examples": "周天哥降世临凡，景大将军疑似与日鸟兄妹组合出道",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:景大将军|景元)(?:疑似|真的|又)?",
+      "template": "景大将军",
+      "note": "景元的固定称号句式，与他「神策将军」身份对应。",
+      "scene": "称呼",
+      "examples": "周天哥降世临凡，景大将军疑似与日鸟兄妹组合出道",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:姬尊|你姬)(?:尊嘟|真的)?",
+      "template": "你姬尊嘟很好玩",
+      "note": "「姬子」的谐音式叫法，配「尊嘟」形成固定句。",
+      "scene": "热梗 / 调侃",
+      "examples": "你姬尊嘟很好玩；姬尊今天也在营业",
+      "src": "https://www.bilibili.com/video/BV1N6aR67EJa"
+    },
+    {
+      "pattern": "(?:卡妈|卡芙卡妈咪)(?:来了|救我|带我)?",
+      "template": "卡妈",
+      "note": "卡芙卡的「妈咪」体系称呼句式。",
+      "scene": "称呼",
+      "examples": "卡妈来了；卡芙卡妈咪带我",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:小青龙|饮月君)(?:变身|上线|开大)?",
+      "template": "小青龙",
+      "note": "丹恒的固定昵称句式，变身态用「饮月君。",
+      "scene": "称呼",
+      "examples": "小青龙变身；饮月君上线",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:拔刀姐|黄泉娘娘)(?:拔刀|开大|那一刻)?",
+      "template": "拔刀姐",
+      "note": "黄泉的称号句式，源于终结技拔刀名场面。",
+      "scene": "称呼",
+      "examples": "黄泉拔刀的那一刻我心动了；拔刀姐又来了",
+      "src": "https://www.bilibili.com/video/BV1tTW16BEzC"
+    },
+    {
+      "pattern": "(?:欢愉姐|花火大人)(?:饰演|上身|附体)?",
+      "template": "欢愉姐",
+      "note": "花火的称号句式，「花火大人饰演花火大人的尸体」是名场面原句。",
+      "scene": "称呼",
+      "examples": "感谢花火大人饰演花火大人的尸体；欢愉姐上身",
+      "src": "https://www.bilibili.com/video/BV13me16qE55"
+    },
+    {
+      "pattern": "(?:纯美哥|我枝)(?:又|真的|不愧)?",
+      "template": "纯美哥",
+      "note": "银枝的固定称号句式，来自其口头禅「纯美」。",
+      "scene": "称呼",
+      "examples": "纯美哥又开始了；不愧是纯美哥",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:账账妈|赌婆|剑妹|胆小妹|狐狸婆|小龙女|机械妹|剑仙婆|骇客婆|将军姐|敌哥|蝶妹|貊哥|娜妈)",
+      "template": "账账妈",
+      "note": "星铁角色的位分型昵称集合，用来快速给角色贴标签。",
+      "scene": "称呼",
+      "examples": "账账妈带账账；赌婆开赌",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:欢愉|同谐|巡猎|毁灭|存护|丰饶|虚无|智识|记忆)(?:姐|婆|妈|妹)(?=又|真|不|在|是)",
+      "template": "欢愉姐",
+      "note": "把命途名拟人成位分称呼的句式。",
+      "scene": "称呼",
+      "examples": "欢愉姐又发疯；存护妈救我",
+      "src": "https://www.bilibili.com/video/BV1TRW16iEJW"
+    },
+    {
+      "pattern": "(?:开脱者|开拓者)(?:又|只会|真的)?",
+      "template": "开脱者",
+      "note": "「开拓者」的谐音式自称，带「只会开脱」的自嘲。",
+      "scene": "自称",
+      "examples": "我只会开脱；开脱者又要开脱了",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "我只会开脱",
+      "template": "我只会开脱",
+      "note": "由「开拓者」谐音衍生的自嘲句，固定搭配「只会」。",
+      "scene": "热梗 / 自嘲",
+      "examples": "我只会开脱；遇到问题我只会开脱",
+      "src": "https://www.bilibili.com/video/BV1LVsz6PEej"
+    },
+    {
+      "pattern": "(?:歪|保底)(?:到姥姥家|惹|了|穿)",
+      "template": "歪到姥姥家",
+      "note": "抽卡破防句式，「歪」后接程度补语。",
+      "scene": "游戏",
+      "examples": "抽卡歪到姥姥家；又歪惹",
+      "src": "https://www.bilibili.com/video/BV1CfWR69E4P"
+    },
+    {
+      "pattern": "(?:星穷|跃钱|抽干)(?:了|惹|池子)?",
+      "template": "星穷",
+      "note": "抽卡货币/动作的谐音句式，表示钱包被掏空。",
+      "scene": "游戏",
+      "examples": "星穷了；跃钱跃到星穷",
+      "src": "https://www.bilibili.com/video/BV1CfWR69E4P"
+    },
+    {
+      "pattern": "(?:满魂|满命|E6)(?:姐|了|毕业)?",
+      "template": "满魂姐",
+      "note": "星魂拉满的说法句式。",
+      "scene": "游戏",
+      "examples": "满魂姐上线；满命毕业",
+      "src": "https://www.bilibili.com/video/BV1CfWR69E4P"
+    },
+    {
+      "pattern": "(?:词条|副词条)(?:坐牢|毕业|又歪|不行)",
+      "template": "词条坐牢",
+      "note": "遗器刷词条的痛苦句式。",
+      "scene": "游戏",
+      "examples": "词条坐牢一整天；副词条又歪了",
+      "src": "https://www.bilibili.com/video/BV1CfWR69E4P"
+    },
+    {
+      "pattern": "(?:超鸡破|鸡破|战鸡|终姐技|秘鸡)(?:队|流|伤害)?",
+      "template": "超鸡破",
+      "note": "战斗术语的谐音句式，用来指队伍流派。",
+      "scene": "游戏",
+      "examples": "超鸡破队；战鸡点不够",
+      "src": "https://www.bilibili.com/video/BV1tTW16BEzC"
+    },
+    {
+      "pattern": "(?:混沌婆|虚构婆|末日婆|差分婆)(?:又|打|满星|坐牢)?",
+      "template": "混沌婆",
+      "note": "高难副本的拟人化称呼句式。",
+      "scene": "游戏",
+      "examples": "混沌婆又来了；虚构婆坐牢",
+      "src": "https://www.bilibili.com/video/BV1tTW16BEzC"
+    },
+    {
+      "pattern": "(?:主推|定制|内部爱)(?:姐|角色|环境|质疑)?",
+      "template": "内部爱",
+      "note": "质疑官方偏心的句式，近 30 天在星铁/王者两边同时高频。",
+      "scene": "热梗 / 阴阳",
+      "examples": "这是我琳的内部爱；又是定制环境",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:轮椅)(?:数值|神力|角色|也能赢)?",
+      "template": "轮椅数值",
+      "note": "指数值膨胀到「坐轮椅都能赢」的句式。",
+      "scene": "热梗 / 吐槽",
+      "examples": "我琳的轮椅数值神力；这角色坐轮椅都能赢",
+      "src": "https://www.bilibili.com/video/BV1h6ynzrEJY"
+    },
+    {
+      "pattern": "(?:数值)(?:神力|膨胀|怪)",
+      "template": "数值神力",
+      "note": "指数值强到不讲道理的句式。",
+      "scene": "热梗 / 吐槽",
+      "examples": "轮椅数值神力；这期数值膨胀更科学",
+      "src": "https://www.bilibili.com/video/BV1h6ynzrEJY"
+    },
+    {
+      "pattern": "(?:霸占)(?:生态位|位置)",
+      "template": "霸占生态位",
+      "note": "指长期占住版本位置的句式。",
+      "scene": "热梗 / 吐槽",
+      "examples": "又说我霸占生态位；内部爱霸占生态位",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:你)?让妈妈(?:很)?失望",
+      "template": "你让妈妈很失望",
+      "note": "长辈口吻反讽句式，近 30 天扩散最快的一句，可前置主语。",
+      "scene": "热梗 / 反讽",
+      "examples": "你让妈妈很失望；这操作让妈妈很失望",
+      "src": "https://www.bilibili.com/video/BV11tybzQE1U"
+    },
+    {
+      "pattern": "(?:2G|3G|4G)(?:主播|网速|冲浪)",
+      "template": "2G 主播",
+      "note": "形容跟不上新梗的句式，与「5G 粉丝」对举。",
+      "scene": "热梗 / 调侃",
+      "examples": "2G主播遇上5G粉丝；你这是 2G 网速吗",
+      "src": "https://www.bilibili.com/video/BV1SVsG6EEZg"
+    },
+    {
+      "pattern": "(?:5G)(?:粉丝|观众|冲浪)",
+      "template": "5G 粉丝",
+      "note": "形容梗全懂的观众，与「2G 主播」对。",
+      "scene": "热梗 / 调侃",
+      "examples": "2G 主播遇上 5G 粉丝",
+      "src": "https://www.bilibili.com/video/BV1SVsG6EEZg"
+    },
+    {
+      "pattern": "(?:抽象)(?:版)?(?:福尔摩斯|侦探)",
+      "template": "抽象版福尔摩斯",
+      "note": "指用离谱逻辑推理的网友。",
+      "scene": "热梗 / 调侃",
+      "examples": "抽象版福尔摩斯①表情包来啦",
+      "src": "https://www.bilibili.com/video/BV1N7436yEdV"
+    },
+    {
+      "pattern": "(?:跳叔)(?:脸|表情|梗)?",
+      "template": "跳叔脸",
+      "note": "11 月初扩散的表情梗句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "无悔华夏梗百科之跳叔脸",
+      "src": "https://www.bilibili.com/video/BV1C6xs6GEyY"
+    },
+    {
+      "pattern": "(?:弗洛洛)(?:梗图|图|还在发力)?",
+      "template": "弗洛洛梗图",
+      "note": "老图反复被套用的句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "弗洛洛梗图到3.8还在发力",
+      "src": "https://www.bilibili.com/video/BV1uRyLzoESH"
+    },
+    {
+      "pattern": "(?:有梗焉|新老旧梗)(?:混搭|了)?",
+      "template": "有梗焉",
+      "note": "新梗老梗混搭的二创句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "有梗焉，新老旧梗混搭，知道几个？",
+      "src": "https://www.bilibili.com/video/BV18tyGzmEiY"
+    },
+    {
+      "pattern": "(?:向)(?:烂货|赔钱货)(?:说不)",
+      "template": "向烂货说不",
+      "note": "口号式句式，用于圈内表态。",
+      "scene": "热梗 / 贬义",
+      "examples": "【阴雄淋盟】向烂货说不",
+      "src": "https://www.bilibili.com/video/BV1yeWk6pENs"
+    },
+    {
+      "pattern": "(?:你)(?:茶|X)?(?:没有被邀请)",
+      "template": "你茶没有被邀请",
+      "note": "指某人不在场却被拉出来挨骂的句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "【阴雄淋盟】你茶没有被邀请",
+      "src": "https://www.bilibili.com/video/BV1SQsh6NECT"
+    },
+    {
+      "pattern": "(?:愚蠢)(?:却|但)(?:实在)?美丽",
+      "template": "愚蠢却实在美丽",
+      "note": "甄嬛体残句句式，用来评价「好看但菜」。",
+      "scene": "热梗 / 夸赞",
+      "examples": "露贵人愚蠢 却实在美丽",
+      "src": "https://www.bilibili.com/video/BV1YsyWzJEQ7"
+    },
+    {
+      "pattern": "(?:生来)(?:惹火|招黑)",
+      "template": "我阴生来惹火",
+      "note": "形容天生招黑/招人的句式。",
+      "scene": "热梗 / 评价",
+      "examples": "K/βa 我阴生来惹火",
+      "src": "https://www.bilibili.com/video/BV1Rcsg6UE8P"
+    },
+    {
+      "pattern": "(?:不敢相信|不信)(?:我)?(?:吸|X)?(?:不素|不是)(?:女王)",
+      "template": "不敢相信我吸不素女王",
+      "note": "震惊式否定句式，「不素」是「不是」的淋化。",
+      "scene": "热梗 / 惊讶",
+      "examples": "阴雄淋盟 不敢相信我吸不素女王",
+      "src": "https://www.bilibili.com/video/BV1DRyfz1ENQ"
+    },
+    {
+      "pattern": "(?:我)(?:琴|X)(?:怎么会|怎么这样)",
+      "template": "我琴怎么会",
+      "note": "破防式反问句式。",
+      "scene": "热梗 / 情绪",
+      "examples": "【阴雄淋盟】我琴怎么会...",
+      "src": "https://www.bilibili.com/video/BV1DRyfz1ENQ"
+    },
+    {
+      "pattern": "(?:强势)?(?:回宫)(?:了|中|啦)?",
+      "template": "我华强势回宫",
+      "note": "宫斗体动词句式，指重回强势位。",
+      "scene": "热梗 / 宫斗",
+      "examples": "【淋者荣耀】我华强势回宫！",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:露|X)?贵人(?:愚蠢|美丽|驾到)?",
+      "template": "露贵人",
+      "note": "宫斗位分句式，给角色封「贵人」。",
+      "scene": "热梗 / 宫斗",
+      "examples": "露贵人愚蠢 却实在美丽",
+      "src": "https://www.bilibili.com/video/BV1YsyWzJEQ7"
+    },
+    {
+      "pattern": "(?:大小姐)?(?:园长)?(?:驾到)",
+      "template": "大小姐园长驾到",
+      "note": "宫斗/喜剧式登场句式，后接「统统闪开。",
+      "scene": "热梗 / 宫斗",
+      "examples": "《淋者荣耀》大小姐园长驾到！统统闪开！",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:统统)?(?:闪开|让开)",
+      "template": "统统闪开",
+      "note": "登场祈使句式，带喜剧感。",
+      "scene": "祈使",
+      "examples": "大小姐园长驾到！统统闪开！",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:大亩主|亩主)(?:豪宅|扫荡)?",
+      "template": "大亩主",
+      "note": "「大地主」的谐音句式，第五淋格标题常。",
+      "scene": "热梗 / 调侃",
+      "examples": "大歌剧娅娅扫荡大亩主豪宅暴风吸入130根红杉木",
+      "src": "https://www.bilibili.com/video/BV1uz4A6tEF9"
+    },
+    {
+      "pattern": "(?:暴风)?(?:吸入)(?:\\d{1,4})?(?:根|个|只)?",
+      "template": "暴风吸入",
+      "note": "夸张式动作句式，常与数字搭配。",
+      "scene": "热梗 / 夸张",
+      "examples": "暴风吸入130根红杉木",
+      "src": "https://www.bilibili.com/video/BV1uz4A6tEF9"
+    },
+    {
+      "pattern": "(?:又在|还在)?(?:买榜)(?:了|中|婆)?",
+      "template": "又在买榜",
+      "note": "指控刷存在的句式。",
+      "scene": "热梗 / 饭圈",
+      "examples": "珊瑚宫心海女士又在买榜？",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:被)?(?:孤立|排挤)(?:了|中)?",
+      "template": "月绽放疑似被孤立",
+      "note": "指流派被版本抛弃的句式。",
+      "scene": "热梗 / 吐槽",
+      "examples": "月绽放疑似被孤立！？",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:门前的)?枇杷树(?:好大|真大)?",
+      "template": "你家门前的枇杷树好大啊",
+      "note": "无厘头搭话句式，主窗口内突然流行。",
+      "scene": "热梗 / 调侃",
+      "examples": "瑞希你家门前的枇杷树好大啊",
+      "src": "https://www.bilibili.com/video/BV138s162Ed4"
+    },
+    {
+      "pattern": "(?:我花|X)?(?:怎么)?(?:被卷了进来)",
+      "template": "我花怎么被卷了进来",
+      "note": "无辜被拉进节奏的句式。",
+      "scene": "热梗 / 吐槽",
+      "examples": "【守望淋锋】根本没有的事！我花怎么被卷了进来！",
+      "src": "https://www.bilibili.com/video/BV138s162Ed4"
+    },
+    {
+      "pattern": "(?:暴击率)?高达(?:㊙️|\\d{1,3})%?",
+      "template": "暴击率高达㊙️%",
+      "note": "用符号代替数字的句式，制造悬念/喜剧。",
+      "scene": "热梗 / 调侃",
+      "examples": "暴击率高达㊙️%的枪男驾到",
+      "src": "https://www.bilibili.com/video/BV1NnWf6TEPJ"
+    },
+    {
+      "pattern": "(?:炸|暴力炸)(?:不解释)",
+      "template": "暴力炸不解释",
+      "note": "强势压制的短句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "暴力炸不解释；这波炸不解释",
+      "src": "https://www.bilibili.com/video/BV1NnWf6TEPJ"
+    },
+    {
+      "pattern": "(?:女特务|夺命女)(?:玩|赔钱|来了)?",
+      "template": "女特务玩夺命女",
+      "note": "守望淋锋的固定搭配句式。",
+      "scene": "游戏",
+      "examples": "进来看女特务玩夺命女 你也会变的一样赔钱",
+      "src": "https://www.bilibili.com/video/BV18kynzgE9A"
+    },
+    {
+      "pattern": "(?:我老衲|老衲)(?:的痛苦|我|来了)?",
+      "template": "我老衲",
+      "note": "自称的戏谑句式。",
+      "scene": "自称",
+      "examples": "竞逐的代练都来感受我老衲的痛苦",
+      "src": "https://www.bilibili.com/video/BV1QJsN6wE56"
+    },
+    {
+      "pattern": "(?:竞逐)(?:的代练|模式|赛)?",
+      "template": "竞逐的代练",
+      "note": "守望排位模式的固定说法。",
+      "scene": "游戏",
+      "examples": "竞逐的代练都来感受我老衲的痛苦",
+      "src": "https://www.bilibili.com/video/BV1QJsN6wE56"
+    },
+    {
+      "pattern": "(?:我)?(?:赔钱)(?:货|货色|了|中)?",
+      "template": "我赔钱",
+      "note": "自嘲/评价句式，指菜或亏钱。",
+      "scene": "热梗 / 自嘲",
+      "examples": "我是一名刺客 我的工作是赔钱",
+      "src": "https://www.bilibili.com/video/BV1jKyQzKEse"
+    },
+    {
+      "pattern": "(?:我是一名)?(?:刺客|射手|辅助)(?:我的工作是)?(?:赔钱)?",
+      "template": "我是一名刺客 我的工作是赔钱",
+      "note": "正话反说的自嘲句式。",
+      "scene": "热梗 / 自嘲",
+      "examples": "我是一名刺客  我的工作是赔钱！！",
+      "src": "https://www.bilibili.com/video/BV1jKyQzKEse"
+    },
+    {
+      "pattern": "(?:没有什么)?(?:是我)?(?:with)(?:不到|不了)",
+      "template": "没有什么是我 with 不到的",
+      "note": "中英混搭句式，表示无所不能。",
+      "scene": "热梗 / 调侃",
+      "examples": "【王者淋耀】没有什么技能是我芈with不到的",
+      "src": "https://www.bilibili.com/video/BV12EyfzgEoo"
+    },
+    {
+      "pattern": "(?:全场)?(?:客人)?(?:变为)?(?:头号粉丝)",
+      "template": "阿驴头号粉丝",
+      "note": "指场面被某人控住的句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "全场客人变为阿驴头号粉丝！！！"
+    },
+    {
+      "pattern": "(?:这一单)?(?:记得)?(?:算到|记到|算|记)我账上",
+      "template": "这一单算我账上",
+      "note": "请客/记账的玩梗句式；主窗口内原句是「这一单记得算到我账上～」。",
+      "scene": "热梗 / 调侃",
+      "examples": "这一单记得算到我账上～；这一单算我账上"
+    },
+    {
+      "pattern": "(?:兵力占优)(?:的一方)?",
+      "template": "兵力占优的一方好像是我米",
+      "note": "自夸式句式，主窗口内出现。",
+      "scene": "热梗 / 调侃",
+      "examples": "兵力占优的一方  好像是我米呀"
+    },
+    {
+      "pattern": "(?:女性力量)(?:绽放|觉醒)?",
+      "template": "女性力量绽放中",
+      "note": "反讽式标题句式。",
+      "scene": "热梗 / 反讽",
+      "examples": "狐妖姐姐女性力量绽放中",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:这话)?(?:说的|说得)(?:太难听)",
+      "template": "这话说的太难听了",
+      "note": "反驳对方措辞的句式。",
+      "scene": "热梗 / 情绪",
+      "examples": "这话说的太难听了",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:静默|沉默)(?:是今晚的)?(?:康桥)?",
+      "template": "沉默是今晚的康桥",
+      "note": "老梗翻新：借徐志摩句表达无语，近 30 天在弹幕里回潮。",
+      "scene": "热梗 / 情绪",
+      "examples": "沉默是今晚的康桥",
+      "src": "https://www.bilibili.com/video/BV18tyGzmEiY"
+    },
+    {
+      "pattern": "(?:我)(?:真的|已经)?(?:会谢|栓Q)",
+      "template": "我会谢",
+      "note": "「我会谢」式无语表达，属老梗翻新用法。",
+      "scene": "热梗 / 情绪",
+      "examples": "我会谢；真的会谢",
+      "src": "https://www.bilibili.com/video/BV18tyGzmEiY"
+    },
+    {
+      "pattern": "(?:淋者荣耀|王者淋耀|淋耀)(?:】)?",
+      "template": "王者淋耀",
+      "note": "王者荣耀的淋语分区名两种写法并存。",
+      "scene": "游戏 / 分区",
+      "examples": "【淋者荣耀】我华强势回宫！；【王者淋耀】乔姐，我渴！",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:阴雄淋盟|英雄淋盟)(?:】)?",
+      "template": "阴雄淋盟",
+      "note": "英雄联盟的淋语分区名变体。",
+      "scene": "游戏 / 分区",
+      "examples": "阴雄淋盟 不敢相信我吸不素女王！",
+      "src": "https://www.bilibili.com/video/BV1DRyfz1ENQ"
+    },
+    {
+      "pattern": "(?:淋神|原神淋神)(?:】)?",
+      "template": "淋神",
+      "note": "原神的淋语分区名。",
+      "scene": "游戏 / 分区",
+      "examples": "【淋神】没来月晶能打这次深渊吗？",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:第五淋格)(?:】)?",
+      "template": "第五淋格",
+      "note": "第五人格的淋语分区名。",
+      "scene": "游戏 / 分区",
+      "examples": "【第五淋格】大歌剧娅娅扫荡大亩主豪宅",
+      "src": "https://www.bilibili.com/video/BV1uz4A6tEF9"
+    },
+    {
+      "pattern": "(?:守望淋锋)(?:】)?",
+      "template": "守望淋锋",
+      "note": "守望先锋的淋语分区名。",
+      "scene": "游戏 / 分区",
+      "examples": "【守望淋锋】根本没有的事！我花怎么被卷了进来！",
+      "src": "https://www.bilibili.com/video/BV138s162Ed4"
+    },
+    {
+      "pattern": "(?:我)(?:芈|华|琳|米|拉|吸|琴|阴|茶)(?:with不到|回宫|轮椅|生来惹火|没有被邀请|怎么会)",
+      "template": "我芈 with 不到",
+      "note": "「我 + 单字角色」与当前分区名场面的组合句式。",
+      "scene": "游戏",
+      "examples": "没有什么技能是我芈with不到的；我华强势回宫",
+      "src": "https://www.bilibili.com/video/BV12EyfzgEoo"
+    },
+    {
+      "pattern": "(?:补档|重投)(?:】)?",
+      "template": "【补档】",
+      "note": "视频被删后重新上传的标记句式。",
+      "scene": "视频标题",
+      "examples": "【守望淋锋】竞逐的代练都来感受我老衲的痛苦！",
+      "src": "https://www.bilibili.com/video/BV1QJsN6wE56"
+    },
+    {
+      "pattern": "(?:直播)?(?:切片)(?:】)?",
+      "template": "直播切片",
+      "note": "直播录像剪辑的标记句式。",
+      "scene": "视频标题",
+      "examples": "花男没有阴暗沉重的秘密-直播切片",
+      "src": "https://www.bilibili.com/video/BV1NnWf6TEPJ"
+    },
+    {
+      "pattern": "(?:我)?(?:花男|枪男|女特务)(?:驾到|来了|不解释)?",
+      "template": "枪男驾到",
+      "note": "按性别/职能给玩家贴标签的称呼句式。",
+      "scene": "称呼",
+      "examples": "暴击率高达㊙️%的枪男驾到",
+      "src": "https://www.bilibili.com/video/BV1NnWf6TEPJ"
+    },
+    {
+      "pattern": "(?:莫伊拉|天使|安娜)(?:找不到|又在|救我)",
+      "template": "莫伊拉找不到奶人的理由",
+      "note": "守望辅助角色的吐槽句式。",
+      "scene": "游戏",
+      "examples": "莫伊拉：找不到奶人的理由",
+      "src": "https://www.bilibili.com/video/BV1QJsN6wE56"
+    },
+    {
+      "pattern": "(?:大歌剧|娅娅)(?:扫荡|驾到)?",
+      "template": "大歌剧娅娅",
+      "note": "第五角色的叠字昵称句式。",
+      "scene": "称呼",
+      "examples": "大歌剧娅娅扫荡大亩主豪宅",
+      "src": "https://www.bilibili.com/video/BV1uz4A6tEF9"
+    },
+    {
+      "pattern": "(?:月绽放|月体系)(?:队|被孤立)?",
+      "template": "月绽放队",
+      "note": "原神草系反应队的固定说法。",
+      "scene": "游戏",
+      "examples": "月绽放疑似被孤立！？",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:全)?(?:小男孩|少年体)(?:队|角色)?",
+      "template": "小男孩队",
+      "note": "少年体型角色的组队句式。",
+      "scene": "游戏",
+      "examples": "全小男孩队挑战深渊",
+      "src": "https://www.bilibili.com/video/BV1wpWp6FED9"
+    },
+    {
+      "pattern": "(?:珊瑚宫)?(?:心海|X)(?:女士)?(?:又在)?(?:买榜)",
+      "template": "心海女士又在买榜",
+      "note": "「X 女士」+「又在买榜」的指控句式。",
+      "scene": "热梗 / 饭圈",
+      "examples": "珊瑚宫心海女士又在买榜？",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:锐评)(?:崩铁|原神|王者)?(?:男角色|女角色)?(?:楼层)?",
+      "template": "锐评崩铁男角色楼层",
+      "note": "「锐评 + 对象 + 楼层」的系列标题句式。",
+      "scene": "评论",
+      "examples": "【直男勿入】锐评崩铁男角色楼层（第五期）"
+    },
+    {
+      "pattern": "(?:直男勿入|直男勿进)",
+      "template": "直男勿入",
+      "note": "圈层内容的分级提示句式。",
+      "scene": "视频标题",
+      "examples": "【直男勿入】锐评崩铁男角色楼层"
+    },
+    {
+      "pattern": "(?:第[一二三四五六七八九十\\d]{1,3}期)",
+      "template": "第 X 期",
+      "note": "系列视频的期数标记句式。",
+      "scene": "视频标题",
+      "examples": "锐评崩铁男角色楼层（第五期）"
+    },
+    {
+      "pattern": "(?:一条龙|全收集)(?:攻略|速通)?",
+      "template": "一条龙全收集",
+      "note": "攻略型标题的固定搭配。",
+      "scene": "游戏",
+      "examples": "4.7二相乐园一条龙全收集 速通全流程",
+      "src": "https://www.bilibili.com/video/BV1qNWQ6PEnh"
+    },
+    {
+      "pattern": "(?:瞬息欢愉|欢愉之影|无名尘灵|点星船)",
+      "template": "瞬息欢愉",
+      "note": "4.7 版本收集物/玩法的固定名词句。",
+      "scene": "游戏",
+      "examples": "【点星船+瞬息欢愉】【探索+宝箱+欢愉之影+无名。",
+      "src": "https://www.bilibili.com/video/BV1qNWQ6PEnh"
+    },
+    {
+      "pattern": "(?:版本前瞻|前瞻直播)(?:兑换码)?",
+      "template": "版本前瞻",
+      "note": "版本预告的固定说法。",
+      "scene": "游戏",
+      "examples": "4.7 版本前瞻兑换码",
+      "src": "https://www.bilibili.com/video/BV1qNWQ6PEnh"
+    },
+    {
+      "pattern": "(?:兑换码|礼包码)(?:来了|速领)?",
+      "template": "兑换码",
+      "note": "福利型标题的固定词。",
+      "scene": "游戏",
+      "examples": "前瞻兑换码来了",
+      "src": "https://www.bilibili.com/video/BV1qNWQ6PEnh"
+    },
+    {
+      "pattern": "(?:催更|断更|鸽了)(?:？|!|！)?",
+      "template": "催更",
+      "note": "内容更新相关的固定说法。",
+      "scene": "祈使",
+      "examples": "催更；又鸽了",
+      "src": "https://www.bilibili.com/video/BV1j9sT62Evz"
+    },
+    {
+      "pattern": "(?:文艺复兴|炒冷饭|回锅)(?:了|中)?",
+      "template": "文艺复兴",
+      "note": "老梗回潮的固定说法，用于「老梗翻新」。",
+      "scene": "热梗 / 调侃",
+      "examples": "这波是文艺复兴；又在炒冷饭",
+      "src": "https://www.bilibili.com/video/BV1uRyLzoESH"
+    },
+    {
+      "pattern": "(?:神人)(?:二相|局|操作|队友)?",
+      "template": "神人二相乐园",
+      "note": "形容离谱到像神的局面/操作，主窗口内成为标题固定词。",
+      "scene": "热梗 / 吐槽",
+      "examples": "依旧神人二相乐园；这局真是神人",
+      "src": "https://www.bilibili.com/video/BV1TRW16iEJW"
+    },
+    {
+      "pattern": "(?:训成|调教成)(?:猫娘|猫猫|电子宠物)",
+      "template": "给归寂AI训成猫娘",
+      "note": "把 AI/角色调教成猫娘的句式，来自 4.7 剧情二创。",
+      "scene": "热梗 / 调侃",
+      "examples": "野啊老桑博，给归寂AI训成猫娘了",
+      "src": "https://www.bilibili.com/video/BV1TRW16iEJW"
+    },
+    {
+      "pattern": "(?:老)?桑博(?:又|真的|不愧)?",
+      "template": "老桑博",
+      "note": "桑博的圈内称呼句式。",
+      "scene": "称呼",
+      "examples": "野啊老桑博",
+      "src": "https://www.bilibili.com/video/BV1TRW16iEJW"
+    },
+    {
+      "pattern": "(?:归寂)(?:AI|哥|又)?",
+      "template": "归寂 AI",
+      "note": "4.7 剧情 AI 角色的固定叫法。",
+      "scene": "称呼",
+      "examples": "给归寂AI训成猫娘了",
+      "src": "https://www.bilibili.com/video/BV1TRW16iEJW"
+    },
+    {
+      "pattern": "(?:狸狸)(?:社长|周刊|通信社)(?:诞生|上任)?",
+      "template": "狸狸新社长",
+      "note": "4.7 活动的职场梗句式。",
+      "scene": "游戏",
+      "examples": "「狸狸新社长的诞生」全分支选项",
+      "src": "https://www.bilibili.com/video/BV1j9sT62Evz"
+    },
+    {
+      "pattern": "(?:报社事务|热点汇总)(?:栏目)?",
+      "template": "报社事务",
+      "note": "活动支线名称，被挪用比喻打工。",
+      "scene": "游戏",
+      "examples": "《狸狸周刊》编辑总部（报社事务）",
+      "src": "https://www.bilibili.com/video/BV1j9sT62Evz"
+    },
+    {
+      "pattern": "(?:献给)(?:破晓)?(?:的)?(?:失控)?",
+      "template": "献给破晓的失控",
+      "note": "4.x 主线章节名句式。",
+      "scene": "游戏",
+      "examples": "星铁4.1主线 献给破晓的失控",
+      "src": "https://www.bilibili.com/video/BV1j9sT62Evz"
+    },
+    {
+      "pattern": "(?:天外卫星通信)(?:：)?",
+      "template": "天外卫星通信",
+      "note": "官方公布新角色的栏目名句式。",
+      "scene": "游戏",
+      "examples": "如何评价《崩坏：星穹铁道》天外卫星通信：「艾莲」。",
+      "src": "https://www.bilibili.com/video/BV1qNWQ6PEnh"
+    },
+    {
+      "pattern": "(?:角色)?PV(?:——|－)?(?:「)?",
+      "template": "角色 PV",
+      "note": "官方角色 PV 的标题句式。",
+      "scene": "视频标题",
+      "examples": "《β坏：星淋铁道》知根鸟・仙子角色 PV——「追。",
+      "src": "https://www.bilibili.com/video/BV13me16qE55"
+    },
+    {
+      "pattern": "(?:ep)《(?:耀斑|X)》",
+      "template": "ep《耀斑》",
+      "note": "角色 EP 的标题句式。",
+      "scene": "视频标题",
+      "examples": "白厄ep《耀斑》(feat.一滴泪",
+      "src": "https://www.bilibili.com/video/BV1CC4G61Ek1"
+    },
+    {
+      "pattern": "(?:虚无)(?:星神)?(?:的)?(?:虚无)?",
+      "template": "虚无星神的虚无",
+      "note": "把同一词重复成短语的句式，主窗口内短片标题用过。",
+      "scene": "视频标题",
+      "examples": "《贝坏：星穹影道》全新短片「虚无星神的虚无」",
+      "src": "https://www.bilibili.com/video/BV1CC4G61Ek1"
+    },
+    {
+      "pattern": "(?:大列巴|补档)(?:想吃)?",
+      "template": "想吃大列巴",
+      "note": "补档标题里的无厘头短句。",
+      "scene": "视频标题",
+      "examples": "[淋神][補檔]想吃大列巴",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:没来|没有)?(?:月晶)(?:能打)?(?:这次深渊)?",
+      "template": "没来月晶能打这次深渊吗",
+      "note": "强度疑问句式，主窗口内原神标题用过。",
+      "scene": "游戏",
+      "examples": "【淋神】没来月晶能打这次深渊吗？",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:舍弃的时机|连索机关)",
+      "template": "舍弃的时机",
+      "note": "探索攻略里的机制名词句式。",
+      "scene": "游戏",
+      "examples": "寻找到达仙灵身边的路-舍弃的时机，连索机关全部搞。",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:仙灵)(?:身边的路)?",
+      "template": "到达仙灵身边的路",
+      "note": "原神探索句式。",
+      "scene": "游戏",
+      "examples": "寻找到达仙灵身边的路",
+      "src": "https://www.bilibili.com/video/BV1Rz436bEx6"
+    },
+    {
+      "pattern": "(?:乔姐|我渴)",
+      "template": "乔姐，我渴！",
+      "note": "王者淋耀的情绪化短句，主窗口内出现。",
+      "scene": "热梗 / 情绪",
+      "examples": "【王者淋耀】乔姐，我渴！",
+      "src": "https://www.bilibili.com/video/BV12EyfzgEoo"
+    },
+    {
+      "pattern": "(?:发动秘技)(?:：)?",
+      "template": "发动秘技：全场客人变为头号粉丝",
+      "note": "游戏化宣布句式，把场面当技能。",
+      "scene": "热梗 / 调侃",
+      "examples": "发动秘技：全场客人变为阿驴头号粉丝！！！"
+    },
+    {
+      "pattern": "(?:炼凝|补天漏|撑昊旻)",
+      "template": "炼凝五色补天漏",
+      "note": "化用古文/神话的夸张句式，主窗口内王者标题用过。",
+      "scene": "热梗 / 调侃",
+      "examples": "【王者淋耀】炼凝五色补天漏，擒断巨根撑昊旻。",
+      "src": "https://www.bilibili.com/video/BV1nwsz6rEe6"
+    },
+    {
+      "pattern": "(?:群玉阁)(?:重建)?",
+      "template": "群玉阁重建计划",
+      "note": "把地标当工程的比喻句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "群玉阁重建计划的苦力就不用愁了！"
+    },
+    {
+      "pattern": "(?:这一单)(?:记得)?(?:算到我账上)",
+      "template": "算到我账上",
+      "note": "请客/记账的玩梗句式。",
+      "scene": "热梗 / 调侃",
+      "examples": "这一单记得算到我账上～"
+    },
+    {
+      "pattern": "(?:试用)(?:新款)?(?:电动玩具)?",
+      "template": "试用新款",
+      "note": "皮肤/道具上新的句式。",
+      "scene": "游戏",
+      "examples": "我拉试用新款电动玩具中",
+      "src": "https://www.bilibili.com/video/BV1jKyQzKEse"
     }
   ]
-};
-window.LINYU_VERSION = "1.40.0";
-window.LINYU_CONTENT_HASH = "fafe64f8456bc9ee";
+}
+;
+window.LINYU_VERSION = "1.41.0";
+window.LINYU_CONTENT_HASH = "b648c8963a1c49a6";

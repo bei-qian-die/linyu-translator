@@ -1,0 +1,1289 @@
+{
+ "generated": "2026-11-25T02:55:10.215Z",
+ "note": "全部为真实网络图片：biligame《崩坏：星穹铁道》WIKI 角色页官方立绘（星淋铁道 32 位）/ 360 图片检索公开结果（历史缺图英雄）。无 AI 生成图、无自绘、无占位图。",
+ "report": [
+  {
+   "num": 979,
+   "name": "花火",
+   "file": "hero-979.png",
+   "url": "https://patchwiki.biligame.com/images/sr/b/b5/7zgd5kv12cw5nkj37vb2wn9u6p7fbbb.png",
+   "page": "https://wiki.biligame.com/sr/%E8%8A%B1%E7%81%AB",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 2878054,
+   "fetchedAt": "2026-11-25T02:54:39.116Z",
+   "cropped": true,
+   "bytes": 26306,
+   "tried": [
+    {
+     "q": "花火 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "花火 星穹铁道 角色",
+     "found": 2,
+     "kept": 4
+    }
+   ],
+   "title": "花火立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道新角色花火立绘一览:「假面愚者」危险的戏剧大师",
+     "why": "HTTP 403"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 980,
+   "name": "砂金",
+   "file": "hero-980.png",
+   "url": "https://patchwiki.biligame.com/images/sr/7/71/4r0cszvr8l7nvjjkik0r6i0844jrg0r.png",
+   "page": "https://wiki.biligame.com/sr/%E7%A0%82%E9%87%91",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3201562,
+   "fetchedAt": "2026-11-25T02:54:39.941Z",
+   "cropped": true,
+   "bytes": 26390,
+   "tried": [
+    {
+     "q": "砂金 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 1
+    },
+    {
+     "q": "砂金 星穹铁道 角色",
+     "found": 0,
+     "kept": 1
+    },
+    {
+     "q": "砂金 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "砂金立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 981,
+   "name": "希儿",
+   "file": "hero-981.png",
+   "url": "https://patchwiki.biligame.com/images/sr/9/92/b7i5ovzdaunbcdjea29imnamsztldlg.png",
+   "page": "https://wiki.biligame.com/sr/%E5%B8%8C%E5%84%BF",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4178829,
+   "fetchedAt": "2026-11-25T02:54:41.015Z",
+   "cropped": true,
+   "bytes": 23182,
+   "tried": [
+    {
+     "q": "希儿 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "希儿 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "希儿 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "希儿立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 982,
+   "name": "流萤",
+   "file": "hero-982.png",
+   "url": "https://patchwiki.biligame.com/images/sr/d/d3/k7g0ja362py1shisgib2uxl5s5kzbfw.png",
+   "page": "https://wiki.biligame.com/sr/%E6%B5%81%E8%90%A4",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3335359,
+   "fetchedAt": "2026-11-25T02:54:44.202Z",
+   "cropped": true,
+   "bytes": 22108,
+   "tried": [
+    {
+     "q": "流萤 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "流萤 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "流萤 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "流萤立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 983,
+   "name": "星期日",
+   "file": "hero-983.png",
+   "url": "https://patchwiki.biligame.com/images/sr/f/f9/a1wn1pbycm3ii6cq735r5lkpjkewbac.png",
+   "page": "https://wiki.biligame.com/sr/%E6%98%9F%E6%9C%9F%E6%97%A5",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4253356,
+   "fetchedAt": "2026-11-25T02:54:44.901Z",
+   "cropped": true,
+   "bytes": 29318,
+   "tried": [
+    {
+     "q": "星期日 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "星期日 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "星期日 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "星期日立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道:2.7星期日立绘!周身被荆棘缠绕,技能消息",
+     "why": "宽幅横图 1280x720（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 984,
+   "name": "黄泉",
+   "file": "hero-984.png",
+   "url": "https://patchwiki.biligame.com/images/sr/7/71/fud590c54lodhhcj2bji0zucih5dzm5.png",
+   "page": "https://wiki.biligame.com/sr/%E9%BB%84%E6%B3%89",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4626228,
+   "fetchedAt": "2026-11-25T02:54:46.584Z",
+   "cropped": true,
+   "bytes": 29020,
+   "tried": [
+    {
+     "q": "黄泉 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "黄泉 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "黄泉 崩坏星穹铁道",
+     "error": "fetch failed"
+    }
+   ],
+   "title": "黄泉立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "揭秘《崩坏:星穹铁道》黄泉立绘技能",
+     "why": "图太小 650x260"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 985,
+   "name": "白厄",
+   "file": "hero-985.png",
+   "url": "https://patchwiki.biligame.com/images/sr/9/97/0kq3qo82g7sk73tg79wu068kuccr1bp.png",
+   "page": "https://wiki.biligame.com/sr/%E7%99%BD%E5%8E%84",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 5553375,
+   "fetchedAt": "2026-11-25T02:54:48.226Z",
+   "cropped": true,
+   "bytes": 31986,
+   "tried": [
+    {
+     "q": "白厄 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "白厄 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "白厄 崩坏星穹铁道",
+     "found": 2,
+     "kept": 1
+    }
+   ],
+   "rejected": [
+    {
+     "title": "《崩坏:星穹铁道》 白厄立绘公布,大伙们觉得怎么样?",
+     "why": "HTTP 403"
+    }
+   ],
+   "title": "白厄立绘",
+   "dims": "2048x2048"
+  },
+  {
+   "num": 986,
+   "name": "椒丘",
+   "file": "hero-986.png",
+   "url": "https://patchwiki.biligame.com/images/sr/b/b5/h2u3h7qkujl7t1vrdydgcbsouu717qc.png",
+   "page": "https://wiki.biligame.com/sr/%E6%A4%92%E4%B8%98",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3436430,
+   "fetchedAt": "2026-11-25T02:54:49.045Z",
+   "cropped": true,
+   "bytes": 24304,
+   "tried": [
+    {
+     "q": "椒丘 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "椒丘 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "椒丘 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "椒丘立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道2.4版本卫星角色公布:仙舟「曜青」的狐人医士椒丘他来了!",
+     "why": "HTTP 403"
+    },
+    {
+     "title": "《崩坏:星穹铁道》2.4版本新角色\"椒丘\"立绘",
+     "why": "宽幅横图 584x328（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 987,
+   "name": "驭空",
+   "file": "hero-987.png",
+   "url": "https://patchwiki.biligame.com/images/sr/8/8e/6kxm4140x0o7pqvoi6f4welvlj7l72r.png",
+   "page": "https://wiki.biligame.com/sr/%E9%A9%AD%E7%A9%BA",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4746923,
+   "fetchedAt": "2026-11-25T02:54:49.855Z",
+   "cropped": true,
+   "bytes": 29267,
+   "tried": [
+    {
+     "q": "驭空 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "驭空 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "驭空立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "星穹铁道:驭空技能解读,攻击和双暴加成都有,缺点或是持续时间",
+     "why": "宽幅横图 1067x600（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 988,
+   "name": "姬子",
+   "file": "hero-988.png",
+   "url": "https://patchwiki.biligame.com/images/sr/e/ed/7fihsuzw7se69ls7p341128sbzg2vgj.png",
+   "page": "https://wiki.biligame.com/sr/%E5%A7%AC%E5%AD%90",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4040818,
+   "fetchedAt": "2026-11-25T02:54:51.280Z",
+   "cropped": true,
+   "bytes": 30648,
+   "tried": [
+    {
+     "q": "姬子 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "姬子 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "姬子 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "姬子立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 989,
+   "name": "景元",
+   "file": "hero-989.png",
+   "url": "https://patchwiki.biligame.com/images/sr/d/d7/75i0d6w9p870am9qaftliq8aj22usvs.png",
+   "page": "https://wiki.biligame.com/sr/%E6%99%AF%E5%85%83",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3076531,
+   "fetchedAt": "2026-11-25T02:54:52.000Z",
+   "cropped": true,
+   "bytes": 25369,
+   "tried": [
+    {
+     "q": "景元 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "景元 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "景元 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "景元立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道景元高清立绘图片 崩坏星穹铁道景元立绘高清壁纸美图分享",
+     "why": "HTTP 403"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 990,
+   "name": "刃",
+   "file": "hero-990.png",
+   "url": "https://patchwiki.biligame.com/images/sr/8/84/kcyozdm1me2or1551z8t2vpxubinjwj.png",
+   "page": "https://wiki.biligame.com/sr/%E5%88%83",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4697391,
+   "fetchedAt": "2026-11-25T02:54:52.988Z",
+   "cropped": true,
+   "bytes": 32140,
+   "tried": [
+    {
+     "q": "刃 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "刃 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "刃 崩坏星穹铁道",
+     "found": 2,
+     "kept": 1
+    }
+   ],
+   "title": "刃立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "《崩坏:星穹铁道》新角色刃 卡夫卡 立绘公开!",
+     "why": "宽幅横图 584x328（疑似信息图）"
+    },
+    {
+     "title": "崩坏星穹铁道刃技能详解",
+     "why": "宽幅横图 584x292（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 991,
+   "name": "卡芙卡",
+   "file": "hero-991.png",
+   "url": "https://patchwiki.biligame.com/images/sr/4/40/ohzhieftz25z05ftzetqds1km8cph4x.png",
+   "page": "https://wiki.biligame.com/sr/%E5%8D%A1%E8%8A%99%E5%8D%A1",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 2963190,
+   "fetchedAt": "2026-11-25T02:54:53.670Z",
+   "cropped": true,
+   "bytes": 26176,
+   "tried": [
+    {
+     "q": "卡芙卡 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "卡芙卡 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "卡芙卡 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "卡芙卡立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 992,
+   "name": "银狼",
+   "file": "hero-992.png",
+   "url": "https://patchwiki.biligame.com/images/sr/3/3f/oy6o9fm6o0rrcwzs9gvgc4rfhvejcts.png",
+   "page": "https://wiki.biligame.com/sr/%E9%93%B6%E7%8B%BC",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4973589,
+   "fetchedAt": "2026-11-25T02:54:54.411Z",
+   "cropped": true,
+   "bytes": 29598,
+   "tried": [
+    {
+     "q": "银狼 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "银狼 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "银狼 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "银狼立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道银狼立绘怎么样 银狼立绘分享一览",
+     "why": "HTTP 403"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 993,
+   "name": "镜流",
+   "file": "hero-993.png",
+   "url": "https://patchwiki.biligame.com/images/sr/7/75/shqgamdstfb3fqluonzq7alip7wbjm6.png",
+   "page": "https://wiki.biligame.com/sr/%E9%95%9C%E6%B5%81",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4126879,
+   "fetchedAt": "2026-11-25T02:54:55.280Z",
+   "cropped": true,
+   "bytes": 30254,
+   "tried": [
+    {
+     "q": "镜流 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "镜流 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "镜流 崩坏星穹铁道",
+     "found": 1,
+     "kept": 2
+    }
+   ],
+   "title": "镜流立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 994,
+   "name": "丹恒",
+   "file": "hero-994.png",
+   "url": "https://patchwiki.biligame.com/images/sr/2/24/mr59xxu5f8bf7ych9p761lw9w3clr48.png",
+   "page": "https://wiki.biligame.com/sr/%E4%B8%B9%E6%81%92",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3364796,
+   "fetchedAt": "2026-11-25T02:54:56.023Z",
+   "cropped": true,
+   "bytes": 29347,
+   "tried": [
+    {
+     "q": "丹恒 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "丹恒 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "丹恒 崩坏星穹铁道",
+     "found": 2,
+     "kept": 4
+    }
+   ],
+   "title": "丹恒立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 995,
+   "name": "三月七",
+   "file": "hero-995.png",
+   "url": "https://patchwiki.biligame.com/images/sr/e/ec/0nrtu7s6jqlq00wzcqqoyjl1doukder.png",
+   "page": "https://wiki.biligame.com/sr/%E4%B8%89%E6%9C%88%E4%B8%83",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4751331,
+   "fetchedAt": "2026-11-25T02:54:56.890Z",
+   "cropped": true,
+   "bytes": 27103,
+   "tried": [
+    {
+     "q": "三月七 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "三月七 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "三月七 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "三月七立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 996,
+   "name": "克拉拉",
+   "file": "hero-996.png",
+   "url": "https://patchwiki.biligame.com/images/sr/3/39/dt3rplvxk077if901sriml8jn6hxgw0.png",
+   "page": "https://wiki.biligame.com/sr/%E5%85%8B%E6%8B%89%E6%8B%89",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 2922034,
+   "fetchedAt": "2026-11-25T02:54:58.746Z",
+   "cropped": true,
+   "bytes": 28115,
+   "tried": [
+    {
+     "q": "克拉拉 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "克拉拉 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "克拉拉 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "克拉拉立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 997,
+   "name": "停云",
+   "file": "hero-997.png",
+   "url": "https://patchwiki.biligame.com/images/sr/a/ac/domw2eh3zhjh5sirotcwszh0z7hfoi8.png",
+   "page": "https://wiki.biligame.com/sr/%E5%81%9C%E4%BA%91",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4084557,
+   "fetchedAt": "2026-11-25T02:54:59.442Z",
+   "cropped": true,
+   "bytes": 29014,
+   "tried": [
+    {
+     "q": "停云 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "停云 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "停云立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 998,
+   "name": "白露",
+   "file": "hero-998.png",
+   "url": "https://patchwiki.biligame.com/images/sr/3/32/rzr41b0bxdlovno4qie52rdjrun0y3z.png",
+   "page": "https://wiki.biligame.com/sr/%E7%99%BD%E9%9C%B2",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 2431337,
+   "fetchedAt": "2026-11-25T02:55:00.051Z",
+   "cropped": true,
+   "bytes": 23994,
+   "tried": [
+    {
+     "q": "白露 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "白露 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "白露立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道白露立绘:高清壁纸图片大全",
+     "why": "宽幅横图 540x336（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 999,
+   "name": "藿藿",
+   "file": "hero-999.png",
+   "url": "https://patchwiki.biligame.com/images/sr/9/92/3a5fzmd5ussleda2tyqrpx11v9u93fm.png",
+   "page": "https://wiki.biligame.com/sr/%E8%97%BF%E8%97%BF",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3704458,
+   "fetchedAt": "2026-11-25T02:55:00.806Z",
+   "cropped": true,
+   "bytes": 25966,
+   "tried": [
+    {
+     "q": "藿藿 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "藿藿 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "藿藿 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "藿藿立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1000,
+   "name": "银枝",
+   "file": "hero-1000.png",
+   "url": "https://patchwiki.biligame.com/images/sr/a/a4/mtoe12lzwhcgk4ajjpioyv1cshr9j3t.png",
+   "page": "https://wiki.biligame.com/sr/%E9%93%B6%E6%9E%9D",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3189286,
+   "fetchedAt": "2026-11-25T02:55:01.560Z",
+   "cropped": true,
+   "bytes": 24586,
+   "tried": [
+    {
+     "q": "银枝 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "银枝 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "银枝立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道银枝立绘图片",
+     "why": "宽幅横图 584x328（疑似信息图）"
+    },
+    {
+     "title": "银枝【崩坏:星穹铁道】",
+     "why": "图太小 442x248"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1001,
+   "name": "托帕",
+   "file": "hero-1001.png",
+   "url": "https://patchwiki.biligame.com/images/sr/a/ae/rzdx12evy18xkpp13x1sjwrp1wq205v.png",
+   "page": "https://wiki.biligame.com/sr/%E6%89%98%E5%B8%95",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4300355,
+   "fetchedAt": "2026-11-25T02:55:02.565Z",
+   "cropped": true,
+   "bytes": 28275,
+   "tried": [
+    {
+     "q": "托帕 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "托帕 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "托帕&账账立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道托帕什么时候进卡池 托帕卡池时间立绘一览",
+     "why": "HTTP 403"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1002,
+   "name": "真理医生",
+   "file": "hero-1002.png",
+   "url": "https://patchwiki.biligame.com/images/sr/1/1d/925f4ivd1q8z4uxmwmrz11wjfpgxq7v.png",
+   "page": "https://wiki.biligame.com/sr/%E7%9C%9F%E7%90%86%E5%8C%BB%E7%94%9F",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3075601,
+   "fetchedAt": "2026-11-25T02:55:03.346Z",
+   "cropped": true,
+   "bytes": 21890,
+   "tried": [
+    {
+     "q": "真理医生 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "真理医生 星穹铁道 角色",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "真理医生 崩坏星穹铁道",
+     "found": 2,
+     "kept": 0
+    }
+   ],
+   "rejected": [],
+   "title": "真理医生立绘",
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1003,
+   "name": "桂乃芬",
+   "file": "hero-1003.png",
+   "url": "https://patchwiki.biligame.com/images/sr/3/31/r1jc4xqpwenjsemnjmfyzclxi9yuy5m.png",
+   "page": "https://wiki.biligame.com/sr/%E6%A1%82%E4%B9%83%E8%8A%AC",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4167145,
+   "fetchedAt": "2026-11-25T02:55:04.102Z",
+   "cropped": true,
+   "bytes": 28295,
+   "tried": [
+    {
+     "q": "桂乃芬 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "桂乃芬 星穹铁道 角色",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "桂乃芬 崩坏星穹铁道",
+     "found": 2,
+     "kept": 1
+    }
+   ],
+   "title": "桂乃芬立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1004,
+   "name": "云璃",
+   "file": "hero-1004.png",
+   "url": "https://patchwiki.biligame.com/images/sr/9/9b/lbcmqx6m2835kdfygh2q2kdn7fzcmg8.png",
+   "page": "https://wiki.biligame.com/sr/%E4%BA%91%E7%92%83",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3925830,
+   "fetchedAt": "2026-11-25T02:55:04.815Z",
+   "cropped": true,
+   "bytes": 26669,
+   "tried": [
+    {
+     "q": "云璃 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "云璃 星穹铁道 角色",
+     "found": 1,
+     "kept": 1
+    },
+    {
+     "q": "云璃 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "rejected": [
+    {
+     "title": "《崩坏:星穹铁道》新5星角色\"云璃\"立绘公开!",
+     "why": "宽幅横图 584x328（疑似信息图）"
+    },
+    {
+     "title": "崩坏星穹铁道云璃什么时候上线 崩铁云璃上线时间介绍",
+     "why": "HTTP 403"
+    }
+   ],
+   "title": "云璃立绘",
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1005,
+   "name": "貊泽",
+   "file": "hero-1005.png",
+   "url": "https://patchwiki.biligame.com/images/sr/8/8d/32jv2f9yr1mpljcb3sugktmajr7dift.png",
+   "page": "https://wiki.biligame.com/sr/%E8%B2%8A%E6%B3%BD",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 2787720,
+   "fetchedAt": "2026-11-25T02:55:05.610Z",
+   "cropped": true,
+   "bytes": 20222,
+   "tried": [
+    {
+     "q": "貊泽 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "貊泽 星穹铁道 角色",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "貊泽 崩坏星穹铁道",
+     "found": 1,
+     "kept": 0
+    }
+   ],
+   "rejected": [],
+   "title": "貊泽立绘",
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1006,
+   "name": "飞霄",
+   "file": "hero-1006.png",
+   "url": "https://patchwiki.biligame.com/images/sr/7/79/0vez7r8jr0vperakdhxgc1uxw0qh5wk.png",
+   "page": "https://wiki.biligame.com/sr/%E9%A3%9E%E9%9C%84",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4386144,
+   "fetchedAt": "2026-11-25T02:55:06.956Z",
+   "cropped": true,
+   "bytes": 28079,
+   "tried": [
+    {
+     "q": "飞霄 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "飞霄 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "飞霄立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道飞霄立绘一览",
+     "why": "宽幅横图 2560x1440（疑似信息图）"
+    },
+    {
+     "title": "《崩坏星穹铁道》飞霄立绘展示 飞霄什么时候出",
+     "why": "HTTP 403"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1007,
+   "name": "万敌",
+   "file": "hero-1007.png",
+   "url": "https://patchwiki.biligame.com/images/sr/6/62/tqa52hs54f5ktkz1p2oaw0rlqghzr3s.png",
+   "page": "https://wiki.biligame.com/sr/%E4%B8%87%E6%95%8C",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 4102982,
+   "fetchedAt": "2026-11-25T02:55:07.742Z",
+   "cropped": true,
+   "bytes": 25690,
+   "tried": [
+    {
+     "q": "万敌 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "万敌 星穹铁道 角色",
+     "found": 2,
+     "kept": 2
+    },
+    {
+     "q": "万敌 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "万敌立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [
+    {
+     "title": "崩坏星穹铁道万敌怎么样 崩坏星穹铁道万敌技能预测",
+     "why": "宽幅横图 720x405（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1008,
+   "name": "遐蝶",
+   "file": "hero-1008.png",
+   "url": "https://patchwiki.biligame.com/images/sr/3/3b/g2i10cu84radhr53nbghm6yidwmrgh2.png",
+   "page": "https://wiki.biligame.com/sr/%E9%81%90%E8%9D%B6",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 6496097,
+   "fetchedAt": "2026-11-25T02:55:08.470Z",
+   "cropped": true,
+   "bytes": 34938,
+   "tried": [
+    {
+     "q": "遐蝶 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 0
+    },
+    {
+     "q": "遐蝶 星穹铁道 角色",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "遐蝶 崩坏星穹铁道",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "遐蝶立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1009,
+   "name": "布洛妮娅",
+   "file": "hero-1009.png",
+   "url": "https://patchwiki.biligame.com/images/sr/f/f3/o49vxi46vccyusgn9mqqu89qzimf3r7.png",
+   "page": "https://wiki.biligame.com/sr/%E5%B8%83%E6%B4%9B%E5%A6%AE%E5%A8%85",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3187181,
+   "fetchedAt": "2026-11-25T02:54:41.960Z",
+   "tried": [
+    {
+     "q": "布洛妮娅 崩坏星穹铁道 立绘",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "布洛妮娅 星穹铁道 角色",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "布洛妮娅 崩坏星穹铁道",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "布洛妮娅立绘",
+   "source": "崩坏：星穹铁道",
+   "cropped": true,
+   "bytes": 25206,
+   "rejected": [
+    {
+     "title": "崩坏3:布洛妮娅成年立绘曝光,成熟了很多,后崩坏书年底开放!",
+     "why": "宽幅横图 841x437（疑似信息图）"
+    },
+    {
+     "title": "板鸭哪只好?崩坏3布洛妮娅全角色分析指南",
+     "why": "宽幅横图 640x383（疑似信息图）"
+    }
+   ],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1010,
+   "name": "娜塔莎",
+   "file": "hero-1010.png",
+   "url": "https://patchwiki.biligame.com/images/sr/c/c7/bumevvm1pg42tu569ai3ikeqaxnmkli.png",
+   "page": "https://wiki.biligame.com/sr/%E5%A8%9C%E5%A1%94%E8%8E%8E",
+   "type": "biligame《崩坏：星穹铁道》WIKI 官方立绘",
+   "size": 3377982,
+   "fetchedAt": "2026-11-25T02:54:43.346Z",
+   "cropped": true,
+   "bytes": 25124,
+   "tried": [
+    {
+     "q": "娜塔莎 崩坏星穹铁道 立绘",
+     "found": 1,
+     "kept": 1
+    },
+    {
+     "q": "娜塔莎 星穹铁道 角色",
+     "found": 2,
+     "kept": 3
+    }
+   ],
+   "title": "娜塔莎立绘",
+   "source": "崩坏：星穹铁道",
+   "rejected": [],
+   "dims": "2048x2048"
+  },
+  {
+   "num": 1011,
+   "name": "锤头鹳",
+   "file": null,
+   "url": "",
+   "page": "",
+   "type": "",
+   "size": 46360,
+   "fetchedAt": "2026-11-25T02:53:27.311Z",
+   "cropped": true,
+   "bytes": 52671,
+   "error": "未找到可确认对应该角色的真实图片（搜索结果为真实生物照片/信息图/同游戏其他角色），按「宁缺勿错」不硬凑",
+   "tried": [
+    {
+     "q": "锤头鹳 洛克王国",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "洛克王国 锤头鹳 宠物",
+     "found": 1,
+     "kept": 0
+    }
+   ],
+   "rejected": [
+    {
+     "title": "《洛克王国手游》锤头鹳强度介绍",
+     "why": "图太小 600x241"
+    }
+   ]
+  },
+  {
+   "num": 1012,
+   "name": "夜枭",
+   "file": null,
+   "url": "",
+   "page": "",
+   "type": "",
+   "size": 61102,
+   "fetchedAt": "2026-11-25T02:53:28.804Z",
+   "tried": [
+    {
+     "q": "夜枭 洛克王国",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "洛克王国 夜枭 宠物",
+     "found": 2,
+     "kept": 2
+    }
+   ],
+   "title": "洛克王国夜枭平衡队玩法教程",
+   "source": "洛克王国",
+   "cropped": true,
+   "bytes": 17217,
+   "error": "未找到可确认对应该角色的真实图片（搜索结果为真实生物照片/信息图/同游戏其他角色），按「宁缺勿错」不硬凑",
+   "rejected": [
+    {
+     "title": "洛克王国世界夜枭平衡队_洛克王国夜影回路宠物",
+     "why": "HTTP 404"
+    }
+   ]
+  },
+  {
+   "num": 1013,
+   "name": "可丽希亚",
+   "file": "hero-1013.jpg",
+   "url": "https://p1.ssl.qhmsg.com/t015f156cc993cc8d69.jpg",
+   "page": "https://image.so.com/",
+   "type": "360 图片检索（公开结果，洛克王国 NPC 立绘）",
+   "size": 0,
+   "fetchedAt": "2026-11-25T02:53:31.847Z",
+   "cropped": true,
+   "bytes": 26324,
+   "tried": [
+    {
+     "q": "可丽希亚 洛克王国",
+     "found": 2,
+     "kept": 1
+    },
+    {
+     "q": "洛克王国 可丽希亚",
+     "found": 2,
+     "kept": 1
+    }
+   ],
+   "rejected": [
+    {
+     "title": "洛克王国 可丽希亚套装展示 可丽希亚装备大全",
+     "why": "HTTP 403"
+    }
+   ],
+   "title": "可丽希亚(其他人物相关)可丽希亚,洛克王国中的一个npc",
+   "dims": "552x597"
+  },
+  {
+   "num": 1014,
+   "name": "阿洛",
+   "file": null,
+   "url": "",
+   "page": "",
+   "type": "",
+   "size": 0,
+   "fetchedAt": "2026-11-25T02:53:33.445Z",
+   "error": "未找到可确认对应该角色的真实图片（搜索结果为真实生物照片/信息图/同游戏其他角色），按「宁缺勿错」不硬凑",
+   "tried": [
+    {
+     "q": "阿洛 洛克王国",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "洛克王国 阿洛 角色",
+     "found": 2,
+     "kept": 0
+    }
+   ],
+   "rejected": []
+  },
+  {
+   "num": 1015,
+   "name": "奇乐的机器人",
+   "file": null,
+   "url": "",
+   "page": "",
+   "type": "",
+   "size": 0,
+   "fetchedAt": "2026-11-25T02:53:34.981Z",
+   "error": "未找到可确认对应该角色的真实图片（搜索结果为真实生物照片/信息图/同游戏其他角色），按「宁缺勿错」不硬凑",
+   "tried": [
+    {
+     "q": "无畏契约 奇乐 机器人",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "奇乐 无畏契约 技能",
+     "found": 2,
+     "kept": 0
+    }
+   ],
+   "rejected": []
+  },
+  {
+   "num": 1016,
+   "name": "黑梦的狗",
+   "file": null,
+   "url": "",
+   "page": "",
+   "type": "",
+   "size": 0,
+   "fetchedAt": "2026-11-25T02:53:36.866Z",
+   "error": "未找到可确认对应该角色的真实图片（搜索结果为真实生物照片/信息图/同游戏其他角色），按「宁缺勿错」不硬凑",
+   "tried": [
+    {
+     "q": "无畏契约 黑梦",
+     "found": 2,
+     "kept": 0
+    },
+    {
+     "q": "黑梦 无畏契约 技能",
+     "found": 2,
+     "kept": 0
+    }
+   ],
+   "rejected": []
+  }
+ ]
+}
