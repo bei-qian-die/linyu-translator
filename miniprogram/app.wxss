@@ -665,6 +665,8 @@ button::after {
 .cs-panel {
   position: relative;
   width: 100%;
+  max-height: 78vh;
+  overflow: hidden;
   box-sizing: border-box;
   padding: 36rpx 40rpx 40rpx;
   background: var(--bg);
