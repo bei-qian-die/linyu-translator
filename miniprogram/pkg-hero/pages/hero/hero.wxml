@@ -1,3 +1,4 @@
+<import src="/templates/copy-sheet.wxml" />
 <view class="page theme-{{theme}}">
   <block wx:if="{{hero}}">
     <view class="eyebrow">
@@ -146,9 +147,11 @@
 
   <empty-state
     wx:else
-    title="没有找到这位人物"
-    sub="链接可能已过期，回词库重新找找"
-    primary-text="返回词库"
-    bindprimary="backToLexicon"
+    title="{{loadError ? '人物数据加载失败' : '没有找到这位人物'}}"
+    sub="{{loadError ? '点一次重新加载；还不行就退出小程序再进' : '链接可能已过期，回词库重新找找'}}"
+    primary-text="{{loadError ? '重新加载' : '返回词库'}}"
+    bindprimary="onEmptyPrimary"
   />
 </view>
+<!-- 剪贴板隐私接口不可用时的「手动复制」兜底面板 -->
+<template is="copy-sheet" />

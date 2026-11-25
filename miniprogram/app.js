@@ -42,7 +42,6 @@ App({
     this.globalData.historyLimit = prefs.historyLimit;
     applyChrome(prefs.theme, { customNav: true });
     this.initCloud();
-    this.setupPrivacy();
   },
 
   // 初始化云开发（用于云端润色）。未配置 CLOUD_ENV 或基础库不支持时静默跳过，
@@ -57,21 +56,16 @@ App({
     }
   },
 
-  // 剪贴板属微信隐私接口：后台声明「读取你的剪切板」+ app.json 开 __usePrivacyCheck__ 后，
-  // 首次复制/粘贴会触发此回调，向用户说明用途并取得同意（A1）。
-  setupPrivacy() {
-    if (typeof wx.onNeedPrivacyAuthorization !== 'function') return;
-    wx.onNeedPrivacyAuthorization((resolve) => {
-      wx.showModal({
-        title: '剪贴板使用说明',
-        content: '仅在您主动点击「复制 / 粘贴」时读写本机剪贴板，内容不会上传服务器。',
-        confirmText: '同意',
-        cancelText: '拒绝',
-        success: (res) => resolve({ event: res.confirm ? 'agree' : 'disagree' }),
-        fail: () => resolve({ event: 'disagree' }),
-      });
-    });
-  },
+  // 剪贴板隐私弹窗交给微信官方弹窗处理（v1.41.1 修复）。
+  //
+  // 旧实现在这里注册了 wx.onNeedPrivacyAuthorization，并用自绘 wx.showModal resolve
+  // ({ event: 'agree' })，但没有 buttonId。官方要求自定义弹窗必须在
+  // <button open-type="agreePrivacyAuthorization"> 的回调里 resolve({ buttonId, event })；
+  // 不传 buttonId 时授权不会被记录，而「开发者已响应」又让微信不再兜底弹官方弹窗，
+  // 结果就是 wx.setClipboardData 必然失败 —— 线上表现即「复制失败，请长按选择文本」。
+  //
+  // 现在不注册该事件：需要授权时微信自动弹官方隐私弹窗，用户同意后剪贴板即正常；
+  // 若后台隐私指引未声明「剪贴板」，utils/ui.js 会识别 errno 112 并让页面弹手动复制面板。
 
   // 全局错误兜底：线上异常至少能落到控制台与实时日志，便于定位（A5）
   reportError(kind, err) {

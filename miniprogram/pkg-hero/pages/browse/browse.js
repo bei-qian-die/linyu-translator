@@ -4,7 +4,7 @@
 // 主包有 2MB 硬上限，把这三块连同 557 张人物图（1070KB）和 570KB 浏览数据一起搬出来，
 // 主包才腾得出空间。分包可以 require 主包的 services/content 与 data/_sst，反向不行。
 const content = require('../../../services/content');
-const { copy } = require('../../../utils/ui');
+const { attachCopySheet } = require('../../../utils/copySheet');
 const pager = require('../../../utils/pager');
 
 const PAGE_SIZE = pager.DEFAULT_SIZE;
@@ -68,6 +68,7 @@ Page({
     emptyTitle: TAB_META.cards.empty,
     emptySub: '内容会随版本更新',
     ready: false,
+    loadError: false,
     cardFilters: [],
     cardType: 'all',
     heroGroups: [],
@@ -77,6 +78,7 @@ Page({
   },
 
   onLoad(options) {
+    attachCopySheet(this);
     const tab = TAB_META[options && options.tab] ? options.tab : 'cards';
     this.setData(
       {
@@ -90,34 +92,46 @@ Page({
 
     // lore（1MB 量级）解析放下一帧，页面骨架先上屏（C10）
     const defer = wx.nextTick ? wx.nextTick.bind(wx) : (fn) => fn();
-    defer(() => {
-      let lore = null;
-      try {
-        lore = require('../../services/lore');
-      } catch (err) {
-        console.error('[linyu] lore 加载失败', err);
-        const app = getApp();
-        if (app && app.reportError) app.reportError('lore_load_error', err);
+    defer(() => this.loadLore());
+  },
+
+  // 数据加载与重试：失败时不再静默显示空列表（审核会判成「无法加载完整数据」），
+  // 而是亮出 loadError 让用户点一下重试，并把原因写进实时日志。
+  loadLore() {
+    let lore = null;
+    try {
+      lore = require('../../services/lore');
+    } catch (err) {
+      console.error('[linyu] lore 加载失败', err);
+      const app = getApp();
+      if (app && app.reportError) app.reportError('lore_load_error', err);
+    }
+    this._lore = lore || {
+      heroes: [],
+      cards: [],
+      quotes: [],
+      cardFilters: [],
+      heroGroups: [],
+      heroZones: [],
+    };
+    this.setData(
+      {
+        loadError: !lore,
+        cardFilters: this._lore.cardFilters,
+        heroGroups: this._lore.heroGroups,
+        heroZones: this._lore.heroZones,
+      },
+      () => {
+        this.applyFilter(true);
+        this.setData({ ready: true });
       }
-      this._lore = lore || {
-        heroes: [],
-        cards: [],
-        quotes: [],
-        cardFilters: [],
-        heroGroups: [],
-        heroZones: [],
-      };
-      this.setData(
-        {
-          cardFilters: this._lore.cardFilters,
-          heroGroups: this._lore.heroGroups,
-          heroZones: this._lore.heroZones,
-        },
-        () => {
-          this.applyFilter(true);
-          this.setData({ ready: true });
-        }
-      );
+    );
+  },
+
+  reloadLore() {
+    this.setData({ ready: false, loadError: false }, () => {
+      const defer = wx.nextTick ? wx.nextTick.bind(wx) : (fn) => fn();
+      defer(() => this.loadLore());
     });
   },
 
@@ -335,7 +349,7 @@ Page({
   },
 
   copyQuote(e) {
-    copy(e.currentTarget.dataset.text, '名言已复制♥');
+    this.copyText(e.currentTarget.dataset.text, '名言已复制♥');
   },
 
   onShareAppMessage() {

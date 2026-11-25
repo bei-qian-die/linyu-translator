@@ -19,6 +19,7 @@ let lastClipboard = '';
 let lastToast = '';
 let lastApp = null;
 let privacyHandler = null;
+let privacyDeny = false;
 const realtimeLogs = [];
 
 global.wx = {
@@ -51,6 +52,15 @@ global.wx = {
   vibrateShort() {},
   onNeedPrivacyAuthorization(handler) {
     privacyHandler = handler;
+  },
+  requirePrivacyAuthorize(options) {
+    if (privacyDeny) {
+      if (options.fail) {
+        options.fail({ errno: 104, errMsg: 'requirePrivacyAuthorize:fail privacy permission is not authorized' });
+      }
+      return;
+    }
+    if (options.success) options.success({});
   },
   getRealtimeLogManager() {
     return {
@@ -512,7 +522,7 @@ run('WXML 事件处理函数均已实现', () => {
 
 runAsync('复制与分享链路可用', async () => {
   const { copy } = require('../miniprogram/utils/ui');
-  copy('小仙女♥', '已复制');
+  await copy('小仙女♥', '已复制');
   assert.strictEqual(lastClipboard, '小仙女♥');
 
   const indexPage = loadPage('index');
@@ -532,6 +542,33 @@ runAsync('复制与分享链路可用', async () => {
   assert.strictEqual(sharedText, '你今天真好看！');
   const timeline = indexPage.onShareTimeline();
   assert.strictEqual(decodeURIComponent(timeline.query.split('=')[1]), '你今天真好看！');
+
+  // 剪贴板不可用（后台未声明 / 用户拒绝）时：不抛错，页面弹「手动复制」面板
+  const original = global.wx.setClipboardData;
+  global.wx.setClipboardData = (opts) => {
+    if (opts.fail) {
+      opts.fail({ errno: 112, errMsg: 'setClipboardData:fail api scope is not declared in the privacy agreement' });
+    }
+  };
+  const musicPage = loadPage('music');
+  musicPage.onLoad();
+  await musicPage.copyText('https://www.douyin.com/video/777', '链接已复制');
+  assert.strictEqual(
+    musicPage.data.copySheet.text,
+    'https://www.douyin.com/video/777',
+    '剪贴板不可用时应弹手动复制面板'
+  );
+
+  privacyDeny = true;
+  musicPage.closeCopySheet();
+  await musicPage.copyText('拒绝授权时的文本', '已复制');
+  assert.strictEqual(
+    musicPage.data.copySheet.text,
+    '拒绝授权时的文本',
+    '用户拒绝隐私授权时也应弹手动复制面板'
+  );
+  privacyDeny = false;
+  global.wx.setClipboardData = original;
 });
 
 run('公共组件齐全且已全局注册（C1）', () => {
@@ -570,7 +607,7 @@ run('词库搜索高亮片段（C6）', () => {
   assert(!plain.zhParts, '无关键词时不应有片段');
 });
 
-run('历史长按复制译文与导出文本（C7）', () => {
+runAsync('历史长按复制译文与导出文本（C7）', async () => {
   storage.clear();
   history.clearHistory();
   history.addHistory('你今天真好看！', '小仙女，你今天真好看！♥');
@@ -578,9 +615,9 @@ run('历史长按复制译文与导出文本（C7）', () => {
   page.onLoad({});
   page.onShow();
   const row = page._rows[0];
-  page.copyRow({ currentTarget: { dataset: { id: row.id } } });
+  await page.copyRow({ currentTarget: { dataset: { id: row.id } } });
   assert.strictEqual(lastClipboard, '小仙女，你今天真好看！♥');
-  page.exportText();
+  await page.exportText();
   assert(lastClipboard.includes('原文：你今天真好看！'), '导出文本应包含原文');
   assert(lastClipboard.includes('淋语：小仙女，你今天真好看！♥'), '导出文本应包含译文');
 });
@@ -680,32 +717,45 @@ run('小程序端不包含网络上传/下载调用', () => {
 run('A1 隐私声明与剪贴板降级', () => {
   const appJson = JSON.parse(fs.readFileSync(path.join(MP, 'app.json'), 'utf8'));
   assert.strictEqual(appJson.__usePrivacyCheck__, true, 'app.json 未开启 __usePrivacyCheck__');
-  const appSrc = fs.readFileSync(path.join(MP, 'app.js'), 'utf8');
-  assert(appSrc.includes('onNeedPrivacyAuthorization'), 'app.js 未注册隐私授权兜底');
-  const aboutWxml = fs.readFileSync(path.join(MP, 'pages', 'about', 'about.wxml'), 'utf8');
-  assert(aboutWxml.includes('剪贴板'), '关于页未说明剪贴板用途');
 
+  // 1.41.1 修复：自绘 onNeedPrivacyAuthorization 若 resolve 时不带 buttonId，
+  // 授权不会被记录，而「开发者已响应」又会挡掉微信官方兜底弹窗 —— 剪贴板必然失败。
+  // 因此必须交回官方弹窗，代码侧只保留说明与降级。
+  const appSrc = fs.readFileSync(path.join(MP, 'app.js'), 'utf8');
+  assert(!/onNeedPrivacyAuthorization\s*\(/.test(appSrc), 'app.js 不应再注册 onNeedPrivacyAuthorization');
+  assert(appSrc.includes('官方隐私弹窗'), 'app.js 应保留本次修复的说明注释');
+
+  // 启动后确认没有注册事件：交给微信官方弹窗，剪贴板才会有授权通道
   storage.clear();
   prefs.resetPrefs();
   require('../miniprogram/app.js');
   assert(lastApp, 'app.js 未调用 App()');
   lastApp.onLaunch();
-  assert.strictEqual(typeof privacyHandler, 'function', '未注册 onNeedPrivacyAuthorization');
-  let resolution = null;
-  privacyHandler((res) => {
-    resolution = res;
-  });
-  assert.deepStrictEqual(resolution, { event: 'agree' });
+  assert.strictEqual(privacyHandler, null, 'onLaunch 后不应再注册 onNeedPrivacyAuthorization');
 
-  const { copy } = require('../miniprogram/utils/ui');
-  const original = global.wx.setClipboardData;
-  global.wx.setClipboardData = (opts) => {
-    if (opts.fail) opts.fail(new Error('scope is not declared'));
-  };
-  lastToast = '';
-  copy('剪贴板测试');
-  assert(lastToast.includes('复制失败'), '复制失败时应提示长按选择文本');
-  global.wx.setClipboardData = original;
+  const aboutWxml = fs.readFileSync(path.join(MP, 'pages', 'about', 'about.wxml'), 'utf8');
+  assert(aboutWxml.includes('剪贴板'), '关于页未说明剪贴板用途');
+
+  // 复制兜底：可长按选中的面板 + 五个复制入口全部接入
+  const sheetPath = path.join(MP, 'templates', 'copy-sheet.wxml');
+  assert(fs.existsSync(sheetPath), '缺少「手动复制」面板模板');
+  const sheet = fs.readFileSync(sheetPath, 'utf8');
+  assert(sheet.includes('user-select'), '面板文字必须可长按选中');
+  const helper = fs.readFileSync(path.join(MP, 'utils', 'copySheet.js'), 'utf8');
+  assert(helper.includes('attachCopySheet'), '缺少 attachCopySheet 工具');
+  const copyRoutes = [
+    'pages/index/index',
+    'pages/history/history',
+    'pages/music/music',
+    'pkg-hero/pages/hero/hero',
+    'pkg-hero/pages/browse/browse',
+  ];
+  for (const route of copyRoutes) {
+    const js = fs.readFileSync(path.join(MP, `${route}.js`), 'utf8');
+    const wxml = fs.readFileSync(path.join(MP, `${route}.wxml`), 'utf8');
+    assert(js.includes('attachCopySheet(this)'), `${route} 未接入手动复制兜底`);
+    assert(wxml.includes('is="copy-sheet"'), `${route}.wxml 未渲染兜底面板`);
+  }
 });
 
 run('主包词库页把词卡/名言/人物三个 tab 交给分包', () => {

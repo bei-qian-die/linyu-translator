@@ -13,7 +13,8 @@
 
 const music = require('../../data/music');
 const musicFav = require('../../services/musicFav');
-const { copy, chromeMetrics } = require('../../utils/ui');
+const { chromeMetrics } = require('../../utils/ui');
+const { attachCopySheet } = require('../../utils/copySheet');
 const { syncChrome } = require('../../utils/pageBase');
 
 const TAG_LABEL = {};
@@ -141,6 +142,7 @@ Page({
   },
 
   onLoad() {
+    attachCopySheet(this);
     this.setData(chromeMetrics());
     this.reloadUser();
     this.refresh();
@@ -261,7 +263,7 @@ Page({
     const id = e.currentTarget.dataset.id;
     if (id) this.markSeen(id);
     const isBili = String(url || '').indexOf('bilibili.com') >= 0;
-    copy(url, isBili ? '作品链接已复制，去浏览器打开' : '音源链接已复制，去对应平台粘贴打开');
+    this.copyText(url, isBili ? '作品链接已复制，去浏览器打开' : '音源链接已复制，去对应平台粘贴打开');
     this.reloadUser();
     if (this.data.view === 'recent') this.refresh();
   },
@@ -271,12 +273,12 @@ Page({
     const id = e.currentTarget.dataset.id;
     if (id) this.markSeen(id);
     const isBili = String(url || '').indexOf('bilibili.com') >= 0;
-    copy(url, isBili ? '作品链接已复制，去浏览器打开' : '视频链接已复制，去抖音打开');
+    this.copyText(url, isBili ? '作品链接已复制，去浏览器打开' : '视频链接已复制，去抖音打开');
   },
 
   copyKeyword(e) {
     const kw = e.currentTarget.dataset.kw;
-    copy(kw, '搜索词已复制，去对应平台搜');
+    this.copyText(kw, '搜索词已复制，去对应平台搜');
   },
 
   // 每日一条 / 随机一条：滚到该条并复制链接
@@ -303,7 +305,7 @@ Page({
     });
     this.refresh();
     this.markSeen(it.id);
-    copy(it.musicUrl, `已定位「${it.name}」并复制链接`);
+    this.copyText(it.musicUrl, `已定位「${it.name}」并复制链接`);
     this.reloadUser();
     // 列表重排后滚到对应卡片
     wx.createSelectorQuery()

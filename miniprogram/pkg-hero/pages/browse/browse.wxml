@@ -1,3 +1,4 @@
+<import src="/templates/copy-sheet.wxml" />
 <view class="page theme-{{theme}}">
   <view class="eyebrow">
     <view class="eyebrow-left"><text>ARCHIVE</text><text class="eyebrow-mark">/</text><text>浏览</text></view>
@@ -93,6 +94,12 @@
       <view class="sk-line w40"></view>
       <view class="sk-line w70"></view>
     </view>
+  </view>
+
+  <!-- 数据加载失败：明确提示 + 一键重试，避免只剩空列表被当成「没内容」 -->
+  <view wx:if="{{loadError}}" class="load-error">
+    <text class="load-error-t">内容加载失败，可能是内存吃紧</text>
+    <view class="load-error-b" hover-class="load-error-b-hover" catchtap="reloadLore">重新加载</view>
   </view>
 
   <block wx:if="{{ready}}">
@@ -223,3 +230,5 @@
 
   <view class="tip">内容整理自公开语料，仅供娱乐 · 只读浏览</view>
 </view>
+<!-- 剪贴板隐私接口不可用时的「手动复制」兜底面板 -->
+<template is="copy-sheet" />

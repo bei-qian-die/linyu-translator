@@ -1,0 +1,17 @@
+<!-- 手动复制兜底面板：剪贴板隐私接口不可用时显示，文字可长按选中 -->
+<template name="copy-sheet">
+  <view wx:if="{{copySheet.text}}" class="cs">
+    <view class="cs-mask" catchtap="closeCopySheet" catchtouchmove="noop"></view>
+    <view class="cs-panel" catchtap="noop">
+      <view class="cs-title">手动复制</view>
+      <view class="cs-hint">{{copySheet.hint}}</view>
+      <scroll-view class="cs-scroll" scroll-y>
+        <text class="cs-text" user-select="{{true}}" selectable="{{true}}">{{copySheet.text}}</text>
+      </scroll-view>
+      <view class="cs-acts">
+        <view class="cs-btn" hover-class="cs-btn-hover" catchtap="closeCopySheet">关闭</view>
+        <view class="cs-btn cs-btn-primary" hover-class="cs-btn-hover" catchtap="retryCopy">再试一次</view>
+      </view>
+    </view>
+  </view>
+</template>

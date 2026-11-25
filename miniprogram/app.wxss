@@ -638,3 +638,96 @@ button::after {
   font-size: 20rpx;
   color: var(--faint);
 }
+
+/* ---- 手动复制面板（templates/copy-sheet.wxml）--------------------
+   剪贴板隐私接口不可用时的兜底：文字可被长按选中，用户手动复制。
+   显式写长属性而不是 inset，兼容低版本 webview。 */
+.cs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cs-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.cs-panel {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 36rpx 40rpx 40rpx;
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 28rpx 28rpx 0 0;
+  box-shadow: 0 -8rpx 40rpx rgba(0, 0, 0, 0.18);
+}
+
+.cs-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.cs-hint {
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.cs-scroll {
+  margin-top: 22rpx;
+  max-height: 42vh;
+  padding: 22rpx 24rpx;
+  box-sizing: border-box;
+  background: var(--soft);
+  border-radius: 18rpx;
+}
+
+.cs-text {
+  font-size: 26rpx;
+  line-height: 1.65;
+  color: var(--ink);
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.cs-acts {
+  display: flex;
+  margin-top: 28rpx;
+}
+
+.cs-btn {
+  flex: 1;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 2rpx solid var(--line-strong);
+  border-radius: 16rpx;
+}
+
+.cs-btn + .cs-btn {
+  margin-left: 20rpx;
+}
+
+.cs-btn-primary {
+  background: var(--cta-bg);
+  border-color: var(--cta-bg);
+  color: var(--cta-fg);
+}
+
+.cs-btn-hover {
+  opacity: 0.82;
+}

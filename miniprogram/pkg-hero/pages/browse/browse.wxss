@@ -231,3 +231,35 @@
     animation: none;
   }
 }
+
+/* 数据加载失败提示条（loadError）：给明确原因 + 重试入口，避免空列表被误读为「没内容」 */
+.load-error {
+  margin-top: 16rpx;
+  padding: 24rpx 26rpx;
+  border: 2rpx solid var(--line-strong);
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.load-error-t {
+  flex: 1;
+  font-size: 24rpx;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.load-error-b {
+  margin-left: 20rpx;
+  padding: 12rpx 26rpx;
+  border-radius: 12rpx;
+  background: var(--cta-bg);
+  color: var(--cta-fg);
+  font-size: 24rpx;
+  white-space: nowrap;
+}
+
+.load-error-b-hover {
+  opacity: 0.82;
+}

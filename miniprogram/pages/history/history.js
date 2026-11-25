@@ -2,7 +2,8 @@
 
 const historyStore = require('../../services/history');
 const { HISTORY_LIMITS, dangerFor } = require('../../services/prefs');
-const { toast, confirm, copy, chromeMetrics } = require('../../utils/ui');
+const { toast, confirm, chromeMetrics } = require('../../utils/ui');
+const { attachCopySheet } = require('../../utils/copySheet');
 const { formatClock } = require('../../utils/format');
 const { syncChrome } = require('../../utils/pageBase');
 
@@ -39,6 +40,7 @@ Page({
   },
 
   onLoad() {
+    attachCopySheet(this);
     this.setData(chromeMetrics());
     wx.hideShareMenu({ menus: ['shareAppMessage', 'shareTimeline'] });
   },
@@ -221,7 +223,7 @@ Page({
     const id = e.currentTarget.dataset.id;
     const row = (this._rows || []).find((item) => item.id === id);
     if (!row) return;
-    copy(row.output, '译文已复制♥');
+    return this.copyText(row.output, '译文已复制♥');
   },
 
   enterSelect() {
@@ -317,7 +319,7 @@ Page({
       text = text.slice(0, EXPORT_MAX_CHARS);
       truncated = true;
     }
-    copy(text, truncated ? `已导出前 ${EXPORT_MAX_CHARS} 字（超出部分被截断）` : '已导出到剪贴板');
+    return this.copyText(text, truncated ? `已导出前 ${EXPORT_MAX_CHARS} 字（超出部分被截断）` : '已导出到剪贴板');
   },
 
   removeOne(e) {

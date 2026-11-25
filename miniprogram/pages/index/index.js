@@ -2,7 +2,8 @@
 
 const content = require('../../services/content');
 const historyStore = require('../../services/history');
-const { toast, copy, chromeMetrics } = require('../../utils/ui');
+const { toast, chromeMetrics } = require('../../utils/ui');
+const { attachCopySheet } = require('../../utils/copySheet');
 const { clip, utf8Bytes } = require('../../utils/format');
 const secCheck = require('../../services/sec');
 const { syncChrome } = require('../../utils/pageBase');
@@ -39,6 +40,7 @@ Page({
   },
 
   onLoad(options) {
+    attachCopySheet(this);
     const app = getApp();
     this._secSeq = 0;
     // 一次 setData 合并主题、实时翻译开关与自绘导航尺寸，减少首屏渲染次数（B10）
@@ -333,7 +335,7 @@ Page({
   },
 
   copyOutput() {
-    copy(this.data.output, '已复制♥');
+    this.copyText(this.data.output, '已复制♥');
   },
 
   // 分享参数后缀：原文 ≤300 字节才带 text，超长只带 overflow 标记，落地页提示（A2）

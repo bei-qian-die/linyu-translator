@@ -1,3 +1,4 @@
+<import src="/templates/copy-sheet.wxml" />
 <view class="page theme-{{theme}} page-custom-nav" style="padding-top:{{navTop}}px;">
   <nav-bar status-bar="{{statusBar}}" nav-bar-h="{{navBarH}}" />
 
@@ -117,3 +118,5 @@
     bind:reset="clearSearch"
   />
 </view>
+<!-- 剪贴板隐私接口不可用时的「手动复制」兜底面板 -->
+<template is="copy-sheet" />
